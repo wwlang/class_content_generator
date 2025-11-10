@@ -1,0 +1,86 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*.swo
+*~
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Logs
+*.log
+logs/
+
+# Temporary files
+temp_images/
+*.tmp
+*_temp.*
+temp_*.json
+
+# Generated outputs (PPTX files)
+*.pptx
+!samples/*.pptx
+
+# Environment files
+.env
+.env.local
+.env.staging
+.env.production
+*.key
+*.pem
+*_credentials.json
+
+# Test artifacts
+test_artifacts/
+coverage/
+.pytest_cache/
+
+# Course-specific generated content
+courses/*/weeks/week-*/lecture.html
+courses/*/weeks/week-*/tutorial.html
+courses/*/.working/*
+!courses/*/.working/.gitkeep
+courses/*/.archive/*
+!courses/*/.archive/.gitkeep
+
+# Temporary research files
+*_research_temp.md
+
+# Root directory pollution prevention
+/*.md
+!README.md
+!CONTRIBUTING.md
+!lecture_content_instructions.md
+/*.txt
+!requirements.txt
+
+# Shared resources (user-specific)
+shared/research/*/
+!shared/research/open-access-sources.md
+shared/citation-library/
+shared/vietnam-examples/
+shared/teaching-resources/
+
+# Temporary drive upload files
+.tmp.driveupload/
+.tmp.drivedownload/

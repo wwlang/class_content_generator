@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Design Sample - Reference Style</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Cal Sans (using fallback since Cal Sans requires download) -->
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+  </style>
+
+  <style>
+    /* ========================================
+       CSS VARIABLES - REFERENCE DESIGN
+       ======================================== */
+    :root {
+      /* New Reference Design Colors */
+      --color-primary: #131313;        /* Dark gray/black - main text, dark backgrounds */
+      --color-accent: #ed5e29;         /* Orange - emphasis, headers, icons */
+      --color-cream: #f4f3f1;          /* Cream - light backgrounds */
+      --color-tan: #cac3b7;            /* Tan/beige - decorative */
+      --color-white: #ffffff;          /* White - cards, contrast */
+      --color-muted: #64748b;          /* Muted gray - secondary text */
+
+      /* Fonts */
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      /* Layout */
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+
+      /* Effects */
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.12);
+      --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 24px rgba(0, 0, 0, 0.15);
+      --border-radius: 12px;
+      --card-radius: 16px;
+    }
+
+    /* ========================================
+       RESET & BASE
+       ======================================== */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    /* ========================================
+       PRESENTATION CONTAINER
+       ======================================== */
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDES
+       ======================================== */
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);
+      box-shadow: var(--shadow-lg);
+      border-radius: 8px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+    }
+    .slide.active { opacity: 1; display: block; }
+
+    /* Dark background variant */
+    .slide.dark-bg {
+      background: var(--color-primary);
+    }
+
+    /* ========================================
+       NAVIGATION
+       ======================================== */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      box-shadow: var(--shadow-lg);
+      z-index: 1000;
+    }
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+    .nav-controls button:hover { background: rgba(237, 94, 41, 0.3); }
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    /* ========================================
+       PROGRESS BAR
+       ======================================== */
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    /* ========================================
+       TYPOGRAPHY
+       ======================================== */
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      color: var(--color-primary);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;  /* Condensed spacing for all titles */
+    }
+    h1 { font-size: 70px; }
+    h2 { font-size: 48px; }
+    h3 { font-size: 36px; }
+    h4 { font-size: 30px; }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    strong {
+      font-weight: 600;
+      color: var(--color-accent);
+    }
+
+    .slide-title {
+      font-family: var(--font-header);
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 40px;
+      letter-spacing: -0.05em;  /* Condensed */
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* ========================================
+       LAYOUT 1: TITLE SLIDE
+       ======================================== */
+    .title-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: var(--slide-padding);
+    }
+    .title-slide .title-content {
+      text-align: left;
+    }
+    .title-content h1 {
+      font-size: 60px;
+      font-weight: 700;
+      color: var(--color-primary);
+      margin-bottom: 20px;
+      line-height: 1.1;
+      letter-spacing: -0.05em;  /* Condensed */
+    }
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    /* Decorative elements */
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+      z-index: 1;
+    }
+    .shape {
+      border-radius: 50%;
+    }
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* ========================================
+       LAYOUT 2: CONTENT WITH CARDS
+       ======================================== */
+    .content-slide {
+      padding: var(--slide-padding);
+    }
+
+    .content-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--color-white);
+      border-radius: var(--card-radius);
+      overflow: hidden;
+    }
+
+    .card-header {
+      background: var(--color-accent);
+      padding: 16px 24px;
+      color: var(--color-white);
+    }
+
+    .card-header h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--color-white);
+      margin: 0;
+    }
+
+    .card-body {
+      padding: 24px;
+    }
+
+    .card-body ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card-body li {
+      font-size: 16px;
+      color: var(--color-primary);
+      padding: 8px 0;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .card-body li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    /* ========================================
+       LAYOUT 3: DARK BACKGROUND SLIDE
+       ======================================== */
+    .dark-bg .slide-title {
+      color: var(--color-cream);
+    }
+
+    .dark-bg p, .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* ========================================
+       LAYOUT 4: SECTION BREAK
+       ======================================== */
+    .section-break-slide {
+      background: var(--color-accent);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      padding: var(--slide-padding);
+    }
+    .section-title {
+      font-family: var(--font-header);
+      font-size: 54px;
+      font-weight: 700;
+      color: #ffffff;
+      text-align: left;
+      line-height: 1.2;
+      letter-spacing: -0.05em;  /* Condensed */
+    }
+
+    /* ========================================
+       LAYOUT 5: GRID WITH VISUAL CONTAINERS
+       ======================================== */
+    .grid-content {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .grid-item {
+      background: var(--color-white);
+      border: 2px solid var(--color-cream);
+      border-radius: var(--border-radius);
+      padding: 24px;
+      text-align: center;
+      position: relative;
+    }
+
+    .grid-item::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--color-accent);
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    .icon-container {
+      color: var(--color-accent);
+      margin-bottom: 16px;
+    }
+
+    .grid-item h3 {
+      font-size: 22px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .grid-item p {
+      font-size: 15px;
+      color: var(--color-muted);
+    }
+
+    /* ========================================
+       LAYOUT 6: BIG NUMBER
+       ======================================== */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: var(--slide-padding);
+    }
+    .number-content {
+      text-align: center;
+    }
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+    .number-explanation {
+      font-size: 28px;
+      color: var(--color-primary);
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* ========================================
+       NEW ACADEMIC LAYOUTS
+       ======================================== */
+
+    /* Quote Slide */
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: var(--slide-padding);
+    }
+    .quote-slide blockquote {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+      position: relative;
+      width: 100%;
+    }
+    .quote-slide blockquote::before {
+      content: '"';
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: -40px;
+      left: 0;
+      line-height: 1;
+      opacity: 0.5;
+    }
+    .quote-slide blockquote p {
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+    .quote-slide blockquote cite {
+      display: block;
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: left;
+      font-style: normal;
+    }
+    .quote-slide blockquote cite::before {
+      content: '— ';
+    }
+
+    /* References Slide */
+    .references-slide {
+      padding: var(--slide-padding);
+    }
+    .references-slide .references {
+      padding-top: 20px;
+      list-style: none;
+      padding-left: 0;
+    }
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    /* Framework/Diagram Slide */
+    .framework-slide {
+      padding: var(--slide-padding);
+    }
+    .framework-slide .framework {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+    }
+    .framework-slide .framework-box {
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+    .framework-slide .framework-box strong {
+      display: block;
+      font-family: var(--font-header);
+      font-size: 18px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+    .framework-slide .framework-box p {
+      font-size: 14px;
+      color: var(--color-muted);
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: var(--slide-padding);
+    }
+    .reflection-slide .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+    .reflection-slide .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+    .reflection-slide .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column) */
+    .comparison-table-slide {
+      padding: var(--slide-padding);
+    }
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+    .comparison-table-slide table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 600;
+      padding: 16px;
+      text-align: center;
+      font-size: 20px;
+    }
+    .comparison-table-slide table td {
+      padding: 12px 16px;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: top;
+    }
+    .comparison-table-slide table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* ========================================
+       RESPONSIVE FONT SCALING
+       ======================================== */
+    @media (max-width: 1200px) {
+      :root {
+        --slide-width: 800px;
+        --slide-height: 600px;
+      }
+      h1 { font-size: 56px; }
+      h2 { font-size: 40px; }
+      h3 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 12</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+    <!-- SLIDE 1: TITLE SLIDE WITH DECORATIVE ELEMENTS -->
+    <div class="slide title-slide active" data-slide="1">
+      <div class="title-content">
+        <h1>Enhanced Design<br>Showcase</h1>
+        <p class="subtitle">Reference Design Implementation</p>
+        <p class="author">Cal Sans + Plus Jakarta Sans | Orange & Cream Color Scheme</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+    </div>
+
+    <!-- SLIDE 2: SECTION BREAK -->
+    <div class="slide section-break-slide" data-slide="2">
+      <h2 class="section-title">Part 1: Visual Enhancements</h2>
+    </div>
+
+    <!-- SLIDE 3: CONTENT WITH WHITE CARDS -->
+    <div class="slide content-slide" data-slide="3">
+      <h2 class="slide-title">Key Design Elements</h2>
+      <div class="content-cards">
+        <div class="card">
+          <div class="card-header">
+            <h3>Color Palette</h3>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><strong>Orange (#ed5e29)</strong> - Emphasis and accents</li>
+              <li><strong>Dark Gray (#131313)</strong> - Main text</li>
+              <li><strong>Cream (#f4f3f1)</strong> - Backgrounds</li>
+              <li><strong>White (#ffffff)</strong> - Cards and contrast</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>Typography</h3>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li><strong>Cal Sans</strong> - Headlines and titles</li>
+              <li><strong>Plus Jakarta Sans</strong> - Body text</li>
+              <li><strong>Larger sizes</strong> - 48pt titles vs 40pt</li>
+              <li><strong>Bold weights</strong> - 700 for impact</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 4: DARK BACKGROUND WITH STATS -->
+    <div class="slide dark-bg content-slide" data-slide="4">
+      <h2 class="slide-title">Student Engagement Metrics</h2>
+      <div class="stats-banner">
+        <div class="stat-item">
+          <div class="stat-number">85%</div>
+          <div class="stat-label">Satisfaction</div>
+          <div class="stat-description">Higher student satisfaction with visual design</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3.2x</div>
+          <div class="stat-label">Retention</div>
+          <div class="stat-description">Better concept retention vs plain slides</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">92%</div>
+          <div class="stat-label">Engagement</div>
+          <div class="stat-description">Students report increased engagement</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">4.8</div>
+          <div class="stat-label">Rating</div>
+          <div class="stat-description">Average presentation quality rating</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 5: GRID WITH VISUAL CONTAINERS -->
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">Core Design Principles</h2>
+      <div class="grid-content">
+        <div class="grid-item">
+          <div class="icon-container">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <h3>Clarity</h3>
+          <p>Clear visual hierarchy guides attention to what matters most</p>
+        </div>
+        <div class="grid-item">
+          <div class="icon-container">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <h3>Consistency</h3>
+          <p>Uniform spacing and styling creates professional polish</p>
+        </div>
+        <div class="grid-item">
+          <div class="icon-container">
+            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <h3>Simplicity</h3>
+          <p>Clean design reduces cognitive load for better learning</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 6: BIG NUMBER -->
+    <div class="slide big-number-slide" data-slide="6">
+      <div class="number-content">
+        <div class="big-number">65%</div>
+        <p class="number-explanation">improvement in student comprehension with enhanced visual design</p>
+      </div>
+    </div>
+
+    <!-- SLIDE 7: SECTION BREAK -->
+    <div class="slide section-break-slide" data-slide="7">
+      <h2 class="section-title">Design That Enhances Learning</h2>
+    </div>
+
+    <!-- SLIDE 8: FINAL CARD LAYOUT -->
+    <div class="slide content-slide" data-slide="8">
+      <h2 class="slide-title">Why Enhanced Design Matters</h2>
+      <div class="content-cards">
+        <div class="card">
+          <div class="card-header">
+            <h3>For Students</h3>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Easier to follow and understand</li>
+              <li>Better retention of key concepts</li>
+              <li>More engaging and enjoyable</li>
+              <li>Professional learning experience</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <h3>For Instructors</h3>
+          </div>
+          <div class="card-body">
+            <ul>
+              <li>Communicate ideas more effectively</li>
+              <li>Maintain student attention</li>
+              <li>Professional credibility</li>
+              <li>Reusable, scalable system</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 9: SECTION BREAK -->
+    <div class="slide section-break-slide" data-slide="9">
+      <h2 class="section-title">Part 2: Implementation</h2>
+    </div>
+
+    <!-- SLIDE 10: CONTENT WITH BULLET POINTS -->
+    <div class="slide content-slide" data-slide="10">
+      <h2 class="slide-title">Visual Enhancement Features</h2>
+      <div style="padding: 20px 0;">
+        <ul style="list-style: none; padding: 0;">
+          <li style="font-size: 20px; padding: 12px 0; padding-left: 32px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--color-accent); font-size: 24px; font-weight: 700;">•</span>
+            <strong style="color: var(--color-accent);">Footer System:</strong> Course name and slide numbers automatically added to every slide
+          </li>
+          <li style="font-size: 20px; padding: 12px 0; padding-left: 32px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--color-accent); font-size: 24px; font-weight: 700;">•</span>
+            <strong style="color: var(--color-accent);">Decorative Shapes:</strong> Geometric elements add visual interest to title slides
+          </li>
+          <li style="font-size: 20px; padding: 12px 0; padding-left: 32px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--color-accent); font-size: 24px; font-weight: 700;">•</span>
+            <strong style="color: var(--color-accent);">Icon System:</strong> Small icons above statistics for visual hierarchy
+          </li>
+          <li style="font-size: 20px; padding: 12px 0; padding-left: 32px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--color-accent); font-size: 24px; font-weight: 700;">•</span>
+            <strong style="color: var(--color-accent);">Image Integration:</strong> Optional Pexels API for automatic topic-relevant images
+          </li>
+          <li style="font-size: 20px; padding: 12px 0; padding-left: 32px; position: relative;">
+            <span style="position: absolute; left: 0; color: var(--color-accent); font-size: 24px; font-weight: 700;">•</span>
+            <strong style="color: var(--color-accent);">Image Processing:</strong> Automatic center-crop and resize with Pillow
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- SLIDE 11: STATS WITH 3 ITEMS -->
+    <div class="slide dark-bg content-slide" data-slide="11">
+      <h2 class="slide-title">Implementation Metrics</h2>
+      <div class="stats-banner">
+        <div class="stat-item">
+          <div class="stat-number">7</div>
+          <div class="stat-label">New Methods</div>
+          <div class="stat-description">Helper functions for visual enhancements</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">260+</div>
+          <div class="stat-label">Lines Added</div>
+          <div class="stat-description">New code for enhanced features</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Compatible</div>
+          <div class="stat-description">Backward compatible with existing slides</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 12: QUOTE LAYOUT -->
+    <div class="slide quote-slide" data-slide="12">
+      <blockquote>
+        <p>Who do you want to become in the next chapter of your life?</p>
+        <cite>Robert Fritz, The Path of Least Resistance (1989)</cite>
+      </blockquote>
+    </div>
+
+    <!-- SLIDE 13: FRAMEWORK LAYOUT -->
+    <div class="slide framework-slide" data-slide="13">
+      <h2 class="slide-title">Creative Tension Framework</h2>
+      <div class="framework">
+        <div class="framework-box">
+          <strong>Current Reality</strong>
+          <p>Where you are now - honest assessment of present state</p>
+        </div>
+        <div class="framework-box">
+          <strong>Structural Tension</strong>
+          <p>The natural force that drives movement toward your vision</p>
+        </div>
+        <div class="framework-box">
+          <strong>Personal Vision</strong>
+          <p>Clear picture of desired future - what you want to create</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SLIDE 14: REFLECTION PROMPT -->
+    <div class="slide reflection-slide" data-slide="14">
+      <div class="reflection-icon">💭</div>
+      <div class="reflection-question">
+        What is one area of your life where you feel stuck between your current reality and your desired future?
+      </div>
+      <div class="reflection-instruction">
+        Take a moment to reflect...
+      </div>
+    </div>
+
+    <!-- SLIDE 15: COMPARISON TABLE -->
+    <div class="slide comparison-table-slide" data-slide="15">
+      <h2 class="slide-title">Personal Vision vs. Goals</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Personal Vision</th>
+            <th>Goals</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Long-term desired state</td>
+            <td>Specific milestones</td>
+          </tr>
+          <tr>
+            <td>Intrinsically motivated</td>
+            <td>May be externally driven</td>
+          </tr>
+          <tr>
+            <td>Holistic and integrated</td>
+            <td>Discrete and measurable</td>
+          </tr>
+          <tr>
+            <td>Guides direction and choices</td>
+            <td>Create action steps</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- SLIDE 16: REFERENCES LAYOUT -->
+    <div class="slide references-slide" data-slide="16">
+      <h2 class="slide-title">References</h2>
+      <ul class="references">
+        <li>Fritz, R. (1989). <em>The Path of Least Resistance: Learning to Become the Creative Force in Your Own Life</em>. Ballantine Books.</li>
+        <li>Senge, P. M. (2006). <em>The Fifth Discipline: The Art & Practice of The Learning Organization</em> (Revised & Updated edition). Doubleday.</li>
+        <li>Dweck, C. S. (2008). <em>Mindset: The New Psychology of Success</em>. Ballantine Books.</li>
+        <li>Brown, B. (2018). <em>Dare to Lead: Brave Work. Tough Conversations. Whole Hearts</em>. Random House.</li>
+      </ul>
+    </div>
+
+    <!-- SLIDE 17: CLOSING SLIDE -->
+    <div class="slide content-slide" data-slide="17">
+      <h2 class="slide-title">Ready to Enhance Your Slides</h2>
+      <div style="margin-top: 60px; max-width: 700px;">
+        <p style="font-size: 22px; line-height: 1.8; margin-bottom: 30px; color: var(--color-primary);">
+          All visual enhancements are now integrated into the HTML to PPTX converter, maintaining
+          the clean design language while adding professional polish to every presentation.
+        </p>
+        <div style="background: var(--color-white); border-left: 4px solid var(--color-accent); padding: 30px; border-radius: var(--border-radius); margin-top: 40px;">
+          <h3 style="color: var(--color-accent); font-size: 24px; margin-bottom: 16px;">Key Features</h3>
+          <ul style="list-style: none; padding: 0;">
+            <li style="font-size: 18px; padding: 8px 0; padding-left: 28px; position: relative;">
+              <span style="position: absolute; left: 0; color: var(--color-accent);">✓</span>
+              Automatic footers with course name and slide numbers
+            </li>
+            <li style="font-size: 18px; padding: 8px 0; padding-left: 28px; position: relative;">
+              <span style="position: absolute; left: 0; color: var(--color-accent);">✓</span>
+              Geometric icons above statistics for visual interest
+            </li>
+            <li style="font-size: 18px; padding: 8px 0; padding-left: 28px; position: relative;">
+              <span style="position: absolute; left: 0; color: var(--color-accent);">✓</span>
+              Optional Pexels API integration with intelligent caching
+            </li>
+            <li style="font-size: 18px; padding: 8px 0; padding-left: 28px; position: relative;">
+              <span style="position: absolute; left: 0; color: var(--color-accent);">✓</span>
+              Decorative shapes on title slides for brand consistency
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- JavaScript for Navigation -->
+  <script>
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+  </script>
+</body>
+</html>

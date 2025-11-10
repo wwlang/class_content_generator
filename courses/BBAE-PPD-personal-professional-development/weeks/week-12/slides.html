@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 8px 0 8px 28px;
+      position: relative;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--color-accent);
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break */
+    .section-break-slide {
+      background: var(--color-accent);
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table th, .vocab-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--color-tan);
+    }
+
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 600;
+    }
+
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 27</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>The Question That Defines Your Career</h1>
+        <p class="subtitle">Personal and Professional Development (BBAE-PPD)</p>
+        <p class="author">Week 12 - Integrating Growth</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      <!-- Speaker Notes: ... -->
+    </div>
+
+    <div class="slide content-slide" data-slide="2">
+      <h2 class="slide-title">Key Vocabulary (Từ vựng quan trọng)</h2>
+      <table class="vocab-table"><thead><tr><th>English Term</th><th>Vietnamese Translation</th><th>Context/Usage</th></tr></thead><tbody><tr><td><strong>Personal mastery</strong></td><td>Làm chủ bản thân / Thành thạo cá nhân</td><td>The discipline of continually clarifying and deepening personal vision, focusing energy, developing patience, and seeing reality objectively</td></tr><tr><td><strong>Integration</strong></td><td>Sự tích hợp / Hội nhập</td><td>Bringing different parts together into a unified whole</td></tr><tr><td><strong>Intrinsic motivation</strong></td><td>Động lực nội tại</td><td>Motivation that comes from within; doing something because it's inherently satisfying</td></tr><tr><td><strong>Extrinsic motivation</strong></td><td>Động lực bên ngoài</td><td>Motivation that comes from external rewards like money, recognition, grades</td></tr><tr><td><strong>Autonomy</strong></td><td>Quyền tự chủ / Tính tự trị</td><td>The ability to direct your own life and work</td></tr><tr><td><strong>Sustainable learning system</strong></td><td>Hệ thống học tập bền vững</td><td>A continuous approach to learning that can be maintained long-term</td></tr><tr><td><strong>Purpose</strong></td><td>Mục đích / Ý nghĩa</td><td>The reason or meaning behind what you do</td></tr><tr><td><strong>Continuous improvement</strong></td><td>Cải tiến liên tục / Kaizen</td><td>The ongoing effort to improve processes, products, or services incrementally</td></tr></tbody></table>
+    </div>
+
+    <div class="slide content-slide" data-slide="3">
+      <h2 class="slide-title">Learning Objectives</h2>
+      <div class="slide-content">
+        <p>By the end of today's class, you will be able to:</p>
+<p>1. <strong>Apply</strong> Senge's concept of personal mastery to connect your authentic values with your career goals and development strategies</p>
+<p>2. <strong>Analyze</strong> your own motivation patterns using Pink's Drive theory (autonomy, mastery, purpose) and design strategies to cultivate intrinsic motivation in your career</p>
+<p>3. <strong>Create</strong> a sustainable personal learning system that supports continuous professional development beyond graduation</p>
+<p>4. <strong>Synthesize</strong> all course learning (self-assessments, mentorship insights, frameworks) into a coherent professional identity and development narrative</p>
+<p>5. <strong>Prepare</strong> to articulate your integrated development plan in your final presentation with confidence and authenticity</p>
+<p><strong>Today is about bringing it all together</strong> - not learning new concepts, but integrating what you've already discovered about yourself.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="4">
+      <h2 class="slide-title">Assessment Connection - This Week is Critical</h2>
+      <div class="stats-banner">
+        <div class="stat-item">
+          <div class="stat-number">Personal and Professional Development Plan (40% of grade)</div>
+          <div class="stat-label">DUE</div>
+          <div class="stat-description">Friday, November 28, 2025 (THIS WEEK!)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Final Oral Exam (30% of grade)</div>
+          <div class="stat-label">DATE</div>
+          <div class="stat-description">Exam period (15 minutes: 10-min presentation + 5-min Q&A)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Mentorship Program (20% of grade)</div>
+          <div class="stat-label">ENDS</div>
+          <div class="stat-description">November 30, 2025</div>
+        </div></div>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">The Integration Challenge</h2>
+      <div class="slide-content">
+        <p><strong>You've done so much this semester:</strong></p>
+<ul>
+<li>Completed 4-5 self-assessments (MBTI, VIA, CliftonStrengths, Holland Code, Learning Styles)</li>
+<li>Had 4+ meetings with industry mentors</li>
+<li>Learned frameworks: growth mindset, emotional intelligence, time management, reflection models</li>
+<li>Visited MISA Company, heard from guest speakers</li>
+<li>Drafted goals, reflected on experiences, explored career paths</li>
+</ul>
+<p><strong>But here's the challenge most students face:</strong></p>
+<p><strong>Information overload ≠ Integration</strong></p>
+<p>You have pieces. Today we build the <strong>coherent whole</strong>.</p>
+<p>Like assembling a puzzle - each piece (assessment, framework, mentor advice) only makes sense when you see how it fits into YOUR unique picture.</p>
+<p><strong>Question for reflection:</strong> As you look at all your course materials and notes, what patterns do you see about who you're becoming?</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="6">
+      <h2 class="slide-title">Personal Mastery - Senge's Framework</h2>
+      <div class="slide-content">
+        <p><strong>Personal mastery</strong> is the discipline of continually clarifying and deepening our personal vision, of focusing our energies, of developing patience, and of seeing reality objectively (Senge, 2006).</p>
+<p><strong>Two key components:</strong></p>
+<p><strong>1. Personal Vision</strong> → Who you want to become, what you want to create</p>
+<ul>
+<li>Not just career goals (external achievements)</li>
+<li>But your values, the person you aspire to be (internal development)</li>
+</ul>
+<p><strong>2. Creative Tension</strong> → The gap between current reality and your vision</p>
+<ul>
+<li>This gap is GOOD - it creates energy for growth</li>
+<li>People with personal mastery use this tension productively</li>
+<li>They don't feel frustrated by the gap; they're energized by it</li>
+</ul>
+<p><strong>Senge's insight:</strong> Personal mastery is not something you "achieve" and finish. It's a lifelong discipline - a way of being, not a destination.</p>
+<p><strong>Vietnamese context:</strong> The Vietnamese proverb "Học, học nữa, học mãi" (Study, study more, study forever) - attributed to President Ho Chi Minh - reflects this same philosophy of lifelong learning and continuous self-improvement.</p>
+<p>*Senge, P. M. (2006). The fifth discipline: The art and practice of the learning organization. Currency/Doubleday.*</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="7">
+      <h2 class="slide-title">Personal Vision vs. Goals - Understanding the Difference</h2>
+      <table class="vocab-table"><thead><tr><th>Personal Vision</th><th>Goals</th></tr></thead><tbody><tr><td><strong>WHO you want to become</strong></td><td><strong>WHAT you want to achieve</strong></td></tr><tr><td>Values-driven</td><td>Results-driven</td></tr><tr><td>Internal transformation</td><td>External accomplishment</td></tr><tr><td>Guides all decisions</td><td>Specific milestones</td></tr><tr><td>Relatively stable over time</td><td>Change as you progress</td></tr><tr><td>Example: "I want to be someone who creates positive impact through ethical business leadership"</td><td>Example: "Get MBA from top-ranked school by 2028"</td></tr></tbody></table>
+    </div>
+
+    <div class="slide content-slide" data-slide="8">
+      <h2 class="slide-title">Connecting Values to Career Goals - The Alignment Framework</h2>
+      <div class="slide-content">
+        <p><strong>The alignment framework</strong> helps you check if your career goals truly match your values:</p>
+<p><strong>Step 1: Identify Core Values</strong></p>
+<ul>
+<li>From Week 5 self-assessments: What matters most to you?</li>
+<li>VIA top strengths, MBTI preferences, mentor conversations</li>
+<li>Examples: Creativity, helping others, autonomy, security, achievement, innovation</li>
+</ul>
+<p><strong>Step 2: Examine Career Goals</strong></p>
+<ul>
+<li>List your 1-year, 3-year, 5-year goals from Development Plan</li>
+<li>For EACH goal ask: "Why does this matter to me?"</li>
+</ul>
+<p><strong>Step 3: Check Alignment</strong></p>
+<ul>
+<li>Do your goals express your values?</li>
+<li>Or are they based on others' expectations? (family pressure, social status, etc.)</li>
+</ul>
+<p><strong>Step 4: Adjust for Authenticity</strong></p>
+<ul>
+<li>Redesign goals that don't align</li>
+<li>Add "how" strategies that honor your values</li>
+</ul>
+<p><strong>Real example - Vietnamese graduate:</strong></p>
+<p>Loan's MBTI: ENFP (values creativity, people, meaning)</p>
+<p>Initial goal: "Become senior accountant at Big 4 firm"</p>
+<p>After values check: Realized she valued creativity more than stability</p>
+<p>Revised goal: "Join marketing department of social enterprise, use data analytics to measure community impact"</p>
+<p><strong>The result:</strong> Goals that energize you, not exhaust you.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="9">
+      <h2 class="slide-title">Creative Tension - Using the Gap as Fuel</h2>
+      <div class="slide-content">
+        <p><strong>Senge's concept of creative tension:</strong></p>
+<p>```</p>
+<p>Current Reality ←----------[CREATIVE TENSION]----------→ Personal Vision</p>
+<p>   (Where you are)                                       (Where you want to be)</p>
+<p>```</p>
+<p><strong>Two responses to this gap:</strong></p>
+<p>❌ <strong>Emotional tension</strong> (anxiety, frustration, giving up)</p>
+<ul>
+<li>"I'm not good enough"</li>
+<li>"The vision is unrealistic"</li>
+<li>Lower your vision to match current reality</li>
+</ul>
+<p>✅ <strong>Creative tension</strong> (energy, curiosity, commitment)</p>
+<ul>
+<li>"What can I learn to bridge this gap?"</li>
+<li>"Who can help me grow?"</li>
+<li>Maintain vision, develop current reality toward it</li>
+</ul>
+<p><strong>Vietnamese example - VinFast story:</strong></p>
+<p>In 2017, VinGroup's vision: Become Vietnam's first global automotive brand</p>
+<p>Current reality: Zero car manufacturing experience</p>
+<p><strong>Creative tension response:</strong> Hired international experts, built massive R&D facility, invested $3.5B, launched first models in 2019, entered US market 2023</p>
+<p>Result: Vision maintained, reality transformed (not perfect, but progressing)</p>
+<p><strong>Your development plan:</strong> The gap between "who you are today" and "who you want to become" should ENERGIZE you, not discourage you. That's personal mastery in action.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="10">
+      <h2 class="slide-title">Pink's Drive Theory - Beyond Carrots and Sticks</h2>
+      <div class="slide-content">
+        <p><strong>Daniel Pink's research:</strong> Traditional motivation (rewards and punishments) doesn't work for complex, creative work in the 21st century.</p>
+<p><strong>Instead, intrinsic motivation comes from three elements:</strong></p>
+<p><strong>1. AUTONOMY</strong> - The desire to direct our own lives</p>
+<ul>
+<li>Choice over what you work on, when, how, and with whom</li>
+<li>Feeling of control and self-direction</li>
+</ul>
+<p><strong>2. MASTERY</strong> - The urge to get better at something that matters</p>
+<ul>
+<li>Deep satisfaction from skill development</li>
+<li>Progress, challenge, and flow states</li>
+</ul>
+<p><strong>3. PURPOSE</strong> - The yearning to do what we do in service of something larger than ourselves</p>
+<ul>
+<li>Connection to meaningful impact</li>
+<li>Contributing to something beyond self-interest</li>
+</ul>
+<p><strong>Key insight:</strong> These three elements are UNIVERSAL human needs. When your career satisfies autonomy, mastery, and purpose, you're deeply motivated without needing external rewards.</p>
+<p><strong>Question for your development plan:</strong> Do your career goals provide opportunities for autonomy, mastery, and purpose? If not, how can you redesign them?</p>
+<p>*Pink, D. H. (2009). Drive: The surprising truth about what motivates us. Riverhead Books.*</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="11">
+      <h2 class="slide-title">Autonomy in Vietnamese Workplace Context</h2>
+      <div class="slide-content">
+        <p><strong>The autonomy paradox in Vietnam:</strong></p>
+<p>Traditional Vietnamese workplace culture often emphasizes:</p>
+<ul>
+<li>Respect for hierarchy and seniority</li>
+<li>Collective decision-making</li>
+<li>Following established procedures</li>
+</ul>
+<p>But modern Vietnamese workers increasingly value autonomy:</p>
+<ul>
+<li><strong>92% of Vietnamese workers</strong> willing to adapt to new work practices (PwC, 2024)</li>
+<li>Tech sector shows "hunger to learn" with employee-driven skill development</li>
+<li>Startup ecosystem growing (entrepreneurial autonomy)</li>
+</ul>
+<p><strong>How to seek autonomy while respecting culture:</strong></p>
+<ul>
+<li><strong>Start small:</strong> Ask for autonomy on HOW you complete assigned work, not WHAT you work on</li>
+<li><strong>Prove reliability:</strong> Autonomy is earned through demonstrating competence</li>
+<li><strong>Frame as initiative:</strong> "I'd like to propose an approach..." (respectful, not demanding)</li>
+<li><strong>Choose autonomy-friendly employers:</strong> Research company culture before accepting offers</li>
+</ul>
+<p><strong>Vietnamese company example - MSD Vietnam:</strong></p>
+<p>Offers "Pull & Personalized (P&P) learning programs" where employees choose their own development paths based on interests and career goals - autonomy within structure.</p>
+<p><strong>Development plan application:</strong> When evaluating job opportunities, assess autonomy level. Will you have input into your projects? Learning paths? Work methods?</p>
+<p>*PwC. (2024). Asia Pacific Workforce Hopes and Fears Survey 2024. https://www.pwc.com/vn*</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="12">
+      <h2 class="slide-title">Mastery - The Learning Organization Mindset</h2>
+      <div class="slide-content">
+        <p><strong>Mastery</strong> = The urge to continually improve at something that matters to you</p>
+<p><strong>Characteristics of mastery-seeking professionals:</strong></p>
+<p>1. <strong>Growth mindset</strong> (Week 9): Believe abilities can be developed through effort</p>
+<p>2. <strong>Deliberate practice:</strong> Focused, effortful practice with feedback</p>
+<p>3. <strong>Long time horizon:</strong> Willing to invest years, not seeking quick wins</p>
+<p>4. <strong>Intrinsic satisfaction:</strong> Enjoy the process of improvement itself</p>
+<p><strong>Vietnam's mastery culture - The evidence:</strong></p>
+<p>📊 <strong>Vietnam Corporate Training Market:</strong> USD 600 million in 2022, growing 7.6% annually through 2028 (Ken Research, 2024)</p>
+<ul>
+<li>Leadership development programs most popular</li>
+<li>Companies investing heavily in employee skill-building</li>
+</ul>
+<p>📊 <strong>Government investment:</strong> $1.5 billion allocated in 2023 for workforce development programs</p>
+<p>📊 <strong>Tech talent:</strong> 111% increase in international hiring of high-skilled Vietnamese tech workers in 2024</p>
+<ul>
+<li>Vietnamese developers known for continuous learning culture</li>
+<li>Companies sponsor courses, host hackathons, support certifications</li>
+</ul>
+<p><strong>What this means for you:</strong> Employers in Vietnam increasingly VALUE and SUPPORT mastery-seeking employees. Your commitment to continuous learning (demonstrated through this course!) is a career asset.</p>
+<p><strong>Action:</strong> In your Development Plan, include specific mastery goals - not just "learn Python" but "achieve intermediate proficiency in Python for data analysis within 12 months through weekly practice and project application."</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="13">
+      <h2 class="slide-title">Purpose - The Deepest Motivator</h2>
+      <div class="slide-content">
+        <p><strong>Purpose</strong> = Doing what you do in service of something larger than yourself</p>
+<p><strong>Research findings:</strong></p>
+<ul>
+<li>Employees who find purpose in work are 3x more likely to stay with organization</li>
+<li>Purpose-driven employees show 64% higher job satisfaction</li>
+<li>Purpose reduces burnout and increases resilience during challenges</li>
+</ul>
+<p><strong>Three levels of purpose in work:</strong></p>
+<p><strong>1. Personal Impact</strong></p>
+<ul>
+<li>Direct effect on customers, colleagues, community</li>
+<li>Example: "My financial analysis helps clients make better investment decisions"</li>
+</ul>
+<p><strong>2. Organizational Mission</strong></p>
+<ul>
+<li>Company's contribution to society</li>
+<li>Example: Working for social enterprise addressing education inequality</li>
+</ul>
+<p><strong>3. Societal Contribution</strong></p>
+<ul>
+<li>Your career's broader impact</li>
+<li>Example: "Through my career in sustainable business, I contribute to Vietnam's environmental future"</li>
+</ul>
+<p><strong>Vietnamese cultural strength - Purpose through contribution:</strong></p>
+<p>Vietnamese culture traditionally emphasizes family and community contribution ("nghĩa vụ với gia đình và xã hội"). This cultural value aligns perfectly with purpose-driven career development.</p>
+<p><strong>Development Plan reflection:</strong></p>
+<ul>
+<li>What problem do you want to help solve through your career?</li>
+<li>Who will benefit from your professional contributions?</li>
+<li>How does your work connect to something larger than yourself?</li>
+</ul>
+<p>These aren't optional "nice to have" reflections - they're ESSENTIAL for sustained motivation over a 40-year career.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="14">
+      <h2 class="slide-title">Activity - Mapping Your Drive Elements</h2>
+      <table class="vocab-table"><thead><tr><th>AUTONOMY</th><th>MASTERY</th><th>PURPOSE</th></tr></thead><tbody><tr><td>Where in my life do I currently have autonomy? Where do I want more?</td><td>What am I working to master right now? What do I want to master next?</td><td>What larger purpose drives me? How does my career connect to it?</td></tr></tbody></table>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="15">
+      <h2 class="slide-title">From Course Learning to Lifelong System</h2>
+      <div class="slide-content">
+        <p><strong>The critical transition you're facing:</strong></p>
+<p><strong>In this course:</strong></p>
+<ul>
+<li>Weekly topics assigned</li>
+<li>Readings provided</li>
+<li>Assignments structured</li>
+<li>Instructor guides you</li>
+</ul>
+<p><strong>After graduation:</strong></p>
+<ul>
+<li>No weekly topics - you choose</li>
+<li>No reading lists - you search</li>
+<li>No assignments - you self-direct</li>
+<li>No instructor - you guide yourself</li>
+</ul>
+<p><strong>The question:</strong> How do you maintain continuous learning when the structure disappears?</p>
+<p><strong>Answer:</strong> Build a <strong>sustainable personal learning system</strong> - habits and practices that continue without external accountability.</p>
+<p><strong>Components of a sustainable learning system:</strong></p>
+<p>1. <strong>Regular learning time blocks</strong> (like you schedule meetings)</p>
+<p>2. <strong>Diverse learning sources</strong> (books, courses, mentors, practice, reflection)</p>
+<p>3. <strong>Tracking and reflection</strong> (document what you learn and how you apply it)</p>
+<p>4. <strong>Application focus</strong> (learn → practice → reflect → adjust)</p>
+<p>5. <strong>Community connection</strong> (learn with others, share insights)</p>
+<p><strong>Vietnamese example:</strong> Vietnam's online education market expected to generate US$364.7 million in 2024, growing 11.46% annually through 2029. Vietnamese professionals increasingly use platforms like Coursera, Udemy, Codecademy for self-directed learning.</p>
+<p>The infrastructure exists. You need the system to use it effectively.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="16">
+      <h2 class="slide-title">The Learning Habit Stack - Making It Automatic</h2>
+      <div class="slide-content">
+        <p><strong>Applying Week 8's habit stacking to continuous learning:</strong></p>
+<p><strong>Habit stacking formula:</strong></p>
+<p>"After [CURRENT HABIT], I will [NEW LEARNING HABIT]"</p>
+<p><strong>Examples for professional development:</strong></p>
+<p>📚 <strong>Daily micro-learning:</strong></p>
+<p>"After I pour my morning coffee, I will read one Harvard Business Review article on my phone (10 minutes)"</p>
+<p>✍️ <strong>Weekly reflection:</strong></p>
+<p>"After my Friday team meeting ends, I will spend 15 minutes journaling about what I learned this week"</p>
+<p>🎧 <strong>Commute learning:</strong></p>
+<p>"During my commute (bus/grab), I will listen to business podcasts or audiobooks"</p>
+<p>💻 <strong>Monthly skill practice:</strong></p>
+<p>"On the first Sunday of each month, I will spend 2 hours on a Coursera course related to my career goals"</p>
+<p>🤝 <strong>Quarterly mentor check-in:</strong></p>
+<p>"Every quarter (Jan/Apr/Jul/Oct), I will reach out to a mentor or senior colleague for a coffee chat"</p>
+<p><strong>Key principle:</strong> Start small and consistent (10 minutes daily) rather than ambitious and sporadic (5 hours once a month).</p>
+<p><strong>James Clear's research</strong> (Week 8): Small habits compound. 1% improvement daily = 37x better in a year.</p>
+<p><strong>Action for Development Plan:</strong> Include specific learning habits (what, when, how often) in your implementation section. Make learning AUTOMATIC through habit design.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="17">
+      <h2 class="slide-title">The Five Sources of Continuous Learning</h2>
+      <div class="stats-banner"></div>
+    </div>
+
+    <div class="slide content-slide" data-slide="18">
+      <h2 class="slide-title">Reflection as the Core of Your Learning System</h2>
+      <div class="slide-content">
+        <p><strong>Why reflection is the most important learning habit:</strong></p>
+<p>Without reflection, experience is just "things that happened."</p>
+<p>With reflection, experience becomes wisdom.</p>
+<p><strong>Gibbs' Reflective Cycle (Week 3) applied to career:</strong></p>
+<p>After any significant experience (project, meeting, success, failure):</p>
+<p>1. <strong>Description:</strong> What happened?</p>
+<p>2. <strong>Feelings:</strong> What did I think and feel?</p>
+<p>3. <strong>Evaluation:</strong> What was good/bad about the experience?</p>
+<p>4. <strong>Analysis:</strong> What sense can I make of it?</p>
+<p>5. <strong>Conclusion:</strong> What else could I have done?</p>
+<p>6. <strong>Action Plan:</strong> What will I do differently next time?</p>
+<p><strong>Make reflection a non-negotiable habit:</strong></p>
+<p>📝 <strong>Daily reflection</strong> (5 minutes before bed):</p>
+<ul>
+<li>What went well today?</li>
+<li>What did I learn?</li>
+<li>What will I do differently tomorrow?</li>
+</ul>
+<p>📝 <strong>Weekly reflection</strong> (15 minutes Friday afternoon):</p>
+<ul>
+<li>Key learnings this week</li>
+<li>How I grew</li>
+<li>Focus areas for next week</li>
+</ul>
+<p>📝 <strong>Monthly reflection</strong> (30 minutes end of month):</p>
+<ul>
+<li>Progress toward goals</li>
+<li>Patterns I notice</li>
+<li>Adjustments needed</li>
+</ul>
+<p><strong>Vietnamese cultural alignment:</strong> Reflection aligns with Buddhist traditions of mindfulness and self-examination prevalent in Vietnamese culture. You're drawing on cultural strengths.</p>
+<p><strong>Development Plan application:</strong> Build reflection times into your plan. Schedule them like meetings with yourself.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="19">
+      <h2 class="slide-title">Synthesizing Your Semester Journey</h2>
+      <div class="slide-content">
+        <p><strong>You've covered tremendous ground this semester. Let's trace the arc:</strong></p>
+<p><strong>WEEKS 1-2:</strong> Foundation</p>
+<ul>
+<li>Career landscape, AI impact, future skills</li>
+<li>Reflective learning frameworks</li>
+</ul>
+<p><strong>WEEKS 3-5:</strong> Self-Discovery</p>
+<ul>
+<li>Learning styles, self-management</li>
+<li>Self-assessments: MBTI, VIA, CliftonStrengths, Holland Code</li>
+<li>Field trip to MISA Company</li>
+</ul>
+<p><strong>WEEKS 6-8:</strong> Skill Development</p>
+<ul>
+<li>Emotional intelligence, transferable skills</li>
+<li>Time and energy management</li>
+<li>Habit formation</li>
+</ul>
+<p><strong>WEEKS 9-10:</strong> Mindset and Vision</p>
+<ul>
+<li>Growth mindset, adaptability</li>
+<li>Guest speaker: Ms. Ha Linh</li>
+<li>Entrepreneurial thinking</li>
+</ul>
+<p><strong>WEEKS 11-12:</strong> Integration and Planning</p>
+<ul>
+<li>SMART goals, OKRs, development planning</li>
+<li><strong>Today:</strong> Connecting values, motivation, sustainable learning</li>
+</ul>
+<p><strong>The synthesis question:</strong> How does everything you learned connect to who you're becoming?</p>
+<p>Not separate topics, but <strong>integrated understanding:</strong></p>
+<ul>
+<li>Your MBTI preferences inform how you learn best (learning styles)</li>
+<li>Your VIA strengths guide your values and purpose</li>
+<li>Growth mindset enables mastery-seeking behavior</li>
+<li>Time management creates space for continuous learning</li>
+<li>Emotional intelligence supports relationship-building for social learning</li>
+<li>Mentorship provides ongoing guidance and accountability</li>
+</ul>
+<p><strong>These aren't isolated skills. They're an integrated professional identity.</strong></p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="20">
+      <h2 class="slide-title">From Components to Coherent Narrative</h2>
+      <div class="slide-content">
+        <p><strong>Your Development Plan should tell a coherent story:</strong></p>
+<p>❌ <strong>WRONG APPROACH - List of disconnected pieces:</strong></p>
+<p>"My MBTI is ENFJ. My top VIA strength is creativity. My goal is to work in marketing. I will improve my time management."</p>
+<p>✅ <strong>RIGHT APPROACH - Integrated narrative:</strong></p>
+<p>"As an ENFJ, I thrive in collaborative environments focused on people development. My top VIA strength of creativity aligns with my passion for innovative communication strategies. This understanding led me to refine my career goal: joining the marketing team of a social enterprise where I can use creative campaigns to drive social impact (combining creativity + people focus + purpose). To achieve this, I'm developing my data analytics skills to complement my creative strengths, using time-blocking to dedicate 5 hours weekly to Google Analytics certification, and seeking mentorship from marketing professionals in the impact sector."</p>
+<p><strong>See the difference?</strong></p>
+<ul>
+<li>First version: Data points</li>
+<li>Second version: Integrated professional identity with clear direction</li>
+</ul>
+<p><strong>Your Development Plan writing:</strong> Each section should reference and build on other sections. Create connections. Show how everything fits together.</p>
+<p><strong>Vietnamese proverb:</strong> "Một cây làm chẳng nên non, ba cây chụm lại nên hòn núi cao" (One tree cannot make a forest; three trees together make a high mountain)</p>
+<p>Your strengths, values, goals, and strategies are most powerful when integrated, not isolated.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="21">
+      <h2 class="slide-title">The Power of Authentic Integration</h2>
+      <div class="slide-content">
+        <p><strong>Authenticity = When your outer career matches your inner values and strengths</strong></p>
+<p><strong>What authentic integration looks like:</strong></p>
+<ul>
+<li>You can explain WHY your goals matter (not just what they are)</li>
+<li>Your strategies align with your personality (ENFP using creative approaches, not rigid schedules)</li>
+<li>You feel energized, not drained, when working toward goals</li>
+<li>Your mentor's advice resonates because it fits who you are</li>
+<li>You can articulate your development plan without memorizing it</li>
+</ul>
+<p><strong>What LACK of integration looks like:</strong></p>
+<ul>
+<li>Goals based on others' expectations (parents, society) not your values</li>
+<li>Strategies that ignore your strengths and working style</li>
+<li>Can't explain the deeper "why" behind your choices</li>
+<li>Feel constant internal conflict between what you "should" do and want to do</li>
+</ul>
+<p><strong>A real example - Vietnamese graduate (anonymized):</strong></p>
+<p>Minh's family expected: Big 4 accounting career (prestige, stability)</p>
+<p>Minh's MBTI + VIA showed: Creativity, curiosity, love of learning (ENTP + top strength: love of learning)</p>
+<p><strong>Integration crisis:</strong> Spent 2 years in audit role feeling misaligned</p>
+<p><strong>Authentic integration:</strong> Transitioned to business analytics in tech startup (uses analytical skills + creativity + continuous learning)</p>
+<p><strong>Result:</strong> Higher performance, deeper satisfaction, sustainable motivation</p>
+<p><strong>The lesson:</strong> Short-term discomfort of honest self-assessment beats long-term misery of inauthentic career path.</p>
+<p><strong>Your Development Plan:</strong> Make sure it reflects YOUR authentic self, not an idealized version you think others want to see.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="22">
+      <h2 class="slide-title">Preparing for Final Presentation - Telling Your Story</h2>
+      <div class="slide-content">
+        <p><strong>Final Oral Exam (30% of grade) - Presentation structure:</strong></p>
+<p><strong>Part 1: WHO YOU ARE</strong> (2 minutes)</p>
+<ul>
+<li>Key insights from self-assessments</li>
+<li>Your authentic values and strengths</li>
+<li>Brief personal story that illustrates who you are</li>
+</ul>
+<p><strong>Part 2: WHERE YOU'RE GOING</strong> (3 minutes)</p>
+<ul>
+<li>Career vision (5-year)</li>
+<li>1-3-5 year goals (select most important, don't list all)</li>
+<li>Why these goals align with your values</li>
+</ul>
+<p><strong>Part 3: HOW YOU'LL GET THERE</strong> (3 minutes)</p>
+<ul>
+<li>Key strategies and action steps</li>
+<li>How you'll continue learning (your sustainable system)</li>
+<li>How mentorship influenced your thinking</li>
+</ul>
+<p><strong>Part 4: INTEGRATION & GROWTH</strong> (2 minutes)</p>
+<ul>
+<li>How course learning transformed your thinking</li>
+<li>Your commitment to continuous development</li>
+<li>Closing with purpose and vision</li>
+</ul>
+<p><strong>Presentation tips:</strong></p>
+<ul>
+<li>Tell stories, don't just list facts</li>
+<li>Use specific examples from your semester (mentorship insights, field trip observations)</li>
+<li>Show vulnerability (growth areas) along with strengths</li>
+<li>Make eye contact and speak conversationally</li>
+<li>Practice out loud multiple times (not just silently reading)</li>
+</ul>
+<p><strong>Tutorial today:</strong> You'll practice this presentation structure with peer feedback.</p>
+<p><strong>Reference:</strong> Assessment Handbook Section 4 for complete rubric and requirements.</p>
+      </div>
+      
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="23">
+      <h2 class="slide-title">Key Concepts Synthesis</h2>
+      <div class="stats-banner"></div>
+    </div>
+
+    <div class="slide content-slide" data-slide="24">
+      <h2 class="slide-title">Tutorial Preview - Practice Your Presentation</h2>
+      <div class="slide-content">
+        <p><strong>What we'll do in tutorial today:</strong></p>
+<p><strong>OPENING (10 minutes)</strong></p>
+<ul>
+<li>Quick review of presentation structure (Assessment Handbook Section 4)</li>
+<li>Simplified rubric for peer feedback (4 key criteria)</li>
+</ul>
+<p><strong>MAIN ACTIVITY: Presentation Practice (55 minutes)</strong></p>
+<ul>
+<li>Pairs: Each person presents 7-minute version of final presentation</li>
+<li>Partner provides feedback using rubric criteria</li>
+<li>Revise and improve based on feedback</li>
+<li>Share one key insight with full group</li>
+</ul>
+<p><strong>Why practice matters:</strong></p>
+<ul>
+<li>Reduces anxiety for actual exam</li>
+<li>Identifies weak areas before final version</li>
+<li>Peer feedback shows what's clear vs. confusing</li>
+<li>Speaking out loud reveals gaps in logic</li>
+</ul>
+<p><strong>QUIZ PREP (15 minutes)</strong></p>
+<ul>
+<li>8 practice questions covering Weeks 9-12 content</li>
+<li>Review answers and key concepts</li>
+</ul>
+<p><strong>WRAP-UP (10 minutes)</strong></p>
+<ul>
+<li>Self-assessment: Is your Development Plan coherent and authentic?</li>
+<li>Final preparation checklist for Development Plan submission</li>
+</ul>
+<p><strong>What to bring:</strong> Draft of Development Plan (even if incomplete), notes on your presentation structure</p>
+      </div>
+      
+    </div>
+
+    <div class="slide content-slide" data-slide="25">
+      <h2 class="slide-title">Assessment Bridge - Your Final Week Checklist</h2>
+      <div class="slide-content">
+        <p><strong>Critical tasks for this week:</strong></p>
+<p>☐ <strong>COMPLETE Personal and Professional Development Plan</strong></p>
+<p>   - Due: Friday, November 28, 2025</p>
+<p>   - All required sections (see Assessment Handbook Section 3)</p>
+<p>   - Integration and coherent narrative</p>
+<p>   - Authentic reflection (200 words)</p>
+<p>   - Mentor evidence from all 4 meetings</p>
+<p>☐ <strong>PREPARE Final Presentation</strong></p>
+<p>   - 10-12 slides (professional design)</p>
+<p>   - Practice out loud multiple times</p>
+<p>   - Time yourself (must be under 10 minutes)</p>
+<p>   - Prepare for Q&A (anticipate instructor questions)</p>
+<p>☐ <strong>COMPLETE Final Mentorship Documentation</strong></p>
+<p>   - 4th meeting reflection (if not yet submitted)</p>
+<p>   - Program ends November 30</p>
+<p>   - Thank your mentor professionally</p>
+<p>☐ <strong>REFLECT on Field Trip + Guest Speaker</strong> (if not yet done)</p>
+<p>   - Individual Assignment (Reflective Essay) due date TBD</p>
+<p>   - Review Week 3 reflection frameworks</p>
+<p>   - Connect experiences to career preparation</p>
+<p><strong>Time management:</strong></p>
+<ul>
+<li>Plan to spend 8-10 hours this week on Development Plan finalization</li>
+<li>Plan to spend 5-6 hours on presentation preparation and practice</li>
+</ul>
+<p><strong>Support available:</strong> Office hours, peer study groups, writing support resources (Assessment Handbook Appendix)</p>
+      </div>
+      
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="26">
+      <h2 class="slide-title">The Beginning, Not the End</h2>
+      <div class="stats-banner"></div>
+    </div>
+
+    <div class="slide content-slide" data-slide="27">
+      <h2 class="slide-title">Questions and Reflection</h2>
+      <div class="slide-content">
+        <p><strong>Before we move to tutorial, take 3 minutes for silent reflection:</strong></p>
+<p>Write brief answers to these integration questions:</p>
+<p>1. <strong>Values-Career Alignment:</strong></p>
+<p>   - Does my Development Plan truly reflect my authentic values and strengths?</p>
+<p>   - If not, what needs to change?</p>
+<p>2. <strong>Motivation Design:</strong></p>
+<p>   - Do my career goals provide opportunities for autonomy, mastery, and purpose?</p>
+<p>   - Which element needs more emphasis?</p>
+<p>3. <strong>Learning System:</strong></p>
+<p>   - What specific habits will I maintain after graduation to ensure continuous learning?</p>
+<p>   - Have I scheduled these into my weekly routine?</p>
+<p>4. <strong>Presentation Readiness:</strong></p>
+<p>   - Can I clearly articulate WHO I am, WHERE I'm going, and HOW I'll get there?</p>
+<p>   - What part of my story needs more work?</p>
+<p><strong>After reflection: Questions for instructor?</strong></p>
+<p>Topics for clarification:</p>
+<ul>
+<li>Development Plan requirements</li>
+<li>Presentation expectations</li>
+<li>Integration of course concepts</li>
+<li>Any content from today's lecture</li>
+</ul>
+<p><strong>Then: Transition to tutorial for presentation practice!</strong></p>
+      </div>
+      
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>
