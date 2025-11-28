@@ -60,6 +60,7 @@ Generate world-class university course content with research validation and asse
 | Research handoff | `docs/RESEARCH-HANDOFF-GUIDE.md` |
 | Troubleshooting | `docs/TROUBLESHOOTING.md` |
 | Writing skills/prompts | `.claude/skills/writing-instructions.md` |
+| LLM prompting guidelines | `.claude/skills/self-prompting-instructions.md` |
 
 ## Coding Standards
 
