@@ -1,0 +1,69 @@
+// Week 4 Quiz: Persuasive Written Communication
+// Generated from quiz-questions.md
+// Questions: 10
+
+$CATEGORY: Week 4
+
+::SCQA Framework Components::What do the letters S, C, Q, and A stand for in the SCQA framework? {
+~Structure, Communication, Query, Analysis #Incorrect. While these terms relate to business writing, they don't represent the SCQA framework taught by Barbara Minto.
+=Situation, Complication, Question, Answer #Correct! SCQA stands for Situation (context the reader knows), Complication (what has changed), Question (the explicit issue), and Answer (your recommendation).
+~Summary, Context, Question, Action #Incorrect. While "summary" and "action" appear in business writing, the SCQA framework specifically uses Situation and Answer.
+~Subject, Conflict, Query, Argument #Incorrect. These components don't match the SCQA framework structure. The framework focuses on building engagement through Situation, Complication, Question, and Answer.
+}
+
+::Cialdini's Six Principles - Identification::Which of the following is NOT one of Cialdini's six principles of influence? {
+~Reciprocity #Incorrect. Reciprocity IS one of Cialdini's six principles—people feel obligated to return favors.
+~Authority #Incorrect. Authority IS one of Cialdini's six principles—people defer to credible experts.
+=Transparency #Correct! Transparency is not one of Cialdini's six principles. The six are\: Reciprocity, Commitment & Consistency, Social Proof, Authority, Liking, and Scarcity.
+~Scarcity #Incorrect. Scarcity IS one of Cialdini's six principles—limited availability increases perceived value.
+}
+
+::The 8 S's - Specificity::According to Birchard's 8 S's framework, what does "Specificity" mean? {
+~Writing in a simple, straightforward manner #Incorrect. This describes "Simplicity," not Specificity. Simplicity focuses on short sentences and familiar words.
+=Using concrete words instead of abstract ones (e.g., "pelican" beats "bird") #Correct! Specificity means using concrete, specific words rather than abstract ones. Birchard notes that concrete words activate more neurons than abstract ones, making writing more engaging and memorable.
+~Creating unexpected content to engage readers #Incorrect. This describes "Surprise," which involves unexpected content that creates engagement.
+~Using emotionally evocative language #Incorrect. This describes "Stirring Language," which involves emotional connotation processed rapidly by the brain.
+}
+
+::Pyramid Principle Structure::According to Barbara Minto's Pyramid Principle, where should the main recommendation appear in a business memo? {
+~In the final paragraph as a conclusion #Incorrect. This is academic essay structure. The Pyramid Principle specifically requires starting with the answer, not building to it.
+=In the first paragraph or opening #Correct! The Pyramid Principle's core principle is "Start with the answer"—the main recommendation should appear at the apex (top) of the pyramid, which means the first paragraph.
+~After presenting all supporting evidence #Incorrect. This approach buries the recommendation. The Pyramid Principle puts the conclusion first, then provides supporting evidence below.
+~In the middle, following background context #Incorrect. The Pyramid Principle avoids lengthy background context before the recommendation. Executives need the decision point immediately.
+}
+
+::What? So What? Now What? - Sequence::In Matt Abrahams' "What? So What? Now What?" framework, what does "So What?" refer to? {
+~The specific action you want the reader to take #Incorrect. This describes "Now What?"—the specific next action you want.
+~The information or idea you're conveying #Incorrect. This describes "What?"—the core information or idea you're communicating.
+=The relevance and value for your audience #Correct! "So What?" addresses the relevance for your audience—why they should care and what value your idea brings to them.
+~The timeline for implementing your recommendation #Incorrect. While timeline might be part of "Now What?" (the action step), "So What?" specifically addresses audience relevance and benefit.
+}
+
+::Purpose of SCQA Framework::Why does the SCQA framework start with "Situation" (context the reader already knows) rather than immediately presenting the problem? {
+~To demonstrate the writer's knowledge of company background #Incorrect. Starting with Situation is not about proving knowledge—it's a strategic persuasion technique to build reader engagement.
+~To meet minimum word count requirements for memos #Incorrect. SCQA is about effective structure, not padding content. In fact, the framework encourages brevity.
+=To create agreement and establish common ground before introducing tension #Correct! Starting with undisputed facts creates agreement ("yes, we all know this is true"), which makes readers more receptive when you introduce the Complication (problem/tension). This builds engagement before presenting your recommendation.
+~To provide a historical record for future reference #Incorrect. While Situation provides context, its strategic purpose is building agreement and reader engagement, not documentation.
+}
+
+::Reciprocity Principle Application::According to Cialdini's reciprocity principle, offering to share conference takeaways with your team BEFORE requesting conference approval makes the request more persuasive. {
+TRUE #Correct! The reciprocity principle states that people feel obligated to return favors. By offering value first (sharing takeaways), you trigger the psychological response where the decision-maker feels more inclined to grant your request. This was demonstrated in the lecture's conference memo example, where offering a 30-minute workshop increased approval likelihood.
+}
+
+::The 8 S's - Simplicity Purpose::According to Birchard's research, why does "Simplicity" (short sentences and familiar words) make business writing more persuasive? {
+~It makes the writer appear less educated and more relatable #Incorrect. Simplicity is not about appearing less educated—it's about strategic persuasion based on neuroscience. Clear writing demonstrates respect for the reader's time.
+=It reduces cognitive load, making readers more likely to agree ("processing fluency") #Correct! Birchard's neuroscience research shows that simplicity reduces cognitive load (called "processing fluency"). When content is easy to process, readers are more likely to agree with it because their brains experience less friction.
+~It helps meet tight word count limits in business communications #Incorrect. While simplicity may result in shorter documents, the persuasive power comes from reduced cognitive load, not word count management.
+~It prevents legal liability from complex contract language #Incorrect. Legal clarity is important, but Birchard's research focuses on persuasion through brain-friendly writing, not legal protection.
+}
+
+::Pyramid Principle vs. Academic Writing::The Pyramid Principle recommends building suspense by presenting evidence first and revealing the recommendation at the end, similar to academic essay structure. {
+FALSE #Correct! The Pyramid Principle is the OPPOSITE of academic structure. Academic essays often build to a conclusion (thesis at end), but the Pyramid Principle explicitly requires "Start with the answer." Executives read 200+ emails daily—they need the recommendation immediately in the first paragraph, with supporting evidence following below. Suspense works in mystery novels; it fails in business memos.
+}
+
+::Distinguishing Cialdini's Principles::A memo states\: "Three direct competitors launched this initiative last quarter with strong results." Which of Cialdini's principles does this statement primarily leverage? {
+~Authority—citing expert sources #Incorrect. Authority involves citing credible experts or establishing your own expertise. Mentioning competitors' actions is about what others are doing, not expert credibility.
+=Social Proof—showing others have taken this action #Correct! This is Social Proof—people follow others' actions. By showing that "three competitors" already adopted the initiative, you trigger the psychological response where readers think "if others are doing it, it must be worthwhile."
+~Scarcity—emphasizing limited availability #Incorrect. Scarcity emphasizes limited availability or time constraints (e.g., "discount ends Friday"). This statement is about what others have done, not limited resources.
+~Reciprocity—offering value before asking #Incorrect. Reciprocity involves giving value first (e.g., "I've prepared a plan"). This statement demonstrates what competitors are doing, not offering something to the reader.
+}

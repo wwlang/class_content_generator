@@ -1,0 +1,74 @@
+// Week 7: Persuasive Presentations Quiz
+// BCI2AU Business Communication
+// 10 questions: 7 MC, 2 T/F, 1 Matching
+// Bloom's Distribution: 5 Remembering, 5 Understanding
+
+// Q1: Cialdini's Seventh Principle (MC, Remembering)
+::Q1 Cialdini Seventh Principle::Which principle did Cialdini add as the seventh principle in the 2021 expanded edition of "Influence"?{
+=Unity#Unity was added by Cialdini in 2021 as the seventh principle, focusing on shared group identity and belonging through "we" language and common values.
+~Consistency#Consistency is part of "Commitment and Consistency," one of the original six principles, not the seventh one added later.
+~Urgency#Urgency is not a separate Cialdini principle, though it relates to the Scarcity principle (limited time/quantity).
+~Transparency#Transparency is an ethical standard for using persuasion principles, not one of Cialdini's seven principles itself.
+}
+
+// Q2: SUCCESs Framework Acronym (MC, Remembering)
+::Q2 SUCCESs Second C::What does the second "C" in the SUCCESs framework stand for?{
+=Credible#The second "C" stands for Credible, which means building trust through sources, vivid details, or testable claims.
+~Concrete#Concrete is the FIRST "C" in SUCCESs (vivid, tangible details), not the second.
+~Consistent#Consistency is not part of the SUCCESs framework; the letters are Simple, Unexpected, Concrete, Credible, Emotional, Stories.
+~Clear#Clear is not part of the SUCCESs framework, though "Simple" (the "S") involves clarity.
+}
+
+// Q3: Aristotle's Three Appeals (MC, Remembering)
+::Q3 Ethos Credibility::Which of Aristotle's three rhetorical appeals focuses on establishing the speaker's credibility and character?{
+=Ethos#Ethos establishes the speaker's credibility through expertise, common ground, character, and appropriate balance.
+~Pathos#Pathos appeals to the audience's emotions, values, and beliefs—not the speaker's credibility.
+~Logos#Logos uses logic, data, and structured reasoning to support arguments—it focuses on evidence, not credibility.
+~Kairos#Kairos refers to timing and context; it's not one of Aristotle's three rhetorical appeals covered in this lecture.
+}
+
+// Q4: Matching Cialdini Principles (Matching, Remembering)
+::Q4 Match Cialdini Principles::Match each of Cialdini's principles to its correct definition. {
+=Reciprocity -> People feel obligated to return favors and concessions
+=Social Proof -> People look to others' actions to guide their own, especially under uncertainty
+=Scarcity -> People value what's rare or diminishing; fear of missing out drives action
+=Authority -> People defer to credible experts and legitimate authorities
+}
+
+// Q5: Change Storytelling Framework Steps (MC, Remembering)
+::Q5 Change Framework Sequence::According to Frei & Morriss's change storytelling framework, what is the correct sequence of steps?{
+=Understand simply → Honor past → Articulate mandate → Path forward#The sequence is\: 1) Understand deeply, describe simply, 2) Honor the past, 3) Articulate a persuasive mandate, 4) Lay out a rigorous and optimistic path forward.
+~Articulate mandate → Honor past → Understand simply → Path forward#This sequence starts with the mandate before establishing context, which creates resistance. The correct order builds foundation first.
+~Understand simply → Articulate mandate → Honor past → Path forward#Articulating the mandate (why change now) should come after honoring the past, not before—otherwise it dismisses what came before.
+~Honor past → Understand simply → Articulate mandate → Path forward#Honoring the past comes second, not first—you need to establish what the change is (step 1) before acknowledging history.
+}
+
+// Q6: Purpose of "Concrete" in SUCCESs (MC, Understanding)
+::Q6 Concrete Principle Purpose::Why is "concrete" important for making ideas stick, according to Heath & Heath?{
+=It provides vivid, tangible details that are easier to understand and remember than abstractions#Heath & Heath state "Abstraction makes it harder to understand and remember." Concrete details like "2 hours daily" (not "significant time") create vivid mental images that stick.
+~It makes complex ideas sound more professional and sophisticated#Concrete details actually make ideas MORE accessible, not more sophisticated—abstraction often sounds professional but is harder to remember.
+~It allows you to include more technical data and statistics#Being concrete means using specific examples and sensory details, not adding more statistics—"white Ford truck" beats "vehicle."
+~It helps you avoid revealing too much specific information#Concrete actually means being MORE specific, not less—it's about vivid details that make ideas real and memorable.
+}
+
+// Q7: Reciprocity Mechanism (T/F, Understanding)
+::Q7 Reciprocity Timing::The reciprocity principle works best when the gift or favor comes after you make your request, as a reward for compliance.{FALSE#Reciprocity requires that the gift or favor comes FIRST, before any request, with no apparent strings attached. This creates psychological obligation to reciprocate later. The restaurant mint study showed tips increased when mints were given before payment, not after. If the gift comes after compliance, it's a reward, not reciprocity.#This would reverse the reciprocity mechanism. The principle works because receiving something first creates a sense of obligation—the gift must precede the request for reciprocity to activate.}
+
+// Q8: Balancing Aristotle's Appeals (T/F, Understanding)
+::Q8 Logos Only Presentations::A presentation that is entirely focused on logos (data, statistics, research) is ideal for business audiences because they value logic and evidence.{FALSE#While business audiences value logos, Duarte's research shows that presentations need to balance all three appeals. A presentation that is "too analytical" (all logos) feels like a spreadsheet, doesn't inspire action, and is easily forgotten. You need ethos (credibility), pathos (emotional connection), and logos (evidence) working together.#This represents a common mistake in business communication. Pure logos presentations are boring and don't drive action—"Duarte warns about being too emotional OR too analytical." Balance is essential.}
+
+// Q9: Call to Action Design (MC, Understanding)
+::Q9 CTA Single Action::Why should a strong call to action offer a single specific action rather than multiple options?{
+=Decision fatigue from too many options reduces the likelihood of any action#Offering multiple options creates decision fatigue, which kills action. Columbia research shows specific CTAs are 3x more likely to generate action than vague or multi-option requests.
+~It shows you are confident and authoritative#While confidence matters, the main reason is psychological—multiple options create decision paralysis, not a lack of authority.
+~It saves time by shortening the presentation#The length of the presentation isn't the issue; it's about whether the audience actually takes action afterward.
+~It's easier to measure one action than several#While measurement is easier with one action, the primary reason is psychological effectiveness—reducing friction and decision fatigue increases compliance.
+}
+
+// Q10: Ethical Persuasion Standard (MC, Understanding)
+::Q10 Persuasion vs Manipulation::According to the lecture, what is the key distinction between ethical persuasion and manipulation?{
+=Persuasion respects autonomy and helps good decisions; manipulation deceives or coerces for selfish gain#The lecture states\: "Persuasion helps people make good decisions faster. Manipulation exploits shortcuts for selfish gain." The transparency test is\: Would you be comfortable if the audience knew your techniques?
+~Persuasion uses research citations; manipulation does not#Both persuasion and manipulation can use research—ethical distinction isn't about which techniques you use, but whether you're honest and serving mutual benefit.
+~Persuasion is used in business; manipulation is used in sales#Both business and sales can use ethical persuasion or unethical manipulation—the context doesn't determine ethics, the intent and honesty do.
+~Persuasion uses logos; manipulation uses pathos#Both persuasion and manipulation can use logos, pathos, or ethos—ethical distinction is about truthfulness and mutual benefit, not which appeals you employ.
+}

@@ -1,0 +1,73 @@
+// Week 5 Quiz: Oral Communication Fundamentals
+// BCI2AU Business Communication
+// Generated from quiz-questions.md
+
+$CATEGORY: Week 5
+
+::Communication Apprehension Definition::According to McCroskey (1977), what is communication apprehension?{
+~The inability to speak clearly in public settings #This describes a speech impediment or articulation problem, not communication apprehension. McCroskey's definition focuses on fear/anxiety, not physical ability to speak.
+=An individual's level of fear or anxiety associated with either real or anticipated communication with another person or persons #This is McCroskey's exact definition from his foundational 1977 paper. Communication apprehension is the fear or anxiety about communicating, whether the communication is happening now (real) or will happen later (anticipated).
+~A personality disorder that prevents effective communication #McCroskey defined communication apprehension as a normal individual difference, not a disorder. 10-20% of people experience significant CA—it's common, not pathological.
+~The physical symptoms of nervousness during presentations #While CA can cause physical symptoms (sweating, rapid heartbeat), McCroskey's definition focuses on the emotional state (fear/anxiety), not the symptoms themselves.
+}
+
+::Duarte's Three-Act Structure Components::What are the three parts of Duarte's presentation structure taught in this week's lecture?{
+~Introduction, Analysis, Conclusion #"Introduction, Analysis, Conclusion" is a common essay structure, but Duarte's framework uses different terminology specifically for presentations.
+~Hook, Body, Call to Action #While these are important presentation elements, they aren't Duarte's three-act terminology. The hook is part of the beginning, and call to action is part of the end.
+=Beginning, Middle, End #Duarte's three-act structure consists of Beginning (establish "What Is"), Middle (oscillate between "What Is" and "What Could Be"), and End (paint the "New Bliss").
+~Opening, Evidence, Closing #These are generic presentation terms. Duarte's specific framework is Beginning → Middle → End, adapted from Hollywood screenwriting.
+}
+
+::Opening Elements Identification::According to the lecture, which of the following is NOT one of the four elements of a strong opening?{
+~Hook #Hook IS one of the four elements—it grabs attention with a statistic, question, story, or bold claim.
+~Relevance #Relevance IS one of the four elements—it explains why this matters to THIS audience.
+=Summary of main points #The four elements are Hook, Relevance, Credibility, and Roadmap (preview structure). While roadmap previews where you're going, a detailed summary of main points comes at the end, not the opening.
+~Credibility #Credibility IS one of the four elements—it establishes why you're qualified to speak on this topic.
+}
+
+::Voice Delivery Pacing::What is the ideal speaking pace for presentations, according to the lecture?{
+~100-120 words per minute #100-120 wpm is too slow—audiences find this pace boring and lose energy. The lecture identified "too slow" as a delivery problem.
+=130-170 words per minute #The lecture specified 130-170 words per minute as the ideal conversational pace for presentations. This range feels natural and allows audiences to follow comfortably.
+~180-200 words per minute #180-200 wpm is too fast—this pace appears anxious and is hard for audiences to follow. The lecture noted "too fast" as a common nervous speaker problem.
+~As fast as possible to cover more content #Speaking faster doesn't improve presentations—it creates anxiety and reduces comprehension. The lecture emphasized strategic variation (speed up for excitement, slow down for emphasis) rather than constant speed.
+}
+
+::Trait CA vs State CA (Matching)::Match each type of communication apprehension to its correct definition\:
+
+1. Trait CA
+2. State CA
+
+A) Anxiety in specific, high-stakes situations; even confident communicators can experience this
+B) Consistent anxiety across all communication situations; part of your temperament, relatively stable over time{
+=Trait CA \= Enduring personality -> B
+=State CA \= Situational triggers -> A
+}
+
+::Anxiety vs Excitement Reframing::According to the lecture, anxiety and excitement are the same physiological state with different interpretations, and reframing anxiety as excitement is a research-backed technique for managing presentation nervousness.{
+TRUE#The lecture cited Alison Wood Brooks' research from Harvard Business School showing that anxiety and excitement create identical physiological responses (increased heart rate, adrenaline). The difference is cognitive interpretation. Reframing "I'm anxious" as "I'm excited" is a mental preparation technique in the Anxiety Management Plan (AMP). This reframe works because you're not fighting your body's response—you're changing how you interpret it.#Actually, this is true. The lecture specifically mentioned reframing as part of the mental preparation component of the AMP, based on Brooks' HBS research. Both anxiety and excitement involve arousal; the label you apply determines the experience.
+}
+
+::Purpose of Oscillation in Middle Section::Why does Duarte's "Sparkline" pattern of oscillating between "What Is" and "What Could Be" work better than simply listing solutions?{
+~It makes presentations longer and more detailed #Length is not the purpose. Oscillation creates engagement regardless of presentation length. The lecture emphasized that this pattern maintains attention, not extends duration.
+=It creates emotional tension through contrast that maintains audience attention #The lecture explained that "contrast creates emotional tension that maintains attention." Each oscillation between current problems ("What Is") and future possibilities ("What Could Be") keeps the audience engaged by showing the gap and the solution repeatedly. The Steve Jobs iPhone example demonstrated this\: problem with old phones → solution with iPhone, repeated for each feature.
+~It allows presenters to memorize their script more easily #Oscillation is about audience engagement, not presenter memorization. In fact, the lecture discouraged memorizing scripts word-for-word (sounds robotic).
+~It reduces the need for visual aids #Oscillation is a content structure technique, unrelated to visual aid requirements. The lecture discussed visuals as a separate topic for Week 6.
+}
+
+::Authentic vs Inauthentic Communication::According to Brodsky's research cited in the lecture, what is the difference between adapting your communication style for context (e.g., showing respect to professors) and being inauthentic?{
+~There is no difference—any adaptation is inauthentic #The lecture explicitly stated that "authenticity doesn't mean identical behavior in all contexts—it means genuine intent adapted to situation." Contextual adaptation is authentic.
+=Adaptation maintains genuine intent while adjusting to situation; inauthenticity involves deception or faking #Brodsky's quote emphasized that "authentic communication is contextual." The lecture distinguished between adjusting tone to show cultural respect (authentic—your intent is genuine) versus delivering a memorized, robotic presentation (inauthentic—you're performing, not communicating). The key is whether your intent and content remain true, even as style adapts.
+~Adaptation is only acceptable in Vietnamese culture #Contextual adaptation is universal, not culture-specific. While the lecture used Vietnamese culture as an example (adjusting for hierarchy), the principle applies globally.
+~Authenticity requires identical behavior in all contexts #This contradicts Brodsky's research. Authenticity varies by channel and audience—being genuine doesn't mean being identical across all situations.
+}
+
+::Reading from Slides::Reading directly from slides improves audience engagement because it ensures you don't forget important points.{
+FALSE#This is false. The lecture emphasized that reading from slides is a common presentation mistake that reduces engagement. When presenters read slides, audiences either (1) read ahead and stop listening, or (2) wonder why the presenter is needed at all. The lecture's "poor opening" example showed a presenter who merely recited slide content, which was boring and generic. Effective delivery requires knowing content well enough to speak naturally while slides provide visual support, not a script.#Actually, this is false. Reading from slides undermines engagement, not enhances it. The lecture distinguished between using slides as visual support (good) versus using them as a script (bad). Audiences can read faster than you speak—if you're just reading, they'll disengage. Preparation should make you confident enough to speak naturally, using slides as prompts, not scripts.
+}
+
+::Communication Contexts::Why might someone experience high communication apprehension during public speaking (presentations) but low communication apprehension in dyadic communication (one-on-one conversations)?{
+~Because public speaking requires more technical knowledge than conversations #CA is not about technical knowledge—it's about fear/anxiety related to the communication act itself. Both contexts can involve complex topics, but the anxiety differs based on the social setting.
+=Because communication apprehension is context-specific and manifests differently across the four communication contexts #The lecture explained that McCroskey identified four communication contexts (public speaking, group discussions, meetings, dyadic) and that individuals can have different CA levels across these contexts. This is called "state CA"—anxiety triggered by specific situations. Someone might be perfectly comfortable in intimate one-on-one settings but terrified of speaking to large audiences.
+~Because one-on-one conversations don't involve real communication #One-on-one conversations are a valid communication context (dyadic communication). The lecture specifically listed dyadic as one of McCroskey's four contexts.
+~Because public speaking always causes anxiety for everyone #While many people experience CA during public speaking, it's not universal. 10-20% experience significant CA, but responses vary. The question is about why the same person can have different anxiety levels across contexts.
+}

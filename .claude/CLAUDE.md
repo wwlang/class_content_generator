@@ -10,6 +10,8 @@ Generate world-class university course content with research validation and asse
 | Build syllabus | `/generate-syllabus` |
 | Generate week | `/generate-week [N]` |
 | Batch generate | `/generate-course [CODE]` |
+| Assessment handbook | `/generate-handbook [CODE]` |
+| Validate quality | `/validate-content [CODE]` |
 | Add speaker notes | `/add-speaker-notes [CODE] [N]` |
 | Export DOCX | `/export-docx [CODE] [N]` |
 | Research articles | `/research-topic "[Topic]" "[Concepts]"` |
@@ -28,13 +30,24 @@ Generate world-class university course content with research validation and asse
 
 ```
 1. /new-course [CODE] [Name]
-2. /generate-syllabus              (7-10 hrs with Desktop research)
-3. /generate-course [CODE]         (7-12 hrs batch)
+2. /generate-syllabus              (2-3 hrs with existing research)
+3. /generate-handbook [CODE]       (1-2 hrs - BEFORE weekly content)
+4. /generate-course [CODE]         (7-12 hrs batch)
    OR /generate-week [N]           (45-70 min each)
-4. /add-speaker-notes [CODE] [N]   (after Gemini PPTX)
-5. /export-docx [CODE] [N]
+5. /validate-content [CODE]        (5-10 min - AI quality checks)
 6. /enhance-coherence [CODE]       (15-30 min polish)
+7. Gemini handoff                  (lecture-content.md → PPTX visuals)
+8. /add-speaker-notes [CODE] [N]   (merge speaker notes into Gemini PPTX)
+9. /export-docx [CODE] [N]
 ```
+
+**Why this order:**
+- Syllabus provides course structure, assessment overview, and framework schedule
+- Assessment Handbook uses syllabus frameworks to create scenarios and rubrics
+- Tutorials reference Assessment Handbook scenarios and rubric criteria
+- Weekly content can now align with specific assessment requirements
+- **Validation catches issues BEFORE polishing** - fix critical problems first
+- Gemini creates visual slides from lecture-content.md; Claude adds speaker notes back
 
 ## Documentation
 

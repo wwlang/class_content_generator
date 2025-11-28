@@ -1,0 +1,68 @@
+// Week 6 Quiz: Visual Communication & Slide Design
+// Generated from quiz-questions.md
+// Questions: 10
+// Prepares for: Quiz 2 (Week 8)
+
+$CATEGORY: Week 6
+
+::Cognitive Theory of Multimedia Learning - Dual-Channel Processing::According to Mayer's Cognitive Theory of Multimedia Learning, what are the two processing channels in the human brain?{
+=Visual and auditory #Correct! Mayer's dual-channel processing assumption states that visual information (what you see) and auditory information (what you hear) are processed through separate channels in the brain.
+~Text and graphics #Incorrect. Text and graphics are both processed through the visual channel. Mayer's theory identifies visual and auditory as the two separate processing channels.
+~Reading and listening #Incorrect. Reading is visual processing and listening is auditory, but these are examples, not the fundamental channels themselves. The channels are visual and auditory.
+~Verbal and numerical #Incorrect. Verbal and numerical are types of content, not processing channels. The two channels are visual and auditory.
+}
+
+::Three Types of Cognitive Load::What are the three types of cognitive load identified in Cognitive Load Theory?{
+~Visual, auditory, and kinesthetic load #Incorrect. Visual, auditory, and kinesthetic describe learning styles or sensory channels, not types of cognitive load.
+~Simple, complex, and expert load #Incorrect. Simple, complex, and expert are not the three types. The correct categories are intrinsic, extraneous, and germane load.
+=Intrinsic, extraneous, and germane load #Correct! Cognitive Load Theory identifies intrinsic load (inherent complexity), extraneous load (wasted effort from poor design), and germane load (productive effort for understanding).
+~Primary, secondary, and tertiary load #Incorrect. Primary, secondary, and tertiary are not cognitive load categories. The three types are intrinsic, extraneous, and germane.
+}
+
+::Tufte's Data-Ink Ratio Definition::What is Tufte's "data-ink ratio"?{
+~The amount of color used in a visualization #Incorrect. The data-ink ratio is not about color quantity. It measures what proportion of a graphic's visual elements actually convey data versus decoration.
+=The proportion of ink used to display data compared to total ink used #Correct! Tufte defines data-ink ratio as the proportion of ink (visual elements) that represents data divided by the total ink used to print the graphic. Higher ratios mean less waste.
+~The number of data points divided by chart size #Incorrect. The data-ink ratio doesn't measure data points per chart size. It measures how much of the chart's visual elements actually convey information versus decoration.
+~The ratio of text to images in a presentation #Incorrect. The data-ink ratio applies to visualizations and charts, not text-to-image ratios in presentations. It measures data display efficiency.
+}
+
+::Chartjunk Categories::Which of the following is NOT one of Tufte's three categories of chartjunk?{
+~Moiré vibration #Incorrect. Moiré vibration (patterns creating optical interference) IS one of Tufte's three chartjunk categories.
+~Heavy grids #Incorrect. Heavy grids (overly prominent gridlines) IS one of Tufte's three chartjunk categories.
+~Self-promoting graphics ("ducks") #Incorrect. Self-promoting graphics or "ducks" (decorative forms overtaking data) IS one of Tufte's three chartjunk categories.
+=Excessive data points #Correct! Excessive data points is not a chartjunk category. Tufte's three categories are moiré vibration, heavy grids, and self-promoting graphics ("ducks"). Chartjunk refers to unnecessary visual embellishments, not too much data.
+}
+
+::Mayer's Principles - Matching::Match each of Mayer's principles to its definition\: 1. Coherence principle, 2. Redundancy principle, 3. Spatial contiguity principle, 4. Signaling principle. Definitions\: A) Add cues highlighting organization (arrows, bold text), B) Exclude extraneous material (no decorative clip art), C) Don't add on-screen text to narrated graphics, D) Place words near corresponding graphics.{
+=1→B (Coherence \= exclude extraneous material), 2→C (Redundancy \= don't duplicate narration as text), 3→D (Spatial contiguity \= words near graphics), 4→A (Signaling \= add organizational cues) #Correct! Coherence principle (B)\: Remove decorative elements that don't contribute to understanding. Redundancy principle (C)\: Don't display text that you're reading aloud. Spatial contiguity principle (D)\: Labels should be directly on or next to visual elements. Signaling principle (A)\: Use visual cues to guide attention.
+~Other combinations #Incorrect. Review the lecture content on Mayer's 12 principles. Each principle has a specific purpose in reducing cognitive load.
+}
+
+::Extraneous Cognitive Load Purpose::Why does Mayer recommend minimizing extraneous cognitive load in slide design?{
+~To make slides look more professional and polished #Incorrect. While minimizing extraneous load may improve appearance, the primary reason is cognitive—freeing mental capacity for learning, not aesthetics.
+=To free up mental resources for productive understanding (germane load) #Correct! Extraneous load wastes mental effort on poor design (decorations, confusing layouts). By minimizing it, audience energy can go toward germane load—productive effort building understanding of your message.
+~To reduce the number of slides in a presentation #Incorrect. Reducing extraneous load doesn't necessarily reduce slide count. It's about removing wasteful design elements, not reducing content.
+~To make presentations shorter and faster to deliver #Incorrect. The goal is better comprehension, not faster delivery. Minimizing extraneous load helps audiences understand more effectively, not necessarily more quickly.
+}
+
+::Coherence Principle Application::According to Mayer's coherence principle, adding decorative images related to your topic improves learning outcomes.{
+FALSE #Correct! Even if decorative images are thematically related to your topic, Mayer's coherence principle (effect size d \= 0.70) shows they create extraneous cognitive load without adding information. The principle states to exclude ALL extraneous material, including decorative elements, regardless of relevance. Better to have no image than a decorative one.
+}
+
+::Redundancy Principle Effect::Reading text aloud that is simultaneously displayed on the slide improves audience comprehension because they receive the information through both visual and auditory channels.{
+FALSE #Correct! This violates Mayer's redundancy principle (effect size d \= 0.87, very large). When text is both displayed and read aloud, the visual channel gets overloaded—audiences must choose to either READ or LISTEN, but can't do both efficiently. Better to use keywords on slides and elaborate verbally.
+}
+
+::Focus Technique Research Finding::According to the Kellogg research (2021), what was the effect of decluttering slides without adding focus elements?{
+~It improved comprehension by approximately 2.5 times #Incorrect. The 2.5x improvement came from declutter PLUS focus, not decluttering alone. Decluttering only improved appearance without cognitive benefits.
+=It improved visual appearance but had no significant effect on comprehension #Correct! The Kellogg study found that decluttered graphs looked more professional but didn't improve audience understanding compared to cluttered versions. Only when decluttering was combined with focusing elements (headlines, color highlighting) did comprehension improve significantly (~2.5x).
+~It reduced comprehension because audiences had fewer cues #Incorrect. Decluttering didn't reduce comprehension, but it also didn't improve it. The slides looked better but understanding stayed the same without active focusing elements.
+~It had the same effect as decluttering plus adding focus #Incorrect. Decluttering alone was NOT equivalent to declutter+focus. Adding focus elements was essential for the comprehension improvement.
+}
+
+::Strategic Tool Selection - MIT Framework::According to the MIT Sloan framework (2024), when is a human-crafted data story presentation most appropriate?{
+~When data is simple and the goal is exploration #Incorrect. Simple exploratory needs are best served by AI chat interfaces or BI tools, not presentations. Presentations are for sophisticated explanatory purposes.
+=When information is sophisticated and the goal is explanation/persuasion #Correct! The MIT framework's 2×2 matrix shows human-crafted presentation decks are optimal for sophisticated information with explanatory/persuasive goals (like convincing a board to approve a $50M investment). This requires human judgment in narrative synthesis.
+~When audiences prefer AI-generated summaries #Incorrect. The framework argues that high-stakes decisions require human-crafted visual stories, not AI summaries. AI can't synthesize multi-source strategic narratives effectively.
+~When time is limited and quick answers are needed #Incorrect. When time is limited and quick answers are needed, AI tools work well. Presentations are for complex, high-stakes decisions requiring careful narrative construction.
+}

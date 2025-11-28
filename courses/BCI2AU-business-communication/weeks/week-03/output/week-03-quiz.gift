@@ -1,0 +1,96 @@
+// Week 3 Quiz: Structured Business Writing
+// Course: BCI2AU Business Communication
+// Total Questions: 10 (5 Remembering, 5 Understanding)
+// Estimated Time: 20-25 minutes
+
+// ==========================================
+// REMEMBERING QUESTIONS (5)
+// ==========================================
+
+// Q1: Pyramid Principle Definition
+::Q1 Pyramid Principle Definition::According to the Pyramid Principle, what should appear FIRST in a business document?{
+=The main recommendation or conclusion#Correct! The Pyramid Principle requires "present top-down" — your main answer or recommendation comes first, followed by supporting arguments and data. This structure respects the reader's time.
+~Supporting data and evidence#Incorrect. Supporting data appears at the bottom of the pyramid (third level), not at the top. The Pyramid Principle requires leading with conclusions.
+~Background information and context#Incorrect. While background appears in the SCQA opening, the Pyramid Principle structure itself starts with the governing thought (conclusion), not background.
+~The analysis process you followed#Incorrect. The analysis process is how you think (bottom-up), but you present top-down with the conclusion first. Never make readers follow your thinking process.
+####Remembering
+}
+
+// Q2: SCQA Acronym
+::Q2 SCQA Acronym::What does SCQA stand for?{
+=Situation-Complication-Question-Answer#Correct! SCQA stands for Situation-Complication-Question-Answer. This is Barbara Minto's framework for writing effective document openings.
+~Structure-Content-Quality-Assessment#Incorrect. SCQA is not about document quality assessment. It's a framework for structuring introductions.
+~Strategy-Context-Question-Action#Incorrect. While these are business writing concepts, they don't form the SCQA acronym.
+~Summary-Concern-Query-Analysis#Incorrect. These terms don't match the SCQA framework components taught in the lecture.
+####Remembering
+}
+
+// Q3: MECE Principle Meaning
+::Q3 MECE Principle Meaning::What does MECE stand for?{
+=Mutually Exclusive, Collectively Exhaustive#Correct! MECE stands for Mutually Exclusive (no overlap), Collectively Exhaustive (nothing missing). It's the logic check for pyramid arguments.
+~Major-Elements-Completely-Explained#Incorrect. MECE is about logical grouping, not explanation quality.
+~Meaningful-Evidence-Clear-Examples#Incorrect. MECE relates to argument structure, not evidence presentation.
+~Multiple-Examples-Clearly-Expressed#Incorrect. MECE is a consulting framework about logical categorization, not examples.
+####Remembering
+}
+
+// Q4: Pyramid Principle Three Rules
+::Q4 Pyramid Principle Three Rules::According to the lecture, which of the following is one of the three rules of the Pyramid Principle?{
+=Ideas above must summarize those below#Correct! This is Rule 1 of the Pyramid Principle — ideas at any level must summarize the ideas grouped below them. This allows readers to stop at any level.
+~All arguments must use the same data source#Incorrect. The Pyramid Principle doesn't require using the same data source. Rule 2 states grouped ideas must be logically the same kind, not from the same source.
+~Documents should be at least 3 pages long#Incorrect. The Pyramid Principle has no length requirement. It's about structure, not document length.
+~Supporting points must be arranged alphabetically#Incorrect. Rule 3 states ideas must follow logical order (chronological, structural, comparative, or deductive) — not alphabetical order.
+####Remembering
+}
+
+// Q5: Strunk & White Author
+::Q5 Strunk and White Author::Who wrote *The Elements of Style*, the foundational text for clarity and concision rules?{
+=William Strunk Jr. and E.B. White#Correct! William Strunk Jr. wrote the original *Elements of Style* in 1918 at Cornell, and E.B. White updated it in 1959. It's the #1 most-assigned text in US higher education.
+~Barbara Minto and McKinsey#Incorrect. Barbara Minto wrote *The Pyramid Principle*, not *The Elements of Style*.
+~Matt Abrahams and Stanford GSB#Incorrect. Matt Abrahams wrote about the "What/So What/Now What" framework, not *The Elements of Style*.
+~Elizabeth Danziger and Harvard Business Review#Incorrect. Elizabeth Danziger wrote about the Purpose-Person-Point framework in HBR, not *The Elements of Style*.
+####Remembering
+}
+
+// Q6: SCQA Components Matching
+::Q6 SCQA Components Matching::Match each component of the SCQA framework to its correct description.{
+=Situation -> Indisputable context the audience already accepts
+=Complication -> The problem or change that creates urgency
+=Question -> What naturally arises from the complication
+=Answer -> Your recommendation or governing thought
+####Remembering - Situation establishes common ground with factual, accepted context. Complication introduces tension through a problem or change. Question is what the reader naturally asks after hearing the complication. Answer is your recommendation—the top of your Pyramid Principle structure.
+}
+
+// ==========================================
+// UNDERSTANDING QUESTIONS (5)
+// ==========================================
+
+// Q7: Why Pyramid Principle Works
+::Q7 Why Pyramid Principle Works::Why does the Pyramid Principle recommend leading with conclusions rather than building to them?{
+=Because readers trust you've done the analysis and want the answer first#Correct! The lecture explains that readers trust you've done the bottom-up thinking. They want the answer first (top-down presentation) so they can choose how deep to go. This respects their time.
+~Because conclusions are always longer than supporting arguments#Incorrect. Length has nothing to do with the Pyramid Principle's logic. Conclusions are often shorter than arguments.
+~Because chronological order is confusing to executives#Incorrect. While executives prefer concise communication, the Pyramid Principle isn't specifically about avoiding chronological order — it's about presenting conclusions first.
+~Because it makes documents look more professional#Incorrect. The Pyramid Principle is about clarity and reader processing, not visual professionalism. It works because it matches how minds process information.
+####Understanding
+}
+
+// Q8: MECE Principle Purpose (True/False)
+::Q8 MECE Principle Purpose::In the MECE principle, "Mutually Exclusive" means arguments can overlap as long as they collectively cover all relevant points.{FALSE#Correct! "Mutually Exclusive" means arguments must NOT overlap — each must be distinct with no redundancy. The lecture example showed "Increase revenue" and "Expand into new markets" violate MECE because they overlap (expansion is one way to increase revenue). Arguments must be both mutually exclusive (no overlap) AND collectively exhaustive (cover everything).#Incorrect. This contradicts the definition of "Mutually Exclusive." If arguments overlap, they violate MECE's first requirement. The principle requires both separation (mutually exclusive) AND completeness (collectively exhaustive).####Understanding}
+
+// Q9: Active Voice Benefits
+::Q9 Active Voice Benefits::Why does the lecture recommend using active voice in business writing?{
+=Because active voice clarifies responsibility and sounds more confident#Correct! The lecture explains that active voice clarifies who is responsible ("We recommend" vs. "It is recommended") and sounds more confident. Business writing should be 80%+ active voice.
+~Because passive voice is grammatically incorrect#Incorrect. Passive voice is grammatically correct and has limited uses (when the actor is unknown or irrelevant). The issue is clarity, not correctness.
+~Because active voice always makes sentences shorter#Incorrect. While active voice often shortens sentences, this isn't always true. The main benefit is clarity of responsibility, not length.
+~Because passive voice is only used in academic writing#Incorrect. Passive voice appears in many writing contexts. The lecture notes it can signal evasion in business writing ("Mistakes were made" avoids blame).
+####Understanding
+}
+
+// Q10: Specificity in Business Writing (True/False)
+::Q10 Specificity in Business Writing::According to Strunk & White's Rule 3, using vague qualifiers like "significantly," "many," and "soon" undermines credibility because readers want specific, measurable information.{TRUE#Correct! The lecture teaches "Use definite, specific, concrete language" as Rule 3. Vague language (e.g., "Sales increased significantly") makes readers ask "How much?" Specific language (e.g., "Sales increased 23% quarter-over-quarter") builds credibility by demonstrating expertise and giving readers data for decisions.#Incorrect. Specificity is central to professional business writing. The lecture explicitly contrasts vague ("many customers complained") with specific ("47 customers filed complaints — 15% of total base") to show how specificity builds trust.####Understanding}
+
+// ==========================================
+// END OF QUIZ
+// Total: 10 questions (7 MC, 2 T/F, 1 Matching)
+// Bloom's: 5 Remembering, 5 Understanding
+// ==========================================

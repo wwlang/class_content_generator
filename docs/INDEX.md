@@ -48,8 +48,10 @@ Compact workflow definitions:
 |---------|---------|
 | `/new-course` | Create course structure |
 | `/generate-syllabus` | Build research-backed syllabus |
+| `/generate-handbook` | Create Assessment Handbook |
 | `/generate-week` | Create lecture + tutorial + quiz |
 | `/generate-course` | Batch generate all weeks |
+| `/validate-content` | AI-powered quality validation |
 | `/finalize-slides` | Merge Gemini batches + speaker notes |
 | `/research-topic` | Find validated articles |
 
@@ -60,7 +62,8 @@ Compact workflow definitions:
 | **[ARCHITECTURE.md](ARCHITECTURE.md)** | System architecture |
 | **[LAYOUT-VOCABULARY.md](LAYOUT-VOCABULARY.md)** | Layout vocabulary for Gemini workflow |
 | **[TROUBLESHOOTING.md](TROUBLESHOOTING.md)** | Common issues and solutions |
-| **[VALIDATION-GUIDE.md](VALIDATION-GUIDE.md)** | Validation checks |
+| **[CONTENT-VALIDATION.md](CONTENT-VALIDATION.md)** | AI-powered quality validation (8 validators) |
+| **[VALIDATION-GUIDE.md](VALIDATION-GUIDE.md)** | Structural validation checks |
 | **[QUESTION-AMBIGUITY-VALIDATION.md](QUESTION-AMBIGUITY-VALIDATION.md)** | Ambiguity detection and auto-rewording |
 | **[RESEARCH-HANDOFF-GUIDE.md](RESEARCH-HANDOFF-GUIDE.md)** | Desktop research workflow |
 | **[TESTING.md](TESTING.md)** | Unit testing guide (82% coverage) |
@@ -89,11 +92,15 @@ docs/.archive/
 
 ```
 1. /new-course [CODE] [Name]           → Creates structure
-2. /generate-syllabus                  → Research + syllabus (7-10 hrs)
-3. /generate-course [CODE]             → All weeks (7-12 hrs)
+2. /generate-syllabus                  → Research + syllabus (2-3 hrs)
+3. /generate-handbook [CODE]           → Assessment Handbook (1-2 hrs)
+4. /generate-course [CODE]             → All weeks (7-12 hrs)
    OR /generate-week [N]               → Per week (45-70 min)
-4. /finalize-slides [CODE] [N]         → Gemini hybrid workflow
-5. /enhance-coherence [CODE]           → Quality polish
+5. /validate-content [CODE]            → AI quality checks (5-10 min)
+6. /enhance-coherence [CODE]           → Quality polish (15-30 min)
+7. Gemini handoff                      → PPTX visuals from lecture-content.md
+8. /add-speaker-notes [CODE] [N]       → Merge speaker notes into PPTX
+9. /export-docx [CODE] [N]             → Tutorial/quiz Word exports
 ```
 
 ### Gemini Hybrid Slide Workflow
