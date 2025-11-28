@@ -9,14 +9,14 @@
 **Telephone:** (+84) 344 347 703
 
 **Structure:**
-- Number of weeks: 10
-- Course type: [To be determined during syllabus generation]
-- Assessment structure: [To be determined during syllabus generation]
+- Number of weeks: 12 (10 content + 1 review/quiz + 1 presentations)
+- Course type: Skills-based communication course
+- Assessment structure: Portfolio (35%) + Presentations (40%) + Quiz (15%) + Participation (10%)
 
 **Status:**
-- [ ] Syllabus created
-- [ ] Week topics defined
-- [ ] Articles researched
+- [x] Syllabus created
+- [x] Week topics defined
+- [x] Articles researched
 - [ ] Lecture content generated
 - [ ] Tutorial content generated
 - [ ] Slides created
@@ -25,23 +25,36 @@
 
 - Syllabus: [syllabus.md](./syllabus.md)
 - Assessment Schedule: [assessments/assessment-schedule.md](./assessments/assessment-schedule.md)
-- Rubrics: [rubrics/](./rubrics/)
+- Rubrics: Included in syllabus
 
 ## Week Overview
 
 | Week | Topic | Status | Lecture | Tutorial | Slides |
 |------|-------|--------|---------|----------|--------|
-| 1 | TBD | Not started | ☐ | ☐ | ☐ |
-| 2 | TBD | Not started | ☐ | ☐ | ☐ |
-| 3 | TBD | Not started | ☐ | ☐ | ☐ |
-| 4 | TBD | Not started | ☐ | ☐ | ☐ |
-| 5 | TBD | Not started | ☐ | ☐ | ☐ |
-| 6 | TBD | Not started | ☐ | ☐ | ☐ |
-| 7 | TBD | Not started | ☐ | ☐ | ☐ |
-| 8 | TBD | Not started | ☐ | ☐ | ☐ |
-| 9 | TBD | Not started | ☐ | ☐ | ☐ |
-| 10 | TBD | Not started | ☐ | ☐ | ☐ |
+| 1 | Communication Strategy Foundations | Research complete | ☐ | ☐ | ☐ |
+| 2 | Audience Analysis & Stakeholder Mapping | Research complete | ☐ | ☐ | ☐ |
+| 3 | Structured Business Writing | Research complete | ☐ | ☐ | ☐ |
+| 4 | Persuasive Written Communication | Research complete | ☐ | ☐ | ☐ |
+| 5 | Oral Communication Fundamentals | Research complete | ☐ | ☐ | ☐ |
+| 6 | Visual Communication & Slide Design | Research complete | ☐ | ☐ | ☐ |
+| 7 | Persuasive Presentations | Research complete | ☐ | ☐ | ☐ |
+| 8 | High-Stakes Communication | Research complete | ☐ | ☐ | ☐ |
+| 9 | Cross-Cultural & Team Communication | Research complete | ☐ | ☐ | ☐ |
+| 10 | Integration & Capstone | Research complete | ☐ | ☐ | ☐ |
+| 11 | Review & Assessment | N/A | ☐ | ☐ | ☐ |
+| 12 | Final Presentations | N/A | ☐ | ☐ | ☐ |
+
+## Learning Objectives (6)
+
+1. **Analyze** audiences, contexts, and communication challenges to formulate effective strategies
+2. **Develop** persuasive written communications using structured frameworks
+3. **Deliver** confident, engaging oral presentations
+4. **Demonstrate** executive presence in high-stakes contexts
+5. **Apply** persuasion, storytelling, and cross-cultural awareness
+6. **Evaluate** personal communication effectiveness through reflection
 
 ## Notes
 
-[Add course-specific notes, context, or reminders here]
+- Research completed November 28, 2025 using M7 school analysis
+- Syllabus version 2.0 generated November 28, 2025
+- Ready for batch content generation
