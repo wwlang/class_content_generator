@@ -9,39 +9,30 @@ Hand off lecture content to Google Gemini for professional slide creation.
 This is part of a **Gemini + Claude hybrid workflow**:
 
 1. **Gemini creates visual slides** (better images, infographics, design)
-2. **You download batches** to the week folder
-3. **Claude merges batches + inserts speaker notes** (via `/finalize-slides`)
+2. **You download** the complete deck to the week folder
+3. **Claude inserts speaker notes** (via `/add-speaker-notes`)
 
 **Gemini handles:** Visual design, images, infographics, layout
-**Claude handles:** Speaker notes, merging, quality validation
+**Claude handles:** Speaker notes, quality validation
 
 ---
 
 ## Instructions
 
 1. Copy everything below `--- PROMPT START ---`
-2. Replace `{{PLACEHOLDERS}}` with actual values
-3. Paste the full `lecture-content.md` at the end
-4. Send to Google Gemini
-5. **Download each batch** with naming: `week-{{WEEK_NUMBER}}-batch-1.pptx`
-6. Repeat for batches 2, 3, etc.
-7. Run `/finalize-slides {{COURSE_CODE}} {{WEEK_NUMBER}}` to merge and add speaker notes
+2. The `/gemini-handoff` command fills all placeholders automatically
+3. Paste into Google Gemini
+4. Wait for full slide deck to generate
+5. Download as: `week-{{WEEK_NUMBER}}.pptx`
+6. Run `/add-speaker-notes {{COURSE_CODE}} {{WEEK_NUMBER}}` to insert speaker notes
 
 ---
 
-## Batch File Naming Convention
+## File Naming Convention
 
-Save downloaded files to: `courses/{{COURSE_CODE}}/weeks/week-{{WEEK_NUMBER}}/`
+Save downloaded file to: `courses/{{COURSE_CODE}}-*/weeks/week-{{WEEK_NUMBER}}/`
 
-**Preferred naming:**
-```
-week-01-batch-1.pptx  (slides 1-10)
-week-01-batch-2.pptx  (slides 11-20)
-week-01-batch-3.pptx  (slides 21-30 + References)
-```
-
-**Alternative:** Gemini may use descriptive names like `Topic Name - Batch 2.pptx`.
-This is fine — `/finalize-slides` handles multiple naming patterns.
+**Naming:** `week-01.pptx`, `week-02.pptx`, etc.
 
 ---
 
@@ -57,15 +48,9 @@ Create a visually engaging Google Slides presentation from the lecture content b
 - **Campus:** National Economics University (NEU), Vietnam
 - **Instructor:** {{INSTRUCTOR_NAME}}
 
-## Important: Batch Processing
+## Slide Count
 
-This lecture has 25-30 slides. To avoid content condensation due to output limits, process in batches:
-
-- **Batch 1:** Slides 1-10
-- **Batch 2:** Slides 11-20
-- **Batch 3:** Slides 21-30 (or remaining)
-
-**For this request, generate Slides 1-10 only.** Follow the content exactly for each slide. Do not summarize or condense. I will request the next batch in a follow-up prompt.
+This lecture has **{{SLIDE_COUNT}} slides**. Generate all slides in a single response.
 
 ---
 
@@ -75,7 +60,7 @@ This lecture has 25-30 slides. To avoid content condensation due to output limit
 
 2. **Format:** Use 4:3 aspect ratio (not widescreen).
 
-3. **Title Slide (Slide 1):** Every batch 1 must begin with a title slide containing:
+3. **Title Slide (Slide 1):** Must begin with a title slide containing:
    - **Title:** {{TOPIC}} (the week's topic from syllabus)
    - **Course:** {{COURSE_CODE}} - {{COURSE_NAME}}
    - **Awarding University:** Andrews University
@@ -110,7 +95,6 @@ This lecture has 25-30 slides. To avoid content condensation due to output limit
 
 **If Gemini condenses content:**
 - Remind: "Use EXACT wording, do not summarize"
-- Process smaller batches (7-8 slides instead of 10)
 - Generate one slide at a time for problematic sections
 
 **If images don't match:**
@@ -118,12 +102,8 @@ This lecture has 25-30 slides. To avoid content condensation due to output limit
 - Provide reference: "Similar to [company name]'s branding"
 - Request regeneration of specific slide
 
-**If batch order gets confused:**
-- Always specify: "This is batch X of Y, slides N-M"
-- Reference previous batch: "Continuing from slide 10..."
-
 **After download:**
-- Verify file naming: `week-01-batch-1.pptx`
-- Confirm slide count matches expected
-- Run `/finalize-slides` to merge and add speaker notes
+- Verify file naming: `week-01.pptx`
+- Confirm slide count matches expected ({{SLIDE_COUNT}} slides)
+- Run `/add-speaker-notes` to insert speaker notes
 
