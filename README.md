@@ -76,89 +76,87 @@ Creates lecture and tutorial content (45-70 minutes per week) with:
 ### 4. Create Presentation Slides
 
 ```bash
-/export-slides 1
+# Copy gemini-handoff.md content to Gemini, download PPTX, then:
+/add-speaker-notes BUS101 1
 ```
 
-Converts lecture content to presentation format (after content approval).
+Inserts speaker notes into Gemini-created PPTX (saves to `output/slides.pptx`).
 
 ## Slash Commands
 
 | Command | Purpose | Time |
 |---------|---------|------|
 | `/new-course [CODE] [Name]` | Create course structure | 2-3 min |
-| `/generate-syllabus` | Build research-backed syllabus | 3-4 hrs |
-| `/generate-week [N]` | Create lecture + tutorial content | 45-70 min |
+| `/generate-syllabus` | Build research-backed syllabus | 7-10 hrs |
+| `/generate-week [N]` | Create lecture + tutorial + quiz | 45-70 min |
+| `/generate-course [CODE]` | Batch generate all weeks | 7-12 hrs |
+| `/add-speaker-notes [CODE] [N]` | Insert notes into Gemini PPTX | 1-2 min |
+| `/export-docx [CODE] [N]` | Convert markdown to DOCX | 1-3 min |
 | `/research-topic "[Topic]" "[Concepts]"` | Research articles for topic | 30-50 min |
-| `/validate-article-content [URL] "[Concepts]"` | Validate article quality | 2-10 min |
 
 ## Project Structure
 
 ```
 class_content_generator/
 ├── .claude/
-│   ├── commands/          # Slash command definitions
-│   └── CLAUDE.md          # Complete workflow documentation
+│   ├── commands/           # Slash command definitions
+│   ├── skills/             # Domain-specific guidance
+│   │   ├── content-generation/
+│   │   ├── assessment-design/
+│   │   └── research/
+│   ├── templates/          # Handoff prompts
+│   └── CLAUDE.md           # Complete workflow documentation
 │
-├── templates/             # Reusable templates
-│   ├── syllabus-base-template.md
-│   ├── week-topic-specification.md
-│   └── syllabus-components/
-│
-├── courses/               # Generated course content
+├── courses/                # Generated course content
 │   └── [COURSE-CODE]-[name]/
 │       ├── syllabus.md
-│       ├── weeks/
-│       ├── rubrics/
-│       └── assessments/
+│       ├── assessment-handbook.md
+│       ├── weeks/week-[N]/
+│       │   ├── lecture-content.md      # Source: slides + speaker notes
+│       │   ├── quiz-questions.md       # Source: quiz Q&A
+│       │   ├── tutorial-content.md     # Source: student activities
+│       │   ├── tutorial-tutor-notes.md # Source: facilitation guide
+│       │   ├── gemini-handoff.md       # Handoff: Gemini prompt
+│       │   └── output/                 # Deliverables
+│       │       ├── tutorial-content.docx
+│       │       ├── tutorial-tutor-notes.docx
+│       │       ├── week-N-quiz.gift
+│       │       └── slides.pptx
+│       └── .working/research/
 │
-├── shared/                # Shared resources
-│   ├── research/          # Research documentation
-│   ├── citation-library/  # Reusable citations
-│   └── vietnam-examples/  # Local context examples
+├── tools/                  # Python automation scripts
+│   ├── markdown_to_docx.py
+│   ├── export_quiz_to_gift.py
+│   └── add_speaker_notes.py
 │
-└── lecture_content_instructions.md  # Content generation guide
+└── docs/                   # Documentation
+    ├── INDEX.md
+    ├── ARCHITECTURE.md
+    └── LAYOUT-VOCABULARY.md
 ```
 
-## HTML to PPTX Converter
+## Slide Workflow
 
-The `/export-slides` command uses a **modular, handler-based converter** that transforms HTML slides into professional PowerPoint presentations.
+Slides are created using Google Gemini for visual design, with Claude handling content and speaker notes:
 
-### Key Features
+### Workflow
 
-- **18 specialized slide layouts** (title, quote, framework, comparison, etc.)
-- **Prescriptive layout hints** for guaranteed formatting  
-- **Automated validation** of conversion quality
-- **Clean architecture** following SOLID principles and Python best practices
+1. **Claude generates** `lecture-content.md` with slide content and speaker notes
+2. **Claude creates** `gemini-handoff.md` with ready-to-paste Gemini prompt
+3. **User sends to Gemini** → downloads PPTX file to week folder
+4. **Claude inserts speaker notes:** `/add-speaker-notes [CODE] [N]`
+5. **Final slides saved to** `output/slides.pptx`
 
-### Architecture Highlights
+### Why This Approach?
 
-The converter is organized into focused modules:
-
-- **`config.py`** - Configuration constants (layouts, fonts, colors)
-- **`css_parser.py`** - CSS parsing with variable resolution
-- **`handlers/`** - Slide-type specific rendering logic (Strategy pattern)
-- **Automated validation** - Quality checks on every conversion
-
-### Supported Layouts
-
-**Core:** Title, Section Break, Standard Content, Dark Background  
-**Data:** Big Number, Stats Banner, Vocabulary Table, Learning Objectives  
-**Interactive:** Activity, Checklist, Card Layout  
-**Comparison:** 2-Column, Comparison Table  
-**Academic:** Quote, References, Framework/Diagram, Reflection Prompt
-
-**Prescriptive Control:** Use layout hints to guarantee formatting:
-```markdown
-<!-- LAYOUT: quote -->
-"Your quote text"
-— Attribution
-```
+- **Gemini excels** at visual slide design and layout
+- **Claude excels** at content structure, speaker notes, and automation
+- **Combined result:** Professional slides with comprehensive teaching notes
 
 ### Documentation
 
-- **Quick Reference:** See [docs/SLIDE-LAYOUTS.md](docs/SLIDE-LAYOUTS.md) for all layouts with examples
-- **Technical Details:** See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for complete architecture
-- **Validation:** See [docs/VALIDATION-GUIDE.md](docs/VALIDATION-GUIDE.md) for quality checks
+- **Layout Vocabulary:** See [docs/LAYOUT-VOCABULARY.md](docs/LAYOUT-VOCABULARY.md) for layout hints
+- **Architecture:** See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for system design
 - **Contributing:** See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines
 
 ## Core Principles
@@ -189,25 +187,26 @@ Every tutorial directly prepares students for specific graded work using simplif
 
 ```
 Day 1: Setup
-  └─ /new-course ECON201 Microeconomic Theory
+  └─ /new-course BUS101 Business Communication
 
 Days 2-3: Syllabus (Most intensive)
   ├─ /generate-syllabus
   │  ├─ Define basics and structure
   │  └─ Research 2 articles × 10 weeks = 20 articles
-  └─ Quality check and finalize
+  └─ /export-docx BUS101 syllabus
 
 Days 4-6: Weekly Content
-  ├─ /generate-week 1
+  ├─ /generate-week 1  (creates lecture, tutorial, quiz → output/)
   ├─ /generate-week 2
-  └─ ... continue for all weeks
+  └─ ... or use /generate-course BUS101 for batch
 
-Day 7: Slides and Review
-  ├─ /export-slides for each week
-  └─ Final quality check
+Day 7: Slides
+  ├─ Copy gemini-handoff.md to Gemini for each week
+  ├─ Download PPTX to week folder
+  └─ /add-speaker-notes BUS101 [N] for each week
 ```
 
-**Result:** Complete, professional course ready to teach
+**Result:** Complete course with DOCX tutorials, GIFT quizzes, and PPTX slides
 
 ## Quality Standards
 
@@ -219,11 +218,11 @@ Day 7: Slides and Review
 - Speaker notes for teaching
 
 ### Tutorial Content ✓
-- ONE activity mirroring actual assessment
-- Simplified rubric (3-4 criteria)
-- 5-8 quiz practice questions
-- Structured peer review
-- Clear time allocations
+- ONE consolidated activity mirroring assessment
+- Quick Review with success criteria
+- Class feedback with participation requirement
+- Timing in tutor-notes only (not inline)
+- Separate quiz-questions.md file (5-8 questions)
 
 ### Article Selection ✓
 - Covers ALL required concepts (strict)
@@ -269,8 +268,9 @@ Every article goes through:
 
 - **Quick Start:** This README
 - **Complete Workflows:** `.claude/CLAUDE.md`
-- **Content Guidelines:** `lecture_content_instructions.md`
-- **Sample Syllabus:** `samples/BUSINESS COMMUNICATION Syllabus Fall 2025.md`
+- **All Documentation:** `docs/INDEX.md`
+- **Layout Vocabulary:** `docs/LAYOUT-VOCABULARY.md`
+- **System Architecture:** `docs/ARCHITECTURE.md`
 
 ## Assessment Alignment
 
@@ -334,7 +334,7 @@ Content is adapted for Vietnamese university context:
 
 - **Workflows:** See `.claude/CLAUDE.md` for complete documentation
 - **Commands:** See `.claude/commands/` for detailed command instructions
-- **Content Guidelines:** See `lecture_content_instructions.md`
+- **All Docs:** See `docs/INDEX.md` for documentation index
 - **Troubleshooting:** See "Troubleshooting" section in `.claude/CLAUDE.md`
 
 ## Best Practices
@@ -366,14 +366,16 @@ Adapt content for Vietnamese and regional context.
 
 ## Version
 
-**v1.0** - Research-enhanced course content generation system
+**v2.0** - Streamlined course content generation with output folder structure
 
-- ✅ 5 slash commands
+- ✅ 7 slash commands (new: `/add-speaker-notes`, `/export-docx`, `/generate-course`)
+- ✅ Gemini slide workflow with speaker notes insertion
+- ✅ Output folder structure (sources separate from deliverables)
+- ✅ Standalone quiz-questions.md with GIFT export
+- ✅ Streamlined tutorials (~80 lines, no inline timing)
+- ✅ DOCX export with branded footers
 - ✅ 4-stage research validation
-- ✅ Syllabus-first workflow
 - ✅ Assessment alignment logic
-- ✅ Cultural adaptations
-- ✅ Quality assurance built-in
 
 ---
 
@@ -382,8 +384,9 @@ Adapt content for Vietnamese and regional context.
 1. **Understand the System:** Read `.claude/CLAUDE.md` for complete workflows
 2. **Create Your First Course:** Run `/new-course [CODE] [Name]`
 3. **Build Syllabus:** Run `/generate-syllabus` for research-backed syllabus
-4. **Generate Content:** Run `/generate-week [N]` for each week
-5. **Teach Great Courses:** Use materials with confidence
+4. **Generate Content:** Run `/generate-week [N]` or `/generate-course [CODE]`
+5. **Create Slides:** Use Gemini handoff + `/add-speaker-notes`
+6. **Export Deliverables:** All outputs in `output/` folder ready for LMS
 
 ---
 

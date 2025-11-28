@@ -905,9 +905,10 @@ Update this guide with new check in [Validation Checks Reference](#validation-ch
 #### Test with Example Files
 
 ```bash
+# Note: slide-exporter examples archived to docs/.archive/slide-technical/
 python3 tools/validate_conversion.py \
-    .claude/skills/slide-exporter/resources/examples/enhanced-sample-slides.html \
-    .claude/skills/slide-exporter/resources/examples/enhanced-sample-slides.pptx
+    docs/.archive/slide-technical/skill-backup/resources/examples/enhanced-sample-slides.html \
+    docs/.archive/slide-technical/skill-backup/resources/examples/enhanced-sample-slides.pptx
 ```
 
 #### Create Test Suite
@@ -963,7 +964,7 @@ class ValidationConfig:
 ### Related Documentation
 
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - Technical architecture of converter
-- **[SLIDE-LAYOUTS.md](SLIDE-LAYOUTS.md)** - Complete layout reference
+- **[LAYOUT-VOCABULARY.md](LAYOUT-VOCABULARY.md)** - Layout vocabulary reference
 - **[CONTRIBUTING.md](../CONTRIBUTING.md)** - Development guidelines
 
 ### Implementation Files

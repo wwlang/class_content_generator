@@ -1,0 +1,74 @@
+// Week 8 Quiz: Business Reports & Executive Communication
+// Course: BCI2AU - Business Communication
+// Format: Moodle GIFT
+// Questions: 10 (6-10 range per tutorial guidelines)
+
+::Q1 Purpose-Person-Point Framework::According to McCormack (2024), what are the three main purposes for business writing?{
+=Inform, request, persuade #Correct! The three main purposes are inform (share information/updates), request (ask for action/approval/resources), and persuade (change minds/drive decisions).
+~Inform, entertain, persuade #Incorrect. "Entertain" is not a primary business writing purpose—business writing prioritizes clarity and action over entertainment. The three purposes are inform, request, and persuade.
+~Request, argue, summarize #Incorrect. "Argue" and "summarize" are not the framework categories. The three main purposes are inform, request, and persuade.
+~Persuade, describe, analyze #Incorrect. "Describe" and "analyze" are not the three purposes—these are approaches used within the main purposes. The correct three are inform, request, and persuade.
+}
+
+::Q2 The Point Element::In the Purpose-Person-Point framework, where should you state your "point" (essential message)?{
+~In the conclusion to leave lasting impression #Incorrect. Stating point in conclusion violates BLUF (Bottom Line Up Front) principle—readers may never reach conclusion if opening doesn't hook them. State your point within the first 40-50 words.
+~In the middle after providing background context #Incorrect. Middle placement after background context is traditional academic writing but ineffective for business communication—executives want the answer first. State your point within the first 40-50 words.
+=Within the first 40-50 words of the document #Correct! The "point" should be stated within the first 40-50 words. Busy executives decide whether to keep reading based on the opening—clarity must come immediately.
+~Repeated equally throughout the document #Incorrect. While repetition is important, the point must be INTRODUCED early (within first 40-50 words), then reinforced throughout the document.
+}
+
+::Q3 Executive Summary Purpose::What is the primary purpose of an executive summary in business reports?{
+~To provide detailed methodology and data analysis #Incorrect. Detailed methodology belongs in the full report body, not the executive summary—summaries focus on findings and recommendations, not research process. The primary purpose is to stand alone and enable decision-making without reading full report.
+=To stand alone and enable decision-making without reading full report #Correct! The executive summary must stand alone—someone unfamiliar with the topic should understand the full story from the summary alone, allowing busy executives to make informed decisions in 5 minutes versus 1-2 hours.
+~To serve as the introduction to the full report #Incorrect. Executive summary is NOT an introduction—introduction previews what's coming; summary provides complete story with conclusions. The primary purpose is to stand alone and enable decision-making.
+~To list all sources and references used in research #Incorrect. References/sources belong in bibliography/references section, not executive summary. The primary purpose is to stand alone and enable decision-making without reading full report.
+}
+
+::Q4 Executive Summary Length::Executive summaries typically should be what percentage of the full document length?{
+~5% #Incorrect. 5% is too short for most documents—wouldn't provide enough detail to stand alone and enable decision-making. The guideline is 10% of the full document length.
+=10% #Correct! Executive summaries typically should be 10% of the full document length (e.g., 40-page report \= 4-page max summary; 10-page report \= 1-page summary).
+~25% #Incorrect. 25% is too long—defeats the purpose of a summary; executives want condensed version, not quarter of full report. The guideline is 10% of the full document length.
+~50% #Incorrect. 50% is far too long—that's not a summary, it's half the document and provides no time-saving benefit. The guideline is 10% of the full document length.
+}
+
+::Q5 Short Words Principle::According to Daniel Kahneman (Nobel Prize-winning economist), why should leaders use short words for complex topics?{
+=Because complex language makes you seem less intelligent and credible #Correct! Kahneman stated\: "If you care about being thought credible and intelligent, do not use complex language where simpler language will do." Counter-intuitively, complex language makes you seem LESS credible.
+~Because readers have short attention spans and can't understand big words #Incorrect. This is condescending and incorrect—readers CAN understand complex words, but complex language creates unnecessary cognitive load. The reason is about credibility\: complex language makes you seem less intelligent and credible.
+~Because short words are easier to translate into other languages #Incorrect. While true, this isn't Kahneman's main point. The reason to use short words is that complex language makes you seem less intelligent and credible, not more.
+~Because complex language takes longer to write #Incorrect. While complex language may take longer to write, the reason to avoid it is about reader perception of credibility—complex language makes you seem less intelligent, not more.
+}
+
+::Q6 Sticky Metaphors::Warren Buffett's "moats and castles" metaphor is an example of which leadership communication principle?{
+~Humanizing data #Incorrect. Humanizing data involves making statistics relatable through comparisons (e.g., lip balm spending vs. NASA budget). "Moats and castles" is an example of deploying sticky metaphors to translate abstract concepts into concrete imagery.
+~Using short words #Incorrect. Using short words is about vocabulary simplicity, not metaphorical imagery. "Moats and castles" is an example of deploying sticky metaphors.
+=Deploying sticky metaphors #Correct! Warren Buffett's "moats and castles" metaphor translates the abstract business concept of competitive advantages into concrete medieval imagery that everyone understands and remembers.
+~Making mission your mantra #Incorrect. Making mission your mantra is about repetition of core messages, not metaphorical framing. "Moats and castles" is an example of deploying sticky metaphors.
+}
+
+::Q7 Humanizing Data::Neil deGrasse Tyson compared NASA's $3 billion Cassini mission to "Americans spend more annually on lip balm." This is an example of\:{
+~Using short words for complex topics #Incorrect. Short words principle is about vocabulary simplicity, not data contextualization. This comparison is an example of humanizing data through relatable comparisons.
+=Humanizing data through relatable comparisons #Correct! $3 billion is incomprehensibly large—comparing to a familiar consumer product (lip balm) makes the number relatable and contextualizes the mission cost as reasonable.
+~Deploying sticky metaphors #Incorrect. While this is a comparison, it's specifically about making statistics relatable (humanizing data), not translating abstract concepts through figurative imagery (metaphors). This is humanizing data.
+~Making mission your mantra #Incorrect. Mission mantra is about message repetition, not data presentation. This comparison is an example of humanizing data through relatable comparisons.
+}
+
+::Q8 Visual Hierarchy::According to eye-tracking research, how long do readers typically take to decide whether to engage with a document based on visual first impression?{
+~30 seconds #Incorrect. 30 seconds is longer than the actual first impression window. Eye-tracking research shows readers decide in 2-3 seconds based on visual first impression.
+~10-15 seconds #Incorrect. 10-15 seconds is still too long—visual hierarchy judgment is nearly instantaneous. Research shows readers decide in 2-3 seconds.
+~5 minutes #Incorrect. 5 minutes is how long executives spend READING a good executive summary, not making the initial engagement decision. Research shows the visual first impression judgment happens in 2-3 seconds.
+=2-3 seconds #Correct! Eye-tracking research shows readers decide whether to engage with a document in 2-3 seconds based on visual first impression. This means document design determines whether content gets read at all.
+}
+
+::Q9 Font Choice::According to recent research cited in lecture, which font type is generally more readable on screens?{
+~Serif fonts (e.g., Times New Roman) #Incorrect. Serif fonts can reduce readability on screens, especially for those with visual impairments. Research favors sans serif fonts (Arial, Calibri) for digital documents.
+=Sans serif fonts (e.g., Arial, Calibri) #Correct! Recent research indicates sans serif fonts are generally more readable on screens, particularly for readers with visual impairments. Since most business documents are read digitally, sans serif fonts enhance accessibility.
+~Decorative fonts (e.g., Script) #Incorrect. Decorative/script fonts are almost never appropriate for business documents—readability is extremely poor. Sans serif fonts (Arial, Calibri) are generally more readable on screens.
+~Monospace fonts (e.g., Courier) #Incorrect. Monospace fonts are used for code/technical documentation but are harder to read for body text in business documents. Sans serif fonts (Arial, Calibri) are generally more readable on screens.
+}
+
+::Q10 Technical Writing::When translating technical information for non-technical audiences, which approach is most effective?{
+~Remove all technical terms to avoid confusion #Incorrect. Removing ALL technical terms may lose precision—better to define necessary terms than avoid them entirely. The most effective approach is to focus on outcomes and business impact while defining unavoidable jargon.
+~Focus on mechanisms and how technology works #Incorrect. Focusing on mechanisms is what technical audiences want; non-technical audiences need outcomes (what it delivers and why it matters). The most effective approach is to focus on outcomes and define unavoidable jargon.
+=Focus on outcomes and business impact, defining unavoidable jargon #Correct! Non-technical decision-makers care about WHAT technology does and WHY it matters (business results), not HOW it works. If technical terms are necessary, define them immediately in the same sentence.
+~Use as many technical terms as possible to demonstrate expertise #Incorrect. Using maximum technical terms demonstrates expertise to technical peers but alienates and confuses non-technical decision-makers. The most effective approach is to focus on outcomes and define unavoidable jargon.
+}

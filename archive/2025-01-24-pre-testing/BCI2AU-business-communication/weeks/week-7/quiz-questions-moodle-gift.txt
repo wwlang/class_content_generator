@@ -1,0 +1,60 @@
+// Week 7 Quiz Questions - Business Communication (BCI2AU)
+// Topics: Cross-Cultural Communication, AI Tools, Crisis Communication
+// Format: GIFT for Moodle import
+// Generated: 2025
+
+::Power Distance::According to Hofstede's framework, what does "power distance" measure?{
+=The extent to which less powerful members accept unequal power distribution #Correct! Hofstede's power distance dimension measures acceptance of hierarchical inequality. Vietnam is high power distance (accept hierarchy), USA is low (prefer flat structures).
+~The physical distance between people in different cultures #Incorrect. This confuses the term with physical distance. Power distance is about acceptance of inequality in power distribution.
+~The level of individualism versus collectivism in a society #Incorrect. That's a different Hofstede dimension. Power distance specifically measures acceptance of hierarchical inequality.
+~The degree to which cultures avoid uncertain situations #Incorrect. That's uncertainty avoidance, not power distance. Power distance measures acceptance of unequal power distribution.
+}
+
+::High-Context Communication::According to Meyer's framework, what is the main characteristic of high-context communication?{
+~Messages are direct and explicit #Incorrect. That's LOW-context communication (opposite). High-context relies on implicit meaning.
+=Messages rely on implicit meaning and shared context #Correct! Meyer's framework: high-context = much left unsaid, read between lines. Examples include Japan, Vietnam, and China.
+~Communication is always written rather than verbal #Incorrect. This is not the defining feature of high-context communication.
+~Communication avoids emotional expression #Incorrect. This is not related to the high/low context dimension.
+}
+
+::Cultural Adaptation::According to the lecture, which is an example of adapting to cultural differences?{
+~Always using your own culture's communication style #Incorrect. This is the opposite of adaptation - it's maintaining your own style.
+~Avoiding communication with people from different cultures #Incorrect. This is avoidance, not adaptation.
+=Providing more background when communicating with high-context cultures #Correct! You adapt TOWARD the other culture's preferences. When low-context person speaks to high-context audience, provide extra context to help bridge the gap.
+~Using indirect language when communicating with low-context cultures #Incorrect. This is backwards - low-context cultures prefer direct communication.
+}
+
+::AI Limitations::According to the lecture, what is a key limitation of AI writing tools?{
+~They cannot generate grammatically correct sentences #Incorrect. AI is actually quite good at grammar - that's one of its strengths.
+=They lack human judgment about context and appropriateness #Correct! AI can't assess appropriateness for relationship, cultural context, or political implications. This was the main limitation emphasized in the lecture.
+~They only work for technical writing, not business communication #Incorrect. AI works for many types of writing, including business communication.
+~They are too expensive for most students to use #Incorrect. Many free AI options exist (ChatGPT, Claude, etc.).
+}
+
+::AI Best Practice::What is the recommended approach for using AI tools in business writing?{
+~Avoid using AI tools entirely in professional settings #Incorrect. This is too extreme - AI can be helpful when used properly.
+~Copy AI-generated content directly without any changes #Incorrect. This is dangerous because AI makes errors and lacks contextual judgment.
+=Use AI for drafting ideas, then apply human judgment to refine #Correct! The "AI-assisted" approach: AI drafts → human reviews/refines. AI helps with the blank page and alternatives, while humans add judgment, context, and authenticity.
+~Only use AI tools when writing to internal audiences #Incorrect. This is an arbitrary distinction not recommended in the lecture.
+}
+
+::AI Ethics::According to the lecture, which ethical concern is associated with AI-generated content?{
+~AI tools always produce biased content #Incorrect. This is too absolute (CAN produce bias, not ALWAYS).
+=Lack of transparency about AI use and potential for misinformation #Correct! Two main concerns: (1) Transparency about AI use, and (2) Misinformation (AI hallucinates). Both threaten trust and credibility.
+~AI content is always lower quality than human writing #Incorrect. This is not true - quality varies depending on use case and refinement.
+~AI tools will completely replace all human writers #Incorrect. This is an extreme prediction not discussed in the lecture.
+}
+
+::Crisis Elements::According to the lecture, what are the three key elements of effective crisis communication?{
+~Denial, delay, and damage control #Incorrect. These are BAD tactics - what NOT to do in crisis communication.
+=Speed, accuracy, and empathy #Correct! Framework from lecture: Speed (respond before vacuum), Accuracy (be factual), Empathy (show you care).
+~Silence, investigation, and legal response #Incorrect. Silence is dangerous in crisis communication - creates information vacuum.
+~Apology, compensation, and reputation management #Incorrect. These may be part of the response, but they're not the three foundational elements.
+}
+
+::Initial Response Purpose::What is the main purpose of the initial response in crisis communication?{
+~To provide complete information about the crisis cause #Incorrect. This is impossible in the first hours - you won't have complete information yet.
+~To assign blame and identify responsible parties #Incorrect. This comes later, if at all. Initial response is not about blame.
+=To acknowledge the situation and show the organization is responding #Correct! First response goals: (1) Acknowledge awareness, (2) Show action, (3) Commit to updates. You don't need complete information for this.
+~To minimize legal liability with careful wording #Incorrect. This CYA (cover your ass) approach damages trust and is not the main purpose.
+}

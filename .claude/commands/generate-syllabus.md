@@ -1,417 +1,201 @@
-# Generate Comprehensive Course Syllabus
+# /generate-syllabus
 
-You are creating a world-class university course syllabus using the research-enhanced workflow. Follow these steps precisely to ensure quality, consistency, and evidence-based content.
+Create a research-backed course syllabus through interactive steps.
 
-## Your Task
+## Step 1: Course Setup
 
-Guide the user through creating a complete course syllabus that:
-1. Maintains the professional structure and policies from the Business Communication template
-2. Incorporates research from top management schools (HBS, Stanford GSB, Wharton, MIT Sloan)
-3. Includes 2 validated, accessible articles per week with strict content matching
-4. Aligns assessments with learning objectives
+**Gather from user:**
+- University, qualification, campus
+- Course code and title
+- Semester/year
+- Grading system (US 60% / UK 40% / Vietnamese)
+- Any existing documents to reference
 
-## Step-by-Step Process
+**Course Structure (Standard):**
+- **All courses: 12 weeks total**
+  - Weeks 1-10: Content delivery
+  - Week 11: Assignment prep lecture + in-class quiz during tutorial
+  - Week 12: Final presentations
 
-### STEP 1: Course Basics & Research-Backed Description
+**Create directories:**
+```
+courses/[COURSE-CODE]/
+├── .working/
+│   └── research/          ← Desktop saves here
+├── assessments/
+├── rubrics/
+└── weeks/
+```
 
-Gather essential information:
+**Output:** `course-info.md`
 
-**Ask the user:**
-1. University awarding the qualification (e.g., "Andrews University", "UWE")
-2. Qualification program (e.g., "BA in Banking and Finance", "BA International Business")
-3. Campus location (e.g., "National Economics University campus", "Phenikaa campus")
-4. Course Code (e.g., BUS101, ECON201)
-5. Course Title (e.g., "Business Communication", "Microeconomic Theory")
-6. Semester and Year (e.g., "Fall 2025")
-7. Number of weeks (typically 10-11, but can vary)
-8. **Grading System:** "Which grading system does your institution use?"
-   - **US System** (60% pass, A = 90-100%)
-   - **UK System** (40% pass, First Class = 70-100%)
-   - **Vietnamese Adapted** (varies by institution)
-   - **Other** (specify pass threshold)
+## Step 2: Research (Desktop or Direct)
 
-   **Note:** Consult `templates/grading-systems.md` for complete reference
+**Ask:** "Use Claude Desktop for research? (recommended)"
 
-6. **Sample Documents (Optional):** "Do you have any existing course descriptions, syllabi, or program documentation I should reference?"
-   - If YES: Read provided files
-   - If NO: Proceed with research-only approach
+### Option A: Claude Desktop (recommended)
 
-**Research Course Description:**
+1. **Generate research prompt** from template:
+   - Read `.claude/templates/desktop-course-research-template.md`
+   - Fill in placeholders with course info
+   - Set output path: `[PROJECT-ROOT]/courses/[COURSE-CODE]/.working/research/`
 
-Explain to user: "I'll research how top schools describe this course to create a research-backed course description."
+2. **User copies prompt to Desktop** and completes research
 
-**Research Process:**
-1. Use WebSearch to find course descriptions from:
-   - HBS, Stanford GSB, Wharton, MIT Sloan (for business courses)
-   - Top universities for the subject area
-   - Program catalogs and course listings
+3. **Desktop outputs** (saved via MCP filesystem):
+   - `syllabus-research.md` - Course description, learning objectives (5-8), weekly structure
+   - `week-01-research.md` through `week-10-research.md` - Articles per week
 
-2. Use WebFetch to extract course descriptions from promising sources
+4. **Import and validate:**
+   ```
+   /import-research [COURSE-CODE]
+   ```
 
-3. Analyze and synthesize:
-   - **Purpose:** Why does this course exist? What need does it address?
-   - **Content:** What topics/skills are covered?
-   - **Value Proposition:** What will students gain? How does it prepare them?
-   - **Unique Elements:** What distinguishes this course?
+### Option B: Direct Research (fallback)
 
-4. Draft 2-3 paragraph course description following this structure:
-   - **Paragraph 1:** Purpose and foundational content
-   - **Paragraph 2:** Pedagogical approach and hands-on application
-   - **Paragraph 3:** Value proposition and career/academic relevance
+- Load skill: `research/SKILL.md`
+- Research course description from top schools
+- Draft 5-8 learning objectives (best practice per Cornell/UC Berkeley)
+- 4-stage article research per week (30-50 min each)
 
-5. Present draft to user for approval/adjustment
-
-**Your action:**
-- Load the syllabus-base-template.md
-- Research and draft course description
-- Get user approval on description
-- Populate: {{UNIVERSITY}}, {{QUALIFICATION}}, {{CAMPUS}}, {{COURSE_TITLE}}, {{SEMESTER_YEAR}}, {{COURSE_DESCRIPTION}}
-- Select appropriate grading scale table from templates/grading-systems.md
-- Populate: {{GRADING_SCALE_TABLE}}, {{GRADING_SYSTEM}}, {{PASS_THRESHOLD}}
-
-**IMPORTANT - Save Progress:**
-- Create course directory: `courses/[COURSE-CODE]-[course-name]/`
-- Create subdirectories: `rubrics/`, `assessments/`, `weeks/`, `resources/`
-- Save course-info.md with all Step 1 information
-- Save course description research to `shared/research/[course-topic]/course-description-research.md`
+**Article balance:** 2 seminal + 2 recent per week
 
 ---
 
-### STEP 2: Research Top Schools for Learning Objectives AND Course Structure
+### Learning Objectives Best Practice
 
-**Explain to user:**
-"I'll research how top management schools (HBS, Stanford GSB, Wharton, MIT Sloan) teach this subject to extract both learning objectives and weekly course structure."
+**Target:** 5-8 course-level outcomes total
 
-**Research Process:**
+**Draft outcomes that:**
+1. Span Bloom's levels (knowledge → synthesis) without rigid categories
+2. Are measurable and assessable
+3. Align with course description promises
+4. Match what top schools emphasize for this subject
+5. Use strong action verbs (apply, analyze, create, evaluate, design)
 
-1. **Search for syllabi and course descriptions:**
-   - Use WebSearch to find syllabi from HBS, Stanford GSB, Wharton, MIT Sloan
-   - Use WebFetch to extract detailed course information
+**Optional grouping** by theme (e.g., Written, Oral, Analytical) rather than Bloom levels.
 
-2. **Extract TWO key elements:**
+**Anti-pattern:** Do NOT create 3-5 per Bloom category (12-20 total). Exceeds best practice.
 
-   **A. Learning Objectives** (organized in 4 Bloom's Taxonomy categories)
-   - Understand & Apply (3-5 objectives)
-   - Analyze & Evaluate (3-5 objectives)
-   - Create & Present (3-5 objectives)
-   - Collaborate (2-3 objectives)
+## Step 3: Assessment Design
 
-   **B. Course Structure** (weekly topics and progression)
-   - Week-by-week topics from each school
-   - Key concepts covered each week
-   - Logical progression and scaffolding
-   - Common themes across schools
+**After research complete** (so assessments match actual content):
 
-3. **Synthesize and present:**
-   - Present synthesized learning objectives for user approval
-   - Present synthesized weekly course outline for user approval
-   - Show which schools teach which topics
-   - Explain the pedagogical progression
+**Ask:** "Which structure?"
+- Portfolio + Presentation + Quiz
+- Exam + Project + Quiz
+- Custom mix
 
-**Your action:**
-- Populate: {{UNDERSTAND_APPLY_OBJECTIVES}}, {{ANALYZE_EVALUATE_OBJECTIVES}}, {{CREATE_PRESENT_OBJECTIVES}}, {{COLLABORATE_OBJECTIVES}}
-- Create draft weekly outline based on research (to be used in Step 4)
+Design assessments aligned to researched frameworks.
 
-**IMPORTANT - Save Progress:**
-- Update course-info.md with learning objectives
-- Save learning objectives research to `shared/research/[course-topic]/learning-objectives-research.md`
+**Output:** `assessments/assessment-schedule.md`
 
----
+## Step 4: Rubrics
 
-### STEP 3: Assessment Structure
+Load appropriate templates:
+- `written-work-rubric.md`
+- `presentation-rubric.md`
+- `project-rubric.md`
 
-**Ask the user:** "Which assessment structure best fits this course?"
+Customize for specific assignments.
 
-**Options:**
-1. Portfolio + Presentation + Quiz (skills-based courses)
-2. Exam + Project + Quiz (content-heavy courses)
-3. Custom mix
+## Step 5: Document Structure
 
-**For options 1 or 2:**
-- Load appropriate template from `templates/syllabus-components/assessment-structures/`
-- Ask for specific weights, due weeks, and assignment names
-- Populate all assessment tables
+**Ask:** "Single or two-document structure?"
 
-**For option 3:**
-- Guide user through custom structure matching template format
+| Option | When to Use |
+|--------|-------------|
+| Single syllabus | 2-3 assessments, <25 pages |
+| Syllabus + Handbook | 3+ assessments, >30 pages |
 
-**Your action:**
-- Populate: {{GRADING_DISTRIBUTION_TABLE}}, {{DETAILED_ASSESSMENTS}}
-- **SAVE IMMEDIATELY:** Create assessment schedule in `courses/[COURSE-CODE]/assessments/assessment-schedule.md`
-- Update course-info.md with assessment structure
+## Step 6: Synthesize Syllabus
 
----
+- Combine all sections
+- Verify all URLs accessible
+- Quality check against checklist
+- Save final documents
 
-### STEP 4: Course Calendar with Research-Backed Articles
+**General Information Format:** Use table with proper headers:
 
-This is the most intensive step. For each week:
+| Field | Value |
+|-------|-------|
+| **Course Code** | [CODE] |
+| **Course Title** | [TITLE] |
+| **Program** | [PROGRAM] |
+| **Duration** | 12 weeks |
+| **Instructor** | [NAME] |
+| **Email** | [EMAIL] |
+| **Phone** | [PHONE] |
 
-#### 4A: Present Research-Backed Weekly Outline
+**Course Calendar Format:** Use table format with FULL detail preserved:
 
-**Present the synthesized weekly outline from Step 2:**
-- Show all weeks with topics and key concepts from top school research
-- Explain the pedagogical progression
-- Identify which schools teach similar topics
-- Ask user: "Does this structure work, or would you like to adjust any weeks?"
+| Week | Topic | Key Concepts | Foundational Frameworks | Required Reading | Assessment Due |
+|------|-------|--------------|------------------------|------------------|----------------|
+| 1 | **Topic Name**: Theme description | - **Key term/phrase**: elaboration text<br>- **Another key concept**: explanation<br>- **Third concept**: details<br>- **Fourth concept**: more detail | - Framework (Author, Year)<br>- Framework (Author, Year) | - Author, A. B., & Author, C. D. (Year). *Book title* (edition, Ch. X-Y). Publisher.<br>- Author, E. F. (Year). Article title. *Journal Name*, *Volume*(Issue), pages. | Assessment name (%) |
 
-**User can:**
-- Approve as-is
-- Adjust specific week topics
-- Reorder weeks
-- Add/remove concepts
+**IMPORTANT:**
+- Topic column format: **Topic Name**: Theme description (on same line)
+- Use bulleted lists (with `<br>` tags) for Key Concepts, Frameworks, and Readings - NOT semicolons
+- Each item on its own line starting with `-`
+- **Bold the key term/phrase** in each Key Concept for easy scanning
+- Include ALL key concepts (3-5 per week) - never summarize or abbreviate
+- Include ALL foundational frameworks with full citations
+- **Required Reading format**: Full APA 7th edition citations (2-3 per week)
+  - Books: Author, A. B. (Year). *Title* (edition, Ch. X-Y). Publisher.
+  - Articles: Author, A. B. (Year). Title. *Journal*, *Volume*(Issue), pages.
+  - Use italics for book/journal titles (markdown `*asterisks*`)
+- Include assessment due dates where applicable
 
-**Once approved, proceed to article research for each week.**
+**Standard Course Policies (use simplified versions):**
 
-#### 4B: Four-Stage Article Research Process
+**Group Work:**
+- All portfolio assignments and presentations are completed in groups of 2-4 members
+- Groups must be formed by **Week 3** and remain consistent throughout the semester
+- Inform instructor of group composition via email by end of Week 3 for LMS records
 
-**STAGE 1: Discovery (Find 10-15 candidates)**
+**Participation Policy (10%):**
 
-Use WebSearch to cast wide net:
-```
-- "site:hbs.edu [topic] syllabus"
-- "site:gsb.stanford.edu [topic] MBA"
-- "site:wharton.upenn.edu [topic] course"
-- "site:mitsloan.mit.edu [topic]"
-- "[key concept] seminal article"
-- "[key concept] highly cited peer reviewed"
-- "site:hbr.org [topic]"
-- "[topic] Harvard Business Review 2020..2025"
-```
+Attendance (5%):
+- Attendance is mandatory and taken within the first 10 minutes of each class
+- Students arriving after attendance is marked absent
+- 2 absences allowed without penalty; each additional absence reduces participation grade
 
-Create initial list of 10-15 candidate articles.
+Active Participation (5%):
+- Complete all in-class quizzes and activities
+- Deductions for incomplete or missing in-class work
+- Professional conduct during class sessions
 
-**STAGE 2: Quick Filter (Reduce to 5-6)**
+**Do NOT include:**
+- Attribution lines like "Course design informed by syllabi analysis from Harvard Business School..."
+- AI and Technology Use Policy sections (still under discussion)
+- Detailed group work expectations, conflict resolution procedures, or non-contributing member policies
+- Subjective participation criteria ("engaged in discussions," "quality over quantity," etc.)
 
-For each candidate:
-1. Use WebFetch to check URL accessibility
-2. Check for paywall (STRICT: must be openly accessible)
-3. Review title and abstract for relevance
-4. Verify source quality (peer-reviewed journal, HBR, MIT Sloan Review, etc.)
-5. Check date (prefer recent unless true seminal work)
+**Outputs:**
+- `syllabus.md` (always)
+- `assessment-handbook.md` (if two-doc)
+- Research notes in `.working/research/`
 
-Eliminate any that fail accessibility or quality checks. Reduce to 5-6 candidates.
+## Step 7: Export
 
-**STAGE 3: Content Validation (Deep analysis to 2-3 finalists)**
+**After user approves syllabus:**
 
-For each of the 5-6 candidates:
+Auto-export syllabus to professional DOCX format:
 
-1. Use WebFetch to retrieve article content with this prompt:
-```
-"Analyze this article and extract:
-1. Main frameworks, models, or theories presented
-2. Key concepts and principles explained in depth
-3. Practical applications and examples provided
-4. Target audience level and writing style
-5. Geographic/cultural context of examples"
+```bash
+source venv/bin/activate && python tools/markdown_to_docx.py [COURSE-CODE] syllabus
 ```
 
-2. Compare extracted content against required key concepts
-3. Create validation checklist:
-```
-Required Concepts for Week [#]:
-□ [Concept 1] - Is this explained in depth?
-□ [Concept 2] - Is this covered adequately?
-□ [Concept 3] - Is this addressed?
-□ [Concept 4] - Is this included?
+**Features:**
+- Professional footer: `Course Code | University | Campus | Instructor | Page X of Y`
+- Formatted headings, tables, lists
+- Ready for distribution to students
 
-If ALL ✓ = PASS → Finalist
-If ANY ✗ = REJECT → Discard
-```
+**Output:** `syllabus.docx` (in course folder)
 
-4. **STRICT RULE:** Article must cover ALL key concepts. Reject partial matches.
+## Time Estimate
 
-Reduce to 2-3 finalists that pass full content validation.
-
-**STAGE 4: Present Finalists to User**
-
-For each finalist, present:
-```markdown
-**Option [A/B/C]:**
-[Full APA 7th citation]
-[Verified accessible URL]
-
-Content Match Analysis:
-✓ [Concept 1]: [Briefly explain how covered]
-✓ [Concept 2]: [Briefly explain how covered]
-✓ [Concept 3]: [Briefly explain how covered]
-✓ [Concept 4]: [Briefly explain how covered]
-
-Additional strengths:
-- [Practical examples, writing quality, etc.]
-
-Selection rationale: [Why this is perfect for this week]
-```
-
-**Ask user to select 2 articles** (ideally 1 theoretical/foundational + 1 applied/practitioner)
-
-#### 4C: Document Research
-
-**CRITICAL - Save After Each Week:**
-Save research notes to `shared/research/[course-topic]/article-research-summary.md` documenting:
-- Candidates considered for this week
-- Validation results (which passed/failed and why)
-- Final selections with justifications
-- Update the file after EACH week is completed
-
-This ensures no work is lost if conversation is interrupted.
-
-#### 4D: Build Calendar Entry and SAVE DRAFT
-
-Add to course calendar table:
-```markdown
-| Week [#]: [Topic] | [Topic details] [Key frameworks] [Learning focus] | [Article 1 citation with URL] [Article 2 citation with URL] |
-```
-
-**CRITICAL - Save Draft Syllabus After Every 2-3 Weeks:**
-- Update `courses/[COURSE-CODE]/syllabus-DRAFT.md` with completed weeks
-- This ensures work is preserved even if conversation interrupts
-- Mark draft status clearly at top of file
-
-**Repeat Steps 4A-4D for all weeks**
-
----
-
-### STEP 5: Select and Customize Rubrics
-
-**Ask user:** "Which types of rubrics do you need based on your assessments?"
-
-**Load from templates:**
-- `templates/syllabus-components/rubric-structures/written-work-rubric.md`
-- `templates/syllabus-components/rubric-structures/presentation-rubric.md`
-- `templates/syllabus-components/rubric-structures/project-rubric.md`
-
-**Your action:**
-- Customize rubrics for specific assignments if needed
-- Prepare rubrics for document structure decision
-
-**IMPORTANT - Do NOT save rubrics yet** - wait for Step 5.5 decision on document structure
-
----
-
-### STEP 5.5: Choose Document Structure
-
-**Explain to user:**
-"For comprehensive courses with detailed assessments, we have two document structure options:"
-
-**Option 1: Single Comprehensive Syllabus (Traditional)**
-- One document containing everything
-- All rubrics embedded in syllabus
-- All detailed instructions inline
-- Best for: Simple courses with 2-3 assessments, shorter rubrics
-
-**Option 2: Two-Document Structure (Recommended for Complex Courses)**
-- **syllabus.md** (15-20 pages): Overview document
-  - Course description and learning objectives
-  - Course calendar with reading list
-  - Assessment overview table with weights and due dates
-  - Brief assessment descriptions
-  - Cross-references: "See Assessment Handbook Section X"
-  - Course policies and resources
-
-- **assessment-handbook.md** (25-40 pages): Complete assessment guide
-  - Section 1: [Assessment 1] - Full instructions + rubric
-  - Section 2: [Assessment 2] - Full instructions + rubric
-  - Section 3: [Assessment 3] - Full instructions + rubric
-  - Section 4: [Assessment 4] - Full instructions + rubric
-  - Appendix: Submission procedures
-
-- Best for: Courses with 3+ assessments, detailed rubrics, complex requirements
-
-**Benefits of 2-Document Structure:**
-- Syllabus remains scannable overview
-- Handbook provides depth when needed
-- Clear referential integrity
-- Students reference syllabus for "what/when", handbook for "how"
-- Each document serves distinct purpose
-
-**Ask user:** "Which structure works best for this course?"
-
-**Your action based on choice:**
-
-**If Option 1 (Single Document):**
-- Populate: {{COURSE_RUBRICS}} inline
-- Include all detailed instructions in syllabus
-- Save to `courses/[COURSE-CODE]/syllabus.md`
-
-**If Option 2 (Two Documents):**
-- Create syllabus.md with:
-  - Assessment overview table with "See Handbook Section X" references
-  - Brief descriptions only (2-3 paragraphs per assessment)
-  - Clear cross-references throughout
-
-- Create assessment-handbook.md with:
-  - Table of contents linking to sections
-  - One section per assessment with:
-    - Complete instructions
-    - Full rubric with all performance levels
-    - Preparation guides/checklists
-    - Examples/templates if applicable
-    - Submission requirements
-  - Appendix with common procedures
-
-**IMPORTANT - Save Progress:**
-- Option 1: Save all to `courses/[COURSE-CODE]/syllabus.md`
-- Option 2: Save both `courses/[COURSE-CODE]/syllabus.md` AND `courses/[COURSE-CODE]/assessment-handbook.md`
-- Update course-info.md with chosen structure
-
----
-
-### STEP 6: Final Assembly and Quality Check
-
-**Your actions:**
-1. Combine all sections using syllabus-base-template.md structure
-2. Verify all placeholders are filled
-3. Check formatting consistency
-4. Validate all URLs are accessible
-5. **SAVE FINAL VERSION(S):**
-   - Single document: Save to `courses/[COURSE-CODE]/syllabus.md`
-   - Two documents: Save `syllabus.md` AND `assessment-handbook.md`
-6. Archive draft versions to `.archive/[date]-syllabus-DRAFT.md`
-7. Create COMPLETION-REPORT.md summarizing all deliverables
-
-**Quality Checklist:**
-- [ ] All course info populated
-- [ ] 3-5 learning objectives in each of 4 categories
-- [ ] Assessment structure complete with weights and due dates
-- [ ] Every week has 2 validated, accessible articles
-- [ ] All articles passed strict content validation
-- [ ] Rubrics appropriate for assessments (in syllabus OR handbook)
-- [ ] All URLs tested and accessible
-- [ ] Professional formatting throughout
-- [ ] Cross-references correct (if two-document structure)
-- [ ] Referential integrity maintained between documents
-
-**Present final document(s) to user for review.**
-
----
-
-## Important Research Principles
-
-1. **Strict Content Validation**: Only include articles that cover ALL required key concepts. No partial matches.
-
-2. **Accessibility is Mandatory**: Every article must be openly accessible. If paywall detected, find open-access alternative.
-
-3. **Quality Sources**: Prioritize peer-reviewed journals, HBR, MIT Sloan Review, top school publications.
-
-4. **Current + Seminal**: Balance recent relevance with foundational works.
-
-5. **Document Everything**: Save research process for transparency and future reference.
-
-6. **Top School Standards**: Research what HBS, Stanford GSB, Wharton, and MIT Sloan teach on each topic.
-
-## Files to Create
-
-1. `courses/[COURSE-CODE]/syllabus.md` - Final syllabus
-2. `courses/[COURSE-CODE]/assessments/assessment-schedule.md` - Extracted schedule
-3. `shared/research/school-syllabi-analysis/[course-topic]-research.md` - Research documentation
-4. Week-specific research notes as needed
-
-## Estimated Time
-
-- Steps 1-3: 15-20 minutes
-- Step 4 (research): 15-20 minutes per week (intensive but thorough)
-- Steps 5-6: 10-15 minutes
-
-**Total for 10-week course: 3-4 hours of high-quality syllabus development**
-
-The investment ensures world-class, evidence-based course content that truly prepares students for success.
+| Method | Code Time | Total Time |
+|--------|-----------|------------|
+| Desktop | 2-2.5 hrs | 7-10.5 hrs |
+| Direct | 6-9.5 hrs | 6-9.5 hrs |

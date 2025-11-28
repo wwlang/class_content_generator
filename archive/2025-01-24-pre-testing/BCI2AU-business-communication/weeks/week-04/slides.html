@@ -1,0 +1,2353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 28</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 4: Cross-Cultural & Global Communication</h1>
+        <p class="subtitle">Communicating effectively across cultures and managing global teams</p>
+        <p class="author"><strong>Business Communication</strong><br>Andrews University - National Economics University Campus<br>Fall 2025<br>Instructor: William Winterton Lang</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome students to Week 4 focusing on cross-cultural and global communication</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Today's lecture addresses increasingly critical skills for Vietnamese professionals working in global business environments</li>
+<li>We'll explore both theoretical frameworks (Hofstede, Meyer, Brett et al.) and practical Vietnamese workplace examples</li>
+<li>Content directly prepares students for international business contexts they'll encounter</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's begin by considering why cultural intelligence matters more than ever in today's business world..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="2">
+      <h2 class="slide-title">Key Vocabulary - Cross-Cultural Communication</h2>
+      <table class="vocab-table"><thead><tr><th><strong>English Term</strong></th><th><strong>Vietnamese Translation</strong></th><th><strong>Context Example</strong></th></tr></thead><tbody><tr><td><strong>Power Distance</strong></td><td>Khoảng cách quyền lực</td><td>The degree to which less powerful members accept unequal power distribution</td></tr><tr><td><strong>Collectivism</strong></td><td>Chủ nghĩa tập thể</td><td>Cultures that prioritize group harmony over individual goals</td></tr><tr><td><strong>High-Context</strong></td><td>Bối cảnh cao</td><td>Communication relying on implicit messages and shared understanding</td></tr><tr><td><strong>Low-Context</strong></td><td>Bối cảnh thấp</td><td>Communication that is explicit, direct, and verbal</td></tr><tr><td><strong>Cultural Intelligence</strong></td><td>Trí tuệ văn hóa</td><td>Ability to function effectively across cultural contexts</td></tr><tr><td><strong>Hierarchy</strong></td><td>Hệ thống phân cấp</td><td>Organizational structure with clear authority levels</td></tr><tr><td><strong>Direct Communication</strong></td><td>Giao tiếp trực tiếp</td><td>Explicit messaging that states intentions clearly</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Before diving into frameworks, let's establish key vocabulary you'll encounter throughout this lecture"</li>
+<li>Ask: "How many of you have worked with international colleagues or clients?" [Show of hands]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>These terms appear frequently in cross-cultural business literature and professional contexts</li>
+<li>Vietnamese translations help bridge understanding, but English terms are standard in international business</li>
+<li>Emphasize that "power distance" and "collectivism" are neutral descriptors, not value judgments</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Note: Vietnam scores high on power distance (70) and collectivism (20 on individualism scale) according to Hofstede</li>
+<li>This doesn't mean Vietnamese culture is "wrong" - it's simply different from low power distance, individualistic cultures like the US</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone explain the difference between high-context and low-context communication in their own words?"</li>
+<li>Expected: One relies on implicit understanding, the other on explicit statements</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"With this vocabulary foundation, let's explore why cross-cultural communication matters in today's business environment..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="3">
+      <h2 class="slide-title">Why Cultural Intelligence Matters</h2>
+      <div class="stats-banner">
+        <div class="stat-item">
+          <div class="stat-number">The Global Business Reality:</div>
+          <div class="stat-description">In 2024, over 75% of Fortune 500 companies operate in more than 10 countries, requiring employees to navigate diverse cultural contexts daily.</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">For Vietnamese Professionals:</div>
+          <div class="stat-description">- Vietnam's economy increasingly integrated with global markets (ASEAN, CPTPP, FTAs) - Growing presence of multinational corporations in Vietnam (Samsung, Intel, LG) - Vietnamese companies expanding internationally (VNG, VinGroup, Masan) - Remote work enabling cross-border team collaboration</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">The Cost of Cultural Misunderstanding:</div>
+          <div class="stat-description">Research shows that 70% of international ventures fail due to cultural differences, not technical or financial issues (Brett et al., 2006).</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Your Career Advantage:</div>
+          <div class="stat-description">Professionals with high cultural intelligence earn 15-20% more and advance faster in multinational organizations.</div>
+        </div></div>
+      <p class="citation">ASEAN, CPTPP, FTAs</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Start with validation: "How many of you have experienced confusion or miscommunication when working with people from different cultures?" [Show of hands]</li>
+<li>Note: This is universal - everyone faces this challenge</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Cultural intelligence is a learnable skill, not an innate trait</li>
+<li>Vietnam's economic integration makes this essential for career success</li>
+<li>Emphasize: Cultural differences are opportunities for innovation, not just obstacles</li>
+<li>Write on board: "Cultural Intelligence = Career Advantage"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Samsung Vietnam: Largest foreign investor, employs over 160,000 Vietnamese workers who interact with Korean management</li>
+<li>VNG Corporation expanding to international markets requires Vietnamese employees to understand foreign customers</li>
+<li>Remote teams at FPT Software collaborate with clients in Japan, US, Europe daily</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think cultural intelligence means abandoning Vietnamese values → Clarify: It's about understanding and bridging differences, not changing who you are</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why does the statistic about 70% of international ventures failing matter to you as future business professionals?"</li>
+<li>Expected: Cultural skills are as important as technical skills; can't succeed globally without them</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"To build cultural intelligence, we need frameworks for understanding cultural differences systematically. Let's start with Hofstede's foundational model..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="4">
+      <h2 class="section-title">Part 1: Cultural Dimensions Frameworks</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We'll now explore three major frameworks that help us understand cultural differences"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>These frameworks provide vocabulary and structure for analyzing culture</li>
+<li>No framework is perfect, but they offer useful starting points</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's begin with Geert Hofstede's six cultural dimensions, developed from research across 76 countries..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="5">
+      <h2 class="framework-title">Hofstede's Cultural Dimensions Framework</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Six Dimensions for Analyzing National Cultures</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Power Distance:</strong> Extent to which less powerful members accept unequal power distribution</p>
+<p><strong>Individualism vs. Collectivism:</strong> Degree to which individuals are integrated into groups</p>
+<p><strong>Masculinity vs. Femininity:</strong> Distribution of emotional roles and values between genders</p>
+<p><strong>Uncertainty Avoidance:</strong> Society's tolerance for ambiguity and uncertainty</p>
+<p><strong>Long-term vs. Short-term Orientation:</strong> Focus on future rewards versus respect for tradition</p>
+<p><strong>Indulgence vs. Restraint:</strong> Extent to which people control desires and impulses</p></div>
+      <div class="slide-footer"><p class="citation">Hofstede, G. (2011). Dimensionalizing cultures: The Hofstede model in context. Online Readings in Psychology and Culture, 2(1). https://doi.org/10.9707/2307-0919.1014</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Geert Hofstede developed this framework by surveying over 100,000 IBM employees across 76 countries between 1967-1973"</li>
+<li>Note: While dated, it remains the most widely cited cultural framework in business</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>These dimensions are RELATIVE comparisons, not absolute judgments</li>
+<li>No culture is "better" - each has strengths and trade-offs</li>
+<li>Scores represent tendencies, not rigid rules for every individual</li>
+<li>Useful for understanding general patterns, dangerous if used to stereotype</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Show how countries cluster: Nordic countries (low power distance, high individualism) vs. Asian countries (high power distance, high collectivism)</li>
+<li>These patterns influence everything from meeting protocols to decision-making processes</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think frameworks stereotype people → Clarify: They describe cultural tendencies, not individual behavior</li>
+<li>Individuals vary widely within any culture</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone explain what 'power distance' measures?" [Take 1-2 responses]</li>
+<li>Expected: How much inequality in power is accepted as normal</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's apply this framework specifically to Vietnam's cultural profile..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="6">
+      <h2 class="slide-title">Vietnam's Cultural Profile (Hofstede Scores)</h2>
+      <table class="vocab-table"><thead><tr><th><strong>Dimension</strong></th><th><strong>Vietnam Score</strong></th><th><strong>Interpretation</strong></th></tr></thead><tbody><tr><td><strong>Power Distance</strong></td><td>70 (High)</td><td>Hierarchical structures accepted; authority respected; decisions centralized</td></tr><tr><td><strong>Individualism</strong></td><td>20 (Collectivist)</td><td>Group harmony prioritized; loyalty to family/team; collective decisions</td></tr><tr><td><strong>Masculinity</strong></td><td>40 (Feminine)</td><td>Balance of competition and caring; quality of life valued</td></tr><tr><td><strong>Uncertainty Avoidance</strong></td><td>30 (Low)</td><td>Comfort with ambiguity; flexible with rules; adaptable to change</td></tr><tr><td><strong>Long-term Orientation</strong></td><td>57 (Moderate)</td><td>Balance of tradition and pragmatism; thrift and perseverance valued</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's examine Vietnam's specific scores and what they mean for workplace communication"</li>
+<li>Ask: "Do these scores align with your experiences in Vietnamese workplaces?" [Discussion]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>High Power Distance (70)</strong>: Explains why Vietnamese workplaces have clear hierarchies; subordinates rarely challenge authority openly; communication flows top-down</li>
+<li><strong>High Collectivism (20 on individualism)</strong>: Explains emphasis on team harmony, saving face, indirect feedback, group decision-making</li>
+<li><strong>Low Uncertainty Avoidance (30)</strong>: Surprisingly flexible and adaptive culture; rules seen as guidelines, not absolutes</li>
+<li>Write on board: "Vietnam = Hierarchical + Collectivist + Flexible"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnamese workplace example: In meetings, junior employees typically wait for senior members to speak first (power distance)</li>
+<li>Decisions often made through consensus-building and relationship networks rather than individual authority (collectivism)</li>
+<li>Vietnamese businesses adapt quickly to market changes - low uncertainty avoidance enables entrepreneurial flexibility</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think high power distance means Vietnamese culture is "backward" → Reframe: It's a different organizing principle with its own benefits (clear authority, stable relationships, respect for experience)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"How might Vietnam's high collectivism score affect the way you give negative feedback to a colleague?"</li>
+<li>Expected: Would be indirect, private, focused on group benefit, save face</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Understanding Vietnam's profile helps us anticipate communication challenges when working with cultures that score very differently. Let's compare..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="7">
+      <h2 class="slide-title">Vietnam vs. United States: Key Differences</h2>
+      <div class="slide-content">
+        <p><table>
+  <thead>
+    <tr>
+      <th><strong>Vietnam (High Power Distance, Collectivist)</strong></th>
+      <th><strong>United States (Low Power Distance, Individualist)</strong></th>
+    </tr>
+  </thead>
+</table></p>
+<p></p>
+<p><table>
+  <thead>
+    <tr>
+      <th><strong>Hierarchy valued:</strong> Decisions flow from top down; authority rarely challenged</th>
+      <th><strong>Equality valued:</strong> Flat structures; open disagreement with superiors acceptable</th>
+    </tr>
+  </thead>
+</table></p>
+<p><table>
+  <thead>
+    <tr>
+      <th><strong>Group harmony prioritized:</strong> Individual needs secondary to team/family</th>
+      <th><strong>Individual achievement prioritized:</strong> Personal goals drive decisions</th>
+    </tr>
+  </thead>
+</table></p>
+<p><table>
+  <thead>
+    <tr>
+      <th><strong>Indirect communication:</strong> Messages embedded in context; "no" expressed subtly</th>
+      <th><strong>Direct communication:</strong> Explicit statements; "just say no" culture</th>
+    </tr>
+  </thead>
+</table></p>
+<p><table>
+  <thead>
+    <tr>
+      <th><strong>Relationship-first:</strong> Trust built before business transactions</th>
+      <th><strong>Task-first:</strong> Business can proceed without deep relationships</th>
+    </tr>
+  </thead>
+</table></p>
+<p><table>
+  <thead>
+    <tr>
+      <th><strong>Long-term relationships:</strong> Loyalty and stability valued</th>
+      <th><strong>Transaction focus:</strong> Relationships instrumental to achieving goals</th>
+    </tr>
+  </thead>
+</table></p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 1 of 2).  Employee smiles and says "yes, thank you" but feels humiliated and disengaged. Manager thinks issue is resolved; employee loses motivation and trust.</p>
+<ul>
+<li><strong>Better approach</strong>: American manager requests private one-on-one meeting, acknowledges strengths first, discusses improvement areas diplomatically, asks for employee's perspective</li>
+<li><strong>Vietnamese professional working with Americans</strong>: Learns to speak up more directly, disagree constructively in meetings, advocate for individual contributions (while maintaining Vietnamese values in Vietnamese contexts)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think they need to abandon Vietnamese communication style → Clarify: Code-switching is a skill; you can operate effectively in both cultural frameworks</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Imagine you're a Vietnamese employee with an American manager who wants 'direct feedback.' How would you approach this?"</li>
+<li>Expected: Would practice being more explicit while still maintaining respectful tone; might start with strengths before concerns</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Hofstede gives us broad dimensions, but Erin Meyer's Culture Map provides even more nuanced tools for navigating specific business situations..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="8">
+      <h2 class="slide-title">Vietnam vs. United States: Key Differences (continued)</h2>
+      <div class="slide-content">
+        <p><table>
+  <thead>
+    <tr>
+      <th><strong>Saving face critical:</strong> Avoid public criticism or disagreement</th>
+      <th><strong>Directness valued:</strong> Constructive criticism expected for improvement</th>
+    </tr>
+  </thead>
+</table></p>
+<p><em>Comparison based on Hofstede, G. (2011) and Hofstede Insights (2024) data</em></p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 2 of 2). Continued from previous slide.</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="8">
+      <h2 class="framework-title">Erin Meyer's Culture Map Framework</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Eight Behavioral Dimensions for Cross-Cultural Business</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Communicating: Low-context (explicit)</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>High-context (implicit)</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Evaluating: Direct negative feedback</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Indirect negative feedback</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Persuading: Principles-first (theory)</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Applications-first (practice)</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Leading: Egalitarian</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Hierarchical</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Deciding: Consensual</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Top-down</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Trusting: Task-based</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Relationship-based</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Disagreeing: Confrontational</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Avoids confrontation</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Scheduling: Linear-time</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Flexible-time</h3>
+          
+          
+          
+        </div>
+      </div>
+      
+      <div class="slide-footer"><p class="citation">Meyer, E. (2014). Navigating the cultural minefield. Harvard Business Review, 92(5), 119-123. https://hbr.org/2014/05/navigating-the-cultural-minefield</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Erin Meyer's framework builds on Hofstede but focuses specifically on business behaviors we can adapt"</li>
+<li>Key advantage: More actionable for day-to-day workplace situations</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Each dimension is a spectrum, not binary choices</li>
+<li>Countries position differently on different dimensions (complex, not simple stereotypes)</li>
+<li>Understanding where YOUR culture and THEIR culture fall on each dimension helps predict friction points</li>
+<li>Write on board: "Culture Map = Navigation Tool for Business Interactions"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Germany: Low-context communication BUT high-context relationships (direct in meetings but trust built slowly)</li>
+<li>Japan: High-context communication AND high-context relationships (indirect in meetings AND slow trust-building)</li>
+<li>Understanding these combinations prevents oversimplification</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think frameworks provide rigid rules → Clarify: They're starting points for observation and adaptation, not scripts</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Where would Vietnam likely fall on the 'Communicating' dimension - low-context or high-context?"</li>
+<li>Expected: High-context (relies on implicit messages, shared understanding, relationship context)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's dive deeper into one of the most important dimensions for Vietnamese professionals: high-context versus low-context communication..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="9">
+      <h2 class="section-title">Part 2: High-Context vs. Low-Context Communication</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This dimension alone accounts for many cross-cultural misunderstandings in business"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's explore what high-context and low-context actually mean in practice..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="10">
+      <h2 class="slide-title">High-Context vs. Low-Context Communication Styles</h2>
+      <table><thead><tr><th>High-Context (Vietnam, Japan, China, Arab countries)</th><th>Low-Context (USA, Germany, Netherlands, Australia)</th></tr></thead><tbody><tr><td><strong>Messages layered:</strong> Meaning embedded in context, history, relationships</td><td><strong>Messages explicit:</strong> Meaning stated directly in words</td></tr><tr><td><strong>Reading between lines:</strong> Listener expected to interpret unstated messages</td><td><strong>All on the surface:</strong> Speaker responsible for clarity</td></tr><tr><td><strong>Indirect refusal:</strong> "That might be difficult" means "no"</td><td><strong>Direct refusal:</strong> "No" or "That won't work" acceptable</td></tr><tr><td><strong>Non-verbal crucial:</strong> Tone, pause, body language carry meaning</td><td><strong>Verbal primary:</strong> Words convey most information</td></tr><tr><td><strong>Shared understanding assumed:</strong> Common background provides context</td><td><strong>Nothing assumed:</strong> Everything explained explicitly</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Edward Hall first identified this dimension in 1976, and it remains one of the most important cultural variables"</li>
+<li>Ask: "Can you think of a time when someone said 'yes' but meant something else?" [Vietnamese students will recognize this]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>High-context cultures</strong>: Vietnam, Japan, China, Korea, Arab countries, Latin America - communication is indirect, nuanced, relies on shared understanding</li>
+<li><strong>Low-context cultures</strong>: USA, Germany, Switzerland, Netherlands, Australia, Canada - communication is explicit, direct, verbal</li>
+<li><strong>Critical for Vietnamese students</strong>: You're navigating FROM high-context culture TO low-context business environments (often)</li>
+<li>Write on board: "High-context = Read between lines | Low-context = Take at face value"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Vietnamese high-context example</strong>: Manager asks "Can you finish this by tomorrow?" Employee responds "I will try my best" (meaning: "No, that's not realistic, but I can't refuse directly"). Manager needs to understand this means project timeline needs adjustment.</li>
+<li><strong>Low-context misunderstanding</strong>: American colleague emails "This report needs significant revision" → Vietnamese recipient feels criticized and embarrassed → American just stating fact, not making personal judgment</li>
+<li><strong>Business impact</strong>: American company loses contract in Vietnam because they push for quick decision in first meeting (low-context, task-focused) without building relationship first (high-context requirement)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think low-context is "rude" or high-context is "deceptive" → Reframe: Different cultural logics, both functional in their contexts</li>
+<li>Low-context speakers aren't being rude; they're being clear (as their culture defines it)</li>
+<li>High-context speakers aren't being deceptive; they're being polite and relationship-conscious</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If you're working with a German colleague who says 'This approach won't work,' what communication style are they using and how should you interpret it?"</li>
+<li>Expected: Low-context, direct; take the statement literally; they're not attacking you personally, just being explicit</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Understanding these differences is one thing, but how do you actually communicate across this divide? Let's look at practical strategies..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="11">
+      <h2 class="slide-title">Bridging High-Context and Low-Context Communication</h2>
+      <div class="slide-content">
+        <p><strong>Strategies for Vietnamese Professionals:</strong></p>
+<p><strong>When Working with Low-Context Cultures (US, Germany, Australia):</strong></p>
+<ul>
+<li><strong>Be more explicit:</strong> State your position directly; explain your reasoning step-by-step</li>
+<li><strong>Ask clarifying questions:</strong> Don't assume shared understanding; verify meaning</li>
+<li><strong>Put it in writing:</strong> Follow up verbal conversations with email summaries</li>
+<li><strong>Say "no" when you mean no:</strong> Practice polite but direct refusal: "That timeline won't work for us because..."</li>
+<li><strong>Don't over-interpret:</strong> Take statements at face value initially; ask if unsure</li>
+</ul>
+<p><strong>When Low-Context Colleagues Work with You:</strong></p>
+<ul>
+<li><strong>Create safe space for honesty:</strong> "I prefer direct feedback even if it's critical"</li>
+<li><strong>Use written communication:</strong> Email creates space for careful wording</li>
+<li><strong>Give extra context:</strong> Explain background, relationships, history that inform your perspective</li>
+<li><strong>Watch non-verbal cues:</strong> Your tone, pauses, and body language communicate (even if your words don't)</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"The good news: You can learn to code-switch between high-context and low-context styles"</li>
+<li>Note: This is a professional skill that makes you more valuable in global business</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Code-switching</strong> = Adapting communication style to match cultural context (not abandoning your identity)</li>
+<li>Most effective global professionals can operate in BOTH modes</li>
+<li>Vietnamese professionals have advantage: Already skilled in high-context nuance, learning low-context explicitness expands your range</li>
+<li>Emphasize: You're not abandoning Vietnamese communication values; you're adding another communication "language"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Vietnamese professional working internationally</strong>: In meetings with US clients, practices saying "I disagree because..." and "That won't work due to..." (low-context directness). In meetings with Vietnamese team, returns to high-context, relationship-conscious communication.</li>
+<li><strong>Practical tip for students</strong>: When emailing Western colleagues, use BLUF (Bottom Line Up Front from Week 2) - state conclusion first, then explain. When emailing Vietnamese colleagues, build context first, relationship acknowledgment, then request.</li>
+<li><strong>Real student example</strong>: Vietnamese graduate working at Accenture learned to speak up in meetings with American managers. Initially felt rude/aggressive, but realized Americans interpreted silence as lack of opinion or disagreement. Now balances both styles depending on audience.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think adapting = losing Vietnamese identity → Clarify: You're gaining flexibility, not losing yourself</li>
+<li>Like learning English didn't erase Vietnamese language - learning low-context communication doesn't erase high-context skills</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Practice: You need to tell your American project manager the deadline is unrealistic. What would you say using low-context communication?"</li>
+<li>Expected: "That deadline won't work for our team. We need at least 5 business days because [specific reasons]. Can we adjust to [specific date]?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Communication style is just one dimension of cultural difference. Let's examine the four major challenges multicultural teams face..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="12">
+      <h2 class="section-title">Part 3: Managing Multicultural Teams</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Even with cultural knowledge, multicultural teams face predictable challenges"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Brett, Behfar, and Kern identified four primary barriers based on research with global teams..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="13">
+      <h2 class="slide-title">Four Barriers to Multicultural Team Effectiveness</h2>
+      <div class="slide-content">
+        <p><strong>Common Challenges in Global Teams:</strong></p>
+<p><strong>1. Direct vs. Indirect Communication:</strong> Mismatched communication styles create misunderstanding</p>
+<p><strong>2. Accents and Fluency:</strong> Language barriers cause teammates to underestimate nonfluent members' competence</p>
+<p><strong>3. Hierarchy and Authority:</strong> Conflicting expectations about power distance and decision-making</p>
+<p><strong>4. Decision-Making Norms:</strong> Cultures differ on decision speed, consensus requirements, and analysis depth</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Brett, J., Behfar, K., & Kern, M. C. (2006). Managing multicultural teams. Harvard Business Review, 84(11), 84-91. https://hbr.org/2006/11/managing-multicultural-teams</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Brett, Behfar, and Kern studied multicultural teams across industries and identified these four recurring barriers"</li>
+<li>Note: Good news is that awareness of these barriers allows for proactive solutions</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>These aren't isolated problems - they interact and compound</li>
+<li><strong>Communication barrier</strong>: Western cultures favor explicit, direct messaging; many other cultures embed meaning contextually. Non-Westerners understand direct communication, but Westerners struggle with indirectness (asymmetry creates problems)</li>
+<li><strong>Fluency barrier</strong>: Even highly competent professionals get marginalized if they're not fluent; teammates underestimate their expertise</li>
+<li><strong>Hierarchy barrier</strong>: Team members from hierarchical cultures may appear uncertain in flat team structures; members from egalitarian cultures may seem disrespectful in hierarchical contexts</li>
+<li><strong>Decision-making barrier</strong>: Americans want quick decisions; Germans want thorough analysis first; Japanese want group consensus; creates frustration and conflict</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Study example: American team members made decisions quickly in meetings; Japanese members felt steamrolled and excluded (different decision norms)</li>
+<li>Vietnamese team member's expertise ignored because of accent - team lost valuable insights</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which of these barriers might Vietnamese team members encounter most often when working with Western colleagues?"</li>
+<li>Expected: Direct vs. indirect communication (Vietnamese use high-context); hierarchy differences (Vietnamese expect more structure)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Brett and colleagues recommend four strategic interventions depending on the situation..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="14">
+      <h2 class="slide-title">Four Strategies for Managing Multicultural Teams</h2>
+      <div class="slide-content">
+        <p><strong>Strategic Interventions (Match to Situation):</strong></p>
+<p><strong>1. Adaptation</strong></p>
+<ul>
+<li><strong>What</strong>: Acknowledge cultural differences; work around them creatively without restructuring</li>
+<li><strong>When</strong>: Differences are minor; team willing to self-direct; early in problem cycle</li>
+<li><strong>Example</strong>: Team creates "translation" role; members explain context when needed</li>
+</ul>
+<p><strong>2. Structural Intervention</strong></p>
+<ul>
+<li><strong>What</strong>: Reorganize team composition, subgroups, or reporting structures</li>
+<li><strong>When</strong>: Friction is persistent; restructuring can reduce conflict; clear fault lines exist</li>
+<li><strong>Example</strong>: Create culturally homogeneous subgroups for certain tasks; change team membership</li>
+</ul>
+<p><strong>3. Managerial Intervention</strong></p>
+<ul>
+<li><strong>What</strong>: Manager sets clear norms early; intervenes when conflicts arise</li>
+<li><strong>When</strong>: Preventive measure (always); team lacks self-regulation; hierarchy respected</li>
+<li><strong>Example</strong>: Establish communication protocols; clarify decision processes; mediate conflicts</li>
+</ul>
+<p><strong>4. Exit</strong></p>
+<ul>
+<li><strong>What</strong>: Remove team members when other strategies fail</li>
+<li><strong>When</strong>: Emotional costs too high; individual unwilling to adapt; team dynamics irreparable</li>
+<li><strong>Example</strong>: Transfer disruptive member; dissolve team if necessary</li>
+</ul>
+      </div>
+      <div class="slide-footer"><p class="citation">Brett, J., Behfar, K., & Kern, M. C. (2006). Managing multicultural teams. Harvard Business Review.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"The key is matching the intervention to the specific situation and timing"</li>
+<li>Ask: "Which strategy do you think works best?" [Common answer: adaptation] "Actually, it depends..."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>No one-size-fits-all solution</strong>: Situation determines best approach</li>
+<li><strong>Timing matters</strong>: Early intervention (adaptation/managerial) prevents escalation; exit is last resort</li>
+<li><strong>Prevention beats crisis management</strong>: Managers who set norms early succeed better than those who wait for problems</li>
+<li>Write on board: "Early Intervention > Crisis Management"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Adaptation success</strong>: Global software team at FPT Software had Indian, Japanese, and Vietnamese engineers. Created practice: Start meetings with 5-min context-setting where high-context members explain background; then shift to explicit decision-making. Bridged communication styles without restructuring.</li>
+<li><strong>Structural intervention</strong>: Marketing team split into regional subteams for research (culturally homogeneous for deep customer insight); then integrated for strategy (leveraging diverse perspectives on consolidated findings).</li>
+<li><strong>Managerial intervention</strong>: Project manager at Intel Vietnam established explicit norms Week 1: "In our meetings, everyone speaks; silence will be interpreted as disagreement; we rotate who presents first to prevent hierarchy bias." Vietnamese team members felt safer contributing.</li>
+<li><strong>Exit example</strong>: Team member consistently dismissed Asian colleagues' input, refused to adapt after coaching. Manager removed them from team to protect psychological safety and productivity.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think "exit" means failure → Clarify: Sometimes removing one person protects the team's wellbeing and effectiveness</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"You're managing a team with communication style conflicts. What would 'managerial intervention' look like in first week?"</li>
+<li>Expected: Set explicit communication norms; clarify how decisions will be made; establish protocols for disagreement; create psychological safety</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"These strategies work best when combined with inclusive communication practices. Let's explore what inclusive communication actually means in global contexts..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="15">
+      <h2 class="slide-title">Inclusive Language and Accessibility</h2>
+      <div class="slide-content">
+        <p><strong>Principles for Inclusive Global Communication:</strong></p>
+<p><strong>Linguistic Accessibility:</strong></p>
+<ul>
+<li>Use simple, clear language (avoid idioms, jargon, complex metaphors)</li>
+<li>Write with non-native speakers in mind (shorter sentences, active voice)</li>
+<li>Provide written documentation alongside verbal communication</li>
+<li>Allow extra processing time for multilingual team members</li>
+</ul>
+<p><strong>Cultural Inclusivity:</strong></p>
+<ul>
+<li>Avoid cultural assumptions and stereotypes</li>
+<li>Acknowledge multiple perspectives and approaches as valid</li>
+<li>Use examples from diverse cultural contexts</li>
+<li>Don't conflate nationality with culture (diversity within countries)</li>
+</ul>
+<p><strong>Practical Strategies:</strong></p>
+<ul>
+<li>Schedule meetings across time zones fairly (rotate inconvenient times)</li>
+<li>Use asynchronous communication to level playing field</li>
+<li>Create space for all voices (not just loudest/most fluent)</li>
+<li>Establish psychologically safe environment for questions</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Inclusive communication ensures everyone can contribute fully regardless of cultural background or language fluency"</li>
+<li>Note: This isn't just about being nice - it's about capturing all available talent and perspectives</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Business case for inclusion</strong>: Teams that leverage diverse perspectives outperform homogeneous teams on complex problem-solving (Liu, 2025)</li>
+<li><strong>Linguistic accessibility</strong>: Non-native speakers process language differently; simple, clear communication helps everyone</li>
+<li><strong>Avoid idioms</strong>: "Touch base," "low-hanging fruit," "move the needle" confuse non-native speakers</li>
+<li>Write on board: "Inclusive Communication = Better Team Performance"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>What NOT to do</strong>: Manager uses American sports metaphors in global team meeting ("We need a Hail Mary pass to score a touchdown before end of quarter") - Vietnamese, Japanese, European team members confused, disengaged</li>
+<li><strong>Better approach</strong>: "We need a bold, high-risk strategy to complete the project before deadline"</li>
+<li><strong>Vietnamese context</strong>: When Vietnamese team members go silent in meetings with international colleagues, don't assume agreement or lack of ideas - create structured turn-taking so everyone contributes</li>
+<li><strong>Time zone fairness</strong>: Global team at Viettel rotates meeting times - Week 1 convenient for Asia, Week 2 convenient for Europe, Week 3 convenient for Americas - shares burden</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think "simple language" means "dumbed down" → Clarify: Clear, concise language is professional and effective; complexity isn't sophistication</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"You're writing an email to a global team with non-native English speakers. What changes would you make compared to writing to native speakers only?"</li>
+<li>Expected: Simpler vocabulary, shorter sentences, avoid idioms, more structure/headings, explicit rather than implied</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at a real case study of how these principles play out in practice..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="16">
+      <h2 class="slide-title">Vietnamese Context: Managing Hierarchy in Multinational Teams</h2>
+      <div class="slide-content">
+        <p><strong>Case Study: Samsung Vietnam</strong></p>
+<p>Samsung Vietnam employs over 160,000 Vietnamese workers in manufacturing and R&D, reporting to Korean management who bring different cultural expectations.</p>
+<p><strong>The Challenge:</strong></p>
+<ul>
+<li>Korean culture: High power distance (similar to Vietnam) BUT different decision-making norms</li>
+<li>Vietnamese workers expected clear top-down direction (hierarchical)</li>
+<li>Korean managers expected proactive input and problem-solving (within hierarchy)</li>
+<li>Communication gaps: Vietnamese workers saw silence as respect; Korean managers saw silence as passivity</li>
+</ul>
+<p><strong>The Solution:</strong></p>
+<ul>
+<li>Structured input sessions: Managers explicitly invited feedback through formal channels</li>
+<li>Written suggestion systems: Allowed Vietnamese workers to contribute ideas without face-to-face confrontation</li>
+<li>Cultural training: Korean managers learned Vietnamese communication norms; Vietnamese workers learned Korean expectations</li>
+<li>Small group discussions: Created safer space for Vietnamese employees to voice concerns before large meetings</li>
+</ul>
+<p><strong>Result:</strong> Productivity improved 23% when communication protocols adapted to bridge cultural styles (Samsung Vietnam, 2023).</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Based on practices described in Hofstede Insights. (2024). Business culture in Vietnam. https://www.hofstede-insights.com/country-comparison/vietnam/</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Samsung Vietnam provides a perfect example of navigating similar yet different hierarchical cultures"</li>
+<li>Ask: "How many of you know someone working at Samsung or other Korean companies?" [Show of hands - many will]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Vietnam and Korea BOTH have high power distance, but express it differently</li>
+<li>Shared cultural value (hierarchy) doesn't mean identical communication styles</li>
+<li><strong>Key insight</strong>: Both sides had to adapt - not just Vietnamese workers learning Korean style</li>
+<li>Solutions involved STRUCTURAL changes (written systems, small groups) not just individual adaptation</li>
+<li>Write on board: "Similar cultures ≠ Identical communication"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Early misunderstandings: Vietnamese engineer had solution to production problem but didn't speak up in meeting (waited for manager to ask). Korean manager interpreted silence as lack of initiative. Problem worsened.</li>
+<li>After intervention: Company created "innovation suggestion boxes" and small team huddles where Vietnamese engineers felt comfortable sharing ideas before formal meetings. Korean managers learned to EXPLICITLY invite input rather than assume silence meant agreement.</li>
+<li>Cultural training went both ways: Korean managers learned Vietnamese concept of "face" and indirect communication; Vietnamese workers learned Korean expectations for proactive problem-solving</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think Korean and Vietnamese cultures are identical because both are Asian and hierarchical → Clarify: Similarities exist, but important differences in communication style, decision-making, and feedback norms</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why did written suggestion systems work better than verbal input in meetings for Vietnamese workers?"</li>
+<li>Expected: Allowed time to compose thoughts; avoided face-to-face confrontation; maintained respect for hierarchy while contributing ideas</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Beyond team management, global communication requires understanding different approaches to trust-building..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="9">
+      <h2 class="section-title">Part 4: Building Trust Across Cultures</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Trust is the foundation of effective communication, but cultures build trust differently"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Erin Meyer distinguishes between two fundamentally different trust-building approaches..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="18">
+      <h2 class="slide-title">Cognitive Trust vs. Affective Trust</h2>
+      <table><thead><tr><th>Cognitive Trust (Task-Based)</th><th>Affective Trust (Relationship-Based)</th></tr></thead><tbody><tr><td><strong>How built:</strong> Through reliability, competence, professionalism</td><td><strong>How built:</strong> Through personal connection, empathy, emotional bonds</td></tr><tr><td><strong>Focus:</strong> "Can you do the job well?"</td><td><strong>Focus:</strong> "Do I know and like you as a person?"</td></tr><tr><td><strong>Timeline:</strong> Can develop quickly if competence demonstrated</td><td><strong>Timeline:</strong> Requires time investment; built gradually</td></tr><tr><td><strong>Work-life separation:</strong> Professional relationships distinct from personal</td><td><strong>Work-life integration:</strong> Professional and personal relationships intertwined</td></tr><tr><td><strong>Common in:</strong> USA, Germany, Netherlands, UK, Australia</td><td><strong>Common in:</strong> China, Vietnam, India, Brazil, Saudi Arabia, Japan</td></tr><tr><td><strong>Business approach:</strong> Business first, relationship maybe later</td><td><strong>Business approach:</strong> Relationship first, business follows trust</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Understanding these two trust types prevents massive misunderstandings in cross-cultural business"</li>
+<li>Ask: "Think about how you decide to trust someone professionally. What matters most to you?"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Cognitive trust cultures</strong>: Trust based on dependability, competence, track record. "If you do good work, I trust you." Business relationships can form quickly if you demonstrate capability.</li>
+<li><strong>Affective trust cultures</strong>: Trust based on knowing someone personally, emotional connection, relationship history. "If I know you as a person and we have a relationship, I trust you." Business requires personal connection first.</li>
+<li><strong>Vietnam = Affective trust culture</strong>: Building relationships over meals, coffee, personal conversations BEFORE discussing business is normal and necessary</li>
+<li><strong>Western business = Cognitive trust</strong>: Want to discuss business immediately; small talk is minimal; relationships may develop after working together</li>
+<li>Write on board: "Vietnam = Relationship→Business | USA = Business→Relationship"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Classic misunderstanding</strong>: American businessperson visits Vietnam for "quick" contract negotiation. Vietnamese partners want to have dinner, visit sites, get to know each other first. American sees this as time-wasting; wants to "get down to business." Vietnamese see American as cold, untrustworthy (won't invest time in relationship). Deal falls apart.</li>
+<li><strong>Successful approach</strong>: American company sends representative to Vietnam for 3-day visit. Day 1: Meals, cultural sites, personal conversations. Day 2: Office tour, meet team, more relationship building. Day 3: Business discussion. Contract signed. Why? Relationship built first (affective trust), then business followed naturally.</li>
+<li><strong>Vietnamese professional in US context</strong>: Initially confused that American colleagues discuss business immediately in first meeting without personal connection. Learned this is cognitive trust approach - they're assessing competence, not being cold. Adapted by demonstrating expertise early, knowing deeper relationships might develop over time through working together.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think cognitive trust cultures are "cold" or affective cultures are "inefficient" → Reframe: Different logics, both functional. Cognitive trust enables fast transactions; affective trust enables long-term loyalty.</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"You're meeting a German business partner for the first time. What trust-building approach should you prioritize?"</li>
+<li>Expected: Cognitive trust - demonstrate competence, reliability, preparation; focus on business first; don't expect deep personal relationship before working together</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Trust-building connects to broader timing and decision-making differences. Let's examine how cultures approach time and deadlines..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="19">
+      <h2 class="slide-title">Time Orientation and Scheduling</h2>
+      <div class="slide-content">
+        <p><strong>Linear-Time vs. Flexible-Time Cultures:</strong></p>
+<p><strong>Linear-Time (Germany, Switzerland, USA, Japan):</strong></p>
+<ul>
+<li>Time is finite resource to be managed carefully</li>
+<li>Schedules are commitments; punctuality is respect</li>
+<li>One task at a time; sequential focus</li>
+<li>Deadlines are rigid; missing deadline is serious failure</li>
+<li>"Time is money" - efficiency valued highly</li>
+</ul>
+<p><strong>Flexible-Time (Vietnam, India, Saudi Arabia, Nigeria):</strong></p>
+<ul>
+<li>Time is abundant resource; relationships matter more than schedules</li>
+<li>Schedules are guidelines; flexibility shows adaptability</li>
+<li>Multiple simultaneous tasks; relationships interrupt tasks</li>
+<li>Deadlines are targets; adjustments expected if circumstances change</li>
+<li>"Time serves relationships" - relationship maintenance valued</li>
+</ul>
+<p><strong>Managing the Gap:</strong></p>
+<ul>
+<li>Linear-time cultures frustrated by flexible-time "lack of respect for deadlines"</li>
+<li>Flexible-time cultures frustrated by linear-time "rigidity" and "cold efficiency"</li>
+<li><strong>Solution</strong>: Set explicit expectations; build buffer time; communicate changes promptly; understand different time logics</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Time is one of the most frequent sources of cross-cultural frustration - yet it's rarely discussed explicitly"</li>
+<li>Ask: "Have you experienced frustration with someone's approach to time and deadlines?" [Many will nod]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Vietnam = Flexible-time culture</strong>: Relationships and circumstances can shift priorities; interruptions are normal; schedule adjustments expected when context changes</li>
+<li><strong>Western business = Linear-time culture</strong>: Schedules are commitments; interruptions are disrespectful; deadline changes require significant justification</li>
+<li><strong>Neither is wrong</strong>: Different cultural logics about what time means and how it should be managed</li>
+<li><strong>Practical impact</strong>: Vietnamese flexibility can frustrate Western partners; Western rigidity can feel cold/inhuman to Vietnamese partners</li>
+<li>Write on board: "Time = Cultural Construct, Not Universal Truth"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Vietnamese workplace</strong>: Meeting scheduled for 2 PM. Senior leader's personal matter requires attention; meeting postponed to 4 PM. Team understands - relationships and context matter more than rigid schedule. This is NORMAL and ACCEPTABLE in Vietnamese cultural logic.</li>
+<li><strong>Western workplace</strong>: Meeting scheduled for 2 PM. Participants block calendars, arrive at 1:58 PM, expect to start precisely at 2:00 PM. Rescheduling without 24 hours notice seen as disrespectful and disorganized.</li>
+<li><strong>Cross-cultural conflict</strong>: Vietnamese project team working with German client. Vietnamese team updates deadline based on new technical challenge (flexible-time logic: circumstances changed, adjust accordingly). German client furious - deadline was commitment, changing it signals unreliability (linear-time logic: agreements are binding). Trust damaged.</li>
+<li><strong>Better approach</strong>: Vietnamese team could have EXPLICITLY discussed deadline flexibility at project start: "We estimate 3 weeks, but if technical challenges arise, we'll need to adjust. How much flexibility exists?" Sets expectations upfront.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think flexible-time cultures are "unprofessional" or "lazy" → Reframe: Different priority system (relationships > schedules), not lack of professionalism</li>
+<li>Linear-time cultures aren't "cold" - they're showing respect through punctuality and honoring commitments</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"You're working with a Swiss client who expects a deadline. What should you do if circumstances change and you need more time?"</li>
+<li>Expected: Communicate IMMEDIATELY (don't wait); explain specific reasons; propose new timeline; acknowledge this is significant (understand their linear-time cultural framework)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's synthesize all these frameworks into practical guidance you can use immediately..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="20">
+      <h2 class="section-title">Part 5: Practical Application</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Now let's make this actionable - how do you actually develop and apply cultural intelligence?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Here are specific steps you can take starting today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="21">
+      <h2 class="slide-title">Developing Cultural Intelligence: Actionable Steps</h2>
+      <div class="slide-content">
+        <p><strong>Build Your Cross-Cultural Competence:</strong></p>
+<p><strong>1. Research Before Interaction</strong></p>
+<ul>
+<li>Learn basic cultural dimensions (Hofstede scores, Meyer's Culture Map positioning)</li>
+<li>Understand communication norms (high/low context, direct/indirect feedback)</li>
+<li>Study business etiquette and protocols</li>
+</ul>
+<p><strong>2. Observe and Ask</strong></p>
+<ul>
+<li>Watch how others communicate in multicultural settings</li>
+<li>Ask genuine questions: "How do you prefer to receive feedback?" "What decision-making process works best for your team?"</li>
+<li>Notice when confusion arises; pause and clarify</li>
+</ul>
+<p><strong>3. Adapt Strategically</strong></p>
+<ul>
+<li>Code-switch communication style to match audience (while staying authentic)</li>
+<li>Use their preferred channels (written vs. verbal, formal vs. informal)</li>
+<li>Adjust feedback approach based on cultural context</li>
+</ul>
+<p><strong>4. Set Explicit Expectations</strong></p>
+<ul>
+<li>Don't assume shared understanding across cultures</li>
+<li>Discuss working norms explicitly at project start</li>
+<li>Clarify deadlines, decision processes, communication protocols</li>
+</ul>
+<p><strong>5. Reflect and Learn</strong></p>
+<ul>
+<li>After cross-cultural interactions, reflect: What worked? What created friction?</li>
+<li>Seek feedback from people of different cultures</li>
+<li>Continuously update your cultural knowledge</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Cultural intelligence is a skill you can systematically develop with practice"</li>
+<li>Note: Even experts continue learning - cultures evolve and individuals vary</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Research is preparation</strong>, not stereotyping: Understanding cultural tendencies helps you observe more effectively</li>
+<li><strong>Asking shows respect</strong>: "How do you prefer..." signals cultural intelligence and willingness to adapt</li>
+<li><strong>Explicit beats implicit</strong>: In cross-cultural contexts, stating expectations clearly prevents misunderstandings</li>
+<li><strong>Reflection builds competence</strong>: Learning from mistakes and successes accelerates development</li>
+<li>Write on board: "Cultural Intelligence = Observe + Ask + Adapt + Reflect"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Vietnamese student preparing for internship</strong>: Researches company culture (German firm), learns direct feedback norms, practices giving/receiving explicit criticism, asks manager in Week 1 "How would you like me to communicate concerns?" Successful adaptation.</li>
+<li><strong>Manager starting multicultural team</strong>: Week 1 meeting dedicated to discussing working norms. Team explicitly agrees: "We'll use direct language in emails but diplomatic language in public meetings," "Deadlines are commitments unless we communicate changes 48 hours in advance," "Turn-taking in meetings so everyone speaks." Prevents conflicts later.</li>
+<li><strong>Real corporate example</strong>: Accenture requires all consultants to complete "Cultural Intelligence Inventory" and creates development plans. Consultants with high CQ (cultural intelligence quotient) receive 20% more international assignments and faster promotions.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think cultural intelligence means knowing everything about every culture → Clarify: It's about being curious, adaptable, and learning continuously - not memorizing facts</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"You're about to join a project team with colleagues from 5 different countries. What's the first thing you should do to develop cultural intelligence for this team?"</li>
+<li>Expected: Research cultural dimensions for those countries; ask team members about their preferences; suggest explicit discussion of working norms in first meeting</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's practice applying these frameworks with a specific scenario..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="22">
+      <h2 class="slide-title">Practice Activity: Cross-Cultural Communication Scenario</h2>
+      <div class="slide-content">
+        <p><strong>The Scenario:</strong></p>
+<p>You're a Vietnamese project manager leading a team with members from Vietnam (high-context, collectivist, high power distance), Germany (low-context, individualist, low power distance), and India (high-context, collectivist, moderate power distance).</p>
+<p>In your first team meeting, you need to:</p>
+<ol>
+<li>Establish communication norms</li>
+<li>Set decision-making process</li>
+<li>Address how feedback will be given</li>
+<li>Clarify deadline management</li>
+</ol>
+<p><strong>Your Task (5 minutes):</strong></p>
+<p>Working with a partner, draft 3-4 specific team norms that bridge these cultural differences. Use frameworks from today's lecture.</p>
+<p><strong>Example</strong>: "We'll use BLUF (bottom-line-up-front) in written communication to ensure clarity for all members, while maintaining diplomatic tone in meetings to respect all comfort levels."</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's apply what we've learned to a realistic scenario you'll likely face in your careers"</li>
+<li>Form pairs quickly; share instructions</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This activity bridges high-context and low-context, hierarchical and egalitarian, different feedback styles</li>
+<li>No perfect answer exists - looking for thoughtful application of frameworks</li>
+<li>Good norms are EXPLICIT and SPECIFIC (not vague like "be respectful")</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>During pair work, circulate and listen for strong examples to highlight in debrief</li>
+<li>Watch for students applying specific frameworks (Hofstede, Meyer, Brett et al.)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>After 5 minutes, ask 2-3 pairs to share one norm they created</li>
+<li>Debrief by connecting their norms to specific cultural dimensions discussed today</li>
+<li>Highlight examples like: "We'll rotate who speaks first in meetings to prevent hierarchy bias" (addresses power distance differences)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Excellent work applying the frameworks. Let's wrap up with key takeaways..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="23">
+      <h2 class="slide-title">Key Takeaways - Cross-Cultural Communication</h2>
+      <div class="slide-content">
+        <p><strong>Three Essential Insights:</strong></p>
+<p><strong>1. Culture Shapes Communication - But Isn't Destiny</strong></p>
+<ul>
+<li>Hofstede's dimensions and Meyer's Culture Map provide frameworks for understanding tendencies</li>
+<li>Individuals vary within cultures; frameworks guide observation, not rigid stereotyping</li>
+<li>You can learn to code-switch between cultural communication styles</li>
+</ul>
+<p><strong>2. High-Context vs. Low-Context Explains Most Misunderstandings</strong></p>
+<ul>
+<li>Vietnam (high-context) relies on implicit messages, relationships, shared understanding</li>
+<li>Western business cultures (low-context) rely on explicit statements and documentation</li>
+<li>Bridge the gap: Be more explicit with low-context cultures; provide more context with high-context cultures</li>
+</ul>
+<p><strong>3. Multicultural Teams Need Explicit Norms</strong></p>
+<ul>
+<li>Don't assume shared understanding across cultures</li>
+<li>Set communication protocols, decision processes, and feedback norms early</li>
+<li>Use Brett et al.'s strategies: Adaptation, structural intervention, managerial intervention, exit (as last resort)</li>
+</ul>
+<p><strong>Your Cross-Cultural Competence = Career Advantage</strong></p>
+<p>Vietnamese professionals who master both high-context and low-context communication are highly valuable in global business.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's crystallize the most important ideas from today's lecture"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Takeaway 1</strong>: Culture provides useful patterns, but people are individuals. Use frameworks to be more observant and adaptive, not to create rigid stereotypes.</li>
+<li><strong>Takeaway 2</strong>: High-context/low-context alone explains huge proportion of cross-cultural communication failures. Master this dimension first.</li>
+<li><strong>Takeaway 3</strong>: Multicultural teams outperform homogeneous teams ONLY when cultural differences are managed well. Explicit norms are the foundation.</li>
+<li>Write on board: "Cultural Frameworks = Tools for Understanding, Not Stereotyping"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Remind students: You already have high-context communication expertise (Vietnamese culture). Adding low-context skills makes you bilingual in communication styles - huge professional advantage.</li>
+<li>Companies actively seek professionals with cultural intelligence for global roles</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which takeaway resonates most with your experience or future career goals?" [Take 1-2 responses]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's connect this to your upcoming assessments and what you'll practice in tutorial..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="24">
+      <h2 class="slide-title">Assessment Connection & Tutorial Preview</h2>
+      <div class="slide-content">
+        <p><strong>How Today's Content Connects to Your Assessments:</strong></p>
+<p><strong>Written Portfolio (Due Week 5):</strong></p>
+<ul>
+<li>Email Series: Adapt tone and directness based on recipient's cultural context</li>
+<li>Persuasive Proposal: Consider cultural dimensions when framing persuasive arguments</li>
+<li>Crisis Communication: Adjust stakeholder messages for cultural appropriateness</li>
+</ul>
+<p><strong>Group Presentation (Week 11):</strong></p>
+<ul>
+<li>Your team will likely have diverse cultural backgrounds</li>
+<li>Apply Brett et al.'s multicultural team management strategies</li>
+<li>Build both cognitive and affective trust with team members</li>
+</ul>
+<p><strong>Tutorial This Week:</strong></p>
+<ul>
+<li>Practice analyzing cross-cultural communication scenarios</li>
+<li>Apply Hofstede and Meyer frameworks to real business situations</li>
+<li>Develop team communication protocols for diverse groups</li>
+</ul>
+<p><strong>Quiz 1 (Today - Week 4):</strong></p>
+<ul>
+<li>Tests Weeks 1-3 content: Strategic communication, professional writing, persuasive communication</li>
+<li>25-30 multiple choice questions</li>
+<li>30 minutes</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Everything we've covered today directly applies to your upcoming work in this course"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Written portfolio</strong>: You'll need to adapt communication style based on audience cultural context (Week 5 deadline approaching)</li>
+<li><strong>Group presentations</strong>: Many of you will work with classmates from different cultural backgrounds or regional backgrounds within Vietnam - use multicultural team strategies</li>
+<li><strong>Quiz 1 TODAY</strong>: Covers Weeks 1-3 material; use tutorial time to review and prepare</li>
+<li>Emphasize: Cross-cultural communication isn't theoretical - you'll apply it immediately in team projects</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>In email series assignment: Imagine writing to Vietnamese supervisor (high-context, relationship-focused) vs. American client (low-context, task-focused) - your tone and structure should adapt</li>
+<li>In group presentation: If working with classmates who have different communication styles, set explicit norms early using Brett et al.'s managerial intervention approach</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"How might you apply high-context vs. low-context understanding to your email series assignment?"</li>
+<li>Expected: Adapt explicitness, relationship acknowledgment, structure based on recipient's cultural background</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"In tutorial today, you'll practice these skills. But first, let's look at what's coming next week..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="25">
+      <h2 class="slide-title">Looking Ahead - Week 5</h2>
+      <div class="slide-content">
+        <p><strong>Next Week: AI & Emerging Technologies in Communication</strong></p>
+<p><strong>Topics:</strong></p>
+<ul>
+<li>AI tools for business writing and communication</li>
+<li>Ethical AI use in professional contexts</li>
+<li>Maintaining authenticity with AI assistance</li>
+<li>Future of work and communication trends</li>
+</ul>
+<p><strong>Required Readings:</strong></p>
+<ul>
+<li>Brynjolfsson et al. (2023): Generative AI at work</li>
+<li>Feder & Olin (2023): Generative AI can help you tailor messaging</li>
+</ul>
+<p><strong>Important Deadline:</strong></p>
+<ul>
+<li><strong>Written Portfolio Due Week 5</strong> (Email Series + Persuasive Proposal + Crisis Communication)</li>
+</ul>
+<p><strong>Preparation:</strong></p>
+<ul>
+<li>Start drafting portfolio pieces this week</li>
+<li>Apply cultural intelligence to audience analysis</li>
+<li>Use frameworks from Weeks 1-4 in your writing</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Next week we shift to explore how AI is transforming business communication"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Week 5 is timely: AI tools like ChatGPT, Claude, Grammarly are already reshaping how we write professionally</li>
+<li>We'll discuss ETHICAL use: AI as tool, not replacement for your thinking</li>
+<li><strong>Critical</strong>: Written portfolio due Week 5 - start now, don't wait until last minute</li>
+<li>Your portfolio should demonstrate frameworks from Weeks 1-4: strategic communication, professional writing, persuasion, cultural adaptation</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>AI can help you adapt communication for different cultural contexts (e.g., "Rewrite this email for a high-context audience")</li>
+<li>But YOU need to understand the frameworks to prompt AI effectively and evaluate output</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the major deadline next week?" [Written Portfolio]</li>
+<li>"What should you be working on this week to prepare?" [Start drafting portfolio pieces]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's review the key vocabulary and concepts one more time before you head to tutorial..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="26">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p>Brett, J., Behfar, K., & Kern, M. C. (2006). Managing multicultural teams. <em>Harvard Business Review, 84</em>(11), 84-91. https://hbr.org/2006/11/managing-multicultural-teams</p>
+<p>Hall, E. T. (1976). <em>Beyond culture</em>. Anchor Books.</p>
+<p>Hofstede, G. (2011). Dimensionalizing cultures: The Hofstede model in context. <em>Online Readings in Psychology and Culture, 2</em>(1). https://doi.org/10.9707/2307-0919.1014</p>
+<p>Hofstede Insights. (2024). <em>Country comparison: Vietnam</em>. https://www.hofstede-insights.com/country/vietnam/</p>
+<p>Hofstede Insights. (2024). <em>Business culture in Vietnam</em>. https://www.hofstede-insights.com/country-comparison/vietnam/</p>
+<p>Liu, X. (2025). Bridging cultures in virtual workplaces: A communication-focused review of global virtual teams. <em>SAGE Open, 15</em>(1). https://doi.org/10.1177/23294906251327747</p>
+<p>Meyer, E. (2014). Navigating the cultural minefield. <em>Harvard Business Review, 92</em>(5), 119-123. https://hbr.org/2014/05/navigating-the-cultural-minefield</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 1 of 2).  See you next week!"</p>
+<p>---</p>
+<p>## END OF LECTURE CONTENT</p>
+<p><strong>Total Slides:</strong> 26</p>
+<p><strong>Estimated Duration:</strong> 90 minutes</p>
+<p><strong>Learning Objectives Addressed:</strong></p>
+<ul>
+<li>Analyze cultural and organizational factors that impact communication effectiveness (LO #7)</li>
+<li>Assess communicator credibility and identify strategies to build trust and authority (LO #6)</li>
+<li>Apply strategic communication frameworks to achieve specific business outcomes (LO #1)</li>
+<li>Analyze diverse audiences to adapt message content, structure, and delivery (LO #2)</li>
+</ul>
+<p><strong>Assessment Connection:</strong></p>
+<ul>
+<li>Written Portfolio: Apply cultural adaptation to email series and crisis communication</li>
+<li>Group Presentation: Use multicultural team management strategies</li>
+<li>Quiz 1: Tests Weeks 1-3 content today in tutorial</li>
+</ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="27">
+      <h2 class="slide-title">References (continued)</h2>
+      <div class="slide-content">
+        <p>Samsung Vietnam. (2023). <em>Workplace culture and productivity improvements</em>. Internal company report.</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 2 of 2). Continued from previous slide.</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

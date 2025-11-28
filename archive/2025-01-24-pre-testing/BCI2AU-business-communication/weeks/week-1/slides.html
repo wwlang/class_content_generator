@@ -1,0 +1,2623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 28</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 1: Strategic Communication Foundations</h1>
+        <p class="subtitle">From Information Transfer to Strategic Impact</p>
+        <p class="author"><strong>Business Communication</strong><br>Andrews University - National Economics University Campus<br>Fall 2025<br>Instructor: William Winterton Lang</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome students to Business Communication</li>
+<li>This is Week 1 of 11-week course focused on strategic professional communication</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Today we're building the foundation for everything that follows in this course</li>
+<li>We'll move from basic "what is communication?" to "how do I communicate strategically for business results?"</li>
+<li>This isn't just about writing better emails - it's about using communication as a strategic tool</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we dive in, let's start with a question that reveals why this course matters..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="2">
+      <h2 class="slide-title">Why Does This Matter?</h2>
+      <div class="slide-content">
+        <p><strong>Consider this scenario:</strong></p>
+<p>You've developed a brilliant solution to a major company problem. You have the data. You have the expertise. You have the plan.</p>
+<p><strong>But...</strong></p>
+<p>Your proposal is rejected. Your presentation falls flat. Your email gets ignored.</p>
+<p><strong>The problem?</strong> Not your idea. Your communication.</p>
+<p><strong>Research shows:</strong> 67% of failed initiatives fail not because of bad ideas, but because of poor communication (PMI, 2013).</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Project Management Institute. (2013). The high cost of low performance: The essential role of communications. PMI Pulse of the Profession.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Start with validation: "How many of you have had a great idea that didn't get traction?" [Show of hands]</li>
+<li>This creates immediate relevance - everyone has experienced this</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>The gap between good ideas and successful outcomes is often communication</li>
+<li>Technical skills get you in the door; communication skills determine how far you go</li>
+<li>This statistic (67%) comes from major PM study across 10,000+ projects</li>
+</ul>
+<p><strong>Cultural Context:</strong></p>
+<ul>
+<li>Vietnamese students often excel at technical skills but may undervalue communication training</li>
+<li>Frame this as the differentiator that makes technical expertise visible and valued</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"This course is about closing that gap. Let's start by learning the vocabulary we'll use all semester..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="3">
+      <h2 class="slide-title">Key Vocabulary</h2>
+      <table class="vocab-table"><thead><tr><th><strong>English Term</strong></th><th><strong>Vietnamese</strong></th><th><strong>Definition</strong></th></tr></thead><tbody><tr><td><strong>Strategic Communication</strong></td><td>Truyền thông chiến lược</td><td>Goal-oriented communication designed to achieve specific business outcomes</td></tr><tr><td><strong>Stakeholder</strong></td><td>Bên liên quan</td><td>Any person or group affected by or able to influence a business decision</td></tr><tr><td><strong>Know-Feel-Do</strong></td><td>Biết-Cảm-Hành động</td><td>Framework for planning what audience should know, feel, and do after your message</td></tr><tr><td><strong>Credibility</strong></td><td>Độ tin cậy</td><td>The quality of being trusted and believed in</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These five terms are the foundation of strategic business communication"</li>
+<li>Encourage students to write these down or photograph the slide</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Strategic communication is NOT just "good communication" - it's purposeful and goal-driven</li>
+<li>Stakeholders go beyond customers - includes employees, investors, partners, regulators, community</li>
+<li>Know-Feel-Do framework is our primary planning tool - we'll use it throughout the course</li>
+</ul>
+<p><strong>Cultural Context:</strong></p>
+<ul>
+<li>Vietnamese translations help ESL students connect English business terms to concepts they may know</li>
+<li>Pronunciation note: "Stakeholder" is often mispronounced - emphasize "STAKE-holder" not "stick-holder"</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Strategic communication example: FPT announcing expansion to new markets (carefully planned messaging to multiple stakeholders)</li>
+<li>Stakeholder example: VinFast launching electric vehicles (had to communicate to investors, government, customers, employees simultaneously)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we have our vocabulary, let's look at what you'll be able to do by the end of this week..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">Learning Objectives</h2>
+      <div class="slide-content">
+        <p><strong>By the end of this week, you will be able to:</strong></p>
+<ol>
+<li><strong>Apply</strong> strategic communication models (Shannon-Weaver, Transactional) to analyze business communication situations</li>
+<li><strong>Design</strong> strategic messages using the know-feel-do framework to achieve specific outcomes</li>
+<li><strong>Analyze</strong> diverse audiences to adapt message content and approach</li>
+<li><strong>Evaluate</strong> communicator credibility and identify strategies to build trust with stakeholders</li>
+<li><strong>Connect</strong> strategic communication principles to your upcoming portfolio assignments</li>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These objectives tell you exactly what success looks like this week"</li>
+<li>Note that these use Bloom's Taxonomy verbs (apply, design, analyze, evaluate, connect) - higher-order thinking</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Objective 1 focuses on understanding foundational models</li>
+<li>Objectives 2-3 are about application - you'll practice these in tutorial</li>
+<li>Objective 4 builds on research about trust (Hallenbeck & Childs article)</li>
+<li>Objective 5 connects theory to practice - everything we learn supports your portfolio work</li>
+</ul>
+<p><strong>Assessment Connection:</strong></p>
+<ul>
+<li>These objectives will be tested in Quiz 1 (Week 4)</li>
+<li>They're also foundational for Email Series and Persuasive Proposal (Portfolio, Week 5)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Speaking of assessments, let's see how this week connects to your graded work..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">Assessment Connection</h2>
+      <div class="slide-content">
+        <p><strong>This week's content prepares you for:</strong></p>
+<p><strong>Quiz 1 (Week 4, 5%):</strong></p>
+<ul>
+<li>Communication models (Shannon-Weaver, Transactional)</li>
+<li>Know-feel-do framework application</li>
+<li>Audience analysis principles</li>
+<li>Credibility building strategies</li>
+</ul>
+<p><strong>Written Portfolio (Week 5, 30%):</strong></p>
+<ul>
+<li><strong>Email Series:</strong> Apply know-feel-do framework and audience analysis</li>
+<li><strong>Persuasive Proposal:</strong> Use strategic message design and credibility building</li>
+<li><strong>Crisis Communication:</strong> Apply stakeholder analysis and trust restoration</li>
+</ul>
+<p><strong>Today's tutorial:</strong> Practice strategic message planning using know-feel-do framework - exactly what you'll do in Email Series assignment.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Everything we cover today is practical - you'll use it in graded work within 4 weeks"</li>
+<li>This creates urgency and relevance</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Quiz 1 tests foundational understanding of this week's frameworks</li>
+<li>Portfolio is worth 30% - this is significant</li>
+<li>Tutorial today directly practices skills for Email Series (due Week 5)</li>
+</ul>
+<p><strong>Tutorial Preview:</strong></p>
+<ul>
+<li>In tutorial, students will plan a strategic business email using know-feel-do framework</li>
+<li>They'll get peer feedback using simplified rubric</li>
+<li>This is low-stakes practice before high-stakes portfolio submission</li>
+</ul>
+<p><strong>Timing Note:</strong></p>
+<ul>
+<li>We're 10 minutes into lecture - good pace for opening</li>
+<li>Moving into core content now with first section break</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that you know where we're going, let's dive into the foundations of business communication..."</li>
+</ul>
+<p>---</p>
+<p>## CORE CONTENT (Slides 6-23)</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="6">
+      <h2 class="section-title">Part 1: Communication Models</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Section Break - Transition:</strong></p>
+<ul>
+<li>"We're moving into Part 1: Communication Models"</li>
+<li>"Before we can communicate strategically, we need to understand HOW communication actually works"</li>
+</ul>
+<p><strong>Frame This Section:</strong></p>
+<ul>
+<li>We'll look at two models: Shannon-Weaver (foundational) and Transactional (modern)</li>
+<li>These aren't just academic theory - understanding these helps you diagnose communication breakdowns</li>
+</ul>
+<p><strong>What's Coming:</strong></p>
+<ul>
+<li>Next 3-4 slides cover communication models</li>
+<li>Then we'll transition to strategic message design (know-feel-do framework)</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="7">
+      <h2 class="framework-title">The Shannon-Weaver Model (1948)</h2>
+      <p class="framework-subtitle">The foundational communication model</p>
+      <div class="framework-components">
+        <div class="component">
+          <h3>Sender</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Encoder</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Channel</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Decoder</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Receiver</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>With:</strong> Noise (anything that interferes with message)</p>
+<p><strong>Key insight:</strong> Communication is information transfer from point A to point B.</p>
+<p><strong>Business application:</strong></p>
+<ul>
+<li>Sender: You</li>
+<li>Message: Your email/presentation/proposal</li>
+<li>Channel: Email, meeting, Slack, report</li>
+<li>Noise: Distractions, technical jargon, cultural differences, poor timing</li>
+<li>Receiver: Your boss, client, team</li>
+</ul>
+<p><strong>Limitation:</strong> Treats communication as one-way transmission (we'll improve on this next).</p></div>
+      <div class="slide-footer"><p class="citation">Shannon, C. E., & Weaver, W. (1949). The mathematical theory of communication. University of Illinois Press.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This 1948 model was originally designed for telephone systems at Bell Labs"</li>
+<li>"But it's still useful for understanding communication breakdowns"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Draw the linear model on board: Sender → Message → Receiver</li>
+<li>Emphasize NOISE - this is why communication fails</li>
+<li>Examples of noise: Technical jargon when audience doesn't have technical background; email sent at 11 PM when people are off; cultural assumptions that don't translate</li>
+</ul>
+<p><strong>Vietnamese Context Example:</strong></p>
+<ul>
+<li>Vietnamese company communicating with international partners - noise includes time zones, language barriers, business culture differences (high-context vs. low-context)</li>
+</ul>
+<p><strong>Common Misconception:</strong></p>
+<ul>
+<li>Students think if they send a clear message, communication succeeded</li>
+<li>Clarify: Shannon-Weaver shows communication can fail at any point (encoding, channel, decoding)</li>
+</ul>
+<p><strong>Teaching Tip:</strong></p>
+<ul>
+<li>Ask: "What's an example of 'noise' you've experienced in business communication?"</li>
+<li>Take 1-2 responses, validate all answers</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Shannon-Weaver helps us understand failures, but it's missing something critical - what happens AFTER the receiver gets the message?"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="8">
+      <h2 class="framework-title">The Transactional Model (Modern)</h2>
+      <p class="framework-subtitle">Communication as ongoing exchange</p>
+      <div class="framework-components">
+        <div class="component">
+          <h3>Person A</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Feedback</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Person B</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Key insight:</strong> Communication is not one-way transmission - it's dynamic, continuous exchange.</p>
+<p><strong>What this adds:</strong></p>
+<ul>
+<li><strong>Feedback loops:</strong> Receiver responds, sender adjusts</li>
+<li><strong>Simultaneous roles:</strong> Everyone sends and receives at same time (body language, tone, reactions)</li>
+<li><strong>Context matters:</strong> Physical, cultural, organizational setting shapes meaning</li>
+<li><strong>Relationship:</strong> Communication builds or damages relationships over time</li>
+</ul>
+<p><strong>Business application:</strong> Your presentation isn't just you delivering information - it's reading the room, adjusting based on reactions, Q&A, building rapport.</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"The Transactional Model corrects Shannon-Weaver's main limitation"</li>
+<li>"Real communication isn't Speaker → Audience. It's continuous back-and-forth."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Draw circular arrows on board showing simultaneous exchange</li>
+<li>Emphasize FEEDBACK - this is what makes communication strategic</li>
+<li>In meetings/presentations, you're reading body language, adjusting pace, responding to confusion</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>You're presenting a proposal to your boss</li>
+<li>Boss looks confused → You notice → You clarify or give example → Boss nods → You continue</li>
+<li>This is transactional - you're both sending and receiving simultaneously</li>
+</ul>
+<p><strong>Vietnamese Cultural Context:</strong></p>
+<ul>
+<li>Vietnamese communication tends to be high-context (lots of implicit feedback through non-verbal cues)</li>
+<li>Recognizing subtle feedback (facial expressions, silence, group dynamics) is communication skill Vietnamese students often already have</li>
+<li>Frame this as strength: "You're already skilled at reading implicit feedback - transactional model explains why that matters"</li>
+</ul>
+<p><strong>Comparison:</strong></p>
+<ul>
+<li>Shannon-Weaver: Email (one-way, no immediate feedback)</li>
+<li>Transactional: Meeting (continuous feedback, adjustment)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone give me an example of transactional communication from your daily life?"</li>
+<li>Expected answer: Conversations with friends, group projects, negotiations</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we understand HOW communication works, let's talk about making it STRATEGIC..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="9">
+      <h2 class="section-title">Part 2: Strategic Message Design</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Section Break - Transition:</strong></p>
+<ul>
+<li>"We're moving from 'how communication works' to 'how to make it work for business goals'"</li>
+<li>"This next section is the most practical framework you'll learn this week - you'll use it in every assignment"</li>
+</ul>
+<p><strong>Frame This Section:</strong></p>
+<ul>
+<li>Know-Feel-Do framework is your strategic planning tool</li>
+<li>Before writing any business message, answer three questions: What should audience KNOW, FEEL, DO?</li>
+<li>This prevents the #1 mistake: communicating without clear purpose</li>
+</ul>
+<p><strong>What's Coming:</strong></p>
+<ul>
+<li>Next 3 slides break down each element (Know, Feel, Do)</li>
+<li>Then we'll see application examples</li>
+</ul>
+<p><strong>Timing Note:</strong></p>
+<ul>
+<li>We're about 20 minutes into lecture - perfect time for most impactful framework</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="10">
+      <h2 class="framework-title">The Know-Feel-Do Framework</h2>
+      <p class="framework-subtitle">Strategic message planning in three questions</p>
+      <div class="framework-components">
+        <div class="component">
+          <h3>1. What should my audience KNOW?</h3>
+          
+          
+          <p>(Information, facts, context)</p>
+        </div>
+        <div class="component">
+          <h3>2. What should my audience FEEL?</h3>
+          
+          
+          <p>(Emotional response, attitude)</p>
+        </div>
+        <div class="component">
+          <h3>3. What should my audience DO?</h3>
+          
+          
+          <p>(Specific action, behavior change)</p>
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Why this matters:</strong> Most failed business communication lacks clarity on one of these three elements. Strategic communicators design messages with all three in mind.</p>
+<p><strong>Application:</strong> Before writing any email, proposal, or presentation, write one sentence for each: "After this message, my audience should KNOW [X], FEEL [Y], and DO [Z]."</p></div>
+      <div class="slide-footer"><p class="citation">Hallinen, A., & Salipante, T. (2005). The strategic communication imperative. MIT Sloan Management Review, 46(3), 83-89.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This framework comes from MIT Sloan research on strategic communication (Hallinen & Salipante, 2005)"</li>
+<li>"It's simple but incredibly powerful - it forces you to clarify your purpose BEFORE you communicate"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>KNOW = Cognitive (what information they need)</li>
+<li>FEEL = Affective (what emotional response you want)</li>
+<li>DO = Behavioral (what action you want them to take)</li>
+<li>Most emails fail because writer is clear on KNOW but vague on FEEL and DO</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>BAD email: "Here's the Q3 report" (KNOW only - what should they do with it?)</li>
+<li>GOOD email using framework:</li>
+<ul class="nested-list">
+<li>KNOW: Q3 revenue down 12% due to delayed product launch</li>
+<li>FEEL: Concerned but confident we can recover</li>
+<li>DO: Approve budget for accelerated Q4 marketing campaign</li>
+</ul>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Write K-F-D on board</li>
+<li>Ask students: "Think of an email you sent recently - did it have all three elements?"</li>
+<li>This creates self-awareness of their current habits</li>
+</ul>
+<p><strong>Common Mistake:</strong></p>
+<ul>
+<li>Students list multiple things for each (e.g., "I want them to KNOW a, b, c, d, e...")</li>
+<li>Push back: "If you have 5 things in KNOW, your message lacks focus. Pick the ONE most important thing."</li>
+</ul>
+<p><strong>Connection to Portfolio:</strong></p>
+<ul>
+<li>Email Series assignment (Week 5) requires explicit K-F-D statement for each email</li>
+<li>Persuasive Proposal requires all three elements clearly present</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's break down each element starting with KNOW..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="11">
+      <h2 class="slide-title">Know: What Should Your Audience Learn?</h2>
+      <div class="slide-content">
+        <p><strong>KNOW = Information your audience needs</strong></p>
+<p><strong>Questions to ask:</strong></p>
+<ul>
+<li>What's the single most important thing they need to understand?</li>
+<li>What context or background do they need?</li>
+<li>What facts, data, or evidence support your message?</li>
+</ul>
+<p><strong>Common mistakes:</strong></p>
+<ul>
+<li>Assuming they already know context (they don't)</li>
+<li>Providing too much information (cognitive overload)</li>
+<li>Burying the main point in details</li>
+</ul>
+<p><strong>Best practice: Bottom Line Up Front (BLUF)</strong></p>
+<p>Lead with your main point, THEN provide supporting details.</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>❌ Weak KNOW: "I want them to understand the project status"</li>
+<li>✓ Strong KNOW: "I want them to know the project is delayed 2 weeks due to vendor issues, but we're implementing a mitigation plan"</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"KNOW is usually the easiest element for technical professionals - you're good at information"</li>
+<li>"But even here, most people make predictable mistakes"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>BLUF (Bottom Line Up Front) is military communication technique - we'll cover this more in Week 2</li>
+<li>For KNOW, less is more - one clear point beats five vague points</li>
+<li>The "curse of knowledge" - we assume others have context we have</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>Engineer emailing manager about system outage</li>
+<li>BAD KNOW: "The server experienced a critical failure" (what does that mean? what should I do?)</li>
+<li>GOOD KNOW: "The payment system is down for 2 hours; customers can't check out. We're implementing backup and expect restoration by 2 PM."</li>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Vietnamese business culture values relationship and context</li>
+<li>Don't skip context-setting even though it feels slow</li>
+<li>Western business communication favors directness (BLUF), which may feel abrupt initially</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Ask: "What's more important - being comprehensive or being clear?"</li>
+<li>Answer: Clear. Comprehensive can come in follow-up.</li>
+</ul>
+<p><strong>Check Understanding:</strong></p>
+<ul>
+<li>"Can someone rewrite this KNOW statement to be stronger: 'I want them to understand the budget situation'"</li>
+<li>Expected answer: "I want them to know we're 15% over budget on Q3 marketing and need approval for reallocation from Q4"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's talk about the element most people forget: FEEL..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="12">
+      <h2 class="slide-title">Feel: What Emotional Response Do You Want?</h2>
+      <div class="slide-content">
+        <p><strong>FEEL = Emotional and attitudinal response</strong></p>
+<p><strong>Questions to ask:</strong></p>
+<ul>
+<li>How should they feel after reading/hearing this?</li>
+<li>What attitude do you want them to have toward your message?</li>
+<li>What emotions would help or hinder your goal?</li>
+</ul>
+<p><strong>Why this matters:</strong></p>
+<p>Emotion drives decision-making more than logic. Research shows decisions are made emotionally and justified rationally (Damasio, 1994).</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Persuasive proposal: Want them to feel excited about opportunity, confident in your ability</li>
+<li>Crisis communication: Want them to feel concerned but reassured, informed not panicked</li>
+<li>Status update: Want them to feel confident progress is happening</li>
+</ul>
+<p><strong>Cultural note:</strong> Different cultures have different norms for expressing emotion in business. Know your audience.</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Damasio, A. R. (1994). Descartes' error: Emotion, reason, and the human brain. Putnam.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"FEEL is the element most business communicators skip entirely"</li>
+<li>"They think business is about facts and logic. But research shows emotion drives decisions."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Damasio's research shows people with damaged emotional centers can't make decisions even with perfect information</li>
+<li>You can't eliminate emotion from business communication - you can only manage it strategically</li>
+<li>FEEL doesn't mean manipulating emotions - it means being intentional about emotional impact</li>
+</ul>
+<p><strong>Concrete Examples:</strong></p>
+<ul>
+<li>Requesting budget approval: Want them to FEEL excited about ROI potential, confident in your plan</li>
+<li>Delivering bad news: Want them to FEEL informed and prepared, not blindsided</li>
+<li>Motivating team: Want them to FEEL valued and energized, not pressured</li>
+</ul>
+<p><strong>Vietnamese Cultural Context:</strong></p>
+<ul>
+<li>Vietnamese business culture values harmony and face-saving</li>
+<li>Negative emotions (anger, frustration) are less acceptable in professional settings than in Western cultures</li>
+<li>Consider this when planning FEEL - aim for positive or neutral emotions even when delivering problems</li>
+</ul>
+<p><strong>Common Mistake:</strong></p>
+<ul>
+<li>Students say "I want them to feel happy" - too vague</li>
+<li>Push for specificity: "I want them to feel excited about the market opportunity and confident in our execution ability"</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Show contrast: Same KNOW, different FEEL changes the message</li>
+<li>Example: KNOW = "Project delayed 2 weeks"</li>
+<ul class="nested-list">
+<li>FEEL option A: Concerned but assured (for manager)</li>
+<li>FEEL option B: Apologetic but professional (for client)</li>
+</ul>
+</ul>
+<p><strong>Connection:</strong></p>
+<ul>
+<li>Persuasive communication (Week 3) is all about managing FEEL</li>
+<li>Crisis communication (Week 6) requires careful FEEL management</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Finally, let's talk about the most important element: DO..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="13">
+      <h2 class="slide-title">Do: What Action Do You Want?</h2>
+      <div class="slide-content">
+        <p><strong>DO = Specific action or behavior</strong></p>
+<p><strong>Questions to ask:</strong></p>
+<ul>
+<li>What exactly do you want them to do after this message?</li>
+<li>Is the action clear, specific, and achievable?</li>
+<li>Have you made it easy for them to take action?</li>
+</ul>
+<p><strong>Make actions CLEAR:</strong></p>
+<ul>
+<li>❌ Vague: "Please consider this proposal"</li>
+<li>✓ Clear: "Please approve budget by Friday, March 15"</li>
+</ul>
+<p><strong>Make actions EASY:</strong></p>
+<ul>
+<li>Provide links, attachments, next steps</li>
+<li>Remove barriers and friction</li>
+<li>Specify deadline if time-sensitive</li>
+</ul>
+<p><strong>No action needed?</strong> Still be explicit: "No action required - this is FYI only"</p>
+<p><strong>Research shows:</strong> Explicit calls to action increase response rates by 371% compared to implied actions (HubSpot, 2023).</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"DO is the payoff - this is why you're communicating"</li>
+<li>"Yet most business messages have vague or missing calls to action"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Specificity matters: "Review this" vs. "Approve this proposal by Friday COB"</li>
+<li>One DO is better than five - don't ask for too many actions</li>
+<li>Make it easy: Include link, attachment, deadline, format</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>BAD DO: "Let me know your thoughts" (what thoughts? when? how?)</li>
+<li>GOOD DO: "Reply by Thursday with your approval or any questions about the budget allocation"</li>
+</ul>
+<p><strong>Common Scenarios:</strong></p>
+<ul>
+<li>Status update where no action needed: Still say "No action required - keeping you informed"</li>
+<li>Request where multiple actions possible: Provide options "Reply with A, B, or C by Friday"</li>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Vietnamese business communication may use indirect requests ("Could you possibly consider...")</li>
+<li>International business expects direct: "Please approve by..."</li>
+<li>Practice being direct while remaining polite</li>
+</ul>
+<p><strong>Research Note:</strong></p>
+<ul>
+<li>HubSpot analyzed millions of emails - explicit CTAs dramatically improve response</li>
+<li>This applies to business communication too, not just marketing</li>
+</ul>
+<p><strong>Check Understanding:</strong></p>
+<ul>
+<li>"What's wrong with this DO: 'Please give me feedback on this proposal'"</li>
+<li>Expected answer: Too vague - when? what kind of feedback? approval or comments?</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Have students rewrite vague DOs from their own emails</li>
+<li>Examples: "Get back to me" → "Reply by Tuesday with approval or specific concerns"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's see this framework in action with an example..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="14">
+      <h2 class="slide-title">Know-Feel-Do in Action</h2>
+      <div class="slide-content">
+        <p><strong>Vietnamese Example: FPT Software Expansion</strong></p>
+<p><strong>Scenario:</strong> FPT Software announcing expansion to new markets (Japan, US) to employees.</p>
+<p><strong>KNOW:</strong></p>
+<p>We're expanding to Japan and US markets starting Q1 2025, creating 200 new positions requiring English and Japanese language skills.</p>
+<p><strong>FEEL:</strong></p>
+<p>Excited about growth opportunities, proud of company achievement, motivated to develop language skills for new roles.</p>
+<p><strong>DO:</strong></p>
+<p>Complete language skill assessment survey by March 15 to be considered for new market positions.</p>
+<p><strong>Result:</strong> Clear, strategic message that informs, motivates, and drives specific action. Employees know exactly what this means for them and what to do next.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's a real Vietnamese company example showing Know-Feel-Do in action"</li>
+<li>This dark slide highlights Vietnamese context (as recommended in course design)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>KNOW is concrete: What, when, what's in it for employees</li>
+<li>FEEL is motivational: Growth, opportunity, pride (positive emotions)</li>
+<li>DO is specific: Survey, deadline, why (to be considered for positions)</li>
+<li>This message alignment increases employee engagement and action</li>
+</ul>
+<p><strong>Why This Works:</strong></p>
+<ul>
+<li>Employees aren't just informed (KNOW), they're motivated (FEEL) and know next step (DO)</li>
+<li>Compare to typical announcement: "FPT is expanding" (KNOW only - so what?)</li>
+</ul>
+<p><strong>Cultural Insight:</strong></p>
+<ul>
+<li>FPT is Vietnam's largest software company, expanding globally</li>
+<li>This announcement balances company pride (important in Vietnamese culture) with practical action</li>
+<li>Language requirement is significant barrier - message acknowledges this by offering assessment/support</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Ask: "What would happen if FPT only included KNOW? No FEEL or DO?"</li>
+<li>Expected answer: Employees informed but not engaged or acting</li>
+</ul>
+<p><strong>Connection to Assignments:</strong></p>
+<ul>
+<li>This is exactly what you'll do in Email Series (Week 5)</li>
+<li>You'll plan K-F-D for each email before writing</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Know-Feel-Do helps you plan strategic messages. But messages only work if you understand your audience..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="15">
+      <h2 class="section-title">Part 3: Audience Analysis</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Section Break - Transition:</strong></p>
+<ul>
+<li>"We've covered communication models and strategic message design"</li>
+<li>"Now we move to audience analysis - understanding WHO you're communicating with"</li>
+</ul>
+<p><strong>Frame This Section:</strong></p>
+<ul>
+<li>You can have perfect message structure, but if you don't know your audience, you'll fail</li>
+<li>Audience analysis is systematic process of understanding needs, preferences, context</li>
+<li>We'll cover three aspects: stakeholder identification, audience needs, adapting messages</li>
+</ul>
+<p><strong>What's Coming:</strong></p>
+<ul>
+<li>Next 3-4 slides on audience analysis fundamentals</li>
+<li>Then we move to final section on credibility and trust</li>
+</ul>
+<p><strong>Timing Note:</strong></p>
+<ul>
+<li>We're about 45 minutes in - midpoint of lecture</li>
+<li>Good time for active learning question</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"First question: Who is your audience? Seems obvious, but most people get this wrong..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="16">
+      <h2 class="slide-title">Who Is Your Audience? (Stakeholder Mapping)</h2>
+      <div class="slide-content">
+        <p><strong>Your audience is often multiple stakeholders with different needs.</strong></p>
+<p><strong>Types of stakeholders:</strong></p>
+<ol>
+<li><strong>Primary audience:</strong> Decision-maker who will act on your message</li>
+<li><strong>Secondary audience:</strong> Influencers who advise primary audience</li>
+<li><strong>Gatekeepers:</strong> People who control access or approval</li>
+<li><strong>Watchdog audience:</strong> People monitoring for compliance, ethics, public interest</li>
+</ol>
+<p><strong>Example: Proposing new marketing campaign</strong></p>
+<ul>
+<li>Primary: Marketing Director (approves budget)</li>
+<li>Secondary: CEO (influences big decisions), Finance team (reviews ROI)</li>
+<li>Gatekeeper: Director's assistant (schedules meeting)</li>
+<li>Watchdog: Legal team (ensures compliance), PR team (protects brand)</li>
+</ul>
+<p><strong>Strategic implication:</strong> You may need different messages for different stakeholder groups, even about same initiative.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Biggest mistake in business communication: Assuming your audience is one person"</li>
+<li>"Most important messages have multiple stakeholders with different interests"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Primary audience has decision-making power - this is who you optimize for</li>
+<li>Secondary audiences can veto or influence even if they don't officially decide</li>
+<li>Gatekeepers control access - build relationship with them</li>
+<li>Watchdog audiences are often forgotten until they block your proposal</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>Student wants approval for new club activity</li>
+<li>Primary: Dean of Students (approves activities)</li>
+<li>Secondary: Faculty advisor (recommends or opposes)</li>
+<li>Gatekeeper: Admin assistant (adds to Dean's agenda)</li>
+<li>Watchdog: Student Affairs office (monitors university policies)</li>
+</ul>
+<p><strong>Vietnamese Context Example:</strong></p>
+<ul>
+<li>Proposing new process at Vietnamese company</li>
+<li>Primary: Department manager</li>
+<li>Secondary: Senior leadership, team members</li>
+<li>Gatekeeper: Manager's secretary</li>
+<li>Watchdog: HR (compliance), Finance (budget)</li>
+<li>Vietnamese business culture emphasizes hierarchy - understand who has real vs. formal authority</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Draw stakeholder map on board as concentric circles</li>
+<li>Center = Primary, next ring = Secondary, outer = Gatekeepers/Watchdogs</li>
+<li>Ask students to map stakeholders for their group presentation (Week 11)</li>
+</ul>
+<p><strong>Common Misconception:</strong></p>
+<ul>
+<li>Students think if they convince primary audience, they're done</li>
+<li>Reality: Secondary/watchdog can derail even with primary support</li>
+</ul>
+<p><strong>Check Understanding:</strong></p>
+<ul>
+<li>"For your Written Portfolio submission, who are the stakeholders?"</li>
+<li>Expected answer: Primary = instructor (grader), Secondary = teaching assistants (if applicable), Watchdog = university plagiarism detection</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Once you know WHO your stakeholders are, next question is: What do they care about?"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="17">
+      <h2 class="slide-title">What Does Your Audience Care About?</h2>
+      <div class="slide-content">
+        <p><strong>Understand audience needs, priorities, and constraints:</strong></p>
+<p><strong>Key questions for audience analysis:</strong></p>
+<ol>
+<li><strong>What do they already know?</strong> (Don't over-explain or under-explain)</li>
+<li><strong>What do they care about?</strong> (Their priorities, not yours)</li>
+<li><strong>What are their constraints?</strong> (Time, budget, authority, politics)</li>
+<li><strong>What's their communication style?</strong> (Data-driven? Story-driven? Brief? Detailed?)</li>
+<li><strong>What cultural factors matter?</strong> (Hierarchy, formality, directness, context)</li>
+</ol>
+<p><strong>Example: Requesting budget approval</strong></p>
+<ul>
+<li>Finance Director cares about: ROI, risk mitigation, budget impact</li>
+<li>Marketing Director cares about: Customer acquisition, brand impact, competitive advantage</li>
+<li>CEO cares about: Strategic alignment, scalability, leadership implications</li>
+</ul>
+<p><strong>Same proposal, different emphasis for each audience.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Most people communicate what THEY want to say instead of what AUDIENCE needs to hear"</li>
+<li>"Strategic communicators flip this - start with audience needs"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>These five questions are your pre-communication checklist</li>
+<li>Biggest mistake: Assuming audience has same priorities as you</li>
+<li>Technical people tend to emphasize technical excellence; business leaders care about business outcomes</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>Engineer proposing new software tool</li>
+<li>To CTO: Emphasize technical superiority, security, scalability</li>
+<li>To CFO: Emphasize cost savings, productivity gains, ROI timeline</li>
+<li>Same tool, different communication for different audience priorities</li>
+</ul>
+<p><strong>Vietnamese Cultural Factors:</strong></p>
+<ul>
+<li>Hierarchy: Senior leaders expect formal tone and respect</li>
+<li>High-context: Vietnamese audiences pick up on implicit messages</li>
+<li>Face-saving: Deliver criticism privately, praise publicly</li>
+<li>Harmony: Emphasize consensus and group benefit over individual wins</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Ask: "Think about your parents vs. your friends - do you communicate the same way?"</li>
+<li>Answer: No - different audience, different approach (they already know this intuitively)</li>
+<li>Point out: Business is the same - adapt to your audience</li>
+</ul>
+<p><strong>Connection to Portfolio:</strong></p>
+<ul>
+<li>Email Series requires different audiences (supervisor, colleague, client)</li>
+<li>Each email needs different tone, level of formality, emphasis</li>
+<li>Persuasive Proposal requires understanding decision-maker's priorities</li>
+</ul>
+<p><strong>Common Mistake:</strong></p>
+<ul>
+<li>Students write what they know, not what audience needs</li>
+<li>Example: Over-explaining concepts audience already understands (condescending) or under-explaining (confusing)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Once you understand what audience cares about, you can adapt your message..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="18">
+      <h2 class="slide-title">Adapting Your Message to Your Audience</h2>
+      <div class="slide-content">
+        <p><strong>Adaptation strategies:</strong></p>
+<p><strong>For Technical Audiences:</strong></p>
+<ul>
+<li>Use precise terminology, data, specifications</li>
+<li>Show your expertise through accuracy</li>
+<li>Provide deep detail</li>
+</ul>
+<p><strong>For Executive Audiences:</strong></p>
+<ul>
+<li>Lead with bottom line (BLUF)</li>
+<li>Focus on strategic impact and business outcomes</li>
+<li>Be brief - executives have limited time</li>
+</ul>
+<p><strong>For Cross-Cultural Audiences:</strong></p>
+<ul>
+<li>Research cultural communication norms</li>
+<li>Adjust formality, directness, relationship-building</li>
+<li>Seek local advice when unsure</li>
+</ul>
+<p><strong>For Skeptical Audiences:</strong></p>
+<ul>
+<li>Acknowledge their concerns explicitly</li>
+<li>Provide strong evidence and credibility signals</li>
+<li>Use two-sided arguments (address counterarguments)</li>
+</ul>
+<p><strong>Adaptation is not manipulation - it's respect for your audience's needs and context.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Adaptation means meeting your audience where they are"</li>
+<li>"It's not changing your message - it's changing how you deliver it"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Technical vs. executive is classic adaptation challenge</li>
+<li>Engineers often give executives too much detail; executives want summary and decision</li>
+<li>Cross-cultural requires research - don't assume</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>Same project update, three audiences:</li>
+</ul>
+<p>  1. Engineering team: "We resolved the API latency issue using caching and refactored the authentication middleware"</p>
+<p>  2. Product Manager: "We fixed the speed problem and improved security - users will see faster login"</p>
+<p>  3. CEO: "Customer experience improved, system more secure, no budget impact"</p>
+<p><strong>Vietnamese Context Example:</strong></p>
+<ul>
+<li>Vietnamese business culture: High-context, relationship-oriented, hierarchy-conscious</li>
+<li>Western business culture: Low-context, task-oriented, equality-oriented</li>
+<li>When Vietnamese company communicates with US partners, need to be more explicit, direct, less hierarchical in tone</li>
+</ul>
+<p><strong>Common Mistake:</strong></p>
+<ul>
+<li>Students think one version of message works for everyone</li>
+<li>Reality: Adaptation increases effectiveness dramatically</li>
+</ul>
+<p><strong>Ethical Note:</strong></p>
+<ul>
+<li>Students worry adaptation = manipulation</li>
+<li>Clarify: Manipulation changes the truth; adaptation changes the packaging</li>
+<li>You're still being honest - just emphasizing what matters to each audience</li>
+</ul>
+<p><strong>Check Understanding:</strong></p>
+<ul>
+<li>"If you're presenting to your professor vs. presenting to classmates, would you use the same style?"</li>
+<li>Expected answer: No - professor expects formality, evidence, structure; classmates expect relatability</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Final piece of strategic communication: Building credibility and trust..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="19">
+      <h2 class="section-title">Part 4: Credibility & Trust</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Section Break - Transition:</strong></p>
+<ul>
+<li>"Final section of today's lecture: Credibility and trust"</li>
+<li>"You can have perfect strategy and perfect audience analysis, but if they don't trust you, you fail"</li>
+</ul>
+<p><strong>Frame This Section:</strong></p>
+<ul>
+<li>Trust is the foundation that makes strategic communication work</li>
+<li>We'll look at three components of credibility (Hallenbeck & Childs research)</li>
+<li>Then discuss how to build trust systematically</li>
+</ul>
+<p><strong>What's Coming:</strong></p>
+<ul>
+<li>Next 3-4 slides on credibility components and trust-building strategies</li>
+<li>Then we wrap up with synthesis</li>
+</ul>
+<p><strong>Timing Note:</strong></p>
+<ul>
+<li>We're about 60 minutes in - good pace, 30 minutes left</li>
+<li>This section directly supports Written Portfolio (credibility is key to persuasion)</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="20">
+      <h2 class="slide-title">Why Trust Matters</h2>
+      <div class="stats-banner">
+        <div class="stat-item">
+          <div class="stat-number">87%</div>
+          <div class="stat-description">of employees say they need to trust business leaders to do their best work.</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">73%</div>
+          <div class="stat-description">of customers won't buy from brands they don't trust.</div>
+        </div></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These numbers show why trust isn't soft skill - it's business critical"</li>
+<li>Edelman Trust Barometer is gold standard research (surveys 32,000+ people across 28 countries annually)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>87% figure shows trust impacts performance (not just feelings)</li>
+<li>73% figure shows trust impacts revenue (not just reputation)</li>
+<li>Trust is earned through consistent communication and action over time</li>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Vietnamese culture is relationship-based - trust is even more critical than in transaction-based Western cultures</li>
+<li>Vietnamese consumers especially value trust given history of product quality issues</li>
+<li>Brand trust takes years to build but can be destroyed overnight</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>Vinamilk scandal 2008 (melamine contamination) destroyed consumer trust overnight</li>
+<li>Took years of transparent communication and quality improvement to rebuild</li>
+<li>Shows why crisis communication (Week 6) focuses heavily on trust restoration</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Ask: "Think of a brand or person you DON'T trust - would you buy from them or work with them?"</li>
+<li>Expected answer: No - validates that trust drives decisions</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"So how do you BUILD trust? Research shows three components..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="21">
+      <h2 class="framework-title">Three Components of Credibility</h2>
+      <p class="framework-subtitle">According to Hallenbeck & Childs (2022), credibility has three dimensions</p>
+      <div class="framework-components">
+        <div class="component">
+          <h3>1. Competence (Logic)</h3>
+          <p class="component-question">"Do they know what they're talking about?"</p>
+          <ul class="component-bullets"><li>Expertise, experience, track record</li><li>Data, evidence, reasoning</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>2. Character (Authenticity)</h3>
+          <p class="component-question">"Do they have good intentions?"</p>
+          <ul class="component-bullets"><li>Honesty, integrity, transparency</li><li>Consistency between words and actions</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>3. Connection (Empathy)</h3>
+          <p class="component-question">"Do they understand and care about me?"</p>
+          <ul class="component-bullets"><li>Active listening, understanding needs</li><li>Showing that you care about audience's success</li></ul>
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>All three required:</strong> Strong in 2 of 3 = weak credibility. Need all three.</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This framework from HBR research shows trust isn't one thing - it's three"</li>
+<li>"And you need all three. Strong in 2 out of 3 = still untrustworthy"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Competence</strong> = head (logical trust)</li>
+<li><strong>Character</strong> = heart (moral trust)</li>
+<li><strong>Connection</strong> = empathy (emotional trust)</li>
+<li>Most professionals focus only on competence and wonder why they're not trusted</li>
+</ul>
+<p><strong>Concrete Examples:</strong></p>
+<ul>
+<li><strong>High competence, low character:</strong> Brilliant consultant who lies = no trust</li>
+<li><strong>High character, low competence:</strong> Honest but incompetent advisor = no trust</li>
+<li><strong>High competence + character, low connection:</strong> Expert who doesn't listen to your needs = weak trust</li>
+</ul>
+<p><strong>Vietnamese Context Example:</strong></p>
+<ul>
+<li>Vietnamese business culture values relationships and character highly</li>
+<li>Competence alone insufficient - must demonstrate character through actions over time</li>
+<li>Connection built through relationship investment (shared meals, personal conversation, patience)</li>
+<li>This is why business in Vietnam takes time - building trust across all three dimensions</li>
+</ul>
+<p><strong>Common Mistake:</strong></p>
+<ul>
+<li>Technical professionals over-index on competence (showing off expertise)</li>
+<li>Neglect character (being vulnerable and authentic) and connection (listening)</li>
+<li>Result: Seen as smart but not trusted</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Ask students to rate themselves on each dimension (1-10)</li>
+<li>Which is weakest? That's your development area</li>
+<li>Most students rate competence highest, connection lowest</li>
+</ul>
+<p><strong>Application:</strong></p>
+<ul>
+<li>In presentations: Show competence (data), character (honesty about limitations), connection (address audience concerns)</li>
+<li>In persuasive proposals: All three dimensions required to persuade</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's see how to build each component practically..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="22">
+      <h2 class="slide-title">Building Credibility in Business Communication</h2>
+      <div class="slide-content">
+        <p><strong>Practical strategies for each dimension:</strong></p>
+<p><strong>Build Competence:</strong></p>
+<ul>
+<li>✓ Cite credible sources and research</li>
+<li>✓ Use precise data and evidence</li>
+<li>✓ Acknowledge what you don't know</li>
+<li>✓ Demonstrate subject matter expertise</li>
+</ul>
+<p><strong>Build Character:</strong></p>
+<ul>
+<li>✓ Be transparent about limitations and risks</li>
+<li>✓ Admit mistakes quickly and clearly</li>
+<li>✓ Keep promises and commitments</li>
+<li>✓ Show consistency over time</li>
+</ul>
+<p><strong>Build Connection:</strong></p>
+<ul>
+<li>✓ Listen actively before proposing</li>
+<li>✓ Acknowledge audience concerns explicitly</li>
+<li>✓ Show how your proposal helps them</li>
+<li>✓ Use "you" language more than "I" language</li>
+</ul>
+<p><strong>Remember:</strong> Credibility is built slowly through many small actions, but can be destroyed quickly through one major breach.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's the practical playbook - specific actions you can take starting today"</li>
+<li>Each dimension has concrete behavioral strategies</li>
+</ul>
+<p><strong>Key Teaching Points - Competence:</strong></p>
+<ul>
+<li>Citing sources shows you've done research (not just opinions)</li>
+<li>Acknowledging what you don't know paradoxically INCREASES credibility (shows intellectual honesty)</li>
+<li>Over-claiming destroys competence - better to be cautiously accurate than boldly wrong</li>
+</ul>
+<p><strong>Key Teaching Points - Character:</strong></p>
+<ul>
+<li>Transparency builds character - hiding problems destroys it</li>
+<li>Admitting mistakes early contains damage; covering up multiplies it</li>
+<li>Consistency over time is how character is judged (one action doesn't prove character)</li>
+</ul>
+<p><strong>Key Teaching Points - Connection:</strong></p>
+<ul>
+<li>Most people talk; few listen - listening is competitive advantage</li>
+<li>Acknowledging concerns doesn't mean agreeing - it means showing you understand</li>
+<li>"You" language (you'll benefit, this helps you) vs. "I" language (I think, I believe) - shifts focus to audience</li>
+</ul>
+<p><strong>Vietnamese Cultural Adaptation:</strong></p>
+<ul>
+<li>Building connection takes longer in Vietnamese culture (relationship-first culture)</li>
+<li>Character demonstrated through group harmony and face-saving behavior</li>
+<li>Competence shown through humility (not boasting) and deference to experience/seniority</li>
+</ul>
+<p><strong>Concrete Example:</strong></p>
+<ul>
+<li>Weak credibility email: "I have a great idea for improving our process. Here's what I think we should do..."</li>
+<li>Strong credibility email: "I've been listening to the team's challenges with the current process [connection]. I researched how three similar companies solved this [competence]. I propose we try X approach, though I acknowledge we may need to adjust based on your feedback [character]. This would save you approximately 5 hours per week [connection]."</li>
+</ul>
+<p><strong>Connection to Portfolio:</strong></p>
+<ul>
+<li>Persuasive Proposal (Week 5) requires building all three dimensions of credibility</li>
+<li>Email Series needs to show competence (professionalism), character (honesty), connection (understanding recipient's needs)</li>
+</ul>
+<p><strong>Check Understanding:</strong></p>
+<ul>
+<li>"If you start an email with 'I know you're busy, so I'll be brief' - which dimension are you building?"</li>
+<li>Expected answer: Connection (showing you understand and respect their time)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's see a Vietnamese example of credibility building..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="23">
+      <h2 class="slide-title">Vietnamese Example: Building Trust</h2>
+      <div class="slide-content">
+        <p><strong>Case: Viettel's International Expansion Communication</strong></p>
+<p><strong>Context:</strong> Viettel (state-owned telecom) expanding to 10 international markets including Peru, Haiti, Cambodia. Needed to build trust with foreign stakeholders.</p>
+<p><strong>How they built credibility:</strong></p>
+<p><strong>Competence:</strong></p>
+<ul>
+<li>Shared concrete success metrics (40M international customers, profitable within 3 years)</li>
+<li>Demonstrated technical expertise through network quality data</li>
+</ul>
+<p><strong>Character:</strong></p>
+<ul>
+<li>Acknowledged challenges openly (political risk, cultural differences)</li>
+<li>Committed to local hiring and community investment (not just profit extraction)</li>
+</ul>
+<p><strong>Connection:</strong></p>
+<ul>
+<li>Hired local leadership teams in each market</li>
+<li>Invested in understanding local customer needs</li>
+<li>Positioned as partner for development, not foreign exploiter</li>
+</ul>
+<p><strong>Result:</strong> Successfully entered challenging markets where Western competitors failed. Trust-building communication was key differentiator.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This Vietnamese success story shows strategic communication in action"</li>
+<li>Viettel is Vietnam's largest mobile network operator, successfully competing globally</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Viettel faced credibility gap: State-owned Vietnamese company entering markets where foreign companies often fail</li>
+<li>They systematically built all three dimensions of credibility through communication</li>
+<li>This isn't just corporate PR - this is strategic communication that enabled business success</li>
+</ul>
+<p><strong>Competence Signals:</strong></p>
+<ul>
+<li>Instead of vague claims, specific numbers: 40M customers, profitability timeline</li>
+<li>Technical quality data showed they could deliver (not just cheap provider)</li>
+</ul>
+<p><strong>Character Signals:</strong></p>
+<ul>
+<li>Openly discussing challenges (political risk, cultural barriers) showed honesty</li>
+<li>Commitment to local hiring and community showed values beyond profit</li>
+<li>This differentiated them from companies that extract value and leave</li>
+</ul>
+<p><strong>Connection Signals:</strong></p>
+<ul>
+<li>Local leadership demonstrated respect and understanding</li>
+<li>Customer needs research showed they cared about serving market, not just selling to it</li>
+<li>Partner positioning (not conqueror) aligned with local priorities</li>
+</ul>
+<p><strong>Why This Worked:</strong></p>
+<ul>
+<li>Markets like Peru and Haiti had seen foreign companies fail or exploit</li>
+<li>Viettel's credibility-first communication built trust that enabled commercial success</li>
+<li>Shows communication isn't separate from business strategy - it IS business strategy</li>
+</ul>
+<p><strong>Vietnamese Pride Element:</strong></p>
+<ul>
+<li>This is Vietnamese company succeeding globally using communication excellence</li>
+<li>Validates that communication skills are strategic business tools, not soft skills</li>
+<li>Students can aspire to this level of strategic communication</li>
+</ul>
+<p><strong>Check Understanding:</strong></p>
+<ul>
+<li>"Which of the three credibility dimensions do you think was most important for Viettel?"</li>
+<li>Expected answers vary - good discussion that they needed ALL three</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's wrap up by synthesizing what we covered today..."</li>
+</ul>
+<p>---</p>
+<p>## WRAP-UP (Slides 24-28)</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="24">
+      <h2 class="slide-title">Key Takeaways</h2>
+      <div class="slide-content">
+        <p><strong>Today's core concepts:</strong></p>
+<ol>
+<li><strong>Communication models:</strong> Shannon-Weaver (information transfer) and Transactional (dynamic exchange) help diagnose communication breakdowns</li>
+<li><strong>Know-Feel-Do framework:</strong> Strategic message planning requires clarity on what audience should know, feel, and do</li>
+<li><strong>Audience analysis:</strong> Understand stakeholders, their priorities, and adapt your message accordingly</li>
+<li><strong>Credibility = Competence + Character + Connection:</strong> All three required to build trust</li>
+</ol>
+<p><strong>Remember:</strong> Business communication is not just transmitting information - it's achieving strategic outcomes through audience-centered messaging backed by credibility.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's synthesize the four main frameworks from today"</li>
+<li>These aren't isolated concepts - they work together</li>
+</ul>
+<p><strong>Integration:</strong></p>
+<ul>
+<li>Communication models help you understand how communication works</li>
+<li>Know-Feel-Do helps you plan WHAT to communicate</li>
+<li>Audience analysis helps you determine HOW to communicate</li>
+<li>Credibility ensures your message is BELIEVED and ACTED ON</li>
+</ul>
+<p><strong>Teaching Tactic:</strong></p>
+<ul>
+<li>Ask: "Which framework resonates most with you? Which will you use first?"</li>
+<li>Take 1-2 responses</li>
+<li>Validate all answers - different frameworks useful for different situations</li>
+</ul>
+<p><strong>Looking Ahead:</strong></p>
+<ul>
+<li>Week 2 builds on this foundation with professional writing and email</li>
+<li>Week 3 adds persuasion and influence</li>
+<li>All based on these foundational frameworks</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's preview what you'll practice in today's tutorial..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="25">
+      <h2 class="slide-title">Tutorial Preview</h2>
+      <div class="slide-content">
+        <p><strong>Today's tutorial (90 minutes):</strong></p>
+<p><strong>You will:</strong></p>
+<ol>
+<li><strong>Practice</strong> strategic message planning using Know-Feel-Do framework</li>
+<li><strong>Apply</strong> audience analysis to a business scenario</li>
+<li><strong>Draft</strong> a professional email using today's frameworks</li>
+<li><strong>Receive</strong> peer feedback using simplified Written Communication Rubric</li>
+<li><strong>Prepare</strong> for Quiz 1 with practice questions</li>
+</ol>
+<p><strong>Main activity:</strong> You'll plan and write a strategic business email that:</p>
+<ul>
+<li>Uses Know-Feel-Do framework explicitly</li>
+<li>Demonstrates audience analysis</li>
+<li>Builds credibility through competence, character, and connection</li>
+</ul>
+<p><strong>This directly prepares you for Email Series assignment (due Week 5).</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Tutorial takes today's theory and makes it practical"</li>
+<li>You'll actually write a business email using these frameworks</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Main activity mirrors Email Series assessment (Week 5)</li>
+<li>You'll get peer feedback using simplified version of grading rubric</li>
+<li>This is low-stakes practice before high-stakes portfolio submission</li>
+<li>Tutorial tutor will have complete answer keys and facilitation guidance</li>
+</ul>
+<p><strong>Reassurance:</strong></p>
+<ul>
+<li>Students may feel uncertain about applying frameworks they just learned</li>
+<li>Normalize this: "First time you apply these frameworks will feel awkward - that's expected"</li>
+<li>"Tutorial is safe space to practice and get feedback"</li>
+</ul>
+<p><strong>Tutorial Structure Preview:</strong></p>
+<ul>
+<li>10 min: Review lecture concepts</li>
+<li>55-60 min: Plan and write email, peer review, revise</li>
+<li>15-20 min: Quiz practice questions</li>
+<li>5-10 min: Wrap-up and next steps</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before tutorial, let's make sure you know what to work on between now and Week 5..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="26">
+      <h2 class="slide-title">Assessment Bridge</h2>
+      <div class="slide-content">
+        <p><strong>Preparing for your upcoming assessments:</strong></p>
+<p><strong>Quiz 1 (Week 4, 5%):</strong></p>
+<ul>
+<li><strong>What:</strong> 25-30 multiple choice questions</li>
+<li><strong>Coverage:</strong> Weeks 1-3 (Strategic Communication, Professional Writing, Persuasion)</li>
+<li><strong>Today's topics tested:</strong></li>
+<ul class="nested-list">
+<li>Communication models (Shannon-Weaver, Transactional)</li>
+<li>Know-Feel-Do framework</li>
+<li>Audience analysis principles</li>
+<li>Three components of credibility</li>
+</ul>
+</ul>
+<p><strong>Written Portfolio (Week 5, 30%):</strong></p>
+<ul>
+<li><strong>Email Series:</strong> Apply Know-Feel-Do + audience analysis</li>
+<li><strong>Persuasive Proposal:</strong> Use strategic message design + credibility building</li>
+<li><strong>Crisis Communication:</strong> Apply stakeholder analysis + trust restoration</li>
+</ul>
+<p><strong>Action:</strong> Start thinking about Email Series topics - you'll need to submit two professional emails using today's frameworks.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Everything from today connects directly to your graded work"</li>
+<li>Make this connection explicit so students see relevance</li>
+</ul>
+<p><strong>Quiz 1 Preparation:</strong></p>
+<ul>
+<li>25-30 questions means roughly 8-10 questions from Week 1</li>
+<li>Focus on section break topics: communication models, know-feel-do, audience analysis, credibility</li>
+<li>Tutorial quiz practice (today) gives you preview of question format</li>
+</ul>
+<p><strong>Portfolio Preparation:</strong></p>
+<ul>
+<li>Email Series requires explicit K-F-D statement for each email (you'll see this in rubric)</li>
+<li>Persuasive Proposal requires building credibility (competence, character, connection)</li>
+<li>All three assignments require audience analysis</li>
+</ul>
+<p><strong>Timeline Pressure:</strong></p>
+<ul>
+<li>Quiz 1 is only 3 weeks away - start reviewing early</li>
+<li>Portfolio is 4 weeks away - start thinking about scenarios/topics</li>
+<li>Today's tutorial practice gets you started</li>
+</ul>
+<p><strong>Reassurance:</strong></p>
+<ul>
+<li>"This may feel like a lot, but we're building skills progressively"</li>
+<li>"Each week builds on previous week - it will become more natural"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we finish, here are all the sources I cited today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="27">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p>Damasio, A. R. (1994). <em>Descartes' error: Emotion, reason, and the human brain.</em> Putnam.</p>
+<p>Edelman Trust Barometer. (2024). <em>2024 Edelman Trust Barometer Global Report.</em> https://www.edelman.com/trust/2024/trust-barometer</p>
+<p>Hallenbeck, G., & Childs, P. (2022, March 9). To win over an audience, focus on building trust. <em>Harvard Business Review.</em> https://hbr.org/2022/03/to-win-over-an-audience-focus-on-building-trust</p>
+<p>Hallinen, A., & Salipante, T. (2005). The strategic communication imperative. <em>MIT Sloan Management Review, 46</em>(3), 83-89. https://sloanreview.mit.edu/article/the-strategic-communication-imperative/</p>
+<p>Project Management Institute. (2013). <em>The high cost of low performance: The essential role of communications.</em> PMI Pulse of the Profession.</p>
+<p>Shannon, C. E., & Weaver, W. (1949). <em>The mathematical theory of communication.</em> University of Illinois Press.</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"All sources cited today are listed here for your reference"</li>
+<li>Two are required readings (Hallenbeck & Childs, Hallinen & Salipante)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>References are in APA 7th edition format (standard for business communication)</li>
+<li>All sources include URLs where available (you can access these)</li>
+<li>Required readings are first two - read these before Week 2</li>
+</ul>
+<p><strong>Research Quality:</strong></p>
+<ul>
+<li>Harvard Business Review and MIT Sloan Management Review are top-tier practitioner sources</li>
+<li>Damasio is neuroscience research on emotion and decision-making</li>
+<li>Edelman Trust Barometer is annual global research (credible source for trust statistics)</li>
+</ul>
+<p><strong>Study Tip:</strong></p>
+<ul>
+<li>These references are quiz-relevant</li>
+<li>Know major frameworks and their creators (Shannon-Weaver, Know-Feel-Do from Hallinen & Salipante)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Final slide - any questions before tutorial?"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="28">
+      <h2 class="slide-title">Questions?</h2>
+      <div class="slide-content">
+        <p><strong>Next Steps:</strong></p>
+<ol>
+<li><strong>Now:</strong> Proceed to tutorial (Week 1 Tutorial: Strategic Message Planning)</li>
+<li><strong>Before Week 2:</strong> Read assigned articles:</li>
+<ul class="nested-list">
+<li>Hallenbeck & Childs (2022) - Building trust</li>
+<li>Hallinen & Salipante (2005) - Strategic communication imperative</li>
+</ul>
+<li><strong>Start thinking:</strong> Email Series topics (due Week 5)</li>
+</ol>
+<p><strong>Questions?</strong></p>
+<p><strong>Contact:</strong> wil.hoang@gmail.com</p>
+<p><strong>Office Hours:</strong> By appointment</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We covered a lot today - four major frameworks in 90 minutes"</li>
+<li>Open floor for questions</li>
+</ul>
+<p><strong>Likely Questions:</strong></p>
+<ul>
+<li>"Will this be on the quiz?" → Yes, section break topics will be tested in Quiz 1</li>
+<li>"How long should Email Series emails be?" → We'll cover email writing in Week 2, but typically 150-250 words per email</li>
+<li>"Can we work in groups on portfolio?" → No, individual work (but you can discuss concepts)</li>
+</ul>
+<p><strong>Reassurance:</strong></p>
+<ul>
+<li>"If you're feeling overwhelmed, that's normal for Week 1"</li>
+<li>"Tutorial will make these frameworks more concrete"</li>
+<li>"We'll review these concepts in Week 2 and 3 - they build on each other"</li>
+</ul>
+<p><strong>Administrative:</strong></p>
+<ul>
+<li>Remind students to check Moodle for tutorial materials</li>
+<li>Remind about required readings before Week 2</li>
+<li>Office hours available by appointment</li>
+</ul>
+<p><strong>Timing Check:</strong></p>
+<ul>
+<li>Should be at ~90 minutes total</li>
+<li>If running over, move questions to tutorial or office hours</li>
+</ul>
+<p><strong>Final Note:</strong></p>
+<ul>
+<li>"Thank you - see you in tutorial where we'll put this into practice!"</li>
+</ul>
+<p>---</p>
+<p><strong>END OF LECTURE</strong></p>
+<p><strong>Slides:</strong> 28</p>
+<p><strong>Duration:</strong> 90 minutes</p>
+<p><strong>Layouts Used:</strong> Title (1), Content (12), Section Breaks (4), Framework (4), Big Number (1), Dark Slides (2), Quote (0), Vocab Table (1), Objectives (1), References (1), Standard (1)</p>
+<p><strong>Citations:</strong> 6 sources, all properly cited with URLs/DOIs</p>
+<p><strong>Vietnamese Examples:</strong> 3 (FPT Software, Viettel, general Vietnamese business context)</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 10</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 12 Quiz Practice</h1>
+        <p class="subtitle">Personal Mastery & Presentation Frameworks</p>
+        <p class="author">William Winterton Lang and Le Huong Lan, PhD<br><strong>Personal and Professional Development</strong><br>National Economics University - IBD Campus<br>Autumn 2025</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>This is a practice quiz covering Week 12 concepts on personal mastery frameworks, Drive Theory, and sustainable learning systems. Students should answer individually before discussing with partners.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="2">
+      <h2 class="slide-title">Question 1: Creative Tension</h2>
+      <div class="slide-content">
+        <p>According to Senge's personal mastery framework, "creative tension" refers to:</p>
+<p><strong>A)</strong> Stress from having too many goals</p>
+<p><strong>B)</strong> The gap between current reality and personal vision that motivates growth</p>
+<p><strong>C)</strong> Tension between work and personal life</p>
+<p><strong>D)</strong> Conflict with family over career choices</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Give students 30-45 seconds to consider the question. This tests understanding of Senge's personal mastery concept from today's lecture. Creative tension is a key concept for the Development Plan presentation.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="3">
+      <h2 class="slide-title">Question 2: Drive Theory</h2>
+      <div class="slide-content">
+        <p>Pink's Drive Theory identifies three elements of intrinsic motivation. Which is NOT one of them?</p>
+<p><strong>A)</strong> Autonomy</p>
+<p><strong>B)</strong> Mastery</p>
+<p><strong>C)</strong> Salary</p>
+<p><strong>D)</strong> Purpose</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Students should recognize the three drives (autonomy, mastery, purpose) from the lecture. Salary is an external motivator, not intrinsic. This concept is crucial for explaining WHY goals matter in the oral exam.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">Question 3: Sustainable Learning Systems</h2>
+      <div class="slide-content">
+        <p>A sustainable learning system includes all of these components EXCEPT:</p>
+<p><strong>A)</strong> Clear outcomes (SMART goals)</p>
+<p><strong>B)</strong> Feedback loops (regular self-assessment)</p>
+<p><strong>C)</strong> Perfect execution without mistakes</p>
+<p><strong>D)</strong> Adaptive adjustment (revising goals based on learning)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>This question tests understanding that perfectionism is NOT part of sustainable systems. Growth comes from learning from mistakes, not avoiding them. Students often struggle with this in Vietnamese educational context where mistakes are sometimes seen negatively.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">Question 4: Rubric Criteria</h2>
+      <div class="slide-content">
+        <p>In your Final Oral Exam, explaining WHY your goals matter using Drive Theory (autonomy, mastery, purpose) primarily addresses which rubric criterion?</p>
+<p><strong>A)</strong> Content Depth & Self-Awareness</p>
+<p><strong>B)</strong> Goal Clarity & Strategic Thinking</p>
+<p><strong>C)</strong> Integration of Learning</p>
+<p><strong>D)</strong> Delivery & Professional Presence</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>This connects quiz content to the actual assessment rubric. Strategic Thinking (25% of rubric) specifically evaluates explanation of WHY goals matter. This helps students understand how to structure their presentation for maximum points.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="6">
+      <h2 class="slide-title">Question 5: Growth Mindset</h2>
+      <div class="slide-content">
+        <p>Dweck's growth mindset is essential for personal mastery because:</p>
+<p><strong>A)</strong> It makes you smarter</p>
+<p><strong>B)</strong> It ensures you never fail</p>
+<p><strong>C)</strong> It helps you believe abilities can be developed through practice</p>
+<p><strong>D)</strong> It eliminates creative tension</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Growth mindset (belief that abilities can be developed) is foundational for personal mastery. This concept appeared in multiple weeks but is especially relevant for the Development Plan's focus on continuous improvement.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="7">
+      <h2 class="slide-title">Question 6: Habit Stacking</h2>
+      <div class="slide-content">
+        <p>James Clear's "habit stacking" technique involves:</p>
+<p><strong>A)</strong> Adding many new habits at once</p>
+<p><strong>B)</strong> Only focusing on big changes</p>
+<p><strong>C)</strong> Connecting a new habit to an existing routine</p>
+<p><strong>D)</strong> Avoiding routines to stay flexible</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Habit stacking connects new habits to existing routines. This is a practical implementation technique students can use in their Development Plans. Example: "After morning coffee, review one Development Plan goal."</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="8">
+      <h2 class="slide-title">Question 7: Cultural Context</h2>
+      <div class="slide-content">
+        <p>In Vietnamese cultural context, "autonomy" in career planning means:</p>
+<p><strong>A)</strong> Rejecting all family input on career decisions</p>
+<p><strong>B)</strong> Self-direction while still honoring family values and seeking guidance</p>
+<p><strong>C)</strong> Making decisions completely independently without mentors</p>
+<p><strong>D)</strong> Avoiding traditional career paths entirely</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>This culturally-sensitive question clarifies that autonomy = self-direction, not isolation. In collectivist Vietnamese culture, students can honor family values and seek guidance while still making autonomous choices. Important distinction for Development Plans.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="9">
+      <h2 class="slide-title">Question 8: System Components</h2>
+      <div class="slide-content">
+        <p>The four components of a sustainable learning system are:</p>
+<p><strong>A)</strong> Goals, grades, certificates, salary</p>
+<p><strong>B)</strong> Clear outcomes, feedback loops, deliberate practice, adaptive adjustment</p>
+<p><strong>C)</strong> Reading, writing, presenting, testing</p>
+<p><strong>D)</strong> Autonomy, mastery, purpose, vision</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Final question reinforces the complete framework for sustainable learning systems. Students should be able to list all four research-backed components. This system should be reflected in their Development Plan implementation section.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="10">
+      <h2 class="slide-title">Quiz Complete</h2>
+      <div class="slide-content">
+        <p><strong>Quiz Complete!</strong></p>
+<p>Discuss your answers with your partner.</p>
+<p><strong>Key Concepts Covered:</strong></p>
+<ul>
+<li>Personal mastery (Senge)</li>
+<li>Drive Theory: Autonomy, Mastery, Purpose (Pink)</li>
+<li>Sustainable learning systems (4 components)</li>
+<li>Growth mindset (Dweck)</li>
+<li>Habit stacking (Clear)</li>
+<li>Cultural adaptations for autonomy</li>
+</ul>
+<p><strong>Connection to Exam:</strong></p>
+<p>These frameworks help you articulate your Development Plan with depth and strategic thinking = higher rubric scores.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>After students complete the quiz, facilitate discussion of answers. Most students should get 6+ correct. Use this as opportunity to clarify any misconceptions before the Final Oral Exam.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

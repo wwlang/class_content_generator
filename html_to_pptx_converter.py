@@ -33,6 +33,9 @@ from html_to_pptx.config import (
 from html_to_pptx.css_parser import CSSStyleParser
 from html_to_pptx.handlers import create_handler_registry
 
+# Import utility helpers
+from html_to_pptx.utils import FontStyler, XMLHelper, IndentationPresets
+
 # Image processing imports
 try:
     from PIL import Image
@@ -186,9 +189,7 @@ class HTMLToPPTXConverter:
 
             run = p.add_run()
             run.text = course_name
-            run.font.name = FontConfig.BODY_FONT
-            run.font.size = FontConfig.FOOTER_SIZE
-            run.font.color.rgb = ColorConfig.CREAM if is_dark_bg else ColorConfig.DARK_GRAY
+            FontStyler.apply_footer_styling(run, is_dark_bg=is_dark_bg, is_slide_number=False)
 
         # Slide number (right)
         number_box = self.add_textbox(
@@ -205,9 +206,7 @@ class HTMLToPPTXConverter:
 
         run = p.add_run()
         run.text = str(slide_number)
-        run.font.name = FontConfig.BODY_FONT
-        run.font.size = FontConfig.FOOTER_SIZE
-        run.font.color.rgb = ColorConfig.ORANGE  # Orange for slide numbers
+        FontStyler.apply_footer_styling(run, is_slide_number=True)
 
     def add_decorative_shapes(self, slide, position='bottom-left'):
         """Add small decorative geometric shapes"""
@@ -764,6 +763,7 @@ class HTMLToPPTXConverter:
                     # Check for styling
                     if element.tag in ['strong', 'b']:
                         run.font.bold = True
+                        run.font.color.rgb = ColorConfig.ORANGE  # Bold text is orange
                     if element.tag in ['em', 'i']:
                         run.font.italic = True
 
@@ -795,8 +795,9 @@ class HTMLToPPTXConverter:
                         run.text = child_text
                         run.font.bold = True
 
-                        # Check for inline color styles
+                        # Check for inline color styles (takes precedence)
                         style_attr = child.get('style', '')
+                        color_applied = False
                         if 'color:' in style_attr:
                             # Extract color from inline style
                             color = self.css_parser.parse_inline_style(style_attr).get('color')
@@ -804,6 +805,11 @@ class HTMLToPPTXConverter:
                                 rgb_color = self.css_parser.parse_color(color)
                                 if rgb_color:
                                     run.font.color.rgb = rgb_color
+                                    color_applied = True
+
+                        # If no inline color, apply default orange for bold
+                        if not color_applied:
+                            run.font.color.rgb = ColorConfig.ORANGE
             elif child.tag in ['em', 'i']:
                 if child.text:
                     run = paragraph.add_run()
@@ -831,10 +837,10 @@ class HTMLToPPTXConverter:
         subtitle_elem = html_slide.find('.//*[@class="subtitle"]')
         author_elem = html_slide.find('.//*[@class="author"]')
 
-        # Add title
+        # Add title - top left aligned
         if title_elem is not None:
-            title_box = self.add_textbox(slide, self.PADDING, 2.5,
-                                        self.SLIDE_WIDTH - 2*self.PADDING, 1.5)
+            title_box = self.add_textbox(slide, self.PADDING, self.PADDING,
+                                        self.SLIDE_WIDTH - 2*self.PADDING, 1.2)
             title_box.text_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
             self.add_text(title_box.text_frame, self.extract_text_content(title_elem),
                          font_name=self.HEADER_FONT, font_size=Pt(52), bold=True,
@@ -843,21 +849,80 @@ class HTMLToPPTXConverter:
 
         # Add subtitle
         if subtitle_elem is not None:
-            subtitle_box = self.add_textbox(slide, self.PADDING, 4.2,
-                                           self.SLIDE_WIDTH - 2*self.PADDING, 1.0)
+            subtitle_box = self.add_textbox(slide, self.PADDING, 1.5,
+                                           self.SLIDE_WIDTH - 2*self.PADDING, 0.8)
             subtitle_box.text_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
             self.add_text(subtitle_box.text_frame, self.extract_text_content(subtitle_elem),
                          font_name=self.BODY_FONT, font_size=Pt(27),
                          color=ColorConfig.ORANGE, alignment=PP_ALIGN.LEFT)
 
-        # Add author
+        # Add author with line breaks preserved
         if author_elem is not None:
-            author_box = self.add_textbox(slide, self.PADDING, 5.5,
-                                         self.SLIDE_WIDTH - 2*self.PADDING, 0.5)
-            author_box.text_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
-            self.add_text(author_box.text_frame, self.extract_text_content(author_elem),
-                         font_name=self.BODY_FONT, font_size=Pt(20),
-                         color=self.COLORS['#64748b'], alignment=PP_ALIGN.LEFT)
+            author_box = self.add_textbox(slide, self.PADDING, 2.6,
+                                         self.SLIDE_WIDTH - 2*self.PADDING, 1.5)
+            tf = author_box.text_frame
+            tf.word_wrap = True
+            tf.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
+            tf.clear()
+
+            # Parse HTML to preserve line breaks
+            import html as html_module
+            # Get the inner HTML with br tags
+            author_html = etree.tostring(author_elem, encoding='unicode', method='html')
+            # Split by <br> or <br/>
+            parts = re.split(r'<br\s*/?>', author_html)
+
+            for i, part in enumerate(parts):
+                # Extract text from HTML fragment
+                # Remove opening and closing tags
+                text = re.sub(r'<[^>]+>', '', part).strip()
+                text = html_module.unescape(text)
+
+                if text:
+                    if i == 0:
+                        p = tf.paragraphs[0]
+                    else:
+                        p = tf.add_paragraph()
+
+                    p.alignment = PP_ALIGN.LEFT
+                    p.space_after = Pt(4)
+
+                    # Check if text has <strong> tags for bold
+                    if '<strong>' in part or '<b>' in part:
+                        # Parse bold sections
+                        bold_pattern = r'<(?:strong|b)>([^<]+)</(?:strong|b)>'
+                        remaining = part
+                        last_end = 0
+
+                        for match in re.finditer(bold_pattern, remaining):
+                            # Add text before bold
+                            before_text = re.sub(r'<[^>]+>', '', remaining[last_end:match.start()]).strip()
+                            before_text = html_module.unescape(before_text)
+                            if before_text:
+                                run = p.add_run()
+                                run.text = before_text
+                                FontStyler.apply_muted_text_styling(run)
+
+                            # Add bold text
+                            bold_text = html_module.unescape(match.group(1))
+                            run = p.add_run()
+                            run.text = bold_text
+                            FontStyler.apply_muted_text_styling(run, bold=True)
+
+                            last_end = match.end()
+
+                        # Add remaining text after last bold
+                        after_text = re.sub(r'<[^>]+>', '', remaining[last_end:]).strip()
+                        after_text = html_module.unescape(after_text)
+                        if after_text:
+                            run = p.add_run()
+                            run.text = after_text
+                            FontStyler.apply_muted_text_styling(run)
+                    else:
+                        # Simple text, no bold
+                        run = p.add_run()
+                        run.text = text
+                        FontStyler.apply_muted_text_styling(run)
 
         # Add decorative shapes
         self.add_decorative_shapes(slide, 'bottom-left')
@@ -921,6 +986,25 @@ class HTMLToPPTXConverter:
                         spacing_hundredths = int(FontConfig.TITLE_LETTER_SPACING.pt * 100)
                         run.font._element.set('spc', str(spacing_hundredths))
 
+        # Extract and add subtitle if present
+        subtitle_elem = html_slide.find('.//*[@class="section-subtitle"]')
+        if subtitle_elem is not None:
+            subtitle_box = self.add_textbox(slide, self.PADDING, 4.3,
+                                          self.SLIDE_WIDTH - 2*self.PADDING, 1.0)
+            sub_tf = subtitle_box.text_frame
+            sub_tf.word_wrap = True
+            sub_tf.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
+
+            sub_p = sub_tf.paragraphs[0]
+            sub_p.alignment = PP_ALIGN.LEFT
+
+            sub_run = sub_p.add_run()
+            sub_run.text = self.extract_text_content(subtitle_elem)
+            sub_run.font.name = self.BODY_FONT
+            sub_run.font.size = Pt(24)
+            sub_run.font.color.rgb = RGBColor(255, 255, 255)
+            sub_run.font.italic = True
+
     def handle_big_number_slide(self, slide, html_slide):
         """Handle big number slide with centered statistic"""
         # Apply cream background
@@ -979,9 +1063,7 @@ class HTMLToPPTXConverter:
 
             run = p.add_run()
             run.text = explanation_text
-            run.font.name = FontConfig.BODY_FONT
-            run.font.size = FontConfig.BODY_MEDIUM
-            run.font.color.rgb = ColorConfig.MUTED_GRAY
+            FontStyler.apply_muted_text_styling(run, font_size=FontConfig.BODY_MEDIUM)
 
     def handle_content_slide(self, slide, html_slide):
         """Handle standard content slide with title and bullets"""
@@ -1011,33 +1093,17 @@ class HTMLToPPTXConverter:
             sp = shape.element
             sp.getparent().remove(sp)
 
-        # Add title
+        # Add title using TextRenderer for consistency
         if title_elem is not None:
-            title_box = self.add_textbox(
-                slide,
-                LayoutConfig.PADDING,
-                LayoutConfig.TITLE_Y,
-                self.SLIDE_WIDTH - 2*LayoutConfig.PADDING,
-                LayoutConfig.TITLE_HEIGHT
-            )
-            p = title_box.text_frame.paragraphs[0]
+            from html_to_pptx.renderers import TextRenderer
+            text_renderer = TextRenderer(slide)
+            title_text = self.extract_text_content(title_elem)
+            text_renderer.render_slide_title(title_text, is_dark_bg=is_dark)
 
-            p.alignment = PP_ALIGN.LEFT
-            self.add_formatted_text(p, title_elem)
-
-            # Use is_dark variable already calculated above
-            for run in p.runs:
-                run.font.name = FontConfig.HEADER_FONT
-                run.font.size = FontConfig.HEADING_MEDIUM
-                run.font.bold = True
-                # Use cream color for dark backgrounds, dark gray for light backgrounds
-                run.font.color.rgb = ColorConfig.CREAM if is_dark else ColorConfig.DARK_GRAY
-                # Apply condensed letter spacing via XML (1/100th of a point)
-                spacing_hundredths = int(FontConfig.TITLE_LETTER_SPACING.pt * 100)
-                run.font._element.set('spc', str(spacing_hundredths))
-
-        # Extract content body
+        # Extract content body (try multiple class names)
         content_body = html_slide.find('.//*[@class="content-body"]')
+        if content_body is None:
+            content_body = html_slide.find('.//*[@class="slide-content"]')
         if content_body is None:
             content_body = html_slide
 
@@ -1054,7 +1120,7 @@ class HTMLToPPTXConverter:
         stats_banner = html_slide.find('.//*[@class="stats-banner"]')
         if stats_banner is not None:
             # Start stats after title with proper gap
-            self.handle_stats_banner(slide, stats_banner, y_start=LayoutConfig.CONTENT_START_Y)
+            self.handle_stats_banner(slide, stats_banner, y_start=LayoutConfig.CONTENT_START_Y, is_dark_bg=is_dark)
             return
 
         # Check for grid layout (using computed styles to detect CSS classes)
@@ -1068,7 +1134,7 @@ class HTMLToPPTXConverter:
 
         # Handle grid layout separately - process in document order
         if grid_div is not None:
-            y_pos = 1.4
+            y_pos = LayoutConfig.CONTENT_START_Y
 
             # Process all children in document order
             for elem in content_body:
@@ -1109,7 +1175,7 @@ class HTMLToPPTXConverter:
                                 if size_match:
                                     run.font.size = Pt(int(size_match.group(1)) * 0.75)
                             elif not run.font.size:
-                                run.font.size = Pt(20)
+                                run.font.size = Pt(16)
 
                             if 'font-weight: 600' in style or 'font-weight: bold' in style:
                                 run.font.bold = True
@@ -1121,17 +1187,17 @@ class HTMLToPPTXConverter:
                                     if color:
                                         run.font.color.rgb = color
                                     else:
-                                        # Set colors: orange for bold, gray for regular
+                                        # Set colors: orange for bold, appropriate color for regular based on background
                                         if run.font.bold:
                                             run.font.color.rgb = ColorConfig.ORANGE
                                         else:
-                                            run.font.color.rgb = self.COLORS['#475569']
+                                            run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
                             else:
-                                # Set colors: orange for bold, gray for regular
+                                # Set colors: orange for bold, appropriate color for regular based on background
                                 if run.font.bold:
                                     run.font.color.rgb = ColorConfig.ORANGE
                                 else:
-                                    run.font.color.rgb = self.COLORS['#475569']
+                                    run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
                         y_pos += 0.8
 
@@ -1198,7 +1264,8 @@ class HTMLToPPTXConverter:
                                     # Apply heading styles
                                     style = heading_elem.get('style', '')
                                     for run in h_p.runs:
-                                        run.font.name = self.BODY_FONT
+                                        # Use header font for grid headings
+                                        run.font.name = FontConfig.HEADER_FONT
 
                                         if 'font-size:' in style:
                                             import re
@@ -1206,23 +1273,30 @@ class HTMLToPPTXConverter:
                                             if size_match:
                                                 run.font.size = Pt(int(size_match.group(1)) * 0.75)
                                         else:
-                                            run.font.size = Pt(18)
+                                            run.font.size = Pt(16)
 
                                         run.font.bold = True
 
+                                        # Apply color: check inline style first, then default to orange
                                         if 'color:' in style:
                                             color_match = re.search(r'color:\s*([^;]+)', style)
                                             if color_match:
                                                 color = self.parse_color(color_match.group(1).strip())
                                                 if color:
                                                     run.font.color.rgb = color
+                                                else:
+                                                    # Fallback to orange if parse fails
+                                                    run.font.color.rgb = ColorConfig.ORANGE
+                                        else:
+                                            # Default: grid headings are orange (accent color)
+                                            run.font.color.rgb = ColorConfig.ORANGE
 
-                                    col_y_pos += 0.5
+                                    col_y_pos += 0.35  # Reduced gap between heading and list
 
                             if list_elem is not None:
-                                # Count items to determine height
+                                # Count items to determine height (reduced for tighter spacing)
                                 li_items = list_elem.findall('./li')
-                                list_height = len(li_items) * 0.35 + 0.2
+                                list_height = len(li_items) * 0.3 + 0.2
 
                                 # Add list
                                 list_box = self.add_textbox(slide, x_pos, col_y_pos,
@@ -1242,27 +1316,16 @@ class HTMLToPPTXConverter:
 
                                     l_p.level = 0
                                     l_p.alignment = PP_ALIGN.LEFT
-                                    l_p.space_after = Pt(6)
+                                    l_p.line_spacing = SpacingConfig.LINE_SPACING
+                                    l_p.space_before = SpacingConfig.LIST_ITEM_SPACE_BEFORE
+                                    l_p.space_after = SpacingConfig.LIST_ITEM_SPACE_AFTER
 
                                     # Enable bullet formatting
-                                    pPr = l_p._element.get_or_add_pPr()
-                                    pPr.set('marL', '342900')
-                                    pPr.set('indent', '-228600')
-
-                                    # Detect marker type
                                     marker = self.detect_list_marker(li)
-
-                                    # Add bullet character
-                                    buChar_xml = f'<a:buChar {nsdecls("a")} char="{marker}"/>'
-                                    buChar = parse_xml(buChar_xml)
-                                    pPr.append(buChar)
-
-                                    # Add bullet font
-                                    buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{self.BODY_FONT}"/>'
-                                    buFont = parse_xml(buFont_xml)
-                                    pPr.append(buFont)
+                                    XMLHelper.add_bullet_with_indent(l_p, marker=marker, font_name=self.BODY_FONT)
 
                                     # Add bullet color (orange)
+                                    pPr = l_p._element.get_or_add_pPr()
                                     buClr_xml = f'''<a:buClr {nsdecls("a")}>
                                         <a:srgbClr val="ed5e29"/>
                                     </a:buClr>'''
@@ -1286,11 +1349,11 @@ class HTMLToPPTXConverter:
                                         elif not run.font.size:
                                             run.font.size = Pt(16)
 
-                                        # Set colors: orange for bold, gray for regular
+                                        # Set colors: orange for bold, appropriate color for regular based on background
                                         if run.font.bold:
                                             run.font.color.rgb = ColorConfig.ORANGE
                                         else:
-                                            run.font.color.rgb = self.COLORS['#475569']
+                                            run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
                             # Render paragraph if present (and no list)
                             if para_elem is not None and list_elem is None:
@@ -1320,11 +1383,11 @@ class HTMLToPPTXConverter:
                                         elif not run.font.size:
                                             run.font.size = Pt(14)
 
-                                        # Set colors: orange for bold, gray for regular
+                                        # Set colors: orange for bold, appropriate color for regular based on background
                                         if run.font.bold:
                                             run.font.color.rgb = ColorConfig.ORANGE
                                         else:
-                                            run.font.color.rgb = self.COLORS['#475569']
+                                            run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
                         y_pos += 2.5  # Move down after grid
 
@@ -1353,7 +1416,8 @@ class HTMLToPPTXConverter:
                                 p = div_tf.add_paragraph()
 
                             p.alignment = PP_ALIGN.LEFT
-                            p.space_after = Pt(6)
+                            p.line_spacing = SpacingConfig.LINE_SPACING
+                            p.space_after = SpacingConfig.PARAGRAPH_SPACE_AFTER
 
                             self.add_formatted_text(p, div_p)
 
@@ -1381,17 +1445,17 @@ class HTMLToPPTXConverter:
                                         if color:
                                             run.font.color.rgb = color
                                         else:
-                                            # Set colors: orange for bold, gray for regular
+                                            # Set colors: orange for bold, appropriate color for regular based on background
                                             if run.font.bold:
                                                 run.font.color.rgb = ColorConfig.ORANGE
                                             else:
-                                                run.font.color.rgb = self.COLORS['#475569']
+                                                run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
                                 else:
-                                    # Set colors: orange for bold, gray for regular
+                                    # Set colors: orange for bold, appropriate color for regular based on background
                                     if run.font.bold:
                                         run.font.color.rgb = ColorConfig.ORANGE
                                     else:
-                                        run.font.color.rgb = self.COLORS['#475569']
+                                        run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
                         y_pos += div_height + 0.2
 
@@ -1444,6 +1508,22 @@ class HTMLToPPTXConverter:
                         p = p_tf.paragraphs[0]
                         p.alignment = PP_ALIGN.LEFT
 
+                        # Detect if this is a subheading paragraph
+                        is_subheading = False
+                        strong_elem = elem.find('.//strong')
+                        if strong_elem is not None:
+                            if len(p_text) < 100 and p_text.endswith(':'):
+                                is_subheading = True
+
+                        # Apply appropriate spacing
+                        p.line_spacing = SpacingConfig.LINE_SPACING
+                        if is_subheading:
+                            p.space_before = SpacingConfig.SUBHEADING_SPACE_BEFORE
+                            p.space_after = SpacingConfig.SUBHEADING_SPACE_AFTER
+                        else:
+                            p.space_before = SpacingConfig.PARAGRAPH_SPACE_BEFORE
+                            p.space_after = SpacingConfig.PARAGRAPH_SPACE_AFTER
+
                         self.add_formatted_text(p, elem)
 
                         # Apply styling
@@ -1452,7 +1532,7 @@ class HTMLToPPTXConverter:
                                 run.font.name = FontConfig.BODY_FONT
                             if not run.font.size:
                                 run.font.size = font_size
-                            run.font.color.rgb = ColorConfig.DARK_GRAY
+                            run.font.color.rgb = ColorConfig.CREAM if is_dark else ColorConfig.DARK_GRAY
 
                         y_pos += 0.7
 
@@ -1495,7 +1575,7 @@ class HTMLToPPTXConverter:
                                             run.font.name = FontConfig.BODY_FONT
                                         if not run.font.size:
                                             run.font.size = font_size
-                                        run.font.color.rgb = ColorConfig.DARK_GRAY
+                                        run.font.color.rgb = ColorConfig.CREAM if is_dark else ColorConfig.DARK_GRAY
 
                                     y_pos += 1.0  # More spacing before card
 
@@ -1594,7 +1674,7 @@ class HTMLToPPTXConverter:
                                 h3_style = h3_elem.get('style', '')
                                 for run in h3_p.runs:
                                     run.font.name = FontConfig.HEADER_FONT
-                                    run.font.size = Pt(18)  # 24px * 0.75
+                                    run.font.size = Pt(16)  # 24px * 0.75
                                     run.font.bold = True
                                     # Parse color from style (default to orange for h3 in cards)
                                     if 'color:' in h3_style:
@@ -1645,19 +1725,10 @@ class HTMLToPPTXConverter:
                                 li_p.space_after = Pt(6)
 
                                 # Enable bullet formatting with checkmark
+                                XMLHelper.add_bullet_with_indent(li_p, marker=marker, font_name=FontConfig.BODY_FONT)
+
+                                # Get pPr for adding custom bullet color
                                 pPr = li_p._element.get_or_add_pPr()
-                                pPr.set('marL', '342900')  # Left margin
-                                pPr.set('indent', '-228600')  # Hanging indent
-
-                                # Add bullet character (checkmark)
-                                buChar_xml = f'<a:buChar {nsdecls("a")} char="{marker}"/>'
-                                buChar = parse_xml(buChar_xml)
-                                pPr.append(buChar)
-
-                                # Add bullet font
-                                buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{FontConfig.BODY_FONT}"/>'
-                                buFont = parse_xml(buFont_xml)
-                                pPr.append(buFont)
 
                                 # Add bullet color (orange for checkmark)
                                 buClr_xml = f'''<a:buClr {nsdecls("a")}>
@@ -1708,7 +1779,7 @@ class HTMLToPPTXConverter:
 
         # Standard handling (no grid layout, no styled divs)
         # Always create our own text box for content
-        content_box = self.add_textbox(slide, self.PADDING, 1.4,
+        content_box = self.add_textbox(slide, self.PADDING, LayoutConfig.CONTENT_START_Y,
                                        self.SLIDE_WIDTH - 2*self.PADDING, 5.5)
         tf = content_box.text_frame
         tf.word_wrap = True
@@ -1760,6 +1831,10 @@ class HTMLToPPTXConverter:
             if ul in ul_skip_set:
                 continue  # Skip - will be processed with its paragraph
 
+            # Skip ULs that are children of OLs (nested lists within ordered lists)
+            if ul.getparent() is not None and ul.getparent().tag == 'ol':
+                continue  # Will be processed as part of OL processing
+
             processed_lists.add(ul)
 
             # Check if this should be treated as a numbered list
@@ -1775,20 +1850,11 @@ class HTMLToPPTXConverter:
 
                 p.level = 0
                 p.alignment = PP_ALIGN.LEFT
-                p.space_after = Pt(6)
-
-                # Enable formatting
-                pPr = p._element.get_or_add_pPr()
-
-                # Set indentation with hanging indent
-                pPr.set('marL', '342900')  # Left margin (text indent)
-                pPr.set('indent', '-228600')  # First line indent (hanging indent)
+                p.space_after = Pt(0)  # No spacing between list items
 
                 if is_numbered:
-                    # Add autonumbering XML element
-                    buAutoNum_xml = f'<a:buAutoNum {nsdecls("a")} type="arabicPeriod"/>'
-                    buAutoNum = parse_xml(buAutoNum_xml)
-                    pPr.append(buAutoNum)
+                    # Use XMLHelper for numbering with indentation
+                    XMLHelper.add_numbering_with_indent(p, style='arabicPeriod')
 
                     # Add the actual content with formatting (skip leading number in original text)
                     self.add_formatted_text(p, li, skip_leading_number=True)
@@ -1796,30 +1862,14 @@ class HTMLToPPTXConverter:
                     # Detect marker type for bullets
                     marker = self.detect_list_marker(li)
 
-                    # Add bullet character XML element
-                    buChar_xml = f'<a:buChar {nsdecls("a")} char="{marker}"/>'
-                    buChar = parse_xml(buChar_xml)
-                    pPr.append(buChar)
-
-                    # Add bullet font XML element
-                    buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{self.BODY_FONT}"/>'
-                    buFont = parse_xml(buFont_xml)
-                    pPr.append(buFont)
+                    # Use XMLHelper for bullet with indentation
+                    XMLHelper.add_bullet_with_indent(p, marker=marker, font_name=self.BODY_FONT)
 
                     # Add the actual content with formatting (skip marker in original text)
                     self.add_formatted_text(p, li, skip_leading_marker=True)
 
-                # Apply font styling to all runs
-                for run in p.runs:
-                    if not run.font.name:
-                        run.font.name = self.BODY_FONT
-                    if not run.font.size:
-                        run.font.size = Pt(20)
-                    # Set colors: orange for bold, gray for regular
-                    if run.font.bold:
-                        run.font.color.rgb = ColorConfig.ORANGE
-                    else:
-                        run.font.color.rgb = self.COLORS['#475569']
+                # Apply font styling to all runs using helper
+                FontStyler.apply_body_font_styling(p.runs, is_dark_bg=is_dark)
 
         # Process ordered lists (numbered) that are NOT associated with paragraphs
         for ol in ol_elems:
@@ -1827,45 +1877,82 @@ class HTMLToPPTXConverter:
                 continue  # Skip - will be processed with its paragraph
 
             processed_lists.add(ol)
-            for idx, li in enumerate(ol.findall('./li'), 1):
-                if first_item:
-                    p = tf.paragraphs[0]
-                    first_item = False
-                else:
-                    p = tf.add_paragraph()
 
-                p.level = 0
-                p.alignment = PP_ALIGN.LEFT
-                p.space_after = Pt(6)
-
-                # Enable numbering with proper indentation
-                pPr = p._element.get_or_add_pPr()
-
-                # Set indentation with hanging indent for numbered lists
-                # Left indent: 0.38" (where text starts after number)
-                # Hanging indent: -0.25" (how far number hangs to the left)
-                pPr.set('marL', '342900')  # 0.38 inches in EMU
-                pPr.set('indent', '-228600')  # -0.25 inches in EMU
-
-                # Add autonumbering XML element
-                buAutoNum_xml = f'<a:buAutoNum {nsdecls("a")} type="arabicPeriod"/>'
-                buAutoNum = parse_xml(buAutoNum_xml)
-                pPr.append(buAutoNum)
-
-                # Add the actual content with formatting
-                self.add_formatted_text(p, li)
-
-                # Apply font styling to all runs
-                for run in p.runs:
-                    if not run.font.name:
-                        run.font.name = self.BODY_FONT
-                    if not run.font.size:
-                        run.font.size = Pt(20)
-                    # Set colors: orange for bold, gray for regular
-                    if run.font.bold:
-                        run.font.color.rgb = ColorConfig.ORANGE
+            # Process all children of OL (both li and nested ul elements)
+            item_num = 1
+            for child in ol:
+                # Handle <li> elements as numbered items
+                if child.tag == 'li':
+                    if first_item:
+                        p = tf.paragraphs[0]
+                        first_item = False
                     else:
-                        run.font.color.rgb = self.COLORS['#475569']
+                        p = tf.add_paragraph()
+
+                    p.level = 0
+                    p.alignment = PP_ALIGN.LEFT
+                    p.space_after = Pt(0)  # No spacing between list items
+
+                    # Enable numbering with proper indentation
+                    XMLHelper.add_numbering_with_indent(p)
+
+                    # Add the actual content with formatting
+                    self.add_formatted_text(p, child)
+
+                    # Apply font styling to all runs
+                    for run in p.runs:
+                        if not run.font.name:
+                            run.font.name = self.BODY_FONT
+                        if not run.font.size:
+                            run.font.size = Pt(16)
+                        # Set colors: orange for bold, appropriate color for regular based on background
+                        if run.font.bold:
+                            run.font.color.rgb = ColorConfig.ORANGE
+                        else:
+                            run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
+
+                    item_num += 1
+
+                # Handle nested <ul> elements as sub-bullets
+                elif child.tag == 'ul':
+                    processed_lists.add(child)  # Mark as processed
+                    for nested_li in child.findall('./li'):
+                        if first_item:
+                            p = tf.paragraphs[0]
+                            first_item = False
+                        else:
+                            p = tf.add_paragraph()
+
+                        p.alignment = PP_ALIGN.LEFT
+                        p.space_after = Pt(0)
+
+                        # Detect marker type for bullets
+                        marker = self.detect_list_marker(nested_li)
+                        XMLHelper.add_bullet_with_indent(
+                            p,
+                            marker=marker,
+                            font_name=self.BODY_FONT,
+                            left_margin_inches=0.75,  # Indent for level 1
+                            hanging_indent_inches=-0.25
+                        )
+
+                        # Set level after add_bullet_with_indent to avoid being overridden
+                        p.level = 1
+
+                        # Add the actual content with formatting
+                        self.add_formatted_text(p, nested_li, skip_leading_marker=True)
+
+                        # Apply font styling to all runs
+                        for run in p.runs:
+                            if not run.font.name:
+                                run.font.name = self.BODY_FONT
+                            if not run.font.size:
+                                run.font.size = Pt(16)
+                            # Set colors: orange for bold, appropriate color for regular based on background
+                            if run.font.bold:
+                                run.font.color.rgb = ColorConfig.ORANGE
+                            else:
+                                run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
         # Process all paragraphs in document order
         # This ensures content appears in the correct sequence
@@ -1889,10 +1976,14 @@ class HTMLToPPTXConverter:
             match = re.match(r'^(\d+)[\.\)]\s+', p_text)
             if match and idx in numbered_para_map:
                 # Numbered paragraph with auto-numbering
-                p = tf.add_paragraph()
+                if first_item:
+                    p = tf.paragraphs[0]
+                    first_item = False
+                else:
+                    p = tf.add_paragraph()
                 p.level = 0
                 p.alignment = PP_ALIGN.LEFT
-                p.space_after = Pt(6)
+                p.space_after = Pt(0)  # No spacing between list items
 
                 # Enable numbering with proper indentation
                 pPr = p._element.get_or_add_pPr()
@@ -1923,7 +2014,7 @@ class HTMLToPPTXConverter:
                         if size_match:
                             run.font.size = Pt(int(size_match.group(1)) * 0.75)
                     elif not run.font.size:
-                        run.font.size = Pt(20)
+                        run.font.size = Pt(16)
 
                     if 'font-weight: 600' in style or 'font-weight: bold' in style:
                         run.font.bold = True
@@ -1935,23 +2026,23 @@ class HTMLToPPTXConverter:
                             if color:
                                 run.font.color.rgb = color
                             else:
-                                # Set colors: orange for bold, gray for regular
+                                # Set colors: orange for bold, appropriate color for regular based on background
                                 if run.font.bold:
                                     run.font.color.rgb = ColorConfig.ORANGE
                                 else:
-                                    run.font.color.rgb = self.COLORS['#475569']
+                                    run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
                         else:
-                            # Set colors: orange for bold, gray for regular
+                            # Set colors: orange for bold, appropriate color for regular based on background
                             if run.font.bold:
                                 run.font.color.rgb = ColorConfig.ORANGE
                             else:
-                                run.font.color.rgb = self.COLORS['#475569']
+                                run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
                     else:
-                        # Set colors: orange for bold, gray for regular
+                        # Set colors: orange for bold, appropriate color for regular based on background
                         if run.font.bold:
                             run.font.color.rgb = ColorConfig.ORANGE
                         else:
-                            run.font.color.rgb = self.COLORS['#475569']
+                            run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
                 # Process associated list
                 list_elem = numbered_para_map[idx]
@@ -1959,20 +2050,16 @@ class HTMLToPPTXConverter:
                     li_p = tf.add_paragraph()
                     li_p.level = 0
                     li_p.alignment = PP_ALIGN.LEFT
-                    li_p.space_after = Pt(6)
-
-                    li_pPr = li_p._element.get_or_add_pPr()
-                    li_pPr.set('marL', '685800')
-                    li_pPr.set('indent', '-228600')
+                    li_p.space_after = Pt(0)  # No spacing between list items
 
                     marker = self.detect_list_marker(li)
-                    buChar_xml = f'<a:buChar {nsdecls("a")} char="{marker}"/>'
-                    buChar = parse_xml(buChar_xml)
-                    li_pPr.append(buChar)
-
-                    buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{self.BODY_FONT}"/>'
-                    buFont = parse_xml(buFont_xml)
-                    li_pPr.append(buFont)
+                    XMLHelper.add_bullet_with_indent(
+                        li_p,
+                        marker=marker,
+                        font_name=self.BODY_FONT,
+                        left_margin_inches=0.75,  # 685800 EMUs
+                        hanging_indent_inches=-0.25
+                    )
 
                     self.add_formatted_text(li_p, li, skip_leading_marker=True)
 
@@ -1980,20 +2067,40 @@ class HTMLToPPTXConverter:
                         if not run.font.name:
                             run.font.name = self.BODY_FONT
                         if not run.font.size:
-                            run.font.size = Pt(18)
-                        # Set colors: orange for bold, gray for regular
+                            run.font.size = Pt(16)
+                        # Set colors: orange for bold, appropriate color for regular based on background
                         if run.font.bold:
                             run.font.color.rgb = ColorConfig.ORANGE
                         else:
-                            run.font.color.rgb = self.COLORS['#475569']
+                            run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
             # Check if this is a heading paragraph with an associated list
             elif idx in heading_para_map:
                 # Heading paragraph (bold, ends with colon, etc.)
-                p = tf.add_paragraph()
+                if first_item:
+                    p = tf.paragraphs[0]
+                    first_item = False
+                else:
+                    p = tf.add_paragraph()
                 p.level = 0
                 p.alignment = PP_ALIGN.LEFT
-                p.space_after = Pt(6)
+
+                # Detect if this is a subheading (bold, short, ends with colon)
+                is_subheading = False
+                strong_elem = p_elem.find('.//strong')
+                if strong_elem is not None:
+                    p_text = self.extract_text_content(p_elem).strip()
+                    if len(p_text) < 100 and p_text.endswith(':'):
+                        is_subheading = True
+
+                # Apply appropriate spacing
+                p.line_spacing = SpacingConfig.LINE_SPACING
+                if is_subheading:
+                    p.space_before = SpacingConfig.SUBHEADING_SPACE_BEFORE
+                    p.space_after = SpacingConfig.SUBHEADING_SPACE_AFTER
+                else:
+                    p.space_before = SpacingConfig.PARAGRAPH_SPACE_BEFORE
+                    p.space_after = SpacingConfig.PARAGRAPH_SPACE_AFTER
 
                 self.add_formatted_text(p, p_elem)
 
@@ -2006,7 +2113,7 @@ class HTMLToPPTXConverter:
                         if size_match:
                             run.font.size = Pt(int(size_match.group(1)) * 0.75)
                     elif not run.font.size:
-                        run.font.size = Pt(18)
+                        run.font.size = Pt(16)
 
                     if 'font-weight: 600' in style or 'font-weight: bold' in style:
                         run.font.bold = True
@@ -2018,54 +2125,106 @@ class HTMLToPPTXConverter:
                             if color:
                                 run.font.color.rgb = color
                             else:
-                                run.font.color.rgb = self.COLORS['#475569']
+                                # Set colors: orange for bold, appropriate color for regular based on background
+                                if run.font.bold:
+                                    run.font.color.rgb = ColorConfig.ORANGE
+                                else:
+                                    run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
                     else:
-                        run.font.color.rgb = self.COLORS['#475569']
-
-                # Process associated list
-                list_elem = heading_para_map[idx]
-                for li in list_elem.findall('./li'):
-                    li_p = tf.add_paragraph()
-                    li_p.level = 0
-                    li_p.alignment = PP_ALIGN.LEFT
-                    li_p.space_after = Pt(6)
-
-                    li_pPr = li_p._element.get_or_add_pPr()
-                    li_pPr.set('marL', '342900')
-                    li_pPr.set('indent', '-228600')
-
-                    marker = self.detect_list_marker(li)
-                    buChar_xml = f'<a:buChar {nsdecls("a")} char="{marker}"/>'
-                    buChar = parse_xml(buChar_xml)
-                    li_pPr.append(buChar)
-
-                    buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{self.BODY_FONT}"/>'
-                    buFont = parse_xml(buFont_xml)
-                    li_pPr.append(buFont)
-
-                    self.add_formatted_text(li_p, li, skip_leading_marker=True)
-
-                    for run in li_p.runs:
-                        if not run.font.name:
-                            run.font.name = self.BODY_FONT
-                        if not run.font.size:
-                            run.font.size = Pt(18)
-                        # Set colors: orange for bold, gray for regular
+                        # Set colors: orange for bold, appropriate color for regular based on background
                         if run.font.bold:
                             run.font.color.rgb = ColorConfig.ORANGE
                         else:
-                            run.font.color.rgb = self.COLORS['#475569']
+                            run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
+
+                # Process associated list (both li and nested ul elements)
+                list_elem = heading_para_map[idx]
+                for child in list_elem:
+                    # Handle <li> elements
+                    if child.tag == 'li':
+                        li_p = tf.add_paragraph()
+                        li_p.level = 0
+                        li_p.alignment = PP_ALIGN.LEFT
+                        li_p.space_after = Pt(0)  # No spacing between list items
+
+                        marker = self.detect_list_marker(child)
+                        XMLHelper.add_bullet_with_indent(li_p, marker=marker, font_name=self.BODY_FONT)
+
+                        self.add_formatted_text(li_p, child, skip_leading_marker=True)
+
+                        for run in li_p.runs:
+                            if not run.font.name:
+                                run.font.name = self.BODY_FONT
+                            if not run.font.size:
+                                run.font.size = Pt(16)
+                            # Set colors: orange for bold, appropriate color for regular based on background
+                            if run.font.bold:
+                                run.font.color.rgb = ColorConfig.ORANGE
+                            else:
+                                run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
+
+                    # Handle nested <ul> elements as sub-bullets
+                    elif child.tag == 'ul':
+                        for nested_li in child.findall('./li'):
+                            nested_p = tf.add_paragraph()
+                            nested_p.alignment = PP_ALIGN.LEFT
+                            nested_p.space_after = Pt(0)
+
+                            marker = self.detect_list_marker(nested_li)
+                            XMLHelper.add_bullet_with_indent(
+                                nested_p,
+                                marker=marker,
+                                font_name=self.BODY_FONT,
+                                left_margin_inches=0.75,  # Indent for level 1
+                                hanging_indent_inches=-0.25
+                            )
+
+                            # Set level after add_bullet_with_indent to avoid being overridden
+                            nested_p.level = 1
+
+                            self.add_formatted_text(nested_p, nested_li, skip_leading_marker=True)
+
+                            for run in nested_p.runs:
+                                if not run.font.name:
+                                    run.font.name = self.BODY_FONT
+                                if not run.font.size:
+                                    run.font.size = Pt(16)
+                                if run.font.bold:
+                                    run.font.color.rgb = ColorConfig.ORANGE
+                                else:
+                                    run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
             # Regular paragraph
             else:
-                p = tf.add_paragraph()
+                if first_item:
+                    p = tf.paragraphs[0]
+                    first_item = False
+                else:
+                    p = tf.add_paragraph()
 
                 if 'text-align: center' in style:
                     p.alignment = PP_ALIGN.CENTER
                 else:
                     p.alignment = PP_ALIGN.LEFT
 
-                p.space_after = Pt(12)
+                # Detect if this is a subheading paragraph (bold text, typically ending with colon)
+                is_subheading = False
+                strong_elem = p_elem.find('.//strong')
+                if strong_elem is not None:
+                    # Get text content to check if entire paragraph is bold and short
+                    p_text = self.extract_text_content(p_elem).strip()
+                    # Subheading criteria: has strong tag, short text (<100 chars), and ends with colon
+                    if len(p_text) < 100 and p_text.endswith(':'):
+                        is_subheading = True
+
+                # Apply appropriate spacing
+                if is_subheading:
+                    p.space_before = SpacingConfig.SUBHEADING_SPACE_BEFORE
+                    p.space_after = SpacingConfig.SUBHEADING_SPACE_AFTER
+                else:
+                    p.space_before = SpacingConfig.PARAGRAPH_SPACE_BEFORE
+                    p.space_after = SpacingConfig.PARAGRAPH_SPACE_AFTER
+
                 self.add_formatted_text(p, p_elem)
 
                 for run in p.runs:
@@ -2082,7 +2241,7 @@ class HTMLToPPTXConverter:
                         if size_match:
                             run.font.size = Pt(int(size_match.group(1)) * 0.75)
                     elif not run.font.size:
-                        run.font.size = Pt(20)
+                        run.font.size = Pt(16)
 
                     if 'font-weight: 600' in style or 'font-weight: bold' in style or 'font-weight:600' in style:
                         run.font.bold = True
@@ -2094,11 +2253,23 @@ class HTMLToPPTXConverter:
                             if color:
                                 run.font.color.rgb = color
                             else:
-                                run.font.color.rgb = self.COLORS['#475569']
+                                # Set colors: orange for bold, appropriate color for regular based on background
+                                if run.font.bold:
+                                    run.font.color.rgb = ColorConfig.ORANGE
+                                else:
+                                    run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
                         else:
-                            run.font.color.rgb = self.COLORS['#475569']
+                            # Set colors: orange for bold, appropriate color for regular based on background
+                            if run.font.bold:
+                                run.font.color.rgb = ColorConfig.ORANGE
+                            else:
+                                run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
                     else:
-                        run.font.color.rgb = self.COLORS['#475569']
+                        # Set colors: orange for bold, appropriate color for regular based on background
+                        if run.font.bold:
+                            run.font.color.rgb = ColorConfig.ORANGE
+                        else:
+                            run.font.color.rgb = ColorConfig.CREAM if is_dark else self.COLORS['#475569']
 
         # Handle citations
         citation_elem = html_slide.find('.//*[@class="citation"]')
@@ -2135,6 +2306,12 @@ class HTMLToPPTXConverter:
             shape = slide.shapes.add_table(num_rows, num_cols, x, y, cx, cy)
             table = shape.table
 
+            # Distribute table width evenly across columns for autofit
+            table_width = self.SLIDE_WIDTH - 2*self.PADDING
+            col_width = table_width / num_cols
+            for col in table.columns:
+                col.width = Inches(col_width)
+
             # Populate table
             for row_idx, row in enumerate(rows):
                 cells = row.findall('.//th') + row.findall('.//td')
@@ -2150,10 +2327,22 @@ class HTMLToPPTXConverter:
                             for paragraph in table.cell(row_idx, col_idx).text_frame.paragraphs:
                                 for run in paragraph.runs:
                                     run.font.color.rgb = RGBColor(255, 255, 255)
-                                    run.font.size = Pt(18)
+                                    run.font.size = Pt(16)
                                     run.font.name = self.HEADER_FONT
                                     run.font.bold = True
                         else:
+                            # Data rows - white background with light gray border
+                            table.cell(row_idx, col_idx).fill.solid()
+                            table.cell(row_idx, col_idx).fill.fore_color.rgb = RGBColor(255, 255, 255)
+
+                            # Add bottom border
+                            tc = table.cell(row_idx, col_idx)._tc
+                            tcPr = tc.get_or_add_tcPr()
+                            # Add bottom border
+                            from pptx.oxml import parse_xml
+                            border_xml = '<a:lnB xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main" w="12700"><a:solidFill><a:srgbClr val="E2E8F0"/></a:solidFill></a:lnB>'
+                            tcPr.append(parse_xml(border_xml))
+
                             for paragraph in table.cell(row_idx, col_idx).text_frame.paragraphs:
                                 for run in paragraph.runs:
                                     run.font.size = Pt(16)
@@ -2180,7 +2369,7 @@ class HTMLToPPTXConverter:
 
         # Two-column layout
         col_width = (self.SLIDE_WIDTH - 2*self.PADDING - 0.4) / 2
-        y_start = 1.4
+        y_start = LayoutConfig.CONTENT_START_Y
 
         for idx, box in enumerate(comparison_boxes[:2]):  # Handle first two boxes
             x_pos = self.PADDING if idx == 0 else self.PADDING + col_width + 0.4
@@ -2207,7 +2396,7 @@ class HTMLToPPTXConverter:
                 self.add_formatted_text(p, heading)
                 for run in p.runs:
                     run.font.name = self.HEADER_FONT
-                    run.font.size = Pt(20)
+                    run.font.size = Pt(16)
                     run.font.bold = True
                     run.font.color.rgb = self.COLORS['#7373b0']
 
@@ -2237,7 +2426,7 @@ class HTMLToPPTXConverter:
                         if not run.font.size:
                             # Check for italic (smaller intro text)
                             if 'italic' in p_elem.get('style', '') or p_elem.tag == 'em':
-                                run.font.size = Pt(18)
+                                run.font.size = Pt(16)
                                 run.font.italic = True
                             else:
                                 run.font.size = Pt(16)
@@ -2255,34 +2444,14 @@ class HTMLToPPTXConverter:
                     p.alignment = PP_ALIGN.LEFT
 
                     # Enable formatting
-                    pPr = p._element.get_or_add_pPr()
-
-                    # Set indentation with hanging indent
-                    pPr.set('marL', '342900')  # Left margin (text indent)
-                    pPr.set('indent', '-228600')  # First line indent (hanging indent)
-
                     if is_numbered:
-                        # Add autonumbering XML element
-                        buAutoNum_xml = f'<a:buAutoNum {nsdecls("a")} type="arabicPeriod"/>'
-                        buAutoNum = parse_xml(buAutoNum_xml)
-                        pPr.append(buAutoNum)
-
+                        XMLHelper.add_numbering_with_indent(p)
                         # Add formatted content (skip leading number in original text)
                         self.add_formatted_text(p, li, skip_leading_number=True)
                     else:
-                        # Detect marker type
+                        # Detect marker type and add bullet
                         marker = self.detect_list_marker(li)
-
-                        # Add bullet character XML element
-                        buChar_xml = f'<a:buChar {nsdecls("a")} char="{marker}"/>'
-                        buChar = parse_xml(buChar_xml)
-                        pPr.append(buChar)
-
-                        # Add bullet font XML element
-                        buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{self.BODY_FONT}"/>'
-                        buFont = parse_xml(buFont_xml)
-                        pPr.append(buFont)
-
+                        XMLHelper.add_bullet_with_indent(p, marker=marker, font_name=self.BODY_FONT)
                         # Add formatted content (skip marker in original text)
                         self.add_formatted_text(p, li, skip_leading_marker=True)
 
@@ -2308,58 +2477,11 @@ class HTMLToPPTXConverter:
                     self.add_formatted_text(p, p_elem)
                     for run in p.runs:
                         run.font.name = self.BODY_FONT
-                        run.font.size = Pt(20)
+                        run.font.size = Pt(16)
                         if 'font-weight: 600' in p_elem.get('style', ''):
                             run.font.bold = True
                         run.font.color.rgb = self.COLORS['#475569']
                     y_bottom += 0.5
-
-    def handle_objectives_slide(self, slide, html_slide):
-        """Handle learning objectives slide layout"""
-        # Add title
-        title_elem = html_slide.find('.//h2')
-        if title_elem is not None:
-            title_box = self.add_textbox(slide, self.PADDING, self.PADDING,
-                                        self.SLIDE_WIDTH - 2*self.PADDING, 0.6)
-            self.add_text(title_box.text_frame, self.extract_text_content(title_elem),
-                         font_name=self.HEADER_FONT, font_size=Pt(28), bold=True,
-                         color=self.COLORS['#1e293b'], alignment=PP_ALIGN.LEFT)
-
-        # Add intro text
-        intro = html_slide.find('.//*[@class="objectives-intro"]')
-        if intro is not None:
-            intro_box = self.add_textbox(slide, self.PADDING, 1.2,
-                                        self.SLIDE_WIDTH - 2*self.PADDING, 0.5)
-            self.add_text(intro_box.text_frame, self.extract_text_content(intro),
-                         font_name=self.BODY_FONT, font_size=Pt(20),
-                         color=self.COLORS['#475569'])
-
-        # Add objective items
-        objective_items = html_slide.findall('.//*[@class="objective-item"]')
-        y_pos = 1.8
-
-        for item in objective_items:
-            # Add background box
-            bg_shape = slide.shapes.add_shape(
-                MSO_SHAPE.ROUNDED_RECTANGLE,
-                Inches(self.PADDING), Inches(y_pos),
-                Inches(self.SLIDE_WIDTH - 2*self.PADDING), Inches(0.7)
-            )
-            bg_shape.fill.solid()
-            bg_shape.fill.fore_color.rgb = RGBColor(255, 255, 255)
-            bg_shape.line.color.rgb = self.COLORS['#e2e8f0']
-            bg_shape.shadow.inherit = False
-
-            # Extract objective text
-            obj_text = item.find('.//p')
-            if obj_text is not None:
-                text_box = self.add_textbox(slide, self.PADDING + 0.3, y_pos + 0.15,
-                                           self.SLIDE_WIDTH - 2*self.PADDING - 0.6, 0.5)
-                self.add_text(text_box.text_frame, self.extract_text_content(obj_text),
-                             font_name=self.BODY_FONT, font_size=Pt(18),
-                             color=self.COLORS['#475569'])
-
-            y_pos += 0.85
 
     def handle_activity_slide(self, slide, html_slide):
         """Handle activity/instruction slide layout"""
@@ -2457,12 +2579,12 @@ class HTMLToPPTXConverter:
                                     # Check for larger font
                                     style = p_elem.get('style', '')
                                     if 'font-size: 26px' in style:
-                                        run.font.size = Pt(20)
+                                        run.font.size = Pt(16)
                                         run.font.bold = True
                                     elif 'font-size: 22px' in style:
                                         run.font.size = Pt(16)
                                     else:
-                                        run.font.size = Pt(18)
+                                        run.font.size = Pt(16)
 
                                 # Check for color in style
                                 if 'color:' in p_elem.get('style', ''):
@@ -2505,34 +2627,14 @@ class HTMLToPPTXConverter:
                         p.space_after = Pt(6)
 
                         # Enable formatting
-                        pPr = p._element.get_or_add_pPr()
-
-                        # Set indentation with hanging indent
-                        pPr.set('marL', '342900')  # Left margin (text indent)
-                        pPr.set('indent', '-228600')  # First line indent (hanging indent)
-
                         if is_numbered:
-                            # Add autonumbering XML element
-                            buAutoNum_xml = f'<a:buAutoNum {nsdecls("a")} type="arabicPeriod"/>'
-                            buAutoNum = parse_xml(buAutoNum_xml)
-                            pPr.append(buAutoNum)
-
+                            XMLHelper.add_numbering_with_indent(p)
                             # Add formatted text (skip leading number in original text)
                             self.add_formatted_text(p, li, skip_leading_number=True)
                         else:
-                            # Detect marker type
+                            # Detect marker type and add bullet
                             marker = self.detect_list_marker(li)
-
-                            # Add bullet character XML element
-                            buChar_xml = f'<a:buChar {nsdecls("a")} char="{marker}"/>'
-                            buChar = parse_xml(buChar_xml)
-                            pPr.append(buChar)
-
-                            # Add bullet font XML element
-                            buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{self.BODY_FONT}"/>'
-                            buFont = parse_xml(buFont_xml)
-                            pPr.append(buFont)
-
+                            XMLHelper.add_bullet_with_indent(p, marker=marker, font_name=self.BODY_FONT)
                             # Add formatted text (skip marker in original text)
                             self.add_formatted_text(p, li, skip_leading_marker=True)
 
@@ -2541,571 +2643,394 @@ class HTMLToPPTXConverter:
                             if not run.font.name:
                                 run.font.name = self.BODY_FONT
                             if not run.font.size:
-                                run.font.size = Pt(18)
-                            run.font.color.rgb = self.COLORS['#475569']
-
-                    y_pos += bullet_height
-
-    def handle_checklist_slide(self, slide, html_slide):
-        """Handle assessment checklist slide layout"""
-        # Add title
-        title_elem = html_slide.find('.//h2')
-        if title_elem is not None:
-            title_box = self.add_textbox(slide, self.PADDING, self.PADDING,
-                                        self.SLIDE_WIDTH - 2*self.PADDING, 0.6)
-            self.add_text(title_box.text_frame, self.extract_text_content(title_elem),
-                         font_name=self.HEADER_FONT, font_size=Pt(28), bold=True,
-                         color=self.COLORS['#1e293b'], alignment=PP_ALIGN.LEFT)
-
-        # Find checklist categories
-        categories = html_slide.findall('.//*[@class="checklist-category"]')
-        y_pos = 1.3
-
-        for category in categories:
-            # Category header (if present)
-            header = category.find('.//*[@class="category-header"]')
-            if header is not None:
-                h3 = header.find('.//h3')
-                if h3 is not None:
-                    # Add colored header box
-                    header_shape = slide.shapes.add_shape(
-                        MSO_SHAPE.ROUNDED_RECTANGLE,
-                        Inches(self.PADDING), Inches(y_pos),
-                        Inches(self.SLIDE_WIDTH - 2*self.PADDING), Inches(0.4)
-                    )
-                    header_shape.fill.solid()
-                    header_shape.fill.fore_color.rgb = self.COLORS['#7373b0']
-                    header_shape.line.width = 0
-                    header_shape.shadow.inherit = False
-
-                    # Add header text
-                    header_box = self.add_textbox(slide, self.PADDING + 0.2, y_pos + 0.05,
-                                                  self.SLIDE_WIDTH - 2*self.PADDING - 0.4, 0.3)
-                    self.add_text(header_box.text_frame, self.extract_text_content(h3),
-                                 font_name=self.HEADER_FONT, font_size=Pt(18), bold=True,
-                                 color=RGBColor(255, 255, 255))
-
-                    y_pos += 0.45
-
-            # Checklist items - use proper bullet formatting
-            items = category.find('.//*[@class="checklist-items"]')
-            if items is not None:
-                li_items = items.findall('.//li')
-                if li_items:
-                    # Calculate height
-                    item_height = len(li_items) * 0.4 + 0.2
-                    item_box = self.add_textbox(slide, self.PADDING, y_pos,
-                                               self.SLIDE_WIDTH - 2*self.PADDING, item_height)
-                    tf = item_box.text_frame
-                    tf.word_wrap = True
-                    tf.clear()
-
-                    # Add all items as bulleted paragraphs
-                    first_item = True
-                    for li in li_items:
-                        if first_item:
-                            p = tf.paragraphs[0] if len(tf.paragraphs) > 0 else tf.add_paragraph()
-                            first_item = False
-                        else:
-                            p = tf.add_paragraph()
-
-                        p.level = 0
-                        p.alignment = PP_ALIGN.LEFT
-                        p.space_after = Pt(6)
-
-                        # Enable checkbox bullet formatting
-                        pPr = p._element.get_or_add_pPr()
-
-                        # Set indentation with hanging indent
-                        pPr.set('marL', '342900')
-                        pPr.set('indent', '-228600')
-
-                        # Add checkbox bullet character
-                        buChar_xml = f'<a:buChar {nsdecls("a")} char="☐"/>'
-                        buChar = parse_xml(buChar_xml)
-                        pPr.append(buChar)
-
-                        # Add bullet font
-                        buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{self.BODY_FONT}"/>'
-                        buFont = parse_xml(buFont_xml)
-                        pPr.append(buFont)
-
-                        # Add formatted text (skip leading checkbox if present)
-                        self.add_formatted_text(p, li, skip_leading_marker=True)
-
-                        # Apply styling
-                        for run in p.runs:
-                            if not run.font.name:
-                                run.font.name = self.BODY_FONT
-                            if not run.font.size:
                                 run.font.size = Pt(16)
                             run.font.color.rgb = self.COLORS['#475569']
 
-                    y_pos += item_height + 0.2
+                    y_pos += bullet_height
 
     def handle_quote_slide(self, slide, html_slide):
         """
         LAYOUT TYPE: quote-slide
 
-        Handle quote slide with large quotation marks and attribution.
-        Content is positioned in upper portion of slide (not vertically centered).
+        Handle quote slide with title, then quote text and attribution.
 
-        Usage in HTML:
+        Structure:
             <div class="slide quote-slide">
-              <blockquote>
+              <h2 class="slide-title">Title</h2>
+              <div class="slide-content">
                 <p>Quote text here</p>
-                <cite>Author, Source (Year)</cite>
-              </blockquote>
-            </div>
-        """
-        # Apply cream background
-        self.apply_slide_background(slide, ColorConfig.CREAM)
-
-        # Find blockquote or quote content
-        blockquote = html_slide.find('.//blockquote')
-        quote_container = html_slide.find('.//*[@class="quote-content"]')
-
-        quote_text = None
-        attribution = None
-
-        if blockquote is not None:
-            # Extract quote text (may have <p> tags inside)
-            quote_p = blockquote.find('.//p')
-            if quote_p is not None:
-                quote_text = ''.join(quote_p.itertext()).strip()
-            else:
-                quote_text = ''.join(blockquote.itertext()).strip()
-
-            # Look for citation
-            cite = blockquote.find('.//cite')
-            footer = blockquote.find('.//footer')
-            if cite is not None:
-                attribution = ''.join(cite.itertext()).strip()
-            elif footer is not None:
-                attribution = ''.join(footer.itertext()).strip()
-        elif quote_container is not None:
-            quote_text = ''.join(quote_container.itertext()).strip()
-
-            # Look for attribution separately
-            attr_elem = html_slide.find('.//*[@class="quote-attribution"]')
-            if attr_elem is not None:
-                attribution = ''.join(attr_elem.itertext()).strip()
-
-        if not quote_text:
-            # Fallback: use any large text on slide
-            for elem in html_slide.iter():
-                if elem.tag in ['p', 'h2', 'h3'] and elem.text:
-                    text = ''.join(elem.itertext()).strip()
-                    if len(text) > 20:  # Substantial text
-                        quote_text = text
-                        break
-
-        if not quote_text:
-            return
-
-        # Remove quote marks from text if present
-        quote_text = quote_text.strip('"\'""''')
-
-        # Add large decorative quotation mark (opening quote) - top aligned
-        quote_mark = slide.shapes.add_textbox(
-            Inches(self.PADDING),
-            Inches(1.8),
-            Inches(1.0),
-            Inches(1.0)
-        )
-        quote_mark_frame = quote_mark.text_frame
-        quote_mark_frame.word_wrap = False
-        quote_mark_frame.text = '"'
-
-        # Style the quote mark
-        for paragraph in quote_mark_frame.paragraphs:
-            paragraph.font.name = self.HEADER_FONT
-            paragraph.font.size = Pt(120)
-            paragraph.font.color.rgb = self.COLORS['#e2e8f0']  # Very light gray
-            paragraph.alignment = PP_ALIGN.LEFT
-
-        # Add quote text - positioned in upper portion of slide (not centered)
-        quote_box = slide.shapes.add_textbox(
-            Inches(self.PADDING + 0.8),
-            Inches(2.2),
-            Inches(self.SLIDE_WIDTH - 2*self.PADDING - 1.6),
-            Inches(2.5)
-        )
-        quote_frame = quote_box.text_frame
-        quote_frame.word_wrap = True
-        quote_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
-
-        p = quote_frame.paragraphs[0]
-        p.text = quote_text
-        p.font.name = self.BODY_FONT
-        p.font.size = Pt(36)
-        p.font.color.rgb = self.COLORS['#1e293b']
-        p.alignment = PP_ALIGN.LEFT
-        p.line_spacing = 1.0  # Single spacing
-
-        # Add attribution if present - positioned below quote
-        if attribution:
-            attr_box = slide.shapes.add_textbox(
-                Inches(self.PADDING + 0.8),
-                Inches(4.8),
-                Inches(self.SLIDE_WIDTH - 2*self.PADDING - 1.6),
-                Inches(0.6)
-            )
-            attr_frame = attr_box.text_frame
-            attr_frame.word_wrap = True
-
-            p = attr_frame.paragraphs[0]
-            # Format attribution with em dash if not present
-            if not attribution.startswith('—') and not attribution.startswith('-'):
-                p.text = f"— {attribution}"
-            else:
-                p.text = attribution
-            p.font.name = self.BODY_FONT
-            p.font.size = Pt(18)
-            p.font.color.rgb = self.COLORS['#64748b']  # Muted gray
-            p.alignment = PP_ALIGN.LEFT
-
-    def handle_references_slide(self, slide, html_slide):
-        """
-        LAYOUT TYPE: references-slide
-
-        Handle references/citations slide with proper academic formatting.
-
-        Usage in HTML:
-            <div class="slide references-slide">
-              <h2 class="slide-title">References</h2>
-              <ul class="references">
-                <li>Author. (Year). Title. Publisher.</li>
-                <li>Author. (Year). Title. Publisher.</li>
-              </ul>
-            </div>
-        """
-        # Apply cream background
-        self.apply_slide_background(slide, ColorConfig.CREAM)
-
-        # Extract slide title
-        title_elem = html_slide.find('.//*[@class="slide-title"]')
-        if title_elem is None:
-            title_elem = html_slide.find('.//h2')
-
-        if title_elem is not None:
-            title_text = ''.join(title_elem.itertext()).strip()
-            # Add title
-            title_box = slide.shapes.add_textbox(
-                Inches(self.PADDING),
-                Inches(self.PADDING),
-                Inches(self.SLIDE_WIDTH - 2*self.PADDING),
-                Inches(0.7)
-            )
-            title_frame = title_box.text_frame
-            p = title_frame.paragraphs[0]
-            p.text = title_text
-            p.font.name = self.HEADER_FONT
-            p.font.size = Pt(36)
-            p.font.color.rgb = self.COLORS['#1e293b']
-            p.font.bold = True
-            p.alignment = PP_ALIGN.LEFT
-
-        # Find references container or list
-        refs_container = html_slide.find('.//*[@class="references"]')
-        refs_list = None
-
-        if refs_container is not None:
-            refs_list = refs_container.findall('.//li')
-            if not refs_list:
-                # Try finding paragraphs instead
-                refs_list = refs_container.findall('.//p')
-        else:
-            # Look for ordered/unordered list that might contain references
-            for list_elem in html_slide.findall('.//ol') + html_slide.findall('.//ul'):
-                items = list_elem.findall('.//li')
-                if items and len(items) >= 2:  # At least 2 references
-                    # Check if they look like citations (contain year in parens)
-                    first_item_text = ''.join(items[0].itertext())
-                    if '(' in first_item_text and ')' in first_item_text:
-                        refs_list = items
-                        break
-
-        if not refs_list:
-            return
-
-        # Create references text box
-        # Title ends at 0.5 + 0.7 = 1.2", start refs at 1.5" for 0.3" gap
-        refs_box = slide.shapes.add_textbox(
-            Inches(self.PADDING),
-            Inches(1.5),
-            Inches(self.SLIDE_WIDTH - 2*self.PADDING),
-            Inches(self.SLIDE_HEIGHT - 1.5 - 0.8)
-        )
-        refs_frame = refs_box.text_frame
-        refs_frame.word_wrap = True
-        refs_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
-
-        # Add each reference with hanging indent
-        for i, ref_item in enumerate(refs_list):
-            ref_text = ''.join(ref_item.itertext()).strip()
-
-            if not ref_text:
-                continue
-
-            # Add paragraph for this reference
-            if i == 0:
-                p = refs_frame.paragraphs[0]
-            else:
-                p = refs_frame.add_paragraph()
-
-            p.text = ref_text
-            p.font.name = self.BODY_FONT
-            p.font.size = Pt(14)
-            p.font.color.rgb = self.COLORS['#1e293b']
-            p.line_spacing = 1.3
-            p.space_after = Pt(12)
-
-            # Note: Hanging indent not fully supported in text boxes
-            # Simplified formatting for references
-            p.level = 0
-
-    def handle_framework_slide(self, slide, html_slide):
-        """
-        LAYOUT TYPE: framework-slide
-
-        Handle framework/diagram slide with visual model representation.
-        Components are displayed in a grid layout with light grey boxes.
-
-        Usage in HTML:
-            <div class="slide framework-slide">
-              <h2 class="slide-title">Framework Name</h2>
-              <div class="framework">
-                <div class="framework-box">
-                  <strong>Component Title</strong>
-                  <p>Component description</p>
-                </div>
-                <!-- More framework-box elements -->
+                <p>— Attribution</p>
               </div>
             </div>
         """
         # Apply cream background
         self.apply_slide_background(slide, ColorConfig.CREAM)
 
-        # Extract slide title first
-        title_elem = html_slide.find('.//*[@class="slide-title"]')
+        # Add title
+        title_elem = html_slide.find('.//h2[@class="slide-title"]')
         if title_elem is None:
             title_elem = html_slide.find('.//h2')
 
-        title_text = None
         if title_elem is not None:
-            title_text = ''.join(title_elem.itertext()).strip()
+            title_box = self.add_textbox(
+                slide,
+                LayoutConfig.PADDING,
+                LayoutConfig.TITLE_Y,
+                self.SLIDE_WIDTH - 2*LayoutConfig.PADDING,
+                LayoutConfig.TITLE_HEIGHT
+            )
+            p = title_box.text_frame.paragraphs[0]
+            p.alignment = PP_ALIGN.LEFT
+            self.add_formatted_text(p, title_elem)
 
-        # Find framework container
-        framework_container = html_slide.find('.//*[@class="framework"]')
-        diagram_container = html_slide.find('.//*[@class="diagram"]')
-        model_container = html_slide.find('.//*[@class="model"]')
+            for run in p.runs:
+                run.font.name = FontConfig.HEADER_FONT
+                run.font.size = FontConfig.HEADING_MEDIUM
+                run.font.bold = True
+                run.font.color.rgb = ColorConfig.DARK_GRAY
+                # Apply condensed letter spacing
+                spacing_hundredths = int(FontConfig.TITLE_LETTER_SPACING.pt * 100)
+                run.font._element.set('spc', str(spacing_hundredths))
 
-        container = framework_container or diagram_container or model_container
-
-        if container is None:
+        # Find quote-content div (new structure) or slide-content (legacy)
+        content_div = html_slide.find('.//*[@class="quote-content"]')
+        if content_div is None:
+            content_div = html_slide.find('.//*[@class="slide-content"]')
+        if content_div is None:
             return
 
-        # Look for framework components (boxes, steps, elements)
-        components = container.findall('.//*[@class="framework-box"]')
-        if not components:
-            components = container.findall('.//*[@class="step"]')
-        if not components:
-            components = container.findall('.//*[@class="element"]')
+        y_pos = LayoutConfig.CONTENT_START_Y
 
-        # If we have components, create a visual layout
-        if components and len(components) <= 6:
-            y_start = self.PADDING
+        # Extract quote from blockquote or first paragraph
+        quote_elem = content_div.find('.//blockquote[@class="large-quote"]')
+        if quote_elem is None:
+            # Fallback to first <p> tag (legacy structure)
+            paragraphs = content_div.findall('.//p')
+            if paragraphs:
+                quote_elem = paragraphs[0]
 
-            # Add framework title if present (standard format like other slides)
-            if title_text:
-                title_box = slide.shapes.add_textbox(
-                    Inches(self.PADDING),
-                    Inches(self.PADDING),
-                    Inches(self.SLIDE_WIDTH - 2*self.PADDING),
-                    Inches(0.7)
-                )
-                title_frame = title_box.text_frame
-                p = title_frame.paragraphs[0]
-                p.text = title_text
-                p.font.name = self.HEADER_FONT
-                p.font.size = Pt(36)
-                p.font.color.rgb = self.COLORS['#1e293b']
-                p.font.bold = True
-                p.alignment = PP_ALIGN.LEFT
-                y_start = self.PADDING + 0.9  # After title
+        if quote_elem is not None:
+            quote_text = self.extract_text_content(quote_elem).strip().strip('"\'""''')
 
-            # Layout components in grid
-            num_components = len(components)
-            if num_components <= 3:
-                cols = num_components
-                rows = 1
-            elif num_components == 4:
-                cols = 2
-                rows = 2
-            else:
-                cols = 3
-                rows = (num_components + 2) // 3
+            quote_box = slide.shapes.add_textbox(
+                Inches(self.PADDING),
+                Inches(y_pos),
+                Inches(self.SLIDE_WIDTH - 2*self.PADDING),
+                Inches(3.0)
+            )
+            quote_frame = quote_box.text_frame
+            quote_frame.word_wrap = True
+            quote_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
 
-            box_width = (self.SLIDE_WIDTH - 2*self.PADDING - (cols-1)*0.3) / cols
-            box_height = 1.2
+            # Set margins (.25cm = ~0.1 inches)
+            quote_frame.margin_left = Inches(0.1)
+            quote_frame.margin_right = Inches(0.1)
+            quote_frame.margin_top = 0
+            quote_frame.margin_bottom = 0
 
-            for idx, component in enumerate(components):
-                row = idx // cols
-                col = idx % cols
+            p = quote_frame.paragraphs[0]
+            p.text = quote_text
+            p.font.name = self.BODY_FONT
+            p.font.size = Pt(26)  # Reduced by ~20% from 32
+            p.font.italic = True
+            p.font.color.rgb = self.COLORS['#1e293b']
+            p.alignment = PP_ALIGN.LEFT
+            p.line_spacing = 1.0  # Single spacing
 
-                x = self.PADDING + col * (box_width + 0.3)
-                y = y_start + row * (box_height + 0.3)
+            y_pos += 3.2
 
-                # Extract component text
-                comp_title = component.find('.//strong')
-                comp_text = None
+        # Extract attribution from quote-attribution or second paragraph
+        attr_elem = content_div.find('.//*[@class="quote-attribution"]')
+        if attr_elem is None:
+            # Fallback to second <p> tag (legacy structure)
+            paragraphs = content_div.findall('.//p')
+            if len(paragraphs) > 1:
+                attr_elem = paragraphs[1]
 
-                if comp_title is not None:
-                    comp_title_text = ''.join(comp_title.itertext()).strip()
-                    # Get remaining text
-                    full_text = ''.join(component.itertext()).strip()
-                    comp_text = full_text.replace(comp_title_text, '').strip()
-                else:
-                    comp_title_text = ''.join(component.itertext()).strip()
+        if attr_elem is not None:
+            attribution = self.extract_text_content(attr_elem).strip()
 
-                # Create component box
-                comp_shape = slide.shapes.add_shape(
-                    MSO_SHAPE.ROUNDED_RECTANGLE,
-                    Inches(x), Inches(y), Inches(box_width), Inches(box_height)
-                )
-                comp_shape.fill.solid()
-                comp_shape.fill.fore_color.rgb = self.COLORS['#f1f5f9']  # Light gray
-                comp_shape.line.color.rgb = self.COLORS['#cbd5e1']
-                comp_shape.line.width = Pt(1)
-                comp_shape.shadow.inherit = False
+            attr_box = slide.shapes.add_textbox(
+                Inches(self.PADDING),
+                Inches(y_pos),
+                Inches(self.SLIDE_WIDTH - 2*self.PADDING),
+                Inches(0.6)
+            )
+            attr_frame = attr_box.text_frame
+            attr_frame.word_wrap = True
 
-                # Add text
-                text_frame = comp_shape.text_frame
-                text_frame.word_wrap = True
-                text_frame.margin_left = Inches(0.15)
-                text_frame.margin_right = Inches(0.15)
-                text_frame.margin_top = Inches(0.1)
-                text_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
+            p = attr_frame.paragraphs[0]
+            self.add_formatted_text(p, attr_elem)
 
-                p = text_frame.paragraphs[0]
-                p.text = comp_title_text
-                p.font.name = self.HEADER_FONT
-                p.font.size = Pt(16)
-                p.font.bold = True
-                p.font.color.rgb = self.COLORS['#1e293b']
-                p.alignment = PP_ALIGN.CENTER
+            for run in p.runs:
+                if not run.font.name:
+                    run.font.name = self.BODY_FONT
+                if not run.font.size:
+                    run.font.size = Pt(16)
+                # Only set color if not already set by formatting
+                try:
+                    if not run.font.color.rgb:
+                        run.font.color.rgb = self.COLORS['#64748b']
+                except AttributeError:
+                    # Color is None, set default
+                    run.font.color.rgb = self.COLORS['#64748b']
 
-                if comp_text:
-                    p2 = text_frame.add_paragraph()
-                    p2.text = comp_text
-                    p2.font.name = self.BODY_FONT
-                    p2.font.size = Pt(12)
-                    p2.font.color.rgb = self.COLORS['#475569']
-                    p2.alignment = PP_ALIGN.CENTER
-                    p2.space_before = Pt(6)
-        else:
-            # Fallback: treat as standard content with emphasis
-            self.handle_content_slide(slide, html_slide)
+            p.alignment = PP_ALIGN.LEFT
 
-    def handle_reflection_slide(self, slide, html_slide):
+    def handle_framework_slide(self, slide, html_slide):
         """
-        LAYOUT TYPE: reflection-slide
+        LAYOUT TYPE: framework-slide
 
-        Handle reflection/thinking prompt slide with contemplative design.
-        Content is stacked vertically in upper portion of slide (not vertically centered).
+        Handle framework slide with component grid.
 
-        Usage in HTML:
-            <div class="slide reflection-slide">
-              <div class="reflection-icon">💭</div>
-              <div class="reflection-question">Question text?</div>
-              <div class="reflection-instruction">Take a moment to reflect...</div>
+        Structure:
+            <div class="slide framework-slide">
+              <h2 class="framework-title">Framework Name</h2>
+              <div class="framework-components">
+                <div class="component">
+                  <h3>Component Title</h3>
+                  <p>Component description</p>
+                </div>
+              </div>
+              <div class="framework-commentary">
+                <p><strong>General statement</strong></p>
+              </div>
             </div>
         """
+        print(f"DEBUG: handle_framework_slide called")
+
         # Apply cream background
         self.apply_slide_background(slide, ColorConfig.CREAM)
 
-        # Find reflection question - look for common class names
-        question_elem = html_slide.find('.//*[@class="reflection-question"]')
+        # Extract framework title
+        title_elem = html_slide.find('.//*[@class="framework-title"]')
+        if title_elem is None:
+            title_elem = html_slide.find('.//h2')
 
-        if question_elem is None:
-            # Try alternate class names
-            question_elem = html_slide.find('.//*[@class="thinking-prompt"]')
+        if title_elem is not None:
+            title_text = self.extract_text_content(title_elem)
+            # Use consistent title positioning from LayoutConfig
+            title_box = slide.shapes.add_textbox(
+                Inches(LayoutConfig.PADDING),
+                Inches(LayoutConfig.TITLE_Y),
+                Inches(self.SLIDE_WIDTH - 2*LayoutConfig.PADDING),
+                Inches(LayoutConfig.TITLE_HEIGHT)
+            )
+            title_frame = title_box.text_frame
+            title_frame.word_wrap = True
+            title_frame.margin_top = 0
+            title_frame.margin_bottom = 0
+            title_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
 
-        if question_elem is None:
-            # Try finding by class attribute containing 'reflection' or 'question'
-            for elem in html_slide.iter():
-                elem_class = elem.get('class', '')
-                if 'reflection' in elem_class or 'question' in elem_class:
-                    question_elem = elem
-                    break
+            p = title_frame.paragraphs[0]
+            p.text = title_text
+            p.line_spacing = 1.0  # Single spacing
+            p.font.name = self.HEADER_FONT
+            p.font.size = Pt(36)
+            p.font.color.rgb = ColorConfig.DARK_GRAY
+            p.font.bold = True
+            p.alignment = PP_ALIGN.LEFT
+            # Apply condensed letter spacing
+            spacing_hundredths = int(FontConfig.TITLE_LETTER_SPACING.pt * 100)
+            p.font._element.set('spc', str(spacing_hundredths))
 
-        # Extract question text
-        question_text = None
+        # Use consistent content start position from LayoutConfig
+        y_start = LayoutConfig.CONTENT_START_Y
 
-        if question_elem is not None:
-            # Get text directly from element or its children
-            question_text = ''.join(question_elem.itertext()).strip()
-        else:
-            # Look for question indicators in any content
-            for elem in html_slide.iter():
-                if elem.tag in ['h2', 'h3', 'p', 'div']:
-                    text = ''.join(elem.itertext()).strip()
-                    if '?' in text and any(word in text.lower() for word in ['reflect', 'think', 'consider', 'what', 'how', 'why']):
-                        question_text = text
-                        break
+        # Extract and render framework subtitle if present
+        subtitle_elem = html_slide.find('.//*[@class="framework-subtitle"]')
+        if subtitle_elem is not None:
+            subtitle_text = self.extract_text_content(subtitle_elem)
+            subtitle_box = slide.shapes.add_textbox(
+                Inches(LayoutConfig.PADDING),
+                Inches(y_start),
+                Inches(self.SLIDE_WIDTH - 2*LayoutConfig.PADDING),
+                Inches(0.6)
+            )
+            subtitle_frame = subtitle_box.text_frame
+            subtitle_frame.word_wrap = True
+            subtitle_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
 
-        if not question_text:
+            p = subtitle_frame.paragraphs[0]
+            p.text = subtitle_text
+            p.font.name = self.HEADER_FONT
+            p.font.size = Pt(24)  # 32px * 0.75
+            p.font.bold = True
+            p.font.color.rgb = ColorConfig.DARK_GRAY
+            p.alignment = PP_ALIGN.CENTER
+            p.line_spacing = 1.3
+
+            # Adjust y_start to account for subtitle
+            y_start += 0.7
+
+        # Find framework-components container
+        components_container = html_slide.find('.//*[@class="framework-components"]')
+        if components_container is None:
             return
 
-        # Add decorative icon/emoji at top - positioned in upper portion
-        icon_box = slide.shapes.add_textbox(
-            Inches(self.SLIDE_WIDTH/2 - 0.5),
-            Inches(1.8),
-            Inches(1.0),
-            Inches(0.8)
-        )
-        icon_frame = icon_box.text_frame
-        icon_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.MIDDLE
-        p = icon_frame.paragraphs[0]
-        p.text = "💭"  # Thought bubble emoji
-        p.font.size = Pt(72)
-        p.alignment = PP_ALIGN.CENTER
+        # Find all component divs
+        components = components_container.findall('./div[@class="component"]')
+        if not components:
+            return
 
-        # Add reflection question - positioned in upper portion (not vertically centered)
-        question_box = slide.shapes.add_textbox(
-            Inches(self.PADDING + 0.5),
-            Inches(2.8),
-            Inches(self.SLIDE_WIDTH - 2*self.PADDING - 1.0),
-            Inches(2.0)
-        )
-        question_frame = question_box.text_frame
-        question_frame.word_wrap = True
-        question_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
+        # Layout components in grid
+        num_components = len(components)
+        if num_components <= 3:
+            cols = num_components
+        elif num_components == 4:
+            cols = 2
+        else:
+            cols = 3
 
-        p = question_frame.paragraphs[0]
-        p.text = question_text
-        p.font.name = self.BODY_FONT
-        p.font.size = Pt(32)
-        p.font.color.rgb = self.COLORS['#1e293b']
-        p.alignment = PP_ALIGN.CENTER
-        p.line_spacing = 1.0  # Single spacing
+        box_width = (self.SLIDE_WIDTH - 2*self.PADDING - (cols-1)*0.25) / cols
+        box_height = 1.3
 
-        # Add "Take a moment to reflect" instruction - positioned below question
-        instruction_box = slide.shapes.add_textbox(
-            Inches(self.PADDING),
-            Inches(5.0),
-            Inches(self.SLIDE_WIDTH - 2*self.PADDING),
-            Inches(0.5)
-        )
-        instruction_frame = instruction_box.text_frame
-        p = instruction_frame.paragraphs[0]
-        p.text = "Take a moment to reflect..."
-        p.font.name = self.BODY_FONT
-        p.font.size = Pt(16)
-        p.font.italic = True
-        p.font.color.rgb = self.COLORS['#94a3b8']  # Light gray
-        p.alignment = PP_ALIGN.CENTER
+        for idx, component in enumerate(components):
+            row = idx // cols
+            col = idx % cols
+
+            x = self.PADDING + col * (box_width + 0.25)
+            y = y_start + row * (box_height + 0.25)
+
+            # Extract component heading
+            heading_elem = component.find('.//h3')
+            if heading_elem is None:
+                continue
+
+            heading_text = self.extract_text_content(heading_elem)
+
+            # Extract component parts: question, bullets, description
+            question_elem = component.find('.//*[@class="component-question"]')
+            bullets_elem = component.find('.//*[@class="component-bullets"]')
+
+            print(f"DEBUG EXTRACTION for '{heading_text}':")
+            print(f"  question_elem: {question_elem is not None}")
+            print(f"  bullets_elem: {bullets_elem is not None}")
+            if bullets_elem is not None:
+                print(f"  bullets_elem tag: {bullets_elem.tag}")
+                print(f"  bullets_elem class: {bullets_elem.get('class')}")
+
+            # Get all paragraph descriptions (excluding question)
+            desc_paragraphs = [p for p in component.findall('.//p')
+                             if 'component-question' not in p.get('class', '')]
+
+            # Create white component box
+            comp_shape = slide.shapes.add_shape(
+                MSO_SHAPE.ROUNDED_RECTANGLE,
+                Inches(x), Inches(y), Inches(box_width), Inches(box_height)
+            )
+            comp_shape.fill.solid()
+            comp_shape.fill.fore_color.rgb = RGBColor(255, 255, 255)  # White background
+            comp_shape.line.color.rgb = self.COLORS['#cbd5e1']  # Light gray border
+            comp_shape.line.width = Pt(1)
+            comp_shape.shadow.inherit = False
+
+            # Add text
+            text_frame = comp_shape.text_frame
+            text_frame.word_wrap = True
+            text_frame.margin_left = Inches(0.15)
+            text_frame.margin_right = Inches(0.15)
+            text_frame.margin_top = Inches(0.12)
+            text_frame.margin_bottom = Inches(0.12)
+            text_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
+
+            # Enable autofit - resize shape to fit text
+            from pptx.enum.text import MSO_AUTO_SIZE
+            text_frame.auto_size = MSO_AUTO_SIZE.SHAPE_TO_FIT_TEXT
+
+            # Add heading
+            p = text_frame.paragraphs[0]
+            p.text = heading_text
+            p.font.name = self.HEADER_FONT
+            p.font.size = Pt(20)  # 27px * 0.75
+            p.font.bold = True
+            p.font.color.rgb = ColorConfig.DARK_GRAY
+            p.alignment = PP_ALIGN.CENTER
+            p.space_after = Pt(6)
+
+            # Add question if present
+            if question_elem is not None:
+                question_text = self.extract_text_content(question_elem)
+                p_question = text_frame.add_paragraph()
+                p_question.text = question_text
+                p_question.font.name = self.BODY_FONT
+                p_question.font.size = Pt(12)
+                p_question.font.italic = True
+                p_question.font.color.rgb = ColorConfig.DARK_GRAY
+                p_question.alignment = PP_ALIGN.CENTER
+                p_question.space_after = Pt(4)
+
+            # Add bullets if present
+            if bullets_elem is not None:
+                bullet_items = bullets_elem.findall('.//li')
+                print(f"DEBUG: Found {len(bullet_items)} bullets for component '{heading_text}'")
+                for li in bullet_items:
+                    bullet_text = self.extract_text_content(li)
+                    print(f"DEBUG: Adding bullet: {bullet_text}")
+                    if bullet_text:
+                        p_bullet = text_frame.add_paragraph()
+                        p_bullet.text = '• ' + bullet_text
+                        p_bullet.font.name = self.BODY_FONT
+                        p_bullet.font.size = Pt(11)
+                        p_bullet.font.color.rgb = self.COLORS['#64748b']
+                        p_bullet.alignment = PP_ALIGN.LEFT
+                        p_bullet.level = 0
+            else:
+                print(f"DEBUG: No bullets found for component '{heading_text}'")
+
+            # Add description paragraphs
+            for desc_p in desc_paragraphs:
+                desc_text = self.extract_text_content(desc_p)
+                if desc_text:
+                    p_desc = text_frame.add_paragraph()
+                    p_desc.text = desc_text
+                    p_desc.font.name = self.BODY_FONT
+                    p_desc.font.size = Pt(13)
+                    p_desc.font.color.rgb = self.COLORS['#64748b']
+                    p_desc.alignment = PP_ALIGN.CENTER
+                    p_desc.line_spacing = 1.3
+
+        # Add auxiliary content if present (formerly commentary)
+        commentary_div = html_slide.find('.//*[@class="framework-auxiliary"]')
+        if commentary_div is None:
+            # Fallback to old class name for backward compatibility
+            commentary_div = html_slide.find('.//*[@class="framework-commentary"]')
+        if commentary_div is not None:
+            y_commentary = y_start + ((num_components + cols - 1) // cols) * (box_height + 0.25) + 0.2
+
+            commentary_box = slide.shapes.add_textbox(
+                Inches(self.PADDING + 1.0),
+                Inches(y_commentary),
+                Inches(self.SLIDE_WIDTH - 2*self.PADDING - 2.0),
+                Inches(1.0)
+            )
+            commentary_frame = commentary_box.text_frame
+            commentary_frame.word_wrap = True
+            commentary_frame.vertical_anchor = MSO_VERTICAL_ANCHOR.TOP
+
+            # Get all paragraphs in commentary
+            for p_elem in commentary_div.findall('.//p'):
+                p = commentary_frame.add_paragraph() if len(commentary_frame.paragraphs) > 1 else commentary_frame.paragraphs[0]
+                p.alignment = PP_ALIGN.CENTER
+                self.add_formatted_text(p, p_elem)
+
+                # Apply styling
+                for run in p.runs:
+                    if not run.font.name:
+                        run.font.name = self.BODY_FONT
+                    if not run.font.size:
+                        run.font.size = Pt(16)  # 24px * 0.75
+                    # Bold text should be orange
+                    if run.font.bold:
+                        run.font.color.rgb = ColorConfig.ORANGE
+                    else:
+                        # Only set color if not already set by formatting
+                        try:
+                            if not run.font.color.rgb:
+                                run.font.color.rgb = self.COLORS['#64748b']
+                        except AttributeError:
+                            # Color is None, set default
+                            run.font.color.rgb = self.COLORS['#64748b']
 
     def handle_comparison_table_slide(self, slide, html_slide):
         """
@@ -3153,20 +3078,73 @@ class HTMLToPPTXConverter:
                 Inches(0.7)
             )
             title_frame = title_box.text_frame
+            title_frame.word_wrap = True
+            title_frame.margin_top = 0
+            title_frame.margin_bottom = 0
             p = title_frame.paragraphs[0]
             p.text = title_text
+            p.line_spacing = 1.0  # Single spacing
             p.font.name = self.HEADER_FONT
             p.font.size = Pt(36)
             p.font.color.rgb = self.COLORS['#1e293b']
             p.font.bold = True
             p.alignment = PP_ALIGN.LEFT
+            # Apply condensed letter spacing
+            spacing_hundredths = int(FontConfig.TITLE_LETTER_SPACING.pt * 100)
+            p.font._element.set('spc', str(spacing_hundredths))
             y_start = self.PADDING + 0.9  # After title
 
+        # Find slide-content container
+        content_div = html_slide.find('.//*[@class="slide-content"]')
+        if content_div is None:
+            content_div = html_slide
+
         # Find table element
-        table_elem = html_slide.find('.//table')
+        table_elem = content_div.find('.//table')
 
         if table_elem is None:
             return
+
+        # Extract paragraphs before and after table (in document order)
+        paras_before = []
+        paras_after = []
+        found_table = False
+
+        for child in content_div:
+            if child.tag == 'table':
+                found_table = True
+            elif child.tag == 'p':
+                if not found_table:
+                    paras_before.append(child)
+                else:
+                    paras_after.append(child)
+
+        # Render paragraphs before table
+        if paras_before:
+            for para_elem in paras_before:
+                para_text = self.extract_text_content(para_elem).strip()
+                if para_text:
+                    para_box = self.add_textbox(slide, self.PADDING, y_start,
+                                               self.SLIDE_WIDTH - 2*self.PADDING, 0.4)
+                    p_tf = para_box.text_frame
+                    p_tf.word_wrap = True
+                    p = p_tf.paragraphs[0]
+                    p.alignment = PP_ALIGN.LEFT
+
+                    self.add_formatted_text(p, para_elem)
+
+                    for run in p.runs:
+                        if not run.font.name:
+                            run.font.name = self.BODY_FONT
+                        if not run.font.size:
+                            run.font.size = Pt(16)
+                        # Bold text in orange
+                        if run.font.bold:
+                            run.font.color.rgb = ColorConfig.ORANGE
+                        else:
+                            run.font.color.rgb = self.COLORS['#475569']
+
+                    y_start += 0.45
 
         # Extract table headers (column titles)
         headers = []
@@ -3220,6 +3198,11 @@ class HTMLToPPTXConverter:
                 Inches(table_width),
                 Inches(table_height)
             ).table
+
+            # Distribute table width evenly across columns
+            col_width = table_width / num_cols
+            for col in table_shape.columns:
+                col.width = Inches(col_width)
 
             # Format header row if headers exist
             if headers:
@@ -3325,11 +3308,39 @@ class HTMLToPPTXConverter:
                         # No border on last row
                         no_line = parse_xml('<a:lnB xmlns:a="http://schemas.openxmlformats.org/drawingml/2006/main"><a:noFill/></a:lnB>')
                         tcPr.append(no_line)
+
+            # Render paragraphs after table
+            if paras_after:
+                y_after = y_start + table_height + 0.2
+                for para_elem in paras_after:
+                    para_text = self.extract_text_content(para_elem).strip()
+                    if para_text:
+                        para_box = self.add_textbox(slide, self.PADDING, y_after,
+                                                   self.SLIDE_WIDTH - 2*self.PADDING, 0.5)
+                        p_tf = para_box.text_frame
+                        p_tf.word_wrap = True
+                        p = p_tf.paragraphs[0]
+                        p.alignment = PP_ALIGN.LEFT
+
+                        self.add_formatted_text(p, para_elem)
+
+                        for run in p.runs:
+                            if not run.font.name:
+                                run.font.name = self.BODY_FONT
+                            if not run.font.size:
+                                run.font.size = Pt(16)
+                            # Bold text in orange
+                            if run.font.bold:
+                                run.font.color.rgb = ColorConfig.ORANGE
+                            else:
+                                run.font.color.rgb = self.COLORS['#475569']
+
+                        y_after += 0.5
         else:
             # Fall back to standard table handling for non-2-column tables
             self.handle_content_slide(slide, html_slide)
 
-    def handle_card_layout(self, slide, cards_container, y_start=1.4):
+    def handle_card_layout(self, slide, cards_container, y_start=2.2):
         """Handle card layout with colored headers and white backgrounds using CSS grid"""
         cards = cards_container.findall('.//div[@class="card"]') if cards_container is not None else []
         if not cards:
@@ -3563,21 +3574,17 @@ class HTMLToPPTXConverter:
                 p.alignment = PP_ALIGN.LEFT
                 p.space_after = Pt(4)
 
-                # Enable bullet formatting with custom marker
+                # Enable bullet formatting with custom margins
+                XMLHelper.add_bullet_with_indent(
+                    p,
+                    marker='•',
+                    font_name=self.BODY_FONT,
+                    left_margin_inches=0.25,  # 228600 EMUs
+                    hanging_indent_inches=-0.125  # -114300 EMUs
+                )
+
+                # Add orange bullet color
                 pPr = p._element.get_or_add_pPr()
-                pPr.set('marL', '228600')  # Left margin for bullets
-                pPr.set('indent', '-114300')  # Hanging indent
-
-                # Orange bullet
-                buChar_xml = f'<a:buChar {nsdecls("a")} char="•"/>'
-                buChar = parse_xml(buChar_xml)
-                pPr.append(buChar)
-
-                buFont_xml = f'<a:buFont {nsdecls("a")} typeface="{self.BODY_FONT}"/>'
-                buFont = parse_xml(buFont_xml)
-                pPr.append(buFont)
-
-                # Orange bullet color
                 buClr_xml = f'<a:buClr {nsdecls("a")}><a:srgbClr val="ed5e29"/></a:buClr>'
                 buClr = parse_xml(buClr_xml)
                 pPr.append(buClr)
@@ -3734,8 +3741,15 @@ class HTMLToPPTXConverter:
                     # Default text color
                     run.font.color.rgb = self.COLORS['#475569']
 
-    def handle_stats_banner(self, slide, stats_container, y_start=1.4):
-        """Handle stats banner with large numbers and descriptions"""
+    def handle_stats_banner(self, slide, stats_container, y_start=2.2, is_dark_bg=False):
+        """Handle stats banner with large numbers and descriptions
+
+        Args:
+            slide: PowerPoint slide object
+            stats_container: HTML element containing stat items
+            y_start: Y position to start rendering stats
+            is_dark_bg: Whether slide has dark background (affects text color)
+        """
         stat_items = stats_container.findall('.//div[@class="stat-item"]')
         if not stat_items:
             return y_start
@@ -3779,7 +3793,7 @@ class HTMLToPPTXConverter:
 
                 current_y += 1.2
 
-            # Add label (bold, cream for dark bg)
+            # Add label (bold, color depends on background)
             if stat_label is not None:
                 label_text = self.extract_text_content(stat_label)
                 label_box = self.add_textbox(slide, x_pos, current_y, stat_width, 0.4)
@@ -3792,7 +3806,8 @@ class HTMLToPPTXConverter:
                 run.font.name = self.BODY_FONT
                 run.font.size = Pt(14)
                 run.font.bold = True
-                run.font.color.rgb = self.COLORS['#f4f3f1']  # Cream for dark backgrounds
+                # Use cream text on dark backgrounds, dark text on light backgrounds
+                run.font.color.rgb = ColorConfig.CREAM if is_dark_bg else ColorConfig.DARK_GRAY
 
                 current_y += 0.4
 
@@ -3809,9 +3824,138 @@ class HTMLToPPTXConverter:
                 run.text = desc_text
                 run.font.name = self.BODY_FONT
                 run.font.size = Pt(11)
-                run.font.color.rgb = self.COLORS['#f4f3f1']  # Cream for dark backgrounds
+                # Use cream text on dark backgrounds, slate gray on light backgrounds
+                run.font.color.rgb = ColorConfig.CREAM if is_dark_bg else self.COLORS['#64748b']
 
         return y_start + 3.5
+
+    def extract_and_add_speaker_notes(self, slide, html_slide):
+        """
+        Extract speaker notes from HTML slide and add them to PPTX slide.
+
+        Args:
+            slide: python-pptx slide object
+            html_slide: lxml HTML element for the slide
+
+        Notes are extracted from <aside class="speaker-notes"> elements in the HTML.
+        """
+        # Find speaker notes element
+        notes_element = html_slide.find('.//aside[@class="speaker-notes"]')
+
+        if notes_element is None:
+            # No speaker notes for this slide
+            return
+
+        # Extract text content from notes element
+        notes_text = self.extract_text_content_recursive(notes_element)
+
+        if not notes_text or not notes_text.strip():
+            # Empty notes, skip
+            return
+
+        # Clean up notes text:
+        # 1. Remove "Speaker Notes" header and following empty line
+        notes_text = notes_text.strip()
+        if notes_text.startswith("Speaker Notes"):
+            # Remove first line (header) and any following empty lines
+            lines = notes_text.split('\n')
+            lines = lines[1:]  # Remove first line
+            notes_text = '\n'.join(lines).strip()
+
+        # 2. Remove consecutive empty lines (replace multiple newlines with single)
+        notes_text = re.sub(r'\n\s*\n+', '\n\n', notes_text)
+
+        if not notes_text:
+            # After cleaning, notes are empty
+            return
+
+        # Add notes to PPTX slide
+        try:
+            notes_slide = slide.notes_slide
+            text_frame = notes_slide.notes_text_frame
+
+            # Clear any existing placeholder text
+            text_frame.clear()
+
+            # Add the cleaned notes text
+            text_frame.text = notes_text
+
+            print(f"  ✓ Added speaker notes ({len(notes_text)} characters)")
+
+        except Exception as e:
+            print(f"  ⚠ Warning: Could not add speaker notes: {e}")
+
+    def extract_text_content_recursive(self, element):
+        """
+        Recursively extract all text content from an HTML element, preserving structure.
+
+        Args:
+            element: lxml HTML element
+
+        Returns:
+            String with text content, including line breaks for structure
+        """
+        if element is None:
+            return ""
+
+        result = []
+
+        # Get element's direct text
+        if element.text:
+            # Only strip spaces and tabs, preserve newlines
+            result.append(element.text.strip(' \t'))
+
+        # Process children
+        for child in element:
+            # Handle different HTML elements
+            try:
+                tag = child.tag.lower() if isinstance(child.tag, str) else ''
+            except (AttributeError, TypeError):
+                tag = ''
+
+            if tag in ['h1', 'h2', 'h3', 'h4', 'h5', 'h6']:
+                # Headers - add extra line break before and after
+                result.append('\n' + self.extract_text_content_recursive(child) + '\n')
+            elif tag == 'p':
+                # Check if paragraph contains only "---" separator
+                child_text = self.extract_text_content_recursive(child).strip()
+                if child_text == '---':
+                    # Skip this separator paragraph
+                    continue
+                # Paragraphs - add line break after
+                result.append(child_text + '\n')
+            elif tag in ['ul', 'ol']:
+                # Lists - add line break before
+                result.append('\n' + self.extract_text_content_recursive(child))
+            elif tag == 'li':
+                # List items - add bullet and line break
+                result.append('• ' + self.extract_text_content_recursive(child) + '\n')
+            elif tag == 'br':
+                # Line breaks
+                result.append('\n')
+            elif tag == 'strong' or tag == 'b':
+                # Bold - just extract text (PPTX notes don't support formatting)
+                result.append(self.extract_text_content_recursive(child))
+            elif tag == 'em' or tag == 'i':
+                # Italic - just extract text
+                result.append(self.extract_text_content_recursive(child))
+            else:
+                # Other elements - just extract text
+                result.append(self.extract_text_content_recursive(child))
+
+            # Get tail text (text after the child element)
+            if child.tail:
+                # Only strip spaces and tabs, preserve newlines
+                result.append(child.tail.strip(' \t'))
+
+        # Join and clean up excessive whitespace
+        text = ''.join(result)
+        # Replace multiple consecutive newlines with just two (paragraph break)
+        text = re.sub(r'\n\n+', '\n\n', text)
+        # Strip leading/trailing whitespace
+        text = text.strip()
+
+        return text
 
     def apply_dark_background(self, slide):
         """Apply dark background to a slide"""
@@ -3885,6 +4029,15 @@ class HTMLToPPTXConverter:
             # Apply dark background if needed
             if 'dark-bg' in classes:
                 self.apply_dark_background(slide)
+
+            # Extract and add speaker notes BEFORE processing slide content
+            # (so we can remove them from the content)
+            self.extract_and_add_speaker_notes(slide, html_slide)
+
+            # Remove speaker notes from slide content before processing
+            # (they've already been extracted to notes section)
+            for notes_elem in html_slide.findall('.//aside[@class="speaker-notes"]'):
+                notes_elem.getparent().remove(notes_elem)
 
             # Use handler registry to process slide
             # Handlers are tried in priority order until one can handle the slide

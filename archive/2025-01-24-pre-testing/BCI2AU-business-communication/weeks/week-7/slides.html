@@ -1,0 +1,2053 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 19</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 7: Data Storytelling & Visualization</h1>
+        <p class="subtitle">Transforming Data into Compelling Visual Narratives</p>
+        <p class="author"><strong>Business Communication</strong><br>Andrews University - National Economics University Campus<br>Fall 2025<br>Instructor: William Winterton Lang</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome students to Week 7</li>
+<li>This week bridges analytical skills with communication skills</li>
+<li>Data is everywhere in business - knowing how to communicate it effectively is a critical professional skill</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Today we'll learn how to turn numbers and data into stories that persuade and inform</li>
+<li>We'll cover both the "science" (evidence-based design principles) and the "art" (storytelling) of data visualization</li>
+<li>By the end, you'll be able to create visualizations that are both accurate and compelling</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with a question that illustrates why this skill matters..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="2">
+      <h2 class="slide-title">The Power of Visual Communication</h2>
+      <div class="slide-content">
+        <p><strong>Question:</strong> Why do 65% of people remember information when it's paired with a relevant image, but only 10% when it's text alone? (Medina, 2014)</p>
+<p><strong>The Answer:</strong> Our brains process visuals 60,000 times faster than text.</p>
+<p><strong>What This Means for You:</strong></p>
+<ul>
+<li>In business, you'll often need to communicate complex data to busy decision-makers</li>
+<li>A well-designed chart can convey in seconds what might take paragraphs to explain</li>
+<li>Poor visualization can confuse, mislead, or lose your audience entirely</li>
+</ul>
+<p><strong>Today's Challenge:</strong> Learn to harness the power of visual communication ethically and effectively.</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Medina, J. (2014). Brain rules: 12 principles for surviving and thriving at work, home, and school. Pear Press.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Ask the question and pause for students to think</li>
+<li>Many students underestimate how powerful visual communication is</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Our brains are wired to process visual information extremely quickly</li>
+<li>This is both an opportunity and a responsibility</li>
+<li>Opportunity: You can communicate complex ideas quickly</li>
+<li>Responsibility: You must ensure your visuals are accurate and not misleading</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Show example: A good vs. bad visualization of the same data</li>
+<li>Good one tells clear story instantly; bad one confuses or misleads</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can anyone think of a time when a chart or graph helped you understand something complex?" [Take 1-2 responses]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we dive into techniques, let's make sure we have the vocabulary to discuss data visualization..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="3">
+      <h2 class="slide-title">Key Vocabulary</h2>
+      <table class="vocab-table"><thead><tr><th><strong>English Term</strong></th><th><strong>Vietnamese Translation</strong></th><th><strong>Context Example</strong></th></tr></thead><tbody><tr><td><strong>Data storytelling</strong></td><td>Kể chuyện bằng dữ liệu</td><td>Using data to create a narrative with beginning, middle, end</td></tr><tr><td><strong>Chart type</strong></td><td>Loại biểu đồ</td><td>Bar chart, line chart, pie chart, scatter plot</td></tr><tr><td><strong>Data visualization</strong></td><td>Trực quan hóa dữ liệu</td><td>Visual representation of information using charts, graphs, maps</td></tr><tr><td><strong>Misleading visualization</strong></td><td>Trực quan gây hiểu lầm</td><td>Charts designed to deceive or exaggerate trends</td></tr><tr><td><strong>Accessibility</strong></td><td>Khả năng tiếp cận</td><td>Ensuring visuals work for people with visual impairments</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>These terms will help us discuss data visualization with precision</li>
+<li>If you hear unfamiliar terms in readings or presentations, refer back to this slide</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>"Data storytelling" is not just showing numbers - it's creating a narrative arc</li>
+<li>"Misleading visualization" can be intentional (unethical) or unintentional (poor design)</li>
+<li>"Accessibility" means everyone can access your information, including those with color blindness or visual impairments</li>
+</ul>
+<p><strong>Cultural Note:</strong></p>
+<ul>
+<li>Vietnamese students may be more familiar with Excel than tools like Tableau or Power BI</li>
+<li>That's fine - these principles apply regardless of tool</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which of these terms is new to you?" [Show of hands]</li>
+<li>Focus explanation on terms students find unfamiliar</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's look at what we'll accomplish by the end of today's lecture..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">Learning Objectives</h2>
+      <div class="slide-content">
+        <p>By the end of this lecture, you will be able to:</p>
+<ol>
+<li><strong>Apply</strong> data storytelling frameworks to transform raw data into compelling narratives</li>
+<li><strong>Select</strong> appropriate chart types based on data relationships and communication goals</li>
+<li><strong>Evaluate</strong> data visualizations using evidence-based design principles from Rougier et al. and Berinato</li>
+<li><strong>Create</strong> accessible, ethical visualizations that avoid misleading audiences</li>
+<li><strong>Integrate</strong> data visualization best practices into your business presentations</li>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>These objectives build on each other - we'll start with storytelling, then chart selection, then evaluation</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Objective 1 (Apply): You'll learn the setup-conflict-resolution structure for data stories</li>
+<li>Objective 2 (Select): Different data relationships require different chart types</li>
+<li>Objective 3 (Evaluate): We'll use the "Ten Simple Rules" from Rougier et al. (2014)</li>
+<li>Objective 4 (Create): Ethical communication means avoiding misleading visuals</li>
+<li>Objective 5 (Integrate): This all connects to your upcoming group presentation</li>
+</ul>
+<p><strong>Link to Assessment:</strong></p>
+<ul>
+<li>"These skills will help you create compelling, data-driven presentations for Week 11"</li>
+<li>"You'll practice in today's tutorial with real datasets"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's talk about how this connects to your upcoming assessments..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">Assessment Connection</h2>
+      <div class="slide-content">
+        <p><strong>Quiz 2 - This Week:</strong></p>
+<ul>
+<li>Covers Weeks 4-6: Cross-Cultural Communication, AI, Crisis Communication</li>
+<li>25-30 multiple choice questions</li>
+<li>Tutorial includes extended quiz prep</li>
+</ul>
+<p><strong>Group Presentation - Week 11:</strong></p>
+<ul>
+<li>You'll need to support your arguments with data</li>
+<li>Effective visualization will strengthen your credibility</li>
+<li>Today's skills = competitive advantage for your team</li>
+</ul>
+<p><strong>Why This Matters:</strong></p>
+<p>Professional communicators must:</p>
+<ul>
+<li>Translate complex data into clear insights</li>
+<li>Persuade with evidence, not just opinions</li>
+<li>Build trust through ethical, accurate visualization</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Today's lecture has two assessment connections: immediate and future"</li>
+<li>Immediate: Quiz 2 is this week (but covers previous weeks)</li>
+<li>Future: Group presentation will benefit hugely from today's content</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Quiz 2 focuses on Weeks 4-6, so today's content won't be on it</li>
+<li>However, you'll practice quiz question format in tutorial</li>
+<li>For your presentation, you'll likely need to show data about your topic</li>
+<li>Poor data visualization can undermine even the best arguments</li>
+</ul>
+<p><strong>Real-World Context:</strong></p>
+<ul>
+<li>In professional settings, decision-makers often rely on data dashboards</li>
+<li>McKinsey, BCG, and top consulting firms emphasize data visualization skills</li>
+<li>Vietnamese companies increasingly value data-driven communication</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's begin with the foundation: how to turn data into a story..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+<p>---</p>
+<p><strong>Part 1: Data Storytelling Fundamentals</strong></p>
+<p>---</p>
+<p><!-- SECTION: CORE CONTENT - Data Storytelling --></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="6">
+      <h2 class="slide-title">What Is Data Storytelling?</h2>
+      <div class="slide-content">
+        <p><strong>Definition:</strong> Data storytelling is the practice of building a narrative around a set of data and its accompanying visualizations to help convey meaning to an intended audience.</p>
+<p><strong>Why It Matters:</strong></p>
+<ul>
+<li>Data alone doesn't persuade - context and narrative do</li>
+<li>Decision-makers are busy: they need clear "so what?" insights</li>
+<li>Stories are 22 times more memorable than facts alone (Stanford GSB research)</li>
+</ul>
+<p><strong>The Key Shift:</strong></p>
+<ul>
+<li>❌ <strong>Don't:</strong> Just show charts and expect audience to figure it out</li>
+<li>✅ <strong>Do:</strong> Guide your audience through data with a clear narrative</li>
+</ul>
+      </div>
+      <div class="slide-footer"><p class="citation">Berinato, S. (2016). Visualizations that really work. Harvard Business Review, 94(6), 92-100. https://hbr.org/2016/06/visualizations-that-really-work</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Most people think data visualization is just making charts. That's only half of it."</li>
+<li>The other half is storytelling - giving data meaning and context</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Data storytelling combines three elements: data, visuals, and narrative</li>
+<li>All three are necessary - data without narrative is boring; narrative without data is unpersuasive</li>
+<li>The "22 times more memorable" statistic shows why storytelling matters</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Bad example: A slide with 10 charts and no explanation</li>
+<li>Good example: A single chart with clear title, annotations, and "so what?" statement</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the difference between data visualization and data storytelling?" [Visualization = charts; storytelling = charts + narrative + meaning]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"So how do you build a data story? There's a proven three-act structure..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="7">
+      <h2 class="slide-title">The Three-Act Data Story Structure</h2>
+      <div class="slide-content">
+        <p><strong>Act 1: Setup (The Context)</strong></p>
+<ul>
+<li>Establish the situation or question</li>
+<li>Provide necessary background</li>
+<li>Example: "Our customer satisfaction has been declining..."</li>
+</ul>
+<p><strong>Act 2: Conflict (The Data)</strong></p>
+<ul>
+<li>Present the data that reveals the problem or opportunity</li>
+<li>Show the unexpected or important finding</li>
+<li>Example: "Analysis shows 65% of complaints are about response time..."</li>
+</ul>
+<p><strong>Act 3: Resolution (The Insight)</strong></p>
+<ul>
+<li>Deliver the "so what?" - what does this mean?</li>
+<li>Provide recommendation or action</li>
+<li>Example: "By reducing response time to 24 hours, we can recover lost customers..."</li>
+</ul>
+<p><strong>Key Principle:</strong> Every data presentation should answer: Setup (What's happening?), Conflict (What's the data?), Resolution (What should we do?)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>This three-act structure comes from classic storytelling theory</li>
+<li>It works because our brains are wired to follow narratives with beginning, middle, end</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Act 1 (Setup)</strong>: Don't assume audience knows the context - provide it</li>
+<li><strong>Act 2 (Conflict)</strong>: This is where your data/charts appear - the "evidence"</li>
+<li><strong>Act 3 (Resolution)</strong>: Never leave audience hanging - tell them what it means and what to do</li>
+<li>Many students forget Act 3 - they show data but don't interpret it</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Walk through a business example: Company considering expansion to Vietnam</li>
+<ul class="nested-list">
+<li>Act 1: We're evaluating market entry opportunities</li>
+<li>Act 2: Vietnam's e-commerce market grew 25% in 2024 (show chart)</li>
+<li>Act 3: We recommend entering within 12 months to capture growth</li>
+</ul>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Vietnamese students sometimes hesitate to make strong recommendations (cultural respect for hierarchy)</li>
+<li>Remind: "In business communication, stakeholders expect you to interpret data and recommend actions"</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone give me an example of 'setup-conflict-resolution' from a presentation they've seen?" [Take 1 response]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we know how to structure a data story, let's look at a Vietnamese example..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="8">
+      <h2 class="slide-title">Vietnamese Context: E-Commerce Growth Story</h2>
+      <div class="slide-content">
+        <p><strong>Case Study: Vietnam's E-Commerce Boom</strong></p>
+<p><strong>Setup:</strong> Vietnam has one of the fastest-growing digital economies in Southeast Asia, driven by young, tech-savvy consumers.</p>
+<p><strong>Conflict (The Data):</strong></p>
+<ul>
+<li>E-commerce revenue reached $20.5 billion in 2024 (VECOM, 2024)</li>
+<li>Mobile commerce accounts for 73% of online purchases</li>
+<li>Average order value increased 18% year-over-year</li>
+<li>Shopee and Lazada dominate, but TikTok Shop is gaining rapidly</li>
+</ul>
+<p><strong>Resolution (The Insight):</strong></p>
+<p>For businesses: Vietnam's e-commerce presents major opportunity, but competition is intense. Success requires mobile-first strategy and social commerce integration.</p>
+<p><strong>Source:</strong> Vietnam E-Commerce Association (VECOM) 2024 Report</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's see the three-act structure in action with a Vietnamese business case"</li>
+<li>This is the kind of data analysis you might present to a company considering Vietnam market entry</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Setup</strong> gives context: Vietnam's digital economy is growing fast</li>
+<li><strong>Conflict</strong> presents specific data: revenue, mobile share, growth rates</li>
+<li><strong>Resolution</strong> interprets: What does this mean for businesses?</li>
+<li>Notice how the resolution doesn't just repeat the data - it adds insight</li>
+</ul>
+<p><strong>Real-World Application:</strong></p>
+<ul>
+<li>Many Vietnamese students will work for companies entering Vietnam market or expanding within ASEAN</li>
+<li>Being able to tell data stories about local markets is valuable skill</li>
+<li>International companies value local employees who can interpret Vietnamese market data</li>
+</ul>
+<p><strong>Cultural Note:</strong></p>
+<ul>
+<li>Vietnamese business culture is becoming increasingly data-driven</li>
+<li>Companies like VNG, Sendo, and Tiki all emphasize data analytics</li>
+<li>Your ability to communicate data effectively will set you apart</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the difference between the 'conflict' data and the 'resolution' insight in this example?" [Conflict = raw numbers; resolution = interpretation and recommendation]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now we've got the storytelling framework. Next, we need to choose the right visuals..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+<p>---</p>
+<p><strong>Part 2: Choosing the Right Chart Type</strong></p>
+<p>---</p>
+<p><!-- SECTION: Chart Selection Framework --></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="9">
+      <h2 class="framework-title">The Chart Selection Framework</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Four Primary Data Relationships</h3>
+          
+          <ul class="component-bullets"><li>Example: Comparing sales across regions</li><li>Example: Market share breakdown</li><li>Example: Customer age distribution</li><li>Example: Relationship between price and sales volume</li></ul>
+          <p>1. **Comparison** → Use bar charts, column charts 2. **Composition** → Use pie charts, stacked bars, tree maps 3. **Distribution** → Use histograms, box plots 4. **Relationship/Correlation** → Use scatter plots, bubble charts</p>
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>The Wrong Chart Confuses; The Right Chart Clarifies.</strong></p></div>
+      <div class="slide-footer"><p class="citation">Berinato, S. (2016). Visualizations that really work. Harvard Business Review, 94(6), 92-100. https://hbr.org/2016/06/visualizations-that-really-work</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"One of the most common mistakes in data visualization: using the wrong chart type"</li>
+<li>Example: Showing trends over time with a pie chart (wrong!) instead of line chart (right!)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Before choosing a chart, ask: "What relationship am I showing?"</li>
+<li>Different relationships require different chart types</li>
+<li>This framework from Berinato (HBR 2016) is industry standard</li>
+</ul>
+<p><strong>Examples for Each Type:</strong></p>
+<ul>
+<li><strong>Comparison</strong>: "Which region had the highest sales?" → Bar chart</li>
+<li><strong>Composition</strong>: "What's our market share?" → Pie chart</li>
+<li><strong>Distribution</strong>: "How are our customers distributed by age?" → Histogram</li>
+<li><strong>Relationship</strong>: "Does higher price correlate with higher quality ratings?" → Scatter plot</li>
+</ul>
+<p><strong>Common Mistakes:</strong></p>
+<ul>
+<li>Using pie charts for more than 5-6 categories (too cluttered)</li>
+<li>Using 3D charts (they distort perception)</li>
+<li>Using line charts for non-sequential data</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If I want to show how company revenue has changed over the past 5 years, which data relationship is that?" [Trend over time - use line chart]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at specific examples of when to use each chart type..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="10">
+      <h2 class="slide-title">Chart Types: When to Use What</h2>
+      <table class="vocab-table"><thead><tr><th><strong>Chart Type</strong></th><th><strong>Best For</strong></th><th><strong>Avoid When</strong></th></tr></thead><tbody><tr><td><strong>Bar/Column</strong></td><td>Comparing values across categories</td><td>Showing trends over time (use line instead)</td></tr><tr><td><strong>Line</strong></td><td>Showing trends over time</td><td>Comparing discrete categories (use bar instead)</td></tr><tr><td><strong>Pie</strong></td><td>Showing parts of a whole (max 5-6 slices)</td><td>Comparing values, showing trends</td></tr><tr><td><strong>Scatter Plot</strong></td><td>Showing correlation between two variables</td><td>One variable only (use histogram)</td></tr><tr><td><strong>Table</strong></td><td>Precise values matter, lookup reference</td><td>Showing trends or patterns (use chart)</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's a quick reference guide for chart selection"</li>
+<li>Keep this in mind when creating your presentation slides</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Bar/Column</strong>: Great for comparison, easy to read</li>
+<li><strong>Line</strong>: Best for time series, shows trends clearly</li>
+<li><strong>Pie</strong>: Only use for simple part-of-whole (market share, budget breakdown)</li>
+<li><strong>Scatter</strong>: Shows if two things are related (correlation)</li>
+<li><strong>Table</strong>: When precise numbers matter more than visual patterns</li>
+</ul>
+<p><strong>"Avoid When" is Critical:</strong></p>
+<ul>
+<li>Many people use pie charts incorrectly (too many slices, comparing instead of showing composition)</li>
+<li>Line charts require sequential data (time, order, progression)</li>
+</ul>
+<p><strong>Simplicity Rule:</strong></p>
+<ul>
+<li>Edward Tufte (data visualization expert): "Above all else, show the data"</li>
+<li>Don't add unnecessary decorations, 3D effects, or complex colors</li>
+<li>If it takes too long to understand, it's too complex</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>Show two charts of same data - one good, one overly complex</li>
+<li>"Which one communicates better? Why?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's talk about making your charts not just correct, but excellent..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+<p>---</p>
+<p><strong>Part 3: Design Principles for Effective Visualizations</strong></p>
+<p>---</p>
+<p><!-- SECTION: Design Best Practices --></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="11">
+      <h2 class="slide-title">Ten Simple Rules for Better Figures</h2>
+      <div class="slide-content">
+        <p>From Rougier, Droettboom, & Bourne (2014), <em>PLOS Computational Biology</em>:</p>
+<p><strong>Key Rules for Business Communication:</strong></p>
+<p><strong>1. Know Your Audience</strong></p>
+<ul>
+<li>Technical audience vs. executive audience require different detail levels</li>
+</ul>
+<p><strong>2. Identify Your Message</strong></p>
+<ul>
+<li>Every figure should have ONE clear message</li>
+</ul>
+<p><strong>3. Adapt the Figure to the Support Medium</strong></p>
+<ul>
+<li>Slides need larger fonts than reports</li>
+</ul>
+<p><strong>4. Use Color Effectively</strong></p>
+<ul>
+<li>Color should add information, not just decoration</li>
+<li>Consider color-blind accessibility (8% of men, 0.5% of women)</li>
+</ul>
+<p><strong>5. Do Not Mislead the Reader</strong></p>
+<ul>
+<li>Start axes at zero (unless there's a good reason)</li>
+<li>Keep proportions accurate</li>
+</ul>
+<p><strong>6. Avoid "Chartjunk"</strong></p>
+<ul>
+<li>Remove unnecessary grid lines, decorations, 3D effects</li>
+</ul>
+      </div>
+      <div class="slide-footer"><p class="citation">Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). Ten simple rules for better figures. PLOS Computational Biology, 10(9), e1003833. https://doi.org/10.1371/journal.pcbi.1003833</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These ten rules come from peer-reviewed research on effective data visualization"</li>
+<li>We'll focus on the six most relevant for business communication</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Rule 1 (Audience)</strong>: Executives want high-level insights; analysts want detailed data</li>
+<li><strong>Rule 2 (Message)</strong>: If you can't state the message in one sentence, refine your figure</li>
+<li><strong>Rule 3 (Medium)</strong>: Slides viewed from distance need larger text than printed reports</li>
+<li><strong>Rule 4 (Color)</strong>: Use color to highlight, not just make pretty. Test for color-blind accessibility</li>
+<li><strong>Rule 5 (Don't Mislead)</strong>: Most common mistake is truncated y-axis to exaggerate trends</li>
+<li><strong>Rule 6 (Chartjunk)</strong>: Edward Tufte's term for unnecessary visual elements</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Show example of misleading chart with truncated axis</li>
+<li>Show same data with proper axis - trend looks less dramatic but more honest</li>
+</ul>
+<p><strong>Cultural Note:</strong></p>
+<ul>
+<li>Vietnamese business presentations sometimes favor decorative designs</li>
+<li>International business standards favor simplicity and clarity</li>
+<li>When presenting to global audiences, err on side of simplicity</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why is it important to start the y-axis at zero?" [To avoid exaggerating trends and misleading audience]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at a specific example of how color can help or hurt your visualization..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="12">
+      <h2 class="slide-title">Color: Your Powerful Tool or Worst Enemy</h2>
+      <div class="slide-content">
+        <p><strong>Use Color To:</strong></p>
+<p>✅ Highlight important data points</p>
+<p>✅ Group related items</p>
+<p>✅ Show categorical differences</p>
+<p>✅ Guide viewer's attention</p>
+<p><strong>Avoid:</strong></p>
+<p>❌ Using too many colors (limit to 5-6)</p>
+<p>❌ Relying only on color to convey information (accessibility!)</p>
+<p>❌ Using red/green together (8% of men are red-green color blind)</p>
+<p>❌ Random/decorative color choices</p>
+<p><strong>Best Practice:</strong></p>
+<ul>
+<li>Use one primary color + shades for emphasis</li>
+<li>Add patterns or labels in addition to color</li>
+<li>Test your chart in grayscale - can you still understand it?</li>
+</ul>
+<p><strong>Tools:</strong> ColorBrewer (colorbrewer2.org) provides color-blind safe palettes.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Color is like salt in cooking - essential, but easy to overuse"</li>
+<li>Most students either use too much color or not enough</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Strategic color use</strong>: Highlight what matters most (example: one bar in red, others in gray)</li>
+<li><strong>Grouping</strong>: Use same color family for related items</li>
+<li><strong>Accessibility is not optional</strong>: 8% of men have some form of color blindness</li>
+<li><strong>The grayscale test</strong>: If your chart doesn't work in black and white, you're relying too much on color</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>Show chart with too many colors (confusing)</li>
+<li>Show same data with strategic color (one accent color highlights key finding)</li>
+</ul>
+<p><strong>Tools Recommendation:</strong></p>
+<ul>
+<li>ColorBrewer.org - free tool with accessibility-safe color palettes</li>
+<li>Most data viz tools (Tableau, Power BI) have built-in accessible palettes</li>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Vietnamese design aesthetics sometimes favor bright colors and decorative elements</li>
+<li>For business/international audiences, restrained color use signals professionalism</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the problem with using red and green together in a chart?" [Red-green color blindness makes them indistinguishable]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Color is one way charts can mislead. Let's talk about the ethics of data visualization..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+<p>---</p>
+<p><strong>Part 4: Ethics - Avoiding Misleading Visualizations</strong></p>
+<p>---</p>
+<p><!-- SECTION: Ethical Visualization --></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="13">
+      <h2 class="slide-title">The Ethics of Data Visualization</h2>
+      <div class="slide-content">
+        <p><strong>Core Principle:</strong> With the power to visualize data comes the responsibility to represent it accurately.</p>
+<p><strong>Common Ways Visualizations Mislead:</strong></p>
+<ol>
+<li><strong>Truncated Axes</strong> - Starting y-axis above zero to exaggerate differences</li>
+<li><strong>Cherry-Picked Data</strong> - Showing only the time period or subset that supports your claim</li>
+<li><strong>Inappropriate Chart Types</strong> - Using 3D pie charts that distort perception</li>
+<li><strong>Misleading Scales</strong> - Making small differences look huge</li>
+<li><strong>Omitting Context</strong> - Showing percentages without showing base numbers</li>
+</ol>
+<p><strong>Your Responsibility:</strong></p>
+<p>As a business communicator, your credibility depends on trustworthy data presentation. One misleading chart can undermine your entire reputation.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Data visualization is powerful - and with power comes responsibility"</li>
+<li>You can make the same data tell completely different stories depending on how you visualize it</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Truncated axes</strong> is the most common form of misleading visualization</li>
+<ul class="nested-list">
+<li>Example: Stock price chart starting at $95 instead of $0 makes 5% increase look like 500%</li>
+</ul>
+<li><strong>Cherry-picking data</strong>: Showing only Q4 results when full year was poor</li>
+<li><strong>3D charts</strong>: Perspective distorts size - front slices of pie look bigger than back slices</li>
+<li><strong>Scale manipulation</strong>: Using different scales for related charts</li>
+<li><strong>Missing context</strong>: "90% increase!" sounds impressive until you learn it's from 10 to 19 customers</li>
+</ul>
+<p><strong>Real-World Stakes:</strong></p>
+<ul>
+<li>Misleading visualizations can lead to bad business decisions</li>
+<li>In some industries (finance, pharmaceuticals), misleading data visualization can be illegal</li>
+<li>Your professional reputation is built on trust - lose it once, hard to regain</li>
+</ul>
+<p><strong>Ethical Reflection:</strong></p>
+<ul>
+<li>"Sometimes pressure to make results look good. Resist."</li>
+<li>"Always ask: Am I making this decision-maker see reality, or my preferred reality?"</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>Show example of misleading chart, then accurate version</li>
+<li>"Which one is honest? Which one would you want to base a business decision on?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at real examples of misleading visualizations and how to fix them..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide reflection-slide" data-slide="14">
+      <h2 class="slide-title">Case Study: Misleading vs. Accurate Visualization</h2>
+      <div class="reflection-content">
+        <p><strong>Example: Sales "Growth" Visualization</strong></p>
+<p><strong>Misleading Version:</strong></p>
+<ul>
+<li>Y-axis starts at $950,000 (not zero)</li>
+<li>Sales appear to triple over 6 months</li>
+<li>Uses 3D column chart with dramatic perspective</li>
+<li>No context about industry trends</li>
+</ul>
+<p><strong>Accurate Version:</strong></p>
+<ul>
+<li>Y-axis starts at $0</li>
+<li>Sales increased 5.3% over 6 months</li>
+<li>Uses simple 2D column chart</li>
+<li>Includes industry benchmark (competitors grew 4%)</li>
+<li>Interpretation: "We're growing slightly faster than industry average"</li>
+</ul>
+<p><strong>The Lesson:</strong></p>
+<p>Same data, different stories. The misleading version makes results seem more impressive but loses credibility when examined. The accurate version is less dramatic but builds trust.</p>
+<p><strong>Question to Consider:</strong> Would you rather be impressive or trustworthy?</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's a real example (anonymized) of how the same data can be visualized honestly or dishonestly"</li>
+<li>This happens frequently in business - you need to recognize it</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Misleading version</strong> uses all the tricks: truncated axis, 3D distortion, no context</li>
+<li><strong>Accurate version</strong> follows the "Ten Simple Rules": starts at zero, 2D, includes context</li>
+<li>The difference in interpretation is huge: "tripling sales" vs. "5.3% growth above industry average"</li>
+<li>Both are technically showing the same data, but the story changes</li>
+</ul>
+<p><strong>Decision-Making Impact:</strong></p>
+<ul>
+<li>If you're a manager viewing the misleading chart, you might think everything's great</li>
+<li>If you're viewing the accurate chart, you understand the real situation: modest outperformance</li>
+<li>Which one leads to better business decisions?</li>
+</ul>
+<p><strong>Your Role:</strong></p>
+<ul>
+<li>When creating visualizations: Choose accuracy over impression</li>
+<li>When evaluating visualizations: Look for these red flags (truncated axes, missing context, 3D effects)</li>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Sometimes pressure in Vietnamese business culture to "save face" or make results look good</li>
+<li>Remember: Honest communication builds long-term trust, even if short-term results are less impressive</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If you were presenting to your CEO, which version would you use? Why?" [Discuss ethics vs. pressure]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's talk about practical tools you can use to create good visualizations..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="15">
+      <h2 class="slide-title">Tools for Data Visualization</h2>
+      <div class="slide-content">
+        <p><strong>Free/Accessible Tools:</strong></p>
+<p><strong>Microsoft Excel</strong></p>
+<ul>
+<li>✅ Widely available, familiar interface</li>
+<li>✅ Good for basic charts (bar, line, pie)</li>
+<li>❌ Limited interactivity and advanced features</li>
+</ul>
+<p><strong>Google Sheets</strong></p>
+<ul>
+<li>✅ Free, cloud-based, collaborative</li>
+<li>✅ Similar functionality to Excel</li>
+<li>❌ Slower with large datasets</li>
+</ul>
+<p><strong>Canva</strong></p>
+<ul>
+<li>✅ User-friendly, great templates</li>
+<li>✅ Good for infographics and social media</li>
+<li>❌ Less suitable for complex data analysis</li>
+</ul>
+<p><strong>Advanced Tools (Free Versions Available):</strong></p>
+<ul>
+<li><strong>Tableau Public</strong> - Interactive dashboards</li>
+<li><strong>Power BI</strong> - Microsoft's business intelligence tool</li>
+<li><strong>Flourish</strong> - Animated, interactive visualizations</li>
+</ul>
+<p><strong>Recommendation for Your Presentation:</strong> Start with Excel or Google Sheets. They're sufficient for most business communication needs.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"You don't need expensive software to create effective visualizations"</li>
+<li>Most of you already have access to Excel or Google Sheets</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Excel</strong>: Most common in Vietnamese businesses. Learn it well.</li>
+<li><strong>Google Sheets</strong>: Great for group work (real-time collaboration)</li>
+<li><strong>Canva</strong>: Popular for making things look polished, but not for serious data analysis</li>
+<li><strong>Tableau/Power BI</strong>: If you're going into data-heavy roles, worth learning</li>
+</ul>
+<p><strong>For Your Group Presentation:</strong></p>
+<ul>
+<li>Excel or Google Sheets will be sufficient</li>
+<li>Focus on applying principles (right chart type, clear message, no misleading) rather than fancy tools</li>
+<li>A simple, clear chart beats a complex, confusing one every time</li>
+</ul>
+<p><strong>Learning Resources:</strong></p>
+<ul>
+<li>YouTube has excellent Excel chart tutorials</li>
+<li>LinkedIn Learning (free through many universities) has Tableau courses</li>
+</ul>
+<p><strong>Vietnamese Job Market:</strong></p>
+<ul>
+<li>Excel proficiency is expected in most business roles</li>
+<li>Tableau/Power BI skills are increasingly valued in banking, consulting, e-commerce</li>
+<li>Data visualization skills can differentiate you from other candidates</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's wrap up with key takeaways and how to apply this in your presentation..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION: WRAP-UP (4-6 slides) --></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="16">
+      <h2 class="slide-title">Key Takeaways</h2>
+      <div class="slide-content">
+        <p><strong>1. Data Storytelling = Data + Visuals + Narrative</strong></p>
+<ul>
+<li>Use the three-act structure: Setup, Conflict, Resolution</li>
+<li>Don't just show charts - tell the story behind them</li>
+</ul>
+<p><strong>2. Match Chart Type to Data Relationship</strong></p>
+<ul>
+<li>Comparison → Bar charts</li>
+<li>Trends → Line charts</li>
+<li>Composition → Pie charts (max 5-6 slices)</li>
+<li>Correlation → Scatter plots</li>
+</ul>
+<p><strong>3. Follow Evidence-Based Design Principles</strong></p>
+<ul>
+<li>Start axes at zero (usually)</li>
+<li>Limit colors (5-6 max)</li>
+<li>Remove chartjunk</li>
+<li>Test for accessibility</li>
+</ul>
+<p><strong>4. Ethics Matter</strong></p>
+<ul>
+<li>Never mislead your audience</li>
+<li>Your credibility depends on trustworthy data presentation</li>
+</ul>
+<p><strong>5. Simple > Complex</strong></p>
+<ul>
+<li>If it takes 30+ seconds to understand, redesign it</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's review the five key principles from today's lecture"</li>
+<li>These should guide every data visualization you create</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Emphasize that all five work together</li>
+<li>You can have perfect chart type but still fail if you mislead</li>
+<li>You can follow all design rules but still fail if you don't tell a story</li>
+</ul>
+<p><strong>Reinforcement:</strong></p>
+<ul>
+<li>"Which of these five is most challenging for you?" [Show of hands for each]</li>
+<li>Common answer: Storytelling (students comfortable with charts but struggle with narrative)</li>
+</ul>
+<p><strong>Practice Recommendation:</strong></p>
+<ul>
+<li>Find a chart in the news this week</li>
+<li>Analyze it using these five principles</li>
+<li>Is it telling a story? Right chart type? Following design rules? Ethical?</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's talk about how you'll practice these skills in tutorial today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="17">
+      <h2 class="slide-title">Tutorial Preview</h2>
+      <div class="slide-content">
+        <p><strong>Today's Tutorial (90 minutes):</strong></p>
+<p><strong>Quiz 2 Prep (20 minutes):</strong></p>
+<ul>
+<li>Practice questions covering Weeks 4-6 (Cross-Cultural Communication, AI, Crisis Communication)</li>
+<li>Review format and question types</li>
+<li>Clarify any confusing concepts</li>
+</ul>
+<p><strong>Data Visualization Practice (60 minutes):</strong></p>
+<ul>
+<li>Work with real datasets</li>
+<li>Create visualizations applying today's principles</li>
+<li>Peer review using the "Ten Simple Rules" framework</li>
+<li>Prepare for your group presentation data needs</li>
+</ul>
+<p><strong>Bring:</strong></p>
+<ul>
+<li>Laptop with Excel or Google Sheets</li>
+<li>Ideas about data you might use in your group presentation</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Tutorial today has two parts: quiz prep and hands-on visualization practice"</li>
+<li>Both are important for your success this week and beyond</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Quiz 2 prep</strong>: Even though today's lecture is about data visualization, Quiz 2 covers Weeks 4-6</li>
+<li>You'll get practice questions in quiz format to prepare</li>
+<li><strong>Visualization practice</strong>: You'll apply everything we learned today</li>
+<li>Work with partner to create charts and give each other feedback</li>
+</ul>
+<p><strong>Preparation:</strong></p>
+<ul>
+<li>Bring laptop if possible (can share with partner if needed)</li>
+<li>Start thinking about what data you might need for your group presentation</li>
+<ul class="nested-list">
+<li>Example: If presenting about sustainability, might need environmental statistics</li>
+<li>Example: If presenting about Vietnamese market trends, might need market data</li>
+</ul>
+</ul>
+<p><strong>Activity Structure:</strong></p>
+<ul>
+<li>You'll receive a dataset</li>
+<li>Your task: Tell a data story using appropriate visualizations</li>
+<li>Peer review: Partner evaluates using today's principles</li>
+<li>Iterate: Improve based on feedback</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Speaking of your presentation, let's talk about how today's skills connect to that assessment..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="18">
+      <h2 class="slide-title">Assessment Bridge: Your Group Presentation</h2>
+      <div class="slide-content">
+        <p><strong>How Today's Content Helps Your Presentation:</strong></p>
+<p><strong>For Your Presentation (Week 11):</strong></p>
+<ul>
+<li>Most topics benefit from data support</li>
+<ul class="nested-list">
+<li>Market size and growth trends</li>
+<li>Customer demographics</li>
+<li>Competitive analysis</li>
+<li>Impact metrics</li>
+</ul>
+</ul>
+<p><strong>Quality Data Visualization Will:</strong></p>
+<p>✅ Strengthen your arguments with evidence</p>
+<p>✅ Make complex information quickly understandable</p>
+<p>✅ Demonstrate analytical and communication skills</p>
+<p>✅ Increase your credibility with the audience</p>
+<p><strong>Common Mistakes to Avoid:</strong></p>
+<p>❌ Too many charts (data overload)</p>
+<p>❌ Charts without clear interpretation</p>
+<p>❌ Misleading visualizations that damage credibility</p>
+<p>❌ Overly complex charts that confuse rather than clarify</p>
+<p><strong>Recommendation:</strong> Plan your data strategy now. What data do you need? How will you visualize it?</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"In 4 weeks, you'll be presenting to the class. Start thinking now about your data strategy."</li>
+<li>Data visualization can make or break a business presentation</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Most presentation topics need data</strong>: Even if not obvious at first</li>
+<ul class="nested-list">
+<li>Example: "Digital marketing strategy" → needs data on market size, audience demographics, ROI</li>
+<li>Example: "Workplace diversity" → needs data on current state, benefits, best practices</li>
+</ul>
+<li><strong>Quality over quantity</strong>: Better to have 2-3 excellent charts than 10 mediocre ones</li>
+<li><strong>Always interpret</strong>: Never show a chart without explaining what it means</li>
+<li><strong>Credibility risk</strong>: One misleading chart can undermine entire presentation</li>
+</ul>
+<p><strong>Planning Advice:</strong></p>
+<ul>
+<li>This week or next: Identify what data you'll need</li>
+<li>Week 8-9: Create and refine your visualizations</li>
+<li>Week 10: Finalize slides with data integrated into narrative</li>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Vietnamese business presentations sometimes use excessive data/charts</li>
+<li>International best practice: selective data that supports specific claims</li>
+<li>Think: "What's the minimum data needed to make my point convincingly?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at all the sources we've referenced today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="19">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p>Berinato, S. (2016). Visualizations that really work. <em>Harvard Business Review, 94</em>(6), 92-100. https://hbr.org/2016/06/visualizations-that-really-work</p>
+<p>Medina, J. (2014). <em>Brain rules: 12 principles for surviving and thriving at work, home, and school</em>. Pear Press.</p>
+<p>Rougier, N. P., Droettboom, M., & Bourne, P. E. (2014). Ten simple rules for better figures. <em>PLOS Computational Biology, 10</em>(9), e1003833. https://doi.org/10.1371/journal.pcbi.1003833</p>
+<p>Vietnam E-Commerce Association (VECOM). (2024). <em>Vietnam e-commerce report 2024</em>. Retrieved from https://www.vecom.vn</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Key Points:</strong></p>
+<ul>
+<li>All sources are openly accessible online</li>
+<li>Berinato (HBR 2016) and Rougier et al. (PLOS 2014) are your required readings</li>
+<li>Vietnam E-Commerce Association report provides current local market data</li>
+</ul>
+<p><strong>For Students:</strong></p>
+<ul>
+<li>Re-read these articles before creating visualizations for your presentation</li>
+<li>Rougier et al.'s "Ten Simple Rules" is a checklist you can use</li>
+<li>Berinato's HBR article provides the chart selection framework</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Thank you for your attention. See you in tutorial for hands-on practice!"</li>
+</ul>
+<p>---</p>
+<p><strong>END OF LECTURE</strong></p>
+<p>---</p>
+<p>## LECTURE STATISTICS</p>
+<p><strong>Total Slides:</strong> 19</p>
+<p><strong>Estimated Duration:</strong> 75 minutes (including breaks and discussions)</p>
+<p><strong>Layout Variety:</strong></p>
+<ul>
+<li>Section breaks: 4 (marking core concepts for quiz mapping)</li>
+<li>Framework slides: 2 (Act structure, Chart selection)</li>
+<li>Dark slides: 2 (Vietnamese e-commerce case, Misleading viz example)</li>
+<li>Vocab table: 1</li>
+<li>Objectives slide: 1</li>
+<li>Comparison table: 1</li>
+<li>References: 1</li>
+<li>Standard content: 9 (47%)</li>
+</ul>
+<p><strong>Core Concepts for Quiz Mapping:</strong></p>
+<ol>
+<li>Data Storytelling Fundamentals (Setup-Conflict-Resolution)</li>
+<li>Chart Selection Framework (Comparison, Composition, Distribution, Correlation)</li>
+<li>Design Principles (Ten Simple Rules)</li>
+<li>Avoiding Misleading Visualizations (Ethics)</li>
+</ol>
+<p><strong>Citations:</strong></p>
+<ul>
+<li>4 full references (Berinato, Medina, Rougier et al., VECOM)</li>
+<li>Multiple inline citations throughout</li>
+<li>All sources openly accessible</li>
+</ul>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

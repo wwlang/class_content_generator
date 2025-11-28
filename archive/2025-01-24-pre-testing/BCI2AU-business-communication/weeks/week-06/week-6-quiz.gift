@@ -1,0 +1,75 @@
+// Week 6 Quiz: Tutorial: Crisis & Incident Communication
+// Generated from tutorial quiz practice questions
+// Questions: 10
+
+$CATEGORY: Week 6
+
+::Crisis Definition::According to lecture, what are the THREE essential characteristics that define a business crisis?{
+=Threat to organization, surprise element, short decision time #Lecture defined a crisis using exactly these three characteristics\: (1) Threat to organization - significant potential for negative consequences; (2) Surprise element - often unexpected with limited decision time; (3) Short decision time - requires rapid response. This definition was presented on Slide 7 with the formula "Crisis \= Threat + Surprise + Short Time."
+~Financial loss, media attention, stakeholder anger #These are potential OUTCOMES of crises, not defining characteristics. Not all crises involve financial loss or media attention.
+~Legal liability, reputation damage, employee turnover #These are consequences, not defining features. Crises can occur without legal liability or employee turnover.
+~Social media backlash, customer complaints, competitor attacks #These are modern crisis manifestations, but don't define what makes something a crisis vs. a regular problem.
+}
+
+::Argenti's Framework::Which of Argenti's crisis communication principles states that internal employee communication must precede all external announcements?{
+~Get on the Scene #"Get on the Scene" refers to leadership visibility during crises, not communication sequencing.
+~Choose Your Channels Carefully #"Choose Your Channels Carefully" is about using multiple communication channels (voice mail, website, social media), not who to communicate with first.
+=Communicate with Employees First #Argenti's Principle 3 explicitly states "Communicate with Employees First" - internal employee communication must precede all external announcements. This was emphasized on Slide 9 and reinforced throughout lecture with the quote "Organizations face 'a human crisis' requiring focus on people before customers or investors."
+~Have a Plan in Place #"Have a Plan in Place" refers to crisis preparedness (contingency sites, backup communication infrastructure), not communication order.
+}
+
+::Speed Expectations::According to the American Red Cross research cited in lecture, what percentage of people expect organizations to respond within ONE HOUR on social media during a crisis?{
+~45%
+~58%
+~69%
+=74% #Lecture Slide 11 featured this exact statistic from American Red Cross (2012)\: "74% of people expect organizations to respond within ONE HOUR on social media during a crisis." This was the big number slide emphasizing the collapse of the "golden hour."
+}
+
+::Three Pillars::The Three Pillars of effective crisis response are\:{
+~Planning, Execution, Evaluation #These are crisis management phases, not the Three Pillars of response quality.
+=Speed, Accuracy, Empathy #The Three Pillars framework was presented on Slide 13\: Speed (respond within 15-30 minutes), Accuracy (share only verified information), and Empathy (show genuine care for those affected). Lecture emphasized all three are REQUIRED, not optional.
+~Internal, External, Media #These are stakeholder categories, not response pillars.
+~Acknowledgment, Action, Apology #These are elements of crisis messages, but not the Three Pillars framework from lecture.
+}
+
+::Tiered Response::In the tiered response approach, what is the purpose of the "holding statement" issued within 5-15 minutes?{
+~To provide complete details about the crisis and resolution plan #Complete details come in medium-term response (24-48 hours), not holding statement. The point of holding statement is you DON'T have complete info yet.
+=To acknowledge the situation and commit to providing updates #Lecture Slide 12 explained tiered response\: "Immediate (5-15 min)\: Holding statement - 'We're aware and investigating.'" Purpose is to ACKNOWLEDGE the situation and COMMIT to providing updates, not to provide complete details (that comes in later tiers).
+~To assign blame and take full responsibility for the crisis #Assigning blame and taking full responsibility is not appropriate for a holding statement issued within 15 minutes - you haven't investigated yet.
+~To announce the crisis has been resolved #Announcing resolution happens only after crisis is actually resolved, which is not within 15 minutes.
+}
+
+::Stakeholder Prioritization::According to Argenti's research on crisis communication, which stakeholder group should receive crisis communication FIRST?{
+~Customers and clients #Customers are external stakeholders - they come AFTER employees.
+~Media and press #Media are external stakeholders - definitely after employees.
+=Employees and internal staff #Argenti's Principle 3 (Slide 9)\: "Communicate with Employees First - Internal communication must precede external statements." Slide 16 reinforced\: "Priority Rule\: Communicate with internal stakeholders FIRST, before external announcements (Argenti, 2002)."
+~Investors and shareholders #Investors are external stakeholders - after employees.
+}
+
+::Vietnamese Context::According to research cited in lecture (EloQ, 2021), what is the least-used crisis communication strategy among Vietnamese organizations?{
+~Social media monitoring #Social media monitoring wasn't identified as least-used (though lecture noted Vietnamese companies often lack 24/7 monitoring).
+~Press releases #Press releases are commonly used by Vietnamese companies (lecture noted they use press releases but forget social media).
+=Apology #Slide 19 (Vietnamese Context) quoted EloQ (2021) research\: "Apology is the least-used strategy among Vietnamese organizations. Companies tend to ignore crises hoping they will fade away, but social media prevents this approach from working."
+~Legal consultation #Legal consultation wasn't discussed as least-used strategy.
+}
+
+::Social Media Crisis Management::Which of the following is considered a crisis communication BEST PRACTICE for social media management?{
+~Delete negative comments to control the narrative #Slide 18 explicitly said "Don't delete negative comments (shows you're hiding)." Deletion creates screenshot evidence and proves guilt.
+~Wait until you have complete information before responding on social media #This violates speed principle - you should issue holding statement within 15 minutes, not wait for complete information.
+=Respond publicly AND privately (DMs for individual concerns) #Slide 18 (Social Media Crisis Management) listed best practices, including\: "Respond publicly AND privately (DMs for individual concerns)." This balances transparency (public response) with personalized support (private DMs).
+~Limit social media updates to once per day to avoid overwhelming followers #During crisis, more frequent updates are better (every 1-3 hours in active crisis phase), not once per day.
+}
+
+::Crisis Types::A Vietnamese restaurant discovers food contamination in one of its dishes and receives social media backlash when customers post photos online. This crisis spans which TWO categories?{
+~Technological and Financial #No technological or financial elements in this scenario.
+=Product/Service Failure and Reputational #Slide 8 defined six crisis categories. Food contamination \= Product/Service Failure crisis. Social media backlash \= Reputational crisis. Lecture emphasized\: "One crisis type can span multiple categories. Example\: Data breach (technological) quickly becomes reputational crisis."
+~Human Resource and Natural Disaster #No human resource issue (not employee-related) or natural disaster (not external force).
+~Financial and Human Resource #No financial crisis or HR crisis.
+}
+
+::Post-Crisis Communication::According to lecture, when should post-crisis stakeholder communication (closing the loop) occur?{
+~Immediately when the crisis is resolved (same day) #Immediately (same day) is too soon - you haven't had time for proper analysis and learning.
+=Within 1-2 weeks of resolution #Slide 22 specified\: "Timeline\: Post-crisis communication should occur within 1-2 weeks of resolution (while still relevant) but after immediate urgency passes."
+~One month after resolution #One month is too late - stakeholders have moved on, communication loses relevance.
+~Only if stakeholders request it #Waiting for stakeholders to request it is passive - you should proactively close the loop.
+}

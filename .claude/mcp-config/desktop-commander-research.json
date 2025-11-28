@@ -1,0 +1,32 @@
+{
+  "$schema": "https://modelcontextprotocol.io/schema/mcp-config.json",
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/YOUR_USERNAME/Projects/class_content_generator/courses"
+      ],
+      "description": "Filesystem access for course research import automation",
+      "allowed_operations": ["read", "write", "list"],
+      "notes": [
+        "Replace YOUR_USERNAME with your actual macOS username",
+        "This grants Claude Desktop access to write research files directly to course directories",
+        "Scoped to 'courses/' directory only for security",
+        "Requires user approval for each file write operation"
+      ]
+    }
+  },
+  "configuration_guide": {
+    "step_1": "Replace YOUR_USERNAME in the path with your actual username",
+    "step_2": "Add this configuration to Claude Desktop's MCP settings",
+    "step_3": "Restart Claude Desktop to apply changes",
+    "step_4": "Test by asking Claude Desktop to list files in courses/ directory",
+    "troubleshooting": {
+      "permission_denied": "Check that the path exists and is readable",
+      "npx_not_found": "Install Node.js from nodejs.org",
+      "desktop_commander_not_working": "Ensure Desktop Commander MCP is installed separately"
+    }
+  }
+}

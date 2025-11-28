@@ -1,0 +1,75 @@
+// Week 10 Quiz 3: Weeks 7-9 Review
+// Course: Business Communication (BCI2AU)
+// Coverage: Data Storytelling & Visualization (Week 7), Business Reports & Executive Communication (Week 8), Presentations Part I - Design & Structure (Week 9)
+// Format: GIFT (Moodle import format)
+// Questions: 10 multiple choice
+
+::Q1 - Data Storytelling Arc::According to the data storytelling framework, what are the three essential components of a data narrative?{
+~Introduction, body, conclusion
+=Setup, conflict, resolution #Correct! The data storytelling arc follows narrative structure\: Setup (context and baseline), Conflict (the problem or change revealed by data), and Resolution (what the data tells us to do or conclude).
+~Problem, analysis, recommendation #This is standard business structure but not specific to the data storytelling arc framework taught in Week 7.
+~Context, data, interpretation #These are elements of data presentation but not the storytelling arc framework that uses narrative tension.
+}
+
+::Q2 - Chart Selection::Which chart type is most appropriate for showing how a single value (like revenue) changes over time?{
+~Pie chart #Pie charts show parts of a whole at a single point in time, not change over time.
+~Scatter plot #Scatter plots show relationships between two variables (correlation), not change over time.
+=Line chart #Correct! Line charts are specifically designed to show trends over time. The continuous line emphasizes the progression and direction of change.
+~Bar chart #Bar charts CAN show change over time but line charts better emphasize continuous trends and are optimal for time series data.
+}
+
+::Q3 - Misleading Visualizations::What visualization technique is most commonly used to mislead audiences?{
+~Using too many colors #This is a poor design choice that creates clutter, but it doesn't actively mislead audiences about the data.
+=Manipulating the Y-axis scale #Correct! Truncating or manipulating the Y-axis scale can exaggerate small changes to appear dramatic. For example, starting the Y-axis at 95 instead of 0 makes a change from 96 to 98 look huge.
+~Including too much data #This reduces clarity but doesn't actively deceive the audience about what the data shows.
+~Using 3D effects #While 3D effects can distort perception, axis manipulation is the most common technique used to intentionally mislead.
+}
+
+::Q4 - Accessibility in Data Visualization::Why is color choice important for accessibility in data visualizations?{
+~It makes charts look more professional #While true, this is not the accessibility reason for careful color choice.
+~Color is easier to remember than shapes #This is not necessarily true and is not the primary accessibility concern.
+=Approximately 8% of men have color vision deficiency #Correct! About 8% of men (and 0.5% of women) have color vision deficiency, most commonly red-green. Using color alone to convey information excludes these users. You must use patterns, labels, or shapes in addition to color.
+~Color attracts more attention than black and white #This may be true but is not the accessibility reason for careful color choice.
+}
+
+::Q5 - Executive Summary Purpose::According to the Purpose-Person-Point framework (Week 8), what should an executive summary do FIRST?{
+~Provide detailed methodology #Methodology goes in the appendix or body of the report, not in the executive summary opening.
+=State the main conclusion or recommendation #Correct! The Purpose-Person-Point framework emphasizes starting with the bottom line because executives are busy and need to know "what should I do?" immediately. Don't bury your conclusion on page 12.
+~Give background context #Brief context may be included but should come AFTER stating the main conclusion.
+~List all findings #Key findings are included in the executive summary but should come AFTER the main conclusion is stated.
+}
+
+::Q6 - Technical Writing for Non-Technical Audiences::When writing technical information for non-technical audiences (Week 8), what should you do?{
+=Use simpler words and explain jargon #Correct! Technical writing for non-technical audiences requires translating jargon into plain language and explaining necessary technical terms. The goal is comprehension, not education in the technical field.
+~Include all technical details so they can learn #This overwhelms non-technical readers and defeats the communication purpose.
+~Avoid data and focus only on stories #Data is important but must be presented accessibly using charts, analogies, and plain language explanations.
+~Write the same way but add a glossary #A glossary helps but doesn't solve the problem of dense technical prose that non-technical readers can't understand.
+}
+
+::Q7 - Document Visual Hierarchy::What is the purpose of visual hierarchy in business reports (Week 8)?{
+~To make documents look more professional #While visual hierarchy does make documents look professional, this is a side benefit, not the primary purpose.
+=To guide readers' attention to most important information #Correct! Visual hierarchy uses size, weight, color, and position to signal importance and guide the reader's eye to key information first. Headers, bold text, and white space all create hierarchy.
+~To fill white space on the page #This is the opposite - white space is PART of visual hierarchy that gives readers' eyes rest and makes content scannable.
+~To meet formatting requirements #Formatting requirements don't explain WHY visual hierarchy matters for communication effectiveness.
+}
+
+::Q8 - Nancy Duarte Presentation Structure::According to Nancy Duarte's "What is / What could be" structure (Week 9), what creates tension in a presentation?{
+~Using complex data #Complex data can confuse audiences but doesn't create the motivating tension Duarte describes.
+=Contrasting current reality with future possibility #Correct! Duarte's structure alternates between "what is" (current unsatisfactory reality) and "what could be" (better future state). This contrast creates emotional tension that motivates the audience to embrace the change or solution being proposed.
+~Asking the audience questions #Questions engage the audience but aren't the core mechanism of Duarte's structure.
+~Showing problems without solutions #This shows problems but doesn't show possibility (which is the other half of Duarte's framework needed to create tension).
+}
+
+::Q9 - Rule of Three in Presentations::Why is the "rule of three" effective in presentations (Week 9)?{
+~Three is the lucky number in most cultures #While three may have cultural significance, this is not the cognitive science reason the rule of three works.
+=Human brain naturally organizes information in groups of three #Correct! Cognitive research shows people naturally remember and process information in groups of three. "Three main points" is easier to recall than two or four. Examples include "Life, liberty, and the pursuit of happiness" or "Stop, drop, and roll."
+~Presentations should be exactly three parts #This is a misinterpretation - the rule of three is about content grouping, not strict structural requirements.
+~Three slides per minute is the optimal pace #This is not related to the rule of three concept, which is about content organization and memory.
+}
+
+::Q10 - Avoiding Death by PowerPoint::Which slide design principle helps avoid "Death by PowerPoint" (Week 9)?{
+~Use at least 10 bullet points per slide #This is the opposite of best practice and causes cognitive overload.
+~Read slides verbatim so audience doesn't miss anything #"Death by PowerPoint" IS when presenters read slides verbatim - this is what to avoid.
+=Minimize text - slides support, not replace, your spoken words #Correct! Slides should complement spoken words, not duplicate them. Too much text causes cognitive overload (audience can read OR listen, but can't do both). Minimal text + visuals + spoken explanation \= effective presentation.
+~Include detailed paragraphs for people who weren't at the presentation #That's what a handout is for - it should be separate from presentation slides, which need to be visual and minimal.
+}

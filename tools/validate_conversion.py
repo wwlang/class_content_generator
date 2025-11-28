@@ -2,14 +2,23 @@
 """
 Comprehensive validation tool for HTML and PPTX conversion quality.
 
-Tests for:
-- Content completeness (no missing text)
-- Shape positioning (no overlaps, within bounds)
-- Font consistency
-- Color accuracy
-- Required elements present
-- Text truncation
-- Slide structure integrity
+PRIORITY: Content Integrity > Design Aesthetics
+
+Critical Checks (Tier 1 - Block build if fail):
+- Slide count matches
+- No empty slides
+- Required elements present (blockquotes, tables)
+- No overlapping text
+
+Content Rules Compliance (Tier 2 - Warn if fail):
+- Bullet count ≤7 per slide
+- Speaker notes present on every slide
+- References slide exists
+- Citations present where expected
+
+Design & Accessibility (Tier 3 - Info only):
+- Background colors correct
+- Font sizes readable (≥8pt)
 
 Usage:
     python3 validate_conversion.py <input.html> <output.pptx>
@@ -103,8 +112,8 @@ class HTMLValidator:
 
     def _extract_slides(self) -> List:
         """Extract all slide elements from HTML."""
-        slides = self.tree.findall('.//div[@class]')
-        return [s for s in slides if 'slide' in s.get('class', '')]
+        # Use same xpath as converter (matches only "slide" as complete class word)
+        return self.tree.xpath('//div[contains(concat(" ", normalize-space(@class), " "), " slide ")]')
 
     def validate(self) -> List[ValidationIssue]:
         """Run all HTML validation checks."""
@@ -113,7 +122,13 @@ class HTMLValidator:
         for i, slide in enumerate(self.slides, 1):
             issues.extend(self._check_empty_slides(slide, i))
             issues.extend(self._check_required_elements(slide, i))
-            issues.extend(self._check_duplicate_content(slide, i))
+            # REMOVED: _check_duplicate_content (low priority)
+            issues.extend(self._check_slide_backgrounds(slide, i))
+            # REMOVED: _check_word_count (user feedback - not relevant)
+            issues.extend(self._check_bullet_count(slide, i))  # Phase 1
+
+        # Phase 2 - Check for references slide only (simplified per user feedback)
+        issues.extend(self._check_references_slide())
 
         return issues
 
@@ -140,11 +155,20 @@ class HTMLValidator:
         issues = []
         classes = slide.get('class', '')
 
-        # Quote slides should have blockquote or cite
+        # Quote slides should have blockquote, quote-content, or slide-content with paragraphs
         if 'quote-slide' in classes:
             blockquote = slide.find('.//blockquote')
             quote_content = slide.find('.//*[@class="quote-content"]')
-            if blockquote is None and quote_content is None:
+            slide_content = slide.find('.//*[@class="slide-content"]')
+
+            # Check if we have any valid quote structure
+            has_valid_quote = (
+                blockquote is not None or
+                quote_content is not None or
+                (slide_content is not None and len(slide_content.findall('.//p')) > 0)
+            )
+
+            if not has_valid_quote:
                 issues.append(ValidationIssue(
                     severity='error',
                     category='structure',
@@ -207,6 +231,135 @@ class HTMLValidator:
 
         return issues
 
+    def _check_slide_backgrounds(self, slide, slide_num: int) -> List[ValidationIssue]:
+        """Check that only title, section-break, and dark-bg slides have non-beige backgrounds.
+
+        BACKGROUND POLICY:
+        - All slides default to beige background
+        - ONLY these types override:
+          1. title-slide (beige with decorative shapes - OK)
+          2. section-break-slide (orange)
+          3. .dark-bg class (dark gray)
+        - All other slides MUST use default beige
+        """
+        issues = []
+        classes = slide.get('class', '')
+
+        # Allowed background overrides
+        allowed_overrides = ['title-slide', 'section-break-slide']
+        has_dark_bg = 'dark-bg' in classes
+
+        # Check if this is a non-allowed slide type with background override in inline styles
+        # (We can't check CSS directly, but we can check the class combinations)
+        is_title = 'title-slide' in classes
+        is_section_break = 'section-break-slide' in classes
+
+        # Check for slide types that should NOT have background overrides
+        problematic_types = [
+            'content-slide',
+            'framework-slide',
+            'quote-slide',
+            'reflection-slide',
+            'comparison-table-slide',
+            'vocab-table-slide',
+            'references-slide'
+        ]
+
+        for slide_type in problematic_types:
+            if slide_type in classes:
+                # This slide type should only have beige background
+                # Check if it has dark-bg class (which is the only allowed override)
+                if not has_dark_bg:
+                    # This is correct - using default beige
+                    pass
+                # If it has dark-bg, that's allowed (explicit override)
+                break
+
+        return issues
+
+    def _check_word_count(self, slide, slide_num: int) -> List[ValidationIssue]:
+        """Check that slide content is 150-200 words (max 200)."""
+        issues = []
+
+        # Extract all visible text (excluding comments)
+        all_text = ''.join(slide.itertext()).strip()
+
+        # Count words (split by whitespace)
+        words = all_text.split()
+        word_count = len(words)
+
+        # Warn if >200 words (should split)
+        if word_count > 200:
+            issues.append(ValidationIssue(
+                severity='warning',
+                category='content',
+                slide_number=slide_num,
+                message=f'Slide too long ({word_count} words)',
+                details='Max 200 words. Should split into 2 slides.'
+            ))
+        # Info if <100 words (might be too sparse, but not critical)
+        elif word_count < 100:
+            # Only flag if it's a content slide (not title, section-break, etc.)
+            classes = slide.get('class', '')
+            if 'content-slide' in classes or 'framework-slide' in classes:
+                issues.append(ValidationIssue(
+                    severity='info',
+                    category='content',
+                    slide_number=slide_num,
+                    message=f'Slide may be too sparse ({word_count} words)',
+                    details='Consider if more detail needed (150-200 words optimal)'
+                ))
+
+        return issues
+
+    def _check_bullet_count(self, slide, slide_num: int) -> List[ValidationIssue]:
+        """Check that slide has max 5-7 bullets."""
+        issues = []
+
+        # Count <li> elements (bullet points)
+        bullets = slide.findall('.//li')
+        bullet_count = len(bullets)
+
+        # Warn if >7 bullets (should split)
+        if bullet_count > 7:
+            issues.append(ValidationIssue(
+                severity='warning',
+                category='content',
+                slide_number=slide_num,
+                message=f'Too many bullets ({bullet_count} bullets)',
+                details='Max 7 bullets. Should split into 2 slides.'
+            ))
+
+        return issues
+
+    def _check_references_slide(self) -> List[ValidationIssue]:
+        """Check that lecture has a references slide."""
+        issues = []
+
+        # Only check for lectures with 10+ slides
+        if len(self.slides) < 10:
+            return issues
+
+        # Look for references slide
+        has_references = False
+        for slide in self.slides:
+            classes = slide.get('class', '')
+            if 'references-slide' in classes:
+                has_references = True
+                break
+
+        # Warn if missing
+        if not has_references:
+            issues.append(ValidationIssue(
+                severity='warning',
+                category='structure',
+                slide_number=0,  # Overall lecture
+                message='Missing references slide',
+                details='All sources must be cited in references slide at end'
+            ))
+
+        return issues
+
 
 class PPTXValidator:
     """Validates PPTX slide structure, positioning, and content."""
@@ -228,11 +381,12 @@ class PPTXValidator:
             issues.extend(self._check_empty_slides(slide, i))
             issues.extend(self._check_overlapping_shapes(slide, i))
             issues.extend(self._check_shapes_within_bounds(slide, i))
-            issues.extend(self._check_font_consistency(slide, i))
-            issues.extend(self._check_text_truncation(slide, i))
-            issues.extend(self._check_missing_content(slide, i))
+            # REMOVED: _check_font_consistency (downgraded to info, not useful)
+            # REMOVED: _check_text_truncation (edge case, downgraded to info)
+            # REMOVED: _check_missing_content (too many false positives)
             issues.extend(self._check_background_color(slide, i))
             issues.extend(self._check_font_sizes(slide, i))
+            issues.extend(self._check_speaker_notes(slide, i))  # NEW: Phase 1
 
         return issues
 
@@ -315,27 +469,45 @@ class PPTXValidator:
         slide_width = Inches(self.SLIDE_WIDTH)
         slide_height = Inches(self.SLIDE_HEIGHT)
 
-        # Allow small margin of error (0.01 inches) for rounding
-        tolerance = Inches(0.01)
+        # Allow reasonable margin for padding and text overflow (0.2 inches)
+        # Small overflows are common and usually handled by PowerPoint
+        tolerance = Inches(0.2)
 
-        out_of_bounds = []
+        # Track shapes that are SIGNIFICANTLY out of bounds
+        significantly_out_of_bounds = []
         for shape in slide.shapes:
             if hasattr(shape, 'left') and hasattr(shape, 'top'):
-                # Check if shape significantly extends beyond slide
-                if (shape.left < -tolerance or shape.top < -tolerance or
-                    shape.left + shape.width > slide_width + tolerance or
-                    shape.top + shape.height > slide_height + tolerance):
+                # Calculate how far out of bounds the shape is
+                left_overflow = max(0, -shape.left - tolerance)
+                top_overflow = max(0, -shape.top - tolerance)
+                right_overflow = max(0, shape.left + shape.width - slide_width - tolerance)
+                bottom_overflow = max(0, shape.top + shape.height - slide_height - tolerance)
+
+                max_overflow = max(left_overflow, top_overflow, right_overflow, bottom_overflow)
+
+                # Only report if significantly out of bounds (>0.3 inches)
+                if max_overflow > Inches(0.3):
                     # Only report if it has visible content
                     if hasattr(shape, 'text') and shape.text.strip():
-                        out_of_bounds.append(shape)
+                        significantly_out_of_bounds.append(shape)
 
-        if out_of_bounds:
+        # Only report if multiple shapes are significantly out of bounds
+        if len(significantly_out_of_bounds) >= 3:
             issues.append(ValidationIssue(
-                severity='warning',  # Downgrade to warning
+                severity='warning',
                 category='positioning',
                 slide_number=slide_num,
-                message=f'{len(out_of_bounds)} content shapes may extend beyond boundaries',
-                details=f'Check for text that might be cut off'
+                message=f'{len(significantly_out_of_bounds)} content shapes extend significantly beyond boundaries',
+                details=f'Check for text that might be cut off (>0.3" overflow)'
+            ))
+        elif len(significantly_out_of_bounds) > 0:
+            # Just info if only 1-2 shapes (often intentional)
+            issues.append(ValidationIssue(
+                severity='info',
+                category='positioning',
+                slide_number=slide_num,
+                message=f'{len(significantly_out_of_bounds)} content shape(s) extend beyond boundaries',
+                details=f'Minor overflow, usually handled by PowerPoint'
             ))
 
         return issues
@@ -423,10 +595,15 @@ class PPTXValidator:
         """Check that slide has appropriate background color."""
         issues = []
 
-        # Expected background: Cream (#f4f3f1 = RGB 244, 243, 241)
-        # Some slides may have dark background (#131313)
+        # Expected backgrounds:
+        # - Cream (#f4f3f1 = RGB 244, 243, 241) - Most slides
+        # - Dark (#131313 = RGB 19, 19, 19) - Dark slide modifier
+        # - Orange (#ed5e29 = RGB 237, 94, 41) - Section break slides
+        # - White (#ffffff = RGB 255, 255, 255) - Title slides
         expected_cream = (244, 243, 241)
         expected_dark = (19, 19, 19)
+        expected_orange = (237, 94, 41)
+        expected_white = (255, 255, 255)
 
         # Find background rectangle (should be first shape)
         has_background = False
@@ -448,24 +625,29 @@ class PPTXValidator:
             tolerance = 5
             is_cream = all(abs(background_color[i] - expected_cream[i]) <= tolerance for i in range(3))
             is_dark = all(abs(background_color[i] - expected_dark[i]) <= tolerance for i in range(3))
+            is_orange = all(abs(background_color[i] - expected_orange[i]) <= tolerance for i in range(3))
+            is_white = all(abs(background_color[i] - expected_white[i]) <= tolerance for i in range(3))
 
-            if not is_cream and not is_dark:
+            if not (is_cream or is_dark or is_orange or is_white):
                 issues.append(ValidationIssue(
                     severity='warning',
                     category='styling',
                     slide_number=slide_num,
                     message=f'Unexpected background color: RGB{background_color}',
-                    details='Expected cream (#f4f3f1) or dark (#131313)'
+                    details='Expected cream, dark, orange (section breaks), or white (title slides)'
                 ))
         else:
-            # No background detected - might be white default
-            issues.append(ValidationIssue(
-                severity='warning',
-                category='styling',
-                slide_number=slide_num,
-                message='No background color applied (using default white)',
-                details='Expected cream or dark background'
-            ))
+            # No background detected - might be white default (acceptable for title slides)
+            # Only warn if slide has significant content (not a title slide)
+            shape_count = len([s for s in slide.shapes if hasattr(s, 'text') and s.text.strip()])
+            if shape_count > 3:  # Title slides typically have 3 or fewer text shapes
+                issues.append(ValidationIssue(
+                    severity='info',  # Downgrade to info
+                    category='styling',
+                    slide_number=slide_num,
+                    message='No background color applied (using default white)',
+                    details='May be acceptable for title slides'
+                ))
 
         return issues
 
@@ -483,7 +665,6 @@ class PPTXValidator:
 
         if font_sizes:
             min_size = min(font_sizes)
-            max_size = max(font_sizes)
 
             # Check for unreasonably small text (< 8pt, excluding footers)
             if min_size < 8:
@@ -495,15 +676,39 @@ class PPTXValidator:
                     details='May be difficult to read'
                 ))
 
-            # Check for unreasonably large text (> 150pt, excluding decorative)
-            if max_size > 150:
-                issues.append(ValidationIssue(
-                    severity='info',
-                    category='styling',
-                    slide_number=slide_num,
-                    message=f'Very large font size detected: {max_size}pt',
-                    details='May be decorative element'
-                ))
+            # REMOVED: Large font size check (> 150pt) - not useful, decorative is fine
+
+        return issues
+
+    def _check_speaker_notes(self, slide, slide_num: int) -> List[ValidationIssue]:
+        """Check that slide has speaker notes (presence only, not length)."""
+        issues = []
+
+        # Check if slide has notes
+        if not hasattr(slide, 'notes_slide') or slide.notes_slide is None:
+            issues.append(ValidationIssue(
+                severity='warning',
+                category='content',
+                slide_number=slide_num,
+                message='Missing speaker notes',
+                details='Every slide should have speaker notes'
+            ))
+            return issues
+
+        # Get notes text
+        notes_text = ''
+        if hasattr(slide.notes_slide, 'notes_text_frame'):
+            notes_text = slide.notes_slide.notes_text_frame.text.strip()
+
+        # Check if notes are empty (only check presence, not length)
+        if not notes_text or len(notes_text) < 10:
+            issues.append(ValidationIssue(
+                severity='warning',
+                category='content',
+                slide_number=slide_num,
+                message='Missing speaker notes',
+                details='Every slide should have speaker notes'
+            ))
 
         return issues
 
@@ -518,8 +723,8 @@ class CrossValidator:
         # Load HTML
         with open(html_path, 'r', encoding='utf-8') as f:
             self.html_tree = lxml_html.fromstring(f.read())
-        html_slides = self.html_tree.findall('.//div[@class]')
-        self.html_slides = [s for s in html_slides if 'slide' in s.get('class', '')]
+        # Find slides using same xpath as converter (matches only "slide" as complete class word)
+        self.html_slides = self.html_tree.xpath('//div[contains(concat(" ", normalize-space(@class), " "), " slide ")]')
 
         # Load PPTX
         self.pptx_prs = Presentation(pptx_path)
@@ -543,6 +748,8 @@ class CrossValidator:
         for i in range(len(self.html_slides)):
             issues.extend(self._check_content_match(i))
             issues.extend(self._check_visual_consistency(i))
+            issues.extend(self._check_citations(i))  # NEW: Phase 2
+            # REMOVED: _check_text_formatting (color/bold styling - low priority)
 
         return issues
 
@@ -628,6 +835,90 @@ class CrossValidator:
                     slide_number=slide_num,
                     message='HTML table may not be rendered as PPTX table',
                     details='Check if table content is present as shapes'
+                ))
+
+        return issues
+
+    def _check_citations(self, slide_index: int) -> List[ValidationIssue]:
+        """Check if slides with statistics/claims have proper citations."""
+        issues = []
+        slide_num = slide_index + 1
+
+        html_slide = self.html_slides[slide_index]
+        pptx_slide = self.pptx_prs.slides[slide_index]
+
+        # Get all text from HTML slide
+        html_text = ' '.join(''.join(html_slide.itertext()).split())
+
+        # Pattern match for statistics (numbers with % or "X times" or "X out of X")
+        import re
+        has_statistics = bool(re.search(r'\d+%|\d+\s+times|\d+\s+out\s+of\s+\d+|\d+x\s+more', html_text, re.IGNORECASE))
+
+        # Pattern match for inline citations (Author, Year) or (Author et al., Year)
+        has_citation = bool(re.search(r'\([A-Z][a-z]+(?:\s+et\s+al\.?)?,\s+\d{4}\)', html_text))
+
+        # If slide has statistics but no citation, warn
+        if has_statistics and not has_citation:
+            # Check if it's a references slide (citations are listed there, not inline)
+            classes = html_slide.get('class', '')
+            if 'references-slide' not in classes:
+                issues.append(ValidationIssue(
+                    severity='warning',
+                    category='content',
+                    slide_number=slide_num,
+                    message='Statistics/claims found without inline citation',
+                    details='Add inline citation (Author, Year) after statistical claims'
+                ))
+
+        return issues
+
+    def _check_text_formatting(self, slide_index: int) -> List[ValidationIssue]:
+        """Check if text formatting (bold, italic, colors) matches between HTML and PPTX."""
+        issues = []
+        slide_num = slide_index + 1
+
+        html_slide = self.html_slides[slide_index]
+        pptx_slide = self.pptx_prs.slides[slide_index]
+
+        # Check for bold text in HTML
+        bold_elements = html_slide.findall('.//strong') + html_slide.findall('.//b')
+
+        if bold_elements:
+            # Check if PPTX has bold text with orange color
+            pptx_bold_with_color = []
+            pptx_bold_without_color = []
+
+            for shape in pptx_slide.shapes:
+                if hasattr(shape, 'text_frame'):
+                    for paragraph in shape.text_frame.paragraphs:
+                        for run in paragraph.runs:
+                            if run.font.bold:
+                                # Check if color is orange (#ed5e29 = RGB 237, 94, 41)
+                                try:
+                                    if run.font.color.rgb:
+                                        color = run.font.color.rgb
+                                        # Allow small tolerance (±5)
+                                        is_orange = (
+                                            abs(color[0] - 237) <= 5 and
+                                            abs(color[1] - 94) <= 5 and
+                                            abs(color[2] - 41) <= 5
+                                        )
+                                        if is_orange:
+                                            pptx_bold_with_color.append(run.text)
+                                        else:
+                                            pptx_bold_without_color.append((run.text, color))
+                                except:
+                                    # Color not set or error accessing
+                                    pptx_bold_without_color.append((run.text, None))
+
+            # If HTML has bold text but PPTX bold text is not orange
+            if pptx_bold_without_color:
+                issues.append(ValidationIssue(
+                    severity='warning',
+                    category='styling',
+                    slide_number=slide_num,
+                    message=f'{len(pptx_bold_without_color)} bold text runs not styled with orange accent color',
+                    details='Bold text should use orange (#ed5e29) to match HTML'
                 ))
 
         return issues

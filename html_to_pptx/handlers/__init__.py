@@ -10,6 +10,13 @@ from .title import TitleSlideHandler
 from .section import SectionBreakHandler
 from .big_number import BigNumberSlideHandler
 from .content import ContentSlideHandler
+from .quote_handler import QuoteSlideHandler
+from .framework_handler import FrameworkSlideHandler
+from .table_handler import VocabTableSlideHandler, ComparisonTableSlideHandler
+from .references_handler import ReferencesSlideHandler
+from .objectives_handler import ObjectivesSlideHandler
+from .checklist_handler import ChecklistSlideHandler
+from .reflection_handler import ReflectionSlideHandler
 
 
 def create_handler_registry(converter):
@@ -28,7 +35,15 @@ def create_handler_registry(converter):
 
     # Register handlers (will be sorted by priority automatically)
     registry.register(TitleSlideHandler, converter)
+    registry.register(QuoteSlideHandler, converter)
+    registry.register(ReferencesSlideHandler, converter)
+    registry.register(FrameworkSlideHandler, converter)
     registry.register(SectionBreakHandler, converter)
+    registry.register(ObjectivesSlideHandler, converter)
+    registry.register(ChecklistSlideHandler, converter)
+    registry.register(ReflectionSlideHandler, converter)
+    registry.register(VocabTableSlideHandler, converter)
+    registry.register(ComparisonTableSlideHandler, converter)
     registry.register(BigNumberSlideHandler, converter)
     registry.register(ContentSlideHandler, converter)  # Fallback, lowest priority
 
@@ -42,5 +57,13 @@ __all__ = [
     'SectionBreakHandler',
     'BigNumberSlideHandler',
     'ContentSlideHandler',
+    'QuoteSlideHandler',
+    'FrameworkSlideHandler',
+    'VocabTableSlideHandler',
+    'ComparisonTableSlideHandler',
+    'ReferencesSlideHandler',
+    'ObjectivesSlideHandler',
+    'ChecklistSlideHandler',
+    'ReflectionSlideHandler',
     'create_handler_registry',
 ]

@@ -1,0 +1,3739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 28</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 5: AI & Emerging Technologies in Communication</h1>
+        <p class="subtitle">Using AI Ethically While Maintaining Your Voice</p>
+        <p class="author"><strong>Business Communication</strong><br>National Economics University - Andrews University Campus<br>Fall 2025<br>Instructor: William Winterton Lang</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome students back; acknowledge Written Portfolio submissions this week</li>
+<li>Brief transition: "You've spent weeks crafting professional documents—today we explore tools changing how we write"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This week is both timely (AI explosion) and practical (tools you may already use)</li>
+<li>Emphasize balance: AI as assistant, not replacement for thinking</li>
+<li>Set expectation: We'll be honest about benefits AND risks</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Quick show of hands: "How many used any AI tools while working on portfolio?" (creates immediate relevance)</li>
+<li>Note: This is normal and acceptable if done ethically</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students may fear they "cheated" if they used AI—clarify ethical use vs. academic dishonesty upfront</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>Gauge comfort level: "On scale 1-5, how comfortable are you with AI writing tools?" [Show of hands]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with a question about why this topic matters right now..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide big-number-slide" data-slide="2">
+      <div class="number-content">
+        <div class="big-number">75%</div>
+        <div class="number-explanation"><p>of knowledge workers now use generative AI for work tasks</p>
+<p>(Microsoft & LinkedIn Work Trend Index, 2024)</p>
+<p><strong>Why they use it:</strong></p>
+<ul>
+<li>90% say it saves time</li>
+<li>85% use it to prioritize work</li>
+<li>84% report increased creativity</li>
+</ul></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This isn't a future trend—it's happening now, globally"</li>
+<li>Pause after revealing 75% statistic to let it sink in</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Knowledge workers = people like you (business professionals, analysts, managers)</li>
+<li>AI adoption happened faster than any previous workplace technology</li>
+<li>Vietnam context: AI readiness high (we'll discuss later)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Microsoft study surveyed over 31,000 workers across 31 countries</li>
+<li>Compare to previous tech adoption: Email took decades; AI took months</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think "everyone knows this stuff already"—reality: Most are learning on the job without training</li>
+<li>This course gives you structured knowledge others lack</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Does this surprise anyone? Why or why not?" [Take 1-2 responses]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we dive into how to use AI, let's clarify the key terms..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="3">
+      <h2 class="slide-title">Essential AI Communication Terms</h2>
+      <div class="slide-content">
+        <table>
+  <thead>
+    <tr>
+      <th>English Term</th>
+      <th>Vietnamese Translation</th>
+      <th>Definition & Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Generative AI</strong></td>
+      <td>Trí tuệ nhân tạo sáng tạo</td>
+      <td>AI systems that create new content (text, images) from prompts; examples: ChatGPT, Gemini</td>
+    </tr>
+    <tr>
+      <td><strong>Large Language Model (LLM)</strong></td>
+      <td>Mô hình ngôn ngữ lớn</td>
+      <td>AI trained on massive text datasets to understand and generate human language</td>
+    </tr>
+    <tr>
+      <td><strong>Prompt</strong></td>
+      <td>Lời nhắc / Câu lệnh</td>
+      <td>Instructions you give AI to generate specific output; quality of prompt affects quality of result</td>
+    </tr>
+    <tr>
+      <td><strong>Authenticity</strong></td>
+      <td>Tính chân thực</td>
+      <td>Genuine, original expression that reflects your true voice and thinking</td>
+    </tr>
+    <tr>
+      <td><strong>AI Disclosure</strong></td>
+      <td>Công bố sử dụng AI</td>
+      <td>Transparent statement about how and where AI was used in your work</td>
+    </tr>
+    <tr>
+      <td><strong>Productivity Paradox</strong></td>
+      <td>Nghịch lý năng suất</td>
+      <td>Tools that save time may reduce skill development if overused</td>
+    </tr>
+    <tr>
+      <td><strong>Human-in-the-Loop</strong></td>
+      <td>Con người trong vòng lặp</td>
+      <td>AI systems requiring human judgment and oversight for final decisions</td>
+    </tr>
+    <tr>
+      <td><strong>Ethical AI Use</strong></td>
+      <td>Sử dụng AI có đạo đức</td>
+      <td>Using AI responsibly: with transparency, proper attribution, and human accountability</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These terms will appear throughout today's lecture and in professional contexts"</li>
+<li>Note: Many Vietnamese companies now use these English terms directly in business</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Generative AI</strong> vs regular AI: Generative creates new content; traditional AI analyzes existing data</li>
+<li><strong>Prompt engineering</strong> is becoming a professional skill—how you ask matters</li>
+<li><strong>Authenticity</strong> remains critical even when using AI assistance</li>
+<li><strong>Human-in-the-loop</strong>: AI suggests, humans decide</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Show example prompt: "Write professional email" vs "Write 2-paragraph professional email to client explaining 1-week project delay due to supplier issues, maintain positive tone, offer alternative timeline"</li>
+<li>Second prompt gets better results because it's specific</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think AI tools are all the same—clarify: Different tools for different purposes</li>
+<li>"Productivity paradox" sounds negative—it's just awareness that shortcuts have tradeoffs</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone explain 'human-in-the-loop' in their own words?" [Take 1 response]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's look at the learning objectives for today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">What You'll Learn Today</h2>
+      <div class="slide-content">
+        <p>By the end of this lecture, you will be able to:</p>
+<ol>
+<li><strong>Evaluate</strong> AI tools for business writing and communication, selecting appropriate tools for specific professional tasks</li>
+<li><strong>Apply</strong> ethical AI usage principles while maintaining authenticity in professional communication</li>
+<li><strong>Analyze</strong> how generative AI impacts productivity, creativity, and skill development in workplace communication</li>
+<li><strong>Integrate</strong> AI assistance strategically while preserving your unique voice and professional credibility</li>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Notice these are higher-level thinking skills: evaluate, apply, analyze, integrate"</li>
+<li>Not just "learn about AI"—you'll develop judgment about when and how to use it</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Objective 1 (Evaluate): Choosing the right tool for the task</li>
+<li>Objective 2 (Apply): Practical ethical guidelines you can use immediately</li>
+<li>Objective 3 (Analyze): Understanding deeper impacts beyond just "faster writing"</li>
+<li>Objective 4 (Integrate): The balance—AI + YOU = better results</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Example of strategic integration: Use AI for first draft, you add strategic thinking and audience analysis</li>
+<li>Example of evaluation: Don't use ChatGPT for sensitive company data (security risk)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which objective are you most interested in learning about?" [Quick poll or show of hands]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's dive into the first major section: Understanding the landscape of AI tools..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="5">
+      <h2 class="section-title">Part 1: The AI Tools Landscape</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"First, we need to understand what tools exist and what they actually do"</li>
+<li>This foundation helps you make informed choices</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with the categories of AI tools for communication..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="6">
+      <h2 class="slide-title">Four Categories of AI Communication Tools</h2>
+      <div class="slide-content">
+        <p><strong>Category 1: Writing Assistants</strong></p>
+<p>Grammar, style, tone checking (Grammarly, ProWritingAid)</p>
+<p><strong>Category 2: Generative Content</strong></p>
+<p>Full text creation from prompts (ChatGPT, Gemini, Claude)</p>
+<p><strong>Category 3: Meeting & Collaboration</strong></p>
+<p>Transcription, summaries, notes (Fireflies.ai, Zoom AI Companion)</p>
+<p><strong>Category 4: Specialized Communication</strong></p>
+<p>Email templates, presentation design, data visualization (Jasper, Beautiful.ai)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"The AI landscape can feel overwhelming—these four categories help organize what's out there"</li>
+<li>Draw on board: 2x2 grid showing categories</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Category 1 (Writing Assistants)</strong>: You write, AI checks and suggests improvements</li>
+<ul class="nested-list">
+<li>Acceptable in most professional contexts</li>
+<li>Helps non-native speakers ensure professional English</li>
+</ul>
+<li><strong>Category 2 (Generative Content)</strong>: AI writes, you edit and refine</li>
+<ul class="nested-list">
+<li>Most controversial category</li>
+<li>Requires most ethical awareness</li>
+</ul>
+<li><strong>Category 3 (Meeting & Collaboration)</strong>: Captures and summarizes conversations</li>
+<ul class="nested-list">
+<li>Growing rapidly in remote/hybrid work</li>
+<li>Privacy concerns: Always ask permission before recording</li>
+</ul>
+<li><strong>Category 4 (Specialized)</strong>: Domain-specific tools</li>
+<ul class="nested-list">
+<li>Often industry-specific</li>
+<li>May include company proprietary data (security awareness needed)</li>
+</ul>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Category 1 example</strong>: Grammarly suggests "clearer" instead of "more clear"—you decide</li>
+<li><strong>Category 2 example</strong>: ChatGPT drafts email, you add personal touch and company-specific context</li>
+<li><strong>Category 3 example</strong>: Zoom AI Companion generates meeting summary, you review before sharing</li>
+<li><strong>Category 4 example</strong>: Jasper creates marketing email templates following brand voice</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think all AI tools are ChatGPT—emphasize variety and specialization</li>
+<li>Not all tools are equally appropriate for all tasks</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"For your portfolio pieces, which categories did you use, if any?" [Open discussion, 1-2 responses]</li>
+<li>"Which category requires the most human oversight?" [Answer: Category 2, generative content]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look specifically at tools most relevant for business communication professionals..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="7">
+      <h2 class="slide-title">Leading AI Tools for Professional Communication</h2>
+      <div class="slide-content">
+        <p><strong>General-Purpose Writing & Content:</strong></p>
+<ul>
+<li><strong>ChatGPT</strong> (OpenAI): Versatile text generation, brainstorming, editing</li>
+<li><strong>Gemini</strong> (Google): Integrated with Gmail, Docs, Sheets; "Help Me Write" feature</li>
+<li><strong>Claude</strong> (Anthropic): Longer context windows, strong analytical capabilities</li>
+</ul>
+<p><strong>Professional Writing Assistance:</strong></p>
+<ul>
+<li><strong>Grammarly Business</strong>: Team writing consistency, tone detection, brand voice</li>
+<li><strong>Writer</strong>: Enterprise AI with brand-safe content and style guide integration</li>
+<li><strong>HyperWrite</strong>: AI writing assistant with Chrome extension for email and documents</li>
+</ul>
+<p><strong>Meeting & Communication:</strong></p>
+<ul>
+<li><strong>Zoom AI Companion</strong>: Meeting summaries, message drafting, transcription</li>
+<li><strong>Fireflies.ai</strong>: Automated meeting notes, action item extraction</li>
+<li><strong>Microsoft Copilot</strong>: Integrated across Teams, Outlook, Word</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These are the tools you'll encounter in professional workplaces right now"</li>
+<li>Note: Landscape changes rapidly—new tools emerge, others merge or fade</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>General-Purpose</strong>: Best for brainstorming, first drafts, research summaries</li>
+<ul class="nested-list">
+<li>ChatGPT most well-known, but not always best for specific tasks</li>
+<li>Gemini advantage: Integration with Google Workspace (common in Vietnamese companies)</li>
+<li>Claude: Better for longer documents, complex analysis</li>
+</ul>
+<li><strong>Professional Writing Assistance</strong>: Focus on polish and consistency</li>
+<ul class="nested-list">
+<li>Grammarly Business: Ensures team maintains consistent tone and quality</li>
+<li>Writer: Large enterprises use this for brand compliance</li>
+<li>These tools augment your writing, not replace it</li>
+</ul>
+<li><strong>Meeting & Communication</strong>: Efficiency tools for hybrid work</li>
+<ul class="nested-list">
+<li>Zoom AI Companion: Free with Zoom accounts (many students have access)</li>
+<li>Fireflies.ai: Captures decisions and action items automatically</li>
+<li>Always ask permission before recording/transcribing conversations</li>
+</ul>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Gemini in Gmail</strong>: Compose professional email from bullet points, AI suggests full draft</li>
+<li><strong>Grammarly Business</strong>: Company sets "confident, friendly" tone—Grammarly flags emails that sound too formal or too casual</li>
+<li><strong>Fireflies.ai</strong>: After 1-hour meeting, receive summary with timestamps, action items assigned to team members</li>
+</ul>
+<p><strong>Vietnamese/ASEAN Context:</strong></p>
+<ul>
+<li>Vietnamese companies increasingly adopt Google Workspace (Gemini integration valuable)</li>
+<li>VNG Corporation, FPT Software, Viettel use enterprise AI writing tools for English business communication</li>
+<li>ASEAN startups using AI tools: 27% of Southeast Asia's GenAI startups are in Vietnam (2024)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Free tools are just as good as paid"—partly true, but enterprise versions offer security, privacy, brand consistency</li>
+<li>"AI tools will replace communication jobs"—tools augment, they don't replace strategic thinking</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Has anyone used any of these tools? What was your experience?" [1-2 student responses]</li>
+<li>"Why might a company prefer Writer or Grammarly Business over free ChatGPT?" [Answer: Security, brand control, privacy]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we know what tools exist, let's explore the research: How does AI actually impact our productivity and work quality?"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="8">
+      <h2 class="section-title">Part 2: Research on AI & Productivity</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's move from tools to evidence—what does research tell us about AI's impact?"</li>
+<li>We'll look at rigorous academic studies, not just marketing claims</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Our first required reading studied what happened when real professionals got access to AI..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="9">
+      <h2 class="slide-title">Major Research Findings on AI Productivity</h2>
+      <div class="slide-content">
+        <p><strong>Study Overview (Brynjolfsson, Li & Raymond, 2023):</strong></p>
+<ul>
+<li>5,179 customer support agents at Fortune 500 company</li>
+<li>Randomized controlled trial: Some got AI assistant, others didn't</li>
+<li>Measured productivity, quality, learning, retention over several months</li>
+</ul>
+<p><strong>Key Findings:</strong></p>
+<p><strong>1. Significant Productivity Gains</strong></p>
+<ul>
+<li>14% average increase in issues resolved per hour</li>
+<li>Newer workers gained most: 35% productivity boost</li>
+<li>Experienced workers: Minimal change (already efficient)</li>
+</ul>
+<p><strong>2. Quality Remained High</strong></p>
+<ul>
+<li>Customer satisfaction scores improved slightly</li>
+<li>Resolution quality did not decline</li>
+<li>AI suggested responses agents could adapt</li>
+</ul>
+<p><strong>3. Skill Development Accelerated</strong></p>
+<ul>
+<li>Novice workers learned faster by seeing AI-suggested expert responses</li>
+<li>Learning curve compressed: New hires reached competence quicker</li>
+<li>AI acted as "real-time training"</li>
+</ul>
+<p>(Brynjolfsson et al., 2023)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This is one of the most rigorous studies on generative AI in workplace communication"</li>
+<li>Published by MIT economists with National Bureau of Economic Research</li>
+<li>Write on board: "14% average, 35% for beginners, ~0% for experts"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Randomized controlled trial</strong> = Gold standard research design (like medical trials)</li>
+<ul class="nested-list">
+<li>Some workers randomly assigned AI tool, others not</li>
+<li>Compared performance between groups</li>
+<li>Controls for other variables</li>
+</ul>
+<li><strong>Customer support</strong> = Business communication task similar to emails, proposals, crisis responses</li>
+<ul class="nested-list">
+<li>Agents must understand problem, craft appropriate response, manage tone</li>
+<li>Real stakes: Customer satisfaction and retention</li>
+</ul>
+<li><strong>Three major findings:</strong></li>
+</ul>
+<p>  1. <strong>Productivity</strong>: 14% more issues resolved/hour average</p>
+<ul class="nested-list">
+<li>Not just "faster typing"—handling more complex work in same time</li>
+<li>Biggest gains for newer workers (35%)—AI closed skill gap</li>
+<li>Experienced workers already efficient, AI added little</li>
+</ul>
+<p>  2. <strong>Quality maintained</strong>: Customer satisfaction didn't drop</p>
+<ul class="nested-list">
+<li>Fear: AI would make responses robotic or generic</li>
+<li>Reality: Agents adapted AI suggestions to customer context</li>
+<li>Quality slightly improved (AI prevented some errors)</li>
+</ul>
+<p>  3. <strong>Accelerated learning</strong>: Novices learned from AI suggestions</p>
+<ul class="nested-list">
+<li>Saw how expert would phrase response</li>
+<li>Internalized patterns over time</li>
+<li>Learning curve compressed (reached competence faster)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Scenario</strong>: New customer support agent faces angry customer about delayed order</li>
+<ul class="nested-list">
+<li>Without AI: Might use wrong tone, forget key information, take 15 minutes</li>
+<li>With AI: AI suggests professional response with empathy + solution, agent adapts to specific customer, resolves in 8 minutes</li>
+<li>Agent learns pattern for similar future situations</li>
+</ul>
+<li><strong>Expert worker</strong>: Already knows best practices, AI suggestions don't add much value</li>
+<ul class="nested-list">
+<li>May even slow them down if they have to review AI suggestions they wouldn't need</li>
+</ul>
+</ul>
+<p><strong>Vietnamese/ASEAN Context:</strong></p>
+<ul>
+<li>Similar pattern in Vietnamese customer service: Banks, telecom, e-commerce using AI chatbots and agent-assist tools</li>
+<li>FPT Telecom, Viettel using AI to train new customer service representatives faster</li>
+<li>ASEAN companies in Singapore, Thailand adopting similar AI support tools (2024)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"AI makes everyone equally productive"—NO, it helps strugglers most</li>
+<li>"AI replaces customer service jobs"—This study shows AI augments workers, didn't reduce headcount</li>
+<li>"Quality suffers with AI"—Data shows quality maintained or improved</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why do you think new workers gained 35% while experts gained almost nothing?" [Expected: Experts already know best practices, novices learning from AI]</li>
+<li>"What does this mean for you as new business communicators?" [Expected: AI can accelerate your learning if used strategically]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"This study shows AI's potential, but there's a critical consideration: How do we maintain authenticity when AI writes for us?"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="10">
+      <h2 class="slide-title">The Core Tension</h2>
+      
+      <div class="quote-content">
+        <blockquote class="large-quote">"The increasing use of AI content tools has raised ethical concerns regarding the authenticity and originality of written content."</blockquote>
+        <p class="quote-attribution">Egyptian Journal of Forensic Sciences (2025)</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's the uncomfortable question: If AI writes it, is it really YOUR work?"</li>
+<li>Pause for reflection—let tension sit for moment</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Authenticity</strong> in professional communication means:</li>
+<ul class="nested-list">
+<li>Your ideas, your strategic thinking, your analysis</li>
+<li>Your unique perspective and voice</li>
+<li>Your accountability for the message</li>
+</ul>
+<li><strong>The tension</strong>: AI can write well, but without your lived experience</li>
+<ul class="nested-list">
+<li>Generic AI response vs. your informed professional judgment</li>
+<li>AI doesn't know your company culture, your relationship with recipient, your strategic goals</li>
+</ul>
+<li><strong>Why authenticity matters in business</strong>:</li>
+<ul class="nested-list">
+<li>Credibility comes from genuine expertise and relationships</li>
+<li>Clients/colleagues/managers can often detect generic AI writing</li>
+<li>Your career builds on YOUR communication skills, not AI's</li>
+</ul>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Inauthentic example</strong>: Student uses ChatGPT to write entire cover letter for job</li>
+<ul class="nested-list">
+<li>Gets interview</li>
+<li>In interview, can't articulate experiences mentioned in letter (caught)</li>
+<li>Loses opportunity</li>
+</ul>
+<li><strong>Authentic use</strong>: Student uses ChatGPT to check grammar on self-written cover letter</li>
+<ul class="nested-list">
+<li>Letter reflects genuine experiences and voice</li>
+<li>Interview flows naturally from letter content</li>
+<li>Gets job</li>
+</ul>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Vietnamese professional culture values relationship and trust (quan hệ)</li>
+<ul class="nested-list">
+<li>Authenticity critical for building professional relationships</li>
+<li>Generic AI messages feel cold, transactional</li>
+<li>Personal touch distinguishes you in competitive job market</li>
+</ul>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"If I edit AI output, it's authentic"—Depends on how much you edit and what you add</li>
+<li>"Authenticity doesn't matter for routine emails"—Even routine messages build or erode trust over time</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Where's the line between AI assistance and inauthenticity?" [Open question, take 2-3 perspectives]</li>
+<li>"How can you tell if someone's message is AI-generated vs. authentic?" [Expected: Generic tone, no specific details, doesn't match person's usual style]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at how to use AI ethically while maintaining your authentic voice..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="11">
+      <h2 class="section-title">Part 3: Ethical AI Use Guidelines</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Now we get practical: How DO you use AI ethically in business communication?"</li>
+<li>These aren't just academic rules—they're professional standards emerging in industry</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with transparency..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="12">
+      <h2 class="slide-title">Ethical Principle 1: Be Transparent</h2>
+      <div class="slide-content">
+        <p><strong>The Standard (Committee on Publication Ethics, 2024):</strong></p>
+<p>"Authors who use AI tools in the writing of a manuscript, production of images or graphical elements, or in the collection and analysis of data, must be transparent in disclosing how the AI tool was used and which tool was used."</p>
+<p><strong>What This Means for Business Communication:</strong></p>
+<ul>
+<li><strong>Disclose when required</strong>: Academic work, published content, formal reports</li>
+<li><strong>Document for yourself</strong>: Track AI use even in routine work (builds good habits)</li>
+<li><strong>Be specific about role</strong>: What did AI do vs. what did you do?</li>
+</ul>
+<p><strong>Disclosure Template:</strong></p>
+<p>"I used [Tool Name] to [specific task: brainstorm ideas/check grammar/generate first draft]. I then [what YOU did: refined messaging/added company-specific examples/rewrote for audience/verified accuracy]."</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"First ethical principle: Transparency—be honest about AI use"</li>
+<li>This standard comes from Committee on Publication Ethics (COPE), global organization setting academic standards</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Why transparency matters</strong>:</li>
+<ul class="nested-list">
+<li>Builds trust with readers/supervisors/clients</li>
+<li>Protects you from accusations of dishonesty</li>
+<li>Normalizes responsible AI use (vs. hiding it like cheating)</li>
+<li>Helps others learn how to use AI effectively</li>
+</ul>
+<li><strong>When to disclose</strong>:</li>
+<ul class="nested-list">
+<li>✓ <strong>Always required</strong>: Academic assignments, published articles, formal reports</li>
+<li>✓ <strong>Best practice</strong>: Client deliverables, important presentations</li>
+<li>✓ <strong>Optional but valuable</strong>: Routine emails, internal memos (builds culture of transparency)</li>
+<li>✗ <strong>Not needed</strong>: Grammar checking (Grammarly, spell-check considered standard tools)</li>
+</ul>
+<li><strong>How to disclose</strong>: Be specific</li>
+<ul class="nested-list">
+<li>❌ <strong>Vague</strong>: "I used AI"</li>
+<li>✓ <strong>Specific</strong>: "I used ChatGPT to generate initial outline, then wrote all content myself and fact-checked sources"</li>
+</ul>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Good disclosure example</strong> (from student portfolio assignment):</li>
+<ul class="nested-list">
+<li>"I used ChatGPT to brainstorm 5 potential crisis scenarios. I selected the data breach scenario and wrote the entire crisis communication response myself, applying Argenti's framework from Week 6. I used Grammarly to check grammar and tone."</li>
+<li>Shows: Student used AI for ideation, did strategic work themselves, disclosed tool use</li>
+</ul>
+<li><strong>Bad disclosure</strong> (or lack thereof):</li>
+<ul class="nested-list">
+<li>Student submits proposal that's clearly generic ChatGPT output (no company-specific details, generic language)</li>
+<li>Doesn't disclose AI use</li>
+<li>Professor recognizes AI patterns, student faces academic integrity investigation</li>
+</ul>
+<li><strong>Professional disclosure example</strong>:</li>
+<ul class="nested-list">
+<li>Consultant to client: "This report's data visualizations were generated using Tableau's AI features. All analysis and strategic recommendations are based on our team's expertise and your specific context."</li>
+</ul>
+</ul>
+<p><strong>Vietnamese/ASEAN Context:</strong></p>
+<ul>
+<li>Transparency aligns with Vietnamese cultural value of "tín" (trust, credibility)</li>
+<li>ASEAN Guide on AI Governance and Ethics (2024) emphasizes transparency as core principle</li>
+<li>Vietnamese companies (FPT, Viettel) developing internal AI disclosure policies for client work</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Disclosing AI use makes me look incompetent"—Reality: Shows professionalism and ethical awareness</li>
+<li>"Everyone uses AI, so I don't need to mention it"—Transparency is about process, not just prevalence</li>
+<li>"Grammar check counts as AI I must disclose"—Standard writing tools (Grammarly spell-check, Word grammar check) are baseline expectations, not disclosure-worthy</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Using the template on screen, how would you disclose AI use for your persuasive proposal?" [Take 1-2 student examples]</li>
+<li>"What's the difference between using AI for brainstorming vs. using it to write final draft?" [Expected: Brainstorming is ideation, writing is execution—different disclosure needed]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Transparency is first principle. Second is maintaining human accountability..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="13">
+      <h2 class="slide-title">Ethical Principle 2: You Are Accountable</h2>
+      <div class="slide-content">
+        <p><strong>The Standard:</strong></p>
+<p>AI can assist, but <strong>YOU</strong> are responsible for:</p>
+<ul>
+<li>✓ Accuracy of all information</li>
+<li>✓ Appropriateness for audience and context</li>
+<li>✓ Ethical implications of the message</li>
+<li>✓ Consequences of the communication</li>
+</ul>
+<p><strong>The "Human-in-the-Loop" Principle:</strong></p>
+<p>AI tools cannot be listed as authors (COPE, 2024). Why?</p>
+<ul>
+<li>AI has no expertise or judgment</li>
+<li>AI cannot be held accountable</li>
+<li>AI doesn't understand context or consequences</li>
+<li><strong>YOU</strong> make the final decisions</li>
+</ul>
+<p><strong>Practical Checklist Before Sending AI-Assisted Communication:</strong></p>
+<ul>
+<li>[ ] Did I verify all facts, statistics, and sources?</li>
+<li>[ ] Is this appropriate for my specific audience?</li>
+<li>[ ] Does this reflect my/company's values and voice?</li>
+<li>[ ] Am I prepared to defend this message if questioned?</li>
+<li>[ ] Would I be comfortable if recipient knew AI was involved?</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Second ethical principle: You own the result, not the AI"</li>
+<li>Write on board: "AI suggests → Human decides → Human accountable"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Why human accountability matters</strong>:</li>
+<ul class="nested-list">
+<li>AI makes mistakes (hallucinations, outdated info, biased content)</li>
+<li>AI doesn't understand your specific context</li>
+<li>AI has no stake in outcomes—you do (your reputation, your job, your client relationships)</li>
+<li>Legal/ethical responsibility stays with the human</li>
+</ul>
+<li><strong>"Human-in-the-Loop" concept</strong>:</li>
+<ul class="nested-list">
+<li>Loop = process cycle</li>
+<li>Human must be in the decision loop, not just at the end</li>
+<li>AI generates → Human evaluates → Human revises → Human approves → Human sends</li>
+<li>If you skip human evaluation/revision, you're not in the loop</li>
+</ul>
+<li><strong>What "accountability" means practically</strong>:</li>
+<ul class="nested-list">
+<li><strong>Verify facts</strong>: AI invents sources, statistics, quotes—check everything</li>
+<li><strong>Check appropriateness</strong>: AI doesn't know if your boss prefers formal vs casual, if topic is culturally sensitive, if timing is right</li>
+<li><strong>Own the message</strong>: If client/manager/professor questions content, YOU must defend it</li>
+<li><strong>Accept consequences</strong>: If message causes problems, you're responsible, not "the AI"</li>
+</ul>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Failure of accountability</strong> (real case):</li>
+<ul class="nested-list">
+<li>Lawyer used ChatGPT to research legal cases for court filing</li>
+<li>ChatGPT invented fake cases (hallucination)</li>
+<li>Lawyer didn't verify, submitted to court</li>
+<li>Court discovered fraud, lawyer sanctioned and humiliated</li>
+<li>AI can't be punished—lawyer faced professional consequences</li>
+</ul>
+<li><strong>Good accountability example</strong>:</li>
+<ul class="nested-list">
+<li>Manager uses Gemini to draft project update email to stakeholders</li>
+<li>AI suggests timeline that's too optimistic</li>
+<li>Manager catches this (knows project reality), revises to realistic timeline</li>
+<li>Sends message with accurate expectations</li>
+<li>Accountability maintained: Manager verified before sending</li>
+</ul>
+<li><strong>Vietnamese context example</strong>:</li>
+<ul class="nested-list">
+<li>Marketing team uses AI to generate social media content about Tet holiday</li>
+<li>AI suggests generic "Chinese New Year" messaging</li>
+<li>Team catches cultural error, revises to Vietnam-specific Tet traditions and language</li>
+<li>Accountability prevented cultural misstep</li>
+</ul>
+</ul>
+<p><strong>Vietnamese/ASEAN Context:</strong></p>
+<ul>
+<li>Vietnamese business culture: "Trách nhiệm" (responsibility) is personal, not transferable to tools</li>
+<li>Professional reputation built on your judgment, not tool quality</li>
+<li>In hierarchical culture, blame for AI mistakes still falls on employee who used tool</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"If AI wrote it, I'm not responsible"—Completely false, you're fully responsible</li>
+<li>"AI is always accurate because it's trained on lots of data"—AI hallucinates, makes confident errors</li>
+<li>"Checking AI output is too time-consuming"—If you can't verify, don't use AI for that task</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What could go wrong if you send AI-generated email without reviewing it?" [Expected: Factual errors, wrong tone, inappropriate content, cultural mistakes]</li>
+<li>"Look at the checklist—which item do you think people skip most often?" [Open discussion—likely "verify facts"]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Third principle is about preserving what makes you valuable as a communicator..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="14">
+      <h2 class="framework-title">Ethical Principle 3: Maintain Authenticity</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>The Challenge</h3>
+          
+          <ul class="component-bullets"><li>Your unique perspective and expertise</li><li>Your relationship with the audience</li><li>Your company's specific context and culture</li><li>Your strategic thinking and goals</li></ul>
+          <p>AI generates competent, generic text. You must add:</p>
+        </div>
+        <div class="component">
+          <h3>Strategies to Preserve Authenticity</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>1. AI for Structure, You for Substance</h3>
+          
+          <ul class="component-bullets"><li>AI creates outline → You fill with your insights and examples</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>2. You Write First, AI Refines</h3>
+          
+          <ul class="component-bullets"><li>Draft key ideas yourself → AI helps polish and organize</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>3. AI Generates Options, You Choose & Adapt</h3>
+          
+          <ul class="component-bullets"><li>AI suggests 3 approaches → You select and customize for context</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>4. Add Personal Elements AI Can't Know</h3>
+          
+          <ul class="component-bullets"><li>Specific examples from your experience</li><li>References to previous conversations</li><li>Company-specific terminology and culture</li><li>Your analytical insights and recommendations</li></ul>
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>The Test: "Could only I have written this?"</strong></p>
+<p>If answer is no, add more of YOU.</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Third ethical principle: Don't let AI erase what makes you valuable"</li>
+<li>Your value isn't typing speed—it's thinking, judgment, relationships, expertise</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Why authenticity matters professionally</strong>:</li>
+<ul class="nested-list">
+<li>Clients hire YOU, not generic AI output</li>
+<li>Colleagues trust people, not algorithms</li>
+<li>Career advancement based on demonstrated expertise</li>
+<li>Professional relationships built on authentic communication</li>
+</ul>
+<li><strong>The authenticity spectrum</strong>:</li>
+<ul class="nested-list">
+<li>← Most authentic: You write everything, AI checks grammar</li>
+<li>→ Least authentic: AI writes everything, you click send</li>
+<li>Middle ground: Collaborative process where YOU drive strategy, AI assists execution</li>
+</ul>
+<li><strong>Four practical strategies</strong> (teach each):</li>
+</ul>
+<p>  1. <strong>AI for structure, you for substance</strong>:</p>
+<ul class="nested-list">
+<li>Use: When you know what to say but need organization</li>
+<li>Example: "Give me outline for crisis communication about data breach"</li>
+<li>AI provides framework, you populate with company-specific details, stakeholder analysis, action plan</li>
+</ul>
+<p>  2. <strong>You write first, AI refines</strong>:</p>
+<ul class="nested-list">
+<li>Use: When you want to ensure your ideas drive content</li>
+<li>Example: Draft proposal in rough form, ask AI to "improve clarity and professional tone while keeping core message"</li>
+<li>Maintains your strategic thinking, AI polishes presentation</li>
+</ul>
+<p>  3. <strong>AI generates options, you choose & adapt</strong>:</p>
+<ul class="nested-list">
+<li>Use: When you're stuck or want fresh perspectives</li>
+<li>Example: "Give me 3 different opening paragraphs for persuasive proposal about flexible work"</li>
+<li>You evaluate options, pick elements, combine with your insights</li>
+</ul>
+<p>  4. <strong>Add personal elements</strong>:</p>
+<ul class="nested-list">
+<li>Always include: Specific names, previous conversation references, company terminology, your analytical conclusions</li>
+<li>AI can't know: "As we discussed last Tuesday..." or "Based on Q3 data showing..." or "Following the Lunar New Year campaign results..."</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Low authenticity example</strong>:</li>
+<ul class="nested-list">
+<li>Student: "ChatGPT write persuasive proposal for remote work policy"</li>
+<li>ChatGPT writes 3 generic pages</li>
+<li>Student submits with minor edits</li>
+<li>Result: Sounds like every other AI proposal, no unique value, doesn't reflect course frameworks</li>
+</ul>
+<li><strong>High authenticity example</strong>:</li>
+<ul class="nested-list">
+<li>Student outlines: Remote work proposal, audience = conservative management, need Cialdini's authority + social proof, company context = post-COVID productivity data, goal = pilot program</li>
+<li>Uses AI to generate 3 opening paragraph options</li>
+<li>Selects one, heavily revises with company data and manager's stated concerns</li>
+<li>Adds section analyzing Vietnamese context (traffic in Hanoi/HCMC, work-life balance cultural shift)</li>
+<li>Result: Clearly written by someone who knows company, audience, context—AI just assisted</li>
+</ul>
+<li><strong>Professional example</strong>:</li>
+<ul class="nested-list">
+<li>Consultant writing strategy report</li>
+<li>Uses AI to create executive summary structure</li>
+<li>Consultant writes all analysis, recommendations, data interpretation</li>
+<li>AI helps with flow and clarity, suggests stronger transition sentences</li>
+<li>Final report shows consultant's expertise, AI invisible but helpful</li>
+</ul>
+</ul>
+<p><strong>Vietnamese/ASEAN Context:</strong></p>
+<ul>
+<li>Vietnamese professional relationships value "cá nhân hóa" (personalization)</li>
+<ul class="nested-list">
+<li>Generic AI messages can damage relationships</li>
+<li>Personal references, shared context, cultural awareness distinguish you</li>
+</ul>
+<li>Example: Email to Vietnamese client should reference appropriate holidays (Tet, Mid-Autumn), use respectful language, acknowledge relationship history</li>
+<ul class="nested-list">
+<li>AI doesn't know if this is first contact or 10-year relationship</li>
+<li>AI doesn't know appropriate level of formality for Vietnamese business culture</li>
+</ul>
+</ul>
+<p><strong>The "Could only I have written this?" test</strong>:</p>
+<ul>
+<li>Read your AI-assisted draft</li>
+<li>Ask: Could any competitor, classmate, or random person have written this exact thing?</li>
+<li>If YES → Too generic, add your specific insights, context, examples, relationships</li>
+<li>If NO → You've maintained authenticity</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Good writing is good writing, doesn't matter who wrote it"—In relationships and careers, authorship and authenticity matter</li>
+<li>"AI makes everyone sound professional"—AI makes everyone sound GENERICALLY professional; you need to sound like a specific expert</li>
+<li>"Adding a few personal details is enough"—Authenticity is deeper: your strategic thinking, your analysis, your recommendations</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which of the 4 strategies would you use for your portfolio's persuasive proposal?" [Take 2 responses, discuss why]</li>
+<li>"What personal elements could you add to AI-generated email that AI couldn't know?" [Expected: Specific project details, relationship history, company culture references]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Final principle: Skills development..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="15">
+      <h2 class="slide-title">Ethical Principle 4: Don't Outsource Your Growth</h2>
+      <div class="slide-content">
+        <p><strong>The Productivity Paradox:</strong></p>
+<p>Tools that save time NOW may reduce skill development LATER.</p>
+<p><strong>The Risk:</strong></p>
+<ul>
+<li>If you always use AI to write persuasive messages, you never learn persuasion</li>
+<li>If you always use AI to structure arguments, you never develop strategic thinking</li>
+<li>If you always use AI to set professional tone, you never internalize professional communication</li>
+</ul>
+<p><strong>Result</strong>: Short-term efficiency, long-term dependence</p>
+<p><strong>Strategies to Maintain Skill Development:</strong></p>
+<p><strong>1. Practice Before Assistance</strong></p>
+<ul>
+<li>Write first draft yourself → Then use AI to compare and learn</li>
+<li>"How would I write this?" before asking AI</li>
+</ul>
+<p><strong>2. Learn From AI Output</strong></p>
+<ul>
+<li>Study why AI's version works (or doesn't)</li>
+<li>Identify patterns and techniques to internalize</li>
+<li>Goal: Next time, you can do it without AI</li>
+</ul>
+<p><strong>3. Alternate: With/Without AI</strong></p>
+<ul>
+<li>Some tasks: Challenge yourself without AI</li>
+<li>Build skills, then use AI to amplify them</li>
+</ul>
+<p><strong>4. Focus AI on Weak Areas, Practice Strong Areas</strong></p>
+<ul>
+<li>If grammar is weak: Use AI assistance, study corrections</li>
+<li>If strategy is strong: Do it yourself, build expertise</li>
+</ul>
+<p><strong>Remember the MIT study:</strong> AI helped novices learn FASTER by showing expert patterns. Use AI as teacher, not crutch.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Final ethical principle is about your future: How do you use AI without becoming dependent on it?"</li>
+<li>Write on board: "Efficiency now vs. Capability later"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>The Productivity Paradox explained</strong>:</li>
+<ul class="nested-list">
+<li>Paradox = contradictory outcome</li>
+<li>Tool increases productivity (good) BUT may decrease learning (bad)</li>
+<li>Like calculator: Saves time on arithmetic BUT if you never practice, you can't estimate or check if answer is reasonable</li>
+<li>AI for writing: Saves time NOW BUT if you never practice, you never develop communication expertise</li>
+</ul>
+<li><strong>Why skill development matters</strong>:</li>
+<ul class="nested-list">
+<li>Your career = your capabilities, not your tools</li>
+<li>Tools change (ChatGPT today, something else tomorrow)</li>
+<li>Skills compound: Good communicators get promoted, get better opportunities, have more influence</li>
+<li>Dependence on AI = fragile career (what if company bans AI? What if you can't access it? What if you need to think on feet?)</li>
+</ul>
+<li><strong>The risk in detail</strong>:</li>
+<ul class="nested-list">
+<li><strong>Persuasion example</strong>: Always use AI for persuasive writing → Never internalize Cialdini's principles → Can't persuade verbally in meetings, can't adapt in real-time</li>
+<li><strong>Structure example</strong>: Always use AI for outlines → Never develop strategic thinking about message flow → Presentations lack coherent narrative</li>
+<li><strong>Tone example</strong>: Always use AI to check tone → Never develop emotional intelligence about professional communication → Miss subtle cues in in-person communication</li>
+</ul>
+</ul>
+<p><strong>Four Strategies</strong> (teach each):</p>
+<ol>
+<li><strong>Practice Before Assistance</strong>:</li>
+<ul class="nested-list">
+<li>Do it yourself first, then check with AI</li>
+<li>Builds skill while getting feedback</li>
+<li>Example: Write persuasive email yourself applying Cialdini's principles, then ask ChatGPT "How could this be more persuasive?" Compare and learn</li>
+<li>Like homework: Try problems before looking at solutions</li>
+</ul>
+<li><strong>Learn From AI Output</strong>:</li>
+<ul class="nested-list">
+<li>Don't just accept AI's version, study WHY it works</li>
+<li>Analyze: What techniques did AI use? What made it effective? How can I apply this myself next time?</li>
+<li>Example: AI writes strong opening hook → You analyze: "Oh, it used question + statistic + relevance to audience. I can use that pattern."</li>
+<li>Goal: Internalize patterns so eventually you don't need AI</li>
+</ul>
+<li><strong>Alternate: With/Without AI</strong>:</li>
+<ul class="nested-list">
+<li>Some emails: Write without AI (practice)</li>
+<li>Some emails: Use AI (efficiency)</li>
+<li>Don't default to AI for every task</li>
+<li>Example: Routine internal emails = Do yourself (practice). High-stakes client proposal = Use AI to polish (quality matters most).</li>
+</ul>
+<li><strong>Strategic Use Based on Strength/Weakness</strong>:</li>
+<ul class="nested-list">
+<li><strong>If grammar is weakness</strong>: Use Grammarly, study corrections, learn rules over time</li>
+<li><strong>If persuasion is strength</strong>: Don't outsource to AI, build expertise that distinguishes you</li>
+<li><strong>If structure is weakness</strong>: Use AI for outlines, analyze why structure works, practice independently</li>
+<li><strong>If creativity is strength</strong>: Use AI for execution/polish, you drive creative strategy</li>
+</ul>
+</ol>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Positive example</strong> (learning from AI):</li>
+<ul class="nested-list">
+<li>Student writes crisis communication</li>
+<li>Asks ChatGPT: "How could this be more empathetic while maintaining professionalism?"</li>
+<li>AI suggests changes</li>
+<li>Student analyzes WHY changes work: "AI added 'We understand this is frustrating' and specific timeline—I'll remember to include empathy + action in future"</li>
+<li>Next crisis communication: Student applies pattern without AI</li>
+<li>Result: AI accelerated learning (like MIT study showed)</li>
+</ul>
+<li><strong>Negative example</strong> (dependence):</li>
+<ul class="nested-list">
+<li>Student uses AI for every email all semester</li>
+<li>Never thinks about structure, tone, persuasion themselves</li>
+<li>Final exam: In-person presentation (no AI)</li>
+<li>Struggles because never internalized communication principles</li>
+<li>Result: Over-reliance prevented skill development</li>
+</ul>
+<li><strong>Professional example</strong>:</li>
+<ul class="nested-list">
+<li>Junior consultant uses AI for all client reports (efficiency)</li>
+<li>Senior consultant notices: Reports are competent but generic, lack strategic insights</li>
+<li>Junior doesn't get promoted—AI did the work, junior didn't develop expertise</li>
+<li>Learning: Use AI to execute YOUR ideas, not replace your thinking</li>
+</ul>
+</ul>
+<p><strong>Vietnamese/ASEAN Context:</strong></p>
+<ul>
+<li>Vietnam's competitive job market: Differentiation matters</li>
+<ul class="nested-list">
+<li>Everyone has access to same AI tools</li>
+<li>Your unique expertise and skills distinguish you</li>
+<li>Companies hire people who can think strategically, not just use tools</li>
+</ul>
+<li>ASEAN professional development: Skills compound across career</li>
+<ul class="nested-list">
+<li>Communication skills at 25 → Leadership roles at 35</li>
+<li>If you outsource skill-building to AI, you plateau</li>
+</ul>
+<li>Vietnamese educational culture values mastery ("tinh thông")</li>
+<ul class="nested-list">
+<li>Use AI to accelerate mastery, not replace it</li>
+</ul>
+</ul>
+<p><strong>Remember MIT Study Connection</strong>:</p>
+<ul>
+<li>Brynjolfsson et al. (2023) showed AI helped novices learn FASTER</li>
+<li>How? They studied expert-like AI responses and internalized patterns</li>
+<li>KEY: They LEARNED from AI, didn't just copy-paste</li>
+<li>You can do same: Use AI as teacher who shows expert communication, study and internalize</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Using AI means I'm not learning"—False if you use it strategically to learn</li>
+<li>"I need to choose: Either use AI or develop skills"—False choice, you can do both</li>
+<li>"Once I learn communication skills, I can use AI for everything"—Skills atrophy without practice</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the difference between using AI as a crutch vs. using it as a teacher?" [Expected: Crutch = dependence without learning; Teacher = learn patterns and apply independently]</li>
+<li>"For which tasks should you use AI, and which should you practice yourself?" [Open discussion, no single right answer]</li>
+<li>"How will you know if you're becoming too dependent on AI?" [Expected: Can't perform task without AI, quality drops when AI unavailable, don't understand why AI's version is better]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's look at how these principles apply in Vietnam specifically..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="16">
+      <h2 class="section-title">Part 4: AI in Vietnamese & ASEAN Context</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We've covered general principles—now let's ground this in YOUR context as Vietnamese business professionals"</li>
+<li>Vietnam is AI leader in ASEAN, but specific cultural and market considerations apply</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at Vietnam's AI landscape..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="17">
+      <h2 class="slide-title">Vietnamese Context: AI Innovation Hub</h2>
+      <div class="slide-content">
+        <p><strong>Vietnam's GenAI Position in Southeast Asia (2024):</strong></p>
+<p>Vietnam hosts <strong>27% of Southeast Asia's Generative AI startups</strong>, trailing only Singapore—the region's established tech hub.</p>
+<p><strong>Investment Surge:</strong></p>
+<p>Private investment in Vietnamese AI startups grew <strong>eightfold</strong>—from $10 million (2023) to $80 million (2024).</p>
+<p><strong>Government AI Readiness:</strong></p>
+<ul>
+<li>Vietnam ranked <strong>top five in ASEAN</strong> for Government AI Readiness (2024)</li>
+<li><strong>Third globally</strong> in AI trust</li>
+<li><strong>Fifth globally</strong> in AI acceptance</li>
+</ul>
+<p><strong>Local AI Adoption:</strong></p>
+<ul>
+<li>Vietnamese companies primarily use AI for <strong>customer service</strong> (banking, insurance, telecom)</li>
+<li><strong>VinAI</strong> developing <strong>PhoGPT</strong>: Open-source Vietnamese-language LLM</li>
+<li>Major employers (FPT Software, Viettel, VNG) integrating AI tools for business communication</li>
+</ul>
+<p><strong>Implication for You:</strong></p>
+<p>Vietnamese employers EXPECT familiarity with AI tools. Your ethical, strategic use distinguishes you from peers who only know how to click "generate."</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Vietnam isn't just adopting AI—it's leading in ASEAN"</li>
+<li>These aren't future trends, this is current reality in Vietnamese business</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>27% of ASEAN GenAI startups</strong> = Vietnam is innovation hub</li>
+<ul class="nested-list">
+<li>Only Singapore has more (financial + established tech ecosystem)</li>
+<li>Vietnam ahead of Thailand, Indonesia, Malaysia, Philippines despite smaller GDP</li>
+<li>Why? Strong tech talent, government support, entrepreneurial culture</li>
+</ul>
+<li><strong>8x investment increase</strong> ($10M → $80M in one year)</li>
+<ul class="nested-list">
+<li>Signals investor confidence</li>
+<li>Creates jobs in AI-related fields</li>
+<li>Vietnamese companies building tools, not just using foreign tools</li>
+</ul>
+<li><strong>Government AI Readiness rankings</strong>:</li>
+<ul class="nested-list">
+<li>Top 5 in ASEAN = Vietnam investing in AI infrastructure, policy, education</li>
+<li><strong>3rd globally in AI trust</strong> = Vietnamese people/government trust AI technology</li>
+<li><strong>5th globally in AI acceptance</strong> = Openness to using AI in daily life/work</li>
+<li>Compare to skepticism in some Western countries (privacy concerns, job loss fears)</li>
+</ul>
+<li><strong>Customer service focus</strong>:</li>
+<ul class="nested-list">
+<li>Banking: Chatbots for customer inquiries, AI-assisted agents (like MIT study)</li>
+<li>Insurance: Claims processing, policy explanations</li>
+<li>Telecom: Technical support, billing questions</li>
+<li>All require business communication skills</li>
+</ul>
+<li><strong>VinAI and PhoGPT</strong>:</li>
+<ul class="nested-list">
+<li>Vietnamese-language LLM = AI that understands Vietnamese language nuances</li>
+<li>Currently most AI tools (ChatGPT, Gemini) work best in English</li>
+<li>PhoGPT aims to serve Vietnamese businesses and government</li>
+<li>Open-source = Encourages innovation, free for developers</li>
+</ul>
+<li><strong>Major employers using AI</strong>:</li>
+<ul class="nested-list">
+<li><strong>FPT Software</strong>: Vietnam's largest IT company, integrating AI in projects</li>
+<li><strong>Viettel</strong>: State-owned telecom, using AI for customer service and operations</li>
+<li><strong>VNG Corporation</strong>: Tech company (Zalo, games), using AI for products and internal communication</li>
+</ul>
+</ul>
+<p><strong>Implication for Students</strong>:</p>
+<ul>
+<li>"Familiarity with AI tools" = Baseline expectation for job candidates</li>
+<ul class="nested-list">
+<li>On CV: "Proficient in AI-assisted business communication tools (ChatGPT, Gemini, Grammarly)"</li>
+<li>In interview: Can discuss strategic use, ethical considerations, productivity impact</li>
+</ul>
+<li><strong>What distinguishes you</strong>: Not just using AI, but using it STRATEGICALLY and ETHICALLY</li>
+<ul class="nested-list">
+<li>Peers: "I use ChatGPT for everything"</li>
+<li>You: "I use ChatGPT for brainstorming and structure, Gemini for Gmail integration, Grammarly for tone consistency. I always verify facts and maintain my authentic voice while applying course frameworks like Cialdini's principles and BLUF structure."</li>
+<li>Employer hears: Strategic thinking, ethical awareness, skill development</li>
+</ul>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Vietnamese startup example</strong>:</li>
+<ul class="nested-list">
+<li>Funding Societies (P2P lending platform) uses AI for customer communication</li>
+<li>Agents assisted by AI suggestions for loan explanations, documentation requests</li>
+<li>Similar to MIT study findings—newer agents productive faster</li>
+</ul>
+<li><strong>VNG Zalo example</strong>:</li>
+<ul class="nested-list">
+<li>Zalo (Vietnam's messaging app) using AI for chatbots, translation</li>
+<li>Business users can integrate AI responses for customer service</li>
+<li>Vietnamese context required: AI must understand cultural communication norms</li>
+</ul>
+<li><strong>Student opportunity example</strong>:</li>
+<ul class="nested-list">
+<li>Graduate with "AI communication tools" skill</li>
+<li>Hired by FPT Software for client-facing role</li>
+<li>Uses AI to draft English proposals for international clients, adds company expertise and client context</li>
+<li>Promoted faster than peers who either (1) avoid AI or (2) over-rely without strategic thinking</li>
+</ul>
+</ul>
+<p><strong>Vietnamese/ASEAN Broader Context:</strong></p>
+<ul>
+<li><strong>ASEAN Guide on AI Governance and Ethics</strong> (2024): Regional standards for responsible AI</li>
+<ul class="nested-list">
+<li>Emphasizes transparency, accountability, human oversight</li>
+<li>Aligns with principles we've discussed</li>
+<li>Vietnam participating in regional AI standards development</li>
+</ul>
+<li><strong>Language advantage</strong>: Vietnamese professionals who master English + AI tools</li>
+<ul class="nested-list">
+<li>Can serve both domestic Vietnamese companies and international clients</li>
+<li>AI helps bridge language gap while maintaining professional quality</li>
+<li>Competitive advantage in ASEAN market</li>
+</ul>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"AI is Western technology, not relevant for Vietnam"—Vietnam is regional leader, not follower</li>
+<li>"Vietnamese companies don't use AI yet"—Major companies already integrated AI in operations</li>
+<li>"Knowing AI tools is enough"—Strategic, ethical use matters more than technical skill</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why do you think Vietnam ranks 3rd globally in AI trust but many Western countries are skeptical?" [Possible answers: Different privacy culture, optimism about technology, government support, entrepreneurial mindset]</li>
+<li>"How can you demonstrate AI expertise in job interview?" [Expected: Discuss strategic use, ethical principles, productivity gains, course application]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Given Vietnam's AI leadership, let's discuss specific cultural considerations..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="18">
+      <h2 class="slide-title">Vietnamese Business Culture & AI Communication</h2>
+      <div class="slide-content">
+        <p><strong>Key Cultural Factors When Using AI for Vietnamese Business Communication:</strong></p>
+<p><strong>1. Relationship-Oriented Culture ("Quan Hệ")</strong></p>
+<ul>
+<li>Vietnamese business relies on personal relationships and trust</li>
+<li>AI-generated generic messages can feel cold and transactional</li>
+<li><strong>Solution</strong>: Use AI for structure/grammar, add personal relationship elements only you know</li>
+</ul>
+<p><strong>2. Hierarchical Communication Norms</strong></p>
+<ul>
+<li>Formality and respect vary by seniority and relationship</li>
+<li>AI may not gauge appropriate level of formality</li>
+<li><strong>Solution</strong>: Review AI output for appropriate respectful language (anh/chị, kính gửi, etc.)</li>
+</ul>
+<p><strong>3. High-Context Communication</strong></p>
+<ul>
+<li>Vietnamese communication often indirect, relies on shared understanding</li>
+<li>AI tends toward explicit, low-context (Western) style</li>
+<li><strong>Solution</strong>: Adapt AI output to include appropriate context, indirectness, and cultural references</li>
+</ul>
+<p><strong>4. Face-Saving and Harmony ("Giữ Thể Diện")</strong></p>
+<ul>
+<li>Direct criticism or bad news may violate cultural norms</li>
+<li>AI may be too blunt or direct</li>
+<li><strong>Solution</strong>: Soften AI-generated critical feedback, add diplomatic language</li>
+</ul>
+<p><strong>5. Vietnamese Language Nuances</strong></p>
+<ul>
+<li>Most AI tools (ChatGPT, Gemini) work best in English</li>
+<li>Vietnamese translations may miss cultural subtleties</li>
+<li><strong>Solution</strong>: For Vietnamese-language communication, use PhoGPT or write in Vietnamese yourself, use AI only for English</li>
+</ul>
+<p><strong>Best Practice:</strong></p>
+<p>AI gives you Western-style professional English. YOU add Vietnamese cultural intelligence and relationship awareness.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"AI tools are trained mostly on Western (especially US) business communication"</li>
+<li>Vietnamese business culture has distinct norms—AI won't automatically match them</li>
+<li>Your job: Bridge AI's capabilities with Vietnamese cultural intelligence</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<p><strong>1. Relationship-Oriented Culture ("Quan Hệ")</strong>:</p>
+<ul>
+<li>Vietnamese business = relationships first, transactions second</li>
+<ul class="nested-list">
+<li>Building long-term trust matters more than single deal</li>
+<li>Personal connection valued alongside professional competence</li>
+</ul>
+<li>AI problem: Generic, transactional language</li>
+<ul class="nested-list">
+<li>"Dear Sir/Madam" vs. "Dear Mr. Nguyen—I hope you and your family enjoyed the Lunar New Year celebrations"</li>
+<li>AI doesn't know your relationship history, shared experiences, family connections</li>
+</ul>
+<li><strong>Solution</strong>:</li>
+<ul class="nested-list">
+<li>Use AI for grammar/structure/professional phrasing</li>
+<li>YOU add: Relationship references, personal inquiries, shared context</li>
+<li>Example: AI drafts meeting request → You add "Following up on our conversation at the NEU alumni event last month..."</li>
+</ul>
+</ul>
+<p><strong>2. Hierarchical Communication Norms</strong>:</p>
+<ul>
+<li>Vietnamese workplace has clear hierarchy</li>
+<ul class="nested-list">
+<li>Communication with senior leader vs. peer vs. junior colleague = Different formality, different tone, different structure</li>
+<li>Respectful language critical (kính gửi, anh/chị vs. em, proper titles)</li>
+</ul>
+<li>AI problem: Assumes Western egalitarian norms</li>
+<ul class="nested-list">
+<li>May be too casual with seniors</li>
+<li>May use wrong level of formality</li>
+</ul>
+<li><strong>Solution</strong>:</li>
+<ul class="nested-list">
+<li>Review AI output for appropriate formality level</li>
+<li>Adjust pronouns, titles, opening/closing</li>
+<li>For Vietnamese-language emails: Verify respectful forms (kính gửi Anh [Name], em xin gửi...)</li>
+<li>For English to Vietnamese seniors: Maintain respectful tone even in translation</li>
+</ul>
+</ul>
+<p><strong>3. High-Context Communication</strong>:</p>
+<ul>
+<li><strong>High-context culture</strong> (Vietnamese): Relies on shared knowledge, indirect communication, reading between lines</li>
+<li><strong>Low-context culture</strong> (Western): Explicit, direct, everything stated clearly</li>
+<li>AI trained on Western business writing = Low-context, very explicit</li>
+<li>Example contrast:</li>
+<ul class="nested-list">
+<li><strong>Low-context (AI)</strong>: "Your proposal is rejected because it exceeds budget."</li>
+<li><strong>High-context (Vietnamese)</strong>: "We reviewed your thoughtful proposal with great interest. Given current budget considerations, we may need to explore alternative approaches. Perhaps we could discuss a modified scope?"</li>
+</ul>
+<li><strong>Solution</strong>:</li>
+<ul class="nested-list">
+<li>Use AI for core content</li>
+<li>Add appropriate level of indirectness, context-setting, face-saving language</li>
+<li>Don't just copy-paste AI's direct style for sensitive Vietnamese business situations</li>
+</ul>
+</ul>
+<p><strong>4. Face-Saving and Harmony ("Giữ Thể Diện")</strong>:</p>
+<ul>
+<li>Vietnamese culture values preserving dignity and avoiding public embarrassment</li>
+<ul class="nested-list">
+<li>Direct criticism can damage relationships</li>
+<li>Bad news delivered bluntly can cause loss of face</li>
+</ul>
+<li>AI problem: Western AI trained on "radical candor" and direct feedback culture</li>
+<ul class="nested-list">
+<li>May phrase criticism too harshly</li>
+<li>May miss need for softening language</li>
+</ul>
+<li><strong>Solution</strong>:</li>
+<ul class="nested-list">
+<li>Review AI output for potentially harsh language</li>
+<li>Add softening: "Perhaps we could consider...", "It might be beneficial to...", "I wonder if..."</li>
+<li>Frame criticism as collaborative problem-solving, not personal fault</li>
+<li>Example: AI says "This report has significant errors" → You say "This report is a good start; I noticed a few areas where we could strengthen the data analysis together"</li>
+</ul>
+</ul>
+<p><strong>5. Vietnamese Language Nuances</strong>:</p>
+<ul>
+<li>Most AI tools (ChatGPT, Gemini, Claude) trained primarily on English</li>
+<ul class="nested-list">
+<li>Vietnamese translations available but less sophisticated</li>
+<li>Miss cultural idioms, respectful forms, business terminology nuances</li>
+</ul>
+<li>Emerging tools (PhoGPT) aim to address this, but still developing</li>
+<li><strong>Solution</strong>:</li>
+<ul class="nested-list">
+<li>For <strong>English communication</strong>: AI is strong, use confidently (add cultural context as needed)</li>
+<li>For <strong>Vietnamese communication</strong>: Write yourself OR use AI for ideas, then translate/write in Vietnamese yourself</li>
+<li>For <strong>code-switching</strong> (English + Vietnamese in same message, common in VN business): AI may struggle, you need to manage</li>
+</ul>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<p><strong>Example 1: Relationship-Oriented (Quan Hệ)</strong>:</p>
+<ul>
+<li><strong>Scenario</strong>: Follow-up email to potential client after initial meeting</li>
+<li><strong>AI output</strong>: "Dear Mr. Tran, Following our meeting on January 15, I am writing to propose the following collaboration..."</li>
+<li><strong>Culturally adapted</strong>: "Dear Anh Tran, I hope you and your family are well as we enter the new year. It was a pleasure meeting you at the NEU Business Forum last week—I enjoyed learning about your company's impressive growth in the ASEAN market. Following our conversation, I wanted to share some thoughts on potential collaboration..."</li>
+<li><strong>What you added</strong>: Personal greeting, relationship reference, compliment showing you listened and care</li>
+</ul>
+<p><strong>Example 2: Hierarchical Norms</strong>:</p>
+<ul>
+<li><strong>Scenario</strong>: Email to senior company director (not your direct boss)</li>
+<li><strong>AI output</strong>: "Hi Director Nguyen, I wanted to share an idea about the upcoming project..."</li>
+<li><strong>Culturally adapted</strong>: "Kính gửi Anh Giám Đốc Nguyễn, Em xin phép được chia sẻ một số suy nghĩ về dự án sắp tới..." (Or in English: "Dear Director Nguyen, I respectfully would like to share some thoughts on the upcoming project...")</li>
+<li><strong>What you changed</strong>: Added respectful title, humble phrasing, appropriate formality</li>
+</ul>
+<p><strong>Example 3: High-Context + Face-Saving</strong>:</p>
+<ul>
+<li><strong>Scenario</strong>: Team member missed deadline, you need to address it</li>
+<li><strong>AI output</strong>: "Your report was due yesterday and I still haven't received it. This is unacceptable and impacts the team."</li>
+<li><strong>Culturally adapted</strong>: "Thank you for your work on the report. I understand the analysis required significant research. I'm hoping we can finalize it together today so the team can move forward with the presentation tomorrow. What support do you need to complete it?"</li>
+<li><strong>What you changed</strong>: Acknowledged effort, avoided public blame, framed as collaborative problem-solving, offered support, preserved face</li>
+</ul>
+<p><strong>Example 4: Language Nuances</strong>:</p>
+<ul>
+<li><strong>Scenario</strong>: Writing to Vietnamese supplier in Vietnamese</li>
+<li><strong>AI approach (problematic)</strong>: Write in English with ChatGPT, use Google Translate to Vietnamese</li>
+<li><strong>Result</strong>: Grammatically correct but awkward, missing respectful forms</li>
+<li><strong>Better approach</strong>: Use ChatGPT for idea structure, write the Vietnamese email yourself using appropriate respectful language (kính gửi, anh/chị, dạ/vâng, etc.)</li>
+<li><strong>Or</strong>: Use PhoGPT if available, but still review for cultural appropriateness</li>
+</ul>
+<p><strong>Vietnamese Professional Context:</strong></p>
+<ul>
+<li>Many Vietnamese companies operate in English for international business</li>
+<ul class="nested-list">
+<li>AI helps ensure professional English quality</li>
+<li>Your Vietnamese cultural intelligence adds relationship and context awareness</li>
+</ul>
+<li>For domestic Vietnamese business: Mix of English and Vietnamese</li>
+<ul class="nested-list">
+<li>Strategic documents often in English (international standards)</li>
+<li>Day-to-day communication in Vietnamese</li>
+<li>Need both language capabilities + AI tool literacy</li>
+</ul>
+</ul>
+<p><strong>Best Practice Summary</strong>:</p>
+<ul>
+<li>Think: "AI provides Western professional baseline → I add Vietnamese cultural intelligence"</li>
+<li>AI = Grammar, structure, clarity, professional phrasing</li>
+<li>YOU = Relationships, hierarchy awareness, context, face-saving, cultural references</li>
+<li>Result: Professional quality + culturally appropriate = Competitive advantage</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"AI can handle all cultures automatically"—False, AI has Western bias</li>
+<li>"Vietnamese business culture doesn't matter for international companies"—False, even multinational companies in Vietnam value cultural intelligence</li>
+<li>"Younger generation doesn't care about hierarchy and face-saving"—Changing but still important, especially with senior stakeholders</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Give example of how you'd adapt AI-generated email for Vietnamese business context" [Take 1-2 student examples]</li>
+<li>"Why might direct AI output damage business relationship in Vietnam?" [Expected: Too transactional, wrong formality, misses relationship elements, too blunt]</li>
+<li>"For which communication tasks is AI output acceptable without cultural adaptation?" [Expected: Grammar checking, internal documentation in English, data analysis summaries]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered principles and context—now let's talk about practical implementation..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="19">
+      <h2 class="section-title">Part 5: Practical Implementation</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"You understand the tools, the research, the ethics, the cultural context"</li>
+<li>"Now: How do you actually USE AI in daily business communication?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's create a decision framework..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="20">
+      <h2 class="slide-title">When to Use AI vs. When to Do It Yourself</h2>
+      <table><thead><tr><th>✓ Good Use Cases for AI</th><th>❌ Do NOT Use AI For</th></tr></thead><tbody><tr><td><strong>Grammar and style checking</strong> (always acceptable—Grammarly, etc.)</td><td><strong>Anything with confidential/proprietary information</strong> (data privacy risk)</td></tr><tr><td><strong>Brainstorming ideas</strong> and exploring different angles</td><td><strong>Final decisions on sensitive topics</strong> (requires human judgment)</td></tr><tr><td><strong>First drafts</strong> of routine communications (you revise with context)</td><td><strong>Legal or regulatory submissions</strong> (accuracy critical, liability yours)</td></tr><tr><td><strong>Outlining and structuring</strong> complex documents</td><td><strong>Situations requiring deep context</strong> only you have (relationship history, company culture)</td></tr><tr><td><strong>Generating multiple options</strong> to choose from and adapt</td><td><strong>Academic integrity contexts</strong> where AI prohibited (exams, certifications)</td></tr><tr><td><strong>Polishing and improving clarity</strong> of your original content</td><td><strong>Real-time communication</strong> (meetings, presentations, calls—no time to verify)</td></tr><tr><td><strong>Translating core ideas</strong> between formats (bullets → paragraph, technical → accessible)</td><td><strong>Ethical/moral judgments</strong> where values matter (crisis response, stakeholder decisions)</td></tr><tr><td><strong>Research summaries</strong> and background information (verify sources)</td><td><strong>Original creative work</strong> you want to claim as distinctly yours (thought leadership)</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Students always ask: 'When SHOULD I use AI and when SHOULDN'T I?'"</li>
+<li>This table gives you practical guidance</li>
+<li>Write on board: "Efficiency + Verifiable = AI okay | Authenticity + High stakes = Do yourself"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<p><strong>LEFT COLUMN - Good Use Cases</strong> (go through each):</p>
+<ol>
+<li><strong>Grammar and style checking</strong>: ALWAYS ACCEPTABLE</li>
+<ul class="nested-list">
+<li>Grammarly, Word grammar check, Hemingway Editor</li>
+<li>Professional standard—like spell check, expected that you use tools</li>
+<li>No disclosure needed for basic grammar/spelling tools</li>
+</ul>
+<li><strong>Brainstorming ideas</strong>: LOW-RISK, HIGH-REWARD</li>
+<ul class="nested-list">
+<li>"Give me 10 crisis scenarios for crisis communication practice"</li>
+<li>"What are 5 different angles I could take for persuasive proposal on remote work?"</li>
+<li>You evaluate ideas, choose best, develop fully yourself</li>
+<li>AI expands thinking, you apply judgment</li>
+</ul>
+<li><strong>First drafts of routine communications</strong>: ACCEPTABLE WITH REVISION</li>
+<ul class="nested-list">
+<li>Routine = Low-stakes, standard formats (meeting confirmations, status updates, routine requests)</li>
+<li>AI provides structure, you add specific details and context</li>
+<li>Example: "Draft meeting confirmation email for Jan 20, 2pm, Conference Room A, agenda: Q4 results"</li>
+<li>Must revise for accuracy and appropriateness before sending</li>
+</ul>
+<li><strong>Outlining and structuring</strong>: VERY USEFUL</li>
+<ul class="nested-list">
+<li>"Create outline for 15-page report on market analysis"</li>
+<li>AI provides logical flow, you populate with content</li>
+<li>Especially helpful for complex documents</li>
+<li>You control substance, AI helps organization</li>
+</ul>
+<li><strong>Generating multiple options</strong>: EXPANDS POSSIBILITIES</li>
+<ul class="nested-list">
+<li>"Give me 3 different opening paragraphs for proposal"</li>
+<li>"Suggest 5 subject lines for this email"</li>
+<li>You evaluate using course frameworks (persuasion principles, audience analysis)</li>
+<li>Pick best elements, combine, adapt</li>
+</ul>
+<li><strong>Polishing and improving clarity</strong>: QUALITY ENHANCEMENT</li>
+<ul class="nested-list">
+<li>You write first (your ideas, your voice)</li>
+<li>AI suggests: "Make this more concise" or "Improve professional tone"</li>
+<li>You evaluate suggestions, accept/reject based on judgment</li>
+<li>Maintains your ownership while improving presentation</li>
+</ul>
+<li><strong>Translating between formats</strong>: USEFUL ADAPTATION</li>
+<ul class="nested-list">
+<li>"Convert these bullet points into professional paragraph"</li>
+<li>"Explain this technical concept for non-technical audience"</li>
+<li>"Summarize this 5-page report into 200-word executive summary"</li>
+<li>AI handles format conversion, you verify accuracy and appropriateness</li>
+</ul>
+<li><strong>Research summaries</strong>: EFFICIENCY WITH VERIFICATION</li>
+<ul class="nested-list">
+<li>"Summarize main findings of this 30-page report"</li>
+<li>"What are Cialdini's 6 principles of persuasion?" (factual info you can verify)</li>
+<li>CRITICAL: Always verify sources, check for hallucinations</li>
+<li>Don't cite AI's sources without confirming they exist and say what AI claims</li>
+</ul>
+</ol>
+<p><strong>RIGHT COLUMN - Do NOT Use AI</strong> (go through each):</p>
+<ol>
+<li><strong>Confidential/proprietary information</strong>: SECURITY RISK</li>
+<ul class="nested-list">
+<li>ChatGPT, Gemini free versions: Your input becomes training data</li>
+<li>Company trade secrets, client data, financial information, strategy = NEVER put in AI</li>
+<li>Example: Don't paste actual client proposal into ChatGPT for editing</li>
+<li>Solution: Use sanitized examples or enterprise AI tools with privacy guarantees</li>
+</ul>
+<li><strong>Final decisions on sensitive topics</strong>: REQUIRES HUMAN JUDGMENT</li>
+<ul class="nested-list">
+<li>"Should we close the Vietnam office?" "Who should we fire?" "How do we respond to scandal?"</li>
+<li>AI can provide options, but YOU must decide</li>
+<li>Stakes too high, context too specific, values matter</li>
+<li>Human accountability required</li>
+</ul>
+<li><strong>Legal or regulatory submissions</strong>: ACCURACY CRITICAL</li>
+<ul class="nested-list">
+<li>Court filings, regulatory reports, compliance documentation</li>
+<li>AI makes confident errors (hallucinations)</li>
+<li>Legal liability is yours, not AI's</li>
+<li>Example: Lawyer sanctioned for citing fake AI-generated cases</li>
+</ul>
+<li><strong>Deep context only you have</strong>: AI CAN'T KNOW</li>
+<ul class="nested-list">
+<li>Relationship history with client</li>
+<li>Company culture and internal politics</li>
+<li>Previous conversations and commitments</li>
+<li>Specific stakeholder preferences and sensitivities</li>
+<li>Must do yourself or AI output will be tone-deaf</li>
+</ul>
+<li><strong>Academic integrity contexts</strong>: PROHIBITED</li>
+<ul class="nested-list">
+<li>Exams without explicit permission</li>
+<li>Professional certifications</li>
+<li>Contexts where individual capability is being assessed</li>
+<li>Using AI = Cheating in these contexts</li>
+</ul>
+<li><strong>Real-time communication</strong>: NO TIME TO VERIFY</li>
+<ul class="nested-list">
+<li>Live presentations (can't fact-check AI suggestions mid-talk)</li>
+<li>Phone calls, meetings, negotiations</li>
+<li>Need to think on feet, respond authentically</li>
+<li>AI might help prepare, but can't assist during</li>
+</ul>
+<li><strong>Ethical/moral judgments</strong>: VALUES MATTER</li>
+<ul class="nested-list">
+<li>Crisis communication tone</li>
+<li>Stakeholder prioritization decisions</li>
+<li>Ethical dilemmas in business</li>
+<li>AI has no values, you do</li>
+<li>Example: How to balance transparency vs. company protection in crisis—requires your ethical judgment</li>
+</ul>
+<li><strong>Original creative work</strong>: AUTHENTICITY MATTERS</li>
+<ul class="nested-list">
+<li>Thought leadership articles you want to publish</li>
+<li>Your unique professional insights</li>
+<li>Work you want to claim as distinctly yours</li>
+<li>Using AI undermines authorship claim</li>
+</ul>
+</ol>
+<p><strong>Examples/Stories:</strong></p>
+<p><strong>Good Use Example</strong>:</p>
+<ul>
+<li>Task: Send meeting confirmation to 5 stakeholders</li>
+<li>AI use: "Draft meeting confirmation email: Jan 25, 10am, Video call link [URL], Agenda: Review Q1 marketing strategy, attendees please prepare 3 campaign ideas"</li>
+<li>AI generates professional confirmation</li>
+<li>You review, add personal touches ("Looking forward to hearing your creative ideas"), verify details, send</li>
+<li>Result: Efficiency without risk</li>
+</ul>
+<p><strong>Bad Use Example</strong>:</p>
+<ul>
+<li>Task: Respond to client complaint about product defect</li>
+<li>AI use: Paste actual client email with company product details into ChatGPT, ask for response</li>
+<li>Problems: (1) Confidential client info exposed, (2) AI doesn't know company defect response policy, (3) Stakes too high for generic response</li>
+<li>Better: Draft response yourself applying crisis communication frameworks, use Grammarly for grammar only</li>
+<li>Result: Maintains security, appropriateness, accountability</li>
+</ul>
+<p><strong>Decision Process in Practice</strong>:</p>
+<ul>
+<li>Ask yourself: "What could go wrong if AI makes an error here?"</li>
+<ul class="nested-list">
+<li>If answer is "Minor inconvenience" → Okay to use AI</li>
+<li>If answer is "Legal liability / Damaged relationship / Lost job / Privacy breach" → Do it yourself</li>
+</ul>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"AI is either all good or all bad"—False, context-dependent</li>
+<li>"If AI can do it, I should use AI"—Ability ≠ Appropriateness</li>
+<li>"AI suggestions are always safe to accept"—Must evaluate every suggestion</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"For your Written Portfolio due this week, which AI uses would be appropriate?" [Expected: Grammar checking yes, brainstorming yes, full AI writing no, applying course frameworks must be yours]</li>
+<li>"Why is using AI for confidential info a problem?" [Expected: Privacy risk, data can be exposed or used for training]</li>
+<li>"Give example of situation where you should NOT use AI even though it could help" [Take 1-2 student examples]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at a practical workflow you can use..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="21">
+      <h2 class="framework-title">A Practical Workflow for AI-Assisted Business Communication</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Step-by-Step Process for Ethical, Effective AI Use</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><ul>
+<li>Define purpose, audience, key message</li>
+<li>Apply course frameworks (know-feel-do, audience analysis, persuasion principles)</li>
+<li>Determine tone, style, and constraints</li>
+<li><strong>Time: 10-15% of total work</strong></li>
+<li><strong>Option A</strong>: Create detailed prompt based on your strategy → AI generates first draft</li>
+<li><strong>Option B</strong>: Write rough first draft yourself → AI helps structure and polish</li>
+<li>Provide AI with context: "Audience is [X], tone should be [Y], purpose is [Z]"</li>
+<li><strong>Time: 30-40% of total work</strong></li>
+<li>Verify all facts, sources, statistics (check for AI hallucinations)</li>
+<li>Add context only you know (relationships, company culture, specific details)</li>
+<li>Ensure tone appropriate for audience and cultural context</li>
+<li>Apply your authentic voice and expertise</li>
+<li><strong>Time: 30-40% of total work</strong></li>
+<li>Use Grammarly or similar for grammar, clarity, tone consistency</li>
+<li>Read aloud to check flow and naturalness</li>
+<li>Apply checklist: Accurate? Appropriate? Authentic? Accountable?</li>
+<li><strong>Time: 10-15% of total work</strong></li>
+<li>If required, add AI disclosure statement</li>
+<li>Take accountability for final message</li>
+<li>Send/submit</li>
+</ul></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This is a practical workflow you can use starting today"</li>
+<li>Notice: YOU control strategy and accountability, AI assists execution</li>
+<li>Write on board: "YOU → AI → YOU → AI → YOU" (showing human control)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<p><strong>STEP 1: Strategic Planning - 100% YOU</strong>:</p>
+<ul>
+<li><strong>Why this can't be delegated to AI</strong>:</li>
+<ul class="nested-list">
+<li>AI doesn't know your actual purpose (what you want recipient to know-feel-do)</li>
+<li>AI doesn't understand your specific audience (their concerns, preferences, context)</li>
+<li>AI can't apply course frameworks strategically (Cialdini's principles, BLUF, know-feel-do)</li>
+</ul>
+<li><strong>What you do</strong>:</li>
+<ul class="nested-list">
+<li>Purpose: "Persuade manager to approve remote work pilot program"</li>
+<li>Audience: "Conservative manager, values data and risk mitigation, concerned about team cohesion"</li>
+<li>Frameworks: "Use Cialdini's authority (cite research) + social proof (other companies' success)"</li>
+<li>Tone: "Professional, respectful, data-driven"</li>
+</ul>
+<li><strong>Time investment</strong>: 10-15% seems small, but this is MOST IMPORTANT step</li>
+<ul class="nested-list">
+<li>Good strategy → Good outcome</li>
+<li>Skip this → AI generates competent garbage (well-written but ineffective)</li>
+</ul>
+</ul>
+<p><strong>STEP 2: AI-Assisted Drafting - AI + YOU</strong>:</p>
+<ul>
+<li><strong>Two valid approaches</strong>:</li>
+<ul class="nested-list">
+<li><strong>Option A (AI-first)</strong>: Give AI detailed strategic prompt, let it generate</li>
+<li>Prompt example: "Write 2-paragraph persuasive email to conservative manager requesting pilot remote work program. Tone: professional, data-driven. Include: (1) research showing productivity gains, (2) risk mitigation strategies, (3) proposal for 3-month trial. Audience is risk-averse and values team cohesion."</li>
+<li>AI generates draft based on your strategy</li>
+<li><strong>Option B (You-first)</strong>: You write rough ideas, AI helps organize and polish</li>
+<li>You write messy draft hitting key points</li>
+<li>Prompt AI: "Improve clarity and structure of this proposal while maintaining core message"</li>
+<li>Maintains your thinking more directly</li>
+</ul>
+<li><strong>Key</strong>: Provide context to AI so output aligns with your strategy</li>
+<ul class="nested-list">
+<li>Don't just say "Write proposal"—AI will generate generic</li>
+<li>Say "Write proposal for [specific audience] with [specific approach] achieving [specific goal]"</li>
+</ul>
+<li><strong>Time</strong>: 30-40% of work—this is where AI saves significant time</li>
+</ul>
+<p><strong>STEP 3: Critical Review & Revision - 100% YOU</strong>:</p>
+<ul>
+<li><strong>Why this is critical</strong>:</li>
+<ul class="nested-list">
+<li>AI makes confident mistakes (hallucinations)</li>
+<li>AI doesn't know your specific context</li>
+<li>AI can't maintain your authentic voice</li>
+</ul>
+<li><strong>What to check</strong> (4 categories):</li>
+</ul>
+<p>  1. <strong>Factual accuracy</strong>:</p>
+<ul class="nested-list">
+<li>Did AI cite sources? Verify they exist and say what AI claims</li>
+<li>Statistics accurate? Check original sources</li>
+<li>Claims verifiable? Don't assert things you can't support</li>
+</ul>
+<p>  2. <strong>Context appropriateness</strong>:</p>
+<ul class="nested-list">
+<li>Does this match your relationship with recipient?</li>
+<li>Right formality level for Vietnamese business culture?</li>
+<li>Company-specific terminology used correctly?</li>
+<li>Timing appropriate?</li>
+</ul>
+<p>  3. <strong>Authentic voice</strong>:</p>
+<ul class="nested-list">
+<li>Does this sound like YOU?</li>
+<li>Are there personal elements only you could write?</li>
+<li>Strategic thinking evident (not just generic AI logic)?</li>
+</ul>
+<p>  4. <strong>Cultural appropriateness</strong>:</p>
+<ul class="nested-list">
+<li>If Vietnamese context: Appropriate relationship language, face-saving, hierarchy respect?</li>
+<li>If international: Culturally sensitive, avoids stereotypes?</li>
+</ul>
+<ul>
+<li><strong>What to add</strong>:</li>
+<ul class="nested-list">
+<li>Specific examples from your experience</li>
+<li>References to previous conversations or shared context</li>
+<li>Your analytical insights and recommendations</li>
+<li>Personal touches that build relationships</li>
+</ul>
+<li><strong>Time</strong>: 30-40%—DO NOT SKIP OR RUSH THIS</li>
+<ul class="nested-list">
+<li>This is where you transform AI draft into YOUR communication</li>
+</ul>
+</ul>
+<p><strong>STEP 4: Polish & Quality Check - AI + YOU</strong>:</p>
+<ul>
+<li><strong>Use AI for final polish</strong>:</li>
+<ul class="nested-list">
+<li>Grammarly: Check grammar, punctuation, tone consistency</li>
+<li>Read aloud: Does it sound natural?</li>
+<li>Apply "4 A's" checklist (create acronym):</li>
+<li><strong>Accurate?</strong> All facts verified, no hallucinations</li>
+<li><strong>Appropriate?</strong> Right tone, formality, timing for audience and context</li>
+<li><strong>Authentic?</strong> Sounds like you, includes your unique insights and voice</li>
+<li><strong>Accountable?</strong> You can defend every claim and decision if questioned</li>
+</ul>
+<li><strong>Quality check questions</strong>:</li>
+<ul class="nested-list">
+<li>"Would I be comfortable if recipient knew AI helped with this?" (If no → Revise)</li>
+<li>"Could only I have written this, or could anyone?" (If anyone → Add more YOU)</li>
+<li>"Do I understand and can I defend every point made?" (If no → Revise or remove)</li>
+</ul>
+<li><strong>Time</strong>: 10-15%—Final safety check</li>
+</ul>
+<p><strong>STEP 5: Document & Send - 100% YOU</strong>:</p>
+<ul>
+<li><strong>Add disclosure if needed</strong> (see Principle 1):</li>
+<ul class="nested-list">
+<li>Academic assignments: Always disclose</li>
+<li>Client deliverables: Best practice</li>
+<li>Routine internal: Optional</li>
+</ul>
+<li><strong>Take accountability</strong>:</li>
+<ul class="nested-list">
+<li>Remember: You are responsible for outcome, not AI</li>
+<li>If message causes problems, you own it</li>
+<li>Hit send only when you're confident</li>
+</ul>
+<li><strong>Time</strong>: Minimal, but symbolically important</li>
+</ul>
+<p><strong>Key Principle Visual</strong>:</p>
+<p>Draw on board or describe:</p>
+<pre><code>YOU (Strategy)
+   ↓
+AI (Draft)
+   ↓
+YOU (Review + Add Context + Authentic Voice)
+   ↓
+AI (Polish)
+   ↓
+YOU (Accountable Send)</code></pre>
+<p><strong>Examples/Stories:</strong></p>
+<p><strong>Example: Persuasive Proposal Using Workflow</strong>:</p>
+<ul>
+<li><strong>Step 1 (YOU)</strong>: Strategy</li>
+<ul class="nested-list">
+<li>Purpose: Persuade HR to implement mentorship program</li>
+<li>Audience: HR Director, values ROI and employee retention</li>
+<li>Framework: Use Cialdini's social proof (other companies) + authority (research)</li>
+<li>Tone: Professional, data-driven, solution-oriented</li>
+</ul>
+<li><strong>Step 2 (AI)</strong>: Draft</li>
+<ul class="nested-list">
+<li>Prompt: "Write 3-paragraph proposal to HR Director for employee mentorship program. Include: (1) research on retention impact, (2) implementation plan, (3) ROI projections. Professional, data-driven tone."</li>
+<li>AI generates competent draft</li>
+</ul>
+<li><strong>Step 3 (YOU)</strong>: Critical Review</li>
+<ul class="nested-list">
+<li>Verify research claims (check if statistics are real)</li>
+<li>Add company-specific context: "Following recent exit interviews showing 40% of departures cite lack of development opportunities..."</li>
+<li>Add relationship element: "During our Q3 planning discussion, you mentioned retention as top priority..."</li>
+<li>Ensure Vietnamese business culture appropriateness if needed</li>
+</ul>
+<li><strong>Step 4 (AI + YOU)</strong>: Polish</li>
+<ul class="nested-list">
+<li>Grammarly checks grammar</li>
+<li>Read aloud, adjust awkward phrasing</li>
+<li>Apply 4 A's checklist: Accurate ✓, Appropriate ✓, Authentic ✓, Accountable ✓</li>
+</ul>
+<li><strong>Step 5 (YOU)</strong>: Document & Send</li>
+<ul class="nested-list">
+<li>Add disclosure note if assignment</li>
+<li>Send with confidence</li>
+</ul>
+</ul>
+<p><strong>Example: Crisis Communication Using Workflow</strong>:</p>
+<ul>
+<li><strong>Step 1 (YOU)</strong>: Strategy (CRITICAL for crisis)</li>
+<ul class="nested-list">
+<li>Purpose: Inform stakeholders of data breach, maintain trust</li>
+<li>Audience: Customers (external), employees (internal)—need different messages</li>
+<li>Framework: Argenti's crisis principles (speed, transparency, empathy, action)</li>
+<li>Tone: Empathetic, accountable, action-oriented</li>
+</ul>
+<li><strong>Step 2 (AI)</strong>: Draft</li>
+<ul class="nested-list">
+<li>Prompt: "Draft customer communication about data breach affecting 10,000 accounts. Include: (1) empathetic opening, (2) what happened, (3) what we're doing, (4) what customers should do. Transparent and accountable tone."</li>
+<li>AI generates structure</li>
+</ul>
+<li><strong>Step 3 (YOU)</strong>: Critical Review (EXTRA IMPORTANT for crisis)</li>
+<ul class="nested-list">
+<li>Verify technical details (work with IT team)</li>
+<li>Adjust for company's actual response capabilities</li>
+<li>Add empathy and accountability (AI may sound too corporate)</li>
+<li>Ensure legal/PR team has reviewed</li>
+<li>Check cultural appropriateness (Vietnamese customers may need different reassurance approach)</li>
+</ul>
+<li><strong>Step 4 (AI + YOU)</strong>: Polish</li>
+<ul class="nested-list">
+<li>Critical: Timing matters—don't over-polish if speed is essential</li>
+<li>Check tone carefully (Grammarly tone detector useful)</li>
+</ul>
+<li><strong>Step 5 (YOU)</strong>: Send</li>
+<ul class="nested-list">
+<li>CEO/leadership must approve (high stakes)</li>
+<li>Accountability is yours</li>
+</ul>
+</ul>
+<p><strong>Vietnamese Context Application</strong>:</p>
+<ul>
+<li><strong>Step 3 particularly important for Vietnamese business</strong>:</li>
+<ul class="nested-list">
+<li>Add relationship language AI won't include</li>
+<li>Adjust formality for hierarchy</li>
+<li>Add face-saving language for sensitive topics</li>
+<li>Include Vietnamese cultural references where appropriate</li>
+</ul>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"AI does most of the work, I just tweak"—False, YOU do strategic work (hardest parts)</li>
+<li>"I can skip Step 1 and just tell AI 'write proposal'"—Results in generic, ineffective output</li>
+<li>"Step 3 is optional if AI output looks good"—NEVER optional, this is where accountability happens</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which step is most important and why?" [Expected answers: Step 1 drives everything, or Step 3 ensures quality/accountability]</li>
+<li>"For your portfolio assignments, which steps would you spend most time on?" [Expected: Step 1 and Step 3]</li>
+<li>"What happens if you skip Step 3?" [Expected: Factual errors, wrong tone, inauthenticity, generic output]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's wrap up with key takeaways and look ahead..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="22">
+      <h2 class="section-title">Synthesis & Next Steps</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We've covered a lot—tools, research, ethics, culture, workflows"</li>
+<li>"Let's synthesize the key lessons and prepare for your future"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Three key takeaways to remember..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="23">
+      <h2 class="slide-title">Key Lessons: AI & Professional Communication</h2>
+      <div class="slide-content">
+        <p><strong>1. AI Is a Tool, Not a Replacement for Thinking</strong></p>
+<p>Research shows (Brynjolfsson et al., 2023):</p>
+<ul>
+<li>14% average productivity gain</li>
+<li>35% gain for beginners (learning from AI patterns)</li>
+<li>But only if YOU provide strategy, judgment, and accountability</li>
+</ul>
+<p><strong>Your value = Strategic thinking + Cultural intelligence + Authentic voice</strong></p>
+<p>(AI can't do these)</p>
+<p><strong>2. Ethical Use Requires Four Principles</strong></p>
+<ul>
+<li>✓ <strong>Transparency</strong>: Disclose AI use appropriately</li>
+<li>✓ <strong>Accountability</strong>: You own the results, not the AI</li>
+<li>✓ <strong>Authenticity</strong>: Preserve your unique voice and expertise</li>
+<li>✓ <strong>Skill Development</strong>: Use AI to learn, not to avoid learning</li>
+</ul>
+<p><strong>3. Vietnamese Professionals Have Competitive Advantage</strong></p>
+<p>Vietnam leads ASEAN in AI adoption + Vietnamese business culture values relationships</p>
+<ul>
+<li><strong>Your edge</strong>: AI for professional English quality + Your cultural intelligence for relationship building</li>
+<li><strong>Employers want</strong>: Strategic, ethical AI users who maintain authentic human connection</li>
+</ul>
+<p><strong>The Future Belongs to Professionals Who Can:</strong></p>
+<ul>
+<li>Use AI to amplify their capabilities</li>
+<li>Maintain human judgment and relationships</li>
+<li>Navigate ethical complexities with integrity</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"If you remember only three things from today, remember these"</li>
+<li>Write on board: "1. Tool not replacement, 2. Four ethical principles, 3. VN competitive advantage"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<p><strong>Takeaway 1: AI Is a Tool, Not a Replacement for Thinking</strong>:</p>
+<ul>
+<li><strong>Connect back to MIT study</strong>:</li>
+<ul class="nested-list">
+<li>14% average productivity gain = Real benefit</li>
+<li>35% for beginners = AI accelerates learning (if you study the patterns)</li>
+<li>BUT: Experienced workers saw little benefit (already had expertise)</li>
+<li><strong>Lesson</strong>: AI helps you work faster and learn faster, but doesn't replace expertise</li>
+</ul>
+<li><strong>What AI CAN'T do</strong> (your unique value):</li>
+<ul class="nested-list">
+<li><strong>Strategic thinking</strong>: What message will achieve your goals with this specific audience?</li>
+<li><strong>Cultural intelligence</strong>: How to adapt communication for Vietnamese business context?</li>
+<li><strong>Authentic voice</strong>: Your experiences, insights, relationships, professional reputation</li>
+<li><strong>Judgment</strong>: When to be direct vs. indirect, formal vs. casual, transparent vs. diplomatic</li>
+</ul>
+<li><strong>What AI CAN do</strong> (efficiency):</li>
+<ul class="nested-list">
+<li>Generate drafts, improve grammar, provide structure, offer options</li>
+<li>Frees your time to focus on strategy and relationships</li>
+</ul>
+<li><strong>The balance</strong>:</li>
+<ul class="nested-list">
+<li>Use AI for execution (writing/editing)</li>
+<li>YOU handle strategy (thinking/deciding)</li>
+<li>Result: Better outcomes in less time</li>
+</ul>
+</ul>
+<p><strong>Takeaway 2: Ethical Use Requires Four Principles</strong>:</p>
+<ul>
+<li><strong>Quick review</strong> (these should be familiar by now):</li>
+</ul>
+<p>  1. <strong>Transparency</strong>: Disclose when required, document for yourself, be specific about role</p>
+<p>  2. <strong>Accountability</strong>: You verify, you approve, you own consequences</p>
+<p>  3. <strong>Authenticity</strong>: Add YOUR insights, voice, context; don't just copy-paste AI</p>
+<p>  4. <strong>Skill Development</strong>: Learn FROM AI (study patterns), don't DEPEND on AI (can't function without it)</p>
+<ul>
+<li><strong>Why ethics matters for your career</strong>:</li>
+<ul class="nested-list">
+<li><strong>Short-term</strong>: Avoid academic integrity violations, professional embarrassment</li>
+<li><strong>Long-term</strong>: Build reputation for integrity, judgment, and authentic expertise</li>
+<li><strong>Competitive advantage</strong>: Employers value ethical professionals who navigate complexity</li>
+</ul>
+<li><strong>Ethics as competitive differentiator</strong>:</li>
+<ul class="nested-list">
+<li>Anyone can use ChatGPT</li>
+<li>Not everyone uses it strategically and ethically</li>
+<li>YOU will stand out by demonstrating principled, thoughtful approach</li>
+</ul>
+</ul>
+<p><strong>Takeaway 3: Vietnamese Professionals Have Competitive Advantage</strong>:</p>
+<ul>
+<li><strong>Two strengths combined</strong>:</li>
+</ul>
+<p>  1. <strong>Vietnam's AI leadership</strong>: 27% of ASEAN GenAI startups, 8x investment growth, top-5 ASEAN government readiness</p>
+<p>  2. <strong>Vietnamese business culture</strong>: Relationship-oriented, high-context, values trust and connection</p>
+<ul>
+<li><strong>Your unique competitive advantage</strong>:</li>
+<ul class="nested-list">
+<li><strong>Western competitors</strong>: May have AI skills but lack cultural intelligence for ASEAN markets</li>
+<li><strong>Vietnamese competitors without AI</strong>: Have cultural skills but lack technological fluency</li>
+<li><strong>YOU</strong>: AI proficiency + Vietnamese cultural intelligence = Best of both</li>
+</ul>
+<li><strong>What employers want</strong> (2025 Vietnamese job market):</li>
+<ul class="nested-list">
+<li>Professional English communication (AI helps you achieve this)</li>
+<li>Strategic thinking (course frameworks teach this)</li>
+<li>Cultural intelligence (your Vietnamese background + awareness)</li>
+<li>Ethical AI use (you learned this today)</li>
+<li>Authentic relationship building (AI can't replace, you excel)</li>
+</ul>
+<li><strong>Practical application</strong>:</li>
+<ul class="nested-list">
+<li>International company enters Vietnam → Needs people who can communicate professionally in English (AI-assisted) while building local relationships (cultural intelligence)</li>
+<li>Vietnamese company expands to ASEAN → Needs people who can work across cultures with technology fluency</li>
+<li>YOU are positioned for both scenarios</li>
+</ul>
+</ul>
+<p><strong>The Future Vision</strong>:</p>
+<ul>
+<li>Draw on board or describe:</li>
+<ul class="nested-list">
+<li><strong>Past (2020)</strong>: Professional communication = Individual human skill</li>
+<li><strong>Present (2025)</strong>: Professional communication = Human + AI collaboration</li>
+<li><strong>Future (2030+)</strong>: Humans who can strategically orchestrate AI tools while maintaining authentic relationships</li>
+</ul>
+<li><strong>Your preparation</strong>:</li>
+<ul class="nested-list">
+<li>This course teaches: Communication frameworks (Cialdini, BLUF, know-feel-do, crisis principles)</li>
+<li>Today you learned: AI integration + Ethics + Cultural context</li>
+<li>Combination = You're prepared for AI-augmented future while maintaining human value</li>
+</ul>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Future scenario 1</strong>: Vietnamese graduate, 2026</li>
+<ul class="nested-list">
+<li>Job interview for multinational company</li>
+<li>Interviewer: "How do you approach business communication?"</li>
+<li><strong>Weak answer</strong>: "I use ChatGPT for everything"</li>
+<li><strong>Strong answer (YOU)</strong>: "I apply strategic frameworks like audience analysis and persuasion principles to develop message strategy. I use AI tools like Gemini and Grammarly to improve efficiency and quality, but I always verify facts, adapt for cultural context, and maintain accountability. For Vietnamese stakeholders, I balance professional English quality with relationship-oriented communication style. I can show you examples from my portfolio."</li>
+<li><strong>Result</strong>: Strong answer shows strategic thinking + AI literacy + cultural intelligence</li>
+</ul>
+<li><strong>Future scenario 2</strong>: Vietnamese professional, 5 years in career</li>
+<ul class="nested-list">
+<li><strong>Person A</strong>: Used AI for everything in university, never developed strategic thinking</li>
+<li>Now struggles when AI can't solve problem or when real-time judgment needed</li>
+<li>Career plateaus because lacks expertise beyond tool use</li>
+<li><strong>Person B (YOU)</strong>: Used AI strategically to learn faster and work better</li>
+<li>Internalized communication frameworks and cultural intelligence</li>
+<li>Now leads team, uses AI to amplify expertise, known for strategic communication skills</li>
+<li>Career advances because AI made you better, not dependent</li>
+</ul>
+</ul>
+<p><strong>Vietnamese/ASEAN Context:</strong></p>
+<ul>
+<li><strong>ASEAN integration</strong>: Communication across cultures increasingly important</li>
+<ul class="nested-list">
+<li>You can navigate Thai, Indonesian, Philippine, Singapore business contexts</li>
+<li>AI helps with language, you bring cultural awareness</li>
+</ul>
+<li><strong>Vietnam's economic growth</strong>: More international business partnerships</li>
+<ul class="nested-list">
+<li>Need professionals who bridge cultures and technologies</li>
+<li>Your generation is first to master both</li>
+</ul>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"AI will replace communication jobs"—No, AI will change HOW we work, but human judgment and relationships remain essential</li>
+<li>"Vietnamese cultural skills don't matter anymore because business is global"—Culture matters MORE in global business, not less</li>
+<li>"I need to choose between being tech-savvy or culturally intelligent"—Best professionals are both</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which of the three takeaways resonates most with you and why?" [Take 2-3 student responses]</li>
+<li>"How will you apply these lessons in your career?" [Open discussion]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's connect this back to your Written Portfolio and look ahead..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="24">
+      <h2 class="slide-title">Applying Today's Lessons to Your Portfolio</h2>
+      <div class="slide-content">
+        <p><strong>Written Portfolio Due This Week - Ethical AI Use Guidelines:</strong></p>
+<p><strong>What's Acceptable:</strong></p>
+<ul>
+<li><strong>Grammarly/spell-check</strong> for grammar and clarity (no disclosure needed)</li>
+<li><strong>Brainstorming</strong> crisis scenarios or persuasive angles (disclose: "used ChatGPT to brainstorm ideas, selected and developed [X] myself")</li>
+<li><strong>Outlining</strong> structure (disclose: "used AI for initial outline, wrote all content myself")</li>
+<li><strong>Polishing</strong> your own writing (disclose: "wrote draft myself, used AI to improve clarity")</li>
+</ul>
+<p><strong>What's NOT Acceptable:</strong></p>
+<p>❌ <strong>AI writes entire emails/proposal/crisis response</strong> and you just submit (violates authenticity + accountability)</p>
+<p>❌ <strong>Copying AI frameworks</strong> without applying course concepts (Cialdini, BLUF, crisis principles, audience analysis)</p>
+<p>❌ <strong>No disclosure</strong> when you did use AI beyond grammar checking (violates transparency)</p>
+<p>❌ <strong>Fabricated sources</strong> from AI hallucinations (violates accuracy)</p>
+<p><strong>Evaluation Criteria Reminder:</strong></p>
+<p>Your portfolio is graded on:</p>
+<ul>
+<li><strong>Strategic application</strong> of course frameworks (Cialdini's persuasion principles, crisis communication principles, BLUF)</li>
+<li><strong>Audience analysis</strong> and appropriate tone</li>
+<li><strong>Authenticity</strong> and professional voice</li>
+<li><strong>Ethical disclosure</strong> of any AI assistance</li>
+</ul>
+<p><strong>AI can help you write well. Only YOU can apply course concepts strategically.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Many of you have been working on portfolio this week—let's clarify what's okay and what's not"</li>
+<li>This isn't theoretical—applies to assignment due now</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<p><strong>What's Acceptable - Detailed Guidance</strong>:</p>
+<ol>
+<li><strong>Grammarly/spell-check</strong>: Always okay, no disclosure</li>
+<ul class="nested-list">
+<li>This is professional baseline, like using spell-check in Word</li>
+<li>Tone suggestions okay too</li>
+<li>Only disclose if you want to, not required</li>
+</ul>
+<li><strong>Brainstorming</strong>: Good use of AI for ideation</li>
+<ul class="nested-list">
+<li>Example disclosure: "I used ChatGPT to generate 10 potential crisis scenarios. I selected the data breach scenario and developed the entire crisis communication response myself, applying Argenti's framework and course principles on transparency, empathy, and action orientation."</li>
+<li>Shows: AI helped with ideas, YOU did strategic work</li>
+</ul>
+<li><strong>Outlining</strong>: AI for structure, you for content</li>
+<ul class="nested-list">
+<li>Example disclosure: "I used ChatGPT to create initial outline for persuasive proposal. I then wrote all content myself, incorporating Cialdini's principles of social proof and authority, and adapted tone for conservative management audience."</li>
+<li>Shows: AI provided framework, YOU applied course concepts and wrote content</li>
+</ul>
+<li><strong>Polishing</strong>: You write, AI refines</li>
+<ul class="nested-list">
+<li>Example disclosure: "I drafted all emails myself using BLUF structure. I used Gemini to suggest improvements for clarity and concision. Final tone and strategic decisions were mine."</li>
+<li>Shows: You did primary work, AI helped refine</li>
+</ul>
+</ol>
+<p><strong>What's NOT Acceptable - Clear Violations</strong>:</p>
+<ol>
+<li><strong>AI writes everything</strong>: Major violation</li>
+<ul class="nested-list">
+<li>If ChatGPT writes entire proposal and you just change a few words</li>
+<li>Violates authenticity (not your work) and accountability (you didn't apply course concepts)</li>
+<li>Likely to be caught: Generic AI writing is recognizable, doesn't show course framework application</li>
+<li><strong>Consequence</strong>: Could receive zero on assignment, academic integrity investigation</li>
+</ul>
+<li><strong>No course frameworks</strong>: Even if you write yourself</li>
+<ul class="nested-list">
+<li>Portfolio graded on application of: Cialdini's persuasion, BLUF, crisis communication principles, audience analysis, know-feel-do</li>
+<li>AI-generated content typically doesn't apply these specific course frameworks</li>
+<li><strong>Must</strong>: Explicitly show you applied course concepts (mention them, demonstrate them)</li>
+<li>Example: In persuasive proposal, explicitly use social proof ("60% of similar companies have implemented...") and authority ("Research from Stanford GSB shows...")</li>
+</ul>
+<li><strong>No disclosure</strong>: Violates transparency principle</li>
+<ul class="nested-list">
+<li>If you used AI beyond grammar checking and don't disclose</li>
+<li>Academic dishonesty</li>
+<li><strong>Better safe than sorry</strong>: If uncertain whether to disclose, disclose</li>
+</ul>
+<li><strong>Fabricated sources</strong>: Critical error</li>
+<ul class="nested-list">
+<li>AI invents statistics and sources (hallucination)</li>
+<li>If you cite sources AI suggested without verifying they exist</li>
+<li><strong>Consequence</strong>: Zero on assignment (fabrication is serious violation)</li>
+<li><strong>Must</strong>: Verify every source, statistic, quote from AI</li>
+</ul>
+</ol>
+<p><strong>Evaluation Criteria Reminder</strong>:</p>
+<ul>
+<li><strong>Go back to rubrics in syllabus</strong> (Written Communication Rubric, Crisis Communication Rubric)</li>
+<li>Key criteria:</li>
+<ul class="nested-list">
+<li><strong>Content & Strategy</strong>: "Masterfully applies strategic frameworks from course" ← AI can't do this, YOU must</li>
+<li><strong>Persuasion & Influence</strong>: "Expertly applies Cialdini principles" ← Requires YOUR strategic thinking</li>
+<li><strong>Crisis principles</strong>: Transparency, empathy, action orientation ← Requires YOUR judgment</li>
+</ul>
+<li><strong>AI cannot score "Excellent"</strong> on strategic framework application—only YOU can demonstrate mastery</li>
+<li>Graders look for: Explicit framework application, strategic rationale, course concept integration</li>
+</ul>
+<p><strong>Key Message</strong>:</p>
+<ul>
+<li>"AI can help you write well" = Grammar, clarity, structure</li>
+<li>"Only YOU can apply course concepts strategically" = Frameworks, audience analysis, persuasion principles, cultural context</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<p><strong>Acceptable Example - Email Series</strong>:</p>
+<ul>
+<li>Student writes two business emails using BLUF structure</li>
+<li>Uses ChatGPT to check if tone is appropriate (professional vs. too casual)</li>
+<li>Disclosure: "I used ChatGPT to evaluate tone appropriateness for professional context. All content and BLUF structure are my own work."</li>
+<li>Grading: Full credit for strategy and framework application (student did the work)</li>
+</ul>
+<p><strong>Unacceptable Example - Persuasive Proposal</strong>:</p>
+<ul>
+<li>Student asks ChatGPT: "Write 3-page persuasive proposal for flexible work policy"</li>
+<li>AI generates generic proposal</li>
+<li>Student submits with minor wording changes</li>
+<li>No disclosure</li>
+<li>Grading: Likely scores "Poor" or "Failing" on Content & Strategy criterion because doesn't apply course frameworks; possible academic integrity investigation</li>
+</ul>
+<p><strong>Borderline Example - Crisis Communication</strong>:</p>
+<ul>
+<li>Student uses ChatGPT to generate crisis communication response</li>
+<li>Then heavily revises: adds specific Argenti framework elements, adjusts tone for transparency and empathy, includes Vietnamese cultural context</li>
+<li>Discloses: "I used ChatGPT to generate initial draft. I then substantially revised to apply Argenti's crisis communication principles (transparency, empathy, action), adjusted tone for stakeholder trust, and added company-specific context."</li>
+<li>Grading: Acceptable IF revision truly shows course framework application; disclosure shows transparency</li>
+</ul>
+<p><strong>How to Succeed</strong>:</p>
+<ul>
+<li>Start with YOUR strategic thinking (Purpose-Person-Point, audience analysis, framework selection)</li>
+<li>Use AI to assist execution (drafting, polishing)</li>
+<li>Explicitly reference course frameworks in your work (mention Cialdini by name, explain why you used social proof, etc.)</li>
+<li>Verify all facts and sources</li>
+<li>Disclose AI use appropriately</li>
+<li>Take accountability for final product</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"If I disclose AI use, I'll get lower grade"—False, disclosure shows integrity; lack of disclosure = academic dishonesty</li>
+<li>"Good writing is good writing, doesn't matter where it came from"—False, assignments test YOUR mastery of course concepts</li>
+<li>"AI can apply Cialdini's principles"—AI can mention them, but strategic application requires YOUR judgment</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"For your persuasive proposal, how would you use AI ethically while still demonstrating course framework mastery?" [Take 1-2 student examples]</li>
+<li>"What's the difference between AI helping you polish vs. AI writing for you?" [Expected: Polish = you wrote it, AI refined; Writing = AI did primary work]</li>
+<li>"If you're unsure whether to disclose AI use, what should you do?" [Answer: Disclose to be safe]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Finally, let's look at the tutorial and quiz prep for this week..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="25">
+      <h2 class="slide-title">This Week's Tutorial: AI Ethics Case Analysis</h2>
+      <div class="slide-content">
+        <p><strong>Tutorial Activity: Analyzing AI Use Scenarios</strong></p>
+<p>You'll work through realistic business communication scenarios and evaluate:</p>
+<ul>
+<li>✓ Is AI use appropriate in this case?</li>
+<li>✓ What ethical principles apply?</li>
+<li>✓ How would you use AI differently?</li>
+<li>✓ What could go wrong?</li>
+</ul>
+<p><strong>Scenarios include:</strong></p>
+<ul>
+<li>Client proposal with confidential data</li>
+<li>Crisis communication response under time pressure</li>
+<li>Cross-cultural email to Vietnamese stakeholders</li>
+<li>Social media post during controversy</li>
+</ul>
+<p><strong>You'll practice:</strong></p>
+<ul>
+<li>Applying the 4 ethical principles (transparency, accountability, authenticity, skill development)</li>
+<li>Using the decision framework (when to use AI vs. when not to)</li>
+<li>Crafting appropriate AI disclosure statements</li>
+<li>Balancing efficiency with quality and ethics</li>
+</ul>
+<p><strong>Connection to Portfolio:</strong></p>
+<p>This tutorial helps you evaluate your own AI use in portfolio assignments and prepare for similar decisions in your career.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"In tutorial, you'll practice applying today's concepts to realistic scenarios"</li>
+<li>This isn't theoretical—these are situations you'll face in workplace</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Case-based learning</strong>: Learn by analyzing specific situations</li>
+<li><strong>Scenarios cover</strong>: Different contexts (client work, crisis, cross-cultural, public communication)</li>
+<li><strong>Skills practiced</strong>: Decision-making, ethical reasoning, strategic thinking</li>
+<li><strong>Practical output</strong>: AI disclosure statements, revised workflows, risk assessment</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's wrap up with key references and synthesis..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="26">
+      <h2 class="slide-title">Finding the Balance: AI + Human Intelligence</h2>
+      <div class="slide-content">
+        <p><strong>The Integration Model:</strong></p>
+<pre><code>         AI Strengths              Human Strengths
+         ───────────              ────────────────
+         • Speed                   • Strategy
+         • Consistency             • Judgment
+         • Grammar                 • Context
+         • Structure               • Relationships
+         • Options                 • Authenticity
+                     ↓
+                COMBINED
+                     ↓
+        Efficient + Strategic + Ethical
+            Professional Communication</code></pre>
+<p><strong>The Questions to Always Ask:</strong></p>
+<ol>
+<li><strong>"What value am I adding beyond what AI generates?"</strong></li>
+<ul class="nested-list">
+<li>If answer is "nothing" → You're not doing your job</li>
+<li>Should be: Strategy, context, relationships, judgment</li>
+</ul>
+<li><strong>"Would I be comfortable defending this if questioned?"</strong></li>
+<ul class="nested-list">
+<li>If answer is "no" → Don't send it</li>
+<li>Should verify, understand, and own every word</li>
+</ul>
+<li><strong>"Am I learning from this process or just outsourcing?"</strong></li>
+<ul class="nested-list">
+<li>If answer is "just outsourcing" → You're not developing skills</li>
+<li>Should internalize patterns, build expertise</li>
+</ul>
+</ol>
+<p><strong>Your Goal:</strong></p>
+<p>Become a professional who <strong>amplifies AI's capabilities with human judgment, cultural intelligence, and authentic relationships.</strong></p>
+<p>Not someone replaced by AI, but someone made irreplaceable because of how strategically you use it.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Final synthesis: How do you think about AI + Human collaboration?"</li>
+<li>Draw or describe the integration model on board</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<p><strong>Integration Model Explained</strong>:</p>
+<ul>
+<li><strong>AI Strengths</strong> (left side):</li>
+<ul class="nested-list">
+<li>Speed: Generates drafts in seconds</li>
+<li>Consistency: Maintains professional tone, catches errors</li>
+<li>Grammar: Better than most humans at grammar rules</li>
+<li>Structure: Logical organization, clear flow</li>
+<li>Options: Can generate multiple alternatives quickly</li>
+</ul>
+<li><strong>Human Strengths</strong> (right side):</li>
+<ul class="nested-list">
+<li>Strategy: Purpose-Person-Point, audience analysis, persuasion frameworks</li>
+<li>Judgment: When to be direct/indirect, formal/casual, what's appropriate</li>
+<li>Context: Relationship history, company culture, specific situation</li>
+<li>Relationships: Personal connection, trust, cultural intelligence</li>
+<li>Authenticity: Your unique voice, experiences, expertise</li>
+</ul>
+<li><strong>COMBINED</strong> (bottom):</li>
+<ul class="nested-list">
+<li>Efficient (from AI speed)</li>
+<li>Strategic (from human thinking)</li>
+<li>Ethical (from human values and accountability)</li>
+<li>Result: Best of both = Professional communication excellence</li>
+</ul>
+</ul>
+<p><strong>Three Always-Ask Questions</strong> (teach each):</p>
+<ol>
+<li><strong>"What value am I adding?"</strong>:</li>
+<ul class="nested-list">
+<li>If you're just clicking "generate" and "send" → You're not adding value</li>
+<li>Should add: Strategic thinking, context, relationships, cultural adaptation</li>
+<li>Example: AI drafts meeting invite → You add relationship reference and strategic framing</li>
+<li>If you can't articulate your value-add, revise your process</li>
+</ul>
+<li><strong>"Would I be comfortable defending this?"</strong>:</li>
+<ul class="nested-list">
+<li>Accountability test</li>
+<li>If manager/client/professor asks "Why did you say X?" can you explain?</li>
+<li>If source turns out fake, can you defend why you cited it?</li>
+<li>If tone offends someone, can you justify your choice?</li>
+<li>If answer is no to any → Don't send until you CAN defend</li>
+</ul>
+<li><strong>"Am I learning or just outsourcing?"</strong>:</li>
+<ul class="nested-list">
+<li>Skill development test</li>
+<li>After using AI, ask: "Could I do this better myself next time?"</li>
+<li>If yes → Good, you're learning patterns</li>
+<li>If no → Danger, you're becoming dependent</li>
+<li>Goal: Each AI interaction should teach you something you can apply independently later</li>
+</ul>
+</ol>
+<p><strong>Your Goal - Career Vision</strong>:</p>
+<ul>
+<li><strong>Not</strong>: "Person who knows how to use ChatGPT" (everyone can do this)</li>
+<li><strong>Instead</strong>: "Strategic communicator who amplifies AI with cultural intelligence and authentic relationships"</li>
+<li><strong>Distinction</strong>:</li>
+<ul class="nested-list">
+<li>Basic AI user: Uses AI for everything, adds little value, easily replaced</li>
+<li>Strategic AI user (YOU): Uses AI to amplify YOUR expertise, brings cultural context and judgment, irreplaceable</li>
+</ul>
+<li><strong>Why irreplaceable?</strong>:</li>
+<ul class="nested-list">
+<li>AI gets better at writing → But can't replace your relationships</li>
+<li>AI gets better at strategy → But can't replace your cultural intelligence</li>
+<li>AI gets better at speed → But can't replace your accountability and judgment</li>
+<li>YOU bring human elements AI never can</li>
+</ul>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>Replaceable approach</strong>: "I use AI for all my emails"</li>
+<ul class="nested-list">
+<li>Value: None beyond AI</li>
+<li>Competitive advantage: None (everyone has AI)</li>
+<li>Career trajectory: Plateau (AI does your job)</li>
+</ul>
+<li><strong>Irreplaceable approach (YOU)</strong>: "I use AI to draft efficiently, then I add strategic frameworks, cultural context, and relationship elements based on my expertise"</li>
+<ul class="nested-list">
+<li>Value: Strategic thinking + Cultural intelligence + Relationship management</li>
+<li>Competitive advantage: Human skills AI can't replicate</li>
+<li>Career trajectory: Advancement (you make AI better, AI makes you faster)</li>
+</ul>
+</ul>
+<p><strong>Final Message</strong>:</p>
+<ul>
+<li>"AI is tool to amplify YOUR intelligence, not replace it"</li>
+<li>"Your competitive advantage = Human skills (strategy, culture, relationships) + AI efficiency"</li>
+<li>"Use AI to become better professional, not to avoid becoming one"</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the difference between being replaced by AI vs. being amplified by AI?" [Expected: Replaced = no unique value; Amplified = AI executes your strategy]</li>
+<li>"Which of the three questions will you find hardest to answer honestly?" [Open discussion]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's close with references and next steps..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="27">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p><em>Feder, S., & Olin, L. (2023, February 2). Generative AI can help you tailor messaging to specific audiences. Harvard Business Review. https://hbr.org/2023/02/generative-ai-can-help-you-tailor-messaging-to-specific-audiences</em></p>
+<p><em>OpenGov Asia. (2025, February 8). Vietnam's AI future: Innovation, policy, and growth. https://archive.opengovasia.com/2025/02/08/vietnams-ai-future-innovation-policy-and-growth/</em></p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"All sources cited today are listed here"</li>
+<li>These are openly accessible—you can read full articles</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Required readings: Brynjolfsson et al. (MIT study) and Feder & Olin (HBR)</li>
+<li>Additional sources provided context for ethics, Vietnam AI landscape, workplace trends</li>
+<li>All links verified and accessible</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Final slide: What's next..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="28">
+      <h2 class="slide-title">Moving Forward: Your AI-Augmented Career</h2>
+      <div class="slide-content">
+        <p><strong>This Week:</strong></p>
+<ul>
+<li>✓ <strong>Submit Written Portfolio</strong> (Email Series, Persuasive Proposal, Crisis Communication)</li>
+<ul class="nested-list">
+<li>Apply course frameworks strategically (Cialdini, BLUF, crisis principles)</li>
+<li>Disclose any AI use beyond grammar checking</li>
+<li>Take accountability for quality and authenticity</li>
+</ul>
+<li>✓ <strong>Attend Tutorial</strong>: Practice ethical AI decision-making with case scenarios</li>
+</ul>
+<p><strong>For Your Career:</strong></p>
+<ul>
+<li><strong>Experiment</strong> with AI tools (ChatGPT, Gemini, Grammarly) to find what works for you</li>
+<li><strong>Document</strong> how you use AI (builds portfolio of strategic AI use)</li>
+<li><strong>Learn</strong> from AI output (study patterns, internalize techniques)</li>
+<li><strong>Maintain</strong> your authentic voice and strategic thinking</li>
+<li><strong>Stay current</strong> (AI landscape changes rapidly—keep learning)</li>
+</ul>
+<p><strong>Remember:</strong></p>
+<p>> "AI is a tool to amplify your intelligence, not replace it. Your competitive advantage comes from strategic thinking, cultural intelligence, and authentic relationships—human capabilities AI cannot replicate."</p>
+<p><strong>Your generation will define how AI transforms professional communication.</strong></p>
+<p><strong>Do it ethically. Do it strategically. Do it with human wisdom.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We've covered enormous ground today—from tools to ethics to Vietnamese context to practical workflows"</li>
+<li>"Let me leave you with clear next steps"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<p><strong>This Week Actions</strong>:</p>
+<ul>
+<li><strong>Portfolio submission</strong>: Reminder of due date, emphasis on course framework application and AI disclosure</li>
+<li><strong>Tutorial</strong>: Preview of practical case analysis practice</li>
+<li>Both are opportunities to apply today's learning immediately</li>
+</ul>
+<p><strong>Career-Long Practices</strong>:</p>
+<ul>
+<li><strong>Experiment</strong>: Try different tools, find workflow that suits you</li>
+<ul class="nested-list">
+<li>Some prefer ChatGPT, some Gemini, some Claude</li>
+<li>Some prefer AI-first drafting, some prefer human-first</li>
+<li>Find YOUR optimal approach through experimentation</li>
+</ul>
+<li><strong>Document</strong>: Keep track of how you use AI</li>
+<ul class="nested-list">
+<li>Portfolio piece: "I use AI for X tasks in Y way with Z ethical considerations"</li>
+<li>Job interviews: Concrete examples of strategic AI use</li>
+<li>Demonstrates intentionality and ethical awareness</li>
+</ul>
+<li><strong>Learn</strong>: Treat AI as teacher</li>
+<ul class="nested-list">
+<li>Study why AI's version works (or doesn't)</li>
+<li>Internalize patterns and techniques</li>
+<li>Goal: Eventually need AI less because you've learned more</li>
+</ul>
+<li><strong>Maintain authenticity</strong>: Never lose YOUR voice</li>
+<ul class="nested-list">
+<li>AI should amplify you, not erase you</li>
+<li>Your experiences, relationships, insights = Irreplaceable</li>
+</ul>
+<li><strong>Stay current</strong>: AI changes fast</li>
+<ul class="nested-list">
+<li>New tools emerge constantly</li>
+<li>Best practices evolve</li>
+<li>Commit to continuous learning</li>
+</ul>
+</ul>
+<p><strong>Final Message</strong>:</p>
+<ul>
+<li>Read quote aloud: "AI is a tool to amplify your intelligence..."</li>
+<li><strong>Your generation's responsibility</strong>:</li>
+<ul class="nested-list">
+<li>First generation of professionals to work with mature generative AI</li>
+<li>How you integrate AI will set norms for future</li>
+<li>Do it with ethics, strategy, and wisdom</li>
+</ul>
+<li><strong>You have power to shape this</strong>:</li>
+<ul class="nested-list">
+<li>In your workplaces: Model responsible AI use</li>
+<li>In your teams: Establish ethical standards</li>
+<li>In Vietnam: Lead ASEAN in thoughtful AI integration</li>
+</ul>
+<li><strong>Make it human-centered</strong>:</li>
+<ul class="nested-list">
+<li>Technology serves people, not replaces them</li>
+<li>Efficiency matters, but so do relationships and authenticity</li>
+<li>Strategic, ethical AI use distinguishes great professionals</li>
+</ul>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><strong>5 years from now</strong>: You're hiring new graduates</li>
+<ul class="nested-list">
+<li>Candidate A: "I'm really good at ChatGPT"</li>
+<li>Candidate B: "I use AI strategically to amplify my communication expertise while maintaining authentic stakeholder relationships and cultural intelligence. Here's how I've applied this in X, Y, Z situations."</li>
+<li>Who do you hire? Candidate B (strategic thinker, not just tool user)</li>
+<li>That's what you're becoming through this course + today's learning</li>
+</ul>
+</ul>
+<p><strong>Closing Thought</strong>:</p>
+<ul>
+<li>"AI will be part of your entire careers"</li>
+<li>"How you use it—ethically, strategically, with human wisdom—determines whether you're amplified by it or replaced by it"</li>
+<li>"You now have frameworks to be amplified"</li>
+<li>"Go use them well"</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's one thing you'll do differently in your professional communication after today?" [Take 2-3 final student responses]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Questions before we end?"</li>
+<li>Open for brief Q&A if time allows (5 minutes)</li>
+<li>Thank students for engagement</li>
+<li>Remind about portfolio deadline and tutorial</li>
+</ul>
+<p>---</p>
+<p><strong>END OF LECTURE</strong></p>
+<p><strong>Total Slides:</strong> 28 content slides</p>
+<p><strong>Total Time:</strong> ~90 minutes</p>
+<p><strong>Assessment Connection:</strong> Written Portfolio (Week 5), Quiz 2 (Week 7)</p>
+<p><strong>Core Frameworks:</strong> AI ethical principles, decision framework, workflow integration</p>
+<p>---</p>
+<p>## LECTURE DELIVERY NOTES</p>
+<p><strong>Engagement Strategies:</strong></p>
+<ul>
+<li>Multiple show-of-hands polls (Slide 2, 4, 5)</li>
+<li>Open discussions after key concepts (Slides 9, 14, 17, 23)</li>
+<li>Practical application to portfolio (Slide 24)</li>
+<li>Real Vietnamese examples throughout (Slides 17, 18)</li>
+</ul>
+<p><strong>Time Management:</strong></p>
+<ul>
+<li>If running over: Combine Slides 23-24 (synthesis + portfolio application)</li>
+<li>If running under: Expand Q&A at end, more discussion on Slide 17 (Vietnam context)</li>
+</ul>
+<p><strong>Cultural Adaptations:</strong></p>
+<ul>
+<li>Vietnamese examples integrated throughout (VNG, FPT, Viettel, PhoGPT)</li>
+<li>Respectful framing of hierarchy and relationship culture (Slide 18)</li>
+<li>Acknowledge students may have used AI for portfolio—normalize ethical use</li>
+</ul>
+<p><strong>Key Moments to Emphasize:</strong></p>
+<ul>
+<li>Slide 9: MIT study findings (concrete research foundation)</li>
+<li>Slide 12-15: Four ethical principles (core framework)</li>
+<li>Slide 18: Vietnamese cultural considerations (local relevance)</li>
+<li>Slide 20: Decision framework (practical tool)</li>
+<li>Slide 23: Three takeaways (synthesis for retention)</li>
+</ul>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,2131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 27</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 9: Presentations Part I - Design & Structure</h1>
+        <p class="subtitle"></p>
+        <p class="author"><strong>TITLE</strong>: Week 9: Presentations Part I - Design & Structure<br><strong>SUBTITLE</strong>: Crafting Presentations That Persuade, Inform, and Inspire<br><strong>CONTENT</strong>:<br><strong>Business Communication</strong><br>Andrews University - National Economics University Campus<br>Fall 2025<br>Instructor: William Winterton Lang</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome to Week 9 where we shift from written to oral communication</li>
+<li>Two-week presentation sequence: this week = design/structure, next week = delivery/presence</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Today's focus: crafting the presentation itself (content, story, slides)</li>
+<li>Next week: delivering it effectively (voice, body language, handling Q&A)</li>
+<li>Both are essential for your Group Presentation in Week 11</li>
+<li>Vietnamese context: Many students feel nervous about presentations - we'll build confidence systematically</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with a question that may resonate with many of you..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="2">
+      <h2 class="slide-title">Opening Question</h2>
+      
+      <div class="quote-content">
+        <blockquote class="large-quote">"Have you ever sat through a presentation where the speaker read every word on their slides, and you found yourself checking your phone instead of listening?"</blockquote>
+        <p class="quote-attribution">Common experience we'll learn to avoid today</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Show of hands: "How many have experienced this?" [Most hands will go up]</li>
+<li>Validate: "You're not alone - this is called 'Death by PowerPoint'"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Today we'll learn WHY this happens (cognitive science)</li>
+<li>More importantly, HOW to avoid it in your presentations</li>
+<li>Your Group Presentation is Week 11 - these principles apply directly</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Share brief story: "I once attended a conference where the speaker had 60 slides for 30 minutes, each with 200 words. After 5 minutes, the entire audience was on their laptops doing email."</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What makes a presentation boring or ineffective?" [Take 2-3 responses: too much text, monotone reading, no visuals, unclear message]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we fix the problem, let's make sure we understand key presentation terms..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="3">
+      <h2 class="slide-title">Key Vocabulary</h2>
+      <table class="vocab-table"><thead><tr><th><strong>English Term</strong></th><th><strong>Vietnamese Translation</strong></th><th><strong>Definition</strong></th></tr></thead><tbody><tr><td><strong>Storytelling structure</strong></td><td>Cấu trúc kể chuyện</td><td>Organizing presentation as a narrative arc with beginning, middle, end</td></tr><tr><td><strong>Cognitive load</strong></td><td>Tải nhận thức</td><td>Mental effort required to process information</td></tr><tr><td><strong>Hook</strong></td><td>Mở đầu thu hút</td><td>Opening element that captures audience attention</td></tr><tr><td><strong>Call-to-action (CTA)</strong></td><td>Lời kêu gọi hành động</td><td>Specific request for what audience should do next</td></tr><tr><td><strong>Narrative arc</strong></td><td>Cung chuyện</td><td>The emotional journey of a presentation from beginning to resolution</td></tr><tr><td><strong>Visual hierarchy</strong></td><td>Thứ bậc hình ảnh</td><td>Arrangement of elements to show importance and guide attention</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Introduce vocabulary to build confidence for English-language business presentations</li>
+<li>These terms are used globally in professional settings</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Storytelling structure</strong>: Not just facts - presentations need narrative flow like a good story</li>
+<li><strong>Cognitive load</strong>: Key concept for today - our brains have limited processing capacity</li>
+<li><strong>Hook & CTA</strong>: Bookends of your presentation - grab attention early, direct action at end</li>
+<li><strong>Death by PowerPoint</strong>: We'll learn the science behind why this fails</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnamese context: "When FPT Techday 2024 presented their AI strategy, they used storytelling structure - starting with customer problem, building to solution"</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone use 'cognitive load' in a sentence related to presentations?" [Expected: "Reading slides while listening creates too much cognitive load"]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we have our vocabulary, let's establish what we're trying to achieve today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">Learning Objectives</h2>
+      <div class="slide-content">
+        <p><strong>CONTENT</strong>:</p>
+<p>By the end of today's session, you will be able to:</p>
+<ol>
+<li><strong>Apply</strong> Nancy Duarte's "What is/What could be" storytelling structure to organize persuasive presentations</li>
+<li><strong>Design</strong> slides that minimize cognitive load using evidence-based principles</li>
+<li><strong>Construct</strong> effective opening hooks and closing calls-to-action</li>
+<li><strong>Analyze</strong> the differences between presentations that persuade, inform, and inspire</li>
+<li><strong>Evaluate</strong> presentation designs using the "rule of three" and other structural frameworks</li>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>These objectives directly prepare you for Week 11 Group Presentations</li>
+<li>Notice the action verbs: apply, design, construct, analyze, evaluate (Bloom's taxonomy)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Objective 1 (Duarte framework): Core storytelling structure used by TED speakers</li>
+<li>Objective 2 (cognitive load): Science-based slide design to keep audience engaged</li>
+<li>Objectives 3-5: Practical skills you'll practice in tutorial today</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which objective feels most challenging to you?" [Show of hands for each - helps gauge anxiety levels]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's connect these skills to your upcoming assessment..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">Connection to Your Group Presentation</h2>
+      <div class="slide-content">
+        <p><strong>CONTENT</strong>:</p>
+<p><strong>Your Week 11 Group Presentation (30% + 15% individual):</strong></p>
+<p>Your team will deliver a <strong>15-minute presentation + 10-minute Q&A</strong> on a business communication topic.</p>
+<p><strong>Today's skills directly address the rubric:</strong></p>
+<ul>
+<li><strong>Content Quality</strong> → Storytelling structure ensures compelling message</li>
+<li><strong>Organization & Structure</strong> → Duarte's framework, rule of three, opening hooks, CTAs</li>
+<li><strong>Visual Aids</strong> → Slide design principles from research</li>
+<li><strong>Time Management</strong> → "One minute per slide" rule helps planning</li>
+</ul>
+<p><strong>In tutorial today:</strong> You'll practice designing a presentation storyboard using these frameworks.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Make explicit connection: "Everything today = direct practice for your graded presentation"</li>
+<li>Show syllabus Group Presentation rubric criteria (pull up PDF if possible)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Content quality</strong>: Great content poorly structured = ineffective</li>
+<li><strong>Organization</strong>: Rubric specifically mentions "storytelling frameworks from course"</li>
+<li><strong>Visual aids</strong>: "Avoids 'death by PowerPoint'" is literally in rubric</li>
+<li><strong>Time management</strong>: 15 minutes requires ~15 slides</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Past example: "Last year, a group had brilliant research but 40 text-heavy slides. They rushed, audience was confused, lost 15 points on Organization & Visual Aids."</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"How many slides should you aim for in a 15-minute presentation?" [Answer: ~15, using one-minute-per-slide rule]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's dive into the substance - what makes presentations rise or fall..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="6">
+      <h2 class="section-title">Part 1: Presentation Fundamentals</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Clear transition to main content</li>
+<li>This section covers foundational principles before specific techniques</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Chris Anderson, curator of TED Talks - which have been viewed over 1 billion times - distilled what makes presentations work..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="7">
+      <h2 class="slide-title">The Core Principle of Great Presentations</h2>
+      
+      <div class="quote-content">
+        <blockquote class="large-quote">"Presentations rise or fall on the quality of the idea, the narrative, and the passion of the speaker. It's about substance, not style."</blockquote>
+        <p class="quote-attribution">Chris Anderson, TED Curator (2013)</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Read quote slowly and deliberately</li>
+<li>Let it sink in: "Read that again silently to yourself" [pause 5 seconds]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Substance over style</strong>: No amount of fancy slides can compensate for weak ideas</li>
+<li><strong>Quality of idea</strong>: Must have something worth saying - research, insight, solution</li>
+<li><strong>Narrative</strong>: How you structure and tell the story (today's focus)</li>
+<li><strong>Passion</strong>: Genuine enthusiasm - can't be faked (next week's focus)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>TED context: Anderson has coached thousands of speakers, identified these three as non-negotiable</li>
+<li>Vietnamese context: "When Tran Dang Hoa (FPT Chairman) presented on AI talent development at Vietnam Innovation Day 2024, his passion for the topic was evident - that's what made the presentation memorable, not the slides"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think: "If I make beautiful slides, my presentation will be good"</li>
+<li>Reality: "Beautiful slides + weak idea = still a bad presentation"</li>
+<li>Slides should SUPPORT your idea, not replace it</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the difference between substance and style in presentations?" [Substance = idea/content, Style = delivery/design]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"So if substance is most important, what exactly is the substance? Three types of presentations serve different purposes..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="8">
+      <h2 class="slide-title">Three Types of Presentations</h2>
+      <table><thead><tr><th>Purpose</th><th>Goal</th><th>Structure</th><th>Example Context</th></tr></thead><tbody><tr><td><strong>Persuade</strong></td><td>Change minds, drive action, overcome objections</td><td>Problem → Solution → Benefit; What is → What could be</td><td>Sales pitch, proposal, recommendation</td></tr><tr><td><strong>Inform</strong></td><td>Transfer knowledge, explain concepts, share data</td><td>Logical sequence, topic breakdown, Q&A</td><td>Training, report presentation, update</td></tr><tr><td><strong>Inspire</strong></td><td>Motivate, energize, create emotional connection</td><td>Story arc, vision, call-to-action</td><td>Keynote, vision statement, commencement</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Draw on board: "Persuade | Inform | Inspire" as three columns</li>
+<li>Ask class: "What's your Group Presentation's primary purpose?" [Most will say "inform" - challenge them to consider persuasion]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Persuade</strong>: You want audience to DO something or believe something different after</li>
+<li><strong>Inform</strong>: You want audience to KNOW something they didn't know before</li>
+<li><strong>Inspire</strong>: You want audience to FEEL something - motivation, hope, urgency</li>
+<li><strong>Blended</strong>: Example - Steve Jobs' iPhone launch (2007): Informed about features, Persuaded to buy, Inspired about future</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnamese context: "VNG Corporation's investor presentations = primarily persuade (buy stock), secondarily inform (company performance)"</li>
+<li>Student context: "Your group presentation may feel like 'inform' but you're also persuading us you understand the topic deeply and can apply it"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Academic presentations only inform" → False, you're also persuading professor you've learned</li>
+<li>"I can't inspire in a business presentation" → False, closing with inspiring vision is powerful</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If I'm presenting a crisis communication plan to my CEO, what's my primary purpose?" [Answer: Persuade - convince them to approve the plan]</li>
+<li>"If I'm training new employees on email etiquette, what's my primary purpose?" [Answer: Inform, with some persuasion on why it matters]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we know WHAT we're trying to achieve, let's learn HOW to structure presentations that persuade..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="9">
+      <h2 class="section-title">Part 2: Storytelling Structures</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Transition:</strong></p>
+<ul>
+<li>"We're moving from theory to practical frameworks you'll use to structure your presentations"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="10">
+      <h2 class="framework-title">Nancy Duarte's Storytelling Framework</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Beginning: Describe current reality (What is)</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>Reveal better future (What could be)</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>The "What is/What could be" Structure</strong></p>
+<p><em>Creates tension by contrasting present with possibility</em></p>
+<p><strong>Middle:</strong> Alternate between "What is" and "What could be"</p>
+<p><em>Each cycle makes the future state more compelling</em></p>
+<p><strong>End:</strong> Describe "new bliss" - the transformed world</p>
+<p><em>Call-to-action with concrete next steps</em></p></div>
+      <div class="slide-footer"><p class="citation">Duarte, N. (2012). Structure your presentation like a story. Harvard Business Review. https://hbr.org/2012/10/structure-your-presentation-li</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Draw on board: "What is ↔ What could be ↔ What is ↔ What could be → New Bliss"</li>
+<li>Introduce Duarte: "Communication expert who analyzed great speeches - Martin Luther King Jr., Steve Jobs"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>The contrast creates persuasion</strong>: By showing gap between reality and possibility, you create tension that needs resolution</li>
+<li><strong>Beginning</strong>: Establish rapport by describing their world accurately ("People should be nodding their heads")</li>
+<li><strong>Middle</strong>: Each alternation builds desire for the "what could be"</li>
+<li><strong>End</strong>: Don't just list tasks - paint picture of transformed world</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Real example: "Martin Luther King Jr.'s 'I Have a Dream' speech used this structure perfectly"</li>
+<ul class="nested-list">
+<li>What is: Segregation, inequality, injustice</li>
+<li>What could be: Children of different races playing together, judged by character not color</li>
+<li>Alternated throughout, built to climactic vision of "new bliss"</li>
+</ul>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why does alternating between 'what is' and 'what could be' work better than just describing the future once?" [Answer: Repetition builds desire, contrast creates tension, audience gets increasingly attracted to "what could be"]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let me show you how this works in a business context with a real example..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="11">
+      <h2 class="slide-title">Duarte Framework in Action: FPT Example</h2>
+      <div class="slide-content">
+        <p><strong>Vietnamese Context: Duarte's Structure</strong></p>
+<p><strong>Hypothetical FPT Techday 2024 AI Presentation Structure:</strong></p>
+<p><strong>What is:</strong> "Vietnamese companies struggle to find AI talent - 80% of positions unfilled for 6+ months"</p>
+<p><strong>What could be:</strong> "Imagine graduating students who are job-ready with AI skills from Day 1"</p>
+<p><strong>What is:</strong> "Current training doesn't match industry needs - students learn theory without practical application"</p>
+<p><strong>What could be:</strong> "Our AI bootcamp combines hands-on projects with real client problems"</p>
+<p><strong>New Bliss (Closing):</strong> "One year from now, Vietnam could be Southeast Asia's AI talent hub, with your graduates leading the transformation"</p>
+<p><strong>Call-to-action:</strong> "Partner with us to design the curriculum your industry needs"</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Connect to Vietnamese context: "FPT is one of Vietnam's largest tech companies - they present frequently to investors, partners, government"</li>
+<li>Note: "This is a hypothetical structure based on FPT's actual AI initiatives in 2024"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>What is (Problem 1)</strong>: Start with painful current reality - talent shortage</li>
+<li><strong>What could be (Solution 1)</strong>: Show possibility - job-ready graduates</li>
+<li><strong>What is (Problem 2)</strong>: Deepen the pain - training gap</li>
+<li><strong>What could be (Solution 2)</strong>: Show how to bridge gap</li>
+<li><strong>New Bliss</strong>: Paint the aspirational future state (Vietnam as AI hub)</li>
+<li><strong>CTA</strong>: Specific action request (partner with us)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Real data: Vietnam tech sector is growing 15-20% annually, talent shortage is real challenge</li>
+<li>FPT actually did host Techday 2024 with AI focus and 20+ presentations</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I need to present ALL problems before ANY solutions" → No, alternate for persuasive rhythm</li>
+<li>"New bliss sounds too idealistic for business" → Actually, aspirational vision is powerful in business</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"In your Group Presentation, what might be your 'what is' vs 'what could be'?" [Take 1-2 examples from class]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Duarte's framework is one powerful structure. Let me show you Chris Anderson's five pillars that work with any structure..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="12">
+      <h2 class="slide-title">Anderson's Five Pillars Framework</h2>
+      <div class="slide-content">
+        <p><strong>CONTENT</strong>:</p>
+<p>Chris Anderson, TED Curator, identifies five essential elements for great presentations (Anderson, 2013):</p>
+<ol>
+<li><strong>Frame Your Story</strong> — Determine where to begin and conclude; position as a journey</li>
+<li><strong>Plan Your Delivery</strong> — Choose: memorize, use bullets, or script (but never read)</li>
+<li><strong>Develop Stage Presence</strong> — Focus on authenticity over perfection</li>
+<li><strong>Plan Multimedia</strong> — Use visuals strategically; avoid reading slides</li>
+<li><strong>Put It Together</strong> — Rehearse extensively; stay authentic</li>
+</ol>
+<p><strong>Key insight:</strong> Go deep, not broad. Avoid covering too much ground; use specific examples instead.</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Anderson, C. (2013). How to give a killer presentation. Harvard Business Review, 91(6), 121-125. https://hbr.org/2013/06/how-to-give-a-killer-presentation</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Remind: "TED Talks = over 1 billion views, Anderson coached these speakers"</li>
+<li>Context: "These five pillars apply whether you use Duarte's structure or any other framework"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Frame your story (#1)</strong>: Most important - determines success or failure</li>
+<li><strong>Plan delivery (#2)</strong>: Three options, but NEVER read from slides or script verbatim</li>
+<li><strong>Stage presence (#3)</strong>: Authenticity beats polish (we'll practice next week)</li>
+<li><strong>Multimedia (#4)</strong>: Slides should enhance, not replace your message</li>
+<li><strong>Rehearsal (#5)</strong>: Non-negotiable for important presentations</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>TED example: "Many successful TED speakers use no slides at all - the story is enough"</li>
+<li>Vietnamese context: "In Vietnamese business culture, reading from slides is seen as unprepared - audience expects you to KNOW your content"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I should memorize every word" → Only for very important talks; usually bullet points work better</li>
+<li>"Perfect delivery matters most" → Substance + authenticity matter more than perfection</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why does Anderson say 'go deep, not broad'?" [Answer: Better to cover one topic thoroughly with examples than skim five topics superficially]</li>
+<li>"What's wrong with reading from your slides?" [Audiences detect distance, lose engagement, create cognitive overload]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Both Duarte and Anderson emphasize STORY. Let's explore one more powerful technique - the rule of three..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="13">
+      <h2 class="slide-title">The Rule of Three in Presentations</h2>
+      <div class="slide-content">
+        <p><strong>CONTENT</strong>:</p>
+<p><strong>The Rule of Three:</strong> People understand and remember concepts better when presented in groups of three.</p>
+<p><strong>Why it works:</strong></p>
+<ul>
+<li><strong>Cognitive processing:</strong> Our brains expect patterns of three - easier to process and recall</li>
+<li><strong>Narrative satisfaction:</strong> Beginning, middle, end feels complete</li>
+<li><strong>Persuasive rhythm:</strong> One point = weak, two = incomplete, three = convincing, four+ = overwhelming</li>
+</ul>
+<p><strong>Applications in presentations:</strong></p>
+<p><strong>Structure:</strong> Divide into three main sections</p>
+<p><strong>Supporting points:</strong> Three reasons, three benefits, three examples per claim</p>
+<p><strong>Message hierarchy:</strong> Three key takeaways in summary</p>
+<p><strong>Example:</strong> This course organizes learning objectives into three categories (Understand & Apply, Analyze & Evaluate, Create & Present)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Quick activity: "I'm going to say a list. Notice what feels complete: Red, blue. Red, blue, green. Red, blue, green, yellow." [Most will say three feels right]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Not arbitrary</strong>: Based on cognitive science - working memory comfortably holds ~3 chunks</li>
+<li><strong>Classic examples</strong>: "Life, liberty, pursuit of happiness" (US); "Liberty, equality, fraternity" (France); "Blood, sweat, and tears" (Churchill)</li>
+<li><strong>Business applications</strong>: "People, process, technology" common in consulting frameworks</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnamese context: "FPT's 2024 focus areas: AI, semiconductors, green transformation - three pillars"</li>
+<li>Student application: "Your Group Presentation should have ~3 main sections for 15 minutes"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I have five important points - I must include all" → Choose the three most important; cut or combine the rest</li>
+<li>"Three is just a superstition" → No, it's cognitive science (cite working memory research)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What are three ways you could apply the rule of three in your presentation?" [Answers: 3 sections, 3 examples per point, 3 takeaways, etc.]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered storytelling structures. Now let's tackle the other half of effective presentations - slide design..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="14">
+      <h2 class="section-title">Part 3: Slide Design Principles</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Transition:</strong></p>
+<ul>
+<li>"Remember our opening question about boring presentations? Now we'll learn the science behind why they fail - and how to design slides that work WITH your audience's brain, not against it."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide big-number-slide" data-slide="15">
+      <div class="number-content">
+        <div class="big-number">500%</div>
+        <div class="number-explanation"><p>Increase in cognitive load when processing more than 6 elements simultaneously</p></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Write on board: "500%" in huge numbers</li>
+<li>Ask: "What do you think this number represents?" [Take guesses]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Cognitive load</strong>: Mental effort required to process information</li>
+<li><strong>The magic number 6</strong>: Brain easily interprets ≤6 elements; 7+ requires 500% more effort</li>
+<li><strong>Why "Death by PowerPoint" happens</strong>: Slides with 10 bullet points, each with 20 words = massive cognitive overload</li>
+<li><strong>The conflict</strong>: Reading and listening use the SAME cognitive resources (language processing)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Demonstrate: Show example slide with 50 words and try to talk while students read - they'll miss what you say</li>
+<li>Research context: PLOS Computational Biology published "Ten Simple Rules" in 2021 based on cognitive science</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"More information on slide = better" → False, causes overload</li>
+<li>"I can multitask reading and listening" → False for most people - they compete for same brain resources</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why can't your brain read a slide AND listen to the speaker simultaneously?" [Answer: Both require language processing - same cognitive channel]</li>
+<li>"How many main elements should each slide have?" [Answer: ≤6 for easy processing]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we know the problem - cognitive overload - let's look at ten research-backed solutions..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="16">
+      <h2 class="slide-title">Ten Simple Rules for Slide Design (Part 1)</h2>
+      <div class="slide-content">
+        <p><strong>Rules 1-5: Optimizing Slide Scope</strong></p>
+<ol>
+<li><strong>One idea per slide</strong> — Break complex concepts into progressive reveals</li>
+<li><strong>One minute per slide</strong> — 20-minute talk = ~20 slides for good pacing</li>
+<li><strong>Meaningful headlines</strong> — Transform "Results" into "CTNND1 is central to metastasis"</li>
+<li><strong>Essential points only</strong> — Include only content you'll discuss; remove distractions</li>
+<li><strong>Proper attribution</strong> — Always cite sources, names, credits consistently</li>
+</ol>
+      </div>
+      <div class="slide-footer"><p class="citation">Krammer, G., et al. (2021). Ten simple rules for effective presentation slides. PLOS Computational Biology, 17(12), e1009554.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Context: "Published in peer-reviewed journal, based on cognitive science and teaching research"</li>
+<li>Relevance: "These rules directly improve your Group Presentation slides"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Rule 1 (One idea)</strong>: If explaining complex framework, show it piece by piece across 2-3 slides, not all at once</li>
+<li><strong>Rule 2 (One minute)</strong>: Easy math - 15-minute presentation = ~15 slides</li>
+<li><strong>Rule 3 (Headlines)</strong>: Your slide title should be the conclusion, not generic label</li>
+<li><strong>Rule 4 (Essential only)</strong>: Delete anything you won't actually explain</li>
+<li><strong>Rule 5 (Attribution)</strong>: Builds credibility, required for academic integrity</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Rule 1 violation</strong>: "I once saw a slide with a 12-step process diagram - impossible to absorb"</li>
+<li><strong>Rule 3 example</strong>: Instead of "Data Analysis," use "Sales increased 40% after campaign"</li>
+<li>Vietnamese context: "FPT presentations use meaningful headlines - not 'Q4 Results' but 'Record Revenue Growth in AI Division'"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I should put everything I want to say on slides so I don't forget" → Use speaker notes instead</li>
+<li>"If I only put key points, slides will look empty" → Minimalism is professional and effective</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"How many slides should your 15-minute Group Presentation have?" [Answer: ~15, using one-minute rule]</li>
+<li>"What's better: slide titled 'Benefits' or 'Three Ways This Saves Time'?" [Answer: Second - meaningful headline]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Rules 1-5 were about WHAT to put on slides. Rules 6-8 are about HOW to design them..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="17">
+      <h2 class="framework-title">Ten Simple Rules for Slide Design (Part 2)</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Design specifics (Rule 7)</h3>
+          
+          <ul class="component-bullets"><li>High-contrast colors, simple backgrounds</li><li>Sans serif fonts, large sizes (avoid italics, ALL CAPS)</li><li>Color-blind accessible palettes</li><li>≤6 elements per slide</li></ul>
+          
+        </div>
+      </div>
+      
+      <div class="slide-footer"><p class="citation">Krammer, G., et al. (2021). Ten simple rules for effective presentation slides. PLOS Computational Biology, 17(12), e1009554.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Remind about cognitive overload: "Reading and listening compete - same brain channel"</li>
+<li>Show example: Display slide with just image + 3-word caption while talking - much easier to process</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Rule 6 (Graphics)</strong>: One powerful image > 100 words; but don't overcrowd</li>
+<li><strong>Rule 7 (Avoid overload)</strong>: Key phrase "short text fragments, redundant with verbal" - repeat what you say, don't add new info</li>
+<li><strong>Rule 8 (Distraction-resistant)</strong>: Main message should be clear even without narration</li>
+<li><strong>Font choice</strong>: Sans serif (Arial, Helvetica, Calibri) more readable than serif (Times New Roman) on screens</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Rule 6 example</strong>: Instead of bulleted list of "Characteristics of good leaders," show photo of respected leader with 3-word caption "Integrity, Vision, Empathy"</li>
+<li><strong>Rule 7 violation</strong>: Slide says "Market share increased 32%" while you say "Revenue grew 45%" - audience confused</li>
+<li>Vietnamese context: "Many Vietnamese presentations use decorative backgrounds - research says simple is better"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I need full sentences on slides as backup" → Use handouts or speaker notes for details</li>
+<li>"Fancy fonts look more professional" → Simple sans serif fonts are most professional for presentations</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"True or False: You should put additional information on slides that you don't say out loud" [Answer: False - creates cognitive overload]</li>
+<li>"Which is better for presentation slides: Times New Roman or Arial?" [Answer: Arial (sans serif)]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Rules 9-10 are about preparing to deliver your carefully designed presentation..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="18">
+      <h2 class="slide-title">Ten Simple Rules for Slide Design (Part 3)</h2>
+      <div class="slide-content">
+        <p><strong>Rules 9-10: Presentation Preparation</strong></p>
+<ol>
+<li><strong>Iterative practice</strong> — Rehearse with live audiences; reveals timing issues, weak transitions</li>
+<li><strong>Technical disaster mitigation</strong> — Save as PDF backup; avoid animations; screenshot videos</li>
+</ol>
+<p><strong>Why practice matters:</strong></p>
+<ul>
+<li>Reveals which slides take longer than expected</li>
+<li>Identifies confusing transitions</li>
+<li>Exposes Rule 2, 4, 5 violations (too many/too few slides, extra content, missing credits)</li>
+</ul>
+<p><strong>Why avoid animations:</strong></p>
+<ul>
+<li>"No one likes them" (research surveys)</li>
+<li>Create accessibility issues for visually impaired</li>
+<li>Introduce software compatibility risks</li>
+<li>Add no real value</li>
+</ul>
+      </div>
+      <div class="slide-footer"><p class="citation">Krammer, G., et al. (2021). Ten simple rules for effective presentation slides. PLOS Computational Biology, 17(12), e1009554.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Emphasize: "Rules 1-8 won't matter if you don't practice (#9) or your tech fails (#10)"</li>
+<li>Connect to their assessment: "Your Group Presentation requires rehearsal time - plan for it"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Rule 9 (Practice)</strong>: Practice alone first, then with friend/classmate - fresh eyes catch issues</li>
+<li><strong>Rule 10 (Tech backup)</strong>: Murphy's Law in action - if it can fail, it will (especially fonts, videos)</li>
+<li><strong>Animation advice</strong>: Controversial but research-backed - avoid fancy transitions</li>
+<li><strong>PDF backup</strong>: Ensures fonts, layout preserved across computers</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Practice story</strong>: "Group last semester practiced once the night before - discovered they were 8 minutes over time limit, had to cut frantically"</li>
+<li><strong>Tech failure story</strong>: "Student's embedded video wouldn't play on classroom computer - 5 minutes wasted troubleshooting"</li>
+<li>Vietnamese context: "In professional settings in Vietnam, technical issues reflect poorly on preparation - always have backup"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Animations make presentations more engaging" → Research shows audiences dislike them</li>
+<li>"One practice run is enough" → Multiple rehearsals reveal different issues each time</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why should you save presentation as PDF backup?" [Answer: Ensures compatibility, preserves fonts/layout]</li>
+<li>"When should you practice your presentation?" [Answer: Multiple times, ideally with audience, well before delivery date]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered what makes slides effective. Now let's talk about how to START and END your presentation powerfully..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="19">
+      <h2 class="section-title">Part 4: Opening Hooks & Closing CTAs</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Transition:</strong></p>
+<ul>
+<li>"Research shows audiences decide within the first 30 seconds whether to pay attention. And they remember most what you say last. So openings and closings are critical."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide reflection-slide" data-slide="20">
+      <h2 class="slide-title">Opening Hooks: Five Proven Techniques</h2>
+      <div class="reflection-content">
+        <p><strong>CONTENT</strong>:</p>
+<p>Your opening 30-60 seconds determines audience engagement for the entire presentation.</p>
+<p><strong>Five effective hook techniques:</strong></p>
+<ol>
+<li><strong>Provocative Question</strong> — "What would you do if your company's data was breached right now?"</li>
+<li><strong>Surprising Statistic</strong> — "90% of online courses are never completed - here's why"</li>
+<li><strong>Relevant Story</strong> — Brief anecdote (30-45 seconds) that illustrates your topic</li>
+<li><strong>Bold Statement</strong> — "Everything you learned about email communication is wrong"</li>
+<li><strong>Visual Hook</strong> — Powerful image that creates curiosity without explanation (yet)</li>
+</ol>
+<p><strong>What NOT to do:</strong></p>
+<p>❌ "Today I'm going to talk about..." (boring)</p>
+<p>❌ Long apologies or self-deprecation</p>
+<p>❌ Excessive background/introduction before getting to point</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Remind: "Your opening hook is the first element of Duarte's structure - it establishes 'what is' and creates tension"</li>
+<li>Show examples from your own presentation: "Notice I started today with a question about boring presentations - that was a hook"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>30-second rule</strong>: Research shows attention decisions made quickly</li>
+<li><strong>Hook = tension</strong>: You're creating a gap (curiosity, concern, interest) that your presentation will resolve</li>
+<li><strong>Choose ONE technique</strong>: Don't combine multiple hooks - pick your strongest</li>
+<li><strong>Avoid apologies</strong>: "I'm not prepared" or "This might be boring" kills engagement immediately</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Provocative question</strong>: Chris Anderson's TED talk on presentations opens with "What makes presentations effective?"</li>
+<li><strong>Surprising stat</strong>: "Did you know 67% of employees say poor communication is their biggest workplace frustration?"</li>
+<li><strong>Story example</strong>: "When Steve Jobs introduced iPhone, he started: 'Every once in a while, a revolutionary product comes along that changes everything'"</li>
+<li>Vietnamese context: "In Vietnamese business culture, starting with too much self-deprecation can undermine credibility - balance humility with confidence"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I should introduce myself and my credentials first" → Brief intro OK, but hook comes first</li>
+<li>"Story hooks should be long and detailed" → 30-45 seconds maximum, just enough to create interest</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which hook technique would work best for a presentation on crisis communication?" [Answers could vary: provocative question "What would you do if...?", story about real crisis, surprising stat about crisis failures]</li>
+<li>"Why should you avoid starting with 'Today I'm going to talk about...'?" [Answer: Boring, no tension, audience knows you're talking to them already]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"You've hooked them at the start. Now you need to land the ending with a strong call-to-action..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="21">
+      <h2 class="slide-title">Closing Calls-to-Action (CTAs)</h2>
+      <div class="slide-content">
+        <p><strong>CONTENT</strong>:</p>
+<p>Your closing should inspire action, not just summarize. <strong>Strong CTAs are specific, achievable, and aligned with your presentation's purpose.</strong></p>
+<p><strong>Three-part closing structure:</strong></p>
+<ol>
+<li><strong>Synthesize (30 seconds)</strong> — Briefly reinforce 2-3 key takeaways (rule of three)</li>
+<li><strong>Inspire (30 seconds)</strong> — Paint "new bliss" vision (Duarte) of transformed future</li>
+<li><strong>Direct (30 seconds)</strong> — Specific call-to-action with concrete next steps</li>
+</ol>
+<p><strong>Examples of specific CTAs:</strong></p>
+<ul>
+<li><strong>Persuasive:</strong> "Schedule a meeting with your team this week to discuss implementation"</li>
+<li><strong>Informative:</strong> "Review the handout and try technique #2 in your next email"</li>
+<li><strong>Inspirational:</strong> "Commit to one small change today - message me what you choose"</li>
+</ul>
+<p><strong>Weak CTAs to avoid:</strong></p>
+<p>❌ "So that's everything - any questions?"</p>
+<p>❌ "Thank you for listening" [ends abruptly]</p>
+<p>❌ "Let me know if you want to learn more"</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Remind: "Audiences remember beginnings and endings most - make them count"</li>
+<li>Connect to Duarte: "The CTA is where you deliver the 'new bliss' and tell them how to get there"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Three-part structure</strong>: Synthesize → Inspire → Direct (another rule of three)</li>
+<li><strong>Specific, not vague</strong>: "Email me your questions" is better than "Let me know if interested"</li>
+<li><strong>Achievable action</strong>: Don't ask for huge commitment; one small step is better</li>
+<li><strong>Align with purpose</strong>: Persuasive presentations need stronger, more direct CTAs</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Strong CTA example</strong>: "Your Group Presentation CTA might be: 'Before next class, identify one communication habit you'll change based on what we shared today'"</li>
+<li><strong>Weak CTA story</strong>: "Student presentation ended with 'Thanks for listening' - no clear takeaway, audience forgot content within 5 minutes"</li>
+<li>Vietnamese context: "In Vietnamese culture, being too direct can seem pushy - frame CTAs as invitations: 'I invite you to try...' vs. 'You must...'"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Questions should come after my last point" → No, deliver CTA first, THEN invite questions</li>
+<li>"Thank you for listening is a good closing" → It's polite but weak - use it AFTER your CTA</li>
+<li>"My CTA should be big and ambitious" → Small, specific actions have higher compliance</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What are the three parts of a strong closing?" [Answer: Synthesize, Inspire, Direct]</li>
+<li>"Which CTA is better: 'Think about this topic' or 'Write down one insight from today'?" [Answer: Second - specific and achievable]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's see all of these principles in action with a complete presentation storyboard example..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="22">
+      <h2 class="section-title">Part 5: Putting It All Together</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered storytelling structures, slide design rules, and opening/closing techniques. Now let's integrate everything into a practical example."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="23">
+      <h2 class="slide-title">Sample Storyboard: Crisis Communication Presentation</h2>
+      <div class="slide-content">
+        <p><strong>Complete 10-Minute Presentation Structure</strong></p>
+<p><strong>Opening (1 min):</strong></p>
+<ul>
+<li><strong>Hook:</strong> "At 3 AM, your company's database is breached. What's your first move?"</li>
+<li><strong>Preview:</strong> "Today: 3-step crisis communication framework you can use immediately"</li>
+</ul>
+<p><strong>Body (7 min, ~7 slides using Duarte structure):</strong></p>
+<ul>
+<li><strong>Slide 1 - What is:</strong> Most companies respond to crises reactively and slowly</li>
+<li><strong>Slide 2 - What could be:</strong> Imagine having a pre-built response protocol ready to activate</li>
+<li><strong>Slide 3 - What is:</strong> 48% of companies lose customer trust due to delayed crisis response (Argenti, 2002)</li>
+<li><strong>Slide 4 - What could be:</strong> The First 24 Hours Framework - speed AND accuracy</li>
+<li><strong>Slides 5-7:</strong> Three elements of framework (rule of three) with examples</li>
+</ul>
+<p><strong>Closing (2 min):</strong></p>
+<ul>
+<li><strong>Synthesize:</strong> "Speed, transparency, action - the three crisis essentials"</li>
+<li><strong>Inspire:</strong> "Your next crisis doesn't have to be a disaster - it can be a trust-building moment"</li>
+<li><strong>CTA:</strong> "This week, draft your crisis communication template using our framework"</li>
+</ul>
+<p><strong>Total:</strong> 10 slides for 10 minutes = one-minute-per-slide rule ✓</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Explain: "This is a storyboard - outline of presentation structure before creating actual slides"</li>
+<li>Purpose: "Creating storyboard first (like an architect's blueprint) ensures logical flow before design work"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Hook (provocative question)</strong>: Creates immediate tension - "What would I do?"</li>
+<li><strong>Duarte structure</strong>: Alternates "what is" (problem) with "what could be" (solution)</li>
+<li><strong>Rule of three</strong>: Three crisis essentials, three framework elements</li>
+<li><strong>Slide design</strong>: 10 slides in 10 minutes follows one-minute rule</li>
+<li><strong>CTA (specific)</strong>: "Draft your template this week" - achievable action</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Walk through each section: "Notice how slide 1 describes current painful reality (reactive, slow), then slide 2 immediately contrasts with better possibility (prepared protocol)"</li>
+<li>Research integration: "Argenti's 2002 HBR article provides the 48% statistic - builds credibility"</li>
+<li>Vietnamese context: "This structure would work for FPT presenting crisis protocols to clients"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I should create slides first, then figure out structure" → No, storyboard first</li>
+<li>"10 slides sounds too simple for 10 minutes" → Simplicity is strength; one idea per slide</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Where do you see Duarte's 'what is/what could be' structure in this storyboard?" [Slides 1-4 alternate]</li>
+<li>"Where's the rule of three?" [Three crisis essentials, three framework elements]</li>
+<li>"Is the CTA specific or vague?" [Specific - draft template this week]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"This storyboard integrates all of today's principles. In tutorial, you'll create your own storyboard for practice..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="24">
+      <h2 class="slide-title">Creating Your Presentation Storyboard</h2>
+      <div class="slide-content">
+        <p><strong>CONTENT</strong>:</p>
+<p><strong>Storyboard = Blueprint for your presentation before designing slides</strong></p>
+<p><strong>Five-step storyboard process:</strong></p>
+<ol>
+<li><strong>Define purpose</strong> — Persuade, inform, or inspire? (Choose primary)</li>
+<li><strong>Choose structure</strong> — Duarte "what is/what could be" OR Anderson's 5 pillars OR rule of three sections</li>
+<li><strong>Craft opening hook</strong> — Select technique (question, stat, story, statement, visual)</li>
+<li><strong>Outline body</strong> — List key points (≤6), assign ~1 minute per slide</li>
+<li><strong>Design closing CTA</strong> — Synthesize, inspire, direct (three parts)</li>
+</ol>
+<p><strong>Tutorial preview:</strong> You'll practice this process by creating a storyboard for a 5-minute presentation on a communication topic.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Emphasize practicality: "Storyboarding takes 20-30 minutes but saves hours of slide redesign later"</li>
+<li>Connect to assessment: "Your Group Presentation should start with storyboard - THEN divide slide creation among team members"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Step 1 (Purpose)</strong>: Everything flows from this - persuade requires different structure than inform</li>
+<li><strong>Step 2 (Structure)</strong>: Choose ONE framework - Duarte works well for persuasive, rule of three for informative</li>
+<li><strong>Step 3 (Hook)</strong>: Spend time on this - weak opening dooms entire presentation</li>
+<li><strong>Step 4 (Body)</strong>: One-minute-per-slide rule simplifies planning</li>
+<li><strong>Step 5 (CTA)</strong>: Don't skip this - even informative presentations should have takeaway action</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Process example: "I spent 30 minutes storyboarding this lecture - identified 25 slides needed, then created them in 2 hours"</li>
+<li>Student mistake: "Groups often skip storyboarding, each member creates slides independently, then discover overlap and gaps"</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the first step in storyboarding?" [Answer: Define purpose - persuade, inform, or inspire]</li>
+<li>"Should you create slides or storyboard first?" [Answer: Storyboard first]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's synthesize everything we've learned today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="25">
+      <h2 class="slide-title">Key Takeaways</h2>
+      <div class="slide-content">
+        <p><strong>CONTENT</strong>:</p>
+<p><strong>Three essential principles for effective presentations:</strong></p>
+<ol>
+<li><strong>Substance over style</strong> — Quality of idea + narrative + passion (Anderson, 2013)</li>
+<ul class="nested-list">
+<li>Choose persuade, inform, or inspire as primary purpose</li>
+<li>Structure with Duarte's "what is/what could be" or rule of three</li>
+</ul>
+<li><strong>Design for cognition</strong> — Avoid cognitive overload (Krammer et al., 2021)</li>
+<ul class="nested-list">
+<li>≤6 elements per slide</li>
+<li>Graphics over text</li>
+<li>One idea per slide, one minute per slide</li>
+</ul>
+<li><strong>Hook and land</strong> — Strong openings and closings are critical</li>
+<ul class="nested-list">
+<li>Hook techniques: question, stat, story, statement, visual</li>
+<li>CTA structure: synthesize → inspire → direct</li>
+</ul>
+</ol>
+<p><strong>Your challenge:</strong> Apply these frameworks in your Week 11 Group Presentation to demonstrate depth of understanding, strategic thinking, and professional communication skills.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Remind: "These aren't just theories - they're research-backed principles used by TED speakers, top executives, successful presenters worldwide"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Takeaway 1</strong>: All the fancy slides in the world won't save a presentation with weak ideas</li>
+<li><strong>Takeaway 2</strong>: Cognitive science explains why "Death by PowerPoint" fails - design WITH brain, not against it</li>
+<li><strong>Takeaway 3</strong>: First impression (hook) and last impression (CTA) determine whether audience remembers and acts</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Success story: "Group last semester used Duarte structure + cognitive load principles - scored 92% on presentation"</li>
+<li>Failure story: "Another group had great content but 50-word slides and weak opening - scored 76%"</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If you remember only ONE thing from today, what should it be?" [Take responses - validate various answers]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"In tutorial today, you'll practice creating a presentation storyboard. Next week, we'll focus on delivery techniques to bring your well-designed presentation to life. Let's preview what's coming..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="26">
+      <h2 class="slide-title">Preview: Tutorial & Next Week</h2>
+      <div class="slide-content">
+        <p><strong>CONTENT</strong>:</p>
+<p><strong>Tutorial Today (90 minutes):</strong></p>
+<ul>
+<li><strong>Main Activity:</strong> Create a 5-minute presentation storyboard on a communication topic</li>
+<li><strong>Practice:</strong> Opening hooks, Duarte structure, slide planning</li>
+<li><strong>Peer Review:</strong> Evaluate storyboards using design principles from today</li>
+<li><strong>Quiz Prep:</strong> 8 questions on presentation structures and slide design principles</li>
+</ul>
+<p><strong>Week 10: Presentations Part II - Delivery & Executive Presence</strong></p>
+<ul>
+<li>Delivery techniques: vocal variety (pace, pitch, pause, projection)</li>
+<li>Body language and eye contact</li>
+<li>Managing presentation anxiety</li>
+<li>Q&A strategies</li>
+<li>Virtual presentation best practices</li>
+<li>Executive presence and credibility signals</li>
+</ul>
+<p><strong>Your Group Presentation slides are due Week 10!</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Build anticipation: "Next week completes the presentation sequence - you'll have both design AND delivery skills"</li>
+<li>Urgency: "Group Presentation Week 11 means you need to apply both weeks immediately"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Tutorial focus</strong>: Hands-on practice with storyboarding - you'll leave with a complete outline</li>
+<li><strong>Peer review</strong>: You'll evaluate each other's storyboards using the 10 rules we learned</li>
+<li><strong>Next week</strong>: Delivery is equally important as design - vocal variety, body language, handling nerves</li>
+<li><strong>Timeline reminder</strong>: Slides due Week 10, presentations Week 11 - start working now</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"See you in tutorial. Come ready to design a presentation structure you're proud of!"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="27">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p><em>Anderson, C. (2013, June). How to give a killer presentation. Harvard Business Review, 91(6), 121-125. https://hbr.org/2013/06/how-to-give-a-killer-presentation</em></p>
+<p><em>Duarte, N. (2012, October 31). Structure your presentation like a story. Harvard Business Review. https://hbr.org/2012/10/structure-your-presentation-li</em></p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>All three sources are openly accessible - students can read full articles</li>
+<li>Anderson and Duarte from Harvard Business Review - practitioner thought leadership</li>
+<li>Krammer et al. from PLOS Computational Biology - peer-reviewed research</li>
+<li>These sources form evidence base for today's lecture</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Use these references to deepen your understanding. See you in tutorial!"</li>
+</ul>
+<p>---</p>
+<p><strong>END OF LECTURE</strong></p>
+<p><strong>Total Slides:</strong> 27 content slides</p>
+<p><strong>Total Time:</strong> ~90 minutes</p>
+<p><strong>Layout Variety:</strong> ✓ 3 section breaks, 3 quote slides, 2 framework slides, 3 dark slides, 1 vocab table, 1 big number slide, 2 comparison tables, references slide</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

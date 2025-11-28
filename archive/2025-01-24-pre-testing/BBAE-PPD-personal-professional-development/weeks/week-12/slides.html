@@ -1,0 +1,2082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column) */
+    .comparison-table-slide .comparison-table {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.6;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 39</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 12: Integrating Growth</h1>
+        <p class="subtitle">Connecting Values, Goals, and Lifelong Learning</p>
+        <p class="author">William Winterton Lang and Le Huong Lan, PhD<br><strong>Personal and Professional Development</strong><br>National Economics University - IBD Campus<br>Autumn 2025</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Final content week before oral exams. Students should have Development Plans nearly complete. Focus today is pulling everything together into a coherent narrative for presentations.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="2">
+      <h2 class="slide-title">Key Vocabulary</h2>
+      <div class="slide-content">
+        <table>
+  <thead>
+    <tr>
+      <th><strong>English Term</strong></th>
+      <th><strong>Vietnamese Translation</strong></th>
+      <th><strong>Definition</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Personal Mastery</td>
+      <td>Làm Chủ Bản Thân</td>
+      <td>Discipline of continually clarifying vision, focusing energy, and seeing reality objectively (Senge, 2006)</td>
+    </tr>
+    <tr>
+      <td>Creative Tension</td>
+      <td>Sức Căng Sáng Tạo</td>
+      <td>Energy generated by gap between current reality and desired vision that drives growth</td>
+    </tr>
+    <tr>
+      <td>Intrinsic Motivation</td>
+      <td>Động Lực Nội Tại</td>
+      <td>Motivation from within - autonomy, mastery, purpose (Pink, 2009)</td>
+    </tr>
+    <tr>
+      <td>Autonomy</td>
+      <td>Tự Chủ</td>
+      <td>Control over how you approach your work and goals</td>
+    </tr>
+    <tr>
+      <td>Learning System</td>
+      <td>Hệ Thống Học Tập</td>
+      <td>Structured approach combining outcomes, practice, feedback, and adjustment</td>
+    </tr>
+    <tr>
+      <td>Integration</td>
+      <td>Hội Nhập / Tích Hợp</td>
+      <td>Connecting different concepts and frameworks into cohesive whole</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Students should use these terms in oral exams. Vietnamese translations help them explain concepts to family or Vietnamese-speaking mentors.</p>
+<p>Note: Autonomy (Tự chủ) emphasizes self-direction within structure, not rejection of authority - important cultural distinction.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="3">
+      <h2 class="slide-title">Today's Learning Objectives</h2>
+      <div class="slide-content">
+        <p>By the end of this session, you will be able to:</p>
+<ol>
+<li><strong>Apply</strong> Senge's Personal Mastery framework to your Development Plan</li>
+<li><strong>Evaluate</strong> your goals using Pink's Drive Theory criteria (autonomy, mastery, purpose)</li>
+<li><strong>Design</strong> a sustainable learning system with clear outcomes, practice, feedback, and adjustment</li>
+<li><strong>Integrate</strong> course frameworks into cohesive oral exam presentation</li>
+<li><strong>Articulate</strong> connections between values, strengths, and career goals</li>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Objectives align directly with oral exam rubric. Objective 4 addresses "Integration of Learning" (15% of grade). Objectives 1-3 provide frameworks to demonstrate integration. Objective 5 addresses "Content & Self-Awareness" (35% of grade).</p>
+<p>Strong integration shows connections: "My Python goal demonstrates autonomy (I chose it), mastery (continuous improvement), purpose (helps Vietnamese businesses)." Weak integration just lists goals without framework connections.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">Final Oral Exam Preparation</h2>
+      <div class="slide-content">
+        <p><strong>Exam Period | 30% of Final Grade</strong></p>
+<p><strong>Format:</strong> 15 minutes (10-min presentation + 5-min Q&A)</p>
+<p><strong>Content:</strong></p>
+<ul>
+<li>Self-discovery journey and key insights</li>
+<li>Values, strengths, 5-year vision</li>
+<li>1-3-5 year SMART goals</li>
+<li>Mentorship and course integration</li>
+<li>Implementation commitment</li>
+</ul>
+<p><strong>Rubric Criteria:</strong></p>
+<ul>
+<li>Content & Self-Awareness (35%)</li>
+<li>Goal Clarity & Strategic Thinking (25%)</li>
+<li>Integration of Learning (15%)</li>
+<li>Delivery & Professional Presence (25%)</li>
+</ul>
+<p><strong>Today's frameworks help you excel in criteria 1, 2, and 3!</strong></p>
+<p><em>For complete rubric and requirements, see Assessment Handbook Section 4</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Today's learning directly prepares for 70% of exam rubric (35% + 25% + 15%). Students who skip miss critical preparation.</p>
+<p>Common misconception: Students think exam is listing goals. Clarify: It's about integration and narrative - showing how course concepts shaped their thinking.</p>
+<p>10 minutes will feel very fast. Must be well-structured and practiced. Tutorial provides practice opportunity.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">From Self-Awareness to Sustainable Growth</h2>
+      <div class="slide-content">
+        <p><strong>Your Journey This Semester:</strong></p>
+<p><strong>Weeks 1-5:</strong> Self-Discovery</p>
+<ul>
+<li>VIA Character Strengths, MBTI, CliftonStrengths, Holland Code</li>
+<li>Understanding values, motivations, personality</li>
+</ul>
+<p><strong>Weeks 6-9:</strong> Skill Development</p>
+<ul>
+<li>Emotional intelligence, time management, growth mindset</li>
+<li>Transferable skills for career success</li>
+</ul>
+<p><strong>Weeks 10-11:</strong> Strategic Planning</p>
+<ul>
+<li>SMART goals, OKRs, Development Plan creation</li>
+<li>1-3-5 year roadmaps</li>
+</ul>
+<p><strong>Week 12 TODAY:</strong> Integration</p>
+<ul>
+<li>Personal Mastery (Senge): Hold vision, manage creative tension</li>
+<li>Drive Theory (Pink): Ensure autonomy, mastery, purpose</li>
+<li>Sustainable Systems: Build habits that maintain growth</li>
+</ul>
+<p><strong>Your oral exam demonstrates this complete journey.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Show students they've covered substantial ground. Week 12 is synthesis, not new learning.</p>
+<p>Connection to rubric: Self-discovery (Weeks 1-5) = 35% of exam. Strategic planning (Weeks 10-11) = 25% of exam. Integration (Week 12) = 15% of exam.</p>
+<p>Strong presentations connect VIA strengths to career path to specific goals. Weak presentations list assessments without showing connections.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="6">
+      <h2 class="section-title">Part 1: Personal Mastery</h2>
+      <p class="section-subtitle">From Peter Senge's The Fifth Discipline</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Major shift to first integration framework. Senge's work from MIT Sloan, used by learning organizations globally including Vietnamese firms like Vingroup.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="7">
+      <h2 class="slide-title">What Is Personal Mastery?</h2>
+      <div class="slide-content">
+        <p>"Personal mastery is the discipline of continually clarifying and deepening our personal vision, of focusing our energies, of developing patience, and of seeing reality objectively."</p>
+<p>— Peter Senge, <em>The Fifth Discipline</em> (2006)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Students typically interpret "mastery" as perfection or being the best. Clarify that Senge means discipline - daily practice, not a destination.</p>
+<p>The four verbs (clarifying, deepening, focusing, seeing) are all ongoing actions, never complete. This is lifelong commitment to growth in chosen areas.</p>
+<p>After reading, pause briefly. Then ask which of the four verbs resonates most with where they are now. Take 2-3 responses.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="8">
+      <h2 class="framework-title">Personal Mastery Framework: Creative Tension Model</h2>
+      <div class="framework-components">
+        <div class="component">
+          <h3>Personal Vision</h3>
+          <p>Clear picture of desired future - what you want to create in your professional life</p>
+        </div>
+        <div class="component">
+          <h3>Current Reality</h3>
+          <p>Honest assessment of where you are now - strengths, gaps, current capabilities</p>
+        </div>
+        <div class="component">
+          <h3>Creative Tension</h3>
+          <p>Natural force between vision and reality that generates energy for growth and change</p>
+        </div>
+      </div>
+      <div class="framework-commentary"><p><strong>The gap between vision and current reality creates natural energy for change.</strong></p></div>
+      <div class="slide-footer"><p class="citation">Senge, P. M. (2006). The fifth discipline: The art and practice of the learning organization. Currency/Doubleday.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Students often confuse creative tension with stress or anxiety. Clarify this is energizing gap awareness, not emotional distress. The discomfort from noticing "I can't do X yet" is fuel for growth.</p>
+<p>Connect to their Development Plans: Vision = 3-year or 5-year goals. Current Reality = SWOT analysis and self-assessment results. Creative Tension = motivating force between them.</p>
+<p>Ask what creates creative tension in their Development Plan. Take 2-3 examples to validate they've identified their gaps.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="9">
+      <h2 class="slide-title">Element 1: Seeing Current Reality Honestly</h2>
+      <div class="slide-content">
+        <p><strong>Why honesty matters:</strong></p>
+<p>Personal mastery requires <strong>accurate self-assessment</strong> without self-deception.</p>
+<p><strong>How to see reality clearly:</strong></p>
+<ul>
+<li>Use objective data (assessment results, mentor feedback, grades)</li>
+<li>Ask trusted others for honest input</li>
+<li>Notice patterns in your behavior over time</li>
+<li>Accept weaknesses without shame - they're growth opportunities</li>
+</ul>
+<p><strong>Vietnamese context:</strong> Balance humility (cultural value) with accurate self-recognition of strengths.</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Senge, P. M. (2006). The fifth discipline. Currency/Doubleday.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Hardest part: being brutally honest with themselves. Vietnamese culture values humility, which is positive, but honesty includes recognizing real strengths too.</p>
+<p>Self-deception blocks growth. "I'm fine at public speaking" when you avoid it prevents improvement. Use tools for objectivity: VIA, MBTI, mentor feedback, peer evaluations.</p>
+<p>Pattern recognition: If 3 people give same feedback, probably accurate. Student says "I work well under pressure" but consistently misses deadlines - that's self-deception masking procrastination.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="10">
+      <h2 class="slide-title">Element 2: Holding Vision Clear</h2>
+      <div class="slide-content">
+        <p><strong>Your vision = what you truly want to create in your life</strong></p>
+<p>Not just goals - it's your desired future reality:</p>
+<ul>
+<li><strong>Goals</strong> are specific milestones (learn Python, get promoted)</li>
+<li><strong>Vision</strong> is the life you're building (leading innovative team, creating social impact)</li>
+</ul>
+<p><strong>Vision provides direction when goals change:</strong></p>
+<ul>
+<li>You might adjust specific goals based on feedback</li>
+<li>But your vision remains consistent, guiding all decisions</li>
+</ul>
+<p><strong>For your Development Plan:</strong></p>
+<ul>
+<li>Vision = Your 5-year professional identity</li>
+<li>Goals = The 1-3-5 year steps toward that vision</li>
+</ul>
+<p><strong>Your Development Plan vision statement should capture this.</strong></p>
+      </div>
+      <div class="slide-footer"><p class="citation">Senge, P. M. (2006). The fifth discipline. Currency/Doubleday.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Many students confuse vision with goals. Vision answers "Who do I want to become professionally?" Goals answer "What milestones mark progress?"</p>
+<p>Vision stays relatively stable; goals adjust based on learning. Strong vision is aspirational but grounded in values and strengths.</p>
+<p>Weak example: "Get good job." Strong example: "Become financial analyst who helps Vietnamese SMEs access capital for growth" - clear vision with purpose.</p>
+<p>Vietnamese students may face family pressure for certain careers. Personal mastery means finding your vision while respecting family values.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="11">
+      <h2 class="slide-title">Element 3: Using Creative Tension as Fuel</h2>
+      <div class="slide-content">
+        <p>"The gap between vision and current reality creates creative tension. This tension seeks resolution — either by pulling reality toward the vision, or by pulling the vision down toward reality."</p>
+<p>— Peter Senge, <em>The Fifth Discipline</em> (2006)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Gap creates natural motivation, but two ways to resolve tension - only one leads to growth.</p>
+<p>Productive response: Use tension to pull reality toward vision (build skills, take action). Unproductive response: Lower vision to match current reality (give up aspirations).</p>
+<p>Example: Student feels gap between "want to work internationally" and "current B1 English." Productive: Tension drives daily English practice. Unproductive: "International work isn't for me" - lowers vision to reduce tension.</p>
+<p>Personal mastery is discipline to use tension productively even when uncomfortable.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="12">
+      <h2 class="slide-title">Two Ways to Respond to the Gap</h2>
+      <div class="slide-content">
+        <p>When you feel the gap between current reality and vision, you have two choices:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Unproductive Response ❌</th>
+      <th>Productive Response ✓</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>"That goal is too ambitious, I'll settle for less"</td>
+      <td>"The gap shows me what to work on"</td>
+    </tr>
+    <tr>
+      <td>"Maybe I'm not capable of that level"</td>
+      <td>"I'll develop the capabilities I need"</td>
+    </tr>
+    <tr>
+      <td>"I'll adjust my vision to match current reality"</td>
+      <td>"This tension motivates my learning plan"</td>
+    </tr>
+    <tr>
+      <td><strong>Result:</strong> Tension disappears, but so does growth</td>
+      <td><strong>Result:</strong> Tension drives continuous development</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      <div class="slide-footer"><p class="citation">Senge, P. M. (2006). The fifth discipline. Currency/Doubleday.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>The unproductive response is natural - our brains seek to reduce discomfort quickly. The cost: tension disappears along with growth.</p>
+<p>Help students recognize their pattern through self-talk. "I'm not a tech person" is left column. "I need better resources" is right column.</p>
+<p>Vietnamese context: When family pressure says "Be realistic, get stable job," the productive response addresses the concern through capability: "I'm building skills that create stability in an emerging field."</p>
+<p>Note: Adjusting goals based on new information is adaptive adjustment (covered later), different from lowering vision due to fear.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg dark-bg-slide" data-slide="13">
+      <h2 class="slide-title">Vietnamese Context: Balancing Tradition and Growth</h2>
+      <div class="slide-content">
+        <p><strong>Case Study: Minh's Creative Tension</strong></p>
+<p>Minh, 21, NEU student majoring in Finance. Her parents expect her to work for state-owned bank (stable, prestigious). Her personal vision: join a fintech startup and innovate financial services for rural Vietnam.</p>
+<p><strong>Creative Tension:</strong></p>
+<ul>
+<li><strong>Current Reality:</strong> Traditional family expectations, stable career path lined up</li>
+<li><strong>Personal Vision:</strong> Entrepreneurial role creating financial inclusion</li>
+<li><strong>The Gap:</strong> Causes family tension and personal doubt</li>
+</ul>
+<p><strong>Productive Response:</strong></p>
+<ul>
+<li>Minh researched hybrid path: 2 years at bank (build foundation, satisfy family), then transition to fintech with experience</li>
+<li>Showed parents how fintech serves Vietnamese families (aligned with family value of service)</li>
+<li>Used creative tension to motivate: Learned coding while at bank, networked with fintech professionals</li>
+<li><strong>Result:</strong> Family eventually supported transition; Minh now leads mobile banking product for rural customers</li>
+</ul>
+<p><strong>Key Insight:</strong> Personal mastery doesn't mean rejecting Vietnamese values - it means finding YOUR path while honoring what matters to your family and culture.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>After reading, pause before moving on. Many students are navigating this tension between personal vision and family expectations.</p>
+<p>Key learning: Minh found a third path honoring both her vision and family values. She used the gap (needing coding skills) as motivation while working at the bank - creative tension in action.</p>
+<p>Filial piety (hiếu thảo) is important cultural value. Personal mastery means finding authentic vision you can defend to family with logic and respect.</p>
+<p>Ask how many feel similar tension between personal vision and family expectations. Show of hands normalizes the experience.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="14">
+      <h2 class="slide-title">Personal Mastery Requires Growth Mindset</h2>
+      <div class="slide-content">
+        <table>
+  <thead>
+    <tr>
+      <th>Fixed Mindset ❌</th>
+      <th>Growth Mindset ✓</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>"I'm not good at public speaking - I never will be"</td>
+      <td>"I'm not good at public speaking YET, but I can improve with practice"</td>
+    </tr>
+    <tr>
+      <td>Avoids challenges that might reveal weaknesses</td>
+      <td>Embraces challenges as learning opportunities</td>
+    </tr>
+    <tr>
+      <td>Gives up when facing obstacles</td>
+      <td>Persists through obstacles using different strategies</td>
+    </tr>
+    <tr>
+      <td>Talent is innate and unchangeable</td>
+      <td>Abilities develop through effort and learning</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Connection:</strong> Personal mastery is impossible without growth mindset.</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Dweck, C. S. (2006). Mindset: The new psychology of success. Random House.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Vision is only motivating if you believe you can grow toward it. Fixed mindset kills creative tension - if you can't improve, why try?</p>
+<p>The word "YET" is powerful. "I can't do X yet" vs "I can't do X ever." Oral exam should demonstrate growth mindset: Show how you've grown and plan to keep growing.</p>
+<p>Vietnamese cultural alignment: "Có công mài sắt có ngày nên kim" (Grinding iron can make it a needle - persistence pays off). Traditional Vietnamese value of effort supports growth mindset.</p>
+<p>Example: Fixed mindset student fails quiz, thinks "I'm bad at this," stops trying. Growth mindset student fails quiz, thinks "I didn't prepare well, let me adjust approach," improves.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="15">
+      <h2 class="slide-title">Personal Mastery Self-Assessment</h2>
+      <div class="slide-content">
+        <p><strong>Reflect on these questions:</strong> (2 minutes)</p>
+<ol>
+<li><strong>Vision Clarity:</strong> Can you describe your 3-year vision in 2-3 specific sentences?</li>
+<li><strong>Reality Honesty:</strong> What's one area where you might be avoiding honest self-assessment?</li>
+<li><strong>Tension Response:</strong> When you notice a gap, do you typically lower your vision or build capabilities?</li>
+<li><strong>Growth Mindset:</strong> Where do you notice fixed mindset language in your self-talk?</li>
+</ol>
+<p><strong>Write brief notes - you'll use these insights in today's tutorial.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Give them 2 minutes. Remind them to write answers rather than just think - writing surfaces insights that thinking alone misses.</p>
+<p>Maintain silence during reflection. This needs genuine thinking time.</p>
+<p>When time's up, ask if anyone discovered something surprising. Take one volunteer if offered. Remind them they'll use these notes in today's tutorial.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="16">
+      <h2 class="section-title">Part 2: Drive Theory</h2>
+      <p class="section-subtitle">Daniel Pink's Research on Intrinsic Motivation</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Second major framework for evaluating Development Plans. Drive Theory from Pink's research helps ensure goals are intrinsically motivating for sustained effort.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="17">
+      <h2 class="framework-title">Pink's Drive Theory: Three Elements of Intrinsic Motivation</h2>
+      <div class="framework-components">
+        <div class="component">
+          <h3>Autonomy</h3>
+          <p>Control over how you approach your work and goals - self-direction in execution</p>
+        </div>
+        <div class="component">
+          <h3>Mastery</h3>
+          <p>Getting better at something that matters - continuous improvement mindset and asymptotic progress</p>
+        </div>
+        <div class="component">
+          <h3>Purpose</h3>
+          <p>Serving something larger than yourself - contribution to others or greater cause</p>
+        </div>
+      </div>
+      <div class="framework-commentary"><p><strong>When goals include all three elements, you're more likely to persist and find fulfillment.</strong></p></div>
+      <div class="slide-footer"><p class="citation">Pink, D. H. (2009). Drive: The surprising truth about what motivates us. Riverhead Books.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Pink synthesized 40 years of motivation research. Traditional carrot-and-stick works for routine tasks. Knowledge work requires intrinsic motivation: Autonomy, Mastery, Purpose.</p>
+<p>All three must be present for sustained motivation. Strong example: "I chose to learn Vietnamese Sign Language to help deaf students access university education" - self-directed, improving skill, serving community.</p>
+<p>Vietnamese context: Autonomy doesn't mean rejecting guidance. It means having input into HOW you achieve family or cultural goals. Purpose often connects to family or community - culturally appropriate.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="18">
+      <h2 class="slide-title">Drive Element 1: Autonomy</h2>
+      <div class="slide-content">
+        <p><strong>Autonomy = Self-direction in how you achieve goals</strong></p>
+<p>NOT: "I do whatever I want without input"</p>
+<p>YES: "I have choice and control over my approach"</p>
+<p><strong>Application to Development Plan:</strong></p>
+<p>Check your goals - do they have autonomy?</p>
+<ul>
+<li><strong>Low Autonomy:</strong> "My family said I must get CPA, so I'm studying accounting" (external pressure, no ownership)</li>
+<li><strong>High Autonomy:</strong> "I chose accounting because financial analysis aligns with my analytical strengths (VIA), and I want to help Vietnamese SMEs" (chosen path, clear reasoning)</li>
+</ul>
+<p><strong>Vietnamese Context:</strong></p>
+<ul>
+<li>Autonomy within family guidance: Parents suggest field → You research it, connect to your strengths, make informed choice</li>
+<li>Explain your reasoning to family = autonomy + respect</li>
+</ul>
+      </div>
+      <div class="slide-footer"><p class="citation">Pink, D. H. (2009). Drive: The surprising truth about what motivates us. Riverhead Books.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Autonomy is most misunderstood element in Vietnamese context. Western definition: complete independence. Asian context: self-direction within relationships. Both valid - find your balance.</p>
+<p>You don't need to choose goals 100% independently to have autonomy. Autonomy is understanding WHY goal matters to you personally, even if someone else suggested it.</p>
+<p>Oral exam question: Can you explain why YOUR goals matter to YOU (not just "my parents want this")?</p>
+<p>Example: Family suggested banking → Student researched, found it aligns with interest in economics and analytical strengths → Owns the decision = autonomy.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="19">
+      <h2 class="slide-title">Drive Element 2: Mastery</h2>
+      <div class="slide-content">
+        <p>"Mastery is an asymptote. You can approach it. You can home in on it. You can get really, really close to it. But you can never touch it. Mastery is impossible to fully realize, which makes it simultaneously frustrating and alluring."</p>
+<p>— Daniel Pink, <em>Drive</em> (2009)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Asymptote is mathematical term for a line you approach but never reach. Mastery is about continuous improvement in something that matters, not becoming perfect.</p>
+<p>True mastery mindset means you're always improving, never "done." This aligns with growth mindset (Dweck) and personal mastery (Senge).</p>
+<p>Goals focused on mastery are intrinsically motivating because there's always next level. Vietnamese cultural alignment: "Học, học nữa, học mãi" (Study, study more, study forever - Ho Chi Minh).</p>
+<p>Example: Mastery goal - "Develop fluency in business English" (never fully complete, always improving). Non-mastery goal - "Pass TOEIC 800" (once achieved, motivation disappears).</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="20">
+      <h2 class="slide-title">Applying Mastery to Your Development Plan</h2>
+      <div class="slide-content">
+        <p><strong>Check your goals against mastery criteria:</strong></p>
+<p><strong>For each goal, ask:</strong></p>
+<ol>
+<li><strong>Mindset:</strong> Do I believe I can get better at this through practice?</li>
+<li><strong>Effort:</strong> Am I willing to invest deliberate practice, not just time?</li>
+<li><strong>Asymptotic:</strong> Am I pursuing continuous improvement, not a finish line?</li>
+</ol>
+<p><strong>If a goal is just to "complete a course" or "get a certification" → add the mastery dimension:</strong></p>
+<ul>
+<li>❌ "Complete Python course"</li>
+<li>✓ "Develop Python mastery by completing course + building 3 projects + contributing to open source"</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Students often write goals as completion-focused ("finish course," "get certificate"). Mastery reframes as growth-focused ("develop capability," "continuously improve").</p>
+<p>Certificates prove competence at moment of assessment. Mastery is ongoing journey. Add mastery indicators: Timeline goals (complete course) plus mastery goals (continuous practice after).</p>
+<p>Deliberate practice means focused effort to improve specific skills, not just repetition.</p>
+<p>Have students review Development Plan goals and mark which are completion-focused vs mastery-focused. Tutorial includes time to revise.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="21">
+      <h2 class="slide-title">Drive Element 3: Purpose</h2>
+      <div class="slide-content">
+        <p>"Autonomous people working toward mastery perform at very high levels. But those who do so in the service of some greater objective can achieve even more."</p>
+<p>— Daniel Pink, <em>Drive</em> (2009)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Purpose is the "why" behind your goals. Research shows purpose increases persistence through obstacles (Duckworth's grit research).</p>
+<p>Purpose transforms "I want this for ME" to "I want this to CONTRIBUTE." Doesn't have to be grand. Even "so I can support my family well" is valid purpose.</p>
+<p>Vietnamese culture emphasizes contribution to family and community. Purpose for Vietnamese students often connects to: supporting family, serving Vietnam's development, helping local businesses compete globally. This is authentic purpose. Don't force "change the world" if not genuine.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="22">
+      <h2 class="slide-title">Applying Purpose to Your Development Plan</h2>
+      <div class="slide-content">
+        <p><strong>Add the "so that" statement to each goal:</strong></p>
+<p>"I will [goal]... <strong>SO THAT</strong> [impact on others/contribution to larger cause]"</p>
+<p><strong>Examples:</strong></p>
+<p>"I will develop data analysis skills... <strong>SO THAT</strong> I can help Vietnamese businesses make evidence-based decisions."</p>
+<p>"I will improve my public speaking... <strong>SO THAT</strong> I can advocate for sustainability in corporate settings."</p>
+<p>"I will master project management... <strong>SO THAT</strong> I can lead teams that deliver value to customers."</p>
+<p><strong>Your oral exam will be stronger if you articulate the PURPOSE behind each goal.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Simple but powerful exercise: Add "so that" to each Development Plan goal. Forces thinking beyond personal benefit to contribution.</p>
+<p>Examiners want to see you've thought beyond resume-building to actual contribution. Strong presentations connect: My VIA strengths + My goals + Purpose = Unique value I bring.</p>
+<p>Give students 2 minutes to add "so that" to at least 3 goals. Then pair-share with partner.</p>
+<p>Ask whose purpose statement surprised them when they articulated it. Often students discover deeper motivation than they realized.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg dark-bg-slide" data-slide="23">
+      <h2 class="slide-title">ASEAN Context: Autonomy, Mastery, Purpose</h2>
+      <div class="slide-content">
+        <p><strong>Case Study: VNG Corporation (Vietnam Tech Giant)</strong></p>
+<p>VNG created internal "Innovation Labs" giving engineers:</p>
+<ul>
+<li><strong>Autonomy:</strong> 20% time to work on self-chosen projects</li>
+<li><strong>Mastery:</strong> Access to training, conferences, skill development programs</li>
+<li><strong>Purpose:</strong> Projects must solve real problems for Vietnamese users</li>
+</ul>
+<p><strong>Results:</strong></p>
+<ul>
+<li>Zalo (messaging app) originated from Innovation Lab</li>
+<li>ZaloPay (payment platform) created by engineer team with autonomy</li>
+<li>Employee retention 85% (industry average: 60%)</li>
+</ul>
+<p><strong>Key Insight:</strong> When Vietnamese companies apply Drive principles, they retain talent AND drive innovation.</p>
+<p><em>Source: VNG Corporation annual reports & employee surveys, 2023</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Students use Zalo daily. This case shows Drive theory isn't just Western concept - works in Vietnamese context.</p>
+<p>VNG's 20% time means employees choose HOW to contribute (autonomy) while still serving company goals. Not rejection of hierarchy, but space for initiative within structure.</p>
+<p>Zalo competed with Facebook Messenger by understanding Vietnamese user needs better. Engineers had autonomy to design features, mastery through continuous learning, purpose of serving local market.</p>
+<p>Ask how they could apply Drive principles in first job, even in traditional Vietnamese company. Take 1-2 creative responses.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="24">
+      <h2 class="framework-title">Evaluate Your Goals Against Drive Theory</h2>
+      <div class="framework-components">
+        <div class="component">
+          <h3>Autonomy Check</h3>
+          <p>Did I choose this goal or is it purely external pressure? Do I have control over HOW I'll achieve it?</p>
+        </div>
+        <div class="component">
+          <h3>Mastery Check</h3>
+          <p>Am I pursuing continuous improvement, not just completion? Am I willing to invest deliberate practice?</p>
+        </div>
+        <div class="component">
+          <h3>Purpose Check</h3>
+          <p>How does this goal serve something larger than myself? Can I complete the "so that" statement?</p>
+        </div>
+      </div>
+      <div class="framework-commentary"><p><strong>If a goal lacks one element, revise it before your oral exam.</strong></p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Students evaluate actual Development Plan goals now. Goals missing Autonomy, Mastery, or Purpose are less likely to sustain long-term.</p>
+<p>Spend 5 minutes reviewing Development Plan. Check: Do I own this decision (autonomy)? Am I committed to continuous growth (mastery)? Does it serve something beyond myself (purpose)?</p>
+<p>If goal fails any check, revise before oral exam. Tutorial includes peer review using this framework.</p>
+<p>Weak example: "Get promoted to manager because that's next step" - external pressure, completion focus, no purpose. Strong example: "Develop leadership capabilities to manage diverse teams" - autonomy (chose path), mastery (continuous development), purpose (help team members grow).</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="25">
+      <h2 class="section-title">Part 3: Building Sustainable Systems</h2>
+      <p class="section-subtitle">Ensuring Long-Term Growth</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Third major framework: sustaining growth beyond this course. Personal mastery plus Drive theory need systems to maintain.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="26">
+      <h2 class="slide-title">Values as Foundation for Learning System</h2>
+      <div class="slide-content">
+        <p><strong>Why values matter for sustainable learning:</strong></p>
+<p>Your VIA Character Strengths provide foundation for learning approach:</p>
+<ul>
+<li><strong>Curiosity</strong> → Drives exploration and questioning</li>
+<li><strong>Perseverance</strong> → Sustains effort through obstacles</li>
+<li><strong>Love of Learning</strong> → Makes continuous growth enjoyable</li>
+<li><strong>Judgment</strong> → Helps evaluate feedback and adjust course</li>
+</ul>
+<p><strong>Connection to Development Plan:</strong></p>
+<ul>
+<li>Your learning system should leverage your top VIA strengths</li>
+<li>Don't try to learn like everyone else - design system for YOUR values</li>
+</ul>
+<p><strong>Example:</strong> Student with high <strong>Creativity</strong> + <strong>Social Intelligence</strong> learns best through collaborative projects and design thinking → Build learning system around team-based innovation, not solo lectures.</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Peterson, C., & Seligman, M. E. P. (2004). Character strengths and virtues. Oxford University Press.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Bring back VIA from Week 5 - still relevant for HOW you learn. Sustainable systems align with your character, not fight against it.</p>
+<p>Different strengths mean different optimal learning systems. High curiosity: Exploration-based learning. High perseverance: Structured practice. High social intelligence: Collaborative learning.</p>
+<p>Student A (Curiosity + Judgment) learns by researching multiple sources, comparing approaches, experimenting. Student B (Perseverance + Love of Learning) learns through systematic practice, courses, structured progression. Both valid - depends on strengths.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="27">
+      <h2 class="framework-title">Four Components of Sustainable Learning System</h2>
+      <div class="framework-components">
+        <div class="component">
+          <h3>Clear Outcomes</h3>
+          <p>SMART goals with success criteria - you know what "good enough" looks like</p>
+        </div>
+        <div class="component">
+          <h3>Deliberate Practice</h3>
+          <p>Focused skill development with specific improvement targets, not just time spent</p>
+        </div>
+        <div class="component">
+          <h3>Feedback Loops</h3>
+          <p>Regular assessment and adjustment from mentors, peers, self-evaluation, and results</p>
+        </div>
+        <div class="component">
+          <h3>Adaptive Adjustment</h3>
+          <p>Revise goals based on learning - flexibility while maintaining vision direction</p>
+        </div>
+      </div>
+      <div class="framework-commentary"><p><strong>Your Development Plan should demonstrate all four components.</strong></p>
+<p><em>Based on Zimmerman's self-regulated learning model (2002)</em></p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Students have already practiced all four components this semester: Clear Outcomes (Week 11), Deliberate Practice (Week 8), Feedback Loops (mentorship meetings), Adaptive Adjustment (Week 6). This is synthesis, not new material.</p>
+<p>Missing any component means system breaks down. Common mistake: "I'll practice 10 hours/week" without clear outcomes or feedback mechanisms. That's directionless effort.</p>
+<p>Example of all four working: "Goal: Fluent business presentations (clear outcome). Practice: Toastmasters weekly (deliberate practice). Feedback: Mentor reviews monthly (feedback). Adjustment: Shifted from memorizing to conversational approach based on feedback (adaptive)."</p>
+<p>Have students identify which component is weakest in their Development Plan. Give them 30 seconds.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="28">
+      <h2 class="slide-title">Component 1: Clear Outcomes (SMART Goals)</h2>
+      <div class="slide-content">
+        <p><strong>Why clear outcomes matter:</strong></p>
+<p>Without specific targets, you can't measure progress or know when to adjust.</p>
+<p><strong>SMART Goals Reminder:</strong></p>
+<ul>
+<li><strong>Specific:</strong> "Improve Python" → "Build 3 data analysis projects in Python"</li>
+<li><strong>Measurable:</strong> "Get better at presentations" → "Deliver 10 presentations scoring 8+ on rubric"</li>
+<li><strong>Achievable:</strong> Stretch goals, not impossible dreams</li>
+<li><strong>Relevant:</strong> Aligned with your vision and values</li>
+<li><strong>Time-bound:</strong> "Within 6 months" not "someday"</li>
+</ul>
+<p><strong>Development Plan Application:</strong></p>
+<p>Your 1-year, 3-year, 5-year goals should ALL be SMART.</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Doran, G. T. (1981). There's a S.M.A.R.T. way to write management's goals and objectives. Management Review, 70(11), 35-36.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Quick reminder from Week 11. Clear outcomes equal first component of sustainable learning system.</p>
+<p>Vague goals mean you can't tell if you're making progress, which leads to lost motivation. SMART goals provide clear progress indicators, which sustains motivation.</p>
+<p>Vague example: "Be good at Excel" - no measure, no timeline. SMART example: "Complete Excel advanced course and create 5 financial models for mock business cases by June 2026" - clear target, measurable, time-bound.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="29">
+      <h2 class="slide-title">Component 2: Deliberate Practice</h2>
+      <div class="slide-content">
+        <p><strong>Deliberate Practice ≠ Just putting in time</strong></p>
+<p><strong>Characteristics of Deliberate Practice:</strong></p>
+<ol>
+<li><strong>Focused on specific skill improvement</strong> (not general activity)</li>
+<li><strong>Immediate feedback</strong> on performance</li>
+<li><strong>Repetition with refinement</strong> (not mindless repetition)</li>
+<li><strong>Outside comfort zone</strong> (challenging but achievable)</li>
+</ol>
+<p><strong>Example:</strong></p>
+<ul>
+<li>❌ "I studied 10 hours" → Time-based, no focus</li>
+<li>✓ "I practiced financial modeling for 2 hours, focusing on fixing formula errors and reducing calculation time" → Skill-focused, specific improvement target</li>
+</ul>
+<p><strong>Your learning system needs deliberate practice blocks, not just "study time."</strong></p>
+      </div>
+      <div class="slide-footer"><p class="citation">Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. Psychological Review, 100(3), 363-406.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Quality of practice exceeds quantity of time. Deliberate practice concept from expertise research (Ericsson et al., 1993). Connects to mastery (Pink) and deep work (Newport, Week 8).</p>
+<p>Deliberate practice targets specific weaknesses with focused effort. Needs feedback from self, peers, mentors, or results. Should feel challenging - if comfortable, you're not improving.</p>
+<p>Vietnamese education emphasizes study hours. This reframes quality over quantity. "Học nhưng không suy nghĩ thì vô ích" (Learning without thinking is useless) - Confucius.</p>
+<p>Example for public speaking practice (deliberate): Record yourself, identify specific weakness like filler words, practice speech focusing ONLY on eliminating filler words, re-record and compare.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="30">
+      <h2 class="slide-title">Component 3: Feedback Loops</h2>
+      <div class="slide-content">
+        <p><strong>Multiple feedback sources create robust learning:</strong></p>
+<ol>
+<li><strong>Mentor feedback</strong> (external expert perspective)</li>
+<li><strong>Peer feedback</strong> (similar level, different viewpoint)</li>
+<li><strong>Self-assessment</strong> (metacognitive reflection)</li>
+<li><strong>Results feedback</strong> (outcomes tell you what works)</li>
+</ol>
+<p><strong>Your mentorship program IS a feedback loop:</strong></p>
+<ul>
+<li>Pre-meeting prep → Action</li>
+<li>Meeting → Feedback</li>
+<li>Post-meeting reflection → Adjustment</li>
+<li>Next meeting → Assess change</li>
+</ul>
+<p><strong>Feedback only works if you USE it to adjust approach.</strong></p>
+      </div>
+      <div class="slide-footer"><p class="citation">Hattie, J., & Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81-112.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Feedback research (Hattie & Timperley, 2007) shows feedback is one of most powerful learning accelerators - but only if you act on it.</p>
+<p>Multiple sources give more complete picture than single source. Mentorship program you've done all semester equals structured feedback loop.</p>
+<p>Strong loop example: Mentor suggests improve data visualization → Student takes online course → Shows improved charts at next meeting → Mentor confirms improvement. Weak loop: Mentor suggests improve but student does nothing → same issue next meeting.</p>
+<p>Vietnamese students may hesitate to ask for feedback (respect for authority). Reframe: Asking for feedback shows respect for mentor's expertise, not questioning their judgment.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="31">
+      <h2 class="slide-title">Component 4: Adaptive Adjustment</h2>
+      <div class="slide-content">
+        <p><strong>Learning Systems Must Evolve:</strong></p>
+<p>Your goals should be <strong>flexible based on what you learn</strong>. Rigidity leads to outdated plans.</p>
+<table>
+  <thead>
+    <tr>
+      <th>When to Adjust ✓</th>
+      <th>What NOT to Adjust ❌</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Feedback reveals skill gap you didn't anticipate</td>
+      <td>Core values (these remain stable)</td>
+    </tr>
+    <tr>
+      <td>New opportunity emerges that better aligns with values</td>
+      <td>5-year vision (this guides long-term)</td>
+    </tr>
+    <tr>
+      <td>Goal achieved faster than expected (set new stretch goal)</td>
+      <td>Goals just because they're hard (persistence matters)</td>
+    </tr>
+    <tr>
+      <td>External conditions change (industry shifts, technology advances)</td>
+      <td>Commitments to mentors or team members</td>
+    </tr>
+  </tbody>
+</table>
+<p><strong>Adjustment based on LEARNING = growth. Adjustment based on FEAR = avoidance.</strong></p>
+      </div>
+      <div class="slide-footer"><p class="citation">Zimmerman, B. J. (2002). Becoming a self-regulated learner. Theory Into Practice, 41(2), 64-70.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Adaptive adjustment is hardest component to get right. Requires wisdom to know WHEN to adjust versus when to persist.</p>
+<p>Adjust based on new information (feedback, changed conditions, unexpected results). Don't adjust based on fear (it's hard, I'm uncomfortable, I might fail).</p>
+<p>Core values and vision stay stable. Specific goals and strategies adjust. This connects back to Creative Tension: Adjust HOW you reach vision, not the vision itself.</p>
+<p>Good adjustment: Planned accountant, discovered through internship you prefer data analytics → adjust career path while keeping analytical strengths. Bad adjustment: Python hard after 1 week → give up and choose easier path - fear-based, not learning-based.</p>
+<p>Vietnamese cultural alignment values persistence ("Có chí thì nên") AND wisdom. Adaptive adjustment equals wise persistence, not stubborn persistence.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="32">
+      <h2 class="slide-title">Building Habits That Support Your System</h2>
+      <div class="slide-content">
+        <p><strong>Weekly Review Habit (30 minutes):</strong></p>
+<ul>
+<li>Review progress on SMART goals</li>
+<li>Check feedback from week (mentor, peers, results)</li>
+<li>Adjust next week's priorities based on learning</li>
+<li>Document in journal or Development Plan tracker</li>
+</ul>
+<p><strong>Monthly Development Check (60 minutes):</strong></p>
+<ul>
+<li>Assess progress on 1-year goals</li>
+<li>Review mentor meeting notes and action items</li>
+<li>Update Development Plan if needed</li>
+<li>Schedule next month's learning priorities</li>
+</ul>
+<p><strong>Quarterly Vision Alignment (90 minutes):</strong></p>
+<ul>
+<li>Re-read your 5-year vision</li>
+<li>Check if current goals still align</li>
+<li>Major adjustments if life circumstances changed</li>
+<li>Celebrate progress and set new stretch goals</li>
+</ul>
+      </div>
+      <div class="slide-footer"><p class="citation">Clear, J. (2018). Atomic habits: An easy & proven way to build good habits & break bad ones. Avery.</p><p class="citation">Newport, C. (2016). Deep work: Rules for focused success in a distracted world. Grand Central Publishing.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Sustainable systems require regular reflection habits. Without scheduled check-ins, plans gather dust.</p>
+<p>Weekly is tactical: Did I make progress this week? Monthly is strategic: Am I on track for 1-year goals? Quarterly is visionary: Am I still heading toward my vision?</p>
+<p>These habits maintain all four components: Clear outcomes (review goals), Deliberate practice (adjust focus), Feedback (review what you learned), Adaptive adjustment (make changes).</p>
+<p>Have students schedule recurring Development Plan review now. Suggest Sunday evening or Friday morning. Student who schedules "Development Plan Review" every Sunday 7pm gets consistent progress. Student who "reviews when I have time" never reviews, plan becomes irrelevant.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="33">
+      <h2 class="section-title">Synthesis & Exam Preparation</h2>
+      <p class="section-subtitle">Pulling It All Together</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Final section: Integration for oral exam. Everything comes together here.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="34">
+      <h2 class="framework-title">Integration: Connecting Frameworks to Your Plan</h2>
+      <div class="framework-components">
+        <div class="component">
+          <h3>Personal Mastery (Senge)</h3>
+          <p>Vision of where you want to be, honest assessment of current reality, and creative tension as fuel for growth</p>
+        </div>
+        <div class="component">
+          <h3>Drive Theory (Pink)</h3>
+          <p>Goals driven by autonomy (your choice), mastery (continuous improvement), and purpose (serving others)</p>
+        </div>
+        <div class="component">
+          <h3>Sustainable Learning System</h3>
+          <p>Clear SMART outcomes, deliberate practice, regular feedback loops, and adaptive adjustment</p>
+        </div>
+      </div>
+      <div class="framework-commentary"><p><strong>Use this integration structure in your oral exam to demonstrate depth.</strong></p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>This is the payoff - how three frameworks work together. Strong oral exams show integration, not just listing concepts.</p>
+<p>Senge gives structure: Vision + Current Reality + Creative Tension. Pink ensures goals are intrinsically motivating: Autonomy + Mastery + Purpose. Learning System ensures sustainability: Outcomes + Practice + Feedback + Adjustment.</p>
+<p>These aren't separate - they overlap and reinforce. Integration example: "My vision is leading sustainable business initiatives (Senge). I chose this path because it aligns with my VIA value of Judgment and serves environmental purpose (Pink: autonomy and purpose). I'm building toward it through environmental management certification, monthly mentor check-ins on progress, and quarterly goal adjustments based on industry trends (Learning System)."</p>
+<p>15% of oral exam grade equals "Integration of Learning." This slide is your template for demonstrating integration. Weave these frameworks throughout presentation, don't just list them.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="35">
+      <h2 class="slide-title">Structuring Your 15-Minute Presentation</h2>
+      <div class="slide-content">
+        <p><strong>Suggested 10-Minute Structure:</strong></p>
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Section</th>
+      <th>Key Content</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>0-1 min</strong></td>
+      <td><strong>Hook + Preview</strong></td>
+      <td>Opening question or insight; "Today I'll show you my growth journey and 1-3-5 year plan"</td>
+    </tr>
+    <tr>
+      <td><strong>1-3 min</strong></td>
+      <td><strong>Self-Discovery Journey</strong></td>
+      <td>Key insights from VIA, MBTI, assessments; What you learned about yourself</td>
+    </tr>
+    <tr>
+      <td><strong>3-5 min</strong></td>
+      <td><strong>Vision & Values</strong></td>
+      <td>5-year vision statement; Top strengths and core values</td>
+    </tr>
+    <tr>
+      <td><strong>5-7 min</strong></td>
+      <td><strong>1-3-5 Year Goals</strong></td>
+      <td>SMART goals with Drive theory elements (autonomy, mastery, purpose); Connection to vision</td>
+    </tr>
+    <tr>
+      <td><strong>7-9 min</strong></td>
+      <td><strong>Integration</strong></td>
+      <td>Mentorship impact and course insights; Personal Mastery and Learning System</td>
+    </tr>
+    <tr>
+      <td><strong>9-10 min</strong></td>
+      <td><strong>Commitment</strong></td>
+      <td>How you'll sustain growth; Closing thought</td>
+    </tr>
+  </tbody>
+</table>
+<p><em>See Assessment Handbook Section 4 for complete rubric</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>This is recommended structure - students can adapt. 10 minutes is short - must be focused and practiced. Most students go over on first try.</p>
+<p>Strong presentations tell story, not just list facts. Integration should be woven throughout, not separate section.</p>
+<p>Structure addresses all four rubric criteria: Content & Self-Awareness (35%) equals Self-discovery plus Vision & Values. Goal Clarity & Strategic Thinking (25%) equals 1-3-5 year goals. Integration of Learning (15%) equals Integration section. Delivery & Professional Presence (25%): Practiced structure helps delivery.</p>
+<p>Students should outline presentation structure during tutorial and practice in pairs.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="36">
+      <h2 class="slide-title">Today's Tutorial: Presentation Practice</h2>
+      <div class="slide-content">
+        <p><strong>Tutorial Activity: Oral Exam Preparation</strong></p>
+<ol>
+<li><strong>Opening (10 min):</strong> Simplified rubric review, presentation structure</li>
+<li><strong>Main Activity (55 min):</strong></li>
+<ul class="nested-list">
+<li>Draft 2-3 minute presentation segment (self-discovery or goals)</li>
+<li>Practice with partner using rubric</li>
+<li>Peer feedback on content, delivery, and integration</li>
+<li>Revise based on feedback</li>
+</ul>
+<li><strong>Quiz Prep (15 min):</strong> Review course frameworks with practice questions</li>
+<li><strong>Wrap-up (10 min):</strong> Final exam logistics, preparation checklist</li>
+</ol>
+<p><strong>Come prepared with Development Plan and notes from today's lecture.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Tutorial is hands-on practice for oral exam. Students who skip miss critical preparation.</p>
+<p>Won't practice full 10-minute presentation (not enough time). Will practice one segment thoroughly (2-3 minutes). Peer feedback using actual exam rubric. Iterative practice: Present → Feedback → Revise → Present again.</p>
+<p>Students need: Development Plan, today's lecture notes, laptop or tablet for presenting. Pairs assigned randomly to simulate exam conditions.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="37">
+      <h2 class="slide-title">Integration Summary</h2>
+      <div class="slide-content">
+        <p><strong>Three Key Takeaways:</strong></p>
+<ol>
+<li><strong>Personal Mastery (Senge):</strong> Hold your vision clear, see reality honestly, use creative tension as fuel for growth - this is lifelong DISCIPLINE</li>
+<li><strong>Drive Theory (Pink):</strong> Ensure your goals are driven by intrinsic motivation (autonomy, mastery, purpose), not just external rewards</li>
+<li><strong>Sustainable Systems:</strong> Build habits and systems that maintain your development - clear outcomes, deliberate practice, feedback loops, adaptive adjustment</li>
+</ol>
+<p><strong>Your Challenge:</strong></p>
+<p>Integrate these frameworks into your Final Oral Exam presentation to demonstrate:</p>
+<ul>
+<li>Depth of understanding (Content & Self-Awareness: 35%)</li>
+<li>Strategic thinking (Goal Clarity & Strategic Thinking: 25%)</li>
+<li>Commitment to lifelong learning (Integration of Learning: 15%)</li>
+</ul>
+<p><strong>This isn't just for the exam - these frameworks guide your career for decades.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Final integration - bring all three frameworks together. Emphasize these aren't just for passing exam. They're career-long tools.</p>
+<p>Personal Mastery: Vision + Reality + Tension equals growth energy. Drive Theory: Autonomy + Mastery + Purpose equals intrinsic motivation. Sustainable Systems: Outcomes + Practice + Feedback + Adjustment equals lifelong learning.</p>
+<p>Students should practice saying these three takeaways out loud. Good closing for oral exam: "These three frameworks - Personal Mastery, Drive Theory, and Sustainable Systems - provide structure for my lifelong professional development."</p>
+<p>You've done the work this semester. The oral exam is opportunity to demonstrate that growth.</p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="38">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p>Clear, J. (2018). <em>Atomic habits: An easy & proven way to build good habits & break bad ones</em>. Avery.</p>
+<p>Doran, G. T. (1981). There's a S.M.A.R.T. way to write management's goals and objectives. <em>Management Review, 70</em>(11), 35-36.</p>
+<p>Dweck, C. S. (2006). <em>Mindset: The new psychology of success</em>. Random House.</p>
+<p>Ericsson, K. A., Krampe, R. T., & Tesch-Römer, C. (1993). The role of deliberate practice in the acquisition of expert performance. <em>Psychological Review, 100</em>(3), 363-406. https://doi.org/10.1037/0033-295X.100.3.363</p>
+<p>Hattie, J., & Timperley, H. (2007). The power of feedback. <em>Review of Educational Research, 77</em>(1), 81-112. https://doi.org/10.3102/003465430298487</p>
+<p>Newport, C. (2016). <em>Deep work: Rules for focused success in a distracted world</em>. Grand Central Publishing.</p>
+<p>Peterson, C., & Seligman, M. E. P. (2004). <em>Character strengths and virtues: A handbook and classification</em>. Oxford University Press.</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 1 of 2).  Students can use these for further reading. All sources are authoritative - peer-reviewed or top management authors. Mix of classic works (Senge, Dweck) and recent research.</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="39">
+      <h2 class="slide-title">References (continued)</h2>
+      <div class="slide-content">
+        <p>Pink, D. H. (2009). <em>Drive: The surprising truth about what motivates us</em>. Riverhead Books.</p>
+<p>Senge, P. M. (2006). <em>The fifth discipline: The art and practice of the learning organization</em>. Currency/Doubleday.</p>
+<p>Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview. <em>Theory Into Practice, 41</em>(2), 64-70. https://doi.org/10.1207/s15430421tip4102_2</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 2 of 2). Continued from previous slide.</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

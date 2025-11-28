@@ -21,12 +21,12 @@ class LayoutConfig:
     PADDING = 0.625       # 60px / 96 DPI - standard slide padding
 
     # Title positioning
-    TITLE_Y = 0.62        # Title vertical position from top
+    TITLE_Y = 0.42        # Title vertical position from top (raised by 0.5cm from 0.62)
     TITLE_HEIGHT = 0.7    # Title text box height
-    TITLE_CONTENT_GAP = 0.6  # Gap between title and content
+    TITLE_CONTENT_GAP = 0.58  # Gap between title and content (reduced by 1.25cm for tighter spacing)
 
     # Content positioning (calculated)
-    CONTENT_START_Y = PADDING + TITLE_HEIGHT + TITLE_CONTENT_GAP  # 1.9 inches
+    CONTENT_START_Y = TITLE_Y + TITLE_HEIGHT + TITLE_CONTENT_GAP  # 1.7 inches (raised by 1.25cm for better content positioning)
 
     # Footer positioning
     FOOTER_HEIGHT = 0.25
@@ -39,7 +39,7 @@ class LayoutConfig:
     DECORATIVE_SHAPE_WIDTH = 0.35
     DECORATIVE_SHAPE_HEIGHT = 0.58
     DECORATIVE_SHAPE_SPACING = 0.25  # Gap between shapes
-    DECORATIVE_SHAPE_Y = 5.88  # Position from top
+    DECORATIVE_SHAPE_Y = 7.1  # Position from top (moved to bottom of slide)
     DECORATIVE_SHAPE_X_START = 0.74  # First shape X position
 
     # Card layout
@@ -137,6 +137,7 @@ class ColorConfig:
 
     # Neutral colors
     MUTED_GRAY = RGBColor(100, 116, 139)  # #64748b - Secondary text
+    LIGHT_GRAY = RGBColor(226, 232, 240)  # #e2e8f0 - Borders, dividers
 
     # Color mapping dictionary (for CSS color lookup)
     COLORS = {
@@ -207,6 +208,30 @@ class ColorConfig:
 
 class SpacingConfig:
     """Spacing and gap constants for consistent layout."""
+
+    # Text line spacing (1.2 = 120% of font size)
+    LINE_SPACING = 1.2  # Unified line spacing for all text
+    TITLE_LINE_SPACING = 0.9  # Tighter line spacing for slide titles
+
+    # Paragraph spacing (in Points)
+    PARAGRAPH_SPACE_BEFORE = Pt(6)     # Space before paragraphs
+    PARAGRAPH_SPACE_AFTER = Pt(6)      # Space after paragraphs
+
+    # Subheading spacing (bold paragraphs acting as headings)
+    SUBHEADING_SPACE_BEFORE = Pt(12)   # Larger space before subheadings
+    SUBHEADING_SPACE_AFTER = Pt(3)     # Smaller space after subheadings
+
+    # List item spacing
+    LIST_ITEM_SPACE_BEFORE = Pt(0)     # No space before list items
+    LIST_ITEM_SPACE_AFTER = Pt(0)      # No space after list items
+
+    # Special context spacing
+    REFERENCE_SPACE_BEFORE = Pt(6)     # Space before bibliography entries
+    REFERENCE_SPACE_AFTER = Pt(0)      # No space after references
+    CHECKLIST_SPACE_BEFORE = Pt(0)     # No space before checklist items
+    CHECKLIST_SPACE_AFTER = Pt(0)      # No space after checklist items
+    FRAMEWORK_TITLE_SPACE_BEFORE = Pt(0)  # No space before framework titles
+    FRAMEWORK_TITLE_SPACE_AFTER = Pt(12)  # Space after framework card titles (keeps separation from content)
 
     # Vertical spacing
     TITLE_BOTTOM_MARGIN = 0.6

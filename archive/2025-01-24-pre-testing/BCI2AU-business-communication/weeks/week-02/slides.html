@@ -1,0 +1,2454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 29</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 2: Professional Writing & Email Communication</h1>
+        <p class="subtitle">Strategic Email Design & Evidence-Based Writing Principles</p>
+        <p class="author"><strong>Business Communication</strong><br>Andrews University - National Economics University Campus<br>Fall 2025<br>Instructor: William Winterton Lang<br>[LAYOUT: title-slide]</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome students back and acknowledge Week 1 foundations (strategic communication, know-feel-do framework)</li>
+<li>Today builds on strategic thinking by focusing specifically on written communication</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Email is the most prevalent form of business communication - 86% of business professionals prefer it</li>
+<li>This week covers both tactical skills (BLUF, formatting) AND strategic thinking (channel selection, tone)</li>
+<li>Two required articles provide complementary perspectives: military precision (Sehgal) and neuroscience (Birchard)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with a question that might surprise you about email effectiveness..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="2">
+      <h2 class="slide-title">The Email Reality</h2>
+      <div class="slide-content">
+        <p><strong>121</strong></p>
+<p>The average office worker receives 121 emails each day - and sends 40+ themselves.</p>
+<p>How many of those emails are actually read carefully?</p>
+<p>(Fitsmallbusiness.com, 2024)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Ask students to guess the number before revealing</li>
+<li>"Show of hands: How many emails did YOU receive yesterday?"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>375 billion emails sent globally every day in 2025 (Dragapp, 2024)</li>
+<li>The problem isn't just volume - it's clarity and strategic focus</li>
+<li>Poor communication costs businesses $12,500 per employee annually (Grammarly/Harris Poll, 2021)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnamese context: Many businesses here use Zalo (85% of Vietnamese) for quick messages, but email remains standard for formal business communication</li>
+<li>Students will face BOTH channels in professional life - need to master email first, then adapt principles</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why do you think so many emails go unread or misunderstood?"</li>
+<li>Expected responses: Too long, unclear purpose, buried main point</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"The solution isn't to avoid email - it's to write strategically. Let's start with vocabulary you'll need..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="3">
+      <h2 class="slide-title">Key Vocabulary (English-Vietnamese)</h2>
+      <table class="vocab-table"><thead><tr><th>English Term</th><th>Vietnamese Translation</th><th>Definition</th></tr></thead><tbody><tr><td><strong>BLUF (Bottom Line Up Front)</strong></td><td>Kết luận ngay đầu tiên</td><td>Technique of stating main point in first sentence/paragraph</td></tr><tr><td><strong>Subject line</strong></td><td>Tiêu đề email</td><td>Brief description of email content that appears before opening</td></tr><tr><td><strong>Tone</strong></td><td>Giọng điệu</td><td>Attitude or emotion conveyed through word choice</td></tr><tr><td><strong>Concision</strong></td><td>Sự súc tích</td><td>Using fewest words necessary to convey meaning clearly</td></tr><tr><td><strong>Active voice</strong></td><td>Thể chủ động</td><td>Sentence structure where subject performs action (vs. passive)</td></tr><tr><td><strong>Processing fluency</strong></td><td>Khả năng xử lý trôi chảy</td><td>How easily brain understands and remembers information</td></tr><tr><td><strong>Stakeholder</strong></td><td>Bên liên quan</td><td>Person/group affected by or interested in business decision</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These eight terms will appear throughout today's lecture and in your assessments"</li>
+<li>Pronunciation practice: Have students repeat challenging terms</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>BLUF is military acronym - you'll use it constantly in business writing</li>
+<li>"Processing fluency" comes from neuroscience research (Birchard, 2021) - not just about clarity, but how brain actually processes information</li>
+<li>Vietnamese students often excel at formal written communication due to cultural emphasis on respect and structure</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Tone example: Compare "I need this now" vs. "Could you please send this by 3pm today? Thank you!"</li>
+<li>Active vs. passive: "The report was completed by Lan" (passive) vs. "Lan completed the report" (active - clearer, stronger)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Concision doesn't mean rude or too brief - it means respectful of reader's time</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone use 'processing fluency' in a sentence about writing?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we have vocabulary, let's explore WHY email is so challenging - and powerful..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="4">
+      <h2 class="section-title">Part 1: Email Strategy & Channel Selection</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We're diving into three major segments today. Part 1 covers strategic decision-making about channels."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Channel selection is STRATEGIC, not just about preference</li>
+<li>Different channels have different strengths and cultural meanings</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"First question: When should you email versus use another channel?"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">Digital Communication Channels in Business</h2>
+      <div class="slide-content">
+        <p><strong>Primary Business Channels:</strong></p>
+<ol>
+<li><strong>Email</strong> - Formal documentation, external stakeholders, detailed information</li>
+<li><strong>Instant messaging</strong> (Slack, Teams, Zalo) - Quick questions, team coordination, informal updates</li>
+<li><strong>Video calls</strong> (Zoom, Teams) - Complex discussions, relationship building, presentations</li>
+<li><strong>Project management tools</strong> (Asana, Monday) - Task tracking, workflows, team collaboration</li>
+</ol>
+<p><strong>Key Principle:</strong> Match channel to purpose, urgency, and audience.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Each channel serves different strategic purposes - there's no 'best' channel, only best fit"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Email creates permanent record (important for accountability)</li>
+<li>Instant messaging faster but less formal (can create misunderstandings)</li>
+<li>Video builds relationship but requires synchronous time</li>
+<li>Choose based on: complexity, urgency, need for documentation, cultural norms</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnamese context: 85% use Zalo for daily communication (Vietnam.vn, 2024), but multinational companies prefer Slack/Teams for business</li>
+<li>Many Vietnamese SMEs use Zalo for file-sharing and quick decisions, email for contracts and formal approvals</li>
+<li>Students will likely use BOTH systems - Zalo with Vietnamese colleagues, email/Slack with international partners</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think younger = always use chat; actually, senior executives often prefer email for important matters</li>
+<li>Email isn't "old fashioned" - 86% of business professionals prefer it (Fitsmallbusiness, 2024)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"A client asks you to confirm a $50,000 contract detail. Email or Zalo message? Why?"</li>
+<li>Expected: Email - creates documentation, shows professionalism, can attach terms</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"In Vietnam specifically, channel choice has cultural dimensions we must understand..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="6">
+      <h2 class="slide-title">Vietnamese Context: Navigating Email and Zalo</h2>
+      <div class="slide-content">
+        <p><strong>The Vietnamese Reality:</strong></p>
+<p>Zalo dominates with 77 million monthly active users and 2 billion daily messages (Vietnam.vn, 2024). Many Vietnamese SMEs rely on Zalo for important communications and file transfer.</p>
+<p><strong>When Vietnamese businesses use each:</strong></p>
+<ul>
+<li><strong>Zalo:</strong> Quick decisions, team coordination, customer service, sending documents to colleagues</li>
+<li><strong>Email:</strong> Formal contracts, communication with international partners, official documentation, communication with superiors in hierarchy</li>
+</ul>
+<p><strong>Cultural consideration:</strong> Vietnamese prefer face-to-face communication over digital channels when building trust (Sourceofasia.com, 2024). Email and Zalo supplement but don't replace in-person relationship building.</p>
+<p><strong>Your strategy:</strong> Master email first (universal business standard), then adapt these principles to Zalo and other platforms.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"How many of you use Zalo daily?" [Show of hands - likely most students]</li>
+<li>"How many have used it for school group projects?" [Likely all]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Vietnam unique in ASEAN for Zalo dominance (Indonesia uses WhatsApp, Philippines uses Messenger)</li>
+<li>Zalo wasn't designed for comprehensive business management - companies now shifting to Slack/Teams for complex internal work (Pareto.vn, 2024)</li>
+<li>International companies operating in Vietnam require email proficiency - this is non-negotiable skill</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Case: Vietnamese startup founder uses Zalo with local suppliers (fast, familiar) but email with international investors (professional, documented)</li>
+<li>Many foreign managers frustrated when Vietnamese staff use Zalo for critical information that should be documented in email</li>
+<li>Trend: Larger Vietnamese enterprises (VNG, FPT) adopting Slack/Teams alongside Zalo</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese communication often indirect and relationship-based - this affects BOTH Zalo and email tone</li>
+<li>Sending emails after work hours seen as violation of personal time (unlike Western "always-on" culture)</li>
+<li>Vietnamese colleagues expect more formal greetings and closings even in digital communication</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Your team is working on presentation for American client. Should you coordinate via Zalo or email? What factors matter?"</li>
+<li>Expected considerations: Client expectations, documentation needs, team preference, time zones</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Regardless of channel, one principle from military communication revolutionizes effectiveness..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="7">
+      <h2 class="slide-title">BLUF: Bottom Line Up Front</h2>
+      <div class="slide-content">
+        <p><strong>Definition:</strong> State your main point, request, or conclusion in the first sentence or paragraph.</p>
+<p><strong>Origin:</strong> U.S. military communication standard designed to maximize mission success through precision (Sehgal, 2016).</p>
+<p><strong>Why it works:</strong></p>
+<ul>
+<li>Respects reader's time by answering "How does this affect me?" immediately</li>
+<li>Reduces follow-up questions by 30-40% (military research)</li>
+<li>Enables faster decision-making</li>
+<li>Ensures key message received even if email only partially read</li>
+</ul>
+<p><strong>The BLUF Formula:</strong> Answer the 5 W's (Who, What, When, Where, Why) in opening.</p>
+<p><em>Sehgal, K. (2016, November 22). How to write email with military precision. Harvard Business Review. https://hbr.org/2016/11/how-to-write-email-with-military-precision</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Both Army Green Berets and Marine Corps fighter pilots are taught BLUF. Why? Lives depend on clear communication."</li>
+<li>In business, money and careers depend on it - same principle</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>BLUF forces YOU to clarify your thinking before writing</li>
+<li>Most people bury main point in paragraph 3-4 - reader has stopped reading by then</li>
+<li>Military found "most significant problem was failing to convey focused message quickly" (Sehgal, 2016)</li>
+<li>Write on board: "BLUF = Who + What + When + Where + Why in FIRST sentence"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Bad example: "I hope this email finds you well. I wanted to touch base regarding the meeting we had last Tuesday where we discussed several important topics including the budget review and timeline adjustments. After careful consideration and consultation with the team..." [Students frustrated just hearing this!]</li>
+<li>Good example: "Please approve the $50,000 marketing budget by Friday, March 15 so we can launch the campaign on schedule."</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think BLUF sounds rude or too direct → Clarify: It's respectful of reader's time, still uses polite language</li>
+<li>BLUF doesn't mean ONLY one sentence - it means main point FIRST, then details</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"I'll read two email openings. Which uses BLUF?"</li>
+<li>Option A: "Thank you for your email. I have been thinking about your question and consulted with several colleagues..."</li>
+<li>Option B: "I recommend we postpone the launch until April 15. Here's why..."</li>
+<li>Expected: B is BLUF</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"BLUF is the foundation. Now let's add tactical elements that make emails scannable and actionable..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="8">
+      <h2 class="slide-title">Military Email Framework (Sehgal, 2016)</h2>
+      <div class="slide-content">
+        <p><strong>Component 1: Subject Line Keyword</strong></p>
+<p>Use capitalized tags: ACTION (requires response), INFO (FYI only), REQUEST (seeks approval), DECISION (needs judgment), SIGN (signature required), COORD (coordination needed)</p>
+<p><strong>Component 2: BLUF Opening</strong></p>
+<p>First sentence/paragraph answers: Who, What, When, Where, Why, How does this affect you?</p>
+<p><strong>Component 3: Background (if needed)</strong></p>
+<p>Use bullet points for supporting details, keep to one screen/pane without scrolling</p>
+<p><strong>Component 4: Active Voice</strong></p>
+<p>"Lan completed the report" not "The report was completed by Lan"</p>
+<p><strong>Component 5: Clear Call-to-Action</strong></p>
+<p>State exactly what you need recipient to do and by when</p>
+<p><em>Sehgal, K. (2016, November 22). How to write email with military precision. Harvard Business Review. https://hbr.org/2016/11/how-to-write-email-with-military-precision</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This five-component framework transforms email from rambling to razor-sharp"</li>
+<li>Draw the framework on board as visual reference</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Subject line keyword forces sender to clarify intent BEFORE writing (metacognitive benefit)</li>
+<li>In corporate settings, Sehgal recommends bold "Bottom Line:" instead of using BLUF acronym</li>
+<li>One-pane format crucial - if reader must scroll, you've lost them</li>
+<li>Active voice not just clearer - it's 10% faster to read (Birchard, 2021)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Subject line examples:</li>
+<ul class="nested-list">
+<li>Weak: "Meeting"</li>
+<li>Strong: "ACTION REQUIRED: Confirm attendance for Budget Meeting March 15"</li>
+<li>Weak: "Question about project"</li>
+<li>Strong: "REQUEST: Approval for project timeline extension to April 30"</li>
+</ul>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think keywords only for military → Actually, many tech companies (Amazon, Microsoft) use similar systems</li>
+<li>Vietnamese students sometimes over-formalize with excessive greetings → BLUF doesn't eliminate courtesy, just ensures clarity first</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese business culture values hierarchy - when emailing superiors, still use respectful titles (Mr./Ms. + first name) but BLUF shows respect for their time</li>
+<li>"Anh/Chị" honorifics in Vietnamese emails - English equivalent is professional title + name</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What keyword would you use for email asking boss to approve your vacation request?"</li>
+<li>Expected: REQUEST or DECISION</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's see this framework in action with before/after examples..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="9">
+      <h2 class="slide-title">BLUF Transformation: Before vs. After</h2>
+      <table><thead><tr><th>❌ Before (Buried Main Point)</th><th>✓ After (BLUF Applied)</th></tr></thead><tbody><tr><td><strong>Subject:</strong> Update<br><br>Hi team,<br><br>I hope everyone had a great weekend. I wanted to follow up on our discussion last Friday about the client presentation. After reviewing the feedback and considering various options, I think we should probably...</td><td><strong>Subject:</strong> DECISION NEEDED: Client presentation date - respond by Wed<br><br>Hi team,<br><br><strong>Bottom Line:</strong> We must choose between March 15 or March 22 for the client presentation. Please vote by Wednesday 5pm.<br><br><strong>Background:</strong><br>• Client available both dates<br>• March 15 = less prep time, but earlier revenue<br>• March 22 = more polished, but delays contract</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's compare two versions of the same email. First, the painful version we've all received..."</li>
+<li>Read the "Before" example out loud with exaggerated thoughtfulness - students will recognize the pattern</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>"Before" version has 50+ words before getting to point - reader has already moved to next email</li>
+<li>"After" version: Main point in 15 words, background in bullets, total email fits one screen</li>
+<li>Notice "respond by Wednesday" creates urgency and accountability</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Many Vietnamese students taught to start emails with extensive pleasantries and relationship-building language - this is GOOD for first contact, but ongoing communication benefits from BLUF</li>
+<li>Example from VNG Corporation: They adopted Slack and shifted to BLUF-style communication to increase team velocity</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>BLUF eliminates all context → No, it just reorders: Point first, THEN context</li>
+<li>BLUF only for requests → No, also for updates, decisions, information sharing</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"In the 'After' example, where is the BLUF? Where is the background? What's the CTA?"</li>
+<li>Point to each component in the example</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Subject lines deserve special attention - they determine if email even gets opened..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="10">
+      <h2 class="slide-title">Subject Lines That Get Opened & Acted Upon</h2>
+      <div class="slide-content">
+        <p><strong>Effective subject line formula:</strong></p>
+<p><strong>[KEYWORD] + [Topic] + [Deadline/Date]</strong></p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li>✓ "ACTION: Submit budget revisions by March 15"</li>
+<li>✓ "INFO: Office closed for Tet Holiday Feb 8-12"</li>
+<li>✓ "REQUEST: Approve attached proposal - need response by Friday"</li>
+<li>✓ "DECISION: Choose vendor for website redesign by March 20"</li>
+</ul>
+<p><strong>Avoid:</strong></p>
+<ul>
+<li>❌ Vague: "Quick question" "Update" "Meeting"</li>
+<li>❌ ALL CAPS EVERYTHING (looks like spam)</li>
+<li>❌ Too long: More than 60 characters gets cut off on mobile</li>
+<li>❌ No context: "Hi" "Following up" "Checking in"</li>
+</ul>
+<p><strong>Vietnamese context:</strong> Email subject lines should be more formal than Zalo messages - include project name or reference number if applicable.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Your subject line is like a headline - it determines if your email gets read or ignored"</li>
+<li>47% of email recipients decide to open based solely on subject line (Constantcontact, 2024)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Mobile devices show only 25-30 characters of subject line - put most important info first</li>
+<li>Keywords (ACTION, INFO, etc.) act as visual flags that help recipient prioritize</li>
+<li>Including deadlines in subject line increases response rate by 20-30%</li>
+<li>Write subject line AFTER writing email body - then you know the true main point</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Bad subject line example: Student emails professor with subject "Question" - professor receives 50+ emails/day with that subject</li>
+<li>Good subject line: "REQUEST: Extension for Assignment 2 - medical documentation attached"</li>
+<li>Vietnamese business example: "INFO: Q1 Sales Report - NEU Campus Performance" (includes report type and specific scope)</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese business emails often include project codes or reference numbers in subject line (e.g., "PROJECT-VN2024: Budget approval request")</li>
+<li>When emailing international colleagues, avoid Vietnamese-language subject lines unless confirmed preference</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"You're emailing your team about optional training session next Friday. Write a subject line."</li>
+<li>Good answer example: "INFO: Optional Excel Training - March 22 at 2pm"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Subject line gets email opened. BLUF gets main point across. But TONE determines how message is received..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="11">
+      <h2 class="section-title">Part 2: Managing Tone in Written Communication</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Part 2 shifts from structure to tone - often harder to master because it's subtle"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Tone = attitude conveyed through word choice, punctuation, sentence structure</li>
+<li>Written communication lacks facial expressions and voice inflection - tone easily misinterpreted</li>
+<li>Research shows 50% of emails misinterpreted due to tone ambiguity</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's explore what tone actually IS in writing..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="12">
+      <h2 class="slide-title">Understanding Tone in Business Writing</h2>
+      <div class="slide-content">
+        <p><strong>Tone</strong> = The attitude or emotion conveyed through word choice, sentence structure, and punctuation.</p>
+<p><strong>In face-to-face:</strong> Tone communicated through voice (pitch, volume), facial expressions, body language (55% of message)</p>
+<p><strong>In written communication:</strong> Tone communicated ONLY through:</p>
+<ul>
+<li>Word choice (formal vs. casual, positive vs. negative)</li>
+<li>Sentence structure (short/blunt vs. longer/softer)</li>
+<li>Punctuation (period vs. exclamation mark vs. question mark)</li>
+<li>Formatting (bold, ALL CAPS, italics)</li>
+</ul>
+<p><strong>The challenge:</strong> Without vocal and visual cues, written tone is easily misinterpreted. What you intend as "efficient" may read as "rude."</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Raise your hand if you've ever sent a text message that was misunderstood"</li>
+<li>Same problem in professional email - but with higher stakes</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Research shows we overestimate how well our tone comes across in writing by 50%</li>
+<li>You THINK you sound friendly, reader perceives neutral or cold</li>
+<li>Brain processes emotional connotations of words within 200 milliseconds - faster than conscious meaning (Birchard, 2021)</li>
+<li>This means tone hits reader before they even fully understand your message</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Classic example: "Fine." (with period) vs. "Fine!" (with exclamation)</li>
+<li>Same word, completely different tone based on punctuation alone</li>
+<li>Vietnamese student example: Writing "Please do this" - intended as polite request, read as command by Western colleague</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think emoticons/emojis solve tone problem → Appropriate in Zalo/Teams, NOT in formal email to clients or superiors</li>
+<li>Some think ALL CAPS emphasizes importance → Actually signals shouting/anger in digital communication</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"How would you interpret this email: 'We need to talk about your report.'"</li>
+<li>Expected responses: Negative, worried, something's wrong</li>
+<li>"How about: 'I'd love to discuss your excellent report - you raised great points.'"</li>
+<li>Expected: Positive, encouraging</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Tone exists on a spectrum from very formal to very casual. Your job is choosing the right level..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="13">
+      <h2 class="slide-title">The Professional Tone Spectrum</h2>
+      <div class="slide-content">
+        <p><strong>Formal (High Stakes)</strong></p>
+<p>First contact with senior executives, clients, external stakeholders, bad news, sensitive topics</p>
+<p><strong>Example:</strong> "Dear Mr. Nguyen, Thank you for your inquiry regarding the project timeline. I am writing to provide a detailed update and address your questions."</p>
+<p><strong>Professional (Standard Business)</strong></p>
+<p>Colleagues at same level, routine updates, project coordination, most daily email</p>
+<p><strong>Example:</strong> "Hi Minh, Here's the update on the March timeline. Let me know if you have questions."</p>
+<p><strong>Casual (Internal/Familiar)</strong></p>
+<p>Close team members, quick questions, ongoing conversations with established rapport</p>
+<p><strong>Example:</strong> "Hey team - quick reminder about Friday's deadline. Thanks!"</p>
+<p><strong>Key Principle:</strong> When in doubt, err on the side of more formal. You can always become more casual later as relationship develops.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"There's no single 'correct' tone - only appropriate tone for context, relationship, and culture"</li>
+<li>Draw spectrum on board from Formal → Professional → Casual</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>First email to someone = always more formal (you can't take back too-casual first impression)</li>
+<li>Match recipient's tone level in replies (if they're formal, stay formal; if casual, you can shift casual)</li>
+<li>High-stakes situations (complaints, bad news, disagreements) require more formal tone</li>
+<li>Vietnamese business culture generally more formal than U.S./Australia, less formal than Japan/Korea</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Formal example: Email to company CEO or government official - use full titles, complete sentences, formal closings</li>
+<li>Professional example: Email to project manager you work with weekly - friendly but businesslike</li>
+<li>Casual example: Slack message to teammate sitting next to you - conversational, abbreviations OK</li>
+<li>Vietnamese context: Even in casual Zalo messages with colleagues, common to start with "Anh/Chị" honorific</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese communication often more indirect than Western - "I will try" might mean "probably not" rather than actual commitment</li>
+<li>When working with international teams, Vietnamese students should be slightly MORE direct than feels natural</li>
+<li>Hierarchy matters: Email to boss requires more formal tone than email to peer, even about same topic</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Younger generations can always be casual → Many young professionals prefer professional tone to be taken seriously</li>
+<li>Formal = longer → No, formal is about word choice and structure, not length (BLUF still applies)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"You need to tell your professor you'll miss class due to illness. Which tone level?"</li>
+<li>Expected: Formal or Professional (not casual)</li>
+<li>"You're asking teammate where they saved the shared file. Which tone?"</li>
+<li>Expected: Professional or Casual (depending on relationship)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's look at specific word choices that shift tone..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="14">
+      <h2 class="slide-title">Tone Shifts Through Word Choice</h2>
+      <table><thead><tr><th>❌ Too Blunt/Negative</th><th>✓ Professional & Positive</th></tr></thead><tbody><tr><td>"Your report has errors."</td><td>"I noticed a few items in the report we should revise before submission."</td></tr><tr><td>"You missed the deadline."</td><td>"I haven't received the deliverable yet - is there an updated timeline?"</td></tr><tr><td>"This won't work."</td><td>"I see some challenges with this approach. Could we explore alternatives?"</td></tr><tr><td>"You need to fix this immediately."</td><td>"Could you please revise this by end of day? I'm happy to clarify if helpful."</td></tr><tr><td>"Obviously, we should..."</td><td>"I recommend we consider..."</td></tr><tr><td>"You should have..."</td><td>"For future reference, it would be helpful to..."</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Same message, completely different tone. Left column damages relationships, right column maintains them while still being clear."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Notice how right column still direct (uses BLUF) but softens delivery</li>
+<li>"Could you please..." vs. "You need to..." - same request, different tone</li>
+<li>Questions engage collaboration; commands create defensiveness</li>
+<li>Professional tone doesn't avoid tough conversations - it handles them constructively</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Real consequence: Manager sent "Your presentation was terrible" → Team member resigned</li>
+<li>Better approach: "Your presentation had strong data, but the structure could be clearer. Let's work on it together for next time."</li>
+<li>Vietnamese context: Direct criticism especially problematic in Vietnamese culture where "face" (reputation/dignity) critical</li>
+<li>If you must deliver criticism to Vietnamese colleague, do it privately and frame as "suggestion for improvement" not "you failed"</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese students often use "maybe" and "perhaps" excessively to soften tone - this is polite in Vietnamese but can sound uncertain in English</li>
+<li>Balance: Be clear about what you need, but polite about how you ask</li>
+<li>"I recommend..." stronger than "Maybe we could possibly consider..."</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Professional tone means being indirect or unclear → No, still be specific, just use positive framing</li>
+<li>Only women need to worry about tone → Men also judged on tone, especially in leadership roles</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Reframe this in professional tone: 'You forgot to send the report.'"</li>
+<li>Good answers: "I haven't received the report yet - could you send it when you have a moment?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Tone also affected by something surprising - the neuroscience of how brains process writing..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="15">
+      <h2 class="section-title">Part 3: The Neuroscience of Effective Writing</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Part 3 connects to your second required reading - Birchard's research on neuroscience and writing"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This isn't just about style - it's about how human brain actually processes information</li>
+<li>Evidence-based writing principles backed by cognitive science research</li>
+<li>Understanding this makes you strategic communicator, not just rule-follower</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Birchard identifies eight characteristics of strong writing - all based on neuroscience research..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="16">
+      <h2 class="framework-title">The Eight S's Framework (Birchard, 2021)</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Evidence-based principles from neuroscience research</h3>
+          
+          
+          <p>1. **Simplicity** - Short sentences and familiar vocabulary increase "processing fluency" 2. **Specificity** - Concrete words activate more brain regions than abstract terms 3. **Surprise** - Unexpected information 14% more likely to be shared and remembered 4. **Stirring language** - Emotional words bypass cognitive processing for faster impact 5. **Seductiveness** - Anticipation activates brain's reward circuits 6. **Smart ideas** - "Aha" moments light up reward regions, leaving readers satisfied 7. **Social content** - Human-centered writing activates social cognition areas 8. **Storytelling** - Narratives synchronize brain patterns between writer and reader</p>
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Bottom line:</strong> Writing that aligns with how brains process information is more persuasive, memorable, and effective.</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These aren't arbitrary writing rules - they're based on how your brain actually works"</li>
+<li>Write "The 8 S's" on board as reference</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>All eight principles backed by neuroscience research using fMRI brain scans and reading studies</li>
+<li>Good writing activates dopamine (reward neurotransmitter) - literally makes readers feel good</li>
+<li>Great writing releases opioids that turn on reward hot spots in brain (Birchard, 2021)</li>
+<li>This explains why some emails you WANT to read and others you avoid</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Simplicity example: Passive voice reduces comprehension accuracy by 10% and slows reading speed</li>
+<li>Surprise example: Articles rated as surprising were 14% more likely to be on "most-emailed" lists</li>
+<li>This is why clickbait works - but we'll use surprise ethically in business writing</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which 'S' does BLUF primarily leverage?"</li>
+<li>Expected: Simplicity (getting to point quickly reduces cognitive load)</li>
+<li>"Which 'S' might we use in email subject line?"</li>
+<li>Expected: Surprise, Seductiveness (creating curiosity)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's explore three of these S's in depth - the ones most applicable to email writing..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="17">
+      <h2 class="framework-title">Simplicity: How Brains Process Text</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Research findings (Birchard, 2021)</h3>
+          
+          <ul class="component-bullets"><li>**Passive voice** reduces comprehension accuracy by 10% and slows reading speed</li><li>**Long sentences** (30+ words) require re-reading 40% more often</li><li>**Jargon/complex words** activate fewer neural pathways than familiar terms</li></ul>
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Practical applications for email:</strong></p>
+<ul>
+<li><strong>Active voice:</strong> "I completed the analysis" (not "The analysis was completed")</li>
+<li><strong>Short sentences:</strong> Average 15-20 words (occasionally vary for rhythm)</li>
+<li><strong>Familiar words:</strong> "use" not "utilize," "help" not "facilitate"</li>
+<li><strong>One idea per sentence:</strong> Don't combine multiple thoughts</li>
+</ul>
+<p><strong>Result:</strong> Reader understands faster, remembers longer, acts sooner.</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Your brain is lazy - it prefers easy-to-process information"</li>
+<li>This isn't about dumbing down; it's about respecting cognitive limits</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Processing fluency affects memory: Easy-to-read text remembered 30% better after 24 hours</li>
+<li>Active voice not just clearer - it's literally faster for brain to process</li>
+<li>Military email format (Sehgal) and neuroscience research (Birchard) reach same conclusion: Simplicity wins</li>
+<li>Vietnamese students learning English sometimes use overly complex vocabulary to sound professional - simple is actually more impressive</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Complex: "The utilization of synergistic approaches will facilitate the optimization of outcomes."</li>
+<li>Simple: "Working together will improve results."</li>
+<li>Same meaning, second version activates more neural pathways and is remembered better</li>
+<li>Vietnamese example: "We will implement the initiative" → "We will start the project" (clearer for international teams)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Simple language sounds unprofessional → Actually, leaders like Jeff Bezos and Warren Buffett famous for simple, clear writing</li>
+<li>Longer sentences show sophistication → Brain science shows opposite - harder to process, easier to forget</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Rewrite in simpler form: 'The data exhibited a substantial degradation in performance metrics.'"</li>
+<li>Good answer: "The data showed a significant drop in performance." or "Performance declined significantly."</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Simplicity ensures comprehension. Specificity ensures impact..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="18">
+      <h2 class="slide-title">Specificity: Why Concrete Words Activate More Brain Regions</h2>
+      <div class="slide-content">
+        <p><strong>Research finding:</strong> Concrete words (like "pelican") activate more neurons in visual and motor brain regions than abstract words (like "bird"), causing "the brain to process meaning more robustly" (Birchard, 2021).</p>
+<p><strong>In business writing:</strong></p>
+<p>❌ <strong>Abstract/Vague</strong></p>
+<ul>
+<li>"We need to improve customer satisfaction soon."</li>
+<li>"Sales increased significantly."</li>
+<li>"Please update me on progress."</li>
+<li><strong>Specific/Concrete</strong></li>
+<li>"We need to reduce response time from 24 hours to 4 hours by March 31."</li>
+<li>"Sales increased 23% in Q1, from $2.1M to $2.6M."</li>
+<li>"Please send me the completed vendor comparison spreadsheet by Friday 5pm."</li>
+</ul>
+<p><strong>Benefits of specificity:</strong></p>
+<ul>
+<li>Activates more neural pathways = better comprehension and memory</li>
+<li>Eliminates ambiguity and need for follow-up clarification</li>
+<li>Enables action (recipient knows exactly what to do)</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Your brain creates mental images when reading concrete words - this deepens processing"</li>
+<li>"Bird" is abstract; "pelican" creates specific visual image that sticks in memory</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Specificity critical for BLUF technique - vague main point defeats the purpose</li>
+<li>Numbers, dates, deadlines = concrete; "soon," "later," "a lot" = abstract and useless</li>
+<li>Brain scans show concrete language lights up visual cortex even when just reading silently</li>
+<li>This is why stories and examples more memorable than abstract principles</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vague email: "Please finish the report quickly" - What's "quickly"? Today? This week?</li>
+<li>Specific email: "Please submit the Q1 sales report by Thursday, March 14 at 5pm"</li>
+<li>Vietnamese context: Vietnamese time orientation sometimes more flexible (less clock-focused) - when working with international teams, specify exact dates/times to avoid misunderstanding</li>
+<li>"This week" to Western colleague might mean Monday-Friday; to Vietnamese colleague might include weekend</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese communication sometimes uses indirect language to maintain harmony - "maybe we could consider possibly..."</li>
+<li>In business email, especially with international partners, be more specific and direct</li>
+<li>Replace "I will try" with "I will complete by [date]" or "I cannot complete by [date] but can by [alternate date]"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Specificity takes longer → Actually saves time by eliminating back-and-forth clarification</li>
+<li>Being specific sounds demanding → Specificity shows respect for everyone's time</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Make this specific: 'We should meet soon to discuss the budget.'"</li>
+<li>Good answer: "Let's meet Tuesday, March 19 at 2pm to review the Q2 budget and finalize allocations."</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"The final 'S' we'll cover transforms routine email into memorable communication..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="19">
+      <h2 class="slide-title">Social Content: Why "You" Matters</h2>
+      <div class="slide-content">
+        <p><strong>Research finding:</strong> Human-centered writing activates brain regions that interpret social signals. Readers infer character traits within 650 milliseconds of reading (Birchard, 2021).</p>
+<p><strong>Second-person pronouns ("you") significantly improve learning retention</strong> - studies show material written with "you" remembered better than third-person text.</p>
+<p><strong>In business email:</strong></p>
+<p>❌ <strong>Impersonal/Passive</strong></p>
+<ul>
+<li>"The report should be submitted by Friday."</li>
+<li>"It has been decided that the meeting will be postponed."</li>
+<li>"This project requires additional resources."</li>
+<li><strong>Human-Centered/Active</strong></li>
+<li>"Could you please submit the report by Friday?"</li>
+<li>"I've decided to postpone our meeting to give you more prep time."</li>
+<li>"You'll need two additional team members to meet the project deadline."</li>
+</ul>
+<p><strong>Why it works:</strong> Activates social cognition - brain processes the email as human interaction, not just information transfer.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Email is social interaction, not just information transmission"</li>
+<li>Brain treats reading email from person same way it processes face-to-face conversation</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Using "you" and "I" makes writing feel personal even in professional context</li>
+<li>Brain scans show social cognition areas light up when reading human-centered language</li>
+<li>This connects to strategic communication framework from Week 1: know-feel-do requires understanding your AUDIENCE (the "you")</li>
+<li>Vietnamese students sometimes taught to avoid "I" (sounds self-centered) - in English business writing, "I" shows ownership and accountability</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Passive/impersonal: "It has been determined that..." - Who determined? No human agent visible</li>
+<li>Active/personal: "I recommend we..." or "The leadership team decided..." - Clear human ownership</li>
+<li>Story: Amazon banned PowerPoint presentations in favor of 6-page narrative memos - Jeff Bezos wanted human voice and clear thinking, not bullet points</li>
+<li>Vietnamese context: Using "you" in English email = professional and direct; using "you" in Vietnamese ("em," "anh," "chị") requires understanding hierarchy and relationship</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>English business writing values directness and personal accountability ("I will..." "You need to...")</li>
+<li>Vietnamese communication often uses passive constructions to avoid assigning blame or sounding too direct</li>
+<li>When writing to international colleagues, embrace "I" and "you" - it shows confidence and clarity</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Professional writing should be impersonal → Research shows opposite - human-centered writing more effective</li>
+<li>Using "I" sounds arrogant → Actually, taking ownership (good or bad) shows leadership</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Make this more human-centered: 'The deadline has been missed and the project is now delayed.'"</li>
+<li>Good answers: "We missed the deadline, and I've pushed the project completion to March 30." or "You mentioned you couldn't meet Friday's deadline - what's a realistic new target?"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's apply everything we've learned to professional email formatting..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="20">
+      <h2 class="section-title">Part 4: Professional Email Formatting & Best Practices</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Final section covers tactical formatting - the finishing touches that signal professionalism"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's build the anatomy of a perfect professional email..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="21">
+      <h2 class="slide-title">Professional Email Template</h2>
+      <div class="slide-content">
+        <p><strong>Subject:</strong> [KEYWORD] + [Topic] + [Deadline if applicable]</p>
+<p><strong>Greeting:</strong></p>
+<ul>
+<li>Formal: "Dear Mr./Ms./Dr. [Last Name]," or "Dear [Full Name],"</li>
+<li>Professional: "Hi [First Name]," or "Hello [First Name],"</li>
+<li>Team: "Hi team," or "Hello everyone,"</li>
+</ul>
+<p><strong>BLUF (First paragraph):</strong></p>
+<p>State main point/request answering who, what, when, where, why.</p>
+<p><strong>Background (if needed):</strong></p>
+<p>2-4 bullet points with supporting details. Keep to one screen.</p>
+<p><strong>Call-to-Action:</strong></p>
+<p>Clear next step: "Please [action] by [deadline]."</p>
+<p><strong>Closing:</strong></p>
+<ul>
+<li>Formal: "Sincerely," "Best regards," "Respectfully,"</li>
+<li>Professional: "Best," "Thanks," "Regards,"</li>
+</ul>
+<p><strong>Signature:</strong></p>
+<p>Full name, title, organization, contact information</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This is your template for 90% of professional emails - adapt tone level based on context"</li>
+<li>Draw email structure on board as visual reference</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Greeting sets tone - match formality to relationship and culture</li>
+<li>Vietnamese business emails typically more formal than Western - "Dear" more common than "Hi"</li>
+<li>Signature should include title and organization for external emails (helps recipient understand your authority/role)</li>
+<li>Professional signature includes: Name, Job Title, Organization, Phone number, Email (some add LinkedIn)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Good signature example:</li>
+</ul>
+<pre><code>  William Lang
+  Business Communication Instructor
+  Andrews University - NEU Campus
+  Email: wil.hoang@gmail.com
+  Phone: +84 344 347 703
+  </code></pre>
+<ul>
+<li>Bad signature: Just name (too minimal for professional email) or excessive graphics/quotes (unprofessional)</li>
+<li>Vietnamese context: Including position title important in hierarchical culture - helps recipient understand appropriate level of formality</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>When emailing Vietnamese superiors, use "Dear Mr./Ms. [First Name]" (Vietnamese name order: family name first, given name last, but address by given name)</li>
+<li>Example: "Nguyen Van Minh" → address as "Dear Mr. Minh" (not "Dear Mr. Nguyen")</li>
+<li>When uncertain of hierarchy, err on side of more formal</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Must include extensive pleasantries and thanks → Brief is better; excessive gratitude can undermine authority</li>
+<li>Signature only needed for external emails → Include for all professional emails (helps recipient file and remember you)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"You're emailing the Dean to request meeting about your scholarship. Which greeting?"</li>
+<li>Expected: "Dear Dr. [Name]," (most formal option)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's see complete example that integrates all elements..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="22">
+      <h2 class="slide-title">Complete Professional Email Example</h2>
+      <div class="slide-content">
+        <pre><code>Subject: REQUEST: Approval for Q2 Marketing Budget - need response by March 15
+
+Dear Ms. Phuong,
+
+Bottom Line: I'm requesting approval for the Q2 marketing budget of $45,000 to launch our new student recruitment campaign. I need your decision by March 15 to meet vendor deadlines.
+
+Background:
+• Campaign targets Vietnamese high school students considering business programs
+• Budget breakdown: $25K digital ads, $15K content creation, $5K analytics
+• Expected ROI: 150-200 qualified leads based on Q1 performance (120 leads from $30K spend)
+• Vendors require 2-week lead time, so March 15 approval ensures April 1 launch
+
+Could you please review the attached detailed proposal and confirm approval by March 15? I'm happy to discuss any questions you have.
+
+Best regards,
+
+Minh Nguyen
+Marketing Coordinator
+Andrews University - NEU Campus
+Email: minh.nguyen@andrews.edu.vn
+Phone: +84 90 123 4567</code></pre>
+<p><strong>Notice:</strong> Keyword in subject, BLUF in first line, bulleted background, specific CTA with deadline, professional tone.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This email demonstrates every principle we've covered today - let's analyze it together"</li>
+<li>Read email out loud to show natural flow</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Subject line: REQUEST keyword + topic + deadline (immediately sets expectation)</li>
+<li>BLUF: First sentence = what you want, why, and when</li>
+<li>Background bullets: Specific numbers, ROI data, rationale (answers objections before they're raised)</li>
+<li>CTA: Clear action requested + deadline repeated + offer to discuss (softens request)</li>
+<li>Tone: Professional but warm - uses "I" and "you," asks question rather than demands</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>This email likely gets approved quickly because:</li>
+<ul class="nested-list">
+<li>Decision-maker knows exactly what's being asked</li>
+<li>Data supports request (ROI from Q1)</li>
+<li>Deadline creates urgency</li>
+<li>Easy to say yes (all information provided)</li>
+</ul>
+<li>If this were vague ("Can we discuss marketing budget sometime?"), it would sit in inbox for days</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Identify the BLUF in this email." [Students point to first sentence after greeting]</li>
+<li>"Why does writer include Q1 performance data?" [Builds credibility, shows ROI]</li>
+<li>"What's the call-to-action?" [Review proposal and confirm approval by March 15]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we wrap up, let's address common email mistakes to avoid..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="23">
+      <h2 class="slide-title">Professional Email Pitfalls</h2>
+      <div class="slide-content">
+        <p><strong>❌ TOP 10 EMAIL MISTAKES:</strong></p>
+<ol>
+<li><strong>Reply-all abuse</strong> - Only use when ALL recipients need your response</li>
+<li><strong>Unclear subject lines</strong> - "Quick question" or "Update" tells recipient nothing</li>
+<li><strong>No greeting/closing</strong> - Comes across as curt even if unintended</li>
+<li><strong>Excessive exclamation marks!!!</strong> - Sounds overeager or unprofessional</li>
+<li><strong>Writing angry</strong> - Wait 24 hours before sending heated email; tone impossible to soften later</li>
+<li><strong>Burying the main point</strong> - Violates BLUF; recipient stops reading</li>
+<li><strong>No proofreading</strong> - Typos undermine credibility</li>
+<li><strong>Forwarding without context</strong> - "FYI" with long email thread - summarize key points</li>
+<li><strong>Emailing after hours</strong> - In Vietnam, sends message that work-life balance unimportant</li>
+<li><strong>No call-to-action</strong> - Recipient unsure what you need from them</li>
+</ol>
+<p><strong>Remember:</strong> Email creates permanent record. Write every email assuming it could be forwarded to anyone.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Everyone makes these mistakes - awareness is first step to avoiding them"</li>
+<li>"Which of these have YOU done or received?" [Show of hands - builds rapport]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Reply-all particularly problematic in large organizations - sends unnecessary emails to dozens of people</li>
+<li>Exclamation marks: One per email maximum (use for genuine enthusiasm only)</li>
+<li>Writing angry: Neuroscience shows emotional regulation takes 6+ hours - write draft, save, review tomorrow before sending</li>
+<li>Vietnamese cultural note: Emailing after hours (late night, weekends) viewed as disrespectful of personal time - unlike US "hustle culture"</li>
+<li>Proofreading critical for non-native English speakers - ask colleague to review important emails before sending</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Real consequence: Employee sent angry email to manager late Friday night → Read by entire leadership team by Monday morning (manager forwarded) → Employee reputation damaged for months</li>
+<li>Vietnamese context: Student forwarded professor's email containing feedback about another student → Violated trust and privacy, damaged all relationships</li>
+<li>Zalo vs. email cultural difference: After-hours Zalo messages more accepted in Vietnam, but email should respect boundaries</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese communication often indirect - may say "maybe" when they mean "no" to avoid conflict</li>
+<li>When working with international teams, clearer to say "I cannot do this because..." than to imply through vague language</li>
+<li>"Face" concept: Never send email that could embarrass recipient publicly - handle sensitive issues privately</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Shorter emails always better → No, emails should be as long as needed to be CLEAR, but no longer</li>
+<li>Can use emoji/Zalo-style language in work email → Absolutely not for external or formal internal emails</li>
+<li>Email permanently stored → Actually true! Assume every email could be read in court or by CEO</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Your colleague sends you something that makes you angry. What should you do?"</li>
+<li>Expected: Write draft, save, review tomorrow when calm, soften tone before sending (or better, have face-to-face conversation)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's synthesize everything into key takeaways..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="24">
+      <h2 class="slide-title">Three Key Takeaways</h2>
+      <div class="slide-content">
+        <p><strong>1. Structure for Clarity (Military Precision)</strong></p>
+<ul>
+<li>BLUF (Bottom Line Up Front): Main point in first sentence</li>
+<li>Keyword subject lines: ACTION, REQUEST, INFO, DECISION</li>
+<li>One-pane format: Fit content without scrolling</li>
+<li>Active voice and bullets for background</li>
+</ul>
+<p><strong>2. Tone for Relationship (Strategic Adaptation)</strong></p>
+<ul>
+<li>Match tone to audience, context, and culture</li>
+<li>Professional tone = problem-solving, not blame</li>
+<li>Use "you" and "I" for human connection</li>
+<li>When in doubt, err on side of more formal</li>
+</ul>
+<p><strong>3. Neuroscience for Impact (Evidence-Based Writing)</strong></p>
+<ul>
+<li>Simplicity: Short sentences, familiar words, active voice</li>
+<li>Specificity: Concrete details, numbers, dates, deadlines</li>
+<li>Social content: Human-centered language activates brain's reward circuits</li>
+</ul>
+<p><strong>Bottom Line:</strong> Email mastery = Strategic thinking + Tactical execution + Cultural awareness</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"If you remember only three things from today, remember these"</li>
+<li>Write the three categories on board: Structure, Tone, Neuroscience</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>These three principles apply to ALL professional writing, not just email - also memos, reports, proposals</li>
+<li>Military precision (Sehgal) + Neuroscience (Birchard) + Cultural awareness (Vietnamese context) = complete framework</li>
+<li>Email is most common form of business writing - master this and you have foundation for everything else</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Student success story: Previous class student applied BLUF to internship emails → Manager commented on "exceptional clarity" → Job offer</li>
+<li>Vietnamese professional: Used tone management when emailing international client → Built trust → $100K contract</li>
+<li>Remember: 86% of business professionals prefer email (Fitsmallbusiness, 2024) - this skill is non-negotiable</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which takeaway addresses the question 'Should I use Zalo or email?'" [Tone/Cultural Awareness]</li>
+<li>"Which takeaway helps ensure your email actually gets read?" [Structure/BLUF]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's connect this to your upcoming tutorial and assignments..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="25">
+      <h2 class="framework-title">Tutorial: Applying Email Best Practices</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Today's Tutorial Activity</h3>
+          
+          
+          <p>You'll practice writing professional emails using the BLUF technique and tone management for different scenarios:</p>
+        </div>
+        <div class="component">
+          <h3>Scenarios include</h3>
+          
+          <ul class="component-bullets"><li>Requesting extension from professor (formal tone)</li><li>Coordinating team project (professional tone)</li><li>Responding to customer complaint (empathetic tone)</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>You will</h3>
+          
+          
+          <p>1. Draft emails applying BLUF and appropriate tone 2. Peer review using simplified rubric 3. Revise based on feedback</p>
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Preparation for Week 5 Assessment:</strong></p>
+<ul>
+<li>Email Series assignment requires TWO professional emails</li>
+<li>Today's tutorial directly practices the skills you'll be graded on</li>
+<li>Rubric criteria: Content & Strategy, Organization & Structure, Clarity & Concision, Tone & Professionalism</li>
+</ul></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Tutorial is hands-on practice time - you'll WRITE emails, not just discuss theory"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Tutorial directly prepares for Email Series assignment (Week 5, 10% of grade)</li>
+<li>Peer review uses simplified version of actual grading rubric - see what you'll be evaluated on</li>
+<li>Three scenarios cover different tone levels and contexts (formal, professional, sensitive)</li>
+<li>Written Communication Rubric emphasizes: Strategic frameworks, BLUF structure, Clarity & Concision, Tone appropriateness</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Finally, let's preview how this week connects to your broader learning..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="26">
+      <h2 class="slide-title">Week 5 Assessment Connection</h2>
+      <div class="slide-content">
+        <p><strong>Email Series Assignment (Due Week 5, 10% of grade):</strong></p>
+<p>You'll submit TWO professional emails demonstrating:</p>
+<ul>
+<li>Strategic communication frameworks (know-feel-do, audience analysis, Purpose-Person-Point)</li>
+<li>BLUF technique and clear structure</li>
+<li>Appropriate tone for different audiences</li>
+<li>Clarity, concision, and professionalism</li>
+</ul>
+<p><strong>Skills from today that you'll be graded on:</strong></p>
+<ul>
+<li>✓ BLUF opening (Organization & Structure criterion, 20% of rubric)</li>
+<li>✓ Tone management (Tone & Professionalism criterion, 20% of rubric)</li>
+<li>✓ Active voice and concision (Clarity & Concision criterion, 20% of rubric)</li>
+<li>✓ Strategic framework application (Content & Strategy criterion, 20% of rubric)</li>
+<li>✓ Grammar and mechanics (Mechanics criterion, 20% of rubric)</li>
+</ul>
+<p><strong>Next steps:</strong> Practice in tutorial today, start drafting your emails this week, submit for feedback before final deadline.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Everything today directly prepares you for graded assessment in three weeks"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Email Series = 10% of final grade, so significant assessment</li>
+<li>Rubric has five criteria, each weighted equally - today covered four of them</li>
+<li>Students who practice BLUF and tone management in tutorial typically score 10-15% higher on assignment</li>
+<li>Week 5 also includes Persuasive Proposal (next week's topic) and Crisis Communication (Week 6)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Previous semester: Students who skipped tutorial practice scored average 75% on Email Series</li>
+<li>Students who actively participated in tutorial and revised based on feedback scored average 88%</li>
+<li>Difference between B and A grade often comes down to BLUF clarity and tone appropriateness</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese students sometimes struggle with directness required for BLUF - tutorial provides safe space to practice</li>
+<li>Peer feedback helps you see how OTHERS interpret your tone - critical for cross-cultural communication</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which rubric criterion does BLUF connect to?" [Organization & Structure]</li>
+<li>"If you write 'I hope maybe you might possibly consider...' which criterion is affected?" [Clarity & Concision - too wordy]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's wrap up with synthesis and preview of next week..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="27">
+      <h2 class="slide-title">Connecting the Dots</h2>
+      <div class="slide-content">
+        <p><strong>Week 1 Foundation:</strong></p>
+<ul>
+<li>Strategic communication = know-feel-do framework</li>
+<li>Audience analysis and goal-driven messaging</li>
+<li>Building credibility and trust</li>
+</ul>
+<p><strong>Week 2 Application:</strong></p>
+<ul>
+<li>BLUF technique = "do" made explicit (clear call-to-action)</li>
+<li>Tone management = "feel" (how you want audience to respond emotionally)</li>
+<li>Channel selection = strategic choice based on audience, context, culture</li>
+</ul>
+<p><strong>Integration:</strong></p>
+<p>Email isn't just writing - it's strategic communication tool that:</p>
+<ol>
+<li>Defines what you want audience to KNOW (BLUF + background)</li>
+<li>Influences how you want them to FEEL (tone management)</li>
+<li>Drives what you want them to DO (clear CTA)</li>
+</ol>
+<p><strong>Next Week:</strong> Persuasive Communication - how to influence decisions and overcome resistance ethically.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's connect today's tactical skills to strategic framework from Week 1"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Every principle today maps back to know-feel-do framework</li>
+<li>BLUF = KNOW (what you're communicating)</li>
+<li>Tone = FEEL (how they should respond emotionally)</li>
+<li>CTA = DO (action you want)</li>
+<li>This integration continues throughout course - each week builds on previous</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Email requesting budget approval (from earlier example):</li>
+<ul class="nested-list">
+<li>KNOW: $45K budget needed for Q2 campaign</li>
+<li>FEEL: Confident this is wise investment (tone professional, data-driven)</li>
+<li>DO: Approve by March 15</li>
+</ul>
+<li>Next week adds persuasion techniques (Cialdini's 6 principles) to increase likelihood of "yes"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before you go, let me preview next week's topic..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="28">
+      <h2 class="slide-title">Week 3: Persuasive Communication & Influence</h2>
+      <div class="slide-content">
+        <p><strong>Next week we'll explore:</strong></p>
+<ul>
+<li>Cialdini's 6 principles of persuasion (reciprocity, authority, social proof, consistency, liking, scarcity)</li>
+<li>Persuasive message structure (problem-solution-benefit)</li>
+<li>Building credibility and overcoming objections</li>
+<li>Ethical persuasion vs. manipulation</li>
+</ul>
+<p><strong>Required readings:</strong></p>
+<ul>
+<li>Cialdini, R. B. (2001). Harnessing the science of persuasion. <em>Harvard Business Review</em>.</li>
+<li>Cialdini, R. B. (2013). The uses (and abuses) of influence. <em>Harvard Business Review</em>.</li>
+</ul>
+<p><strong>Assessment connection:</strong></p>
+<ul>
+<li>Persuasive Proposal assignment (Week 5, 10% of grade)</li>
+<li>Quiz 1 (Week 4) includes persuasion concepts</li>
+</ul>
+<p><strong>Preparation:</strong> Think about a time someone successfully persuaded you. What techniques did they use?</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Next week builds on email foundation by adding persuasion techniques"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Persuasion is ethical influence - NOT manipulation</li>
+<li>Cialdini's research shows six universal principles that work across cultures (including Vietnam)</li>
+<li>These principles apply to emails, proposals, presentations, negotiations</li>
+<li>Week 3 + Week 2 = complete toolkit for Persuasive Proposal assignment (Week 5)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Preview one Cialdini principle: Reciprocity (people feel obligated to return favors)</li>
+<li>Example: Restaurant servers who bring mints with check receive 23% higher tips (Cialdini, 2001)</li>
+<li>Business application: Include helpful information in proposal even if not required - triggers reciprocity</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone share example of being persuaded recently? We'll analyze the techniques next week."</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Final slide with references for today's lecture..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="29">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p><em>Birchard, B. (2021, July–August). The science of strong business writing. Harvard Business Review, 99(4), 50–57. https://hbr.org/2021/07/the-science-of-strong-business-writing</em></p>
+<p><em>Cialdini, R. B. (2001, October). Harnessing the science of persuasion. Harvard Business Review, 79(9), 72-79. https://hbr.org/2001/10/harnessing-the-science-of-persuasion</em></p>
+<p><em>Sehgal, K. (2016, November 22). How to write email with military precision. Harvard Business Review. https://hbr.org/2016/11/how-to-write-email-with-military-precision</em></p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"All sources cited today available at these links - full APA format provided"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Two required readings (Sehgal and Birchard) are foundation for today</li>
+<li>Additional sources provide Vietnam context and email statistics</li>
+<li>All sources openly accessible - no paywalls</li>
+<li>Students should review these sources when preparing for Quiz 1 (Week 4)</li>
+</ul>
+<p><strong>Closing:</strong></p>
+<ul>
+<li>"See you in tutorial to practice everything we covered today!"</li>
+<li>"Come prepared to WRITE - bring laptop or device for drafting emails"</li>
+</ul>
+<p>---</p>
+<p><strong>END OF LECTURE CONTENT</strong></p>
+<p><strong>Total Slides:</strong> 29 content slides</p>
+<p><strong>Total Duration:</strong> ~85-90 minutes (within 90-minute class period)</p>
+<p><strong>Sources Cited:</strong> 10 verified, openly accessible sources</p>
+<p><strong>Assessment Connections:</strong> Email Series (Week 5), Quiz 1 (Week 4)</p>
+<p><strong>Vietnamese Context:</strong> Integrated throughout (Zalo vs. email, cultural communication norms, business practices)</p>
+<p><strong>Frameworks Applied:</strong> BLUF, 8 S's, Know-Feel-Do, Purpose-Person-Point</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

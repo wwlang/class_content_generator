@@ -1,0 +1,75 @@
+// Week 3 Quiz: Persuasive Communication & Influence
+// Generated from tutorial quiz practice questions
+// Questions: 10
+
+$CATEGORY: Week 3
+
+::Cialdini Principles - Definitions::Which of Cialdini's persuasion principles describes the tendency for people to follow what others are doing, especially when uncertain?{
+~Authority #This is about deferring to experts or credible sources, not following peer behavior
+=Social Proof #Social proof is defined as people's tendency to follow what others are doing, especially when uncertain. This principle explains why customer reviews, testimonials, and "bestseller" labels are persuasive - we look to others' behavior as a guide for our own decisions.
+~Liking #This principle is about saying yes to people we like (similarity, compliments, cooperation)
+~Commitment & Consistency #This is about wanting to be consistent with previous statements or actions, not following others
+}
+
+::Cialdini Principles - Application::A Vietnamese e-commerce platform displays "12,847 people bought this product in the last 24 hours" on product pages. Which persuasion principle is being applied?{
+~Scarcity #While numbers can indicate scarcity ("Only 3 left"), this example shows how many people bought it (popularity), not limited availability
+~Reciprocity #This principle involves giving something first to create obligation. Displaying purchase statistics doesn't give anything to the customer
+=Social Proof #Displaying "12,847 people bought this product in the last 24 hours" is a classic application of social proof. It leverages the psychological principle that when we're uncertain about a purchase decision, we look to what others are doing. The high number of buyers signals that the product is popular and trustworthy, reducing perceived risk.
+~Authority #This would involve expert endorsement or credentials, not peer behavior statistics
+}
+
+::Problem-Solution-Benefit Framework::In a persuasive business proposal, which section should focus on quantifying what the audience gains from accepting your recommendation?{
+~Problem #This section defines the issue and creates urgency, but doesn't quantify what they gain from solving it
+~Solution #This section presents your recommendation and proves it works, but doesn't focus on the audience's specific gains
+=Benefit #The Benefit section is specifically designed to quantify what the audience gains from accepting your recommendation. This section answers "What's in it for me?" from the decision-maker's perspective and should include quantified outcomes like cost savings, revenue increases, time saved, or productivity improvements.
+~Executive Summary #While this might mention benefits, it's not one of the three core framework sections and isn't specifically focused on quantifying gains
+}
+
+::Ethical Persuasion vs. Manipulation::According to Cialdini (2013), what is the key difference between ethical persuasion and manipulation?{
+~Ethical persuasion uses research, manipulation uses opinions #While ethical persuasion often uses research, this isn't the defining difference. Manipulation can also cite research (selectively or dishonestly).
+=Ethical persuasion is transparent and preserves choice, manipulation is hidden and coercive #According to Cialdini (2013), the fundamental distinction between ethical persuasion and manipulation lies in transparency and choice. Ethical persuasion is open about its intent and respects the audience's freedom to decide. Manipulation hides its persuasive intent and uses tactics that remove or limit genuine choice (deception, pressure, guilt).
+~Ethical persuasion is less effective than manipulation #This is backwards - ethical persuasion can be highly effective. The difference isn't effectiveness, it's ethics.
+~Ethical persuasion only works in Western cultures #Cialdini's principles are universal across cultures. Cultural context affects how principles are applied, but the ethics distinction applies everywhere.
+}
+
+::Credibility Components::According to Hallenbeck & Childs (2022), which of the following is NOT one of the three pillars of credibility?{
+~Competence #This IS a pillar - demonstrating expertise and relevant experience
+~Trustworthiness #This IS a pillar - being honest about limitations and providing balanced perspectives
+~Goodwill #This IS a pillar - showing you care about the audience's interests, not just your own
+=Confidence #Hallenbeck & Childs (2022) identify three pillars of credibility\: Competence (expertise and knowledge), Trustworthiness (honesty and reliability), and Goodwill (caring about audience's interests). Confidence is not one of these pillars - while confident delivery can help, credibility is built on competence, trustworthiness, and goodwill.
+}
+
+::Cialdini Principles - Reciprocity::A software company offers a free 30-day trial of their product before asking users to purchase. Which Cialdini principle are they applying?{
+~Scarcity #This would involve limited-time offers or limited availability, not free trials
+=Reciprocity #Offering a free 30-day trial is a classic application of reciprocity. The company gives something valuable first (free access to the product) with the expectation that users will feel obligated to reciprocate by purchasing. The psychological principle is that when someone gives us something, we feel a natural obligation to give back.
+~Commitment & Consistency #While using the product creates some commitment, the primary principle at work is reciprocity (giving before asking)
+~Social Proof #This would involve showing how many others use the product, not giving free access
+}
+
+::Vietnamese Business Context - Reciprocity::In Vietnamese business culture, the practice of "có qua có lại" (reciprocity) is particularly important. Which of the following best demonstrates this principle in business communication?{
+~Sending aggressive follow-up emails demanding a response #Aggressive follow-ups are pressure tactics that violate Vietnamese business norms around harmony and indirect communication
+=Offering valuable insights or assistance before asking for a business favor #This correctly demonstrates "có qua có lại" (reciprocity) in Vietnamese business culture. By offering value first (insights, assistance, knowledge), you create a sense of obligation that makes the other party more likely to help you later. This aligns with Vietnamese cultural values of mutual exchange and relationship-building before business transactions.
+~Using high-pressure sales tactics to close deals quickly #High-pressure sales tactics contradict Vietnamese cultural preferences for relationship-based, low-pressure business interactions
+~Emphasizing scarcity to create urgency #While scarcity is a valid persuasion principle, it's not reciprocity and doesn't demonstrate "có qua có lại"
+}
+
+::Persuasive Message Structure::When using the problem-solution-benefit framework, why is it important to start with the problem rather than jumping directly to your solution?{
+~It makes the proposal longer and more impressive #Length and impressiveness aren't the goals - persuasiveness is. A short, urgent problem statement is more effective than a long, rambling one.
+~It demonstrates you understand the assignment format #While the framework is taught, the reason to use it isn't to "follow format" - it's because it's psychologically effective
+=It creates urgency and buy-in before presenting your recommendation #Starting with the problem creates buy-in by establishing that there IS a problem worth solving. If the audience doesn't feel the problem is urgent or important, they won't care about your solution. The problem section uses data and evidence to make the audience feel the pain or missed opportunity, which creates receptiveness to your solution.
+~It's a requirement in APA formatting #This has nothing to do with APA formatting, which is for citations, not proposal structure
+}
+
+::Building Credibility::According to lecture content, which of the following tactics DECREASES credibility in written proposals?{
+~Citing specific research studies with data #Citing specific research WITH data INCREASES credibility by demonstrating competence and providing evidence
+~Acknowledging limitations or risks honestly #Acknowledging limitations honestly INCREASES credibility by building trustworthiness (you're not hiding downsides)
+=Using absolute terms like "guaranteed" and "always" without evidence #Using absolute terms like "guaranteed," "always," "never," or "100% certain" without solid evidence DECREASES credibility because it signals overconfidence or dishonesty. Most business outcomes have some uncertainty, so claiming guarantees makes you seem either naive or deceptive. This violates the "trustworthiness" pillar of credibility by making unprovable claims.
+~Providing industry-specific examples #Industry-specific examples INCREASE credibility by showing competence and understanding of context
+}
+
+::Authority Principle - Vietnamese Context::Vietnamese pharmaceutical advertisements often feature doctors in white coats to promote health products. This is an example of which persuasion principle?{
+~Social Proof #This would be showing how many customers use the product or displaying reviews, not expert endorsement
+=Authority #Featuring doctors in white coats is a classic application of the authority principle. The white coat is a visual signal of medical expertise and credentials, which increases persuasive power. Vietnamese culture has high power distance, meaning authority figures (doctors, professors, government officials) are especially influential. Even when the doctor isn't famous, the credentials and symbols of authority (white coat, stethoscope, hospital setting) trigger the authority principle.
+~Liking #This principle is about similarity, attractiveness, or rapport, not expertise
+~Scarcity #This would involve limited availability or time pressure, not expert endorsement
+}

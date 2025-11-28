@@ -16,27 +16,9 @@
 
 # **LEARNING OBJECTIVES**
 
-This course is designed to help you:
-
-{{GENERAL_LEARNING_OBJECTIVES}}
-
 Upon successful completion of this course, students will be able to:
 
-## **Understand & Apply:**
-
-{{UNDERSTAND_APPLY_OBJECTIVES}}
-
-## **Analyze & Evaluate:**
-
-{{ANALYZE_EVALUATE_OBJECTIVES}}
-
-## **Create & Present:**
-
-{{CREATE_PRESENT_OBJECTIVES}}
-
-## **Collaborate:**
-
-{{COLLABORATE_OBJECTIVES}}
+{{LEARNING_OBJECTIVES}}
 
 # **REQUIRED MATERIALS**
 

@@ -1,0 +1,75 @@
+// Week 2 Quiz: Tutorial: Professional Email Writing Practice
+// Generated from tutorial quiz practice questions
+// Questions: 10
+
+$CATEGORY: Week 2
+
+::BLUF Technique::What does BLUF stand for and why is it used in business email?{
+="Bottom Line Up Front" - technique of stating main point first, developed by U.S. military to maximize communication effectiveness and reduce follow-up questions #BLUF stands for "Bottom Line Up Front" and was developed by the U.S. military to ensure critical information is communicated immediately. Sehgal's HBR article (2016) explains that military professionals lead emails with this technique to answer the five W's (who, what, where, when, why) in the opening, maximizing mission success through precise communication. The technique reduces follow-up questions by 30-40% according to military research and ensures key message is received even if email is only partially read.
+~"Brief, Logical, Unified, Focused" - framework for organizing email paragraphs sequentially #Acronym is incorrect - BLUF is not about "Brief, Logical, Unified, Focused" sequencing
+~"Business Language Usage Format" - professional writing standard for formal correspondence #Not "Business Language Usage Format" - this is fabricated terminology
+~"Baseline Understanding For Letters" - method for establishing common ground with recipients #Not "Baseline Understanding For Letters" - misses the core concept of stating conclusion first
+}
+
+::Subject Line Keywords::According to Sehgal's military email framework, which keyword should you use in a subject line when you need the recipient to make a decision between options?{
+~ACTION #ACTION is for emails requiring a response/action, but not specifically for decision-making between options
+~REQUEST #REQUEST is for seeking approval or permission, which is different from asking recipient to decide between alternatives
+=DECISION #According to Sehgal's military email framework, "DECISION" is the keyword used when the email requires recipient to make a judgment or choose between options. Other keywords include ACTION (requires response), INFO (FYI only), REQUEST (seeks approval), SIGN (needs signature), and COORD (coordination needed). These keywords force the sender to clarify their intent before writing.
+~COORD #COORD is for coordination activities, not decision-making
+}
+
+::Active vs. Passive Voice::Which sentence uses ACTIVE voice and is therefore clearer and more effective for business email?{
+~"The budget proposal was submitted by the finance team last Friday." #"was submitted by" is passive voice construction - action before actor
+~"It has been determined that the meeting will be postponed until next month." #"It has been determined" is passive and vague - no agent identified
+="The finance team submitted the budget proposal last Friday." #"The finance team submitted the budget proposal last Friday" uses active voice with clear subject (finance team) performing action (submitted). This structure is clearer, more direct, and 10% faster to read according to Birchard's neuroscience research. Active voice also creates accountability by identifying who did what.
+~"A decision was reached regarding the timeline for the project." #"A decision was reached" is passive - doesn't identify who decided
+}
+
+::Processing Fluency::According to Birchard's neuroscience research, what effect does passive voice have on reading comprehension?{
+~Increases comprehension accuracy by 10% due to more formal structure #Opposite of research finding - passive reduces, not increases comprehension
+=Reduces comprehension accuracy by 10% and slows reading speed #Birchard's neuroscience research (2021) found that passive voice reduces comprehension accuracy by 10% and slows reading speed. This is because brain must work harder to identify the agent of action and reconstruct meaning. "Processing fluency" refers to how easily brain understands and remembers information - simpler structures create better fluency.
+~Has no significant effect on comprehension but sounds more professional #Research shows passive DOES significantly affect comprehension (10% reduction)
+~Improves memory retention by 15% through complex sentence structure #Passive doesn't improve memory - active voice is better remembered
+}
+
+::Tone Adaptation::You need to tell your professor you cannot attend their office hours tomorrow. Which greeting and tone level is most appropriate?{
+~"Hey Prof! Quick heads up..." (Casual) #"Hey Prof!" is far too casual for professor communication - could damage professional relationship
+~"Hi Dr. Nguyen, Unfortunately I have a conflict..." (Professional) #"Hi Dr. Nguyen, Unfortunately..." is professional but not formal enough for this context (missing scheduled appointment with authority figure)
+="Dear Dr. Nguyen, I regret to inform you..." (Formal) #Communication with a professor about missing office hours requires formal tone, especially if this is not an established relationship. "Dear Dr. Nguyen, I regret to inform you..." shows appropriate respect for authority figure, uses formal greeting (Dear + title + name), and formal language ("regret to inform"). This tone level matches high-stakes context and hierarchical relationship.
+~"What's up? Just FYI..." (Very casual) #"What's up? Just FYI..." is completely inappropriate - would be seen as disrespectful
+}
+
+::Specificity in Business Writing::According to neuroscience research, why are concrete words (like "pelican") more effective than abstract words (like "bird")?{
+~Concrete words are shorter and therefore faster to type #Length has nothing to do with why concrete words are effective - focus is neural activation
+=Concrete words activate more neurons in visual and motor brain regions, causing brain to process meaning more robustly #Birchard's neuroscience research found that concrete words like "pelican" activate more neurons in visual and motor brain regions than abstract words like "bird," causing "the brain to process meaning more robustly." When brain creates specific mental image (pelican \= large water bird with pouch), it engages multiple neural pathways, leading to deeper processing and better memory retention. This is why specific details (dates, numbers, names) more memorable than vague language.
+~Concrete words are more formal and therefore more professional #Formality not the reason - concrete words work because of brain processing, not professional tone
+~Concrete words reduce email length by 25% #Research doesn't claim 25% length reduction - benefit is comprehension and memory
+}
+
+::Email Channel Selection::In Vietnamese business culture, when should you use email instead of Zalo for communication?{
+~Only when communicating with people over age 40 #Age is not the determining factor - context and purpose drive channel choice
+=For formal contracts, international partners, official documentation, and communication with superiors #Research on Vietnamese business culture (Vietnam.vn, 2024; Sourceofasia.com, 2024) shows that while Zalo dominates daily communication (85% of Vietnamese use it), email remains standard for formal contracts, communication with international partners, official documentation, and communication with superiors in organizational hierarchy. Email creates permanent record and signals professionalism in these contexts. Many Vietnamese SMEs use Zalo for quick decisions but switch to email for anything requiring documentation or formal approval.
+~Never - Zalo is preferred for all business communication in Vietnam #Zalo is widely used but not for ALL business communication - formal/legal matters require email
+~Only when the file size is larger than 10MB #File size is not the primary consideration for channel selection - formality and documentation needs matter more
+}
+
+::The Eight S's Framework::Which of Birchard's "Eight S's" refers to using second-person pronouns ("you") to activate brain regions that interpret social signals?{
+~Simplicity #Simplicity is about short sentences and familiar vocabulary, not social pronouns
+~Specificity #Specificity is about concrete vs. abstract language (pelican vs. bird), not pronouns
+~Stirring language #Stirring language is about emotional words that bypass cognitive processing
+=Social content #"Social content" is Birchard's 7th S, referring to human-centered writing that activates brain regions interpreting social signals. Research shows readers infer character traits within 650 milliseconds when reading human-centered language, and second-person pronouns ("you") significantly improve learning retention compared to third-person text. Using "you" and "I" makes email feel like social interaction, not just information transfer.
+}
+
+::Vietnamese Email Culture::According to research on Vietnamese business communication culture, which statement is TRUE about emailing after work hours?{
+~Emailing after hours shows dedication and is viewed positively #Opposite of Vietnamese cultural values - after-hours work seen as boundary violation, not dedication
+=Emailing after hours is viewed as violation of personal time, unlike Western "always-on" culture #Research on Vietnamese business culture shows that emailing and working after work hours or on holidays is regarded as an infringement on personal time, unlike Western "always-on" work culture. Vietnamese employees are concerned with quality of life, meaning calling or sending emails after work hours is considered a violation of their personal time (JDI Group, 2024; Vietnam Briefing, 2024). This reflects Vietnamese emphasis on work-life balance and respect for personal boundaries.
+~Email timing doesn't matter in Vietnamese culture #Timing does matter in Vietnamese culture - respect for personal time is significant cultural value
+~After-hours emails should only be sent on Zalo, not email #Channel (Zalo vs. email) doesn't change the principle - after-hours communication generally discouraged
+}
+
+::Call-to-Action::An effective call-to-action (CTA) in a business email should include\:{
+~Only a polite request with no deadline to avoid seeming demanding #No deadline reduces urgency and accountability - request likely to be forgotten or deprioritized
+~Multiple options so recipient can choose their preferred action #Multiple options create decision paralysis - make it easy by recommending specific action
+=Specific action requested and clear deadline for completion #An effective CTA specifies WHAT action you need and WHEN (deadline) to make it easy for recipient to respond and create accountability. Vague CTAs like "let me know" or "when you have time" reduce response rates because recipient must figure out what to do and when. Specific CTAs ("Please send completed spreadsheet by Friday, March 15 at 5pm") increase response rates by 20-30% according to email effectiveness research.
+~General statement like "Let me know if you have questions" #"Let me know if you have questions" is passive, not actionable - doesn't tell recipient what to DO
+}

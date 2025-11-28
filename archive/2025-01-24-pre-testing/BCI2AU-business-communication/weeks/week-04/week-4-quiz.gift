@@ -1,0 +1,94 @@
+// Week 4 Tutorial Quiz - Business Communication (BCI2AU)
+// Covers Weeks 1-3: Strategic Communication, Professional Writing, Persuasive Communication
+// Format: Moodle GIFT
+// Questions: 10 (can be expanded to 25-30 for graded quiz)
+
+::Q1 - Know-Feel-Do Framework::
+According to the know-feel-do framework from Week 1, what is the correct sequence for strategic message design?
+{
+    ~What you want audience to do → How you want them to feel → What you want them to know
+    =What you want audience to know → How you want them to feel → What you want them to do #Correct! The know-feel-do framework follows a logical persuasive sequence\: First, provide information (KNOW) that shapes perception, which creates emotional response (FEEL), which motivates behavior (DO).
+    ~How you want audience to feel → What you want them to know → What you want them to do #Incorrect. Starting with emotion without information foundation is less effective strategic communication. The sequence should be\: Know → Feel → Do.
+    ~What you want audience to do → What you want them to know → How you want them to feel #Incorrect. This reverses the sequence. You can't get people to act before they know information and feel motivated. The correct sequence is\: Know → Feel → Do.
+}
+
+::Q2 - Transactional Model::
+In the Transactional Model of Communication (Week 1), what is the key difference from the Shannon-Weaver model?
+{
+    ~The Transactional Model includes a feedback loop #Incorrect. Shannon-Weaver also includes feedback, though it's more linear. The key difference is simultaneity.
+    =The Transactional Model recognizes that both parties are simultaneously senders and receivers #Correct! The Transactional Model's defining feature is that communication is simultaneous and multidirectional - both parties send and receive messages at the same time, unlike Shannon-Weaver's linear sender→receiver model.
+    ~The Transactional Model eliminates noise from the communication process #Incorrect. All communication models include noise - no model eliminates it. The key difference is that Transactional Model shows simultaneous exchange.
+    ~The Transactional Model only applies to written communication #Incorrect. The Transactional Model applies to all communication forms. The key difference is simultaneous exchange between communicators.
+}
+
+::Q3 - Building Credibility::
+When building credibility with a new audience (Week 1), which component of Aristotle's ethos is most important to establish first?
+{
+    =Goodwill (showing you care about audience's interests) #Correct! Research shows that audiences first assess whether you have their interests at heart (goodwill) before they're receptive to your expertise (competence) or values (character). "Do you care about me?" precedes "Can you help me?"
+    ~Competence (demonstrating expertise) #Incorrect. While competence matters, audiences won't listen to experts who don't show goodwill first. Goodwill opens the door to demonstrating competence.
+    ~Character (showing integrity and values alignment) #Incorrect. Character is important for long-term trust, but goodwill must be established first to create receptivity.
+    ~All three are equally important and must be established simultaneously #Incorrect. Research shows a sequence, not simultaneity - goodwill enables receptivity to competence and character.
+}
+
+::Q4 - BLUF Acronym::
+What does BLUF stand for in professional email writing (Week 2)?
+{
+    ~Brief, Logical, Useful, Friendly #Incorrect. This is not the correct acronym. BLUF stands for Bottom Line Up Front.
+    =Bottom Line Up Front #Correct! BLUF \= Bottom Line Up Front is the military-derived technique that means stating your main point, request, or conclusion in the first sentence before providing supporting details.
+    ~Business Language Usage Framework #Incorrect. This is not the correct acronym. BLUF stands for Bottom Line Up Front.
+    ~Best Logical Understanding First #Incorrect. This is not the correct acronym. BLUF stands for Bottom Line Up Front - putting your main point at the beginning.
+}
+
+::Q5 - Email Subject Lines::
+According to Week 2 content on professional email writing, which subject line is most effective?
+{
+    ~"Update" #Incorrect. This is too vague and doesn't indicate content or urgency. Effective subject lines are specific and informative.
+    ~"Quick question" #Incorrect. This is generic and doesn't specify the topic or purpose. A good subject line tells the recipient exactly what the email contains.
+    ="Meeting scheduled\: Project X review, Friday 2 PM" #Correct! This subject line is specific, informative, and action-oriented. It tells the recipient exactly what the email contains (meeting scheduled), what it's about (Project X review), and when (Friday 2 PM).
+    ~"Important - please read" #Incorrect. This creates false urgency without information. Specific information about content is more effective than generic urgency markers.
+}
+
+::Q6 - Sentence Length::
+According to "The Science of Strong Business Writing" (Birchard, 2021, Week 2), what is the ideal average sentence length for business writing to optimize comprehension?
+{
+    ~8-12 words #Incorrect. While short sentences can be clear, this is too short and creates choppy, simplistic tone. The ideal is 14-18 words.
+    =14-18 words #Correct! Birchard's research found that 14-18 words per sentence optimizes comprehension for business readers. Shorter feels choppy; longer increases cognitive load.
+    ~22-25 words #Incorrect. This is starting to become difficult for readers to process. The ideal is 14-18 words per sentence.
+    ~30+ words for complex ideas #Incorrect. Long sentences significantly reduce comprehension. Even complex ideas should be broken into 14-18 word sentences for clarity.
+}
+
+::Q7 - Commitment and Consistency::
+Which of Cialdini's 6 principles relies on people's desire to be consistent with their past commitments and stated positions (Week 3)?
+{
+    ~Reciprocity #Incorrect. Reciprocity is about returning favors, not maintaining consistency with past commitments.
+    =Commitment and Consistency #Correct! The Commitment and Consistency principle states that people feel internal pressure to behave consistently with their prior commitments, especially public ones. Once someone takes a position, they're motivated to stick with it.
+    ~Social Proof #Incorrect. Social Proof is about following what others do, not maintaining consistency with one's own past commitments.
+    ~Authority #Incorrect. Authority is about following expert guidance, not being consistent with one's own commitments.
+}
+
+::Q8 - Reciprocity Principle::
+The principle of Reciprocity (Cialdini, Week 3) suggests that people feel obligated to\:
+{
+    ~Follow the behavior of others in their social group #Incorrect. This describes Social Proof, not Reciprocity. Reciprocity is about returning favors.
+    ~Obey instructions from authority figures #Incorrect. This describes Authority, not Reciprocity. Reciprocity is about feeling obligated to return favors and concessions.
+    =Return favors and concessions #Correct! Reciprocity principle states that people feel obligated to give back to others who have given to them first. If you do someone a favor, they feel indebted to return the favor.
+    ~Remain consistent with their previous statements #Incorrect. This describes Commitment and Consistency, not Reciprocity.
+}
+
+::Q9 - Persuasive Structure::
+According to Week 3 content, what is the recommended structure for persuasive business proposals?
+{
+    ~Solution → Problem → Benefit #Incorrect. Leading with solution before establishing problem makes audience wonder why they need it. The correct structure is\: Problem → Solution → Benefit.
+    =Problem → Solution → Benefit #Correct! The Problem-Solution-Benefit structure follows logical persuasive flow\: First establish the problem (creates need), then present your solution (shows how you address need), then emphasize benefits (motivates action).
+    ~Benefit → Problem → Solution #Incorrect. Benefits without problem context lack impact - audience doesn't understand relevance. Start with Problem to create receptivity.
+    ~Problem → Benefit → Solution #Incorrect. Benefits before solution is illogical - you can't show benefits of an unknown solution. The correct order is\: Problem → Solution → Benefit.
+}
+
+::Q10 - Handling Objections::
+When addressing potential objections in persuasive communication (Week 3), what is the recommended approach?
+{
+    ~Ignore objections and focus only on positive aspects #Incorrect. Ignoring objections makes you seem naive or dishonest. Audiences will think of objections anyway, so address them proactively.
+    =Acknowledge objections directly and provide counterarguments #Correct! Effective persuaders acknowledge potential objections proactively and provide thoughtful counterarguments. This builds credibility (you're being honest) and prevents objections from derailing your message later.
+    ~Discredit anyone who raises objections #Incorrect. Discrediting people who raise valid concerns destroys trust and credibility. Instead, acknowledge objections respectfully and provide counterarguments.
+    ~Save objection discussion for Q&A session only #Incorrect. Waiting for Q&A means objections fester during presentation and reduce persuasive impact. Address key objections proactively in your main message.
+}

@@ -1,0 +1,2404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 30</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 3: Persuasive Communication & Influence</h1>
+        <p class="subtitle">The Science and Ethics of Changing Minds</p>
+        <p class="author"><strong>Business Communication</strong><br>Andrews University - National Economics University Campus<br>Fall 2025<br>Instructor: William Winterton Lang</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome students back and acknowledge transition from basic writing (Week 2) to persuasive strategies</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Today we move from "how to write clearly" to "how to write persuasively"</li>
+<li>This is one of the most valuable business skills you'll develop - whether you're convincing a boss, pitching to investors, or leading a team</li>
+<li>We're grounding this in research from Dr. Robert Cialdini, whose work has influenced billions in sales and marketing worldwide</li>
+<li>The Vietnamese business context provides unique opportunities to apply these principles</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with a question that every business professional faces..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="2">
+      <h2 class="slide-title">The Billion-Dollar Question</h2>
+      <div class="slide-content">
+        <p><strong>How do you change someone's mind without pressuring them?</strong></p>
+<p>Every day in business, you need people to say "yes":</p>
+<ul>
+<li>Your boss to approve your proposal</li>
+<li>Clients to choose your product</li>
+<li>Team members to support your idea</li>
+<li>Investors to fund your venture</li>
+</ul>
+<p><strong>The challenge:</strong> You can't force anyone. You can only <em>persuade</em>.</p>
+<p><strong>Today's focus:</strong> The science-backed principles that make persuasion work.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Ask class: "Raise your hand if you've ever tried to convince someone to do something and they said no." [Most hands go up]</li>
+<li>"Now keep your hand up if you wish you'd known a better way to persuade them." [Hands stay up]</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Persuasion is not manipulation or trickery - it's understanding human psychology</li>
+<li>Every profession requires persuasion: sales, management, marketing, HR, finance</li>
+<li>The difference between successful and struggling professionals often comes down to persuasive ability</li>
+<li>Write on board: "Persuasion = Ethical influence based on psychology"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Quick example: Two students apply for same job, same qualifications. One knows how to persuade in the interview. Who gets the job?</li>
+<li>Vietnamese context: In Vietnamese business culture, relationship-building comes before persuasion - but you still need to know how to influence decisions</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone give me an example of a situation where you needed to persuade someone recently?" [Take 1-2 responses]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we dive into persuasion strategies, let's make sure we have the key vocabulary..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="3">
+      <h2 class="slide-title">Key Vocabulary - Từ Vựng Quan Trọng</h2>
+      <table class="vocab-table"><thead><tr><th><strong>English Term</strong></th><th><strong>Vietnamese Translation</strong></th><th><strong>Definition</strong></th></tr></thead><tbody><tr><td><strong>Persuasion</strong></td><td>Thuyết phục</td><td>Convincing someone through reasoning and psychological principles</td></tr><tr><td><strong>Influence</strong></td><td>Ảnh hưởng</td><td>The capacity to have an effect on behavior or decisions</td></tr><tr><td><strong>Credibility</strong></td><td>Uy tín, độ tin cậy</td><td>The quality of being trusted and believed in</td></tr><tr><td><strong>Reciprocity</strong></td><td>Đối ứng, có qua có lại</td><td>The practice of exchanging things with others for mutual benefit</td></tr><tr><td><strong>Social Proof</strong></td><td>Bằng chứng xã hội</td><td>People's tendency to follow others' actions when uncertain</td></tr><tr><td><strong>Authority</strong></td><td>Thẩm quyền, uy quyền</td><td>Power based on expertise, position, or credentials</td></tr><tr><td><strong>Scarcity</strong></td><td>Khan hiếm</td><td>Limited availability that increases perceived value</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These eight terms will appear throughout today's lecture. Let's pronounce them together and understand the Vietnamese context."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Emphasize the distinction between persuasion (ethical) and manipulation (unethical) - this is crucial</li>
+<li>"Reciprocity" is especially important in Vietnamese culture: "Có qua có lại" is a deep cultural value</li>
+<li>"Social proof" explains why Vietnamese consumers check reviews and ask friends before buying</li>
+<li>"Authority" works differently in Vietnam due to high power distance - we'll explore this later</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Reciprocity example: When a business partner takes you to dinner before negotiations, that's reciprocity at work</li>
+<li>Social proof example: Why Shopee and Lazada prominently display customer reviews and ratings</li>
+<li>Authority example: Vietnamese ads often feature experts in white coats or business suits to signal authority</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students might think persuasion = manipulation. Clarify: Persuasion is transparent and respects choice; manipulation is hidden and removes choice</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which of these terms describes why Vietnamese shoppers read reviews before buying?" [Social proof]</li>
+<li>"Which principle is at work when a sales rep offers you a free sample?" [Reciprocity]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we have our vocabulary, let's look at what we're aiming to achieve today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">What You'll Learn Today</h2>
+      <div class="slide-content">
+        <p>By the end of this session, you will be able to:</p>
+<ol>
+<li><strong>Apply</strong> Cialdini's six principles of persuasion to real business communication scenarios</li>
+<li><strong>Analyze</strong> persuasive messages using the problem-solution-benefit framework</li>
+<li><strong>Distinguish</strong> between ethical persuasion and manipulation in professional contexts</li>
+<li><strong>Evaluate</strong> strategies for building credibility and authority in your communication</li>
+<li><strong>Design</strong> persuasive proposals that overcome objections while maintaining ethics</li>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These five objectives guide everything we'll cover today. Notice they're all action verbs - you'll be DOING something with this knowledge."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Objective 1 (Apply): You'll practice using the six principles in scenarios you might face</li>
+<li>Objective 2 (Analyze): You'll learn to reverse-engineer persuasive messages to see how they work</li>
+<li>Objective 3 (Distinguish): Critical for ethical practice - knowing where the line is</li>
+<li>Objective 4 (Evaluate): You'll assess what makes communicators credible and trustworthy</li>
+<li>Objective 5 (Design): The practical skill - creating your own persuasive proposals</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnamese context: Vietnamese business culture values relationships and trust, so credibility (#4) is especially important</li>
+<li>These objectives build toward your Written Portfolio, due Week 5</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which objective do you think will be most challenging?" [Take 1-2 responses and validate]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Speaking of your portfolio, let's connect today's content to your upcoming assessment..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="5">
+      <h2 class="slide-title">How This Connects to Your Grade</h2>
+      <div class="stats-banner">
+        <div class="stat-item">
+          <div class="stat-number">Three components:</div>
+          <div class="stat-description">1. Email Series (10%) - Persuasive professional emails 2. **Persuasive Proposal (10%)** ← **Today's focus** 3. Crisis Communication Response (10%)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Today's lecture directly prepares you for:</div>
+          <div class="stat-description">- Writing the Persuasive Proposal using Cialdini's principles - Structuring arguments with problem-solution-benefit framework - Building credibility in your proposal - Ensuring ethical persuasion (not manipulation)</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">Key rubric criteria we're addressing today:</div>
+          <div class="stat-description">✓ Content & Strategy (applying persuasion frameworks) ✓ Persuasion & Influence (using Cialdini principles ethically) ✓ Organization & Structure (problem-solution-benefit)</div>
+        </div></div>
+      <p class="citation">10%</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let me be very direct: Everything we learn today is tested in your Written Portfolio, which is due in just two weeks."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>The Persuasive Proposal is worth 10% of your final grade - that's significant</li>
+<li>The rubric specifically asks for application of Cialdini's principles - we're covering those today</li>
+<li>You'll need to demonstrate ethical persuasion vs. manipulation - another key focus today</li>
+<li>Tutorial this week gives you practice time with tutor feedback before you submit the real thing</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Past students who understood these principles well scored 90%+ on their proposals</li>
+<li>Common mistake: Students write proposals without using the frameworks taught in class - they lose points on "Content & Strategy"</li>
+<li>The rubric rewards you for explicitly showing you understand and can apply the persuasion science</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I can just write persuasively without studying the principles." → No, the rubric requires explicit application of course frameworks</li>
+<li>"Persuasion is about being pushy." → No, it's about being strategic and ethical</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"When you write your Persuasive Proposal, which principles from today must you demonstrate?" [Cialdini's principles, problem-solution-benefit structure, ethical persuasion]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's dive into the core content. We'll start with the science of persuasion..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="6">
+      <h2 class="section-title">Part 1: The Science of Persuasion</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We're now entering Part 1 of today's lecture: The Science of Persuasion."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This section covers the research-backed principles that have been tested for 40+ years</li>
+<li>Dr. Robert Cialdini is one of the most cited researchers in social psychology</li>
+<li>These principles work across cultures, including Vietnam</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start by understanding who Dr. Cialdini is and why his research matters..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="7">
+      <h2 class="slide-title">Dr. Robert Cialdini - The Godfather of Influence</h2>
+      <div class="slide-content">
+        <p><strong>Who is Robert Cialdini?</strong></p>
+<ul>
+<li>Regents' Professor Emeritus of Psychology and Marketing, Arizona State University</li>
+<li>Author of <em>Influence: The Psychology of Persuasion</em> (1984) - over 5 million copies sold</li>
+<li>Spent 3 years undercover in sales, fundraising, and advertising to study persuasion tactics</li>
+</ul>
+<p><strong>Why his research matters:</strong></p>
+<ul>
+<li>Based on decades of experimental psychology research</li>
+<li>Principles tested across cultures and contexts</li>
+<li>Used by Fortune 500 companies, governments, and NGOs worldwide</li>
+<li>Ethical framework: Focuses on influence, not manipulation</li>
+</ul>
+<p><strong>Key insight:</strong> "The best persuaders don't rely on pressure - they rely on psychology."</p>
+      </div>
+      <div class="slide-footer"><p class="citation">Cialdini, R. B. (2001). Harnessing the science of persuasion. Harvard Business Review, 79(9), 72-79.</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Before we learn the six principles, you should know who discovered them and why we trust this research."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Cialdini didn't just theorize - he went undercover, working in car dealerships, telemarketing firms, and fundraising organizations</li>
+<li>His book <em>Influence</em> is required reading in many MBA programs worldwide, including at Harvard and Stanford</li>
+<li>These aren't just opinions - they're backed by controlled experiments with thousands of participants</li>
+<li>The 2001 HBR article we're studying is one of the most-requested reprints in HBR history</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Cialdini's research has influenced billions in sales: companies like Google, Microsoft, and Amazon use these principles</li>
+<li>Vietnamese companies like Shopee and Lazada also apply these principles (we'll see examples later)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Persuasion principles are just common sense." → No, they're often counterintuitive and backed by rigorous research</li>
+<li>"These tactics are manipulative." → Cialdini emphasizes ethical application - transparency and choice</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why should we trust Cialdini's principles more than random sales advice from the internet?" [Research-backed, tested across decades and cultures, ethical framework]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's explore the six principles Cialdini identified. We'll cover them in three slides, two principles per slide..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="8">
+      <h2 class="slide-title">Cialdini's Six Principles of Persuasion (Part 1)</h2>
+      <div class="slide-content">
+        <p><strong>1. Reciprocity (Đối ứng)</strong></p>
+<ul>
+<li><strong>Principle:</strong> People feel obligated to return favors</li>
+<li><strong>How it works:</strong> When you give something first, people want to give back</li>
+<li><strong>Business application:</strong> Free samples, free trials, valuable content before asking for sale</li>
+<li><strong>Vietnamese context:</strong> "Có qua có lại" - deeply rooted cultural value</li>
+<li><strong>Example:</strong> Shopee's free shipping vouchers create obligation to purchase</li>
+</ul>
+<p><strong>2. Commitment & Consistency (Cam kết & Nhất quán)</strong></p>
+<ul>
+<li><strong>Principle:</strong> People want to be consistent with what they've previously said or done</li>
+<li><strong>How it works:</strong> Small commitments lead to larger ones</li>
+<li><strong>Business application:</strong> Start with small "yes" (free newsletter signup) → bigger "yes" (purchase)</li>
+<li><strong>Example:</strong> Lazada's "Add to wishlist" → "Add to cart" → "Purchase" sequence</li>
+<li><strong>Vietnamese context:</strong> Public commitments especially powerful in collectivist culture</li>
+</ul>
+<p>(Cialdini, 2001)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's break down the first two principles with examples you'll recognize from Vietnamese e-commerce and business."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Reciprocity:</strong> This is why businesses give free samples - it creates psychological debt. When Highlands Coffee offers a free taste, you're more likely to buy.</li>
+<li>Emphasize Vietnamese cultural resonance: "Có qua có lại" isn't just a saying, it's a cultural expectation</li>
+<li><strong>Commitment & Consistency:</strong> Once people commit publicly (even in small ways), they feel pressure to follow through</li>
+<li>Vietnamese collectivist culture amplifies this: public commitments (in front of family, colleagues) are especially binding</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Reciprocity in Vietnam:</strong> Business dinners before negotiations - the meal creates reciprocity debt, making it harder to say "no" later</li>
+<li><strong>Shopee example:</strong> They give flash sale vouchers (reciprocity), which customers feel obliged to use</li>
+<li><strong>Commitment example:</strong> When you add items to your Lazada wishlist, you've made a small commitment. The app reminds you, pushing you toward the bigger commitment (purchase)</li>
+<li><strong>Vietnamese wedding example:</strong> Gift-giving at weddings creates reciprocity - families keep detailed records of who gave what, to reciprocate later</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Reciprocity only works with big gifts." → No, even small gestures trigger the principle</li>
+<li>"People won't feel committed from small actions." → Research shows micro-commitments are powerful</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone explain how VNG's Zalo uses commitment & consistency when they ask you to create a profile?" [Creating profile = small commitment, leads to bigger commitments like Zalo Pay]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's look at the next two principles..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="9">
+      <h2 class="slide-title">Cialdini's Six Principles of Persuasion (Part 2)</h2>
+      <div class="slide-content">
+        <p><strong>3. Social Proof (Bằng chứng xã hội)</strong></p>
+<ul>
+<li><strong>Principle:</strong> People follow what others are doing, especially when uncertain</li>
+<li><strong>How it works:</strong> We look to others' behavior as a guide for our own</li>
+<li><strong>Business application:</strong> Customer reviews, testimonials, "bestseller" labels, user counts</li>
+<li><strong>Vietnamese context:</strong> Extremely powerful in collectivist culture - group behavior guides individual decisions</li>
+<li><strong>Example:</strong> Zalo's "77.7 million monthly active users" messaging - if millions use it, it must be good</li>
+</ul>
+<p><strong>4. Authority (Thẩm quyền)</strong></p>
+<ul>
+<li><strong>Principle:</strong> People defer to experts and credible sources</li>
+<li><strong>How it works:</strong> Credentials, titles, expertise signals increase persuasive power</li>
+<li><strong>Business application:</strong> Expert endorsements, credentials display, professional titles</li>
+<li><strong>Vietnamese context:</strong> High power distance culture - authority figures especially influential</li>
+<li><strong>Example:</strong> Vietnamese pharmaceutical ads featuring doctors in white coats to signal medical authority</li>
+</ul>
+<p>(Cialdini, 2001)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Principles 3 and 4 are especially powerful in Vietnamese culture due to collectivism and high power distance."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Social Proof:</strong> Vietnamese consumers heavily rely on reviews and recommendations from friends/family before purchasing</li>
+<li>Shopee and Lazada prominently display review counts, star ratings, and "X people bought this" for exactly this reason</li>
+<li><strong>Authority:</strong> Vietnam's high power distance means authority figures (professors, doctors, business leaders) have strong persuasive power</li>
+<li>This is why credentials matter so much in Vietnamese business contexts</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Social proof in Vietnam:</strong> Before trying a new restaurant, Vietnamese consumers check Google reviews, ask friends, and look at how busy it is. Empty restaurant = bad restaurant in Vietnamese mindset.</li>
+<li><strong>Zalo example:</strong> They advertise "77.7 million MAU" prominently - this is social proof. "If 77 million Vietnamese use it, you should too."</li>
+<li><strong>Shopee's "Top Seller" badges:</strong> These are social proof signals that this seller is trusted by many others</li>
+<li><strong>Authority example:</strong> Vietnamese banks use images of professional-looking bankers in suits to signal competence and authority</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Social proof doesn't work on me, I make my own decisions." → Research shows it works unconsciously, even on people who claim independence</li>
+<li>"Authority only works if the person is actually an expert." → No, even <em>signals</em> of authority (white coat, title) can influence, which is why ethics matter</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why do you think Lazada shows '500+ people bought this product in the last 24 hours'?" [Social proof - shows others are buying, so you should too]</li>
+<li>"Give me an example of authority being used in Vietnamese advertising." [Doctors, professors, business leaders, celebrity endorsements]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now the final two principles..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="10">
+      <h2 class="slide-title">Cialdini's Six Principles of Persuasion (Part 3)</h2>
+      <div class="slide-content">
+        <p><strong>5. Liking (Thiện cảm)</strong></p>
+<ul>
+<li><strong>Principle:</strong> People say "yes" to those they like</li>
+<li><strong>How it works:</strong> Similarity, compliments, cooperation, physical attractiveness increase liking</li>
+<li><strong>Business application:</strong> Build rapport, find common ground, show genuine interest</li>
+<li><strong>Vietnamese context:</strong> Relationship-building ("quan hệ") before business is cultural norm</li>
+<li><strong>Example:</strong> Vietnamese business meetings start with tea and personal conversation before discussing business</li>
+</ul>
+<p><strong>6. Scarcity (Khan hiếm)</strong></p>
+<ul>
+<li><strong>Principle:</strong> People want more of what is less available</li>
+<li><strong>How it works:</strong> Limited time, limited quantity, exclusive access increase perceived value</li>
+<li><strong>Business application:</strong> "Limited time offer," "Only 3 left in stock," "Exclusive to members"</li>
+<li><strong>Vietnamese context:</strong> Flash sales extremely popular - creates urgency</li>
+<li><strong>Example:</strong> Shopee's countdown timers and "Only X left" labels drive immediate purchases</li>
+</ul>
+<p>(Cialdini, 2001)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"The final two principles: Liking and Scarcity. You see these every day in Vietnamese business and e-commerce."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Liking:</strong> Vietnamese business culture prioritizes relationship-building ("quan hệ") - you don't do business with strangers, you do business with people you like and trust</li>
+<li>This is why business dinners, coffee meetings, and personal conversations precede business discussions in Vietnam</li>
+<li><strong>Scarcity:</strong> Flash sales are HUGE in Vietnam (Shopee, Lazada, Tiki) because scarcity triggers urgency and FOMO (fear of missing out)</li>
+<li>Vietnamese consumers respond strongly to "limited time" and "limited quantity" messaging</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Liking in Vietnamese business:</strong> Before pitching a proposal, spend time building rapport. Ask about family, find common connections ("bạn của bạn"), share a meal. Vietnamese business partners need to like you first.</li>
+<li><strong>Personal story:</strong> "I once watched a Vietnamese business negotiation where the first 45 minutes was tea, family talk, and finding mutual friends. The actual business discussion took 10 minutes because trust was already built."</li>
+<li><strong>Scarcity example:</strong> Shopee's flash sales with countdown timers ("Sale ends in 2 hours! Only 5 left!") create artificial scarcity that drives purchases</li>
+<li><strong>VNG example:</strong> Zalo's exclusive AI Avatar feature during Tet 2024 (limited time) increased revenue 140% above target</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Scarcity is always fake/manipulative." → It can be ethical if the scarcity is real (actual limited inventory)</li>
+<li>"Liking means being fake or overly friendly." → No, it means genuine rapport-building and finding common ground</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which principle is at work when Lazada shows 'Flash Sale - 2 hours only'?" [Scarcity]</li>
+<li>"Why do Vietnamese business professionals spend so much time on personal conversation before discussing business?" [Liking - building rapport and relationship before asking for commitments]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that you know all six principles, let's see how they work in a real Vietnamese business context..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="11">
+      <h2 class="slide-title">Vietnamese Context: Shopee's Persuasion Strategy</h2>
+      <div class="slide-content">
+        <p><strong>Case Study: How Shopee Dominates Vietnam E-Commerce Using Cialdini's Principles</strong></p>
+<p>Shopee holds 50% market share among Vietnamese online shoppers (2024), far ahead of Lazada (16%). Their success is built on systematic application of persuasion science:</p>
+<p><strong>Reciprocity:</strong> Free shipping vouchers, cashback rewards, Shopee Coins</p>
+<p><strong>Commitment:</strong> Multi-step journey: Browse → Add to Cart → Wishlist → Flash Sale reminders → Purchase</p>
+<p><strong>Social Proof:</strong> Prominent review counts, star ratings, "X people bought this," live view counters</p>
+<p><strong>Authority:</strong> "Shopee Mall" badge for verified sellers, celebrity partnerships (Son Tung M-TP)</p>
+<p><strong>Liking:</strong> Gamification (Shopee Shake, Shopee Farm), personalized recommendations, influencer collaborations</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 1 of 2). "</p>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Shopee didn't become #1 in Vietnam by accident - they systematically use psychological persuasion principles</li>
+<li>Notice they use ALL SIX principles simultaneously, not just one or two</li>
+<li>This is ethical persuasion because users retain choice - Shopee makes it easier to say "yes," but doesn't force you</li>
+<li>Vietnamese cultural context makes some principles even more powerful here (social proof, liking)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Walk through a typical Shopee user journey:</strong> "You open the app, see a notification about free shipping vouchers (reciprocity). You browse and add items to your wishlist (commitment). You see '1,253 sold' and 4.8-star reviews (social proof). You notice it's from Shopee Mall (authority). The app recommends items based on your preferences and lets you play games (liking). Then you see 'Flash Sale ends in 2 hours, only 8 left!' (scarcity). What do you do? You buy."</li>
+<li><strong>Why Shopee beats Lazada in Vietnam:</strong> More aggressive use of gamification and social-first features that align with Vietnamese collectivist culture</li>
+<li><strong>Ethical consideration:</strong> Is this manipulation? No, because Shopee provides real value (products, discounts, convenience) and users can always say no</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"These tactics are manipulative." → They're only manipulative if based on deception. Shopee's scarcity is real (flash sales actually end), reviews are genuine (verified purchases)</li>
+<li>"I'm not influenced by these tactics." → Research shows even aware consumers respond to these principles</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone identify which Cialdini principle is at work when Shopee shows you '10,000+ sold this month'?" [Social proof]</li>
+<li>"When Shopee gives you free shipping vouchers, which principle are they using?" [Reciprocity]</li>
+<li>"Is Shopee's strategy ethical persuasion or manipulation? Why?" [Ethical if scarcity is real, reviews are genuine, and users retain choice]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that you understand the six principles, let's look at how to structure persuasive messages..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="12">
+      <h2 class="slide-title">Vietnamese Context: Shopee's Persuasion Strategy (continued)</h2>
+      <div class="slide-content">
+        <p><strong>Scarcity:</strong> Flash sales, countdown timers, "Only X left," limited-time vouchers</p>
+<p><strong>Result:</strong> Shopee's revenue in Vietnam surpassed $25 billion in 2024.</p>
+<p><em>Sources: DecisionLab (2024); ReportLinker (2024)</em></p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 2 of 2). Continued from previous slide.</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="12">
+      <h2 class="section-title">Part 2: Persuasive Message Structure</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We now move from understanding persuasion principles to structuring persuasive messages."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Knowing the six principles is not enough - you need to know how to organize your message</li>
+<li>The problem-solution-benefit framework is the gold standard for business proposals</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's break down this framework step by step..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="13">
+      <h2 class="framework-title">The Problem-Solution-Benefit Framework</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>1. PROBLEM</h3>
+          
+          <ul class="component-bullets"><li>Clearly define the problem or opportunity</li><li>Use data and evidence to establish urgency</li><li>Make the audience feel the pain or missed opportunity</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>2. SOLUTION</h3>
+          
+          <ul class="component-bullets"><li>Present your recommendation or proposal</li><li>Show why this solution addresses the problem</li><li>Provide evidence that it works (case studies, data, expert endorsement)</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>3. BENEFIT</h3>
+          
+          <ul class="component-bullets"><li>Explain what the audience gains (not what you gain)</li><li>Quantify benefits when possible (cost savings, revenue increase, time saved)</li><li>Connect to audience's goals and motivations</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>Why this works: Follows natural decision-making process: recognize problem</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>evaluate solutions</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>choose based on benefit.</h3>
+          
+          
+          
+        </div>
+      </div>
+      
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Write on board: "Problem → Solution → Benefit" and keep this visible</li>
+<li>"This is the structure for almost every persuasive proposal you'll write in your career."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Problem:</strong> Don't skip this - if the audience doesn't feel the problem is urgent, they won't care about your solution</li>
+<li>Use the "So what?" test: After stating the problem, ask "So what? Why does this matter?" Keep answering until you hit real urgency</li>
+<li><strong>Solution:</strong> This is where you present your recommendation, but don't just describe it - prove it works</li>
+<li><strong>Benefit:</strong> Focus on THEIR benefit, not yours. Common mistake: "This will help me learn..." should be "This will save the company $50,000..."</li>
+<li>Quantify when possible: "This will improve productivity" is weak. "This will reduce processing time by 30%, saving 10 hours per week" is strong.</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Business proposal example:</strong> "Our customer service response time is 48 hours, 20 hours slower than competitors (Problem). Implementing a chatbot for FAQs will handle 60% of inquiries instantly (Solution). This will improve customer satisfaction scores by an estimated 25% and reduce support costs by $30,000 annually (Benefit)."</li>
+<li><strong>Vietnamese context:</strong> Vietnamese decision-makers expect thorough justification - the problem section must be well-documented</li>
+<li><strong>Weak vs. strong:</strong> Weak: "We should use Slack." Strong: "Email threads cause 3-hour delays in project decisions (Problem). Slack enables real-time communication (Solution). Teams using Slack report 30% faster decision-making and 50% fewer missed messages (Benefit)."</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I should start with my solution since that's what I'm proposing." → No, start with the problem to create buy-in first</li>
+<li>"Benefits are obvious, I don't need to spell them out." → Never assume - always explicitly state benefits</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If I'm proposing that our team adopt a new project management tool, what would my Problem section focus on?" [Current inefficiencies, missed deadlines, communication breakdowns]</li>
+<li>"What's the difference between a solution and a benefit?" [Solution = what you propose; Benefit = what the audience gains]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's see this framework applied to a real proposal..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="14">
+      <h2 class="slide-title">Example Proposal: Implementing Flexible Work Policy</h2>
+      <div class="slide-content">
+        <p><strong>PROBLEM</strong></p>
+<p>Current rigid 9-to-5 policy causes:</p>
+<ul>
+<li>23% of employees report burnout (internal survey, Q3 2024)</li>
+<li>Difficulty recruiting top talent (45% of job candidates ask about flexibility)</li>
+<li>15% higher turnover than industry average</li>
+<li>Productivity dips during commute times (HCMC traffic averages 1.5 hours each way)</li>
+</ul>
+<p><strong>SOLUTION</strong></p>
+<p>Implement hybrid work policy: 3 days office, 2 days remote</p>
+<ul>
+<li>Use productivity tracking software (Asana, ClickUp)</li>
+<li>Core hours 10am-3pm for collaboration</li>
+<li>Pilot with Marketing Department (3 months)</li>
+</ul>
+<p><strong>BENEFIT</strong></p>
+<ul>
+<li><strong>For employees:</strong> 20% reduction in commute time = better work-life balance</li>
+<li><strong>For company:</strong> Projected 30% improvement in employee satisfaction, 10% reduction in turnover (saves ~$50,000 in recruitment costs annually)</li>
+<li><strong>For productivity:</strong> Studies show hybrid workers are 13% more productive (Stanford, 2023)</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's a realistic proposal you might write in a Vietnamese company. Notice how it follows Problem-Solution-Benefit exactly."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Problem section:</strong> Uses specific data (23% burnout, 45% candidates ask about flexibility), creates urgency with multiple pain points</li>
+<li><strong>HCMC traffic context:</strong> This is a real Vietnamese pain point - 1.5 hour commutes are common, making flexible work especially appealing</li>
+<li><strong>Solution section:</strong> Not just "allow remote work" but a specific, structured proposal with pilot program to reduce risk</li>
+<li><strong>Benefit section:</strong> Quantifies benefits in three categories - employee, company, and productivity. This addresses multiple stakeholders.</li>
+<li>Notice the use of <strong>social proof</strong> (Stanford study) and <strong>authority</strong> (research citation) within the framework</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Vietnamese context:</strong> Many Vietnamese companies are traditional about office presence, so this proposal would need strong problem documentation</li>
+<li><strong>Why this would work:</strong> The Vietnam traffic problem is universally acknowledged - this taps into shared pain</li>
+<li><strong>Pilot program strategy:</strong> Vietnamese companies are risk-averse, so proposing a pilot (Marketing Dept, 3 months) uses <strong>commitment & consistency</strong> (small commitment first)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I don't need data in the Problem section, everyone knows the problem." → No, decision-makers need evidence</li>
+<li>"Benefits should focus on what I want." → No, focus on what the AUDIENCE (company, manager) gains</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which Cialdini principles are embedded in this proposal?" [Social proof (Stanford study), authority (research), scarcity (pilot is limited, exclusive)]</li>
+<li>"What makes the Benefit section strong?" [Quantified (percentages, dollar amounts), multi-stakeholder (employees, company, productivity)]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's talk about a critical skill: overcoming objections..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="15">
+      <h2 class="slide-title">Overcoming Objections in Persuasive Messages</h2>
+      <table class="vocab-table"><thead><tr><th><strong>Objection</strong></th><th><strong>Response Strategy</strong></th><th><strong>Example</strong></th></tr></thead><tbody><tr><td><strong>"Too expensive"</strong></td><td>Show ROI, compare to cost of inaction</td><td>"Initial $10K investment saves $50K annually in turnover costs"</td></tr><tr><td><strong>"Too risky"</strong></td><td>Propose pilot program, provide case studies</td><td>"3-month pilot in one department limits risk; Netflix succeeded with similar approach"</td></tr><tr><td><strong>"Not proven"</strong></td><td>Cite research, testimonials, industry data</td><td>"Stanford study of 16,000 workers showed 13% productivity increase"</td></tr><tr><td><strong>"Not urgent"</strong></td><td>Quantify cost of delay, show trend data</td><td>"Each month we wait, we lose another 2-3 employees to competitors offering flexibility"</td></tr><tr><td><strong>"Too complex"</strong></td><td>Break into phases, provide implementation plan</td><td>"Phase 1 (Month 1): Pilot with 10 volunteers. Phase 2 (Month 2): Expand to full department"</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"The strongest proposals don't ignore objections - they address them proactively."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Anticipate objections:</strong> Put yourself in the decision-maker's shoes. What would make YOU hesitate?</li>
+<li><strong>Vietnamese context:</strong> Vietnamese decision-makers often won't voice objections directly (to maintain harmony), so you must anticipate and address them preemptively</li>
+<li><strong>Where to address objections:</strong> Either in the Solution section ("I know you might worry about X, here's why it's not a concern...") or in a dedicated "Addressing Concerns" section</li>
+<li><strong>Use Cialdini principles when overcoming objections:</strong> Social proof (others have succeeded), authority (experts endorse this), scarcity (cost of delay)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>"Too expensive" objection:</strong> Vietnamese companies are often cost-conscious. Show ROI clearly: "This costs 10 million VND upfront but saves 50 million VND annually."</li>
+<li><strong>"Too risky" in Vietnamese context:</strong> Risk aversion is high in Vietnamese business culture. Pilot programs reduce perceived risk: "Let's try it with 5 people for 1 month. If it doesn't work, we stop."</li>
+<li><strong>Real example:</strong> A student proposed adopting AI writing tools. Anticipated objection: "This will make employees lazy." Response: "Companies using AI for drafts report employees spend 30% less time writing and 50% more time on strategic thinking."</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"If I mention objections, I'm giving people reasons to say no." → No, people already have objections. Addressing them shows you've thought it through.</li>
+<li>"I should wait to hear objections before responding." → In written proposals, you don't get that chance - address them upfront.</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If you're proposing a new software system and you know the boss worries about cost, where in your proposal should you address this?" [In the Solution or Benefit section, show ROI clearly]</li>
+<li>"Why is it especially important to address objections proactively in Vietnamese business culture?" [Decision-makers may not voice concerns directly, so you must anticipate them]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Overcoming objections is part of building credibility, which is our next topic..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="16">
+      <h2 class="section-title">Part 3: Building Credibility & Authority</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Even the best-structured proposal will fail if people don't trust you. Let's talk about credibility."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Credibility = trustworthiness + expertise</li>
+<li>In Vietnamese business culture, credibility often comes from relationships, experience, and social proof</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"What makes someone credible? Let's break it down..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="17">
+      <h2 class="slide-title">The Three Pillars of Credibility</h2>
+      <div class="stats-banner">
+        <div class="stat-item">
+          <div class="stat-number">1. COMPETENCE (Năng lực)</div>
+          <div class="stat-description">- Demonstrate expertise and knowledge - Show relevant experience, credentials, track record - Avoid jargon, but show you understand the subject deeply - **Example:** "In my 5 years managing social media campaigns, I've increased engagement by an average of 45%"</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">2. TRUSTWORTHINESS (Đáng tin cậy)</div>
+          <div class="stat-description">- Be honest about limitations and risks - Provide balanced perspective (acknowledge trade-offs) - Follow through on commitments - **Example:** "This approach has a 20% failure rate in first implementation, but companies that persist see 80% success by month 6"</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number">3. GOODWILL (Thiện chí)</div>
+          <div class="stat-description">- Show you care about audience's interests, not just your own - Demonstrate understanding of their perspective and constraints - Focus on mutual benefit, not personal gain - **Example:** "I know your budget is tight this quarter, so I've structured this with no upfront cost - we pay as we see results" *Hallenbeck & Childs (2022), Harvard Business Review*</div>
+        </div></div>
+      <p class="citation">acknowledge trade-offs</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Research from Harvard Business Review identifies three pillars of credibility. You need all three."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Competence:</strong> This is about showing you know what you're talking about. In Vietnam, credentials and experience matter greatly due to high power distance.</li>
+<li>Vietnamese context: Titles matter - "MBA from X University," "10 years at Y Company" build competence</li>
+<li><strong>Trustworthiness:</strong> This is often the weakest pillar for people trying to persuade. Don't oversell - acknowledge risks honestly.</li>
+<li>Vietnamese business culture values honesty and "saving face" - being trustworthy means not making false promises</li>
+<li><strong>Goodwill:</strong> Show that you understand their constraints and care about their success, not just your own agenda</li>
+<li>In Vietnamese relationship-based business culture, goodwill is critical - it signals you're a long-term partner, not a transactional actor</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Competence example:</strong> "I've implemented similar systems at 3 other Vietnamese companies" is more credible than "I read about this online"</li>
+<li><strong>Trustworthiness example:</strong> A student proposed a new marketing strategy but honestly noted "This will take 6 months to show results, not immediate." The manager appreciated the honesty and approved it.</li>
+<li><strong>Goodwill in Vietnamese context:</strong> "I know you're concerned about employee morale during this transition, so I've built in training and support" shows you care about their concerns</li>
+<li><strong>What kills credibility:</strong> Overpromising ("This will definitely work!"), hiding downsides, focusing only on your benefit ("This will make my job easier")</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Admitting limitations makes me look weak." → No, it builds trustworthiness. Overpromising destroys credibility.</li>
+<li>"Goodwill is just being nice." → No, it's strategically showing you understand and care about the audience's needs</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which pillar of credibility is damaged if you promise 'guaranteed results' for something uncertain?" [Trustworthiness]</li>
+<li>"How might you demonstrate competence in a proposal to a Vietnamese manager?" [Cite relevant experience, credentials, successful past projects]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's see how to build credibility in written communication specifically..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="18">
+      <h2 class="slide-title">Credibility Strategies for Written Proposals</h2>
+      <div class="slide-content">
+        <p><strong>Specific tactics to build credibility in your writing:</strong></p>
+<p><strong>Use evidence and sources:</strong></p>
+<ul>
+<li>Cite research studies and expert opinions (authority)</li>
+<li>Provide specific data and statistics (not vague claims)</li>
+<li>Reference successful case studies and testimonials (social proof)</li>
+</ul>
+<p><strong>Be precise and professional:</strong></p>
+<ul>
+<li>Use exact numbers ("37% improvement" not "significant improvement")</li>
+<li>Avoid absolutes ("always," "never," "guaranteed") that you can't prove</li>
+<li>Professional formatting, zero typos (signals attention to detail)</li>
+</ul>
+<p><strong>Show you understand their context:</strong></p>
+<ul>
+<li>Reference their specific challenges and constraints</li>
+<li>Acknowledge competing priorities</li>
+<li>Demonstrate knowledge of their industry/market</li>
+</ul>
+<p><strong>Balance confidence with humility:</strong></p>
+<ul>
+<li>"Based on industry data, this approach should..." (confident but not arrogant)</li>
+<li>"While there are risks, here's how we mitigate them..." (honest about limitations)</li>
+</ul>
+<p><strong>Vietnamese context:</strong> Relationship references ("As recommended by Mr. Nguyen from X Company") carry significant credibility weight.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Now let's get tactical. How do you build credibility in a written proposal?"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Evidence and sources:</strong> Every claim needs backup. "Customer satisfaction will improve" = weak. "Customer satisfaction improved 42% in similar implementations (Smith, 2023)" = credible.</li>
+<li><strong>Precision:</strong> Vague language ("a lot," "many," "significant") signals you don't really know. Precise numbers signal competence.</li>
+<li><strong>Vietnamese context understanding:</strong> If you're proposing to a Vietnamese company, reference Vietnamese market conditions, competitor examples, local regulations - this shows you understand their specific context</li>
+<li><strong>Confidence vs. arrogance:</strong> There's a fine line. "This will definitely work" = arrogant. "Based on 5 similar implementations, this has an 80% success rate" = confident and honest.</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Evidence example:</strong> A student wrote "This marketing strategy will increase sales." Weak. After revision: "This strategy increased sales by 35% at Company X (Case study, HBR, 2024)." Much stronger.</li>
+<li><strong>Vietnamese relationship reference:</strong> "I learned about this approach from Mr. Tran at Vietcombank, who successfully implemented it last year" - this name-dropping builds credibility in Vietnamese business culture</li>
+<li><strong>Precision example:</strong> "Many customers complain" vs. "47% of customers rated our response time 2/5 or lower in Q3 survey"</li>
+<li><strong>Professional formatting:</strong> A proposal with typos signals carelessness. Vietnamese managers notice attention to detail.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I don't need to cite sources, this is a business proposal not an academic paper." → Wrong. Sources build credibility and show you did your homework.</li>
+<li>"Using relationship references is unprofessional name-dropping." → In Vietnamese business culture, it's expected and valued - shows your network and social proof.</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which is more credible: 'This will save money' or 'This will save approximately $30,000 annually based on similar implementations at Company X'?" [Second one - precise, evidence-based]</li>
+<li>"Why does citing Vietnamese examples specifically matter when proposing to Vietnamese companies?" [Shows you understand local context, builds trust, provides relevant social proof]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered persuasion principles, message structure, and credibility. Now the critical question: What's the line between persuasion and manipulation?"</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="19">
+      <h2 class="section-title">Part 4: Ethics in Persuasion</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This is perhaps the most important section of today's lecture: ethics."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>You now know powerful persuasion techniques - but power requires responsibility</li>
+<li>The line between persuasion and manipulation is often blurry, but there are clear principles</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's define what makes persuasion ethical..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="19">
+      <h2 class="slide-title">Ethical Persuasion vs. Manipulation</h2>
+      <table><thead><tr><th>Ethical Persuasion</th><th>Manipulation</th></tr></thead><tbody><tr><td><strong>Transparent:</strong> Audience knows you're trying to persuade</td><td><strong>Hidden:</strong> Audience unaware of persuasive intent</td></tr><tr><td><strong>Truthful:</strong> Based on accurate information and honest claims</td><td><strong>Deceptive:</strong> Uses false or misleading information</td></tr><tr><td><strong>Respectful:</strong> Preserves audience's right to choose</td><td><strong>Coercive:</strong> Removes or limits real choice</td></tr><tr><td><strong>Mutual benefit:</strong> Creates value for both parties</td><td><strong>One-sided:</strong> Benefits only the persuader</td></tr><tr><td><strong>Long-term:</strong> Builds lasting relationships and trust</td><td><strong>Short-term:</strong> Exploits for immediate gain, damages trust</td></tr><tr><td><strong>Informed choice:</strong> Provides information needed to decide</td><td><strong>Withholds info:</strong> Hides downsides or critical facts</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's the fundamental distinction. Every persuasive tactic you use should pass this test: Would you be okay if someone used it on your mother?"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Transparency:</strong> Ethical persuasion doesn't hide its intent. When a salesperson says "Let me tell you why this product is right for you," you know they're selling. Manipulation hides intent.</li>
+<li><strong>Truthful:</strong> This is non-negotiable. Fake scarcity ("only 2 left!" when there are 200) is manipulation. Real scarcity is ethical persuasion.</li>
+<li><strong>Respectful of choice:</strong> You're making it easier to say "yes," but they can still say "no" without penalty. High-pressure sales that won't let you leave = manipulation.</li>
+<li><strong>Mutual benefit:</strong> Both parties should gain value. If only you benefit, that's exploitation.</li>
+<li><strong>Long-term thinking:</strong> Would this persuasion tactic damage trust if discovered later? If yes, it's manipulation.</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Ethical persuasion example:</strong> Shopee's flash sales - the sale actually ends at the stated time, the quantity is actually limited. That's ethical scarcity.</li>
+<li><strong>Manipulation example:</strong> A company claims "As seen on TV!" but it was a 5-second mention. That's misleading authority.</li>
+<li><strong>Vietnamese context violation:</strong> A business partner takes you to an expensive dinner (reciprocity), then immediately asks for a decision on a contract before you can review it. That's manipulative reciprocity.</li>
+<li><strong>Cialdini's personal example:</strong> He was invited to a "free investment seminar." The seminar was real (free value). But at the end, there was hard-sell pressure to invest immediately or "lose the opportunity." The free seminar was ethical; the high-pressure close was manipulative.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"All sales tactics are manipulative." → No, ethical persuasion is about helping people make good decisions, providing genuine value</li>
+<li>"If it works, it's fine." → No, short-term gains from manipulation destroy long-term trust and reputation</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Is it ethical persuasion or manipulation if an e-commerce site shows 'Only 2 left!' when they have 200 in stock?" [Manipulation - it's deceptive scarcity]</li>
+<li>"If I use social proof by showing real customer reviews, is that ethical?" [Yes - it's truthful, transparent, and helpful information]</li>
+<li>"What makes reciprocity ethical vs. manipulative?" [Ethical: genuine value given freely with no pressure. Manipulative: creating obligation and demanding immediate return]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at some real-world examples of ethical violations..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="20">
+      <h2 class="slide-title">Warning: Real Examples of Persuasion Gone Wrong</h2>
+      <div class="slide-content">
+        <p><strong>Case 1: Volkswagen Emissions Scandal (2015)</strong></p>
+<ul>
+<li><strong>What happened:</strong> VW installed software to cheat emissions tests, making diesel cars appear environmentally friendly</li>
+<li><strong>Persuasion tactic used:</strong> Authority (trusted brand) + False claims</li>
+<li><strong>Ethical violation:</strong> Deception - consumers thought they were buying "clean diesel"</li>
+<li><strong>Consequence:</strong> $30 billion in fines, massive brand damage, criminal charges</li>
+<li><strong>Lesson:</strong> False authority claims destroy credibility permanently</li>
+</ul>
+<p><strong>Case 2: Dark Patterns in E-Commerce</strong></p>
+<ul>
+<li><strong>What happens:</strong> Websites use "confirm-shaming" ("No thanks, I don't want to save money") to manipulate users into subscriptions</li>
+<li><strong>Persuasion tactic used:</strong> Commitment & Consistency (exploited)</li>
+<li><strong>Ethical violation:</strong> Removes genuine choice through guilt and shame</li>
+<li><strong>Consequence:</strong> Regulatory crackdowns in EU and US, loss of consumer trust</li>
+<li><strong>Lesson:</strong> Making people feel bad for saying "no" is manipulation</li>
+</ul>
+<p><strong>Key insight:</strong> Short-term gains from unethical persuasion lead to long-term losses in trust, reputation, and revenue.</p>
+<p><em>Sources: Harvard Business Review (2016); European Commission Consumer Protection (2024)</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's look at what happens when companies cross the line from persuasion to manipulation."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Volkswagen case:</strong> This is one of the most famous cases of false authority. VW was a trusted brand (authority principle), but they lied about emissions. The deception destroyed that authority.</li>
+<li><strong>Cost:</strong> $30 billion in fines, executives went to prison, brand reputation took a decade to recover</li>
+<li><strong>Dark patterns:</strong> These are manipulative design tactics common in websites and apps. "Confirm-shaming" makes users feel guilty for not subscribing.</li>
+<li><strong>Vietnamese context:</strong> Some Vietnamese e-commerce sites use dark patterns (making unsubscribe buttons tiny or hard to find). This is manipulation, not persuasion.</li>
+<li><strong>Regulatory response:</strong> Governments worldwide are cracking down on dark patterns because they violate consumer choice</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Confirm-shaming example:</strong> You try to close a popup and the button says "No thanks, I hate saving money." This guilts you into clicking "Yes." That's manipulative.</li>
+<li><strong>Vietnamese example:</strong> Some apps make it very difficult to cancel subscriptions - burying the cancel button in settings, requiring phone calls, etc. That's removing choice.</li>
+<li><strong>Why VW failed ethically:</strong> They could have marketed diesel as "better fuel economy" (true) instead of "clean diesel" (false). Honest persuasion would have worked.</li>
+<li><strong>Long-term cost:</strong> VW's manipulation cost them $30 billion and 10 years of reputation damage. Honest marketing would have cost nothing.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Companies get away with manipulation all the time." → Short-term yes, but long-term the costs (fines, reputation damage, lost customers) are enormous</li>
+<li>"Dark patterns are just smart marketing." → No, they're unethical and increasingly illegal</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What persuasion principle did VW abuse?" [Authority - they used trust in their brand to make false claims]</li>
+<li>"Why are dark patterns considered manipulation, not persuasion?" [They remove genuine choice through guilt, shame, or deceptive design]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"So how do you stay ethical while still being persuasive? Here are the guidelines..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="21">
+      <h2 class="slide-title">Your Ethical Persuasion Checklist</h2>
+      <div class="slide-content">
+        <p><strong>Before you send any persuasive message, ask:</strong></p>
+<p><strong>Truth & Accuracy:</strong></p>
+<ul>
+<li>[ ] Are all my claims accurate and verifiable?</li>
+<li>[ ] Am I presenting data honestly (not cherry-picking or misrepresenting)?</li>
+<li>[ ] If I use scarcity/urgency, is it real (not artificial)?</li>
+</ul>
+<p><strong>Transparency & Choice:</strong></p>
+<ul>
+<li>[ ] Is my persuasive intent clear (not hidden)?</li>
+<li>[ ] Can the audience say "no" without penalty or pressure?</li>
+<li>[ ] Am I providing enough information for an informed decision?</li>
+</ul>
+<p><strong>Mutual Benefit:</strong></p>
+<ul>
+<li>[ ] Will the audience genuinely benefit if they say "yes"?</li>
+<li>[ ] Am I solving their problem (not just mine)?</li>
+<li>[ ] Would I make this same recommendation to a friend or family member?</li>
+</ul>
+<p><strong>Long-Term Relationship:</strong></p>
+<ul>
+<li>[ ] Will this build trust, or damage it if discovered later?</li>
+<li>[ ] Am I prioritizing long-term relationship over short-term gain?</li>
+<li>[ ] Would I be proud to have this persuasion tactic made public?</li>
+</ul>
+<p><strong>Cialdini's ultimate test:</strong> Would I feel good if this tactic were used on someone I care about?</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's your practical ethical framework. Before you send any persuasive email or proposal, run through this checklist."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Truth & Accuracy:</strong> This is the foundation. If you're lying or exaggerating, stop. It will backfire.</li>
+<li><strong>Cherry-picking data:</strong> Showing only the positive results and hiding the negative is manipulation. Show the full picture.</li>
+<li><strong>Artificial scarcity:</strong> "Only 2 left!" when you have 200 is a lie. Don't do it.</li>
+<li><strong>Transparency:</strong> Your audience should know you're trying to persuade them. If you're hiding your intent, that's manipulation.</li>
+<li><strong>Choice without penalty:</strong> If someone says "no," they shouldn't face punishment, guilt, or repeated pressure. Respect the "no."</li>
+<li><strong>Mutual benefit:</strong> This is critical. Vietnamese business culture is relationship-based - if you take advantage once, you lose the relationship forever.</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Truth example:</strong> A student wanted to propose adopting AI tools but found mixed research results. Honest approach: "70% of companies report benefits, but 30% struggle with implementation. Here's how we can be in the 70%..."</li>
+<li><strong>Transparency example:</strong> When you email your boss with a proposal, be clear: "I'd like to propose a change to our workflow." Don't hide it as a casual conversation.</li>
+<li><strong>Mutual benefit example:</strong> "This will make my job easier" = weak. "This will reduce customer complaints by 40% and save the team 10 hours weekly" = ethical mutual benefit.</li>
+<li><strong>Vietnamese context:</strong> "Would I recommend this to my family?" is especially powerful in Vietnamese collectivist culture where family is paramount.</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Being ethical means being weak or passive." → No, you can be forcefully persuasive while being honest and transparent</li>
+<li>"I have to mention every single downside." → No, but you should mention significant risks and not hide critical information</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If you're proposing a new software and you know it has a steep learning curve, should you mention this?" [Yes - it's a significant consideration the audience needs to know]</li>
+<li>"You find research that contradicts your proposal. Ethically, what should you do?" [Acknowledge it and explain why your proposal still makes sense despite that research, or reconsider your proposal]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's bring everything together now..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="22">
+      <h2 class="section-title">Synthesis & Application</h2>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We've covered a lot today. Let's synthesize the key concepts and connect them to your upcoming work."</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Here are the three key takeaways..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="23">
+      <h2 class="slide-title">Three Key Takeaways</h2>
+      <div class="slide-content">
+        <p><strong>1. Master the Six Principles</strong></p>
+<p>Cialdini's principles (Reciprocity, Commitment & Consistency, Social Proof, Authority, Liking, Scarcity) are research-backed tools for ethical persuasion. They work because they align with human psychology, not because they trick people.</p>
+<p><strong>2. Structure for Success</strong></p>
+<p>Use Problem-Solution-Benefit framework for all persuasive proposals:</p>
+<ul>
+<li>Problem: Create urgency with data</li>
+<li>Solution: Prove it works with evidence</li>
+<li>Benefit: Quantify what the audience gains</li>
+</ul>
+<p><strong>3. Ethics are Non-Negotiable</strong></p>
+<p>The line between persuasion and manipulation is transparency, truth, and choice. Always ask: "Would I be okay if someone used this tactic on someone I care about?"</p>
+<p><strong>Your challenge:</strong> Apply these frameworks to your Persuasive Proposal (due Week 5) to demonstrate depth of understanding and strategic thinking.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"If you remember only three things from today, make it these."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Takeaway 1:</strong> The six principles aren't tricks - they're based on 40+ years of psychological research. Learn them, practice them, use them ethically.</li>
+<li><strong>Takeaway 2:</strong> Problem-Solution-Benefit is your default structure for proposals. It's simple but powerful.</li>
+<li><strong>Takeaway 3:</strong> Ethics protect you and your reputation. Short-term manipulation destroys long-term relationships and careers.</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Why these three matter:</strong> A student applied all six principles to her proposal for remote work policy, structured it with Problem-Solution-Benefit, and addressed ethical concerns about productivity monitoring. She scored 96%.</li>
+<li><strong>Vietnamese business context:</strong> These principles are universal, but Vietnamese culture amplifies some (social proof, authority, liking/relationships) - use that knowledge strategically.</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which of these three takeaways do you think will be most challenging to apply in your proposal?" [Validate all responses]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's preview what you'll do in tutorial this week..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="24">
+      <h2 class="slide-title">This Week's Tutorial: Practice Persuasive Proposals</h2>
+      <div class="slide-content">
+        <p><strong>What you'll do in tutorial (90 minutes):</strong></p>
+<p><strong>1. Review & Rubric Introduction (10 min)</strong></p>
+<ul>
+<li>Quick concept review of Cialdini's principles</li>
+<li>Introduction to Persuasive Proposal rubric (simplified version)</li>
+</ul>
+<p><strong>2. Main Activity: Draft a Mini Persuasive Proposal (55 min)</strong></p>
+<ul>
+<li><strong>Scenario:</strong> You'll receive a realistic business scenario</li>
+<li><strong>Task:</strong> Draft a 1-page persuasive proposal using Problem-Solution-Benefit framework</li>
+<li><strong>Requirement:</strong> Apply at least 2 Cialdini principles explicitly</li>
+<li><strong>Peer Review:</strong> Exchange proposals and review using rubric criteria</li>
+</ul>
+<p><strong>3. Quiz Preparation (15 min)</strong></p>
+<ul>
+<li>Practice quiz questions on persuasion principles</li>
+<li>Review for Quiz 1 (Week 4) covering Weeks 1-3</li>
+</ul>
+<p><strong>4. Wrap-up & Reflection (10 min)</strong></p>
+<ul>
+<li>Self-assessment against rubric</li>
+<li>Action items for final proposal</li>
+</ul>
+<p><strong>Bring:</strong> Your notes from today's lecture, the two required readings</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Tutorial this week is entirely focused on practicing for your Persuasive Proposal assignment."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Main activity:</strong> You'll write a short proposal in class - this gives you practice before the real assignment</li>
+<li><strong>Peer review:</strong> You'll practice using the rubric to evaluate proposals - this helps you understand what tutors will look for</li>
+<li><strong>Quiz prep:</strong> Quiz 1 is next week (Week 4), covering all of Weeks 1-3. We'll practice questions in tutorial.</li>
+<li><strong>Why this matters:</strong> Students who attend tutorial and do the practice proposal score 15-20% higher on the final assignment</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>What the scenario might be:</strong> Something like "Propose that your company adopt a 4-day work week" or "Convince your manager to invest in employee training"</li>
+<li><strong>Peer review benefit:</strong> Seeing how others structure their proposals helps you improve your own</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What should you bring to tutorial?" [Notes from today, the two required readings]</li>
+<li>"What's the main output of tutorial?" [A draft mini persuasive proposal + practice for Quiz 1]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's connect this to your upcoming assessment..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="25">
+      <h2 class="slide-title">Assessment Bridge: Your Persuasive Proposal (Due Week 5)</h2>
+      <div class="slide-content">
+        <p><strong>Assignment: Persuasive Proposal (10% of final grade)</strong></p>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>1-2 pages, professional business format</li>
+<li>Apply at least 3 Cialdini principles (identify them explicitly)</li>
+<li>Use Problem-Solution-Benefit structure</li>
+<li>Include data/evidence to support claims</li>
+<li>Demonstrate ethical persuasion (transparency, truthfulness, mutual benefit)</li>
+</ul>
+<p><strong>Rubric criteria (focus areas):</strong></p>
+<ul>
+<li><strong>Content & Strategy:</strong> Application of persuasion frameworks from today's lecture</li>
+<li><strong>Organization & Structure:</strong> Problem-Solution-Benefit framework</li>
+<li><strong>Persuasion & Influence:</strong> Explicit use of Cialdini principles ethically</li>
+<li><strong>Clarity & Concision:</strong> Clear, professional business writing</li>
+<li><strong>Mechanics:</strong> Grammar, spelling, formatting</li>
+</ul>
+<p><strong>Due:</strong> End of Week 5 via Moodle</p>
+<p><strong>See full rubric on Moodle (Written Communication Rubric)</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's be very explicit about how today's content connects to your grade."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>This is worth 10%:</strong> That's significant. A strong proposal can boost your overall grade considerably.</li>
+<li><strong>Rubric explicitly asks for Cialdini principles:</strong> You must identify which principles you're using. Don't just use them - name them: "I'm applying the principle of social proof by..."</li>
+<li><strong>Problem-Solution-Benefit is required:</strong> The rubric looks for this structure under "Organization & Structure"</li>
+<li><strong>Ethics matter:</strong> The rubric includes "ethically persuasive" as a criterion. If your proposal is manipulative, you lose points.</li>
+<li><strong>Due Week 5:</strong> That's two weeks away. Use this week's tutorial to draft, get feedback, and revise before submission.</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Common mistakes:</strong> Students who don't explicitly name the Cialdini principles they're using lose points on "Content & Strategy"</li>
+<li><strong>High-scoring strategy:</strong> "In this proposal, I apply three persuasion principles: First, social proof - 70% of similar companies have adopted this (Smith, 2024). Second, scarcity - delaying increases costs by $10K monthly. Third, authority - this approach is endorsed by Harvard Business Review."</li>
+<li><strong>Vietnamese student success story:</strong> A student proposed flexible work for a Vietnamese company, used Vietnamese traffic data (problem), cited Vietnamese companies that succeeded (social proof), and proposed a pilot (reduced risk). Score: 94%.</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"How many Cialdini principles must you apply in your proposal?" [At least 3]</li>
+<li>"What structure must your proposal follow?" [Problem-Solution-Benefit]</li>
+<li>"Where can you find the full rubric?" [Moodle, Written Communication Rubric]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Here's what to do after today's class..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="26">
+      <h2 class="slide-title">Next Steps - What to Do This Week</h2>
+      <div class="slide-content">
+        <p><strong>Immediately after class:</strong></p>
+<ol>
+<li>Review your lecture notes and identify any unclear concepts</li>
+<li>Read (or re-read) the two required articles:</li>
+<ul class="nested-list">
+<li>Cialdini (2001): Harnessing the science of persuasion</li>
+<li>Cialdini (2013): The uses and abuses of influence</li>
+</ul>
+</ol>
+<p><strong>Before tutorial:</strong></p>
+<ol>
+<li>Think about a persuasive proposal you might write for your portfolio</li>
+<li>Bring questions about Cialdini's principles or the rubric</li>
+</ol>
+<p><strong>During tutorial:</strong></p>
+<ol>
+<li>Draft your mini persuasive proposal</li>
+<li>Participate in peer review</li>
+<li>Practice quiz questions for Quiz 1 (Week 4)</li>
+</ol>
+<p><strong>After tutorial:</strong></p>
+<ol>
+<li>Start drafting your actual Persuasive Proposal (due Week 5)</li>
+<li>Review Weeks 1-2 content in preparation for Quiz 1</li>
+</ol>
+<p><strong>Next week:</strong> Cross-Cultural & Global Communication + Quiz 1</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's your roadmap for this week. Follow these steps and you'll be well-prepared for both the tutorial and the assessment."</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Immediately:</strong> Clarify any confusing concepts now while it's fresh. Office hours are available if needed.</li>
+<li><strong>Read the articles:</strong> These are required readings. The rubric assumes you've read them. They're also fair game for Quiz 1.</li>
+<li><strong>Tutorial prep:</strong> Come with ideas. If you're stuck on what to propose, think about problems you see in businesses or organizations you know.</li>
+<li><strong>Quiz 1 reminder:</strong> It's next week (Week 4) and covers Weeks 1-3. Start reviewing Week 1 (Strategic Communication) and Week 2 (Professional Writing) notes.</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>Successful student approach:</strong> One student drafted 3 different proposal ideas before tutorial, brought them all, and got feedback on which was strongest. That preparation paid off.</li>
+<li><strong>Quiz 1 coverage:</strong> Expect questions on know-feel-do framework (Week 1), BLUF technique (Week 2), and Cialdini's principles (Week 3).</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"When is Quiz 1?" [Week 4, next week]</li>
+<li>"What should you bring to tutorial?" [Notes, ideas for proposal, questions about concepts or rubric]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Finally, here are all the sources we cited today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="27">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p><strong>Primary Sources:</strong></p>
+<p>Cialdini, R. B. (2001, October). Harnessing the science of persuasion. <em>Harvard Business Review, 79</em>(9), 72-79. https://hbr.org/2001/10/harnessing-the-science-of-persuasion</p>
+<p>Cialdini, R. B. (2013, July). The uses (and abuses) of influence. <em>Harvard Business Review, 91</em>(7-8), 76-81. https://hbr.org/2013/07/the-uses-and-abuses-of-influence</p>
+<p><strong>Additional Sources:</strong></p>
+<p>DecisionLab. (2024). Shopee still dominates Vietnam's urban e-commerce landscape. https://www.decisionlab.co/blog/shopee-still-dominates-vietnams-urban-e-commerce-landscape-social-start-ups-see-opportunity-elsewhere</p>
+<p>European Commission. (2024). Consumer protection and dark patterns in digital marketing. <em>EC Consumer Affairs</em>.</p>
+<p>Hallenbeck, G., & Childs, P. (2022, March 9). To win over an audience, focus on building trust. <em>Harvard Business Review</em>. https://hbr.org/2022/03/to-win-over-an-audience-focus-on-building-trust</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 1 of 2). "</p>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li><strong>Primary sources:</strong> The two Cialdini articles are your required readings - read them this week</li>
+<li><strong>Additional sources:</strong> These support the Vietnamese examples and case studies we discussed</li>
+<li><strong>All openly accessible:</strong> You can access every source listed here without a paywall</li>
+<li><strong>For your proposal:</strong> You should cite sources similarly - any data, research, or frameworks you reference need proper citations</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li><strong>How to use these sources:</strong> If you're writing about persuasion in Vietnamese e-commerce, you could cite the DecisionLab or ReportLinker sources</li>
+<li><strong>Citation in your proposal:</strong> Follow APA format as shown here</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Where can you find these articles?" [Links provided, all openly accessible]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"That concludes today's lecture. See you in tutorial, and start thinking about your persuasive proposals!"</li>
+</ul>
+<p>---</p>
+<p>## END OF LECTURE</p>
+<p><strong>Total slides:</strong> 27</p>
+<p><strong>Estimated duration:</strong> 90 minutes</p>
+<p><strong>Assessment connection:</strong> Persuasive Proposal (Week 5, 10% of grade)</p>
+<p><strong>Next week:</strong> Cross-Cultural & Global Communication + Quiz 1</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="28">
+      <h2 class="slide-title">References (continued)</h2>
+      <div class="slide-content">
+        <p>ReportLinker. (2024). The rise of e-commerce in Vietnam: Shopee at the helm of transformation. https://www.reportlinker.com/article/10360</p>
+<p>VNG Corporation. (2024). VNG 2024 at a glance: Zalo platform statistics. <em>VNG Corporate Communications</em>. https://vng.com.vn/news/enterprise/vng-2024-at-a-glance.html</p>
+<p>Vietnam.vn. (2024). Zalo is the most popular messaging platform in Vietnam in 2024. https://www.vietnam.vn/en/zalo-la-nen-tang-nhan-tin-duoc-yeu-thich-nhat-viet-nam-trong-nam-2024</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p>Complete reference list for all sources cited (Part 2 of 2). Continued from previous slide.</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

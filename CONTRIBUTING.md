@@ -427,9 +427,9 @@ python3 html_to_pptx_converter.py \
     samples/showcase-enhancements.html \
     test-output-1.pptx
 
-# Test 2: Enhanced samples
+# Test 2: Enhanced samples (from archive)
 python3 html_to_pptx_converter.py \
-    .claude/skills/slide-exporter/resources/examples/enhanced-sample-slides.html \
+    docs/.archive/slide-technical/skill-backup/resources/examples/enhanced-sample-slides.html \
     test-output-2.pptx
 
 # Visual inspection

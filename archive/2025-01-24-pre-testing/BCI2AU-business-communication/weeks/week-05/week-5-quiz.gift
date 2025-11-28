@@ -1,0 +1,76 @@
+// Week 5 Quiz: AI Ethics in Business Communication
+// Generated from tutorial quiz practice questions
+// Questions: 10
+
+$CATEGORY: Week 5
+
+::AI Research Findings::According to Brynjolfsson et al. (2023)'s study of 5,179 customer support agents, what was the average productivity gain from using generative AI assistance?{
+~5%
+=14% #Brynjolfsson et al. (2023) found an average 14% increase in issues resolved per hour across all 5,179 customer support agents in the randomized controlled trial. This is the overall productivity gain mentioned in Slide 9 of the lecture.
+~35% #This was the gain for newer workers specifically, not the average across all workers. The 35% represents the maximum gain for the least experienced group, while 14% is the overall average.
+~50% #Not supported by research—this exaggerates the findings. The actual average productivity gain was 14%.
+}
+
+::Learning from AI::In the same study (Brynjolfsson et al., 2023), which group of workers gained the MOST from AI assistance?{
+~Experienced workers with 10+ years in the role #Experienced workers actually gained almost nothing (~0%)—they already knew best practices and didn't benefit much from AI suggestions.
+~Mid-level workers with 3-5 years experience #The study didn't report mid-level workers separately. The key finding was the contrast between novice and expert workers.
+=Newer workers with less experience #The study found that newer workers gained 35% productivity boost (the highest gain of any group) because they learned expert-level response patterns from AI suggestions, while experienced workers saw minimal productivity change.
+~All workers gained equally #False—the key finding was differential impact based on experience level. Newer workers gained 35%, while experienced workers gained almost nothing.
+}
+
+::Ethical Principles::Which of the following is NOT one of the four ethical principles for AI use discussed in the lecture?{
+~Transparency (disclose AI use appropriately) #Transparency IS one of the four ethical principles. It requires disclosing AI use appropriately to build trust and accountability.
+~Accountability (you own the results) #Accountability IS one of the four ethical principles. You are responsible for verifying and owning all AI-assisted work.
+=Efficiency (complete tasks as quickly as possible) #Efficiency is NOT one of the four ethical principles. While efficiency is a benefit of AI use, the four ethical principles are\: Transparency, Accountability, Authenticity, and Skill Development.
+~Authenticity (preserve your unique voice) #Authenticity IS one of the four ethical principles. It requires preserving your unique voice and expertise when using AI.
+}
+
+::Human Accountability::According to the Committee on Publication Ethics (COPE) 2024 guidelines, can AI tools be listed as authors of professional or academic work?{
+~Yes, if AI contributed more than 50% of the content #False—percentage of contribution doesn't matter; AI still can't be an author. Only humans can take accountability.
+~Yes, but only with proper disclosure #False—disclosure is required when AI assists, but AI still isn't listed as author. You disclose how AI was used, not list it as co-author.
+=No, AI tools cannot be listed as authors #Correct. COPE 2024 guidelines explicitly state that AI tools cannot be listed as authors because they have no expertise, cannot be held accountable, and cannot take responsibility for content. Only humans can be authors.
+~Only for certain types of documents like reports #False—the principle applies to all professional and academic work. AI cannot be listed as author for any document type.
+}
+
+::When NOT to Use AI::Based on the lecture's decision framework, which situation is LEAST appropriate for AI assistance?{
+~Grammar and style checking on your drafted email #This is the MOST appropriate AI use—always acceptable, no disclosure needed. Grammar checking is a baseline professional tool.
+~Brainstorming ideas for persuasive proposal topics #This is an appropriate use of AI—low risk, AI helps generate ideas you then evaluate and develop yourself.
+=Writing crisis communication with confidential client data #This is LEAST appropriate. It violates multiple principles\: (1) Confidential data should never be put into AI tools (privacy risk), (2) Crisis communication requires high accountability and deep context, and (3) High stakes demand human judgment.
+~Creating outline structure for a complex report #This is an appropriate use of AI—AI helps with organization while you control content and strategy.
+}
+
+::Vietnamese AI Landscape::According to 2024 data discussed in lecture, what percentage of Southeast Asia's Generative AI startups are based in Vietnam?{
+~10% #Too low—this understates Vietnam's significant AI startup ecosystem and leadership position in ASEAN.
+~18% #Not the correct figure from the research cited in the lecture.
+=27% #Correct. Lecture Slide 17 cited 2024 data showing Vietnam hosts 27% of Southeast Asia's Generative AI startups, trailing only Singapore. This demonstrates Vietnam's leadership position in ASEAN AI innovation.
+~45% #Too high—this would exceed Singapore's share. Vietnam is second in ASEAN for AI startups after Singapore.
+}
+
+::Cultural Adaptation::When using AI for business communication in Vietnamese contexts, which cultural factor requires the MOST human adaptation of AI output?{
+~Grammar and spelling #AI handles English grammar and spelling well—this is actually AI's strength, not an area requiring human adaptation.
+~Document formatting standards #AI can follow standard formats adequately—this doesn't require significant human adaptation.
+=Relationship language and hierarchy respect (quan hệ, face-saving) #Correct. AI (trained on Western business communication) produces low-context, direct messages that miss Vietnamese cultural elements like relationship references, hierarchical respect (anh/chị, kính gửi), and face-saving language. This requires the MOST human adaptation because AI fundamentally doesn't understand high-context, relationship-oriented culture.
+~Technical terminology translation #AI has good vocabulary for technical terms, though PhoGPT is better for Vietnamese-specific terminology. This doesn't require as much human adaptation as cultural elements.
+}
+
+::The Productivity Paradox::What is the "Productivity Paradox" of AI tools discussed in the lecture?{
+~AI tools are less productive than claimed by developers #Not the paradox—research shows real productivity gains (14% average). The paradox isn't about AI being unproductive.
+=Tools that save time now may reduce skill development later #Correct. The Productivity Paradox means AI tools increase efficiency in the short term, but over-reliance may prevent skill development in the long term. If you always let AI write persuasive messages, you never learn persuasion yourself, creating dependence rather than building expertise.
+~Productivity gains disappear when everyone uses the same AI #Not the paradox discussed, though it's an interesting economic question about competitive advantage.
+~AI makes some tasks faster but other tasks slower #Not the paradox—doesn't capture the time-now vs. skills-later tension that defines the productivity paradox.
+}
+
+::Appropriate AI Use::For your Written Portfolio's Persuasive Proposal, which AI use is MOST appropriate according to course ethical guidelines?{
+~Ask ChatGPT to write entire proposal, submit with minor edits #Violates authenticity and accountability; doesn't demonstrate YOUR mastery of course frameworks. The rubric evaluates your strategic application of Cialdini's principles, which AI cannot do.
+=Use ChatGPT to brainstorm persuasive angles, then write proposal yourself applying Cialdini's principles #This follows the recommended workflow\: YOU handle strategy (applying Cialdini's principles, audience analysis), AI assists with ideation. This maintains course framework application, authenticity, and accountability while benefiting from AI's brainstorming capacity.
+~Copy competitor's proposal into AI, ask it to rewrite for your purpose #Multiple violations—confidentiality, originality, potentially plagiarism. Never put confidential or proprietary information into AI tools.
+~Have AI write proposal, don't disclose AI use since everyone uses AI #Violates transparency principle; also doesn't show course framework application. Lack of disclosure is academic dishonesty.
+}
+
+::Disclosure Requirements::According to lecture guidelines, when is AI disclosure required for your Written Portfolio?{
+~Only if AI writes more than 50% of content #Disclosure is not based on percentage—it's based on role and type of use. Even brainstorming or outlining should be disclosed.
+~Only for generative AI, not for grammar checking tools like Grammarly #Partially correct (grammar checking doesn't need disclosure) but incomplete. Generative AI use DOES need disclosure for academic assignments.
+=Whenever AI is used beyond basic grammar/spell checking #Correct. AI use beyond standard grammar checking should be disclosed for academic assignments. Grammarly/spell-check are baseline professional tools, but generative AI use (brainstorming, drafting, outlining) should be disclosed to show transparency and build good professional habits.
+~Never required for student assignments, only professional publications #False—academic integrity requires disclosure for student work. Transparency is especially important in academic contexts.
+}
+

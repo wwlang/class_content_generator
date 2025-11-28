@@ -1,0 +1,2493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 28</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 8: Business Reports & Executive Communication</h1>
+        <p class="subtitle">Writing for Impact and Influence</p>
+        <p class="author"><strong>Business Communication</strong><br>Andrews University - National Economics University Campus<br>Fall 2025<br>Instructor: William Winterton Lang<br>[LAYOUT: title-slide]</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome students to Week 8 focusing on business reports and executive communication</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Today we shift from persuasive communication to strategic document writing</li>
+<li>Business reports are among the most critical documents professionals create</li>
+<li>Executive summaries often determine whether full reports get read</li>
+<li>This week's skills apply directly to your written portfolio and presentation preparation</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we dive into frameworks and techniques, let's talk about why this matters in the real world..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="2">
+      <h2 class="slide-title">The High-Stakes World of Business Writing</h2>
+      <div class="slide-content">
+        <p>Imagine submitting a 40-page report to leadership—but they only read page one.</p>
+<p><strong>The Reality:</strong></p>
+<ul>
+<li>Business leaders receive countless reports weekly</li>
+<li>Executive summaries take 5 minutes to read vs. 1-2 hours for full reports (PandaDoc, 2023)</li>
+<li>You have 30 seconds to grab attention with your summary</li>
+<li>Poor communication costs U.S. businesses $2 trillion annually—over $15,000 per employee (Grammarly, 2024)</li>
+</ul>
+<p><strong>Today's question:</strong> How do you ensure your writing gets read AND acted upon?</p>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Ask class: "How many of you have written a long document that you're not sure anyone fully read?" [Show of hands creates connection]</li>
+<li>Validate this common frustration</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>The 5-minute vs. 1-2 hour statistic is dramatic—emphasize the attention economy</li>
+<li>$15,000 per employee annually lost to poor communication—that's significant waste</li>
+<li>30 seconds is all you get to hook a reader with executive summary</li>
+<li>This isn't about writing more; it's about writing strategically</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Share example: Student writes excellent analysis buried on page 12—decision-maker never sees it</li>
+<li>Vietnamese context: In fast-paced Hanoi or HCMC business environment, executives juggle many priorities</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why do you think poor communication is so costly?" [Take 1-2 responses—expect answers about rework, delays, errors]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Today we'll learn frameworks that ensure your writing cuts through noise and drives action..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="3">
+      <h2 class="slide-title">Key Business Writing Terminology</h2>
+      <div class="slide-content">
+        <table>
+  <thead>
+    <tr>
+      <th>English Term</th>
+      <th>Vietnamese Translation</th>
+      <th>Context</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Executive Summary</strong></td>
+      <td>Tóm tắt điều hành</td>
+      <td>Condensed overview of full report for decision-makers</td>
+    </tr>
+    <tr>
+      <td><strong>White Paper</strong></td>
+      <td>Báo cáo chuyên đề</td>
+      <td>Authoritative report presenting research and solutions</td>
+    </tr>
+    <tr>
+      <td><strong>Policy Brief</strong></td>
+      <td>Bản tóm tắt chính sách</td>
+      <td>Short document recommending specific policy actions</td>
+    </tr>
+    <tr>
+      <td><strong>Visual Hierarchy</strong></td>
+      <td>Phân cấp trực quan</td>
+      <td>Arrangement of elements to guide reader attention</td>
+    </tr>
+    <tr>
+      <td><strong>BLUF (Bottom Line Up Front)</strong></td>
+      <td>Kết luận ngay đầu</td>
+      <td>Military writing technique—main point first</td>
+    </tr>
+    <tr>
+      <td><strong>Purpose-Person-Point</strong></td>
+      <td>Mục đích-Người-Điểm chính</td>
+      <td>Three-step framework for strategic writing</td>
+    </tr>
+    <tr>
+      <td><strong>Technical Writing</strong></td>
+      <td>Viết kỹ thuật</td>
+      <td>Communicating complex information clearly</td>
+    </tr>
+    <tr>
+      <td><strong>Document Design</strong></td>
+      <td>Thiết kế tài liệu</td>
+      <td>Visual layout and formatting for readability</td>
+    </tr>
+  </tbody>
+</table>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Introduce vocabulary critical for today's lesson</li>
+<li>These terms appear in professional business communication globally</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>BLUF (Bottom Line Up Front) comes from military communication—extreme clarity under pressure</li>
+<li>Purpose-Person-Point is today's core framework (we'll explore deeply)</li>
+<li>White papers common in Vietnam for policy recommendations and industry research</li>
+<li>Visual hierarchy determines whether documents get read or ignored</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>BLUF example: Email subject lines—compare "Meeting Follow-Up" vs. "Action Required: Budget Approval by Friday 5pm"</li>
+<li>Vietnamese context: Policy briefs used by ministries and government agencies</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we have vocabulary foundation, let's establish learning objectives..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">What You'll Master Today</h2>
+      <div class="slide-content">
+        <p>By the end of this lecture, you will be able to:</p>
+<ol>
+<li><strong>Apply</strong> the Purpose-Person-Point framework to structure business documents strategically</li>
+<li><strong>Create</strong> executive summaries that capture attention and drive action within first 50 words</li>
+<li><strong>Evaluate</strong> document design choices for visual hierarchy and readability</li>
+<li><strong>Translate</strong> technical information for non-technical audiences using proven techniques</li>
+<li><strong>Analyze</strong> how great leaders communicate in writing using simplicity and metaphor</li>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Frame objectives around practical skills students will use immediately</li>
+<li>Connect to upcoming Written Portfolio (due Week 5—already submitted, but these principles apply to presentations)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Objective 1 (Purpose-Person-Point) is foundation—master this first</li>
+<li>Objective 2 (executive summaries) applies to every business report students write</li>
+<li>Objective 3 (document design) often overlooked but determines readability</li>
+<li>Objective 4 (technical translation) critical in cross-functional teams</li>
+<li>Objective 5 (leadership communication) shows how masters write</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which objective feels most relevant to work you'll do professionally?" [Quick poll or show of hands]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before diving into techniques, let's connect today's content to your upcoming assessments..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">How This Week Prepares You for Success</h2>
+      <div class="slide-content">
+        <p><strong>Group Presentation (Due Week 11 - 30% + 15%):</strong></p>
+<ul>
+<li>Write executive summary for presentation handout</li>
+<li>Design slides with visual hierarchy principles</li>
+<li>Translate complex research for diverse audience</li>
+</ul>
+<p><strong>Quiz 3 (Week 10 - Covers Weeks 7-9):</strong></p>
+<ul>
+<li>Purpose-Person-Point framework application</li>
+<li>Executive summary components</li>
+<li>Document design best practices</li>
+<li>Leadership communication principles</li>
+</ul>
+<p><strong>Professional Impact:</strong></p>
+<ul>
+<li>These are lifetime skills—you'll write reports, summaries, proposals throughout career</li>
+<li>Mastery distinguishes high performers from average communicators</li>
+</ul>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Explicitly connect today's learning to graded work</li>
+<li>Group presentations are 3 weeks away—time to start applying these principles</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Handouts accompanying presentations need executive summaries (1-page max)</li>
+<li>Slide design = visual hierarchy in action (avoid "death by PowerPoint")</li>
+<li>Translating research for audience = technical writing for non-technical audiences</li>
+<li>Quiz 3 tests conceptual understanding—attend tutorial for practice questions</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Show example: Strong vs. weak presentation handout</li>
+<li>Vietnamese context: Many Vietnamese students will work in multinational companies where clear documentation is essential</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"How many groups have started planning presentation topics?" [Gauge progress]</li>
+<li>Address concerns if most haven't started</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's explore the core framework that transforms average writing into great writing..."</li>
+</ul>
+<p>---</p>
+<p><strong>Part 1: The Purpose-Person-Point Framework</strong></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="6">
+      <h2 class="slide-title">The Purpose-Person-Point Framework</h2>
+      <div class="slide-content">
+        <p><strong>Purpose (The North Star):</strong> What do you want the reader to do or understand?</p>
+<p><strong>Person (Audience Analysis):</strong> Who is reading and what matters to them?</p>
+<p><strong>Point (Core Message):</strong> What is your essential message in 40-50 words?</p>
+<p>"Writing errors typically originate in the planning phase, not drafting. Most people jump straight to writing without clarifying these three elements first." (McCormack, 2024)</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Introduce the "Three P's" as systematic approach to all business writing</li>
+<li>Write framework on board: Purpose → Person → Point</li>
+<li>Emphasize these are sequential—you must clarify in this order</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Purpose = your North Star guiding all decisions (inform, request, or persuade)</li>
+<li>Person = deep audience understanding (language level, questions they'll ask, emotional triggers)</li>
+<li>Point = distilled essence stated early (within first 40-50 words)</li>
+<li>Planning precedes execution—this is THE critical insight</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Contrast: Email without clarity ("Just wanted to update you...") vs. clear purpose ("Requesting approval for Q3 budget increase to $50K")</li>
+<li>Vietnamese context: In hierarchical cultures, understanding "person" (decision-maker's priorities) is crucial</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think good writing = good grammar → Clarify: Good writing = clear thinking + strategic structure + good grammar</li>
+<li>Planning feels like extra work → Actually saves massive time by preventing rewrites</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Before today, how many of you consciously thought about Purpose-Person-Point before writing?" [Show of hands—expect few]</li>
+<li>Validate this as new skill to practice</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's unpack each element starting with Purpose..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="7">
+      <h2 class="slide-title">Element 1 - Define Your Purpose</h2>
+      <div class="slide-content">
+        <p><strong>Three Main Purposes:</strong></p>
+<ol>
+<li><strong>Inform</strong> - Share information or updates (status reports, meeting minutes)</li>
+<li><strong>Request</strong> - Ask for action, approval, or resources (proposals, requests)</li>
+<li><strong>Persuade</strong> - Change minds or drive decisions (recommendations, arguments)</li>
+</ol>
+<p><strong>Critical Question:</strong> What action or response do you want from the reader?</p>
+<p><strong>Example:</strong></p>
+<ul>
+<li>❌ Unclear: "I wanted to share some thoughts on the project"</li>
+<li>✅ Clear Purpose (Request): "I'm requesting approval to extend the project deadline by two weeks due to unforeseen technical challenges"</li>
+</ul>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Purpose is foundational—everything else flows from this</li>
+<li>Most weak writing lacks clear purpose from the start</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>The three purposes aren't mutually exclusive (persuasive messages also inform) but ONE should dominate</li>
+<li>"What action or response?" forces specificity—vague purpose = vague writing</li>
+<li>Knowing purpose creates context for entire document structure</li>
+<li>Inform → straightforward presentation; Request → clear ask with justification; Persuade → build case systematically</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Bad example: Student emails professor rambling about assignment without clear ask</li>
+<li>Good example: "I'm requesting a 2-day extension on Assignment 3 due to medical emergency [attach documentation]. I can submit by October 15."</li>
+<li>Vietnamese example: Government ministry requesting budget allocation—purpose must be crystal clear</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Being direct is rude" → Clarify: Clarity is respectful of reader's time</li>
+<li>Vietnamese context: Directness can feel culturally uncomfortable, but business writing values efficiency</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the purpose of a status report?" [Answer: Inform]</li>
+<li>"What's the purpose of a persuasive proposal?" [Answer: Persuade to take action]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Once you know your purpose, you must deeply understand your person—your audience..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="8">
+      <h2 class="framework-title">Element 2 - Understand Your Person (Audience)</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Three Critical Elements</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>1. Language Alignment Match reader's vocabulary and sophistication level</h3>
+          
+          <ul class="component-bullets"><li>Technical expert vs. general manager vs. external stakeholder</li><li>Adjust complexity accordingly</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>2. Question Anticipation Address "What's in it for me?"</h3>
+          
+          <ul class="component-bullets"><li>What will reader naturally ask while reading?</li><li>Answer questions before they're asked</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>3. Emotional Triggers Identify topics that matter to your specific audience</h3>
+          
+          <ul class="component-bullets"><li>Cost savings for CFO, innovation for CEO, efficiency for operations manager</li><li>Connect to reader's priorities and pain points</li></ul>
+          <p>[LAYOUT: content-slide]</p>
+        </div>
+      </div>
+      
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Person = audience analysis on steroids</li>
+<li>This step prevents writing documents that nobody reads</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Language alignment: Don't use jargon with non-technical readers; don't oversimplify for experts</li>
+<li>Question anticipation: Put yourself in reader's shoes—what would YOU wonder?</li>
+<li>Emotional triggers: Everyone has priorities—CFO cares about cost, engineers care about feasibility, marketers care about customer impact</li>
+<li>"What's in it for me?" (WIIFM) is universal question readers ask</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Example: Proposing new software to CEO (focus: ROI, competitive advantage) vs. IT team (focus: technical specs, integration)</li>
+<li>Vietnamese context: Understanding hierarchy and decision-making authority—who actually approves decisions?</li>
+<li>Story: Student writes technical report using engineering jargon for business professor—gets poor grade despite solid analysis</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"One document fits all audiences" → Clarify: Always customize for primary reader</li>
+<li>Students often write for themselves, not for actual audience</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If you're proposing flexible work policy to HR director vs. CEO, what emotional triggers differ?" [Take 1-2 responses—HR: employee satisfaction/retention; CEO: productivity/cost]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"After clarifying purpose and understanding person, you distill your point..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide reflection-slide" data-slide="9">
+      <h2 class="slide-title">Element 3 - State Your Point Early</h2>
+      <div class="reflection-content">
+        <p><strong>The Core Message:</strong></p>
+<ul>
+<li>Your point is the essential message stated within first 40-50 words</li>
+<li>Think of it as the arrow being shot toward your target reader</li>
+</ul>
+<p><strong>The 15-Second Test:</strong></p>
+<p>"Imagine running into your reader on the street. You have 15 seconds to explain your message before they walk away. What would you say? That's likely your point." (McCormack, 2024)</p>
+<p><strong>Why Early?</strong></p>
+<ul>
+<li>Readers want to know immediately: What is this about and why should I care?</li>
+<li>Clarity precedes action—documents don't generate outcomes until readers understand the message</li>
+</ul>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Point = distilled essence of your entire document</li>
+<li>Most powerful writing states the point immediately (BLUF principle)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>40-50 words forces brutal clarity—no room for fluff</li>
+<li>The 15-second test is brilliant: simulates elevator pitch urgency</li>
+<li>State point EARLY (first paragraph, ideally first 2-3 sentences)</li>
+<li>Your document will not generate any outcome until readers understand your message (quote this—powerful)</li>
+<li>Busy executives decide whether to keep reading based on first 50 words</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Bad example: Email that rambles for 3 paragraphs before getting to request</li>
+<li>Good example: "I recommend increasing our marketing budget by 20% ($50K) for Q4 to capture holiday season demand, projected to generate $300K additional revenue." (30 words, crystal clear)</li>
+<li>Vietnamese context: In meetings, Vietnamese professionals may prefer indirect communication, but written business documents demand directness</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Build suspense before revealing point" → Clarify: Business writing is NOT creative writing—no suspense, just clarity</li>
+<li>Students fear being too direct = seeming aggressive → Reframe: Directness = respect for reader's time</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Practice the 15-second test: Summarize your last major assignment in 15 seconds" [Pick 1-2 volunteers to try]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's see Purpose-Person-Point in action through case analysis..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="10">
+      <h2 class="slide-title">Vietnamese Context - Applying the Framework</h2>
+      <div class="slide-content">
+        <p><strong>Scenario:</strong> You're a project manager at VNG Corporation (Vietnam's tech leader). Your team developed an AI chatbot for customer service, but it needs additional $100K funding to launch. You're writing a proposal to the CFO.</p>
+<p><strong>Framework Application:</strong></p>
+<p><strong>Purpose:</strong> Persuade CFO to approve $100K additional funding</p>
+<p><strong>Person (CFO priorities):</strong></p>
+<ul>
+<li>Cost-benefit analysis (ROI focus)</li>
+<li>Risk mitigation</li>
+<li>Competitive positioning</li>
+<li>Answers "How does this impact bottom line?"</li>
+</ul>
+<p><strong>Point (First 50 words):</strong></p>
+<p>"I recommend investing $100K to launch our AI customer service chatbot by Q1 2026. This investment will reduce customer service costs by 30% annually ($500K savings), improve response time from 2 hours to 2 minutes, and position VNG as Vietnam's first major tech company offering AI-powered support."</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Transition to practical application using Vietnamese company</li>
+<li>VNG Corporation is recognizable to students (Zalo, VNG Cloud, gaming)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Notice how framework shaped the proposal approach</li>
+<li>Purpose = Persuade (not just inform about chatbot)</li>
+<li>Person analysis = CFO cares about money, ROI, competitive advantage—NOT technical details</li>
+<li>Point = 49 words, includes specific ask ($100K), clear benefit ($500K annual savings), timeline (Q1 2026), competitive angle</li>
+<li>This point hooks CFO immediately—clear why they should care</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Contrast with bad approach: "We've been working on AI chatbot and wanted to share progress..." (no clear ask, no CFO hook)</li>
+<li>Vietnamese context: VNG competes with Grab, FPT, other tech companies—competitive positioning matters</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What would change if audience were CTO instead of CFO?" [Answer: Focus on technical innovation, integration, scalability—less on cost]</li>
+<li>"What's the ROI timeframe here?" [Answer: $100K investment, $500K annual savings = breakeven in ~2.4 months]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"The framework works. Now let's apply it to executive summaries..."</li>
+</ul>
+<p>---</p>
+<p><strong>Part 2: Executive Summaries That Get Read</strong></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide big-number-slide" data-slide="11">
+      <div class="number-content">
+        <div class="big-number">5 minutes</div>
+        <div class="number-explanation"><p>Average time executives spend reading a one-page executive summary</p>
+<p>vs.</p>
+<p>1-2 hours to read full business plan or report</p>
+<p><strong>Reality Check:</strong></p>
+<ul>
+<li>Many business leaders only read summaries—they depend on summaries to give them highlights</li>
+<li>30 seconds to grab attention with opening</li>
+<li>Your full report might be excellent, but if summary fails, it doesn't get read</li>
+</ul></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Dramatic contrast: 5 minutes vs. 1-2 hours</li>
+<li>This slide should create urgency about executive summary quality</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Executives are time-constrained—they triage using summaries</li>
+<li>"Executives only read the summaries" is corporate reality (research confirms this)</li>
+<li>30-second attention span means opening sentence is critical</li>
+<li>Your excellent analysis on page 27 might never be seen if summary doesn't hook reader</li>
+<li>Summary isn't "nice to have"—it's THE document that determines whether full report gets read</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Story: CEO receives 15 reports weekly—only has time to read summaries, delegates full reading to staff</li>
+<li>Vietnamese context: In government ministries or large Vietnamese corporations (Vingroup, FPT), leaders juggle many priorities</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Summary is just shorter version" → Clarify: Summary is strategic distillation focused on decisions</li>
+<li>Students treat summaries as afterthought → Reframe: Summary should be crafted first or with most care</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"How many of you have written a summary after finishing a report, spending minimal time?" [Show of hands—expect many]</li>
+<li>Validate but challenge: "Today we learn to write summaries strategically"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"So what makes an executive summary effective? Let's break down the formula..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="12">
+      <h2 class="framework-title">The 4-Part Executive Summary Structure</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>1. Opening Hook (2-3 sentences) State the point and why it matters NOW</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>2. Key Findings/Insights (3-5 bullets) Most important discoveries or conclusions</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>3. Recommendation/Action (2-3 sentences) What should happen next and why</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>4. Impact/Benefit (1-2 sentences) What success looks like</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Length:</strong> Typically 10% of full document (1-2 pages max for most business reports)</p>
+<p><strong>Golden Rule:</strong> Executive summary must stand alone—reader should understand full story without reading report</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Introduce 4-part structure as formula students can apply repeatedly</li>
+<li>This structure works for business reports, proposals, white papers, policy briefs</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Opening Hook: Use Purpose-Person-Point framework—state point within first 50 words</li>
+<li>Key Findings: Bullets improve scannability—busy executives scan rather than read</li>
+<li>Recommendation/Action: Be specific ("Approve $50K budget increase" not "Consider options")</li>
+<li>Impact/Benefit: Paint picture of success—what happens if recommendation is followed?</li>
+<li>10% guideline: 40-page report = 4-page max summary; 10-page report = 1-page summary</li>
+<li>"Stand alone" test: Give summary to someone unfamiliar—can they understand the full story?</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Example: Government policy brief recommending education reform—summary must convince ministers in 2 pages</li>
+<li>Vietnamese context: ASEAN business proposals often require executive summaries for regional partners</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Summary = introduction" → Clarify: Introduction previews what's coming; summary provides complete story</li>
+<li>Students include too much detail → Reframe: Summary highlights only what matters for decision</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the stand-alone test?" [Answer: Reader unfamiliar with topic should understand full story from summary alone]</li>
+<li>"If your report is 30 pages, how long should summary be?" [Answer: ~3 pages max, ideally 1-2 pages]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's see this structure in action with before-and-after examples..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="13">
+      <h2 class="slide-title">Weak vs. Strong Executive Summary</h2>
+      <table><thead><tr><th>❌ Weak Executive Summary</th><th>✅ Strong Executive Summary</th></tr></thead><tbody><tr><td>"This report examines customer satisfaction trends over the past year. We collected data from multiple sources and analyzed various metrics. There are several interesting findings discussed in the full report."</td><td>"Customer satisfaction dropped 15% in Q3-Q4 2024, driven primarily by slow response times (average 8 hours vs. industry standard 2 hours). We recommend implementing AI chatbot support and hiring 3 additional service agents, requiring $150K investment to recover satisfaction and prevent projected $2M revenue loss."</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Side-by-side comparison makes differences vivid</li>
+<li>Weak example is unfortunately common in student/professional writing</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Weak summary: Describes what report does, not what it finds—this is useless to executives</li>
+<li>Weak summary: "Interesting findings" without stating them—forces reader to dig into report</li>
+<li>Strong summary: Leads with specific problem (15% drop), quantifies everything, clear action</li>
+<li>Strong summary: Uses Purpose-Person-Point—Purpose (persuade to invest), Person (decision-maker cares about revenue risk), Point (stated in 42 words)</li>
+<li>Strong summary: Creates urgency ($2M revenue loss if no action)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Imagine you're CEO reading these summaries—which gets your attention?</li>
+<li>Vietnamese context: FPT or Viettel executive reviewing IT infrastructure proposal—needs specifics fast</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Save findings for report body" → Clarify: Summary reveals conclusions; body provides supporting evidence</li>
+<li>Students fear giving away "the answer" → Reframe: Business readers want answer immediately</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What makes the weak summary weak?" [Take responses: vague, no numbers, no recommendation, no urgency]</li>
+<li>"What's the risk quantified in strong summary?" [Answer: $2M revenue loss]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's shift to how great leaders write at the sentence and word level..."</li>
+</ul>
+<p>---</p>
+<p><strong>Part 3: How Great Leaders Communicate in Writing</strong></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="14">
+      <h2 class="slide-title">Use Short Words for Complex Topics</h2>
+      
+      <div class="quote-content">
+        <blockquote class="large-quote">"If you care about being thought credible and intelligent, do not use complex language where simpler language will do."</blockquote>
+        <p class="quote-attribution">Daniel Kahneman, Nobel Prize-winning economist (as cited in Gallo, 2022)</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Introduce leadership communication section—these are practices of world's best communicators</li>
+<li>Kahneman quote is powerful because he's Nobel laureate—ultimate credibility</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Counter-intuitive insight: Complex language makes you seem LESS intelligent, not more</li>
+<li>Credibility comes from clarity, not vocabulary</li>
+<li>Great leaders write at 8th-9th grade reading level for sophisticated ideas</li>
+<li>Example: Jeff Bezos's shareholder letters evolved from 10th-grade to 8th/9th-grade level over time—deliberate choice</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Bad example: "We must optimize our organizational infrastructure to facilitate synergistic outcomes"</li>
+<li>Good example: "We need to restructure our teams to work better together"</li>
+<li>Vietnamese context: Students learning English may think complex vocabulary = better writing → Opposite is true</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Big words = sounding smart" → Clarify: Big words = sounding pretentious and unclear</li>
+<li>"Simple language = dumbing down" → Reframe: Simple language = respecting reader's time and cognitive load</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why would simpler language make you seem MORE credible?" [Take responses: easier to understand, shows confidence, demonstrates mastery of topic]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Beyond word choice, great leaders use sticky metaphors..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="15">
+      <h2 class="slide-title">Deploy Sticky Metaphors</h2>
+      <div class="slide-content">
+        <p><strong>The Power of Metaphor:</strong></p>
+<p>Metaphors translate abstract concepts into concrete imagery that sticks in memory.</p>
+<p><strong>Examples from Great Leaders:</strong></p>
+<p><strong>Warren Buffett - "Moats and Castles":</strong></p>
+<p>Competitive advantages = moats protecting business castles from competitor attacks</p>
+<p>(Became shorthand for analyzing business strategy)</p>
+<p><strong>Chris Hadfield (Astronaut) - Rocket Launch:</strong></p>
+<p>"Like a dragon roaring to life" / "Leaf in a hurricane"</p>
+<p>(Made incomprehensible G-forces relatable)</p>
+<p><strong>Application:</strong> When explaining complex concepts, find tangible comparisons your audience already understands.</p>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Metaphors are cognitive shortcuts—brain processes images faster than abstractions</li>
+<li>This technique separates memorable communication from forgettable</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Sticky metaphor = one that audience remembers and repeats</li>
+<li>Warren Buffett's "moats" metaphor: Everyone knows castles and moats = defensive protection → Business competitive advantage makes sense</li>
+<li>Chris Hadfield's rocket metaphors: G-forces are abstract → Dragon roaring, leaf in hurricane are visceral and imaginable</li>
+<li>Good metaphors use concepts audience already understands to explain new concepts</li>
+<li>Metaphors aid retention and make you quotable</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Business example: "Our data is scattered across 15 systems—it's like trying to cook a meal with ingredients in 15 different kitchens"</li>
+<li>Vietnamese context: Use local imagery—"Our workflow is like District 1 traffic at 5pm: congested and inefficient. We need traffic lights (process automation)."</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Metaphors are unprofessional" → Clarify: Best business communicators use metaphors extensively</li>
+<li>Students avoid metaphors in formal writing → Encourage creative clarity</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can someone create a metaphor for... unclear communication in teams?" [Take 1-2 responses—e.g., "playing telephone game," "GPS without signal"]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Another technique great leaders use: humanizing data..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="16">
+      <h2 class="slide-title">Humanize Data</h2>
+      <div class="slide-content">
+        <p><strong>The Problem:</strong> Raw statistics overwhelm audiences and reduce engagement.</p>
+<p><strong>The Solution:</strong> Contextualize numbers using relatable comparisons.</p>
+<p><strong>Example - Neil deGrasse Tyson:</strong></p>
+<p>NASA's Cassini mission cost: $3 billion</p>
+<p>↓</p>
+<p>Americans spend more annually on lip balm than NASA spent on Cassini</p>
+<p><strong>Why This Works:</strong></p>
+<ul>
+<li>Reduces cognitive strain (comparing to familiar reference)</li>
+<li>Maintains credibility (accurate comparison)</li>
+<li>Makes abstract numbers tangible (everyone knows lip balm cost)</li>
+</ul>
+<p><strong>Your Turn:</strong> When presenting data, ask: "What does this number mean in terms my audience already understands?"</p>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Data is essential but overwhelming—humanizing makes it stick</li>
+<li>Neil deGrasse Tyson is master of this technique</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>$3 billion is incomprehensibly large—brain can't process scale</li>
+<li>Lip balm comparison: Everyone buys lip balm → Suddenly $3 billion is relatable</li>
+<li>This technique works for any data: time, money, scale, frequency</li>
+<li>Key: Find comparison audience already understands and relate to</li>
+<li>Maintains credibility because comparison is accurate, not exaggeration</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Example: "Our website loads in 8 seconds—users will abandon it before finishing their first sip of coffee"</li>
+<li>Vietnamese context: "Traffic from District 7 to District 1 takes 45 minutes—same time it takes to read our 20-page report. Let's create a 2-page summary."</li>
+<li>Example: "We processed 2 million transactions last year—equivalent to every person in Hanoi making 2 purchases"</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Data speaks for itself" → Clarify: Data needs interpretation and context</li>
+<li>Students present data without making it meaningful → Coach: Always translate numbers</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"If you're presenting '50,000 customers,' how could you humanize this for Vietnamese audience?" [Take responses—e.g., "Enough to fill My Dinh Stadium," "Population of a small Vietnamese district"]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Final leadership principle: repetition of mission..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="17">
+      <h2 class="slide-title">Make Mission Your Mantra</h2>
+      
+      <div class="quote-content">
+        <blockquote class="large-quote">"**The Medtronic Example:**
+- Mission statement: "Alleviate pain, restore health, extend life"
+- 90,000 employees across 60+ years repeated this mission
+- Constant repetition built transformational culture
+
+**Harvard Research Finding:**
+Leaders typically under-communicate vision by a factor of 10 (Kotter, as cited in Gallo, 2022)
+
+**Insight from Indra Nooyi (Former PepsiCo CEO):**
+
+
+"If you cannot simplify a message and communicate it compellingly, believe me, you cannot get the masses to follow you."
+
+**Application:** In reports and documents, reinforce core message multiple times"</blockquote>
+        <p class="quote-attribution">don't assume one mention is enough.
+
+[LAYOUT: content-slide]</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Repetition feels redundant to writers but is essential for readers</li>
+<li>This principle applies to mission statements, key recommendations, core messages</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Medtronic mission: 7 words, repeated for 60 years across 90,000 people—embedding in culture</li>
+<li>Leaders under-communicate by 10x: You think you've said it enough, but audience needs to hear 10 times more</li>
+<li>Indra Nooyi's quote: Simplification + repetition + compelling delivery = followership</li>
+<li>In business reports: State recommendation in executive summary, restate in introduction, reinforce in conclusion, emphasize in recommendations section</li>
+<li>Don't fear redundancy—readers skim and need reinforcement</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Example: Apple's "Think Different" repeated endlessly in communications—brand identity</li>
+<li>Vietnamese context: VinFast's mission to put Vietnamese cars globally—repeated in every communication</li>
+<li>Student application: In presentation, state thesis 3-4 times across introduction, body, conclusion</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Repetition is boring" → Clarify: Strategically varied repetition reinforces message</li>
+<li>Students mention key point once and move on → Coach: Repeat core message at least 3 times</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why do leaders under-communicate by 10x?" [Take responses: Assume people heard it, forget people are distracted, overestimate attention]</li>
+<li>"How can you vary repetition to avoid sounding redundant?" [Answer: Rephrase, different contexts, different media]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's apply these leadership principles to document design..."</li>
+</ul>
+<p>---</p>
+<p><strong>Part 4: Document Design & Visual Hierarchy</strong></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="18">
+      <h2 class="slide-title">The First 3 Seconds</h2>
+      <div class="slide-content">
+        <p><strong>Eye-Tracking Research Finding:</strong></p>
+<p>Readers decide whether to engage with a document in 2-3 seconds based on visual first impression.</p>
+<p><strong>Visual Hierarchy Principle:</strong></p>
+<p>Arrange elements so readers instantly recognize their order of importance through size, weight, color, and spacing.</p>
+<p><strong>Impact on Readability:</strong></p>
+<p>Well-designed documents with proper fonts, spacing, and headings:</p>
+<ul>
+<li>✅ Enhance readability</li>
+<li>✅ Increase engagement</li>
+<li>✅ Improve comprehension</li>
+<li>✅ Make content less intimidating</li>
+</ul>
+<p><strong>Poor Design Consequences:</strong></p>
+<p>Readers bounce—they never give your content a chance.</p>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Visual design determines whether content gets read—design is not cosmetic</li>
+<li>2-3 second decision window is harsh reality</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Eye-tracking studies show predictable scan patterns (F-shape for long-form content)</li>
+<li>Visual hierarchy = using visual cues to show what's most important</li>
+<li>Size, weight, color, spacing all signal importance to reader's brain</li>
+<li>Good design reduces cognitive load—makes reading effortless</li>
+<li>Poor design creates friction—even excellent content gets ignored</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Show example: Dense wall of text vs. same content with headings, bullets, white space</li>
+<li>Vietnamese context: Government policy documents often suffer from poor design—difficult to extract key information</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Content is what matters, not design" → Clarify: Design determines whether content gets read</li>
+<li>Students treat design as afterthought → Reframe: Design and content are inseparable</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"When you receive a long email with no paragraphs or spacing, what's your reaction?" [Expect: "I don't read it," "I skim it," "I ignore it"]</li>
+<li>Validate and emphasize: That's why design matters</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's break down specific design techniques..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="19">
+      <h2 class="slide-title">Design Techniques That Improve Readability</h2>
+      <div class="slide-content">
+        <p><strong>1. Headings & Subheadings:</strong></p>
+<ul>
+<li>Divide content into scannable sections</li>
+<li>Make document less intimidating</li>
+<li>Help readers find what they need quickly</li>
+</ul>
+<p><strong>2. White Space:</strong></p>
+<ul>
+<li>Margins and spacing between elements</li>
+<li>Prevents overwhelming "wall of text"</li>
+<li>Guides eye through document</li>
+</ul>
+<p><strong>3. Font Choices:</strong></p>
+<ul>
+<li>Sans serif fonts (Arial, Calibri) more readable on screens for most readers</li>
+<li>Serif fonts (Times New Roman) can reduce readability for those with visual impairments</li>
+<li>Optimal line length: 50-75 characters per line</li>
+</ul>
+<p><strong>4. Bullets & Lists:</strong></p>
+<ul>
+<li>Improve scannability dramatically</li>
+<li>Highlight key points</li>
+<li>Break up dense paragraphs</li>
+</ul>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>These are actionable techniques students can apply immediately</li>
+<li>Every technique serves readability—not decoration</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Headings: Readers scan headings first to decide what to read—make them descriptive and action-oriented</li>
+<li>White space: Not wasted space—it's breathing room that improves comprehension</li>
+<li>Font research: Recent studies favor sans serif for screen reading (most business documents read on screens)</li>
+<li>50-75 characters per line: Too wide = eye strain; too narrow = choppy reading</li>
+<li>Bullets: Brain processes lists faster than paragraphs—use for parallel items</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Compare: Email with single paragraph (300 words) vs. same email with 3 bullets highlighting key points</li>
+<li>Vietnamese context: Many Vietnamese business documents use Times New Roman (standard) but sans serif may improve readability</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Bullets are informal" → Clarify: Bullets are professional and improve comprehension</li>
+<li>"More text = more professional" → Reframe: Concise, well-spaced text = more professional</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the optimal line length range?" [Answer: 50-75 characters]</li>
+<li>"Why is white space important?" [Answer: Reduces overwhelm, guides eye, improves comprehension]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Another critical skill: translating technical information for non-technical audiences..."</li>
+</ul>
+<p>---</p>
+<p><strong>Part 5: Technical Writing for Non-Technical Audiences</strong></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="20">
+      <h2 class="slide-title">Why Technical Translation Matters</h2>
+      <div class="slide-content">
+        <p><strong>The Reality:</strong></p>
+<ul>
+<li>Most business decisions involve technical information but are made by non-technical leaders</li>
+<li>Engineers, data analysts, IT professionals must communicate with executives, marketers, clients</li>
+<li>Technical writers held 56,400 jobs in 2024 with median wage $91,670 (U.S. Bureau of Labor Statistics, 2024)</li>
+</ul>
+<p><strong>The Goal:</strong></p>
+<p>Facilitate knowledge transfer and informed decision-making by translating complexity into clarity.</p>
+<p><strong>The Challenge:</strong></p>
+<p>Non-technical readers don't have your depth of knowledge—you must scale back technical detail without losing accuracy.</p>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Technical translation is critical cross-functional skill</li>
+<li>Most students will work in environments requiring this skill</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Disconnect: Technical experts know too much; decision-makers know too little</li>
+<li>Translation bridges this gap—enables informed decisions</li>
+<li>Technical writing is profession ($91,670 median wage shows value)</li>
+<li>Goal: Knowledge transfer without overwhelming or oversimplifying</li>
+<li>Challenge: Finding right level of detail for audience</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Example: Data scientist explaining machine learning model to marketing VP—focus on business outcomes (prediction accuracy, customer insights) not algorithm mechanics</li>
+<li>Vietnamese context: IT team at Viettel proposing 5G infrastructure to government officials—translate technical specs to coverage, speed, economic impact</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"If I simplify, I lose credibility" → Clarify: Clarity builds credibility; jargon destroys it</li>
+<li>Students fear looking less expert if they simplify → Reframe: True expertise is explaining complexity simply</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why would non-technical decision-makers need technical information?" [Answer: Make informed choices about investments, strategy, priorities]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's learn specific techniques for technical translation..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="21">
+      <h2 class="slide-title">How to Translate Technical Information</h2>
+      <div class="slide-content">
+        <p><strong>Technique 1: Know Your Audience's Baseline</strong></p>
+<ul>
+<li>What does this reader already understand?</li>
+<li>What terms require definition vs. what's common knowledge?</li>
+</ul>
+<p><strong>Technique 2: Use Analogies and Metaphors</strong></p>
+<ul>
+<li>Compare to concepts audience already knows</li>
+<li>"Blockchain is like a shared Google Doc that everyone can view but no one can edit retroactively"</li>
+</ul>
+<p><strong>Technique 3: Focus on Outcomes, Not Mechanisms</strong></p>
+<ul>
+<li>Non-technical readers care about WHAT it does and WHY it matters</li>
+<li>Technical details support but don't lead</li>
+</ul>
+<p><strong>Technique 4: Define Unavoidable Jargon Immediately</strong></p>
+<ul>
+<li>If technical term is necessary, define it in same sentence</li>
+<li>"We'll use API (Application Programming Interface)—essentially a way for two software systems to talk to each other"</li>
+</ul>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>These techniques work across all technical domains—IT, engineering, data science, finance</li>
+<li>Master these and you become valuable cross-functional communicator</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Baseline knowledge: Avoid over-explaining what audience knows or under-explaining what they don't</li>
+<li>Analogies: Same principle as leadership metaphors—translate abstract to concrete</li>
+<li>Outcomes vs. mechanisms: Executives care about business impact, not technical process</li>
+<li>Jargon definition: If you must use technical term, define it immediately in parentheses or clause</li>
+<li>Test: Give draft to non-technical friend—can they understand it?</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Bad example: "Our RNN architecture uses LSTM cells with dropout regularization to mitigate overfitting"</li>
+<li>Good example: "Our AI model learns patterns from customer data to predict purchasing behavior with 87% accuracy, helping us send personalized recommendations"</li>
+<li>Vietnamese context: Fintech startup explaining cryptocurrency to traditional Vietnamese bankers—focus on use cases (fast transfers, low fees) not cryptographic algorithms</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Technical = credible" → Clarify: Comprehensible = credible</li>
+<li>Students think dumbing down = removing all technical terms → Correct approach: Define necessary terms, eliminate unnecessary ones</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the difference between focusing on outcomes vs. mechanisms?" [Take response, then example: Outcome = "This software saves 5 hours/week"; Mechanism = "It uses Python scripts with automated data parsing"]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's practice with a technical translation case study..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide comparison-table-slide" data-slide="22">
+      <h2 class="slide-title">Before & After - Technical Writing for Executives</h2>
+      <table><thead><tr><th>❌ Technical Version (For Engineers)</th><th>✅ Translated Version (For CEO)</th></tr></thead><tbody><tr><td>"Our new microservices architecture utilizes Kubernetes orchestration with Docker containerization, implementing REST APIs for inter-service communication and Redis caching to optimize query latency."</td><td>"Our new system design improves website speed by 40% and reduces server costs by $200K annually. It also makes our platform more reliable—if one component fails, others continue working, preventing site-wide outages that previously cost us $50K per hour in lost sales."</td></tr><tr><td><strong>Audience:</strong> Technical team</td><td><strong>Audience:</strong> CEO (cares about cost, speed, reliability, revenue impact)</td></tr><tr><td><strong>Language:</strong> Jargon-heavy</td><td><strong>Language:</strong> Outcome-focused, business terms</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Side-by-side comparison shows dramatic difference</li>
+<li>Both versions are accurate, but translated version gets CEO approval</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Technical version: Accurate but incomprehensible to CEO—lists technologies without context</li>
+<li>Translated version: Focuses on business outcomes (40% speed improvement, $200K savings, revenue protection)</li>
+<li>Translated version: Quantifies everything (CEO cares about numbers)</li>
+<li>Translated version: Still technically accurate—doesn't lie or oversimplify, just prioritizes what matters to audience</li>
+<li>Notice: Zero technical jargon in translated version—could add parenthetical definitions if needed, but not necessary here</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Imagine you're CEO reading technical version—your reaction? Confusion, frustration, need to ask IT to translate</li>
+<li>Imagine reading translated version—clear decision: approve (saves money, increases speed, reduces risk)</li>
+<li>Vietnamese context: VNG presenting to investors—investors care about market share, growth, profitability, not coding languages</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Simplified version loses important information" → Clarify: Important TO WHOM? Information relevant to audience is included</li>
+<li>Students fear being accused of oversimplifying → Reframe: You're optimizing for audience</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What business outcomes are highlighted in translated version?" [Answer: 40% speed improvement, $200K cost savings, outage prevention saving $50K/hour]</li>
+<li>"Could you add technical details in appendix?" [Answer: Yes! Executive summary for CEO, technical appendix for CTO]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's synthesize everything we've learned today..."</li>
+</ul>
+<p>---</p>
+<p><strong>Synthesis & Application</strong></p>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="23">
+      <h2 class="slide-title">What You've Learned Today</h2>
+      <div class="slide-content">
+        <p><strong>1. Purpose-Person-Point Framework (McCormack, 2024):</strong></p>
+<p>Strategic writing starts with planning—clarify purpose, understand audience, state point within first 50 words.</p>
+<p><strong>2. Executive Summaries Are Make-or-Break:</strong></p>
+<p>Executives spend 5 minutes on summaries vs. 1-2 hours on full reports. Your summary must stand alone and drive action.</p>
+<p><strong>3. How Great Leaders Write (Gallo, 2022):</strong></p>
+<ul>
+<li>Use short words for complex topics (credibility through clarity)</li>
+<li>Deploy sticky metaphors (abstract → concrete)</li>
+<li>Humanize data (relatable comparisons)</li>
+<li>Repeat core messages (under-communicate by 10x)</li>
+</ul>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Consolidate key frameworks and principles from today</li>
+<li>These three areas apply across all business writing contexts</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Framework 1 (Purpose-Person-Point): Most foundational—transforms how students approach writing</li>
+<li>Takeaway 2 (Executive summaries): Immediate application to reports, proposals, presentations</li>
+<li>Takeaway 3 (Leadership communication): Sentence-level and word-level techniques that elevate writing</li>
+<li>All three work together: Use framework to plan, apply leadership techniques to execute, create summaries that get read</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which takeaway feels most actionable for your Group Presentation?" [Take 1-2 responses]</li>
+<li>"What's one thing you'll change about how you write business documents?" [Take 1-2 responses]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now let's preview what you'll practice in tutorial..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="24">
+      <h2 class="slide-title">What You'll Practice This Week</h2>
+      <div class="slide-content">
+        <p><strong>Tutorial Activity: Executive Summary Writing Workshop</strong></p>
+<p>You'll apply Purpose-Person-Point framework to write executive summaries for realistic business scenarios.</p>
+<p><strong>What to Expect:</strong></p>
+<ol>
+<li>Analyze business case and identify audience</li>
+<li>Draft executive summary using 4-part structure</li>
+<li>Peer review using visual hierarchy and clarity criteria</li>
+<li>Revise based on feedback</li>
+</ol>
+<p><strong>Quiz Preparation (15-20 min):</strong></p>
+<ul>
+<li>6-8 practice questions on Purpose-Person-Point, executive summary components, leadership communication principles, document design</li>
+</ul>
+<p><strong>Preparation:</strong></p>
+<ul>
+<li>Review today's slides and readings</li>
+<li>Think about upcoming Group Presentation—how will you apply these principles?</li>
+</ul>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Tutorial provides hands-on practice applying today's frameworks</li>
+<li>This is skill-building session—expect to write and revise</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Activity: Students write executive summaries for realistic scenarios (e.g., proposing budget increase, recommending software purchase)</li>
+<li>Peer review: Students practice evaluating clarity, structure, visual hierarchy</li>
+<li>Quiz prep: Covers Week 8 content—attend for practice before graded Quiz 3 (Week 10)</li>
+<li>Group Presentation connection: Start thinking how to apply executive summary, document design, leadership communication to presentation handouts and slides</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's connect today's learning to your upcoming Group Presentation..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="25">
+      <h2 class="slide-title">Applying This Week to Your Group Presentation</h2>
+      <div class="slide-content">
+        <p><strong>Week 11 Group Presentation (30% + 15%):</strong></p>
+<p><strong>How Today's Content Applies:</strong></p>
+<p><strong>1. Presentation Handout (Executive Summary):</strong></p>
+<ul>
+<li>Create 1-page handout using 4-part executive summary structure</li>
+<li>Apply Purpose-Person-Point framework (audience = class + instructor)</li>
+<li>Use visual hierarchy principles for scannable layout</li>
+</ul>
+<p><strong>2. Slide Design:</strong></p>
+<ul>
+<li>Apply document design principles (headings, white space, font choices)</li>
+<li>Avoid "death by PowerPoint"—less text, more visual hierarchy</li>
+</ul>
+<p><strong>3. Translating Research:</strong></p>
+<ul>
+<li>Use technical translation techniques if presenting research</li>
+<li>Humanize data (relatable comparisons)</li>
+<li>Deploy sticky metaphors for complex concepts</li>
+</ul>
+<p><strong>Start Now:</strong> 3 weeks until presentations—apply today's frameworks to planning.</p>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Explicitly bridge today's content to upcoming graded work</li>
+<li>Students should leave lecture knowing exactly how to apply learning</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Handout = executive summary of presentation—1 page max, standalone document</li>
+<li>Handout structure: Opening hook (presentation topic + why it matters), key findings, recommendations/insights, takeaway</li>
+<li>Slide design: Principles from today (headings, white space, visual hierarchy) prevent cluttered slides</li>
+<li>Research translation: If presenting academic research or data, use humanization and metaphor techniques</li>
+<li>Timeline: 3 weeks seems far but goes quickly—start applying frameworks during planning phase</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Good handout example: 1-page summary with clear headings, bullets, white space—audience can follow along and reference later</li>
+<li>Bad handout example: Dense paragraphs, tiny font, no structure—gets ignored</li>
+<li>Vietnamese context: Professional presentations in Vietnamese companies often include handouts—this is standard business practice</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the maximum length for presentation handout?" [Answer: 1 page]</li>
+<li>"How can you apply Purpose-Person-Point to your presentation?" [Take 1-2 responses: Purpose = inform/persuade, Person = class + instructor priorities, Point = key message stated early]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's wrap up with final reflections and next steps..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="26">
+      <h2 class="slide-title">Reflect on Your Business Writing</h2>
+      <div class="slide-content">
+        <p><strong>Take 2 minutes to consider:</strong></p>
+<ol>
+<li><strong>Before today, what was your approach to writing business documents?</strong> (Did you plan or jump straight to drafting?)</li>
+<li><strong>Which leadership communication principle resonates most with you?</strong> (Short words, metaphors, humanizing data, or repetition?)</li>
+<li><strong>What's one specific change you'll make to your writing after today's lesson?</strong></li>
+</ol>
+<p><strong>Journal your responses—these insights will help you grow as a communicator.</strong></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Pause for self-reflection—gives students time to internalize learning</li>
+<li>Reflection deepens retention and commitment to change</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Question 1: Most students probably jumped straight to drafting—validate this, then emphasize planning first (Purpose-Person-Point)</li>
+<li>Question 2: Different principles resonate with different people—all are valuable</li>
+<li>Question 3: Specific commitment increases likelihood of behavior change</li>
+<li>Journaling: Students should write responses, not just think—writing commits</li>
+</ul>
+<p><strong>Facilitation:</strong></p>
+<ul>
+<li>Give genuine 2 minutes of silence for reflection</li>
+<li>Optional: Ask 1-2 volunteers to share responses (creates accountability)</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"As you reflect, think about how these principles apply beyond this course to your entire professional career..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="27">
+      <h2 class="slide-title">Your Action Plan</h2>
+      <div class="slide-content">
+        <p><strong>Before Next Week:</strong></p>
+<p><strong>1. Complete Required Readings:</strong></p>
+<ul>
+<li>McCormack (2024): Purpose-Person-Point framework</li>
+<li>Gallo (2022): How great leaders communicate</li>
+</ul>
+<p><strong>2. Attend Tutorial:</strong></p>
+<ul>
+<li>Practice executive summary writing</li>
+<li>Peer review using today's frameworks</li>
+<li>Quiz preparation (6-8 questions)</li>
+</ul>
+<p><strong>3. Apply to Group Presentation:</strong></p>
+<ul>
+<li>Use Purpose-Person-Point to plan presentation structure</li>
+<li>Begin drafting 1-page handout (executive summary format)</li>
+<li>Consider document design principles for slides</li>
+</ul>
+<p><strong>4. Prepare for Quiz 3 (Week 10):</strong></p>
+<ul>
+<li>Review Weeks 7-9 content</li>
+<li>Quiz covers data storytelling, business reports, presentations</li>
+</ul>
+<p>[LAYOUT: content-slide]</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Provide clear action items so students know exactly what to do next</li>
+<li>Connect to immediate (tutorial) and upcoming (presentation, quiz) priorities</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Readings: Both are required and will be tested on Quiz 3—read for understanding, not just completion</li>
+<li>Tutorial: Hands-on practice solidifies today's learning—attend to practice before graded work</li>
+<li>Group Presentation: 3 weeks away but planning should start now using today's frameworks</li>
+<li>Quiz 3 preparation: Covers 3 weeks of content (Weeks 7-9)—start reviewing early</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we close, let's review all sources cited today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="28">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p><em>Gallo, C. (2022, November 22). How great leaders communicate. Harvard Business Review. https://hbr.org/2022/11/how-great-leaders-communicate</em></p>
+<p><em>McCormack, S. (2024, March 11). How to take your business writing from "average" to "great." Harvard Business Review. https://hbr.org/2024/03/how-to-take-your-business-writing-from-average-to-great</em></p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>All sources cited today are listed here in APA 7th format</li>
+<li>These are openly accessible—students can read full articles</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>McCormack and Gallo are required readings—cover core frameworks</li>
+<li>Other sources provide supporting statistics and evidence</li>
+<li>All sources include URLs for verification and deeper exploration</li>
+<li>Encourage students to read beyond assigned articles if interested</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Thank you for your engagement today. See you in tutorial for hands-on practice!"</li>
+</ul>
+<p>---</p>
+<p><strong>END OF LECTURE</strong></p>
+<p><strong>Total Slides:</strong> 28 content slides</p>
+<p><strong>Estimated Time:</strong> 75 minutes</p>
+<p><strong>Core Frameworks:</strong> Purpose-Person-Point, 4-Part Executive Summary, Leadership Communication Principles (4)</p>
+<p><strong>Assessment Connections:</strong> Group Presentation (handout, slides, translation), Quiz 3 (Week 10)</p>
+<p><strong>Vietnamese Context Examples:</strong> VNG Corporation, VinFast, Vietnamese government policy briefs, ASEAN business context</p>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>

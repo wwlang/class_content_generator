@@ -1,0 +1,75 @@
+// Week 1 Quiz: Tutorial: Strategic Communication Foundations
+// Generated from tutorial quiz practice questions
+// Questions: 10
+
+$CATEGORY: Week 1
+
+::Communication Models::According to the Shannon-Weaver model, what is "noise"?{
+~The volume level of spoken communication #Too narrow - noise isn't just volume, it includes semantic and psychological interference
+=Anything that interferes with the message being received as intended #Shannon-Weaver defines "noise" as anything that interferes with message transmission - physical (loud environment), semantic (confusing language), or psychological (preconceptions). This is explicitly covered in Slide 7 of the lecture where noise is defined as interference with accurate message reception.
+~Feedback from the receiver to the sender #Feedback is a separate element in the model, not noise
+~The physical environment where communication occurs #Environment can cause noise but isn't the definition of noise itself
+}
+
+::Communication Models::What is the key difference between the Shannon-Weaver and Transactional models of communication?{
+~Shannon-Weaver is for written communication; Transactional is for verbal #Both models apply to written and verbal communication
+=Shannon-Weaver is one-way; Transactional shows simultaneous two-way exchange #The key distinction covered in Slides 7-8 is that Shannon-Weaver treats communication as linear/one-way (sender → message → receiver), while Transactional shows both parties as simultaneous senders and receivers, continuously exchanging feedback. This is fundamental to understanding why most business communication is transactional.
+~Shannon-Weaver is modern; Transactional is outdated #Reversed - Shannon-Weaver (1948) is older; Transactional is the modern improvement
+~Shannon-Weaver includes feedback; Transactional does not #Opposite - Shannon-Weaver originally didn't emphasize feedback; Transactional is built on continuous feedback
+}
+
+::Strategic Message Design::In the know-feel-do framework, what does "FEEL" refer to?{
+~The sender's emotional state when writing the message #FEEL is about audience emotion, not sender emotion
+=The emotional reaction the audience should have after receiving the message #Slide 11 explicitly defines FEEL as "What emotion or attitude should your audience have after receiving your message?" This is the strategic emotional goal you're trying to achieve (reassured, motivated, excited, etc.).
+~The physical sensation of reading the message #Not about physical sensation - about emotional response
+~The feedback the audience provides #Feedback is separate from know-feel-do planning
+}
+
+::Strategic Message Design::Why is the "DO" component of know-feel-do considered essential?{
+=It provides specific action for the audience to take #Slide 12 emphasizes that DO provides the concrete action the audience should take - making the message actionable. Without DO, audiences may understand (KNOW) and feel appropriately (FEEL) but not know what to do next. This is the "so what?" that drives business results.
+~It makes the message longer and more detailed #DO doesn't make messages longer - it makes them actionable and focused
+~It shows the sender's expertise #DO focuses on audience action, not demonstrating sender expertise
+~It replaces the need for KNOW and FEEL #All three components (KNOW, FEEL, DO) are necessary - DO doesn't replace the others
+}
+
+::Audience Analysis::According to stakeholder mapping, who is the "primary audience"?{
+~The largest group of people who will read the message #Size doesn't determine primary status - a single CEO can be primary audience even if 100 people cc'd
+~The first person who receives the message #First recipient might be a gatekeeper, not the decision-maker
+=The decision-maker who will act on the message #Slide 16 defines primary audience as "the decision-maker who will act on your message" - the person with power to approve, implement, or decide based on your communication. This is who you're ultimately trying to persuade or inform for action.
+~The person who requested the communication #The requester might not be the person who acts on the message
+}
+
+::Audience Analysis::In the lecture example, when adapting a system upgrade message for different audiences, why did the message to the CEO differ from the message to developers?{
+~Because the CEO doesn't understand technology #Condescending assumption - CEOs understand technology but care about different aspects (business impact vs. technical implementation)
+=Because different audiences care about different benefits aligned with their priorities #Slide 18 illustrates audience adaptation principle\: technical team cares about implementation details (how to migrate data), product manager cares about user benefits (faster login), CEO cares about business impact (no budget impact, improved customer experience). Same content, different emphasis based on what each audience values.
+~Because CEOs prefer shorter messages #Length isn't the main factor - focus and priorities differ
+~Because developers need more technical detail #Partially true but misses strategic point - it's not just detail level, it's what benefits you emphasize
+}
+
+::Credibility & Trust::According to Hallenbeck and Childs (2022), what are the three components of credibility?{
+=Competence, Care, Connection #Slide 21 explicitly presents Hallenbeck & Childs (2022) three components of credibility\: **Competence** (do you know what you're talking about?), **Care** (do you have audience's best interests at heart?), **Connection** (do you understand their perspective?). This framework is from required reading and is testable.
+~Clarity, Concision, Credibility #These are writing principles (8 S's mentioned earlier), not credibility components
+~Knowledge, Feeling, Action #This is the know-feel-do framework, not credibility components
+~Honesty, Transparency, Accountability #These are crisis communication principles, not general credibility model
+}
+
+::Credibility & Trust::According to the Edelman Trust Barometer (2024) cited in the lecture, what percentage of employees say they need to trust business leaders to do their best work?{
+~55%
+~67%
+~73%
+=87% #Slide 20 (big number slide) states\: "87% of employees say they need to trust business leaders to do their best work" citing Edelman Trust Barometer 2024. This specific statistic emphasizes the importance of trust in workplace communication.
+}
+
+::Applying Frameworks::A manager needs to announce a policy change requiring all employees to return to office 3 days per week. Using the know-feel-do framework, what would be an appropriate "FEEL" goal?{
+~Employees should feel angry about losing flexibility #Unproductive - anger doesn't lead to compliance or smooth transition
+~Employees should feel uncertain about the future #Uncertainty undermines trust and increases resistance
+=Employees should feel reassured about the rationale and supported in the transition #Strategic FEEL goals should support message purpose and organizational goals. For a potentially unpopular policy change, the goal is not to make employees happy about losing flexibility, but to have them feel reassured about the reasoning and supported during transition. This aligns with credibility (care) and reduces resistance to change.
+~Employees should feel confused about the policy details #Confusion suggests poor communication, not strategic outcome
+}
+
+::Cultural Considerations::Why did the lecture emphasize Vietnamese business communication context as "high-context"?{
+=Vietnamese communication relies heavily on implicit messages and relationship context #Slide 18 (Vietnamese context example) explains that Vietnamese business culture is "high-context" - meaning communication relies heavily on implicit messages, relationships, and shared cultural understanding rather than explicit, direct statements. This contrasts with "low-context" Western business culture that values direct, explicit communication.
+~Vietnamese businesses communicate only in formal settings #High-context doesn't mean formal only - it means relying on implicit understanding and context
+~Vietnamese workplaces avoid written communication #Vietnamese businesses use extensive written communication
+~Vietnamese professionals prefer long, detailed messages #Opposite - high-context cultures often prefer indirect, concise communication; low-context cultures prefer explicit detail
+}

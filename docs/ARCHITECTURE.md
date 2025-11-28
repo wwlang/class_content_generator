@@ -64,16 +64,35 @@ The converter follows a **modular, handler-based architecture** with clear separ
 ```
 html_to_pptx/
 ├── __init__.py              # Package initialization
-├── config.py                # Configuration constants (218 lines)
+├── config.py                # Configuration constants (234 lines)
 ├── css_parser.py            # CSS parsing logic (493 lines)
-└── handlers/                # Slide type handlers
-    ├── __init__.py          # Handler registry factory (46 lines)
-    ├── base.py              # Abstract base classes (152 lines)
-    ├── title.py             # Title slide handler (113 lines)
-    ├── section.py           # Section break handler (104 lines)
-    ├── big_number.py        # Big number handler (108 lines)
-    └── content.py           # Content slide handler (80 lines)
+├── handlers/                # Slide type handlers (12 total)
+│   ├── __init__.py          # Handler registry factory (69 lines)
+│   ├── base.py              # Abstract base classes (152 lines)
+│   ├── title.py             # Title slide handler (113 lines)
+│   ├── section.py           # Section break handler (67 lines)
+│   ├── big_number.py        # Big number handler (108 lines)
+│   ├── content.py           # Content slide handler (80 lines)
+│   ├── quote_handler.py     # Quote slide handler (95 lines)
+│   ├── framework_handler.py # Framework slide handler (149 lines)
+│   ├── table_handler.py     # Table handlers (397 lines, 2 handlers)
+│   ├── references_handler.py    # References slide handler (154 lines) ⭐ NEW
+│   ├── objectives_handler.py    # Objectives slide handler (158 lines) ⭐ NEW
+│   ├── checklist_handler.py     # Checklist slide handler (188 lines) ⭐ NEW
+│   └── reflection_handler.py    # Reflection slide handler (179 lines) ⭐ NEW
+├── renderers/               # Rendering utilities
+│   ├── __init__.py
+│   ├── base_renderer.py     # Base rendering operations (180 lines)
+│   ├── text_renderer.py     # Text rendering (295 lines)
+│   └── shape_renderer.py    # Shape rendering (484 lines)
+└── utils/                   # Utility modules
+    ├── __init__.py
+    ├── font_helpers.py      # Font styling utilities (241 lines) ⭐ ENHANCED
+    ├── xml_helpers.py       # XML manipulation utilities (147 lines)
+    └── layout_helpers.py    # Layout calculation utilities (260 lines)
 ```
+
+**Legend:** ⭐ = Modified/added in consolidation phases 2-5
 
 ### File Size Limits (STRICT)
 
@@ -113,13 +132,21 @@ The handler system uses **Strategy Pattern** with **Priority-based Dispatch**:
 ┌─────────────────────────────────────────────────────────┐
 │                   HandlerRegistry                       │
 │                                                         │
-│  Handlers (sorted by priority):                        │
-│  ┌─────────────────────────────────────────────┐       │
-│  │ TitleSlideHandler        (priority: 10)     │       │
-│  │ SectionBreakHandler      (priority: 15)     │       │
-│  │ BigNumberSlideHandler    (priority: 20)     │       │
-│  │ ContentSlideHandler      (priority: 100)    │       │
-│  └─────────────────────────────────────────────┘       │
+│  Handlers (sorted by priority - 12 total):             │
+│  ┌──────────────────────────────────────────────┐      │
+│  │ TitleSlideHandler        (priority: 10)      │      │
+│  │ QuoteSlideHandler        (priority: 20)      │      │
+│  │ ReferencesSlideHandler   (priority: 25) ⭐   │      │
+│  │ FrameworkSlideHandler    (priority: 30)      │      │
+│  │ SectionBreakHandler      (priority: 35)      │      │
+│  │ ObjectivesSlideHandler   (priority: 35) ⭐   │      │
+│  │ ChecklistSlideHandler    (priority: 35) ⭐   │      │
+│  │ ReflectionSlideHandler   (priority: 35) ⭐   │      │
+│  │ VocabTableSlideHandler   (priority: 40)      │      │
+│  │ ComparisonTableSlideHandler (priority: 40)   │      │
+│  │ BigNumberSlideHandler    (priority: 50)      │      │
+│  │ ContentSlideHandler      (priority: 100)     │      │
+│  └──────────────────────────────────────────────┘      │
 │                                                         │
 │  get_handler(html_slide):                              │
 │    for handler in handlers:                            │
@@ -128,6 +155,8 @@ The handler system uses **Strategy Pattern** with **Priority-based Dispatch**:
 │    return None                                         │
 └─────────────────────────────────────────────────────────┘
 ```
+
+**Legend:** ⭐ = Added in consolidation phase 4
 
 ### Abstract Base Class (base.py)
 
@@ -612,6 +641,172 @@ y_position += 0.3  # Magic number
 # After:
 y_position += SpacingConfig.ELEMENT_GAP_MEDIUM
 ```
+
+---
+
+## Utility Modules
+
+The converter includes several utility modules that provide reusable functions for common operations. These utilities eliminate code duplication and enforce consistent patterns.
+
+### FontStyler (utils/font_helpers.py) ⭐ ENHANCED
+
+**Purpose:** Centralized font styling utilities to eliminate repetitive font property assignments
+
+**Added in Consolidation Phase 2:** 5 new methods (+86 lines)
+
+**Key Methods:**
+
+```python
+class FontStyler:
+    """Utilities for applying font styles, sizes, and colors to text runs."""
+
+    @staticmethod
+    def apply_footer_styling(run: _Run, is_dark_bg: bool = False, is_slide_number: bool = False) -> None:
+        """Apply footer text styling (small, bottom of slide)."""
+        # Handles: font name, size, color (slide number = orange, course name = gray/cream)
+
+    @staticmethod
+    def apply_muted_text_styling(run: _Run, font_size: Pt = Pt(16), bold: bool = False) -> None:
+        """Apply muted gray text styling (secondary text)."""
+        # Handles: font name, size, bold, muted gray color
+
+    @staticmethod
+    def apply_standard_body_styling(run: _Run, font_size: Pt = Pt(16), is_dark_bg: bool = False, bold: bool = False) -> None:
+        """Apply standard body text styling."""
+        # Handles: font name, size, bold, color (bold = orange, regular = dark/cream based on bg)
+
+    @staticmethod
+    def apply_heading_styling(run: _Run, font_size: Pt = FontConfig.HEADING_MEDIUM, is_dark_bg: bool = False) -> None:
+        """Apply heading text styling (header font, larger size)."""
+        # Handles: header font, size, bold, color based on background
+
+    @staticmethod
+    def apply_body_font_styling(runs: List[_Run], font_name: str = FontConfig.BODY_FONT, font_size: Pt = Pt(16), is_dark_bg: bool = False) -> None:
+        """Apply consistent body font styling to all runs."""
+        # Handles: font name, size, color (bold text = orange, regular = based on bg)
+```
+
+**Impact:**
+- Eliminated ~24 lines of duplicate font styling code
+- Reduced 5-8 line styling blocks to 1-2 line helper calls
+- Improved maintainability (change styling in one place)
+
+**Usage Example:**
+```python
+# Before (5-8 lines):
+run = p.add_run()
+run.text = course_name
+run.font.name = FontConfig.BODY_FONT
+run.font.size = FontConfig.FOOTER_SIZE
+run.font.color.rgb = ColorConfig.CREAM if is_dark_bg else ColorConfig.DARK_GRAY
+
+# After (2 lines):
+run = p.add_run()
+run.text = course_name
+FontStyler.apply_footer_styling(run, is_dark_bg=is_dark_bg, is_slide_number=False)
+```
+
+---
+
+### XMLHelper (utils/xml_helpers.py)
+
+**Purpose:** Simplify complex XML manipulation for PowerPoint paragraph properties
+
+**Key Methods:**
+
+```python
+class XMLHelper:
+    """Utilities for PowerPoint XML manipulation (bullets, numbering, indentation)."""
+
+    @staticmethod
+    def add_bullet_with_indent(paragraph, marker: str = '•', font_name: str = 'Plus Jakarta Sans', left_margin_inches: float = 0.38, hanging_indent_inches: float = -0.25) -> None:
+        """Add bullet with proper indentation (convenience method)."""
+        # Consolidates: pPr setup, margin setting, bullet char XML, bullet font XML
+
+    @staticmethod
+    def add_numbering_with_indent(paragraph, style: str = 'arabicPeriod', left_margin_inches: float = 0.38, hanging_indent_inches: float = -0.25) -> None:
+        """Add numbering with proper indentation (convenience method)."""
+        # Consolidates: pPr setup, margin setting, autonumbering XML
+
+    @staticmethod
+    def set_indentation(paragraph, left_margin_emus: int, hanging_indent_emus: int) -> None:
+        """Set paragraph indentation using EMUs."""
+        # Direct XML element manipulation
+```
+
+**Impact:**
+- Eliminated ~114 lines of duplicate XML manipulation code
+- Reduced 12-27 line XML blocks to 1-10 line helper calls
+- Improved readability (XML complexity hidden)
+
+**Usage Example:**
+```python
+# Before (12 lines):
+pPr = p._element.get_or_add_pPr()
+pPr.set('marL', '342900')  # 0.38 inches in EMU
+pPr.set('indent', '-228600')  # -0.25 inches in EMU
+buAutoNum_xml = f'<a:buAutoNum {nsdecls("a")} type="arabicPeriod"/>'
+buAutoNum = parse_xml(buAutoNum_xml)
+pPr.append(buAutoNum)
+
+# After (1 line):
+XMLHelper.add_numbering_with_indent(p)
+```
+
+---
+
+### LayoutCalculator (utils/layout_helpers.py)
+
+**Purpose:** Calculate positions and dimensions for layout patterns (grids, cards, columns)
+
+**Key Methods:**
+
+```python
+class LayoutCalculator:
+    """Utilities for calculating layout positions and dimensions."""
+
+    @staticmethod
+    def calculate_grid_layout(num_items: int, container_x: float, container_y: float, container_width: float, container_height: float, columns: int = 2, gap: float = 0.4) -> List[LayoutBox]:
+        """Calculate grid item positions and sizes."""
+        # Returns: List of LayoutBox objects with x, y, width, height
+
+    @staticmethod
+    def calculate_card_layout(num_cards: int, container_x: float, container_y: float, container_width: float, card_height: float, columns: int = 2, gap: float = 0.4) -> List[LayoutBox]:
+        """Calculate card positions for card-based layouts."""
+        # Returns: List of LayoutBox objects for cards
+
+    @staticmethod
+    def calculate_two_column_layout(container_x: float, container_y: float, container_width: float, container_height: float, gap: float = 0.4) -> Tuple[LayoutBox, LayoutBox]:
+        """Calculate positions for two-column layout."""
+        # Returns: (left_box, right_box)
+
+    @staticmethod
+    def calculate_stats_banner_layout(num_stats: int, container_x: float, container_y: float, container_width: float, stat_height: float, gap: float = 0.4) -> List[LayoutBox]:
+        """Calculate positions for statistics banner."""
+        # Returns: List of LayoutBox objects for stats
+```
+
+**Usage:** Primarily used by renderers (ShapeRenderer.render_card_grid, render_framework_grid, etc.)
+
+---
+
+### Consolidation Impact Summary
+
+**Phase 2 Total Impact:**
+- FontStyler: ~24 lines eliminated
+- XMLHelper: ~114 lines eliminated
+- **Combined: 138 lines eliminated from main converter**
+- **Code quality: Dramatically improved maintainability and readability**
+
+**Before Consolidation:**
+- 15+ instances of 5-8 line font styling blocks
+- 8+ instances of 12-27 line XML manipulation blocks
+- Total duplication: ~400 lines of nearly identical code
+
+**After Consolidation:**
+- Single-line helper calls throughout
+- Complex operations abstracted to utility methods
+- Consistent patterns enforced automatically
 
 ---
 
@@ -1428,7 +1623,7 @@ pip install python-pptx lxml pillow requests
 
 **Test Files:**
 - `samples/showcase-enhancements.html` (12 slides)
-- `.claude/skills/slide-exporter/resources/examples/enhanced-sample-slides.html`
+- `docs/.archive/slide-technical/skill-backup/resources/examples/` (archived samples)
 
 **Future Testing Plan:**
 - Unit tests for each handler (`test_title_handler.py`, etc.)

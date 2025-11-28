@@ -1,0 +1,67 @@
+// Week 9 Quiz: Tutorial: Presentation Storyboard Design
+// Generated from tutorial quiz practice questions
+// Questions: 8
+
+$CATEGORY: Week 9
+
+::Anderson's Three Elements::According to Chris Anderson, what three elements do presentations rise or fall on?{
+~Slides, delivery, and timing #These are delivery mechanics, not Anderson's core elements
+=Quality of idea, narrative, and passion #Chris Anderson's core principle states "Presentations rise or fall on the quality of the idea, the narrative, and the passion of the speaker." This was emphasized as the foundational principle - substance over style. Reference\: Lecture Slide 7.
+~Research, visuals, and rehearsal #These are supporting elements, not the three he identified as primary
+~Hook, body, and call-to-action #These are structural components, not Anderson's foundation
+}
+
+::Duarte's Structure Purpose::What is Nancy Duarte's "What is/What could be" presentation structure designed to create?{
+~A chronological timeline of events #Not chronological - alternates between present and future possibility
+=Tension by contrasting current reality with better future possibility #Duarte's "What is/What could be" framework explicitly creates tension by contrasting current painful reality with improved future possibility. This contrast is what makes it persuasive - the gap creates energy for change. Reference\: Lecture Slide 10.
+~A logical argument with thesis and evidence #Not traditional thesis/evidence - uses emotional contrast
+~An emotional story with characters and conflict #Not character-driven story - focuses on states (current vs. future)
+}
+
+::Cognitive Load Increase::According to research by Krammer et al. (2021), how much does cognitive load increase when processing more than 6 elements simultaneously?{
+~100% increase
+~200% increase
+~300% increase
+=500% increase #The research by Krammer et al. (2021) specifically states\: "the human brain can easily interpret 6 elements and more than that requires a 500% increase in human cognition load." This dramatic statistic explains why slides with 10+ bullet points overwhelm audiences. Reference\: Lecture Slide 15.
+}
+
+::One Minute Per Slide Rule::What is the "one minute per slide" rule?{
+~Each slide should have one minute of video content #Not about video content duration
+=A presentation should have approximately one slide per minute of speaking time #The "one minute per slide" rule from Krammer et al. (2021) is a pacing guideline\: a 20-minute presentation should have approximately 20 slides. This helps with planning and maintains audience engagement through regular fresh information. Reference\: Lecture Slide 16.
+~Audiences should spend one minute reading each slide #Not about audience reading time - slides shouldn't require reading
+~Slide transitions should occur every minute #Not about forced transitions - natural pacing
+}
+
+::Meaningful Headlines::Which of the following is an example of a meaningful headline (vs. generic)?{
+~"Results"
+~"Data Analysis"
+="Sales increased 40% after campaign launch" #"Sales increased 40% after campaign launch" is a meaningful headline - it states the conclusion/insight of the slide, not a generic category. This follows Rule \#3 from the Ten Simple Rules\: transform generic titles into specific conclusions. Reference\: Lecture Slide 16.
+~"Discussion"
+}
+
+::Reading and Listening Cognitive Conflict::Why do reading text on slides and listening to a speaker simultaneously create cognitive overload?{
+~Both require visual processing channels #Reading is visual, but the processing is linguistic, not purely visual
+=Both require language processing in the same cognitive channel #Reading text and listening to speech both require language processing in the same cognitive channel, creating competition and overload. The research explains this is why "Death by PowerPoint" (text-heavy slides read aloud) fails - audiences must choose\: read OR listen, can't do both effectively. Reference\: Lecture Slide 17.
+~Audiences can't multitask effectively #True but not the specific mechanism - doesn't explain WHY multitasking fails here
+~Slides distract from the speaker #Distraction is a symptom, not the cognitive mechanism
+}
+
+::Three-Part CTA Structure::What are the three parts of an effective closing call-to-action (CTA)?{
+~Thank you, questions, goodbye #Too generic and passive - doesn't inspire or direct
+~Summary, recommendation, next steps #Close but doesn't include inspirational vision component
+=Synthesize, inspire, direct #The lecture taught effective CTAs have three parts\: (1) Synthesize - reinforce 2-3 key takeaways, (2) Inspire - paint "new bliss" vision of transformed future, (3) Direct - specific action to take. This structure moves from summary to vision to concrete next steps. Reference\: Lecture Slide 21.
+~Conclusion, application, reflection #Too abstract - lacks specific direction
+}
+
+::Why Avoid Animations::According to the "Ten Simple Rules," why should presentations avoid animations?{
+~They look unprofessional #Not about professionalism - can look professional but still problematic
+=Research shows no one likes them, they create accessibility issues, and introduce compatibility risks #The research explicitly states\: survey research shows "no one likes them," they create processing burdens for visually impaired audiences (accessibility issues), and introduce software compatibility risks. All three reasons combined make animations a poor choice. Reference\: Lecture Slide 18.
+~They slow down presentation delivery #Not primarily about delivery speed
+~They're difficult to create in PowerPoint
+
+**Review Process (guided by instructor)\:**
+- Students answer individually (7-8 minutes)
+- Review correct answers together (7-8 minutes)
+- Discuss why each correct answer is right and common misconceptions
+- Connect to upcoming Quiz 3 (Week 10) which will cover Weeks 7-9 #They're actually easy to create - that's part of the problem (overuse)
+}

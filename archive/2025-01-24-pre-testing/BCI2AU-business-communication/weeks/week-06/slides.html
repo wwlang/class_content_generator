@@ -1,0 +1,2470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 12: Integrating Growth - BBAE-PPD</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    @font-face {
+      font-family: 'Cal Sans';
+      src: local('Arial Black'), local('Impact');
+      font-weight: 700;
+    }
+
+
+    /* CSS VARIABLES */
+    :root {
+      --color-primary: #131313;
+      --color-accent: #ed5e29;
+      --color-cream: #f4f3f1;
+      --color-tan: #cac3b7;
+      --color-white: #ffffff;
+      --color-muted: #64748b;
+      --color-light-gray: #f4f3f1;
+      --color-border: #cac3b7;
+
+      --font-header: 'Cal Sans', 'Arial Black', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+
+      --slide-padding: 60px;
+      --slide-width: 1024px;
+      --slide-height: 768px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      width: 100%;
+      height: 100%;
+      font-family: var(--font-body);
+      color: var(--color-primary);
+      overflow: hidden;
+      background: #e5e5e5;
+    }
+
+    .presentation-container {
+      width: 100vw;
+      height: 100vh;
+      background: #e5e5e5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 40px;
+    }
+
+    /* ========================================
+       SLIDE BACKGROUND POLICY
+       ======================================== */
+    /* RULE: All slides have beige background by default.
+       ONLY these slide types override the background:
+       1. .title-slide (beige with decorative shapes)
+       2. .section-break-slide (orange)
+       3. .dark-bg (dark gray)
+
+       All other slide types (.content-slide, .framework-slide, .quote-slide,
+       .reflection-slide, .comparison-table-slide, .vocab-table-slide, etc.)
+       MUST use the default beige background. */
+
+    .slide {
+      width: var(--slide-width);
+      height: var(--slide-height);
+      background: var(--color-cream);  /* Default beige for ALL slides */
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.15);
+      border-radius: 8px;
+      position: absolute;
+      opacity: 0;
+      transition: opacity 0.3s ease-in-out;
+      display: none;
+      overflow: hidden;
+      padding: var(--slide-padding);
+    }
+
+    .slide.active { opacity: 1; display: block; }
+    .slide.dark-bg { background: var(--color-primary); }  /* Override for dark slides */
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-header);
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.05em;
+    }
+
+    .slide-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .dark-bg .slide-title { color: var(--color-cream); }
+
+    p, li {
+      font-family: var(--font-body);
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--color-primary);
+    }
+
+    /* Dark background text colors */
+    .dark-bg p,
+    .dark-bg li {
+      color: var(--color-cream);
+    }
+
+    strong { font-weight: 600; color: var(--color-accent); }
+
+    ul {
+      list-style-type: disc;  /* Use native disc bullets */
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;  /* No padding needed with native bullets */
+    }
+
+    /* Style native bullet markers orange */
+    ul li::marker {
+      color: var(--color-accent);
+      font-size: 1.2em;
+    }
+
+    /* Ordered lists (numbered) */
+    ol {
+      padding-left: 28px;
+      margin: 0;
+    }
+
+    ol li {
+      padding: 0;  /* No padding for ordered lists */
+    }
+
+    /* Style native number markers orange */
+    ol li::marker {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    /* Nested unordered lists under ordered lists */
+    ol ul.nested-list {
+      margin: 0;
+      padding-left: 20px;
+      list-style-type: disc;  /* Use native disc bullets */
+    }
+
+    ol ul.nested-list li {
+      padding: 0;  /* No padding needed with native bullets */
+      font-size: 0.95em;  /* Slightly smaller text */
+    }
+
+    ol ul.nested-list li::marker {
+      color: var(--color-accent);
+      font-size: 1em;
+    }
+
+    /* Title Slide */
+    .title-slide {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .title-content h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    .subtitle {
+      font-size: 24px;
+      color: var(--color-accent);
+      margin-top: 20px;
+      font-weight: 600;
+    }
+
+    .author {
+      font-size: 18px;
+      color: var(--color-muted);
+      margin-top: 40px;
+    }
+
+    .decorative-shapes {
+      position: absolute;
+      bottom: 40px;
+      left: 40px;
+      display: flex;
+      gap: 12px;
+    }
+
+    .shape {
+      border-radius: 50%;
+    }
+
+    .shape.orange {
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+    }
+
+    .shape.tan {
+      width: 16px;
+      height: 16px;
+      background: var(--color-tan);
+    }
+
+    .shape.small {
+      width: 12px;
+      height: 12px;
+      background: var(--color-accent);
+      opacity: 0.5;
+    }
+
+    /* Section Break - Orange background (override) */
+    .section-break-slide {
+      background: var(--color-accent);  /* Override: orange for section breaks */
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .section-title {
+      font-size: 54px;
+      color: #ffffff;
+    }
+
+    .section-subtitle {
+      font-size: 24px;
+      color: #ffffff;
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* Big Number */
+    .big-number-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .number-content {
+      text-align: center;
+    }
+
+    .big-number {
+      font-family: var(--font-header);
+      font-size: 180px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 30px;
+    }
+
+    .number-explanation {
+      font-size: 28px;
+      max-width: 700px;
+      margin: 30px auto 0;
+    }
+
+    /* Tables */
+    .vocab-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table-slide table td,
+    .vocab-table th,
+    .vocab-table td {
+      padding: 8px 12px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .vocab-table-slide table th,
+    .vocab-table th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+    }
+
+    .vocab-table-slide table th strong,
+    .vocab-table th strong {
+      color: white !important;  /* Override global strong color for table headers */
+    }
+
+    .vocab-table-slide table td,
+    .vocab-table td {
+      font-size: 16px;
+    }
+
+    /* Stats */
+    .stats-banner {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .stat-item {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: var(--font-header);
+      font-size: 56px;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .stat-label {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--color-cream);
+      margin-bottom: 8px;
+    }
+
+    .stat-description {
+      font-size: 14px;
+      color: var(--color-cream);
+      opacity: 0.8;
+    }
+
+    /* Navigation */
+    .nav-controls {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background: rgba(19, 19, 19, 0.9);
+      padding: 12px 24px;
+      border-radius: 30px;
+      z-index: 1000;
+    }
+
+    .nav-controls button {
+      background: transparent;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 700;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+    }
+
+    .nav-controls button:hover {
+      background: rgba(237, 94, 41, 0.3);
+    }
+
+    #slide-counter {
+      color: #ffffff;
+      font-family: var(--font-body);
+      font-size: 16px;
+      font-weight: 500;
+      min-width: 80px;
+      text-align: center;
+    }
+
+    .progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: rgba(19, 19, 19, 0.1);
+      z-index: 1000;
+    }
+
+    .progress-fill {
+      height: 100%;
+      background: var(--color-accent);
+      width: 0%;
+      transition: width 0.3s ease;
+    }
+
+    .slide-footer {
+      position: absolute;
+      bottom: 20px;
+      left: 60px;
+      right: 60px;
+    }
+
+    .citation {
+      font-size: 14px;
+      color: var(--color-muted);
+      font-style: italic;
+      line-height: 1.4;
+    }
+
+    /* Speaker Notes */
+    .speaker-notes {
+      display: none;  /* Hidden by default in browser view */
+      position: absolute;
+      bottom: 80px;
+      left: 60px;
+      right: 60px;
+      padding: 20px;
+      background: rgba(244, 243, 241, 0.95);
+      border-left: 4px solid var(--color-accent);
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+      max-height: 200px;
+      overflow-y: auto;
+      z-index: 100;
+      box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .speaker-notes h4 {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--color-accent);
+      letter-spacing: 0.1em;
+      margin-bottom: 12px;
+    }
+
+    .speaker-notes .notes-content {
+      color: var(--color-primary);
+    }
+
+    .speaker-notes .notes-content p {
+      font-size: 13px;
+      margin-bottom: 8px;
+    }
+
+    .speaker-notes .notes-content ul {
+      margin-left: 20px;
+    }
+
+    .speaker-notes .notes-content li {
+      font-size: 13px;
+      padding: 4px 0;
+    }
+
+    /* Show speaker notes on dark slides with white background */
+    .dark-bg .speaker-notes {
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    /* Print styles - show speaker notes when printing */
+    @media print {
+      .speaker-notes {
+        display: block !important;
+        page-break-inside: avoid;
+        margin-top: 40px;
+        position: static;
+        background: #f8fafc;
+        border: 1px solid #cbd5e1;
+        max-height: none;
+      }
+
+      .nav-controls,
+      .progress-bar {
+        display: none;
+      }
+
+      .slide {
+        page-break-after: always;
+        box-shadow: none;
+        position: relative !important;
+        opacity: 1 !important;
+        display: block !important;
+      }
+    }
+
+    /* Quote Slide - DISABLED (conflicts with .slide-content structure)
+    .quote-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+    .quote-slide .quote-mark {
+      font-family: var(--font-header);
+      font-size: 120px;
+      color: #e2e8f0;
+      position: absolute;
+      top: 60px;
+      left: 60px;
+      line-height: 1;
+      opacity: 0.5;
+    }
+
+    .quote-slide .quote-content {
+      max-width: 800px;
+      padding: 0 80px;
+      text-align: left;
+    }
+
+    .quote-slide .quote-text {
+      font-family: var(--font-body);
+      font-size: 36px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      margin-bottom: 30px;
+    }
+
+    .quote-slide .quote-attribution {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: var(--color-muted);
+      text-align: right;
+    }
+    */
+
+    /* References Slide */
+    .references-slide .references {
+      padding-top: 20px;
+    }
+
+    .references-slide .references li {
+      padding-left: 40px;
+      text-indent: -40px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .references-slide .references li::before {
+      content: none;
+    }
+
+    /* Framework Slide */
+    .framework-slide {
+      flex-direction: column;
+    }
+
+    .framework-title {
+      font-size: 48px;
+      color: var(--color-primary);
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .framework-subtitle {
+      font-family: var(--font-header);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--color-text);
+      text-align: center;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .framework-components {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .component {
+      background: var(--color-white);
+      border: 1px solid var(--color-border);
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .component h3 {
+      font-family: var(--font-header);
+      font-size: 27px;
+      color: var(--color-primary);
+      margin-bottom: 12px;
+    }
+
+    .component p {
+      font-size: 17px;
+      color: var(--color-muted);
+    }
+
+    /* Framework commentary (content below component grid) */
+    .framework-commentary {
+      margin-top: 30px;
+      text-align: center;
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .framework-commentary p {
+      font-size: 24px;
+      line-height: 1.6;
+      margin: 0.5em 0;
+    }
+
+    .framework-commentary strong {
+      color: var(--color-accent);
+      font-weight: 600;
+    }
+
+    .framework-commentary em {
+      font-style: italic;
+      color: var(--color-muted);
+      font-size: 21px;
+    }
+
+    /* Framework slide fallback (for non-component content like ASCII art) */
+    .framework-slide .slide-content {
+      font-family: monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      white-space: pre;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2em;
+    }
+
+    .framework-slide .slide-content p {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      white-space: normal;
+      max-width: 90%;
+      margin: 0.5em 0;
+    }
+
+    /* Reflection/Thinking Prompt Slide */
+    .reflection-slide,
+    .thinking-prompt {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      text-align: left;
+    }
+
+    .reflection-slide .reflection-icon,
+    .thinking-prompt .reflection-icon {
+      font-size: 72px;
+      margin-bottom: 30px;
+    }
+
+    .reflection-slide .reflection-question,
+    .thinking-prompt .reflection-question {
+      font-family: var(--font-body);
+      font-size: 32px;
+      line-height: 1.4;
+      color: var(--color-primary);
+      max-width: 800px;
+      margin-bottom: 40px;
+    }
+
+    .reflection-slide .reflection-instruction,
+    .thinking-prompt .reflection-instruction {
+      font-size: 16px;
+      font-style: italic;
+      color: var(--color-muted);
+    }
+
+    /* Comparison Table Slide (2-Column boxes - NOT for HTML tables) */
+    .comparison-table-slide .comparison-boxes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 40px;
+    }
+
+    /* Ensure HTML tables inside comparison-table-slide are NOT affected by grid */
+    .comparison-table-slide table {
+      display: table !important;
+    }
+
+    .comparison-table-slide .comparison-column {
+      background: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .comparison-table-slide .column-header {
+      background: var(--color-accent);
+      color: #ffffff;
+      font-family: var(--font-header);
+      font-size: 20px;
+      font-weight: 700;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .comparison-table-slide .column-content {
+      padding: 20px;
+    }
+
+    .comparison-table-slide .column-content ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .comparison-table-slide .column-content li {
+      padding: 8px 0;
+      font-size: 14px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .comparison-table-slide .column-content li:last-child {
+      border-bottom: none;
+    }
+
+    /* QUOTE SLIDE STYLING */
+    .quote-slide .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 3em 4em;
+      min-height: 400px;
+    }
+
+    .quote-slide .slide-content p {
+      font-size: 1.8em;
+      line-height: 1.2;
+      font-style: italic;
+      color: var(--color-text-primary);
+      margin: 0;
+    }
+
+    .quote-slide .slide-content p:first-of-type {
+      font-size: 2em;
+      margin-bottom: 0.8em;
+      font-weight: 500;
+    }
+
+    .quote-slide .slide-content p:last-of-type {
+      font-size: 1.2em;
+      font-style: normal;
+      color: var(--color-text-secondary);
+      margin-top: 1.5em;
+    }
+
+
+    /* REFLECTION SLIDE STYLING */
+    /* BACKGROUND RULE: Only title-slide, section-break-slide, and .dark-bg have non-beige backgrounds.
+       All other slides inherit the default beige background from .slide {} */
+    .reflection-slide {
+      /* No background override - uses default beige from .slide */
+    }
+
+    .reflection-slide .slide-content {
+      font-size: 1.15em;
+      line-height: 1.9;
+      padding: 2em 3em;
+      text-align: left;
+      width: 100%;
+    }
+
+    .reflection-slide .slide-content p {
+      margin: 1.2em 0;
+      color: var(--color-text-primary);
+    }
+
+    .reflection-slide .slide-content p strong {
+      color: var(--color-accent);
+      font-size: 1.1em;
+      display: block;
+      margin-bottom: 0.5em;
+    }
+
+    .reflection-slide .slide-content ul {
+      margin-left: 2em;
+    }
+
+    .reflection-slide .slide-content li {
+      margin: 0.8em 0;
+      padding-left: 0.5em;
+    }
+
+    /* MULTI-HEADING FORMATTING - Inline bold orange emphasis */
+    .slide-content p > strong:only-child {
+      font-weight: 700;
+      color: var(--color-accent);
+    }
+
+    /* COMPARISON TABLE WITH MARKDOWN TABLE */
+    .comparison-table-slide table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1em auto 0.5em;
+      max-width: 95%;
+    }
+
+    .comparison-table-slide th {
+      background: var(--color-accent);
+      color: white;
+      font-weight: 700;
+      font-size: 1.2em;
+      padding: 8px 12px;
+      text-align: left;
+      border-right: 2px solid white;
+    }
+
+    .comparison-table-slide th:last-child {
+      border-right: none;
+    }
+
+    .comparison-table-slide td {
+      padding: 8px 12px;
+      border: 1px solid #e2e8f0;
+      border-top: none;
+      vertical-align: top;
+      font-size: 1em;
+      line-height: 1.5;
+      background: white;
+    }
+
+    .comparison-table-slide td:first-child {
+      border-right: 2px solid #e2e8f0;
+    }
+
+    .comparison-table-slide tbody tr:last-child td {
+      border-bottom: 2px solid var(--color-accent);
+    }
+
+    /* THINKING PROMPT / REFLECTION PROMPT */
+    .thinking-prompt .slide-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 3em;
+      background: linear-gradient(135deg, rgba(237, 94, 41, 0.05) 0%, rgba(237, 94, 41, 0.02) 100%);
+      border-radius: 12px;
+      margin: 2em;
+    }
+
+    .thinking-prompt .slide-content p {
+      font-size: 1.3em;
+      line-height: 1.8;
+      margin: 1em 0;
+      color: var(--color-text-primary);
+    }
+
+  </style>
+</head>
+<body>
+  <div class="presentation-container">
+
+    <!-- Navigation Controls -->
+    <div class="nav-controls">
+      <button id="prev-btn">‹</button>
+      <span id="slide-counter">1 / 28</span>
+      <button id="next-btn">›</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <div class="progress-fill" id="progress-fill"></div>
+    </div>
+
+
+    <div class="slide title-slide" data-slide="1">
+      <div class="title-content">
+        <h1>Week 6: Crisis & Incident Communication</h1>
+        <p class="subtitle">When Every Second Counts</p>
+        <p class="author"><strong>Business Communication</strong><br>Andrews University - National Economics University Campus<br>Fall 2025<br>Instructors: William Winterton Lang</p>
+      </div>
+      <div class="decorative-shapes">
+        <div class="shape orange"></div>
+        <div class="shape tan"></div>
+        <div class="shape small"></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Welcome students to Week 6 on crisis communication</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This is one of the most practical and critical topics in business communication</li>
+<li>In the digital age, crises can emerge and escalate within minutes</li>
+<li>The skills learned today apply to organizations of all sizes, from startups to multinational corporations</li>
+<li>Every professional should understand crisis communication principles</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start by understanding why crisis communication matters more than ever..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide quote-slide" data-slide="2">
+      <h2 class="slide-title">Opening Question</h2>
+      
+      <div class="quote-content">
+        <blockquote class="large-quote">"What happens when a company stays silent for 48 hours after a crisis breaks?"</blockquote>
+        <p class="quote-attribution">Your reputation is being written by others</p>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>Pause after reading the question - let it sink in for 5-10 seconds</li>
+<li>Ask: "Show of hands - how many of you have seen a company crisis unfold on social media?"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>In Vietnam's fast-growing digital economy, 77% of the population uses social media (2024)</li>
+<li>When companies don't communicate, customers, media, and competitors fill the void</li>
+<li>Vietnamese consumers expect real-time responses on social platforms</li>
+<li>Silence is interpreted as guilt, incompetence, or indifference</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Reference the café franchise disability discrimination incident mentioned in Vietnamese crisis communication research</li>
+<li>The victim's personal Facebook update had more impact than any official statement</li>
+<li>Vietnamese organizations often hope crises will "fade away" - but social media prevents this</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why do you think silence is so damaging in a crisis?" [Take 1-2 responses]</li>
+<li>Expected: loss of trust, rumors spread, competitors attack, customers leave</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Today we'll learn the frameworks and principles that help organizations respond effectively when crises strike..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="3">
+      <h2 class="slide-title">Key Vocabulary - Crisis Communication</h2>
+      <table class="vocab-table"><thead><tr><th>English Term</th><th>Vietnamese Translation</th><th>Context</th></tr></thead><tbody><tr><td><strong>Crisis</strong></td><td>Khủng hoảng</td><td>A significant threat to operations that can have negative consequences</td></tr><tr><td><strong>Incident</strong></td><td>Sự cố</td><td>An unexpected event requiring immediate response</td></tr><tr><td><strong>Stakeholder</strong></td><td>Bên liên quan</td><td>Individuals or groups affected by or interested in the crisis</td></tr><tr><td><strong>Holding statement</strong></td><td>Tuyên bố tạm thời</td><td>Initial brief acknowledgment issued within minutes</td></tr><tr><td><strong>Transparency</strong></td><td>Minh bạch</td><td>Openness and honesty in crisis communication</td></tr><tr><td><strong>Accountability</strong></td><td>Trách nhiệm giải trình</td><td>Taking responsibility for actions and outcomes</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's review the key terms you'll hear throughout today's lecture"</li>
+<li>Pronunciation practice: Have students repeat "accountability" and "transparency"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Distinguish between "crisis" (major threat) and "incident" (unexpected event)</li>
+<li>In Vietnamese business culture, "minh bạch" (transparency) is increasingly valued by younger consumers</li>
+<li>"Bên liên quan" includes multiple groups: customers, employees, investors, government, media</li>
+<li>Holding statements are Vietnam's equivalent of "first response" - acknowledging the situation quickly</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnamese tech companies now issue holding statements on social media within 15-30 minutes</li>
+<li>Traditional Vietnamese companies often waited days - this approach no longer works</li>
+<li>ASEAN companies leading in crisis response: Grab, Shopee (respond within the hour)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the difference between a crisis and an incident?" [Quick check]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we have our vocabulary, let's define what we mean by crisis communication..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="4">
+      <h2 class="slide-title">Today's Learning Objectives</h2>
+      <div class="slide-content">
+        <p>By the end of this lecture, you will be able to:</p>
+<ol>
+<li><strong>Apply</strong> crisis communication frameworks to real business scenarios</li>
+<li><strong>Evaluate</strong> the speed vs. accuracy trade-off in crisis response</li>
+<li><strong>Adapt</strong> crisis messages for different stakeholder groups (internal vs. external)</li>
+<li><strong>Design</strong> a crisis communication response using best practices from research</li>
+<li><strong>Analyze</strong> post-crisis communication for organizational learning</li>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Here's what you'll be able to do after today's lecture"</li>
+<li>These objectives align with upcoming Quiz 2 (Week 7)</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Objective 1 connects to Argenti's crisis framework from readings</li>
+<li>Objective 2 addresses the critical tension in social media era</li>
+<li>Objective 3 is about stakeholder adaptation - different groups need different messages</li>
+<li>Objective 4 prepares for your tutorial activity and portfolio</li>
+<li>Objective 5 focuses on learning from crises, not just surviving them</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"These objectives directly connect to your upcoming assessments..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="5">
+      <h2 class="slide-title">Assessment Connection: Crisis Communication Response</h2>
+      <div class="slide-content">
+        <p><strong>This week prepares you for:</strong></p>
+<p><strong>Already submitted (Week 5): Written Portfolio</strong></p>
+<ul>
+<li>Crisis Communication Response assignment (10% of final grade)</li>
+<li>Today's frameworks help you understand effective crisis writing</li>
+</ul>
+<p><strong>Upcoming: Quiz 2 (Week 7)</strong></p>
+<ul>
+<li>Covers Weeks 4-6 including crisis communication frameworks</li>
+<li>Focus on stakeholder adaptation, speed vs. accuracy, transparency principles</li>
+</ul>
+<p><strong>Tutorial Focus:</strong></p>
+<ul>
+<li>Analyze real crisis responses using today's frameworks</li>
+<li>Practice stakeholder-specific messaging</li>
+<li>Quiz preparation (15-20 minutes)</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Many of you just submitted the Crisis Communication Response portfolio piece"</li>
+<li>Today's lecture gives you the theory behind what you practiced</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>The portfolio asked you to write crisis responses - today explains WHY certain approaches work</li>
+<li>Quiz 2 next week will test understanding of crisis frameworks</li>
+<li>Argenti's framework, stakeholder prioritization, and transparency principles are all testable</li>
+<li>Tutorial will include practice quiz questions on today's content</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Who remembers the stakeholders you had to communicate with in the portfolio?" [Quick recall]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with the foundations: What is a crisis, and how do we prepare for one?"</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="6">
+      <h2 class="section-title">Part 1: Crisis Fundamentals</h2>
+      <p class="section-subtitle">Understanding What We're Up Against</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We'll start by understanding what makes a crisis different from everyday business problems"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This section covers definitions, types of crises, and foundational frameworks</li>
+<li>Approximately 20 minutes of content</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"First, let's define what we mean by a crisis..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="7">
+      <h2 class="framework-title">What Defines a Business Crisis?</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Three Essential Characteristics</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>1. Threat to Organization</h3>
+          
+          <ul class="component-bullets"><li>Significant potential for negative consequences</li><li>Can damage reputation, operations, or financial performance</li><li>Requires immediate attention from leadership</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>2. Surprise Element</h3>
+          
+          <ul class="component-bullets"><li>Often unexpected or unforeseen</li><li>Limited time for decision-making</li><li>Normal communication channels may be insufficient</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>3. Short Decision Time</h3>
+          
+          <ul class="component-bullets"><li>Requires rapid response (hours, not days)</li><li>"Golden hour" concept: First 60 minutes are critical</li><li>Social media has compressed timelines even further</li></ul>
+          
+        </div>
+      </div>
+      
+      <div class="slide-footer"><p class="citation">Institute for Public Relations. (2024). Crisis management and communications. https://instituteforpr.org/crisis-management-and-communications/</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Not every problem is a crisis - let's understand the distinction"</li>
+<li>Write on board: "Crisis = Threat + Surprise + Short Time"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Threat: Must have potential for serious harm (not just minor inconvenience)</li>
+<li>Surprise: Even if you have crisis plans, the specific situation is often unexpected</li>
+<li>Short time: The "golden hour" used to be 60 minutes; now it's often 15 minutes or less</li>
+<li>Social media compressed timelines: 70% of customers expect real-time response (research finding)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: A food safety incident at a restaurant chain spreads on Facebook within 30 minutes</li>
+<li>Traditional response (2 days) vs. modern expectation (2 hours)</li>
+<li>Technology incident: Server outage during peak shopping (e.g., Lazada during sale events)</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>Students think all bad news is a crisis → Clarify: only if it meets all three criteria</li>
+<li>Minor complaints are problems, not crises (unless they go viral)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Is a single customer complaint on Facebook a crisis?" [No - unless it goes viral and meets the three criteria]</li>
+<li>"What about a data breach affecting 10,000 customers?" [Yes - meets all three]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we know what a crisis is, let's look at the different types..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="8">
+      <h2 class="slide-title">Common Types of Business Crises</h2>
+      <div class="slide-content">
+        <p><strong>Six Major Crisis Categories:</strong></p>
+<ol>
+<li><strong>Technological Crises</strong></li>
+<ul class="nested-list">
+<li>IT system failures, data breaches, cybersecurity incidents</li>
+<li>Example: E-commerce platform crash during major sale</li>
+</ul>
+<li><strong>Human Resource Crises</strong></li>
+<ul class="nested-list">
+<li>Workplace accidents, labor disputes, harassment allegations</li>
+<li>Example: Employee safety incident in manufacturing</li>
+</ul>
+<li><strong>Product/Service Failures</strong></li>
+<ul class="nested-list">
+<li>Recalls, quality issues, safety concerns</li>
+<li>Example: Food contamination at restaurant chain</li>
+</ul>
+<li><strong>Financial Crises</strong></li>
+<ul class="nested-list">
+<li>Bankruptcy threats, fraud, major losses</li>
+<li>Example: Sudden liquidity crisis</li>
+</ul>
+<li><strong>Reputational Crises</strong></li>
+<ul class="nested-list">
+<li>Social media backlash, boycott campaigns</li>
+<li>Example: Discrimination allegations</li>
+</ul>
+<li><strong>Natural Disasters</strong></li>
+<ul class="nested-list">
+<li>Floods, storms, pandemics affecting operations</li>
+<li>Example: COVID-19 lockdowns, Vietnam flooding</li>
+</ul>
+</ol>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Crises come in many forms - let's categorize them"</li>
+<li>"Understanding the type helps you know which stakeholders to prioritize"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Technological: Increasingly common as businesses digitalize</li>
+<li>HR: Often sensitive due to human impact and legal implications</li>
+<li>Product: Requires speed + technical accuracy balance</li>
+<li>Financial: Involves investors and regulators as key stakeholders</li>
+<li>Reputational: Can emerge from any of the above, spread fastest on social media</li>
+<li>Natural: External factors, focuses on business continuity</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam technological crisis: VNG Corporation facing server issues during major game launch</li>
+<li>Reputational: The café disability discrimination incident (social media firestorm)</li>
+<li>Natural disaster: Vietnam flooding disrupting supply chains (requires stakeholder updates)</li>
+<li>ASEAN example: Grab's response to driver-passenger safety incidents</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>One crisis type = one response → Actually, many crises span multiple categories</li>
+<li>Example: Data breach (technological) quickly becomes reputational crisis</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"A restaurant discovers food contamination and posts about it on social media - what type(s) of crisis?" [Product + Reputational if handled poorly]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Different crisis types require different responses. Let's look at Argenti's framework for crisis communication..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="9">
+      <h2 class="framework-title">Framework: Argenti's Crisis Communication Principles</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Five Core Principles for Crisis Response</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Principle 1: Get on the Scene</strong></p>
+<p>Leaders must be visibly present and accessible during crises. Employees and stakeholders need tangible proof that management prioritizes their concerns (Argenti, 2002).</p>
+<p><strong>Principle 2: Choose Channels Carefully</strong></p>
+<p>Leverage multiple communication channels: voice mail, websites, social media, toll-free hotlines, media outlets. Channel redundancy ensures message saturation (Argenti, 2002).</p>
+<p><strong>Principle 3: Communicate with Employees First</strong></p>
+<p>Internal communication must precede external statements. Organizations face "a human crisis" requiring focus on people before customers or investors (Argenti, 2002).</p>
+<p><strong>Principle 4: Have a Plan in Place</strong></p>
+<p>Establish contingency work sites, backup communication infrastructure, and designated crisis communicators. Centralize decision-making while decentralizing operations (Argenti, 2002).</p>
+<p><strong>Principle 5: Improvise from Strong Foundations</strong></p>
+<p>Employees execute improvised responses effectively when company values are pre-established. Culture guides decisions when scripts fail (Argenti, 2002).</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This framework comes from Harvard Business Review's analysis of 9/11 crisis responses"</li>
+<li>"These principles apply to any crisis, from tech incidents to natural disasters"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Principle 1 (Visibility): Vietnamese business culture values face-to-face leadership, even more important in crises</li>
+<li>Principle 2 (Channels): Don't rely on one channel; what if your website crashes?</li>
+<li>Principle 3 (Employees First): Internal stakeholders become your ambassadors or your critics</li>
+<li>Principle 4 (Planning): The time to prepare is before the crisis, not during</li>
+<li>Principle 5 (Values): If your company values are just words on a wall, they won't help in crisis</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Get on the Scene: Morgan Stanley's leaders on-site after 9/11</li>
+<li>Vietnam context: CEO of Vietnamese tech company personally addressing server outage on livestream</li>
+<li>Employees First: Starbucks managers near Ground Zero opened stores for first responders - values-driven</li>
+<li>ASEAN example: Grab CEO addressing driver safety concerns via company-wide town hall</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Improvise" doesn't mean "make it up" → It means adapt your values to unexpected situations</li>
+<li>Planning doesn't prevent improvisation; it enables effective improvisation</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why should employees hear from you BEFORE customers?" [Employees are your front line, they'll be asked questions, they need to be informed to represent you well]</li>
+<li>"Can you have too many communication channels in a crisis?" [No - redundancy is good]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Argenti's framework gives us the structure. Now let's tackle the hardest question in crisis communication..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="10">
+      <h2 class="section-title">Part 2: The Speed vs. Accuracy Dilemma</h2>
+      <p class="section-subtitle">The Crisis Communicator's Core Tension</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This is the toughest decision you'll face in a crisis: How fast should you respond?"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This section explores research on response timing expectations</li>
+<li>We'll look at what stakeholders expect vs. what organizations can deliver</li>
+<li>Approximately 15 minutes of content</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's start with what the research tells us about timing..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide big-number-slide" data-slide="11">
+      <div class="number-content">
+        <div class="big-number">74%</div>
+        <div class="number-explanation"><p>of people expect organizations to respond within ONE HOUR on social media during a crisis</p></div>
+      </div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let that number sink in: 74% expect a response in one hour or less"</li>
+<li>"The 'golden hour' concept in crisis communication has collapsed"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Traditional crisis communication referenced "golden hour" - time to establish facts and response</li>
+<li>Social media compressed this to minutes, not hours</li>
+<li>In Vietnam's digital landscape (77% social media penetration), expectations are even higher</li>
+<li>70% of customers expect real-time communication during crisis situations (research)</li>
+<li>Detecting a brewing crisis 30 minutes faster can stop a rumor before it goes viral</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: Lazada or Shopee experiencing checkout failures during 11.11 sale</li>
+<li>Customers expect updates every 15-30 minutes on social media</li>
+<li>Traditional companies waiting 2-3 hours face massive social media backlash</li>
+<li>ASEAN leader: Grab responds to service incidents within 20-30 minutes on Twitter/Facebook</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"We should wait until we have ALL the facts" → No, issue holding statement immediately</li>
+<li>"One hour is plenty of time" → Not in Vietnamese social media environment</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What happens if you wait 3 hours to acknowledge a crisis?" [Rumors fill the void, competitors attack, customers defect]</li>
+<li>"Can you ever respond TOO fast?" [Yes - if you share inaccurate information that you later retract]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"So speed matters. But what about accuracy? Can you have both?"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide vocab-table-slide" data-slide="12">
+      <h2 class="slide-title">Balancing Speed and Accuracy</h2>
+      <table class="vocab-table"><thead><tr><th>Respond Too Slowly</th><th>Respond Too Quickly (Without Facts)</th></tr></thead><tbody><tr><td>Customers assume the worst</td><td>You may share inaccurate information</td></tr><tr><td>Competitors fill the information void</td><td>Retractions damage credibility further</td></tr><tr><td>Rumors spread unchecked on social media</td><td>Legal and compliance risks increase</td></tr><tr><td>"They don't care" perception grows</td><td>Stakeholders lose trust in your competence</td></tr><tr><td>Crisis escalates unnecessarily</td><td>You create secondary crises</td></tr></tbody></table>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"This is the central tension in crisis communication: speed vs. accuracy"</li>
+<li>"Get it wrong on either side and you're in trouble"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Too slow: Creates information vacuum that gets filled with speculation</li>
+<li>Too fast without facts: You become the source of misinformation</li>
+<li>Research shows: "Speed should never compromise accuracy or empathy" (crisis communication research)</li>
+<li>The tiered response solves this: acknowledge fast, then provide details as you learn them</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: Vietnamese café chain facing food safety concern</li>
+<ul class="nested-list">
+<li>BAD: Wait 2 days for lab results before saying anything → Customers assume guilt</li>
+<li>GOOD: Immediate holding statement (30 min) + update when results available (48 hours)</li>
+</ul>
+<li>Technology incident: E-commerce site crash</li>
+<ul class="nested-list">
+<li>Immediate: "We're experiencing technical issues, our team is working on it"</li>
+<li>1 hour: "Issue identified, estimated resolution in 2 hours"</li>
+<li>3 hours: "Resolved, here's what happened and how we'll prevent it"</li>
+</ul>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Holding statement admits guilt" → No, it shows you're aware and taking action</li>
+<li>"I need complete information before speaking" → No, acknowledge and update as you learn</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What should a holding statement include?" [Acknowledgment, empathy, commitment to investigate, timeline for update]</li>
+<li>"When should you issue it?" [Within 15-30 minutes of becoming aware]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Speed and accuracy matter, but there's a third element that's equally critical..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="13">
+      <h2 class="slide-title">Three Pillars of Effective Crisis Response</h2>
+      <div class="slide-content">
+        <p><strong>Speed:</strong> Respond within 15-30 minutes with holding statement. 74% of people expect response within one hour (American Red Cross, 2012).</p>
+<p><strong>Accuracy:</strong> Share only verified information. Update as facts emerge. Speed should never compromise accuracy (crisis communication research).</p>
+<p><strong>Empathy:</strong> Show you care about those affected. Research shows empathy is as critical as speed in crisis response (Prevency, 2024).</p>
+<p><strong>Formula for Success:</strong></p>
+<p>Fast acknowledgment + Honest communication + Genuine concern = Trust preservation</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Speed and accuracy are necessary but not sufficient"</li>
+<li>"The third pillar - empathy - is what preserves trust"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Speed: Sets expectations, shows responsiveness</li>
+<li>Accuracy: Builds credibility, prevents secondary crises</li>
+<li>Empathy: Demonstrates care, preserves relationships</li>
+<li>Research shows: "What matters in a social media crisis? Speed and Empathy" (Prevency)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: Restaurant food safety incident</li>
+<ul class="nested-list">
+<li>Without empathy: "We're investigating the situation" → Feels cold, corporate</li>
+<li>With empathy: "We're deeply sorry for anyone affected. Your health and safety are our top priority. We're investigating immediately and will share findings within 24 hours" → Shows care</li>
+</ul>
+<li>Contrast: Company focusing only on legal protection vs. company showing genuine concern</li>
+<li>ASEAN example: Airlines during flight delays - compare cold operational updates vs. empathetic communication</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Empathy admits liability" → No, you can show care without admitting fault</li>
+<li>"Empathy is soft/weak" → Actually, it's strategic - preserves trust and relationships</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can you show empathy without admitting you caused the problem?" [Yes - "We're sorry this happened to you" vs. "We're sorry we caused this"]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered when and how to respond. Now let's talk about WHO you're responding to..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="14">
+      <h2 class="section-title">Part 3: Stakeholder Communication</h2>
+      <p class="section-subtitle">Different Audiences, Different Messages</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Not everyone needs the same message in a crisis"</li>
+<li>"Smart crisis communicators adapt their messages to specific stakeholder groups"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This section covers internal vs. external stakeholders</li>
+<li>We'll learn how to prioritize and adapt messages</li>
+<li>Approximately 20 minutes of content</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"First, let's identify who your stakeholders are in a crisis..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="15">
+      <h2 class="slide-title">Identifying Crisis Stakeholders</h2>
+      <div class="slide-content">
+        <p><strong>Internal Stakeholders:</strong></p>
+<ul>
+<li><strong>Employees</strong> (all levels - they're your frontline ambassadors)</li>
+<li><strong>Management/Leadership</strong> (decision-makers and visible representatives)</li>
+<li><strong>Board of Directors</strong> (governance and oversight responsibilities)</li>
+</ul>
+<p><strong>External Stakeholders:</strong></p>
+<ul>
+<li><strong>Customers</strong> (current and potential - your revenue source)</li>
+<li><strong>Media</strong> (traditional press, bloggers, influencers - shape public narrative)</li>
+<li><strong>Investors/Shareholders</strong> (financial stakeholders concerned about impact)</li>
+<li><strong>Government/Regulators</strong> (compliance and legal obligations)</li>
+<li><strong>Community/Public</strong> (broader society, activist groups)</li>
+<li><strong>Partners/Suppliers</strong> (business continuity implications)</li>
+</ul>
+<p><strong>Priority Rule:</strong> Communicate with internal stakeholders FIRST, before external announcements (Argenti, 2002).</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's map out who needs to hear from you during a crisis"</li>
+<li>Draw two columns on board: "Internal" and "External"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Internal first: Argenti's research shows employees must hear from leadership before media does</li>
+<li>Employees become brand ambassadors or critics based on how you treat them</li>
+<li>Different stakeholders care about different aspects of the crisis</li>
+<li>Vietnamese context: Government/regulators often play larger role than in Western markets</li>
+<li>ASEAN context: Community and social media influencers have significant power</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: Tech company data breach</li>
+<ul class="nested-list">
+<li>Employees learn from media instead of leadership → They feel disrespected, share frustrations on social media</li>
+<li>Employees briefed first → They become informed defenders: "My company told us immediately and here's what they're doing"</li>
+</ul>
+<li>Crisis prioritization: Employee accident in factory</li>
+<ul class="nested-list">
+<li>Priority 1: Affected family and employees (internal)</li>
+<li>Priority 2: Government/labor authorities (regulatory)</li>
+<li>Priority 3: Media and public (external)</li>
+</ul>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I should tell everyone at the same time" → No, strategic sequencing matters</li>
+<li>"Customers are always first priority" → No, employees are - they serve customers</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Why must employees hear first?" [They're your frontline, they'll be asked questions, they need to represent you accurately]</li>
+<li>"Who might you forget in a crisis?" [Partners/suppliers who depend on you for business continuity]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Now that we know WHO to communicate with, let's talk about WHAT each group needs to hear..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="16">
+      <h2 class="slide-title">Internal Crisis Communication: What Employees Need</h2>
+      <div class="slide-content">
+        <p><strong>Four Essential Messages for Employees:</strong></p>
+<p><strong>1. Current State of Business</strong></p>
+<ul>
+<li>Candid, frequent updates (at least daily) about business status</li>
+<li>Employees need to know the company's actual condition as soon as reasonably possible</li>
+<li>If you don't provide updates, they'll fill the information vacuum with assumptions (Leschke-Kahle, 2020)</li>
+</ul>
+<p><strong>2. Personal Impact</strong></p>
+<ul>
+<li>How this crisis affects their job, their team, their safety</li>
+<li>What's expected of them during the crisis response</li>
+<li>What support is available to them</li>
+</ul>
+<p><strong>3. Leadership Visibility</strong></p>
+<ul>
+<li>Hear from both top organizational leaders AND direct team leaders</li>
+<li>Authentic voice matters more than polished messages (Leschke-Kahle, 2020)</li>
+<li>Seeing you care matters more than perfect communication</li>
+</ul>
+<p><strong>4. Meaningful Work</strong></p>
+<ul>
+<li>How they can contribute to the response</li>
+<li>Purpose-driven tasks restore routine and reinforce company pride (Argenti, 2002)</li>
+</ul>
+<p><em>Leschke-Kahle, A. (2020, April 9). What employees need to hear from leaders in times of crisis. MIT Sloan Management Review. https://sloanreview.mit.edu/article/what-employees-need-to-hear-from-leaders-in-times-of-crisis/</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Employees aren't just workers - they're your most important stakeholders in a crisis"</li>
+<li>"Research from MIT Sloan Management Review identifies exactly what they need to hear"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Current state: Don't sugarcoat, don't hide - employees can handle truth better than uncertainty</li>
+<li>Personal impact: The first question every employee asks is "How does this affect ME?"</li>
+<li>Leadership visibility: Vietnamese culture particularly values face-to-face leadership</li>
+<li>Meaningful work: People want to help, not just wait - give them purpose</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: Tech company facing server issues</li>
+<ul class="nested-list">
+<li>BAD: Leadership sends one email and disappears for 3 days</li>
+<li>GOOD: CEO sends daily video updates, team leaders hold brief check-ins, employees assigned specific response tasks</li>
+</ul>
+<li>Dell example from Argenti research: Internal website received 54,947 hits with 90% positive feedback because employees felt connected to response</li>
+<li>ASEAN example: Grab during pandemic - frequent CEO updates, clear guidance on driver safety</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"I'll worry employees with too much information" → No, lack of information creates MORE worry</li>
+<li>"I need perfect communication" → No, authentic is better than polished (MIT Sloan research)</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What happens if you only send one update per week during a crisis?" [Employees assume the worst, create their own narratives]</li>
+<li>"Who should communicate with employees - CEO or direct managers?" [BOTH - they need to hear from multiple levels]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Employees need internal updates. But what about external stakeholders - customers and the public?"</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="17">
+      <h2 class="framework-title">External Crisis Communication: Customers, Media, Public</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Five Essential Elements</h3>
+          
+          
+          
+        </div>
+        <div class="component">
+          <h3>1. Acknowledgment</h3>
+          
+          <ul class="component-bullets"><li>Immediate recognition that the situation exists</li><li>Don't wait for complete information to acknowledge</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>2. Empathy</h3>
+          
+          <ul class="component-bullets"><li>Express genuine concern for those affected</li><li>"We understand the impact this has on you..."</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>3. Action</h3>
+          
+          <ul class="component-bullets"><li>What you're doing RIGHT NOW to address the situation</li><li>Concrete, specific steps (not vague promises)</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>4. Accountability</h3>
+          
+          <ul class="component-bullets"><li>Who is responsible for fixing this</li><li>Transparency about what went wrong (when appropriate)</li></ul>
+          
+        </div>
+        <div class="component">
+          <h3>5. Timeline</h3>
+          
+          <ul class="component-bullets"><li>When they can expect updates and resolution</li><li>Commit to specific timeframes and honor them</li></ul>
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Channel Selection:</strong> Use platforms where your stakeholders are most active - social media for customers, press releases for media, investor calls for shareholders.</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"External stakeholders need different information than employees"</li>
+<li>"They care less about internal processes, more about impact on THEM"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Acknowledgment: Shows you're aware and engaged (not ignoring)</li>
+<li>Empathy: Humanizes your organization, preserves relationships</li>
+<li>Action: Demonstrates competence and commitment</li>
+<li>Accountability: Builds trust through transparency</li>
+<li>Timeline: Sets expectations, gives people something to hold onto</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: E-commerce platform crash during sale</li>
+<ul class="nested-list">
+<li>Social media post (5 minutes): "We're aware checkout is down. Our team is working to fix this. We'll update you in 30 minutes."</li>
+<li>Update 1 (30 minutes): "Issue identified in payment gateway. Estimated resolution: 2 hours. All orders will be honored at sale prices."</li>
+<li>Update 2 (2 hours): "System restored. Here's what happened and how we're preventing it..."</li>
+</ul>
+<li>Compare: Company that tweets once vs. company with regular updates</li>
+<li>Vietnamese consumer expectation: Real-time updates on Zalo, Facebook, or company app</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Accountability means admitting we're at fault" → No, it means taking responsibility for response (different from blame)</li>
+<li>"Timeline commitments lock us in" → Yes, that's the point - accountability builds trust</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the difference between acknowledgment and accountability?" [Acknowledgment = we know it happened; Accountability = we're taking responsibility for fixing it]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered what to say to different stakeholders. Now let's talk about social media specifically..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="18">
+      <h2 class="slide-title">Managing Crises on Social Media</h2>
+      <div class="slide-content">
+        <p><strong>Social Media Realities:</strong></p>
+<p><strong>Speed Expectation:</strong> 69% think agencies should monitor social media to offer quick help; 74% expect response within one hour (American Red Cross, 2012)</p>
+<p><strong>Detection Advantage:</strong> Detecting a brewing crisis 30 minutes faster can stop a rumor before it goes viral</p>
+<p><strong>Channel Characteristics:</strong></p>
+<ul>
+<li><strong>Facebook/Zalo:</strong> Most-used platforms in Vietnam - priority for consumer crises</li>
+<li><strong>LinkedIn:</strong> Professional stakeholders - B2B or employment-related crises</li>
+<li><strong>Twitter:</strong> Real-time updates, media monitoring (limited Vietnam reach)</li>
+<li><strong>Company Website:</strong> Authoritative source for detailed information</li>
+</ul>
+<p><strong>Best Practices:</strong></p>
+<ol>
+<li>Monitor social media 24/7 during crisis</li>
+<li>Respond publicly AND privately (DMs for individual concerns)</li>
+<li>Don't delete negative comments (shows you're hiding)</li>
+<li>Use consistent messaging across all platforms</li>
+<li>Provide social media team clear talking points</li>
+</ol>
+<p><em>Research: Vietnamese organizations often post on official websites but forget social media channels, making messages less relatable to stakeholders (EloQ, 2021).</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"In Vietnam's digital economy, social media IS your crisis battleground"</li>
+<li>"77% of Vietnam's population uses social media - you can't ignore this channel"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Speed: Vietnamese consumers expect faster response than global average</li>
+<li>Platform selection: Facebook and Zalo dominate in Vietnam (not Twitter)</li>
+<li>Monitoring: Crises often emerge on social media before traditional channels</li>
+<li>Vietnamese organizational tendency: Focus on press releases, neglect social media (this is a mistake)</li>
+<li>EloQ research: Vietnamese companies post on websites, forget social media is where their audience is</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: Café disability discrimination incident</li>
+<ul class="nested-list">
+<li>Crisis started on Facebook, victim's Facebook update resolved it</li>
+<li>Official press releases were too slow and wrong channel</li>
+</ul>
+<li>Positive example: VNG Corporation using Facebook for real-time game server status</li>
+<li>Bad example: Company deleting negative comments → Screenshot evidence goes viral: "They're hiding!"</li>
+<li>ASEAN example: Shopee responding to delivery complaints via Facebook Messenger + public page</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"We can control the narrative by deleting comments" → No, screenshots exist, deletion proves guilt</li>
+<li>"One person can handle social media in crisis" → No, you need team with clear shifts and talking points</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Should you respond to every negative comment?" [Respond to legitimate concerns publicly, move specific cases to DM, ignore trolls]</li>
+<li>"What platform should a Vietnamese restaurant use for food safety crisis?" [Facebook - where customers are]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Social media is immediate and public. But there's one more stakeholder group with special needs..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="19">
+      <h2 class="slide-title">Vietnamese Context: Crisis Communication Culture</h2>
+      <div class="slide-content">
+        <p><strong>Cultural Factors in Vietnamese Crisis Response:</strong></p>
+<p><strong>1. Apology Avoidance</strong></p>
+<p>Research shows apology is the least-used strategy among Vietnamese organizations. Companies tend to ignore crises hoping they will fade away, but social media prevents this approach from working (EloQ, 2021).</p>
+<p><strong>2. Hierarchy and Face</strong></p>
+<p>Vietnamese business culture values hierarchy and "saving face." Crisis communication must balance transparency with respect for leadership dignity. Publicly blaming leaders damages organizational cohesion.</p>
+<p><strong>3. Government Relations</strong></p>
+<p>Vietnamese companies must consider regulatory authorities as primary stakeholders in many crises (data privacy, labor issues, product safety).</p>
+<p><strong>4. Social Media Dominance</strong></p>
+<p>77% social media penetration means Vietnamese consumers expect real-time, informal communication on Facebook and Zalo - not just official press releases.</p>
+<p><strong>5. Community and Reputation</strong></p>
+<p>Collective culture means reputation damage spreads through networks quickly. Word-of-mouth (digital and traditional) can make or break crisis response.</p>
+<p><em>EloQ Communications. (2021, June 17). Using social media during communication crisis in Vietnam. https://blog.eloqasia.com/2021/06/17/using-social-media-during-communication-crisis-in-vietnam/</em></p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Crisis communication principles are universal, but execution must adapt to Vietnamese culture"</li>
+<li>"Let's talk about what makes crisis communication different in Vietnam"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Apology avoidance: Traditional Vietnamese approach (ignore and hope it fades) fails in social media era</li>
+<li>Modern Vietnamese consumers, especially younger generation, expect transparency</li>
+<li>Face-saving: Can't throw leaders under the bus publicly - damages morale</li>
+<li>Government: More involved in Vietnamese business than Western markets</li>
+<li>Social media: Vietnamese consumers LIVE on Facebook and Zalo - official websites alone won't reach them</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Café disability discrimination case: Organization hoped it would fade away → It didn't, social media kept it alive</li>
+<li>Food safety incidents: Vietnamese consumers share widely on Facebook, tag friends, create viral spread</li>
+<li>Contrast: Traditional Vietnamese company (official press release only) vs. modern approach (social media + website)</li>
+<li>ASEAN comparison: Vietnamese consumers expect more informal, frequent communication than Singapore or Japanese markets</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese students may be taught to avoid direct confrontation → In business, transparent crisis response is necessary</li>
+<li>"Saving face" doesn't mean hiding truth → It means communicating with dignity and respect</li>
+<li>Collective culture means your employees' families will hear about crisis → Another reason for internal communication first</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Can you be transparent AND respectful of hierarchy?" [Yes - focus on organizational response, not blaming individuals]</li>
+<li>"Why is ignoring a crisis no longer viable in Vietnam?" [Social media, 77% penetration, information spreads instantly]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered how to respond during a crisis. Now let's talk about what happens AFTER..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="20">
+      <h2 class="section-title">Part 4: Post-Crisis Communication & Learning</h2>
+      <p class="section-subtitle">The Crisis Isn't Over When It's Over</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"The crisis may be resolved, but your work isn't done"</li>
+<li>"Post-crisis communication is where you rebuild trust and prevent future crises"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>This section covers post-crisis analysis and organizational learning</li>
+<li>Approximately 15 minutes of content</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's talk about what to do after the immediate crisis passes..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="21">
+      <h2 class="framework-title">Post-Crisis Analysis: Learning from the Experience</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Four-Step Process</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><ul>
+<li>Create detailed timeline of crisis events</li>
+<li>Document all communication sent (internal and external)</li>
+<li>Gather stakeholder feedback and media coverage</li>
+<li>Record decisions made and rationale</li>
+<li>Survey employees: What did they need that they didn't get?</li>
+<li>Interview key stakeholders: How did they perceive our response?</li>
+<li>Analyze social media sentiment and customer feedback</li>
+<li>Review media coverage tone and accuracy</li>
+<li>What worked well in our crisis response?</li>
+<li>What failed or fell short of expectations?</li>
+<li>Were our crisis communication plans adequate?</li>
+<li>Did we have the right people, tools, and authority?</li>
+<li>Update crisis communication plans based on lessons learned</li>
+<li>Implement preventive measures to avoid recurrence</li>
+<li>Train team members on new protocols</li>
+<li>Communicate improvements to stakeholders</li>
+</ul></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Most organizations celebrate when the crisis ends and move on"</li>
+<li>"The best organizations systematically learn from every crisis"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Documentation: Memory fades quickly, write everything down within 48 hours</li>
+<li>Stakeholder feedback: Ask what they needed - don't assume you know</li>
+<li>Process evaluation: Separate what you can control (plans, training) from what you can't (the crisis itself)</li>
+<li>Prevention: Some crises are preventable, but all responses can improve</li>
+<li>This is exactly what Vietnam's disaster management authority does after natural disasters (JICA, 2024)</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: Tech company after server outage</li>
+<ul class="nested-list">
+<li>Documented: Crisis began at 2:47 PM, first acknowledgment 3:15 PM (28 min delay - TOO SLOW)</li>
+<li>Learned: Need 24/7 social media monitoring, not just business hours</li>
+<li>Implemented: Hired night shift social media manager</li>
+</ul>
+<li>Positive: After food safety scare, restaurant chain implemented real-time kitchen monitoring with customer-facing cameras</li>
+<li>ASEAN example: Airlines after service disruptions create "crisis playbooks" for specific scenarios</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Post-crisis analysis is blaming people" → No, it's improving systems</li>
+<li>"We did fine, no need to review" → Every crisis teaches something, even successful responses</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"When should you document the crisis timeline?" [Within 24-48 hours while memory is fresh]</li>
+<li>"Who should you get feedback from?" [All stakeholder groups - employees, customers, media, anyone affected]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Post-crisis analysis is internal. But you also need external follow-up communication..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="22">
+      <h2 class="slide-title">Closing the Loop with Stakeholders</h2>
+      <div class="slide-content">
+        <p><strong>What to Communicate After Crisis Resolves:</strong></p>
+<p><strong>To Employees:</strong></p>
+<ul>
+<li>Acknowledgment of their contribution during crisis</li>
+<li>What was learned and what will change</li>
+<li>How this experience makes the organization stronger</li>
+<li>Appreciation for their resilience and adaptability</li>
+</ul>
+<p><strong>To Customers:</strong></p>
+<ul>
+<li>Confirmation that issue is fully resolved</li>
+<li>Explanation of what caused the crisis (appropriate level of detail)</li>
+<li>Specific actions taken to prevent recurrence</li>
+<li>Compensation or goodwill gesture if appropriate</li>
+</ul>
+<p><strong>To Media/Public:</strong></p>
+<ul>
+<li>Transparent post-crisis report summarizing events</li>
+<li>Organizational changes or improvements implemented</li>
+<li>Reaffirmation of commitment to stakeholders</li>
+<li>Availability for follow-up questions</li>
+</ul>
+<p><strong>To Government/Regulators:</strong></p>
+<ul>
+<li>Formal incident report with findings</li>
+<li>Compliance with any regulatory requirements</li>
+<li>Preventive measures implemented</li>
+<li>Ongoing monitoring plan</li>
+</ul>
+<p><strong>Timeline:</strong> Post-crisis communication should occur within 1-2 weeks of resolution (while still relevant) but after immediate urgency passes.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"After the crisis ends, you need to 'close the loop' with stakeholders"</li>
+<li>"This is your opportunity to restore trust and demonstrate learning"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Don't just disappear when crisis ends - stakeholders want closure</li>
+<li>Different stakeholders need different levels of detail</li>
+<li>Timing matters: Too soon (looks defensive), too late (they've moved on)</li>
+<li>This is where you shift from "crisis response" to "trust rebuilding"</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: E-commerce platform after outage</li>
+<ul class="nested-list">
+<li>Email to customers: "Here's what happened, here's how we fixed it, here's your 10% discount for the inconvenience"</li>
+<li>Internal memo: "Thank you for working through the weekend. Here's what we learned and what we're changing."</li>
+</ul>
+<li>Good example: Company publishes transparent incident report on blog</li>
+<li>Bad example: Company goes silent after crisis ends → Customers assume they're hiding something</li>
+<li>ASEAN example: Financial services company after data breach - published detailed security improvement plan</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"Bringing it up again reminds people of the crisis" → No, closure builds trust</li>
+<li>"We don't owe them an explanation" → Yes you do - stakeholders deserve to know what you learned</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the risk of NOT communicating after crisis ends?" [Stakeholders assume you didn't learn anything, trust isn't rebuilt]</li>
+<li>"Should post-crisis communication be different for employees vs. customers?" [Yes - employees deserve more detail and appreciation]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"We've covered the entire crisis lifecycle. Let's look at how organizations prepare BEFORE crises strike..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide framework-slide" data-slide="23">
+      <h2 class="framework-title">Framework: Building Crisis Readiness</h2>
+      
+      <div class="framework-components">
+        <div class="component">
+          <h3>Four Pillars of Crisis Preparedness</h3>
+          
+          
+          
+        </div>
+      </div>
+      <div class="framework-auxiliary"><p><strong>Pillar 1: Crisis Communication Plan</strong></p>
+<p>Documented protocols for who communicates what, through which channels, to which stakeholders. Include contact lists, holding statement templates, channel access credentials.</p>
+<p><strong>Pillar 2: Designated Crisis Team</strong></p>
+<p>Identified team members with defined roles: spokesperson, social media manager, internal communicator, stakeholder liaison. Train them quarterly.</p>
+<p><strong>Pillar 3: Monitoring Systems</strong></p>
+<p>24/7 social media monitoring, media alerts, customer feedback channels, employee reporting mechanisms. Early detection prevents escalation.</p>
+<p><strong>Pillar 4: Scenario Planning</strong></p>
+<p>Pre-developed response plans for likely crisis scenarios (e.g., data breach, product recall, workplace accident, social media backlash). Practice with simulation exercises.</p>
+<p><strong>Testing Requirement:</strong> Crisis plans must be tested annually through tabletop exercises or simulations. Plans that aren't practiced will fail under pressure.</p></div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"The best crisis response begins before the crisis happens"</li>
+<li>"Argenti's principle 4: Have a plan in place - let's break down what that means"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Crisis plan: Must be documented, accessible, and up-to-date (not gathering dust in a drawer)</li>
+<li>Crisis team: Can't assign roles during crisis - decide in advance, train regularly</li>
+<li>Monitoring: Vietnamese companies often lack 24/7 monitoring - crisis can start at 2 AM</li>
+<li>Scenario planning: Can't plan for every crisis, but can plan for categories (tech, HR, product, etc.)</li>
+<li>Testing: Plans look good on paper but fail in practice without rehearsal</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Vietnam example: Tech startup holds quarterly "crisis simulation day"</li>
+<ul class="nested-list">
+<li>Scenario: Simulated data breach at 9 AM Friday</li>
+<li>Team practices entire response: holding statement, employee communication, customer notification</li>
+<li>Finds gaps: Social media manager doesn't have login credentials, legal team takes too long to approve messages</li>
+</ul>
+<li>ASEAN example: Singapore Airlines conducts crisis drills for various scenarios</li>
+<li>Bad example: Company has 50-page crisis plan that no one has read or practiced</li>
+</ul>
+<p><strong>Common Misconceptions:</strong></p>
+<ul>
+<li>"We're too small to need a crisis plan" → Size doesn't matter, crises happen to all organizations</li>
+<li>"Crisis planning is just for big disasters" → No, includes social media backlash, employee incidents, etc.</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What's the minimum crisis team for a small company?" [Minimum 3: someone for internal communication, someone for external, someone for social media]</li>
+<li>"How often should you test your crisis plan?" [At least annually, ideally quarterly]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's look at a real Vietnamese business example of crisis communication in action..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="24">
+      <h2 class="slide-title">Case Study: Café Disability Discrimination Incident</h2>
+      <div class="slide-content">
+        <p><strong>The Crisis:</strong></p>
+<p>A Vietnamese café franchise was accused of discriminating against a disabled person through a Facebook post. The public outrage grew rapidly on social media.</p>
+<p><strong>What Happened:</strong></p>
+<ul>
+<li>Accusation posted on Facebook → Viral spread within hours</li>
+<li>Company initially ignored the situation (traditional Vietnamese approach)</li>
+<li>Public anger intensified as company remained silent</li>
+<li>Victim updated situation on his personal Facebook account</li>
+<li>Only after victim's update did public sentiment cool down</li>
+</ul>
+<p><strong>Analysis Using Today's Frameworks:</strong></p>
+<p><strong>Speed:</strong> Company was too slow (Argenti's Principle 2: Choose channels) ✗</p>
+<p><strong>Accuracy:</strong> Company didn't establish facts or share their perspective ✗</p>
+<p><strong>Empathy:</strong> No acknowledgment of victim's experience ✗</p>
+<p><strong>Stakeholder Adaptation:</strong> Ignored social media channel where crisis emerged ✗</p>
+<p><strong>Cultural Context:</strong> Applied old "ignore it" strategy that no longer works ✗</p>
+<p><strong>What Should Have Happened:</strong></p>
+<ol>
+<li><strong>Immediate (30 min):</strong> Holding statement on Facebook: "We're aware of this situation and investigating immediately. Inclusion and respect are our core values."</li>
+<li><strong>Short-term (3 hours):</strong> Update with facts and action: "We've spoken with all involved. Here's what happened and here's how we're addressing it."</li>
+<li><strong>Follow-up:</strong> Policy changes to prevent recurrence, staff training on accessibility</li>
+</ol>
+      </div>
+      <div class="slide-footer"><p class="citation">Source: EloQ Communications. (2021). Using social media during communication crisis in Vietnam. https://blog.eloqasia.com/2021/06/17/using-social-media-during-communication-crisis-in-vietnam/</p></div>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"Let's analyze a real Vietnamese crisis using today's frameworks"</li>
+<li>"This case shows exactly what NOT to do - and why traditional approaches fail"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Speed failure: Ignoring crisis allowed it to escalate unchecked</li>
+<li>Channel failure: Crisis was on Facebook, but company didn't use Facebook to respond</li>
+<li>Traditional Vietnamese approach (ignore, hope it fades) documented by research as common but ineffective</li>
+<li>The victim had to solve it himself by posting update - company lost control of narrative</li>
+<li>This violated every principle: speed, accuracy, empathy, stakeholder adaptation</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Connect to today's frameworks:</li>
+<ul class="nested-list">
+<li>Argenti: Get on the scene → Company was invisible ✗</li>
+<li>Speed vs. Accuracy: Too slow, never even tried ✗</li>
+<li>Three Pillars: No speed, no accuracy, no empathy ✗</li>
+<li>Stakeholder Adaptation: Wrong channel (or no channel) ✗</li>
+</ul>
+<li>Contrast with what SHOULD have happened (tiered response)</li>
+<li>Similar Vietnamese cases: Food safety incidents where silence made it worse</li>
+</ul>
+<p><strong>Cultural Considerations:</strong></p>
+<ul>
+<li>Vietnamese students might think ignoring is "polite" or avoids confrontation</li>
+<li>Emphasize: Modern Vietnamese consumers, especially young people, expect transparency</li>
+<li>"Saving face" by ignoring crisis actually LOSES more face than honest response</li>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"What was the company's biggest mistake?" [Staying silent - violates speed principle]</li>
+<li>"Which stakeholder group did they ignore?" [Customers on social media - their primary audience]</li>
+<li>"If you were the café manager, what would your first action be?" [Facebook post within 30 min acknowledging situation]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"This case shows what NOT to do. Now let's synthesize everything we've learned..."</li>
+</ul>
+<p>---</p>
+<p><!-- SECTION BREAK --></p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide section-break-slide" data-slide="25">
+      <h2 class="section-title">Synthesis & Key Takeaways</h2>
+      <p class="section-subtitle">What You Need to Remember</p>
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"We've covered a lot of frameworks and principles today"</li>
+<li>"Let's synthesize the key takeaways you need to remember for Quiz 2 and for your careers"</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Here are the five critical lessons from today..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide dark-bg content-slide" data-slide="26">
+      <h2 class="slide-title">Five Critical Crisis Communication Lessons</h2>
+      <div class="slide-content">
+        <p><strong>1. Speed + Accuracy + Empathy (The Three Pillars)</strong></p>
+<p>Respond within 15-30 minutes with holding statement. Share only verified information. Show genuine care for those affected. All three are required for effective crisis response.</p>
+<p><strong>2. Employees First, Then Externals</strong></p>
+<p>Internal communication precedes external announcements. Employees become your ambassadors or critics based on how you treat them (Argenti, 2002).</p>
+<p><strong>3. Tiered Response Solves Speed vs. Accuracy</strong></p>
+<p>Immediate: Acknowledge (5-15 min). Short-term: Initial findings (1-3 hours). Medium-term: Detailed response (24-48 hours). Long-term: Post-crisis analysis (1-2 weeks).</p>
+<p><strong>4. Adapt Messages to Stakeholder Needs</strong></p>
+<p>Employees need business status and personal impact. Customers need acknowledgment and action. Government needs compliance. Media needs facts. One message doesn't fit all.</p>
+<p><strong>5. Social Media Is Primary Channel in Vietnam</strong></p>
+<p>77% social media penetration means Facebook and Zalo are crisis battlegrounds, not optional channels. Vietnamese consumers expect real-time, informal updates.</p>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"These five lessons summarize everything we've covered today"</li>
+<li>"Write these down - they're testable on Quiz 2 and applicable throughout your career"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Lesson 1: Can't have two of three - need all three pillars</li>
+<li>Lesson 2: Argenti's most important principle based on 9/11 research</li>
+<li>Lesson 3: Solves the central tension - you CAN be fast and accurate</li>
+<li>Lesson 4: Different stakeholders = different information needs</li>
+<li>Lesson 5: Vietnam-specific - social media isn't optional here</li>
+</ul>
+<p><strong>Examples/Stories:</strong></p>
+<ul>
+<li>Quick recall of examples from today:</li>
+<ul class="nested-list">
+<li>Three Pillars: 74% expect one-hour response (speed), verify before sharing (accuracy), show you care (empathy)</li>
+<li>Employees first: Dell's internal website, Starbucks opening stores</li>
+<li>Tiered response: E-commerce platform example</li>
+<li>Stakeholder adaptation: Employees need different info than customers</li>
+<li>Social media: Café case study, 77% penetration</li>
+</ul>
+</ul>
+<p><strong>Check for Understanding:</strong></p>
+<ul>
+<li>"Which pillar do organizations most often forget?" [Empathy - they focus on speed and facts, forget to show they care]</li>
+<li>"What's the risk of communicating externally before internally?" [Employees feel disrespected, become critics instead of ambassadors]</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Let's preview what you'll practice in today's tutorial..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide content-slide" data-slide="27">
+      <h2 class="slide-title">Tutorial Preview: Crisis Response Analysis</h2>
+      <div class="slide-content">
+        <p><strong>Today's Tutorial Focus:</strong></p>
+<p><strong>Main Activity: Crisis Response Case Analysis (55-60 minutes)</strong></p>
+<ul>
+<li>You'll analyze real crisis communication examples</li>
+<li>Evaluate responses using today's frameworks (Argenti, Three Pillars, Stakeholder Adaptation)</li>
+<li>Practice writing stakeholder-specific crisis messages</li>
+<li>Peer review using crisis communication criteria</li>
+</ul>
+<p><strong>Frameworks You'll Apply:</strong></p>
+<ul>
+<li>Argenti's Five Principles</li>
+<li>Speed vs. Accuracy Balance (Tiered Response)</li>
+<li>Three Pillars (Speed + Accuracy + Empathy)</li>
+<li>Stakeholder Adaptation Matrix</li>
+</ul>
+<p><strong>Quiz Preparation (15-20 minutes):</strong></p>
+<ul>
+<li>6-8 practice questions covering today's content</li>
+<li>Focus on frameworks, stakeholder prioritization, crisis response timing</li>
+<li>Prepares you for Quiz 2 (Week 7) on Weeks 4-6</li>
+</ul>
+<p><strong>Connection to Portfolio:</strong></p>
+<ul>
+<li>Today's frameworks explain WHY your crisis communication responses (Week 5 portfolio) were effective</li>
+<li>Understanding the research behind best practices</li>
+</ul>
+      </div>
+      
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"In tutorial, you'll apply everything from today's lecture"</li>
+<li>"You'll analyze real crisis responses and practice writing your own"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Tutorial is assessment-aligned: Quiz 2 next week covers this content</li>
+<li>Main activity uses case studies to apply frameworks</li>
+<li>You'll write messages for different stakeholder groups (employees vs. customers)</li>
+<li>Peer review focuses on Three Pillars and stakeholder adaptation</li>
+<li>Quiz prep questions will look similar to Quiz 2 format</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"Before we finish, here are the references for today's lecture..."</li>
+</ul>
+<p>---</p>
+        </div>
+      </aside>
+    </div>
+
+    <div class="slide references-slide" data-slide="28">
+      <h2 class="slide-title">References</h2>
+      <div class="slide-content">
+        <p>American Red Cross. (2012). <em>Social media in disasters and emergencies</em>. https://www.redcross.org/content/dam/redcross/atg/PDF_s/Preparedness___Disaster_Recovery/Social_Media/SocialMediaSlideDeck.pdf</p>
+<p>Argenti, P. A. (2002, December). Crisis communication: Lessons from 9/11. <em>Harvard Business Review, 80</em>(12), 103–109. https://hbr.org/2002/12/crisis-communication-lessons-from-911</p>
+<p>EloQ Communications. (2021, June 17). Using social media during communication crisis in Vietnam. <em>EloQ's Blog</em>. https://blog.eloqasia.com/2021/06/17/using-social-media-during-communication-crisis-in-vietnam/</p>
+<p>Institute for Public Relations. (2024). Crisis management and communications. https://instituteforpr.org/crisis-management-and-communications/</p>
+<p>Leschke-Kahle, A. (2020, April 9). What employees need to hear from leaders in times of crisis. <em>MIT Sloan Management Review</em>. https://sloanreview.mit.edu/article/what-employees-need-to-hear-from-leaders-in-times-of-crisis/</p>
+<p>McNulty, E. J. (2020, March 24). What employees need to hear from leaders in times of crisis. <em>MIT Sloan Management Review</em>. https://sloanreview.mit.edu/article/what-employees-need-to-hear-from-leaders-in-times-of-crisis/</p>
+<p>Prevency. (2024). What matters in a social media crisis? Speed and empathy. <em>Prevency</em>. https://prevency.com/en/social-media-crisis-communication-social-media-care-speed-factor/</p>
+      </div>
+
+      
+      <aside class="speaker-notes">
+        <h4>Speaker Notes</h4>
+        <div class="notes-content">
+          <p><strong>Opening:</strong></p>
+<ul>
+<li>"All sources cited in today's lecture are listed here"</li>
+<li>"These are openly accessible - you can read them for deeper understanding"</li>
+</ul>
+<p><strong>Key Teaching Points:</strong></p>
+<ul>
+<li>Argenti (2002) is required reading - foundation for crisis framework</li>
+<li>McNulty (2020) is required reading - internal crisis communication</li>
+<li>All other sources supplement and provide evidence for claims</li>
+<li>These references may appear on Quiz 2</li>
+</ul>
+<p><strong>Transition:</strong></p>
+<ul>
+<li>"That concludes today's lecture. See you in tutorial!"</li>
+</ul>
+<p>---</p>
+<p><strong>END OF LECTURE CONTENT</strong></p>
+<p><strong>Summary:</strong></p>
+<ul>
+<li>Total slides: 28 (within 22-30 range when excluding speaker notes)</li>
+<li>Section breaks: 4 (Parts 1-4)</li>
+<li>Framework slides: 3 (Argenti, Three Pillars, Crisis Preparedness)</li>
+<li>Dark slides: 2 (Vietnamese context, Case study)</li>
+<li>Quote slides: 1 (Opening question)</li>
+<li>Big number slide: 1 (74% statistic)</li>
+<li>Comparison table: 1 (Speed vs. Accuracy)</li>
+<li>Vocab table: 1 (Key terms)</li>
+<li>References: 7 sources with DOI/URLs</li>
+<li>Vietnamese/ASEAN examples: 12+</li>
+<li>Citations: All statistics and frameworks cited inline</li>
+</ul>
+        </div>
+      </aside>
+    </div>
+
+  </div>
+
+  <script>
+
+    (function() {
+      let currentSlide = 1;
+      const slides = document.querySelectorAll('.slide');
+      const totalSlides = slides.length;
+      const prevBtn = document.getElementById('prev-btn');
+      const nextBtn = document.getElementById('next-btn');
+      const counter = document.getElementById('slide-counter');
+      const progressFill = document.getElementById('progress-fill');
+
+      function showSlide(n) {
+        if (n < 1) n = 1;
+        if (n > totalSlides) n = totalSlides;
+
+        slides.forEach(slide => slide.classList.remove('active'));
+        slides[n - 1].classList.add('active');
+
+        currentSlide = n;
+        counter.textContent = `${n} / ${totalSlides}`;
+        progressFill.style.width = `${(n / totalSlides) * 100}%`;
+      }
+
+      function nextSlide() { showSlide(currentSlide + 1); }
+      function prevSlide() { showSlide(currentSlide - 1); }
+
+      prevBtn.addEventListener('click', prevSlide);
+      nextBtn.addEventListener('click', nextSlide);
+
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === ' ') {
+          e.preventDefault();
+          nextSlide();
+        }
+        if (e.key === 'ArrowLeft') {
+          e.preventDefault();
+          prevSlide();
+        }
+        if (e.key === 'Home') {
+          e.preventDefault();
+          showSlide(1);
+        }
+        if (e.key === 'End') {
+          e.preventDefault();
+          showSlide(totalSlides);
+        }
+      });
+
+      showSlide(1);
+    })();
+
+  </script>
+</body>
+</html>
