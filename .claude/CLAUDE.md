@@ -12,6 +12,7 @@ Generate world-class university course content with research validation and asse
 | Batch generate | `/generate-course [CODE]` |
 | Assessment handbook | `/generate-handbook [CODE]` |
 | Validate quality | `/validate-content [CODE]` |
+| Gemini prompt | `/gemini-handoff [CODE] [N]` |
 | Add speaker notes | `/add-speaker-notes [CODE] [N]` |
 | Export DOCX | `/export-docx [CODE] [N]` |
 | Research articles | `/research-topic "[Topic]" "[Concepts]"` |
@@ -36,7 +37,7 @@ Generate world-class university course content with research validation and asse
    OR /generate-week [N]           (45-70 min each)
 5. /validate-content [CODE]        (5-10 min - AI quality checks)
 6. /enhance-coherence [CODE]       (15-30 min polish)
-7. Gemini handoff                  (lecture-content.md → PPTX visuals)
+7. /gemini-handoff [CODE] [N]      (generates prompt → paste into Gemini)
 8. /add-speaker-notes [CODE] [N]   (merge speaker notes into Gemini PPTX)
 9. /export-docx [CODE] [N]
 ```

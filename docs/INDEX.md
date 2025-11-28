@@ -52,7 +52,8 @@ Compact workflow definitions:
 | `/generate-week` | Create lecture + tutorial + quiz |
 | `/generate-course` | Batch generate all weeks |
 | `/validate-content` | AI-powered quality validation |
-| `/finalize-slides` | Merge Gemini batches + speaker notes |
+| `/gemini-handoff` | Generate Gemini slide prompt |
+| `/add-speaker-notes` | Merge speaker notes into PPTX |
 | `/research-topic` | Find validated articles |
 
 ### Technical Reference
@@ -98,7 +99,7 @@ docs/.archive/
    OR /generate-week [N]               → Per week (45-70 min)
 5. /validate-content [CODE]            → AI quality checks (5-10 min)
 6. /enhance-coherence [CODE]           → Quality polish (15-30 min)
-7. Gemini handoff                      → PPTX visuals from lecture-content.md
+7. /gemini-handoff [CODE] [N]          → Generate prompt, paste into Gemini
 8. /add-speaker-notes [CODE] [N]       → Merge speaker notes into PPTX
 9. /export-docx [CODE] [N]             → Tutorial/quiz Word exports
 ```
