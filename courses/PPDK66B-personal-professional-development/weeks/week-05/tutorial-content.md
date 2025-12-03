@@ -1,592 +1,315 @@
-# Week 5 Tutorial: Self-Assessment Integration Workshop
+# Week 5 Tutorial: Assessment Integration Workshop
 
 **Course:** PPDK66B Personal & Professional Development
 **Duration:** 90 minutes
-**Assessment Connection:** This workshop directly prepares Part 1 (Self-Knowledge Foundation) of your Personal Development Plan (40%), which requires: (1) summaries of all 5 assessments with career implications, and (2) a 200-300 word integration statement identifying patterns. It also prepares you for Mentorship Meeting #2 where you share and discuss assessment results with your mentor.
-
----
-
-## Prerequisites
-
-**You MUST complete these assessments BEFORE this tutorial:**
-
-1. **MBTI/16 Personalities** — https://www.16personalities.com (15-20 min)
-2. **VIA Character Strengths** — https://www.viacharacter.org (10-15 min)
-3. **CliftonStrengths** — Access code provided (30-45 min)
-4. **Holland Code/Interest Profiler** — https://www.mynextmove.org/explore/ip (10 min)
-5. **Emotional Intelligence** — Link provided in course materials (15 min)
-
-**Bring to class:**
-- Printed or digital copies of ALL assessment results
-- Notebook for reflection and peer feedback
-- Draft PDP template (if you've started)
-
-If you haven't completed assessments, you cannot fully participate in today's activities. Complete them now (use first 30 minutes of tutorial if needed).
+**Assessment Connection:** This tutorial directly prepares you for Part 1 of your Personal Development Plan (20% of PDP grade), specifically the 200-300 word integration statement that identifies patterns across all 5 self-assessments. The cross-assessment analysis you practice today forms the foundation of your SWOT analysis, SMART goals, and overall career strategy. Students who complete this workshop thoughtfully will write stronger, more coherent PDPs with clearer career direction.
 
 ---
 
 ## Quick Review
 
 **Key concepts from today's lecture:**
+- **Johari Window:** Four quadrants of self-knowledge (Open, Blind Spot, Hidden, Unknown)—self-awareness requires both internal reflection AND external feedback
+- **MBTI validity:** Acceptable reliability (α = 0.85-0.92) but weak validity (r < 0.50)—use as conversation starter, not career prescription
+- **VIA Character Strengths:** 24 strengths across 6 virtues; signature strengths (top 5-7) are energizing and authentic
+- **CliftonStrengths caution:** Reid & Short (2024) found only 8 of 34 themes reliable for college students—prioritize VIA when results conflict
+- **Holland Code (RIASEC):** Person-environment fit predicts satisfaction (r = .17)—use to filter career options, not eliminate them
+- **Integration is key:** Patterns across assessments reveal coherent themes; contradictions reveal complexity
 
-- **Johari Window:** Four quadrants of self-knowledge (Open, Blind, Hidden, Unknown) — assessment tools help reveal the Unknown area while mentorship reduces the Blind Spot
-- **MBTI Critical Evaluation:** Popular but weak validity (only 2.8% of correlations strong) — use for self-reflection but not career decisions
-- **VIA Character Strengths:** 24 strengths across 6 virtues — using signature strengths (top 5-7) increases wellbeing and performance
-- **CliftonStrengths Caution:** Recent research shows weak reliability in college students — focus more on VIA, use CliftonStrengths language as ONE input
-- **Holland RIASEC Model:** Six interest types (Realistic, Investigative, Artistic, Social, Enterprising, Conventional) — career satisfaction highest when job matches your 3-letter code
-- **Integration Framework:** List results → Identify patterns → Note contradictions → Generate hypotheses → Test through experience
+**What good integration looks like:**
+- Identifies 2-3 consistent patterns across assessments with specific examples
+- Acknowledges contradictions and interprets them thoughtfully (not dismisses them)
+- Connects assessment insights to concrete career implications
+- Demonstrates critical thinking about assessment validity
 
-**What good work looks like:**
-- Integration statement identifies 2-3 clear patterns across assessments with specific evidence
-- Thoughtfully addresses contradictions rather than ignoring them
-- Generates actionable career hypotheses with both "thrive in" and "struggle with" scenarios
-- Uses assessment terminology correctly (e.g., "VIA Perspective strength" not "I'm wise")
-- Demonstrates nuanced self-understanding, not just listing results
-
-**Full rubric:** See Assessment Handbook, Personal Development Plan Rubric — Part 1 (Self-Assessment Integration) is worth 20% of PDP grade, which is 40% of course grade = 8% of final grade directly tied to today's work.
+**Full rubric:** See Assessment Handbook, Personal Development Plan Rubric—"Self-Assessment Integration" (20% of PDP grade) evaluates completeness, depth of insight, and synthesis quality.
 
 ---
 
-## Learning Objectives
+## Setup & Materials Needed
 
-By the end of this tutorial, you will be able to:
+**Before Tutorial:**
+- [ ] **REQUIRED:** Completed results from all 5 assessments (bring printed copies or digital access):
+  1. MBTI/16Personalities (your 4-letter type)
+  2. VIA Character Strengths (top 5-7 signature strengths)
+  3. CliftonStrengths (top 5 talent themes)
+  4. Emotional Intelligence assessment (self-awareness, self-management, social awareness, relationship management scores)
+  5. Holland Code (3-letter RIASEC code)
+- [ ] Laptop or notebook for writing integration statement draft
+- [ ] Highlighters or colored pens (3-4 colors)
 
-1. **Document** all five assessment results with career implications (PDP Part 1 requirement)
-2. **Identify** patterns across multiple assessments using the integration framework
-3. **Address** contradictions thoughtfully without forcing false coherence
-4. **Generate** career hypotheses based on integrated self-knowledge
-5. **Practice** articulating self-assessment insights (preparation for Mentorship Meeting #2)
-6. **Provide and receive** peer feedback on integration quality
+**If You Haven't Completed All 5 Assessments:**
+- Complete them TODAY during tutorial (all are free except CliftonStrengths, which uses course-provided codes)
+- Work with a partner who has completed them—observe their integration process, then complete yours for homework
+- **YOU CANNOT PROCEED WITHOUT ASSESSMENT RESULTS**—this is not optional
 
----
-
-## Activity 1: Individual Documentation (25 minutes)
-
-**Assessment Connection:** This directly produces content for PDP Part 1 — Self-Assessment Summary section.
-
-**The Task:**
-
-Complete the Self-Assessment Summary Template for ALL five assessments. You will use this exact content in your Personal Development Plan.
-
-**Deliverable:**
-
-A completed template with 5 assessment summaries + preliminary integration notes.
-
-**Success Criteria:**
-- Each assessment summary includes: (1) specific results (type/strengths/code), (2) key insights about yourself, (3) implications for career fit or work environment
-- Career implications are specific, not generic ("I'd thrive in data-driven consulting roles" not "I'm good with numbers")
-- You identify at least 2-3 initial patterns to explore in Activity 2
+**Class Setup:**
+- Groups of 3-4 students
+- Access to whiteboard or large paper for mapping
+- Quiet space for individual writing
 
 ---
 
-### Self-Assessment Summary Template
+## Activity 1: Cross-Assessment Pattern Mapping (30 minutes)
 
-**Copy this template to your notebook or laptop. You will transfer this to your PDP later.**
+**Assessment Connection:** Learning to identify convergence across assessments is the core skill for PDP Part 1. Your integration statement must identify patterns—not just list results. This activity teaches the analytical thinking required.
 
----
+**The Challenge:**
+You'll create a visual map showing how your 5 assessment results relate to each other, then identify 2-3 career-relevant themes that emerge.
 
-#### Assessment 1: MBTI/16 Personalities
+### Step 1: Individual Mapping (15 minutes)
 
-**My Type:** __________ (e.g., INTJ, ESFP)
+**Your Task:**
+Create a visual map of your assessment results using this structure:
 
-**Key Insights About My Personality:**
-- Energy source (E/I):
-- Information processing (S/N):
-- Decision making (T/F):
-- Lifestyle orientation (J/P):
+```
+                    YOUR NAME
+                        |
+        ________________________________
+        |       |        |       |      |
+      MBTI    VIA   Clifton    EI   Holland
+        |       |        |       |      |
+    [Results] [Results] [Results] [Results] [Results]
+```
 
-**Implications for Career Fit:**
-- Work environments where I'd thrive:
-- Work environments where I'd struggle:
-- Communication style implications:
+**Instructions:**
+1. **Write each assessment's results** under its column:
+   - MBTI: Your 4-letter type (e.g., ENFJ) + brief meaning (e.g., "Extraverted, values harmony, structured")
+   - VIA: Your top 5 signature strengths (e.g., Curiosity, Judgment, Love of Learning, Perseverance, Social Intelligence)
+   - CliftonStrengths: Your top 5 talents (e.g., Strategic, Learner, Empathy, Communication, Achiever)
+   - EI: Your strongest dimension (e.g., "High social awareness, developing self-regulation")
+   - Holland Code: Your 3-letter code + meaning (e.g., ASE = Artistic-Social-Enterprising)
 
-**Critical Note:** I recognize MBTI has weak validity (Erford et al., 2025) and use it for self-reflection, not career limitation.
+2. **Use colored highlighters to mark themes:**
+   - **Color 1 (e.g., yellow):** People-oriented/social themes
+   - **Color 2 (e.g., green):** Analytical/thinking themes
+   - **Color 3 (e.g., blue):** Creative/innovative themes
+   - **Color 4 (e.g., pink):** Leadership/influence themes
+   - *(Choose colors that match YOUR results—not all students will have all 4 themes)*
 
----
+3. **Draw connections** between results that relate:
+   - Example: MBTI "Feeling" connects to VIA "Kindness" connects to Holland "Social"
+   - Example: VIA "Curiosity" connects to CliftonStrengths "Learner" connects to Holland "Investigative"
 
-#### Assessment 2: VIA Character Strengths
+4. **Circle your strongest theme cluster:**
+   - Which color appears most frequently across assessments?
+   - Where are the densest connections?
 
-**My Top 5 Signature Strengths:**
-1.
-2.
-3.
-4.
-5.
+**Example Convergence:**
+- Student discovers ALL five assessments emphasize people orientation:
+  - MBTI: ESFJ (Extraverted-Feeling)
+  - VIA: Love, Kindness, Teamwork, Social Intelligence
+  - CliftonStrengths: Empathy, Developer, Harmony
+  - EI: High social awareness, high relationship management
+  - Holland: SEC (Social-Enterprising-Conventional)
 
-**How These Strengths Show Up in My Life Currently:**
-- Strength #1 example:
-- Strength #2 example:
-- Strength #3 example:
+  **Interpretation:** This student thrives working WITH people, building relationships, and creating harmony—career implications point toward HR, counseling, team leadership, or customer-facing roles.
 
-**How I Will Leverage Them in My Career:**
--
--
--
+### Step 2: Small Group Sharing & Questioning (15 minutes)
 
-**Virtues Represented:** (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence)
+**Your Task:**
+Share your map with 2-3 peers. For each person's map, the group asks probing questions:
 
----
+**Questions to ask each other:**
+- "I notice [pattern X] across 3 assessments. Do you see that in yourself?"
+- "Your MBTI says [X] but Holland Code says [Y]—how do you interpret that contradiction?"
+- "What theme surprised you? What confirmed what you already knew?"
+- "If I only looked at your assessments (not knowing you), what careers would I suggest?"
+- "What's NOT showing up in any assessment? Any talents or interests missing?"
 
-#### Assessment 3: CliftonStrengths
+**Your goal:**
+Get external perspective on your results (reducing your Johari Window "Blind Spot"). Peers may see patterns you missed or question interpretations that don't match how they observe you.
 
-**My Top 5 Talent Themes:**
-1.
-2.
-3.
-4.
-5.
-
-**Domains Represented:** (Strategic Thinking, Relationship Building, Influencing, Executing)
-
-**Specific Examples of These Talents in Action:**
-- Theme #1:
-- Theme #2:
-- Theme #3:
-
-**Development Strategies for Each Theme:**
-- How to turn talent into strength through practice:
-
-**Critical Note:** I recognize CliftonStrengths has weak reliability in college students (Reid & Short, 2024) and weight VIA more heavily.
-
----
-
-#### Assessment 4: Holland Code (RIASEC)
-
-**My 3-Letter Code:** __________ (e.g., ASE, RIC)
-
-**Primary Type Explanation:**
-- 1st letter:
-- 2nd letter:
-- 3rd letter:
-
-**Career Fields That Match My Code:**
--
--
--
-
-**Alignment with My Current Career Direction:**
-- Strong fit because:
-- Potential mismatch concerns:
+**Write down:**
+- 1-2 insights peers offered that you hadn't considered
+- 1 question they raised that you need to explore with your mentor
 
 ---
 
-#### Assessment 5: Emotional Intelligence
+## Activity 2: Interpretation Practice—Convergence vs. Contradiction (20 minutes)
 
-**My EI Profile Summary:**
-- Self-Awareness score/insights:
-- Self-Management score/insights:
-- Social Awareness score/insights:
-- Relationship Management score/insights:
+**Assessment Connection:** Your PDP integration statement must address BOTH patterns (convergence) AND contradictions. This activity teaches you to interpret contradictions as insights, not errors.
 
-**Strengths:**
+**The Challenge:**
+Analyze case study profiles to practice identifying patterns and contradictions, then apply the same thinking to your own results.
 
-**Areas for Development:**
+### Round 1: Case Study Analysis (10 minutes)
 
-**Implications for Leadership and Teamwork:**
+**Case Study A: The "Contradiction" Profile**
+- MBTI: INTJ (Introverted-Intuitive-Thinking-Judging)
+- VIA: Creativity, Curiosity, Love of Learning, Judgment, Appreciation of Beauty
+- CliftonStrengths: Ideation, Strategic, Learner, Input, Analytical
+- EI: High self-awareness, moderate-low social awareness
+- Holland Code: ASE (Artistic-Social-Enterprising)
 
----
+**Discussion Questions (5 minutes in pairs):**
+1. What patterns do you see? (INTJ + Investigative strengths BUT Holland says Artistic-Social-Enterprising)
+2. Is this actually a contradiction, or can you find a hybrid career that fits?
+3. What careers would honor both the analytical introversion AND the creative-social interests?
 
-#### Preliminary Integration Notes
+**Possible Interpretation:**
+Not contradictory—fits UX Research (Artistic design + Investigative analysis + Social user empathy + Enterprising leadership in design thinking). Or Strategic Communications (creative messaging + analytical audience research). The contradiction resolves when you find careers that blend multiple Holland types.
 
-**Patterns I Notice Across Assessments:**
-1.
-2.
-3.
+**Case Study B: The "Coherent" Profile**
+- MBTI: ESFJ (Extraverted-Sensing-Feeling-Judging)
+- VIA: Kindness, Teamwork, Fairness, Love, Social Intelligence
+- CliftonStrengths: Harmony, Developer, Empathy, Responsibility, Consistency
+- EI: High social awareness, high relationship management
+- Holland Code: SEC (Social-Enterprising-Conventional)
 
-**Contradictions or Surprises:**
-1.
-2.
+**Discussion Questions (5 minutes in pairs):**
+1. What is the dominant theme? (Extremely people-focused, relationship-driven, organized approach)
+2. What careers fit this profile? (HR management, team coordination, nonprofit program management)
+3. What might this person STRUGGLE with? (Highly competitive environments, solitary technical work, conflict-heavy roles)
 
-**Initial Career Hypotheses:**
-- I would thrive in careers/environments that...
-- I would struggle in careers/environments that...
+### Round 2: Apply to Your Own Results (10 minutes)
 
----
+**Your Task:**
+Write brief answers to these questions about YOUR assessment results:
 
-**Tutor Notes:**
+1. **Convergence:** What is the strongest pattern across your 5 assessments? (1-2 sentences)
+   - *Example: "All five assessments emphasize analytical thinking and problem-solving—MBTI Thinking, VIA Judgment + Curiosity, CliftonStrengths Analytical + Strategic, high EI self-awareness, Holland Investigative."*
 
-Circulate during this activity to:
-- Ensure students have all assessment results (if not, direct them to computers to complete now)
-- Check that career implications are SPECIFIC (not "I'm a people person" but "I'd excel in client-facing consulting roles requiring relationship building")
-- Encourage critical thinking notes on MBTI and CliftonStrengths validity
-- Remind students: this is DRAFT content for PDP — they'll polish later
+2. **Contradiction:** What results seem to conflict? How do you interpret that? (2-3 sentences)
+   - *Example: "MBTI says ISTJ (Introverted-Conventional) but Holland Code is ASE (Artistic-Social-Enterprising). I think this reflects that I'm naturally introverted but passionate about creative work that involves people. I'll need roles with deep work time AND collaborative phases, like brand strategy or content marketing."*
 
-**Common Issues:**
-- **Too generic:** "I'm creative" → "My VIA Creativity + Holland Artistic type + CliftonStrengths Ideation suggest I need roles with innovation and autonomy"
-- **Just listing results:** "My VIA strengths are X, Y, Z" → "My VIA Perspective strength appears in how I help friends solve problems by seeing multiple viewpoints"
-- **No career implications:** Add "So what does this mean for my career?" to each section
+3. **Career Implications:** Based on your patterns, what 2-3 career fields seem like good fits? (1 sentence)
+   - *Example: "Marketing research, data-driven design, or business analytics roles that combine Investigative analysis with Artistic creativity."*
 
----
-
-## Activity 2: Small Group Integration Practice (30 minutes)
-
-**Assessment Connection:** This develops the 200-300 word Integration Statement required in PDP Part 1.
-
-**The Task:**
-
-Work in groups of 3-4 to practice the Five-Step Integration Framework from lecture. Each person shares results, receives peer feedback, and drafts their integration statement.
-
-**Deliverable:**
-
-A 200-300 word integration statement (draft) that will become part of your PDP Part 1.
-
-**Success Criteria:**
-- Statement identifies 2-3 clear patterns with evidence from multiple assessments
-- Addresses at least one contradiction or surprise
-- Generates career hypotheses (both "thrive" and "struggle" scenarios)
-- Uses assessment terminology correctly
-- Feels authentic and personal, not generic
+**Save these answers—you'll use them in Activity 3.**
 
 ---
 
-### Small Group Process (7-8 min per person)
+## Activity 3: Draft Your PDP Integration Statement (30 minutes)
 
-**Step 1: Share Results (3 minutes per person)**
+**Assessment Connection:** This is THE key deliverable for PDP Part 1. You're drafting the 200-300 word integration statement required in your Personal Development Plan. Students who complete a strong draft today will have minimal revision work later.
 
-Person A presents:
-- "My MBTI is _____, my Holland Code is _____, my top VIA strengths are _____..."
-- Highlight 1-2 key insights from each assessment
-- Note any contradictions or surprises
+**The Challenge:**
+Write a 200-300 word integration statement that synthesizes all 5 assessments, identifies patterns and contradictions, and states career implications.
 
-Group members listen actively and take notes on patterns they notice.
+### Structure to Follow:
 
-**Step 2: Group Pattern Identification (2 minutes per person)**
+**Paragraph 1: Overview & Dominant Pattern (80-100 words)**
+- *Opening sentence:* "Across all five self-assessments, a consistent pattern emerges: [state your 1-2 dominant themes]."
+- *Evidence:* Provide specific examples from at least 3 assessments showing this pattern
+- *Example:* "Across all five self-assessments, a consistent pattern emerges: strong people-orientation and relationship-building. My MBTI type (ENFJ) emphasizes Feeling and harmony-seeking, VIA highlights Love and Social Intelligence as signature strengths, CliftonStrengths identifies Empathy and Developer in my top 5, EI results show high social awareness and relationship management, and my Holland Code (SEC) prioritizes Social and Enterprising environments."
 
-Group discusses:
-- "We notice these themes across your assessments..."
-- "Your MBTI _____ aligns with your Holland _____ because..."
-- "The contradiction between _____ and _____ might mean..."
+**Paragraph 2: Contradictions or Complexity (60-80 words)**
+- *Acknowledge nuance:* "However, my results also reveal [contradiction or complexity]."
+- *Interpret, don't dismiss:* Explain what this tells you about yourself
+- *Example:* "However, my results also reveal complexity: while MBTI indicates Introversion, my Holland Code includes Social and Enterprising (typically extraverted). I interpret this as preferring deep one-on-one relationships over large group settings—I'm people-focused but need recharge time. This suggests careers involving meaningful client relationships rather than constant networking."
 
-**Step 3: Career Hypothesis Generation (2 minutes per person)**
+**Paragraph 3: Career Implications & Next Steps (60-80 words)**
+- *Synthesize:* "These insights suggest career paths that [state requirements based on your profile]."
+- *Provide examples:* Name 2-3 specific career fields or roles
+- *Validation plan:* Mention how you'll test these hypotheses
+- *Example:* "These insights suggest career paths that combine relationship-building with structured systems—HR management, client success roles, or organizational development. My Mentorship Meeting #2 will focus on exploring which industries (corporate, NGO, consulting) best leverage my SEC profile. I'll also seek informational interviews with professionals in these fields to test career-personality fit before committing to summer internships."
 
-Group helps generate:
-- "Based on your profile, you'd probably thrive in..."
-- "You might struggle in environments that..."
-- "Careers that leverage your _____ + _____ combo include..."
+### Individual Writing Time (20 minutes)
 
-**Step 4: Individual Drafting (10 minutes after all share)**
+**Your Task:**
+Write your 200-300 word integration statement using the structure above. Be specific—use actual assessment results, not vague generalizations.
 
-Each person writes their 200-300 word integration statement using this structure:
+**Quality checklist while writing:**
+- [ ] Mentions all 5 assessments by name (MBTI, VIA, CliftonStrengths, EI, Holland Code)
+- [ ] Provides specific results (not "my strengths include..." but "VIA identifies Curiosity and Judgment as signature strengths...")
+- [ ] Identifies 2-3 clear patterns with evidence
+- [ ] Acknowledges at least 1 contradiction or complexity and interprets it
+- [ ] States career implications with 2-3 specific field/role examples
+- [ ] Word count: 200-300 words (check!)
+- [ ] Demonstrates critical thinking about assessment validity (optional but strong: mentioning Erford's MBTI caution or Reid & Short's CliftonStrengths concerns shows sophistication)
 
----
+### Peer Feedback (10 minutes)
 
-### Integration Statement Template
+**Your Task:**
+Exchange drafts with a partner. Read their integration statement and provide feedback using this framework:
 
-**Paragraph 1: Patterns (100-150 words)**
+**Strengths (what works well):**
+- "Your pattern about [X] is really clear—I see the evidence across 3 assessments."
+- "I like how you interpreted the [contradiction] as [interpretation]—that makes sense."
 
-"Across five assessments, I see consistent themes of [THEME 1] and [THEME 2]. [Provide specific evidence from 3+ assessments]. For example, my [MBTI preference/VIA strength/CliftonStrengths theme/Holland type] combined with [another assessment result] suggests [insight about yourself]."
+**Questions/Suggestions:**
+- "You mention [career X], but I don't see how that connects to [result Y]—can you explain?"
+- "This feels generic in places—can you add specific assessment names/results instead of saying 'assessments show'?"
+- "You're at 280 words but didn't mention Holland Code—can you fit it in?"
 
-**Paragraph 2: Contradictions & Nuance (50-75 words)**
-
-"[Address one contradiction or surprising result]. This makes sense when I consider [context or example]. Rather than seeing this as inconsistency, I now understand [more nuanced insight]."
-
-**Paragraph 3: Career Implications (50-75 words)**
-
-"These insights suggest I would thrive in [specific career types/environments] where I can [leverage specific strengths]. I should be cautious about roles requiring [things that don't match your profile] as they may lead to dissatisfaction. My next step is [action based on this self-knowledge]."
-
----
-
-**Example Integration Statement (275 words):**
-
-"Across five assessments, I see consistent themes of **analytical problem-solving** and **independent work**. My INTJ personality type emphasizes strategic thinking and autonomy, which aligns with my Holland Code IRA (Investigative-Realistic-Artistic) and my top VIA strength of Judgment. CliftonStrengths confirmed this with Strategic, Analytical, and Learner in my top five. This pattern suggests I'm energized by complex problems that require deep analysis and creative solutions, particularly when I can work independently or in small expert teams.
-
-The contradiction between my MBTI Introversion and my VIA strength of Leadership initially surprised me. However, reflecting on experiences, I realize I lead through expertise and strategic vision, not charisma or public speaking. I'm the person who develops the plan and guides execution quietly, not the one rallying crowds. This is "quiet leadership," which research shows is equally effective (Grant, 2013).
-
-These insights suggest I would thrive in **strategy consulting, data analytics, or product management roles** where I solve complex business problems using analytical frameworks. I should avoid highly routine work (underutilizes my Investigative Holland type) or roles requiring constant public performance (doesn't match my I preference). My VIA Perspective strength combined with CliftonStrengths Strategic theme suggests I'd excel in roles requiring systems thinking and long-term planning. My next step is exploring internships in management consulting or tech product teams to test these hypotheses in real-world contexts."
-
----
-
-**Tutor Notes:**
-
-**Group Formation:**
-- Mix personality types if possible (don't group all introverts together)
-- Ensure at least one person per group has strong writing skills to help others
-
-**Facilitation:**
-- Set a visible timer for each person's 7-8 minute share slot
-- Encourage depth over breadth — better to explore 2 patterns deeply than list 5 superficially
-
-**Common Issues:**
-- **Forcing coherence:** Remind students contradictions are INTERESTING, not problems to solve
-- **Too much jargon:** "I'm an INTJ with Analytical and Strategic themes" is fine, but explain what it MEANS
-- **No career specificity:** Push beyond "business" to "financial analysis," "marketing strategy," etc.
-
-**Strong Integration Indicators:**
-- Uses specific assessment language correctly
-- Provides concrete examples from life
-- Acknowledges nuance and complexity
-- Makes testable predictions about career fit
+**Give specific, actionable feedback—not just "good job."**
 
 ---
 
-## Activity 3: Mentorship Meeting #2 Preparation (20 minutes)
+## Activity 4: Mentorship Meeting #2 Preparation (10 minutes)
 
-**Assessment Connection:** Mentorship Meeting #2 (worth 20% of grade) should focus on sharing assessment results and seeking mentor's perspective. This activity ensures you're prepared for that conversation.
+**Assessment Connection:** Mentorship Meeting #2 (happening this week or next) should focus on assessment results and career implications. Students who prepare thoughtfully get more valuable mentor guidance, which improves Mentorship Program grades (20%) and PDP quality (40%).
 
-**The Task:**
+**The Challenge:**
+Prepare 3-5 high-quality questions for your mentor about interpreting your assessment results in career context.
 
-Prepare for your upcoming Mentorship Meeting #2 using the structured template below. Your mentor's feedback will become part of PDP Part 4 (Mentor Integration).
+### Question Quality Framework
 
-**Deliverable:**
+**WEAK Questions (too vague, mentor can't add value):**
+- ❌ "What do you think of my results?"
+- ❌ "Are these assessments accurate?"
+- ❌ "What should I do with this information?"
 
-A completed Pre-Meeting Preparation Form for Mentorship Meeting #2 (due 48 hours before your scheduled meeting).
+**STRONG Questions (specific, leverage mentor's expertise):**
+- ✓ "My Holland Code is ESC (Enterprising-Social-Conventional). In your industry experience, what roles combine leadership, people work, and structured systems? How does that play out day-to-day?"
+- ✓ "All five assessments emphasize analytical thinking (MBTI Thinking, VIA Judgment, CliftonStrengths Analytical, Holland Investigative). But I worry analysis alone won't advance my career. What complementary skills should I develop?"
+- ✓ "My VIA shows Creativity and Curiosity as top strengths, but my Holland Code is Conventional-Realistic (structured, technical). Do you see careers that need both systematic approaches AND creative problem-solving?"
+- ✓ "Erford's 2025 study says MBTI has weak career validity, but I'm INTJ and it felt accurate. Should I trust type descriptions when exploring careers, or focus more on Holland Code?"
 
-**Success Criteria:**
-- 5-7 thoughtful questions prepared that invite mentor expertise
-- Assessment results summarized concisely (1 page max)
-- Clear meeting objectives that go beyond "share results"
-- Demonstration that you've reflected deeply on results BEFORE the meeting
+### Your Task (5 minutes):
 
----
+**Write 3-5 questions for Mentorship Meeting #2:**
 
-### Mentorship Meeting #2 Preparation Template
+1. **Pattern interpretation question:**
+   *Example: "My dominant pattern is [X across 3+ assessments]. In your industry, what roles heavily rely on this trait? How would someone with my profile contribute to a team?"*
 
-**Meeting Date/Time:** ________________________
+2. **Contradiction resolution question:**
+   *Example: "My MBTI says [X] but Holland Code says [Y]—this seems contradictory. How would you interpret this? Are there careers that honor both preferences?"*
 
-**Meeting Format:** ☐ Face-to-Face  ☐ Virtual
+3. **Career exploration question:**
+   *Example: "Based on my [specific results], what 2-3 career paths should I explore that I might not have considered? What would a typical day look like in those roles?"*
 
----
+4. **Blind spot question (external perspective):**
+   *Example: "You've worked with me for [X weeks/meetings]. Do my assessment results match how you see my strengths? What am I undervaluing or overvaluing about myself?"*
 
-#### Pre-Meeting Objectives
+5. **Development question:**
+   *Example: "My assessments don't mention [skill X], but I know it's important for [career Y]. How critical is this gap? How can I develop this skill alongside my natural strengths?"*
 
-**What I want to accomplish in this meeting:**
-1.
-2.
-3.
+**Submit these questions in your Pre-Meeting Preparation Form 48 hours before Meeting #2.**
 
-**Specific decisions or insights I'm seeking:**
--
+### Group Share (5 minutes):
 
----
-
-#### Assessment Results Summary (1 page max to share with mentor)
-
-**MBTI:** [Type] — Key insight: [One sentence]
-
-**VIA Character Strengths:** [Top 3] — Career application: [One sentence]
-
-**CliftonStrengths:** [Top 3 themes] — Development focus: [One sentence]
-
-**Holland Code:** [3-letter code] — Career fields: [2-3 examples]
-
-**EI Profile:** Strengths: [1-2], Development areas: [1-2]
-
-**Patterns I've identified:**
--
--
-
-**Contradictions I'm exploring:**
--
-
-**Career hypotheses:**
-- I think I'd thrive in: _____ because _____
-- I think I'd struggle in: _____ because _____
+**Quick round-robin:**
+Each student shares their strongest question (1 per person). Group notes patterns: Are we asking about patterns? Contradictions? Blind spots? Career fit? This helps everyone improve question quality.
 
 ---
 
-#### Questions for My Mentor (Prepare 5-7)
+## Wrap-Up & Next Steps
 
-**About Assessment Accuracy:**
-1. "Based on your experience with me so far, do these results seem accurate? What surprises you?"
-2. "What have you observed about my [strengths/work style/communication] that I might not see?" (Reduces Blind Spot)
+**What You Accomplished Today:**
+- ✓ Created visual map of your 5 assessment results showing patterns and connections
+- ✓ Practiced interpreting convergence and contradictions through case studies
+- ✓ Drafted your PDP integration statement (200-300 words)—MAJOR deliverable
+- ✓ Prepared high-quality questions for Mentorship Meeting #2
 
-**About Career Application:**
-3. "Given my [Holland Code/VIA strengths], what career paths in [industry] would you recommend exploring?"
-4. "How have you seen people with [similar profile] succeed or struggle in [specific field]?"
+**Homework Before Next Class:**
+1. **Revise your integration statement** based on peer feedback—save this draft for PDP Part 1
+2. **Complete any missing assessments**—you need all 5 for Meeting #2
+3. **Submit Pre-Meeting Preparation Form** 48 hours before Mentorship Meeting #2, including:
+   - Assessment results summary
+   - Your 3-5 prepared questions
+   - Initial integration insights
+4. **Bring printed assessment results to Meeting #2**—mentors provide external perspective on patterns
 
-**About Development:**
-5. "If [assessment weakness] is a gap, what's the most effective way to develop it?"
-6. "Are there any of my strengths I should prioritize developing further?"
+**Looking Ahead:**
+- **Week 6:** Field Trip to MISA Company—observe workplace through assessment lens (What Holland types thrive here? What character strengths are valued?)
+- **Week 7:** Transferable Skills & Emotional Intelligence—building on EI results from this week
+- **Week 11:** Personal Development Plan DUE—Part 1 uses the integration statement you drafted today
 
-**About Decision-Making:**
-7. "I'm considering [two career options]. Based on my profile, which seems like better fit and why?"
-
----
-
-#### Updates Since Last Meeting
-
-**Actions I've taken:**
--
--
-
-**Progress on previous advice:**
--
-
-**Challenges I've encountered:**
--
+**Questions or Concerns?**
+See your tutor, or email instructor before Mentorship Meeting #2 if you need help interpreting assessment contradictions.
 
 ---
 
-**Tutor Notes:**
-
-**Facilitation:**
-- Students should actually draft this during tutorial (not "homework")
-- Pair students to review each other's questions — good questions are specific and open-ended
-- Emphasize: mentor's role is to provide EXTERNAL perspective (Johari Window Blind Spot reduction)
-
-**Common Issues:**
-- **Closed questions:** "Do you think I should do consulting?" → "What aspects of my profile suggest consulting fit, and what concerns would you have?"
-- **Too many questions:** Better to explore 5 questions deeply than rush through 10
-- **No vulnerability:** Encourage sharing contradictions and uncertainties — that's where mentor wisdom helps most
-
-**Strong Question Indicators:**
-- Invites mentor's expertise and experience
-- Shows you've reflected before asking
-- Allows for detailed, thoughtful responses
-- Directly supports PDP development
-
-**Meeting #2 Success = Evidence for PDP Part 4:**
-- Document mentor's feedback on assessment accuracy
-- Record specific advice on career fit
-- Note insights that changed your thinking
-- Identify which PDP sections mentor input influenced
-
----
-
-## Activity 4: Peer Feedback & Revision (15 minutes)
-
-**The Task:**
-
-Exchange integration statements with a partner. Provide structured feedback using the rubric criteria. Revise based on feedback.
-
-**Deliverable:**
-
-A revised 200-300 word integration statement ready to include in PDP Part 1.
-
----
-
-### Peer Feedback Protocol
-
-**Exchange statements with partner. Read carefully and provide feedback on:**
-
-**Patterns (Does it identify clear themes?)**
-- ☐ Strong: 2-3 clear patterns with specific evidence from 3+ assessments
-- ☐ Adequate: 1-2 patterns with some evidence
-- ☐ Weak: Lists results without identifying patterns
-- **Feedback:**
-
-**Contradictions (Does it address surprises?)**
-- ☐ Strong: Addresses contradiction thoughtfully with nuanced explanation
-- ☐ Adequate: Mentions contradiction briefly
-- ☐ Weak: Ignores contradictions or forces false coherence
-- **Feedback:**
-
-**Career Implications (Are hypotheses specific?)**
-- ☐ Strong: Specific career types/environments with clear reasoning
-- ☐ Adequate: General career directions mentioned
-- ☐ Weak: No career implications or very vague ("I'm good with people")
-- **Feedback:**
-
-**Terminology (Uses assessment language correctly?)**
-- ☐ Strong: Correct use of MBTI preferences, VIA strengths, Holland codes, etc.
-- ☐ Adequate: Mostly correct with minor errors
-- ☐ Weak: Incorrect terminology or doesn't use it
-- **Feedback:**
-
-**Authenticity (Feels personal, not generic?)**
-- ☐ Strong: Unique to this person with specific examples
-- ☐ Adequate: Somewhat personal
-- ☐ Weak: Could apply to anyone
-- **Feedback:**
-
-**One strength of this statement:**
-
-**One specific suggestion for improvement:**
-
----
-
-**Revision Time (5 minutes):**
-
-Based on peer feedback, revise your integration statement. Focus on the ONE area that needs most improvement.
-
----
-
-## Wrap-Up & Next Steps (10 minutes)
-
-**Tutor Summary:**
-
-Today you:
-1. ✓ Documented all five assessment results with career implications (PDP Part 1 content)
-2. ✓ Practiced integration using the five-step framework
-3. ✓ Drafted your 200-300 word integration statement
-4. ✓ Prepared for Mentorship Meeting #2
-5. ✓ Received peer feedback to strengthen your work
-
-**Immediate Action Items:**
-
-**Before Next Class (Week 6 Field Trip):**
-- [ ] Complete any unfinished assessments
-- [ ] Revise integration statement based on peer feedback
-- [ ] Schedule Mentorship Meeting #2 (if not already scheduled)
-- [ ] Submit Pre-Meeting Preparation Form 48 hours before Meeting #2
-
-**Within 1 Week:**
-- [ ] Conduct Mentorship Meeting #2
-- [ ] Submit Post-Meeting Reflection Form 48 hours after Meeting #2
-- [ ] Begin transferring today's work into PDP Part 1 template
-
-**Before Week 11 (PDP Due):**
-- [ ] Incorporate mentor feedback from Meeting #2 into your integration
-- [ ] Polish all sections of Part 1 (Self-Knowledge Foundation)
-- [ ] Complete the full PDP using self-assessment insights to inform SWOT, vision, and goals
-
----
-
-## Connection to Personal Development Plan
-
-**Today's work maps directly to PDP sections:**
-
-| Today's Activity | PDP Section | Worth |
-|------------------|-------------|-------|
-| Assessment summaries (Activity 1) | Part 1: Self-Assessment Summary | 15% of PDP |
-| Integration statement (Activity 2) | Part 1: Integration Statement | 5% of PDP |
-| Meeting prep (Activity 3) | Part 4: Mentor Integration (Meeting #2 evidence) | 5% of PDP |
-
-**Total direct impact:** 25% of PDP grade = 10% of course grade
-
-**Indirect impact:** Self-knowledge from assessments informs SWOT analysis (Part 2), vision statement (Part 3), and goal alignment (Part 3) = additional 35% of PDP.
-
----
-
-## Resources for Continued Learning
-
-**Free Assessment Tools:**
-- VIA Character Strengths: https://www.viacharacter.org
-- 16 Personalities (MBTI-based): https://www.16personalities.com
-- O*NET Interest Profiler (Holland Code): https://www.mynextmove.org/explore/ip
-
-**Career Exploration Using Holland Code:**
-- O*NET Online: https://www.onetonline.org
-- Filter by RIASEC code, education level, and salary
-
-**Self-Awareness Development:**
-- Johari Window exercise with trusted friends (reduce Blind Spot)
-- Reflective journaling using Gibbs' Cycle (Week 3)
-- Request feedback from mentor, professors, group project teammates
-
-**Critical Reading on Assessments:**
-- Erford et al. (2025) — MBTI validity meta-analysis
-- Reid & Short (2024) — CliftonStrengths reliability concerns
-- London et al. (2023) — Self-awareness development interventions
-
----
-
-## Questions for Reflection
-
-**Journal Prompts (Optional but Recommended):**
-
-1. Which assessment result surprised you most? Why?
-
-2. If you could only use ONE of the five assessments, which would be most useful for your career planning? Why?
-
-3. What patterns across assessments give you confidence in their validity?
-
-4. Which contradictions remain puzzling? How might you explore them through experience?
-
-5. How has your understanding of yourself changed this week?
-
-6. What specific action will you take this month based on your assessment insights?
-
----
-
-**Tutorial Complete. Strong work today—you've taken meaningful steps toward self-knowledge and career clarity.**
+**Remember:** Assessments are tools for self-discovery, not deterministic labels. Your draft integration statement should demonstrate critical thinking—acknowledge what assessments reveal AND their limitations. The goal is informed self-awareness, not perfect prediction.

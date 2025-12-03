@@ -1,612 +1,610 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<lecture>
-<metadata>
-<course>PPDK66B Personal & Professional Development</course>
-<week>1</week>
-<topic>Introduction &amp; Future of Work</topic>
-<duration>90 minutes</duration>
-<slides>30</slides>
-</metadata>
+# Week 1: Introduction & Future of Work
 
-<slide number="1" layout="big-number" title="The 40% Question">
+<slide number="1" layout="title" title="Title Slide">
+
+# Introduction & Future of Work
+
+<speaker-notes>
+Welcome to PPDK66B Personal & Professional Development. This opening week establishes the foundation for the entire course by exploring how the world of work is changing and what it means for your career planning.
+</speaker-notes>
+
+</slide>
+
+<slide number="2" layout="big-number" title="Hook">
 
 # 40%
 
-**of the skills you're learning right now will be obsolete or fundamentally different within 5 years**
+**of job skills will change by 2030**
 
-*(World Economic Forum, Future of Jobs Report 2025)*
+*(World Economic Forum, 2025)*
 
 <speaker-notes>
-Key moment—this statistic surprises students every time. Based on WEF surveys of over 1,000 employers representing 14 million workers globally. By 2030, when these students are establishing careers, 40% of core job skills will have changed. This isn't about fear-mongering; it's about preparing them for reality. Students typically react with both anxiety and curiosity. The follow-up question frames the entire course: if skills become obsolete, what remains valuable? Answer: The capacity to continuously learn, adapt, and develop yourself.
+This statistic from the WEF's latest Future of Jobs Report typically surprises students. It means that nearly half of what you learn in university will need to be updated or supplemented within the next 5 years. Common student questions: "Which skills will change?" and "How do we prepare for something we can't predict?"
 </speaker-notes>
 
 </slide>
 
-<slide number="2" layout="section-break" title="Course Purpose">
-
-# Personal & Professional Development
-
-## Why This Course Matters in the AI Era
-
-Today's professionals need:
-- **Continuous self-development**
-- **Ability to adapt to change**
-- **Navigate uncertainty with clarity**
-
-<speaker-notes>
-This connects the hook to the course structure. The old career playbook—study hard, get a job, stay loyal, retire—no longer applies in Vietnam or globally. Over 12 weeks, students will complete validated self-assessments, work with professional mentors, reflect on real workplace experiences, and create a comprehensive 5-year development plan. This isn't academic theory; it's the foundation for career resilience.
-</speaker-notes>
-
-</slide>
-
-<slide number="3" layout="content" title="Learning Objectives">
+<slide number="3" title="Learning Objectives">
 
 ## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Analyze** how AI and automation reshape career opportunities
-2. **Identify** key trends in the Vietnamese labor market
-3. **Evaluate** personal development frameworks for career uncertainty
-4. **Connect** course assessments to your professional journey
+1. Analyze how AI and automation are reshaping job markets globally and in Vietnam
+2. Identify the skills that future-proof careers in the age of AI
+3. Compare Vietnamese labor market trends with global workforce transformations
+4. Apply career development frameworks to your personal planning
 
 <speaker-notes>
-These objectives map directly to what employers seek: analytical thinking, contextual awareness, strategic planning, and integration. Students should understand that each objective builds toward their Personal Development Plan (40% of grade). Common question: "How does Week 1 connect to the final exam?" Answer: You'll present your PDP orally in the exam period, and the frameworks introduced today provide structure.
+These objectives align directly with the first assessment—the Personal Development Plan. Students will use today's frameworks to conduct their own skills gap analysis and career visioning in Week 11's submission.
 </speaker-notes>
 
 </slide>
 
-<slide number="4" layout="content" title="Roadmap">
+<slide number="4" layout="framework" title="Assessment Connection">
+
+## How This Week Prepares You
+
+**Personal Development Plan (40%, Due Week 11)**
+- Today: Learn frameworks for analyzing career trends
+- Weeks 2-10: Build skills assessment and development strategies
+- Week 11: Submit comprehensive PDP with SWOT analysis and 5-year plan
+
+**Mentorship Program (20%, Starts Week 2)**
+- Use today's insights to identify what skills you want to develop through mentorship
+- Discuss labor market trends with your mentor
+
+<speaker-notes>
+The PDP is the capstone assessment worth 40% of your grade. Everything we do this semester builds toward creating a compelling, research-backed personal development plan. The frameworks introduced today—particularly the WEF skills categories and Clark's five strategies—will appear in your SWOT analysis.
+</speaker-notes>
+
+</slide>
+
+<slide number="5" layout="section-break" title="Roadmap">
 
 ## Today's Journey
 
-1. **The Future of Work** — Global trends reshaping careers (25 min)
-2. **The Vietnamese Context** — Your specific career landscape (20 min)
-3. **Development Frameworks** — How to navigate uncertainty (20 min)
-4. **Course Structure** — How assessments build your career (15 min)
-5. **Next Steps** — What to do after today (10 min)
+1. **The Future of Work Landscape** (20 min)
+   - Global trends and Vietnamese context
+
+2. **Skills That Matter** (20 min)
+   - Future-proofing your career
+
+3. **Navigating Your Career** (20 min)
+   - Frameworks for personal development
 
 <speaker-notes>
-This roadmap moves from global to local to personal—a pedagogical pattern that helps students contextualize abstract concepts. The timing shows we'll spend most energy on understanding the landscape (45 minutes) before introducing frameworks. This prevents the common mistake of jumping to tools without understanding why they matter.
+We'll move through three distinct segments today. Each builds on the previous, moving from macro trends to personal application. Plan for brief discussion breaks at each transition.
 </speaker-notes>
 
 </slide>
 
-<slide number="5" layout="section-break" title="Section 1: Future of Work">
+<slide number="6" layout="section-break" title="Segment 1 Introduction">
 
-# SECTION 1
+# Part 1: The Future of Work Landscape
 
-## The Future of Work
-### Why Personal Development Matters Now More Than Ever
-
-*(25 minutes)*
+**Understanding the transformation**
 
 <speaker-notes>
-This section establishes urgency. Why invest in personal development when you could be learning technical skills? Because technical skills have a half-life of 3-5 years, while meta-skills (learning, adaptation, self-awareness) compound over decades. The WEF video provides third-party credibility; students trust external authorities more than instructors initially.
+Transition to first core segment. This section examines the big picture—what's happening to jobs globally and specifically in Vietnam. Students often feel anxious about AI replacing jobs; this segment provides balanced, data-driven perspective.
 </speaker-notes>
 
 </slide>
 
-<slide number="6" layout="content" title="WEF Video">
+<slide number="7" title="The Jobs Equation">
 
-**[VIDEO: WEF Future of Jobs Report 2025 Summary]**
-**Video link:** https://www.youtube.com/watch?v=cKTJp2y_lT4
-**Duration:** 3 minutes
+## The WEF Jobs Projection (2025-2030)
 
-**Before watching:** "What industries do you think will create the most jobs by 2030?"
+**Jobs Created:** 170 million new roles
+**Jobs Displaced:** 92 million roles eliminated
+
+**Net Result:** +78 million jobs globally
+
+*But here's the critical point:* The NEW jobs require DIFFERENT skills than the displaced ones.
 
 <speaker-notes>
-Pre-viewing questions activate prior knowledge. After the video, debrief quickly: "What surprised you?" Common student insights: "I didn't know AI would create MORE jobs than it destroys" or "Healthcare and renewable energy are bigger than tech." The video frames job displacement as a transition challenge, not apocalypse—this reframes student anxiety productively.
+This is a crucial distinction students often miss: automation creates more jobs than it destroys, but it creates jobs requiring different skills. Someone displaced from routine manufacturing work cannot automatically transition to an AI/ML specialist role without reskilling. This is why the 40% skills change statistic matters so much.
 </speaker-notes>
 
 </slide>
 
-<slide number="7" layout="content" title="Global Jobs Forecast">
+<slide number="8" layout="framework" title="Job Categories">
 
-## The Net-Positive Story (With a Twist)
+## Which Jobs Are Growing? Which Are Declining?
 
-**By 2030:**
-- **+170 million** new jobs created
-- **-92 million** jobs displaced by technology
-- **= +78 million** net new jobs globally
+**Fastest Growing Roles (2025-2030):**
+- AI and Machine Learning Specialists
+- Data Analysts and Scientists
+- Cybersecurity Professionals
+- Sustainability Specialists
+- Business Intelligence Analysts
 
-**The twist:** This assumes workers can successfully *transition* from declining roles to emerging roles.
-
-**The question isn't whether jobs will exist—it's whether YOU will have the skills to access them.**
+**Declining Roles:**
+- Administrative Assistants
+- Data Entry Clerks
+- Accounting and Payroll Clerks
+- Bank Tellers
+- Postal Service Workers
 
 <speaker-notes>
-This slide reframes the WEF data to highlight the critical assumption: successful transitions require intentional skill development. Many students miss this nuance—they see "78 million net jobs" and feel reassured. Push them: "What if you're in a declining role and lack skills for emerging roles?" This motivates engagement with course content. The phrasing "whether YOU will have the skills" makes it personal, not abstract.
+Notice the pattern: roles requiring human judgment, creativity, and complex problem-solving are growing. Routine, predictable tasks are being automated. Students studying economics and business should note that even traditionally "safe" roles like accounting clerks are declining—automation doesn't only affect manual labor.
 </speaker-notes>
 
 </slide>
 
-<slide number="8" layout="framework" title="Growing vs Declining Roles">
+<slide number="9" title="Vietnam's Transformation">
 
-## Fastest-Growing Jobs by 2030
-
-| **Growing** | **Declining** |
-|-------------|---------------|
-| AI & ML Specialists | Bank Tellers |
-| Data Scientists | Postal Clerks |
-| Cybersecurity Pros | Data Entry Clerks |
-| FinTech Engineers | Admin Assistants |
-| Renewable Energy | Cashiers |
-| Digital Marketing | Ticket Clerks |
-
-**Pattern:** Routine tasks decline. Judgment, creativity, and human connection grow.
-
-<speaker-notes>
-Students relate to this breakdown immediately—they can visualize these jobs. Key teaching point: Notice the pattern, not just individual jobs. Routine, predictable tasks are declining (automatable). Roles requiring creativity, judgment, complex problem-solving, and human interaction are growing. This isn't about technology replacing humans; it's about technology replacing ROUTINE TASKS. Common student question: "What if I like routine work?" Valid question—acknowledge that preference, but help them see career risk.
-</speaker-notes>
-
-</slide>
-
-<slide number="9" layout="content" title="Top 10 Skills for 2030">
-
-## The Skills Employers Will Prioritize
-
-1. Analytical thinking and innovation
-2. Active learning and learning strategies
-3. Creativity, originality, and initiative
-4. Technology design and programming
-5. Critical thinking and analysis
-6. Complex problem-solving
-7. Leadership and social influence
-8. **Emotional intelligence**
-9. **Resilience and flexibility**
-10. AI and big data literacy
-
-*(WEF Future of Jobs Report 2025)*
-
-<speaker-notes>
-Have students identify their top 2 current strengths and top 2 development needs—this personalizes the list. Key observation: Notice what's NOT on this list (memorizing facts, following procedures, technical knowledge alone). The bolded skills (#8-9) are uniquely human and can't be automated. Students often overlook these "soft skills" as less important; this data contradicts that assumption. Connection: "This is where personal development comes in—technical skills change every few years, but strong analytical thinking, emotional intelligence, and learning strategies let you adapt to ANY technological shift."
-</speaker-notes>
-
-</slide>
-
-<slide number="10" layout="content" title="Future-Proofing Strategies">
-
-## 5 Strategies to Future-Proof Your Career
-
-*(Clark & Chamorro-Premuzic, HBR 2023)*
-
-1. **Avoid Predictability** — If AI can learn your job, it will
-2. **Build Human Relationships** — Trust and empathy can't be automated
-3. **Develop Soft Skills Ruthlessly** — The hardest skills to automate
-4. **Aim for Originality** — Don't compete on efficiency
-5. **Develop AI Collaboration** — Work WITH AI, not against it
-
-<speaker-notes>
-Harvard Business Review framework provides practical guidance. Strategy #1 surprises students: if your work is routine and predictable, AI WILL learn it—so seek non-routine, contextual judgment work. Strategy #3: "Soft skills" is a terrible term (implies less important); these are actually the HARDEST to automate. Strategy #5 will be explored deeply in Week 2. Common student reflection: "Which strategy feels most urgent for MY development?" Let them self-assess before moving on.
-</speaker-notes>
-
-</slide>
-
-<slide number="11" layout="section-break" title="Section 2: Vietnamese Context">
-
-# SECTION 2
-
-## The Vietnamese Context
-### Your Career Landscape
-
-*(20 minutes)*
-
-<speaker-notes>
-This transition is critical—students need to see how global trends manifest in Vietnam specifically. Many students feel intimidated by global data; grounding in local context makes it actionable. Vietnam's economy has transformed rapidly since Đổi Mới (1986), creating unique opportunities and challenges that students will navigate.
-</speaker-notes>
-
-</slide>
-
-<slide number="12" layout="content" title="Economic Transformation">
-
-## From Agricultural to Digital Economy
+## Vietnam's Labor Market Evolution
 
 **Since Đổi Mới (1986):**
+- Agricultural employment: ~70% → <50%
+- Manufacturing and services: rapid expansion
+- Working-age population: competitive advantage
 
-| Year | Agriculture Employment |
-|------|----------------------|
-| 1986 | >70% |
-| 2024 | <40% |
-
-**Today's Vietnam:**
-- Growing services sector
-- Manufacturing hub
-- Emerging tech ecosystem
-
-*You are part of the generation shaping this transformation.*
+**Current Skills Gap (World Bank, 2018):**
+- Employers struggle to find workers with **cognitive skills** (critical thinking, problem-solving)
+- Behavioral skills gap (teamwork, communication, adaptability)
+- Only 28.1% of workforce has degrees or certificates
+- Over 70% untrained or informally trained
 
 <speaker-notes>
-The shift from 70% to under 40% agricultural employment in less than 40 years is remarkable—Vietnam compressed what took Western economies 150+ years. Students are beneficiaries of this transformation (access to higher education, diverse career options) but also face pressure to capitalize on opportunities their parents couldn't access. Acknowledge this dual reality. The "you are part of" framing emphasizes agency—they're not passive recipients but active shapers of Vietnam's future economy.
+Vietnam's transformation from agricultural to industrial/service economy mirrors global trends but with unique challenges. The cognitive and behavioral skills gap identified by the World Bank aligns with WEF's global findings—employers everywhere need workers who can think critically and collaborate effectively. NEU students have an advantage: you're building these exact skills through your university education.
 </speaker-notes>
 
 </slide>
 
-<slide number="13" layout="content" title="Skills Gap">
+<slide number="10" title="The Human Sustainability Gap">
 
-## The Paradox: Abundant Workers, Scarce Skills
+## The Perception Gap Problem
 
-**Deloitte 2024 Global Human Capital Trends (Vietnam):**
+**Deloitte Global Human Capital Trends (2024):**
 
-**Cognitive Skills Shortage:**
-- Problem-solving
-- Critical thinking
-- Analytical reasoning
+- 89% of executives say their organization advances human sustainability
+- Only 41% of workers agree
 
-**Behavioral Skills Shortage:**
-- Teamwork and collaboration
-- Communication (especially English)
-- Adaptability and learning agility
+**What is "human sustainability"?**
+Creating work environments where people can thrive, grow, and maintain wellbeing while performing effectively.
 
 <speaker-notes>
-This is the paradox students need to grasp: Vietnam has abundant working-age population (demographic dividend), but employers consistently report difficulty finding workers with the RIGHT skills. This isn't about credential inflation; it's about genuine skill gaps. If students develop these EXACT skills—cognitive and behavioral competencies—they become highly competitive in Vietnam's market. This data is locally validated by employer surveys, not just imported Western research.
+This 48-percentage-point gap reveals a critical disconnect: leaders think they're creating sustainable work environments, but workers don't feel supported. This matters for your career planning because it signals which organizations to seek out—those that actually invest in employee development, not just those that claim to.
 </speaker-notes>
 
 </slide>
 
-<slide number="14" layout="content" title="High-Demand Careers">
+<slide number="11" title="Key Insight">
 
-## Current High-Demand Roles (2024)
+## The Constant: Change Itself
 
-- **Data Engineers & AI Specialists**
-- **Cybersecurity Experts**
-- **Digital Marketing & E-commerce**
-- **FinTech & Financial Analysts**
-- **Semiconductor/Chip Design Engineers**
-- **Supply Chain & Logistics Managers**
+Three mega-trends reshaping work:
 
-**Context:** 70%+ of Vietnam's workforce are untrained workers (no degree). Only 28.1% have degrees or professional certificates.
+1. **Technological disruption** - AI, automation, digital transformation
+2. **Demographic shifts** - Aging populations, youth unemployment, migration
+3. **Sustainability imperatives** - Climate action, circular economy, green jobs
+
+**Your challenge:** Build skills that remain valuable across all three trends.
 
 <speaker-notes>
-By earning a BBAE degree, students are already in the top 30% by educational attainment. But this advantage only translates to success if they ALSO develop transferable skills highlighted in Slide 13. The semiconductor point is timely—major investments from Intel, Samsung creating new opportunities in high-tech manufacturing. Students should understand these roles reflect global trends (AI, fintech) adapted to Vietnam's specific economy (manufacturing hub, e-commerce growth with rising middle class).
+Students often ask, "How can I plan for something so uncertain?" This slide reframes the question: instead of predicting which specific jobs will exist in 2030, identify the skills that will be valuable regardless of how these mega-trends play out. Adaptability, critical thinking, and continuous learning are examples of such meta-skills.
 </speaker-notes>
 
 </slide>
 
-<slide number="15" layout="content" title="Mega-Trends">
+<slide number="12" layout="section-break" title="Segment 2 Introduction">
 
-## 3 Mega-Trends Affecting Vietnam's Labor Market
+# Part 2: Skills That Matter
 
-*(Deloitte 2024)*
-
-1. **Rising Asian Consumer Class**
-   - Retail, e-commerce, financial services, entertainment
-
-2. **Automation & Technology**
-   - Robots handle routine assembly; humans manage quality, optimization
-
-3. **Aging Population**
-   - By 2040: healthcare, retirement planning, automation needs
-
-**Strategic question:** Which of these aligns with YOUR career interests?
+**Future-proofing your career**
 
 <speaker-notes>
-These mega-trends operate on 10-20 year timescales, shaping career opportunities throughout students' working lives. Trend #1: Vietnam's rising middle class creates demand in consumer-facing industries. Trend #2: Automation in manufacturing doesn't eliminate jobs; it CHANGES them (fewer assembly workers, more quality control and process optimization roles). Trend #3: Vietnam's demographic dividend won't last forever—aging population by 2040 means healthcare and planning needs will grow substantially. Students should self-assess: Which trend excites them? This informs later career goal-setting.
+Transition to second segment. We've established what's changing in the job market; now we turn to the practical question: what can YOU do about it? This section introduces actionable frameworks for skill development.
 </speaker-notes>
 
 </slide>
 
-<slide number="16" layout="section-break" title="Section 3: Development Frameworks">
+<slide number="13" layout="framework" title="Clark's Five Strategies">
 
-# SECTION 3
+## 5 Ways to Future-Proof Your Career
 
-## Personal & Career Development Frameworks
-### How to Navigate Uncertainty
+**From Harvard Business Review (Clark & Chamorro-Premuzic, 2023):**
 
-*(20 minutes)*
+1. **Avoid Predictability** - Don't become a routine worker AI can replace
+2. **Build Human Relationships** - Networks matter more in automated world
+3. **Develop Soft Skills** - Communication, creativity, empathy
+4. **Aim for Originality** - Bring unique perspectives and ideas
+5. **Develop AI Collaboration** - Learn to work WITH technology, not against it
 
 <speaker-notes>
-Transition: "Now that you understand the landscape, how do you actually NAVIGATE it? You need a framework—not just motivation." Many students approach career development reactively (apply when desperate, learn when forced). Frameworks provide structure, strategy, systems, and adaptability for proactive development.
+This framework is highly practical and directly applicable to student planning. Each strategy has immediate actions students can take. Strategy 5 often generates discussion—many students see AI as a threat, but Clark argues it's a tool to amplify human capabilities. We'll revisit these strategies in the tutorial activity.
 </speaker-notes>
 
 </slide>
 
-<slide number="17" layout="content" title="Why Frameworks">
+<slide number="14" title="Strategy 1: Avoid Predictability">
 
-## Reactive vs. Framework-Driven Development
+## Avoid Predictability
 
-**Reactive approach:**
-- Apply to jobs when you need money
-- Take training when employers require it
-- Make decisions based on immediate pressures
+**Why it matters:**
+If your job follows the same routine every day, it's vulnerable to automation.
 
-**This worked in stable career environments. It fails in dynamic ones.**
+**How to apply it:**
+- Seek roles with variety and complexity
+- Volunteer for projects outside your job description
+- Develop multiple skill areas (T-shaped professional)
+- Look for problems that require judgment, not just procedures
 
-**Framework-driven approach:**
-- **Structure** for understanding yourself
-- **Strategy** for setting goals
-- **Systems** for tracking progress
-- **Adaptability** when circumstances change
+**Example:** A data analyst who only runs standard reports is vulnerable. One who interprets data, presents insights, and recommends strategy is not.
 
 <speaker-notes>
-Most students have been reactive their entire lives—studying what's assigned, taking required courses, following prescribed paths. This worked in stable environments where career ladders were predictable. It FAILS in dynamic environments where skills obsolete rapidly and career paths are non-linear. Framework-driven development means: (1) Structure for self-understanding (assessments), (2) Strategy for goal-setting (SMART goals), (3) Systems for tracking progress (reflection, metrics), (4) Adaptability when plans change (which they will). This is what students will build across 12 weeks.
+Students often conflate "unpredictable" with "chaotic." Clarify: this isn't about seeking disorganization, but about building a career where your value comes from judgment and expertise, not routine task completion. The T-shaped professional concept (deep expertise in one area, broad knowledge across many) is worth explaining if students are unfamiliar.
 </speaker-notes>
 
 </slide>
 
-<slide number="18" layout="framework" title="PDP Framework">
+<slide number="15" title="Strategy 2 & 3: Human Skills">
 
-## Your PDP Framework (40% of Grade)
+## Build Relationships & Develop Soft Skills
 
-**1. Foundation: Self-Knowledge**
-- MBTI, VIA Strengths, CliftonStrengths
-- Emotional Intelligence Assessment
-- Holland Code (RIASEC)
+**Why relationships matter:**
+- Trust, empathy, and collaboration can't be automated
+- Your network is your net worth
+- Jobs come from connections, not job boards (70% of positions never advertised)
 
-**2. Integration: SWOT Analysis**
-- Strengths, Weaknesses, Opportunities, Threats
-
-**3. Vision: 50-Word Statement**
-- Core values, definition of success, desired impact
-
-**4. Strategy: SMART Goals**
-- 1-year, 3-year, 5-year goals
-
-**5. Implementation: Action Plan**
-- Monthly/quarterly/annual milestones
+**Critical soft skills for AI era:**
+- **Communication** - Explaining complex ideas clearly
+- **Creativity** - Generating novel solutions
+- **Empathy** - Understanding others' perspectives
+- **Adaptability** - Thriving in changing environments
 
 <speaker-notes>
-This is the architecture students will build. Walk through each component: (1) Foundation—you can't plan without knowing your starting point; multiple validated assessments provide triangulated self-knowledge. (2) Integration—SWOT analysis synthesizes assessments with reality check from mentor. (3) Vision—50-word constraint forces clarity; students can't be vague. (4) Strategy—SMART goals at three timeframes create short-term action and long-term direction. (5) Implementation—breaking goals into concrete steps with timelines and accountability. This framework will be referenced throughout the course.
+The "70% of jobs never advertised" statistic comes from multiple studies and resonates strongly with students. Many Vietnamese students focus heavily on technical skills and undervalue soft skills—this is a cultural pattern the World Bank report highlighted. Emphasize that in Vietnam's evolving economy, these human-centered skills are increasingly what differentiates candidates.
 </speaker-notes>
 
 </slide>
 
-<slide number="19" layout="content" title="Mentorship Component">
+<slide number="16" title="Strategy 4 & 5: Originality and AI">
 
-## Learning from Experience (20% of Grade)
+## Aim for Originality & Collaborate with AI
 
-**Unique to this course:** One-on-one with experienced business professional for 10 weeks
+**Originality:**
+- Bring unique cultural perspectives (Vietnam + international business)
+- Combine unexpected skill sets (economics + design, business + sustainability)
+- Question assumptions others accept
 
-**Research shows mentored professionals:**
-- Advance faster in careers
-- Earn higher salaries
-- Report greater job satisfaction
-- Build stronger networks
-
-**Program Structure:**
-- 4 required meetings (minimum 2 face-to-face)
-- Pre-meeting preparation (48 hours before)
-- Post-meeting reflection (48 hours after)
-- Integration into your PDP
+**AI Collaboration:**
+- AI handles: Data processing, pattern recognition, routine analysis
+- You handle: Strategy, ethics, creativity, stakeholder relationships
+- **Together:** Faster insights, better decisions, higher-value work
 
 <speaker-notes>
-The mentorship program is what distinguishes this course from typical career development classes. Research on mentorship is robust—mentored professionals consistently outperform non-mentored peers on career outcomes. But this requires ACTIVE engagement, not passive advice-receiving. Students bring self-assessment results, career questions, and draft plans. Mentors share experience, challenge assumptions, provide guidance. The 48-hour documentation windows ensure students reflect while memory is fresh. Connection to PDP: mentor insights must be integrated throughout, especially in SWOT and goal-setting sections.
+For NEU students, originality has a specific advantage: you understand both Vietnamese business culture and international frameworks. This bicultural perspective is valuable and increasingly rare. On AI collaboration, students often ask "What tools should I learn?" Point them to Week 2, which covers specific AI literacy skills. The key message here: develop AI as your co-pilot, not your replacement.
 </speaker-notes>
 
 </slide>
 
-<slide number="20" layout="content" title="Reflective Learning">
+<slide number="17" layout="framework" title="WEF Skills Categories">
 
-## The Secret to Accelerated Growth (10% of Grade)
+## The WEF Skills Framework
 
-**Truth about learning:**
-Experience alone doesn't create wisdom. **Reflected-upon experience** creates wisdom.
+**Top 10 Core Skills for 2025-2030:**
 
-**Example:** Two students attend the same field trip:
-- **Student A:** Takes notes, writes surface-level summary
-- **Student B:** Applies Gibbs' Reflective Cycle, analyzes observations, connects to course concepts, creates action plan
+**Cognitive Skills:**
+1. Analytical thinking
+2. Creative thinking
+3. AI and big data literacy
+4. Technological literacy
 
-**Who learns more? Who develops faster?**
+**Interpersonal Skills:**
+5. Leadership and social influence
+6. Empathy and active listening
 
-**Reflective frameworks you'll learn:**
-- Gibbs' Reflective Cycle
-- Kolb's Experiential Learning
-- Driscoll & Bolton's Model
+**Self-Management:**
+7. Resilience and flexibility
+8. Curiosity and lifelong learning
+9. Motivation and self-awareness
+
+**Technical Skills:**
+10. (Industry-specific variations)
 
 <speaker-notes>
-Experience without reflection equals limited learning. This is why some people have "10 years of experience" while others have "1 year repeated 10 times." Student A's approach is what most students do naturally—document but don't analyze. Student B's approach transforms experience into wisdom through structured reflection. Week 3 will teach these frameworks in depth; introducing them now plants seeds. The 10% Reflective Essay grade might seem small, but the SKILL of reflection amplifies learning in every other assessment and throughout students' careers.
+This framework complements Clark's five strategies by categorizing what "future-proof skills" actually means. Notice the balance: cognitive abilities, interpersonal capabilities, and self-management are equally important. Students often focus only on technical skills (category 4); this framework shows that's just 1 of 10 priorities. Connection to assessment: students will self-assess against these 10 skills in their PDP.
 </speaker-notes>
 
 </slide>
 
-<slide number="21" layout="section-break" title="Section 4: Course Structure">
+<slide number="18" title="Cognitive Skills Deep Dive">
 
-# SECTION 4
+## Analytical vs. Creative Thinking
 
-## Course Structure & Assessment Alignment
-### How This Course Prepares You
+**Analytical Thinking:**
+- Breaking complex problems into components
+- Identifying patterns in data
+- Systematic evaluation of options
+- Evidence-based decision making
 
-*(15 minutes)*
+**Creative Thinking:**
+- Generating novel solutions
+- Connecting unrelated concepts
+- Challenging existing approaches
+- Imagining future possibilities
+
+**Both are learnable.** Both are essential. Neither can be fully automated.
 
 <speaker-notes>
-Students need to see the forest, not just trees. How do 12 weeks and 4 assessments work together to prepare them for career success? This section provides the overarching structure so they understand why each week matters.
+Students sometimes believe creativity is innate and can't be developed. Counter this misconception: creativity is a skill that improves with practice, just like analytical thinking. Research by Robert Sternberg and others shows creativity has learnable components: domain knowledge, thinking skills, and intrinsic motivation. Vietnam's education system traditionally emphasizes analytical over creative thinking, so NEU students may need extra encouragement to develop creative confidence.
 </speaker-notes>
 
 </slide>
 
-<slide number="22" layout="content" title="12-Week Journey">
+<slide number="19" title="Lifelong Learning Mindset">
 
-## Course Overview
+## Curiosity and Lifelong Learning
 
-**Weeks 1-2:** Understanding the Landscape
-- Future of work, AI-era career skills
+**Why it's #1 on most future skills lists:**
+- If 40% of skills change by 2030, you must learn continuously
+- Half-life of skills is shrinking (technical skills outdated in 2-5 years)
+- Your degree is a foundation, not a finish line
 
-**Weeks 3-5:** Building Self-Knowledge
-- Reflective learning, self-managed learning, assessments
-
-**Week 6:** Field Trip — MISA Company
-
-**Weeks 7-9:** Developing Essential Competencies
-- Transferable skills, time management, growth mindset
-
-**Week 10:** Guest Speaker — Ms. Ha Linh
-
-**Weeks 11-12:** Integration & Planning
-- Personal Development Plan, course synthesis
+**How to cultivate it:**
+- Follow industry trends in your field
+- Take online courses regularly (Coursera, LinkedIn Learning)
+- Read widely beyond your major
+- Seek feedback and actively apply it
+- Embrace discomfort of not knowing
 
 <speaker-notes>
-This progression is intentional: Weeks 1-2 establish WHY development matters. Weeks 3-5 build the TOOLS for development (reflection, self-management, self-assessment). Week 6 provides real-world data through field trip. Weeks 7-9 develop specific COMPETENCIES (EI, time management, mindset). Week 10 provides another real-world data point (guest speaker). Weeks 11-12 INTEGRATE everything into the PDP. Students should understand: nothing is random; each week builds on previous weeks.
+The "half-life of skills" concept can be eye-opening: technical skills learned in Year 1 may be outdated by graduation. This isn't discouraging—it's liberating. It means learning HOW to learn is more valuable than memorizing facts. For this course, curiosity shows up in assessment quality: students who research beyond assigned readings produce stronger PDPs.
 </speaker-notes>
 
 </slide>
 
-<slide number="23" layout="framework" title="Assessment Progression">
+<slide number="20" layout="section-break" title="Segment 3 Introduction">
 
-## Assessment Progression
+# Part 3: Navigating Your Career
 
-**1. Reflective Essay (10%)**
-Demonstrates you can **analyze experiences** and extract career insights
-
-**2. Mentorship Program (20%)**
-Demonstrates you can **seek guidance**, build professional relationships
-
-**3. Personal Development Plan (40%)**
-Demonstrates you can **synthesize self-knowledge** into strategic goals
-
-**4. Final Oral Exam (30%)**
-Demonstrates you can **communicate your vision** professionally
-
-**Each assessment builds on the previous one.**
+**Frameworks for personal development**
 
 <speaker-notes>
-The assessment progression is carefully scaffolded. Reflective Essay (10%): Analyzes two experiences (field trip + guest speaker) using frameworks from Week 3. Mentorship Program (20%): 10 weeks of structured guidance; reflections from meetings inform PDP. Personal Development Plan (40%): The capstone—integrates assessments, mentor feedback, course concepts into 5-year roadmap. Final Oral Exam (30%): Present PDP professionally, demonstrating both content mastery and communication skill. Students aren't completing isolated assignments; they're building an integrated career development system.
+Final segment transition. We've covered WHAT is changing and WHICH skills matter. Now: HOW to apply this to your own career planning. This section introduces frameworks students will use throughout the course, particularly in the Personal Development Plan.
 </speaker-notes>
 
 </slide>
 
-<slide number="24" layout="content" title="Connection to Career">
+<slide number="21" layout="framework" title="Career Development Framework">
 
-## Why This Matters Beyond Grades
+## A Framework for Career Planning
 
-**In your first job interview, you'll be asked:**
-- "Tell me about yourself."
-- "What are your strengths and weaknesses?"
-- "Where do you see yourself in 5 years?"
-- "Why are you interested in this role?"
+**Four Pillars of Personal Development:**
 
-**Without intentional self-development:**
-- Generic, unconvincing answers
-- Unclear if job aligns with your values
-- Struggle to articulate unique value
+1. **Self-Awareness**
+   - Who are you? What are your strengths, values, interests?
 
-**With the work you do in this course:**
-- Compelling personal narrative backed by assessments
-- Clear understanding of strengths, values, direction
-- Professional self-presentation
+2. **Market Awareness**
+   - What does the world need? Where are opportunities?
+
+3. **Skills Development**
+   - How do you bridge the gap between current and needed skills?
+
+4. **Strategic Action**
+   - What concrete steps will you take, and when?
 
 <speaker-notes>
-This makes the course immediately practical. Every student will face these interview questions—most give terrible answers because they haven't done the self-work. "Tell me about yourself" stumps students who haven't clarified their narrative. "Strengths and weaknesses" gets generic responses ("I'm a perfectionist!") from those without assessment data. "5-year vision" is blank for those without strategic planning. The PDP isn't just a course assignment; it's interview preparation, career roadmap, and decision-making framework. Students who complete this course authentically will outperform peers in job applications.
+This four-pillar framework structures the entire PDP assessment. Self-awareness (pillar 1) comes from personality assessments and reflection exercises in Weeks 3-5. Market awareness (pillar 2) is what we're building today with labor market data. Skills development (pillar 3) spans Weeks 2, 7, 8. Strategic action (pillar 4) culminates in Week 11's final plan. Students appreciate seeing the big picture—how all weekly topics connect.
 </speaker-notes>
 
 </slide>
 
-<slide number="25" layout="content" title="Important Dates">
+<slide number="22" title="Self-Awareness Tools">
 
-## Mark Your Calendar
+## Self-Awareness: Know Yourself First
 
-| Date | Event |
-|------|-------|
-| September 18 | Field Trip to MISA Company (mandatory) |
-| September 23 | Mentorship Program begins |
-| October 16 | Guest Speaker: Ms. Ha Linh (mandatory) |
-| November 28 | Personal Development Plan due (11:59 PM) |
-| Exam Period | Final Oral Examinations |
+**Key questions to answer:**
+- What energizes me? What drains me?
+- What am I naturally good at?
+- What do I value in work? (autonomy, impact, security, creativity?)
+- What are my blind spots?
 
-**Mentorship deadlines:**
-- Pre-meeting forms: 48 hours before
-- Post-meeting reflections: 48 hours after
-
-**Late policy:** 10% penalty per day
+**Tools we'll use in this course:**
+- Personality assessments (Week 5)
+- Strengths inventories (Week 7)
+- Reflective journaling (Weeks 3-4)
+- 360-degree feedback (from mentor)
 
 <speaker-notes>
-Have students write these dates in their planners NOW. Field trip and guest speaker are MANDATORY—required for Reflective Essay. Mentorship begins Week 2 and runs 10 weeks. PDP due Week 11 gives one week cushion before exam period. The 48-hour documentation windows for mentorship are strict—students who miss deadlines lose points. Late policy is real and enforced; procrastination will damage grades. Setting these expectations clearly Week 1 prevents problems Week 11.
+Many students rush to "what career should I pursue?" without answering "who am I?" first. Self-awareness is foundational—you can't plan a satisfying career without understanding what satisfaction means to you. Week 5 covers formal assessment tools; today's tutorial activity begins the reflection process informally.
 </speaker-notes>
 
 </slide>
 
-<slide number="26" layout="section-break" title="Section 5: Next Steps">
+<slide number="23" title="Market Awareness in Practice">
 
-# SECTION 5
+## Market Awareness: Understand Opportunities
 
-## Next Steps
-### What to Do After Today
+**How to build market intelligence:**
 
-*(10 minutes)*
+1. **Research sectors:** Which industries are growing in Vietnam?
+   - Technology/IT, financial services, e-commerce, green energy
+
+2. **Track job postings:** What skills do employers actually request?
+   - LinkedIn, VietnamWorks, CareerBuilder Vietnam
+
+3. **Informational interviews:** Talk to people in roles you find interesting
+   - Your mentor (Weeks 2-10) is a great starting point
+
+4. **Follow trends:** Read industry reports like WEF, Deloitte, McKinsey
 
 <speaker-notes>
-Don't end with theory—end with action. Students need clear next steps to build momentum from Week 1.
+Students often rely solely on university career counselors or family advice for market information. Encourage direct research: spending 30 minutes weekly reading job postings in your target field reveals exactly what skills employers value. The mentorship program (starting Week 2) provides insider perspective you can't get from reports.
 </speaker-notes>
 
 </slide>
 
-<slide number="27" layout="content" title="Tutorial Preview">
+<slide number="24" layout="framework" title="Skills Gap Analysis">
 
-## What Happens in Tutorial Today
+## Skills Development: Bridge the Gap
 
-1. **Icebreaker activity** — Build classroom community
-2. **AI & career futures discussion** — Small group dialogue
-3. **Skills self-assessment** — Reflect on current strengths
-4. **Career vision brainstorming** — Begin thinking about 5-year direction
-5. **Mentorship program orientation** — Expectations and first meeting prep
-6. **Self-assessment tools intro** — Overview of MBTI, VIA, CliftonStrengths
+**SWOT Analysis for Career Planning:**
 
-**Come ready to participate actively.**
+| Current State | Future State |
+|---------------|--------------|
+| **Strengths** - What skills do you already have? | **Opportunities** - What skills does the market value? |
+| **Weaknesses** - Where are your gaps? | **Threats** - What could prevent your success? |
+
+**The Gap:** The difference between your strengths and market opportunities.
+
+**Your PDP:** The plan to close that gap.
 
 <speaker-notes>
-Tutorial is where lecture concepts become practice. Icebreaker builds trust—personal development requires vulnerability, which requires safety. Skills self-assessment activates prior knowledge before formal assessments. Career vision brainstorming starts students thinking about goals before Week 11 deadline. Mentorship orientation ensures students understand expectations before first meeting. Self-assessment intro previews Week 5 tools. Emphasize: Tutorial is NOT lecture part 2; it's active engagement.
+SWOT analysis is a strategic planning tool borrowed from business strategy and applied to personal development. Students will create a detailed SWOT as part of their PDP. Today's lecture provides the "Opportunities" (market trends, valued skills); Weeks 3-7 help identify "Strengths" and "Weaknesses"; Week 11 synthesizes everything into a comprehensive plan.
 </speaker-notes>
 
 </slide>
 
-<slide number="28" layout="content" title="Before Next Week">
+<slide number="25" title="Strategic Action Planning">
 
-## Required Actions
+## Strategic Action: Make It Real
 
-1. **Read all three required readings:**
-   - WEF Future of Jobs Report 2025
-   - Clark & Chamorro-Premuzic (HBR 2023)
-   - Deloitte 2024 Global Human Capital Trends
+**Elements of an effective development plan:**
 
-2. **Complete MBTI assessment** (16personalities.com)
-   - Bring results to Week 2 tutorial
+1. **Specific goals** - "Improve communication" → "Deliver 3 presentations this semester"
+2. **Measurable milestones** - How will you know you've succeeded?
+3. **Realistic timeline** - What can you actually accomplish?
+4. **Accountability** - Who will support and check your progress?
+5. **Flexibility** - How will you adapt when circumstances change?
 
-3. **Begin reflective journal** (recommended)
-   - Keep notes on insights, questions, realizations
-
-4. **Prepare for mentor pairing**
-   - Draft 2-3 questions for a professional mentor
+**This semester:** You'll build this plan step by step, week by week.
 
 <speaker-notes>
-These aren't optional suggestions; they're requirements. All three readings are accessible (no paywall) and directly support Week 2 discussions. MBTI completion before Week 2 tutorial enables hands-on interpretation. Reflective journal is recommended but not required—students who maintain one find Reflective Essay much easier to write. Mentor preparation questions help students approach first meeting strategically rather than passively. Hold students accountable: "These tasks prepare YOU for success—don't shortchange yourself by skipping them."
+Students often create vague goals like "be more confident" or "learn more." Push for specificity: what does "confident" look like behaviorally? How would you measure it? The mentorship program provides built-in accountability (pillar 4). Emphasize that a development plan isn't a rigid contract—it's a living document that evolves as you learn more about yourself and the market.
 </speaker-notes>
 
 </slide>
 
-<slide number="29" layout="content" title="Closing Reflection">
+<slide number="26" title="Your 5-Year Vision">
 
-## From Terrifying to Liberating
+## Looking Ahead: Your Career in 2030
 
-**40% of job skills will change by 2030.**
+**Reflection questions for today's tutorial:**
 
-**Terrifying if:** You see your education as a fixed set of knowledge that will become obsolete.
+- In 5 years (2030), what role do you envision yourself in?
+- Which of Clark's 5 strategies resonates most with you? Why?
+- Looking at the WEF skills framework, where are your strengths? Your gaps?
+- What one skill will you commit to developing this semester?
 
-**Liberating if:** You see your education as developing the *capacity to continuously learn, adapt, and grow*—skills that never become obsolete.
-
-**This course chooses liberation.**
+**Remember:** Plans change. Starting with a vision gives you direction.
 
 <speaker-notes>
-Circle back to the opening hook with reframing. The same statistic that seemed threatening now seems empowering. Fixed mindset (Week 9 concept, seed it now): Education = acquiring knowledge → obsolescence is terrifying. Growth mindset: Education = developing capacity → adaptation is liberating. This course develops meta-skills that compound over a lifetime. Students will still feel anxious (natural), but they now have framework for channeling anxiety into productive action.
+The 2030 timeframe is intentional—it aligns with WEF's projections and gives students a concrete time horizon. Many students find 5-year visioning intimidating ("I don't know what I want!"). Reassure them: this is exploratory, not binding. The value is in the reflection process, not in predicting the future perfectly. Tutorial activity provides structured time for this thinking.
 </speaker-notes>
 
 </slide>
 
-<slide number="30" layout="content" title="Final Message">
+<slide number="27" layout="section-break" title="Wrap-up">
 
-## Your Development Starts Now
-
-Over the next 12 weeks, you will:
-
-- **Discover** who you authentically are through validated assessments
-- **Learn** from experienced professionals through structured mentorship
-- **Reflect** on real workplace experiences using evidence-based frameworks
-- **Create** a strategic plan aligned with your values and the future of work
-- **Present** your vision with confidence and professionalism
-
-**You're not preparing for a job. You're preparing for a career in an era of continuous change.**
-
-**That preparation starts right now, in this room, with your commitment to intentional development.**
+# Key Takeaways
 
 <speaker-notes>
-End with inspiration grounded in concrete action. The five verbs (discover, learn, reflect, create, present) summarize the course arc. "Not preparing for a job" reframes student thinking—many are focused narrowly on first job placement. This course is about career resilience across decades. "Starts right now" emphasizes immediate agency—they're not waiting for permission or future circumstances. Pause after final line. Let it land. Then dismiss to tutorial with energy: "See you in tutorial. Come ready to engage."
+Transition to closing segment. Summarize the main insights from all three parts before previewing assessments and next steps.
+</speaker-notes>
+
+</slide>
+
+<slide number="28" title="Today's Key Takeaways">
+
+## What to Remember from Today
+
+1. **40% of skills will change by 2030** - Continuous learning isn't optional
+2. **Vietnam's skills gap mirrors global trends** - Cognitive and behavioral skills are in demand
+3. **Five strategies future-proof careers** - Avoid predictability, build relationships, develop soft skills, aim for originality, collaborate with AI
+4. **Career planning has four pillars** - Self-awareness, market awareness, skills development, strategic action
+5. **Your PDP starts now** - Every week builds toward Week 11's submission
+
+<speaker-notes>
+These five takeaways map to the learning objectives from slide 3. Students should be able to explain each point if asked. Emphasize that today's lecture is foundational—these frameworks will reappear throughout the course, so understanding them now makes future content easier.
+</speaker-notes>
+
+</slide>
+
+<slide number="29" title="Tutorial Preview">
+
+## Tutorial Activity: Career Future Self-Assessment
+
+**Today's tutorial (90 minutes):**
+
+1. Quick review of lecture frameworks (15 min)
+2. Individual reflection and writing (45 min)
+   - 5-year career vision
+   - Skills gap self-assessment
+   - One semester commitment
+3. Pair-and-share discussion (20 min)
+4. Wrap-up and next steps (10 min)
+
+**Bring:** Laptop or notebook for writing
+
+<speaker-notes>
+Students often ask if tutorial attendance is mandatory. Clarify your institution's policy. The tutorial activity feeds directly into their eventual PDP—students who engage deeply today will have easier time drafting their assessment later. Writing in tutorial ensures everyone completes the reflection, not just those who would do it independently.
+</speaker-notes>
+
+</slide>
+
+<slide number="30" title="Before Next Class">
+
+## Before Next Class
+
+**Complete the Week 1 quiz** (on Moodle/Blackboard)
+- 12 questions testing today's frameworks
+- Tests knowledge, not application
+- 15 minutes, one attempt
+
+**Read for Week 2:** Career Skills in the AI Era
+- Detailed reading list posted on learning management system
+- Focus: AI literacy, digital skills, and human-AI collaboration
+
+**Begin thinking about mentorship goals**
+- Week 2 launches the Mentorship Program (20% of grade)
+- Consider what skills you want to develop with mentor support
+
+<speaker-notes>
+Quiz opens after today's class and closes before Week 2's lecture—this ensures students review material while fresh. Week 2 continues the AI theme introduced today but with practical skill-building focus. Mentorship program logistics are covered in Week 2; planting the seed now helps students arrive prepared.
+</speaker-notes>
+
+</slide>
+
+<slide number="31" title="Further Resources">
+
+## Further Resources (Optional)
+
+**Videos:**
+- World Economic Forum: "Future of Jobs Report 2025 - Key Findings" (8:24)
+  - Why watch: Visual summary of job projections and skills data
+- Dorie Clark: "The Long Game" TEDx Talk (18:32)
+  - Why watch: Expands on the five future-proofing strategies
+
+**Articles:**
+- All assigned readings available on course LMS
+- World Bank Vietnam Report: Full PDF linked in syllabus
+
+**Not required** - All assessed material covered in readings and lecture.
+
+<speaker-notes>
+Brief mention: "For those interested in going deeper, I've linked two excellent videos on this topic. They're optional but highly recommended if you want to see these concepts in action and hear directly from the researchers."
+</speaker-notes>
+
+</slide>
+
+<slide number="32" layout="references" title="References">
+
+## References
+
+1. Clark, D., & Chamorro-Premuzic, T. (2023, April). 5 ways to future-proof your career in the age of AI. *Harvard Business Review*. https://hbr.org/2023/04/5-ways-to-future-proof-your-career-in-the-age-of-ai
+
+2. Cunningham, W., & Pimhidzai, O. (2018). *Vietnam's future jobs: Leveraging mega-trends for greater prosperity*. World Bank Group. https://documents1.worldbank.org/curated/en/973841543238555966/pdf/129380-v4-WB-Vietnam-Future-Jobs-Main-report-English.pdf
+
+3. Deloitte. (2024). *2024 global human capital trends: Thriving beyond boundaries: Human performance in a boundaryless world*. Deloitte Insights. https://www.deloitte.com/us/en/insights/topics/talent/human-capital-trends/2024.html
+
+4. World Economic Forum. (2025). *The future of jobs report 2025*. https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+
+<speaker-notes>
+Full citations for all sources referenced in lecture. Students can use these for further reading and must cite them if referenced in their PDP. All sources are open access or available through university library.
 </speaker-notes>
 
 </slide>

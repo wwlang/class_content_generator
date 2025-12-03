@@ -1,540 +1,450 @@
-# Week 4 Tutorial: Learning Strategy Audit & Learning Contract Development
+# Week 4 Tutorial: Creating Your Learning Contract
 
-**Course:** PPDK66B Personal & Professional Development
+## Tutorial Overview
+
 **Duration:** 90 minutes
-**Assessment Connection:** Directly prepares for Mentor Meeting #2 (learning goals discussion) — supports PDP Section 4 (learning strategies and monitoring), and builds metacognitive awareness for Reflective Essay analysis. Aligns with LO4: Implement self-managed learning strategies including metacognitive monitoring, strategic goal-setting, and adaptive adjustment techniques.
+**Format:** Individual work with peer feedback
+**Deliverable:** One completed learning contract for a skill/goal from your Personal Development Plan
 
 ---
 
-## Quick Review
+## Learning Objectives
 
-**Key concepts from today's lecture:**
-- **Zimmerman's Cyclical Phase Model:** Forethought (goal-setting, planning) → Performance (self-control, self-observation) → Self-Reflection (self-judgment, self-reaction) → cycle repeats
-- **Waterloo's SDL Framework:** Assess readiness → Set learning goals → Engage in learning → Evaluate learning (creates structured autonomy)
-- **Learning Styles Myth:** The meshing hypothesis (matching instruction to VARK/Kolb style) has no empirical support; content determines optimal modality, not learner preference
-- **Evidence-Based Strategies:** Retrieval practice (HIGH), spaced practice (HIGH), elaboration (MODERATE), interleaving (MODERATE) — these work for all learners
+By the end of this tutorial, you will:
 
-**What good work looks like:**
-- Honest identification of ineffective study habits (not defensive rationalization)
-- Specific, measurable learning goals with clear evidence criteria
-- Actionable learning contracts that include evidence-based strategies
-- Commitment to replacing low-evidence techniques (highlighting, rereading) with high-evidence techniques (retrieval, spacing)
-
-**Full rubric:** See Assessment Handbook, Mentorship Program Rubric (20%) — Pre-Meeting Preparation Forms are assessed on quality of preparation, specificity of questions, and evidence of self-directed learning. Today's learning contract becomes the foundation for Meeting #2 preparation.
+1. Apply the University of Waterloo four-step SDL framework to a personal learning goal
+2. Create a complete learning contract with specific, measurable components
+3. Evaluate learning resources for quality and relevance
+4. Design an evidence-based learning timeline using spacing principles
+5. Establish success metrics that demonstrate mastery (not just completion)
 
 ---
 
-## Main Activity: Learning Strategy Audit & Learning Contract Creation
+## Part 1: Selecting Your Learning Goal (15 minutes)
 
-**Assessment Connection:** This activity directly prepares you for THREE assessments:
+### Step 1: Review Your Preliminary PDP Goals
 
-1. **Mentor Meeting #2 (Part of 20%):** Your Pre-Meeting Form (due 48 hours before meeting) requires a draft learning contract and discussion questions about self-directed learning. Today's work IS that draft.
+Think about the skills or knowledge areas you want to develop for your career. Consider:
 
-2. **Personal Development Plan (40%):** Section 4 requires you to describe your learning strategies, monitoring approaches, and how you'll track progress toward goals. Your learning contract template provides this structure.
+- **Technical/Hard Skills:** Excel, Python, data analysis, graphic design, video editing, financial modeling, etc.
+- **Transferable/Soft Skills:** Public speaking, leadership, negotiation, time management, writing, etc.
+- **AI-Era Skills:** Prompt engineering, AI tool mastery, critical evaluation of AI outputs, human-AI collaboration
+- **Domain Knowledge:** Industry-specific knowledge (marketing frameworks, accounting principles, supply chain, etc.)
 
-3. **Reflective Essay (10%):** Metacognitive awareness (knowing HOW you learn) deepens your analysis of the field trip and guest speaker experiences. Today's audit reveals your learning patterns.
+### Step 2: Choose ONE Skill for Today's Contract
 
-**The Task:**
-Complete two interconnected exercises:
-1. **Learning Strategy Audit** - Evaluate your current study habits against evidence-based practices
-2. **Learning Contract** - Create a structured plan for ONE PDP-related skill using the Waterloo framework
+**Selection Criteria:**
 
-**Deliverable:**
-A 2-page document containing:
-- Part 1: Learning Strategy Audit (identify what you're doing, what works, what doesn't)
-- Part 2: Learning Contract for ONE skill development goal (WHAT, HOW, WHEN, EVIDENCE)
+1. **Relevance:** This skill should support your 1-year or 3-year career goals
+2. **Feasibility:** You can make meaningful progress in 4-12 weeks
+3. **Measurability:** You can define clear "before" and "after" levels
+4. **Resources Available:** You have access to learning materials, tools, or mentors
 
-**Success Criteria:**
-- Audit shows honest assessment of current habits with specific examples (not vague claims)
-- Learning contract is specific and measurable (could hand to someone else and they'd know exactly what to do)
-- Strategies section includes at least TWO evidence-based techniques from today's lecture
-- Timeline is realistic with concrete milestones (not "work hard every day")
-
----
-
-## Part 1: Learning Strategy Audit (30 minutes)
-
-### Instructions
-
-**Step 1: Current Habits Inventory (10 min - Individual Work)**
-
-For each category below, rate yourself honestly (1-5 scale) and provide specific evidence:
-
-**A. Retrieval Practice**
-- **How often do you test yourself BEFORE exams?**
-  - 1 = Never, I only reread notes
-  - 5 = I actively quiz myself after every study session
-- **Rating: ___/5**
-- **Specific Evidence:** (e.g., "Last week I studied for the Quiz 3 by reading slides 4 times but never tested myself" or "I use Quizlet flashcards for vocabulary weekly")
-
-**B. Spaced Practice**
-- **How do you distribute study time?**
-  - 1 = I cram the night before tests
-  - 5 = I start studying 2+ weeks early with daily sessions
-- **Rating: ___/5**
-- **Specific Evidence:**
-
-**C. Elaboration**
-- **How deeply do you process information?**
-  - 1 = I memorize definitions without understanding connections
-  - 5 = I constantly ask "why/how" and connect to real examples
-- **Rating: ___/5**
-- **Specific Evidence:**
-
-**D. Active vs. Passive Strategies**
-- **What percentage of study time is ACTIVE (writing, speaking, practicing) vs. PASSIVE (reading, highlighting)?**
-  - 1 = 90%+ passive
-  - 5 = 90%+ active
-- **Rating: ___/5**
-- **Specific Evidence:**
-
-**E. Metacognitive Monitoring**
-- **How accurately do you judge your understanding?**
-  - 1 = I often think I know something, then fail the test
-  - 5 = I can accurately predict which questions I'll get right/wrong
-- **Rating: ___/5**
-- **Specific Evidence:**
-
----
-
-**Step 2: Identify Your Weakest Phase in Zimmerman's Model (5 min - Individual Reflection)**
-
-Review Zimmerman's three phases. Which is YOUR weakest?
-
-**Forethought Phase (Planning BEFORE learning):**
-- [ ] I rarely set specific learning goals before studying
-- [ ] I don't plan HOW I'll study, I just "start studying"
-- [ ] I lack confidence in my ability to learn difficult material (low self-efficacy)
-
-**Performance Phase (Execution DURING learning):**
-- [ ] I get easily distracted (phone, social media, environment)
-- [ ] I use ineffective strategies (passive reading, highlighting)
-- [ ] I don't monitor whether I'm understanding as I go
-
-**Self-Reflection Phase (Evaluation AFTER learning):**
-- [ ] I don't review what I learned or didn't learn after study sessions
-- [ ] When I do poorly, I blame external factors (teacher, test difficulty) instead of my strategies
-- [ ] I don't adjust my approach based on results
-
-**My Weakest Phase:** ___________________
-
-**Why this phase is weak (specific example):**
-_________________________________________________________
-_________________________________________________________
-
----
-
-**Step 3: Identify ONE Ineffective Habit to Replace (5 min - Individual)**
-
-Look at your audit. Pick ONE specific habit that's holding you back.
-
-**Ineffective Habit I Will STOP:**
-_________________________________________________________
-
-**Evidence-Based Strategy I Will START (choose from lecture):**
-- [ ] Retrieval Practice (self-testing, flashcards, explaining without notes)
-- [ ] Spaced Practice (study plan spread over 2+ weeks)
-- [ ] Elaboration (ask why/how, connect to examples)
-- [ ] Interleaving (mix topics during practice)
-
-**My Replacement Strategy:**
-_________________________________________________________
-
-**How I'll implement it THIS WEEK (be specific):**
-_________________________________________________________
-_________________________________________________________
-
----
-
-**Step 4: Pair Share (10 min - Pairs)**
-
-Partner with someone near you. Each person shares (4 min each):
-1. Your lowest-rated category from the audit (what's your biggest gap?)
-2. Your weakest Zimmerman phase (forethought/performance/self-reflection)
-3. The ONE habit you're going to replace this week
-
-**Pair Feedback:**
-- Does your partner's replacement strategy align with their gap?
-- Is the implementation plan specific enough?
-- What's one suggestion to make it more concrete?
-
-**Partner's Name:** ___________________
-**Their Suggestion:**
-_________________________________________________________
-
----
-
-## Part 2: Learning Contract Creation (40 minutes)
-
-### Instructions
-
-You will create a **learning contract** for ONE skill or competency you want to develop for your career. This will become the foundation of your Mentor Meeting #2 preparation.
-
-**Step 1: Choose Your Learning Goal (5 min - Individual)**
-
-Review your PDP draft (if you have one) or think about skills you need for your career path. Choose ONE specific skill to develop.
-
-**Good Examples:**
-- "Deliver confident presentations without reading slides"
-- "Write clear business emails in English with professional tone"
-- "Analyze financial statements to make investment recommendations"
-- "Facilitate productive team meetings"
-
-**Bad Examples (too vague):**
-- "Get better at communication"
-- "Improve my skills"
-- "Be more confident"
-
-**My Learning Goal:**
-_________________________________________________________
-
-**Why this matters for my career (connect to PDP 1-year or 3-year goals):**
-_________________________________________________________
-_________________________________________________________
-
----
-
-**Step 2: Assess Your Current Level (Waterloo Step 1) (10 min - Individual)**
-
-Be honest about where you are NOW.
-
-**Current Competency Level:**
-- **Rating: ___/10** (1 = complete beginner, 10 = expert)
-
-**Specific Evidence of Current Level:**
-(What can you do? What can't you do yet? Give concrete examples)
-_________________________________________________________
-_________________________________________________________
-_________________________________________________________
-
-**Readiness Assessment:**
-- **Motivation:** How motivated am I to learn this? ___/5
-  - Why? ___________________________________________________
-- **Knowledge:** Do I know HOW to learn this skill? ___/5
-  - Current knowledge: __________________________________________
-- **Resources:** Do I have access to learning materials/practice opportunities? ___/5
-  - What I have: _______________________________________________
-  - What I need: _______________________________________________
-
-**Potential Barriers:**
-(What might prevent me from achieving this goal? Be realistic)
-_________________________________________________________
-_________________________________________________________
-
----
-
-**Step 3: Create Your Learning Contract (Waterloo Step 2) (15 min - Individual)**
-
-Use the template below to design your structured learning plan:
+**Write your chosen skill here:**
 
 ```
-═══════════════════════════════════════════════════════
-                    LEARNING CONTRACT
-═══════════════════════════════════════════════════════
-
-Name: _______________________ Date: _________________
-
-WHAT I WILL LEARN (Specific Competency):
-_________________________________________________________
-_________________________________________________________
-
-WHY THIS MATTERS (Career/PDP Connection):
-_________________________________________________________
-_________________________________________________________
-
-CURRENT LEVEL: ___/10
-TARGET LEVEL: ___/10 (realistic improvement in 4-8 weeks)
-
-─────────────────────────────────────────────────────────
-HOW I WILL LEARN IT (Strategies & Resources)
-─────────────────────────────────────────────────────────
-
-Learning Activities (Be Specific):
-
-1. _______________________________________________________
-   Frequency: ____________ Duration: ___________________
-
-2. _______________________________________________________
-   Frequency: ____________ Duration: ___________________
-
-3. _______________________________________________________
-   Frequency: ____________ Duration: ___________________
-
-Evidence-Based Strategies I'll Use (check at least 2):
-□ Retrieval Practice - How: ______________________________
-□ Spaced Practice - How: ________________________________
-□ Elaboration - How: _____________________________________
-□ Interleaving - How: ____________________________________
-
-Resources Needed:
-□ Books/Articles: ________________________________________
-□ Online Courses/Videos: _________________________________
-□ Practice Opportunities: ________________________________
-□ Feedback Sources (mentor, peers, instructor): __________
-
-─────────────────────────────────────────────────────────
-WHEN I WILL COMPLETE IT (Timeline with Milestones)
-─────────────────────────────────────────────────────────
-
-Start Date: _______________ Target Completion: ___________
-Total Duration: __________ weeks
-
-Milestone 1 (Week 2): ____________________________________
-Milestone 2 (Week 4): ____________________________________
-Milestone 3 (Week 6): ____________________________________
-Milestone 4 (Week 8): ____________________________________
-
-─────────────────────────────────────────────────────────
-HOW I WILL DEMONSTRATE LEARNING (Evidence of Success)
-─────────────────────────────────────────────────────────
-
-Measurable Outcomes (How will I KNOW I've improved?):
-
-1. Self-Assessment: _______________________________________
-   (e.g., "Rate myself 7/10 or higher on [specific aspect]")
-
-2. Performance Evidence: __________________________________
-   (e.g., "Successfully deliver group presentation without notes")
-
-3. External Validation: ___________________________________
-   (e.g., "Receive positive feedback from mentor/peers on [x]")
-
-Self-Evaluation Questions (to ask myself at milestones):
-- Can I do [X] that I couldn't do before?
-- What specific improvement have I made?
-- What still needs work?
-
-─────────────────────────────────────────────────────────
-ACCOUNTABILITY & SUPPORT
-─────────────────────────────────────────────────────────
-
-Who will support me:
-□ Mentor: Role: __________________________________________
-□ Peers: Role: ___________________________________________
-□ Instructor: Role: ______________________________________
-
-Progress Check-Ins:
-- Weekly self-reflection: Every __________ (day)
-- Mentor discussion: Mentor Meeting #2 (scheduled for: ______)
-- Mid-point review: _______________
-
-─────────────────────────────────────────────────────────
-SELF-REFLECTION COMMITMENT
-─────────────────────────────────────────────────────────
-
-Forethought: I have planned specific strategies ✓
-Performance: I commit to active practice (not just passive learning) ✓
-Self-Reflection: I will evaluate progress weekly and adjust as needed ✓
-
-Signature: ______________________ Date: _________________
+My chosen skill: _________________________________________________
 ```
 
----
+### Step 3: Quick Self-Assessment
 
-**Step 4: Quality Check Against Evidence-Based Criteria (5 min - Individual)**
+Before creating your learning contract, assess your current relationship with this skill:
 
-Review your learning contract. Does it include:
+**Current Level (1-5 scale):**
+- 1 = No knowledge/experience
+- 2 = Beginner (basic familiarity)
+- 3 = Intermediate (can perform with guidance)
+- 4 = Advanced (can perform independently)
+- 5 = Expert (can teach others)
 
-**Specificity Check:**
-- [ ] Learning goal is concrete (not vague)
-- [ ] Activities include specific actions (not "study more")
-- [ ] Timeline has actual dates (not "soon")
-- [ ] Evidence criteria are measurable (can objectively check if achieved)
+**My current level: _____ / 5**
 
-**Evidence-Based Strategies Check:**
-- [ ] I've included at least TWO high-evidence strategies (retrieval/spacing/elaboration/interleaving)
-- [ ] I'm doing ACTIVE practice, not just passive reading/watching
-- [ ] I've planned for spaced practice (distributed over time, not crammed)
-
-**Realistic Feasibility Check:**
-- [ ] Time commitment is realistic given my other courses/commitments
-- [ ] Target improvement is achievable in 4-8 weeks (not "become expert overnight")
-- [ ] I have access to needed resources
-- [ ] I've identified accountability partners
-
-**Zimmerman Alignment Check:**
-- [ ] **Forethought:** I've set specific goals and planned strategies
-- [ ] **Performance:** I've described what I'll DO during learning
-- [ ] **Self-Reflection:** I've built in progress checks and evaluation criteria
-
-**If you answered NO to any item, revise your learning contract before moving to next step.**
+**Why I want to develop this skill (2-3 sentences):**
 
 ---
 
-**Step 5: Peer Review (10 min - Small Groups of 3)**
+## Part 2: SDL Step 1 - Assess Readiness to Learn (15 minutes)
 
-Share your learning contract with 2 peers. Each person presents (2 min), then receives feedback (1 min).
+Answer these questions honestly to evaluate your readiness:
 
-**When You Present:**
-- Explain WHAT you're learning and WHY (career connection)
-- Describe HOW you'll learn it (highlight evidence-based strategies)
-- Share your biggest concern or question
+### Knowledge Assessment
 
-**When You Give Feedback:**
-- Is the goal specific enough? (or still too vague?)
-- Are the strategies ACTIVE or PASSIVE?
-- Is the timeline realistic?
-- What's ONE suggestion to strengthen it?
+**1. What do I already know about this skill/topic?**
 
-**Feedback Received from Peer 1 (Name: ______________):**
-_________________________________________________________
-_________________________________________________________
+(List specific knowledge, experiences, or related skills you already have)
 
-**Feedback Received from Peer 2 (Name: ______________):**
-_________________________________________________________
-_________________________________________________________
+```
+Example: "I know basic Excel formulas (SUM, AVERAGE) from high school. I've created
+simple charts for class presentations. I understand the concept of spreadsheets
+but have never used pivot tables or macros."
+```
 
-**How I'll revise my contract based on feedback:**
-_________________________________________________________
+Your answer:
 
 ---
 
-## Part 3: Mentor Meeting #2 Preparation (15 minutes)
+**2. What foundational knowledge or prerequisites do I need?**
 
-### Instructions
+(Identify any gaps that might prevent you from learning effectively)
 
-Your learning contract is the CORE of Mentor Meeting #2 preparation. Now plan the discussion.
+```
+Example: "I need basic understanding of data types (numbers, text, dates). I should
+understand what 'data analysis' means conceptually before diving into advanced Excel."
+```
 
-**Mentor Meeting #2 Focus:** Self-Directed Learning & Goal Setting
-
-**Pre-Meeting Preparation Form (to submit 48 hours before meeting):**
-
-**1. Learning Contract Summary (100-150 words)**
-Summarize your learning contract in paragraph form. Include:
-- What you're learning and why it matters for your career
-- How you plan to learn it (key strategies)
-- Timeline and evidence of success
-
-_________________________________________________________
-_________________________________________________________
-_________________________________________________________
-_________________________________________________________
-_________________________________________________________
-
-**2. Specific Questions for Your Mentor (Minimum 3)**
-
-Prepare thoughtful questions that show you've done preliminary thinking:
-
-**Question 1 (About Goal Appropriateness):**
-_________________________________________________________
-_________________________________________________________
-
-Example: "Given my interest in [career field], is [skill] the highest priority to develop now, or should I focus on [alternative] first?"
-
-**Question 2 (About Learning Strategies):**
-_________________________________________________________
-_________________________________________________________
-
-Example: "What resources or approaches did you use when developing [similar skill]? What worked? What didn't?"
-
-**Question 3 (About Progress Monitoring):**
-_________________________________________________________
-_________________________________________________________
-
-Example: "How will I know if I'm improving at the right pace? What milestones should I expect at 2 weeks, 4 weeks, 8 weeks?"
-
-**Bonus Questions:**
-_________________________________________________________
-_________________________________________________________
-
-**3. What You Want to Gain from This Meeting:**
-
-Beyond the learning contract discussion, what else do you hope to learn?
-_________________________________________________________
-_________________________________________________________
-
-**4. Updates Since Last Meeting:**
-
-Progress on advice from Mentor Meeting #1:
-_________________________________________________________
-_________________________________________________________
+Your answer:
 
 ---
 
-## Closing: Class Sharing (5 minutes)
+### Motivation Assessment
 
-**Volunteers (3-4 students):** Share with the class:
-1. What skill are you developing in your learning contract?
-2. Which evidence-based strategy are you most excited to try?
-3. What's your biggest concern about implementing it?
+**3. Why am I motivated to learn this? What outcomes do I expect?**
 
-**Class Discussion:**
-- Common themes in learning goals?
-- Most popular evidence-based strategies?
-- Shared concerns or barriers?
+(Be specific about how this supports your career goals)
 
----
+```
+Example: "70% of business analyst job postings require advanced Excel skills. Learning
+this will make me more competitive for summer internships. I expect to analyze datasets
+faster and create professional-looking reports that impress employers."
+```
 
-## Before Next Class
-
-### 📝 Immediate Actions (This Week)
-
-1. **Finalize Your Learning Contract** - Incorporate peer feedback, make it submission-ready for mentor meeting
-
-2. **Try ONE Evidence-Based Strategy** - Don't wait for the mentor meeting; experiment THIS WEEK with retrieval practice, spacing, elaboration, or interleaving for one of your current courses
-
-3. **Complete Week 4 Quiz** - Due Sunday 11:59 PM on Moodle (covers Zimmerman, Waterloo, learning styles myth, evidence-based strategies)
-
-4. **Reflection Exercise** - At end of week, answer:
-   - "Which evidence-based strategy did I try?"
-   - "Did it feel harder than my usual approach? Why?"
-   - "Did I notice any difference in understanding/retention?"
-   - "Will I continue using it?"
-
-### 📅 Upcoming Deadlines
-
-1. **Schedule Mentor Meeting #2** - Should occur within next 2 weeks
-   - Recommended: Week 5 or early Week 6
-
-2. **Submit Pre-Meeting Form** - 48 hours before Mentor Meeting #2
-   - Include: Learning contract summary, discussion questions, updates since Meeting #1
-
-3. **Submit Post-Meeting Reflection** - 48 hours after Mentor Meeting #2
-   - Document mentor feedback on your learning contract
-   - Revise contract based on mentor advice
-   - Identify action items with specific deadlines
-
-### 📚 Next Week Preview
-
-**Week 5: Self-Discovery Through Assessment**
-- You'll complete FOUR self-assessment tools: MBTI (personality), VIA Character Strengths, CliftonStrengths, Holland Code (career interests)
-- Bring: Laptop/tablet to complete online assessments during class
-- Prepare: Be honest with responses—self-deception undermines self-awareness
-
-**Readings:**
-- Erford et al. (2025) - MBTI review
-- London et al. (2023) - Self-awareness development
-- Nauta (2010) - Holland's RIASEC theory
-- Littman-Ovadia et al. (2014) - Strengths-based career counseling
-
-**Why It Matters:**
-- Your learning contract should align with your strengths and personality
-- Week 5 assessments may reveal insights that refine your learning goals
+Your answer:
 
 ---
 
-## Key Takeaways
+### Resource Assessment
 
-**From Today's Tutorial:**
+**4. What resources are available to me?**
 
-1. **Most students use LOW-EVIDENCE strategies** (highlighting, rereading, cramming) because they feel easy—but evidence-based strategies (retrieval, spacing, elaboration) are far more effective
+Check all that apply and identify specific resources:
 
-2. **Learning contracts transform vague intentions into concrete plans** - specificity is everything (WHAT, HOW, WHEN, EVIDENCE)
+- [ ] **University resources:** _____________________________________________
+- [ ] **Online courses/platforms:** _____________________________________________
+- [ ] **Books/textbooks:** _____________________________________________
+- [ ] **Mentors/experts I can ask:** _____________________________________________
+- [ ] **Software/tools/equipment:** _____________________________________________
+- [ ] **Peers/study groups:** _____________________________________________
+- [ ] **Financial resources (if needed):** _____________________________________________
 
-3. **Self-regulated learning is a teachable skill** - Zimmerman's cycle (forethought → performance → self-reflection) applies to all learning contexts
+### Readiness Verdict
 
-4. **Your weakest Zimmerman phase is your growth opportunity** - identify it, strengthen it, improve all learning outcomes
+Based on your answers above, rate your readiness to learn this skill:
 
-5. **Mentor Meeting #2 is about refinement, not creation** - bring a DRAFT learning contract for discussion, not a blank page
+- [ ] **High Readiness:** I have prerequisite knowledge, strong motivation, and good resources
+- [ ] **Moderate Readiness:** I'm missing 1-2 elements but can address gaps quickly
+- [ ] **Low Readiness:** I need to build foundations first or find better resources
 
-**Remember:** The evidence-based strategies feel HARDER at first (desirable difficulty)—that struggle is what strengthens memory and understanding. Embrace it.
+**If Low Readiness:** Consider choosing a different skill for this contract, or plan a "pre-learning" phase to build prerequisites.
 
 ---
 
-**Questions? Concerns? Confusion?**
+## Part 3: SDL Step 2 - Set Learning Goals (25 minutes)
 
-- Attend office hours this week if you need help refining your learning contract
-- Bring draft to Mentor Meeting #2 preparation—your mentor will provide expert guidance
-- Use the tutorial Slack/discussion board to share resources and tips with classmates
+### Define Your Target Level
 
-**Good luck! See you Week 5 for self-assessment deep dive!**
+**In 4-12 weeks, what specific level do you want to reach?**
+
+Be concrete. Instead of "I want to be good at Excel," specify:
+
+```
+Example: "I want to independently create pivot tables to analyze sales data,
+use VLOOKUP to merge datasets, apply conditional formatting to highlight trends,
+and build interactive dashboards with 5+ charts that tell a data story."
+```
+
+Your target level:
+
+---
+
+### Complete Your Learning Contract
+
+**LEARNING CONTRACT TEMPLATE**
+
+---
+
+**Learning Goal:**
+
+(One sentence describing what you want to learn)
+
+---
+
+**Why This Matters:**
+
+(How this supports your career goals—connect to your Personal Development Plan)
+
+---
+
+**Current Level:**
+
+(Honest assessment of where you are now—specific examples)
+
+---
+
+**Target Level:**
+
+(Specific, observable capabilities you'll have after learning—what can you DO that you can't do now?)
+
+---
+
+**Learning Strategies** (minimum 3):
+
+1.
+
+2.
+
+3.
+
+(Combine different approaches: structured courses, practice/application, teaching others, deliberate imitation of experts)
+
+---
+
+**Resources Needed:**
+
+(List specific resources with details—course names, book titles, software, costs, mentor time)
+
+-
+
+-
+
+-
+
+---
+
+**Timeline:**
+
+Total duration: _______ weeks (from __________ to __________)
+
+**Breakdown by phase:**
+
+- **Phase 1 (Weeks _____):** Focus: ___________________________________
+
+- **Phase 2 (Weeks _____):** Focus: ___________________________________
+
+- **Phase 3 (Weeks _____):** Focus: ___________________________________
+
+(Apply spacing principle—spread learning over time, don't cram)
+
+---
+
+**Checkpoints & Self-Monitoring:**
+
+How will you track progress during the learning process?
+
+- **Weekly:** _______________________________________________________
+
+- **Biweekly:** _____________________________________________________
+
+- **Mid-point check (Week ___):** _____________________________________
+
+(Build in retrieval practice—test yourself regularly, don't just consume content)
+
+---
+
+**Success Evidence:**
+
+How will you KNOW you've achieved your target level? (Minimum 3 pieces of evidence)
+
+1. **Performance Evidence:** _________________________________________
+
+2. **Feedback Evidence:** ___________________________________________
+
+3. **Portfolio/Tangible Output:** ______________________________________
+
+---
+
+## Part 4: SDL Step 3 - Engage in Learning Process (20 minutes)
+
+### Design Your Learning Approach
+
+Now that you have your contract, plan HOW you'll actually learn. Answer these questions:
+
+**1. What evidence-based learning strategies will you use?**
+
+Based on today's lecture, identify which strategies you'll apply:
+
+- [ ] **Retrieval Practice:** How? ___________________________________________
+
+- [ ] **Spaced Practice:** How? ______________________________________________
+
+- [ ] **Elaborative Interrogation:** How? _____________________________________
+
+- [ ] **Self-Explanation:** How? _____________________________________________
+
+- [ ] **Interleaving:** How? _________________________________________________
+
+- [ ] **Teaching Others:** How? _____________________________________________
+
+**2. What obstacles might you encounter, and how will you overcome them?**
+
+| Obstacle | Mitigation Strategy |
+|----------|---------------------|
+| Example: "Lose motivation after Week 2" | "Schedule accountability check-ins with study partner every Friday; track progress visually on chart" |
+| | |
+| | |
+| | |
+
+**3. How will you apply Zimmerman's SRL cycle to this learning goal?**
+
+**FORETHOUGHT PHASE (before each learning session):**
+
+What will you do? _______________________________________________________
+
+**PERFORMANCE PHASE (during each learning session):**
+
+How will you monitor your understanding? __________________________________
+
+**SELF-REFLECTION PHASE (after each learning session):**
+
+How will you evaluate and adjust? _______________________________________
+
+---
+
+## Part 5: SDL Step 4 - Plan for Evaluation (included in Part 3)
+
+Your success evidence in the learning contract addresses evaluation. Make sure you've defined:
+
+- **Self-Evaluation:** How you'll test your own knowledge
+- **Peer/Expert Feedback:** Who will evaluate your work
+- **Performance Evidence:** Tangible demonstrations of mastery
+
+---
+
+## Part 6: Peer Review & Refinement (15 minutes)
+
+### Pair up with a classmate and exchange learning contracts.
+
+**Peer Review Checklist:**
+
+As you review your partner's contract, provide feedback on:
+
+- [ ] **Specificity:** Is the target level specific and measurable, or vague?
+  - ❌ Vague: "Get better at public speaking"
+  - ✅ Specific: "Deliver 10-minute presentations without notes, with varied vocal tone and natural eye contact"
+
+- [ ] **Feasibility:** Is the timeline realistic given the target level and resources?
+
+- [ ] **Resources:** Are the resources specific enough? Do they need to add any?
+
+- [ ] **Evidence:** Will the success evidence actually demonstrate mastery?
+  - ❌ Weak: "Complete the online course" (completion ≠ mastery)
+  - ✅ Strong: "Use the skill in 3 real projects; receive positive feedback from mentor"
+
+- [ ] **Evidence-Based Strategies:** Did they incorporate spacing, retrieval practice, or other high-utility strategies?
+
+**Provide 2-3 specific suggestions for improvement:**
+
+1.
+
+2.
+
+3.
+
+---
+
+## Part 7: Reflection & Next Steps (10 minutes)
+
+### Individual Reflection
+
+**1. How does this learning contract connect to your Personal Development Plan?**
+
+(Which section of your PDP will this support? Skills Gap Analysis? SMART Goals? Implementation Plan?)
+
+---
+
+**2. What's the FIRST action you'll take this week to begin?**
+
+(Be specific—what will you do, when, and for how long?)
+
+---
+
+**3. How will you share this learning contract with your mentor?**
+
+(In which meeting will you discuss it? What feedback will you seek?)
+
+---
+
+**4. What did you learn about self-managed learning today?**
+
+(Reflect on the four-step SDL process—which step was most challenging? Most valuable?)
+
+---
+
+## Deliverables
+
+### Submit to Course Management System:
+
+1. **Completed Learning Contract** (from Part 3)
+2. **Learning Approach Plan** (from Part 4—strategies, obstacles, SRL application)
+3. **Brief Reflection** (100-150 words on how this connects to your PDP and what you learned today)
+
+**Due:** End of tutorial session (or within 24 hours if instructor allows)
+
+---
+
+## Extension Activity (Optional)
+
+### For those who finish early:
+
+**Create a visual timeline of your learning plan.**
+
+Use any tool you like (hand-drawn, Excel, Canva, Google Slides, timeline software) to visualize:
+
+- Your learning phases over time
+- Key milestones and checkpoints
+- Self-testing moments (retrieval practice)
+- Feedback collection points
+- Final demonstration of mastery
+
+This visual can become part of your PDP Implementation & Accountability section (Part 5).
+
+---
+
+## Tips for Success
+
+1. **Be honest about your current level.** Overestimating helps no one and leads to frustration.
+
+2. **Make success evidence OBSERVABLE.** "I will feel more confident" is not measurable. "I will deliver 3 presentations and receive average rating of 4/5 from peers" is measurable.
+
+3. **Build in accountability.** Learning contracts work best when someone else knows about them. Share yours with your mentor, a study partner, or a friend.
+
+4. **Use this contract in your PDP.** Don't create a learning contract and then forget about it. This should become part of your Personal Development Plan submission.
+
+5. **Review and adjust.** After your first checkpoint (Week 2-3 of learning), evaluate whether your timeline and strategies are working. Adjust if needed—that's the Self-Reflection phase in action!
+
+---
+
+## Connection to Assessments
+
+**Mentorship Program (20%):**
+- Discuss this learning contract with your mentor in Meeting #2 or #3
+- Ask for resource recommendations, timeline feedback, and accountability support
+
+**Personal Development Plan (40%):**
+- Include this learning contract in Part 2 (Skills Gap Analysis)
+- Reference it in Part 3 (SMART Goals) if it aligns with a specific goal
+- Use it as a model for other skills you plan to develop
+
+**Reflective Essay (10%):**
+- When reflecting on field trip/guest speaker, you can reference how insights informed your learning goals
+
+**Final Oral Exam (30%):**
+- Demonstrate self-awareness of your learning process
+- Show evidence that you're strategically developing yourself (not just passively taking courses)
+
+---
+
+## Questions for Tutorial Facilitator
+
+(Write down any questions that arise during the tutorial)
+
+1.
+
+2.
+
+3.
+
+---
+
+**Remember:** Self-managed learning is a skill. The more you practice creating and following learning contracts, the better you'll become at teaching yourself anything throughout your career.
+
+**Next week:** We'll explore self-discovery through assessments (MBTI, VIA Character Strengths, CliftonStrengths, Holland Code)—these insights will help you identify additional skills to develop and refine your learning goals based on your natural strengths and preferences.

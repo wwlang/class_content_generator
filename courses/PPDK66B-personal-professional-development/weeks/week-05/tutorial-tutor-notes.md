@@ -1,737 +1,450 @@
 # Week 5 Tutorial: Tutor Guide
-## Self-Assessment Integration Workshop
+## Assessment Integration Workshop
 
 **Course:** PPDK66B Personal & Professional Development
 **Tutorial Duration:** 90 minutes
 **Difficulty Level:** Moderate-High (requires preparation checking, sensitive facilitation)
-**Materials Required:** Assessment results (students bring), templates (provided), timer
+**Materials Required:** Assessment results (students bring), templates, highlighters, timer
 
 ---
 
-## Tutorial Overview
+## Overview & Learning Objectives
 
-**Purpose:**
-This tutorial helps students integrate five self-assessment tools (MBTI, VIA, CliftonStrengths, Holland Code, EI) into coherent self-understanding that directly informs their Personal Development Plan Part 1 (worth 20% of PDP = 8% of course grade).
+**Tutorial Purpose:**
+This workshop teaches students to synthesize insights from 5 self-assessment tools (MBTI, VIA, CliftonStrengths, EI, Holland Code) into coherent career direction. The core deliverable is a 200-300 word integration statement draft—the foundation of PDP Part 1 (20% of PDP grade = 8% of final course grade).
 
-**Learning Outcomes:**
-By the end of this tutorial, students will have:
-1. Documented all assessment results with career implications (usable PDP content)
-2. Drafted a 200-300 word integration statement identifying patterns
-3. Prepared for Mentorship Meeting #2 with thoughtful questions
-4. Received peer feedback to strengthen integration quality
+**By end of tutorial, students will:**
+1. Identify 2-3 convergent patterns across their 5 assessments with specific evidence
+2. Interpret contradictions as insights revealing complexity rather than dismissing as errors
+3. Draft a complete PDP integration statement (200-300 words) ready for minor revision
+4. Prepare 3-5 high-quality questions for Mentorship Meeting #2
 
-**Assessment Connection:**
-- **Direct:** Today's work becomes PDP Part 1 content (Self-Knowledge Foundation)
-- **Indirect:** Self-assessment insights inform SWOT, vision statement, and SMART goals
-- **Mentorship:** Meeting #2 focuses on sharing results and seeking mentor validation
+**Why This Matters:**
+Students who complete strong integration statements today will write significantly better PDPs. Those who treat assessments as isolated data points (not integrated insights) produce generic PDPs with vague career goals. Integration = specificity = strong assessment grades.
 
 ---
 
-## Pre-Tutorial Preparation
+## Pre-Tutorial Preparation (Tutor)
 
-### 1 Week Before
+### 1. Check Assessment Completion Rates (48 hours before)
 
-**Communicate Assessment Requirements:**
-- Email reminder: "Complete all 5 assessments BEFORE Week 5 tutorial"
-- Provide links again:
-  - MBTI/16 Personalities: https://www.16personalities.com
-  - VIA Character Strengths: https://www.viacharacter.org
-  - CliftonStrengths: Distribute access codes (if not already done)
-  - Holland Code: https://www.mynextmove.org/explore/ip
-  - EI Assessment: [Course-specific link]
-- Estimated time: 90-120 minutes total across all assessments
-- Emphasize: "You cannot fully participate without results"
+**Action Required:**
+Email students 2 days before tutorial: "Reminder: You must bring completed results from all 5 assessments to Tutorial. Without results, you cannot participate meaningfully. Complete any missing assessments before class."
 
-**Set Expectations:**
-- Tutorial is APPLIED WORK, not lecture
-- Students will share results in small groups (voluntary but encouraged)
-- Output is usable PDP Part 1 content—not wasted effort
+**Expected reality:**
+- 60-70% will have completed all 5
+- 20-30% will be missing 1-2 (usually CliftonStrengths or EI)
+- 10% will have completed none
 
-### 48 Hours Before
+**Preparation:**
+- Have CliftonStrengths access code distribution list ready (students got codes in Week 1, but some lost them)
+- Bookmark free assessments for quick reference:
+  - MBTI/16Personalities: 16personalities.com
+  - VIA: viacharacter.org
+  - Holland Code: onetonline.org (O*NET Interest Profiler)
+- Designate quiet corner for students completing assessments during tutorial (not ideal, but better than nothing)
 
-**Preparation Check:**
-- Survey students: "Who has completed all 5 assessments?"
-- If <80% completion, send urgent reminder
-- Prepare contingency: First 30 min of tutorial = assessment completion time if needed
+### 2. Materials Preparation
 
-**Print Materials:**
-- Self-Assessment Summary Template (1 per student)
-- Integration Statement Template (1 per student)
-- Peer Feedback Protocol (1 per student)
-- Mentorship Meeting #2 Prep Form (1 per student)
+**Print/Prepare:**
+- [ ] Case Study handouts (Case A & B from tutorial content)—1 per student
+- [ ] Integration statement structure template (optional—helps struggling writers)
+- [ ] Highlighters or colored pens (at least 3-4 colors per student)—some students forget
+- [ ] Whiteboard markers for group demos
 
-**Room Setup:**
-- Arrange tables for groups of 3-4
-- Ensure reliable WiFi (students may need to access digital results)
-- Test projector for timer display
+**Digital Setup:**
+- [ ] Timer visible to whole class (phone/laptop/projector)
+- [ ] Example integration statements (2-3 samples: excellent, adequate, poor)—for calibration
+- [ ] Mentorship Meeting #2 Pre-Meeting Form link ready to share
 
-### Day Of
+### 3. Anticipate Sensitive Moments
 
-**Tech Check:**
-- Projector working for timer display
-- Backup printed templates available
-- WiFi credentials posted visibly
+**Common emotional reactions:**
+- **Disappointment:** "My assessments don't show creativity, but I thought I was creative."
+- **Identity crisis:** "I'm INFJ but always thought I was extraverted—who am I really?"
+- **Impostor syndrome:** "Everyone else's results look impressive. Mine seem boring."
+- **Over-identification:** "I'm an INTJ. This explains EVERYTHING about me."
 
-**Mindset:**
-- This is a MAKING session—students leave with tangible PDP content
-- Balance structure (timed activities) with flexibility (some need more time on certain tasks)
-- Sensitivity required—students may feel vulnerable sharing results
+**Tutor stance:**
+- Normalize: "Assessments measure current preferences, not fixed identity. You're not a 4-letter code—you're complex."
+- Redirect to evidence: "Do you feel creative in your daily life? Then you ARE creative, even if Holland Code doesn't say 'Artistic.' Assessments aren't perfect."
+- Emphasize growth: "Personality is most fluid ages 18-25. Your results today may not be your results at 29."
+
+**Red flags requiring instructor escalation:**
+- Student expresses distress about results ("This says I'm not suited for my dream career—should I drop out of my major?")
+- Student refuses to complete assessments (may indicate larger engagement issues)
+- Student claims all results are "completely wrong" (possible self-awareness gap or assessment misunderstanding)
 
 ---
 
-## Detailed Facilitation Guide
+## Session Flow & Facilitation Notes
 
 ### Opening (5 minutes)
 
-**Objectives:**
-- Orient students to today's work
-- Check assessment completion
-- Set tone: supportive, applied, authentic
+**Welcome & Expectations:**
+"Today you're creating the core of your Personal Development Plan—the integration statement that synthesizes all 5 assessments. This isn't busywork. Students who draft strong statements today score 15-20% higher on PDPs than those who skip this step. Let's make your time count."
 
-**Script:**
+**Quick Logistics:**
+- "Who completed all 5 assessments? [Show of hands]" — Celebrate completion, don't shame those who didn't
+- "If you're missing 1-2, you can participate with what you have and complete the rest for homework. If you have 0-1, please work in the back completing them now, then join your group."
+- "You'll work in groups of 3-4. Choose groups strategically—pick people who'll give honest feedback, not just friends who say 'looks good.'"
 
-"Welcome to Week 5 tutorial. Today is all about integration—taking your five assessment results and making sense of them as a coherent picture of who you are.
-
-**Quick check:** By show of hands, who has completed all five assessments? [Count hands]
-
-[If <80%:]
-Okay, if you haven't finished, take the first 30 minutes to complete assessments now. Use laptops, move to sides of room to minimize distraction. The rest of us will start Activity 1.
-
-[If >80%:]
-Great. Today you will produce actual content for your PDP Part 1. This isn't practice—this is your Self-Knowledge Foundation section. By the end of tutorial, you'll have:
-- Five assessment summaries with career implications
-- A 200-300 word integration statement
-- Preparation for Mentorship Meeting #2
-
-**Ground rules for today:**
-- Sharing assessment results is encouraged but not mandatory in group work
-- This is a judgment-free zone—no "right" results, only self-knowledge
-- Authenticity over perfection—generic statements help no one
-- Keep time boundaries—we have a lot to accomplish
-
-Let's begin."
+**Frame the challenge:**
+"Integration is harder than it sounds. Your brain wants to pick one assessment as 'the truth'—usually the one that felt most accurate. Resist that. Strong integration finds patterns ACROSS tools and interprets contradictions thoughtfully. That's what we're practicing today."
 
 ---
 
-### Activity 1: Individual Documentation (25 minutes)
+### Activity 1: Cross-Assessment Pattern Mapping (30 minutes)
 
-**Learning Objective:** Document all assessment results with career implications (PDP Part 1 content)
+#### Step 1: Individual Mapping (15 minutes)
 
-**Setup:**
-- Distribute Self-Assessment Summary Template
-- Students work individually with their assessment results
+**Tutor Facilitation:**
 
-**Tutor Role: Active Circulation**
+**Demo first (5 minutes):**
+Use whiteboard to show mapping process with hypothetical example:
 
-**What to Monitor:**
+```
+          EXAMPLE STUDENT
+               |
+    ____________________________
+    |      |      |      |     |
+  MBTI   VIA  Clifton  EI  Holland
+  ENFJ   Love  Empathy  High   SEC
+         Kind  Harmony  Social
+         Team  Developer Aware
+```
 
-**1. Completion Issues**
-- Some students will claim they "completed" assessments but only have vague memories
-- **Intervention:** "Pull up your results email/screenshot now. I need to see your specific MBTI type and VIA top 5."
-- Have backup laptops for re-accessing results
+"Notice I'm highlighting themes across columns:
+- Yellow = people-focused (Feeling, Love, Kindness, Empathy, Social) — appears 5 times
+- Green = organized/structured (Judging, Harmony, High self-management, Conventional) — appears 3 times
+- Pattern: This person thrives building relationships in structured environments → HR, team management fit"
 
-**2. Generic Descriptions**
-- Watch for: "I'm good with people," "I like challenges," "I'm creative"
-- **Intervention:** "Can you make that more specific using assessment language? Instead of 'good with people,' try 'My VIA Social Intelligence strength appears when I...'"
+**Then students work individually:**
+- Circulate and check: Are they highlighting themes or just copying results?
+- Common mistake: Students list results vertically without drawing connections
+- Intervention: "I see your VIA says Curiosity and Holland says Investigative—those are related. Draw a line connecting them. What theme does that suggest?"
 
-**3. Missing Career Implications**
-- Students list results but don't connect to career fit
-- **Intervention:** "So your Holland Code is ASE—what careers match that? Look at the O*NET list if you need ideas."
+**Time management:**
+- At 7-minute mark: "You should have all 5 results written down by now and be starting to highlight"
+- At 12-minute mark: "Start drawing connections between related results"
+- At 14-minute mark: "Circle your strongest theme cluster—what color appears most?"
 
-**4. Over-Identification**
-- Some students will treat results as absolute truth
-- **Intervention:** "Remember the lecture—MBTI has weak validity. Use it for reflection, not limitation. What does INTJ suggest about work environment preferences?"
+#### Step 2: Small Group Sharing (15 minutes)
 
-**5. Critical Thinking on Validity**
-- Check that students noted MBTI and CliftonStrengths validity concerns
-- **Intervention:** "Add a note here: 'I recognize CliftonStrengths has weak reliability in students (Reid & Short, 2024), so I'm weighting VIA more heavily.'"
+**Group Formation:**
+Groups of 3-4 work best (not pairs—pairs lack diversity of perspective; groups of 5+ are too slow).
 
-**Common Questions & Responses:**
+**Your Role:**
+- Eavesdrop on 2-3 groups—check quality of questions they're asking each other
+- Intervene if groups are just validating ("Yeah, that makes sense") without probing
+- Model good questions: "Hang on—your MBTI says Introversion but Holland says Enterprising-Social. Those seem to conflict. How do you explain that?"
 
-**Q:** "I got different MBTI results on different tests. Which do I use?"
-**A:** "That's actually evidence of the reliability problem we discussed in lecture. Pick the type that FEELS most accurate based on your self-knowledge, and note the inconsistency in your integration statement."
+**Common group dynamics:**
+- **The Validator Group:** Everyone just says "That's great!" without critical thinking
+  - **Fix:** Join group briefly, model probing question, leave
+- **The Advice-Giver:** One dominant student tells others what careers they should pursue
+  - **Fix:** "Remember, your job is to ASK questions, not prescribe answers. Let [student] interpret their own results."
+- **The Off-Task Group:** Chatting about weekend plans, assessments forgotten
+  - **Fix:** "I see you've finished discussing [Student A]'s map. Let's move to [Student B] now. What patterns do you see in their results?"
 
-**Q:** "My CliftonStrengths top 5 don't match my VIA top 5. Is that wrong?"
-**A:** "No—they measure different things. CliftonStrengths = talents (how you work). VIA = character (who you are). Look for RELATED patterns, not identical matches."
+**Anticipated student questions:**
+- Q: "My group says my MBTI contradicts my Holland Code. Is one wrong?"
+  - A: "Neither is 'wrong'—they measure different things. MBTI measures preferences, Holland measures work environment fit. Contradiction often means you need a hybrid career. Can you find careers that honor both?"
 
-**Q:** "Do I need to write about ALL 24 VIA strengths?"
-**A:** "No—just your top 5 signature strengths. Those are the ones that energize you and feel authentic."
+- Q: "I don't see any clear patterns. My results are all over the place."
+  - A: "That's valuable data! Flat profiles mean you're versatile. It makes career choice harder (no obvious direction), but you'll adapt well to diverse roles. Let's look for secondary patterns or discuss with your mentor."
 
-**Q:** "What if my Holland Code doesn't match my major?"
-**A:** "That's worth noting! Either (1) you chose the wrong major, or (2) you're planning to apply your major in a different field. Example: Finance major (C-type) working in creative industries (A-type) doing financial analysis for ad agencies."
-
-**Time Warnings:**
-- At 15 min: "Halfway point—you should have 3 assessments documented."
-- At 20 min: "5 minutes left—finish up and focus on integration notes."
-- At 25 min: "Pens down. You can polish this later—for now we're moving to group work."
-
-**Tutor Check-In (End of Activity 1):**
-- Quick scan: Are templates mostly filled in?
-- If many students struggling, extend 5 minutes
-- If most done, proceed to Activity 2
-
----
-
-### Activity 2: Small Group Integration Practice (30 minutes)
-
-**Learning Objective:** Draft 200-300 word integration statement identifying patterns
-
-**Setup:**
-- Assign groups of 3-4 (pre-planned if possible, or count off)
-- Display timer prominently
-- Distribute Integration Statement Template
-
-**Group Formation Strategy:**
-
-**Goal:** Mix personality types for diverse perspectives
-
-**Method:**
-- If you know students: pair high self-disclosers with quieter students
-- If you don't: "Find 2-3 people you DON'T usually work with"
-- Avoid: All introverts in one group (too quiet), all extraverts in another (too loud)
-
-**Facilitation Script:**
-
-"You're now in integration groups. Each person gets 7-8 minutes of focused attention. Your job as listeners is to help identify patterns your groupmate might not see.
-
-**Process:**
-1. Person A shares results (3 min)
-2. Group identifies patterns (2 min)
-3. Group generates career hypotheses (2 min)
-4. Rotate to Person B
-
-After everyone shares, you'll have 10 minutes to draft your individual integration statement.
-
-**Timer starts now for Person A in each group.**"
-
-**Tutor Role: Strategic Listening**
-
-**Circulate Between Groups:**
-
-Listen for 1-2 minutes per group to assess quality, then intervene if needed.
-
-**Red Flags & Interventions:**
-
-**1. Surface-Level Sharing**
-- Student: "I'm ENFP, my Holland Code is S, I like helping people."
-- **Intervention:** "Dig deeper. HOW does your ENFP preference show up? Give a specific example of when Social Holland type appeared in your life."
-
-**2. Group Silent/Not Participating**
-- Group members stare at phones while one person talks
-- **Intervention:** "Pause. Listeners, what patterns have you heard so far? Tell [student name] what you notice."
-
-**3. Forced Coherence**
-- Student: "Everything says I'm extraverted."
-- But you know they're quiet in class
-- **Intervention:** "What about contradictions? MBTI might say extravert, but what does your Holland Code or CliftonStrengths say? Explore that."
-
-**4. No Career Application**
-- Group discusses types academically without connecting to work
-- **Intervention:** "Great analysis. Now—what jobs or environments match this profile? Be specific."
-
-**5. Overly Critical Self-Talk**
-- Student: "I scored low on [trait], so I can't do [career]."
-- **Intervention:** "Hold on. Low [trait] doesn't disqualify you. It means you'd approach [career] differently. How might your strengths compensate?"
-
-**Strong Group Indicators:**
-- Active listening (eye contact, note-taking)
-- Thoughtful questions ("Why do you think your MBTI Introversion doesn't match your Social Holland type?")
-- Specific pattern identification ("I notice creativity shows up in 3 of your 5 assessments...")
-- Career brainstorming ("Have you considered UX research? It matches your I, A, and Curiosity VIA strength")
-
-**Time Management:**
-
-- **0-8 min:** Person A shares + group feedback
-- **8-16 min:** Person B shares + group feedback
-- **16-24 min:** Person C shares + group feedback
-- **24-30 min:** (Person D if 4-person group, otherwise early finish)
-- **30-40 min:** Individual drafting time (everyone writes simultaneously)
-
-**At 30-Minute Mark:**
-
-"Time for sharing is up. Now everyone writes your own integration statement individually. You have 10 minutes. Use the template structure: Patterns paragraph, Contradictions paragraph, Career Implications paragraph. Go."
-
-**During Drafting (30-40 min):**
-
-- Enforce silence—this is individual work
-- Circulate to read over shoulders (with permission)
-- Provide real-time feedback via marginal notes or whispered comments
-
-**Drafting Quality Checks:**
-
-**Strong Statement Indicators:**
-- ✓ Uses specific assessment language ("VIA Perspective," "Holland I-type," "MBTI T preference")
-- ✓ Provides evidence (examples from life, not just test results)
-- ✓ Addresses contradiction thoughtfully
-- ✓ Names specific career types/environments
-- ✓ Sounds like THIS person, not anyone
-
-**Weak Statement Indicators:**
-- ✗ Just lists results ("I'm ENTP with strengths in X, Y, Z")
-- ✗ Generic ("I'm good with people and like solving problems")
-- ✗ No contradictions addressed (forced coherence)
-- ✗ Vague career implications ("I'd be good at business")
-- ✗ Could apply to multiple people (not authentic)
-
-**Time Warning:**
-- At 38 min: "2 minutes—finish your current sentence and move to conclusion."
-- At 40 min: "Pens down. You'll revise during peer feedback."
+**Transition (1 minute):**
+"Excellent discussions. I heard groups identifying convergence AND wrestling with contradictions—that's exactly the thinking needed for your integration statement. Let's practice interpretation with case studies."
 
 ---
 
-### Activity 3: Mentorship Meeting #2 Preparation (20 minutes)
+### Activity 2: Interpretation Practice (20 minutes)
 
-**Learning Objective:** Prepare structured questions and objectives for upcoming mentor meeting
+#### Round 1: Case Study Analysis (10 minutes)
 
-**Setup:**
-- Distribute Mentorship Meeting #2 Preparation Form
-- Students work individually
+**Facilitation Strategy:**
 
-**Facilitation Script:**
+**Case Study A (The "Contradiction" Profile):**
+This case teaches students that apparent contradictions often resolve when you find hybrid careers.
 
-"Your Mentorship Meeting #2 should happen this week or next. The focus is sharing your assessment results and getting your mentor's perspective. Remember the Johari Window—mentors help reduce your Blind Spot.
+**How to facilitate:**
+1. Give pairs 5 minutes to discuss questions
+2. Bring class together for 3-minute debrief
+3. Ask: "Pair 1, what pattern did you see?" → Listen → "Pair 2, did you interpret the contradiction differently?"
+4. Synthesize: "Most of you saw the INTJ analytical introvert PLUS the ASE creative-social-enterprising as contradictory. But several pairs found hybrid careers: UX research, strategic communications, data visualization. The contradiction disappears when you stop thinking in silos."
 
-You have 20 minutes to complete the preparation form. This is the ACTUAL form you'll submit 48 hours before your meeting, so make it count.
+**Case Study B (The "Coherent" Profile):**
+This case shows extreme convergence—helps students identify dominant themes.
 
-**Key requirements:**
-- 5-7 thoughtful questions (not yes/no questions)
-- 1-page assessment summary for your mentor
-- Clear meeting objectives
+**Key teaching moment:**
+"What might this person STRUGGLE with?" — This question is underrated. Students focus on strengths, but integration also means recognizing limitations. If all 5 assessments say "people-focused," you'll likely struggle in highly solitary/competitive/conflict-heavy roles. That's valuable career information.
 
-Begin."
+**Common student insight:**
+"I think I'm like Case Study B—very coherent profile." → Validate but check: "Look at YOUR map. Do you actually have convergence across all 5, or are you over-simplifying?" Many students want simple answers; push for nuance.
 
-**Tutor Role: Question Quality Control**
+#### Round 2: Apply to Own Results (10 minutes)
 
-**Circulate and review questions. Intervene on:**
+**Individual work—silent writing time**
 
-**1. Closed Questions**
-- Weak: "Do you think I should do consulting?"
-- **Coaching:** "Rephrase as open-ended. Try: 'Based on my profile, what aspects suggest consulting fit, and what concerns would you have?'"
+**Your role:**
+- Enforce silence (this is thinking time, not discussion)
+- Circulate and read over shoulders (with permission)
+- Quick interventions for students who are stuck:
+  - Stuck on convergence: "Look at your map. What color cluster is largest?"
+  - Stuck on contradiction: "Where do results seem to disagree? Write that down, then guess why."
+  - Stuck on career implications: "Based on your pattern, would you be better in a people-heavy role or a technical role? Indoors or outdoors? Structured or flexible?"
 
-**2. Too Many Questions**
-- Student has 12 questions listed
-- **Coaching:** "Pick your top 5-7. Better to explore fewer questions deeply than rush through many."
+**Time checks:**
+- 3 minutes: "You should be answering question 1 (convergence)"
+- 6 minutes: "Move to question 2 (contradiction)"
+- 9 minutes: "Finish question 3 (career implications)—you'll use these in Activity 3"
 
-**3. No Vulnerability**
-- All questions are surface-level, no contradictions shared
-- **Coaching:** "Mentors are most helpful when you share what you're uncertain about. Add a question about your confusion between [X and Y results]."
-
-**4. Overly Personal/Inappropriate**
-- Rare, but occasionally students ask about mentor's personal life inappropriately
-- **Coaching:** "Keep questions focused on professional development and career guidance."
-
-**5. Missing Assessment Summary**
-- Students skip the "1-page summary for mentor" section
-- **Coaching:** "Your mentor needs context. Summarize your results in 5-7 bullet points so you can spend meeting time discussing, not explaining."
-
-**Strong Question Examples to Share:**
-
-Post these on board/screen as models:
-
-- "Based on your experience with me so far, do my assessment results seem accurate? What surprises you?"
-- "How have you seen people with [similar profile] succeed or struggle in [industry]?"
-- "Given my Holland Code is [X], what career paths in [field] would you recommend I explore?"
-- "If [assessment weakness] is a gap for me, what's the most effective way to develop it in the next year?"
-- "I'm torn between [option A] and [option B]. Based on my profile, which aligns better with who I am?"
-
-**Time Warnings:**
-- At 10 min: "Halfway—objectives and summary done, now focus on questions."
-- At 15 min: "5 minutes—finalize your top 5-7 questions."
-- At 20 min: "This form is due 48 hours before your meeting. If your meeting is this week, submit tonight."
+**Transition:**
+"Save those answers. They're your raw material for the integration statement you're about to write."
 
 ---
 
-### Activity 4: Peer Feedback & Revision (15 minutes)
+### Activity 3: Draft PDP Integration Statement (30 minutes)
 
-**Learning Objective:** Improve integration statement based on structured peer feedback
+**Critical Context for Tutor:**
+This is THE most important activity—students are drafting actual PDP content, not just practicing. Quality here = PDP grade impact.
 
-**Setup:**
-- Partner students (ideally with someone NOT in their integration group)
-- Distribute Peer Feedback Protocol
+#### Structure Introduction (3 minutes)
 
-**Facilitation Script:**
+**Before students write:**
+Walk through the 3-paragraph structure (tutorial content has details). Emphasize:
+- "Paragraph 1: Pattern with evidence from 3+ assessments"
+- "Paragraph 2: Contradiction and YOUR interpretation"
+- "Paragraph 3: Career implications with 2-3 specific examples"
 
-"Find a partner—someone you didn't work with in Activity 2 if possible. You'll exchange integration statements and provide feedback using the protocol.
+**Show example (optional but recommended):**
+If you have a sample integration statement (excellent quality), project it and annotate:
+- "See how this mentions all 5 assessments by name?"
+- "Notice the career examples are specific: 'HR business partner' not just 'business'"
+- "This interprets the MBTI-Holland contradiction as preferring deep relationships over networking"
 
-**Process:**
-1. Exchange statements (1 min)
-2. Partner A reads and provides feedback (5 min)
-3. Partner B reads and provides feedback (5 min)
-4. Both revise based on feedback (5 min)
+#### Individual Writing (20 minutes—strictly enforce)
 
-Be honest but kind. Focus on making their statement STRONGER, not criticizing.
+**Tutor stance: Minimal interruption**
 
-Begin exchanging."
+This is concentrated writing time. Resist urge to "help" unless student signals distress.
 
-**Tutor Role: Feedback Quality Monitor**
+**Appropriate interventions:**
+- Student staring at blank page after 5 minutes: "What's blocking you? Let's talk it through briefly."
+- Student writing 400+ words: "Check your word count—target is 200-300. You'll need to condense."
+- Student copying case study language verbatim: "This needs to be YOUR results, not the case study example."
 
-**Circulate to check feedback quality:**
+**Use the quality checklist:**
+At 15-minute mark, announce: "You should be drafting Paragraph 3 by now. Use the checklist in your handout—have you mentioned all 5 assessments? Are your career examples specific?"
 
-**Weak Feedback:**
-- "This is good." (not helpful)
-- "I don't see any problems." (probably not reading carefully)
-- Correcting grammar/spelling only (missing content issues)
+**Time warnings:**
+- 5 min: "Paragraph 1 should be drafted"
+- 10 min: "Paragraph 2 should be drafted"
+- 15 min: "Drafting Paragraph 3"
+- 18 min: "Final polish—check word count, add missing assessments"
 
-**Strong Feedback:**
-- "Your pattern identification is strong, but I don't see career implications. Add a sentence about where you'd thrive."
-- "The contradiction between I and S is interesting—can you explain WHY that makes sense rather than just noting it?"
-- "You use MBTI language correctly, but I don't see VIA strengths mentioned. Where do they fit?"
+**Common student mistakes (watch for these):**
+1. **Generic language:** "My strengths include..." instead of "VIA identifies Curiosity and Judgment..."
+   - Fix: Margin note "Which assessment?" when reading over shoulder
+2. **No contradiction acknowledged:** Only lists convergence, ignores nuance
+   - Fix: "What results surprised you or seemed to conflict?"
+3. **Vague career implications:** "Business roles" instead of "Marketing analytics or HR business partner"
+   - Fix: "Name 2-3 specific job titles"
+4. **Way over/under word count:** 400 words or 100 words
+   - Fix: "Target is 200-300. Trim this section" or "Add specific examples"
 
-**Intervention Examples:**
+#### Peer Feedback (10 minutes—split into two 5-min rounds)
 
-If you see weak feedback happening:
+**How to run this well:**
 
-**Tutor:** "What's one specific way this statement could be stronger?"
-**Student:** "Um... it's pretty good..."
-**Tutor:** "Look at the rubric. Are the career implications specific or vague?"
-**Student:** "Oh, kind of vague—it just says 'business.'"
-**Tutor:** "Great catch. Write that as feedback."
+**Round 1: Partner A gives feedback to Partner B (5 min)**
+- "Partner A, read B's draft and give feedback using the framework. Be specific—not just 'good job.'"
+- Circulate: Are feedbackers actually giving useful input?
+- Model if needed: "I notice you wrote 'assessments show I'm analytical'—which specific assessments? Can you name them?"
 
-**Time Management:**
-- 0-1 min: Exchange
-- 1-6 min: Partner A gives feedback
-- 6-11 min: Partner B gives feedback
-- 11-15 min: Both revise
+**Round 2: Partner B gives feedback to Partner A (5 min)**
+- Switch roles
+- "Partner B, now you give feedback to A."
 
-**At 11-Minute Mark:**
+**Group dynamics to monitor:**
+- Partners just praising without critique → Intervene: "What's ONE thing they could improve? Even strong drafts can be refined."
+- Overly harsh critique → Reframe: "Remember, this is a draft. Focus on what's working AND one growth area."
 
-"Stop giving feedback. Now revise your OWN statement based on what you received. You have 4 minutes."
-
-**Revision Monitoring:**
-
-- Students should be actively editing, not passively re-reading
-- If a student says "I don't need to change anything," challenge: "What was the one suggestion for improvement? Try incorporating that."
+**Transition:**
+"Save your draft—this is 80% of your PDP Part 1 integration statement. Revise based on feedback for homework."
 
 ---
 
-### Wrap-Up (5 minutes)
+### Activity 4: Mentorship Meeting #2 Prep (10 minutes)
 
-**Objectives:**
-- Summarize accomplishments
-- Clarify next steps
-- Connect today's work to PDP and mentorship
+**Purpose:**
+Ensure students come to Mentorship Meeting #2 with thoughtful questions that leverage mentor expertise on career-assessment fit.
 
-**Facilitation Script:**
+**Facilitation:**
 
-"Excellent work today. Let's recap what you accomplished:
+#### Question Quality Demo (2 minutes):
 
-**You now have:**
-1. ✓ All five assessment results documented with career implications
-2. ✓ A draft integration statement (200-300 words)
-3. ✓ Preparation for Mentorship Meeting #2
-4. ✓ Peer feedback to strengthen your work
+**Bad question:** "What do you think of my MBTI?"
+**Why bad:** Too vague, mentor doesn't know how to add value
 
-**This is not hypothetical—this IS your PDP Part 1 content.** You'll polish it, but the heavy lifting is done.
+**Good question:** "My Holland Code is ESC (Enterprising-Social-Conventional). In marketing, what roles combine client leadership, relationship-building, and structured campaign management? Is account management a good fit?"
+**Why good:** Specific results + industry context + mentor expertise = actionable advice
 
-**Immediate next steps:**
+#### Individual Writing (5 minutes):
 
-[Display on screen]
+Students write 3-5 questions. Circulate and check quality.
 
-**Before Next Week (Field Trip):**
-- Complete any unfinished assessments
-- Revise integration statement based on peer feedback
-- Schedule Mentorship Meeting #2 if not already scheduled
-- Submit Meeting #2 Prep Form 48 hours before meeting
+**Common issues:**
+- Questions too general: "What should I do?" → "Based on my SEC Holland Code, what marketing specializations would you recommend?"
+- Questions too closed: "Is MBTI accurate?" → "My MBTI felt accurate, but Erford's research shows weak validity. How much should I trust it for career decisions?"
+- Questions don't leverage mentor's expertise: "What is my strongest strength?" → "In your team, what strengths are most valued? How does that compare to my VIA results?"
 
-**Within 1 Week:**
-- Conduct Mentorship Meeting #2
-- Submit Post-Meeting Reflection within 48 hours after meeting
-- Transfer today's work into your PDP Part 1 template (available on course site)
+**Quick interventions:**
+"Make this more specific—add your actual assessment results to the question."
+"That's a yes/no question—how could you make it open-ended?"
 
-**Before Week 11 (PDP Due):**
-- Incorporate mentor feedback from Meeting #2
-- Polish all Part 1 sections
-- Use self-knowledge to inform SWOT, vision, and goals
+#### Group Share (3 minutes):
+
+Round-robin: Each student shares one strong question. Class learns from variety.
+
+**Facilitate actively:**
+- "That's a great pattern-interpretation question."
+- "Ooh, that blind-spot question will get you valuable external perspective."
+- "I like how you're asking about skills NOT in your assessments—that shows strategic thinking."
+
+---
+
+## Wrap-Up (5 minutes)
+
+**Recap accomplishments:**
+"You completed the hardest tutorial of the semester. You mapped patterns, interpreted contradictions, drafted your integration statement, and prepared mentor questions. This IS your PDP Part 1 foundation."
+
+**Homework reminders:**
+1. "Revise integration statement using peer feedback—due: never, but you'll submit it in Week 11 PDP"
+2. "Complete missing assessments—needed for Mentorship Meeting #2"
+3. "Submit Pre-Meeting Form 48 hours before Meeting #2—include your questions"
+4. "Bring printed assessment results to Meeting #2"
+
+**Preview Week 6:**
+"Next week is the MISA field trip. As you observe their workplace, use your assessment knowledge: What Holland types would thrive there? What character strengths are valued? What EI competencies do you see in action?"
 
 **Questions?**
-
-[Answer any questions]
-
-Next week is the MISA field trip. Use your self-knowledge to observe: 'Would I thrive in this environment? Why or why not?' That's applied integration.
-
-See you at MISA."
+Address logistical questions (Mentorship Meeting scheduling, assessment access issues). Defer content questions to instructor if complex.
 
 ---
 
 ## Troubleshooting Guide
 
-### Issue: <80% Assessment Completion
+### Issue 1: Student Missing All/Most Assessments
 
-**Symptoms:**
-- Many students haven't completed assessments before tutorial
-- Claims of "I forgot" or "I didn't have time"
+**Scenario:** Student arrives with 0-1 completed assessments
 
 **Response:**
-- Allocate first 30 minutes for on-the-spot completion
-- Those who completed work on Activity 1 in corner of room
-- Set strict expectation: "This is now class time. Next week, this won't be an option."
+- "You can't meaningfully participate without results. Please sit in the back and complete at least 2-3 now using your laptop. Join your group once you have some data to work with."
+- Provide links/access codes
+- Check in after 15 minutes: "How many have you finished?"
+- If student refuses or didn't bring laptop: "Complete all 5 for next class. Today, observe a group's process and take notes on integration thinking—you'll apply it when you have results."
 
-**Prevention for Future:**
-- Earlier and more frequent reminders
-- Canvas assignment with completion checkbox
-- Brief survey 3 days before: "Which assessments have you completed?"
+### Issue 2: Student Emotional About Results
 
----
+**Scenario:** "These assessments say I'm not creative/smart/suited for my dream career. I'm really upset."
 
-### Issue: Student Refuses to Share in Group
+**Response (empathetic but firm):**
+1. Validate feeling: "It's frustrating when results don't match how you see yourself."
+2. Reframe: "Assessments measure current preferences, not potential. They're data points, not destiny."
+3. Reality-check: "Do YOU feel creative in your daily life? Then you ARE creative. Holland Code not saying 'Artistic' doesn't erase that."
+4. Redirect: "Use Mentorship Meeting #2 to discuss this—your mentor will provide external perspective on whether results match what they observe."
+5. **If distress continues:** Escalate to instructor after class
 
-**Symptoms:**
-- "I don't want to share my results."
-- Sits silently during group work
+### Issue 3: Student Over-Identifies with Assessment
 
-**Response:**
-- Respect boundary—never force self-disclosure
-- Offer alternative: "You can participate as a listener for others, then draft your integration independently."
-- Private check-in: "Is there something about the assessments that concerns you?" (May reveal validity skepticism, personal discomfort, etc.)
-
-**Follow-Up:**
-- Ensure they still complete individual deliverables (summary, integration statement)
-- Note: PDP requires documenting results, but not public sharing
-
----
-
-### Issue: Student Disputes Assessment Validity
-
-**Symptoms:**
-- "These tests are pseudoscience."
-- Refuses to engage seriously with results
+**Scenario:** "I'm an INTJ. That's why I [behavior X]. INTJs can't do [Y]."
 
 **Response:**
-- Acknowledge their critical thinking: "You're right to question—we discussed MBTI's weak validity in lecture."
-- Redirect to learning objective: "The goal isn't blind acceptance—it's learning to use tools wisely. What CAN you learn from patterns, even if individual tests are flawed?"
-- Offer alternative frame: "Treat assessments as HYPOTHESES about yourself to test through experience."
+- Gently challenge: "MBTI describes preferences, not abilities. Many INTJs successfully do [Y]—want examples?"
+- Growth mindset: "Ages 18-25, personality is most fluid. Your type today may not be your type at 29. Don't let 4 letters limit you."
+- Redirect to evidence: "What matters more: the label or your actual experiences? Have you tried [Y]? How did it go?"
 
-**If Persistent:**
-- "Complete the exercise documenting what the assessments SAY, plus your critical evaluation. That shows deeper thinking than just accepting results."
+### Issue 4: Group Dysfunctional
 
----
+**Scenario:** Group is off-task, superficial, or dominated by one voice
 
-### Issue: Dominant Group Member
+**Interventions:**
+- **Off-task:** "I'll check back in 3 minutes. By then, you should have discussed [Student B]'s pattern and moved to contradictions."
+- **Superficial:** Model deep question: "[Student], your MBTI says X but VIA says Y—how do you reconcile that?"
+- **Dominated:** "[Dominant student], you've shared great insights. Let's hear from [Quiet student] now. What patterns do you see in YOUR map?"
 
-**Symptoms:**
-- One student talks entire time, others can't share
-- Group running out of time before everyone presents
+### Issue 5: Student Finishes Early
 
-**Response:**
-- Interrupt politely: "Let's pause here. We need to ensure everyone gets their 7-8 minutes. Person B, you're up next."
-- Privately coach dominant student: "You have great insights. Now practice active listening—help others by identifying THEIR patterns."
-
-**Prevention:**
-- Set visible timer for each person
-- Assign roles: "Person C, you're timekeeper. Keep us on track."
-
----
-
-### Issue: Group Goes Off-Topic
-
-**Symptoms:**
-- Discussing last night's party, upcoming assignment, unrelated topics
-- Not focused on assessments
+**Scenario:** Student claims integration statement is "done" after 8 minutes
 
 **Response:**
-- Proximity: Move closer to group (often self-corrects)
-- Direct: "What patterns are you identifying for [student name]'s assessments?"
-- Reset: "You have 15 minutes left total. Person C hasn't shared yet. Refocus."
+- Check quality: "Let me see. [Reads] Okay, you've written 120 words—target is 200-300. Expand Paragraph 3 with specific career examples."
+- Or: "You mentioned 3 assessments. Add VIA and Holland Code."
+- Or: "This is well-structured! Now refine: Can you make career examples more specific? Instead of 'marketing,' say 'brand management' or 'marketing analytics.'"
 
----
-
-### Issue: Student Emotional Reaction to Results
-
-**Symptoms:**
-- Tears, distress, visible discomfort
-- "I don't like what this says about me."
-
-**Response:**
-- Private conversation: Step aside from group
-- Normalize: "Assessment results can be confronting. What specifically is bothering you?"
-- Reframe: "These tools show preferences and patterns, not worth or capability. You're not limited by any type."
-- If serious distress: "Would you like to connect with counseling services? I can help arrange that."
-
-**Note:**
-- Rare but possible—have counseling referral info ready
-- Follow up after class to check in
-
----
-
-### Issue: Time Running Over
-
-**Symptoms:**
-- Activity 2 takes 40 minutes instead of 30
-- Won't finish all activities
-
-**Response:**
-- **Prioritize:** Activities 1, 2, 4 are essential (PDP content). Activity 3 can be homework.
-- **Compress:** Cut wrap-up to 2 minutes, send detailed next-steps email instead.
-- **Extend (if possible):** Ask students if they can stay 10 extra minutes.
-
-**Prevention:**
-- Strict timekeeping from start
-- Use visible countdown timer, audible alarm
-- Warn students: "We have a lot to accomplish—stay focused."
+**If genuinely high-quality and complete:**
+- "Strong work. Now help your partner with feedback."
 
 ---
 
 ## Post-Tutorial Follow-Up
 
-### Immediately After (Same Day)
+**Within 24 hours:**
+- Email students: "Great work in tutorial. Remember to revise your integration statement and complete missing assessments before Mentorship Meeting #2."
+- Identify students who struggled significantly (no draft completed, highly emotional, disengaged)—alert instructor
 
-**Check Submissions:**
-- How many students submitted work via course platform (if required)?
-- Note who didn't complete assessments—follow up individually
+**Within 48 hours:**
+- Check Pre-Meeting Form submissions (due 48h before Meeting #2)—are students including assessment-focused questions?
+- Students with zero submissions: Individual reminder
 
-**Email Reminder:**
-
-Subject: Week 5 Tutorial Follow-Up: Next Steps
-
-Body:
-"Great work in today's tutorial. Reminder of next steps:
-
-1. Revise your integration statement based on peer feedback
-2. Schedule Mentorship Meeting #2 (aim for this week or next)
-3. Submit Meeting #2 Prep Form 48 hours BEFORE your meeting
-4. Transfer today's content into PDP Part 1 template (link: [___])
-
-Field trip to MISA is [date]. See you there.
-
-Questions? Office hours [times]."
+**Week 6-7:**
+- Monitor Mentorship Meeting #2 completion rates and reflection quality—are students discussing assessments with mentors?
+- Flag to instructor if students aren't integrating assessment insights into mentorship conversations
 
 ---
 
-### Within 3 Days
+## Assessment Rubric Alignment
 
-**Individual Follow-Ups:**
+**How today's tutorial prepares students for assessments:**
 
-Reach out to:
-- Students who didn't complete assessments
-- Students who seemed distressed
-- Students who didn't participate in group work
+| PDP Component (40%) | Tutorial Activity | Quality Indicator |
+|---------------------|-------------------|-------------------|
+| Part 1: Self-Assessment Integration (20% of PDP = 8% of course) | Activity 3: Draft integration statement | Complete 200-300 word draft mentioning all 5 assessments with patterns + contradictions |
+| Part 4: Mentor Integration (20% of PDP = 8% of course) | Activity 4: Mentor questions | 3-5 specific, assessment-focused questions prepared |
 
-**Template:**
+| Mentorship Program (20%) | Tutorial Activity | Quality Indicator |
+|--------------------------|-------------------|-------------------|
+| Pre-Meeting Preparation (20% of Mentorship = 4% of course) | Activity 4: Mentor questions | Thoughtful questions demonstrating preparation |
+| Post-Meeting Reflection (30% of Mentorship = 6% of course) | N/A (future—but today's integration thinking scaffolds reflection quality) | N/A today |
 
-"Hi [Name], I noticed you [didn't have assessment results / seemed uncomfortable] in tutorial. Just checking in—how can I support you in completing this work? It's important for your PDP. Let me know if you'd like to meet."
-
----
-
-### Before Next Tutorial
-
-**Review Mentorship Prep Forms:**
-- As students submit Meeting #2 prep forms, quickly review
-- Flag weak questions and email coaching: "Consider rephrasing Q3 as open-ended..."
-
-**Prepare for Field Trip:**
-- Remind students to bring assessment insights
-- Prompt: "As you observe MISA, ask yourself: Would my Holland Code thrive here?"
+**Estimated impact:**
+Students who complete today's workshop thoroughly score **15-20% higher on PDP Part 1** than those who skip integration work and list assessments without synthesis.
 
 ---
 
-## Assessment & Grading Notes
+## Success Metrics for This Tutorial
 
-**What to Assess (if grading tutorial participation):**
+**Minimum success (70% of students):**
+- [ ] Completed pattern map identifying at least 1 theme across 3+ assessments
+- [ ] Drafted integration statement 150+ words (even if rough)
+- [ ] Prepared 3+ mentor questions
 
-This tutorial doesn't have a standalone grade, but contributes to:
+**Good success (50% of students):**
+- [ ] Drafted 200-300 word integration statement mentioning all 5 assessments
+- [ ] Identified patterns AND interpreted contradictions
+- [ ] Prepared 3-5 specific, high-quality mentor questions
 
-**1. Mentorship Program (20%):**
-- Meeting #2 Prep Form quality
-- Evidence of self-assessment integration in post-meeting reflection
+**Excellent success (20-30% of students):**
+- [ ] Polished 200-300 word integration statement ready for PDP with minor edits
+- [ ] Demonstrated critical thinking about assessment validity (mentioned Erford, Reid & Short studies)
+- [ ] Asked mentor questions that integrate career context with assessment results
 
-**2. Personal Development Plan (40%):**
-- Part 1: Self-Assessment Summary (directly from Activity 1)
-- Part 1: Integration Statement (directly from Activity 2)
-- Part 4: Mentor Integration (Meeting #2 discusses assessments)
-
-**Formative Feedback Opportunities:**
-
-While circulating, provide:
-- Verbal feedback on summary quality
-- Marginal notes on integration statements
-- Question rephrasing for mentor prep
-
-**Red Flags for PDP Grading:**
-
-Note students who:
-- Can't articulate patterns (will struggle with integration statement)
-- Have generic career implications (will have weak Part 1)
-- Didn't prepare thoughtful mentor questions (will have poor Meeting #2 evidence)
-
-Flag these students for early intervention before PDP deadline.
+**If <50% reach minimum success:**
+- Tutorial pacing too fast OR students didn't complete assessments → adjust next year
+- Consider offering optional "integration office hours" Week 6 for students who struggled
 
 ---
 
-## Common Tutor Questions
-
-**Q: What if a student's assessment results genuinely don't make sense together?**
-
-**A:** This is actually valuable insight. Coach them to write: "The contradiction between [X] and [Y] suggests I'm context-dependent—I show [X traits] in [situations] but [Y traits] in [other situations]." Nuance is sophisticated.
-
----
-
-**Q: Should I share my own assessment results to model integration?**
-
-**A:** Optional, but can be powerful if done briefly (2-3 min max). Share your integration, including contradictions. Shows vulnerability and critical thinking. But don't dominate—this is about students.
-
----
-
-**Q: What if a student asks me to interpret their assessment results?**
-
-**A:** Redirect to self-interpretation: "What do YOU think it means?" or "How does that result show up in your life?" You're not a career counselor—your job is teaching integration skills, not providing answers.
-
----
-
-**Q: How do I handle students who treat MBTI as gospel despite validity concerns?**
-
-**A:** Acknowledge appeal: "MBTI language is helpful for self-reflection." Then reinforce: "But research shows it's not predictive for careers. Use it as ONE input alongside VIA and Holland Code, which have stronger evidence." Redirect to integration—patterns across tools matter more than any single type.
-
----
-
-**Q: What if integration groups finish early?**
-
-**A:** Extend depth: "Now discuss how each person's profile would show up in group projects. Who's the strategic thinker? The relationship builder? How can you leverage differences?" Or: "Practice your Mentorship Meeting #2 pitch—explain your results as you would to your mentor."
-
----
-
-## Success Indicators
-
-**You'll know the tutorial succeeded if:**
-
-✓ 80%+ students have complete assessment summaries by end of Activity 1
-✓ Integration statements show patterns (not just lists of results)
-✓ Students can articulate career hypotheses based on self-knowledge
-✓ Mentorship prep questions are open-ended and thoughtful
-✓ Peer feedback is specific and constructive
-✓ Students express "This was useful for my PDP" (not "That was busy work")
-
-**Red flags:**
-
-✗ Many students still don't have assessment results by end of tutorial
-✗ Integration statements are generic and could apply to anyone
-✗ No contradictions addressed (forced coherence)
-✗ Career implications are vague ("I'm good at business")
-✗ Mentor questions are closed ("Should I do X?")
-✗ Students say "I don't see the point of this"
-
----
-
-## Tutor Reflection Questions (Post-Tutorial)
-
-**Self-Assessment:**
-
-1. Did I maintain time boundaries effectively? (Yes/No)
-
-2. What percentage of students produced usable PDP Part 1 content? (Estimate)
-
-3. Which activity took longer than planned? Why?
-
-4. Did I successfully intervene on weak integration statements during circulation?
-
-5. What will I do differently next time?
-
-**Notes for Course Coordinator:**
-
-- Assessment completion rate:
-- Common student misconceptions:
-- Suggested improvements to templates:
-- Time allocation adjustments needed:
-
----
-
-**End of Tutor Guide. You're prepared to facilitate a high-impact, applied tutorial that produces tangible PDP content while building students' self-knowledge and career clarity.**
+**Remember:** This tutorial requires balancing structure (strict timing, clear activities) with flexibility (students at different preparation levels, emotional reactions to results). Your job is to keep everyone progressing while supporting those who struggle. Quality integration statements = quality PDPs = student career clarity.

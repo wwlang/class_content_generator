@@ -6,38 +6,38 @@ A comprehensive system for generating world-class university course materials us
 
 This system helps you create complete course materials including:
 - **Research-backed syllabi** with validated, accessible articles
-- **Lecture content** (22-30 slides with speaker notes)
+- **Assessment handbooks** with scenarios, rubrics, and student guidance
+- **Lecture content** (24-32 slides with speaker notes in XML format)
 - **Tutorial activities** aligned to assessments
-- **Rubrics and assessment materials**
-- **Presentation slides**
+- **Quiz questions** in YAML format with GIFT export for Moodle
+- **Presentation slides** via Gemini handoff
 
-All content is generated following evidence-based pedagogical practices and validated against top management school standards (Harvard Business School, Stanford GSB, Wharton, MIT Sloan).
+All content is generated following evidence-based pedagogical practices and validated against top management school standards (M7, UK Triple Crown).
 
 ## Key Features
 
-### 🔬 Research-Enhanced Syllabus Generation
+### Parallel Agent Execution
+- Week content generated using parallel agents for efficiency
+- 10 weeks can be regenerated simultaneously
+- Reduces generation time from hours to minutes
+
+### Research-Enhanced Content
 - 4-stage article validation process
 - Only openly accessible, high-quality sources
 - Strict content matching (no partial matches)
 - Learn from top business schools
 
-### 📚 Complete Course Materials
-- Lecture content with citations and examples
-- Assessment-aligned tutorials
-- Professional rubrics
-- Quiz preparation materials
+### Complete Course Materials
+- Lecture content with citations and examples (XML slide format)
+- Assessment-aligned tutorials with rubric criteria
+- Quiz questions in YAML with automatic GIFT export
+- Professional DOCX exports with branded footers
 
-### ✅ Quality Assurance
+### Quality Assurance
 - Every article covers ALL required concepts
 - Accessibility verified (no paywalls)
 - Current examples (2023-2025)
-- Vietnam-specific adaptations
-
-### 🤖 Automated Workflows
-- Slash commands for efficiency
-- Syllabus-first approach
-- Assessment alignment logic
-- Cultural adaptations built-in
+- Vietnamese cultural adaptations
 
 ## Quick Start
 
@@ -47,7 +47,7 @@ All content is generated following evidence-based pedagogical practices and vali
 /new-course BUS101 Business Communication
 ```
 
-This creates the complete directory structure with templates and placeholders.
+Creates the complete directory structure with templates.
 
 ### 2. Generate Course Syllabus
 
@@ -55,44 +55,60 @@ This creates the complete directory structure with templates and placeholders.
 /generate-syllabus
 ```
 
-Interactive process (3-4 hours for 10-week course) that:
-- Guides you through course structure
-- Researches and validates 2 articles per week
-- Learns from top management schools
-- Creates professional, comprehensive syllabus
+Interactive process that researches and validates articles per week.
 
-### 3. Generate Weekly Content
+### 3. Generate Assessment Handbook
 
 ```bash
-/generate-week 1
+/generate-handbook BUS101
 ```
 
-Creates lecture and tutorial content (45-70 minutes per week) with:
-- 22-30 lecture slides with speaker notes
-- Assessment-aligned tutorial activities
-- Quiz preparation questions
-- Current, cited examples
+Creates scenarios, rubrics, and student guidance BEFORE weekly content.
 
-### 4. Create Presentation Slides
+### 4. Generate Weekly Content
 
 ```bash
-# Copy gemini-handoff.md content to Gemini, download PPTX, then:
+# Single week
+/generate-week 1
+
+# All weeks (uses parallel agents)
+/generate-course BUS101
+```
+
+Uses parallel agents to generate lecture, tutorial, tutor notes, and quiz simultaneously.
+
+### 5. Create Presentation Slides
+
+```bash
+# Generate Gemini prompt
+/gemini-handoff BUS101 1
+
+# After downloading PPTX from Gemini:
 /add-speaker-notes BUS101 1
 ```
 
-Inserts speaker notes into Gemini-created PPTX (saves to `output/slides.pptx`).
+### 6. Package Course
+
+```bash
+/package-course BUS101
+```
+
+Converts all markdown to DOCX and creates ZIP archive.
 
 ## Slash Commands
 
 | Command | Purpose | Time |
 |---------|---------|------|
 | `/new-course [CODE] [Name]` | Create course structure | 2-3 min |
-| `/generate-syllabus` | Build research-backed syllabus | 7-10 hrs |
-| `/generate-week [N]` | Create lecture + tutorial + quiz | 45-70 min |
-| `/generate-course [CODE]` | Batch generate all weeks | 7-12 hrs |
-| `/add-speaker-notes [CODE] [N]` | Insert notes into Gemini PPTX | 1-2 min |
+| `/generate-syllabus` | Build research-backed syllabus | 3-4 hrs |
+| `/generate-handbook [CODE]` | Create assessment handbook | 30-45 min |
+| `/generate-week [N]` | Create week content (parallel agents) | 15-25 min |
+| `/generate-course [CODE]` | Batch generate all weeks | 2-4 hrs |
+| `/gemini-handoff [CODE] [N]` | Generate Gemini slide prompt | 2-3 min |
+| `/add-speaker-notes [CODE] [N]` | Insert notes into PPTX | 1-2 min |
 | `/export-docx [CODE] [N]` | Convert markdown to DOCX | 1-3 min |
-| `/research-topic "[Topic]" "[Concepts]"` | Research articles for topic | 30-50 min |
+| `/package-course [CODE]` | Create delivery ZIP | 5-10 min |
+| `/research-topic "[Topic]" "[Concepts]"` | Research articles | 30-50 min |
 
 ## Project Structure
 
@@ -111,13 +127,14 @@ class_content_generator/
 │   └── [COURSE-CODE]-[name]/
 │       ├── syllabus.md
 │       ├── assessment-handbook.md
+│       ├── course-info.md          # Status tracker
 │       ├── weeks/week-[N]/
-│       │   ├── lecture-content.md      # Source: slides + speaker notes
-│       │   ├── quiz-questions.md       # Source: quiz Q&A
-│       │   ├── tutorial-content.md     # Source: student activities
-│       │   ├── tutorial-tutor-notes.md # Source: facilitation guide
-│       │   ├── gemini-handoff.md       # Handoff: Gemini prompt
-│       │   └── output/                 # Deliverables
+│       │   ├── lecture-content.md      # XML slides + speaker notes
+│       │   ├── quiz-questions.md       # YAML format
+│       │   ├── tutorial-content.md     # Student activities
+│       │   ├── tutorial-tutor-notes.md # Facilitation guide
+│       │   ├── gemini-prompt.md        # Ready-to-paste prompt
+│       │   └── output/
 │       │       ├── tutorial-content.docx
 │       │       ├── tutorial-tutor-notes.docx
 │       │       ├── week-N-quiz.gift
@@ -126,8 +143,9 @@ class_content_generator/
 │
 ├── tools/                  # Python automation scripts
 │   ├── markdown_to_docx.py
-│   ├── export_quiz_to_gift.py
-│   └── add_speaker_notes.py
+│   ├── export_yaml_quiz_to_gift.py
+│   ├── add_speaker_notes.py
+│   └── package_course.py
 │
 └── docs/                   # Documentation
     ├── INDEX.md
@@ -135,134 +153,149 @@ class_content_generator/
     └── LAYOUT-VOCABULARY.md
 ```
 
+## Workflow
+
+```
+1. /new-course [CODE] [Name]
+2. /generate-syllabus
+3. /generate-handbook [CODE]       # BEFORE weekly content
+4. /generate-course [CODE]         # Uses parallel agents
+   OR /generate-week [N]
+5. /validate-content [CODE]
+6. /gemini-handoff [CODE] [N]      # Generate slide prompt
+7. /add-speaker-notes [CODE] [N]   # Merge notes into PPTX
+8. /package-course [CODE]          # Create delivery ZIP
+```
+
+**Why this order:**
+- Syllabus provides course structure and assessment overview
+- Assessment Handbook uses syllabus to create scenarios and rubrics
+- Tutorials reference Assessment Handbook scenarios and rubric criteria
+- Weekly content aligns with specific assessment requirements
+
+## Parallel Agent Architecture
+
+The `/generate-week` command uses parallel agents for efficiency:
+
+```
+Phase 0: Pre-Flight (sequential)
+    ↓
+Phase 1: Content Generation (PARALLEL)
+    ├── Lecture Agent → lecture-content.md
+    └── Tutorial Agent → tutorial-content.md + tutorial-tutor-notes.md
+    ↓
+Phase 2: Lecture-Dependent (PARALLEL)
+    ├── Quiz Agent → quiz-questions.md
+    └── Gemini Agent → gemini-prompt.md
+    ↓
+Phase 3: Exports (sequential)
+    ├── GIFT Export → output/week-N-quiz.gift
+    └── DOCX Export → output/*.docx
+```
+
+**Key benefit:** Multiple weeks can be generated simultaneously using `/generate-course`.
+
+## Quiz Format
+
+Quizzes use YAML format with automatic GIFT export for Moodle:
+
+```yaml
+---
+metadata:
+  week: 1
+  topic: "Introduction & Future of Work"
+  prepares_for: "Personal Development Plan (Week 11)"
+  source: "lecture-content.md"
+
+questions:
+  - id: "W1-Q1-framework"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Framework Name"
+
+    question: |
+      Question text here?
+
+    options:
+      - key: "A"
+        text: "Option text"
+        feedback: "Why correct/incorrect"
+        correct: true
+      - key: "B"
+        text: "Option text"
+        feedback: "Why incorrect"
+
+    general_feedback: |
+      Explanation with <b>term</b> (definition) format.
+---
+```
+
+**Requirements:**
+- File MUST start and end with `---`
+- 12 questions per week (4 frameworks × 3 questions)
+- Distribution: 4 Remembering + 8 Understanding
+- Use HTML `<b>tags</b>` for bold (not markdown)
+
 ## Slide Workflow
 
-Slides are created using Google Gemini for visual design, with Claude handling content and speaker notes:
+Slides are created using Google Gemini for visual design:
 
-### Workflow
-
-1. **Claude generates** `lecture-content.md` with slide content and speaker notes
-2. **Claude creates** `gemini-handoff.md` with ready-to-paste Gemini prompt
-3. **User sends to Gemini** → downloads PPTX file to week folder
+1. **Claude generates** `lecture-content.md` with XML slides and speaker notes
+2. **Claude creates** `gemini-prompt.md` with ready-to-paste prompt
+3. **User sends to Gemini** → downloads PPTX file
 4. **Claude inserts speaker notes:** `/add-speaker-notes [CODE] [N]`
 5. **Final slides saved to** `output/slides.pptx`
-
-### Why This Approach?
-
-- **Gemini excels** at visual slide design and layout
-- **Claude excels** at content structure, speaker notes, and automation
-- **Combined result:** Professional slides with comprehensive teaching notes
-
-### Documentation
-
-- **Layout Vocabulary:** See [docs/LAYOUT-VOCABULARY.md](docs/LAYOUT-VOCABULARY.md) for layout hints
-- **Architecture:** See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for system design
-- **Contributing:** See [CONTRIBUTING.md](CONTRIBUTING.md) for development guidelines
 
 ## Core Principles
 
 ### 1. Syllabus-First Approach
-Create complete syllabus before generating weekly content. The assessment schedule drives tutorial design, ensuring perfect alignment.
+Create complete syllabus before generating weekly content. The assessment schedule drives tutorial design.
 
-### 2. Strict Content Validation
-Articles must cover **ALL** required key concepts. The 4-stage research process ensures:
-- Stage 1: Discovery (10-15 candidates)
-- Stage 2: Quick filter (5-6 quality candidates)
-- Stage 3: Content validation (2-3 finalists)
-- Stage 4: User selection (final 2 articles)
+### 2. Assessment Handbook Before Content
+Generate assessment handbook BEFORE weekly content so tutorials can reference specific scenarios and rubric criteria.
 
-### 3. Assessment Alignment
-Every tutorial directly prepares students for specific graded work using simplified versions of actual rubrics.
+### 3. Strict Content Validation
+Articles must cover ALL required key concepts. No partial matches accepted.
 
-### 4. Quality Sources Only
-- Peer-reviewed journals
-- Harvard Business Review, MIT Sloan Management Review
-- Top management school publications
-- Highly cited works
-- **Must be openly accessible (no paywalls)**
+### 4. YAML-Only Quiz Format
+All quizzes in YAML format for consistent GIFT export. No markdown quiz format.
 
-## Example Workflow
-
-**Creating a complete 10-week course:**
-
-```
-Day 1: Setup
-  └─ /new-course BUS101 Business Communication
-
-Days 2-3: Syllabus (Most intensive)
-  ├─ /generate-syllabus
-  │  ├─ Define basics and structure
-  │  └─ Research 2 articles × 10 weeks = 20 articles
-  └─ /export-docx BUS101 syllabus
-
-Days 4-6: Weekly Content
-  ├─ /generate-week 1  (creates lecture, tutorial, quiz → output/)
-  ├─ /generate-week 2
-  └─ ... or use /generate-course BUS101 for batch
-
-Day 7: Slides
-  ├─ Copy gemini-handoff.md to Gemini for each week
-  ├─ Download PPTX to week folder
-  └─ /add-speaker-notes BUS101 [N] for each week
-```
-
-**Result:** Complete course with DOCX tutorials, GIFT quizzes, and PPTX slides
+### 5. Parallel Agent Efficiency
+Use parallel agents for week generation to maximize throughput.
 
 ## Quality Standards
 
-### Lecture Content ✓
-- 22-30 content slides
-- 3-5 verified sources with DOI/URLs
-- Current examples (2023-2025)
+### Lecture Content
+- 24-32 slides in XML format
+- Speaker notes for every slide
+- Full APA 7th references
 - Assessment connection explicit
-- Speaker notes for teaching
 
-### Tutorial Content ✓
+### Tutorial Content
 - ONE consolidated activity mirroring assessment
-- Quick Review with success criteria
+- Success criteria from rubric
 - Class feedback with participation requirement
-- Timing in tutor-notes only (not inline)
-- Separate quiz-questions.md file (5-8 questions)
+- ~80 lines, no inline timing
 
-### Article Selection ✓
-- Covers ALL required concepts (strict)
-- Openly accessible (verified)
-- High-quality source (peer-reviewed or top-tier)
-- Current or seminal (relevance proven)
+### Quiz Questions
+- 12 questions in YAML format
+- 4 Remembering + 8 Understanding
+- No scenario/application questions (those belong in tutorials)
+- ONE clearly correct answer per question
 
-## Research Process
+## Time Investment
 
-### Sources Prioritized
+### Per Course (12 weeks)
+- Course setup: 5 minutes
+- Syllabus generation: 3-4 hours
+- Assessment handbook: 30-45 minutes
+- Weekly content (parallel): 2-4 hours total
+- Slides and review: 2-3 hours
+- **Total: 8-12 hours for complete course**
 
-**Top Management Schools:**
-- Harvard Business School
-- Stanford Graduate School of Business
-- Wharton School
-- MIT Sloan
-
-**Peer-Reviewed Journals:**
-- Top-tier academic publications
-- 100+ citations for older works
-
-**Practitioner Publications:**
-- Harvard Business Review
-- MIT Sloan Management Review
-
-**All articles must be:**
-- Openly accessible (no paywalls)
-- Validated for content match
-- Current or proven relevant
-
-### 4-Stage Validation
-
-Every article goes through:
-
-1. **Discovery:** Find 10-15 candidates from multiple sources
-2. **Quick Filter:** Check accessibility, quality, relevance → 5-6 candidates
-3. **Content Validation:** Deep analysis of concept coverage → 2-3 finalists
-4. **Selection:** User chooses final 2 with full justification
-
-**Strict Rule:** Article must cover ALL required concepts or it's rejected.
+### With Parallel Agents
+- Single week: 15-25 minutes
+- All weeks simultaneously: 30-45 minutes
 
 ## Documentation
 
@@ -272,121 +305,17 @@ Every article goes through:
 - **Layout Vocabulary:** `docs/LAYOUT-VOCABULARY.md`
 - **System Architecture:** `docs/ARCHITECTURE.md`
 
-## Assessment Alignment
-
-Tutorials are designed using backward design:
-
-```
-Upcoming Assessment
-    ↓
-Extract Rubric Criteria
-    ↓
-Simplify to 3-4 Key Criteria
-    ↓
-Design Tutorial Activity that Mirrors Assessment
-    ↓
-Students Practice with Rubric
-    ↓
-Peer Review Using Rubric Language
-    ↓
-Students Ready for Real Assessment
-```
-
-**Result:** Students practice exactly what they'll be graded on, using the same criteria.
-
-## Cultural Adaptations
-
-Content is adapted for Vietnamese university context:
-
-**Lectures:**
-- Vietnamese business examples
-- Regional (ASEAN) context
-- Culturally relevant scenarios
-- Local business practices
-
-**Tutorials:**
-- Structured peer interaction
-- Sentence starters for feedback
-- Gradual confidence building
-- Local case discussions
-
-## Time Investment
-
-### One-Time Setup
-- Project structure: Already complete
-- Understanding workflows: 30 minutes
-
-### Per Course (10 weeks)
-- Course setup: 5 minutes
-- Syllabus generation: 3-4 hours (research-intensive)
-- Weekly content (×10): 7-12 hours
-- Slides and review: 2-3 hours
-- **Total: 12-20 hours for complete course**
-
-### Ongoing
-- Article validation: 30-50 min per topic
-- Content updates: As needed
-- Quality checks: Built into process
-
-**ROI:** 12-20 hours of work produces world-class course materials that can be used for multiple semesters with minor updates.
-
-## Getting Help
-
-- **Workflows:** See `.claude/CLAUDE.md` for complete documentation
-- **Commands:** See `.claude/commands/` for detailed command instructions
-- **All Docs:** See `docs/INDEX.md` for documentation index
-- **Troubleshooting:** See "Troubleshooting" section in `.claude/CLAUDE.md`
-
-## Best Practices
-
-1. **Always start with `/new-course`** to create proper structure
-2. **Complete syllabus first** before weekly content
-3. **Be strict with article validation** - quality over convenience
-4. **Check assessment alignment** - tutorials must mirror assessments
-5. **Document research decisions** - maintain quality audit trail
-6. **Update regularly** - verify URLs, refresh examples
-7. **Gather feedback** - improve based on student and instructor experience
-
-## System Philosophy
-
-**Quality Over Speed**
-Better to spend time finding perfect articles than settle for incomplete coverage.
-
-**Evidence-Based**
-Learn from top schools, use peer-reviewed research, validate thoroughly.
-
-**Student-Centered**
-Every decision serves student learning and assessment preparation.
-
-**Professionally Rigorous**
-Maintain high standards across all courses and materials.
-
-**Culturally Relevant**
-Adapt content for Vietnamese and regional context.
-
 ## Version
 
-**v2.0** - Streamlined course content generation with output folder structure
+**v3.0** - Parallel agent architecture with YAML quiz format
 
-- ✅ 7 slash commands (new: `/add-speaker-notes`, `/export-docx`, `/generate-course`)
-- ✅ Gemini slide workflow with speaker notes insertion
-- ✅ Output folder structure (sources separate from deliverables)
-- ✅ Standalone quiz-questions.md with GIFT export
-- ✅ Streamlined tutorials (~80 lines, no inline timing)
-- ✅ DOCX export with branded footers
-- ✅ 4-stage research validation
-- ✅ Assessment alignment logic
-
----
-
-## Next Steps
-
-1. **Understand the System:** Read `.claude/CLAUDE.md` for complete workflows
-2. **Create Your First Course:** Run `/new-course [CODE] [Name]`
-3. **Build Syllabus:** Run `/generate-syllabus` for research-backed syllabus
-4. **Generate Content:** Run `/generate-week [N]` or `/generate-course [CODE]`
-5. **Create Slides:** Use Gemini handoff + `/add-speaker-notes`
-6. **Export Deliverables:** All outputs in `output/` folder ready for LMS
+- Parallel agent execution for week generation
+- YAML-only quiz format with GIFT export
+- Assessment handbook generation before weekly content
+- XML slide format with layout hints
+- Package course command for delivery
+- Standardized `gemini-prompt.md` naming
+- Streamlined workflows with clear phase dependencies
 
 ---
 

@@ -1,0 +1,88 @@
+// Week 8: Time, Energy & Habit Management
+// Questions: 12
+
+$CATEGORY: PPDK66B - Week 8
+
+::Schwartz's Energy Management::What are the four energy dimensions in Schwartz and McCarthy's energy management framework?{
+=Physical, Emotional, Mental, Spiritual #Correct! These four dimensions represent different types of renewable energy capacity that professionals must manage.
+~Time, Task, Team, Technology #Incorrect. These relate to project management, not Schwartz's energy dimensions.
+~Body, Mind, Heart, Soul #Incorrect. While conceptually similar, Schwartz uses specific terminology\: Physical, Emotional, Mental, Spiritual.
+~Sleep, Nutrition, Exercise, Meditation #Incorrect. These are specific practices within the Physical dimension, not the four dimensions themselves.
+####Schwartz's four energy dimensions are <b>Physical</b> (body capacity through sleep, nutrition, exercise), <b>Emotional</b> (quality of energy through positive emotions, resilience), <b>Mental</b> (focus capacity through concentration, single-tasking), and <b>Spiritual</b> (purpose-driven energy through values alignment, meaning). Each dimension requires different renewal strategies and all four must be managed for sustainable high performance. See Week 8 slides 5.}
+
+::Schwartz's Energy Management::How does energy management differ from traditional time management?{
+=Time is finite and cannot be expanded; energy is renewable and capacity can be increased through strategic recovery #Correct! This is the core paradigm shift—managing renewable energy capacity rather than fixed time.
+~Time management focuses on prioritization; energy management eliminates all non-essential tasks #Incorrect. Both involve prioritization. The key difference is that energy capacity is renewable while time is fixed.
+~Time management is for individual work; energy management is for team collaboration #Incorrect. Both apply to individuals and teams. The distinction is about managing renewable resource (energy) vs. finite resource (time).
+~Energy management requires more hours of work while time management requires fewer #Incorrect. Energy management actually emphasizes working fewer hours at full capacity with strategic breaks, not more hours.
+####The <b>paradigm shift</b> (fundamental change in approach) from time to energy management recognizes that time is finite—everyone has 24 hours—but energy is <b>renewable</b> (can be restored) through strategic recovery across four dimensions. Working longer hours (time management) often reduces performance, while managing energy capacity through 90-120 minute work cycles with renewal breaks increases output. This shift focuses on sustainable high performance rather than exhaustion-driven productivity. See Week 8 slides 4.}
+
+::Eisenhower Matrix::What are the four quadrants of the Eisenhower Matrix?{
+=Urgent/Important, Not Urgent/Important, Urgent/Not Important, Not Urgent/Not Important #Correct! The matrix classifies tasks by urgency and importance, creating four distinct quadrants.
+~High Priority, Medium Priority, Low Priority, No Priority #Incorrect. The Eisenhower Matrix uses two dimensions (urgent/not urgent and important/not important), not a single priority scale.
+~Strategic, Tactical, Operational, Administrative #Incorrect. These organizational planning levels differ from Eisenhower's urgency/importance framework.
+~Personal, Professional, Academic, Social #Incorrect. The matrix categorizes by urgency and importance, not by life domains.
+####The Eisenhower Matrix has four quadrants\: <b>Quadrant 1</b> (Urgent AND Important—crises, deadlines), <b>Quadrant 2</b> (Not Urgent BUT Important—strategic work, planning, skill development), <b>Quadrant 3</b> (Urgent but NOT Important—interruptions, other people's priorities), <b>Quadrant 4</b> (Not Urgent and NOT Important—time wasters, busy work). The goal is to minimize Q1 crises by investing in Q2 strategic activities, decline Q3 tasks, and eliminate Q4 activities. See Week 8 slide 7.}
+
+::Eisenhower Matrix::Why is Quadrant 2 (Not Urgent/Important) the most critical for long-term success?{
+=Q2 activities prevent future Q1 crises by investing in strategic planning, skill development, and relationship building #Correct! Q2 strategic investment reduces future emergencies and builds long-term capacity.
+~Q2 tasks have immediate deadlines that must be met to avoid failure #Incorrect. Q2 tasks are NOT urgent (no immediate deadline), which is why they're often postponed despite being important.
+~Q2 activities are the easiest to complete and provide quick wins #Incorrect. Q2 activities are often difficult and don't provide immediate rewards, which is why they require intentional scheduling.
+~Q2 is where you handle other people's emergencies and requests #Incorrect. Other people's emergencies are typically Q3 (urgent for them, not important for your goals).
+####Quadrant 2 contains <b>strategic</b> (long-term, goal-oriented) activities that are important but not urgent—like developing skills for your PDP, building relationships with mentors, planning ahead for assessments, and maintaining health. Because these lack <b>immediate</b> (right now) deadlines, they're easily postponed. However, investing 60-80% of time in Q2 prevents Q1 crises (last-minute cramming, emergencies) by addressing problems before they become urgent. Q2 is where transformation happens. See Week 8 slides 7-8.}
+
+::Newport's Deep Work::How does Cal Newport define deep work?{
+=Professional activities performed in a state of distraction-free concentration that push cognitive capabilities to their limit #Correct! This is Newport's precise definition emphasizing focus, cognitive demand, and absence of distractions.
+~Working long hours on important projects regardless of interruptions #Incorrect. Deep work specifically requires distraction-free concentration, not just long hours or important work.
+~Any complex task that requires advanced technical skills #Incorrect. Deep work is about the quality of attention (distraction-free concentration), not just task complexity.
+~Collaborative problem-solving with team members in focused sessions #Incorrect. While collaboration can be valuable, Newport's deep work typically involves individual, solitary concentration.
+####Newport defines deep work as professional activities performed in a state of <b>distraction-free</b> (without interruptions or multitasking) concentration that push your <b>cognitive</b> (mental, thinking) capabilities to their limit. This produces high-quality output because intensity of focus acts as a multiplier\: High-Quality Work \= Time Spent × Intensity of Focus. Deep work is increasingly rare (distractions everywhere) and increasingly valuable (AI cannot replicate it). Examples include writing strategic documents, learning complex concepts, creative problem-solving, and skill development. See Week 8 slide 9.}
+
+::Newport's Deep Work::What is attention residue and why does it reduce productivity?{
+=When you switch tasks, part of your attention remains on the previous task for 15-25 minutes, reducing cognitive capacity #Correct! Attention residue explains why task-switching destroys productivity—you're never operating at full capacity.
+~The mental fatigue that builds up after working for more than 4 hours continuously #Incorrect. That describes cognitive fatigue, not attention residue. Attention residue specifically refers to the lingering focus on previous tasks after switching.
+~The tendency to forget important details when working on too many projects simultaneously #Incorrect. This describes memory overload. Attention residue is about cognitive resources remaining allocated to previous tasks after switching.
+~The distractions caused by physical environment like noise or interruptions #Incorrect. Environmental distractions are external. Attention residue is internal—your brain's inability to instantly switch focus.
+####Attention residue is Sophie Leroy's research finding that when you switch from Task A to Task B, cognitive resources remain <b>allocated</b> (assigned, devoted) to Task A for 15-25 minutes, reducing your capacity for Task B. Recovery time averages 23 minutes to return to full focus after an interruption. This explains why checking email during deep work sessions destroys productivity—you operate at 40-60% capacity instead of 100%. Solution\: Single-task during deep work blocks, batch shallow work (email, admin), turn off all notifications. See Week 8 slide 12.}
+
+::Newport's Deep Work::How does time-blocking differ from traditional to-do lists?{
+=Time-blocking assigns every minute to specific activities including deep work; to-do lists only identify tasks without scheduling when or how long #Correct! Time-blocking forces realistic planning by accounting for actual available hours and protecting priority work.
+~Time-blocking is for short-term daily tasks; to-do lists are for long-term project planning #Incorrect. Both can cover various time horizons. The key difference is that time-blocking specifies WHEN and HOW LONG, not just WHAT.
+~To-do lists are more flexible and adaptable than time-blocking which is rigid #Incorrect. While time-blocking is structured, it's actually more effective because it forces prioritization and prevents important tasks from being postponed indefinitely.
+~Time-blocking eliminates all shallow work; to-do lists mix deep and shallow tasks #Incorrect. Time-blocking doesn't eliminate shallow work—it batches it into specific time blocks, while protecting deep work time.
+####Time-blocking assigns every minute of your day to specific activities with designated start/end times, while to-do lists simply identify what needs doing without specifying when or duration. Time-blocking reveals how much you can <b>realistically</b> (actually, in practice) accomplish (most people overestimate), protects deep work during peak energy hours, and batches shallow work into low-energy periods. Newport time-blocks every day in 30-minute increments, creating <b>proactive</b> (planned ahead) control rather than reactive task-switching. See Week 8 slide 11.}
+
+::Clear's Habit Formation::What are the three components of the habit loop?{
+=Cue, Routine, Reward #Correct! These three elements form the neurological pattern that creates automatic behaviors.
+~Trigger, Action, Outcome #Incorrect. While conceptually similar, the habit loop uses specific terminology\: Cue, Routine, Reward.
+~Motivation, Behavior, Consequence #Incorrect. The habit loop is Cue (trigger), Routine (behavior itself), Reward (satisfying outcome).
+~Plan, Execute, Reflect #Incorrect. This describes a general action cycle, not the neurological habit loop (Cue, Routine, Reward).
+####The habit loop has three components\: <b>Cue</b> (trigger that initiates behavior—time, location, preceding event, emotional state), <b>Routine</b> (the behavior itself—what you actually do), and <b>Reward</b> (satisfying outcome that reinforces the loop—feeling good, progress, achievement). After sufficient repetitions (average 66 days per Lally's research), the loop becomes automatic in the basal ganglia (habit brain region). Example\: Alarm (cue) → Morning workout (routine) → Endorphins + coffee + checking tracker (reward). See Week 8 slide 14.}
+
+::Clear's Habit Formation::What are James Clear's Four Laws of Behavior Change for building good habits?{
+=Make it Obvious, Make it Attractive, Make it Easy, Make it Satisfying #Correct! Each law targets a specific stage of the habit loop to increase likelihood of behavior.
+~Set Goals, Create Plans, Take Action, Track Progress #Incorrect. These are general productivity steps. Clear's Four Laws are\: Obvious, Attractive, Easy, Satisfying.
+~Identify Triggers, Design Routines, Ensure Rewards, Maintain Consistency #Incorrect. While these relate to habit formation, Clear's specific Four Laws are\: Obvious, Attractive, Easy, Satisfying.
+~Start Small, Build Gradually, Stay Consistent, Celebrate Wins #Incorrect. These are good habit principles but not Clear's Four Laws (Obvious, Attractive, Easy, Satisfying).
+####Clear's Four Laws for building good habits are\: <b>1st Law—Make it Obvious</b> (increase cue visibility through environment design), <b>2nd Law—Make it Attractive</b> (pair habit with enjoyable reward through temptation bundling), <b>3rd Law—Make it Easy</b> (reduce friction, start with 2-minute version), <b>4th Law—Make it Satisfying</b> (immediate reward through tracking, celebration). To break bad habits, invert the laws\: Make invisible, unattractive, difficult, unsatisfying. Each law targets a stage of the Cue-Routine-Reward loop. See Week 8 slide 15.}
+
+::Clear's Habit Formation::What is the habit stacking formula and why does it work?{
+="After [CURRENT HABIT], I will [NEW HABIT]"—works because existing habits provide reliable cues for new behaviors #Correct! Habit stacking leverages established neural pathways, making new habits easier to remember and execute.
+~"Before [DEADLINE], I will [COMPLETE TASK]"—works because urgency motivates action #Incorrect. This is deadline-based planning, not habit stacking. Habit stacking links new behaviors to existing automatic routines.
+~"If [SITUATION], then [RESPONSE]"—works because it creates conditional planning #Incorrect. This is implementation intentions (if-then plans), not habit stacking. Habit stacking specifically links to existing habits.
+~"I will [BEHAVIOR] every day at [TIME]"—works because consistency builds automaticity #Incorrect. This is time-based implementation intention. Habit stacking specifically uses EXISTING HABITS as cues, not just times.
+####Habit stacking uses the formula \\"After [CURRENT HABIT], I will [NEW HABIT]\\" to <b>piggyback</b> (attach to, build upon) new behaviors onto existing automatic routines. It works because current habits are already automatic (morning coffee, brushing teeth, closing laptop)—perfect reliable cues. Example\: \\"After I pour morning coffee, I will review daily goals for 2 minutes.\\" This leverages existing neural pathways instead of creating entirely new cues from scratch, increasing success rate. Start with one stack, add more after the first becomes automatic (66 days). See Week 8 slide 16.}
+
+::Implementation Intentions::How do implementation intentions increase goal achievement compared to goal intentions alone?{
+=Implementation intentions specify WHEN, WHERE, and HOW you'll act, removing in-the-moment decision-making; goal intentions only state desired outcomes #Correct! Pre-committing to specific situations increases success rate by 2-3× because you don't rely on willpower or motivation.
+~Implementation intentions are more ambitious and challenging than goal intentions #Incorrect. Ambition level isn't the difference. Implementation intentions specify the WHEN/WHERE/HOW details that goal intentions lack.
+~Implementation intentions require daily review while goal intentions are set-and-forget #Incorrect. The key difference is specificity of WHEN and WHERE, not review frequency.
+~Implementation intentions eliminate the need for goals by focusing only on actions #Incorrect. Implementation intentions work WITH goals—they specify how to achieve the goal through concrete if-then plans.
+####Implementation intentions use the formula \\"I will [BEHAVIOR] at [TIME] in [LOCATION]\\" to transform vague goals into specific action plans. Gollwitzer's meta-analysis (642 tests) shows this increases success rate by 2-3× because you've already decided WHEN and WHERE you'll act—no real-time <b>deliberation</b> (thinking, deciding) required. Example\: \\"I will practice presentations\\" (goal intention, 30% success) vs. \\"I will practice 10-minute presentations every Tuesday and Thursday at 4\:00 PM in Classroom B202\\" (implementation intention, 80% success). See Week 8 slide 17.}
+
+::Clear's Habit Formation::Why are identity-based habits more sustainable than outcome-based habits?{
+=Identity-based habits change who you believe you are; behaviors flow naturally from identity rather than requiring constant willpower #Correct! When habits reinforce identity, they become self-sustaining because they express who you are, not just what you want.
+~Identity-based habits require less time and effort than outcome-based habits #Incorrect. Time/effort isn't the key difference. Identity-based habits are more sustainable because they're tied to self-concept, not just desired results.
+~Identity-based habits focus on immediate rewards while outcome-based habits delay gratification #Incorrect. The reward timing isn't the distinction. Identity-based habits work because they reinforce beliefs about yourself.
+~Identity-based habits are easier to measure and track than outcome-based habits #Incorrect. Measurement isn't the key factor. Identity-based habits persist because behaviors align with self-perception.
+####Identity-based habits change beliefs about yourself (\\"I am a leader,\\" \\"I am a continuous learner\\") rather than just targeting outcomes (\\"I want promotion,\\" \\"I want skills\\"). When your identity shifts, behaviors flow <b>naturally</b> (easily, without force) because you act consistently with who you believe you are. Example\: \\"I don't smoke\\" (identity) vs. \\"I'm trying to quit\\" (outcome)—the identity statement requires no willpower. Every action is a vote for the type of person you're becoming. After 100 votes (habit repetitions), identity solidifies and habits become self-sustaining. See Week 8 slide 18.}
