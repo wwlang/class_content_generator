@@ -1,0 +1,187 @@
+// Quiz 4 - Weeks 1-10
+// Quiz ID: final-quiz-set-4
+// Questions: 30
+// Weeks covered: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+// Bloom distribution: 15 Remembering, 15 Understanding
+
+$CATEGORY: Quiz 4 - Weeks 1-10
+
+::MECE Principle Meaning::What does MECE stand for?{
+~Major-Elements-Completely-Explained #MECE is about logical grouping, not explanation quality.
+=Mutually Exclusive, Collectively Exhaustive #MECE stands for Mutually Exclusive (no overlap), Collectively Exhaustive (nothing missing). It's the logic check for pyramid arguments.
+~Meaningful-Evidence-Clear-Examples #MECE relates to argument structure, not evidence presentation.
+~Multiple-Examples-Clearly-Expressed #MECE is a consulting framework about logical categorization, not examples.
+}
+
+::Pyramid Principle Definition::According to the Pyramid Principle, what should appear FIRST in a business document?{
+~Supporting data and evidence #Supporting data appears at the bottom of the pyramid (third level), not at the top. The Pyramid Principle requires leading with conclusions.
+~Background information and context #While background appears in the SCQA opening, the Pyramid Principle structure itself starts with the governing thought (conclusion), not background.
+=The main recommendation or conclusion #The Pyramid Principle requires "present top-down" — your main answer or recommendation comes first, followed by supporting arguments and data. This structure respects the reader's time.
+~The analysis process you followed #The analysis process is how you think (bottom-up), but you present top-down with the conclusion first. Never make readers follow your thinking process.
+}
+
+::Gravitas Priority::According to Hewlett (2024), what percentage of senior executives identify gravitas as the most important element of executive presence?{
+~50% #50% is too low. Hewlett's research found that 67% of senior executives prioritize gravitas above communication and appearance.
+=67% #67% of senior executives say gravitas—confidence and decisiveness under pressure combined with inclusiveness—is what really matters in executive presence.
+~70% #70% is the statistic from the hook (percentage of leaders who consider decisiveness a component of executive presence), not the percentage who prioritize gravitas overall.
+~85% #While gravitas is clearly the top priority, the specific percentage from Hewlett's research is 67%, not 85%.
+}
+
+::Meyer's Three A's of Feedback::Which of the following is NOT one of Erin Meyer's "Three A's" for effective cross-cultural feedback?{
+~Aim to Assist #"Aim to Assist" IS one of the Three A's—give feedback only with genuine intention to help, never to vent frustration.
+~Actionable #"Actionable" IS one of the Three A's—feedback must include clear actions the recipient can take.
+~Ask First #"Ask First" IS one of the Three A's—request feedback on your own work before giving feedback to others.
+=Acknowledge Emotions #The three A's are Aim to Assist, Actionable, and Ask First. "Acknowledge Emotions" is not part of Meyer's framework, though emotional awareness matters in cross-cultural communication.
+}
+
+::Kolb's Learning Cycle Stages::According to Kolb's Experiential Learning Cycle, what are the four stages of learning?{
+~Experience, Reflection, Analysis, Application #While these terms are similar to Kolb's model, they are not the exact terminology. Kolb uses specific terms\: Concrete Experience, Reflective Observation, Abstract Conceptualization, and Active Experimentation.
+=Concrete Experience, Reflective Observation, Abstract Conceptualization, Active Experimentation #Kolb's four stages are\: Concrete Experience (doing), Reflective Observation (reviewing), Abstract Conceptualization (concluding), and Active Experimentation (planning/testing).
+~Doing, Thinking, Learning, Practicing #These are simplified descriptions but not Kolb's formal terminology. The model requires specific stages with distinct characteristics.
+~Observation, Hypothesis, Testing, Conclusion #This sounds like the scientific method, not Kolb's experiential learning cycle. Kolb focuses on transforming experience into knowledge through reflection and conceptualization.
+}
+
+::4-7-8 Breathing Technique::In the Anxiety Management Plan (AMP), what does the 4-7-8 breathing technique refer to?{
+~Breathe in for 4 seconds, out for 7, hold for 8 #The order is wrong—you hold BETWEEN inhale and exhale, not after exhaling. The correct sequence is inhale-hold-exhale.
+=Inhale for 4 counts, hold for 7, exhale for 8 #The 4-7-8 technique is\: Inhale through nose for 4 counts, hold for 7 counts, exhale for 8 counts. This lowers heart rate and reduces physiological symptoms of anxiety.
+~Repeat the sequence 4 times, wait 7 seconds, repeat 8 times #These numbers refer to the duration of each breath phase (inhale-hold-exhale), not the number of repetitions or timing between cycles.
+~4 deep breaths, 7 normal breaths, 8 shallow breaths #The 4-7-8 refers to counts for a single breath cycle (in-hold-out), not different types of breathing or number of breaths.
+}
+
+::Schön's Reflection-in-Action::What is the primary difference between Schön's "reflection-in-action" and "reflection-on-action"?{
+=Reflection-in-action happens during the activity; reflection-on-action happens after the activity #Reflection-in-action is real-time thinking and adjusting while performing (e.g., noticing audience confusion during presentation and adding an example). Reflection-on-action is retrospective analysis after the event (e.g., reviewing what worked after the presentation ends).
+~Reflection-in-action is for beginners; reflection-on-action is for experts #Both types of reflection are used by both beginners and experts. In fact, experts are typically BETTER at reflection-in-action because they've developed tacit knowledge through experience.
+~Reflection-in-action is emotional; reflection-on-action is rational #Both types involve rational and emotional elements. The distinction is timing (during vs. after), not emotional vs. rational processing.
+~Reflection-in-action uses frameworks; reflection-on-action does not #Both types can use frameworks for analysis. The difference is whether you're reflecting while acting (in-action) or after acting (on-action).
+}
+
+::The Focus Technique::When applying the focus technique to a multi-colored bar chart, what is the recommended maximum number of colors to use according to Kellogg research?{
+=1-2 colors #The focus technique recommends limiting colors to a maximum of 1-2 colors. Typically, one data series is highlighted in color (the important one) while others appear in gray. This directs the eye naturally to what matters without creating visual noise.
+~3-4 colors #Using 3-4 colors creates too much visual noise and increases extraneous cognitive load. The research found that restraint in color usage works better than variety.
+~5-6 colors #This many colors would create significant visual distraction, making it difficult for audiences to identify what's important. More colors equal more extraneous cognitive load.
+~As many colors as data series #While this might seem logical for distinguishing data series, it violates the focus principle. Most data should be de-emphasized (grayed out) so attention goes to the key series being highlighted.
+}
+
+::Mayer's Coherence Principle::What is the effect size (d value) for Mayer's coherence principle, which states you should exclude extraneous material from slides?{
+~d \= 0.50 #This underestimates the strength of the coherence effect. Research shows a larger effect size for removing extraneous material.
+~d \= 0.60 #While closer, this still underestimates the effect. The coherence principle has a stronger impact on learning than this value suggests.
+=d \= 0.70 #Mayer's coherence principle has an effect size of d \= 0.70, which is considered a large effect. This means removing extraneous material like decorative clip art significantly improves learning.
+~d \= 0.87 #This is the effect size for the redundancy principle, not the coherence principle. The redundancy principle (don't read on-screen text aloud) has an even stronger effect.
+}
+
+::SUCCESs Framework Overview::In the Heath & Heath SUCCESs framework for making ideas stick, what does the acronym SUCCESs stand for?{
+~Simple, Unusual, Clear, Credible, Engaging, Structured #Close, but the actual framework is\: Simple, Unexpected, Concrete, Credible, Emotional, Stories.
+~Strategic, Unexpected, Concrete, Compelling, Emotional, Stories #The first word is Simple (not Strategic) and the fourth is Credible (not Compelling).
+=Simple, Unexpected, Concrete, Credible, Emotional, Stories #SUCCESs stands for\: Simple, Unexpected, Concrete, Credible, Emotional, Stories. Each principle addresses a different barrier to communication and memory.
+~Straightforward, Unique, Consistent, Convincing, Empathetic, Storylines #This uses different words than Heath & Heath's framework. The correct version is Simple, Unexpected, Concrete, Credible, Emotional, Stories.
+}
+
+::Strunk & White Author::Who wrote *The Elements of Style*, the foundational text for clarity and concision rules?{
+~Barbara Minto and McKinsey #Barbara Minto wrote *The Pyramid Principle*, not *The Elements of Style*.
+=William Strunk Jr. and E.B. White #William Strunk Jr. wrote the original *Elements of Style* in 1918 at Cornell, and E.B. White updated it in 1959. It's the \#1 most-assigned text in US higher education.
+~Matt Abrahams and Stanford GSB #Matt Abrahams wrote about the "What/So What/Now What" framework, not *The Elements of Style*.
+~Elizabeth Danziger and Harvard Business Review #Elizabeth Danziger wrote about the Purpose-Person-Point framework in HBR, not *The Elements of Style*.
+}
+
+::Authentic Communication Definition::According to Alisa Brodsky's research (UT Austin McCombs, 2022), what does authentic communication mean?{
+~Behaving identically across all communication contexts #Brodsky's research challenges the idea that authenticity means identical behavior everywhere. Authentic communication is contextual—you adapt while maintaining genuine intent.
+~Always saying exactly what you think without filtering #Authenticity doesn't mean unfiltered thoughts. You can be authentic while choosing appropriate language and tone for the situation and audience.
+=Genuine intent adapted to situation—what feels authentic varies by channel and audience #Brodsky found that authentic communication is contextual—what feels authentic varies by channel and audience. You can adapt your style (e.g., formal for professors) while maintaining genuine intent. This isn't "fake," it's contextual adaptation.
+~Never adjusting your communication style for cultural norms #Brodsky's research shows you CAN adapt to cultural norms while remaining authentic. For example, showing respect through tone (Vietnamese cultural norm) while delivering authentic content isn't inauthentic. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::Semantic vs. Effectiveness Level::What is the key difference between the SEMANTIC level and the EFFECTIVENESS level in Shannon-Weaver's three levels of communication problems?{
+~Semantic is about transmission; effectiveness is about encoding #Transmission concerns the technical level, not semantic. The distinction between semantic and effectiveness is about meaning vs. action.
+=Semantic is about meaning being conveyed; effectiveness is about meaning producing action #The semantic level asks "Did the audience understand the intended meaning?" while the effectiveness level asks "Did that understanding change their behavior?" Many business communications succeed semantically (people understand) but fail at effectiveness (no action taken).
+~Semantic is about the channel; effectiveness is about the destination #Both levels occur after successful transmission through the channel. The semantic level concerns interpretation; the effectiveness level concerns behavioral response.
+~Semantic is about noise; effectiveness is about the source #Noise can affect any level. The key distinction is that semantic concerns meaning comprehension, while effectiveness concerns behavioral change. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 - Matching\: 1 (Q3) **Estimated completion time\:** 20-25 minutes
+}
+
+::MKS Model Definition::What do the letters M, K, and S stand for in Spitzberg and Cupach's MKS model of communication competence?{
+~Message, Knowledge, Source #The M stands for Motivation, not Message. The model focuses on individual competence, not message characteristics.
+~Medium, Key concepts, Strategy #The M stands for Motivation, and the S stands for Skills. "Medium" and "Key concepts" are not part of this framework.
+=Motivation, Knowledge, Skills #MKS stands for Motivation (desire and confidence to communicate), Knowledge (understanding appropriate communication), and Skills (ability to perform communication behaviors). All three dimensions must be present for competence.
+~Method, Knowing, Speaking #None of these are correct. The framework uses the specific terms Motivation, Knowledge, and Skills.
+}
+
+::Effective Call to Action Characteristics::Which of the following is an example of a strong call to action (CTA) based on the lecture's guidelines?{
+~"I hope you'll think about this proposal" #This CTA is vague ("think about") with no specific action or timeline. Strong CTAs are specific, measurable, and time-bound.
+~"Let me know if you have questions" #This puts the burden on the audience and requests no specific decision. Strong CTAs ask for one clear action.
+="Please approve Phase 1 pilot budget ($5,000) by Friday so we can begin testing with Marketing department next week" #This CTA is specific (approve Phase 1 budget), measurable ($5,000), time-bound (by Friday), single action (one approval), and includes rationale (begin testing next week). It demonstrates all characteristics of effective CTAs.
+~"We should implement this at some point" #This CTA lacks specificity (what exactly to implement) and has no timeline ("at some point"). Strong CTAs are concrete and time-bound. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::Attribution Theory in SCCT::In SCCT, Attribution Theory suggests that stakeholders' emotional and behavioral responses to a crisis depend on whether they attribute the crisis to situational (external) or organizational (internal) factors.{T #Correct! Attribution Theory is the core mechanism of SCCT. When stakeholders attribute a crisis to external factors (situational), they assign less responsibility to the organization. When they attribute it to internal factors (organizational choices/actions), they assign more responsibility—and this drives how they react emotionally and behaviorally. #Incorrect. This statement accurately describes how Attribution Theory works within SCCT. Stakeholder assessment of responsibility (external vs. internal attribution) determines the appropriate crisis response intensity. Organizations must match their response to the level of responsibility stakeholders perceive.}
+
+::Freeman's Stakeholder Definition::According to R. Edward Freeman (1984), what is a stakeholder?{
+~Any individual or group who owns shares in the organization #This describes shareholders only. Freeman's definition is much broader than ownership—it includes anyone who affects or is affected by the organization.
+=Any group or individual who can affect or is affected by the achievement of the organization's objectives #Freeman's 1984 definition includes the bidirectional relationship\: stakeholders "can AFFECT" the organization OR "are AFFECTED BY" it. This expands responsibility beyond just shareholders to include employees, customers, suppliers, communities, and more.
+~Only internal members of the organization such as employees and management #Freeman's framework includes both internal AND external stakeholders. Customers, suppliers, communities, governments, and media are all stakeholders despite being external.
+~External parties who have contractual agreements with the organization #While contractual parties are stakeholders, Freeman's definition is broader—it includes groups without contracts, like communities affected by pollution or competitors who affect strategy.
+}
+
+::Types of Cognitive Load::A presenter uses rotating text animations and decorative clip art on their slides. According to cognitive load theory, what type of cognitive load does this create?{
+~Intrinsic load #Intrinsic load refers to the inherent complexity of the material itself (e.g., calculus is more complex than addition). Decorative elements don't relate to content complexity.
+=Extraneous load #Extraneous load is wasted brain power caused by poor design choices like decorative clip art and unnecessary animations. These elements distract from the actual message without supporting understanding.
+~Germane load #Germane load is productive cognitive effort that helps build understanding and mental models. Decorative animations work against this goal rather than supporting it.
+~Essential load #"Essential load" is not one of the three types of cognitive load identified in the theory. The three types are intrinsic, extraneous, and germane.
+}
+
+::Three Conversations Model Layers::According to the Three Conversations Model from Harvard Negotiation Project, what is the purpose of the "Identity Conversation" layer?{
+~To establish credibility and professional identity with the other person #The Identity Conversation isn't about establishing credibility externally—it's about your internal dialogue\: "Am I competent? Am I good? Am I lovable?" These self-concept questions get triggered during difficult conversations.
+=To address the internal dialogue about what the conflict means for who we are #The Identity Conversation addresses your internal thoughts about what the conflict means for who you are as a person. The common mistake is all-or-nothing thinking ("One mistake means I'm incompetent"). The key technique is to accept your own complexity—one situation doesn't define you.
+~To confirm each person's role and responsibilities in the situation #Clarifying roles and responsibilities would be part of the "What Happened" conversation (facts and interpretations), not the Identity conversation (self-concept).
+~To define how each person wants to be perceived by others #While reputation matters, the Identity Conversation specifically focuses on your INTERNAL dialogue about self-concept, not external perception management.
+}
+
+::Gravitas Post-Pandemic Shift::According to Hewlett's updated Executive Presence Model (2024), gravitas now emphasizes demonstrated competence and inclusiveness over pedigree (which school you attended).{T #Correct! A key shift in Hewlett's updated model (comparing 2012 to 2022 data) is that pedigree is now less important than demonstrated competence. Modern gravitas emphasizes confidence under pressure combined with inclusiveness and respect for diverse perspectives—not educational credentials or which school you attended. This is a significant post-pandemic change. #Incorrect. This statement accurately describes a major shift in the Executive Presence Model. The old model (pre-2012) emphasized pedigree and educational background. The updated model (2024) shows that gravitas now prioritizes demonstrated competence, decisiveness under pressure, and inclusiveness over educational credentials.}
+
+::Duarte's Three-Act Structure::According to Nancy Duarte's presentation framework, what are the three acts of a presentation structure?{
+~Introduction, Body, Conclusion #While this is a traditional structure, Duarte's framework uses different terminology\: "What Is" (current state), oscillating contrast in the middle, and "New Bliss" (transformed future).
+=Beginning (What Is), Middle (Contrast), End (New Bliss) #Duarte's three-act structure starts with "What Is" (beginning), uses oscillating contrast between problem and solution (middle), and ends with "New Bliss" (the transformed future state).
+~Hook, Evidence, Call to Action #These are elements within presentations but not Duarte's three-act structure. Hook is part of Act 1, Call to Action is part of Act 3.
+~Problem, Solution, Implementation #Problem and solution are part of the oscillating pattern in Act 2 (the middle), not the three acts themselves.
+}
+
+::Personal vs. Contextual Diversity::According to Taras et al. (2021), what is the primary difference in how personal diversity and contextual diversity affect team performance?{
+~Personal diversity improves task quality, while contextual diversity affects team satisfaction #This reverses the actual relationship. Contextual diversity (different backgrounds/expertise) improves task quality, while personal diversity (demographics) affects psychological outcomes.
+=Personal diversity primarily affects psychological outcomes, while contextual diversity improves task outcomes #Personal diversity (age, gender, race, personality) primarily affects psychological outcomes like satisfaction and conflict. Contextual diversity (country, industry, functional expertise) improves task outcomes like quality and creativity.
+~Personal diversity is easier to manage than contextual diversity #The research doesn't claim one is easier to manage than the other. Both require active management, but they affect different aspects of team performance.
+~Personal diversity always leads to negative performance, while contextual diversity always helps #The relationship isn't absolute. Personal diversity can be negative WITHOUT active management but isn't always negative. Contextual diversity generally improves performance but requires psychological safety to realize benefits.
+}
+
+::Graphical Integrity::A chart shows revenue growth from $100M to $120M (20% increase), but uses a bar that is 3x taller for the $120M value compared to the baseline. What is the lie factor?{
+~1.0 #A lie factor of 1.0 would indicate accurate representation. In this case, the visual effect (3x height) does not match the data effect (1.2x increase), so the lie factor exceeds 1.0.
+~1.5 #While this recognizes the lie factor is above 1.0, it underestimates the degree of visual exaggeration compared to the actual data change.
+~2.0 #This calculation doesn't properly account for the relationship between the visual effect (3x) and the data effect (1.2x increase from 100 to 120).
+=2.5 #Lie Factor \= Size of effect shown in graphic ÷ Size of effect in data. The graphic shows 3x height, but the data only increased 1.2x (from 100 to 120). Therefore\: 3 ÷ 1.2 \= 2.5. The graphic overstates the effect by 2.5 times.
+}
+
+::Noise in Communication::In the Shannon-Weaver model, "noise" refers only to physical sounds that disrupt communication, such as loud machinery or background chatter.{F #Incorrect. Noise in Shannon-Weaver is much broader than physical sound. It includes semantic noise (unclear language, jargon), psychological noise (preconceptions, emotional state), and physical noise (distractions, technical issues). Any interference that affects message clarity is "noise." #Correct! Noise includes any interference with the communication signal—semantic noise (jargon, unclear wording), psychological noise (biases, emotions, distractions), and physical noise (sounds, technical glitches). Understanding all types of noise helps communicators diagnose and fix problems.}
+
+::Balancing Rhetorical Appeals::According to Nancy Duarte's research, presentations that are too analytical (all logos, no pathos) risk being forgettable and failing to inspire action.{T #Correct! Duarte's research shows that presentations relying solely on logic and data (logos) without emotional connection (pathos) tend to be boring, unmemorable, and fail to drive action. Balance is essential—audiences need logic AND emotion. #Incorrect. Duarte's 2024 MIT Sloan article specifically warns against being "too analytical." While business audiences expect data, logos alone feels like reading a spreadsheet and doesn't inspire action. Balance across ethos, pathos, and logos is necessary.}
+
+::Duarte's Audience Calibration::According to Duarte's audience calibration framework (MIT Sloan Management Review, 2024), analytical audiences such as engineers and finance professionals should receive presentations that are approximately 80% logos (data-driven) and 20% pathos (emotional).{T #Correct! Duarte's research shows analytical audiences prefer data-heavy content—they engage with charts, statistics, and logical arguments. Twenty slides of data isn't boring to engineers; it's what they want. Emotion should be used sparingly and strategically (e.g., a brief success story to illustrate impact). #Incorrect. Duarte's framework from MIT Sloan Management Review (2024) specifically recommends leading with evidence for analytical audiences. While they still need SOME emotional content (every presentation needs both), the ratio should be approximately 80% logos and 20% pathos.}
+
+::Declutter + Focus Model::According to Kellogg research (2021), decluttering slides alone (without adding focusing elements) provides significant cognitive benefits and improves audience comprehension of the main conclusion.{F #This is incorrect. The Kellogg study found that decluttering only improves appearance but provides NO cognitive benefit. Only when decluttering is combined with focusing elements (headlines, strategic color highlighting) does comprehension improve—by approximately 2.5x. #Correct! Kellogg research revealed an unexpected finding\: decluttered graphs looked better but didn't improve comprehension compared to cluttered versions. Active guidance through focusing elements (headlines stating conclusions, color highlighting key data) was required to achieve the \~2.5x improvement in capturing the main conclusion.}
+
+::Strategic Tool Selection Framework::According to the MIT Sloan 2×2 matrix (Kesari, 2024), what is the best tool for explanatory communication with sophisticated information levels?{
+~AI chat interfaces #AI chat interfaces are best suited for exploratory tasks with simple information levels, such as asking "What was our sales number last month?" They cannot synthesize multi-source strategic narratives.
+~AI-infused BI tools #AI-infused BI (Business Intelligence) tools are recommended for explanatory communication with simple information, not sophisticated multi-faceted contexts requiring strategic synthesis.
+~Interactive dashboards #Interactive dashboards are best for exploratory tasks with sophisticated information—they allow audiences to discover insights themselves rather than being guided to a specific conclusion.
+=Data stories / Presentation decks #The MIT Sloan framework identifies data stories and presentation decks as the best tool when you need to provide explanatory communication (guiding to conclusions) with sophisticated information (multi-faceted with context). High-stakes persuasion requires human-crafted visual storytelling. --- \#\# Statistics **Total Questions\:** 10 **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Bloom's Taxonomy Distribution\:** - Remembering\: 5 questions (Q1, Q3, Q5, Q6, Q10) - Understanding\: 5 questions (Q2, Q4, Q7, Q8, Q9) **Key Concepts Covered\:** - Cognitive Theory of Multimedia Learning (dual-channel processing, limited capacity) - Types of cognitive load (intrinsic, extraneous, germane) - Mayer's principles (coherence, redundancy, effect sizes) - Tufte's data visualization principles (data-ink ratio, chartjunk, graphical integrity, lie factor) - Declutter + Focus model (Kellogg research findings) - Focus technique practical application (color limits, headline strategies) - Strategic tool selection framework (MIT Sloan matrix)
+}
+
+::Freeman's Stakeholder Categories::Which of the following is NOT one of Freeman's 11 stakeholder categories from his original 1984 hub-and-spoke model?{
+~Competitors #Competitors ARE one of Freeman's stakeholder categories—they affect your strategic decisions and competitive positioning.
+~Trade associations #Trade associations ARE one of Freeman's 11 original categories—they represent industry interests and influence regulatory environments.
+=Social media influencers #Social media influencers were not part of Freeman's 1984 framework because social media didn't exist then. The lecture notes that modern organizations might add this category today, but it's not part of Freeman's original 11.
+~Media #Media IS one of Freeman's stakeholder categories—media shapes public perception and can significantly affect organizational reputation.
+}
+
+::MIT Sloan Learning Strategies::According to the MIT Sloan research cited in the lecture, which is NOT one of the four strategies for developing learning agility?{
+~Link purpose to learning #This IS one of the four strategies—connecting skill development to career aspirations to increase motivation.
+~Create learning-rich experiences #This IS one of the four strategies—deliberately seeking varied and challenging communication tasks to push beyond comfort zones.
+=Avoid difficult challenges until mastery #The MIT Sloan research advocates SEEKING difficult challenges (Strategy 2\: Create learning-rich experiences), not avoiding them. The four strategies are\: link purpose to learning, create learning-rich experiences, ask meta-learning questions, and nurture a learning team.
+~Nurture a learning team #This IS one of the four strategies—seeking feedback partners and embedding learning discussions into daily work.
+}

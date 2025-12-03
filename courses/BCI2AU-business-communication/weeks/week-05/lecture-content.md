@@ -1,1088 +1,1375 @@
 # Week 5: Oral Communication Fundamentals
 
-**Course:** BCI2AU Business Communication
-**Topic:** Building Presentation Confidence
-**Assessment Connection:** Foundation for Group Presentation (Week 12)
+<slide number="1" layout="title" title="Title Slide">
 
----
+# Oral Communication Fundamentals
 
-## Slide 1: Opening Hook
-<!-- LAYOUT: big-number -->
+<speaker-notes>
+Welcome to Week 5. Today we transition from written communication to oral communication—the skills that will define your leadership presence. This week lays the foundation for your presentations in Weeks 6-7 and ultimately your group presentation in Week 12.
+</speaker-notes>
 
-## 85% of Job Success Depends on Communication Skills
+</slide>
 
-**Only 15% comes from technical knowledge**
+<slide number="2" layout="big-number" title="Hook">
 
-(Carnegie Institute of Technology, replicated across 70+ studies)
+# 80%
 
-### Speaker Notes
+**of workplace communication is spontaneous—not planned presentations**
 
-**Opening:**
-- Welcome students back. "We've mastered written communication—now we turn to oral."
-- Let this statistic sink in for a moment of silence
+*(Abrahams, 2023)*
 
-**Key Points:**
-- Original Carnegie study from 1918, but finding replicated consistently
-- Technical skills get you the interview; communication skills get you promoted
-- Today we tackle the skill that causes the most anxiety but offers the biggest career impact
+<speaker-notes>
+This stat often surprises students who expect "presentation skills" to mean formal speeches. The reality is that most communication happens in meetings, hallway conversations, Q&A sessions, and impromptu updates to leadership. Today we'll address both planned and spontaneous oral communication.
 
-**Example:**
-- In Vietnam's competitive job market, technical skills are baseline—everyone has them
-- Top companies (Vingroup, FPT, Viettel) explicitly test presentation skills in final interview rounds
-- The differentiator is not what you know, but how clearly you can explain it to others
+Common student question: "How can I prepare for spontaneous communication?" The answer is structured practice—we'll explore frameworks that give you mental scaffolding for any impromptu situation.
+</speaker-notes>
 
-**Check Understanding:**
-- "Quick show of hands—who feels completely confident presenting to a group?"
-- (Expect few hands—normalize this as we'll address it today)
+</slide>
 
-**Transition:**
-- "If you're nervous, you're in good company. Let's see what we'll accomplish today..."
+<slide number="3" title="Learning Objectives">
 
----
-
-## Slide 2: Today's Learning Objectives
+## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
+1. Identify the components of effective presentation structure using Duarte's frameworks
+2. Explain how Communication Apprehension Theory relates to managing presentation anxiety
+3. Apply the "What? So What? Now What?" framework to organize impromptu speaking
+4. Evaluate the role of authenticity in oral communication across different channels
 
-1. **Structure** a presentation using the three-part framework (opening, body, conclusion)
-2. **Apply** delivery techniques to enhance voice, pacing, and eye contact
-3. **Implement** anxiety management strategies grounded in Communication Apprehension Theory
-4. **Develop** authentic presence that builds audience connection
+<speaker-notes>
+These objectives align with your Group Presentation (Week 12). Objective 1 helps you structure your presentation. Objective 2 addresses the nervousness most students experience. Objective 3 prepares you for Q&A handling. Objective 4 ensures genuine connection with audiences.
 
-### Speaker Notes
+All four objectives will appear on the Week 11 comprehensive quiz.
+</speaker-notes>
 
-**Opening:**
-- "Four concrete skills you'll practice today and in tutorial"
+</slide>
 
-**Key Points:**
-- **Structure:** We'll use Nancy Duarte's framework from *Resonate* (used at Stanford GSB)
-- **Delivery:** Voice modulation, pacing, eye contact—the basics that carry 80% of impact
-- **Anxiety:** McCroskey's Communication Apprehension Theory—the scientific foundation for managing nervousness
-- **Authenticity:** How to be yourself, not perform a character
+<slide number="4" layout="framework" title="Assessment Connection">
 
-**Example:**
-- By Week 12, you'll deliver a 15-minute group presentation with Q&A
-- Today's foundation makes that achievable, not terrifying
+## How This Prepares You
 
-**Check Understanding:**
-- "Which of these four feels most challenging to you right now?"
-- (Listen for trends—anxiety usually dominates)
+**Group Presentation (Due Week 12, 25%):**
+- Today: Learn presentation structure and anxiety management
+- Week 6: Master visual design and slide creation
+- Week 7: Practice persuasive storytelling
+- Weeks 8-10: Build executive presence and cross-cultural skills
+- Week 12: Deliver polished team presentation with Q&A
 
-**Transition:**
-- "Let's connect this to your upcoming assessment..."
+**Individual Presentation Grade (Due Week 12, 15%):**
+- Personal delivery quality and executive presence
+- Q&A handling using spontaneous speaking frameworks
+- Team contribution and professionalism
 
----
+<speaker-notes>
+Students appreciate seeing the full roadmap to presentation success. Emphasize that today's frameworks are foundational—everything in Weeks 6-12 builds on what we establish today.
 
-## Slide 3: How This Prepares You for Assessment
-<!-- LAYOUT: framework -->
+The 40% combined presentation weight makes this the most significant assessment component. Students who master oral communication fundamentals now will have a strategic advantage throughout the course.
+</speaker-notes>
 
-## Week 12 Group Presentation (25% + 15% Individual)
+</slide>
 
-**Timeline:**
-- **Week 5 (Today):** Learn structure and delivery fundamentals
-- **Week 5 Tutorial:** Practice 2-3 minute mini-presentations with peer feedback
-- **Week 6:** Visual communication and slide design
-- **Week 7:** Storytelling and persuasion techniques
-- **Week 12:** Deliver 15-minute group presentation + 10-minute Q&A
+<slide number="5" layout="section-break" title="Roadmap">
 
-**What makes the difference:**
-- Structure clarity (today's focus)
-- Confident delivery (today's focus)
-- Visual support (next week)
-- Persuasive narrative (Week 7)
+## Today's Journey
 
-### Speaker Notes
+1. **Managing Communication Anxiety** (25 min)
+   - McCroskey's Communication Apprehension Theory
+   - Practical anxiety management techniques
 
-**Opening:**
-- "Your final presentation is seven weeks away—plenty of time to build confidence"
+2. **Presentation Structure Foundations** (25 min)
+   - Duarte's Sparkline framework
+   - The three-act structure
+   - S.T.A.R. moments
 
-**Key Points:**
-- Today is **foundational**—structure and delivery are prerequisites for everything else
-- Tutorial gives you safe space to practice with only 20 peers, not a formal grade
-- Each week builds: structure → visuals → storytelling → Q&A handling → final delivery
-- Individual grade (15%) assesses YOUR contribution within the group
+3. **Spontaneous Speaking** (20 min)
+   - Abrahams' "What? So What? Now What?" framework
+   - Preparation for unpredictability
 
-**Example:**
-- Think of it like learning to drive: today you learn steering and braking (fundamentals)
-- Later weeks add highway driving and parallel parking (advanced skills)
-- By Week 12, you'll be ready for the road test
+4. **Authenticity in Oral Communication** (15 min)
+   - Channel-Authenticity Matrix
+   - Finding your genuine voice
 
-**Check Understanding:**
-- "How many of you have delivered a 15-minute presentation before?"
-- (Note the mix—acknowledge both experienced and first-timers)
+<speaker-notes>
+Visual roadmap helps students track progress through the lecture. We'll return to this slide at each transition point.
 
-**Transition:**
-- "Let's see the roadmap for today's journey..."
+Note the time allocations—anxiety management gets the most time because it's the foundational barrier for most students. Once anxiety is managed, structure and authenticity become accessible.
+</speaker-notes>
 
----
+</slide>
 
-## Slide 4: Today's Roadmap
-<!-- LAYOUT: section-break -->
+<slide number="6" layout="section-break" title="Section 1">
 
-## Three Segments
+# Part 1: Managing Communication Anxiety
 
-1. **Presentation Structure** (20 minutes)
-   Opening, body, conclusion frameworks
+<speaker-notes>
+Transition: "Let's start with the elephant in the room—most people experience nervousness about public speaking. This is completely normal, and we have scientific frameworks for understanding and managing it."
+</speaker-notes>
 
-2. **Delivery Fundamentals** (20 minutes)
-   Voice, pacing, eye contact, presence
+</slide>
 
-3. **Managing Anxiety & Finding Authenticity** (20 minutes)
-   Scientific strategies for confidence
+<slide number="7" layout="framework" title="Communication Apprehension Theory">
 
----
+## McCroskey's Communication Apprehension (CA) Theory
 
-### Speaker Notes
+**Definition:** "An individual's level of fear or anxiety associated with either real or anticipated communication with another person or persons" (McCroskey, 1977)
 
-**Opening:**
-- "Three clear segments, each about 20 minutes, with mini-activities to practice"
+**Two Types:**
+- **Trait CA:** Enduring personality disposition toward communication anxiety across all contexts
+- **State CA:** Situationally-triggered anxiety in specific communication contexts
 
-**Key Points:**
-- Structure comes first because it reduces anxiety—knowing what to say next calms nerves
-- Delivery techniques are mechanical—you can practice and improve them
-- Anxiety management is last because once you have structure and technique, fear diminishes
+**Impact:** High CA individuals withdraw from communication opportunities, affecting career advancement, perceived credibility, and leadership effectiveness
 
-**Example:**
-- Like building a house: foundation (structure) → walls (delivery) → interior design (authenticity)
+<speaker-notes>
+This is the foundational theory that established communication anxiety as a legitimate field of study. McCroskey's work has over 21,000 citations and created the Personal Report of Communication Apprehension (PRCA) scale used globally.
 
-**Check Understanding:**
-- "Any questions before we dive into segment one?"
+Key insight for students: Communication apprehension is not a personality flaw or lack of competence—it's a measurable, manageable psychological response. Approximately 10-20% of individuals experience significant CA.
 
-**Transition:**
-- "Let's start with structure—the foundation that everything else builds on..."
+The distinction between Trait and State CA matters: Someone with low Trait CA might still experience State CA in high-stakes situations like board presentations. This explains why even experienced speakers can feel nervous in certain contexts.
+</speaker-notes>
 
----
+</slide>
 
-## Slide 5: Segment 1 - Presentation Structure
-<!-- LAYOUT: section-break -->
+<slide number="8" title="Four Contexts of Communication Apprehension">
 
-## Why Structure Matters
+## Four-Context Communication Model
 
-"The audience did not show up to see you. They came to find out what you can do for them."
-— Nancy Duarte, *Resonate*
+McCroskey identified that CA manifests differently across four primary contexts:
 
-### Speaker Notes
+1. **Public speaking** - Presenting to large groups
+2. **Group discussions** - Contributing in team meetings
+3. **Meetings** - Formal organizational settings
+4. **Dyadic conversations** - One-on-one interactions
 
-**Opening:**
-- "First mindset shift: presentations aren't about you—they're about the audience"
+**Key insight:** You may have high CA in one context but low CA in another. A person comfortable in one-on-one conversations may experience severe anxiety in public speaking.
 
-**Key Points:**
-- Nancy Duarte created Al Gore's *An Inconvenient Truth* presentation
-- Her firm has advised Google, Apple, Cisco on major product launches
-- *Resonate* is taught at Stanford Graduate School of Business
-- The quote reframes anxiety: it's not performance, it's service
+**Implication:** Treatment must be context-specific. Strategies that work for meetings may not work for presentations.
 
-**Example:**
-- When Steve Jobs launched the iPhone in 2007, he wasn't showing off
-- He was demonstrating how the iPhone would transform the audience's lives
-- The presentation positioned the **audience as heroes**, Jobs as their guide
+<speaker-notes>
+This framework helps students understand why they might feel confident chatting with friends but anxious presenting to a class—these are different contexts triggering different levels of CA.
 
-**Check Understanding:**
-- "What changes when you think of yourself as a guide, not a performer?"
-- (Expected: less pressure, more focus on helping)
+Common pattern in business students: High comfort in dyadic and group discussions, but higher anxiety in public speaking and formal meetings. This makes sense—they've had years of conversation practice but limited presentation experience.
 
-**Transition:**
-- "So how do we structure a presentation that serves the audience? Three parts..."
+The good news: CA is context-specific, meaning you can systematically build confidence in the contexts that matter most for your career.
+</speaker-notes>
 
----
+</slide>
 
-## Slide 6: Duarte's Three-Act Presentation Structure
-<!-- LAYOUT: framework -->
+<slide number="9" layout="framework" title="Managing CA - Treatment Approaches">
 
-## Beginning → Middle → End
+## Treatment Approaches for Communication Apprehension
 
-**ACT 1: BEGINNING**
-- Establish "What Is" (current reality, problem)
-- Introduce the gap between current and ideal state
+**1. Systematic Desensitization**
+- Repeated, graduated exposure to anxiety-producing situations
+- Start small, build progressively to higher-stakes contexts
+- Example: Practice 1-minute intro → 3-minute update → 10-minute presentation
 
-**ACT 2: MIDDLE**
-- Oscillate between "What Is" and "What Could Be"
-- Build tension with increasing stakes
-- Provide evidence, examples, solutions
+**2. Cognitive Restructuring**
+- Replace negative thoughts with positive self-talk
+- Challenge catastrophic thinking ("Everyone will laugh at me" → "Most people are supportive")
+- Focus on realistic outcome expectations
 
-**ACT 3: END**
-- Paint the "New Bliss"—the transformed future state
-- Call to action—specific next steps for audience
+**3. Skills Training**
+- Improve specific competencies to build confidence
+- Learn frameworks for structure, practice delivery techniques
+- Confidence grows from competence
 
-### Speaker Notes
+<speaker-notes>
+These three approaches are evidence-based and can be combined. Most effective programs use all three simultaneously.
 
-**Opening:**
-- "This three-act structure comes from Hollywood screenwriting, adapted for business"
+Systematic desensitization is like physical therapy—you wouldn't start rehab by running a marathon. Start with low-stakes presentations to small groups and gradually increase difficulty.
 
-**Key Points:**
-- **Beginning:** Don't start with "Hi, I'm..." Start with the problem or opportunity
-- **Middle:** Contrast creates engagement—alternate between problem and solution
-- **End:** Don't just summarize—inspire action with a vision of success
+Cognitive restructuring addresses the feedback loop where anxiety creates negative thoughts, which increase anxiety. Breaking this cycle requires conscious thought replacement.
 
-**Example:**
-- Martin Luther King Jr.'s "I Have a Dream" speech is a perfect example:
-  - Beginning: Current injustice ("What Is")
-  - Middle: Alternates between current struggles and future vision
-  - End: The dream fully realized ("New Bliss")
+Skills training is what this course provides—frameworks like "What? So What? Now What?" give you structure when your mind goes blank. Competence reduces anxiety because you have tools to fall back on.
 
-**Check Understanding:**
-- "Think of a presentation you've seen—can you identify these three acts?"
+Real-world application: Many successful executives still experience State CA before important presentations, but they have systematic approaches to manage it rather than letting it prevent communication.
+</speaker-notes>
 
-**Transition:**
-- "Let's break down the beginning—your opening is critical..."
+</slide>
 
----
+<slide number="10" title="Impact of Communication Apprehension">
 
-## Slide 7: Crafting Your Opening (Act 1)
-<!-- LAYOUT: framework -->
+## Consequences of High Communication Apprehension
 
-## Four Elements of a Strong Opening
+**Career Effects:**
+- Choice of college major (avoiding communication-intensive fields)
+- Job selection (avoiding roles requiring high visibility)
+- Career advancement (missing promotion opportunities)
+- Job satisfaction (experiencing stress in communication-heavy roles)
 
-1. **Hook** - Grab attention (statistic, question, story, bold claim)
-2. **Relevance** - Why this matters to THIS audience
-3. **Credibility** - Why you're qualified to speak on this
-4. **Roadmap** - Where we're going (preview structure)
+**Perception Effects:**
+- Reduced perceived credibility in professional contexts
+- Lower interpersonal attraction ratings
+- Diminished leadership effectiveness perceptions
 
-**Time Allocation:** 10-15% of total presentation time
+**The Withdrawal Cycle:** "People who experience a high level of communication apprehension will withdraw from and seek to avoid communication whenever possible" (McCroskey, 1977)
 
-### Speaker Notes
+<speaker-notes>
+These consequences are significant and research-backed. CA isn't just about feeling nervous—it has real career implications.
 
-**Opening:**
-- "First 30 seconds determine if the audience listens or checks their phones"
+The withdrawal cycle is particularly important: High CA leads to avoidance → avoidance prevents skill development → lack of skills increases anxiety → anxiety leads to more avoidance. This cycle can limit entire career trajectories.
 
-**Key Points:**
-- **Hook:** Start with something surprising or provocative, not "Good morning, my name is..."
-- **Relevance:** Answer "So what?" immediately—why should they care?
-- **Credibility:** Brief—one sentence establishing your authority (experience, research, etc.)
-- **Roadmap:** Reduces audience anxiety—they know what to expect
+Example: A talented engineer with high CA might avoid presenting ideas to leadership, causing brilliant innovations to go unnoticed. Meanwhile, a less talented but more confident communicator gets promoted.
 
-**Example (Poor Opening):**
-- "Hi, I'm Minh. Today I'll talk about digital marketing. I'll cover three topics: SEO, social media, and email. Let's begin with SEO..."
-- (Boring, generic, no hook)
+The good news: CA is treatable through the approaches we discussed on the previous slide. Students who invest in managing CA now gain a competitive advantage that compounds throughout their careers.
 
-**Example (Strong Opening):**
-- "Vietnamese businesses waste $2 million per day on ineffective digital ads. I spent six months analyzing 200 Hanoi SMEs—today I'll show you three changes that can triple your ROI in 90 days."
-- (Hook: shocking stat. Relevance: local context. Credibility: research. Roadmap: three changes)
+Vietnamese cultural context: Some students may experience additional CA when communicating in English or in Western-style direct communication contexts. This is State CA triggered by cultural-linguistic factors, not Trait CA. The same treatment approaches apply—systematic exposure, cognitive reframing, and skills training.
+</speaker-notes>
 
-**Check Understanding:**
-- "What's the difference between these two openings?"
-- (Expected: specificity, relevance, energy)
+</slide>
 
-**Transition:**
-- "Once you've hooked them, you move to the middle—the heart of your presentation..."
+<slide number="11" title="Anxiety Management Plan">
 
----
+## Abrahams' Anxiety Management Plan (AMP)
 
-## Slide 8: Structuring Your Middle (Act 2)
-<!-- LAYOUT: framework -->
+**Before Communication:**
+- Physical preparation: Deep breathing, movement to release tension
+- Mental reframing: "I'm excited" vs "I'm nervous" (anxiety and excitement share physiological markers)
+- Preparation: Know your opening 30 seconds cold
 
-## The Sparkline™ Pattern: Oscillation Creates Engagement
+**During Communication:**
+- Grounding techniques: Feel your feet on the floor, grip the podium
+- Focus strategies: Speak to friendly faces first, make eye contact
+- Slow down: Nervous speakers rush—intentionally pause
 
-**"What Is" ↔ "What Could Be"**
+**After Communication:**
+- Reflection without rumination: What went well? One improvement for next time
+- No catastrophizing: Avoid replaying perceived mistakes endlessly
 
-- **What Is:** Current problems, limitations, pain points
-- **What Could Be:** Future possibilities, solutions, benefits
+<speaker-notes>
+This multi-stage framework from Stanford GSB's Matt Abrahams addresses anxiety at each phase of communication. The key is building a personalized system rather than relying on willpower alone.
 
-**Why it works:** Contrast creates emotional tension that maintains attention
+The "excitement reframe" is backed by research—anxiety and excitement create similar physiological responses (increased heart rate, adrenaline). By labeling the feeling as excitement, you can channel the energy productively rather than being paralyzed by it.
 
-**Structure:**
-- 3-5 main points maximum
-- Each point follows: Problem → Solution → Evidence → Example
-- Oscillate between current reality and better future
+The "first 30 seconds" principle is crucial—most anxiety peaks at the beginning. Once you're speaking and people are responding positively, anxiety typically decreases. Knowing your opening cold prevents the blank-mind moment many speakers fear.
 
-### Speaker Notes
+After-communication reflection should be balanced: acknowledge what went well (not just mistakes) and identify one specific improvement for next time. This builds confidence progressively rather than crushing it with self-criticism.
 
-**Opening:**
-- "The middle is where most presenters lose their audience—here's how to keep them engaged"
+Practical exercise: Have students practice their opening 30 seconds for their Week 12 presentation multiple times until it becomes automatic. This single practice dramatically reduces anxiety.
+</speaker-notes>
 
-**Key Points:**
-- Duarte's "Sparkline" diagram visualizes this oscillation as a wave
-- Each trough is "what is" (problem), each peak is "what could be" (solution)
-- Maximum 3-5 main points—more than that, audience forgets
-- Use the MECE principle (Mutually Exclusive, Collectively Exhaustive)—no overlap, no gaps
+</slide>
 
-**Example:**
-- Steve Jobs' iPhone launch (2007):
-  - "What Is": Existing phones are hard to use, three separate devices (phone, iPod, internet)
-  - "What Could Be": iPhone combines all three, revolutionary touch interface
-  - He repeated this pattern for every feature—problem with old, solution with new
+<slide number="12" title="Physiological Anxiety Management">
 
-**Check Understanding:**
-- "Why does oscillation work better than listing solutions without showing problems first?"
-- (Expected: creates need, emotional engagement, shows impact)
+## Physical Techniques for Managing Anxiety
 
-**Transition:**
-- "Now the critical part—how do you end memorably?"
+**Breathing Exercises:**
+- Box breathing: Inhale 4 counts, hold 4, exhale 4, hold 4
+- Diaphragmatic breathing: Breathe into your belly, not chest
+- Do this 2-3 minutes before speaking
 
----
+**Movement and Grounding:**
+- Light exercise before presenting (walk, stretch)
+- Ground feet firmly, feel connection to floor
+- Use "power poses" before high-stakes communication
 
-## Slide 9: Closing with Impact (Act 3)
-<!-- LAYOUT: framework -->
+**Voice Warm-ups:**
+- Hum, tongue twisters, vocal exercises
+- Warm up your instrument before using it
 
-## The "New Bliss" Ending
+**The Reframe:** Anxiety symptoms (racing heart, sweating) are your body preparing for performance, not signaling danger
 
-1. **Synthesize** - Recap the transformation (not just bullet points)
-2. **Inspire** - Paint the vision of success if they take action
-3. **Call to Action** - ONE specific, achievable next step
-4. **S.T.A.R. Moment** - Something They'll Always Remember
+<speaker-notes>
+These physiological techniques work because anxiety is partly a physical response. You can't always control your thoughts, but you can control your breathing and body positioning.
 
-**Time Allocation:** 10-15% of total presentation time
+Box breathing is used by Navy SEALs and elite athletes to manage stress. It activates the parasympathetic nervous system, countering the fight-or-flight response.
 
-### Speaker Notes
+Power poses reference Amy Cuddy's research showing that standing in confident positions for 2 minutes before high-stakes situations can reduce cortisol (stress hormone) and increase testosterone (confidence hormone). This is controversial in the research literature, but many practitioners find it helpful.
 
-**Opening:**
-- "Your ending determines what the audience remembers and whether they act"
+The reframe is critical: When your heart races before a presentation, you can interpret it as "I'm in danger" (increasing anxiety) or "My body is preparing me to perform" (channeling energy). The physiological response is the same—the interpretation changes the outcome.
 
-**Key Points:**
-- **Synthesize:** Don't just repeat bullets—show the transformation journey
-- **Inspire:** Emotional appeal—what does success feel like?
-- **Call to Action:** Must be specific—not "think about this" but "sign up by Friday"
-- **S.T.A.R. Moment:** Memorable element—demo, prop, powerful story, shocking stat
+Vietnamese cultural note: Some students may come from educational backgrounds emphasizing mental discipline over physical techniques. Frame these not as "tricks" but as evidence-based tools that complement mental preparation.
+</speaker-notes>
 
-**Example (S.T.A.R. Moments):**
-- Bill Gates released mosquitoes during a TED talk about malaria—unforgettable
-- A student presenting on plastic pollution brought a jar of microplastics from a Vietnamese beach
-- Your Group Presentation (Week 12) should include one memorable moment
+</slide>
 
-**Example (Strong Closing):**
-- "Imagine six months from now: your digital ads reach 10,000 engaged customers, your cost-per-click drops 60%, and your revenue doubles. This isn't fantasy—it's what happened to 47 of the 200 businesses I studied. Your next step: implement the three-keyword strategy I shared today. Start with one campaign this week. Who's ready to begin?"
+<slide number="13" layout="section-break" title="Section 2">
 
-**Check Understanding:**
-- "What makes this closing more effective than 'In conclusion, digital marketing is important'?"
-- (Expected: specific vision, concrete action, urgency)
+# Part 2: Presentation Structure Foundations
 
-**Transition:**
-- "You've got structure—now let's add delivery skills to bring it to life..."
+<speaker-notes>
+Transition: "Now that we have strategies for managing anxiety, let's talk about what makes presentations effective. Structure is your friend—it gives you confidence because you always know what comes next."
 
----
+Return to roadmap slide briefly if time allows, then continue.
+</speaker-notes>
 
-## Slide 10: Segment 2 - Delivery Fundamentals
-<!-- LAYOUT: section-break -->
+</slide>
 
-## Beyond the Words: How You Say It Matters
+<slide number="14" layout="framework" title="Duarte's Sparkline">
 
-**Mehrabian's Communication Formula (Often Misapplied):**
-- 7% Words (what you say)
-- 38% Vocal Tone (how you say it)
-- 55% Body Language (what you do while saying it)
+## The Sparkline™ Diagram
 
-**Reality:** The ratio applies to emotional communication, not all communication. BUT the principle holds: **delivery amplifies or undermines your message.**
+**Core Concept:** Create tension by oscillating between "what is" (current reality) and "what could be" (future vision)
 
-### Speaker Notes
+**Components:**
+- **"What Is"** - Current reality, status quo, problems, limitations
+- **"What Could Be"** - Future vision, solutions, possibilities, transformation
 
-**Opening:**
-- "You've probably seen this 7-38-55 formula—it's often misquoted"
+**How It Works:** The gap between current reality and future possibility creates tension that maintains audience engagement throughout your presentation
 
-**Key Points:**
-- Mehrabian's original research was about conveying feelings and attitudes, not factual information
-- The real takeaway: When your words and delivery conflict, audiences believe your delivery
-- If you say "I'm excited about this opportunity" in a monotone voice with slumped shoulders, they don't believe you
-- For business presentations: content matters, but delivery determines credibility
+**Application:** Strategic presentations, change management communications, sales pitches, investment proposals
 
-**Example:**
-- Two students present identical slide decks on market analysis
-- Student A: monotone, reads slides, no eye contact → perceived as unprepared
-- Student B: varied pace, engages audience, confident posture → perceived as expert
-- Same content, different delivery, dramatically different results
+<speaker-notes>
+Nancy Duarte created this framework after analyzing hundreds of successful presentations, including Al Gore's "An Inconvenient Truth" and Steve Jobs' product launches. It's taught at Stanford GSB and used by Fortune 500 companies globally.
 
-**Check Understanding:**
-- "Have you ever doubted a speaker's message because their delivery felt 'off'?"
-- (Expected: yes—mismatched tone, nervous habits distracted)
+The Sparkline explains why great presentations feel like stories—they create narrative tension. If you only describe problems ("what is"), the audience gets depressed. If you only describe solutions ("what could be"), they don't understand why change is necessary. The oscillation creates the "aha" moment.
 
-**Transition:**
-- "Let's break down delivery into three components you can control..."
+Visual metaphor: Imagine this as a heartbeat on a medical monitor—the oscillation between high and low shows life. A flat line means death. The same is true for presentations—the contrast creates energy.
 
----
+Students should note this framework will appear on the quiz and connects directly to their Week 12 Group Presentation rubric criterion "Content & Analysis."
+</speaker-notes>
 
-## Slide 11: Voice Modulation & Pacing
-<!-- LAYOUT: framework -->
+</slide>
 
-## Vocal Delivery Techniques
+<slide number="15" title="Sparkline in Action">
 
-**1. PACE**
-- **Ideal:** 130-170 words per minute (conversational)
-- **Too fast:** Anxious, hard to follow
-- **Too slow:** Boring, loses energy
-- **Strategic variation:** Speed up for excitement, slow down for emphasis
+## How the Sparkline Pattern Works
 
-**2. VOLUME**
-- Project to the back row (diaphragm breathing, not throat)
-- Vary for emphasis: louder for key points, softer for intimacy
+**Traditional Linear Presentation:**
+- Problem statement
+- Analysis
+- Solution
+- Implementation plan
+- Questions
 
-**3. PITCH**
-- Avoid monotone—vary pitch naturally as in conversation
-- Downward inflection for statements (confidence)
-- Upward inflection for questions only (not statements—sounds uncertain)
+**Sparkline Pattern:**
+- What Is: Current state (problem exists)
+- What Could Be: Imagine if we solved this (vision)
+- What Is: But we face these obstacles (reality check)
+- What Could Be: Here's how we overcome them (solution)
+- What Is: Implementation will require effort (honest acknowledgment)
+- What Could Be: The transformed future state (new bliss)
 
-**4. PAUSES**
-- Strategic silence = emphasis
-- Pause after key points (3-5 seconds lets audience absorb)
-- Pause instead of filler words ("um," "uh," "like")
+The oscillation creates emotional momentum toward action.
 
-### Speaker Notes
+<speaker-notes>
+The side-by-side comparison shows why traditional linear presentations often feel flat. They're logical but not emotionally engaging.
 
-**Opening:**
-- "Voice is your instrument—you can train it just like any skill"
+The Sparkline pattern leverages human psychology: We're wired for stories that create and resolve tension. The oscillation between problem and solution, reality and vision, challenge and triumph activates the same neural pathways as compelling narratives.
 
-**Key Points:**
-- **Pacing:** Practice with a timer. Record yourself—most speakers talk faster when nervous
-- **Volume:** In Vietnamese culture, soft-spokenness is valued—but in presentations, you must project
-- **Pitch:** Monotone is the #1 complaint in student presentations—vary naturally
-- **Pauses:** Silence feels longer to you than the audience. Count to three after major points.
+Key teaching point: The "new bliss" ending is critical. You must close with an aspirational vision of the transformed future state, not just with "Here's my recommendation, any questions?" The new bliss is where you paint a picture of what success looks like—how the audience will feel, what will be possible, what changes they'll see.
 
-**Example (Demonstrate):**
-- Say this sentence in monotone: "This is the most important point of the presentation."
-- Now say it with variation: "THIS... is the MOST important point... of the presentation." (pause after each segment)
-- The second version commands attention through vocal variety
+Example for students: Your Week 12 Group Presentation on communication audit might follow this pattern:
+- What Is: This organization has communication breakdowns
+- What Could Be: Imagine if information flowed seamlessly
+- What Is: But here are the specific failures we observed
+- What Could Be: Our 5-step plan addresses each failure
+- What Is: Implementation requires commitment from leadership
+- What Could Be: Within 6 months, teams will collaborate effectively, turnover will decrease, and productivity will increase
 
-**Check Understanding:**
-- "Let's practice: Everyone say 'This is important' in a monotone. Now say it like you mean it."
-- (Get class participation—hear the difference)
+This structure maintains engagement throughout a 15-minute presentation.
+</speaker-notes>
 
-**Transition:**
-- "Voice is half the equation—the other half is what the audience sees..."
+</slide>
 
----
+<slide number="16" title="Sparkline Example: Steve Jobs iPhone Launch">
 
-## Slide 12: Eye Contact & Body Language
-<!-- LAYOUT: framework -->
+## Case Study: Steve Jobs' iPhone Launch (2007)
 
-## Non-Verbal Communication Essentials
+**Challenge:** Introduce revolutionary product to skeptical audience
 
-**EYE CONTACT**
-- Western Standard: 3-5 seconds per person, scan the room
-- Vietnamese Context: Direct eye contact with elders/authority can be uncomfortable
-- **Adaptation:** Focus on foreheads or friendly faces if direct eye contact feels invasive
+**Sparkline Structure:**
+- **What Is:** Current phones are difficult to use, limited functionality, poor internet experience
+- **What Could Be:** iPhone with touchscreen, full internet, iPod integration
+- **What Is:** But existing smartphones are clunky, require stylus, get lost
+- **What Could Be:** iPhone is intuitive—one button, finger control, fits in pocket
+- **Repeat...** Building toward transformed future
 
-**POSTURE**
-- Stand tall, feet shoulder-width apart
-- Avoid: Crossed arms, hands in pockets, slouching
-- Power pose before presenting (2 minutes) reduces cortisol, increases testosterone (Amy Cuddy)
+**Result:** One of the most successful product launches in history
 
-**GESTURES**
-- Natural, purposeful movements above waist
-- Avoid: Fidgeting, pointing aggressively, repetitive gestures
+**Lesson:** Structure creates emotional engagement; audience must feel the gap before embracing the solution
 
-**MOVEMENT**
-- Strategic movement (e.g., step forward for emphasis) vs. pacing nervously
-- Stay within "engagement zone" (don't hide behind podium)
+<speaker-notes>
+This is the most analyzed presentation in business history, and the Sparkline framework explains why it worked so brilliantly. Jobs didn't just show the iPhone and expect people to be impressed—he methodically showed existing phone problems, then revealed how iPhone solved them, then showed another problem, then another solution.
 
-### Speaker Notes
+The oscillation built anticipation. Each time Jobs showed "what is," the audience felt the pain of current limitations. Each "what could be" offered relief and possibility. By the end, the audience was emotionally invested in the iPhone's success.
 
-**Opening:**
-- "Your body communicates even when you're silent"
+You can find this presentation online—it's 80 minutes long but watching even the first 10 minutes reveals the Sparkline pattern clearly.
 
-**Key Points:**
-- **Eye Contact:** In Vietnam, prolonged eye contact with authority figures can signal disrespect
-- For presentations: Balance—don't stare down elders, but don't avoid all eye contact
-- **Posture:** Amy Cuddy's TED talk on power posing—2 minutes in power pose before presenting reduces anxiety
-- **Gestures:** Hands visible (builds trust), above waist (professional), natural (not robotic)
-- **Movement:** Walk toward audience for key point, step back for transitions
+Application for students: Your Week 12 Group Presentation topics (communication audits, cross-cultural strategy, crisis plans) all benefit from this structure—show the problem, show the solution, create tension that drives the audience toward your recommendation.
 
-**Example:**
-- Vietnamese students often stand very still with hands clasped—appears nervous
-- Best approach: Hands relaxed at sides or gesturing naturally, slight movement when transitioning topics
+Technical note: Jobs actually said "Today Apple is going to reinvent the phone" multiple times throughout the presentation. This repetition of the "what could be" vision reinforced the aspirational future state. Duarte calls this "repeatable sound bites"—we'll discuss this more when we cover S.T.A.R. moments.
+</speaker-notes>
 
-**Cultural Note:**
-- In Vietnam, showing too much confidence can be seen as arrogant (cultural emphasis on humility)
-- In presentations: You can be humble AND confident—acknowledge your audience, share credit, but deliver with conviction
+</slide>
 
-**Check Understanding:**
-- "What body language signals confidence vs. nervousness?"
-- (Expected: open vs. closed posture, steady vs. fidgeting)
+<slide number="17" layout="framework" title="Audience as Hero">
 
-**Transition:**
-- "Now let's practice—quick activity..."
+## Duarte's "Audience as Hero" Framework
 
----
+**Traditional Mindset:** The presenter is the hero of the story
+- "Look what I accomplished"
+- "Here's my brilliant idea"
+- Focus: What I want to say
 
-## Slide 13: Practice Activity - Delivery Essentials
+**Reframe:** The audience is the hero; the presenter is the mentor
+- "Here's what you can accomplish"
+- "This idea empowers you"
+- Focus: What the audience needs to hear
 
-## 90-Second Practice
+**How This Changes Your Presentation:**
+- Content shifts from "my achievements" to "how this helps you"
+- Call to action becomes audience-centered ("you should act") not presenter-centered ("I recommend")
+- Success metrics focus on audience transformation, not presenter credibility
 
-**Instructions:**
-1. Pair up with the person next to you
-2. Choose a simple topic (your favorite food, a hobby, your hometown)
-3. One person speaks for 90 seconds while the other observes
-4. Observer notes: pacing, vocal variety, eye contact, gestures
-5. Switch roles
+<speaker-notes>
+This is a fundamental mindset shift that transforms presentation development. The framework references the Star Wars relationship: Yoda is wise and powerful, but Luke is the hero. Yoda's role is to guide Luke toward his own success.
 
-**Focus:** Apply one technique from Slide 11 or 12
+In business presentations, many speakers make the mistake of positioning themselves as the hero: "I analyzed the data, I found the solution, I recommend this approach." The audience passively receives the information.
 
-### Speaker Notes
+When you reframe yourself as the mentor, the presentation becomes: "You face this challenge, here's what you can do about it, here's how you'll succeed." The audience is active—they're the ones who will implement, succeed, and transform.
 
-**Opening:**
-- "Learning happens through practice—let's try delivery techniques right now"
+Example: Instead of "I propose we adopt this software," say "This software empowers you to save 10 hours per week—imagine what you could do with that time." The audience becomes the hero of their own productivity transformation.
 
-**Key Points:**
-- This is low-stakes—topic doesn't matter, just practicing technique
-- Observer should look for ONE strength and ONE improvement area
-- Time strictly: 90 seconds each (use phone timer)
-- Then 30 seconds feedback, then switch
+This connects to Week 7's persuasive presentations—people are persuaded when they see themselves succeeding, not when they see you being brilliant.
 
-**Facilitation:**
-- Set a timer visible to all
-- Call time at 90 seconds, then 30 seconds for feedback
-- After both partners go (4 minutes total), ask for volunteers to share insights
+Cultural application: This framework works well in Vietnamese contexts where collectivism is valued. Positioning the audience as collective heroes aligns with cultural norms better than Western-style individual presenter heroism.
+</speaker-notes>
 
-**Example:**
-- "Who noticed themselves speaking faster than normal when nervous?"
-- "Who discovered that pausing felt awkward but worked well?"
+</slide>
 
-**Check Understanding:**
-- After activity: "What was the hardest technique to apply?"
-- (Expected: pausing, eye contact)
+<slide number="18" title="Three-Act Presentation Structure">
 
-**Transition:**
-- "Great work. You've got structure and delivery skills—now let's tackle the elephant in the room: anxiety..."
+## Three-Act Structure
 
----
+**Act 1: Beginning (15% of presentation)**
+- Establish "what is"—the current reality
+- Introduce the gap between reality and possibility
+- Hook the audience with a compelling question or statistic
 
-## Slide 14: Segment 3 - Managing Anxiety & Finding Authenticity
-<!-- LAYOUT: section-break -->
+**Act 2: Middle (70% of presentation)**
+- Alternate between "what is" and "what could be"
+- Progressively increase stakes with each oscillation
+- Build evidence, address objections, deepen engagement
 
-## Communication Apprehension: The Science of Presentation Anxiety
+**Act 3: End (15% of presentation)**
+- Paint the "new bliss"—the transformed future state
+- Clear call to action
+- Memorable closing (S.T.A.R. moment)
 
-**McCroskey's Definition (1977):**
-"An individual's level of fear or anxiety associated with either real or anticipated communication with another person or persons."
+<speaker-notes>
+This three-act structure comes from Hollywood screenwriting but applies perfectly to business presentations. The percentages are guidelines—a 15-minute presentation would have roughly 2 minutes for opening, 11 minutes for body, 2 minutes for closing.
 
-**Key Insight:** 10-20% of individuals experience significant communication apprehension—**you're not alone, and it's not a character flaw.**
+Act 1's job is to create the gap—the audience needs to feel the tension between current reality and desired future. If they don't feel the problem, they won't care about your solution.
 
-### Speaker Notes
+Act 2 is where most presentations live—this is your evidence, your frameworks, your analysis. The oscillation pattern keeps it dynamic. Don't just pile on "what could be" without acknowledging ongoing challenges ("what is").
 
-**Opening:**
-- "If you feel nervous before presenting, that's normal—here's the science"
+Act 3 must be aspirational and actionable. "New bliss" means showing the audience their transformed future state in concrete, visual terms. What does success look like? How will they feel? What will be possible that isn't possible now?
 
-**Key Points:**
-- James McCroskey's 1977 paper is THE foundational work on communication anxiety
-- His research has 21,655+ citations—every business school communication program references this
-- **Communication Apprehension (CA)** is distinct from general anxiety—it's context-specific
-- CA creates physiological response: increased heart rate, sweating, shallow breathing
+Students often neglect the closing—they run out of time or just say "Thank you, any questions?" The closing is your last chance to inspire action. Make it count with a S.T.A.R. moment.
 
-**Example:**
-- You might be perfectly comfortable talking one-on-one with a friend (low CA in dyadic context)
-- But terrified of public speaking (high CA in public context)
-- This is normal—different contexts trigger different responses
+Practical application: For your Week 12 Group Presentation (15 minutes + 10 minute Q&A), this means:
+- Act 1: 2 minutes to establish problem and vision
+- Act 2: 11 minutes of analysis with oscillating what is/what could be
+- Act 3: 2 minutes painting the transformed future and call to action
+</speaker-notes>
 
-**Check Understanding:**
-- "Quick poll: Who feels more nervous presenting to 100 people vs. having coffee with a friend?"
-- (Expect nearly all hands—this validates the contextual nature of CA)
+</slide>
 
-**Transition:**
-- "Understanding CA is the first step—now let's learn how to manage it..."
+<slide number="19" title="Opening Your Presentation">
 
----
+## Act 1: The Opening (15%)
 
-## Slide 15: McCroskey's Communication Apprehension Framework
-<!-- LAYOUT: framework -->
+**Goal:** Establish the gap between "what is" and "what could be"
 
-## Two Types of Communication Apprehension
+**Essential Components:**
+1. **Hook:** Compelling statistic, question, or story (30 seconds)
+2. **Context:** Why this topic matters now (1 minute)
+3. **The Gap:** The tension between current reality and possibility (30 seconds)
+4. **Roadmap:** What we'll cover and why (30 seconds)
 
-**TRAIT CA (Enduring Personality)**
-- Consistent anxiety across all communication situations
-- Part of your temperament—relatively stable over time
-- Example: You've always felt nervous speaking up in any group setting
+**What NOT to do:**
+- Start with "My name is..." (they know)
+- Apologize ("I'm not an expert, but...")
+- Begin with agenda slides (boring)
+- Launch into background/history (save for body)
 
-**STATE CA (Situational Triggers)**
-- Anxiety in specific, high-stakes situations
-- Even confident communicators experience this
-- Example: Calm in team meetings, anxious before board presentations
+<speaker-notes>
+The opening is your most important 2-3 minutes. Research shows audiences decide within the first 30 seconds whether to pay attention or mentally check out.
 
-**Four Communication Contexts:**
-1. Public speaking (presentations, speeches)
-2. Group discussions (meetings, team settings)
-3. Meetings (formal work gatherings)
-4. Dyadic (one-on-one conversations)
+The hook must create immediate interest. Duarte's research shows the most effective hooks are:
+- Shocking statistics that challenge assumptions
+- Provocative questions that make the audience think
+- Brief personal stories that humanize the topic
 
-### Speaker Notes
+The gap is what creates narrative tension. You're essentially saying "Here's where we are [what is], imagine where we could be [what could be], and here's why that matters to you."
 
-**Opening:**
-- "CA manifests differently for everyone—understanding your pattern helps you address it"
+The "What NOT to do" list addresses common student mistakes:
+- Introducing yourself wastes time if they already know you
+- Apologizing destroys credibility before you begin
+- Agenda slides are functional but not engaging (weave the roadmap into your narrative)
+- Historical background should come in Act 2 if needed
 
-**Key Points:**
-- **Trait CA:** If you have high trait CA, you need long-term strategies (skills training, therapy)
-- **State CA:** If you have state CA, you need situation-specific strategies (preparation, breathing)
-- Most people have state CA—nervous for big presentations but fine in casual settings
-- **Four contexts:** You might have high CA in public speaking but low CA in dyadic—this is common
+Example opening for a presentation on communication effectiveness:
+- Hook: "73% of employees don't trust their manager's communication. If you're a manager of 10 people, 7 of them likely don't trust what you say." [30 sec]
+- Context: "In hybrid work environments, this trust gap has exploded, costing organizations billions in productivity and turnover." [1 min]
+- The Gap: "Imagine if your team actually believed your communications were honest and helpful—what could you accomplish?" [30 sec]
+- Roadmap: "Today we'll explore why trust breaks down and three research-backed strategies to rebuild it." [30 sec]
 
-**Example:**
-- Student A: High trait CA—nervous in all communication settings. Needs comprehensive support.
-- Student B: Low trait CA, high state CA for presentations only. Needs presentation-specific techniques.
-- Both are valid—different approaches needed
+This opening creates immediate tension and makes the audience care about the solution.
+</speaker-notes>
 
-**Check Understanding:**
-- "Which type of CA do you think you have—trait or state?"
-- (Most will identify state CA—normalize this)
+</slide>
 
-**Transition:**
-- "Now that you know what you're dealing with, here are proven techniques to manage it..."
+<slide number="20" title="Building the Body">
 
----
+## Act 2: The Middle (70%)
 
-## Slide 16: Managing Communication Apprehension - Before Presenting
-<!-- LAYOUT: framework -->
+**Goal:** Oscillate between "what is" and "what could be" with increasing stakes
 
-## Pre-Presentation Anxiety Management Plan (AMP)
+**Structure Strategies:**
+- **Problem → Solution Pattern:** Show obstacle, show how to overcome it, repeat
+- **Journey Pattern:** Move chronologically through stages of transformation
+- **Comparison Pattern:** Contrast current state with future state across dimensions
 
-**PHYSICAL PREPARATION (Reduces Physiological Symptoms)**
-- **Breathing:** 4-7-8 technique (inhale 4 counts, hold 7, exhale 8) - lowers heart rate
-- **Movement:** 2-minute power pose (Amy Cuddy) or light exercise to burn nervous energy
-- **Hydration:** Water only (avoid caffeine—increases jitters)
+**Engagement Techniques:**
+- Address objections before audience raises them ("You might be thinking...")
+- Use case studies to show "what could be" in action
+- Return to the opening hook/question periodically for coherence
+- Build stakes progressively (each oscillation should raise the importance)
 
-**MENTAL PREPARATION (Reframes Cognitive Response)**
-- **Visualization:** Picture yourself succeeding—walking to stage, engaging audience, receiving applause
-- **Reframing:** Anxiety = excitement (same physiological state, different interpretation)
-- **Affirmations:** Replace "I'm scared" with "I'm prepared and capable"
+<speaker-notes>
+Act 2 is where you do the heavy lifting—analysis, evidence, frameworks. But structure prevents this from becoming a boring data dump.
 
-**PRACTICAL PREPARATION (Builds Confidence)**
-- **Rehearse aloud:** 3-5 full run-throughs (not silent reading)
-- **Anticipate questions:** Prepare answers for likely Q&A
-- **Arrive early:** Familiarize yourself with room, test equipment
+The oscillation pattern is key: You're constantly showing the audience the problem (what is) and the possibility (what could be). This creates forward momentum.
 
-### Speaker Notes
+Problem → Solution is the most common pattern and works well for analytical presentations. Each section follows this rhythm: Here's a challenge we face [what is], here's how we can address it [what could be], here's evidence it works [proof], now let's move to the next challenge.
 
-**Opening:**
-- "These techniques are research-backed from Matt Abrahams (Stanford GSB) and McCroskey's work"
+Journey Pattern works well for change management or implementation plans: Here's where we start [what is], here's Phase 1 of transformation [what could be], here's the obstacles in Phase 1 [what is], here's how we overcome them [what could be], repeat for Phase 2, 3, etc.
 
-**Key Points:**
-- **Physical:** CA creates fight-or-flight response—breathing/movement resets nervous system
-- **Mental:** Reframing anxiety as excitement is proven effective (Alison Wood Brooks, HBS research)
-- **Practical:** Confidence comes from preparation—you can't fake it
-- All three components work together—don't rely on just one
+Comparison Pattern works well for strategy presentations: Here's how we currently handle X [what is], here's how best-in-class companies handle X [what could be], here's the gap we need to close.
 
-**Example:**
-- Before your Week 12 Group Presentation:
-  - Night before: Rehearse 3 times aloud, visualize success
-  - Morning of: 4-7-8 breathing, power pose in bathroom
-  - 10 min before: Arrive early, check slides, hydrate
+Engagement techniques prevent the middle from sagging:
+- Addressing objections shows you understand audience concerns and builds trust
+- Case studies make abstract concepts concrete
+- Returning to the opening hook creates coherence (e.g., "Remember that 73% trust statistic? Here's why it's so high...")
+- Building stakes means each oscillation should feel more important than the last
 
-**Cultural Note:**
-- In Vietnamese culture, displaying anxiety openly can be stigmatized
-- These techniques are private (breathing, visualization)—no one needs to know you're using them
+For students: Your Week 12 presentation body should have 3-4 major sections, each following the oscillation pattern. Don't just present information linearly—create tension and resolution repeatedly.
+</speaker-notes>
 
-**Check Understanding:**
-- "Let's try the 4-7-8 breathing right now: Inhale through nose for 4... hold for 7... exhale for 8..."
-- (Guide class through 2-3 cycles)
+</slide>
 
-**Transition:**
-- "That handles anxiety before—what about during the presentation?"
+<slide number="21" title="Closing Your Presentation">
 
----
+## Act 3: The Ending (15%)
 
-## Slide 17: Managing Anxiety During Presentation
-<!-- LAYOUT: framework -->
+**Goal:** Paint the "new bliss" and inspire action
 
-## In-the-Moment Techniques (Matt Abrahams, Stanford GSB)
+**Essential Components:**
+1. **Synthesis:** Bring together the journey (30 seconds)
+2. **New Bliss:** Paint the transformed future state vividly (1 minute)
+3. **Call to Action:** What should the audience do now? (30 seconds)
+4. **S.T.A.R. Moment:** Something They'll Always Remember (30 seconds)
 
-**GROUNDING TECHNIQUES**
-- **Focus on one friendly face** in the audience—present to them initially
-- **Touch anchor object** (clicker, notes, podium)—physical grounding reduces mental spiraling
-- **Slow down deliberately**—anxiety makes us rush, conscious slowing calms nerves
+**Characteristics of Strong Closings:**
+- Aspirational (audience feels inspired)
+- Concrete (specific vision of success)
+- Actionable (clear next steps)
+- Memorable (they'll recall your message days later)
 
-**STRUCTURAL ANCHORS**
-- **Use frameworks** ("First... Second... Third...")—provides mental roadmap
-- **Signpost transitions** ("Now that we've covered X, let's move to Y")—reduces anxiety about what's next
+**What to Avoid:**
+- Trailing off with "So... yeah..."
+- Introducing new information
+- Ending with "Any questions?" (weakens impact)
+- Thanking the audience excessively
 
-**RECOVERY FROM MISTAKES**
-- **Pause, don't apologize**—audiences don't notice most mistakes
-- **Acknowledge major errors briefly**—"Let me rephrase that"—then move on
-- **Focus forward, not backward**—ruminating mid-presentation increases anxiety
+<speaker-notes>
+The closing is your final opportunity to inspire action. Many presenters neglect this, running out of time or energy. Plan your closing as carefully as your opening.
 
-**AUDIENCE ENGAGEMENT (Reduces Self-Focus)**
-- **Ask questions**—shifts attention to audience
-- **Make eye contact**—builds connection, reduces isolation feeling
-- **Read body language**—nodding heads signal you're on track
+Synthesis reminds the audience of the journey without repeating everything. One sentence that captures the transformation: "We've seen how communication breakdowns cost organizations millions, and how three strategic changes can rebuild trust."
 
-### Speaker Notes
+New Bliss is where you paint a vivid picture of the transformed future. Don't just say "Things will be better." Show them what better looks like:
+- "Imagine walking into a team meeting where every member feels heard and valued. Imagine project timelines that actually work because people trust each other enough to flag problems early. Imagine turnover dropping 40% because employees believe their leaders care."
 
-**Opening:**
-- "Even experienced presenters feel nervous—these techniques help you perform despite anxiety"
+This is concrete, visual, and emotionally resonant. The audience should be able to see and feel the future state.
 
-**Key Points:**
-- **Grounding:** Physical sensations interrupt anxiety spirals (research from mindfulness therapy)
-- **Structural Anchors:** Frameworks like "What? So What? Now What?" provide mental scaffolding
-- **Mistakes:** Audiences are forgiving—acknowledging briefly shows authenticity, dwelling shows insecurity
-- **Engagement:** Anxiety is self-focused ("They're judging me")—shifting to audience reduces this
+Call to Action must be specific. Not "Think about implementing these ideas" but "Schedule a 30-minute communication audit with your team next week using the framework I've shared."
 
-**Example (Mistake Recovery):**
-- Poor: "Oh no, sorry, I messed up, let me start over, sorry, I'm so nervous..."
-- Better: (Pause 2 seconds) "Let me clarify that point..." (Continue)
-- The second approach shows confidence despite the error
+S.T.A.R. Moment we'll cover on the next slide—this is your memorable closing element.
 
-**Example (Framework in Action):**
-- Matt Abrahams' "What? So What? Now What?" framework:
-  - What: State the point
-  - So What: Why it matters
-  - Now What: Action step
-- Having this structure in mind means you never wonder "What do I say next?"
+What to Avoid:
+- Trailing off shows lack of preparation
+- New information in the closing confuses the audience (they thought you were done)
+- Ending with "Any questions?" makes questions feel like the main event rather than your message
+- Excessive thanks ("Thank you so much for your time, I really appreciate it, thank you for listening...") sounds insecure
 
-**Check Understanding:**
-- "What would you do if you completely blanked mid-presentation?"
-- (Expected: Pause, refer to notes, acknowledge briefly, move on)
+Better closing: Deliver your S.T.A.R. moment, pause for impact, then say "I welcome your questions."
+</speaker-notes>
 
-**Transition:**
-- "Managing anxiety is essential—but there's something even more powerful: authenticity..."
+</slide>
 
----
+<slide number="22" title="S.T.A.R. Moments">
 
-## Slide 18: Authenticity in Presentation - Beyond Performance
-<!-- LAYOUT: quote -->
+## S.T.A.R. Moments
+**Something They'll Always Remember**
 
-## "Authentic communication is contextual—what feels authentic varies by channel and audience."
+Create lasting impact through:
+- **Memorable dramatizations** - Props, demos, physical demonstrations
+- **Repeatable sound bites** - Quotable phrases that stick
+- **Evocative visuals** - Images that create emotional response
+- **Emotive storytelling** - Personal or case study narratives
+- **Shocking statistics** - Data that challenges assumptions
 
-— Alisa Brodsky, UT Austin McCombs (2022)
+**Example:** Bill Gates released mosquitoes during a TED talk about malaria. No one forgot his point: "There's no reason only poor people should have the experience of being bitten by disease-carrying insects."
 
-### Speaker Notes
+<speaker-notes>
+S.T.A.R. moments are what separate memorable presentations from forgettable ones. Consider presentations you still remember years later—they likely had a S.T.A.R. moment.
 
-**Opening:**
-- "Final concept: the most powerful presenters aren't performers—they're authentic"
+The Bill Gates mosquito example is legendary: Mid-presentation, he opened a jar of mosquitoes (non-disease-carrying) and let them fly into the audience, saying "There's no reason only poor people should have this experience." The moment created visceral understanding of inequity that statistics alone couldn't achieve.
 
-**Key Points:**
-- Alisa Brodsky's research challenges simplistic "just be yourself" advice
-- Authenticity doesn't mean identical behavior in all contexts—it means genuine intent adapted to situation
-- In Vietnamese culture: Authenticity can conflict with cultural norms (e.g., humility vs. confidence)
-- Resolution: You can be authentically humble while confidently delivering your message
+For students, S.T.A.R. moments don't need to be elaborate. Simple examples:
+- Bringing a physical product to demonstrate (not just showing slides)
+- Asking the audience to participate in a 30-second activity that proves your point
+- Sharing a brief personal story that humanizes data
+- Using a memorable analogy that makes the abstract concrete
+- Displaying a powerful image that stays with people
 
-**Example:**
-- A Vietnamese student presenting to professors might adjust tone to show respect (cultural norm)
-- But the content and intent remain authentic—this isn't "fake," it's contextual adaptation
-- Contrast with fully scripted, memorized presentation delivered robotically—that feels inauthentic
+Repeatable sound bites are particularly effective: "80% of communication is spontaneous" from today's opening is a sound bite. It's quotable, memorable, and summarizes a complex insight simply.
 
-**Check Understanding:**
-- "What's the difference between adapting your style (authentic) and faking confidence (inauthentic)?"
-- (Expected: Genuine intent vs. deception)
+One S.T.A.R. moment per presentation is sufficient—more can feel gimmicky. Place it strategically: often in Act 3 (closing) or at a pivotal moment in Act 2.
 
-**Transition:**
-- "How do you develop authentic presence? Three strategies..."
+This connects to the Week 12 Group Presentation rubric criterion "Content & Analysis"—creative S.T.A.R. moments demonstrate sophisticated understanding of engagement techniques.
 
----
+Vietnamese context: S.T.A.R. moments work across cultures. Physical demonstrations, powerful images, and compelling stories resonate universally. Students should choose S.T.A.R. moments that feel authentic to them rather than trying to mimic Western presentation styles.
+</speaker-notes>
 
-## Slide 19: Developing Authentic Presence
-<!-- LAYOUT: framework -->
+</slide>
 
-## Three Paths to Authenticity
+<slide number="23" title="Duarte's Visual Principles">
 
-**1. FIND YOUR NATURAL STYLE**
-- **Not:** Imitating TED speakers or professors
-- **Instead:** What works for YOU in comfortable conversations?
-- **Exercise:** Record yourself explaining a topic to a friend—note your natural energy, humor, pacing
+## Additional Duarte Principles for Presentations
 
-**2. PREPARE DEEPLY, THEN RELEASE**
-- **Not:** Memorizing scripts word-for-word (sounds robotic)
-- **Instead:** Know your content so well you can be spontaneous within structure
-- **Approach:** Rehearse key points and transitions, but let exact wording vary
+**The 3-Second Rule:**
+Audiences should comprehend each slide in approximately 3 seconds (glance media principle)
 
-**3. SHARE YOUR "WHY"**
-- **Not:** Presenting facts without personal connection
-- **Instead:** Briefly explain why this topic matters to YOU
-- **Impact:** Audiences connect with passion and purpose, not perfection
+**Repetition Principle:**
+Key messages should be repeated three times for retention
 
-### Speaker Notes
+**The Contrast Principle:**
+Create visual and content contrast to maintain engagement
+- Vary slide layouts (data → story → visual → data)
+- Alternate between analytical and emotional content
+- Use silence strategically (pause for impact)
 
-**Opening:**
-- "Authenticity isn't about being casual or unpolished—it's about being genuinely yourself"
+**Slide as Billboard:**
+"When people drive, they only briefly take their eyes off their main focus. Slides should work the same way—support the speaker without requiring deep reading."
 
-**Key Points:**
-- **Natural Style:** You already communicate authentically with friends—scale that to presentations
-- **Prepare & Release:** Over-rehearsal creates rigidity. Under-rehearsal creates chaos. Balance is key.
-- **Share Your Why:** 30 seconds of personal connection at the opening makes the entire presentation feel authentic
+<speaker-notes>
+These additional principles from Duarte's research complement the Sparkline framework and help students design effective slides (which we'll cover in more depth in Week 6).
 
-**Example (Sharing Your Why):**
-- Generic: "Today I'll present on renewable energy in Vietnam."
-- Authentic: "Growing up in Hanoi, I watched air quality worsen every year. That's why I researched renewable energy solutions—this topic isn't abstract to me, it's personal."
-- The second approach invites emotional connection
+The 3-Second Rule addresses cognitive load: If your slide takes more than 3 seconds to understand, you're asking the audience to choose between reading and listening. They can't do both effectively. This is why text-heavy slides fail—they compete with the speaker for attention.
 
-**Cultural Note:**
-- Vietnamese culture values humility—sharing personal stories can feel like bragging
-- Reframe: Sharing your "why" isn't boasting, it's providing context for why you care
-- You're not saying "I'm amazing," you're saying "This matters to me for these reasons"
+Repetition Principle is backed by memory research: Information heard once is likely forgotten. Information heard three times (with variation) is retained. This doesn't mean saying the exact same thing three times—it means reinforcing your core message throughout the presentation.
 
-**Check Understanding:**
-- "What's a topic you feel genuinely passionate about? How would you share why it matters to you in 30 seconds?"
-- (Invite 1-2 volunteers to share—model authentic openings)
+Example of repetition: Opening hook uses the 80% spontaneous communication stat → Middle section shows how this applies to careers → Closing reminds audience that mastering spontaneous communication matters because 80% of workplace communication is unplanned. Same data point, different contexts, reinforcing the core message.
 
-**Transition:**
-- "Let's see authenticity in action with a case study..."
+The Contrast Principle prevents monotony. If every slide is bullet points, the audience zones out. If you alternate between data slides, story slides, visual slides, and interaction moments, you maintain engagement through variety.
 
----
+Slide as Billboard is a mental model: Billboards work because drivers can glance at them and get the message in 2-3 seconds. Your slides should function the same way—reinforce your spoken words without requiring the audience to read paragraphs.
 
-## Slide 20: Case Study - Authentic Presentation Under Pressure
-<!-- LAYOUT: case-study -->
+For Week 12 presentations, students should apply these principles: Each slide should be glanceable (3-second rule), key messages should appear multiple times in different contexts (repetition), and slide types should vary to maintain energy (contrast).
+</speaker-notes>
 
-## Gabe: Tech Product Manager (Abrahams, 2023)
+</slide>
 
-**Context:**
-- Tech company product manager experiencing rapid career growth
-- Became uncomfortable with increased visibility and performative demands when leading hundreds of employees
+<slide number="24" layout="section-break" title="Section 3">
 
-**Challenge:**
-- High-stakes meetings requiring spontaneous, confident communication
-- Anxiety about being "on" constantly
+# Part 3: Spontaneous Speaking
 
-**Action:**
-- Structured practice of impromptu speaking (athletic model—practice drills for unpredictable situations)
-- Developed Anxiety Management Plan (AMP) addressing before/during/after communication
-- Practiced "What? So What? Now What?" framework for spontaneous responses
+<speaker-notes>
+Transition: "We've covered structured presentations, but remember our opening statistic—80% of workplace communication is spontaneous. Let's explore frameworks for speaking effectively without preparation time."
 
-**Result:**
-- Built confidence in unscripted moments that define leadership perception
-- Authenticity increased because structure reduced anxiety (less focused on fear, more on message)
+This section addresses one of students' biggest fears: being put on the spot in meetings or Q&A sessions.
+</speaker-notes>
 
-**Lesson:** Preparation for spontaneity is not an oxymoron—it's essential for authentic presence
+</slide>
 
-### Speaker Notes
+<slide number="25" layout="framework" title="What? So What? Now What?">
 
-**Opening:**
-- "This case from Matt Abrahams' HBR article shows how structure enables authenticity"
+## Abrahams' "What? So What? Now What?" Framework
 
-**Key Points:**
-- Gabe's anxiety came from feeling unprepared for spontaneous moments
-- Solution wasn't "just relax"—it was structured practice of impromptu communication
-- The "athletic model": Just as athletes dribble around cones to prepare for unpredictable games, communicators practice random prompts
-- Result: Gabe felt more authentic because he wasn't paralyzed by anxiety
+**Purpose:** Three-part structure for spontaneous speaking in any context
 
-**Example (Athletic Practice Model):**
-- Practice drill: Draw random topics from a deck, speak for 60 seconds using "What? So What? Now What?"
-- Over time, you develop muscle memory for spontaneous structure
-- This is what you'll do in tutorial today—mini-presentations with randomized prompts
+**Components:**
+1. **What?** — State the core information or issue concisely
+2. **So What?** — Explain why it matters to the audience
+3. **Now What?** — Provide actionable next steps or implications
 
-**Check Understanding:**
-- "Why does practicing spontaneity seem contradictory but actually work?"
-- (Expected: Builds confidence, reduces fear, creates mental patterns)
+**Application:** Q&A sessions, hallway conversations, elevator pitches, meeting contributions, project updates
 
-**Transition:**
-- "One more case—this time about channel selection and authenticity..."
+**Why It Works:** Provides instant mental scaffolding when you have no time to prepare. Your brain has a template to organize thoughts on the fly.
 
----
+<speaker-notes>
+This framework from Stanford GSB's Matt Abrahams is brilliantly simple and universally applicable. The beauty is its universality—it works for any impromptu speaking situation from job interviews to investor pitches to casual conversations with executives.
 
-## Slide 21: Case Study - Channel Selection for Authentic Communication
-<!-- LAYOUT: case-study -->
+The three components answer the three questions every audience has:
+- What? = "What are you talking about?" (Clarity)
+- So What? = "Why should I care?" (Relevance)
+- Now What? = "What do I do with this information?" (Action)
 
-## Brodsky's Channel-Authenticity Matrix (2022)
+Example in action: You're asked in a meeting, "How's the marketing campaign going?"
 
-**Research Question:**
-How do communication channels affect perceived authenticity in hybrid work?
+Weak response (no structure): "Um, it's going pretty well, we've had some good results, a few challenges, but overall I think we're on track, and we're working on some new ideas..."
 
-**Key Finding:**
-Different channels afford different levels of emotional expression—**strategic selection optimizes authenticity**
+Strong response (What/So What/Now What): "What: We completed Phase 1 testing with a 12% conversion rate. So What: This exceeds our 10% benchmark, meaning we're on track for the June launch. Now What: I'll send the full report by Friday for your review."
+
+The structured version takes the same time but delivers clarity, relevance, and next steps. This is the difference between sounding unsure and sounding confident.
+
+For students: This framework is particularly valuable for the 10-minute Q&A section of your Week 12 Group Presentation. When asked unexpected questions, What/So What/Now What gives you immediate structure.
+</speaker-notes>
+
+</slide>
+
+<slide number="26" title="What? So What? Now What? Example">
+
+## Framework Application Example
+
+**Scenario:** Your manager asks in a hallway conversation: "How's the team handling the new project management software?"
+
+**Without Framework:**
+"Um, I think it's going okay... some people like it, some don't... we're still figuring it out... there have been a few issues but nothing major... we're working through it..."
+
+**With "What? So What? Now What?":**
+- **What:** "We're two weeks into rollout with 60% of the team actively using it."
+- **So What:** "Early adopters report 3 hours saved per week on status updates, which aligns with our efficiency goals."
+- **Now What:** "I'll have a full adoption report by end of month with recommendations for supporting the remaining 40%."
+
+<speaker-notes>
+This side-by-side comparison demonstrates why frameworks matter for spontaneous communication. The first response (without framework) sounds uncertain and meandering even though it contains information. The second response (with framework) sounds confident and strategic using essentially the same facts.
+
+Key insight: The framework doesn't give you the information—you already know these things. What it does is organize your thoughts in real-time so you deliver them clearly under pressure.
+
+The "without framework" example is what most people sound like when caught off-guard—they're not uninformed, they're just disorganized. The rambling creates an impression of uncertainty even when the speaker is knowledgeable.
+
+Practice exercise for students: Think of a project you're currently working on. Practice answering "How's it going?" using the What/So What/Now What framework in under 30 seconds. Do this 5 times for different projects, and the framework becomes automatic.
+
+This framework is particularly valuable for Vietnamese students who may experience cultural pressure to give thorough, detailed answers. What/So What/Now What provides culturally-appropriate structure while remaining concise and executive-friendly.
+
+Cultural adaptation: In Vietnamese business contexts, you might add brief relationship acknowledgment before the framework: "Thank you for asking. [What/So What/Now What]" This maintains cultural courtesy while delivering efficient communication.
+</speaker-notes>
+
+</slide>
+
+<slide number="27" title="Additional Spontaneous Speaking Structures">
+
+## Alternative Frameworks for Impromptu Speaking
+
+**P.R.E.P. (Point, Reason, Example, Point):**
+- State your main point
+- Give a reason supporting it
+- Provide an example
+- Restate your point
+
+**A.D.D. (Answer, Detail, Describe):**
+- Answer the question directly
+- Add relevant detail
+- Describe implications or next steps
+
+**T.R.A.C. (Topic, Relevance, Application, Conclusion):**
+- Name the topic/issue
+- Explain relevance to audience
+- Show application/example
+- Conclude with key insight
+
+**When to use each:** All three work for different speaking contexts. Experiment to find which feels most natural for you.
+
+<speaker-notes>
+While "What? So What? Now What?" is Abrahams' signature framework, these alternative structures serve the same purpose: giving you mental scaffolding for spontaneous speaking.
+
+P.R.E.P. is classic and works well for opinion questions: "What do you think about remote work?" → Point: "I believe hybrid models work best." Reason: "They balance flexibility and collaboration." Example: "Our team saw 20% productivity gains after switching to 3 days in-office, 2 remote." Point: "So hybrid models deliver the best of both worlds."
+
+A.D.D. works well for factual questions: "What's the status of the budget?" → Answer: "We're 5% under budget." Detail: "Cost savings came from renegotiating vendor contracts." Describe: "This creates room for the Q4 marketing initiative we discussed."
+
+T.R.A.C. works well for educational/explanatory responses: "Can you explain how this algorithm works?" → Topic: "It's a recommendation engine based on collaborative filtering." Relevance: "This determines which products customers see first." Application: "For example, when you search for shoes, it shows styles similar to your past purchases." Conclusion: "The result is higher conversion rates."
+
+The key is having a framework—any framework—so your brain doesn't go blank under pressure. Students should practice with multiple structures and adopt the one that feels most intuitive.
+
+All these frameworks share a common principle: They move from general to specific to actionable. They answer "What are we talking about?" then "Why does it matter?" then "What should we do?"
+
+For Week 12 Q&A preparation, students should practice all three frameworks so they have options. Different questions might feel more natural with different structures.
+</speaker-notes>
+
+</slide>
+
+<slide number="28" title="Preparing for Spontaneity">
+
+## The Athletic Preparation Model
+
+**Key Insight:** You can prepare for spontaneous communication through structured practice
+
+**How Athletes Train:** Soccer players practice dribbling around cones to build reflexes for unpredictable game situations. They don't know exactly what will happen, but repetitive practice builds automatic responses.
+
+**How Communicators Train:**
+- Practice responding to random prompts from a question deck
+- Record 30-second impromptu responses on various topics
+- Join group discussions where you must contribute without advance notice
+- Volunteer to answer questions in meetings (even when not called on)
+
+**Result:** Like athletes, you build "communication reflexes" that activate under pressure
+
+<speaker-notes>
+This analogy helps students understand the paradox: spontaneous communication requires preparation, just not preparation of specific content.
+
+The athletic metaphor resonates because everyone understands how sports training works—you don't practice "scoring a goal in the 73rd minute against a left-footed defender"—you practice dribbling skills, so when that situation arises, you have the reflexes to handle it.
+
+The same is true for communication. You can't prepare for every possible question, but you can practice organizing your thoughts quickly using frameworks like What/So What/Now What.
+
+Practical exercise for students: Create a deck of 20 business questions ("What makes a good leader?" "How does social media affect marketing?" "Why is teamwork important?"). Shuffle the deck, draw a card, give a 30-second structured answer using What/So What/Now What. Do this daily for a week, and you'll notice dramatic improvement in impromptu speaking confidence.
+
+This preparation method addresses State CA (situational anxiety) by building competence. The more you practice impromptu speaking in low-stakes environments, the less anxiety you'll experience in high-stakes situations.
+
+Connection to Week 12: Your Group Presentation includes 10 minutes of Q&A. This framework prepares you to handle unexpected questions with confidence rather than panic.
+
+Vietnamese educational context: Some students come from educational systems emphasizing memorization over spontaneous analysis. This can create additional anxiety around impromptu speaking. The athletic model reframes it: Just as you can train physical reflexes, you can train communication reflexes. It's a skill, not innate talent.
+
+Suggested weekly practice: Set aside 10 minutes 3 times per week to practice impromptu speaking using random prompts. This small investment creates significant confidence gains.
+</speaker-notes>
+
+</slide>
+
+<slide number="29" title="Managing Silence and Pauses">
+
+## Using Silence Strategically in Spontaneous Speaking
+
+**The Problem:** Most people fear silence and fill it with "um," "uh," and verbal fillers
+
+**The Reframe:** Silence is powerful, not awkward
+
+**Strategic Uses of Pauses:**
+1. **Thinking pause:** "That's a great question. [2-second pause while you think] Here's what I'd say..."
+2. **Emphasis pause:** "This decision will affect everyone [pause] for the next five years."
+3. **Transition pause:** [Finish point] [Pause] [Begin next point]
+4. **Reflection pause:** "Let me think about that for a moment..." [pause]
+
+**Practice:** Record yourself answering impromptu questions. Count your filler words. Practice replacing them with 1-2 second pauses. The pause feels long to you but sounds confident to listeners.
+
+<speaker-notes>
+Silence is one of the most underutilized tools in oral communication. Most speakers fear pauses, thinking they signal uncertainty. Research shows the opposite—deliberate pauses signal confidence and thoughtfulness.
+
+The 2-second rule: A 2-second pause feels like an eternity to the speaker but is barely noticeable to the audience. What the audience notices is the absence of "um" and "uh" and the presence of intentionality.
+
+Thinking pause is particularly important for spontaneous speaking. When asked an unexpected question, you're allowed to think before answering. Saying "That's a great question" or "Let me think about that" followed by a brief pause gives you time to mentally structure your response using What/So What/Now What.
+
+Emphasis pause works like bold text in writing—it signals importance. Compare these two deliveries:
+- Without pause: "This decision will affect everyone for the next five years and we need to consider carefully."
+- With pause: "This decision will affect everyone [pause] for the next five years. [pause] We need to consider carefully."
+
+The paused version gives weight to each statement. The audience has time to process the implications.
+
+Transition pause helps audience follow your logic. When moving from one idea to another, a brief pause signals "We're shifting topics now. Follow me to the next point."
+
+Reflection pause is powerful in Q&A because it shows respect for the question. Instead of launching immediately into your answer (which can seem rehearsed or dismissive), saying "Let me think about that" shows genuine consideration.
+
+Practice exercise: Record yourself answering 5 impromptu questions. Count filler words. Practice the same 5 questions replacing every filler with a 1-2 second silent pause. Listen to both recordings—the paused version sounds dramatically more confident.
+
+Cultural note: Some Asian cultures view silence differently than Western cultures. In Vietnamese contexts, longer pauses might be more comfortable. Students should adapt pause length based on audience expectations, but the principle remains: deliberate silence sounds more confident than verbal fillers.
+</speaker-notes>
+
+</slide>
+
+<slide number="30" layout="section-break" title="Section 4">
+
+# Part 4: Authenticity in Oral Communication
+
+<speaker-notes>
+Transition: "The final piece of oral communication fundamentals is authenticity—how do you communicate genuinely while still being strategic? And how does authenticity work differently across communication channels?"
+
+This section addresses the hybrid work reality where students must navigate in-person, video, phone, and text-based communication daily.
+</speaker-notes>
+
+</slide>
+
+<slide number="31" layout="framework" title="Channel-Authenticity Matrix">
+
+## Brodsky's Channel-Authenticity Matrix
+
+**Core Insight:** Different channels afford different levels of emotional expression and authenticity perception. Strategic channel selection optimizes outcomes.
 
 | Channel | Best When... | Authenticity Dynamics |
 |---------|-------------|----------------------|
-| **In-person** | Your communication IS authentic; you want genuine emotional expression | Allows full nonverbal cues; authenticity easily perceived |
-| **Video call** | You need presence but with slight emotional buffering | Provides visual connection with reduced intensity |
-| **Phone/Audio** | You need to suppress or modulate emotional expression | Partial masking while maintaining vocal connection |
-| **Email/Text** | You must communicate inauthentically OR other channels unavailable | Maximum control over message; reduced spontaneity cues |
+| **In-person** | Your communication IS authentic; you want genuine emotional expression | Full nonverbal cues; authenticity easily perceived |
+| **Video call** | You need presence but with slight emotional buffering | Visual connection with reduced intensity |
+| **Phone/Audio** | You need to modulate emotional expression | Partial masking while maintaining vocal connection |
+| **Email/Text** | You must communicate carefully OR channels unavailable | Maximum control over message; reduced spontaneity |
 
-**Application to Presentations:**
-- **In-person presentations:** Full authenticity required—body language, eye contact, energy all visible
-- **Virtual presentations (Zoom):** Slightly buffered—use this to your advantage if nervous
-- **Recorded presentations:** Maximum control—can re-record, but may feel less authentic
+<speaker-notes>
+This framework from University of Texas McCombs researcher Alyson Brodsky addresses the post-COVID hybrid work reality. Unlike surface-level advice to "just be yourself," this research-backed approach acknowledges that authentic communication is complex and contextual.
 
-### Speaker Notes
+The matrix helps students make strategic decisions: When delivering difficult feedback, should you use video or phone? When building new relationships, why does in-person matter more? When the message requires careful emotional calibration, why might text be appropriate?
 
-**Opening:**
-- "Post-COVID, many presentations happen virtually—this research helps you choose the right channel"
+Key insight: Channel selection isn't about avoiding authentic communication—it's about choosing the channel that best supports your authentic intent given the emotional requirements of the conversation.
 
-**Key Points:**
-- Brodsky's research from UT Austin McCombs shows channel selection affects how authentic you seem
-- In-person is highest bandwidth—best for important, emotional, or persuasive presentations
-- Virtual provides a buffer—useful if you're still building confidence
-- For your Week 12 presentation: It will likely be in-person, so practice in-person format
+Example 1: Announcing a promotion—in-person or video allows you to show genuine excitement through facial expressions and voice. Email would feel distant and inauthentic for positive news.
 
-**Example:**
-- Delivering difficult feedback:
-  - In-person: Shows courage, builds trust, allows nuance
-  - Video: Allows visual connection with slight emotional buffer
-  - Email: Maximum control but lowest trust—feels like avoiding confrontation
-- Choose based on message needs, not just convenience
+Example 2: Delivering criticism that might trigger defensive reactions—phone allows genuine tone of concern while giving the recipient space to process emotions without being watched. Video might feel too intense; email might seem cowardly.
 
-**Check Understanding:**
-- "Why might a nervous presenter actually prefer virtual presentations initially?"
-- (Expected: Reduced intensity, less eye contact pressure, can use notes)
+Example 3: Proposing a complex, potentially controversial idea—email allows you to craft your message carefully, ensuring your authentic position is communicated clearly without in-the-moment pressure. Follow-up discussion can happen in-person once the idea is clearly understood.
 
-**Transition:**
-- "Let's synthesize everything we've covered today..."
+Students should recognize that choosing email for a difficult message isn't necessarily "inauthentic"—it can be strategically authentic when clarity and thoughtfulness matter more than immediate emotional expression.
 
----
+Vietnamese hybrid work context: Many Vietnamese businesses moved to hybrid models post-COVID. Understanding which channels support authentic communication for different message types is increasingly important. This framework gives students a research-backed decision model.
+</speaker-notes>
 
-## Slide 22: Key Takeaways - Oral Communication Fundamentals
-<!-- LAYOUT: framework -->
+</slide>
 
-## What We've Learned Today
+<slide number="32" title="Channel Selection Examples">
 
-**1. STRUCTURE YOUR PRESENTATION (Duarte's Three Acts)**
-- Beginning: Establish "What Is" and the gap
-- Middle: Oscillate between problem and solution
-- End: Paint the "New Bliss" and call to action
+## Applying the Channel-Authenticity Matrix
 
-**2. DELIVER WITH IMPACT**
-- Voice: Pace (130-170 wpm), volume, pitch variation, strategic pauses
-- Body: Eye contact (adapted for culture), posture, gestures, movement
+**Scenario 1: Delivering Difficult Feedback**
+- **Poor choice:** Email (feels cowardly, lacks human connection)
+- **Better choice:** Phone (genuine concern in voice, recipient has processing space)
+- **Best choice:** In-person if possible (shows respect, allows dialogue)
 
-**3. MANAGE ANXIETY SCIENTIFICALLY (McCroskey & Abrahams)**
-- Before: Breathing, power pose, visualization, rehearsal
-- During: Grounding techniques, structural anchors, mistake recovery
+**Scenario 2: Sharing Exciting News**
+- **Poor choice:** Text (diminishes excitement, feels impersonal)
+- **Better choice:** Phone (vocal enthusiasm clear)
+- **Best choice:** Video or in-person (full emotional expression)
 
-**4. DEVELOP AUTHENTIC PRESENCE (Brodsky)**
-- Find your natural style (not imitation)
-- Prepare deeply, then release (avoid scripting)
-- Share your "why" (personal connection)
+**Scenario 3: Presenting Complex Analysis**
+- **Poor choice:** Phone (no visual support for data)
+- **Better choice:** Email with detailed write-up (time to process)
+- **Best choice:** Video meeting with slides (combines visual data with human explanation)
 
-### Speaker Notes
+<speaker-notes>
+These scenarios help students apply the Channel-Authenticity Matrix to real workplace situations. The key is matching channel affordances to communication goals.
 
-**Opening:**
-- "Four major concepts—let's recap how they fit together"
+Scenario 1 demonstrates why difficult conversations benefit from higher-bandwidth channels. Email lacks tone and can be misinterpreted. Phone provides vocal cues (concern, care) while giving the recipient space to process without being watched. In-person is best because it allows for dialogue—the recipient can ask questions, you can clarify, and the human connection softens the difficulty.
 
-**Key Points:**
-- **Structure** is the foundation—reduces anxiety because you know what comes next
-- **Delivery** techniques amplify your message—voice and body work together
-- **Anxiety management** makes everything possible—you can't deliver well if paralyzed by fear
-- **Authenticity** ties it all together—technical skill + genuine presence = impact
+However, there are exceptions: If the recipient has a history of becoming defensive or emotional in person, phone might actually be better. The matrix provides guidelines, not absolute rules.
 
-**Example:**
-- Imagine two students with identical presentations:
-  - Student A: No structure, monotone, visibly anxious, reads slides
-  - Student B: Clear three-act structure, vocal variety, calm presence, authentic connection
-  - Same content, dramatically different impact
+Scenario 2 shows why positive emotional messages require channels that convey enthusiasm. A text saying "Congratulations on your promotion" feels flat compared to a phone call where your excitement is audible. Video or in-person allows full expression through facial expressions, gestures, and voice.
 
-**Check Understanding:**
-- "Which of these four areas do you most want to practice in tutorial today?"
-- (Take informal poll—helps tutor prioritize)
+Scenario 3 highlights that channel selection depends on message content, not just emotional tone. Complex analytical content benefits from channels that support visual information (email, video with screen sharing). Phone would force the listener to try to remember numbers and visualize charts—inefficient and frustrating.
 
-**Transition:**
-- "Speaking of tutorial—here's what you'll practice..."
+Practical application for students: Your Week 12 Group Presentation will likely be in-person, but you may do practice runs via video. Understanding how each channel affects authenticity perception helps you adapt your delivery appropriately.
 
----
+Cultural consideration: Vietnamese business culture often prefers in-person meetings for important discussions. This aligns with the research—high-stakes conversations benefit from high-bandwidth channels. However, hybrid work is changing norms. Students should understand both traditional preferences and emerging channel-selection strategies.
 
-## Slide 23: Tutorial Preview - Mini-Presentation Practice
+Discussion prompt: "Think of a time you received bad news via email that should have been delivered in person. How did the channel choice affect your perception of the sender's authenticity?"
+</speaker-notes>
 
-## What You'll Do in Tutorial (90 Minutes)
+</slide>
 
-**Quick Review (5 min):**
-- Recap today's frameworks
-- Review success criteria for effective presentations
+<slide number="33" title="Impression Management Paradox">
 
-**Main Activity (75 min):**
-- **Task:** Deliver a 2-3 minute mini-presentation on assigned topic
-- **Structure:** Apply three-act structure (opening, body, conclusion)
-- **Delivery:** Practice voice modulation, eye contact, gestures
-- **Feedback:** Peer observation using rubric criteria
+## The Impression Management Paradox
 
-**Before Next Class (10 min):**
-- Complete Week 5 online quiz
-- Pre-reading for Week 6 (Visual Communication)
-- Save notes from peer feedback
+**Common Belief:** Being authentic means expressing your true self identically in all situations
 
-**Goal:** Safe practice environment with constructive feedback—NOT graded, just learning
+**Research Reality:** Strategic impression management can make you seem MORE authentic in certain contexts
 
-### Speaker Notes
+**Why?** Social situations have norms. Meeting those norms while maintaining genuine intent creates perceived authenticity. Violating norms—even "authentically"—can be perceived as inauthentic or inappropriate.
 
-**Opening:**
-- "Tutorial is where theory becomes skill—you'll practice everything we discussed today"
+**Example:** A leader who adjusts communication style for different audiences (board vs. frontline employees) may be perceived as more authentic than one who maintains identical style regardless of context.
 
-**Key Points:**
-- **2-3 minutes:** Short enough to be low-stakes, long enough to practice structure
-- **Assigned topics:** Random prompts (similar to Gabe's athletic practice model)
-- **Peer feedback:** You'll both present and observe—learning happens in both roles
-- Tutorial is attendance-required but NOT graded on performance—safe to make mistakes
+**Implication:** Authenticity ≠ Unchanging. Authenticity = Genuine intent adapted to context.
 
-**Example:**
-- You might get a prompt like "Explain why your major is valuable in 2 minutes"
-- Apply: Hook (stat or question) → Relevance → 2-3 main points → Call to action
-- Peers will note: Did you hook attention? Was structure clear? Eye contact? Vocal variety?
+<speaker-notes>
+This paradox challenges students' assumptions about authenticity. Many believe "being authentic" means behaving exactly the same way in all situations—this is actually a naive understanding of authenticity.
 
-**Cultural Note:**
-- Peer feedback in Vietnamese culture can be uncomfortable (fear of losing face or causing offense)
-- Guidelines will emphasize constructive, specific feedback ("I noticed..." not "You should...")
+Think of it this way: You communicate differently with your grandmother than with your best friend. You're not being "inauthentic" with either—you're adapting to context while maintaining genuine care and respect for both relationships.
 
-**Check Understanding:**
-- "Any concerns about the tutorial activity?"
-- (Address fears—emphasize safety, learning over performance)
+The same applies in business: A CEO who speaks to factory workers using the same language she uses with Wall Street analysts will be perceived as out-of-touch (inauthentic), even though she's using her "true voice." The leader who adapts her communication while maintaining genuine intent will be perceived as more authentic because she demonstrates understanding of and respect for different audiences.
 
-**Transition:**
-- "Next week we build on this foundation with visual communication..."
+Practical application: When preparing your Week 12 Group Presentation, consider your audience (classmates and instructor) and their expectations. Speaking formally and professionally isn't "inauthentic"—it's adapting to the academic context while maintaining your genuine communication intent.
 
----
+Vietnamese cultural context: Many Vietnamese students feel tension between "Western-style" direct communication and culturally-appropriate indirect communication. The impression management framework helps: You can be authentically Vietnamese (maintaining cultural norms like respect for hierarchy) while adapting your communication style for international business contexts. Both are authentic—you're choosing the approach that serves your genuine intent for that specific context.
 
-## Slide 24: Next Week Preview - Visual Communication & Slide Design
+Research consequences of perceived inauthenticity: destroys trust, damages relationships, worsens performance evaluations, decreases organizational profits. So the stakes are high—authenticity perception matters for career success.
 
-## Week 6: Enhancing Message Clarity Through Visuals
+The key distinction: Adapting HOW you communicate (formality, directness, channel) while maintaining WHO you are (values, genuine intent, care for audience) is strategic authenticity, not inauthenticity.
+</speaker-notes>
 
-**Topics:**
-- Visual hierarchy principles
-- Data visualization (charts, graphs, diagrams)
-- Slide design best practices (Duarte's *Resonate*, Reynolds' *Presentation Zen*)
-- Cognitive load management
+</slide>
 
-**Why it matters:**
-- Your Week 12 Group Presentation requires slide deck
-- Visuals can clarify complex ideas or create confusion—design matters
-- 65% retention with visuals vs. 10% with words alone (dual coding theory)
+<slide number="34" title="Authenticity Across Cultures">
 
-**Pre-reading:**
-- Reynolds, G. (2012). *Presentation Zen* (Ch. 4-6) - Available on Moodle
+## Authenticity in Cross-Cultural Communication
 
-### Speaker Notes
+**Western Authenticity Emphasis:**
+- Individual expression
+- "Being yourself" regardless of context
+- Direct communication valued
+- Consistency across situations
 
-**Opening:**
-- "Today you learned what to say and how to say it—next week you'll learn how to show it"
+**East Asian Authenticity Emphasis:**
+- Relational harmony
+- Adapting to social roles appropriately
+- Indirect communication preserves relationships
+- Context-appropriate behavior
 
-**Key Points:**
-- **Visual communication** is not "making slides pretty"—it's strategic information design
-- Next week: You'll learn to create slides that support (not distract from) your message
-- By Week 7, you'll combine structure + delivery + visuals + persuasion = complete presentation toolkit
+**The Bridge:** Both cultures value genuine intent. The difference is in how authenticity is demonstrated.
 
-**Example:**
-- Poor slide: Wall of text, tiny font, no visuals → audience reads instead of listening
-- Good slide: One concept, large text, supporting image → audience focuses on you, not the screen
+**For Vietnamese Professionals in Global Business:**
+You can maintain Vietnamese cultural values (respect, harmony, hierarchy) while adapting communication patterns for international contexts. This is not being inauthentic—it's being strategically authentic.
 
-**Transition:**
-- "Final slide—your resources for continued learning..."
+<speaker-notes>
+This slide addresses the specific cultural tension many Vietnamese students experience when learning Western business communication frameworks. The question they often have (stated or unstated) is: "If I adopt direct Western communication styles, am I betraying my culture?"
 
----
+The answer: No. Authenticity is about genuine intent, not rigid behavioral consistency.
 
-## Slide 25: Resources & Further Learning
+Western authenticity models emphasize individual self-expression—"be yourself," "speak your truth," "don't change for others." This works within Western cultural contexts where individualism is valued.
 
-## Want to Go Deeper?
+East Asian authenticity models emphasize relational appropriateness—demonstrating respect through context-appropriate behavior. In Vietnamese culture, speaking differently to elders vs. peers vs. subordinates is not inauthentic—it's showing proper respect and understanding of social relationships.
+
+Both models share a core: genuine intent matters. The difference is in how genuineness is demonstrated.
+
+For Vietnamese students entering global business: You can learn direct communication for international contexts while maintaining Vietnamese cultural values in appropriate settings. You can present confidently in English to Western clients while using appropriate Vietnamese communication patterns with local stakeholders. This isn't code-switching inauthentically—it's demonstrating cross-cultural competence while maintaining core values.
+
+Example: A Vietnamese manager might:
+- Use direct, data-driven communication in email to US headquarters (meeting Western expectations)
+- Use indirect, relationship-focused communication with Vietnamese team members (honoring cultural norms)
+- Both approaches reflect genuine intent to communicate effectively and respectfully
+
+The key insight: Your cultural values are part of your authenticity. Adapting communication patterns for different contexts doesn't erase those values—it demonstrates sophisticated understanding of how to achieve your genuine intent across different cultural frameworks.
+
+This connects to Week 9's cross-cultural communication content, where we'll explore these dynamics in greater depth.
+</speaker-notes>
+
+</slide>
+
+<slide number="35" title="Finding Your Authentic Voice">
+
+## Developing Your Authentic Communication Style
+
+**Self-Awareness First:**
+- What communication contexts feel most natural to you?
+- Where do you experience the most CA?
+- What values do you want your communication to reflect?
+
+**Practice Authenticity:**
+- Start with low-stakes situations to experiment with voice
+- Record yourself and assess: "Does this sound like me?"
+- Get feedback from trusted peers: "Did that feel genuine?"
+
+**Balance Adaptation and Consistency:**
+- **Adapt:** Match formality level, communication norms, audience expectations
+- **Maintain:** Your core values, genuine intent, personal warmth
+
+**Remember:** Executive presence doesn't mean becoming someone else—it means becoming the most effective version of yourself.
+
+<speaker-notes>
+This slide synthesizes the week's themes: managing anxiety, using structure, handling spontaneity, and communicating authentically. All of these support the goal of developing your genuine, effective communication voice.
+
+"Finding your voice" is a journey, not a destination. Students in Week 5 won't have their final voice—that develops over years. What they can do now is start with self-awareness: understanding their natural communication style and identifying where they need to grow.
+
+The practice cycle is important: You can't develop authenticity by thinking about it—you have to try different approaches in real communication situations, reflect on what feels genuine, and refine. This is why tutorial activities and the Group Presentation matter so much—they're practice opportunities.
+
+The balance between adaptation and consistency is the key skill: You adapt HOW you communicate (formality, channel, structure) while maintaining WHO you are (values, intent, care for audience). This is strategic authenticity.
+
+Executive presence doesn't mean everyone communicates the same way. Some successful executives are charismatic storytellers; others are quiet, data-driven analysts. Both can have presence if their communication style reflects genuine expertise and care for the audience.
+
+Self-awareness questions help students begin this journey:
+- "What contexts feel natural?" - Maybe you're comfortable in small group discussions but anxious in large presentations. That's valuable information—you can systematically build presentation skills.
+- "Where do you experience CA?" - Identifying specific contexts (public speaking vs. one-on-one) helps you target skill development.
+- "What values do you want to reflect?" - Maybe trustworthiness, competence, warmth, or innovation. Your communication should embody these values.
+
+Recording yourself is uncomfortable but incredibly valuable. Watch/listen for:
+- Does this sound like me, or am I performing a role?
+- Would people who know me well recognize this as authentic?
+- What feels forced? What feels natural?
+
+Final encouragement: Many students feel they need to "put on a persona" to succeed professionally. Research shows the opposite—people who communicate authentically (while adapting strategically to context) are more trusted, more effective, and more successful long-term. You don't need to become someone else; you need to become the best version of yourself.
+</speaker-notes>
+
+</slide>
+
+<slide number="36" layout="section-break" title="Key Takeaways">
+
+# Key Takeaways
+
+<speaker-notes>
+Transition to summary: "Let's consolidate what we've covered today into actionable takeaways you can use immediately."
+</speaker-notes>
+
+</slide>
+
+<slide number="37" title="Summary">
+
+## Week 5 Key Takeaways
+
+1. **Communication Apprehension is manageable:** Use systematic desensitization, cognitive restructuring, and skills training. Build an Anxiety Management Plan for before/during/after communication.
+
+2. **Structure creates confidence:** Duarte's Sparkline (oscillating "what is" and "what could be") maintains engagement. Three-act structure provides clear beginning, middle, and end. S.T.A.R. moments create lasting impact.
+
+3. **Prepare for spontaneity:** The "What? So What? Now What?" framework organizes thoughts instantly. Practice impromptu speaking to build communication reflexes like athletes build physical reflexes.
+
+4. **Strategic authenticity wins:** Choose communication channels based on emotional requirements. Adapt to context while maintaining genuine intent. Authenticity ≠ unchanging; authenticity = genuine intent adapted appropriately.
+
+<speaker-notes>
+These four takeaways map to the four learning objectives from Slide 3. Students should recognize the through-line.
+
+Emphasize that all four skills work together: Managing anxiety allows you to focus on structure. Structure gives you confidence to be spontaneous. Spontaneity requires authenticity to be effective. Authenticity reduces anxiety because you're not performing a role.
+
+Remind students these frameworks all reappear on the Week 11 quiz, and all directly support their Week 12 presentations. Mastering them now builds a foundation for the rest of the course.
+
+Quick review method: Ask students to identify which framework addresses each challenge:
+- "I get nervous before presentations" → McCroskey's CA Theory, AMP
+- "I don't know how to organize my presentation" → Duarte's Sparkline, Three-Act Structure
+- "I freeze when asked unexpected questions" → What? So What? Now What?
+- "I'm not sure which channel to use for difficult news" → Channel-Authenticity Matrix
+
+This active recall reinforces learning and helps students see practical applications.
+</speaker-notes>
+
+</slide>
+
+<slide number="38" title="Integration Exercise">
+
+## Applying Today's Frameworks Together
+
+**Scenario:** You're presenting a project proposal to leadership next week.
+
+**Apply all four frameworks:**
+
+1. **CA Management:** What's your Anxiety Management Plan?
+   - Before: Deep breathing, know opening 30 seconds cold
+   - During: Ground feet, speak to friendly faces first
+   - After: Reflect on one success, one improvement
+
+2. **Structure:** How will you use the Sparkline?
+   - What Is: Current process costs $500K annually
+   - What Could Be: New system saves $200K
+   - Oscillate through challenges and solutions
+   - End with "new bliss" vision
+
+<speaker-notes>
+This integration exercise shows students how all four frameworks work together in a single communication scenario. Too often, students learn frameworks in isolation and don't see how to combine them.
+
+Walking through this scenario:
+
+CA Management comes first—if anxiety paralyzes you, structure doesn't matter. The AMP gives you specific techniques to manage nervousness before, during, and after the presentation.
+
+Structure (Sparkline) organizes your content to maintain engagement. You're not just presenting facts—you're creating an emotional journey that builds toward your recommendation.
+
+Spontaneous speaking frameworks prepare you for Q&A after the formal presentation. Leadership will ask tough questions—What? So What? Now What? gives you instant structure to respond confidently.
+
+Authenticity considerations help you choose the right channel. Should this be in-person, video, or a written proposal followed by discussion? The answer depends on emotional requirements and relationship dynamics with leadership.
+
+Full scenario walkthrough:
+
+Before the presentation:
+- Create your AMP: Practice deep breathing, rehearse opening 30 seconds until automatic, plan grounding techniques
+- Structure your content using Sparkline: Alternate between "what is" (current costly process) and "what could be" (efficient new system)
+- Practice Q&A using What/So What/Now What with anticipated questions
+- Choose in-person presentation (high stakes require high-bandwidth channel for authentic connection)
+
+During the presentation:
+- Execute AMP: Ground feet, speak to supporters first to build momentum
+- Follow three-act structure: Hook with cost data, build case through oscillating what is/what could be, end with new bliss vision
+- Maintain authentic presence: Adapt formality to executive audience while maintaining genuine enthusiasm for the project
+
+During Q&A:
+- Use What/So What/Now What to structure answers to unexpected questions
+- Employ strategic pauses instead of fillers
+- Stay authentic: If you don't know an answer, say so and commit to following up
+
+This scenario demonstrates how mastery of all four frameworks creates communication excellence. Students should see this as an integrated system, not isolated techniques.
+</speaker-notes>
+
+</slide>
+
+<slide number="39" title="Integration Exercise Continued">
+
+## Scenario Continued
+
+3. **Spontaneous Speaking:** How will you handle Q&A?
+   - Use What? So What? Now What? for unexpected questions
+   - Example: "What if the vendor goes out of business?"
+     - What: We've built contract protections and data export capabilities
+     - So What: This ensures business continuity regardless of vendor stability
+     - Now What: I can share our risk mitigation plan after this meeting
+
+4. **Authenticity:** Which channel and how to maintain genuine presence?
+   - Channel: In-person (high stakes require full nonverbal connection)
+   - Authenticity: Adapt formality to executive audience while maintaining genuine enthusiasm for the project
+   - Balance: Professional structure + personal belief in the solution
+
+<speaker-notes>
+Continuing the integration exercise:
+
+Spontaneous Speaking preparation shows students that Q&A isn't just "winging it"—you can prepare frameworks even when you can't prepare content. The example question "What if the vendor goes out of business?" demonstrates What/So What/Now What in action:
+- What: Directly address the risk ("We've built protections")
+- So What: Explain why this matters ("Ensures continuity")
+- Now What: Offer actionable next step ("I can share details")
+
+This 15-second answer sounds confident and complete because it has structure.
+
+Channel selection (in-person) is strategic: High-stakes presentations to leadership benefit from full nonverbal communication. You want them to see your confidence, read your body language, and feel your genuine belief in the project. Email or even video wouldn't convey the same authenticity.
+
+Authenticity balance is the final piece: You adapt formality (executives expect professional structure, data-driven arguments, time efficiency) while maintaining genuine enthusiasm (they want to know you believe in this, not just that you analyzed it). This is strategic authenticity—adapting how you communicate while maintaining who you are.
+
+Real-world example: Imagine two presenters with the same proposal:
+- Presenter A: Uses perfect executive language but sounds like they're reading a script. Technically correct but feels inauthentic.
+- Presenter B: Uses professional structure but lets genuine excitement show when discussing potential impact. Sounds both competent and believable.
+
+Presenter B wins because they balance adaptation (executive communication norms) with authenticity (genuine belief in the project).
+
+For students: Your Week 12 Group Presentation requires this same integration. You'll need to manage anxiety, structure your content using Sparkline, prepare for Q&A using spontaneous speaking frameworks, and maintain authentic presence appropriate to an academic evaluation context.
+
+The difference between students who excel and those who merely complete the assignment is often this integration—using all frameworks together rather than treating them as separate checklists.
+
+Encourage students to map out their Week 12 presentation using this integrated approach starting now, even though it's weeks away. Early planning reduces anxiety and improves quality.
+</speaker-notes>
+
+</slide>
+
+<slide number="40" title="Assessment Preview">
+
+## Looking Ahead: Your Presentations
+
+**Week 6: Visual Communication & Slide Design**
+- Design principles that enhance your message
+- Avoiding cognitive overload
+- Data visualization best practices
+- Creating glanceable slides (3-second rule)
+
+**Week 7: Persuasive Presentations & Storytelling**
+- Rhetorical appeals in oral communication
+- Narrative structure for business contexts
+- Emotional engagement techniques
+- Building credibility and trust
+
+**Week 12: Group Presentation (25%) + Individual Grade (15%)**
+- Apply all frameworks from Weeks 5-10
+- 15-minute presentation + 10-minute Q&A
+- Demonstrate executive presence and team coordination
+- Integration of research, analysis, and delivery skills
+
+<speaker-notes>
+Students appreciate seeing how upcoming weeks build on today's foundation.
+
+Week 6 adds the visual layer to the presentation structure learned today. You'll understand how to design slides that support rather than compete with your spoken message. The 3-second rule, billboard principle, and data visualization techniques all enhance the Sparkline structure you learned today.
+
+Week 7 adds persuasive techniques and storytelling. You'll learn rhetorical appeals (ethos, pathos, logos), narrative frameworks, and how to build emotional connection with audiences. This builds on Duarte's "Audience as Hero" concept—persuasion happens when audiences see themselves succeeding.
+
+Weeks 8-10 add executive presence, cross-cultural awareness, and synthesis skills. Each week builds another layer of sophistication on the oral communication foundation we established today.
+
+By Week 12, students will have a complete toolkit for professional presentation excellence. Today's frameworks are the foundation that everything else builds on.
+
+The 40% combined presentation weight (25% group + 15% individual) makes oral communication the largest assessment component in the course. Students who take Weeks 5-7 seriously will have a significant advantage.
+
+Grading note: The individual grade (15%) within the group presentation means students can't just "hide" in a team. Your personal delivery, Q&A handling, and contribution to the team are separately evaluated. This reinforces why mastering today's frameworks matters—you'll be individually assessed on them.
+
+Strategic advice: Start thinking about group formation and topic selection now. Students who wait until Week 11 to think about presentations typically produce lower-quality work and experience higher stress. Students who begin conceptualizing their presentation now (even just general ideas) have time to refine and practice.
+</speaker-notes>
+
+</slide>
+
+<slide number="41" title="Next Week Preview">
+
+## Next Week: Visual Communication & Slide Design
+
+**Topic:** Enhancing message clarity through visual design
+
+**Key Frameworks:**
+- Duarte's visual hierarchy principles
+- Cognitive load management in slide design
+- Data visualization best practices
+- Slide design simplicity (billboard principle)
+
+**Preparation:**
+- Review this week's presentation structure concepts
+- Start thinking about your Group Presentation topic
+- Bring examples of good/bad slides you've seen (screenshots fine)
+
+**Connection to Today:** Structure without visuals is invisible. Next week we make your Sparkline structure visible through effective slide design.
+
+<speaker-notes>
+Preview Week 6 to create continuity. Visual design is the natural next step after structure—students now know HOW to organize a presentation; next week they'll learn how to design slides that support rather than distract from the message.
+
+Encourage students to bring slide examples (screenshots are fine) of presentations they've found particularly effective or ineffective. Real-world examples make design principles more concrete. Common patterns:
+- Effective slides: Minimal text, strong visuals, one idea per slide
+- Ineffective slides: Paragraph text, cluttered layouts, mixing multiple concepts
+
+The Group Presentation topic reminder is strategic—students should start thinking about topics now so they can form groups during Week 6-7. Waiting until Week 11 creates unnecessary stress.
+
+Connection to today: Emphasize that structure and visuals work together. The Sparkline framework organizes your message conceptually. Visual design makes that structure visible and memorable. You can have great structure with bad visuals (audience struggles to follow). You can have beautiful visuals with poor structure (pretty but pointless). Excellence requires both.
+
+Example: Steve Jobs' iPhone presentation succeeded because:
+- Structure: Clear Sparkline oscillation (what is/what could be)
+- Visuals: Simple slides with dramatic product images at key moments
+- Integration: Visuals amplified the structural tension
+
+Next week students will learn how to create that visual amplification for their own presentations.
+
+Homework suggestion (optional but valuable): Between now and next week, watch one TED talk or keynote presentation. Analyze it for:
+- Sparkline structure (where do they show "what is" vs "what could be"?)
+- Visual design (do slides support or distract from the speaker?)
+- S.T.A.R. moments (what do you remember days later?)
+
+This active analysis reinforces today's frameworks and prepares students for next week's content.
+</speaker-notes>
+
+</slide>
+
+<slide number="42" title="Further Resources">
+
+## Further Resources (Optional)
+
+**Videos:**
+- Matt Abrahams – "Think Fast, Talk Smart" (Stanford GSB, 58 min) - https://www.youtube.com/watch?v=HAnw168huqA
+  - Why watch: Comprehensive spontaneous speaking masterclass with practical exercises
+- Nancy Duarte – "The Secret Structure of Great Talks" (TED, 18 min) - https://www.youtube.com/watch?v=1nYFpuc2Umk
+  - Why watch: Visual demonstration of Sparkline framework with famous speech analysis
 
 **Books:**
-- Duarte, N. (2010). *Resonate: Present Visual Stories that Transform Audiences*. Wiley.
-- Anderson, C. (2016). *TED Talks: The Official TED Guide to Public Speaking*. Houghton Mifflin.
+- Duarte, N. (2010). *Resonate: Present Visual Stories that Transform Audiences*
+- Abrahams, M. (2024). *Think Faster, Talk Smarter: How to Speak Successfully When You're Put on the Spot*
 
-**Articles (All on Moodle):**
-- McCroskey, J. C. (1977). Oral communication apprehension: A summary of recent theory and research. *Human Communication Research, 4*(1), 78–96. https://doi.org/10.1111/j.1468-2958.1977.tb00599.x
-- Abrahams, M. (2023). How to shine when you're put on the spot. *Harvard Business Review, 101*(5), 66–73. https://hbr.org/2023/09/how-to-shine-when-youre-put-on-the-spot
-- Brodsky, A. (2022). Communicating authentically in a virtual world. *Harvard Business Review*. https://hbr.org/2022/01/communicating-authentically-in-a-virtual-world
+**Not required** – All assessed material covered in required readings and lecture.
 
-**Practice Tools:**
-- Toastmasters International (Vietnam chapters in HCMC and Hanoi)
-- Orai app (free) - Real-time pacing and filler word feedback
-- Record yourself practicing—watch for delivery habits
+<speaker-notes>
+Brief mention: "For those interested in going deeper, I've linked two excellent videos and two books on these topics. They're optional but highly recommended if you want to see these concepts in action and get additional practice exercises."
 
-**Office Hours:**
-- Available for individual presentation coaching by appointment
+Both videos are YouTube-accessible and provide extended examples beyond what lecture time allows. Abrahams' video includes practice drills students can do individually. Duarte's TED talk visually demonstrates the Sparkline pattern in famous speeches like Martin Luther King Jr.'s "I Have a Dream."
 
-### Speaker Notes
+The books provide deeper treatment:
+- Duarte's *Resonate* is the source text for the Sparkline framework with extensive case studies and visual examples
+- Abrahams' *Think Faster, Talk Smarter* expands on his HBR article with more frameworks and practice exercises
 
-**Opening:**
-- "These resources go beyond today's lecture—use them for deeper learning"
+These are enrichment only—students who engage with them will have deeper understanding, but all quiz and assessment content is covered in required readings and today's lecture.
 
-**Key Points:**
-- **Books:** Duarte and Anderson are industry standards, taught at top business schools
-- **Articles:** All required readings are on Moodle with full access
-- **Tools:** Orai is a free app that listens to you practice and gives feedback on pacing, filler words
-- **Toastmasters:** Vietnam has active chapters—great for ongoing practice beyond this course
+Accessibility note: All videos have subtitles available. The books are available through major libraries and online retailers. If students have difficulty accessing materials, they should contact you for alternatives.
 
-**Example:**
-- If you're serious about presentation skills, join Toastmasters
-- Weekly meetings provide structured practice with mentorship
-- Many successful business leaders credit Toastmasters for their communication confidence
+For students preparing Week 12 presentations: Watching both videos and reading at least Duarte's book will significantly improve presentation quality. These aren't required, but students serious about excellence should invest the time.
 
-**Check Understanding:**
-- "Any questions before we wrap up?"
+Vietnamese context: Both videos have Vietnamese subtitles available on YouTube, which can help students who want to ensure they're catching all nuances. The books are available in English; some students may find reading English books challenging. Recommend watching the videos first as they're more accessible, then reading the books if interested.
+</speaker-notes>
 
-**Transition:**
-- "See you in tutorial—come ready to practice!"
+</slide>
 
----
+<slide number="43" layout="references" title="References">
 
-**END OF LECTURE**
+## References
 
-**Slide Count:** 25 slides
-**Estimated Duration:** 60 minutes (20 min per segment + transitions)
-**Layout Variety:** 6 frameworks, 3 section breaks, 2 case studies, 2 quotes, 1 big number
+1. Abrahams, M. (2023, September–October). How to shine when you're put on the spot. *Harvard Business Review, 101*(5), 66–73. https://hbr.org/2023/09/how-to-shine-when-youre-put-on-the-spot
+
+2. Anderson, C. (2016). *TED Talks: The Official TED Guide to Public Speaking* (Ch. 1-4). Houghton Mifflin.
+
+3. Brodsky, A. (2022, January 20). Communicating authentically in a virtual world. *Harvard Business Review*. https://hbr.org/2022/01/communicating-authentically-in-a-virtual-world
+
+4. Duarte, N. (2010). *Resonate: Present visual stories that transform audiences*. Wiley.
+
+5. McCroskey, J. C. (1977). Oral communication apprehension: A summary of recent theory and research. *Human Communication Research, 4*(1), 78–96. https://doi.org/10.1111/j.1468-2958.1977.tb00599.x
+
+<speaker-notes>
+Full citations for all sources referenced in lecture. Students can use these for further reading and must cite them if using frameworks in their assessments.
+
+All four required readings are listed here. Two are seminal classics (McCroskey, Duarte), two are recent HBR articles (Abrahams, Brodsky). This balance ensures students learn foundational theory and current application.
+
+Remind students these readings are the primary study materials for the Week 11 quiz. Frameworks from these sources will appear in quiz questions.
+
+Anderson's *TED Talks* is supplementary (not required) but provides excellent additional context on presentation delivery and structure. It's widely available and written in accessible language.
+
+Citation format: All references follow APA 7th edition format as required for this course. Students should use this same format when citing sources in their assessments.
+
+Access reminder: The McCroskey article is available free from the author's website (http://www.jamescmccroskey.com/publications/074.pdf). The HBR articles require subscription but may be accessible through university library. Duarte's book is available in university libraries and major bookstores.
+
+Quiz preparation: Students should focus on understanding frameworks and being able to apply them to scenarios, not memorizing page numbers or direct quotes. The quiz will test conceptual understanding and practical application.
+</speaker-notes>
+
+</slide>

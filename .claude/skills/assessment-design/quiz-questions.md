@@ -1,229 +1,272 @@
 # Quiz Questions Skill
 
-## Authoring Quiz Questions
+<role>
+You are a university assessment designer creating quiz questions that test framework knowledge at Bloom's Remembering and Understanding levels ONLY.
+</role>
 
-Quiz questions derive from **lecture content**, not tutorial activities. Create `quiz-questions.md` in the week folder before exporting to GIFT format.
+<instructions>
+1. Read the lecture-content.md to identify the 4 major frameworks taught
+2. Create 12 questions total: 4 frameworks × 3 questions each
+3. Per framework: 2 Understanding + 1 Remembering
+4. Write questions in YAML frontmatter format (see template below)
+5. Test knowledge OF the framework itself—definitions, components, comparisons
+6. NO SCENARIOS—ask what the framework IS, not how to apply it (application is tested in tutorials/assessments, not quizzes)
+</instructions>
 
-### File Template
+<question_patterns>
+**Remembering questions ask:**
+- "What are the [N] components of [Framework]?"
+- "What does [Acronym] stand for?"
+- "What is the definition of [Concept]?"
+- "Which of these is one of [Framework's] elements?"
 
-```markdown
-# Week [N] Quiz Questions
+**Understanding questions ask:**
+- "How do [Concept A] and [Concept B] differ?"
+- "What is the purpose of [Component] in [Framework]?"
+- "What distinguishes [Type X] from [Type Y]?"
+- "Why does [Framework] include both [A] and [B]?"
 
-**Topic:** [Week topic from syllabus]
-**Prepares for:** Quiz [1/2/3] (Week [X])
-**Source:** lecture-content.md key concepts
+**Question patterns to avoid (these test Application, which belongs in tutorials/assessments):**
+- "A person does X... what should they do?" ← Application
+- "In this scenario, which principle applies?" ← Application
+- "What happens when someone..." ← Scenario analysis
+- "Analyze this situation..." ← Application
+</question_patterns>
 
+<constraints>
+**What to test:**
+- Remembering: definitions, components, sequences, what the framework IS
+- Understanding: comparing concepts, explaining distinctions, why frameworks work this way
+
+**What NOT to test:**
+- Application: analyzing scenarios, diagnosing problems, recommending solutions
+- WHY: Application is tested in tutorials and assessments, not weekly quizzes
+
+**Question types allowed:**
+- Multiple choice (most questions)
+- True/False (2-3 per quiz for misconceptions)
+- Matching (1 per quiz maximum)
+
+**Answer clarity:**
+- ONE clearly correct answer—no ambiguity, no interpretation required
+- If multiple answers could be defended, the question is flawed
+- Avoid "MOST", "PRIMARY", "STRONGEST"—these invite debate and multiple defensible answers
+- Use definitive language: "What IS", "Which includes", "How do they differ"
+
+**Vocabulary clarity:**
+- Expand technical vocabulary ONLY in general_feedback sections (NOT in option feedback)
+- Pattern: <b>term</b> (brief plain-language explanation) — use HTML bold tags, NOT markdown
+- Examples: <b>inductive</b> (building from evidence to conclusions), <b>cognitive</b> (mental, related to thinking)
+- Focus on: adverbs ending in -ly (systematically, strategically), academic terms (hierarchical, asymmetric), discipline-specific jargon (cognitive, psychological)
+- Keep option feedback simple and direct - save vocabulary expansion for general_feedback
+- IMPORTANT: Use HTML <b>tags</b> because GIFT format doesn't support markdown **bold**
+</constraints>
+
+<examples>
+  <example>
+    <category>Remembering - GOOD</category>
+    <question>
+```yaml
+    question: |
+      What are the three components of Hofstede's Power Distance Index?
+
+    options:
+      - key: "A"
+        text: "Acceptance of inequality, hierarchy, and centralization"
+        feedback: "Correct! PDI measures these three aspects of how societies handle power differences."
+        correct: true
+
+      - key: "B"
+        text: "Individual rights, personal freedom, and autonomy"
+        feedback: "Incorrect. These relate to Individualism vs. Collectivism, not Power Distance."
+
+    general_feedback: |
+      Power Distance Index measures acceptance of unequal power distribution in three areas: inequality acceptance, hierarchical structure, and decision centralization. See Week 9 slides 3-5.
+```
+    </question>
+  </example>
+
+  <example>
+    <category>Understanding - GOOD</category>
+    <question>
+```yaml
+    question: |
+      How do high and low Power Distance cultures differ in their approach to authority?
+
+    options:
+      - key: "A"
+        text: "High PDI accepts hierarchy; Low PDI questions authority and prefers equality"
+        feedback: "Correct! This captures the core distinction in how cultures view power structures."
+        correct: true
+
+      - key: "B"
+        text: "Both accept hierarchy equally; the difference is only in communication style"
+        feedback: "Incorrect. The fundamental difference IS in hierarchy acceptance, not just communication."
+
+    general_feedback: |
+      High PDI cultures (like Vietnam, 70) accept centralized authority and hierarchy. Low PDI cultures (like Denmark, 18) question authority and prefer flat structures. This affects decision-making, feedback, and organizational design. See Week 9 slides 6-8.
+```
+    </question>
+  </example>
+
+  <example>
+    <category>Application - BAD (Do not create questions like this)</category>
+    <question>
+```yaml
+    question: |
+      Your Vietnamese colleague seems uncomfortable questioning the manager's decision in a meeting. Using Hofstede's dimensions, explain why and recommend how to create psychological safety.
+
+    # PROBLEM: This tests APPLICATION (analyzing a scenario and recommending solutions)
+    # This belongs in tutorials/assessments, NOT weekly quizzes
+    # Quizzes test if students KNOW the frameworks, not if they can APPLY them
+```
+    </question>
+  </example>
+
+  <example>
+    <category>Ambiguous - BAD (Multiple answers defensible)</category>
+    <question>
+```yaml
+    question: |
+      A presenter says: "I've managed remote teams for 5 years and Stanford research shows 13% productivity increase." Which appeal is STRONGEST?
+
+    options:
+      - key: "A"
+        text: "Ethos - establishes credibility"
+        # DEFENSIBLE: Personal experience = credibility
+      - key: "B"
+        text: "Logos - cites research data"
+        # ALSO DEFENSIBLE: Stanford research = data/logic
+
+    # PROBLEM: Both A and B could be defended
+    # "STRONGEST" is subjective - invites interpretation
+    # This creates frustration and debate
+```
+    </question>
+  </example>
+
+  <example>
+    <category>Unambiguous - GOOD (One clear answer)</category>
+    <question>
+```yaml
+    question: |
+      Which of Aristotle's three rhetorical appeals focuses on establishing speaker credibility and trustworthiness?
+
+    options:
+      - key: "A"
+        text: "Ethos"
+        feedback: "Correct! Ethos is the appeal to credibility, character, and trustworthiness."
+        correct: true
+
+      - key: "B"
+        text: "Pathos"
+        feedback: "Incorrect. Pathos appeals to emotion and values, not credibility."
+
+      - key: "C"
+        text: "Logos"
+        feedback: "Incorrect. Logos appeals to logic and evidence, not speaker credibility."
+
+    # CLEAR: Only one definition of ethos exists
+    # No room for interpretation or debate
+```
+    </question>
+  </example>
+
+  <example>
+    <category>Understanding - GOOD (Pure concept comparison)</category>
+    <question>
+```yaml
+    question: |
+      How do ethos and logos differ as persuasive appeals?
+
+    options:
+      - key: "A"
+        text: "Ethos builds credibility and trust; Logos provides logical evidence and reasoning"
+        feedback: "Correct! Ethos answers 'Why trust you?' while Logos answers 'Is this argument logical?'"
+        correct: true
+
+      - key: "B"
+        text: "Ethos appeals to emotion; Logos appeals to credibility"
+        feedback: "Incorrect. You have these reversed. Ethos = credibility, Pathos = emotion, Logos = logic."
+
+    general_feedback: |
+      Ethos establishes why the audience should trust you (credentials, character, sources). Logos provides logical reasoning with evidence (data, research, structured arguments). Both are essential but serve different purposes. See Week 7 slides 3-5.
+```
+    # NOTE: Pure comparison questions - no scenarios, just "How do X and Y differ?"
+    </question>
+  </example>
+</examples>
+
+<template>
+```yaml
 ---
+metadata:
+  week: [1-10]
+  topic: "[Week topic from syllabus]"
+  prepares_for: "[Assessment name] (Week [X])"
+  source: "lecture-content.md"
 
-## Questions
+questions:
+  - id: "W[N]-Q[N]-[slug]"
+    type: "multiple_choice"
+    bloom_level: "remembering"  # or "understanding"
+    topic: "[Framework Name]"
 
-### Q1: [Concept Name]
-**Type:** Multiple Choice
-**Category:** Remembering OR Understanding
+    question: |
+      [Question text - must end with ?]
 
-[Question text]
+    options:
+      - key: "A"
+        text: "[Option text - min 10 chars]"
+        feedback: "[Why correct/incorrect - max 500 chars]"
+        correct: true
 
-A) [Option]
-B) [Option]
-C) [Option]
-D) [Option]
+      - key: "B"
+        text: "[Option text]"
+        feedback: "[Why incorrect]"
 
-**Answer:** [Letter]
+      - key: "C"
+        text: "[Option text]"
+        feedback: "[Why incorrect]"
 
-**Feedback:**
-- **A) Incorrect.** [Why this is wrong]
-- **B) Correct!** [Why this is right]
-- **C) Incorrect.** [Why this is wrong]
-- **D) Incorrect.** [Why this is wrong]
+      - key: "D"
+        text: "[Option text]"
+        feedback: "[Why incorrect]"
 
+    general_feedback: |
+      [2-3 sentences, 50-100 words max]
+      [Explain WHAT the concept IS]
+      [For dimensions: explain what HIGH and LOW mean]
+      [EXPAND TECHNICAL VOCABULARY: Use <b>term</b> (plain-language definition) format with HTML bold tags]
+      [Reference: See Week X slides Y-Z]
 ---
-
-### Q2: [Concept Name]
-**Type:** True/False
-
-[Statement to evaluate]
-
-**Answer:** True/False
-**Feedback:** [Explanation]
-
-[Repeat for 5-8 questions total]
 ```
+</template>
 
-### Source Material
+<output_format>
+Create a YAML file matching the template exactly. Include:
+- Metadata section with week, topic, prepares_for, source
+- 12 questions (4 frameworks × 3 questions)
+- Distribution: 4 Remembering (33%) + 8 Understanding (67%)
+- All feedback < 500 chars per option
+- General feedback < 1000 chars, explains concepts simply
 
-Pull questions from:
-- Lecture slide key concepts and frameworks
-- Week learning objectives (from syllabus)
-- Assessment schedule (to know which quiz this prepares for)
+**GIFT Export Format Requirements:**
+- Use HTML <b>tags</b> for bold, NOT markdown **asterisks**
+- GIFT format exports questions to Moodle for import
+- The exporter automatically handles special character escaping and format conversion
+- Your YAML will be converted to GIFT format where general_feedback becomes }####feedback
+</output_format>
 
-Do NOT pull from:
-- Tutorial activities (those practice assessment skills, not quiz content)
-- Tutor notes (facilitation guidance, not source material)
-
----
-
-## Question Types 🔐
-
-| Type | When to Use | Example |
-|------|-------------|---------|
-| Multiple choice | Concept recognition | "Which principle does this illustrate?" |
-| True/False | Common misconceptions | "Email is always the best channel for urgent messages." |
-| Matching | Term/definition pairs | Match framework components to descriptions |
-| Short answer | Key term recall | "Name two of Cialdini's principles" |
-
-## Question Quality Rules
-
-**Good questions:**
-- Test understanding, not memorization
-- Have one clearly correct answer
-- Use scenarios/examples from lecture
-- Include plausible distractors
-
-**Bad questions:**
-- Trick questions or wordplay
-- "All of the above" / "None of the above"
-- Double negatives
-- Trivial details not covered in lecture
-
-## Bad → Good Transformation
-
-**Bad question (vague, "all of the above"):**
-```
-What did Cialdini say about reciprocity?
-a) It's important
-b) It's the first principle
-c) People feel obligated to return favors
-d) All of the above
-```
-Problems: Vague options, "all of the above," unclear what's being tested
-
-**Good Remembering question:**
-```
-According to Cialdini, what is the core mechanism of the reciprocity principle?
-a) People follow what others are doing
-b) People feel obligated to return favors after receiving something
-c) People comply with requests from authority figures
-d) People value things more when they are scarce
-```
-Better: Clear definition recall, plausible distractors from other principles
-
-**Good Understanding question:**
-```
-Why does the reciprocity principle work, according to Cialdini?
-a) People want to appear consistent with their past behavior
-b) People feel uncomfortable owing others and want to balance the exchange
-c) People trust experts more than non-experts
-d) People fear missing out on opportunities
-```
-Better: Tests understanding of WHY, not just WHAT
-
-## GIFT Format (Moodle) 🔒
-
-```gift
-// Multiple Choice
-::Question Title:: What is the primary purpose of X? {
-  =Correct answer
-  ~Wrong answer with feedback#Feedback for wrong answer
-  ~Another wrong answer#Why this is incorrect
-}
-
-// True/False
-::TF Question:: Statement to evaluate. {TRUE#Correct! Here's why.#Actually, this is true because...}
-
-// Short Answer
-::Short Question:: What term describes X? {=answer1 =answer2}
-```
-
-## Feedback Requirements
-
-Every answer option needs feedback:
-- **Correct:** Reinforce why it's right
-- **Incorrect:** Explain the misconception, point to correct concept
-
-## Quiz Structure (10 Questions)
-
-| Bloom's Level | Question Type | Count |
-|---------------|---------------|-------|
-| **Remembering** | Definitions, sequences, identification, matching | 5 |
-| **Understanding** | Explaining why, distinguishing concepts, interpreting | 5 |
-
-**Recommended mix (10 questions):**
-1. 2-3 definition/recall questions (MC) - Remembering
-2. 1-2 sequence/component identification questions - Remembering
-3. 1 matching question (counts as 1) - Remembering
-4. 2 true/false testing misconceptions - Understanding
-5. 2-3 "what is the purpose/why" questions - Understanding
-
-**Time:** 20-25 min for students to complete with review
-
----
-
-## Bloom's Level Examples 🔐
-
-**REMEMBERING questions ask students to recall facts, definitions, sequences:**
-
-```markdown
-### Good Remembering Question
-What do the letters M, K, and S stand for in the MKS model?
-A) Message, Knowledge, Source
-B) Motivation, Knowledge, Skills  ← Correct
-C) Medium, Key concepts, Strategy
-D) Method, Knowing, Speaking
-```
-
-```markdown
-### Good Remembering Question (Matching)
-Match each level of communication problem to its definition:
-1. Technical level → How accurately can symbols be transmitted?
-2. Semantic level → How precisely do symbols convey intended meaning?
-3. Effectiveness level → How effectively does meaning affect behavior?
-```
-
-```markdown
-### Good Remembering Question (NOT format)
-Which of the following is NOT one of Gallo's four leadership communication strategies?
-A) Use short words to talk about hard things
-B) Choose sticky metaphors
-C) Use technical jargon to establish expertise  ← Correct (opposite of strategy 1)
-D) Make mission your mantra
-```
-
-**UNDERSTANDING questions ask students to explain, interpret, or distinguish:**
-
-```markdown
-### Good Understanding Question (Explaining purpose)
-What is the primary purpose of "humanizing data" in leadership communication?
-A) To make statistics sound more impressive
-B) To connect numbers to human impact so audiences care  ← Correct
-C) To hide negative data behind positive stories
-D) To simplify data for less educated audiences
-```
-
-```markdown
-### Good Understanding Question (True/False misconception)
-In the Shannon-Weaver model, "noise" refers only to physical sounds.
-Answer: False
-(Tests whether student understands noise includes semantic and psychological interference)
-```
-
-```markdown
-### Good Understanding Question (Distinguishing concepts)
-In the MKS model, which dimension includes BOTH desire AND confidence?
-A) Knowledge
-B) Skills
-C) Motivation  ← Correct
-D) Context
-```
-
-**BAD questions (too scenario-heavy for Remember/Understand):**
-
-```markdown
-### Bad Question (Application level, not Remember/Understand)
-A manager sends an email with technical jargon and employees don't understand.
-Using Shannon-Weaver, diagnose the problem and recommend a fix.
-→ This is "Apply" level, not appropriate for weekly quiz
-```
-
-> **Rule:** Scenarios should be brief and used only to provide context for Understanding questions—not to test problem-solving or application skills (that's for tutorials and assessments).
-
-> **Note:** For quiz consolidation, questions are categorized as "Remembering" or "Understanding" to match `/consolidate-quiz` CLI.
+<checklist>
+Before finalizing, verify:
+- [ ] All questions test framework KNOWLEDGE, not scenario APPLICATION (application belongs in tutorials)
+- [ ] Remembering asks: What IS it? What are the components?
+- [ ] Understanding asks: How do concepts differ? Why is it structured this way?
+- [ ] NO scenarios—no "A person...", "In this situation...", "What happens when..." (these test application)
+- [ ] NO ambiguity—avoid "MOST", "PRIMARY", "STRONGEST" (these have multiple defensible answers)
+- [ ] Each question has ONE clearly correct answer—no room for interpretation
+- [ ] Questions use patterns from <question_patterns> section
+- [ ] Technical vocabulary expanded with <b>term</b> (plain-language definition) using HTML bold tags
+- [ ] All YAML valid and matches template structure exactly
+</checklist>

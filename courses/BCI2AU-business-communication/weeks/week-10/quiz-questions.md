@@ -1,212 +1,357 @@
-# Week 10 Quiz Questions
+---
+metadata:
+  week: 10
+  topic: "Integration & Capstone"
+  prepares_for: "Group Presentation & Individual Grade (Week 12)"
+  source: "lecture-content.md"
 
-**Topic:** Integration & Capstone
-**Prepares for:** Comprehensive Quiz (Week 11)
-**Source:** lecture-content.md key concepts
+questions:
+  - id: "W10-Q1-kolb-components"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Kolb's Experiential Learning Cycle"
+
+    question: |
+      What are the four stages of Kolb's Experiential Learning Cycle?
+
+    options:
+      - key: "A"
+        text: "Concrete Experience, Reflective Observation, Abstract Conceptualization, Active Experimentation"
+        feedback: "Correct! These four stages form the complete learning cycle that Kolb identified."
+        correct: true
+
+      - key: "B"
+        text: "Content Exposure, Reflection, Conceptual Learning, Practice Application"
+        feedback: "Incorrect. While similar, these are not the exact terms Kolb used for the four stages."
+
+      - key: "C"
+        text: "Experience, Analysis, Understanding, Implementation"
+        feedback: "Incorrect. These are too general. Kolb's specific terminology includes 'Reflective Observation' and 'Abstract Conceptualization.'"
+
+      - key: "D"
+        text: "Doing, Watching, Thinking, Testing"
+        feedback: "Incorrect. These are informal descriptions, not Kolb's formal terminology."
+
+    general_feedback: |
+      Kolb's Experiential Learning Cycle has four distinct stages: **Concrete Experience** (direct involvement in an activity), **Reflective Observation** (analyzing what happened from multiple perspectives), **Abstract Conceptualization** (developing theories and understanding), and **Active Experimentation** (testing insights in new situations). These stages create a **cyclical** (repeating, spiral process) progression. See Week 10 slides 5-6.
+
+  - id: "W10-Q2-kolb-learning-styles"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Kolb's Experiential Learning Cycle"
+
+    question: |
+      How do Converging and Diverging learning styles differ according to Kolb?
+
+    options:
+      - key: "A"
+        text: "Converging combines Abstract Conceptualization and Active Experimentation; Diverging combines Concrete Experience and Reflective Observation"
+        feedback: "Correct! These **biphasic** (two-part) combinations determine learning style preferences."
+        correct: true
+
+      - key: "B"
+        text: "Converging learners prefer lectures; Diverging learners prefer hands-on practice"
+        feedback: "Incorrect. The distinction is not about preference for lectures vs. practice, but about which two stages they favor."
+
+      - key: "C"
+        text: "Converging learners reflect more; Diverging learners experiment more"
+        feedback: "Incorrect. Converging learners are action and problem-solving oriented; Diverging learners are reflective and imaginative."
+
+      - key: "D"
+        text: "Converging learners work alone; Diverging learners work in groups"
+        feedback: "Incorrect. These learning styles describe how people process experiences, not whether they work alone or collaboratively."
+
+    general_feedback: |
+      Converging learners combine Abstract Conceptualization (understanding theories) with Active Experimentation (applying solutions), making them strong problem-solvers but sometimes missing emotional dimensions. Diverging learners combine Concrete Experience (doing) and Reflective Observation (analyzing from multiple angles), making them imaginative and creative but sometimes struggling with decisive action. See Week 10 slide 7.
+
+  - id: "W10-Q3-kolb-definition"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Kolb's Experiential Learning Cycle"
+
+    question: |
+      According to Kolb, what does "knowing-in-action" mean?
+
+    options:
+      - key: "A"
+        text: "Skills and knowledge that are embedded in skillful performance but difficult to fully articulate"
+        feedback: "Correct! This is Kolb's term for **tacit** (unspoken, implied) knowledge developed through experience."
+        correct: true
+
+      - key: "B"
+        text: "The ability to explain frameworks clearly to others"
+        feedback: "Incorrect. Knowing-in-action is about skills you can do automatically, not necessarily explain clearly."
+
+      - key: "C"
+        text: "The stage where you actively experiment with new theories"
+        feedback: "Incorrect. Active Experimentation is one stage of the cycle, but knowing-in-action is different."
+
+      - key: "D"
+        text: "Learning that happens only through real-world practice, not through study"
+        feedback: "Incorrect. Knowing-in-action develops through the full cycle including reflection and conceptualization."
+
+    general_feedback: |
+      **Knowing-in-action** is **tacit** (implicit, not explicitly stated) knowledge—things you've learned so thoroughly they've become automatic. For example, once you've applied Pyramid Principle dozens of times, you structure arguments automatically without conscious thought. This is developed through completing the full learning cycle multiple times. See Week 10 slide 9.
+
+  - id: "W10-Q4-schon-reflection-types"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Schön's Reflective Practice"
+
+    question: |
+      How do reflection-in-action and reflection-on-action differ in timing and purpose?
+
+    options:
+      - key: "A"
+        text: "Reflection-in-action happens during performance for real-time adjustment; reflection-on-action happens after the event for analysis and learning"
+        feedback: "Correct! These **temporal** (time-based) distinctions determine when each type of reflection occurs."
+        correct: true
+
+      - key: "B"
+        text: "Reflection-in-action is for identifying problems; reflection-on-action is for solving them"
+        feedback: "Incorrect. Both types of reflection involve both problem identification and understanding."
+
+      - key: "C"
+        text: "Reflection-in-action is solo; reflection-on-action involves discussing with others"
+        feedback: "Incorrect. The distinction is about when reflection occurs, not whether it's individual or collaborative."
+
+      - key: "D"
+        text: "Reflection-in-action applies to presentations; reflection-on-action applies to writing"
+        feedback: "Incorrect. Both types of reflection apply to all professional communication tasks."
+
+    general_feedback: |
+      **Reflection-in-action** is real-time thinking during professional tasks—adjusting your presentation delivery when you notice audience confusion, or changing your examples mid-conversation based on listener reactions. **Reflection-on-action** is **retrospective** (looking back), stepping back after an event to analyze what happened and why. Both are essential: one enables immediate adjustment; the other enables deep learning. See Week 10 slides 8-9.
+
+  - id: "W10-Q5-schon-problem-framing"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Schön's Reflective Practice"
+
+    question: |
+      According to Schön, what is problem setting in professional practice?
+
+    options:
+      - key: "A"
+        text: "The process of constructing and framing problems from ambiguous situations, not just solving pre-defined problems"
+        feedback: "Correct! Problem setting is the expert skill of determining what the actual problem is before solving it."
+        correct: true
+
+      - key: "B"
+        text: "The ability to identify the correct solution to a given problem"
+        feedback: "Incorrect. That's problem solving, not problem setting. Problem setting comes first."
+
+      - key: "C"
+        text: "Breaking complex problems into smaller, manageable parts"
+        feedback: "Incorrect. That's problem decomposition, not the process Schön describes as problem setting."
+
+      - key: "D"
+        text: "Communicating the problem clearly to team members"
+        feedback: "Incorrect. Schön focuses on how professionals frame problems from **ambiguous** (unclear, uncertain) situations."
+
+    general_feedback: |
+      **Problem setting** is the expert's ability to construct what the actual problem is from unclear, troubling situations. Novices receive a problem and solve it; experts must first determine what the real problem actually is. For example: a memo request (surface problem) might really be about stakeholder misalignment (real problem). Schön argues this is how professionals distinguish themselves. See Week 10 slide 10.
+
+  - id: "W10-Q6-schon-knowing-in-action"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Schön's Reflective Practice"
+
+    question: |
+      Why does Schön argue that knowing-in-action is essential for professionals?
+
+    options:
+      - key: "A"
+        text: "Because it allows professionals to perform skillfully in complex situations without always consciously thinking through each step"
+        feedback: "Correct! **Automatic** (happening without conscious thought) performance enables flexibility and real-time **adaptation** (adjustment to circumstances)."
+        correct: true
+
+      - key: "B"
+        text: "Because it means professionals always know the 'right' answer before a problem appears"
+        feedback: "Incorrect. Knowing-in-action doesn't mean having all answers—it means being able to think quickly and adjust."
+
+      - key: "C"
+        text: "Because it eliminates the need for reflection in professional practice"
+        feedback: "Incorrect. Schön emphasizes that knowing-in-action works alongside both types of reflection."
+
+      - key: "D"
+        text: "Because it proves that professionals have completed their training and need no further development"
+        feedback: "Incorrect. Schön argues professionals continually develop through cycles of reflection and experimentation."
+
+    general_feedback: |
+      **Knowing-in-action** enables professionals to perform **fluently** (smoothly, with competence) in complex situations. Because some knowledge is **tacit** (unspoken, built through experience), experts can adjust to unexpected situations in real-time. Without this **automatic** performance at the foundation, professionals couldn't engage in the **nimble** (quick, flexible) thinking needed for reflection-in-action. See Week 10 slides 8-9.
+
+  - id: "W10-Q7-mit-sloan-strategies"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "MIT Sloan Feedback Framework"
+
+    question: |
+      What are the four strategies for building continuous learning capability according to MIT Sloan research?
+
+    options:
+      - key: "A"
+        text: "Link Purpose to Learning, Create Learning-Rich Experiences, Ask Meta-Learning Questions, Nurture a Learning Team"
+        feedback: "Correct! These four **evidence-based** (supported by research data) strategies drive learning agility."
+        correct: true
+
+      - key: "B"
+        text: "Set Career Goals, Take Online Courses, Read Business Books, Find a Mentor"
+        feedback: "Incorrect. While these are helpful, they're not the specific four strategies MIT Sloan identified."
+
+      - key: "C"
+        text: "Identify Skill Gaps, Practice Deliberately, Measure Progress, Celebrate Success"
+        feedback: "Incorrect. These are general learning principles, not the four MIT Sloan strategies."
+
+      - key: "D"
+        text: "Join Professional Associations, Attend Conferences, Network with Peers, Seek Promotions"
+        feedback: "Incorrect. While these support development, they're not the MIT Sloan framework."
+
+    general_feedback: |
+      MIT Sloan's research with 340 professionals identified four **empirically validated** (proven through research) strategies: **Purpose linkage** (connecting learning to personal goals), **experiential variety** (seeking diverse and challenging tasks), **reflective questioning** (systematically asking what you need to learn), and **social support** (finding feedback partners and mentors). These strategies accelerate skill development more than isolated practice. See Week 10 slide 13.
+
+  - id: "W10-Q8-mit-sloan-meta-learning"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "MIT Sloan Feedback Framework"
+
+    question: |
+      How does asking meta-learning questions support continuous skill development?
+
+    options:
+      - key: "A"
+        text: "They help learners assess what they need, how to learn it, and where gaps exist—creating a focused development plan"
+        feedback: "Correct! **Metacognitive** (thinking about thinking) questions direct learning efforts **strategically** (according to a plan)."
+        correct: true
+
+      - key: "B"
+        text: "They encourage learners to memorize more information quickly"
+        feedback: "Incorrect. Meta-learning questions are about self-assessment and planning, not speed of memorization."
+
+      - key: "C"
+        text: "They replace the need for feedback from others"
+        feedback: "Incorrect. Meta-learning questions are one strategy; they work alongside feedback from mentors and peers."
+
+      - key: "D"
+        text: "They guarantee that learners will master all professional skills"
+        feedback: "Incorrect. Meta-learning questions support development but don't guarantee mastery—consistent practice is still required."
+
+    general_feedback: |
+      **Metacognitive** questions (What do I need to learn? How should I learn it? Where are my gaps?) force learners to become **intentional** (deliberate, purposeful) about their development rather than passive. These questions connect directly to Kolb's framework—identifying learning style preferences and targeting specific growth areas. MIT Sloan found that professionals who ask these questions **systematically** (according to a structured process) develop faster. See Week 10 slide 13.
+
+  - id: "W10-Q9-mit-sloan-purpose"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "MIT Sloan Feedback Framework"
+
+    question: |
+      Why does linking purpose to learning accelerate skill acquisition in MIT Sloan research?
+
+    options:
+      - key: "A"
+        text: "Understanding why a skill matters for your career goals increases motivation and engagement with learning"
+        feedback: "Correct! **Intrinsic motivation** (internal desire based on personal values) drives deeper and faster skill development."
+        correct: true
+
+      - key: "B"
+        text: "It allows learners to skip difficult material that doesn't relate to their goals"
+        feedback: "Incorrect. Purpose linkage doesn't mean avoiding challenging material—it means seeing why it matters."
+
+      - key: "C"
+        text: "It reduces the total amount of learning required for competence"
+        feedback: "Incorrect. Purpose linkage doesn't reduce learning requirements—it increases motivation to complete full learning."
+
+      - key: "D"
+        text: "It makes skills easier to learn because they're more interesting"
+        feedback: "Incorrect. While interest helps, the mechanism is deeper—purpose creates **psychological commitment** (emotional buy-in)."
+
+    general_feedback: |
+      MIT Sloan's regression analysis shows that when learners connect skill development to personal career aspirations, they develop **accelerated** (faster) competence. This works because **intrinsic motivation** (internal drive based on personal goals) produces deeper engagement than **extrinsic motivation** (external rewards). For example: "I want to lead international teams, so cross-cultural communication mastery is essential for my career" creates stronger learning than "I need to pass this course." See Week 10 slide 13.
+
+  - id: "W10-Q10-mckinsey-versatility-dimensions"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "McKinsey Versatility Model"
+
+    question: |
+      What are the three dimensions of professional versatility in the McKinsey framework?
+
+    options:
+      - key: "A"
+        text: "Pursue Diverse Experiences, Go Deep (Constant Curiosity), Know When to Speak Up"
+        feedback: "Correct! These three **complementary** (working together) dimensions create professional versatility."
+        correct: true
+
+      - key: "B"
+        text: "Technical Skills, Communication Skills, Leadership Skills"
+        feedback: "Incorrect. The McKinsey framework doesn't divide versatility into these three skill categories."
+
+      - key: "C"
+        text: "Individual Performance, Team Collaboration, Strategic Thinking"
+        feedback: "Incorrect. While important, these aren't the three McKinsey dimensions specifically."
+
+      - key: "D"
+        text: "Breadth of Knowledge, Speed of Learning, Excellence of Execution"
+        feedback: "Incorrect. The McKinsey framework uses different terminology focusing on experience types and depth."
+
+    general_feedback: |
+      McKinsey's research with global executives identified three dimensions that distinguish versatile leaders: seeking **diverse** (varied, different) experiences to avoid becoming narrow, pursuing **depth** alongside breadth through **rigorous analysis** (thorough, systematic examination), and speaking up **authentically** (genuinely, truthfully) only when you have real expertise. These three work together: breadth prevents narrow expertise; depth prevents shallow generalization; authentic voice prevents empty rhetoric. See Week 10 slide 14.
+
+  - id: "W10-Q11-mckinsey-diverse-experiences"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "McKinsey Versatility Model"
+
+    question: |
+      How do diverse experiences contribute to professional versatility according to McKinsey?
+
+    options:
+      - key: "A"
+        text: "They develop multiple communication modes and prevent narrow specialization, enabling adaptation across different contexts"
+        feedback: "Correct! **Polymathic** (many-sided, knowledgeable in multiple areas) professionals adapt better to varied situations."
+        correct: true
+
+      - key: "B"
+        text: "They prove to employers that you can work in any industry or role"
+        feedback: "Incorrect. Diverse experiences don't mean you can do everything—they develop **flexibility** (ability to adjust) within your expertise."
+
+      - key: "C"
+        text: "They allow professionals to avoid developing deep expertise in any single area"
+        feedback: "Incorrect. McKinsey emphasizes both breadth AND depth—diverse experiences work alongside specialization."
+
+      - key: "D"
+        text: "They guarantee career advancement and higher salary"
+        feedback: "Incorrect. Diverse experiences support versatility and adaptability but don't guarantee career outcomes."
+
+    general_feedback: |
+      McKinsey's research shows that versatile professionals deliberately seek varied communication challenges—different audiences, formats, industries—to develop **adaptive capacity** (ability to adjust skills to new situations). This prevents becoming a "one-note" communicator skilled in only one style. For example, practicing both analytical presentations and persuasive pitches develops broader capability than specializing in only analytics. The key is **intentional variety**—choosing experiences that stretch different communication muscles. See Week 10 slide 14.
+
+  - id: "W10-Q12-mckinsey-authenticity"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "McKinsey Versatility Model"
+
+    question: |
+      What does McKinsey mean by "know when to speak up" as part of professional versatility?
+
+    options:
+      - key: "A"
+        text: "Communicate on topics where you have genuine expertise rather than speaking just to be heard or without substance"
+        feedback: "Correct! This avoids the **'empty suit'** (appearance of authority without real knowledge) syndrome."
+        correct: true
+
+      - key: "B"
+        text: "Always speak up in meetings to show confidence and engagement"
+        feedback: "Incorrect. Speaking constantly doesn't demonstrate versatility—it can suggest insecurity or lack of focus."
+
+      - key: "C"
+        text: "Be willing to disagree with senior leaders to show independent thinking"
+        feedback: "Incorrect. While healthy disagreement matters, the McKinsey principle is about authentic expertise, not contrarianism."
+
+      - key: "D"
+        text: "Speak up only when directly asked a question by leadership"
+        feedback: "Incorrect. The principle isn't about waiting for permission—it's about contributing **substantively** (meaningfully, with real content)."
+
+    general_feedback: |
+      McKinsey emphasizes that versatile leaders communicate **authentically**—contributing when they have real knowledge or stake in outcomes, not just to be heard. This avoids the **'empty suit'** problem: appearing authoritative while lacking substance. The practice requires **epistemic humility** (acknowledging the limits of what you know) and **authentic leadership** (communicating based on genuine expertise). A versatile communicator might be silent on technical topics outside their expertise but vocal on strategy, because they have genuine insight to offer. See Week 10 slide 14.
 
 ---
-
-## Questions
-
-### Q1: Kolb's Learning Cycle Stages
-**Type:** Multiple Choice (Remembering)
-
-What are the four stages of Kolb's Experiential Learning Cycle in the correct sequence?
-
-A) Concrete Experience → Abstract Conceptualization → Reflective Observation → Active Experimentation
-B) Concrete Experience → Reflective Observation → Abstract Conceptualization → Active Experimentation
-C) Reflective Observation → Concrete Experience → Abstract Conceptualization → Active Experimentation
-D) Active Experimentation → Concrete Experience → Reflective Observation → Abstract Conceptualization
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** While this includes all four stages, the sequence is wrong. Reflective Observation comes before Abstract Conceptualization, not after.
-- **B) Correct!** Kolb's cycle progresses through: Concrete Experience (doing), Reflective Observation (reviewing), Abstract Conceptualization (concluding), and Active Experimentation (planning).
-- **C) Incorrect.** The cycle typically begins with Concrete Experience (the doing phase), though learners can enter at any point. The sequence here is also incorrect.
-- **D) Incorrect.** This reverses the natural progression of the learning cycle. Active Experimentation (testing theories) comes after you've developed those theories through the other three stages.
-
----
-
-### Q2: Reflection-in-Action Definition
-**Type:** Multiple Choice (Remembering)
-
-According to Schön, what is "reflection-in-action"?
-
-A) Retrospective analysis of professional experiences after an event
-B) Real-time thinking and adjusting approaches while performing professional tasks
-C) Planning and preparation before beginning a professional task
-D) Documenting lessons learned for future reference
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** This describes "reflection-on-action," which is the retrospective analysis that happens after an event, not during it.
-- **B) Correct!** Reflection-in-action is the "thinking on your feet" that occurs in real-time during professional performance, such as adjusting a presentation based on audience cues.
-- **C) Incorrect.** This describes preparatory planning, not reflection-in-action. Schön's concept involves monitoring and adjusting during the performance itself.
-- **D) Incorrect.** This is part of reflection-on-action (retrospective analysis), not the real-time adjustment that characterizes reflection-in-action.
-
----
-
-### Q3: Learning Style Identification
-**Type:** Matching (Remembering)
-
-Match each Kolb learning style to its characteristic strengths:
-
-1. Diverging (CE/RO)
-2. Assimilating (AC/RO)
-3. Converging (AC/AE)
-4. Accommodating (CE/AE)
-
-A) Finding practical uses for theories and making decisions
-B) Viewing from multiple perspectives and brainstorming
-C) Getting things done and adapting to circumstances
-D) Understanding wide-ranging information and creating models
-
-**Answer:**
-1-B, 2-D, 3-A, 4-C
-
-**Feedback:**
-- **1-B Correct.** Diverging learners excel at viewing situations from multiple angles and generating creative solutions through brainstorming.
-- **2-D Correct.** Assimilating learners are strong at synthesizing complex information and developing theoretical models.
-- **3-A Correct.** Converging learners focus on practical application, finding uses for theories, and problem-solving.
-- **4-C Correct.** Accommodating learners are action-oriented, preferring to jump in, learn by doing, and adapt quickly to circumstances.
-
----
-
-### Q4: Schön's Knowing-in-Action
-**Type:** Multiple Choice (Remembering)
-
-In Schön's framework, what is "knowing-in-action"?
-
-A) The deliberate practice of reflecting after completing a task
-B) Tacit knowledge embedded in skillful performance that you know but can't fully articulate
-C) Written documentation of best practices and procedures
-D) The process of adjusting your approach during a presentation
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** This describes reflection-on-action, not knowing-in-action. Knowing-in-action is about automatic competence, not deliberate reflection.
-- **B) Correct!** Knowing-in-action is Schön's term for tacit knowledge—things you've learned so well they become automatic and you perform them without conscious thought (e.g., "we know more than we can tell").
-- **C) Incorrect.** Knowing-in-action is tacit (unarticulated) knowledge, not explicit documentation. It's the opposite of written procedures.
-- **D) Incorrect.** This describes reflection-in-action (real-time adjustment), not knowing-in-action (automatic competence).
-
----
-
-### Q5: MIT Sloan Learning Strategies
-**Type:** Multiple Choice (Remembering)
-
-Which of the following is NOT one of the four strategies for learning agility identified in the MIT Sloan research?
-
-A) Link purpose to learning
-B) Create learning-rich experiences
-C) Avoid difficult tasks until skills are mastered
-D) Nurture a learning team
-
-**Answer:** C
-
-**Feedback:**
-- **A) Incorrect.** "Link purpose to learning" is Strategy 1—connecting skill development to career aspirations to accelerate acquisition.
-- **B) Incorrect.** "Create learning-rich experiences" is Strategy 2—deliberately seeking varied and challenging communication tasks.
-- **C) Correct!** This is the opposite of the MIT Sloan recommendation. Strategy 2 actually encourages seeking challenging tasks and pushing beyond comfort zones deliberately, not avoiding difficult tasks.
-- **D) Incorrect.** "Nurture a learning team" is Strategy 4—finding feedback partners and mentors for ongoing development.
-
----
-
-### Q6: Reflection-on-Action Timing
-**Type:** True/False (Understanding)
-
-Reflection-on-action occurs during the experience itself, while reflection-in-action happens after the event.
-
-**Answer:** False
-
-**Feedback:**
-**False - Correct!** This statement reverses Schön's definitions. Reflection-in-action occurs during the experience (real-time adjustment), while reflection-on-action happens after the event (retrospective analysis). For example, adjusting your presentation mid-delivery is reflection-in-action; analyzing what worked afterward is reflection-on-action.
-
----
-
-### Q7: Abstract Conceptualization Purpose
-**Type:** Multiple Choice (Understanding)
-
-Why is "abstract conceptualization" necessary in Kolb's Learning Cycle for learning transfer?
-
-A) It allows you to practice new skills in different contexts
-B) It helps you receive feedback from multiple perspectives
-C) It enables you to develop theories and principles that can be applied beyond the original situation
-D) It ensures you have direct hands-on experience with concepts
-
-**Answer:** C
-
-**Feedback:**
-- **A) Incorrect.** This describes "active experimentation" (testing theories in new situations), not abstract conceptualization. Practicing in different contexts comes after you've developed the theories.
-- **B) Incorrect.** This describes "reflective observation" (watching and reflecting from multiple perspectives), not abstract conceptualization.
-- **C) Correct!** Abstract conceptualization is where you create theories to explain your observations (e.g., "I lose audience when I read slides"). These theories/principles can then be applied to new situations, enabling learning transfer.
-- **D) Incorrect.** This describes "concrete experience" (direct involvement), which is the first stage, not abstract conceptualization.
-
----
-
-### Q8: Problem Setting vs. Problem Solving
-**Type:** Multiple Choice (Understanding)
-
-What is the key difference between problem setting and problem solving according to Schön?
-
-A) Problem setting is faster while problem solving takes more time
-B) Problem setting involves framing ambiguous situations while problem solving applies techniques to defined problems
-C) Problem setting requires more people while problem solving can be done individually
-D) Problem setting is for beginners while problem solving is for experts
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** Speed is not the distinguishing factor. Problem setting may actually take longer as it involves constructing the problem from ambiguous situations.
-- **B) Correct!** Schön emphasizes that professionals don't just solve given problems—they must first construct problems from "puzzling, troubling, and uncertain" situations. Problem setting is about framing (asking the right question), while problem solving is about finding answers to already-defined problems.
-- **C) Incorrect.** Both can be done individually or collaboratively. The number of people involved is not what distinguishes these concepts.
-- **D) Incorrect.** Actually, Schön argues the opposite—experts engage in problem setting (framing), while novices often only solve problems that are handed to them already defined.
-
----
-
-### Q9: McKinsey Versatility Dimensions
-**Type:** True/False (Understanding)
-
-According to McKinsey's research on professional versatility, going deep (constant curiosity) means avoiding breadth and specializing narrowly in one area.
-
-**Answer:** False
-
-**Feedback:**
-**False - Correct!** McKinsey's versatility framework emphasizes balancing breadth AND depth, not choosing one over the other. Dimension 2 (Go Deep) should be balanced with Dimension 1 (Pursue Diverse Experiences). The framework advocates for "deep-thinking mode" that combines rigorous analysis with decisive action, while also maintaining diverse experiences. Narrow specialization without breadth leads to inflexibility.
-
----
-
-### Q10: Integration Level Distinction
-**Type:** Multiple Choice (Understanding)
-
-What distinguishes "strategic integration" (Level 3) from "multiple application" (Level 2) in framework usage?
-
-A) Level 3 uses more frameworks than Level 2
-B) Level 3 uses more complex frameworks than Level 2
-C) Level 3 shows how frameworks inform each other with clear strategic reasoning, while Level 2 simply uses multiple frameworks side-by-side
-D) Level 3 is only for written work while Level 2 is for presentations
-
-**Answer:** C
-
-**Feedback:**
-- **A) Incorrect.** The number of frameworks used is not the key distinction. You could use many frameworks at Level 2 without achieving strategic integration.
-- **B) Incorrect.** Complexity of frameworks doesn't determine the integration level. The distinction is about HOW frameworks are connected, not which ones are used.
-- **C) Correct!** Strategic integration (Level 3) demonstrates that frameworks inform each other—e.g., "Stakeholder analysis revealed X, which led us to choose Y approach, which shaped how we applied Z framework." Multiple application (Level 2) just uses frameworks without showing strategic connections between them.
-- **D) Incorrect.** Integration levels apply to both written and oral communication. The medium doesn't determine the level of integration.
-
----
-
-**END OF QUIZ QUESTIONS**
-
-**Total Questions:** 10
-
-**Bloom's Distribution:**
-- Remembering: 5 questions (Q1, Q2, Q3, Q4, Q5)
-- Understanding: 5 questions (Q6, Q7, Q8, Q9, Q10)
-
-**Question Type Distribution:**
-- Multiple Choice: 7 (Q1, Q2, Q4, Q5, Q7, Q8, Q10)
-- True/False: 2 (Q6, Q9)
-- Matching: 1 (Q3)

@@ -1,73 +1,91 @@
-// Week 5 Quiz: Oral Communication Fundamentals
-// BCI2AU Business Communication
-// Generated from quiz-questions.md
+// Week 5: Oral Communication Fundamentals
+// Quiz ID: week-05
+// Questions: 12
+// Weeks covered: 5
+// Bloom distribution: 4 Remembering, 8 Understanding
 
-$CATEGORY: Week 5
+$CATEGORY: Week 5: Oral Communication Fundamentals
 
-::Communication Apprehension Definition::According to McCroskey (1977), what is communication apprehension?{
-~The inability to speak clearly in public settings #This describes a speech impediment or articulation problem, not communication apprehension. McCroskey's definition focuses on fear/anxiety, not physical ability to speak.
-=An individual's level of fear or anxiety associated with either real or anticipated communication with another person or persons #This is McCroskey's exact definition from his foundational 1977 paper. Communication apprehension is the fear or anxiety about communicating, whether the communication is happening now (real) or will happen later (anticipated).
-~A personality disorder that prevents effective communication #McCroskey defined communication apprehension as a normal individual difference, not a disorder. 10-20% of people experience significant CA—it's common, not pathological.
-~The physical symptoms of nervousness during presentations #While CA can cause physical symptoms (sweating, rapid heartbeat), McCroskey's definition focuses on the emotional state (fear/anxiety), not the symptoms themselves.
-}
+::Duarte's Three-Act Story Structure::What are the three acts in Duarte's presentation structure?{
+=Beginning (What Is), Middle (What Could Be), End (New Bliss) #Correct! These three acts form the narrative foundation of Duarte's framework.
+~Introduction, Body, Conclusion #Incorrect. While similar, Duarte's framework uses specific terminology tied to narrative storytelling.
+~Problem, Evidence, Solution #Incorrect. This describes a logical structure, not Duarte's three-act framework.
+~Hook, Main Points, Summary #Incorrect. These are presentation components, not Duarte's three acts.
+####Duarte's framework adapts Hollywood <b>narrative structure</b> (storytelling with beginning, middle, end) for presentations. Act 1 (Beginning) establishes <b>"What Is"</b> (current reality). Act 2 (Middle) oscillates between problems and solutions (<b>"What Could Be"</b>). Act 3 (End) paints the future vision (<b>"New Bliss"</b>). This structure creates <b>emotional engagement</b> (connection based on feeling, not just facts) through contrast and transformation. See Week 5 slides 6-9.}
 
-::Duarte's Three-Act Structure Components::What are the three parts of Duarte's presentation structure taught in this week's lecture?{
-~Introduction, Analysis, Conclusion #"Introduction, Analysis, Conclusion" is a common essay structure, but Duarte's framework uses different terminology specifically for presentations.
-~Hook, Body, Call to Action #While these are important presentation elements, they aren't Duarte's three-act terminology. The hook is part of the beginning, and call to action is part of the end.
-=Beginning, Middle, End #Duarte's three-act structure consists of Beginning (establish "What Is"), Middle (oscillate between "What Is" and "What Could Be"), and End (paint the "New Bliss").
-~Opening, Evidence, Closing #These are generic presentation terms. Duarte's specific framework is Beginning → Middle → End, adapted from Hollywood screenwriting.
-}
+::Duarte's Three-Act Story Structure::How does the middle act differ from the beginning and end in Duarte's structure?{
+=The middle oscillates between problem (What Is) and solution (What Could Be), creating contrast and emotional engagement #Correct! Oscillation distinguishes the middle act from the beginning (problem only) and end (solution only).
+~The middle contains the most time but is the least important part of the presentation #Incorrect. The middle may contain most time, but oscillation makes it central to engagement.
+~The middle transitions smoothly from problem to solution without repetition #Incorrect. Duarte's approach specifically uses repetition (oscillation) between states.
+~The middle allows audience questions and interactions #Incorrect. Oscillation between problem and solution is the distinguishing feature, not audience interaction.
+####The middle act uses the <b>Sparkline™</b> pattern—a visual representation of wave-like <b>oscillation</b> (repeated back-and-forth movement between two states). Contrast is key\: alternating between "What Is" (problem, trough) and "What Could Be" (solution, peak) creates <b>cognitive tension</b> (mental engagement through unresolved contrasts) that maintains attention. The middle act limits points to 3-5 maximum following the MECE principle (<b>Mutually Exclusive, Collectively Exhaustive</b>—no overlaps, no gaps). See Week 5 slides 8.}
 
-::Opening Elements Identification::According to the lecture, which of the following is NOT one of the four elements of a strong opening?{
-~Hook #Hook IS one of the four elements—it grabs attention with a statistic, question, story, or bold claim.
-~Relevance #Relevance IS one of the four elements—it explains why this matters to THIS audience.
-=Summary of main points #The four elements are Hook, Relevance, Credibility, and Roadmap (preview structure). While roadmap previews where you're going, a detailed summary of main points comes at the end, not the opening.
-~Credibility #Credibility IS one of the four elements—it establishes why you're qualified to speak on this topic.
-}
+::Duarte's Three-Act Story Structure::Which components comprise the end act in Duarte's framework?{
+=Synthesis of transformation, inspiration with vision, specific call to action, and S.T.A.R. moment #Correct! These four components work together to create a memorable conclusion.
+~Summary of main points, thank you, and Q&A open #Incorrect. These are housekeeping tasks, not Duarte's framework components.
+~Restatement of the problem and evidence of the solution #Incorrect. The end focuses on transformation and inspiration, not restatement.
+~Apology for any unclear points and request for feedback #Incorrect. Duarte's ending does not include apologies or feedback requests.
+####Duarte's ending has four components\: (1) <b>Synthesize</b>—show the complete transformation journey (not just bullet-point recap); (2) <b>Inspire</b>—paint an emotional, vivid vision of success; (3) <b>Call to Action</b>—provide ONE specific, achievable next step; (4) <b>S.T.A.R. Moment</b>—something memorable (a demo, prop, story, or statistic). The end act takes 10-15% of presentation time. Key distinction\: Duarte's ending <b>moves audiences toward action</b>, not just retention of information. See Week 5 slides 9.}
 
-::Voice Delivery Pacing::What is the ideal speaking pace for presentations, according to the lecture?{
-~100-120 words per minute #100-120 wpm is too slow—audiences find this pace boring and lose energy. The lecture identified "too slow" as a delivery problem.
-=130-170 words per minute #The lecture specified 130-170 words per minute as the ideal conversational pace for presentations. This range feels natural and allows audiences to follow comfortably.
-~180-200 words per minute #180-200 wpm is too fast—this pace appears anxious and is hard for audiences to follow. The lecture noted "too fast" as a common nervous speaker problem.
-~As fast as possible to cover more content #Speaking faster doesn't improve presentations—it creates anxiety and reduces comprehension. The lecture emphasized strategic variation (speed up for excitement, slow down for emphasis) rather than constant speed.
-}
+::Opening Elements (Hook, Context, Stakes)::What are the four essential elements of a strong presentation opening?{
+=Hook, Relevance, Credibility, Roadmap #Correct! These four elements work together to engage and orient the audience.
+~Greeting, Topic, Outline, Questions #Incorrect. These are procedural steps, not the strategic opening elements.
+~Story, Statistics, Examples, Conclusion #Incorrect. These are types of evidence, not the four opening elements.
+~Context, Problem, Solution, Timeline #Incorrect. The four elements are Hook, Relevance, Credibility, and Roadmap.
+####An effective opening uses four <b>strategic elements</b>\: (1) <b>Hook</b>—grab attention with something surprising (a statistic, question, story, or bold claim); (2) <b>Relevance</b>—answer "Why does this matter to THIS audience?" by connecting to their context; (3) <b>Credibility</b>—briefly establish your <b>authority</b> (credentials, research, experience) in one sentence; (4) <b>Roadmap</b>—preview the structure so audiences can form a mental framework. The first 30 seconds are <b>critical</b>—audiences unconsciously decide whether to listen or disengage. The opening comprises 10-15% of total presentation time. See Week 5 slides 7.}
 
-::Trait CA vs State CA (Matching)::Match each type of communication apprehension to its correct definition\:
+::Opening Elements (Hook, Context, Stakes)::How do Hook and Relevance differ in their roles within a presentation opening?{
+=Hook creates initial attention; Relevance establishes why the topic matters to the specific audience #Correct! These serve distinct but complementary functions in engaging the audience.
+~Hook uses statistics; Relevance uses stories #Incorrect. Both elements can use various formats (statistics, stories, questions).
+~Hook is for engaging audiences; Relevance is for establishing credibility #Incorrect. Credibility is a separate element. Hook engages; Relevance motivates.
+~Hook must come last; Relevance must come first #Incorrect. Hook comes first (to grab attention), then Relevance, then Credibility, then Roadmap.
+####<b>Hook</b> serves an <b>attentional function</b>—it captures immediate audience notice by being surprising or compelling. <b>Relevance</b> serves a <b>motivational function</b>—it answers "So what?" and deepens audience investment by connecting to their specific context. Example contrast\: Poor opening\: "Today I'll discuss digital marketing" (no hook, no relevance). Strong opening\: "Vietnamese businesses waste $2 million per day on ineffective digital ads. I studied 200 local SMEs—today I'll show you three changes that triple ROI in 90 days" (hooks with shocking stat, establishes relevance to local business context). Together, they create both immediate engagement and sustained interest. See Week 5 slides 7.}
 
-1. Trait CA
-2. State CA
+::Opening Elements (Hook, Context, Stakes)::How does Roadmap differ from the other three opening elements?{
+=Roadmap is structural (previews organization), while Hook engages, Relevance motivates, and Credibility establishes trust #Correct! Roadmap serves an organizational/scaffolding function distinct from engagement, motivation, and credibility.
+~Roadmap must be longer than Hook, Relevance, or Credibility #Incorrect. Length is not the distinguishing feature. Roadmap's function is previewing structure.
+~Roadmap can be done at any point in the presentation, not just the opening #Incorrect. All four elements belong in the opening to establish foundation for the entire presentation.
+~Roadmap is optional; the other three elements are essential #Incorrect. All four elements work together. Roadmap is essential for reducing audience anxiety.
+####<b>Hook</b> attracts attention, <b>Relevance</b> motivates engagement, <b>Credibility</b> builds trust—these three create an emotional/relational foundation. <b>Roadmap</b> provides <b>cognitive scaffolding</b> (mental structure that helps organize information)—it previews what comes next so audiences can anticipate structure. The lecture notes roadmap "reduces audience anxiety" because uncertainty creates mental load. Together, the four elements serve\: emotional (Hook), motivational (Relevance), relational (Credibility), and <b>cognitive</b> (mental/thinking-related) functions. See Week 5 slides 7.}
 
-A) Anxiety in specific, high-stakes situations; even confident communicators can experience this
-B) Consistent anxiety across all communication situations; part of your temperament, relatively stable over time{
-=Trait CA \= Enduring personality -> B
-=State CA \= Situational triggers -> A
-}
+::McCroskey's Communication Apprehension::How does McCroskey define Communication Apprehension in relation to communication contexts?{
+~It is an individual's fear or anxiety specifically in public speaking situations only #Incorrect. McCroskey's definition includes anxiety 'with another person or persons'—multiple contexts, not just public speaking.
+=It is an individual's level of fear or anxiety associated with real or anticipated communication in any context with others #Correct! McCroskey's definition encompasses communication anxiety across all interpersonal and public situations.
+~It is a permanent personality trait that cannot change over time #Incorrect. McCroskey's framework distinguishes between trait (enduring) and state (situational) CA.
+~It is equivalent to general anxiety or shyness #Incorrect. McCroskey's definition is specific to communication contexts, not general personality traits.
+####<b>Communication Apprehension (CA)</b> is McCroskey's term for anxiety arising in <b>interpersonal and public communication contexts</b>. Key insight\: CA is <b>context-specific</b>—it's tied to communication situations, not a general personality trait. Example\: You might be calm in one-on-one conversation but anxious presenting to a large group. McCroskey's research (21,655+ citations) demonstrates 10-20% of people experience significant CA. Critical reframe\: CA is normal, not a personal failing. The lecture states\: "If you feel nervous presenting, you're in good company." See Week 5 slides 14-15.}
 
-::Anxiety vs Excitement Reframing::According to the lecture, anxiety and excitement are the same physiological state with different interpretations, and reframing anxiety as excitement is a research-backed technique for managing presentation nervousness.{
-TRUE#The lecture cited Alison Wood Brooks' research from Harvard Business School showing that anxiety and excitement create identical physiological responses (increased heart rate, adrenaline). The difference is cognitive interpretation. Reframing "I'm anxious" as "I'm excited" is a mental preparation technique in the Anxiety Management Plan (AMP). This reframe works because you're not fighting your body's response—you're changing how you interpret it.#Actually, this is true. The lecture specifically mentioned reframing as part of the mental preparation component of the AMP, based on Brooks' HBS research. Both anxiety and excitement involve arousal; the label you apply determines the experience.
-}
+::McCroskey's Communication Apprehension::How do Trait CA and State CA differ in their characteristics?{
+=Trait CA is enduring across contexts; State CA is temporary and triggered by specific situations #Correct! This captures the core distinction between personality tendency and situational response.
+~Trait CA is more severe than State CA #Incorrect. Severity and type are independent. Both can range from mild to severe.
+~Trait CA affects introverts; State CA affects extroverts #Incorrect. Both types affect all personality types.
+~Trait CA happens before presentations; State CA happens during #Incorrect. Both types can occur before and during communication.
+####<b>Trait CA</b> is a <b>dispositional characteristic</b>—a stable personality tendency toward anxiety across most communication situations. <b>State CA</b> is <b>episodic and situational</b>—triggered by specific high-stakes contexts. Example\: A student with low trait CA might still experience high state CA before a board presentation. Treatment differs\: Trait CA requires long-term skills training and possibly therapy; State CA requires <b>situation-specific strategies</b> (breathing, visualization, preparation). Understanding which type applies to you guides the appropriate intervention. Most people have state CA (nervous for presentations) but low CA in casual settings. See Week 5 slides 15.}
 
-::Purpose of Oscillation in Middle Section::Why does Duarte's "Sparkline" pattern of oscillating between "What Is" and "What Could Be" work better than simply listing solutions?{
-~It makes presentations longer and more detailed #Length is not the purpose. Oscillation creates engagement regardless of presentation length. The lecture emphasized that this pattern maintains attention, not extends duration.
-=It creates emotional tension through contrast that maintains audience attention #The lecture explained that "contrast creates emotional tension that maintains attention." Each oscillation between current problems ("What Is") and future possibilities ("What Could Be") keeps the audience engaged by showing the gap and the solution repeatedly. The Steve Jobs iPhone example demonstrated this\: problem with old phones → solution with iPhone, repeated for each feature.
-~It allows presenters to memorize their script more easily #Oscillation is about audience engagement, not presenter memorization. In fact, the lecture discouraged memorizing scripts word-for-word (sounds robotic).
-~It reduces the need for visual aids #Oscillation is a content structure technique, unrelated to visual aid requirements. The lecture discussed visuals as a separate topic for Week 6.
-}
+::McCroskey's Communication Apprehension::What are the four communication contexts that McCroskey identified in his framework?{
+=Public speaking, Group discussions, Meetings, Dyadic (one-on-one) #Correct! McCroskey's framework recognizes CA varies across these four distinct contexts.
+~Formal, Informal, Professional, Personal #Incorrect. McCroskey's four contexts are specific communication situations, not formality levels.
+~Planned, Spontaneous, Virtual, In-person #Incorrect. The four contexts are defined by communication structure, not timing or medium.
+~Small group, Large group, Leadership, Peer-to-peer #Incorrect. The four contexts are Public speaking, Group discussions, Meetings, and Dyadic.
+####McCroskey identified four communication contexts where CA manifests\: (1) <b>Public speaking</b> (presentations, speeches to audiences), (2) <b>Group discussions</b> (conversations within teams), (3) <b>Meetings</b> (formal work gatherings), (4) <b>Dyadic</b> (one-on-one conversations). Critically, CA is <b>context-dependent</b>—anxiety levels shift across these situations. A person might have high CA in public speaking but low CA in dyadic conversation. This <b>context-specificity</b> is foundational to McCroskey's theory. Understanding which contexts trigger YOUR anxiety enables <b>targeted interventions</b> specific to problem areas. See Week 5 slides 15.}
 
-::Authentic vs Inauthentic Communication::According to Brodsky's research cited in the lecture, what is the difference between adapting your communication style for context (e.g., showing respect to professors) and being inauthentic?{
-~There is no difference—any adaptation is inauthentic #The lecture explicitly stated that "authenticity doesn't mean identical behavior in all contexts—it means genuine intent adapted to situation." Contextual adaptation is authentic.
-=Adaptation maintains genuine intent while adjusting to situation; inauthenticity involves deception or faking #Brodsky's quote emphasized that "authentic communication is contextual." The lecture distinguished between adjusting tone to show cultural respect (authentic—your intent is genuine) versus delivering a memorized, robotic presentation (inauthentic—you're performing, not communicating). The key is whether your intent and content remain true, even as style adapts.
-~Adaptation is only acceptable in Vietnamese culture #Contextual adaptation is universal, not culture-specific. While the lecture used Vietnamese culture as an example (adjusting for hierarchy), the principle applies globally.
-~Authenticity requires identical behavior in all contexts #This contradicts Brodsky's research. Authenticity varies by channel and audience—being genuine doesn't mean being identical across all situations.
-}
+::AMP Model (Anxiety Management Plan)::How do Physical, Mental, and Practical Preparation in the AMP differ in their approach to managing anxiety?{
+~They each address the same anxiety response through identical techniques #Incorrect. The three categories use different mechanisms\: Physical targets physiology, Mental targets cognition, Practical targets readiness.
+=Physical targets body responses, Mental targets thought patterns, Practical targets actual readiness through preparation #Correct! Each category addresses anxiety through a different system or mechanism.
+~Physical is for severe anxiety; Mental is for moderate; Practical is for mild #Incorrect. All three approaches benefit people at all anxiety levels.
+~Only one approach is effective; the others are unnecessary #Incorrect. All three work synergistically—together they're more effective than any single approach.
+####The <b>Anxiety Management Plan (AMP)</b> divides anxiety reduction into three complementary categories\: (1) <b>Physical Preparation</b>—techniques like 4-7-8 breathing, power posing, hydration that target physiological responses; (2) <b>Mental Preparation</b>—visualization, <b>cognitive reframing</b> (changing interpretation of a situation), affirmations that target thought processes; (3) <b>Practical Preparation</b>—aloud rehearsal 3-5 times, anticipating Q&A, arriving early to check the room. These three work <b>synergistically</b> (combined effect is greater than individual parts). The lecture emphasizes none works alone—all three together create sustainable anxiety management. Research-backed by Matt Abrahams (Stanford GSB) and McCroskey's anxiety frameworks. See Week 5 slides 16.}
 
-::Reading from Slides::Reading directly from slides improves audience engagement because it ensures you don't forget important points.{
-FALSE#This is false. The lecture emphasized that reading from slides is a common presentation mistake that reduces engagement. When presenters read slides, audiences either (1) read ahead and stop listening, or (2) wonder why the presenter is needed at all. The lecture's "poor opening" example showed a presenter who merely recited slide content, which was boring and generic. Effective delivery requires knowing content well enough to speak naturally while slides provide visual support, not a script.#Actually, this is false. Reading from slides undermines engagement, not enhances it. The lecture distinguished between using slides as visual support (good) versus using them as a script (bad). Audiences can read faster than you speak—if you're just reading, they'll disengage. Preparation should make you confident enough to speak naturally, using slides as prompts, not scripts.
-}
+::AMP Model (Anxiety Management Plan)::How do Physical and Mental Preparation approaches address anxiety through different mechanisms?{
+=Physical targets the body's response through physiological techniques; Mental targets the mind's interpretation through reframing #Correct! These two approaches work on different systems to manage anxiety.
+~Physical preparation is quick; Mental preparation takes longer #Incorrect. Both approaches can be completed in minutes.
+~Physical is for anxious people; Mental is for confident people #Incorrect. Both approaches benefit everyone regardless of baseline confidence levels.
+~Physical addresses body language; Mental addresses what you say #Incorrect. Physical addresses physiological symptoms, not body language mechanics.
+####<b>Physical Preparation</b> interrupts the <b>physiological cascade</b> (automatic chain of physical reactions) of anxiety—elevated heart rate, shallow breathing, muscle tension—through 4-7-8 breathing (which activates the <b>parasympathetic nervous system</b>, the body's calming mechanism) and power posing (which reduces cortisol, the stress hormone). <b>Mental Preparation</b> alters <b>cognitive appraisal</b> (the mind's interpretation of circumstances)—the way you interpret bodily sensations. Key insight\: anxiety and excitement share nearly identical <b>physiological states</b> (elevated heart rate, energy). Reframing—mentally interpreting "I'm excited" instead of "I'm scared"—changes interpretation without changing your body. Research from Alison Wood Brooks (HBS) shows this reframing significantly improves performance. See Week 5 slides 16.}
 
-::Communication Contexts::Why might someone experience high communication apprehension during public speaking (presentations) but low communication apprehension in dyadic communication (one-on-one conversations)?{
-~Because public speaking requires more technical knowledge than conversations #CA is not about technical knowledge—it's about fear/anxiety related to the communication act itself. Both contexts can involve complex topics, but the anxiety differs based on the social setting.
-=Because communication apprehension is context-specific and manifests differently across the four communication contexts #The lecture explained that McCroskey identified four communication contexts (public speaking, group discussions, meetings, dyadic) and that individuals can have different CA levels across these contexts. This is called "state CA"—anxiety triggered by specific situations. Someone might be perfectly comfortable in intimate one-on-one settings but terrified of speaking to large audiences.
-~Because one-on-one conversations don't involve real communication #One-on-one conversations are a valid communication context (dyadic communication). The lecture specifically listed dyadic as one of McCroskey's four contexts.
-~Because public speaking always causes anxiety for everyone #While many people experience CA during public speaking, it's not universal. 10-20% experience significant CA, but responses vary. The question is about why the same person can have different anxiety levels across contexts.
-}
+::AMP Model (Anxiety Management Plan)::Which of the following is an example of Practical Preparation in the Anxiety Management Plan?{
+=Rehearsing the presentation aloud 3-5 times, anticipating Q&A questions, and arriving early to check the room #Correct! These three actions comprise the practical preparation component of the AMP.
+~Taking deep breaths and doing a power pose before presenting #Incorrect. Deep breathing and power posing are Physical Preparation techniques, not Practical.
+~Visualizing success and reframing anxiety as excitement #Incorrect. These are Mental Preparation techniques, not Practical.
+~Avoiding presentation thoughts until you're in front of the audience #Incorrect. This is avoidance, not preparation. Practical preparation requires active rehearsal and anticipation.
+####<b>Practical Preparation</b> includes concrete actions that build <b>genuine confidence</b> through readiness\: (1) <b>Rehearse aloud</b> 3-5 full run-throughs (not silent reading—speaking aloud engages <b>muscle memory</b>, physical patterns you build through repetition), (2) <b>Anticipate Q&A</b>—prepare answers for likely questions to reduce surprise, (3) <b>Arrive early</b>—familiarize yourself with the room and test <b>equipment</b> (technology that will be used). The lecture states\: "Confidence comes from preparation—you can't fake it." Practical preparation differs from Physical/Mental because it creates actual <b>competence</b> and <b>mastery</b> (real skill development). All three AMP components work together synergistically. See Week 5 slides 16.}

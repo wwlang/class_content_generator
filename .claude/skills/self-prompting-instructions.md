@@ -65,6 +65,11 @@
 - For parallel tool use: "invoke all relevant tools simultaneously"
 - Remove manual CoT prompts when using extended thinking
 
+**Opus 4.5 specific:**
+- More responsive to system prompts—dial back aggressive language ("CRITICAL", "MUST", "NEVER") to normal phrasing
+- May overtrigger tools—reduce imperative emphasis if seeing excessive tool calls
+- When extended thinking disabled: avoid the word "think"; use "consider", "evaluate", or "analyze" instead
+
 ### For Gemini
 
 - XML or Markdown equally effective — be consistent

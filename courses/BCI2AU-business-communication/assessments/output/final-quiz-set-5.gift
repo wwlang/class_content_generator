@@ -1,0 +1,187 @@
+// Quiz 5 - Weeks 1-10
+// Quiz ID: final-quiz-set-5
+// Questions: 30
+// Weeks covered: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+// Bloom distribution: 15 Remembering, 15 Understanding
+
+$CATEGORY: Quiz 5 - Weeks 1-10
+
+::Four Skill Clusters::According to Spitzberg and Cupach's MKS model, which of the following is one of the four core skill clusters in communication competence?{
+~Persuasion #Persuasion is a communication outcome or technique, not one of the four skill clusters in the MKS model.
+=Composure #The four skill clusters are Attentiveness (active listening), Composure (emotional regulation and poise), Coordination (managing interaction flow), and Expressiveness (clear articulation). Composure is particularly important for high-stakes communication.
+~Creativity #Creativity is not identified as one of the four skill clusters. The model focuses on interpersonal communication behaviors.
+~Negotiation #Negotiation is a communication context or activity, not one of the four fundamental skill clusters.
+}
+
+::Effective Call to Action Characteristics::Which of the following is an example of a strong call to action (CTA) based on the lecture's guidelines?{
+~"I hope you'll think about this proposal" #This CTA is vague ("think about") with no specific action or timeline. Strong CTAs are specific, measurable, and time-bound.
+~"Let me know if you have questions" #This puts the burden on the audience and requests no specific decision. Strong CTAs ask for one clear action.
+="Please approve Phase 1 pilot budget ($5,000) by Friday so we can begin testing with Marketing department next week" #This CTA is specific (approve Phase 1 budget), measurable ($5,000), time-bound (by Friday), single action (one approval), and includes rationale (begin testing next week). It demonstrates all characteristics of effective CTAs.
+~"We should implement this at some point" #This CTA lacks specificity (what exactly to implement) and has no timeline ("at some point"). Strong CTAs are concrete and time-bound. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::MKS Model Definition::What do the letters M, K, and S stand for in Spitzberg and Cupach's MKS model of communication competence?{
+~Message, Knowledge, Source #The M stands for Motivation, not Message. The model focuses on individual competence, not message characteristics.
+~Medium, Key concepts, Strategy #The M stands for Motivation, and the S stands for Skills. "Medium" and "Key concepts" are not part of this framework.
+=Motivation, Knowledge, Skills #MKS stands for Motivation (desire and confidence to communicate), Knowledge (understanding appropriate communication), and Skills (ability to perform communication behaviors). All three dimensions must be present for competence.
+~Method, Knowing, Speaking #None of these are correct. The framework uses the specific terms Motivation, Knowledge, and Skills.
+}
+
+::Chartjunk Categories::According to Tufte (2001), what does the term "Ducks" refer to in the context of chartjunk?{
+~Moiré vibration patterns creating optical interference #This describes the first category of chartjunk (moiré vibration), not "ducks." Dense patterns that create visual shimmer fall under this different category.
+~Heavy gridlines dominating the chart area #This describes heavy grids, another category of chartjunk. "Ducks" specifically refers to decorative graphic forms, not gridline problems.
+=Self-promoting graphics where decorative forms overtake data #"Ducks" is Tufte's metaphorical term (from architecture) for self-promoting graphics where decorative forms overtake data—like 3D pie charts or bars shaped like money bags. The decoration becomes more prominent than the information.
+~Redundant legends and unnecessary labels #While these are elements to eliminate according to Tufte's principles, they don't fall under the specific "ducks" category of chartjunk.
+}
+
+::Social Proof Principle::Which Cialdini principle was demonstrated by the hotel towel study showing that "Most guests in this room reuse their towels" increased reuse by 33%?{
+~Reciprocity #Reciprocity involves giving first to create obligation. The hotel study showed people following others' behavior (Social Proof).
+~Authority #Authority involves deferring to experts or credentials. The hotel study used peer behavior, not authority.
+=Social Proof #This demonstrates Social Proof—people look to others' actions to guide their own behavior, especially "similar others" (guests in the same room). The message shifted from generic request to showing what peers do.
+~Unity #Unity involves shared group identity. While related, the hotel study specifically demonstrates Social Proof through showing peer behavior.
+}
+
+::Strunk & White Author::Who wrote *The Elements of Style*, the foundational text for clarity and concision rules?{
+~Barbara Minto and McKinsey #Barbara Minto wrote *The Pyramid Principle*, not *The Elements of Style*.
+=William Strunk Jr. and E.B. White #William Strunk Jr. wrote the original *Elements of Style* in 1918 at Cornell, and E.B. White updated it in 1959. It's the \#1 most-assigned text in US higher education.
+~Matt Abrahams and Stanford GSB #Matt Abrahams wrote about the "What/So What/Now What" framework, not *The Elements of Style*.
+~Elizabeth Danziger and Harvard Business Review #Elizabeth Danziger wrote about the Purpose-Person-Point framework in HBR, not *The Elements of Style*.
+}
+
+::Grounding Techniques Purpose::In Matt Abrahams' in-the-moment anxiety management techniques, what is the purpose of "grounding techniques" like touching an anchor object or focusing on one friendly face?{
+~To distract yourself from the presentation content #Grounding doesn't distract from content—it helps you stay present while delivering content. The goal is to reduce mental spiraling, not avoid thinking about your material.
+~To make the audience think you're more confident than you are #Grounding is for YOUR benefit (reducing anxiety), not for audience perception. These techniques are often invisible to the audience.
+=To interrupt anxiety spirals through physical sensations and external focus #Grounding techniques use physical sensations (touching object) and external focus (friendly face) to interrupt the internal anxiety spiral. Research from mindfulness therapy shows physical anchors help regulate emotions.
+~To give yourself time to remember what to say next #While pausing can help memory, grounding techniques specifically target anxiety reduction by shifting attention from internal worry to external/physical anchors.
+}
+
+::Humanizing Data Strategy::What is the primary purpose of "humanizing data" in leadership communication?{
+~To make statistics sound more impressive #The goal isn't to exaggerate or impress—it's to create meaning. Numbers alone don't motivate action.
+=To connect numbers to human impact so audiences care about them #Humanizing data transforms abstract numbers into narratives people care about. "10 million users" becomes "10 million families trusted us"—connecting statistics to human stakes makes them memorable and motivating.
+~To hide negative data behind positive stories #Humanizing data is about creating connection, not manipulation or hiding information. Ethical communication requires honesty.
+~To simplify complex data for less educated audiences #This is condescending and misses the point. Humanizing data benefits all audiences by adding emotional resonance and context, regardless of education level.
+}
+
+::Pyramid Principle Definition::According to the Pyramid Principle, what should appear FIRST in a business document?{
+~Supporting data and evidence #Supporting data appears at the bottom of the pyramid (third level), not at the top. The Pyramid Principle requires leading with conclusions.
+~Background information and context #While background appears in the SCQA opening, the Pyramid Principle structure itself starts with the governing thought (conclusion), not background.
+=The main recommendation or conclusion #The Pyramid Principle requires "present top-down" — your main answer or recommendation comes first, followed by supporting arguments and data. This structure respects the reader's time.
+~The analysis process you followed #The analysis process is how you think (bottom-up), but you present top-down with the conclusion first. Never make readers follow your thinking process.
+}
+
+::Gravitas Priority::According to Hewlett (2024), what percentage of senior executives identify gravitas as the most important element of executive presence?{
+~50% #50% is too low. Hewlett's research found that 67% of senior executives prioritize gravitas above communication and appearance.
+=67% #67% of senior executives say gravitas—confidence and decisiveness under pressure combined with inclusiveness—is what really matters in executive presence.
+~70% #70% is the statistic from the hook (percentage of leaders who consider decisiveness a component of executive presence), not the percentage who prioritize gravitas overall.
+~85% #While gravitas is clearly the top priority, the specific percentage from Hewlett's research is 67%, not 85%.
+}
+
+::Pyramid Principle Three Rules::According to the lecture, which of the following is one of the three rules of the Pyramid Principle?{
+=Ideas above must summarize those below #This is Rule 1 of the Pyramid Principle — ideas at any level must summarize the ideas grouped below them. This allows readers to stop at any level.
+~All arguments must use the same data source #The Pyramid Principle doesn't require using the same data source. Rule 2 states grouped ideas must be logically the same kind, not from the same source.
+~Documents should be at least 3 pages long #The Pyramid Principle has no length requirement. It's about structure, not document length.
+~Supporting points must be arranged alphabetically #Rule 3 states ideas must follow logical order (chronological, structural, comparative, or deductive) — not alphabetical order.
+}
+
+::4-7-8 Breathing Technique::In the Anxiety Management Plan (AMP), what does the 4-7-8 breathing technique refer to?{
+~Breathe in for 4 seconds, out for 7, hold for 8 #The order is wrong—you hold BETWEEN inhale and exhale, not after exhaling. The correct sequence is inhale-hold-exhale.
+=Inhale for 4 counts, hold for 7, exhale for 8 #The 4-7-8 technique is\: Inhale through nose for 4 counts, hold for 7 counts, exhale for 8 counts. This lowers heart rate and reduces physiological symptoms of anxiety.
+~Repeat the sequence 4 times, wait 7 seconds, repeat 8 times #These numbers refer to the duration of each breath phase (inhale-hold-exhale), not the number of repetitions or timing between cycles.
+~4 deep breaths, 7 normal breaths, 8 shallow breaths #The 4-7-8 refers to counts for a single breath cycle (in-hold-out), not different types of breathing or number of breaths.
+}
+
+::MECE Principle Meaning::What does MECE stand for?{
+~Major-Elements-Completely-Explained #MECE is about logical grouping, not explanation quality.
+=Mutually Exclusive, Collectively Exhaustive #MECE stands for Mutually Exclusive (no overlap), Collectively Exhaustive (nothing missing). It's the logic check for pyramid arguments.
+~Meaningful-Evidence-Clear-Examples #MECE relates to argument structure, not evidence presentation.
+~Multiple-Examples-Clearly-Expressed #MECE is a consulting framework about logical categorization, not examples.
+}
+
+::Mayer's Coherence Principle::What is the effect size (d value) for Mayer's coherence principle, which states you should exclude extraneous material from slides?{
+~d \= 0.50 #This underestimates the strength of the coherence effect. Research shows a larger effect size for removing extraneous material.
+~d \= 0.60 #While closer, this still underestimates the effect. The coherence principle has a stronger impact on learning than this value suggests.
+=d \= 0.70 #Mayer's coherence principle has an effect size of d \= 0.70, which is considered a large effect. This means removing extraneous material like decorative clip art significantly improves learning.
+~d \= 0.87 #This is the effect size for the redundancy principle, not the coherence principle. The redundancy principle (don't read on-screen text aloud) has an even stronger effect.
+}
+
+::The Focus Technique::When applying the focus technique to a multi-colored bar chart, what is the recommended maximum number of colors to use according to Kellogg research?{
+=1-2 colors #The focus technique recommends limiting colors to a maximum of 1-2 colors. Typically, one data series is highlighted in color (the important one) while others appear in gray. This directs the eye naturally to what matters without creating visual noise.
+~3-4 colors #Using 3-4 colors creates too much visual noise and increases extraneous cognitive load. The research found that restraint in color usage works better than variety.
+~5-6 colors #This many colors would create significant visual distraction, making it difficult for audiences to identify what's important. More colors equal more extraneous cognitive load.
+~As many colors as data series #While this might seem logical for distinguishing data series, it violates the focus principle. Most data should be de-emphasized (grayed out) so attention goes to the key series being highlighted.
+}
+
+::Attribution Theory in SCCT::In SCCT, Attribution Theory suggests that stakeholders' emotional and behavioral responses to a crisis depend on whether they attribute the crisis to situational (external) or organizational (internal) factors.{T #Correct! Attribution Theory is the core mechanism of SCCT. When stakeholders attribute a crisis to external factors (situational), they assign less responsibility to the organization. When they attribute it to internal factors (organizational choices/actions), they assign more responsibility—and this drives how they react emotionally and behaviorally. #Incorrect. This statement accurately describes how Attribution Theory works within SCCT. Stakeholder assessment of responsibility (external vs. internal attribution) determines the appropriate crisis response intensity. Organizations must match their response to the level of responsibility stakeholders perceive.}
+
+::Message Adaptation Application::In the wellness program integration example from the lecture, why do employees receive 70% pathos content while senior management receives 80% logos content?{
+~Because employees are less educated and cannot understand data #This is both inaccurate and disrespectful. The difference isn't about intelligence—it's about what each audience needs to make their specific decision. Employees are perfectly capable of understanding data; they simply need different information to decide whether to participate.
+~Because management does not care about employee wellness stories #Management may care about wellness stories, but their PRIMARY decision criterion is financial. Budget approval requires ROI justification. The content mix reflects decision-making needs, not level of care.
+=Because employees need to connect with personal health impact to change behavior, while management needs ROI data to approve budget #This demonstrates strategic message adaptation\: employees are being asked to change personal behavior (participate in wellness activities), so they need emotional connection to health benefits—stories and testimonials persuade behavior change. Management holds budget authority and must justify costs—they need cost-benefit analysis and ROI. Same program, different decision contexts, different calibration.
+~Because emotional content is easier to create than analytical content #The choice of logos/pathos ratio isn't about ease of creation—it's about audience needs and decision-making context. Creating compelling emotional content can be just as difficult as analytical content. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::Four-Step Q&A Framework Application::A student presenter is asked\: "Your methodology seems flawed. How can we trust your conclusions?" Using the Four-Step Q&A Framework (Acknowledge → Clarify → Answer → Check), what would be the best "acknowledge" response?{
+~"That's not a fair question—we followed standard research procedures." #This is defensive and challenges the questioner rather than acknowledging. The first step is to show respect and buy thinking time, not argue about fairness.
+~"I'm glad you asked that because I was worried someone might misunderstand." #This sounds defensive ("worried someone might misunderstand" implies the questioner is confused). Acknowledgment should validate the question, not suggest the asker is wrong.
+="Thank you for raising that concern—methodology rigor is crucial." #This response acknowledges the question respectfully ("Thank you for raising that concern"), shows you value the topic ("methodology rigor is crucial"), and buys you 2-3 seconds to think. It demonstrates executive presence\: confidence without defensiveness. Using the Three Conversations Model principle of separating intent from impact, you assume they're testing your rigor, not attacking you personally.
+~"Let me clarify what you mean by 'flawed' before I respond." #This is the SECOND step (Clarify), not the first (Acknowledge). While clarification is important, you should acknowledge first to show respect and reduce tension before asking for clarification. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::Declutter + Focus Model::According to Kellogg research (2021), decluttering slides alone (without adding focusing elements) provides significant cognitive benefits and improves audience comprehension of the main conclusion.{F #This is incorrect. The Kellogg study found that decluttering only improves appearance but provides NO cognitive benefit. Only when decluttering is combined with focusing elements (headlines, strategic color highlighting) does comprehension improve—by approximately 2.5x. #Correct! Kellogg research revealed an unexpected finding\: decluttered graphs looked better but didn't improve comprehension compared to cluttered versions. Active guidance through focusing elements (headlines stating conclusions, color highlighting key data) was required to achieve the \~2.5x improvement in capturing the main conclusion.}
+
+::Noise in Communication::In the Shannon-Weaver model, "noise" refers only to physical sounds that disrupt communication, such as loud machinery or background chatter.{F #Incorrect. Noise in Shannon-Weaver is much broader than physical sound. It includes semantic noise (unclear language, jargon), psychological noise (preconceptions, emotional state), and physical noise (distractions, technical issues). Any interference that affects message clarity is "noise." #Correct! Noise includes any interference with the communication signal—semantic noise (jargon, unclear wording), psychological noise (biases, emotions, distractions), and physical noise (sounds, technical glitches). Understanding all types of noise helps communicators diagnose and fix problems.}
+
+::Personal vs. Contextual Diversity::According to Taras et al. (2021), what is the primary difference in how personal diversity and contextual diversity affect team performance?{
+~Personal diversity improves task quality, while contextual diversity affects team satisfaction #This reverses the actual relationship. Contextual diversity (different backgrounds/expertise) improves task quality, while personal diversity (demographics) affects psychological outcomes.
+=Personal diversity primarily affects psychological outcomes, while contextual diversity improves task outcomes #Personal diversity (age, gender, race, personality) primarily affects psychological outcomes like satisfaction and conflict. Contextual diversity (country, industry, functional expertise) improves task outcomes like quality and creativity.
+~Personal diversity is easier to manage than contextual diversity #The research doesn't claim one is easier to manage than the other. Both require active management, but they affect different aspects of team performance.
+~Personal diversity always leads to negative performance, while contextual diversity always helps #The relationship isn't absolute. Personal diversity can be negative WITHOUT active management but isn't always negative. Contextual diversity generally improves performance but requires psychological safety to realize benefits.
+}
+
+::Strategic Tool Selection Framework::According to the MIT Sloan 2×2 matrix (Kesari, 2024), what is the best tool for explanatory communication with sophisticated information levels?{
+~AI chat interfaces #AI chat interfaces are best suited for exploratory tasks with simple information levels, such as asking "What was our sales number last month?" They cannot synthesize multi-source strategic narratives.
+~AI-infused BI tools #AI-infused BI (Business Intelligence) tools are recommended for explanatory communication with simple information, not sophisticated multi-faceted contexts requiring strategic synthesis.
+~Interactive dashboards #Interactive dashboards are best for exploratory tasks with sophisticated information—they allow audiences to discover insights themselves rather than being guided to a specific conclusion.
+=Data stories / Presentation decks #The MIT Sloan framework identifies data stories and presentation decks as the best tool when you need to provide explanatory communication (guiding to conclusions) with sophisticated information (multi-faceted with context). High-stakes persuasion requires human-crafted visual storytelling. --- \#\# Statistics **Total Questions\:** 10 **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Bloom's Taxonomy Distribution\:** - Remembering\: 5 questions (Q1, Q3, Q5, Q6, Q10) - Understanding\: 5 questions (Q2, Q4, Q7, Q8, Q9) **Key Concepts Covered\:** - Cognitive Theory of Multimedia Learning (dual-channel processing, limited capacity) - Types of cognitive load (intrinsic, extraneous, germane) - Mayer's principles (coherence, redundancy, effect sizes) - Tufte's data visualization principles (data-ink ratio, chartjunk, graphical integrity, lie factor) - Declutter + Focus model (Kellogg research findings) - Focus technique practical application (color limits, headline strategies) - Strategic tool selection framework (MIT Sloan matrix)
+}
+
+::Dynamic Stakeholder Salience::According to Mitchell's model, stakeholder salience is static—once you classify a stakeholder type, it remains constant over time.{F #Incorrect. Mitchell explicitly states that stakeholder salience is dynamic and perception-based. Stakeholders can gain or lose attributes over time based on context changes. #Correct! Stakeholder salience changes dynamically. Examples from the lecture\: employees who unionize move from "dependent" to "definitive" by gaining power; former customers who become activists on social media move from "dormant" to "dangerous" by adding urgency. COVID-19 suddenly made employees definitive stakeholders due to health urgency and labor shortage.}
+
+::The Four Zones Framework::In Edmondson's Four Zones framework, which zone represents the optimal combination of high psychological safety and high accountability?{
+~Comfort Zone #The Comfort Zone has high safety but LOW accountability—teams are safe but complacent with no pressure to perform.
+=Learning Zone #The Learning Zone combines high psychological safety (everyone can speak up) with high accountability (everyone delivers on commitments). This is the optimal zone for innovation and execution.
+~Anxiety Zone #The Anxiety Zone has high accountability but LOW safety—fear-driven work that leads to burnout and politics.
+~Performance Zone #"Performance Zone" is not one of Edmondson's four zones. The four are\: Comfort, Learning, Anxiety, and Apathy.
+}
+
+::McKinsey Four W's Narrative::In McKinsey's Four W's narrative structure for stakeholder communication, which element addresses "your personal leadership journey and aspirations"?{
+=WHO #WHO \= your personal leadership journey and aspirations (establishes personal credibility/ethos). This is adapted based on audience—investors want to hear about your track record, employees want to understand your values and vision for the team.
+~WHY #WHY addresses the organization's reason for existence and contribution to society (purpose beyond profit), not your personal leadership journey.
+~WHAT #WHAT addresses the strategic agenda in simple, compelling terms—the organizational plan going forward, not your personal background.
+~WHEN #WHEN addresses the timing and sequencing of communication rollout (e.g., employees before media, investors before public announcement), not personal leadership.
+}
+
+::Upgraders vs. Downgraders::In Meyer's Culture Map framework, what is the purpose of "downgraders" (words like "kind of," "maybe," "sort of") in indirect feedback cultures like Vietnam and Thailand?{
+~To show uncertainty about the correctness of the feedback #Downgraders aren't about uncertainty—they're about delivery style. The speaker knows the message; downgraders soften the emotional impact to preserve relationships.
+=To preserve harmony and save face while still communicating criticism #In indirect feedback cultures, downgraders soften criticism to preserve harmony and save face. Saying "maybe this approach is not quite ideal" communicates the same content as "this is wrong" but protects relationships.
+~To make the speaker sound less educated and professional #Downgraders are a professional norm in indirect cultures, not a sign of poor education. They demonstrate cultural competence and emotional intelligence.
+~To confuse the listener so they work harder to understand #The purpose isn't confusion—it's face-saving. Members of indirect cultures understand the criticism clearly; downgraders simply reduce the emotional threat.
+}
+
+::Trait CA vs State CA::Trait CA refers to consistent anxiety across all communication situations, while State CA refers to anxiety in specific, high-stakes situations.{T #Correct! Trait CA is an enduring characteristic—someone feels nervous in ANY communication setting. State CA is situational—someone might be calm in meetings but anxious before presentations. #Incorrect. This statement accurately describes the distinction. Trait CA is consistent across contexts (part of temperament), while State CA is triggered by specific high-stakes situations.}
+
+::Active Voice Benefits::Why does the lecture recommend using active voice in business writing?{
+~Because passive voice is grammatically incorrect #Passive voice is grammatically correct and has limited uses (when the actor is unknown or irrelevant). The issue is clarity, not correctness.
+=Because active voice clarifies responsibility and sounds more confident #The lecture explains that active voice clarifies who is responsible ("We recommend" vs. "It is recommended") and sounds more confident. Business writing should be 80%+ active voice.
+~Because active voice always makes sentences shorter #While active voice often shortens sentences, this isn't always true. The main benefit is clarity of responsibility, not length.
+~Because passive voice is only used in academic writing #Passive voice appears in many writing contexts. The lecture notes it can signal evasion in business writing ("Mistakes were made" avoids blame).
+}
+
+::McKinsey Versatility Framework::In the McKinsey versatility framework, what does "Go Deep (Constant Curiosity)" mean?{
+~Focus exclusively on one communication style and perfect it #"Go Deep" doesn't mean narrow specialization—it means mastering fundamentals thoroughly. McKinsey's framework balances depth (Dimension 2) with diverse experiences (Dimension 1).
+=Master intricacies beyond surface-level understanding while balancing knowledge with execution #"Go Deep" means developing deep expertise in core frameworks—understanding not just what they are but how and why they work. It's balanced with confidence to execute, not just theoretical knowledge. John Plant's quote\: understand "not just what a product does but how and why."
+~Always ask questions during presentations to show engagement #While curiosity involves asking questions, "Go Deep" specifically refers to mastering intricacies of core competencies, not audience engagement behaviors during presentations.
+~Spend more time studying theory than practicing application #The framework emphasizes balancing knowledge acquisition with decisive action—not prioritizing theory over practice. Going deep means thorough mastery applied in practice.
+}
+
+::Problem Setting vs Problem Solving::According to Schön, effective professionals focus on problem setting (framing the right question) as much as problem solving (finding the right answer).{T #Correct! Schön emphasized that professionals don't just solve given problems—they construct problems from ambiguous situations. Problem setting (framing what the challenge actually is) determines whether you're solving the right problem. #Incorrect. Schön argued that problem setting is critical for professional expertise. Novices accept problems as given; experts strategically frame problems from uncertain situations before solving them.}

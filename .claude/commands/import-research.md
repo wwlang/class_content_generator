@@ -48,11 +48,46 @@ ELSE:
 | Quality | 2 seminal + 2 recent balance |
 | Access | URLs accessible or seminal justification |
 | Teaching | Key Teaching Content present for each article |
+| Videos (Optional) | 0-2 videos with metadata, accessibility, duration checks |
+
+**Video Validation (If Present - Optional):**
+
+**Count Check:**
+- ✓ 0-2 videos per week (PASS)
+- ✗ >2 videos (FAIL - cognitive overload)
+
+**Metadata Completeness:**
+- ✓ Creator/Speaker present
+- ✓ URL accessible (quick HEAD request)
+- ✓ Duration specified
+- ✓ Source/Platform specified
+- ✓ Tier (Primary/Supplementary) specified
+- ✓ Usage (Required/Optional candidate) specified
+
+**Content Check:**
+- ✓ ≥1 concept covered (videos supplement, don't need ALL concepts)
+- ✓ "Why selected" rationale present
+- ✓ Key content summary present (2-3 sentences minimum)
+
+**Accessibility:**
+- ✓ Open access (YouTube, TED, institutional sites)
+- ✗ Paywalled videos rejected (unlike articles where seminal paywalls OK)
+
+**Duration:**
+- ✓ <20 min (acceptable)
+- ⚠ 20-30 min (warning - long for in-class)
+- ✗ >30 min (fail - too long, suggest splitting or making optional)
+
+**Key Difference from Articles:**
+- Videos don't need ALL concepts covered (just ≥1)
+- Videos must be open access (no paywalled exceptions)
+- Videos have duration limits (articles don't)
+- 0 videos is always acceptable (optional enrichment)
 
 ### Step 3: Confirm
 
 ```
-✓ Week 5 research validated
+✓ Week 5 research validated: 4 articles + [0/1/2] videos
 Ready for: /generate-week 5
 ```
 

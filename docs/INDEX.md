@@ -67,6 +67,7 @@ Compact workflow definitions:
 | **[VALIDATION-GUIDE.md](VALIDATION-GUIDE.md)** | Structural validation checks |
 | **[QUESTION-AMBIGUITY-VALIDATION.md](QUESTION-AMBIGUITY-VALIDATION.md)** | Ambiguity detection and auto-rewording |
 | **[RESEARCH-HANDOFF-GUIDE.md](RESEARCH-HANDOFF-GUIDE.md)** | Desktop research workflow |
+| **[VIDEO-INTEGRATION-GUIDE.md](VIDEO-INTEGRATION-GUIDE.md)** | Video discovery, validation, and integration patterns |
 | **[TESTING.md](TESTING.md)** | Unit testing guide (82% coverage) |
 | **[FONT-EMBEDDING.md](FONT-EMBEDDING.md)** | Font embedding for PPTX |
 

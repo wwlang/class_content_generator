@@ -74,9 +74,10 @@ class GIFTExporter:
         lines.append('')
 
         # Category for Moodle organization
+        # Note: Don't escape the category text - Moodle handles it as-is
         if category is None:
             category = quiz_bank.title
-        lines.append(f'$CATEGORY: {self._escape_gift_text(category)}')
+        lines.append(f'$CATEGORY: {category}')
         lines.append('')
 
         # Export each question
@@ -122,13 +123,19 @@ class GIFTExporter:
                 else:
                     lines.append(f'~{option_text}')
 
-        lines.append('}')
+        # Add general feedback if available (uses #### syntax in GIFT)
+        # Note: #### and } must be on the same line
+        if self.include_feedback and question.general_feedback:
+            general_fb = self._escape_gift_text(question.general_feedback.strip())
+            lines.append(f'####{general_fb}}}')  # Double }} to escape in f-string
+        else:
+            lines.append('}')
 
         return '\n'.join(lines)
 
     def _escape_gift_text(self, text: str) -> str:
         r"""
-        Escape special characters for GIFT format.
+        Escape special characters for GIFT format and convert markdown to HTML.
 
         GIFT special characters that need escaping:
         - Backslash (\)
@@ -138,16 +145,27 @@ class GIFTExporter:
         - Hash (#)
         - Colon (:)
 
+        Also converts markdown bold (**text**) to HTML (<b>text</b>) since
+        GIFT format supports HTML but not markdown.
+
         Args:
             text: Text to escape
 
         Returns:
-            Escaped text safe for GIFT format
+            Escaped text safe for GIFT format with HTML formatting
 
         Example:
             >>> _escape_gift_text("Use {braces} = special")
             "Use \\{braces\\} \\= special"
+            >>> _escape_gift_text("The **term** (definition) here")
+            "The <b>term</b> (definition) here"
         """
+        import re
+
+        # Convert markdown bold to HTML BEFORE escaping
+        # (so we don't escape the < and > we're adding)
+        text = re.sub(r'\*\*([^*]+)\*\*', r'<b>\1</b>', text)
+
         # Order matters: escape backslash first to avoid double-escaping
         text = text.replace('\\', '\\\\')
         text = text.replace('{', '\\{')

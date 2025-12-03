@@ -4,15 +4,21 @@ Convert markdown files to professional DOCX format with course-branded footers.
 
 ## Arguments
 
-- `$ARGUMENTS` - Course code and week number OR "syllabus"
+- `$ARGUMENTS` - Course code and target (week number, syllabus, handbook, tutor-guide, or guide)
   - Week: `BCI2AU 1`
   - Syllabus: `BCI2AU syllabus`
+  - Handbook: `BCI2AU handbook`
+  - Tutor Guide: `BCI2AU tutor-guide`
+  - Package Guide: `BCI2AU guide`
 
 ## Usage
 
 ```
 /export-docx BCI2AU 1
 /export-docx BCI2AU syllabus
+/export-docx BCI2AU handbook
+/export-docx BCI2AU tutor-guide
+/export-docx BCI2AU guide
 ```
 
 ## Week Conversion
@@ -23,17 +29,27 @@ Converts to `output/` subfolder:
 
 **Excludes:** `lecture-content.md` (already becomes slides)
 
-## Syllabus Conversion
+## Course Document Conversions
 
-Converts:
-- `syllabus.md` → `syllabus.docx` (in course folder)
+**Syllabus:**
+- `syllabus.md` → `output/syllabus.docx`
+
+**Assessment Handbook:**
+- `assessment-handbook.md` → `output/assessment-handbook.docx`
+
+**Tutor Guide:**
+- `tutor-guide.md` → `tutor-guide.docx` (course root)
+
+**Package Guide:**
+- `package/course-package-guide.md` → `package/README.docx`
 
 ## Footer Format
 
 All DOCX files include a professional footer:
 
 ```
-BCI2AU | Andrews University | NEU Vietnam | William Lang | Page X of Y
+BCI2AU Business Communication | Andrews University | NEU Vietnam | Page X of Y
+Generated: [Date]
 ```
 
 Footer info extracted from `course-info.md` or `syllabus.md`.

@@ -94,14 +94,14 @@ Don't just show the happy path. Include what to do when things fail.
 
 ## Anti-Patterns
 
-| Don't | Do Instead |
-|-------|------------|
-| Explain concepts Claude knows | Jump to project-specific rules |
-| Multiple terms for same thing | Pick one term, use everywhere |
-| Abstract templates | Filled-in examples |
-| Magic numbers without justification | "3-6 breaks (rhythm every 4-8 slides)" |
-| Happy path only | Include failure recovery |
-| Everything same priority | Use freedom level markers |
+| Don't | Do Instead | Why |
+|-------|------------|-----|
+| Explain concepts Claude knows | Jump to project-specific rules | Wastes tokens, adds noise |
+| Multiple terms for same thing | Pick one term, use everywhere | Prevents confusion, enables search |
+| Abstract templates | Filled-in examples | Concrete examples are more effective |
+| Magic numbers without justification | "3-6 breaks (rhythm every 4-8 slides)" | Claude needs rationale to adapt |
+| Happy path only | Include failure recovery | Real workflows hit errors |
+| Everything same priority | Use freedom level markers | Claude needs to know what's flexible |
 
 ## Skill Structure Template
 

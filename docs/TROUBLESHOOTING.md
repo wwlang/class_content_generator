@@ -84,7 +84,7 @@ Common issues and solutions for the Class Content Generator.
 
 **Solutions:**
 1. Run `/add-speaker-notes [CODE] [N]` after Gemini PPTX is downloaded
-2. Check `lecture-content.md` has `### Speaker Notes` sections
+2. Check `lecture-content.md` has `<speaker-notes>` sections
 3. Verify slide count matches between content and PPTX
 4. Check output in `output/slides.pptx`
 

@@ -1,70 +1,88 @@
-// Week 2 Quiz: Audience Analysis & Stakeholder Mapping
-// Questions: 10
+// Week 2: Audience Analysis & Stakeholder Mapping
+// Questions: 12
 
-$CATEGORY: Week 2
+$CATEGORY: BCI2AU-business-communication - Week 2
 
-::Freeman's Stakeholder Definition::According to Freeman's 1984 stakeholder theory, what defines a stakeholder in an organization?{
-~Any group or individual who has invested money in the organization #This describes only investors or financiers, which is too narrow. Freeman's definition includes both those who affect AND those who are affected by the organization, not just financial stakeholders.
-=Any group or individual who can affect or is affected by the achievement of the organization's objectives #Freeman defined stakeholders as "any group or individual who can affect or is affected by the achievement of the organization's objectives." This bidirectional definition includes both those who have power over the organization and those who are impacted by it.
-~Any group or individual who holds shares in the organization #This describes only shareholders, which is the pre-Freeman view of stakeholder management. Freeman expanded the concept to include employees, customers, communities, suppliers, and many other groups.
-~Any group or individual who works directly for the organization #This describes only employees, which is too narrow. Freeman's stakeholder theory includes external groups such as customers, suppliers, government, media, communities, and competitors.
-}
+::Freeman Stakeholder Model::According to Freeman's definition, what two capacities does a stakeholder possess in relation to an organization?{
+=Can affect or be affected by the organization's objectives #Correct! Freeman's definition establishes the two-way relationship\: stakeholders both influence and are impacted by organizational decisions.
+~Own shares or receive compensation from the organization #Incorrect. This describes only financial stakeholders. Freeman's definition is much broader.
+~Make strategic decisions or vote on policy matters #Incorrect. Freeman includes stakeholders without decision-making power, like employees and communities.
+~Communicate with management or provide feedback #Incorrect. Communication is a method, not Freeman's defining characteristic of stakeholder relationships.
+####Freeman's stakeholder theory redefines businesses as webs of relationships, not just profit engines. A stakeholder can <b>affect</b> (influence, impact) the organization through power or voice, OR <b>be affected by</b> (impacted, influenced) organizational decisions. This <b>bidirectional</b> (two-way) relationship is fundamental. Examples\: investors affect companies (power), while communities are affected by operations (impact). See Week 2 slides 6-7.}
 
-::Freeman's Stakeholder Categories::Which of the following is NOT one of Freeman's 11 stakeholder categories from his original 1984 hub-and-spoke model?{
-~Competitors #Competitors ARE one of Freeman's stakeholder categories. While they may seem like adversaries, they affect your strategic decisions and competitive positioning.
-~Trade associations #Trade associations ARE one of Freeman's 11 original stakeholder categories. They represent industry interests and can influence regulatory and business environments.
-=Social media influencers #Social media influencers were not part of Freeman's 1984 framework because social media didn't exist then. The lecture notes that modern organizations might add this category, but it's not part of Freeman's original 11 categories.
-~Media #Media IS one of Freeman's stakeholder categories. Media shapes public perception and can significantly affect organizational reputation and success.
-}
+::Freeman Stakeholder Model::How do Freeman's internal stakeholders differ from external stakeholders?{
+=Internal stakeholders are part of the organization; external stakeholders are outside but connected to it #Correct! This captures Freeman's core distinction\: internal (employees, management, shareholders) vs. external (customers, suppliers, government, communities).
+~Internal stakeholders have more power; external stakeholders have more legitimacy #Incorrect. The internal/external distinction is about location and relationship, not power distribution.
+~Internal stakeholders must be consulted; external stakeholders are optional #Incorrect. Freeman says both groups matter equally to organizational strategy.
+~Internal stakeholders focus on profit; external stakeholders focus on ethics #Incorrect. Freeman includes diverse motivations across both groups.
+####Freeman's hub-and-spoke model organizes stakeholders by <b>proximity</b> (closeness or distance) to the organization. <b>Internal stakeholders</b> (employees, management, shareholders) are part of organizational structures. <b>External stakeholders</b> (customers, suppliers, government, media, communities, competitors) exist outside but have relationships with the organization. Both matter for <b>strategic</b> (business-focused) and <b>ethical</b> (moral) planning. See Week 2 slides 7-8.}
 
-::Mitchell's Three Attributes::What are the three attributes in Mitchell's Stakeholder Salience Model that determine stakeholder prioritization?{
-~Importance, Influence, and Interest #While these sound plausible, Mitchell's model specifically uses Power, Legitimacy, and Urgency. These three attributes combine to determine stakeholder salience (prominence).
-=Power, Legitimacy, and Urgency #Mitchell's framework uses exactly these three attributes\: Power (extent stakeholder can impose their will), Legitimacy (socially accepted claim), and Urgency (time sensitivity and criticality). Stakeholder salience is determined by how many of these attributes are present.
-~Authority, Credibility, and Timeliness #These are not Mitchell's terms. The model uses Power, Legitimacy, and Urgency as the defining attributes of stakeholder salience.
-~Impact, Rights, and Criticality #While these terms relate to stakeholder characteristics, Mitchell's model specifically identifies Power, Legitimacy, and Urgency as the three key attributes.
-}
+::Freeman Stakeholder Model::Why does Freeman's theory argue that ignoring stakeholder groups creates business risk?{
+=Because ignored stakeholders can harm the organization through strikes, boycotts, or regulatory action #Correct! Freeman demonstrates that ignoring any stakeholder group (workforce, communities, regulators) leads to costly consequences.
+~Because it violates moral principles and makes leadership feel guilty #Incorrect. While ethics matter, Freeman's argument is primarily business-focused.
+~Because customers will always demand better products than competitors offer #Incorrect. This is about competition, not Freeman's stakeholder theory.
+~Because shareholders will reduce dividends if the company ignores other groups #Incorrect. Freeman's argument extends beyond financial returns.
+####Freeman's insight is <b>strategic</b> (business-focused, not just ethical). Real-world costs include\: employee strikes (ignored workforce), product boycotts (ignored communities), regulatory penalties (ignored government), and <b>reputational</b> (relating to public opinion and trust) damage (ignored media). Examples\: Boeing 737 MAX crashes (ignored safety regulators) \= 346 deaths and $20 billion losses; Rana Plaza factory collapse (ignored workers) \= 1,100+ deaths and brand devastation. <b>Stakeholder consideration</b> (thinking about affected groups) is business necessity. See Week 2 slide 8.}
 
-::Mitchell's Definitive Stakeholders::In Mitchell's Stakeholder Salience Model, what are "definitive" stakeholders?{
-~Stakeholders who have only power #Stakeholders with only power are classified as "dormant" in Mitchell's model. They have low salience because they lack legitimacy and urgency.
-~Stakeholders who have power and legitimacy #Stakeholders with power and legitimacy are classified as "dominant" in Mitchell's model. They are important but not at the highest priority level without urgency.
-=Stakeholders who have power, legitimacy, and urgency #Definitive stakeholders possess all three attributes—power, legitimacy, and urgency—making them the highest priority. They demand immediate attention and action from the organization.
-~Stakeholders who have legitimacy and urgency but not power #Stakeholders with legitimacy and urgency but not power are classified as "dependent" in Mitchell's model. They have important claims but limited ability to force organizational action.
-}
+::Mitchell Stakeholder Salience::What are the three attributes that determine a stakeholder's salience (priority) in Mitchell's framework?{
+=Power, legitimacy, and urgency #Correct! These three independent attributes combine to rank stakeholders. The more attributes a stakeholder has, the higher their salience.
+~Profit, legitimacy, and urgency #Incorrect. Mitchell uses Power, not profit. Power means the ability to impose will.
+~Power, influence, and time-sensitivity #Incorrect. The three attributes are power, legitimacy (not influence), and urgency.
+~Authority, morality, and deadline #Incorrect. Use Mitchell's exact terms\: power, legitimacy, urgency.
+####Mitchell's framework <b>operationalizes</b> (makes actionable) Freeman by ranking stakeholders using three <b>independent</b> (separate, can exist alone) attributes. <b>Power</b> \= ability to impose will (regulatory authority, economic leverage). <b>Legitimacy</b> \= <b>socially accepted</b>, expected claims (contracts, legal standing, moral rights). <b>Urgency</b> \= time-critical, needs immediate attention (deadlines, crises). A stakeholder with all three is "definitive" (highest priority); fewer attributes \= lower salience. See Week 2 slides 10.}
 
-::Stakeholder Type Matching::Match each Mitchell stakeholder type to its correct attribute combination\:{
-=Dormant stakeholders -> Power only (no Legitimacy or Urgency)
-=Discretionary stakeholders -> Legitimacy only (no Power or Urgency)
-=Demanding stakeholders -> Urgency only (no Power or Legitimacy)
-=Dependent stakeholders -> Legitimacy + Urgency (no Power)
-}
+::Mitchell Stakeholder Salience::How can a stakeholder move from "Dormant" to "Dangerous" category according to Mitchell's model?{
+=By gaining urgency in addition to existing power—no longer dormant, now dangerous #Correct! Dormant stakeholders have only power. When urgency is added (e.g., angry customer goes viral on social media), they become Dangerous (power + urgency).
+~By losing legitimacy while retaining power #Incorrect. A stakeholder losing legitimacy doesn't increase priority. Gaining urgency increases priority.
+~By involving themselves in organizational decision-making #Incorrect. Mitchell's categories depend on power/legitimacy/urgency attributes, not involvement level.
+~By hiring lawyers and threatening legal action #Incorrect. Legal action might add legitimacy or urgency, but the mechanism is the attributes, not the tactic.
+####Mitchell emphasizes that stakeholder <b>salience is dynamic</b> (changes over time) and <b>perception-based</b> (how managers see stakeholders). Stakeholders can move between categories as attributes change. <b>Dormant</b> (power only) → <b>Dangerous</b> (power + urgency) when deadlines or crises emerge. <b>Discretionary</b> (legitimacy only) → <b>Dependent</b> (legitimacy + urgency) when employees volunteer and their needs become time-sensitive. COVID-19 shifted employees to definitive status (health urgency + legitimacy + labor power). Organizations must <b>reassess</b> (review and evaluate again) stakeholder landscape <b>continuously</b>. See Week 2 slide 20.}
 
-::Purpose of Stakeholder Salience::Why is Mitchell's concept of stakeholder salience important for managers?{
-~It helps managers avoid dealing with difficult stakeholders #The purpose is not to avoid stakeholders but to prioritize them strategically. Even low-salience stakeholders should be monitored because their status can change.
-=It provides a systematic way to allocate limited attention and resources among competing stakeholder claims #Managers face limited time, money, and attention with multiple competing stakeholder claims. Mitchell's salience model provides a systematic algorithm for prioritization based on power, legitimacy, and urgency—making stakeholder management actionable rather than aspirational.
-~It eliminates the need to consider all stakeholders equally #While the model does help prioritize (rather than treating all equally), this misses the key purpose\: strategic resource allocation when you cannot address everyone at once.
-~It ensures that only powerful stakeholders receive attention #This is both inaccurate and unethical. Definitive stakeholders have all three attributes (including legitimacy and urgency), not just power. Mitchell's model ensures legitimate claims receive attention even when stakeholders lack power.
-}
+::Mitchell Stakeholder Salience::Why are "Definitive" stakeholders treated as highest priority in Mitchell's typology, while "Demanding" stakeholders receive lowest priority?{
+=Definitive stakeholders have all three attributes (power, legitimacy, urgency); Demanding have only urgency—justifying different priority levels #Correct! More attributes \= stronger claim on organizational attention. Definitive can enforce compliance; Demanding cannot.
+~Definitive stakeholders are always customers; Demanding are always low-wage workers #Incorrect. Both categories can include various stakeholder types. Priority depends on attributes, not role.
+~Definitive stakeholders are more ethical; Demanding stakeholders are less ethical #Incorrect. Mitchell's model is about strategic priority, not ethics. A demanding stakeholder can have legitimate concerns.
+~Definitive stakeholders have existed longer in the organization than Demanding stakeholders #Incorrect. Historical tenure doesn't determine salience. Attributes do.
+####Mitchell's typology is <b>algorithmic</b> (follows a clear, logical sequence based on attribute count). <b>Definitive</b> stakeholders (power + legitimacy + urgency) must receive immediate action—you have no choice (regulators enforcing deadlines, customers with safety claims). <b>Demanding</b> stakeholders (urgency only) have time-critical needs but no power to force compliance and no <b>legitimate</b> (widely accepted and expected) standing—monitor but don't prioritize. Example\: A complaining stranger with no standing \= Demanding. A safety regulator \= Definitive. See Week 2 slides 11-12.}
 
-::Dynamic Stakeholder Salience::Stakeholder salience is static—once you classify a stakeholder type, it remains constant over time.{
-FALSE#Mitchell explicitly states that stakeholder salience is dynamic and perception-based. Stakeholders can gain or lose attributes over time. Examples from the lecture\: employees who unionize move from "dependent" to "definitive" by gaining power; a former customer who becomes an activist on social media moves from "dormant" to "dangerous" by adding urgency. The lecture emphasizes that managers must continuously reassess the stakeholder landscape because context changes everything (e.g., COVID-19 suddenly made employees definitive stakeholders due to health urgency).
-TRUE#Review Slide 20 on dynamic stakeholder status. The lecture provided examples of stakeholders moving between categories as their attributes change. Context matters—economic shifts, crises, or social movements can alter power, legitimacy, or urgency.
-}
+::EDGE Model (Stakeholder Engagement)::What do the four letters in the EDGE framework stand for?{
+=Expanded, Distinctive, Growth-oriented, Engaged #Correct! EDGE is McKinsey's framework for how successful CEOs operationalize stakeholder engagement.
+~External, Delegated, Growth-focused, Engagement #Incorrect. The second letter is Distinctive, not Delegated. EDGE involves personal ownership, not delegation.
+~Expanded, Dynamic, Growth-oriented, Effective #Incorrect. The second and fourth letters are Distinctive and Engaged.
+~Excellence, Dialogue, Genuine, Empathy #Incorrect. These are not the EDGE acronym terms from McKinsey's framework.
+####McKinsey's <b>EDGE framework</b> describes CEO-level stakeholder management. Each element is <b>learnable</b>, not personality-based. <b>Expanded</b> \= you own external relationships, don't delegate. <b>Distinctive</b> \= develop one compelling narrative, consistent across audiences. <b>Growth-oriented</b> \= train ambassadors throughout organization so others communicate too. <b>Engaged</b> \= maintain regular communication rhythm, not just crisis response. See Week 2 slide 15.}
 
-::McKinsey EDGE Framework Element::What is the primary purpose of the "D" (Distinctive) element in McKinsey's EDGE framework for stakeholder engagement?{
-~To create different messages for each stakeholder group #While you do adapt messages for different audiences (that's message adaptation), "Distinctive" refers to having ONE core narrative that you adapt, not creating entirely different messages. The Four W's (Who, Why, What, When) provide this consistent backbone.
-=To become the storyteller-in-chief with a singular, compelling narrative #The "Distinctive" element means becoming storyteller-in-chief with a singular, compelling narrative. You maintain one consistent story (the Four W's framework) but adapt the EMPHASIS for each audience. This ensures coherence while allowing for stakeholder-specific communication.
-~To distinguish between important and unimportant stakeholders #That's what Mitchell's salience model does (prioritizing stakeholders). The EDGE framework is about HOW to engage stakeholders effectively, not which ones to prioritize.
-~To differentiate your organization from competitors #While competitive differentiation may be part of your narrative, "Distinctive" in EDGE specifically refers to having a clear, consistent story that makes you an effective communicator, not market positioning.
-}
+::EDGE Model (Stakeholder Engagement)::How does the "Distinctive" element of EDGE address the communication challenge that most CEOs face?{
+=By requiring one compelling narrative adapted for different audiences, rather than fragmented or inconsistent messaging #Correct! The gap between knowing stakeholders matter (58% of CEOs) and succeeding (12%) often comes from inconsistent communication. Distinctive provides the narrative backbone.
+~By training every employee to become a communication expert #Incorrect. Training others is the 'Growth-oriented' element, not Distinctive.
+~By increasing the CEO's personal visibility at all stakeholder events #Incorrect. Frequency isn't the problem; story consistency is. That's Distinctive.
+~By using different languages when communicating with international stakeholders #Incorrect. Distinctive refers to narrative consistency, not language choice.
+####The "Distinctive" element requires you to become <b>storyteller-in-chief</b>—develop one <b>singular</b> (unique, one only) <b>compelling narrative</b> about who you are (WHO), your organization's purpose (WHY), and the strategic agenda (WHAT). Then <b>adapt emphasis</b> for each stakeholder group without changing the core story. This <b>consistency</b> builds trust and prevents the fragmented messaging that makes CEOs feel unsuccessful despite effort. Richard Davis (US Bancorp) trained his whole team as equal storytellers, multiplying reach while keeping narrative aligned. See Week 2 slides 15-16.}
 
-::Duarte's Content Balance::According to Duarte's audience calibration framework, analytical audiences (engineers, finance professionals) should receive presentations that are 100% data-driven with no emotional content.{
-FALSE#While analytical audiences do prefer data-driven content (typically 80% logos), they still need SOME emotional content (20% pathos). The lecture emphasizes that every presentation needs BOTH logos and pathos—the ratio varies by audience, but neither should be completely eliminated. For analytical audiences, you lead with evidence and use emotion sparingly and strategically (e.g., a brief success story to illustrate the impact of the data). Going 100% analytical risks losing even engineers' engagement because humans need some narrative connection.
-TRUE#Review Slide 18 on Duarte's audience calibration matrix. Even technical audiences benefit from strategic emotional content to maintain engagement and provide context for data. The key is the ratio, not elimination.
-}
+::EDGE Model (Stakeholder Engagement)::Why does the EDGE framework include "Growth-oriented" (empowering ambassadors) rather than requiring only the CEO to handle stakeholder communication?{
+=Because one person cannot maintain consistent communication across all stakeholders; trained ambassadors multiply reach while preserving narrative #Correct! Growth-oriented distributes the communication load while keeping the story aligned. It solves the bottleneck of CEO-only communication.
+~Because employees naturally understand stakeholder needs better than CEOs #Incorrect. The reason is capacity and scalability, not employee expertise.
+~Because it reduces CEO workload so they can focus on financial performance #Incorrect. The goal isn't to reduce CEO time on stakeholders; it's to increase total organizational communication capacity.
+~Because external audiences prefer hearing from multiple voices rather than just the CEO #Incorrect. While multi-voice can be good, the primary reason is enabling scalability of a consistent narrative.
+####The <b>Growth-oriented</b> element recognizes that stakeholder engagement cannot be a one-person job. Training others to communicate—while keeping the narrative <b>aligned</b> (consistent with) the core story—multiplies your reach without creating fragmentation. US Bancorp CEO Richard Davis said\: "The Holy Grail is to have 12 people on a management team who are equal voices and equal storytellers." This is <b>distributive</b> (spreading across many) communication—scaling stakeholder engagement beyond the CEO. See Week 2 slide 15.}
 
-::Message Adaptation Reasoning::In the wellness program integration example from the lecture, why do employees receive 70% pathos content while senior management receives 80% logos content?{
-~Because employees are less educated and can't understand data #This is both inaccurate and disrespectful. The difference isn't about intelligence or education—it's about what each audience needs to make their specific decision. Employees are perfectly capable of understanding data; they simply need different information to decide whether to participate.
-~Because management doesn't care about employee wellness stories #Management may care about wellness stories, but their PRIMARY decision criterion is financial (budget approval requires ROI justification). The content mix reflects decision-making needs, not level of care.
-=Because employees need to connect with personal health impact to change behavior, while management needs ROI data to approve budget #This demonstrates strategic message adaptation\: employees are being asked to change personal behavior (participate in wellness activities), so they need to connect emotionally with how it benefits their health—stories and testimonials are persuasive for behavior change. Management holds budget authority and must justify costs to shareholders—they need cost-benefit analysis and ROI projections. Same program, different decision contexts, different content calibration.
-~Because emotional content is easier to create than analytical content #The choice of logos/pathos ratio isn't about ease of creation—it's about audience needs and decision-making context. In fact, creating compelling emotional content can be just as difficult as analytical content.
-}
+::Duarte's Audience Calibration::In Duarte's framework, what do "Logos" and "Pathos" represent as communication approaches?{
+=Logos \= analytical/data-driven; Pathos \= emotional/story-driven #Correct! These are Duarte's two content types. Logos appeals to logic; Pathos appeals to emotion and values.
+~Logos \= visual presentations; Pathos \= written documents #Incorrect. These aren't format distinctions. Both Logos and Pathos can appear in any format.
+~Logos \= long presentations; Pathos \= brief presentations #Incorrect. Length isn't the distinction. It's analytical vs. emotional content.
+~Logos \= formal tone; Pathos \= casual tone #Incorrect. Tone and formality are separate from the logic/emotion distinction.
+####Nancy Duarte updated Aristotle's <b>persuasive</b> (convincing, compelling) appeals for modern business. <b>Logos</b> (logical appeals) \= data, statistics, research citations, structured arguments that appeal to analytical thinking. <b>Pathos</b> (emotional appeals) \= stories, anecdotes, metaphors, visuals, humor that appeal to values and feelings. Every presentation needs both, but the <b>ratio</b> (proportion, relationship between parts) varies by audience type. This is from MIT Sloan Management Review (2024). See Week 2 slide 17.}
+
+::Duarte's Audience Calibration::How should content mix differ when presenting to analytical audiences versus emotionally-driven audiences according to Duarte?{
+=Analytical audiences prefer high Logos (data/logic); emotionally-driven audiences prefer high Pathos (stories/vision) #Correct! Duarte's core insight is matching content ratio to audience preference. Engineers want charts; marketers want narratives.
+~Both audience types need identical content ratios; only presentation style should differ #Incorrect. Duarte explicitly argues that content mix should vary by audience type.
+~Analytical audiences only want data; emotionally-driven audiences only want stories #Incorrect. Both need both types, just in different proportions.
+~Emotional audiences are harder to persuade, so they require more time investment #Incorrect. Difficulty isn't the distinction. Preference for content type is.
+####Duarte's <b>calibration matrix</b> guides content adjustment for three audience types. <b>Analytical</b> (engineers, finance, scientists)\: lead with evidence—80% Logos, 20% Pathos. <b>Emotionally-driven</b> (sales, creatives, marketers)\: lead with narrative—30% Logos, 70% Pathos. <b>Mixed</b> (cross-functional teams, executives)\: <b>balanced</b>—50% Logos, 50% Pathos for credibility AND engagement. <b>Mismatch</b> (wrong content for audience) creates problems\: too much data bores creatives; too much emotion loses engineers. See Week 2 slide 18.}
+
+::Duarte's Audience Calibration::Why does Duarte argue that using the same content mix for all audiences is ineffective communication?{
+=Because different audiences process information differently—analytical minds need data, creative minds need narrative engagement #Correct! Audiences have different preferences based on cognitive style. Matching content to preference increases effectiveness.
+~Because some audiences are more intelligent than others #Incorrect. Duarte's argument isn't about intelligence but about thinking style and preferences.
+~Because audiences from different industries always disagree on priorities #Incorrect. Disagreement on content isn't Duarte's point; preference for how information is delivered is.
+~Because presenting to large groups requires different techniques than small groups #Incorrect. Group size isn't Duarte's distinction. Audience cognitive preference is.
+####Duarte's insight is <b>cognitive</b> (related to thinking and how minds process information). Some minds are <b>analytically wired</b> (naturally suited to logic and data)—they trust data, logic, evidence before emotional appeal. Others are <b>emotionally wired</b> (naturally suited to narrative and values)—they connect through vision, stories, values before accepting numbers. Using 80% data with creatives \= disengagement. Using 80% stories with engineers \= lost credibility. <b>Calibration</b> (matching content to audience) means adjusting ratio to match how your specific audience prefers to learn and decide. This is <b>neuroscience-informed</b> (based on how brains work) business communication. See Week 2 slides 17-18.}

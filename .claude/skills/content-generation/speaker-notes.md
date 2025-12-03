@@ -2,27 +2,23 @@
 
 ## Structure Per Slide 🔐
 
-```markdown
-## Speaker Notes
+Speaker notes use XML tags within slides:
 
-**Opening:** (1-2 bullets)
-- Transition from previous slide
-- How to introduce this concept
+```xml
+<speaker-notes>
+Opening context or transition from previous slide.
 
-**Key Points:** (3-5 bullets)
-- Main concepts to emphasize
-- Definitions to clarify
-- Analogies to use
+Key points to emphasize:
+- Main concept with brief explanation
+- Definition to clarify if needed
+- Analogy or comparison (fully explained)
 
-**Example/Story:** (1-2 bullets)
-- Concrete example (Vietnamese context when possible)
-- Real-world application
+Example or story for illustration.
 
-**Check Understanding:** (1 bullet)
-- Question to ask class
+Question to check understanding or prompt discussion.
 
-**Transition:** (1 bullet)
-- Bridge to next slide
+Transition to next slide topic.
+</speaker-notes>
 ```
 
 ## Length Guidelines
@@ -40,32 +36,29 @@
 - Generic notes ("explain this concept")
 - Missing transitions between slides
 - No engagement prompts
+- **Directive actions** ("Draw this", "Hand out") → use suggestive ("You could draw...", "The worksheet works well here")
+- **Unexplained references** → speaker notes should be self-contained; explain analogies/examples so the speaker doesn't need outside knowledge
 
 ## Example (Filled In)
 
-```markdown
-## Speaker Notes
+```xml
+<speaker-notes>
+Transition from the 6 principles overview—now showing them in action.
 
-**Opening:**
-- "Last slide we covered the 6 principles—now let's see them in action"
+Key points:
+- Scarcity works because of loss aversion (Kahneman's research on how people fear losing more than they value gaining)
+- "Limited time" framing more effective than generic "sale" messaging
+- Vietnamese e-commerce uses countdown timers heavily on platforms like Shopee and Lazada
 
-**Key Points:**
-- Scarcity works because of loss aversion (Kahneman)
-- "Limited time" more effective than "sale"
-- Vietnamese e-commerce uses countdown timers heavily
+Example: Shopee flash sales combine timer + "only 3 left" messaging, layering scarcity with social proof for maximum urgency.
 
-**Example:**
-- Shopee flash sales: timer + "only 3 left" = scarcity + social proof combined
+Quick engagement: "Show of hands—who's bought something because of a countdown timer?" Most students will raise hands, validating the concept's real-world impact.
 
-**Check Understanding:**
-- "Quick show of hands—who's bought something because of a countdown timer?"
-
-**Transition:**
-- "So scarcity works—but when does it backfire? Let's look at ethical limits..."
+Next: examining when scarcity backfires and ethical boundaries.
+</speaker-notes>
 ```
 
 ## Cultural Notes 🔓
 
 - Vietnamese business examples when relevant
-- Pronunciation: "Cialdini" = chee-al-DEE-nee
-- Quiet groups: use pair-share before full class discussion
+- Quiet groups: suggest pair-share before full class discussion

@@ -60,6 +60,54 @@ For each candidate, validate ALL concepts with **lecture-informing depth**:
 ### Stage 4: Present to User
 Show 2-3 finalists with content match analysis. User selects 2.
 
+---
+
+### Stage 1.5: Video Discovery (Optional - 5-10 min)
+
+**When to search for videos:**
+- Topic has well-known expert presentations (TED talks, conference keynotes)
+- Seminal author has explained their own theory on video
+- Visual demonstrations would clarify complex concepts
+- Emotional/motivational content benefits from storytelling
+
+**When to skip videos:**
+- Highly technical topics (frameworks, models best explained in text)
+- No quality videos exist for this specific topic
+- Articles already provide excellent coverage
+- Time-constrained research session
+
+**Search Process:**
+
+**Step 1: Quick Search (2 min)**
+- "[topic] TED talk"
+- "[seminal author name] [framework] video"
+- site:youtube.com [topic] official verified
+
+**Step 2: Quality Filter (2 min)**
+Apply checklist:
+- Duration appropriate (3-15 min ideal, <20 min maximum)
+- Source credible (TED, university, verified channel, official organization)
+- Accessibility (works in Vietnam, subtitles available)
+- Published recently (2018+) unless historical/seminal
+
+**Step 3: Content Match (3 min)**
+- Watch at 2x speed or skim with player preview
+- Check: Does it cover ≥1 required concept clearly?
+- Assess: Does it provide unique value vs. articles?
+- Decide: Required candidate, Optional candidate, or Skip
+
+**Step 4: Document (2 min)**
+- Fill video metadata template (URL, backup URL, duration, source)
+- Include tier (Primary/Supplementary) and usage (Required/Optional candidate)
+- Write 2-3 sentence content summary (for obsolescence fallback)
+- Add discussion prompts if suggesting as required viewing
+
+**Maximum Time:** 10 minutes for video discovery
+**Maximum Videos:** 2 per week
+**Acceptable Outcome:** 0 videos found (not all topics have quality videos)
+
+---
+
 ## Quality Rules 🔒
 
 - **Open access preferred** - Students must access content

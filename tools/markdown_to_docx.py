@@ -281,11 +281,21 @@ def extract_course_info(course_path: str) -> Optional[CourseInfo]:
     code_match = re.match(r'^([A-Z0-9]+)', folder_name)
     code = code_match.group(1) if code_match else "COURSE"
 
-    # Extract course name (try table format first, then fallback to colon format)
+    # Extract course name (try multiple formats)
+    # 1. Table format: | **Course Title** | Business Communication |
     name_match = re.search(r'\|\s*\*\*Course Title\*\*\s*\|\s*(.+?)\s*\|', content, re.IGNORECASE)
     if not name_match:
-        name_match = re.search(r'(?:Course Title|Title):\s*(.+)', content, re.IGNORECASE)
-    name = strip_markdown(name_match.group(1).strip()) if name_match else "Course"
+        # 2. Bold label format: **Course Name:** Business Communication
+        name_match = re.search(r'\*\*(?:Course Name|Course Title|Title)\*\*:\s*(.+)', content, re.IGNORECASE)
+    if not name_match:
+        # 3. Plain colon format: Course Title: Business Communication
+        name_match = re.search(r'(?:Course Name|Course Title|Title):\s*(.+)', content, re.IGNORECASE)
+
+    if name_match:
+        raw_name = name_match.group(1).strip()
+        name = strip_markdown(raw_name)
+    else:
+        name = "Course"
 
     # Extract university (try table format first, then fallback to colon format)
     uni_match = re.search(r'\|\s*\*\*Program\*\*\s*\|\s*(.+?)\s*\|', content, re.IGNORECASE)
@@ -361,7 +371,7 @@ def add_footer_with_page_numbers(doc: Document, course_info: CourseInfo, source_
     Add professional footer with course branding, page numbers, and generation date.
 
     Format:
-    Line 1: Course Code Course Name | University | Campus | Instructor | Page X of Y
+    Line 1: Course Code Course Name | University | Campus | Page X of Y
     Line 2: Generated: [Last Modified Date]
     """
     section = doc.sections[0]
@@ -389,8 +399,8 @@ def add_footer_with_page_numbers(doc: Document, course_info: CourseInfo, source_
     para.paragraph_format.space_after = Pt(0)
     para.paragraph_format.line_spacing = 1.0
 
-    # Add course info text
-    run = para.add_run(f"{course_info.code} {course_info.name} | {course_info.university} | {course_info.campus} | {course_info.instructor} | Page ")
+    # Add course info text (without instructor)
+    run = para.add_run(f"{course_info.code} {course_info.name} | {course_info.university} | {course_info.campus} | Page ")
     run.font.size = Pt(8)
 
     # Add PAGE field (current page number)
@@ -1166,6 +1176,141 @@ def convert_handbook(course_code: str, base_path: str = None) -> ConversionRepor
         )
 
 
+def convert_tutor_guide(course_code: str, base_path: str = None) -> ConversionReport:
+    """
+    Convert tutor-guide.md to tutor-guide.docx in course root.
+    """
+    if base_path is None:
+        base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    # Find course folder
+    course_folder = os.path.join(base_path, "courses", f"{course_code}*")
+    course_matches = glob.glob(course_folder)
+
+    if not course_matches:
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=[f"Course not found: {course_code}"]
+        )
+
+    course_path = course_matches[0]
+    md_path = os.path.join(course_path, "tutor-guide.md")
+    docx_path = os.path.join(course_path, "tutor-guide.docx")
+
+    if not os.path.exists(md_path):
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=[f"Tutor guide not found: {md_path}"]
+        )
+
+    # Get course info for footer
+    course_info = extract_course_info(course_path)
+    if not course_info:
+        course_info = CourseInfo(
+            code=course_code,
+            name="Course",
+            university="Andrews University",
+            campus="NEU Vietnam",
+            instructor="Instructor"
+        )
+
+    converter = MarkdownToDocx(course_info)
+
+    print(f"Converting tutor-guide.md -> tutor-guide.docx")
+    if converter.convert(md_path, docx_path):
+        return ConversionReport(
+            success=True,
+            files_converted=1,
+            files_skipped=0,
+            output_files=[docx_path],
+            errors=[]
+        )
+    else:
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=["Failed to convert tutor guide"]
+        )
+
+
+def convert_package_guide(course_code: str, base_path: str = None) -> ConversionReport:
+    """
+    Convert course-package-guide.md to README.docx in package/ folder.
+    """
+    if base_path is None:
+        base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    # Find course folder
+    course_folder = os.path.join(base_path, "courses", f"{course_code}*")
+    course_matches = glob.glob(course_folder)
+
+    if not course_matches:
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=[f"Course not found: {course_code}"]
+        )
+
+    course_path = course_matches[0]
+    package_folder = os.path.join(course_path, "package")
+
+    # Create package folder if it doesn't exist
+    os.makedirs(package_folder, exist_ok=True)
+
+    md_path = os.path.join(package_folder, "course-package-guide.md")
+    docx_path = os.path.join(package_folder, "README.docx")
+
+    if not os.path.exists(md_path):
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=[f"Package guide not found: {md_path}"]
+        )
+
+    # Get course info for footer
+    course_info = extract_course_info(course_path)
+    if not course_info:
+        course_info = CourseInfo(
+            code=course_code,
+            name="Course",
+            university="Andrews University",
+            campus="NEU Vietnam",
+            instructor="Instructor"
+        )
+
+    converter = MarkdownToDocx(course_info)
+
+    print(f"Converting course-package-guide.md -> README.docx")
+    if converter.convert(md_path, docx_path):
+        return ConversionReport(
+            success=True,
+            files_converted=1,
+            files_skipped=0,
+            output_files=[docx_path],
+            errors=[]
+        )
+    else:
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=["Failed to convert package guide"]
+        )
+
+
 def convert_syllabus(course_code: str, base_path: str = None) -> ConversionReport:
     """
     Convert syllabus.md to DOCX.
@@ -1234,6 +1379,83 @@ def convert_syllabus(course_code: str, base_path: str = None) -> ConversionRepor
         )
 
 
+def convert_assessment_file(course_code: str, filename: str, base_path: str = None) -> ConversionReport:
+    """
+    Convert a markdown file in assessments/ to DOCX in assessments/output/.
+
+    Args:
+        course_code: Course code (e.g., "BCI2AU")
+        filename: Name of markdown file (e.g., "final-exam-revision.md")
+        base_path: Optional base path
+    """
+    if base_path is None:
+        base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+    # Find course folder
+    course_folder = os.path.join(base_path, "courses", f"{course_code}*")
+    course_matches = glob.glob(course_folder)
+
+    if not course_matches:
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=[f"Course not found: {course_code}"]
+        )
+
+    course_path = course_matches[0]
+    assessments_folder = os.path.join(course_path, "assessments")
+    output_folder = os.path.join(assessments_folder, "output")
+
+    # Create output folder if it doesn't exist
+    os.makedirs(output_folder, exist_ok=True)
+
+    md_path = os.path.join(assessments_folder, filename)
+    docx_filename = filename.replace('.md', '.docx')
+    docx_path = os.path.join(output_folder, docx_filename)
+
+    if not os.path.exists(md_path):
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=[f"File not found: {md_path}"]
+        )
+
+    # Get course info for footer
+    course_info = extract_course_info(course_path)
+    if not course_info:
+        course_info = CourseInfo(
+            code=course_code,
+            name="Course",
+            university="Andrews University",
+            campus="NEU Vietnam",
+            instructor="Instructor"
+        )
+
+    converter = MarkdownToDocx(course_info)
+
+    print(f"Converting {filename} -> {docx_filename}")
+    if converter.convert(md_path, docx_path):
+        return ConversionReport(
+            success=True,
+            files_converted=1,
+            files_skipped=0,
+            output_files=[docx_path],
+            errors=[]
+        )
+    else:
+        return ConversionReport(
+            success=False,
+            files_converted=0,
+            files_skipped=0,
+            output_files=[],
+            errors=[f"Failed to convert {filename}"]
+        )
+
+
 def print_report(report: ConversionReport):
     """Print a formatted report."""
     print("\n" + "=" * 60)
@@ -1271,11 +1493,15 @@ def main():
         print("  python tools/markdown_to_docx.py [course-code] [week-number]")
         print("  python tools/markdown_to_docx.py [course-code] syllabus")
         print("  python tools/markdown_to_docx.py [course-code] handbook")
+        print("  python tools/markdown_to_docx.py [course-code] tutor-guide")
+        print("  python tools/markdown_to_docx.py [course-code] guide")
         print()
         print("Examples:")
         print("  python tools/markdown_to_docx.py BCI2AU 1")
         print("  python tools/markdown_to_docx.py BCI2AU syllabus")
         print("  python tools/markdown_to_docx.py BCI2AU handbook")
+        print("  python tools/markdown_to_docx.py BCI2AU tutor-guide")
+        print("  python tools/markdown_to_docx.py BCI2AU guide")
         sys.exit(1)
 
     course_code = sys.argv[1]
@@ -1289,6 +1515,14 @@ def main():
         print(f"Converting assessment handbook for {course_code}")
         print("-" * 40)
         report = convert_handbook(course_code)
+    elif target.lower() == 'tutor-guide':
+        print(f"Converting tutor guide for {course_code}")
+        print("-" * 40)
+        report = convert_tutor_guide(course_code)
+    elif target.lower() == 'guide':
+        print(f"Converting package guide for {course_code}")
+        print("-" * 40)
+        report = convert_package_guide(course_code)
     else:
         week_number = int(target)
         print(f"Converting markdown files for {course_code} Week {week_number}")

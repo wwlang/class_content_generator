@@ -29,6 +29,8 @@ class BloomLevel(Enum):
 class QuestionType(Enum):
     """Question format types."""
     MULTIPLE_CHOICE = "multiple_choice"
+    TRUE_FALSE = "true_false"
+    MATCHING = "matching"
 
 
 @dataclass
@@ -45,7 +47,9 @@ class Question:
         correct_answer: Letter of correct option (A, B, C, or D)
         feedback: Dictionary mapping option letters to feedback text
         bloom_level: Cognitive level (Remembering or Understanding)
-        question_type: Format type (currently only Multiple Choice)
+        question_type: Format type (Multiple Choice, True/False, or Matching)
+        general_feedback: Optional general feedback shown after answering
+        prepares_for: Optional assessment this question prepares for
     """
     id: str
     week: int
@@ -56,6 +60,8 @@ class Question:
     feedback: Dict[str, str]
     bloom_level: BloomLevel
     question_type: QuestionType = QuestionType.MULTIPLE_CHOICE
+    general_feedback: Optional[str] = None
+    prepares_for: Optional[str] = None
 
     def validate(self) -> List[str]:
         """

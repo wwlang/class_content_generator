@@ -19,8 +19,7 @@ Insert speaker notes from `lecture-content.md` into an existing PPTX file, savin
    - Prefers files with "Lecture" in the name
 
 2. **Parse speaker notes** from `lecture-content.md`
-   - Extracts `### Speaker Notes` sections from each slide
-   - Supports both current and legacy markdown formats
+   - Extracts `<speaker-notes>` sections from each slide (XML format only)
 
 3. **Insert notes** into each slide
    - Maps by slide number (Slide 1 notes → slide 1, etc.)

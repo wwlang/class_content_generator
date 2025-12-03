@@ -1,230 +1,357 @@
-# Week 8 Quiz Questions
-
-**Topic:** High-Stakes Communication
-**Prepares for:** Quiz 3 (Week 11)
-**Source:** lecture-content.md key concepts
-
 ---
+metadata:
+  week: 8
+  topic: "High-Stakes Communication"
+  prepares_for: "Individual Presentation (15%), Group Presentation (25%)"
+  source: "lecture-content.md"
 
-## Questions
+questions:
+  - id: "W8-Q1-gravitas-definition"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Executive Presence Framework"
 
-### Q1: Executive Presence Elements
-**Type:** Multiple Choice
+    question: |
+      What distinguishes gravitas from appearance and communication in the Executive Presence Framework?
 
-What are the three elements of executive presence according to Hewlett's model?
+    options:
+      - key: "A"
+        text: "Confidence and decisiveness under pressure, inclusiveness and respect for diverse perspectives, and demonstrated competence"
+        feedback: "Correct! Gravitas encompasses these three dimensions: confidence and decisiveness under pressure, inclusiveness and respect for diverse perspectives, and demonstrated competence."
+        correct: true
 
-A) Confidence, Communication, Charisma
-B) Gravitas, Communication, Appearance
-C) Speaking, Listening, Presence
-D) Authority, Authenticity, Assertiveness
+      - key: "B"
+        text: "Physical appearance, commanding voice, and formal presentation skills"
+        feedback: "Incorrect. These relate to the appearance and communication elements, not gravitas. Gravitas focuses on confidence, decisiveness, inclusiveness, and competence."
 
-**Answer:** B
+      - key: "C"
+        text: "Educational credentials, professional dress, and social status"
+        feedback: "Incorrect. Gravitas is not about credentials or appearance. The updated model de-emphasizes pedigree and prioritizes demonstrated competence through actions and decision-making."
 
-**Feedback:**
-- **A) Incorrect.** While confidence is part of gravitas and charisma sounds related, these are not the three formal elements Hewlett identifies. The model uses gravitas (which includes confidence), communication, and appearance.
-- **B) Correct!** Hewlett's Executive Presence Model identifies three measurable components: gravitas (67% of executives say this matters most), communication (second most important), and appearance (least important but still relevant).
-- **C) Incorrect.** Speaking and listening are components of the communication element, but they are not the three main elements of the model. The three elements are gravitas, communication, and appearance.
-- **D) Incorrect.** While authority relates to gravitas and authenticity is important for appearance, these are not the three formal elements. The model specifies gravitas, communication, and appearance.
+      - key: "D"
+        text: "Popularity with colleagues, charisma, and public speaking ability"
+        feedback: "Incorrect. While related to presence, gravitas specifically emphasizes decisiveness under pressure and inclusive leadership, not popularity or natural charisma."
 
+    general_feedback: |
+      Gravitas in the Executive Presence Framework comprises three core elements: (1) **confidence** (self-assurance and composure), (2) **decisiveness** (making clear decisions under pressure), (3) **inclusiveness** (respecting diverse perspectives), and (4) **demonstrated competence** (proven capability through actions rather than credentials). The post-pandemic shift moved from **pedigree** (educational background and status) to demonstrated competence. See Week 8 slides 5-7.
+
+  - id: "W8-Q2-executive-presence-elements"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Executive Presence Framework"
+
+    question: |
+      What are the three elements of the Executive Presence Framework?
+
+    options:
+      - key: "A"
+        text: "Gravitas, Communication, and Appearance"
+        feedback: "Correct! The framework identifies three core elements: Gravitas (confidence and decisiveness), Communication (superior speaking and listening), and Appearance (authenticity and digital presence)."
+        correct: true
+
+      - key: "B"
+        text: "Confidence, Credibility, and Charisma"
+        feedback: "Incorrect. While these relate to executive presence, they are not the three formal framework elements. The three elements are Gravitas, Communication, and Appearance."
+
+      - key: "C"
+        text: "Strategic thinking, relationship building, and emotional intelligence"
+        feedback: "Incorrect. These describe broader leadership competencies, not the specific three elements of the Executive Presence Framework."
+
+      - key: "D"
+        text: "Technical expertise, soft skills, and interpersonal awareness"
+        feedback: "Incorrect. The framework's three elements are Gravitas, Communication, and Appearance—not divided into technical and soft skills."
+
+    general_feedback: |
+      The Executive Presence Framework comprises three elements: (1) **Gravitas**—confidence and decisiveness under pressure, (2) **Communication**—superior speaking and **active listening** (genuinely understanding others), and (3) **Appearance**—**authenticity** (being genuine) and **digital presence** (professional image online). Post-pandemic research shows gravitas is most important (67% of executives), communication second, and appearance least important but requiring authenticity. See Week 8 slides 5-9.
+
+  - id: "W8-Q3-listen-to-learn-vs-respond"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Executive Presence Framework"
+
+    question: |
+      How does "listen to learn" differ from "listen to respond" in the communication element of the Executive Presence Framework?
+
+    options:
+      - key: "A"
+        text: "'Listen to learn' involves genuine curiosity and understanding; 'listen to respond' means waiting for your turn to speak while formulating your reply"
+        feedback: "Correct! 'Listen to learn' represents active engagement with genuine curiosity about others' perspectives. 'Listen to respond' is passive waiting while thinking about your counter-argument. This distinction emphasizes authentic engagement."
+        correct: true
+
+      - key: "B"
+        text: "'Listen to learn' means staying silent; 'listen to respond' means asking questions"
+        feedback: "Incorrect. This reverses the meanings. 'Listen to learn' actively seeks understanding through both listening and questions. 'Listen to respond' focuses on formulating rebuttals."
+
+      - key: "C"
+        text: "'Listen to learn' is for one-on-one conversations; 'listen to respond' is for presentations"
+        feedback: "Incorrect. Both orientations apply across all contexts. The Executive Presence Model positions 'listen to learn' as superior regardless of setting—it builds trust and credibility everywhere."
+
+      - key: "D"
+        text: "'Listen to learn' requires note-taking; 'listen to respond' does not"
+        feedback: "Incorrect. Note-taking is a tactic. The difference is the underlying mindset: genuine curiosity seeking understanding vs. passive waiting to formulate counter-arguments."
+
+    general_feedback: |
+      "Listen to learn" reflects **genuine curiosity** (sincere interest in understanding others' viewpoints) and **active engagement** (focused attention on understanding). "Listen to respond" means **passively** waiting for your turn while mentally preparing counter-arguments. Leaders practicing "listen to learn" build **psychological safety** (an environment where people feel safe contributing) and are perceived as more effective. This shift represents a move from **transactional** (exchange-focused) to **relational** (relationship-focused) communication. See Week 8 slide 8.
+
+  - id: "W8-Q4-scct-crisis-clusters"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Situational Crisis Communication Theory (SCCT)"
+
+    question: |
+      What are the three crisis clusters in Situational Crisis Communication Theory, and how do they differ in responsibility attribution?
+
+    options:
+      - key: "A"
+        text: "Victim (low responsibility), Accidental (moderate responsibility), Intentional/Preventable (high responsibility)"
+        feedback: "Correct! SCCT categorizes crises into three clusters based on stakeholder attribution of organizational responsibility: Victim (external attribution), Accidental (mixed attribution), and Intentional/Preventable (internal attribution)."
+        correct: true
+
+      - key: "B"
+        text: "Internal (high), Mixed (moderate), External (low)"
+        feedback: "Incorrect. While responsibility levels are correct, SCCT uses specific cluster names: Victim, Accidental, and Intentional/Preventable—not Internal/Mixed/External."
+
+      - key: "C"
+        text: "Minor (low), Moderate (medium), Major (high)"
+        feedback: "Incorrect. SCCT does not categorize by crisis size or severity. The three clusters are based on stakeholder responsibility attribution, not magnitude."
+
+      - key: "D"
+        text: "Preventable, Unpredictable, and Predictable"
+        feedback: "Incorrect. These describe crisis characteristics. SCCT's three clusters are Victim (low responsibility), Accidental (moderate responsibility), and Intentional/Preventable (high responsibility)."
+
+    general_feedback: |
+      SCCT's three crisis clusters based on **stakeholder attribution** (how people assign responsibility): (1) **Victim** cluster—external attribution, low responsibility (natural disaster, product tampering); (2) **Accidental** cluster—mixed attribution, moderate responsibility (equipment malfunction, technical error); (3) **Intentional/Preventable** cluster—internal attribution, high responsibility (safety shortcuts, misconduct). **Attribution Theory** posits that stakeholders assign blame based on perceived causes. Matching response intensity to attribution level is critical. See Week 8 slide 13.
+
+  - id: "W8-Q5-intensifying-factors"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Situational Crisis Communication Theory (SCCT)"
+
+    question: |
+      In SCCT, how do intensifying factors change the response strategy required for a crisis?
+
+    options:
+      - key: "A"
+        text: "Intensifying factors allow organizations to use less accommodative responses"
+        feedback: "Incorrect. Intensifying factors escalate required response intensity. Organizations with crisis history or poor reputation must use more accommodative responses, not fewer."
+        correct: false
+
+      - key: "B"
+        text: "Intensifying factors escalate the required response level, requiring more accommodative and apologetic responses"
+        feedback: "Correct! If an organization has prior crisis history or poor reputation, stakeholders attribute more responsibility. This escalates required response level from minimizing responses (deny/diminish) to accommodative responses (rebuild)."
+        correct: true
+
+      - key: "C"
+        text: "Intensifying factors determine which crisis cluster the crisis belongs to"
+        feedback: "Incorrect. The crisis cluster is determined by the event itself (external, mixed, or internal). Intensifying factors escalate response intensity but don't determine the cluster."
+
+      - key: "D"
+        text: "Intensifying factors only affect victim cluster crises"
+        feedback: "Incorrect. Intensifying factors apply across all clusters. Prior reputation issues escalate required response for victim, accidental, and intentional/preventable crises."
+
+    general_feedback: |
+      **Intensifying factors**—prior **crisis history** (previous similar incidents) and **reputation** (stakeholder perception of organizational character)—escalate required response intensity across all crisis clusters. If an organization has experienced similar crises or has poor reputation, stakeholders attribute more responsibility, requiring more **accommodative** (apologetic, compensatory, and relationship-focused) responses. An organization with spotless reputation can use **diminishing** (excuse, justification) posture; one with crisis history must use **rebuilding** (compensation, apology) posture. See Week 8 slide 14.
+
+  - id: "W8-Q6-ethical-base-response-components"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Situational Crisis Communication Theory (SCCT)"
+
+    question: |
+      What are the two components of the ethical base response in SCCT, and how do they work together?
+
+    options:
+      - key: "A"
+        text: "Instructing information (safety guidance) and adjusting information (expressing concern) address both practical and emotional stakeholder needs across all crisis types"
+        feedback: "Correct! The ethical base response combines: (1) Instructing information—practical guidance on what stakeholders should do, (2) Adjusting information—emotional support showing organizational concern. Both apply to every crisis."
+        correct: true
+
+      - key: "B"
+        text: "Instructing and adjusting information are only necessary for victim cluster crises"
+        feedback: "Incorrect. The ethical base response applies universally to all crisis clusters—victim, accidental, and intentional/preventable. Both components are required regardless."
+
+      - key: "C"
+        text: "Instructing information alone is sufficient; adjusting information is optional"
+        feedback: "Incorrect. Both are necessary. Instructing information addresses 'what should I do?' Adjusting information addresses 'does the organization care?' Both are essential."
+
+      - key: "D"
+        text: "Adjusting information means taking full responsibility; instructing information means providing directions"
+        feedback: "Incorrect. Adjusting information means expressing concern for stakeholder welfare—not necessarily admitting fault. It addresses emotional needs, while instructing information addresses practical needs."
+
+    general_feedback: |
+      The ethical base response in SCCT combines two complementary components: (1) **Instructing information**—practical, actionable guidance addressing stakeholder safety and welfare; (2) **Adjusting information**—**empathetic** (understanding and caring about feelings) communication expressing organizational concern. **Instructing** answers: "What should I do?" **Adjusting** answers: "Does the organization care about me?" Together they address both **cognitive** (thinking, practical) and **affective** (emotional, feeling) stakeholder needs. This foundation applies **universally** to all crisis types. See Week 8 slide 15.
+
+  - id: "W8-Q7-three-conversations-layers"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Stone's Three Conversations Model"
+
+    question: |
+      What are the three layers of conversation that occur simultaneously in every difficult conversation according to Stone's Three Conversations Model?
+
+    options:
+      - key: "A"
+        text: "'What Happened?' conversation (facts and blame), Feelings conversation (emotions), and Identity conversation (self-concept concerns)"
+        feedback: "Correct! Every difficult conversation contains three simultaneous layers: What Happened (about facts and blame), Feelings (about emotions), and Identity (about self-concept and competence)."
+        correct: true
+
+      - key: "B"
+        text: "Opening conversation, middle conversation, and closing conversation"
+        feedback: "Incorrect. These describe time sequence, not the three layers. The model identifies What Happened, Feelings, and Identity as simultaneous conversations, not sequential segments."
+
+      - key: "C"
+        text: "Verbal conversation, non-verbal conversation, and written communication"
+        feedback: "Incorrect. These describe communication channels. The framework identifies What Happened (facts), Feelings (emotions), and Identity (self-concept) as the three simultaneous conversation types."
+
+      - key: "D"
+        text: "My perspective, your perspective, and the objective truth"
+        feedback: "Incorrect. While the 'What Happened?' layer involves different perspectives, the framework has three distinct layers: What Happened (facts/blame), Feelings (emotions), and Identity (self-concept)."
+
+    general_feedback: |
+      Stone's Three Conversations Model identifies three **simultaneous** (happening at the same time) conversation layers in every difficult interaction: (1) **'What Happened?' conversation**—**interpretations** (meanings assigned to events) and **attributions** (assigning blame); (2) **Feelings conversation**—**emotions** (affective responses) underlying the exchange; (3) **Identity conversation**—internal dialogue about **self-concept** (who we think we are) and **competence** (capability and adequacy). Most people focus only on facts; missing the feelings and identity layers creates escalation. See Week 8 slides 17-18.
+
+  - id: "W8-Q8-and-stance-purpose"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Stone's Three Conversations Model"
+
+    question: |
+      In the Three Conversations Model, what does the "And Stance" do in the "What Happened?" layer of difficult conversations?
+
+    options:
+      - key: "A"
+        text: "It recognizes both perspectives can be valid simultaneously, transforming dialogue from debate to mutual understanding"
+        feedback: "Correct! The 'And Stance' shifts from 'I'm right and you're wrong' to 'You see it this way AND I see it that way.' This creates psychological safety and enables learning."
+        correct: true
+
+      - key: "B"
+        text: "It means accepting all blame without discussing the other person's perspective"
+        feedback: "Incorrect. The And Stance does not mean accepting all blame. It acknowledges both perspectives as potentially valid, not that one is entirely correct and the other wrong."
+
+      - key: "C"
+        text: "It merges two conflicting viewpoints into a compromise position"
+        feedback: "Incorrect. The And Stance doesn't force compromise. It recognizes different perspectives as potentially valid given different information or experiences, opening dialogue rather than resolving it."
+
+      - key: "D"
+        text: "It concludes discussions by stating both people are equally right"
+        feedback: "Incorrect. The And Stance doesn't conclude discussions. It opens them by acknowledging both perspectives, recognizing that people may have different information and experiences."
+
+    general_feedback: |
+      The "And Stance" transforms the "What Happened?" conversation layer from **adversarial** (competing for who's right) to **collaborative** (seeking mutual understanding). It states: "You see it this way AND I see it that way"—recognizing that both perspectives can be **valid** (reasonable and defensible) given different information or **interpretations** (ways of understanding events). This creates **psychological safety** (feeling safe to express viewpoints without fear of punishment) and shifts from **debate** (proving one position correct) to **learning** (understanding different perspectives). See Week 8 slide 19.
+
+  - id: "W8-Q9-third-story-function"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Stone's Three Conversations Model"
+
+    question: |
+      Why does the Three Conversations Model recommend starting difficult conversations with "the Third Story" rather than with your version or their version?
+
+    options:
+      - key: "A"
+        text: "It provides a neutral, objective starting point that avoids blame and creates psychological safety for dialogue"
+        feedback: "Correct! The Third Story (how a neutral observer would describe the situation) shifts from debate about correctness to mutual understanding. It creates common ground and reduces defensiveness."
+        correct: true
+
+      - key: "B"
+        text: "It proves that your perspective is the most accurate"
+        feedback: "Incorrect. The Third Story doesn't validate one perspective over another. It provides neutral ground for both parties to understand their different viewpoints."
+
+      - key: "C"
+        text: "It forces both people to compromise on the actual facts"
+        feedback: "Incorrect. The Third Story doesn't force compromise. It provides neutral ground from which to discuss factual disagreements without blame."
+
+      - key: "D"
+        text: "It allows you to control the conversation narrative"
+        feedback: "Incorrect. The Third Story approach is designed to reduce control dynamics and defensiveness. It opens dialogue rather than controlling outcomes."
+
+    general_feedback: |
+      The "Third Story" technique starts difficult conversations from a **neutral, objective** description—how a mediator would describe the situation without bias. This shifts from **blame-oriented** (identifying who is wrong) to **learning-oriented** (understanding differences) conversations. It creates **psychological safety** by positioning both parties as collaborative rather than adversarial. Starting with "your version" triggers defensiveness in the other person; starting with "their version" feels dismissive to you. The Third Story avoids both **egocentric** (self-centered) perspectives, opening genuine dialogue. See Week 8 slide 20.
+
+  - id: "W8-Q10-four-step-qa-framework"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Q&A Framework"
+
+    question: |
+      Why does the Q&A Framework place Acknowledge before Answer in its sequence?
+
+    options:
+      - key: "A"
+        text: "It shows respect for the questioner and provides 2-3 seconds of thinking time to compose a thoughtful response"
+        feedback: "Correct! Acknowledgment serves two critical functions: it signals respect for the questioner, and it provides composure time before responding. This prevents defensive reactions."
+        correct: true
+
+      - key: "B"
+        text: "It allows you to dismiss the question before actually addressing it"
+        feedback: "Incorrect. Acknowledgment does the opposite—it shows the question deserves serious attention. Dismissing questions damages credibility."
+
+      - key: "C"
+        text: "It requires you to agree with the questioner's underlying assumptions"
+        feedback: "Incorrect. Acknowledging a question shows respect for the person and their input—not agreement with the question's premises. You can acknowledge and then disagree."
+
+      - key: "D"
+        text: "It means jumping immediately to your answer without thinking"
+        feedback: "Incorrect. Acknowledge means pausing deliberately to show respect and think carefully. It intentionally slows the process."
+
+    general_feedback: |
+      The Q&A Framework places Acknowledge first because it serves dual functions: (1) **Relational**—demonstrates respect for the questioner, building **rapport** (positive relationship); (2) **Cognitive**—provides thinking time that enables **composed** (calm, thoughtful) responses rather than **reactive** (defensive, emotional) ones. Phrases like "That's an excellent question" accomplish both simultaneously. This front-loads the framework with relationship and composure. See Week 8 slide 22.
+
+  - id: "W8-Q11-acknowledge-step-functions"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Q&A Framework"
+
+    question: |
+      In the Q&A Framework, what are the two functions of the Acknowledge step?
+
+    options:
+      - key: "A"
+        text: "It shows respect for the questioner and buys 2-3 seconds of thinking time"
+        feedback: "Correct! Step 1 (Acknowledge) serves dual functions: showing respect builds rapport and credibility; gaining thinking time enables composed responses rather than defensive reactions."
+        correct: true
+
+      - key: "B"
+        text: "It dismisses the question as unimportant"
+        feedback: "Incorrect. Acknowledgment does the opposite—it signals the question deserves respect and attention. Dismissing questions damages credibility."
+
+      - key: "C"
+        text: "It means you are agreeing with the questioner's underlying assumptions"
+        feedback: "Incorrect. Acknowledging a question means respecting the person and their input—not agreeing with the question's premises. You can acknowledge and disagree."
+
+      - key: "D"
+        text: "It means providing your complete answer without pausing"
+        feedback: "Incorrect. Acknowledge means pausing to show respect and gain thinking time. It's the opposite of rushing to answer."
+
+    general_feedback: |
+      The Acknowledge step serves two critical functions: (1) **Relational**—shows respect for the questioner and their input, building **rapport** (positive relationship) and **credibility** (trustworthiness); (2) **Cognitive**—provides 2-3 seconds of thinking time, enabling **composed** (calm, thoughtful) responses rather than **reactive** (defensive, emotional) ones. Phrases like "That's an excellent question" or "I appreciate you raising that" accomplish both. This step demonstrates **executive presence** and prevents the defensive reactions that damage credibility. See Week 8 slide 23.
+
+  - id: "W8-Q12-clarify-step-purpose"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Q&A Framework"
+
+    question: |
+      In the Four-Step Q&A Framework, which step comes after Acknowledge?
+
+    options:
+      - key: "A"
+        text: "Clarify (step 2)"
+        feedback: "Correct! Step 2 in the Four-Step Q&A Framework is Clarify. The sequence is: Acknowledge → Clarify → Answer → Check."
+        correct: true
+
+      - key: "B"
+        text: "Answer (step 3)"
+        feedback: "Incorrect. Answer comes after Clarify, not immediately after Acknowledge. The correct sequence is Acknowledge → Clarify → Answer → Check."
+
+      - key: "C"
+        text: "Check (step 4)"
+        feedback: "Incorrect. Check is the final step. The correct sequence is Acknowledge → Clarify → Answer → Check."
+
+      - key: "D"
+        text: "Respond (not in framework)"
+        feedback: "Incorrect. Respond is not one of the four steps. The correct sequence is Acknowledge → Clarify → Answer → Check."
+
+    general_feedback: |
+      The Four-Step Q&A Framework sequence is: (1) **Acknowledge**—show respect and gain composure; (2) **Clarify**—ensure you understand what's being asked; (3) **Answer**—address the question substance directly; (4) **Check**—confirm the questioner's concern was addressed. The **sequential** (in order) arrangement is critical because acknowledging first establishes respect, and clarifying before answering prevents the common mistake of addressing the wrong question. See Week 8 slide 22.
 ---
-
-### Q2: Gravitas Importance
-**Type:** Multiple Choice
-
-According to Hewlett's research, what percentage of senior executives identify gravitas as the most important element of executive presence?
-
-A) 45%
-B) 52%
-C) 67%
-D) 78%
-
-**Answer:** C
-
-**Feedback:**
-- **A) Incorrect.** 45% is too low. Gravitas is considered significantly more important, with 67% of senior executives identifying it as what really matters.
-- **B) Incorrect.** While this is a majority, the actual figure is higher. 67% of senior executives say gravitas is the most important element.
-- **C) Correct!** 67% of senior executives say gravitas is what really matters in executive presence, making it the most critical element above communication and appearance.
-- **D) Incorrect.** 78% is too high. The research shows 67% of executives prioritize gravitas as the most important element.
-
----
-
-### Q3: SCCT Crisis Clusters
-**Type:** Multiple Choice
-
-What are the three crisis clusters in Situational Crisis Communication Theory (SCCT)?
-
-A) Minor, Moderate, Major
-B) Internal, External, Mixed
-C) Victim, Accidental, Intentional/Preventable
-D) Technical, Human, Natural
-
-**Answer:** C
-
-**Feedback:**
-- **A) Incorrect.** SCCT doesn't categorize crises by severity (minor/moderate/major) but rather by responsibility attribution. The three clusters are victim, accidental, and intentional/preventable.
-- **B) Incorrect.** While SCCT does consider whether crises are internal or external, these are not the names of the three clusters. The clusters are victim, accidental, and intentional/preventable.
-- **C) Correct!** SCCT categorizes all crises into three clusters based on stakeholder attribution of responsibility: victim (low responsibility), accidental (moderate responsibility), and intentional/preventable (high responsibility).
-- **D) Incorrect.** SCCT doesn't use these categories. The three clusters are victim, accidental, and intentional/preventable, based on perceived organizational responsibility.
-
----
-
-### Q4: Three Conversations Model Components
-**Type:** Multiple Choice
-
-According to the Three Conversations Model from the Harvard Negotiation Project, what are the three separate conversations happening in every difficult interaction?
-
-A) What Happened, Feelings, Identity
-B) Facts, Emotions, Solutions
-C) Past, Present, Future
-D) Speaker, Listener, Observer
-
-**Answer:** A
-
-**Feedback:**
-- **A) Correct!** The Three Conversations Model identifies three simultaneous layers: the "What Happened?" conversation (facts and interpretations), the Feelings conversation (emotions), and the Identity conversation (internal dialogue about self-concept).
-- **B) Incorrect.** While facts and emotions are related to the model, "solutions" is not one of the three conversations. The model identifies "What Happened," Feelings, and Identity as the three layers.
-- **C) Incorrect.** The model doesn't focus on time periods (past/present/future). The three conversations are "What Happened," Feelings, and Identity.
-- **D) Incorrect.** These are not the three conversations. The model identifies "What Happened?" (facts), Feelings (emotions), and Identity (self-concept) as the three layers present in difficult conversations.
-
----
-
-### Q5: Four-Step Q&A Framework Sequence
-**Type:** Multiple Choice
-
-What is the correct sequence of the Four-Step Q&A Framework taught in lecture?
-
-A) Answer → Clarify → Acknowledge → Check
-B) Clarify → Acknowledge → Answer → Check
-C) Acknowledge → Clarify → Answer → Check
-D) Acknowledge → Answer → Clarify → Check
-
-**Answer:** C
-
-**Feedback:**
-- **A) Incorrect.** Starting with the answer is too abrupt and doesn't show respect for the question. The correct sequence is Acknowledge → Clarify → Answer → Check.
-- **B) Incorrect.** You need to acknowledge the question first before clarifying. The correct sequence is Acknowledge → Clarify → Answer → Check.
-- **C) Correct!** The Four-Step Q&A Framework follows this sequence: (1) Acknowledge the question ("That's an excellent question"), (2) Clarify if needed ("Are you asking about X or Y?"), (3) Answer directly, and (4) Check understanding ("Does that address your question?").
-- **D) Incorrect.** Clarifying should come before answering to ensure you understand the question correctly. The right sequence is Acknowledge → Clarify → Answer → Check.
-
----
-
-### Q6: Gravitas vs. Authority
-**Type:** Multiple Choice
-
-According to Hewlett's updated Executive Presence Model, is gravitas primarily about demonstrating authority through pedigree (which school you attended)?
-
-A) True - Pedigree and educational background define gravitas
-B) False - Modern gravitas emphasizes demonstrated competence over pedigree
-C) True - Elite school attendance is the most important factor
-D) False - Gravitas is entirely about physical appearance
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** This was true in the old model (pre-2012), but Hewlett's updated research shows pedigree is now less important. Modern gravitas focuses on confidence under pressure and inclusiveness, not educational credentials.
-- **B) Correct!** A key shift in Hewlett's updated model (2012 vs. 2022) is that pedigree is now less important than demonstrated competence. Modern gravitas emphasizes confidence under pressure combined with inclusiveness and respect for diverse perspectives—not educational background or credentials.
-- **C) Incorrect.** While elite schools may have been valued in the past, the updated Executive Presence Model shows this is no longer the primary factor. Gravitas now emphasizes performance and inclusive leadership over pedigree.
-- **D) Incorrect.** While this correctly states that pedigree isn't important, gravitas is not about physical appearance—that's the separate "Appearance" element. Gravitas focuses on confidence, decisiveness, and inclusiveness.
-
----
-
-### Q7: Crisis Response Matching Purpose
-**Type:** Multiple Choice
-
-Why does SCCT recommend matching crisis response strategies to the level of perceived organizational responsibility?
-
-A) Because more serious crises require longer press releases
-B) Because stakeholder attribution of responsibility drives their emotional and behavioral responses
-C) Because legal liability increases with crisis severity
-D) Because media coverage intensity varies by crisis type
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** Response length is not the reason for matching. SCCT is based on attribution theory—stakeholders' perception of responsibility drives their reactions, so responses must match that perception level.
-- **B) Correct!** SCCT is grounded in attribution theory, which shows that stakeholders assess whether crises resulted from situational (external) or organizational (internal) factors. This attribution of responsibility drives their emotional and behavioral responses, so organizations must match response intensity to perceived responsibility level to be effective.
-- **C) Incorrect.** While legal considerations may exist, SCCT's matching principle is based on stakeholder psychology, not legal liability. The framework focuses on how stakeholders attribute responsibility and how that drives their reactions.
-- **D) Incorrect.** Media coverage is a factor in crisis management, but SCCT's matching principle is based on stakeholder attribution of responsibility, not media intensity. The framework addresses how stakeholders perceive and respond to responsibility.
-
----
-
-### Q8: "Third Story" Technique
-**Type:** Multiple Choice
-
-In the Three Conversations Model, what is the purpose of starting a difficult conversation with the "Third Story"?
-
-A) To protect yourself by having a witness present
-B) To begin from how a neutral observer would describe the situation, rather than your version or their version
-C) To delay addressing the real issue until emotions calm down
-D) To establish dominance by controlling the narrative
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** "Third Story" doesn't refer to having a third person present. It means describing the situation from a neutral observer's perspective—neither your version nor their version—to start the conversation on common ground.
-- **B) Correct!** The "Third Story" technique means beginning the conversation from how a neutral, objective observer would describe the situation. This approach avoids starting with blame or competing narratives ("I'm right, you're wrong") and instead creates a shared starting point that both parties can work from.
-- **C) Incorrect.** The "Third Story" isn't about delay tactics. It's about framing the conversation neutrally from the start, which actually helps address the issue more effectively by reducing defensiveness.
-- **D) Incorrect.** The purpose is the opposite—to avoid dominance or control. "Third Story" creates neutral ground by describing the situation as an objective observer would, which reduces power dynamics and defensiveness.
-
----
-
-### Q9: Communication Element Post-Pandemic
-**Type:** Multiple Choice
-
-According to Hewlett's updated Executive Presence Model, is virtual presence (comfort on Zoom) now a mandatory component of the communication element?
-
-A) False - Virtual presence is optional and less important than in-person skills
-B) True - Virtual presence is now a mandatory core component
-C) False - Only technical roles need virtual presence skills
-D) True - But only for remote workers, not executives
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** Virtual presence is not optional in the updated model. The post-pandemic research shows "comfort on Zoom" is now an essential skill, equal in importance to in-person communication abilities.
-- **B) Correct!** The post-pandemic addition to the communication element explicitly includes "comfort on Zoom" as a new essential skill. The lecture notes that traditional skills like "command a room in person" now have a virtual equivalent—you must perform effectively on Zoom as well as in person. Virtual presence is no longer optional; it's a core component of executive communication.
-- **C) Incorrect.** Virtual presence is required across all roles at the executive level, not just technical positions. The updated Executive Presence Model shows this is a universal expectation for leaders post-pandemic.
-- **D) Incorrect.** While the statement that virtual presence is mandatory is correct, it's not limited to remote workers. All executives need virtual communication skills, as hybrid work and virtual stakeholder meetings are now standard across organizations.
-
----
-
-### Q10: Intent vs. Impact Separation
-**Type:** Multiple Choice
-
-In the Three Conversations Model, why is it critical to separate intent from impact when navigating difficult conversations?
-
-A) Because it allows you to avoid taking responsibility for your actions
-B) Because assuming you know someone's intentions often leads to misunderstanding and defensiveness
-C) Because impact matters more than intent in legal contexts
-D) Because it helps you win arguments by focusing on their mistakes
-
-**Answer:** B
-
-**Feedback:**
-- **A) Incorrect.** Separating intent from impact isn't about avoiding responsibility. It's about recognizing that you can't know why someone acted (their intent) just from how it affected you (impact), which prevents misattribution and defensiveness.
-- **B) Correct!** The Three Conversations Model emphasizes that we never truly know why someone acted (intent)—we only know how it affected us (impact). Assuming we know their intent ("You did this to hurt me") leads to misunderstanding and defensiveness. Separating these allows for productive dialogue: "This is how it affected me" rather than "This is why you did it."
-- **C) Incorrect.** While impact may matter in legal contexts, the Three Conversations Model is about interpersonal communication psychology, not law. The reason to separate intent from impact is to avoid misattribution and reduce defensiveness.
-- **D) Incorrect.** The model is designed to transform difficult conversations into learning conversations, not to win arguments. Separating intent from impact reduces conflict, not increases it.
-
----
-
-## Question Summary
-
-**Total Questions:** 10
-
-**Bloom's Level Distribution:**
-- **Remembering:** 5 questions (Q1, Q2, Q3, Q4, Q5)
-- **Understanding:** 5 questions (Q6, Q7, Q8, Q9, Q10)
-
-**Question Type Distribution:**
-- **Multiple Choice:** 10 questions
-- Note: Questions 6 and 9 were designed as True/False concept checks but converted to MC format for Moodle GIFT compatibility
-
-**Topic Coverage:**
-- Executive Presence Model: 3 questions (Q1, Q2, Q6)
-- SCCT Crisis Communication: 2 questions (Q3, Q7)
-- Three Conversations Model: 3 questions (Q4, Q8, Q10)
-- Q&A Framework: 1 question (Q5)
-- Communication Element: 1 question (Q9)
-
-**Estimated Completion Time:** 20-25 minutes

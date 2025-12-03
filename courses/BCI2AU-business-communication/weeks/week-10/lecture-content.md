@@ -1,1100 +1,1347 @@
-# Week 10: Integration & Capstone
+# Integration & Capstone
 
-**Course:** BCI2AU Business Communication
-**Topic:** Integration & Capstone
-**Duration:** 90 minutes
+<slide number="1" layout="title" title="Title Slide">
 
----
+# Integration & Capstone
 
-## Slide 1: The Journey to Mastery
-<!-- LAYOUT: big-number -->
+<speaker-notes>
+Welcome to Week 10, our final content week. Today marks the culmination of our journey through business communication frameworks and practices. We'll focus on synthesizing everything you've learned and preparing for your capstone presentations.
+</speaker-notes>
 
-**12 weeks. 9 frameworks. 1 integrated communicator.**
+</slide>
 
-Are you ready to bring it all together?
+<slide number="2" layout="big-number" title="Hook">
 
-## Speaker Notes
+# 44%
 
-**Opening:**
-- Welcome students to Week 10—the integration week where everything comes together
-- Acknowledge this is both assessment week (Executive Summary due) and capstone preparation week
+**of core skills will change by 2027**
 
-**Key Points:**
-- Over the past 9 weeks, students have learned strategic communication frameworks, persuasive writing, presentation skills, cross-cultural communication, and executive presence
-- Week 10 focuses on synthesis—connecting all these skills into an integrated professional communication competency
-- Today's lecture prepares students for both their Executive Summary submission and their final capstone presentations in Week 12
+*(World Economic Forum, 2024)*
 
-**Example:**
-- Think of professional communication like learning to drive—first you practice each skill separately (steering, accelerating, checking mirrors), but eventually you integrate them all into smooth, automatic performance
-- Today we move from "practicing skills" to "integrated performance"
+<speaker-notes>
+This statistic from the World Economic Forum highlights a critical reality—the skills you're developing now are just the foundation. The ability to learn continuously and adapt your communication style will be more valuable than any single technique.
 
-**Check Understanding:**
-- "Quick reflection: Which communication skill felt hardest when we started? How does it feel now?"
+This connects directly to why we're focusing today on reflective practice and development planning. It's not just about what you've learned—it's about developing the capacity to keep learning throughout your career.
+</speaker-notes>
 
-**Transition:**
-- "Let's start by clarifying what you'll achieve today and how this prepares you for your final work..."
+</slide>
 
----
+<slide number="3" title="Learning Objectives">
 
-## Slide 2: Today's Learning Objectives
-<!-- LAYOUT: objectives -->
+## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Apply** Kolb's Experiential Learning Cycle to synthesize course learning
-2. **Evaluate** your communication development using reflective practice frameworks
-3. **Design** a personal development plan for continuous communication improvement
-4. **Integrate** multiple communication frameworks into capstone presentations
+1. **Apply** Kolb's Experiential Learning Cycle to integrate course frameworks
+2. **Evaluate** your communication development using Schön's reflective practice model
+3. **Create** a personal development plan using evidence-based continuous learning strategies
+4. **Demonstrate** course synthesis through capstone presentation planning
 
-## Speaker Notes
+<speaker-notes>
+These objectives are testable and will appear on next week's quiz. More importantly, they represent meta-skills—the ability to learn from experience and plan your own development.
 
-**Opening:**
-- These four objectives represent the core skills for professional integration and self-assessment
-- Notice the Bloom's verbs: Apply, Evaluate, Design, Integrate—all higher-order thinking skills
+Connection to assessments: Objectives 1 and 2 directly support your Executive Summary due this week. Objectives 3 and 4 prepare you for your Week 12 Group Presentation.
+</speaker-notes>
 
-**Key Points:**
-- **Apply Kolb's Cycle:** You'll use the four-stage learning model to understand how you've grown throughout the course
-- **Evaluate development:** Using Schön's reflective practice, you'll assess your current communication strengths and gaps
-- **Design development plan:** You'll create actionable strategies for ongoing improvement beyond this course
-- **Integrate frameworks:** You'll connect all course concepts into a cohesive capstone presentation approach
+</slide>
 
-**Example:**
-- By the end of today, you should be able to articulate: "I entered this course struggling with X, developed competency in Y, and now plan to improve Z through specific strategies"
+<slide number="4" title="Assessment Connection">
 
-**Check Understanding:**
-- "Which of these four objectives feels most relevant to where you are right now?"
-
-**Transition:**
-- "Before we dive into frameworks, let's connect today's learning to your upcoming assessments..."
-
----
-
-## Slide 3: Assessment Connection: Executive Summary & Capstone Preparation
-<!-- LAYOUT: framework -->
+## How This Prepares You
 
 **This Week:**
-- **Executive Summary (10%) - DUE THIS WEEK**
-  - Synthesizes a business case using Pyramid Principle
-  - Demonstrates structured writing mastery
-  - References: Weeks 3-4 (writing frameworks)
-
-**Next Two Weeks:**
-- **Week 11:** Quiz preparation & final coaching
-- **Week 12:** Group Presentation (25%) + Individual Grade (15%)
-  - 15-minute team presentation + 10-minute Q&A
-  - Integrates ALL course frameworks
-  - Today: Learn how to prepare strategically
-
-## Speaker Notes
-
-**Opening:**
-- This is a critical week: one assessment due, one major assessment being prepared
-- Today's lecture directly supports both deliverables
-
-**Key Points:**
-- **Executive Summary due this week:** Should demonstrate your mastery of structured business writing (Pyramid Principle, SCQA framework from Weeks 3-4)
-- If not submitted yet, finalize today—use tutorial time if needed for peer review
-- **Capstone preparation:** Final presentations are only two weeks away; today you'll learn frameworks for integrating all course learning
-- The reflective practice and learning cycle models will help you identify what to showcase in your capstone
-
-**Example:**
-- Strong capstone presentations don't just present content—they demonstrate integrated mastery: "In analyzing this stakeholder challenge (Week 2), we applied cultural dimensions (Week 9) and persuasive frameworks (Week 7) to design our approach"
-
-**Check Understanding:**
-- "Quick poll: Who has submitted Executive Summary already? Who is finalizing today?"
-
-**Transition:**
-- "Now let's look at today's roadmap—how we'll structure this integration session..."
-
----
-
-## Slide 4: Today's Roadmap
-<!-- LAYOUT: section-break -->
-
-**Part 1: The Learning Cycle (20 minutes)**
-- Kolb's Experiential Learning model
-- How experience becomes expertise
-
-**Part 2: Reflective Practice (20 minutes)**
-- Schön's reflection-in-action framework
-- Self-assessment strategies
-
-**Part 3: Continuous Learning (25 minutes)**
-- Development planning strategies
-- Career-long communication growth
-
-**Part 4: Capstone Integration (20 minutes)**
-- Bringing frameworks together
-- Presentation excellence
-
-## Speaker Notes
-
-**Opening:**
-- Four segments today, each building on the previous one
-- We move from foundational theory (Kolb, Schön) to applied practice (development planning, capstone preparation)
-
-**Key Points:**
-- **Segment 1 (20 min):** Foundation—understanding how learning happens through Kolb's cycle
-- **Segment 2 (20 min):** Self-awareness—using Schön's reflective practice to evaluate your current communication competency
-- **Segment 3 (25 min):** Forward planning—strategies for ongoing development from MIT Sloan and McKinsey research
-- **Segment 4 (20 min):** Integration—applying everything to prepare excellent capstone presentations
-
-**Example:**
-- Think of this as zooming in and out: we start with big-picture learning theory, focus in on personal assessment, zoom out to career planning, then apply to immediate capstone task
-
-**Check Understanding:**
-- "Any questions about today's structure before we dive into Part 1?"
-
-**Transition:**
-- "Let's begin with the foundation: understanding how learning actually works..."
-
----
-
-## Slide 5: Part 1 - The Learning Cycle
-<!-- LAYOUT: section-break -->
-
-**How does experience become expertise?**
-
-Kolb's Experiential Learning Cycle
-(16,000+ citations | Referenced at all M7 business schools)
-
----
-
-## Speaker Notes
-
-**Opening:**
-- We're starting with David Kolb's foundational work—one of the most cited theories in adult learning
-- This framework explains how you've been learning throughout this course
-
-**Key Points:**
-- Kolb (1984) proposed that learning is "the process whereby knowledge is created through the transformation of experience"
-- Not enough to just "do" things—must reflect, conceptualize, and experiment
-- This model is used at Harvard, Stanford, Wharton, and every major business school to design experiential learning
-
-**Example:**
-- You didn't just write memos—you wrote them (experience), received feedback (reflection), understood principles (conceptualization), then applied improvements (experimentation)
-
-**Check Understanding:**
-- "Think back to Week 4 when you submitted your first memo—how many of you can see now how you learned through that cycle?"
-
-**Transition:**
-- "Let's break down the four stages of Kolb's cycle in detail..."
-
----
-
-## Slide 6: Kolb's Experiential Learning Cycle
-<!-- LAYOUT: framework -->
-
-**Four Stages of Learning:**
-
-1. **Concrete Experience (CE)** - The "Doing" Phase
-   - Direct involvement in new experience
-   - Example: Delivering your first presentation
-
-2. **Reflective Observation (RO)** - The "Reviewing" Phase
-   - Watching and reflecting from multiple perspectives
-   - Example: Receiving peer feedback, watching video of yourself
-
-3. **Abstract Conceptualization (AC)** - The "Concluding" Phase
-   - Creating theories to explain observations
-   - Example: Realizing "I lose audience when I read slides"
-
-4. **Active Experimentation (AE)** - The "Planning" Phase
-   - Testing theories in new situations
-   - Example: Next presentation, you maintain eye contact
-
-**Key Insight:** Effective learning requires engaging ALL four stages
-
-## Speaker Notes
-
-**Opening:**
-- Kolb argues learning is cyclical—you can enter at any point but must progress through entire cycle for deep learning
-- Most people have preferences (some love doing, others prefer reflecting) but mastery requires all four
-
-**Key Points:**
-- **Concrete Experience:** This is where most students start—"just do it and see what happens"
-- **Reflective Observation:** The step many skip—taking time to analyze what happened and why
-- **Abstract Conceptualization:** This is where you develop your personal theories and frameworks
-- **Active Experimentation:** Testing your theories, adjusting based on results, repeating cycle
-- Important: This isn't linear—you spiral through these stages repeatedly, each time deepening your mastery
-
-**Example:**
-- In this course: You drafted persuasive proposals (CE), received instructor and peer feedback (RO), understood persuasion principles (AC), then applied them to Executive Summary (AE)
-- Each assessment cycle moved you through this progression
-
-**Check Understanding:**
-- "Which stage do you naturally gravitate toward? Which do you tend to skip?"
-
-**Transition:**
-- "Kolb also identified that people have different learning style preferences based on which stages they favor..."
-
----
-
-## Slide 7: Four Learning Styles
-<!-- LAYOUT: comparison -->
-
-**How do you prefer to learn?**
-
-| Learning Style | Strengths | Development Area |
-|----------------|-----------|------------------|
-| **Diverging** (CE/RO)<br>Imaginative, feeling-oriented | Viewing from multiple perspectives, brainstorming | May struggle with decision-making, taking action |
-| **Assimilating** (AC/RO)<br>Logical, idea-focused | Understanding wide-ranging information, creating models | May lack practical application |
-| **Converging** (AC/AE)<br>Problem-solving oriented | Finding practical uses for theories, making decisions | May miss emotional/people dimensions |
-| **Accommodating** (CE/AE)<br>Action-oriented, hands-on | Getting things done, adapting to circumstances | May lack planning, skip reflection |
-
-**Application:** Understand your preference, but develop flexibility across ALL modes
-
-## Speaker Notes
-
-**Opening:**
-- Kolb developed the Learning Style Inventory based on which two stages people prefer
-- No style is "better"—but each has blind spots
-
-**Key Points:**
-- **Diverging learners:** Excel at seeing situations from multiple angles, generating creative solutions (strong in brainstorming, weak in execution)
-- **Assimilating learners:** Love frameworks and theories, can synthesize complex information (strong in analysis, may struggle with "messy" real-world application)
-- **Converging learners:** Want to solve problems and apply concepts immediately (strong in troubleshooting, may miss broader context)
-- **Accommodating learners:** Jump in and learn by doing, adapt quickly (strong in action, may skip important planning and reflection)
-
-**Example:**
-- If you're Accommodating (action-oriented), you probably loved Week 5's presentation practice but may have struggled with Week 3's Pyramid Principle theory
-- If you're Assimilating (theory-focused), you probably excelled at understanding frameworks but may have found Week 8's high-stakes role plays challenging
-
-**Check Understanding:**
-- "Quick self-assessment: Which style sounds most like you? What's one weakness of that style you've noticed in yourself?"
-
-**Transition:**
-- "Understanding your learning style helps you self-assess—which brings us to our second framework: reflective practice..."
-
----
-
-## Slide 8: Part 2 - Reflective Practice
-<!-- LAYOUT: section-break -->
-
-**How do professionals develop expertise?**
-
-Schön's Reflective Practice Model
-(8,900+ citations | Referenced at Harvard, MIT Sloan, Stanford)
-
----
-
-## Speaker Notes
-
-**Opening:**
-- Donald Schön's 1983 work "The Reflective Practitioner" is foundational for understanding professional development
-- Schön studied how professionals in fields like architecture, medicine, and management develop expertise
-
-**Key Points:**
-- Schön observed that the best professionals don't just apply textbook knowledge—they engage in continuous reflection during and after their work
-- He distinguished between "reflection-in-action" (real-time adjustment) and "reflection-on-action" (retrospective analysis)
-- This framework is used at top business schools to teach students how to become self-directed learners
-
-**Example:**
-- Think of an experienced presenter who adjusts delivery mid-presentation based on audience cues (reflection-in-action), then later analyzes what worked to improve next time (reflection-on-action)
-
-**Check Understanding:**
-- "Have you ever adjusted your communication approach mid-conversation because you sensed something wasn't working? That's reflection-in-action."
-
-**Transition:**
-- "Let's explore Schön's two types of reflection and how they support your development..."
-
----
-
-## Slide 9: Reflection-in-Action vs. Reflection-on-Action
-<!-- LAYOUT: framework -->
-
-**Two Modes of Professional Reflection:**
-
-**Reflection-in-Action**
-- Real-time thinking while performing professional tasks
-- The "conversation with the situation"
-- Adjusting approaches based on immediate feedback
-- Example: Noticing audience confusion during presentation, adding clarifying example on the spot
-
-**Reflection-on-Action**
-- Retrospective analysis of professional experiences
-- Stepping back after the event to understand what happened
-- Learning from both successes and failures
-- Example: After presentation, analyzing what worked and what didn't, planning improvements
-
-**Both rely on: Knowing-in-Action**
-- Tacit knowledge embedded in skillful performance
-- What you know but can't fully articulate
-- Developed through experience and reflection
-
-## Speaker Notes
-
-**Opening:**
-- Schön argues that professional expertise involves both types of reflection working together
-- "Knowing-in-action" is the foundation—things you've learned so well they become automatic
-
-**Key Points:**
-- **Reflection-in-action:** This is the "thinking on your feet" that distinguishes experts from novices. Experienced communicators continuously monitor and adjust their approach based on what they observe
-- **Reflection-on-action:** This is the deliberate post-event analysis where deep learning happens. Taking time to review what happened and why
-- **Knowing-in-action:** Schön's insight is that much professional knowledge is tacit—"we know more than we can tell." You've developed this in areas where you now perform automatically without conscious thought
-
-**Example:**
-- In Week 5, nervous presenters often read from slides (limited reflection-in-action). By Week 9, you likely adjusted tone and examples based on audience reactions (developed reflection-in-action)
-- Your Executive Summary writing: First drafts took conscious effort applying Pyramid Principle. By now, you may structure arguments automatically (knowing-in-action developed through reflection)
-
-**Check Understanding:**
-- "Give me an example of a communication skill that felt awkward at first but now feels more automatic—that's knowing-in-action developing."
-
-**Transition:**
-- "Schön also emphasized that professionals don't just solve given problems—they construct and frame problems from ambiguous situations..."
-
----
-
-## Slide 10: Problem Setting vs. Problem Solving
-<!-- LAYOUT: comparison -->
-
-**Effective professionals don't just solve problems—they frame them**
-
-| Problem Solving | Problem Setting |
-|-----------------|-----------------|
-| **Given:** Problem is already defined | **Process:** Problem must be constructed from ambiguous situation |
-| **Focus:** Finding the right answer | **Focus:** Asking the right question |
-| **Approach:** Apply known techniques | **Approach:** Frame the situation strategically |
-| **Example:** "Write a persuasive email" | **Example:** "Is email the right channel? What's the real communication challenge here?" |
-
-**Key Insight:** "The problems that practitioners face are not presented as givens. They must be constructed from the materials of problematic situations which are puzzling, troubling, and uncertain." - Schön
-
-## Speaker Notes
-
-**Opening:**
-- This is one of Schön's most important insights: novices solve problems, experts frame problems
-- In communication, framing is everything—choosing the wrong frame leads to wrong solutions
-
-**Key Points:**
-- **Problem solving:** Traditional view of professional work—someone hands you a problem, you solve it
-- **Problem setting:** What actually happens in complex professional situations—you must first figure out what the problem actually is
-- Before applying communication techniques, you must understand what communication challenge you actually face
-- Is this a stakeholder alignment problem? A cultural communication problem? A message clarity problem? Each requires different approaches
-
-**Example:**
-- Novice approach: "My manager asked me to write a memo, so I'll write a memo"
-- Expert approach: "My manager wants to influence senior leadership. Is a memo the best format? Should this be a presentation? An informal conversation first? What's the underlying goal?"
-- Your capstone presentations: Don't just answer the prompt—frame the communication challenge strategically
-
-**Check Understanding:**
-- "Think about your Executive Summary—did you just answer the question, or did you step back and think about what the audience really needed to know and why?"
-
-**Transition:**
-- "Schön's reflective practice gives us frameworks for self-assessment. But what do we do with those insights? That's where contemporary research on continuous learning comes in..."
-
----
-
-## Slide 11: Part 3 - Continuous Learning
-<!-- LAYOUT: section-break -->
-
-**How do you keep growing after this course?**
-
-Development Planning Strategies
-(MIT Sloan Management Review & McKinsey Research, 2024)
-
----
-
-## Speaker Notes
-
-**Opening:**
-- We shift now from foundational theory to applied contemporary research
-- Two recent articles provide evidence-based strategies for career-long communication development
-
-**Key Points:**
-- MIT Sloan article: "How to Develop Continuous Learners" (October 2024) - four research-backed strategies
-- McKinsey article: "The Versatile Leader" (August 2024) - three-dimensional versatility framework
-- Both draw on interviews with successful professionals and empirical research
-- These frameworks help you take insights from Kolb and Schön and turn them into actionable development plans
-
-**Example:**
-- This course ends in Week 12, but your communication development continues for your entire career
-- Top professionals treat communication skill-building as ongoing, not a one-time course completion
-
-**Check Understanding:**
-- "Show of hands: How many of you see communication skills as something you'll continue developing after graduation?"
-
-**Transition:**
-- "Let's start with the MIT Sloan research on what distinguishes continuous learners..."
-
----
-
-## Slide 12: The Case for Continuous Learning
-<!-- LAYOUT: big-number -->
-
-**44% of core professional skills will change by 2027**
-
-World Economic Forum, 2024
-
-**79% of global CEOs are concerned that skills shortages will hinder company growth**
-
-PwC Global CEO Survey, 2024
-
-**The challenge:** Communication skills require ongoing development in a rapidly changing world
-
-## Speaker Notes
-
-**Opening:**
-- These statistics set the context for why continuous learning matters
-- The skills you're learning in this course will evolve—ongoing development is essential
-
-**Key Points:**
-- World Economic Forum projects that nearly half of core professional skills will change within the next 3 years
-- Communication skills are particularly affected: remote work, AI tools, global teams, new platforms
-- CEOs identify skills gaps as a major business constraint—professionals who can continuously develop communication skills have competitive advantage
-- The notion of "one life, one career" is giving way to portfolio careers requiring adaptability
-
-**Example:**
-- When your parents graduated, business communication meant primarily: face-to-face meetings, phone calls, printed memos
-- You now navigate: email, Slack, Zoom, Teams, WhatsApp, LinkedIn—each with different norms and expectations
-- In 5 years, new platforms and AI tools will change communication again—your ability to continuously learn matters more than any single skill
-
-**Check Understanding:**
-- "What's one communication platform or technology that didn't exist when your parents were in university but you use constantly now?"
-
-**Transition:**
-- "Given this rapid change, how do you develop learning agility? MIT Sloan research identifies four strategies..."
-
----
-
-## Slide 13: Four Strategies for Learning Agility
-<!-- LAYOUT: framework -->
-
-**MIT Sloan Research: Building Continuous Learning Capability**
-
-**Strategy 1: Link Purpose to Learning**
-- Connect skill development to career aspirations
-- Understanding *why* accelerates acquisition
-- Application: How does communication mastery support your goals?
-
-**Strategy 2: Create Learning-Rich Experiences**
-- Seek varied and challenging communication tasks
-- Push beyond comfort zones deliberately
-- Application: Volunteer for presentations, cross-cultural projects
-
-**Strategy 3: Ask Meta-Learning Questions**
-- What do I need to learn?
-- How should I learn it?
-- Where are my strengths and gaps?
-- Application: Regular self-assessment using frameworks
-
-**Strategy 4: Nurture a Learning Team**
-- Seek feedback partners for ongoing development
-- Embed learning discussions into daily work
-- Application: Find mentors, peer feedback groups
-
-*Source: Tan & Tan (2024), MIT Sloan Management Review*
-
-## Speaker Notes
-
-**Opening:**
-- These four strategies come from research with 24 career switchers and 340 professionals
-- All four strategies apply directly to communication skill development
-
-**Key Points:**
-- **Strategy 1 (Purpose):** Regression analyses show sense of purpose predicts successful skill development. If you know *why* communication matters for your career, you'll be more motivated to develop it
-- **Strategy 2 (Learning-Rich Experiences):** Don't avoid difficult communication challenges—seek them. Each stretch assignment builds capacity
-- **Strategy 3 (Meta-Learning Questions):** Structure your development planning around these three questions. This is where Kolb and Schön frameworks help you answer
-- **Strategy 4 (Learning Team):** Find people who will give you honest feedback and support your growth—both peers and mentors
-
-**Example:**
-- Purpose example: "I want to work in international business development, so cross-cultural communication mastery (Week 9) is critical for my career"
-- Learning-rich example: "I'm uncomfortable with Q&A, so I'll volunteer to answer questions in next team meeting to practice"
-- Meta-learning example: "My strength is written communication, my gap is executive presence—I need to practice high-stakes presentations"
-- Learning team example: "I've asked my classmate Nam to be my presentation feedback partner—we review each other's work"
-
-**Check Understanding:**
-- "Which of these four strategies feels most actionable for you right now?"
-
-**Transition:**
-- "The MIT research focuses on general learning agility. McKinsey research looks specifically at professional versatility—particularly relevant for communication..."
-
----
-
-## Slide 14: Three Dimensions of Professional Versatility
-<!-- LAYOUT: framework -->
-
-**McKinsey Research: The Versatile Leader Framework**
-
-**Dimension 1: Pursue Diverse Experiences**
-- Deliberately seek communication challenges beyond comfort zone
-- Avoid becoming "one-note" communicator
-- Develop multiple communication modes: analytical, persuasive, empathetic, directive
-- Application: Practice different communication styles in different contexts
-
-**Dimension 2: Go Deep (Constant Curiosity)**
-- Master intricacies beyond surface-level understanding
-- Balance knowledge acquisition with confidence to execute
-- Employ "deep-thinking mode": rigorous analysis + decisive action
-- Application: Develop deep expertise in core communication frameworks
-
-**Dimension 3: Know When to Speak Up**
-- Navigate complex issues authentically
-- Take stance only when relevant to role and authentic
-- Avoid "empty suit" syndrome: statements without substance
-- Application: Communicate on topics where you have genuine expertise
-
-*Source: Maor et al. (2024), McKinsey Quarterly*
-
-## Speaker Notes
-
-**Opening:**
-- McKinsey interviewed global executives including former Ford CEO Mark Fields and Delta CEO Ed Bastian
-- Their versatility framework applies to communication development at any career stage
-
-**Key Points:**
-- **Dimension 1 (Diverse Experiences):** Don't specialize too early or narrowly. Strong communicators can adapt to different situations and stakeholders
-- Mark Fields quote: "If you're putting yourself in positions to get different experiences, you're going to learn how to be a utility infielder"
-- **Dimension 2 (Go Deep):** Balanced with breadth, you need depth. Master core frameworks thoroughly before moving to next level
-- John Plant (Howmet CEO) quote: "The key is not just understanding what a product does but also how and why it does what it does"
-- **Dimension 3 (Speak Up):** Don't communicate just to be heard—communicate when you have something valuable to contribute
-- Ed Bastian (Delta CEO) quote: "The way you deal with uncertainty is you learn, learn, learn"
-
-**Example:**
-- Diverse experiences: In this course you've practiced memos, proposals, presentations, Q&A, cross-cultural scenarios—each builds different communication muscles
-- Go deep: Don't just know "Pyramid Principle exists"—master how and when to apply it until it becomes automatic
-- Know when to speak up: In group presentations, contribute in areas where you have real expertise and stake in outcome
-
-**Check Understanding:**
-- "Looking at these three dimensions, which one represents your biggest growth opportunity?"
-
-**Transition:**
-- "The McKinsey article also provides specific self-assessment questions you can use for development planning..."
-
----
-
-## Slide 15: Self-Assessment Framework
-<!-- LAYOUT: checklist -->
-
-**Questions for Personal Development Planning:**
-
-✓ What communication skills and experiences need developing?
-
-✓ What assignments and roles offer opportunities to acquire them?
-
-✓ What trade-offs must be managed? (e.g., breadth vs. depth)
-
-✓ What approaches to learning work best for me? (Recall Kolb's learning styles)
-
-✓ Which team members and experts can help fill my understanding gaps?
-
-✓ How much time to spend on on-the-job learning vs. in-depth study?
-
-**Action:** Use these questions to structure your development plan in today's tutorial
-
-*Source: Maor et al. (2024), McKinsey Quarterly*
-
-## Speaker Notes
-
-**Opening:**
-- These six questions come directly from McKinsey's research with top executives
-- You'll use these in tutorial to create your personal communication development plan
-
-**Key Points:**
-- **Question 1 (Skills/experiences):** Use Kolb's Learning Styles and Schön's reflection frameworks to identify what you need to develop
-- **Question 2 (Opportunities):** Be strategic—seek roles and assignments that stretch your communication abilities
-- **Question 3 (Trade-offs):** You can't develop everything at once. What's most important right now?
-- **Question 4 (Learning approaches):** Connect to Kolb—if you're Accommodating style, you learn by doing; if Assimilating, you need theory first
-- **Question 5 (Team/experts):** Who can support your development? Professors, peers, managers, mentors?
-- **Question 6 (Time allocation):** Balance formal study with practice—communication requires both understanding and repetition
-
-**Example:**
-- Student response example: "I need to develop executive presence (Q1). I can volunteer to present at department meetings (Q2). Trade-off: This takes time from technical skills (Q3). I learn best by doing then reflecting (Q4). Professor Lang and my manager can coach me (Q5). I'll dedicate 2 hours/week to practice plus monthly feedback sessions (Q6)."
-
-**Check Understanding:**
-- "Think about Question 1: What's ONE communication skill you know you need to develop further?"
-
-**Transition:**
-- "Now we have learning frameworks and development strategies. Let's apply all of this to your immediate challenge: the capstone presentation..."
-
----
-
-## Slide 16: Part 4 - Capstone Integration
-<!-- LAYOUT: section-break -->
-
-**Bringing it all together for your final presentations**
-
-Applying Integration Frameworks to Week 12 Capstone
-
----
-
-## Speaker Notes
-
-**Opening:**
-- Final segment: practical application to your Week 12 group presentations
-- You'll demonstrate integration of ALL course frameworks in one comprehensive presentation
-
-**Key Points:**
-- Your capstone presentation is worth 40% of final grade (25% group + 15% individual)
-- This isn't just "present any business topic"—it's demonstrating mastery of strategic communication frameworks
-- Today you'll learn how to approach capstone preparation using the integration frameworks we've covered
-- Tutorial will give you hands-on practice with integration checklists
-
-**Example:**
-- Weak capstone: "Here's our analysis of Company X's marketing strategy" (just presenting content)
-- Strong capstone: "We applied stakeholder mapping (Week 2) to identify key audiences, used cultural dimensions (Week 9) to adapt messages, and structured our findings using Pyramid Principle (Week 3)"
-
-**Check Understanding:**
-- "What's the difference between presenting content and demonstrating communication mastery?"
-
-**Transition:**
-- "Let's be specific about what makes a capstone presentation excellent..."
-
----
-
-## Slide 17: Capstone Presentation Success Criteria
-<!-- LAYOUT: framework -->
-
-**What Excellent Capstone Presentations Demonstrate:**
-
-**Strategic Foundation (Weeks 1-2)**
-- Clear audience analysis and stakeholder mapping
-- Adapted message for specific audience needs
-- Communication strategy explicitly stated
-
-**Content Excellence (Weeks 3-4, 7)**
-- Structured using Pyramid Principle (top-down)
-- Persuasive frameworks visibly applied
-- Evidence-based argumentation
-
-**Delivery Mastery (Weeks 5-6, 8)**
-- Confident presentation delivery with executive presence
-- Visual communication enhances (not replaces) message
-- Handles Q&A professionally
-
-**Integration & Awareness (Weeks 9-10)**
-- Cultural or contextual considerations addressed
-- Self-awareness of communication choices
-- Framework integration explained not just applied
-
-## Speaker Notes
-
-**Opening:**
-- These criteria come directly from your course learning objectives and weekly content
-- Notice how capstone requires demonstrating skills from ALL weeks, not just recent material
-
-**Key Points:**
-- **Strategic Foundation:** Don't jump into content—show you analyzed audience and made strategic choices
-- Example: "We identified three stakeholder groups with different priorities, so we structured our presentation to address each"
-- **Content Excellence:** Your content should demonstrate mastery of writing and persuasion principles even in oral format
-- Example: "We're using Pyramid Principle structure: our recommendation first, then supporting rationale"
-- **Delivery Mastery:** Professional polish matters—this is your showcase of everything learned about presentations
-- Example: Slides follow Weeks 5-6 design principles; delivery shows Week 8 executive presence
-- **Integration & Awareness:** What makes capstone special—explicitly showing you understand how frameworks connect
-- Example: "We chose this persuasive approach because of our audience analysis showing they value data (ethos) over emotion (pathos)"
-
-**Example:**
-- Strong capstone teams don't just present—they narrate their strategic choices: "We applied X framework because of Y reason, which led to Z decision"
-
-**Check Understanding:**
-- "Which of these four categories feels like your team's strongest area? Which needs most work?"
-
-**Transition:**
-- "Let's walk through how to use Kolb's Learning Cycle specifically for capstone preparation..."
-
----
-
-## Slide 18: Applying Kolb's Cycle to Capstone Preparation
-<!-- LAYOUT: framework -->
-
-**Using Experiential Learning for Integration:**
-
-**Stage 1: Concrete Experience**
-- Review your portfolio pieces and presentation recordings
-- What communication experiences have you accumulated?
-- Identify specific examples of applying course frameworks
-
-**Stage 2: Reflective Observation**
-- Analyze what worked and what didn't across assessments
-- Review feedback received throughout the course
-- Identify patterns in your communication strengths and struggles
-
-**Stage 3: Abstract Conceptualization**
-- Connect specific experiences to general principles
-- Articulate your personal communication theory: "I've learned that I'm most effective when..."
-- Identify which frameworks resonate most for your style
-
-**Stage 4: Active Experimentation**
-- Apply insights to capstone presentation design
-- Test integrated approach in tutorial practice
-- Refine based on peer feedback before final delivery
-
-**Key Insight:** Capstone is your Stage 4—testing your integrated mastery
-
-## Speaker Notes
-
-**Opening:**
-- This is how you systematically prepare for capstone using Kolb's framework
-- Moves you from random preparation to strategic integration
-
-**Key Points:**
-- **Stage 1 (Concrete Experience):** You have 10 weeks of communication experiences—review them
-- Action: Pull out your memo (Week 4), proposal (Week 7), presentation recordings, peer feedback
-- **Stage 2 (Reflective Observation):** Look for patterns—what consistently works for you? Where do you struggle?
-- Action: Read all instructor feedback. What themes appear? "Strong analysis but weak conclusions" repeated = pattern to address
-- **Stage 3 (Abstract Conceptualization):** Synthesize into principles—"I realize I'm most persuasive when I lead with data then add story"
-- Action: Articulate 3-5 communication principles you've discovered about your own style
-- **Stage 4 (Active Experimentation):** Your capstone is where you test your integrated mastery
-- Action: Design capstone to showcase your strengths while demonstrating growth in development areas
-
-**Example:**
-- Student example: "Reviewing my work (CE), I noticed I get positive feedback when I use frameworks explicitly but negative feedback when I just apply them implicitly (RO). I've learned I need to 'show my work'—explain my strategic choices (AC). So in capstone, I'll narrate our communication strategy decisions out loud (AE)"
-
-**Check Understanding:**
-- "When you review your past work, what pattern jumps out—something instructors or peers consistently mention?"
-
-**Transition:**
-- "Kolb helps you prepare. Schön helps you deliver and refine..."
-
----
-
-## Slide 19: Applying Reflective Practice to Capstone Delivery
-<!-- LAYOUT: framework -->
-
-**Using Schön's Reflection for Presentation Excellence:**
-
-**Before Presentation: Reflection-on-Action**
-- Review recording of previous presentations
-- What patterns do you notice? (e.g., "I speed up when nervous")
-- Plan adjustments: "If X happens, I'll do Y"
-
-**During Presentation: Reflection-in-Action**
-- Monitor audience cues: engagement, confusion, agreement
-- Adjust pacing, examples, or emphasis in real-time
-- Example: Add clarifying example if you see confused expressions
-
-**During Q&A: Reflection-in-Action**
-- Listen fully to question before responding (don't assume)
-- Adjust answer based on questioner's framing
-- Example: Technical question → technical answer; strategic question → strategic answer
-
-**After Presentation: Reflection-on-Action**
-- Debrief with team: What worked? What would you change?
-- Document insights for future presentations
-- Example: "Opening story landed well; middle section felt rushed"
-
-## Speaker Notes
-
-**Opening:**
-- Schön's framework helps you perform better in real-time and learn faster from experience
-- Strong presenters do both types of reflection continuously
-
-**Key Points:**
-- **Before (Reflection-on-Action):** Prepare by analyzing past performance. If you know you rush when nervous, plan pause points
-- Professional practice: Watch recording of yourself, identify 2-3 patterns to address
-- **During Presentation (Reflection-in-Action):** This separates good from great presenters—ability to adjust on the fly
-- Watch for: audience checking phones (losing engagement), nodding (understanding), furrowed brows (confusion)
-- Adjust: If losing engagement, ask question or share story; if confusion, add example; if ahead of time, slow down
-- **During Q&A (Reflection-in-Action):** Listen for what question is really asking. Same surface question can mean different things based on questioner's role
-- **After (Reflection-on-Action):** Capture insights while fresh. What will you do differently next time?
-
-**Example:**
-- Novice presenter: Delivers presentation exactly as rehearsed regardless of audience reaction
-- Expert presenter: Notices audience confusion on Slide 8, adds clarifying example not in original plan, confirms understanding before moving on
-
-**Check Understanding:**
-- "Think about a time you adjusted your communication mid-conversation because something wasn't working—that's reflection-in-action. What triggered your adjustment?"
-
-**Transition:**
-- "Finally, let's address the integration question: How do you bring multiple frameworks together coherently..."
-
----
-
-## Slide 20: Framework Integration Strategy
-<!-- LAYOUT: framework -->
-
-**How to Demonstrate Integration (Not Just Application):**
-
-**Level 1: Application (Basic)**
-- "We used Pyramid Principle to structure our report"
-- Shows you can use one framework
-
-**Level 2: Multiple Application (Good)**
-- "We used Pyramid Principle for structure and Cialdini's principles for persuasion"
-- Shows you can use multiple frameworks
-
-**Level 3: Strategic Integration (Excellent)**
-- "We analyzed stakeholders (Week 2) and discovered they value efficiency. This led us to choose Pyramid Principle structure (Week 3) because it delivers conclusions first. We then applied scarcity and authority principles (Week 7) because stakeholder mapping revealed these resonate with our audience."
-- Shows frameworks inform each other; choices are strategic
-
-**Capstone Goal:** Demonstrate Level 3—strategic integration with clear reasoning
-
-## Speaker Notes
-
-**Opening:**
-- This is what separates good capstone presentations from excellent ones
-- Integration means frameworks connect and inform each other, not just exist side-by-side
-
-**Key Points:**
-- **Level 1 (Application):** Minimum standard—you can use a framework when told to
-- Still valuable but doesn't show mastery: "We structured using Pyramid Principle" (but why?)
-- **Level 2 (Multiple Application):** Good—you can use multiple frameworks in same project
-- Shows breadth: "We used three frameworks in our approach"
-- **Level 3 (Strategic Integration):** Excellent—frameworks inform each other with clear strategic reasoning
-- Shows mastery: "Audience analysis revealed X, which led us to choose Y approach, which then shaped how we applied Z framework"
-- This is what demonstrates professional-level strategic thinking
-
-**Example:**
-- Basic: "Our presentation has good slide design" (Week 6 applied)
-- Better: "Our presentation has good slide design and strong delivery" (Weeks 6 + 5 applied)
-- Best: "Our audience analysis (Week 2) showed our stakeholders are C-level executives with limited time (Week 8). This led us to design slides with minimal text and lead with conclusions (Week 6), and structure our entire deck using executive summary format (Week 3). We're applying these frameworks together strategically."
-
-**Check Understanding:**
-- "Can you see the difference between 'we used X' and 'we analyzed Y which led us to strategically choose X'?"
-
-**Transition:**
-- "Let's look at a practical integration checklist you can use in tutorial preparation..."
-
----
-
-## Slide 21: Capstone Integration Checklist
-<!-- LAYOUT: checklist -->
-
-**Use this checklist to ensure comprehensive framework integration:**
-
-**Strategic Foundation**
-□ Audience analysis completed with stakeholder mapping (Week 2)
-□ Communication objectives clearly defined (Week 1)
-□ Cultural/contextual considerations identified (Week 9)
-
-**Content Design**
-□ Structure uses Pyramid Principle or appropriate framework (Week 3)
-□ Persuasive elements strategically placed (Week 7)
-□ Evidence and examples support claims (Week 4)
-
-**Delivery & Visuals**
-□ Slides follow design principles: simplicity, hierarchy (Week 6)
-□ Delivery demonstrates executive presence (Week 8)
-□ Team coordination and transitions smooth (Week 9)
-
-**Integration & Meta-Awareness**
-□ Framework choices explained with strategic reasoning
-□ Connections between frameworks made explicit
-□ Self-awareness of communication decisions demonstrated
-
-**Q&A Readiness**
-□ Anticipated questions prepared
-□ All team members ready to field questions
-□ Reflection-in-action practiced
-
-## Speaker Notes
-
-**Opening:**
-- This checklist will be used in today's tutorial for presentation run-through
-- It ensures you've addressed all course dimensions in your capstone
-
-**Key Points:**
-- **Strategic Foundation:** Before designing content, clarify who you're communicating with and why
-- All content decisions should trace back to audience analysis
-- **Content Design:** Structure, persuasion, evidence—all the "what" of your message
-- This is where Weeks 3-4 and 7 frameworks apply
-- **Delivery & Visuals:** "How" you deliver matters as much as content
-- This is where Weeks 5-6 and 8 frameworks apply
-- **Integration & Meta-Awareness:** This is the capstone differentiator—showing you understand *why* you made choices
-- Don't just apply frameworks—explain your strategic reasoning
-- **Q&A Readiness:** Presentations include 10-minute Q&A—prepare for it
-
-**Example:**
-- Weak team: Checks off frameworks without connecting them
-- Strong team: Uses checklist to verify strategic integration at each level
-- Tutorial exercise: Teams will trade checklists and peer-review each other's integration
-
-**Check Understanding:**
-- "Looking at this checklist, which section does your team need to strengthen most before Week 12?"
-
-**Transition:**
-- "We've covered learning cycles, reflective practice, development planning, and integration strategies. Let's synthesize with key takeaways..."
-
----
-
-## Slide 22: Key Takeaways from Today
-<!-- LAYOUT: framework -->
-
-**Five Essential Insights:**
-
-1. **Learning is Cyclical (Kolb)**
-   - Experience alone doesn't create expertise—must reflect, conceptualize, experiment
-   - Know your learning style preferences but develop flexibility
-
-2. **Reflection Builds Mastery (Schön)**
-   - Professionals engage in reflection-in-action (real-time) and reflection-on-action (retrospective)
-   - Problem setting matters as much as problem solving
-
-3. **Continuous Learning Requires Strategy (MIT Sloan)**
-   - Link purpose to learning, create learning-rich experiences, ask meta-questions, nurture learning teams
-
-4. **Versatility Comes from Breadth + Depth (McKinsey)**
-   - Pursue diverse experiences while going deep on core competencies
-   - Know when to speak up authentically
-
-5. **Integration Demonstrates Mastery (Week 10)**
-   - Apply frameworks, explain strategic reasoning, demonstrate meta-awareness
-
-## Speaker Notes
-
-**Opening:**
-- These five takeaways summarize our 90-minute journey from theory to application
-- Each connects to your immediate work: Executive Summary and capstone preparation
-
-**Key Points:**
-- **Takeaway 1 (Kolb):** Use the learning cycle to prepare for capstone—review experiences, reflect on patterns, conceptualize principles, experiment in final presentation
-- **Takeaway 2 (Schön):** Practice reflection-in-action during Q&A; use reflection-on-action to debrief after presentations
-- **Takeaway 3 (MIT Sloan):** Your development plan (tutorial activity) should incorporate all four strategies
-- **Takeaway 4 (McKinsey):** Capstone shows breadth (multiple frameworks) and depth (mastery of core concepts)
-- **Takeaway 5 (Week 10):** What makes capstone special is meta-awareness—showing you understand *why* you made communication choices
-
-**Example:**
-- Student applying all five: "I reviewed my past work (Kolb), identified patterns in feedback (Schön), linked communication development to career goals (MIT Sloan), planned to develop both breadth and depth (McKinsey), and will demonstrate strategic reasoning in my capstone (Week 10)"
-
-**Check Understanding:**
-- "Which of these five takeaways feels most immediately useful as you work on Executive Summary or capstone preparation?"
-
-**Transition:**
-- "Let's preview your assessments and what's coming next..."
-
----
-
-## Slide 23: Assessment Preview & Next Steps
-<!-- LAYOUT: framework -->
-
-**This Week (Week 10):**
-- **Executive Summary DUE (10%)** - Submit via Moodle by deadline
-- **Tutorial:** Capstone presentation run-through with integration checklist
-- Complete Week 10 Quiz on Moodle
-
-**Week 11:**
-- **Comprehensive Quiz (15%)** - Covers Weeks 1-10
-- Final presentation coaching and feedback sessions
-- No new content—focus on review and preparation
+- **Executive Summary (10%)** - Due Sunday Week 10
+- Synthesize complex information into actionable recommendations
+- Apply all course frameworks to demonstrate mastery
 
 **Week 12:**
-- **Group Presentation (25%)** - 15 minutes + 10-minute Q&A
-- **Individual Presentation Grade (15%)** - Your individual performance within group
-- Peer feedback and course wrap-up
+- **Group Presentation (25%)** + **Individual Grade (15%)**
+- Integrate frameworks into comprehensive analysis
+- Demonstrate executive presence and strategic thinking
 
-**Tutorial today:** Practice run-through with integration checklist and peer feedback
+<speaker-notes>
+Everything today connects to your final assessments. The Executive Summary demonstrates your ability to synthesize and communicate efficiently. The Group Presentation is your capstone—your opportunity to showcase the full range of skills developed across 10 weeks.
 
-## Speaker Notes
+Today's frameworks give you the tools to reflect on your growth, identify what you've learned, and present with confidence.
+</speaker-notes>
 
-**Opening:**
-- Clear overview of what's due and what's coming—no surprises
-- Week 10 is assessment week; Weeks 11-12 are performance weeks
+</slide>
 
-**Key Points:**
-- **This week (Week 10):** If you haven't submitted Executive Summary, finalize today
-- Tutorial provides hands-on capstone practice—bring draft materials
-- Complete Week 10 quiz online (covers today's content: Kolb, Schön, MIT Sloan, McKinsey frameworks)
-- **Week 11:** Major comprehensive quiz covering all 10 weeks of content
-- Review sessions and final coaching—come with questions
-- **Week 12:** Your capstone performance—15 minutes + 10 minutes Q&A
-- Individual grades based on your personal contribution and demonstrated mastery
+<slide number="5" layout="section-break" title="Roadmap">
 
-**Example:**
-- Timeline: Executive Summary due this week → Study for comprehensive quiz → Deliver capstone Week 12
-- Tutorial today is critical practice opportunity—use it to test your integration
+## Today's Journey
 
-**Check Understanding:**
-- "Any questions about assessment timeline or what's expected in Week 12 presentations?"
+1. **The Learning Cycle** - How professionals integrate experience (20 min)
+2. **Reflective Practice** - Assessing your communication growth (20 min)
+3. **Continuous Development** - Building your learning plan (20 min)
+4. **Capstone Excellence** - Preparing to demonstrate mastery (20 min)
 
-**Transition:**
-- "Finally, let's look at resources to support your ongoing development..."
+<speaker-notes>
+This roadmap shows our progression from foundational theory to practical application. We'll return to this slide at each transition point to help you track where we are in the lecture.
 
----
+Notice the structure mirrors Kolb's cycle—we'll experience the frameworks, reflect on them, conceptualize how they apply, and plan how to use them.
+</speaker-notes>
 
-## Slide 24: Resources for Continuous Development
-<!-- LAYOUT: framework -->
+</slide>
 
-**For Development Planning:**
-- Kolb Learning Style Inventory: learningfromexperience.com
-- MIT Sloan Management Review: sloanreview.mit.edu
-- McKinsey Quarterly: mckinsey.com/featured-insights
+<slide number="6" layout="section-break" title="Segment 1 Intro">
 
-**For Capstone Preparation:**
-- Course readings: Review Weeks 1-9 key frameworks
-- Assessment Handbook: Section on presentation rubrics
-- Your portfolio: Review all feedback received
+## Segment 1: The Learning Cycle
 
-**For Career-Long Learning:**
-- Harvard Business Review: hbr.org (communication articles)
-- TED Talks: ted.com (presentation excellence examples)
-- Grammarly: grammarly.com (writing development)
-- Toastmasters: toastmasters.org (ongoing presentation practice)
+**How professionals turn experience into expertise**
 
-**Tutorial Activity:** Use these resources to inform personal development plan
+<speaker-notes>
+Transition to first segment. We begin with David Kolb's Experiential Learning Cycle—arguably the most influential framework in adult learning theory with over 16,000 citations.
 
-## Speaker Notes
+This framework explains how you've actually been learning throughout this course, and more importantly, how you'll continue learning after graduation.
+</speaker-notes>
 
-**Opening:**
-- These resources support both immediate capstone work and long-term development
-- Curated for relevance to course frameworks and Vietnamese context
+</slide>
 
-**Key Points:**
-- **Development Planning Resources:** If you want to formally assess your learning style, take Kolb inventory
-- MIT Sloan and McKinsey publish regular articles on professional development—subscribe for ongoing insights
-- **Capstone Preparation Resources:** Everything you need is in course materials—review systematically
-- Your own portfolio with feedback is your best resource—identifies your specific patterns
-- **Career-Long Learning Resources:** These support ongoing development beyond this course
-- Toastmasters has clubs in major Vietnamese cities—structured presentation practice
-- HBR and TED provide ongoing professional development content
+<slide number="7" layout="framework" title="Kolb's Experiential Learning Cycle">
 
-**Example:**
-- Immediate action: Pull out your memo (Week 4) and proposal (Week 7)—review instructor feedback for patterns
-- Short-term action: Read McKinsey versatility article for development planning framework
-- Long-term action: Subscribe to MIT Sloan Management Review for ongoing learning insights
+## Kolb's Experiential Learning Cycle
 
-**Check Understanding:**
-- "Which resource feels most immediately useful for your capstone preparation?"
+**Four-Stage Continuous Learning Process**
 
-**Transition:**
-- "Let's wrap up with final thoughts and what happens in tutorial..."
+1. **Concrete Experience (CE)** - Do: Engage in new experience
+2. **Reflective Observation (RO)** - Review: Observe from multiple perspectives
+3. **Abstract Conceptualization (AC)** - Conclude: Create theories to explain
+4. **Active Experimentation (AE)** - Plan: Test theories in new situations
 
----
+**Key Insight:** Learning requires all four stages; can enter anywhere but must complete the cycle
 
-## Slide 25: Final Thoughts: From Learning to Mastery
+<speaker-notes>
+Kolb's cycle explains why lecture alone doesn't create learning—you need the full cycle. A diagram can help here—drawing a circular diagram showing the four stages flowing into each other, with arrows indicating the continuous nature.
 
-**You entered this course learning frameworks.**
-**You exit this course integrating them.**
+Think about how this course has been structured: you experienced communication challenges in tutorials (CE), reflected on what worked (RO), learned frameworks to explain your observations (AC), then applied those frameworks in new contexts (AE).
 
-**The capstone isn't about showing you know frameworks—it's about showing you can think like a strategic communicator.**
+Most students immediately recognize this pattern once explained. The power is in making it conscious so you can replicate it after the course ends.
+</speaker-notes>
 
-**Key mindset shifts:**
-- From "What framework do I use?" to "What's the communication challenge?"
-- From "Did I apply it correctly?" to "Why did I choose this approach?"
-- From "What do I say?" to "How do I create impact?"
+</slide>
 
-**This is integration. This is mastery.**
+<slide number="8" title="Course Journey Through the Cycle">
 
-**Tutorial:** Hands-on capstone preparation with integration checklist and peer feedback
+## Your Communication Journey Through Kolb's Cycle
 
-**See you in two weeks for your showcase!**
+**Concrete Experience:**
+- Tutorial activities, presentation delivery, memo writing
+- Portfolio assignments with real-world scenarios
 
-## Speaker Notes
+**Reflective Observation:**
+- Peer feedback sessions, self-assessment, portfolio review
+- Analyzing what worked and what didn't
 
-**Opening:**
-- End on inspiring, empowering note—students have come far
-- Capstone is opportunity to demonstrate integrated professional competency
+**Abstract Conceptualization:**
+- Frameworks: Pyramid Principle, Cialdini, Hofstede, Executive Presence
+- Understanding why certain approaches work
 
-**Key Points:**
-- **Framework learning → Framework integration:** Early weeks focused on understanding individual frameworks; now you integrate them strategically
-- **Correct application → Strategic reasoning:** It's not enough to "use Pyramid Principle correctly"—you must explain *why* Pyramid Principle was the right choice for this audience and context
-- **Content delivery → Impact creation:** Shift from "presenting information" to "achieving communication objectives"
-- These mindset shifts represent professional maturity in communication
+**Active Experimentation:**
+- Applying frameworks to new scenarios, portfolio assignments, group work
+- Testing new communication strategies
 
-**Example:**
-- Novice: "I structured my presentation with introduction, body, conclusion because that's the format"
-- Expert: "I analyzed my audience and determined they value efficiency, so I structured using Pyramid Principle to deliver conclusions first, then supporting detail"
-- Notice the difference: strategic reasoning, audience-centricity, framework integration
+<speaker-notes>
+This slide demonstrates that we've deliberately designed this course around Kolb's cycle. You haven't just been learning content—you've been developing a learning process.
 
-**Check Understanding:**
-- "As you leave today, what's one mindset shift you want to focus on for your capstone?"
+Key connection: The cycle explains why some students improved dramatically while others plateaued. Students who completed all four stages learned more than those who skipped reflection or conceptualization.
 
-**Transition:**
-- "Head to tutorial now for hands-on practice. Bring any capstone materials you have. See you in Week 11 for quiz and final coaching!"
+Common student question: "Which stage is most important?" Answer: All are essential, but most people naturally prefer one or two. Recognizing your preference helps identify growth areas.
+</speaker-notes>
 
----
+</slide>
+
+<slide number="9" title="Four Learning Styles">
+
+## Four Learning Styles (Kolb)
+
+**Based on which stages you prefer:**
+
+- **Diverging (CE/RO):** Imaginative, views from multiple perspectives
+  - Strength: Seeing situations from different angles
+  - Development need: May struggle with decisive action
+
+- **Assimilating (AC/RO):** Logical, organizing information into frameworks
+  - Strength: Creating comprehensive theories
+  - Development need: May prefer ideas over practical application
+
+- **Converging (AC/AE):** Problem-solving, finding practical applications
+  - Strength: Making decisions and solving problems
+  - Development need: May overlook alternative perspectives
+
+- **Accommodating (CE/AE):** Hands-on, action-oriented, intuitive
+  - Strength: Getting things done, adaptability
+  - Development need: May act without adequate reflection
+
+**No style is "better"—but effective professionals develop flexibility across all modes**
+
+<speaker-notes>
+Learning styles are descriptive, not prescriptive. The goal isn't to "find your style and stick to it"—it's to recognize your natural preferences and deliberately develop the others.
+
+Example: If you're a "Converging" learner who excels at problem-solving, you might struggle with the "Diverging" skill of viewing situations from multiple stakeholder perspectives. Recognizing this helps you strengthen that capability.
+
+For communication specifically: effective communicators need all four modes. You need hands-on practice (Accommodating), reflection on audience needs (Diverging), frameworks to organize thinking (Assimilating), and practical application skills (Converging).
+</speaker-notes>
+
+</slide>
+
+<slide number="10" title="Identifying Your Learning Preference">
+
+## Identifying Your Learning Preference
+
+**Self-Assessment Questions:**
+
+1. **Concrete Experience:** Do I learn best by doing and experiencing directly?
+2. **Reflective Observation:** Do I learn best by watching and reflecting?
+3. **Abstract Conceptualization:** Do I learn best by thinking and analyzing?
+4. **Active Experimentation:** Do I learn best by testing and experimenting?
+
+**Most people have two preferred modes**
+
+**Development Strategy:** Identify your weaker modes and deliberately practice them
+
+<speaker-notes>
+These questions help students identify their learning preferences. The worksheet in tutorial could have them complete a simplified Learning Style Inventory.
+
+Key insight: Your weaker modes represent your biggest growth opportunities. If you naturally gravitate toward action (CE/AE) but avoid reflection (RO) and theory (AC), you're missing crucial learning stages.
+
+Real-world application: Understanding your learning style helps you design better professional development. If you know you're weak at reflection, you can deliberately build in time for after-action reviews.
+</speaker-notes>
+
+</slide>
+
+<slide number="11" title="Application to Communication Development">
+
+## Applying the Cycle to Your Communication Growth
+
+**Concrete Experience:**
+- What communication challenges have you faced this semester?
+- Which assignments pushed you outside your comfort zone?
+
+**Reflective Observation:**
+- What patterns emerged in your successes and struggles?
+- What feedback did you receive consistently?
+
+**Abstract Conceptualization:**
+- Which frameworks resonate most with your experiences?
+- What communication principles have you internalized?
+
+**Active Experimentation:**
+- How will you test these insights in new contexts?
+- What communication experiments will you run next?
+
+<speaker-notes>
+These questions form the basis for self-assessment activities. Rather than giving students generic reflection prompts, we're providing a structured framework that ensures thorough self-examination.
+
+The worksheet in tutorial could use these as guided reflection questions—give students 2 minutes per quadrant to jot down thoughts. Not collected, purely for personal awareness.
+
+Transition: Now that we understand how learning happens, let's examine how professionals engage in this reflectively.
+</speaker-notes>
+
+</slide>
+
+<slide number="12" layout="section-break" title="Segment 2 Intro">
+
+## Segment 2: Reflective Practice
+
+**Turning experience into professional expertise**
+
+<speaker-notes>
+Transition to second segment. We now shift from understanding the learning cycle to engaging in reflective practice—Donald Schön's foundational framework with 8,900+ citations.
+
+While Kolb explains what the learning process looks like, Schön explains how professionals actually do it in practice, particularly in fields like communication where much of the expertise is tacit.
+</speaker-notes>
+
+</slide>
+
+<slide number="13" layout="framework" title="Schön's Reflective Practice">
+
+## Schön's Reflective Practice Model
+
+**Three Modes of Professional Knowledge:**
+
+**Knowing-in-Action:**
+- Tacit knowledge embedded in skillful performance
+- "The best professionals know more than they can put into words"
+- Automatic, intuitive responses developed through experience
+
+**Reflection-in-Action:**
+- Real-time thinking while performing (during presentation, mid-conversation)
+- Adjusting approach based on immediate feedback
+- "Thinking on your feet"
+
+**Reflection-on-Action:**
+- Retrospective analysis after the experience
+- Examining what worked and why
+- Planning improvements for next time
+
+<speaker-notes>
+Schön's three-part framework explains the different ways professionals use knowledge. Knowing-in-action is why experts sometimes struggle to explain what they do—it's become automatic.
+
+This is like the "10,000 hours" concept—with enough practice, communication skills become intuitive. But that doesn't mean you should stop reflecting; reflection helps you continue improving even after skills become automatic.
+
+The distinction between "in-action" and "on-action" is crucial. Many students only engage in reflection-on-action (if at all), but professionals operate in both modes simultaneously.
+</speaker-notes>
+
+</slide>
+
+<slide number="14" title="Reflection in Communication Contexts">
+
+## Reflective Practice in Business Communication
+
+**Knowing-in-Action Examples:**
+- Automatically adjusting tone for different audiences
+- Intuitively structuring arguments persuasively
+- Naturally reading audience cues and body language
+
+**Reflection-in-Action Examples:**
+- Noticing audience confusion during presentation → adding an additional example
+- Sensing resistance in negotiation → shifting persuasive approach
+- Detecting email miscommunication → picking up phone instead
+
+**Reflection-on-Action Examples:**
+- Analyzing why memo wasn't persuasive → improving evidence base
+- Reviewing presentation feedback → identifying delivery patterns
+- Examining failed persuasion attempt → strengthening framework application
+
+<speaker-notes>
+These examples make the abstract concepts concrete for communication contexts. Students typically relate strongly to these scenarios—they've experienced most of them.
+
+Key insight: The best communicators do all three modes. They've developed automatic skills (knowing-in-action), adjust in real-time (reflection-in-action), AND analyze afterwards to improve systematically (reflection-on-action).
+
+You could poll students: "How many of you adjusted your communication mid-conversation this week based on the other person's reaction?" Most hands will go up, validating that they already engage in reflection-in-action, even if unconsciously.
+
+This is the skill that needs to become conscious and systematic for professional excellence.
+</speaker-notes>
+
+</slide>
+
+<slide number="15" title="The Reflective Conversation">
+
+## The "Conversation with the Situation"
+
+**Schön's Key Concept:**
+Effective professionals engage in ongoing dialogue with their work, treating problems as dynamic rather than static
+
+**Communication Application:**
+
+**Linear Approach (Weak):**
+1. Analyze audience
+2. Develop message
+3. Deliver communication
+4. Done
+
+**Reflective Approach (Strong):**
+1. Analyze audience → Notice gaps in understanding
+2. Develop message → Test assumptions about what will persuade
+3. Deliver communication → Monitor reactions and adjust
+4. Reflect on outcomes → Refine approach for next time
+5. **Repeat cycle continuously**
+
+<speaker-notes>
+The "conversation with the situation" is Schön's metaphor for professional expertise. Rather than following a linear procedure, experts continuously test and refine their approach based on feedback.
+
+Example: An expert presenter doesn't just deliver prepared slides. They read the room, notice when engagement drops, adjust pacing, add examples, skip less relevant material, and continuously calibrate based on audience response. That's a conversation.
+
+Compare to a novice presenter who delivers the same content regardless of audience reaction—that's following a script, not engaging in professional practice.
+
+This connects to Week 2's audience analysis and Week 8's executive presence—both require real-time responsiveness, not just planning.
+</speaker-notes>
+
+</slide>
+
+<slide number="16" title="Problem Setting vs Problem Solving">
+
+## Problem Setting vs. Problem Solving
+
+**Schön's Key Insight:**
+Effective professionals don't just solve given problems—they construct and frame problems from ambiguous situations
+
+**Communication Application:**
+
+**Weak approach:** "I need to give a presentation" → applies standard template
+
+**Strong approach:** "What communication challenge am I actually facing here?"
+- Is this a persuasion problem? (resistance to overcome)
+- A knowledge problem? (audience lacks context)
+- A relationship problem? (trust needs building)
+- A complexity problem? (simplification required)
+
+**Different problem definitions → Different communication strategies**
+
+<speaker-notes>
+This framework connects directly to Week 2's strategic communication and Week 1's audience analysis. Many communication failures happen because people solve the wrong problem.
+
+Example: A manager thinks they have a "presentation problem" and focuses on slide design. But the actual issue is a stakeholder alignment problem—key decision-makers weren't consulted early. No amount of beautiful slides solves the wrong problem.
+
+This is why strategic thinking precedes tactical execution. Before applying frameworks like Pyramid Principle or Cialdini, you must first understand what challenge you're actually addressing.
+
+Real-world application: When students face communication challenges in their careers, the first question should be "What problem am I really solving?" not "What technique should I use?"
+</speaker-notes>
+
+</slide>
+
+<slide number="17" title="From Novice to Expert">
+
+## The Journey from Novice to Expert Communicator
+
+**Novice:**
+- Follows rules and procedures rigidly
+- Needs explicit frameworks for every situation
+- Reflection happens only when prompted
+
+**Competent:**
+- Applies frameworks flexibly
+- Recognizes patterns across situations
+- Reflects regularly on performance
+
+**Expert:**
+- Intuitive responses (knowing-in-action)
+- Continuous real-time adjustment (reflection-in-action)
+- Systematic learning from experience (reflection-on-action)
+- **All three modes operating simultaneously**
+
+**Your goal: Move from novice toward competent and expert practice**
+
+<speaker-notes>
+This progression from novice to expert helps students understand where they are and where they're going. Most students in this course are moving from novice toward competent—that's exactly what we'd expect.
+
+The key difference between competent and expert is that experts have internalized frameworks so deeply they operate automatically, while still maintaining conscious reflection. It's unconscious competence combined with conscious improvement.
+
+Example: A novice presenter consciously thinks "I need to use Pyramid Principle here." A competent presenter naturally structures arguments that way. An expert does it automatically AND reflects on whether Pyramid Principle is the right framework for this specific situation.
+
+This connects to the learning cycle—experts complete Kolb's four stages faster and more fluidly than novices.
+</speaker-notes>
+
+</slide>
+
+<slide number="18" title="Self-Assessment Framework">
+
+## Structured Self-Assessment Questions
+
+**Based on Schön's Reflective Practice:**
+
+1. **Knowing-in-Action:** What communication skills have become automatic for me? What do I do intuitively without thinking?
+
+2. **Reflection-in-Action:** When do I adjust my communication in real-time? What cues trigger those adjustments?
+
+3. **Reflection-on-Action:** What patterns have I noticed in my communication successes and challenges across the semester?
+
+4. **Problem Setting:** How do I define communication challenges before acting on them? Do I jump to solutions or analyze the problem first?
+
+<speaker-notes>
+These four questions provide a systematic framework for self-assessment. Rather than vague "reflect on your learning," students now have specific prompts that surface genuine insights.
+
+The worksheet in tutorial uses these as guided reflection questions. Students could spend 3-4 minutes per question, writing down thoughts. This is personal reflection, not collected.
+
+The questions deliberately progress from unconscious competence (knowing-in-action) to conscious strategic thinking (problem setting), mirroring the journey from novice to expert communicator.
+
+Transition: Reflection is essential, but it must lead to action. Let's explore how to turn insights into continuous development.
+</speaker-notes>
+
+</slide>
+
+<slide number="19" layout="section-break" title="Segment 3 Intro">
+
+## Segment 3: Continuous Development
+
+**Building your communication learning plan**
+
+<speaker-notes>
+Transition to third segment. We shift from understanding learning processes and reflective practice to practical development planning.
+
+This section draws on recent MIT Sloan Management Review research providing evidence-based strategies you can implement immediately.
+</speaker-notes>
+
+</slide>
+
+<slide number="20" title="Why Continuous Learning Matters">
+
+## The Continuous Learning Imperative
+
+**Research Evidence:**
+
+- **44%** of core skills will change by 2027 (World Economic Forum)
+- **79%** of CEOs concerned skills shortages will hinder growth (PwC)
+- **Purpose-driven learning** predicts successful skill development (MIT Sloan research)
+
+**Implication:**
+Communication competence is not a destination—it's a continuous journey requiring learning agility
+
+**The shift:** "One life, one career" → Portfolio careers requiring constant adaptation
+
+<speaker-notes>
+These statistics reinforce our opening hook with additional context. The PwC finding about CEO concerns makes this personally relevant—employers will value learning agility as much as current skills.
+
+The MIT Sloan finding about purpose-driven learning is particularly powerful. Students who understand WHY they're developing communication skills learn faster and retain more than those who see it as just a requirement.
+
+Connection to student experience: You could ask "How many of you have clearer career goals now than when you started this course?" Many hands typically go up. That clarity of purpose should now accelerate their continued development.
+
+The "portfolio careers" concept is important—most graduates will have multiple careers, not just multiple jobs. Each career transition requires learning new communication contexts.
+</speaker-notes>
+
+</slide>
+
+<slide number="21" layout="framework" title="Four Continuous Learning Strategies">
+
+## Four Evidence-Based Learning Strategies
+
+**From MIT Sloan Research (Tan & Tan, 2024):**
+
+Based on qualitative interviews with 24 career switchers and survey analysis of 340 professionals
+
+1. **Link Purpose to Learning** - Connect skills to career aspirations
+2. **Create Learning-Rich Experiences** - Seek challenges beyond comfort zone
+3. **Ask Meta-Learning Questions** - Structure ongoing self-assessment
+4. **Nurture a Learning Team** - Develop feedback partnerships
+
+**Each strategy is supported by empirical evidence**
+
+Regression analyses showed purpose-driven learning significantly predicted successful skill development
+
+<speaker-notes>
+These four strategies provide actionable structure for development planning. They're not abstract theory—they come from rigorous qualitative and quantitative research with real professionals.
+
+Key insight: These aren't just good ideas, they're statistically validated predictors of successful skill development. The regression analyses provide empirical support.
+
+The tutorial activity will use these four strategies as the organizing framework for personal development plans. Students can apply this structure to any skill, not just communication.
+
+This is practical research—students can literally implement these strategies starting this week.
+</speaker-notes>
+
+</slide>
+
+<slide number="22" title="Strategy 1 - Link Purpose to Learning">
+
+## Strategy 1: Link Purpose to Learning
+
+**Research Finding:**
+Sense of purpose predicts successful skill development—understanding WHY accelerates learning
+
+**Application to Communication:**
+
+**Three Types of Purpose:**
+
+1. **Career Purpose:** How does communication excellence support your career goals?
+   - Example: "I want to lead product teams, which requires influencing cross-functional stakeholders"
+
+2. **Impact Purpose:** What change do you want to create through better communication?
+   - Example: "I want to make sustainability compelling to business leaders"
+
+3. **Growth Purpose:** What type of professional do you want to become?
+   - Example: "I want to be someone people trust to communicate complex ideas clearly"
+
+**Action:** Write one sentence connecting communication development to your larger purpose
+
+<speaker-notes>
+This strategy transforms communication from an academic requirement into a personally meaningful capability. When students connect skills to authentic purpose, motivation shifts from external (grades) to internal (growth).
+
+The three types of purpose give students multiple entry points. Some students have clear career goals (career purpose), others are motivated by making a difference (impact purpose), still others by personal growth (growth purpose).
+
+Example of strong purpose statement: "I'm developing communication skills because I want to lead sustainability initiatives in Vietnam, which requires influencing stakeholders who don't initially care about environmental issues." That's specific, authentic, and motivating.
+
+Contrast with weak statement: "I need good communication skills to get a job." That's generic and externally motivated.
+
+The tutorial activity will have students articulate their specific purpose statement. This becomes the foundation for their development plan.
+</speaker-notes>
+
+</slide>
+
+<slide number="23" title="Strategy 2 - Create Learning-Rich Experiences">
+
+## Strategy 2: Create Learning-Rich Experiences
+
+**Research Finding:**
+Varied and challenging tasks push beyond comfort zones and develop broader capabilities
+
+**Application to Communication:**
+
+**Characteristics of Learning-Rich Experiences:**
+- **Stretch:** Just beyond current capability (not too easy, not overwhelming)
+- **Variety:** Different communication contexts and formats
+- **Consequences:** Real stakes that make outcomes matter
+- **Feedback:** Clear signals about what's working
+
+**Communication Examples:**
+- If comfortable with writing → Seek oral presentation opportunities
+- If confident in small groups → Volunteer for large audience presentations
+- If strong on analysis → Practice storytelling and emotional connection
+- If good at prepared remarks → Work on impromptu speaking
+
+**Key:** Deliberately seek discomfort in service of growth
+
+<speaker-notes>
+This strategy operationalizes the "zone of proximal development"—the sweet spot where learning happens. Too easy means no growth. Too hard means overwhelm and shutdown.
+
+For communication: If presentations feel comfortable, that's a signal you need harder challenges. Seek executive briefings, cross-cultural contexts, or high-stakes situations.
+
+Real-world application: In your career, don't just do what you're already good at. Volunteer for communication challenges that scare you slightly. That's where growth happens.
+
+The research showed professionals who deliberately sought varied experiences developed broader capabilities than those who stayed in their comfort zone.
+
+Connection to Kolb: Learning-rich experiences provide the "Concrete Experience" that kicks off the learning cycle.
+</speaker-notes>
+
+</slide>
+
+<slide number="24" title="Strategy 3 - Meta-Learning Questions">
+
+## Strategy 3: Ask Meta-Learning Questions
+
+**Research Finding:**
+Structured self-assessment questions turn experience into systematic learning
+
+**Three Core Questions for Ongoing Development:**
+
+1. **What do I need to learn?**
+   - Communication example: "I need to learn how to handle hostile questions in presentations"
+
+2. **How should I learn it?**
+   - Communication example: "Watch examples, practice with peer feedback, seek mentoring from experienced presenters"
+
+3. **Where are my strengths and gaps?**
+   - Communication example: "Strong: written clarity. Gap: oral spontaneity and thinking on feet"
+
+**Practice:** Ask these questions after every significant communication experience
+
+<speaker-notes>
+These meta-learning questions operationalize Schön's reflection-on-action framework. They provide a systematic way to turn experiences into insights.
+
+The key word is "meta"—these aren't questions about the content, they're questions about the learning process itself. That's what makes them powerful.
+
+Example of applying all three questions: After a presentation that didn't go well, ask:
+1. What do I need to learn? → Better audience analysis and slide design
+2. How should I learn it? → Review Week 2 and Week 6 materials, practice with peer feedback
+3. Strengths and gaps? → Strong on content knowledge, weak on visual communication
+
+These questions turn failure into learning. Without them, you might just feel bad about the presentation. With them, you have a development roadmap.
+
+The tutorial worksheet could have students apply these questions to a recent communication experience.
+</speaker-notes>
+
+</slide>
+
+<slide number="25" title="Strategy 4 - Learning Team">
+
+## Strategy 4: Nurture a Learning Team
+
+**Research Finding:**
+Knowledge-sharing and constructive feedback accelerate growth when embedded in daily operations
+
+**Communication Applications:**
+
+**Types of Learning Partnerships:**
+
+1. **Peer Feedback Partners:** Exchange drafts and presentation rehearsals
+   - Meet regularly (monthly minimum)
+   - Give specific, actionable feedback
+
+2. **Mentors:** Seek experienced communicators for guidance
+   - Ask for 15-minute quarterly check-ins
+   - Come with specific questions
+
+3. **Communities:** Join professional groups
+   - Examples: Toastmasters, professional associations, alumni networks
+   - Regular practice opportunities
+
+4. **Accountability Partners:** Regular check-ins on development goals
+   - Weekly or bi-weekly progress updates
+   - Celebrate successes, troubleshoot challenges
+
+**Key:** Make feedback a habit, not a one-time event
+
+<speaker-notes>
+This strategy addresses the reality that communication is inherently social—you can't develop in isolation. The research shows that learning teams aren't just helpful, they're essential for sustained development.
+
+Practical suggestion: Students should identify at least one peer from this class to continue exchanging feedback after the course ends. That peer knows their baseline and can track progress over time.
+
+Example of embedding learning in operations: Set a monthly calendar reminder to ask three colleagues "What's one communication strength you see in me, and one area I could strengthen?" Make it routine.
+
+The best professional communicators all have feedback systems—formal or informal—that give them continuous data on their effectiveness.
+
+Toastmasters is specifically worth mentioning—it's a global organization dedicated to public speaking practice with structured feedback. Many cities in Vietnam have chapters.
+
+Transition: These four strategies provide the structure. Now let's apply them to capstone preparation.
+</speaker-notes>
+
+</slide>
+
+<slide number="26" title="Building Your Development Plan">
+
+## Building Your Personal Development Plan
+
+**Combining All Four Strategies:**
+
+1. **Purpose (Strategy 1):** My communication development serves this larger goal: ________________
+
+2. **Experiences (Strategy 2):** These communication challenges will stretch me: ________________
+
+3. **Meta-Learning (Strategy 3):**
+   - I need to learn: ________________
+   - I'll learn it by: ________________
+   - My strengths and gaps: ________________
+
+4. **Learning Team (Strategy 4):** These people will support my development: ________________
+
+**Action:** Complete this framework in tutorial to create your 6-month plan
+
+<speaker-notes>
+This framework synthesizes the four strategies into a concrete development plan template. The tutorial activity will have students fill this out completely.
+
+Key insight: All four strategies work together. Purpose provides motivation. Experiences provide data. Meta-learning questions convert data to insights. Learning teams accelerate progress.
+
+Students should walk out of tutorial with a completed one-page development plan they can actually use. This isn't academic exercise—it's practical career planning.
+
+The 6-month timeframe is deliberate—long enough to make meaningful progress, short enough to maintain focus. Students should revisit and revise quarterly.
+</speaker-notes>
+
+</slide>
+
+<slide number="27" layout="section-break" title="Segment 4 Intro">
+
+## Segment 4: Capstone Excellence
+
+**Demonstrating mastery through integration**
+
+<speaker-notes>
+Transition to final segment. We now apply everything to your capstone presentations—the culminating demonstration of your communication competence.
+
+This section draws on McKinsey research on leadership versatility, providing a framework for self-assessment and presentation excellence.
+</speaker-notes>
+
+</slide>
+
+<slide number="28" layout="framework" title="Leadership Versatility Framework">
+
+## Three Dimensions of Professional Versatility
+
+**From McKinsey Research on CEO Excellence:**
+
+Based on interviews with global CEOs including Mark Fields (Ford), Ed Bastian (Delta), and John Plant (Howmet Aerospace)
+
+1. **Pursue Diverse Experiences** - Breadth across different contexts
+   - Avoid becoming "pigeonholed as a one-note manager"
+   - Develop multiple operating modes
+
+2. **Go Deep (Constant Curiosity)** - Depth in core competencies
+   - Master intricacies beyond surface-level understanding
+   - Balance knowledge acquisition with confidence to execute
+
+3. **Know When to Speak Up** - Authenticity and strategic timing
+   - Navigate complex issues authentically
+   - Take stance only when relevant and authentic
+   - Avoid "empty suit" syndrome
+
+**Communication Application:**
+Your capstone demonstrates versatility—breadth of frameworks, depth of analysis, authentic delivery
+
+<speaker-notes>
+This McKinsey framework provides sophisticated guidance for capstone presentations. It's based on extensive interviews with global CEOs, so it represents the highest level of professional communication.
+
+The framework answers a key student question: "What makes a presentation excellent vs. merely good?" Excellence requires demonstrating all three dimensions.
+
+Dimension 1 (Diverse Experiences): Show you can apply multiple frameworks to a problem—not just your favorite one. The best capstones weave together Cialdini, Hofstede, Executive Presence, Visual Communication, and more.
+
+Dimension 2 (Go Deep): Demonstrate genuine understanding, not surface-level knowledge. Can you answer challenging questions about your recommendations? Have you thought through implementation challenges?
+
+Dimension 3 (Know When to Speak Up): Speak with authentic conviction on topics where you have real expertise and stake. Don't try to fake expertise you don't have. Choose capstone topics you genuinely care about.
+</speaker-notes>
+
+</slide>
+
+<slide number="29" title="Case Study - Mark Fields">
+
+## Case Study: Building Versatility
+
+**Mark Fields, Former Ford CEO**
+
+**Challenge:** Developing communication versatility across business conditions
+- Different modes required: restructuring, growth, cost-cutting, innovation
+- Each mode demands different communication approaches
+
+**Approach:** Deliberately sought varied experiences to build "muscle memory"
+- Took assignments in different regions and business units
+- Led Ford through financial crisis, restructuring, and growth phases
+
+**Quote:** "If you're putting yourself in positions in your career to get these different experiences, you're going to learn how to be a utility infielder."
+
+**Lesson for Capstone:**
+Show versatility by demonstrating you can pivot across frameworks and contexts, not just master one approach
+
+<speaker-notes>
+The Mark Fields case illustrates what professional versatility looks like in practice. "Utility infielder" is a baseball metaphor—a player who can perform well at multiple positions, not just one specialty.
+
+For communication capstones, this means demonstrating you can analyze a problem from multiple angles (stakeholder mapping, persuasion analysis, cultural dimensions, crisis communication) and select the right approach for the context.
+
+Weak capstone: "We analyzed this using Cialdini because that's what we're most comfortable with."
+
+Strong capstone: "We considered three analytical approaches—persuasion analysis, cultural dimensions, and visual communication—and selected cultural dimensions as primary because the core issue is cross-cultural misalignment, not persuasive technique. However, we also incorporate Cialdini's reciprocity principle in our implementation plan."
+
+That demonstration of strategic selection shows versatility.
+</speaker-notes>
+
+</slide>
+
+<slide number="30" title="Case Study - John Plant">
+
+## Case Study: Going Deep
+
+**John Plant, CEO of Howmet Aerospace**
+
+**Challenge:** Leading through 2008 financial crisis while maintaining long-term vision
+- Required both crisis communication and strategic vision communication
+
+**Approach:** Deep understanding of business fundamentals enabled strategic pivots
+- Mastered product technology, not just business metrics
+- "The key is not just understanding what a product does but also how and why it does what it does"
+
+**Result:** Led company through crisis to $13.5 billion acquisition
+
+**Lesson for Capstone:**
+Deep analysis beats surface-level application—demonstrate genuine understanding, not just framework name-dropping
+
+<speaker-notes>
+The John Plant case illustrates the "Go Deep" dimension. He didn't just know business strategy—he understood engineering and product technology deeply enough to communicate credibly with multiple stakeholders.
+
+For capstones, this means doing the analytical work. Don't just say "We used Hofstede's framework"—show you understand power distance scores, uncertainty avoidance, and how they specifically affect your case.
+
+Weak capstone: "Vietnam has high power distance according to Hofstede." (Surface-level)
+
+Strong capstone: "Vietnam scores 70 on power distance, meaning hierarchical communication is expected. This explains why our flat-structure proposal failed—it violated cultural expectations. Our revised approach maintains hierarchy in formal communications while building informal peer networks." (Deep understanding with application)
+
+The difference is demonstrating you've done the thinking, not just repeated the framework.
+</speaker-notes>
+
+</slide>
+
+<slide number="31" title="Case Study - Ed Bastian">
+
+## Case Study: Learning Agility
+
+**Ed Bastian, CEO of Delta Air Lines**
+
+**Challenge:** Leading through COVID-19 pandemic with unprecedented uncertainty
+- Business model disrupted overnight
+- Required rapid learning and communication pivots
+
+**Approach:** "The way you deal with this uncertainty is you learn, learn, learn"
+- Constant information gathering from multiple sources
+- Transparent communication about what he knew and didn't know
+
+**Result:** Delta emerged as industry leader through crisis
+
+**Lesson for Capstone:**
+Acknowledge what you don't know—authentic uncertainty beats false confidence
+
+<speaker-notes>
+The Ed Bastian case is particularly relevant for students. He succeeded not by pretending to have all answers, but by being honest about uncertainty while demonstrating learning agility.
+
+For capstones, this means acknowledging limitations in your analysis. Don't try to fake expertise you don't have.
+
+Weak capstone: Makes sweeping claims without evidence, ignores contradictory data, presents false certainty.
+
+Strong capstone: "Our analysis suggests X, based on Y evidence. However, we identified three limitations: [1, 2, 3]. If we had more time/data, we would investigate Z. Despite these limitations, we're confident in our core recommendations because..."
+
+That kind of honest, rigorous thinking demonstrates professional maturity. It shows you know the difference between what you know and what you're assuming.
+</speaker-notes>
+
+</slide>
+
+<slide number="32" title="Capstone Self-Assessment Questions">
+
+## Preparing for Capstone Excellence
+
+**Before your presentation, reflect:**
+
+**Breadth (Dimension 1):**
+- Have I applied diverse frameworks appropriate to this problem?
+- Can I justify why I selected these frameworks over alternatives?
+
+**Depth (Dimension 2):**
+- Can I defend every claim with evidence and reasoning?
+- Have I thought through implementation challenges and counter-arguments?
+
+**Authenticity (Dimension 3):**
+- Do I genuinely care about this topic and its recommendations?
+- Am I speaking to areas where I have real knowledge, or faking expertise?
+
+**Integration:**
+- Does this presentation synthesize course learning, not just repeat it?
+- Have I woven frameworks together, not just listed them sequentially?
+
+**Impact:**
+- What specific action should the audience take based on my analysis?
+- Is this actionable, or just interesting observations?
+
+**Excellent capstones score high on ALL five dimensions**
+
+<speaker-notes>
+These five questions form a capstone preparation checklist. They're not abstract—they map directly to the Group Presentation rubric criteria.
+
+Question 1 and 2 connect to "Content & Analysis" rubric criterion—framework application and depth.
+
+Question 3 connects to "Delivery & Presence"—authentic communication.
+
+Question 4 is unique to capstone—it's not enough to know frameworks individually, you must integrate them.
+
+Question 5 connects to executive communication—actionability matters. Executives don't want analysis for its own sake, they want recommendations they can implement.
+
+Suggestion: Students should use these questions when reviewing each other's practice presentations. Peer feedback based on specific criteria is more valuable than general impressions.
+
+The tutorial could include a peer review activity where students assess draft presentations using these five questions.
+</speaker-notes>
+
+</slide>
+
+<slide number="33" title="Integration vs Repetition">
+
+## Integration vs. Repetition (Critical Distinction)
+
+**Repetition (Weak Capstone):**
+- "First we'll discuss Cialdini, then Hofstede, then Executive Presence..."
+- Frameworks presented separately with forced connections
+- Feels like a course summary, not new analysis
+- Sequential structure: Framework 1 → Framework 2 → Framework 3
+
+**Integration (Strong Capstone):**
+- "This cross-cultural persuasion challenge requires simultaneously understanding power distance (Hofstede), establishing credibility (Executive Presence), and applying authority principle (Cialdini)..."
+- Frameworks woven together to solve a specific problem
+- Feels like professional consulting analysis
+- Integrated structure: Problem → Multi-framework analysis → Synthesized solution
+
+**Your capstone should demonstrate synthesis, not summarization**
+
+<speaker-notes>
+This distinction is crucial and often misunderstood. Many students think capstone means "show everything we learned." That produces a disconnected grab-bag presentation.
+
+True synthesis means using frameworks together to analyze something you couldn't have understood with any single framework alone.
+
+Example of integration: Analyzing Shopee's flash sale strategy requires Cialdini's scarcity principle AND Hofstede's cultural dimensions (collectivism in Southeast Asia amplifies social proof) AND visual communication theory (how countdown timers create urgency). The frameworks illuminate different facets simultaneously and interact with each other.
+
+Example of repetition: "Slide 5 covers Cialdini. Slide 9 covers Hofstede. Slide 12 tries to connect them." That's sequential, not integrated.
+
+Test: If you can rearrange your presentation sections without losing coherence, you're repeating, not integrating. True integration has frameworks deeply interdependent.
+
+Tutorial activity this week should include analyzing sample presentations and identifying which demonstrate true synthesis.
+</speaker-notes>
+
+</slide>
+
+<slide number="34" title="What Synthesis Looks Like">
+
+## Example of Framework Synthesis
+
+**Case:** Vietnamese startup pitching to American venture capitalists
+
+**Weak Analysis (Sequential Frameworks):**
+1. Cialdini section: Use authority and social proof
+2. Hofstede section: Vietnam is collectivist, US is individualist
+3. Pyramid Principle section: Structure argument logically
+4. Conclusion: Apply all three
+
+**Strong Analysis (Integrated Frameworks):**
+"The cultural gap (Hofstede) requires modified persuasion tactics (Cialdini). American VCs expect individual founder credibility (authority), but Vietnamese culture emphasizes team harmony. Our recommendation: Lead with founder credentials (authority) while showcasing collective team expertise (adapted for US individualism). Structure using Pyramid Principle, but frame data points to emphasize individual ROI (US values) rather than community benefit (Vietnamese values)."
+
+**The frameworks interact and modify each other—that's synthesis**
+
+<speaker-notes>
+This example demonstrates the difference between listing frameworks and synthesizing them. In the weak version, frameworks are discussed separately. In the strong version, they interact.
+
+Key insight: Cultural context (Hofstede) changes how you apply persuasion (Cialdini). You can't just use Cialdini's principles universally—you must adapt them based on cultural dimensions. That's synthesis.
+
+Another layer: The Pyramid Principle structure remains, but the content within that structure is shaped by both Cialdini and Hofstede. All three frameworks are operating simultaneously.
+
+This is the level of thinking expected in excellent capstones. Students should aim for this kind of multi-framework interaction.
+
+You could workshop this in tutorial: Give students a communication challenge and have them practice synthesizing three frameworks in one paragraph.
+</speaker-notes>
+
+</slide>
+
+<slide number="35" title="Common Capstone Pitfalls">
+
+## Common Capstone Pitfalls to Avoid
+
+**Pitfall 1: Framework Tourism**
+- Mentioning every framework briefly without deep application
+- Fix: Choose 3-4 frameworks and apply them thoroughly
+
+**Pitfall 2: The Laundry List**
+- "Here are 10 recommendations" without prioritization
+- Fix: Identify 2-3 core recommendations with clear prioritization
+
+**Pitfall 3: Missing the "So What?"**
+- Interesting analysis that leads nowhere actionable
+- Fix: Every analysis section should lead to specific recommendations
+
+**Pitfall 4: Fake Integration**
+- Frameworks mentioned in introduction, then never actually used in analysis
+- Fix: Show frameworks in action, not just in outline
+
+**Pitfall 5: Death by Slides**
+- 50+ slides trying to cover everything
+- Fix: 15-20 slides with focused argument (use appendix for details)
+
+<speaker-notes>
+These five pitfalls represent the most common ways capstones fail, even when students have learned the material.
+
+Pitfall 1 is especially common—students think they need to mention everything. Better to apply three frameworks deeply than ten frameworks superficially.
+
+Pitfall 2 reflects lack of strategic thinking. Executives don't want 10 equal recommendations—they want 2-3 prioritized actions with clear rationale for priority.
+
+Pitfall 3 is the "so what?" test failure. Analysis without implications is academic exercise, not business communication.
+
+Pitfall 4 is framework name-dropping. Students list frameworks in the introduction but then never actually use them in analysis. The frameworks should be working tools, not decorative references.
+
+Pitfall 5 is trying to cover too much. Better a tight 15-minute presentation with clear argument than 25 minutes of scattered observations.
+
+Students should self-assess against these five pitfalls during practice sessions.
+</speaker-notes>
+
+</slide>
+
+<slide number="36" title="Capstone Success Checklist">
+
+## Capstone Success Checklist
+
+**Content:**
+- [ ] Clear problem statement (not just topic)
+- [ ] 3-4 frameworks applied deeply (not 8+ applied superficially)
+- [ ] Frameworks integrated, not listed sequentially
+- [ ] Evidence supports every major claim
+- [ ] 2-3 prioritized recommendations (not 10+ equal suggestions)
+- [ ] Recommendations are actionable and specific
+
+**Delivery:**
+- [ ] 15-20 slides (not 30+)
+- [ ] Authentic enthusiasm for topic
+- [ ] Prepared for Q&A (anticipated questions and practiced answers)
+- [ ] Team coordination clear (if group presentation)
+- [ ] Executive presence demonstrated (Week 8 principles)
+
+**Meta:**
+- [ ] Demonstrates growth across semester
+- [ ] Shows synthesis, not summarization
+- [ ] Reflects your genuine thinking, not generic AI output
+
+<speaker-notes>
+This checklist provides concrete criteria for capstone evaluation. Students can use this for self-assessment and peer review.
+
+The checklist maps directly to rubric criteria, so using it ensures alignment with grading standards.
+
+Content section emphasizes quality over quantity—deep framework application, clear recommendations, strong evidence.
+
+Delivery section includes practical presentation skills developed throughout the course.
+
+The meta section is crucial—capstones should reflect authentic student thinking. Using AI to generate analysis produces generic results that don't demonstrate synthesis.
+
+Recommendation: Students should review this checklist before every practice presentation and after peer feedback. It provides a systematic quality control mechanism.
+</speaker-notes>
+
+</slide>
+
+<slide number="37" layout="section-break" title="Key Takeaways">
+
+## Key Takeaways
+
+**Today's Core Insights**
+
+<speaker-notes>
+Transition to wrap-up. We've covered substantial frameworks—now let's crystallize the essential takeaways.
+</speaker-notes>
+
+</slide>
+
+<slide number="38" title="Summary">
+
+## Today's Key Takeaways
+
+1. **Kolb's Cycle:** Learning requires experiencing, reflecting, conceptualizing, and experimenting—complete all four stages to turn experience into expertise
+
+2. **Schön's Practice:** Professionals develop knowing-in-action (automatic skills), reflection-in-action (real-time adjustment), and reflection-on-action (systematic improvement)
+
+3. **Continuous Learning:** Four evidence-based strategies: Link purpose to learning, create learning-rich experiences, ask meta-questions, nurture learning teams
+
+4. **Capstone Versatility:** Demonstrate breadth (diverse frameworks), depth (rigorous analysis), and authenticity (genuine conviction)—synthesis over summarization
+
+5. **Problem Setting:** Define the right problem before solving it—communication failures often result from solving the wrong problem
+
+**Meta-Takeaway:** The frameworks you've learned matter less than your capacity to keep learning
+
+<speaker-notes>
+These five takeaways map to our four lecture segments plus one overarching insight. Each is actionable—students can immediately apply them to their Executive Summary this week and Group Presentation in Week 12.
+
+The meta-takeaway is crucial: This course has not given you all the communication knowledge you'll ever need. That would be impossible given the 44% skill change statistic. Instead, it's given you frameworks for learning AND the capacity to continue developing independently.
+
+That capacity—learning agility, reflective practice, continuous improvement—is what distinguishes excellent communicators from adequate ones over the course of a career.
+
+The frameworks will evolve, technology will change communication channels, but the ability to learn from experience and continuously improve remains constant.
+</speaker-notes>
+
+</slide>
+
+<slide number="39" title="From Frameworks to Mindset">
+
+## The Shift from Frameworks to Mindset
+
+**What You've Learned:**
+- Pyramid Principle, Cialdini, Hofstede, Executive Presence, Visual Communication...
+- Specific techniques and frameworks
+
+**What Really Matters:**
+- The habit of asking "What communication challenge am I solving?"
+- The practice of reflecting in-action and on-action
+- The commitment to continuous improvement
+- The ability to synthesize multiple perspectives
+
+**Frameworks are tools. Mindset is what makes you effective.**
+
+**Your goal after this course:** Internalize the learning mindset, not just memorize the frameworks
+
+<speaker-notes>
+This slide makes explicit what's often left implicit: frameworks are means, not ends. Students who memorize Cialdini's six principles but don't develop reflective practice will plateau.
+
+The shift from frameworks to mindset is the shift from novice to expert. Experts have internalized frameworks so deeply they become automatic (knowing-in-action), while maintaining conscious reflection and continuous improvement.
+
+Example: A novice presenter thinks "I need to use Pyramid Principle here." An expert presenter naturally structures arguments that way while simultaneously reflecting on whether Pyramid Principle is the right approach for this specific audience and context.
+
+This connects to all four segments today: Kolb's cycle (learning mindset), Schön's practice (reflective mindset), continuous development (growth mindset), and capstone excellence (synthesis mindset).
+
+The message: Take the frameworks with you, but more importantly, take the meta-skill of learning how to learn.
+</speaker-notes>
+
+</slide>
+
+<slide number="40" title="Assessment Preparation">
+
+## This Week's Assessments
+
+**Executive Summary (Due Sunday Week 10):**
+- Demonstrate synthesis: distill complex information into clear recommendations
+- Apply relevant frameworks (not all frameworks—select strategically)
+- Show reflective practice: acknowledge trade-offs and limitations
+- Target: 2-page maximum (test of efficiency and clarity)
+
+**Preparation Strategy:**
+1. Define the core problem (problem setting, not just problem solving)
+2. Select 2-3 most relevant frameworks
+3. Integrate frameworks in analysis (synthesis, not sequential application)
+4. Develop prioritized recommendations (2-3 max)
+5. Acknowledge limitations honestly
+
+<speaker-notes>
+Concrete preparation guidance. The Executive Summary is your final written assessment—treat it as an opportunity to demonstrate everything you've learned about clear, strategic, efficient communication.
+
+Key insight: You don't need to use every framework learned in the course. Strategic selection of relevant frameworks demonstrates better judgment than trying to force everything in.
+
+The 2-page limit is deliberate—it tests your ability to communicate efficiently, a core executive skill. Every sentence must earn its place.
+
+The five-step preparation strategy provides a systematic approach. Students should literally follow these steps in order when developing their Executive Summary.
+
+This connects to today's content: Step 1 is Schön's problem setting. Steps 2-3 apply Kolb's conceptualization and integration. Step 4 requires synthesis. Step 5 demonstrates professional maturity and authentic communication.
+</speaker-notes>
+
+</slide>
+
+<slide number="41" title="Quiz Preparation">
+
+## Week 11 Quiz Preparation
+
+**Format:**
+- 30-minute comprehensive assessment
+- Covers all frameworks from Weeks 1-10
+- Mix of concept identification and application questions
+
+**Preparation Strategy:**
+
+1. **Review frameworks systematically:** Don't just re-read slides—test yourself
+   - Can you explain each framework without looking?
+   - Can you apply each framework to a new scenario?
+
+2. **Focus on WHY, not just WHAT:**
+   - Don't memorize: "Cialdini has 6 principles"
+   - Do understand: "Why does reciprocity create persuasion?"
+
+3. **Practice application:** Use tutorial quiz questions from each week
+   - Same format as final quiz
+   - Builds pattern recognition
+
+4. **Identify connections:** Which frameworks work together?
+   - Example: Hofstede + Cialdini, Pyramid Principle + Executive Presence
+
+<speaker-notes>
+The quiz tests understanding and application, not just recall. Students who can apply frameworks to new scenarios will excel. Students who only memorized definitions will struggle.
+
+The "WHY not WHAT" distinction is crucial. Understanding the psychological or theoretical basis for frameworks enables application to new contexts.
+
+Using tutorial quiz questions for practice is strategic—they're in the same format and difficulty level as the final quiz. Students can diagnose gaps in understanding.
+
+The connections question prepares students for synthesis questions on the quiz. Some questions may require integrating multiple frameworks, testing ability to see relationships.
+
+Recommendation: Students should form study groups and quiz each other. Teaching frameworks to peers is one of the best ways to solidify understanding.
+</speaker-notes>
+
+</slide>
+
+<slide number="42" title="Group Presentation Preparation">
+
+## Week 12 Group Presentation Preparation
+
+**Start Planning Now:**
+
+**Week 10 (This Week):**
+- [ ] Confirm team and communication challenge to analyze
+- [ ] Identify which 3-4 frameworks are most relevant
+- [ ] Assign research and analysis responsibilities
+
+**Week 11 (Next Week):**
+- [ ] Complete analysis and draft slides
+- [ ] Practice presentation as team (at least twice)
+- [ ] Seek peer feedback using Capstone Success Checklist
+
+**Week 12 (Presentation Week):**
+- [ ] Final refinements based on feedback
+- [ ] Individual preparation (know your sections cold)
+- [ ] Anticipate Q&A and prepare answers
+
+**Critical Success Factor:** Practice early and often—presentation excellence requires iteration
+
+<speaker-notes>
+This timeline provides concrete milestones. Most successful presentations follow this schedule. Most struggling presentations started too late.
+
+The Week 10 tasks are foundational—selecting topic and frameworks. This should happen this week, not next week. Delaying means inadequate analysis time.
+
+Week 11 is intensive preparation—drafting, practicing, getting feedback. Two practice runs minimum, ideally three or four. Each practice reveals issues to fix.
+
+Week 12 is refinement, not creation. If you're still writing slides in Week 12, you're behind.
+
+The critical success factor—practice and iteration—cannot be overstated. The difference between good and excellent presentations is usually preparation time and iteration cycles.
+
+Students should calendar specific practice times now. If it's not scheduled, it won't happen.
+
+Recommendation: Use the tutorial session in Week 11 for peer feedback on draft presentations. Groups can rotate giving 2-minute elevator pitches of their analysis and receiving feedback.
+</speaker-notes>
+
+</slide>
+
+<slide number="43" title="Next Week Preview">
+
+## Next Week: Review & Assessment
+
+**What to expect:**
+
+**Lecture:**
+- Comprehensive review of all frameworks (Weeks 1-10)
+- Focus on connections and integration
+- Final Q&A for quiz preparation
+
+**Tutorial:**
+- Quiz (30 minutes, 15% of final grade)
+- Group presentation coaching (feedback on draft plans)
+- Final office hours for questions
+
+**Preparation:**
+- Review all weekly lecture slides systematically
+- Complete practice quiz questions
+- Prepare specific questions (not "tell me about Cialdini"—ask targeted questions)
+- Bring draft presentation outline for feedback
+
+<speaker-notes>
+Next week is dedicated to consolidation and assessment. The lecture will be a structured review covering all major frameworks in sequence, with emphasis on how they connect and integrate.
+
+The tutorial quiz is comprehensive—it covers all 10 weeks of content. Students should prepare systematically, not cram the night before.
+
+The presentation coaching is valuable—groups can get feedback on their analysis approach and framework selection before committing to slides.
+
+The guidance about "specific questions" is important. Generic requests like "review Cialdini" aren't efficient use of class time. Specific questions like "We're analyzing cross-cultural negotiation—should we emphasize Hofstede's power distance or uncertainty avoidance?" get actionable answers.
+
+Students should arrive prepared to maximize the review session value.
+</speaker-notes>
+
+</slide>
+
+<slide number="44" title="Final Reflection">
+
+## Your Communication Journey
+
+**Reflection Prompt (Personal, Not Graded):**
+
+Think back to Week 1. How has your understanding of "communication competence" changed?
+
+1. **Surprise:** What surprised you most about what makes communication effective?
+
+2. **Impact:** Which framework has influenced your thinking most profoundly?
+
+3. **Pride:** What communication capability are you most proud of developing?
+
+4. **Future:** What will you continue working on after this course ends?
+
+**Write these down for yourself—they'll inform your capstone narrative and development plan**
+
+<speaker-notes>
+This reflection prompt serves two purposes: personal awareness and capstone preparation. Students who've consciously tracked their journey have much richer material for presentations.
+
+These aren't graded—this is purely for personal reflection. However, you could invite 2-3 volunteers to share one insight if time permits. Hearing peer reflections often sparks additional insights.
+
+Question 1 (surprise) often reveals misconceptions students had at the start. Many are surprised that effective communication is strategic, not just "being clear."
+
+Question 2 (impact) helps students identify which frameworks resonated personally. This varies—some students love Cialdini, others connect deeply with Hofstede.
+
+Question 3 (pride) builds confidence. Students often underestimate their own growth. Explicitly naming what they've developed reinforces competence.
+
+Question 4 (future) connects to Strategy 3 (meta-learning questions) and positions communication development as ongoing, not finished when the course ends.
+
+This is an appropriate moment of pause before the final assessments.
+</speaker-notes>
+
+</slide>
+
+<slide number="45" title="Closing Thoughts">
+
+## Closing Thoughts
+
+**What Communication Competence Really Means:**
+
+Not the ability to deliver a perfect presentation
+
+Not mastering every framework in business communication
+
+Not sounding impressive with sophisticated vocabulary
+
+**But rather:**
+
+- The **curiosity** to understand your audience deeply
+- The **humility** to reflect on what's working and what isn't
+- The **courage** to speak up when you have something valuable to contribute
+- The **discipline** to improve continuously throughout your career
+
+**These meta-skills will serve you long after specific frameworks fade from memory**
+
+**Thank you for your engagement this semester. You're ready for what comes next.**
+
+<speaker-notes>
+This closing reframes communication competence from technical skill to professional mindset. The four qualities—curiosity, humility, courage, discipline—integrate all of today's frameworks.
+
+Curiosity connects to Kolb's learning cycle and continuous development.
+
+Humility connects to Schön's reflective practice and McKinsey's authentic communication.
+
+Courage connects to "knowing when to speak up" and executive presence.
+
+Discipline connects to the four MIT Sloan strategies and systematic improvement.
+
+The message: You're not finished learning communication—you're equipped to continue learning. That's what this course has provided.
+
+The final line—"You're ready for what comes next"—is both encouragement and challenge. Students are prepared for capstone presentations and, more broadly, for professional communication challenges in their careers.
+
+This is a moment to pause and let the message land before transitioning to the references slide.
+</speaker-notes>
+
+</slide>
+
+<slide number="46" layout="references" title="References">
 
 ## References
-
-Kolb, D. A. (1984). *Experiential learning: Experience as the source of learning and development*. Prentice-Hall.
 
 Kolb, D. A. (2015). *Experiential learning: Experience as the source of learning and development* (2nd ed.). Pearson Education.
 
@@ -1104,9 +1351,14 @@ Schön, D. A. (1983). *The reflective practitioner: How professionals think in a
 
 Tan, W., & Tan, J.-S. (2024, October 7). How to develop continuous learners. *MIT Sloan Management Review*. https://sloanreview.mit.edu/article/how-to-develop-continuous-learners/
 
----
+<speaker-notes>
+Full citations for all sources referenced in lecture. All four readings are available: two are seminal texts (Kolb and Schön), two are recent open-access articles (McKinsey and MIT Sloan).
 
-**END OF LECTURE CONTENT**
-**Total Slides:** 25
-**Course:** BCI2AU Business Communication
-**Week:** 10 - Integration & Capstone
+Students can use these for further exploration. The McKinsey and MIT Sloan articles are particularly accessible for immediate reading, while the Kolb and Schön books provide deeper theoretical grounding for students interested in learning science.
+
+The Kolb text is widely available in university libraries and is worth reading for anyone serious about professional development. The 2015 second edition includes updates based on 40+ years of research since the original publication.
+
+Schön's work is foundational for professional education across fields—not just communication, but medicine, education, management, and more.
+</speaker-notes>
+
+</slide>

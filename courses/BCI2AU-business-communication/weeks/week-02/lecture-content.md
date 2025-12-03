@@ -1,219 +1,137 @@
-# Week 2: Audience Analysis & Stakeholder Mapping
+# Audience Analysis & Stakeholder Mapping
 
-**Course:** BCI2AU Business Communication
-**Duration:** 60 minutes
-**Assessment Connection:** Business Memo (Week 4, 10%)
+<slide number="1" layout="title" title="Title Slide">
 
----
+# Audience Analysis & Stakeholder Mapping
 
-<!-- OPENING SECTION: 5 SLIDES -->
+<speaker-notes>
+Welcome to Week 2 of Business Communication. Today we explore how to identify stakeholders and adapt messages for different audiences - one of the most critical skills in professional communication.
+</speaker-notes>
 
-<!-- Slide 1: Hook -->
-## Only 12% of CEOs Feel Successful at Stakeholder Communication
-<!-- LAYOUT: big-number -->
+</slide>
 
-Despite 58% viewing it as a top priority
+<slide number="2" layout="big-number" title="Hook">
 
-*Source: McKinsey & Company, 2024*
+# Only 12%
 
-### Speaker Notes
+**of CEOs feel successful at external stakeholder management**
 
-**Opening:**
-- Start with silence for 3 seconds to let the number sink in
-- "Good morning. Let's start with a striking contradiction"
+**despite 58% viewing it as a top priority**
 
-**Key Points:**
-- This is from McKinsey's November 2024 research on CEO communication
-- The gap: 58% say it's critical, but only 12% feel they do it well
-- This isn't about incompetent leaders—these are experienced executives
-- The problem: stakeholder communication is harder than it looks
+*(McKinsey & Company, 2024)*
 
-**Example/Story:**
-- Think about group projects: you know who your team members are, but do you know what each person needs to hear to stay motivated? That's stakeholder management at small scale.
+<speaker-notes>
+This striking statistic reveals a massive gap between intention and execution. Even at the CEO level, stakeholder communication is recognized as critical but rarely done well. This week equips you with frameworks that close this gap.
 
-**Check Understanding:**
-- "Quick poll: How many of you have felt like you explained something clearly, but people still misunderstood? Keep that feeling in mind."
+Students often ask: "Why the disconnect?" The answer: most leaders lack systematic frameworks for stakeholder analysis. They know it matters but don't have structured approaches - which is exactly what today's lecture provides.
+</speaker-notes>
 
-**Transition:**
-- "Today we're learning the systematic approach that closes this gap"
+</slide>
 
----
+<slide number="3" title="Learning Objectives">
 
-<!-- Slide 2: Objectives -->
 ## Today's Learning Objectives
-<!-- LAYOUT: standard -->
 
 By the end of this lecture, you will be able to:
 
-1. **Identify** stakeholders using Freeman's stakeholder theory
-2. **Prioritize** stakeholders using Mitchell's power-legitimacy-urgency framework
-3. **Analyze** audience needs to adapt messages effectively
-4. **Apply** stakeholder mapping to real business scenarios
+1. **Identify** stakeholder groups using Freeman's Hub-and-Spoke Model
+2. **Prioritize** stakeholders using Mitchell's Power-Legitimacy-Urgency framework
+3. **Analyze** audience needs through stakeholder mapping matrices
+4. **Adapt** message content and tone for different audience types using Duarte's calibration framework
 
-### Speaker Notes
+<speaker-notes>
+These objectives are testable and appear in Week 2's online quiz. More importantly, they directly prepare you for the Business Memo assignment due Week 4.
 
-**Opening:**
-- "These aren't just academic concepts—they're CEO-level frameworks you'll use in Week 4"
+The progression is intentional: identify who matters (Freeman), determine priority order (Mitchell), understand what they need (mapping), and adapt your message accordingly (Duarte).
+</speaker-notes>
 
-**Key Points:**
-- Identify = know who matters (Freeman gives us categories)
-- Prioritize = know who matters MOST (Mitchell tells us how to rank)
-- Analyze = understand what each audience needs
-- Apply = put it all together in practical situations
+</slide>
 
-**Example/Story:**
-- Your Business Memo in Week 4 will require identifying stakeholders, analyzing their needs, and adapting your message accordingly
+<slide number="4" title="Assessment Connection">
 
-**Check Understanding:**
-- Point to the objectives on screen: "Notice the verbs—identify, prioritize, analyze, apply. We're building skills, not just learning definitions."
+## How This Prepares You
 
-**Transition:**
-- "Let's connect this to your graded work"
+**Business Memo (Due Week 4):** Audience analysis and message adaptation
+- Today: Learn stakeholder identification and prioritization frameworks
+- Tutorial: Practice stakeholder mapping for a business scenario
+- Week 3: Learn Pyramid Principle for message structure
+- Week 4: Apply all frameworks in your memo
 
----
+**Success criteria from rubric:**
+- Accurate stakeholder identification and needs analysis (30%)
+- Strategic thinking and framework application (25%)
 
-<!-- Slide 3: Assessment Connection -->
-## How This Prepares You: Business Memo (Week 4)
-<!-- LAYOUT: framework -->
+<speaker-notes>
+The Week 4 memo requires you to analyze a communication challenge by mapping stakeholders and adapting your message. Today's frameworks provide the analytical foundation.
 
-**Week 2 (Today):** Learn stakeholder frameworks
-↓
-**Week 2 Tutorial:** Map stakeholders for a case scenario
-↓
-**Week 3:** Structured writing principles
-↓
-**Week 4:** Apply both to Business Memo (10% of grade)
+Emphasize: The tutorial this week lets you practice stakeholder mapping on a scenario similar to the assessment options. Students who engage seriously in tutorials consistently produce stronger memos.
+</speaker-notes>
 
-**The memo requires:**
-- Stakeholder identification
-- Audience needs analysis
-- Message adaptation for specific reader
+</slide>
 
-### Speaker Notes
+<slide number="5" layout="section-break" title="Roadmap">
 
-**Opening:**
-- "This is your roadmap from today to your first graded assignment"
-
-**Key Points:**
-- Today you learn the frameworks theoretically
-- Tutorial gives you practice with feedback
-- Week 3 adds writing structure (Pyramid Principle)
-- Week 4 you combine both skills in graded work
-- The memo is worth 10%—not huge, but it builds foundation for 15% proposal later
-
-**Example/Story:**
-- Think of it like learning to drive: today is the theory test, tutorial is practice in parking lot, Week 4 is your actual road test
-
-**Check Understanding:**
-- "Does this progression make sense? Theory → Practice → Graded work?"
-
-**Transition:**
-- "Now let's see where we're going in the next hour"
-
----
-
-<!-- Slide 4: Roadmap -->
 ## Today's Journey
-<!-- LAYOUT: section-break -->
 
-**PART 1:** Who Are Your Stakeholders? (15 min)
-Freeman's foundational framework
+**Part 1:** Stakeholder Identification (Freeman's Model) – 20 minutes
 
-**PART 2:** Who Matters Most? (20 min)
-Mitchell's prioritization model
+**Part 2:** Stakeholder Prioritization (Mitchell's Salience Framework) – 25 minutes
 
-**PART 3:** How to Adapt Your Message (20 min)
-Duarte's audience calibration + McKinsey's EDGE framework
+**Part 3:** Message Adaptation (Mapping & Duarte's Calibration) – 25 minutes
 
-**WRAP-UP:** Integration & Next Steps (5 min)
+<speaker-notes>
+Three distinct segments, each building on the previous. We'll move from broad identification (who are all the stakeholders?) to strategic prioritization (who gets attention first?) to tactical execution (how do I adapt my message?).
 
-### Speaker Notes
+Return to this slide at each transition to help students track progress.
+</speaker-notes>
 
-**Opening:**
-- "Three questions drive today's content: Who? Who matters most? How do I adapt?"
+</slide>
 
-**Key Points:**
-- Part 1 = breadth (cast wide net)
-- Part 2 = depth (focus limited resources)
-- Part 3 = execution (actually communicate)
-- We're moving from theory to application across these segments
+<slide number="6" layout="section-break" title="Part 1 Introduction">
 
-**Example/Story:**
-- Like planning a wedding: Part 1 = everyone you could invite, Part 2 = who sits at the head table, Part 3 = how you talk to your grandmother vs. your college friends
+## Part 1: Stakeholder Identification
 
-**Check Understanding:**
-- "Any questions before we dive into Part 1?"
+**The Foundation Question:** Who actually matters in business communication?
 
-**Transition:**
-- "Let's start with the foundational question: who are your stakeholders?"
+<speaker-notes>
+Transition from roadmap. The starting point for all strategic communication is answering this deceptively simple question: who are your stakeholders?
 
----
+Many students initially think only of customers or shareholders. Freeman's model reveals the much broader ecosystem that affects and is affected by organizations.
+</speaker-notes>
 
-<!-- CORE CONTENT: PART 1 - FREEMAN'S STAKEHOLDER THEORY -->
+</slide>
 
-<!-- Slide 5: Part 1 Section Break -->
-## PART 1: Who Are Your Stakeholders?
-<!-- LAYOUT: section-break -->
+<slide number="7" title="Freeman's Revolutionary Insight">
 
-Freeman's Stakeholder Theory (1984)
+## The Traditional View Was Too Narrow
 
-### Speaker Notes
+**Before Freeman (1984):**
+- Organizations existed primarily to serve shareholders
+- Other groups were secondary considerations
+- Communication focused on investors and customers
 
-**Opening:**
-- "First question: when you're making a business decision, who do you need to think about?"
+**Freeman's Challenge:**
+- Organizations exist within webs of relationships
+- Success requires managing ALL stakeholder groups
+- Strategic communication must address diverse audiences
 
-**Key Points:**
-- R. Edward Freeman published the seminal book in 1984
-- It's been cited over 100,000 times—this is THE foundation
-- Before Freeman, businesses mainly thought about shareholders
-- Freeman said: that's too narrow, you need a wider view
+<speaker-notes>
+In the early 1980s, business thinking was dominated by shareholder primacy - the idea that companies existed primarily to maximize returns for investors. Freeman challenged this fundamentally.
 
-**Example/Story:**
-- Imagine you're managing a coffee shop. Before Freeman, you'd think: "How do I make money for the owner?" After Freeman: "Who else is affected—employees, customers, suppliers, neighbors, health inspectors?"
+His book "Strategic Management: A Stakeholder Approach" (1984) has over 100,000 citations and created an entire field of study. The Academy of Management recognized it as one of the most influential business books ever written.
 
-**Check Understanding:**
-- "Who can name a group besides shareholders that a business should care about?"
+Key insight: organizations cannot succeed by ignoring employees, communities, regulators, or other groups who can affect or are affected by decisions.
+</speaker-notes>
 
-**Transition:**
-- "Let's see Freeman's systematic answer"
+</slide>
 
----
+<slide number="8" layout="framework" title="Freeman's Hub-and-Spoke Model">
 
-<!-- Slide 6: Freeman's Definition -->
-## Freeman's Stakeholder Definition
-<!-- LAYOUT: quote -->
+## Freeman's Hub-and-Spoke Stakeholder Model
 
-> "A stakeholder in an organization is any group or individual who can affect or is affected by the achievement of the organization's objectives"
+**Definition:** Organization at center, stakeholder groups radiating outward
 
-**R. Edward Freeman, 1984**
-
-**Key insight:** Affect OR affected by (two-way relationship)
-
-### Speaker Notes
-
-**Opening:**
-- "Read this definition carefully—there are two critical words"
-
-**Key Points:**
-- "Can AFFECT" = they have power over you (investors pull funding, government regulates)
-- "IS AFFECTED BY" = you have impact on them (employees lose jobs in layoff, community affected by pollution)
-- It's bidirectional—not just "who can hurt us" but also "who do we impact"
-- This is why it's called stakeholder THEORY—it redefined how we think about business responsibility
-
-**Example/Story:**
-- Vietnamese coffee farmers: they affect Starbucks (quality, supply), and Starbucks affects them (prices, contracts, livelihoods)
-
-**Check Understanding:**
-- "Can someone give an example of a stakeholder who affects the organization? Now one who IS affected by it?"
-
-**Transition:**
-- "Freeman didn't stop at the definition—he gave us categories"
-
----
-
-<!-- Slide 7: Freeman's Hub-and-Spoke Model -->
-## Freeman's 11 Stakeholder Categories
-<!-- LAYOUT: framework -->
+**11 Original Categories (non-exhaustive):**
 
 **Internal:**
 - Employees
@@ -224,754 +142,1025 @@ Freeman's Stakeholder Theory (1984)
 - Customers
 - Suppliers
 - Financiers
-- Communities
 - Government/Regulators
 - Political groups
 - Trade associations
 - Competitors
 - Media
+- Communities
 
-*Non-exhaustive—your organization may have others*
+<speaker-notes>
+The hub-and-spoke visual places the organization at the center with stakeholder groups as spokes radiating outward. You could sketch this on a whiteboard - a circle in the middle labeled "Organization" with lines extending to stakeholder groups.
 
-### Speaker Notes
+Freeman's list was deliberately non-exhaustive to encourage thinking: "Who else might affect or be affected by this decision?" The specific stakeholders vary by industry, organization size, and context.
 
-**Opening:**
-- "Freeman organized stakeholders into this hub-and-spoke model—organization at center, groups radiating out"
+Important distinction: Internal stakeholders (employees, shareholders, management) have direct organizational ties. External stakeholders (customers, regulators, communities) interact from outside but still have legitimate interests.
 
-**Key Points:**
-- Internal stakeholders: directly part of the organization
-- External: outside but connected
-- Customers are obvious, but notice COMPETITORS—they affect your strategy
-- Media shapes public perception
-- Political groups (think environmental activists, consumer advocates)
-- This list is from 1984—today you might add social media influencers, online reviewers
+Common student question: "What about competitors?" Yes - competitors are stakeholders because their actions affect your strategy and vice versa.
+</speaker-notes>
 
-**Example/Story:**
-- For a Vietnamese tech startup: add government agencies (licensing), international investors, local university partners (recruitment), startup ecosystem (reputation)
+</slide>
 
-**Check Understanding:**
-- "Look at your phone. Pick any app. In 30 seconds, list 5 stakeholders for that company." [Pause] "Who wants to share?"
+<slide number="9" title="Freeman's Core Definition">
 
-**Transition:**
-- "Now here's the problem Freeman identified"
+## The Foundational Definition
 
----
+> "A stakeholder in an organization is **any group or individual who can affect or is affected by** the achievement of the organization's objectives."
+>
+> – R. Edward Freeman (1984)
 
-<!-- Slide 8: The Strategic Problem -->
-## Why Stakeholder Mapping Matters
-<!-- LAYOUT: framework -->
+**Two-way relationship:**
+- Groups who can **affect** the organization (influence, power, resources)
+- Groups who are **affected by** the organization (impacted by decisions)
 
-**Traditional View (Pre-Freeman):**
-Maximize shareholder profit → Ignore other groups
+<speaker-notes>
+This is THE foundational definition in stakeholder theory. Note the bidirectional nature: "can affect OR is affected by."
 
-**Freeman's Insight:**
-Organizations exist in a web of relationships → Ignoring stakeholders creates risk
+The "or" is critical - you don't need both conditions. A local community may be affected by a factory's pollution even if they have limited power to affect the factory's operations. Conversely, a government regulator may affect the factory without being directly affected by its daily operations.
 
-**Real Costs of Ignoring Stakeholders:**
-- Employee strikes (ignored workforce)
-- Product boycotts (ignored communities)
-- Regulatory penalties (ignored government)
-- Reputational damage (ignored media)
+This definition expanded business thinking beyond just economic exchanges to include social and environmental impacts. It's the basis for modern corporate social responsibility frameworks.
+</speaker-notes>
 
-### Speaker Notes
+</slide>
 
-**Opening:**
-- "Freeman wasn't just being idealistic—he showed ignoring stakeholders is bad business"
+<slide number="10" title="Stakeholder Management Framework">
 
-**Key Points:**
-- Milton Friedman (economist) said: company's only responsibility is profit
-- Freeman said: that's dangerous and incomplete
-- Real-world costs: Boeing 737 MAX ignored safety regulators and pilots → 346 deaths, $20 billion in losses
-- Vietnam example: Grab ignored driver concerns → strikes in 2019
+## Freeman's Three-Process Framework
 
-**Example/Story:**
-- Fast fashion brands that ignored factory workers in Bangladesh: Rana Plaza collapse (2013), 1,100+ deaths, massive brand damage
+**1. Environmental Scanning**
+- Identify all stakeholder groups systematically
+- Consider both obvious and non-obvious groups
+- Map relationships and interdependencies
 
-**Check Understanding:**
-- "Can anyone think of a Vietnamese company that faced problems because they ignored a stakeholder group?"
+**2. Stakeholder Analysis**
+- Understand each group's interests and influence
+- Assess what each group needs or wants
+- Identify potential conflicts between groups
 
-**Transition:**
-- "So Freeman tells us WHO to think about. But we can't prioritize everyone equally—that's where Mitchell comes in"
+**3. Strategic Planning**
+- Incorporate stakeholder concerns into decisions
+- Develop communication strategies for each group
+- Balance competing interests ethically
 
----
+<speaker-notes>
+Freeman didn't just identify stakeholders - he provided a management framework. These three processes work cyclically, not linearly.
 
-<!-- CORE CONTENT: PART 2 - MITCHELL'S STAKEHOLDER SALIENCE MODEL -->
+Environmental scanning is ongoing because stakeholder landscapes change. For example, social media gave customers and activists new channels to affect organizations, fundamentally altering the stakeholder environment.
 
-<!-- Slide 9: Part 2 Section Break -->
-## PART 2: Who Matters Most?
-<!-- LAYOUT: section-break -->
+Stakeholder analysis requires empathy and research. You can't assume what employees or communities want - you must investigate through surveys, focus groups, or dialogue.
 
-Mitchell's Stakeholder Salience Model (1997)
+Strategic planning becomes stakeholder-informed rather than stakeholder-blind. Decisions consider impacts across the full stakeholder web, not just shareholder returns.
 
-### Speaker Notes
+A diagram showing these three processes in a cycle can help visualize the continuous nature of stakeholder management.
+</speaker-notes>
 
-**Opening:**
-- "Freeman gave us the full list. Mitchell answers: when resources are limited, who gets attention first?"
+</slide>
 
-**Key Points:**
-- Mitchell, Agle, & Wood published this in Academy of Management Review (1997)
-- 12,197 citations—one of the most influential management articles
-- "Salience" = prominence, importance, who stands out
-- This operationalizes Freeman—makes it actionable
+<slide number="11" title="Freeman Example - Factory Expansion">
 
-**Example/Story:**
-- You're a CEO with 40 hours/week. You have 15 stakeholder groups. How do you allocate time? Mitchell gives you the algorithm.
+## Example: Manufacturing Company Expansion
 
-**Check Understanding:**
-- "Why can't we just treat all stakeholders equally?" [Answer: limited time, money, attention]
+**Scenario:** A Vietnamese manufacturing company plans to open a new factory
 
-**Transition:**
-- "Mitchell's model uses three attributes to rank stakeholders"
+**Stakeholder Identification (Freeman's Model):**
 
----
+| Internal | External |
+|----------|----------|
+| Current employees (job opportunities) | Local community (jobs, pollution concerns) |
+| Shareholders (capital investment) | Environmental groups (impact assessment) |
+| Management (execution responsibility) | Government (permits, regulations) |
+| | Suppliers (new contracts) |
+| | Customers (supply chain stability) |
 
-<!-- Slide 10: Three Attributes of Stakeholder Salience -->
-## Mitchell's Power-Legitimacy-Urgency Framework
-<!-- LAYOUT: framework -->
+**Key Insight:** Decision affects 9+ distinct stakeholder groups with different interests
 
-**1. POWER**
-Extent stakeholder can impose their will
-*Examples:* Regulatory authority, economic leverage, voting rights
+<speaker-notes>
+Let's make Freeman's model concrete. A factory expansion seems like a straightforward business decision, but applying the hub-and-spoke model reveals the complexity.
 
-**2. LEGITIMACY**
-Socially accepted and expected claim
-*Examples:* Contractual rights, moral claims, legal standing
+Notice the tensions: shareholders want profitability, communities want jobs but fear pollution, environmental groups demand sustainability, employees want career growth but worry about relocation.
 
-**3. URGENCY**
-Time sensitivity and criticality of stakeholder's claim
-*Examples:* Deadline-driven, safety-critical, crisis situations
+This isn't just theoretical - Vietnamese companies expanding domestically or internationally face exactly these stakeholder dynamics. Vinamilk's factory expansions, for example, must navigate community relations, environmental regulations, employee concerns, and investor expectations simultaneously.
 
-**Salience = Number of attributes present**
+The framework doesn't provide answers but ensures you ask the right questions: Who have we not considered? Whose voices are missing? What groups could affect this decision's success?
+</speaker-notes>
 
-### Speaker Notes
+</slide>
 
-**Opening:**
-- "These three attributes combine to create stakeholder rankings"
+<slide number="12" title="Why Freeman Matters for Communication">
 
-**Key Points:**
-- Power = CAN they make you do something? (not SHOULD they)
-- Legitimacy = is their claim VALID in society's eyes?
-- Urgency = does it need attention NOW?
-- They're independent—you can have power without legitimacy (mafia), legitimacy without power (charity), etc.
+## Communication Implications
 
-**Example/Story:**
-- Customer with defective product: LEGITIMACY (bought the product), URGENCY (if safety issue), POWER (if influential or legal threat)
-- Random person on street asking for money: URGENCY (might genuinely need help), but no POWER or LEGITIMACY with your business
+**Each stakeholder group needs:**
+- Different information emphasis
+- Different communication channels
+- Different timing and frequency
+- Different tone and style
 
-**Check Understanding:**
-- "A major shareholder demands immediate meeting about strategy. Which attributes do they have? [Power: yes, Legitimacy: yes, Urgency: if they say it's urgent]"
+**Example: Factory Expansion Announcements**
 
-**Transition:**
-- "These attributes create seven stakeholder types"
+| Stakeholder | Primary Message | Channel | Timing |
+|-------------|----------------|---------|--------|
+| Employees | Career opportunities, job security | Town hall, email | First (before public) |
+| Community | Jobs created, environmental safety | Public meeting, media | Second (after employees) |
+| Investors | ROI, strategic rationale | Earnings call, report | Third (after internal) |
+| Regulators | Compliance, impact mitigation | Formal submission | Throughout (legal requirement) |
 
----
+<speaker-notes>
+This slide connects Freeman's identification model to actual communication practice. Simply knowing who stakeholders are isn't enough - you must communicate strategically with each group.
 
-<!-- Slide 11: Seven Stakeholder Types -->
-## Mitchell's Stakeholder Typology
-<!-- LAYOUT: framework -->
+The timing sequence is critical. Employees should hear first - discovering major changes through media damages trust. Communities deserve early engagement before permits are filed. Investors expect formal disclosures aligned with regulatory requirements.
 
-| Type | Attributes | Priority | Example |
-|------|------------|----------|---------|
-| **Definitive** | Power + Legitimacy + Urgency | HIGH | Regulator enforcing safety deadline |
-| **Dominant** | Power + Legitimacy | Moderate | Major shareholder |
-| **Dangerous** | Power + Urgency | Moderate | Activist group threatening boycott |
-| **Dependent** | Legitimacy + Urgency | Moderate | Employees affected by layoff |
+Message emphasis varies: employees care about job security and advancement, communities about local impact and safety, investors about financial returns, regulators about legal compliance.
+
+Vietnamese context: Communication with government stakeholders often requires formal, deferential tone and face-to-face meetings. Community communication may need Vietnamese language materials and local leader engagement.
+
+This table format works well for planning actual communication rollouts. Students will use similar analysis in their Week 4 memo.
+</speaker-notes>
+
+</slide>
+
+<slide number="13" layout="section-break" title="Part 2 Introduction">
+
+## Part 2: Stakeholder Prioritization
+
+**The Resource Question:** When you can't address everyone equally, who comes first?
+
+<speaker-notes>
+Transition to Part 2. Freeman tells us who stakeholders are, but organizations face a practical problem: limited resources. You can't communicate equally with all groups simultaneously.
+
+This is where Mitchell's framework becomes essential. It operationalizes Freeman's theory into a prioritization system.
+</speaker-notes>
+
+</slide>
+
+<slide number="14" title="The Prioritization Challenge">
+
+## Why Prioritization Matters
+
+**The Reality:**
+- Limited communication resources (time, budget, personnel)
+- Competing stakeholder demands
+- Urgent situations requiring triage
+- Different stakeholders need different attention levels
+
+**The Question Mitchell Answered:**
+- "Who and what really counts?"
+- Which stakeholders deserve attention **first**?
+- How do we systematically prioritize without bias?
+
+<speaker-notes>
+Mitchell et al.'s 1997 paper "Toward a Theory of Stakeholder Identification and Salience" has 12,197 citations and remains the dominant framework for stakeholder prioritization.
+
+The title's emphasis on "who and what really counts" reflects the core managerial challenge. Freeman said everyone matters, but managers need to allocate finite resources. Mitchell provided the answer with empirical grounding.
+
+Students sometimes worry prioritization means ignoring stakeholders. Clarify: prioritization determines attention ORDER and INTENSITY, not whether to address groups at all. Even low-priority stakeholders receive communication - just less frequent or detailed.
+</speaker-notes>
+
+</slide>
+
+<slide number="15" layout="framework" title="Mitchell's Salience Model">
+
+## Mitchell's Stakeholder Salience Framework
+
+**Three Attributes Determine Priority:**
+
+**1. Power**
+- Extent a party can impose its will in a relationship
+- Sources: authority, resources, access to information
+- Example: Regulator can shut down operations
+
+**2. Legitimacy**
+- Socially accepted and expected structures or behaviors
+- Based on norms, laws, or moral claims
+- Example: Employees have legitimate claim to safe working conditions
+
+**3. Urgency**
+- Time sensitivity or criticality of stakeholder claims
+- Degree to which delay is unacceptable
+- Example: Product recall requires immediate customer communication
+
+<speaker-notes>
+Mitchell's model uses three attributes that combine to determine stakeholder salience - how much attention they command from managers.
+
+Power is about capability to influence outcomes. A major customer has power through revenue contribution. A regulatory body has power through legal authority. An activist group may have power through media access and public opinion.
+
+Legitimacy addresses whether the stakeholder's claim is socially recognized as valid. Not all powerful groups have legitimate claims, and not all legitimate claims come from powerful groups. A charity has legitimate social claims but may lack power to compel corporate action.
+
+Urgency adds time dimension. A routine employee request has legitimacy but low urgency. A safety violation has both legitimacy and high urgency. Crisis situations inherently carry urgency.
+
+The genius of Mitchell's model: these attributes are independent and can be combined in different ways to create stakeholder classifications.
+</speaker-notes>
+
+</slide>
+
+<slide number="16" title="Power Types">
+
+## Sources of Stakeholder Power
+
+**Coercive Power** – Ability to impose sanctions or harm
+- Regulators enforcing fines
+- Unions threatening strikes
+- Activists organizing boycotts
+
+**Utilitarian Power** – Control over resources organization needs
+- Major customers providing revenue
+- Suppliers controlling critical inputs
+- Investors providing capital
+
+**Normative Power** – Influence through symbolic or prestige means
+- Media shaping public narrative
+- Industry associations setting standards
+- Academic institutions conferring legitimacy
+
+<speaker-notes>
+Mitchell draws on Etzioni's power typology to show power comes from multiple sources, not just formal authority.
+
+Coercive power works through fear of consequences. Government regulators can fine companies, shut facilities, or prosecute violations. Labor unions can strike, disrupting operations. Activist groups can damage reputation through negative publicity.
+
+Utilitarian power works through economic dependence. A customer representing 40% of revenue has enormous power - losing them threatens viability. Suppliers of unique components have power through scarcity. Investors have power through capital allocation.
+
+Normative power works through legitimacy and symbolism. Media can't legally force action but shapes how others perceive the organization. Industry associations set standards that become expectations. Universities provide credibility through research partnerships or recruiting relationships.
+
+Vietnamese context: Government stakeholders often combine all three power types - coercive (regulatory authority), utilitarian (permits and approvals required), and normative (conferring legitimacy through endorsement).
+
+Understanding power sources helps predict stakeholder influence and communication needs.
+</speaker-notes>
+
+</slide>
+
+<slide number="17" title="Legitimacy Types">
+
+## Sources of Stakeholder Legitimacy
+
+**Individual Legitimacy** – Personal stake or rights
+- Property owners affected by development
+- Consumers of recalled products
+- Employees impacted by restructuring
+
+**Organizational Legitimacy** – Formal relationship or contract
+- Shareholders owning equity
+- Suppliers under contract
+- Customers with warranties
+
+**Societal Legitimacy** – Socially recognized claims
+- Environmental groups protecting public goods
+- NGOs advocating for vulnerable populations
+- Community groups preserving local interests
+
+<speaker-notes>
+Legitimacy answers: "Does this stakeholder have a valid claim on organizational attention?"
+
+Individual legitimacy comes from direct personal impact. If your house is next to a planned factory, you have individual legitimacy to voice concerns about noise and pollution. If you bought a defective product, you have legitimate claim to remedy.
+
+Organizational legitimacy comes from formal relationships. Shareholders have ownership rights. Employees have contractual employment relationships. Suppliers have purchase agreements. These create legally and socially recognized claims.
+
+Societal legitimacy comes from representing broader social interests. Environmental groups may have no direct property stake but society recognizes their legitimacy to advocate for environmental protection. NGOs representing disadvantaged groups have legitimacy even without formal organizational relationships.
+
+The key insight: legitimacy is socially constructed. What counts as a "legitimate" claim varies by culture and context. In Vietnam, local government officials have high societal legitimacy even for private business decisions. In other contexts, they might not.
+
+A stakeholder can have multiple legitimacy sources simultaneously. Employees have both individual (personal livelihood) and organizational (contractual) legitimacy.
+</speaker-notes>
+
+</slide>
+
+<slide number="18" title="Urgency Types">
+
+## Sources of Stakeholder Urgency
+
+**Time-Critical** – Deadline-driven claims
+- Regulatory compliance deadlines
+- Contract expiration dates
+- Fiscal reporting periods
+
+**Criticality** – Importance regardless of timing
+- Safety hazards requiring immediate action
+- Threats to organizational survival
+- Irreversible decisions
+
+**Combined** – Both time-sensitive AND critical
+- Product recall affecting consumer safety (immediate harm + deadline)
+- Financial crisis threatening bankruptcy (survival + time pressure)
+- Environmental disaster requiring emergency response (safety + urgency)
+
+<speaker-notes>
+Urgency adds temporal dimension to stakeholder salience. Some claims can wait; others cannot.
+
+Time-critical urgency comes from external deadlines. Regulatory filings have legal deadlines - miss them and face penalties. Contracts expire. Quarterly earnings must be reported. These create urgency even if underlying issues are routine.
+
+Criticality urgency comes from severity of consequences. A safety hazard creates urgency even without external deadlines - the potential harm demands immediate attention. Threats to organizational survival create urgency regardless of specific timeframes.
+
+Combined urgency is highest priority. Product recalls combine both: immediate consumer safety risk (criticality) AND regulatory reporting deadlines (time-critical). Financial crises combine survival threat with time pressure from markets and creditors.
+
+Vietnamese context: Tet holiday creates time-critical urgency for any business decisions affecting employee schedules or customer service - delays become impossible to resolve for weeks.
+
+Important: Urgency is often situational and temporary. A stakeholder may have low urgency normally but high urgency during specific events or crises. Mitchell's model requires continuous reassessment.
+</speaker-notes>
+
+</slide>
+
+<slide number="19" title="Seven Stakeholder Types">
+
+## Mitchell's Seven-Part Typology
+
+| Classification | Attributes | Priority Level | Example |
+|----------------|------------|----------------|---------|
 | **Dormant** | Power only | Low | Wealthy former customer |
 | **Discretionary** | Legitimacy only | Low | Local charity seeking donation |
-| **Demanding** | Urgency only | Low | Individual complainant with no standing |
+| **Demanding** | Urgency only | Low | Lone protestor without legitimacy |
+| **Dominant** | Power + Legitimacy | Moderate | Major shareholder |
+| **Dangerous** | Power + Urgency | Moderate | Activist group threatening action |
+| **Dependent** | Legitimacy + Urgency | Moderate | Employees affected by urgent issue |
+| **Definitive** | All three | **High** | Regulator enforcing compliance deadline |
 
-### Speaker Notes
+<speaker-notes>
+This table operationalizes the framework. Each row represents a different combination of the three attributes.
 
-**Opening:**
-- "Don't memorize this table—understand the logic: more attributes = higher priority"
+Dormant stakeholders have power but lack legitimacy or urgency. Think of a wealthy individual who could invest but hasn't expressed interest - they could matter but currently don't.
 
-**Key Points:**
-- Definitive stakeholders (all 3) get immediate attention—you MUST respond
-- Middle tier (2 attributes): important but not crisis-level
-- Low salience (1 attribute): monitor but don't prioritize
-- This is dynamic—stakeholders can move categories
+Discretionary stakeholders have legitimate claims but no power or urgency. Charities requesting donations have legitimate social missions but can't force contributions and rarely face deadlines that affect the company.
 
-**Example/Story:**
-- Discretionary → Dependent: local charity (legitimacy only) becomes employees volunteering on company time (adds urgency)
-- Dormant → Dangerous: former customer (power through wealth) becomes angry on social media (adds urgency)
+Demanding stakeholders claim urgency but lack power and legitimacy. A single person protesting without broader support or valid grievance creates noise but requires minimal attention.
 
-**Check Understanding:**
-- "Where would you classify: Vietnamese Ministry of Education accrediting your university program with decision due next month?" [Definitive: power to accredit, legitimacy as regulator, urgency from deadline]
+Moderate-salience stakeholders have two attributes. Dominant stakeholders (power + legitimacy) like major shareholders expect regular communication and influence. Dangerous stakeholders (power + urgency) like activist groups with media access require careful handling. Dependent stakeholders (legitimacy + urgency) like employees facing restructuring need advocacy from others since they lack power.
 
-**Transition:**
-- "Let's see this model in action"
+Definitive stakeholders command immediate, sustained attention. A government regulator enforcing an environmental compliance deadline has all three: power (legal authority), legitimacy (protecting public interest), and urgency (deadline). These stakeholders get top priority.
 
----
+Key insight: classifications are dynamic. A dormant stakeholder can become definitive if they gain legitimacy and urgency. Stakeholder management means monitoring these shifts.
+</speaker-notes>
 
-<!-- Slide 12: Case Study - Product Recall -->
-## Case Study: Stakeholder Prioritization in Crisis
-<!-- LAYOUT: case-study -->
+</slide>
 
-**Scenario:** Pharmaceutical company discovers contaminated batch
+<slide number="20" title="Dynamic Stakeholder Status">
 
-**Stakeholder Analysis:**
+## Critical Insight: Salience Changes
 
-**Definitive (Immediate action):**
-- Customers who purchased contaminated batch (P+L+U: safety risk)
-- Health regulators (P+L+U: enforcement authority + public health urgency)
+**Stakeholder status is:**
+- **Dynamic** – can increase or decrease over time
+- **Perception-based** – depends on managerial awareness
+- **Context-dependent** – varies by situation
 
-**Dominant (Important):**
-- Shareholders (P+L: financial impact but not immediate crisis)
-- Supply chain partners (P+L: contractual obligations)
+**Examples of Status Changes:**
 
-**Dependent (Address but limited power):**
-- Employees worried about job security (L+U: legitimate concern, time-sensitive, but can't force company action)
+- Employees gain urgency during labor disputes (Dependent → Definitive)
+- Media gains power during crisis (Discretionary → Dangerous)
+- Customers lose urgency after product launch (Definitive → Dominant)
+- Communities gain legitimacy through organizing (Demanding → Dependent)
 
-**Low salience (Monitor):**
-- General public not affected (legitimacy as stakeholders but no power or urgency)
+<speaker-notes>
+This is one of Mitchell's most important contributions: stakeholder salience is not static. Organizations must continuously reassess.
 
-### Speaker Notes
+Perception-based salience means if managers don't recognize a stakeholder's attributes, that stakeholder won't receive attention regardless of actual salience. This explains corporate blind spots - failure to perceive growing power, legitimacy, or urgency until too late.
 
-**Opening:**
-- "This is Johnson & Johnson's Tylenol crisis (1982) updated—how would you prioritize?"
+Context changes salience dramatically. During normal operations, environmental groups may be discretionary stakeholders. During an oil spill, they become definitive with power (media influence), legitimacy (environmental protection), and urgency (immediate harm).
 
-**Key Points:**
-- Customers first: they have legitimate claim (bought product), urgency (health risk), power (can sue/report to media)
-- Regulators: have power to shut you down, legitimate role, urgent public health mandate
-- Shareholders matter but not before safety—this is ethical prioritization
-- Employees are dependent—legitimate concerns but can't force action like regulators can
+Vietnamese context example: During COVID-19, employee health became urgently important, shifting employees from dominant to definitive stakeholders for workplace safety decisions. Companies that recognized this shift adapted communication quickly. Those that didn't faced morale and retention problems.
 
-**Example/Story:**
-- J&J pulled all Tylenol from shelves (not just contaminated batch) → prioritized customer safety over shareholder cost → rebuilt trust
-- Contrast: companies that prioritize shareholders over safety often face worse long-term damage
+The fourth example shows how stakeholder action affects salience. Individual community members (demanding - urgency only) who organize into a formal group gain legitimacy, becoming dependent stakeholders who deserve attention.
 
-**Check Understanding:**
-- "Why aren't shareholders definitive in this case?" [No urgency—financial impact is serious but not immediate life-or-death]
+The framework's value: it forces systematic reassessment rather than relying on intuition about who matters.
+</speaker-notes>
 
-**Transition:**
-- "Notice this isn't just theory—it's ethical decision-making under pressure. Now let's look at modern CEO perspectives"
+</slide>
 
----
+<slide number="21" title="Mitchell Example - Product Recall">
 
-<!-- Slide 13: McKinsey CEO Research -->
-## How Top CEOs Approach Stakeholder Engagement
-<!-- LAYOUT: big-number -->
+## Example: Product Recall Scenario
 
-**58%** of CEOs view external affairs as top priority
-**12%** feel successful at it
-**30%** of CEO time spent with external stakeholders
+**Situation:** A Vietnamese electronics company discovers 5% of products have battery defects
 
-*Source: McKinsey & Company, 2024*
+**Stakeholder Salience Analysis:**
 
-**The gap:** Knowing it matters ≠ Doing it well
+| Stakeholder | Power | Legitimacy | Urgency | Classification | Priority |
+|-------------|-------|------------|---------|----------------|----------|
+| Customers | High | High | High | **Definitive** | **Immediate** |
+| Regulators | High | High | High | **Definitive** | **Immediate** |
+| Media | High | Low | Moderate | Dangerous | High |
+| Suppliers | Moderate | High | Low | Dominant | Moderate |
+| Investors | High | High | Low | Dominant | Moderate |
 
-### Speaker Notes
+**Communication priority:** Customers and regulators first (safety + compliance)
 
-**Opening:**
-- "We're back to our opening stat—but now you understand why it's hard"
+<speaker-notes>
+This scenario makes the framework actionable. Product recalls are high-stakes situations requiring rapid stakeholder triage.
 
-**Key Points:**
-- External affairs = government, media, community, regulators (Freeman's external stakeholders)
-- 30% of time = 12 hours/week for a CEO
-- The gap exists because stakeholder management is systematic work, not intuition
-- McKinsey studied Microsoft, Nissan, Adidas, US Bancorp CEOs to find what works
+Customers are definitive: they have power (can sue, switch brands, damage reputation), legitimacy (purchased the product, deserve safety), and urgency (potential harm now). They require immediate, direct communication with clear instructions.
 
-**Example/Story:**
-- Richard Davis (US Bancorp CEO): "The Holy Grail is to have 12 people on a management team who are equal voices and equal storytellers"—he trained his whole team, not just himself
+Regulators are also definitive: they have power (can impose fines, mandate recalls), legitimacy (legal mandate to protect consumers), and urgency (compliance deadlines). Failure to communicate promptly invites penalties.
 
-**Check Understanding:**
-- "If 30% of CEO time is external stakeholders, what does that tell you about importance of this skill?"
+Media have power (public narrative control) and moderate urgency (news cycle) but lack formal legitimacy - they're observers, not affected parties. They're dangerous stakeholders: ignore them and they use their power negatively. Engage proactively with transparency.
 
-**Transition:**
-- "McKinsey identified a framework successful CEOs use"
+Suppliers have legitimacy (business partners) and moderate power (supply chain control) but low urgency - the recall affects current products, not future manufacturing. They need information but not immediately.
 
----
+Investors have power (capital) and legitimacy (ownership stake) but low urgency - financial impacts unfold over time. They deserve thorough briefing but after safety communications.
 
-<!-- CORE CONTENT: PART 3 - MESSAGE ADAPTATION -->
+This prioritization framework prevents the common mistake of addressing investors or media before customers and regulators. Lives and legal compliance come before stock price management.
+</speaker-notes>
 
-<!-- Slide 14: Part 3 Section Break -->
-## PART 3: How to Adapt Your Message
-<!-- LAYOUT: section-break -->
+</slide>
 
-From stakeholder identification to effective communication
+<slide number="22" title="Applying Mitchell - Communication Sequence">
 
-### Speaker Notes
+## Product Recall Communication Sequence
 
-**Opening:**
-- "We've identified stakeholders (Freeman) and prioritized them (Mitchell). Now: how do we actually communicate with different groups?"
+**Phase 1: Definitive Stakeholders (First 24 hours)**
+1. **Customers** – Direct communication, return instructions, safety guidance
+2. **Regulators** – Formal notification, compliance plan, timeline
 
-**Key Points:**
-- This is where theory becomes practice
-- Same information, different audiences = different messages
-- We'll look at two frameworks: McKinsey's EDGE (what to do) and Duarte's calibration (how to adapt content)
+**Phase 2: Dangerous/Dominant Stakeholders (24-48 hours)**
+3. **Media** – Press release, spokesperson availability, transparency commitment
+4. **Employees** – Internal briefing, customer service protocols, Q&A
 
-**Example/Story:**
-- Announcing a company restructuring: shareholders want ROI numbers, employees want job security info, media wants the narrative—same event, three different messages
+**Phase 3: Lower Salience (48-72 hours)**
+5. **Investors** – Impact assessment, financial implications, mitigation strategy
+6. **Suppliers** – Quality review process, contract implications
+7. **Retailers** – Inventory management, point-of-sale messaging
 
-**Check Understanding:**
-- "Why can't you send the same message to all stakeholders?" [Different needs, different priorities, different contexts]
+<speaker-notes>
+This slide shows how Mitchell's framework translates into actual communication planning with specific timing.
 
-**Transition:**
-- "Let's start with McKinsey's EDGE framework"
+Phase 1 addresses definitive stakeholders immediately. Customer communication happens within hours: email to registered users, website notification, media alerts, retailer notifications. Regulator communication follows legal protocols with formal filings and response plans.
 
----
+Phase 2 addresses stakeholders who could amplify or damage response. Media communication should be proactive - issue press release before journalists start calling. Employee communication ensures frontline staff can answer customer questions consistently.
 
-<!-- Slide 15: McKinsey EDGE Framework -->
+Phase 3 addresses important stakeholders whose needs are less time-critical. Investors need thorough analysis, not rushed speculation. Suppliers need to understand quality processes but aren't managing immediate safety risk.
+
+Vietnamese context: Add government relations to Phase 1 if product sold domestically. Vietnamese regulatory environment often requires government stakeholder engagement even before public announcement.
+
+The sequencing prevents common failures: announcing to media before customers (customers learn from news, not company), telling investors before employees (staff blindsided), or delaying regulator notification (legal violations).
+
+This is the kind of systematic stakeholder communication planning students will practice in tutorials and apply in the Week 4 memo assessment.
+</speaker-notes>
+
+</slide>
+
+<slide number="23" layout="section-break" title="Part 3 Introduction">
+
+## Part 3: Message Adaptation
+
+**The Execution Question:** How do I actually communicate differently with different audiences?
+
+<speaker-notes>
+Transition to Part 3. Freeman identified stakeholders, Mitchell prioritized them - now we need practical tools for adapting our messages.
+
+This section introduces two complementary approaches: stakeholder mapping matrices (from McKinsey's EDGE framework) and Duarte's audience calibration for presentation content.
+</speaker-notes>
+
+</slide>
+
+<slide number="24" title="McKinsey EDGE Framework">
+
 ## EDGE Framework for Stakeholder Engagement
-<!-- LAYOUT: framework -->
 
-**E - Expanded**
-Embrace role as bridge between organization and external world
+**E**xpanded – Embrace role as bridge between organization and external world
 
-**D - Distinctive**
-Become storyteller-in-chief with singular, compelling narrative
+**D**istinctive – Become storyteller-in-chief with singular, compelling narrative
 
-**G - Growth-oriented**
-Empower team of ambassadors throughout organization
+**G**rowth-oriented – Empower team of ambassadors throughout organization
 
-**E - Engaged**
-Maintain consistent communication drumbeat across stakeholder groups
+**E**ngaged – Maintain consistent communication drumbeat across stakeholder groups
 
-*Source: Epstein et al., McKinsey & Company, 2024*
+**Source:** McKinsey & Company (2024) – CEO research with Microsoft, Nissan, Adidas, US Bancorp leaders
 
-### Speaker Notes
+<speaker-notes>
+This framework comes from November 2024 McKinsey research interviewing CEOs at major global companies. It synthesizes how successful leaders approach stakeholder engagement.
 
-**Opening:**
-- "EDGE is how successful CEOs operationalize stakeholder engagement"
+Expanded thinking: Leaders must see themselves as connectors. Richard Davis, former US Bancorp CEO, calls this "the Holy Grail" - having 12 management team members who are equal voices and storytellers. You can't be the only communicator.
 
-**Key Points:**
-- Expanded = don't delegate external stakeholders; YOU own the relationships
-- Distinctive = consistent story (we'll see the "Four W's" next slide)
-- Growth-oriented = train others to communicate too (US Bancorp example)
-- Engaged = regular cadence, not just crisis communication
-- These aren't personality traits—they're learnable behaviors
+Distinctive narrative: You need ONE clear story that adapts to contexts while maintaining consistency. This connects to the Four W's framework on the next slide.
 
-**Example/Story:**
-- Nissan CEO Makoto Uchida: focused on emotional connection with employees, not just information transfer → "Employees don't remember what you said or what you achieved, but they do remember how you made them feel"
+Growth-oriented ambassador development: Train your team to communicate your message. Only 25% of employees feel inspired by leaders, partly because too few leaders delegate communication responsibilities.
 
-**Check Understanding:**
-- "Which element of EDGE addresses the problem of CEOs feeling unsuccessful at stakeholder management?" [All of them, but especially G—empowering others to share the load]
+Engaged communication drumbeat: Consistency matters more than perfection. Regular, predictable communication builds trust even when messages are challenging.
 
-**Transition:**
-- "The 'Distinctive' element—being storyteller-in-chief—requires a narrative structure"
+Key statistic: Organizations successful at policy shaping are nearly 5x more likely to train executives on external engagement. Communication competence is learnable and teachable.
+</speaker-notes>
 
----
+</slide>
 
-<!-- Slide 16: Four W's Narrative Structure -->
-## McKinsey's Four W's for Stakeholder Communication
-<!-- LAYOUT: framework -->
+<slide number="25" title="Four W's Narrative Framework">
 
-**WHO**
-Your personal leadership journey and aspirations
+## Four W's: Building Your Core Narrative
 
-**WHY**
-Organization's reason for existence and contribution
+**WHO** – Your personal leadership journey and aspirations
 
-**WHAT**
-Strategic agenda in simple, compelling terms
+**WHY** – Organization's reason for existence and contribution to society
 
-**WHEN**
-Timing of communication rollout
+**WHAT** – Strategic agenda in simple, compelling terms
 
-**Application:** Consistent narrative adapted for each stakeholder group
+**WHEN** – Timing of communication rollout and milestones
 
-### Speaker Notes
+**Application:** Develop this narrative once, adapt for different stakeholders
 
-**Opening:**
-- "This is your communication backbone—same story, tailored delivery"
+<speaker-notes>
+The Four W's create the foundational story you'll adapt for different audiences. It's not four separate narratives - it's one coherent story with four essential components.
 
-**Key Points:**
-- WHO = personal credibility (ethos in Aristotle's terms, which you'll see in Week 7)
-- WHY = purpose beyond profit (Simon Sinek's "Start with Why")
-- WHAT = clear strategy that stakeholders can understand and support
-- WHEN = sequencing (employees before media, investors before public announcement)
-- Adapt the EMPHASIS for each audience, not the core story
+WHO establishes personal connection. Nissan CEO Makoto Uchida emphasized emotional engagement: "Employees don't remember what you said or achieved, but they do remember how you made them feel." Your personal journey humanizes the message.
 
-**Example/Story:**
-- To investors: emphasize WHAT (strategic plan, returns)
-- To employees: emphasize WHO (your leadership) and WHY (purpose)
-- To media: emphasize WHY (societal contribution) and WHAT (newsworthy strategy)
+WHY connects to purpose beyond profit. Vietnamese students often respond to social contribution stories - how does this initiative improve lives, communities, or the environment?
 
-**Check Understanding:**
-- "If you're announcing a new sustainability initiative, how would you adapt the Four W's for shareholders vs. environmental groups?" [Shareholders: WHAT = cost savings, WHY = long-term value; Environmental groups: WHY = planetary impact, WHAT = specific commitments]
+WHAT translates strategy into accessible language. Avoid jargon like "synergistic optimization of cross-functional deliverables." Say "we're combining teams to serve customers faster."
 
-**Transition:**
-- "Now let's get more tactical: how do you adjust the actual content of your communication?"
+WHEN provides clarity on milestones and expectations. Uncertainty creates anxiety; clear timing builds confidence.
 
----
+Example adaptation: For investors, emphasize WHAT (strategic direction) and WHEN (milestones). For employees, emphasize WHY (purpose) and WHO (your commitment to them). Same core narrative, different emphasis.
+</speaker-notes>
 
-<!-- Slide 17: Duarte's Audience Calibration -->
-## Duarte's Logos/Pathos Balance
-<!-- LAYOUT: framework -->
+</slide>
 
-**Logos (Analytical):**
-Data, statistics, charts, logical arguments, research citations
+<slide number="26" layout="framework" title="Stakeholder Mapping Matrix">
 
-**Pathos (Emotional):**
-Stories, anecdotes, metaphors, evocative visuals, humor
+## Stakeholder Mapping Matrix
 
-**Key Principle:** Match your content mix to your audience's preferences
+| **Internal Stakeholders** | **External Stakeholders** |
+|---------------------------|---------------------------|
+| C-suite executives | Shareholders/investors |
+| Employees | Media |
+| Board of directors | Local community |
+| Business unit leaders | Government/regulators |
+| | Suppliers |
+| | Customers |
 
-### Speaker Notes
+**Use:** Ensure comprehensive coverage - no stakeholder group overlooked
 
-**Opening:**
-- "Nancy Duarte (author of *Resonate*, works with Apple, Google, TED) updated Aristotle for modern business"
+<speaker-notes>
+This simple matrix from the McKinsey research ensures systematic stakeholder identification. It combines Freeman's comprehensive view with practical categorization.
 
-**Key Points:**
-- Logos = left brain, analytical thinking
-- Pathos = right brain, emotional resonance
-- Every presentation needs BOTH, but the ratio varies by audience
-- This is from MIT Sloan Management Review (August 2024)—very recent, very practical
+Internal/external distinction matters for communication approach. Internal stakeholders typically receive more frequent, detailed communication through organizational channels. External stakeholders need more formal, structured engagement.
 
-**Example/Story:**
-- Pitching budget to finance team: 80% logos (spreadsheets, ROI calculations), 20% pathos (brief success story)
-- Pitching to marketing team: 40% logos (key metrics), 60% pathos (customer stories, brand vision)
+Use this as a checklist when planning communication strategies. Go through each cell and ask: "Have we considered this group? What do they need to know? When? Through what channel?"
 
-**Check Understanding:**
-- "What happens if you're too analytical with a creative audience?" [They disengage—charts bore them] "Too emotional with engineers?" [You lose credibility—they want data]
+Vietnamese organizational context: Internal stakeholders often include family members in family-owned businesses. External stakeholders increasingly include social media influencers who shape public perception.
 
-**Transition:**
-- "Duarte gives us specific audience categories"
+The matrix prevents the common mistake of focusing only on customers and investors while neglecting employees, communities, or regulators until problems arise.
+</speaker-notes>
 
----
+</slide>
 
-<!-- Slide 18: Audience Calibration Matrix -->
-## Tailoring Content to Audience Type
-<!-- LAYOUT: comparison -->
+<slide number="27" title="Duarte Audience Calibration">
 
-| Audience Type | Preferred Content | Approach |
-|---------------|-------------------|----------|
-| **Analytical** (Engineers, finance, scientists) | Data-driven, logical arguments | Lead with evidence; use emotion sparingly and strategically |
-| **Emotionally-driven** (Sales, creatives, marketers) | Stories, vision, inspiration | Lead with narrative; support with key data points |
-| **Mixed** (Cross-functional teams, executives) | Balanced blend | Strategic mix: data for credibility, stories for engagement |
+## Nancy Duarte's Audience Calibration Framework
 
-**Content Inventory Method:**
-1. Categorize each slide/section as analytical or emotional
-2. Determine target balance based on audience
-3. Adjust content mix accordingly
+**Context:** Nancy Duarte – leading presentation expert (author of *Resonate*, clients include Apple, Google, TED)
 
-*Source: Duarte, MIT Sloan Management Review, 2024*
+**Core Principle:** Match content type to audience preferences
 
-### Speaker Notes
+**Aristotelian Appeals Updated for Business:**
 
-**Opening:**
-- "This is immediately practical—audit your next presentation using this matrix"
+- **Logos** (Logical): Data, statistics, reasoned arguments
+- **Pathos** (Emotional): Stories, metaphors, imagination-stirring content
+- **Ethos** (Credibility): Character, trustworthiness, expertise
 
-**Key Points:**
-- Analytical audiences: they WANT 20 slides of charts (that's not boring to them)
-- Emotionally-driven: reduce analytical content drastically
-- Mixed/executives: you need both because they're evaluating logic AND vision
-- Vietnamese context: engineering students often prefer analytical; business students may want more balance
+**The Calibration Question:** What ratio of logos to pathos does this audience need?
 
-**Example/Story:**
-- Same sustainability initiative, two audiences:
-  - Engineering team: carbon reduction calculations, efficiency metrics, technical specs
-  - Marketing team: customer perception research, brand story, vision for eco-friendly future
+<speaker-notes>
+Duarte connects classical rhetoric to modern business presentation. This framework appeared in MIT Sloan Management Review (August 2024) and provides research-backed guidance.
 
-**Check Understanding:**
-- "You're presenting a new software tool to a team of 5 engineers and 2 HR managers. How would you calibrate?" [Lean analytical but include brief HR benefit story]
+Aristotle identified three persuasive appeals 2,300 years ago. They remain foundational because they address how humans process information and make decisions.
 
-**Transition:**
-- "Let's see how all these frameworks work together"
+Logos appeals to our rational, analytical side. "The data shows 15% improvement." Engineers, scientists, and finance professionals typically prefer high logos content.
 
----
+Pathos appeals to emotion and values. "Imagine what this means for families struggling with healthcare costs." Creatives, marketers, and salespeople often respond better to emotional resonance.
 
-<!-- Slide 19: Integration Example -->
-## Putting It All Together: Stakeholder Communication Plan
-<!-- LAYOUT: case-study -->
+Ethos establishes why the audience should trust you. Credentials, character, citing respected sources. All audiences need some ethos, but it's foundational rather than the primary content.
 
-**Scenario:** You're launching an employee wellness program
+The key insight: "When you show up with emotional or analytical energy that doesn't match the audience's, it hurts your credibility." A data-heavy presentation to a creative team feels tone-deaf. An emotional appeal to engineers feels manipulative.
 
-**Step 1 - Identify (Freeman):**
-Employees, HR, senior management, insurance provider, external wellness vendor
+Next slide shows how to calibrate systematically.
+</speaker-notes>
 
-**Step 2 - Prioritize (Mitchell):**
-- **Definitive:** Senior management (power + legitimacy + urgency for budget approval)
-- **Dominant:** HR team (power + legitimacy to implement)
-- **Dependent:** Employees (legitimacy + urgency for their health needs)
+</slide>
 
-**Step 3 - Adapt Message (EDGE + Duarte):**
-- **Senior management:** ROI data, cost-benefit analysis (80% logos)
-- **HR team:** Implementation plan, timeline, resource needs (60% logos, 40% pathos)
-- **Employees:** Health benefits stories, ease of use, testimonials (30% logos, 70% pathos)
+<slide number="28" title="Audience Calibration Matrix">
 
-### Speaker Notes
+## Calibrating Content for Audience Types
 
-**Opening:**
-- "This is your Week 4 memo in miniature—watch how the frameworks stack"
+| Audience Type | Characteristics | Recommended Approach |
+|---------------|-----------------|----------------------|
+| **Analytical** | Engineers, scientists, finance, data analysts | Lead with data; use emotional appeal "lightly and with intention" |
+| **Emotionally-driven** | Sales teams, creatives, marketers, HR | Reduce analytical content; "they likely won't want 20 slides with charts" |
+| **Mixed** | Cross-functional teams, executive committees, general audiences | Blend both approaches strategically; lead with logos, support with pathos |
 
-**Key Points:**
-- Freeman tells you who's in the room
-- Mitchell tells you who to prioritize (senior management first because they control budget)
-- EDGE gives you the narrative structure (same program, adapted story)
-- Duarte tells you how to calibrate content for each audience
-- Notice employees are "dependent"—high legitimacy and urgency, but low power. You still communicate with them, just differently.
+**Process:**
+1. Research your specific audience before presenting
+2. Audit existing content (logos vs. pathos inventory)
+3. Adjust ratio to match audience preferences
 
-**Example/Story:**
-- If you pitch employees first and they get excited, but management says no to budget, you've created disappointment and distrust
-- Sequence matters: get management buy-in (definitive stakeholder), get HR implementation plan (dominant), THEN announce to employees (dependent)
+<speaker-notes>
+This table operationalizes Duarte's framework for different professional contexts.
 
-**Check Understanding:**
-- "Why would employees get 70% pathos content?" [They care about personal health impact, not ROI—stories resonate more than statistics for behavior change]
+Analytical audiences need logical structure and evidence. They're skeptical of unsupported claims. For engineering teams, open with data, use clear causation, minimize storytelling. Emotional content should highlight practical benefits, not abstract inspiration.
 
-**Transition:**
-- "Before we wrap up, one critical insight from Mitchell"
+Emotionally-driven audiences want human connection and vision. A sales team doesn't need 20 charts - they need compelling narratives they can retell to customers. Marketing professionals respond to brand stories and customer impact.
 
----
+Mixed audiences are most challenging because preferences vary. Executive committees typically include both CFOs (highly analytical) and CMOs (more emotional). Strategy: lead with logical structure and data for credibility, then use stories to make it memorable and actionable.
 
-<!-- Slide 20: Stakeholder Salience is Dynamic -->
-## Critical Insight: Stakeholder Status Changes
-<!-- LAYOUT: framework -->
+Content inventory method (Duarte recommends): Go through your presentation and label each slide or section as primarily analytical (A) or emotional (E). Count them. If you're presenting to engineers with 60% emotional content, recalibrate. If you're presenting to salespeople with 80% charts, add stories.
 
-**Stakeholder salience is dynamic and perception-based**
+Vietnamese context: Business education often emphasizes analytical approaches. Students may need encouragement to develop emotional appeal competency, particularly for stakeholder groups like communities or employees where human connection matters.
 
-**Dormant → Dangerous:**
-Former customer (power through wealth) becomes activist on social media (adds urgency)
+Common student question: "What if I'm naturally analytical/emotional?" Answer: Develop both capabilities. Effective communicators flex to audience needs rather than defaulting to personal preferences.
+</speaker-notes>
 
-**Discretionary → Dependent:**
-Local charity (legitimacy) becomes employee volunteer program (adds urgency)
+</slide>
 
-**Dependent → Definitive:**
-Employees (legitimacy + urgency) unionize (adds power)
+<slide number="29" title="Content Types">
 
-**Implication:** Continuously reassess stakeholder landscape
+## Analytical vs. Emotional Content Types
 
-### Speaker Notes
+**Analytical Content (Logos):**
+- Statistical data and quantified results
+- Charts, graphs, diagrams
+- Expert quotations and research citations
+- Logical argument structures
+- Technical demonstrations
+- Appendices with supporting data
 
-**Opening:**
-- "The stakeholder map you create today might be wrong next month—that's normal"
+**Emotional Content (Pathos):**
+- Anecdotes and personal stories
+- Metaphors and analogies
+- Evocative photographs or videos
+- Humor (when appropriate)
+- Benefits framing ("imagine when...")
+- Suspenseful reveals or dramatic structure
 
-**Key Points:**
-- Mitchell explicitly says salience is "perception-based"—how managers SEE stakeholders
-- Stakeholders can gain attributes (employees unionize → gain power)
-- Stakeholders can lose attributes (urgent deadline passes → lose urgency)
-- Context changes everything (economic crisis → regulators gain power)
+<speaker-notes>
+Use this as a checklist when auditing presentation content. Each slide or section should be categorizable as primarily analytical or emotional.
 
-**Example/Story:**
-- COVID-19: employees suddenly became definitive stakeholders (health urgency + legitimacy + power through labor shortage)
-- Social media: gave individuals power they didn't have before (can create viral criticism)
+Analytical content can be boring if overused, but it builds credibility and provides substance. The key is clarity - dense charts without clear insights frustrate rather than persuade.
 
-**Check Understanding:**
-- "Can you think of a stakeholder type that has gained power in the last 5 years due to technology?" [Online reviewers, social media influencers, activist groups using digital organizing]
+Emotional content creates connection and memorability, but overuse can feel manipulative or fluffy. Stories need purpose - they should illustrate concepts, not distract from them.
 
-**Transition:**
-- "Let's bring everything together"
+The art is integration: use a story to introduce a problem (pathos), then show data proving the problem's scope (logos), then use an anecdote showing human impact (pathos again). This sandwich approach works for mixed audiences.
 
----
+Vietnamese students often excel at analytical content but sometimes hesitate to use emotional appeals, viewing them as less professional. Clarify: emotional appeal isn't manipulation when authentic. Uchida's point about employees remembering feelings applies to all communication - pure data rarely inspires action.
 
-<!-- WRAP-UP SECTION: 5 SLIDES -->
+Example: "Our customer satisfaction score improved 15%" (analytical) becomes "Our customer satisfaction score improved 15% - that's 3,000 customers who now trust us to deliver on promises" (analytical + emotional). The number gains human meaning.
+</speaker-notes>
 
-<!-- Slide 21: Key Takeaways -->
+</slide>
+
+<slide number="30" title="Calibration Examples">
+
+## Audience Calibration in Practice
+
+**Scenario:** Proposing sustainability initiative to different audiences
+
+**To Engineering Team (Analytical):**
+- "Solar panels reduce energy costs 23% annually"
+- "Payback period: 4.2 years based on current utility rates"
+- Technical specifications and efficiency calculations
+- ROI model with sensitivity analysis
+
+**To Marketing Team (Emotional):**
+- "Imagine telling customers we're 100% renewable"
+- "This positions us as environmental leaders in our industry"
+- Competitor sustainability commitments and brand reputation
+- Customer sentiment data on environmental values
+
+**To Executive Committee (Mixed):**
+- "Solar investment pays back in 4.2 years (logos) AND positions our brand as sustainability leader (pathos)"
+- Financial model (logos) + competitive differentiation story (pathos)
+- Risk analysis (logos) + stakeholder impact narrative (pathos)
+
+<speaker-notes>
+Same initiative, three different communication approaches calibrated to audience preferences.
+
+Engineering team presentation: Lead with numbers and technical viability. Engineers respect data-driven decision-making. Show calculations, efficiency specs, technical implementation details. The emotional appeal ("good for environment") is secondary to financial and technical logic.
+
+Marketing team presentation: Lead with brand story and customer perception. Marketers think about positioning, differentiation, and customer relationships. Show how this supports brand values, creates marketing opportunities, differentiates from competitors. The financial case matters but isn't the compelling story.
+
+Executive committee presentation: Integrate both approaches. Executives need financial logic (CFO perspective) AND strategic positioning (CMO perspective). The presentation leads with financial case for credibility, then layers in strategic benefits for buy-in.
+
+Notice the same facts appear in all three versions - the calibration is emphasis and framing, not invention of different information.
+
+This is exactly what students practice in Week 4 Business Memo - same scenario, message adapted for different stakeholder audiences using framework-informed calibration.
+
+Key lesson: Effective communication requires audience analysis BEFORE message creation. Don't create one presentation and force it on all audiences - analyze audiences, then calibrate content accordingly.
+</speaker-notes>
+
+</slide>
+
+<slide number="31" title="Channel Selection">
+
+## Matching Communication Channels to Stakeholders
+
+**High-Stakes, High-Complexity Messages:**
+- Face-to-face meetings, video calls
+- Allows real-time dialogue, clarification, nuance
+- Best for: Regulators, major investors, senior executives
+
+**Moderate-Stakes, Moderate-Complexity:**
+- Email with attachments, formal letters, presentations
+- Provides documentation, allows considered response
+- Best for: Employees, suppliers, business partners
+
+**Lower-Stakes, Broad Reach:**
+- Press releases, social media, website updates
+- Maximizes reach, maintains transparency
+- Best for: General public, media, customers
+
+**Principle:** Match channel richness to message complexity and stakeholder priority
+
+<speaker-notes>
+This slide addresses the often-overlooked question: WHAT channel should we use for each stakeholder group?
+
+Media richness theory (Daft & Lengel) suggests matching communication channel to message complexity and equivocality. Rich channels (face-to-face) handle complex, ambiguous messages. Lean channels (written) work for simple, clear messages.
+
+High-stakes stakeholders deserve rich channels. You don't email a regulator about a compliance violation - you schedule a meeting, bring documentation, and discuss face-to-face. You don't announce restructuring to employees via memo - you hold town halls with Q&A.
+
+Moderate-complexity messages work well in writing. Contract changes with suppliers can be emailed with clear documentation. Employee policy updates can be announced via email with FAQ attached.
+
+Broad-reach messages use lean channels. Press releases work for media because journalists will follow up with questions. Social media works for customers because it's where they already engage. Website updates provide permanent reference.
+
+Vietnamese context: Face-to-face channels carry extra weight culturally. Hierarchical relationships often require in-person meetings even for moderately complex messages. Email alone may feel disrespectful for senior stakeholders.
+
+Common mistake: Using lean channels for high-stakes messages to save time. Announcing layoffs via email is efficient but damages trust and morale. Major stakeholder changes deserve rich communication investment.
+
+Integration with Mitchell: Definitive stakeholders typically deserve richer channels. Discretionary stakeholders can receive leaner channel communication.
+</speaker-notes>
+
+</slide>
+
+<slide number="32" title="Integration Example">
+
+## Putting It All Together: Communication Strategy Development
+
+**Step 1:** Identify stakeholders (Freeman's Hub-and-Spoke)
+
+**Step 2:** Prioritize by salience (Mitchell's Power-Legitimacy-Urgency)
+
+**Step 3:** Map stakeholders (Internal/External Matrix)
+
+**Step 4:** Develop core narrative (Four W's)
+
+**Step 5:** Adapt content for each audience (Duarte's Calibration)
+
+**Step 6:** Select appropriate channels (Richness matching)
+
+**Result:** Systematic, evidence-based stakeholder communication
+
+<speaker-notes>
+This slide synthesizes all frameworks into a repeatable process. In practice, these steps often happen iteratively rather than linearly, but this sequence provides structure.
+
+Start broad with Freeman - who are ALL potential stakeholders? Then narrow with Mitchell - which ones matter most right now? Map them systematically to ensure comprehensive coverage. Develop your core narrative using the Four W's. Adapt that narrative's content ratio for each stakeholder type using Duarte's calibration. Finally, select channels that match message complexity and stakeholder priority.
+
+Example application: Announcing organizational restructuring.
+
+Step 1 (Freeman): Stakeholders include employees, customers, investors, regulators, media, suppliers, communities.
+
+Step 2 (Mitchell): Employees are definitive (power through talent retention, legitimacy as affected parties, urgency about job security). Investors are dominant (power + legitimacy, lower urgency). Media are dangerous (power + urgency, questionable legitimacy).
+
+Step 3 (Map): Internal = employees, executives, board. External = investors, media, customers, regulators.
+
+Step 4 (Four W's): WHO = your commitment to transparency. WHY = organization needs to serve customers more effectively. WHAT = specific changes and timeline. WHEN = communication schedule and restructuring phases.
+
+Step 5 (Calibrate): For employees (mixed analytical/emotional), combine clear facts about changes with empathy for concerns. For investors (analytical), emphasize financial rationale and efficiency gains. For media (emotional), frame around customer benefit story.
+
+Step 6 (Channel): Employees get town hall meetings (rich channel for high stakes). Investors get formal presentation and written materials (moderate richness, documentation). Media get press release with spokesperson availability (lean channel, broad reach).
+
+This systematic approach prevents common failures: forgetting stakeholders, treating all audiences identically, or defaulting to one-size-fits-all communication.
+</speaker-notes>
+
+</slide>
+
+<slide number="33" title="Common Pitfalls">
+
+## Common Stakeholder Communication Failures
+
+**1. One-Size-Fits-All Messaging**
+- Same content, tone, channel for all audiences
+- Ignores different information needs and preferences
+- Example: Technical jargon in customer-facing communication
+
+**2. Stakeholder Blindness**
+- Failing to identify non-obvious but important stakeholders
+- Surprise resistance from overlooked groups
+- Example: Community opposition to expansion (no early consultation)
+
+**3. Priority Misalignment**
+- Addressing low-salience stakeholders before high-salience
+- Violates trust when critical groups learn second-hand
+- Example: Media announcement before employee notification
+
+**4. Static Assessment**
+- Treating stakeholder salience as fixed
+- Missing shifts in power, legitimacy, or urgency
+- Example: Activist group gains media attention (Demanding → Dangerous)
+
+<speaker-notes>
+Learning from failures is often more powerful than learning from successes. These four pitfalls appear repeatedly in business communication case studies.
+
+One-size-fits-all messaging is the most common failure. Organizations create one announcement and blast it to all stakeholders. Employees receive investor-focused financial language. Communities receive corporate jargon. Customers receive internal acronyms. Result: confusion, mistrust, and ineffectiveness. The frameworks we've covered today solve this by forcing audience-specific adaptation.
+
+Stakeholder blindness happens when environmental scanning is superficial. Companies identify obvious stakeholders (customers, investors) but miss less obvious ones (local communities, NGOs, political groups). Then they're surprised by opposition. Freeman's hub-and-spoke model prevents this by forcing systematic identification.
+
+Priority misalignment creates trust violations. When employees learn about restructuring from media reports instead of management communication, they feel disrespected and betrayed. When regulators discover issues through whistleblowers instead of company disclosure, they increase scrutiny and penalties. Mitchell's framework prevents this by determining communication sequence.
+
+Static assessment treats today's stakeholder salience as permanent. But power, legitimacy, and urgency shift constantly. Social media gave customers new power. Environmental movements increased NGO legitimacy. Crises create urgency. Organizations that don't continuously reassess miss critical shifts until too late.
+
+Vietnamese examples: Many Vietnamese companies experienced stakeholder blindness during COVID-19, underestimating government's urgency around workplace safety (shifted from dominant to definitive stakeholder). Companies that recognized this shift early adapted communication and avoided compliance problems.
+
+The good news: All four pitfalls are preventable with systematic framework application.
+</speaker-notes>
+
+</slide>
+
+<slide number="34" title="Cultural Considerations">
+
+## Stakeholder Communication in Vietnamese Context
+
+**Power Distance Implications:**
+- Government stakeholders carry heightened power and legitimacy
+- Hierarchical communication protocols matter
+- Face-to-face channels for senior stakeholders preferred
+
+**Collective Orientation:**
+- Community and family stakeholder groups have high legitimacy
+- Group harmony affects stakeholder priorities
+- Indirect communication styles for conflict-sensitive topics
+
+**Relationship-Based Business:**
+- Stakeholder relationships built over time, not transactional
+- Personal connections affect power dynamics
+- Trust-building precedes substantive communication
+
+**Practical Adjustments:**
+- Add government relations to high-salience stakeholders
+- Consider family stakeholders in SME contexts
+- Budget extra time for relationship cultivation before asks
+
+<speaker-notes>
+While Freeman, Mitchell, and Duarte's frameworks are universal, their APPLICATION must consider cultural context. Vietnam's cultural dimensions affect stakeholder dynamics.
+
+Power distance (Hofstede): Vietnam scores high on power distance, meaning hierarchical relationships are respected and expected. This affects stakeholder salience. Government stakeholders have enhanced power and legitimacy compared to Western contexts. Even local government officials may be definitive stakeholders for decisions that would be purely private in low-power-distance cultures.
+
+Communication protocols reflect this: formal language for government stakeholders, face-to-face meetings for senior figures, careful attention to titles and status. Email alone may feel disrespectful.
+
+Collective orientation: Vietnamese culture prioritizes group harmony and collective interests. This gives community stakeholder groups heightened legitimacy. Family members of employees may be stakeholders in ways Western frameworks don't anticipate. Decisions affecting individuals affect families and communities.
+
+Relationship-based business (guanxi influence): Stakeholder relationships are cultivated over time through repeated interaction and trust-building. You can't treat stakeholder communication as purely transactional. A supplier with long-standing relationship may have more power than economic analysis suggests because of accumulated trust and reciprocity.
+
+Practical implications for students: When applying frameworks to Vietnamese scenarios, adjust stakeholder salience assessment for cultural factors. Government stakeholders often rank higher. Community legitimacy carries more weight. Personal relationships affect power dynamics beyond formal authority.
+
+The frameworks remain valid - cultural context affects HOW you apply them, not WHETHER to use them.
+</speaker-notes>
+
+</slide>
+
+<slide number="35" title="Key Takeaways">
+
 ## Key Takeaways
-<!-- LAYOUT: standard -->
 
-1. **Freeman's Stakeholder Theory:** Identify all groups who affect or are affected by your organization (breadth)
+**1. Stakeholder Identification (Freeman)**
+- Organizations exist in webs of relationships with diverse stakeholder groups
+- Stakeholders include anyone who can affect or is affected by decisions
+- Systematic identification prevents blind spots
 
-2. **Mitchell's Salience Model:** Prioritize using power-legitimacy-urgency attributes (focus)
+**2. Stakeholder Prioritization (Mitchell)**
+- Power, Legitimacy, and Urgency determine stakeholder salience
+- Definitive stakeholders (all three attributes) demand immediate attention
+- Salience is dynamic and context-dependent - monitor continuously
 
-3. **Message Adaptation:** Use McKinsey's EDGE and Duarte's calibration to tailor communication (execution)
+**3. Message Adaptation**
+- Use stakeholder mapping to ensure comprehensive coverage
+- Develop core narrative (Four W's) and adapt for contexts
+- Calibrate logos/pathos ratio to match audience preferences
+- Match channel richness to message complexity and stakeholder priority
 
-4. **Dynamic Assessment:** Stakeholder salience changes—reassess regularly
+**4. Integration**
+- Combine frameworks into systematic communication strategy
+- Test: Can you identify, prioritize, map, calibrate, and channel-match for all stakeholder groups?
 
-5. **Ethical Foundation:** Stakeholder analysis isn't manipulation—it's respectful, strategic communication
+<speaker-notes>
+Four main takeaways corresponding to the three frameworks plus integration and channel selection.
 
-### Speaker Notes
+Freeman's contribution: expanded business thinking beyond shareholders to full stakeholder ecosystems. This shift transformed corporate communication from narrow investor relations to comprehensive stakeholder engagement.
 
-**Opening:**
-- "If you remember five things from today, remember these"
+Mitchell's contribution: operationalized Freeman with the Power-Legitimacy-Urgency framework, giving managers systematic prioritization methodology. No longer guess who matters most - assess attributes objectively.
 
-**Key Points:**
-- We moved from broad (who?) to focused (who matters most?) to tactical (how to communicate?)
-- This isn't about spinning messages—it's about understanding and respecting different needs
-- Mitchell's framework especially prevents you from ignoring low-power but high-legitimacy stakeholders (ethical dimension)
+Message adaptation tools: McKinsey's EDGE and mapping provide strategic structure, Duarte's calibration provides tactical content guidance, channel selection ensures appropriate medium. Together they answer "how do I actually communicate differently?"
 
-**Example/Story:**
-- Companies that ignore "dependent" stakeholders (employees, communities) often face backlash when those stakeholders gain power
-- Respectful communication builds trust before you need it
+Integration emphasis: these aren't separate frameworks to choose between - they work together. Freeman without Mitchell leads to paralysis (too many stakeholders, no priorities). Mitchell without Duarte leads to right priorities but wrong messages. Great strategy with poor channel selection wastes effort. Use all systematically.
 
-**Check Understanding:**
-- "Which takeaway will be most useful in your Business Memo?" [Probably #2 and #3—identifying and adapting]
+Students should be able to apply this process: "Given a business scenario, identify stakeholders using Freeman, prioritize using Mitchell, map using internal/external matrix, develop narrative using Four W's, calibrate content using Duarte for each group, and select appropriate channels."
 
-**Transition:**
-- "Let's preview what's coming up"
+This process appears in the Week 4 Business Memo assessment. Tutorial practice today builds competency.
+</speaker-notes>
 
----
+</slide>
 
-<!-- Slide 22: Assessment Preview -->
-## Your Week 4 Business Memo (10%)
-<!-- LAYOUT: framework -->
+<slide number="36" title="Assessment Preview">
+
+## Week 4: Business Memo
 
 **The Assignment:**
-Write a professional memo to a specific audience, demonstrating stakeholder analysis and message adaptation
+- Analyze a communication challenge using stakeholder frameworks
+- Map stakeholders and their needs
+- Propose audience-adapted communication strategy
+- 500-750 words
 
-**What You'll Apply:**
-- Freeman's stakeholder identification
-- Mitchell's prioritization framework
-- Audience needs analysis
-- Message adaptation techniques
+**Preparation Path:**
+- **Today's lecture:** Stakeholder identification and prioritization frameworks
+- **Today's tutorial:** Practice stakeholder mapping on sample scenario
+- **Week 3 lecture:** Pyramid Principle for message structure
+- **Week 3 tutorial:** Draft memo outline
+- **Week 4:** Submit final Business Memo
 
-**Between Now and Week 4:**
-- **Today's tutorial:** Practice stakeholder mapping with case study
-- **Week 3 lecture:** Learn Pyramid Principle (writing structure)
-- **Week 3 tutorial:** Draft memo sections
-- **Week 4:** Submit final memo
+**Success criteria:** Framework application (30%), Strategic thinking (25%), Organization (20%)
 
-### Speaker Notes
+<speaker-notes>
+Connect today's learning directly to upcoming assessment. Students appreciate seeing the clear progression.
 
-**Opening:**
-- "Let's make the connection to graded work explicit"
+The Business Memo assessment requires demonstrating competency with Freeman's identification and Mitchell's prioritization frameworks. You'll analyze a scenario (choose from options in Assessment Handbook), identify stakeholders, prioritize using Power-Legitimacy-Urgency, and propose adapted communication approaches.
 
-**Key Points:**
-- The memo isn't just writing—it's strategic communication planning
-- You'll need to demonstrate you've identified the right audience
-- Show you understand their needs
-- Adapt your message appropriately
-- Week 3 adds the structure (how to organize the memo itself)
+Emphasize the preparation timeline: Today you learn the frameworks. Tutorial lets you practice on a scenario. Week 3 adds Pyramid Principle for structure. By Week 4, you're combining stakeholder analysis with clear writing structure.
 
-**Example/Story:**
-- Common mistake: students write a generic memo that could go to anyone
-- Strong memo: explicitly shows "I'm writing to the CFO because they have budget authority (power) and this decision needs to happen before Q4 (urgency)"
+Students who skip tutorial practice consistently struggle with the assessment. The tutorial scenario is similar to assessment options - use it to test your understanding in a low-stakes environment.
 
-**Check Understanding:**
-- "Any questions about the memo assignment before tutorial today?"
+Rubric criteria come from Assessment Handbook Section 1. Framework application (30%) means accurately using Freeman and Mitchell - not just mentioning them but demonstrating understanding. Strategic thinking (25%) means your analysis leads to actionable communication recommendations.
 
-**Transition:**
-- "Next week we're building on this foundation"
+Office hours available for draft feedback - encourage students to come in Week 3 with questions.
+</speaker-notes>
 
----
+</slide>
 
-<!-- Slide 23: Next Week Preview -->
+<slide number="37" title="Next Week Preview">
+
 ## Week 3: Structured Business Writing
-<!-- LAYOUT: standard -->
 
-**Topic:** The Pyramid Principle (Minto, 1987)
+**Topic:** Pyramid Principle & SCQA Framework
 
 **Key Concepts:**
-- Top-down communication structure
-- SCQA framework (Situation-Complication-Question-Answer)
+- Top-down communication structure (Pyramid Principle)
+- SCQA: Situation-Complication-Question-Answer
 - Executive summary format
-- Clarity and concision
+- Clarity and concision techniques
 
-**How It Connects:**
-- Week 2 = WHO to write to and WHAT they need
-- Week 3 = HOW to structure the writing itself
+**Why this matters:**
+- Week 4 Business Memo requires Pyramid structure
+- Professional writing starts with conclusions, not buildup
+- Busy executives need main point first
 
-**Preparation:**
-Complete Week 2 tutorial activity—you'll build on stakeholder analysis
+**Pre-reading:** Minto, B. (2010). *The Pyramid Principle* (Ch. 1-3)
 
-### Speaker Notes
+<speaker-notes>
+Set expectations for Week 3. While this week focused on WHO to communicate with and HOW to adapt, next week focuses on HOW to structure messages for clarity and impact.
 
-**Opening:**
-- "If today was about the audience, next week is about the message structure"
+The Pyramid Principle (Barbara Minto, McKinsey) revolutionized business writing by advocating top-down structure: start with the answer, then provide supporting points. This contrasts with academic writing that builds to conclusions.
 
-**Key Points:**
-- Barbara Minto worked at McKinsey—developed this for consultants
-- Pyramid Principle = start with conclusion, then support (opposite of school essays)
-- SCQA = how to frame any business problem
-- This is what makes your memo readable and persuasive
+SCQA framework (Situation-Complication-Question-Answer) provides structure for opening paragraphs that immediately engage readers.
 
-**Example/Story:**
-- Traditional essay: Introduction → Background → Analysis → Conclusion
-- Business writing: Conclusion → Key reasons → Supporting details
-- Executives don't have time for suspense—give them the answer first
+Connection to assessment: Week 4 memo requires both stakeholder analysis (this week) AND Pyramid structure (next week). They work together - stakeholder analysis tells you what to say to whom, Pyramid Principle tells you how to structure it.
 
-**Check Understanding:**
-- "Why would business writing be different from academic writing?" [Time constraints, decision-making focus, action-oriented]
+The pre-reading is from Minto's classic text. It's challenging but essential. Encourage students to read actively with examples in mind.
+</speaker-notes>
 
-**Transition:**
-- "Finally, some resources to go deeper"
+</slide>
 
----
+<slide number="38" title="Resources">
 
-<!-- Slide 24: Resources for Further Learning -->
-## Additional Resources
-<!-- LAYOUT: standard -->
+## Further Resources
 
-**Required Readings (Complete Before Week 3):**
-- Freeman, R. E. (2010). *Strategic Management: A Stakeholder Approach*, Ch. 1-2
-- Mitchell et al. (1997). Toward a theory of stakeholder salience. *Academy of Management Review*
+**Core Readings (Required):**
+- Freeman, R. E. (2010). *Strategic Management: A Stakeholder Approach*. Cambridge University Press. (Access through library)
+- Mitchell, R. K., Agle, B. R., & Wood, D. J. (1997). Toward a theory of stakeholder identification and salience. *Academy of Management Review*, 22(4), 853-886.
 
-**Optional Deep Dives:**
-- McKinsey & Company (2024). How the best CEOs build lasting stakeholder relationships
-  https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-the-best-ceos-build-lasting-stakeholder-relationships
-
-- Duarte, N. (2024). Are your presentations too emotional—or too analytical?
-  https://sloanreview.mit.edu/article/are-your-presentations-too-emotional-or-too-analytical/
+**Applied Readings (Required):**
+- Epstein, B., et al. (2024). How the best CEOs build lasting stakeholder relationships. *McKinsey & Company*. https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-the-best-ceos-build-lasting-stakeholder-relationships
+- Duarte, N. (2024). Are your presentations too emotional—or too analytical? *MIT Sloan Management Review*. https://sloanreview.mit.edu/article/are-your-presentations-too-emotional-or-too-analytical/
 
 **Tools:**
-- Stakeholder mapping templates (available on Moodle)
-- Audience analysis worksheet (for memo assignment)
+- Stakeholder mapping templates on Moodle
+- Framework quick-reference guide
 
-### Speaker Notes
+<speaker-notes>
+All four readings are required and will appear on the Week 2 quiz.
 
-**Opening:**
-- "Two categories: what you must read, and what deepens your understanding"
+Freeman and Mitchell are foundational texts - longer and more theoretical. Students should focus on understanding the frameworks rather than memorizing every detail. The hub-and-spoke model and Power-Legitimacy-Urgency framework are what matter.
 
-**Key Points:**
-- Freeman and Mitchell are required—they're foundational theory you'll be assessed on
-- McKinsey article gives you CEO perspectives and real-world application
-- Duarte article is practical for when you're creating presentations (Week 5-6)
-- Templates on Moodle will structure your tutorial work today
+McKinsey and Duarte articles are recent (2024) and highly practical. They're more accessible and provide contemporary examples. The McKinsey piece includes the EDGE framework and Four W's. Duarte provides the logos/pathos calibration.
 
-**Example/Story:**
-- Students who read the McKinsey article consistently write stronger memos—they see how real leaders apply the frameworks
+Templates on Moodle include blank stakeholder mapping matrices and salience assessment worksheets. Students can use these for tutorial activities and the Week 4 assessment.
 
-**Check Understanding:**
-- "The required readings are due when?" [Before Week 3 lecture]
+Encourage students to apply frameworks immediately: "This week, identify stakeholders for a real project you're working on. Practice using Mitchell's attributes to prioritize. See how the frameworks work outside class."
+</speaker-notes>
 
-**Transition:**
-- "Let's summarize where we've been"
+</slide>
 
----
+<slide number="39" layout="references" title="References">
 
-<!-- Slide 25: Closing -->
-## Thank You
-<!-- LAYOUT: standard -->
+## References
 
-**Today We Covered:**
-- Freeman's stakeholder identification
-- Mitchell's power-legitimacy-urgency prioritization
-- McKinsey's EDGE framework
-- Duarte's audience calibration
+Duarte, N. (2024, August 13). Are your presentations too emotional—or too analytical? *MIT Sloan Management Review*. https://sloanreview.mit.edu/article/are-your-presentations-too-emotional-or-too-analytical/
 
-**Next Steps:**
-1. Tutorial: Stakeholder mapping case study
-2. Complete Week 2 quiz on Moodle (due Sunday 11:59 PM)
-3. Read Freeman and Mitchell articles before Week 3
+Epstein, B., McClatchy, J., Strovink, K., & Sherman, E. (2024, November 26). How the best CEOs build lasting stakeholder relationships. *McKinsey & Company*. https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-the-best-ceos-build-lasting-stakeholder-relationships
 
-**Questions?**
+Freeman, R. E. (1984). *Strategic management: A stakeholder approach*. Pitman. (Reprinted 2010, Cambridge University Press). https://doi.org/10.1017/CBO9781139192675
 
-### Speaker Notes
+Mitchell, R. K., Agle, B. R., & Wood, D. J. (1997). Toward a theory of stakeholder identification and salience: Defining the principle of who and what really counts. *Academy of Management Review*, 22(4), 853-886. https://doi.org/10.5465/amr.1997.9711022105
 
-**Opening:**
-- "We've covered a lot—let's recap the journey"
+<speaker-notes>
+Full APA 7th edition citations for all sources referenced in today's lecture. Students can use these for further reading and proper citation in assignments.
+</speaker-notes>
 
-**Key Points:**
-- You now have systematic frameworks for audience analysis
-- This isn't intuition—it's strategic planning
-- Tutorial today will make this concrete with practice
-- Quiz tests your understanding of the frameworks (definitions, applications)
-
-**Example/Story:**
-- "When you're working on group projects, use Freeman's categories to make sure you haven't forgotten anyone. Use Mitchell's model when you have limited time to present—who do you pitch to first?"
-
-**Check Understanding:**
-- "Any questions before we move to tutorial?"
-
-**Transition:**
-- "See you in tutorial—bring questions if anything is unclear"
-
----
-
-**END OF LECTURE**
-
-**Total Slides:** 25
-**Layout Variety:**
-- Big-number: 2 (Slides 1, 13)
-- Section-break: 3 (Slides 4, 5, 14)
-- Quote: 1 (Slide 6)
-- Framework: 9 (Slides 3, 7, 8, 10, 11, 15, 16, 17, 20)
-- Case-study: 2 (Slides 12, 19)
-- Comparison: 1 (Slide 18)
-- Standard: 7 (Slides 2, 21, 22, 23, 24, 25)
-
-**Research Citations:**
-- Freeman, R. E. (1984/2010). *Strategic Management: A Stakeholder Approach*. Cambridge University Press. https://www.cambridge.org/core/books/strategic-management/E3CC2E2CE01497062D7603B7A8B9337F
-- Mitchell, R. K., Agle, B. R., & Wood, D. J. (1997). Toward a theory of stakeholder identification and salience. *Academy of Management Review*, 22(4), 853–886. https://www.jstor.org/stable/259247
-- Epstein, B., McClatchy, J., Strovink, K., & Sherman, E. (2024). How the best CEOs build lasting stakeholder relationships. *McKinsey & Company*. https://www.mckinsey.com/capabilities/strategy-and-corporate-finance/our-insights/how-the-best-ceos-build-lasting-stakeholder-relationships
-- Duarte, N. (2024). Are your presentations too emotional—or too analytical? *MIT Sloan Management Review*. https://sloanreview.mit.edu/article/are-your-presentations-too-emotional-or-too-analytical/
+</slide>

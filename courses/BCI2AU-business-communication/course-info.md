@@ -4,6 +4,8 @@
 
 **Course Code:** BCI2AU
 **Course Name:** Business Communication
+**University:** Andrews University
+**Campus:** NEU, Vietnam
 **Instructor:** William Winterton Lang
 **Email:** wil.hoang@gmail.com
 **Telephone:** (+84) 344 347 703

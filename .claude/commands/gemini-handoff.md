@@ -1,95 +1,104 @@
 # Generate Gemini Slide Creation Prompt
 
-Automatically generate the Gemini handoff prompt for a specific week's lecture content.
+Automatically generate Gemini handoff prompts for lecture content using the Python generation script.
 
 ## Arguments
-- `$ARGUMENTS` - Course code and week number (e.g., `BCI2AU 1` or `BCI2AU 1-5` for multiple weeks)
+- `$ARGUMENTS` - Course code and optional week number/range (e.g., `BCI2AU`, `BCI2AU 1`, or `BCI2AU 1-5`)
 
 ## Usage
 ```
-/gemini-handoff BCI2AU 1           # Single week
-/gemini-handoff BCI2AU 1-5         # Weeks 1-5 (creates prompts for each)
+/gemini-handoff BCI2AU              # All weeks (1-12)
+/gemini-handoff BCI2AU 1            # Single week
+/gemini-handoff BCI2AU 1-5          # Weeks 1-5
 ```
 
 ## Instructions
 
 ### Step 1: Parse Arguments
 
-Extract:
-- Course code (e.g., `BCI2AU`)
-- Week number(s) (single or range)
+Extract from `$ARGUMENTS`:
+- Course code (required, e.g., `BCI2AU`)
+- Week specification (optional):
+  - If omitted: generate all weeks (1-12)
+  - Single number: generate that week only
+  - Range: generate all weeks in range (e.g., `1-5`)
 
-### Step 2: Load Course Info
+### Step 2: Run Python Script
 
-Read `courses/{CODE}-*/course-info.md` or `syllabus.md` for:
-- Course name
-- Instructor name
-- Any other metadata
+Execute the generation script:
 
-If course-info.md doesn't exist, extract from syllabus.md header.
-
-### Step 3: For Each Week
-
-Read `courses/{CODE}-*/weeks/week-{NN}/lecture-content.md`
-
-Extract:
-- Week topic (from first H1 heading or filename pattern)
-- Full lecture content (WITHOUT speaker notes - these are added later)
-- Slide count (count `### Slide` occurrences)
-
-### Step 4: Generate Prompt
-
-Fill the template from `.claude/templates/gemini-slide-handoff-prompt.md`:
-
-Replace placeholders:
-- `{{COURSE_CODE}}` → Course code
-- `{{COURSE_NAME}}` → Course name from syllabus
-- `{{WEEK_NUMBER}}` → Week number (zero-padded: 01, 02)
-- `{{TOPIC}}` → Week topic from lecture content
-- `{{INSTRUCTOR_NAME}}` → Instructor from syllabus
-- `{{SLIDE_COUNT}}` → Total number of slides
-
-**Important:** Strip speaker notes from lecture content before including. Speaker notes are added back by Claude after Gemini creates the visual slides.
-
-### Step 5: Output
-
-Create output file at:
-```
-courses/{CODE}-*/weeks/week-{NN}/gemini-prompt.md
+```bash
+python3 tools/generate_gemini_prompts.py {COURSE_CODE} [week_range]
 ```
 
-Contents:
-1. The complete prompt with all placeholders filled
-2. The full lecture-content.md appended (without speaker notes)
+**Examples:**
+- `python3 tools/generate_gemini_prompts.py BCI2AU` - All weeks
+- `python3 tools/generate_gemini_prompts.py BCI2AU 5` - Week 5 only
+- `python3 tools/generate_gemini_prompts.py BCI2AU 1-10` - Weeks 1-10
 
-### Step 6: Display Instructions
+The script automatically:
+- Locates the course directory
+- Extracts course name, instructor, university from syllabus
+- For each week:
+  - Reads lecture-content.md
+  - Extracts topic from H1 heading
+  - Counts slides (handles both explicit "## Slide N" and section-based formats)
+  - Strips speaker notes from content
+  - Fills template from `.claude/templates/gemini-slide-handoff-prompt.md`
+  - Writes `gemini-prompt.md` to week folder
 
-After generating, show:
+### Step 3: Display Results
 
-```
-## Gemini Handoff Ready: Week {N}
+The script outputs a summary showing:
+- Course information
+- Which weeks were processed
+- Slide counts for each week
+- Next steps for the user
 
-**Prompt saved to:** courses/{path}/weeks/week-{NN}/gemini-prompt.md
+## What Gets Generated
 
-**Next steps:**
-1. Open the prompt file
-2. Copy everything from "Create a visually engaging..." to the end
-3. Paste into Google Gemini
-4. Wait for full slide deck to generate
-5. Download as: week-{NN}.pptx
-6. Run: /add-speaker-notes {CODE} {N}
+Each `courses/{CODE}-*/weeks/week-{NN}/gemini-prompt.md` contains:
 
-**Total slides:** {count}
-```
+1. **Header section** with:
+   - Week number and topic
+   - Course code and name
+   - Expected slide count
+   - Download and next-step instructions
 
-## Multi-Week Mode
-
-For range like `BCI2AU 1-5`:
-- Generate prompts for weeks 1, 2, 3, 4, 5
-- Each week gets its own `gemini-prompt.md` in its folder
-- Display summary of all weeks ready for handoff
+2. **Complete Gemini prompt** with:
+   - Role (expert presentation designer)
+   - Context (course, week, topic, institution, instructor, slide count)
+   - Instructions (6 key points)
+   - Constraints (preserve wording, Modern Bright Pastel Corporate style)
+   - Examples (4 scenarios showing content structure)
+   - Full lecture content (speaker notes stripped)
+   - Task and output format
 
 ## Error Handling
 
-- If lecture-content.md missing: "Week {N} lecture content not found. Run /generate-week {N} first."
-- If course not found: List available courses
+The script handles:
+- Course not found → Error message
+- Week folder missing → "MISSING" status in summary
+- lecture-content.md missing → Skips that week
+- Multiple slide formats → Fallback counting logic
+
+## Technical Details
+
+**Template:** `.claude/templates/gemini-slide-handoff-prompt.md`
+**Script:** `tools/generate_gemini_prompts.py`
+
+**Key features:**
+- Strips speaker notes (`<speaker-notes>` XML tags)
+- Counts slides from XML structure
+- Extracts topic and removes "Week N:" prefix
+- Generic university placeholder support
+- Zero-padded week numbers (01, 02, etc.)
+
+## Next Steps After Generation
+
+1. Navigate to each week folder
+2. Open `gemini-prompt.md`
+3. Copy everything below the instructions section
+4. Paste into Google Gemini
+5. Download generated PPTX as `week-{NN}.pptx`
+6. Run `/add-speaker-notes {CODE} {N}` to insert speaker notes

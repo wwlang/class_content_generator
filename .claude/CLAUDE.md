@@ -16,6 +16,9 @@ Generate world-class university course content with research validation and asse
 | Add speaker notes | `/add-speaker-notes [CODE] [N]` |
 | Export DOCX | `/export-docx [CODE] [N]` |
 | Research articles | `/research-topic "[Topic]" "[Concepts]"` |
+| Validate XML slides | `python tools/validate_lecture_xml.py [CODE]` |
+| Normalize headers | `python tools/normalize_lecture_headers.py [CODE]` |
+| Renumber slides | `python tools/renumber_slides.py [CODE] [N]` |
 
 **Skills** (loaded automatically): `content-generation/`, `assessment-design/`, `research/`
 
@@ -31,15 +34,16 @@ Generate world-class university course content with research validation and asse
 
 ```
 1. /new-course [CODE] [Name]
-2. /generate-syllabus              (2-3 hrs with existing research)
-3. /generate-handbook [CODE]       (1-2 hrs - BEFORE weekly content)
-4. /generate-course [CODE]         (7-12 hrs batch)
-   OR /generate-week [N]           (45-70 min each)
-5. /validate-content [CODE]        (5-10 min - AI quality checks)
-6. /enhance-coherence [CODE]       (15-30 min polish)
+2. /generate-syllabus
+3. /generate-handbook [CODE]       (BEFORE weekly content)
+4. /generate-course [CODE]
+   OR /generate-week [N]
+5. /validate-content [CODE]
+6. /enhance-coherence [CODE]
 7. /gemini-handoff [CODE] [N]      (generates prompt → paste into Gemini)
 8. /add-speaker-notes [CODE] [N]   (merge speaker notes into Gemini PPTX)
-9. /export-docx [CODE] [N]
+9. Create exam revision guide      (assessments/final-exam-revision.md)
+10. /package-course [CODE]         (converts all markdown → DOCX, creates ZIP)
 ```
 
 **Why this order:**
@@ -49,6 +53,7 @@ Generate world-class university course content with research validation and asse
 - Weekly content can now align with specific assessment requirements
 - **Validation catches issues BEFORE polishing** - fix critical problems first
 - Gemini creates visual slides from lecture-content.md; Claude adds speaker notes back
+- Exam revision guide helps students prepare using weekly quizzes and slides
 
 ## Documentation
 
@@ -62,9 +67,6 @@ Generate world-class university course content with research validation and asse
 | Writing skills/prompts | `.claude/skills/writing-instructions.md` |
 | LLM prompting guidelines | `.claude/skills/self-prompting-instructions.md` |
 
-## Coding Standards
+## Project-Specific Standards
 
-- SOLID principles, PEP 8, type hints required
-- Max 500 lines/file, 50 lines/function
-- 80%+ test coverage
-- Use Context7 (`mcp__context7__resolve-library-id` → `mcp__context7__get-library-docs`) for library APIs
+- 80%+ test coverage for Python tools

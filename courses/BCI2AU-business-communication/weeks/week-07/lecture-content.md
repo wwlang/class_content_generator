@@ -1,1425 +1,1089 @@
-# Week 7: Persuasive Presentations
+# Persuasive Presentations: Inspiring Action Through Storytelling
 
-**Course:** BCI2AU Business Communication
-**Duration:** 2 hours
-**Assessment Connection:** Persuasive Proposal DUE this week (15%), prepares for Group Presentation (Week 12)
+<slide number="1" layout="title" title="Title Slide">
 
----
+# Persuasive Presentations
 
-## OPENING SECTION (4 slides)
+**Inspiring Action Through Storytelling**
 
-### Slide 1: Hook
-<!-- LAYOUT: big-number -->
+<speaker-notes>
+Welcome to Week 7. Today we explore how to move audiences from passive listening to active commitment through evidence-based persuasion techniques. This week connects directly to your Persuasive Proposal due this week - the frameworks we study today apply equally to written and oral communication.
+</speaker-notes>
 
-## 33% Increase in Hotel Towel Reuse
+</slide>
 
-**Just by changing one word on the sign**
+<slide number="2" layout="big-number" title="Hook">
 
-"Most guests in this room reuse their towels" vs. "Please reuse your towels"
+# 73%
 
-(Goldstein, Cialdini & Griskevicius, 2008)
+**of employees don't trust their manager's communication**
 
-**The power of persuasive language in business**
+*(Edelman Trust Barometer, 2024)*
 
-#### Speaker Notes
+<speaker-notes>
+This statistic typically surprises students - in an era of constant communication, why is trust declining? The answer lies in how we communicate, not just what we say. Common student questions: "Is this global?" (Yes, across 28 markets) and "What industries are worst?" (Technology and financial services show lowest trust scores).
 
-**Opening:**
-- Welcome to Week 7, where we explore how small changes in communication create massive shifts in behavior
-- This hotel study represents millions of dollars in cost savings—all from understanding persuasion psychology
+The implication: Persuasion without credibility is manipulation. Today we learn frameworks that build genuine influence through ethical persuasion.
+</speaker-notes>
 
-**Key Points:**
-- This isn't manipulation—it's understanding how people naturally make decisions
-- The difference: social proof (what others do) vs. generic request
-- Today you'll learn the scientific principles behind persuasive communication
-- This applies to proposals, presentations, negotiations, leadership
+</slide>
 
-**Example:**
-- Vietnamese context: Grab/Shopee use these principles constantly—countdown timers, "X people bought this," limited seats
-- You're already experiencing persuasion daily; today you become intentional users
-
-**Check Understanding:**
-- "Quick question: When was the last time you made a purchase because 'only 3 left' or 'sale ends tonight'? Be honest!"
-
-**Transition:**
-- "Let's see what you'll master today to create this kind of influence ethically..."
-
----
-
-### Slide 2: Learning Objectives
+<slide number="3" title="Learning Objectives">
 
 ## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Apply** Aristotle's three rhetorical appeals (ethos, pathos, logos) to business presentations
-2. **Identify** and **use** Cialdini's seven principles of persuasion in professional communication
-3. **Construct** persuasive narratives using the SUCCESs storytelling framework
-4. **Design** calls to action that drive specific audience behaviors
-5. **Evaluate** ethical boundaries between influence and manipulation
+1. **Apply** Aristotle's three rhetorical appeals (ethos, pathos, logos) to analyze and construct persuasive messages
+2. **Identify** Cialdini's seven principles of persuasion in business communication contexts
+3. **Construct** persuasive narratives using the SUCCESs framework for memorable, actionable messages
+4. **Evaluate** the ethical boundaries between influence and manipulation
 
-#### Speaker Notes
+<speaker-notes>
+These objectives are directly testable on the Week 11 quiz and immediately applicable to your Persuasive Proposal due this week. Connect each objective to the assessment:
 
-**Opening:**
-- "These aren't just theoretical—each objective connects directly to your Persuasive Proposal due this week"
+- Objective 1 helps you balance credibility, emotion, and logic in your proposal
+- Objective 2 provides specific persuasion techniques for your argument
+- Objective 3 ensures your message sticks with decision-makers
+- Objective 4 maintains professional integrity in your persuasive writing
 
-**Key Points:**
-- Aristotle's appeals = the foundation (2,300 years old, still the best framework)
-- Cialdini's principles = the psychology (backed by 35+ years of research)
-- SUCCESs = the structure (how to make your message stick)
-- Call to action = the outcome (get people to do what you propose)
-- Ethics = the boundary (persuasion vs. manipulation)
+Tutorial today: You'll apply these frameworks to draft your proposal opening paragraph.
+</speaker-notes>
 
-**Example:**
-- Your Persuasive Proposal needs all five: credibility (ethos), emotion (pathos), logic (logos), persuasive techniques (Cialdini), memorable structure (SUCCESs), clear next step (CTA)
+</slide>
 
-**Check Understanding:**
-- "Look at objective 5—why do you think we emphasize ethics in persuasion? Turn to your neighbor and discuss for 30 seconds."
-
-**Transition:**
-- "Before we dive in, let's connect this to your assessment..."
-
----
-
-### Slide 3: Assessment Connection - PROPOSAL DUE THIS WEEK
-<!-- LAYOUT: framework -->
+<slide number="4" layout="framework" title="Assessment Connection">
 
 ## How This Prepares You
 
-**Persuasive Proposal (15%) - DUE THIS WEEK**
+**Persuasive Proposal (Due Week 7 - Sunday 11:59 PM):** 1000-1500 word formal proposal applying persuasion frameworks
 
-| Component | Today's Content | Tutorial Practice |
-|-----------|-----------------|-------------------|
-| **Opening hook** | SUCCESs: Unexpected principle | Draft 3 opening options |
-| **Credibility building** | Ethos + Authority principle | Identify expertise signals |
-| **Logical argument** | Logos + structured reasoning | SCQA framework application |
-| **Emotional appeal** | Pathos + Stories principle | Personal stakeholder story |
-| **Call to action** | Commitment principle + clear ask | Specific, measurable request |
+**Today's frameworks → Your proposal:**
+- **Aristotle's Appeals:** Balance ethos (credibility), pathos (emotion), logos (data) in your argument
+- **Cialdini's Principles:** Apply 3+ principles explicitly in your proposal
+- **SUCCESs Model:** Make your message memorable and actionable
 
-**Also builds toward:** Group Presentation (Week 12, 40% total)
+**Tutorial this week:** Draft your opening paragraph using ethos-pathos-logos balance and at least 2 Cialdini principles
 
-#### Speaker Notes
+<speaker-notes>
+Students appreciate seeing the direct connection between lecture and assessment. Emphasize that the assessment rubric specifically asks for "application of at least 3 Cialdini principles (explicitly identified)" - so today's lecture teaches exactly what's being graded.
 
-**Opening:**
-- "This is an assessment week—your Persuasive Proposal is due. Today gives you the frameworks to finalize it."
-- "Every concept we cover today should appear in your proposal"
+Remind students: Proposals are due Sunday night this week. Tutorial today gives them structured time to work on the opening with peer feedback before final submission.
+</speaker-notes>
 
-**Key Points:**
-- Opening hook: Use "Unexpected" from SUCCESs—surprise your reader to create curiosity
-- Credibility: Establish ethos through research, expertise, track record
-- Logical argument: Use SCQA (Situation-Complication-Question-Answer) from Week 3
-- Emotional appeal: Tell a story about a real person affected by your proposal
-- Call to action: Be specific ("Approve $5,000 budget by Friday") not vague ("Consider this")
+</slide>
 
-**Example:**
-- Vietnamese student example: Proposal to implement flex work policy
-  - Hook: "Our competitor gained 40% more job applicants after one policy change"
-  - Ethos: Cite HR research from top universities
-  - Logos: Cost-benefit analysis with data
-  - Pathos: Story of working parent's daily commute struggle
-  - CTA: "Approve 6-month pilot starting next quarter"
-
-**Check Understanding:**
-- "Which component of your proposal feels weakest right now? We'll strengthen that today."
-
-**Transition:**
-- "Let's look at our roadmap for the next two hours..."
-
----
-
-### Slide 4: Roadmap
-<!-- LAYOUT: section-break -->
+<slide number="5" layout="section-break" title="Roadmap">
 
 ## Today's Journey
 
-**Part 1: The Classical Foundation (25 min)**
-Aristotle's Ethos, Pathos, Logos
+**Part 1: Classical Rhetoric** (25 min)
+- Aristotle's ethos, pathos, logos
+- Balancing appeals for modern audiences
 
-**Part 2: The Psychology of Yes (25 min)**
-Cialdini's Seven Principles of Persuasion
+**Part 2: Psychology of Persuasion** (30 min)
+- Cialdini's 7 principles
+- Ethical application in business
 
-**Part 3: Making Ideas Stick (25 min)**
-SUCCESs Framework for Memorable Messages
+**Part 3: Sticky Storytelling** (25 min)
+- SUCCESs framework
+- Change narratives that drive action
 
-**Part 4: From Stories to Action (25 min)**
-Change Narratives + Ethical Boundaries
+<speaker-notes>
+Visual overview helps students track progress. We'll move through three complementary frameworks: classical rhetoric (2,300 years old but still foundational), modern psychological research (evidence-based compliance triggers), and narrative structure (making ideas memorable and actionable).
 
-**Break:** 5 min after Part 2
+Return to this slide at each transition point so students know where we are in the journey.
+</speaker-notes>
 
-#### Speaker Notes
+</slide>
 
-**Opening:**
-- "Four parts, each building on the last—by the end, you'll have a complete persuasive communication toolkit"
+<slide number="6" layout="section-break" title="Part 1 Introduction">
 
-**Key Points:**
-- Part 1 = Foundation (what all persuasion is built on)
-- Part 2 = Psychology (why people say yes)
-- Part 3 = Structure (how to make your message memorable)
-- Part 4 = Application (putting it together + staying ethical)
-- We'll take a 5-minute break after Part 2 (50 minutes in)
+# Part 1: Classical Rhetoric
 
-**Example:**
-- Think of it like building a house: Aristotle = foundation, Cialdini = walls, SUCCESs = roof, Part 4 = interior design
-- Each part works alone, but together they create something powerful
+**The Foundation of Persuasion**
 
-**Check Understanding:**
-- "We'll pause for questions after each part—hold specific questions until then, but interrupt if something is unclear"
+<speaker-notes>
+Transition from roadmap: "Let's begin with the oldest persuasion framework in Western thought - and still the most useful. Aristotle identified three appeals in 350 BCE, and every effective presentation you've ever seen uses all three."
 
-**Transition:**
-- "Let's start 2,300 years ago with the most influential communication framework ever created..."
+Preview: We'll see how ethos (credibility), pathos (emotion), and logos (logic) work together, and why imbalance hurts your message.
+</speaker-notes>
 
----
+</slide>
 
-## PART 1: THE CLASSICAL FOUNDATION (5 slides)
+<slide number="7" layout="framework" title="Aristotle's Three Appeals">
 
-### Slide 5: Part 1 Introduction
-<!-- LAYOUT: section-break -->
+## Aristotle's Rhetorical Appeals
 
-## PART 1
+| Appeal | Definition | Presentation Elements | Example |
+|--------|------------|----------------------|---------|
+| **Ethos** | Speaker credibility and trustworthiness | Credentials, audience understanding, appropriate tone | "As MIT research shows..." |
+| **Pathos** | Emotional resonance with audience | Stories, images, metaphors, vivid language | "Imagine your team with 3 extra hours per week..." |
+| **Logos** | Logical evidence and reasoning | Statistics, charts, research citations, diagrams | "30% efficiency gain = $2.4M annual savings" |
 
-# The Classical Foundation
+**Key insight:** All three are required. Overuse any single appeal and you lose credibility.
 
-**Aristotle's Three Rhetorical Appeals**
+<speaker-notes>
+This table is the foundation for analyzing any persuasive message - written or oral. Nancy Duarte (presentation expert who created Al Gore's slides) says: "Being too geeky or too expressive creates a chasm between you and the audience."
 
-*Ethos • Pathos • Logos*
+Ethos answers: "Why should I trust you?" - Establish this first or audience won't engage.
+Pathos answers: "Why should I care?" - Logic convinces intellectually; emotion spurs action.
+Logos answers: "Is this argument sound?" - Without logic, you're seen as manipulative.
 
-#### Speaker Notes
+Common mistake: Business students over-rely on logos (data dumps) and ignore pathos. Engineers do the opposite. Great communicators balance all three strategically based on audience analysis.
 
-**Opening:**
-- "In 350 BCE, Aristotle wrote 'Rhetoric'—it's still the most-cited work on persuasion today"
-- "Every business school teaches this. Why? Because it works."
+You could draw three overlapping circles on a whiteboard labeled Ethos, Pathos, Logos with "Persuasion" in the center where all three intersect - this visual shows they work together.
+</speaker-notes>
 
-**Key Points:**
-- Rhetorical appeals = the three ways humans are persuaded
-- Aristotle observed these patterns in Athens' marketplace and political forums
-- 2,300+ years later, neuroscience confirms he was right
-- Modern applications: TED talks, sales pitches, political campaigns, your proposal
+</slide>
 
-**Example:**
-- Steve Jobs' iPhone launch (2007): Ethos (Apple's track record), Pathos (emotional product videos), Logos (technical specs)
-- Every successful pitch uses all three
+<slide number="8" title="Balancing Appeals">
 
-**Check Understanding:**
-- "Who here has heard of ethos, pathos, logos before?" (show of hands)
-- "Good—let's go deeper than definitions into practical application"
+## The Credibility Gap: Too Analytical or Too Emotional
 
-**Transition:**
-- "First appeal: establishing credibility before you say anything..."
+**Too analytical (all logos):**
+- Drowns audience in data without connection
+- "Here are 47 charts showing productivity metrics..."
+- Intellectually convincing but doesn't inspire action
 
----
-
-### Slide 6: Ethos - Credibility and Character
-<!-- LAYOUT: framework -->
-
-## Ethos: Establishing Credibility
-
-**Definition:** Your credibility as a speaker—why should the audience trust you?
-
-**Built through:**
-- **Expertise** - Demonstrating knowledge and experience
-- **Common ground** - Showing you understand the audience
-- **Character** - Displaying honesty, fairness, goodwill
-- **Appropriate balance** - Matching tone to audience expectations
-
-**In business presentations:**
-- Citing reputable sources and research
-- Sharing relevant credentials or experience
-- Acknowledging counterarguments fairly
-- Understanding audience's values and concerns
-
-**Example:** "As someone who's managed remote teams for 5 years, I've seen firsthand..." (expertise + experience)
-
-#### Speaker Notes
-
-**Opening:**
-- "Ethos comes before you even open your mouth—it's the credibility you bring into the room"
-- "Without ethos, your audience won't listen. With it, they lean in."
-
-**Key Points:**
-- Expertise: You don't need to be the world's top expert, just knowledgeable enough to be credible
-- Common ground: "I understand your concerns about budget because I manage one too"
-- Character: Honesty matters—admit limitations, acknowledge opposing views
-- Appropriate balance: Don't oversell or undersell your expertise
-
-**Example:**
-- Nancy Duarte's article (MIT Sloan 2024): "If you don't understand your audience, you risk creating an imbalance—it hurts your credibility"
-- Vietnamese context: In proposals to senior leaders, establish ethos by referencing their previous initiatives—shows you've done homework
-- Bad ethos: "Trust me, this will work" (no evidence)
-- Good ethos: "This approach succeeded at Samsung Vietnam and Vingroup—here's the data"
-
-**Check Understanding:**
-- "Think about a time someone lost credibility with you. What did they do?" (pair-share 30 seconds)
-
-**Transition:**
-- "Ethos gets you in the door. Pathos keeps them listening..."
-
----
-
-### Slide 7: Pathos - Emotional Connection
-<!-- LAYOUT: framework -->
-
-## Pathos: Engaging Emotions
-
-**Definition:** Appealing to the audience's emotions, values, and beliefs
-
-**Created through:**
-- **Stories and anecdotes** - Personal narratives that resonate
-- **Vivid imagery** - Concrete, sensory details
-- **Metaphors and analogies** - Making abstract concepts relatable
-- **Value alignment** - Connecting to what the audience cares about
-
-**In business presentations:**
-- Customer success stories
-- "Imagine if..." scenarios
-- Photos and videos of real people
-- Connecting proposal to company mission/values
-
-**Example:** "Imagine the frustration of a customer waiting 3 days for a response that takes 3 minutes to send."
-
-#### Speaker Notes
-
-**Opening:**
-- "Pathos isn't about manipulation—it's about making your logical argument feel real and relevant"
-- "Nancy Duarte: 'While logical arguments can lead to intellectual agreement, emotional resonance is often what spurs action'"
-
-**Key Points:**
-- Stories are the most powerful pathos tool—humans are wired for narrative
-- Vivid imagery: Don't say "inefficient," say "employees spending 2 hours daily on manual data entry"
-- Metaphors: Complex ideas become simple (e.g., "Our system is a bridge between departments")
-- Value alignment: If company values innovation, frame proposal as innovative
-
-**Example:**
-- Bad pathos: "This is really important and you should care"
-- Good pathos: "Meet Linh, a customer service rep who receives 200 emails daily. She works overtime every week just to keep up. Our solution gives her 10 hours back per week—time she can spend solving complex customer problems instead of sorting messages."
-- Vietnamese context: Family-oriented culture values work-life balance—use stories about employees spending more time with family
-
-**Check Understanding:**
-- "Duarte warns about being 'too emotional or too analytical.' What happens if a presentation is ALL pathos, no logos?"
-- Expected answer: "Sounds manipulative, lacks substance, audience questions credibility"
-
-**Transition:**
-- "Pathos engages the heart. Now we need the head..."
-
----
-
-### Slide 8: Logos - Logic and Evidence
-<!-- LAYOUT: framework -->
-
-## Logos: Reasoning with Evidence
-
-**Definition:** Using logic, data, and structured reasoning to support your argument
-
-**Demonstrated through:**
-- **Statistics and data** - Quantitative evidence
-- **Research citations** - Expert testimony and studies
-- **Logical structure** - Clear cause-effect relationships
-- **Visual evidence** - Charts, graphs, diagrams
-
-**In business presentations:**
-- ROI calculations and financial projections
-- Market research and competitive analysis
-- Process diagrams and timelines
-- Case study results with metrics
-
-**Example:** "Companies using this system reduced customer response time by 47% and increased satisfaction scores from 3.2 to 4.5 out of 5."
-
-#### Speaker Notes
-
-**Opening:**
-- "Logos is what business audiences expect—they want to see the numbers, the logic, the proof"
-- "But logos alone is dry. It needs ethos and pathos to drive action."
-
-**Key Points:**
-- Statistics: Use specific numbers (47%) not vague terms (almost half)
-- Research citations: "According to MIT Sloan research..." beats "Studies show..."
-- Logical structure: If A, then B, therefore C—make reasoning transparent
-- Visual evidence: A well-designed chart communicates faster than a paragraph of numbers
-
-**Example:**
-- Vietnamese business context: Data-driven decision making is highly valued
-- Logos framework for proposals: Current state (data) → Problem (data) → Solution (data) → Expected outcome (projected data)
-- Bad logos: "This will probably save money"
-- Good logos: "Based on our 3-month pilot, we project 23% cost reduction ($45,000 annually) with 95% confidence interval"
-
-**Check Understanding:**
-- "What's the risk of a presentation that's ALL logos, no pathos or ethos?"
-- Expected answer: "Boring, doesn't inspire action, audience forgets it, feels like reading a spreadsheet"
-
-**Transition:**
-- "Duarte's research shows the best presentations balance all three. Let's see how..."
-
----
-
-### Slide 9: Balancing the Three Appeals
-<!-- LAYOUT: case-study -->
-
-## Case Study: Balancing Ethos, Pathos, Logos
-
-**Scenario:** Proposing remote work policy to conservative management
-
-**Too much logos (analytical):**
-"Remote work increases productivity 13% (Stanford study), reduces office costs $10,000/employee/year, decreases turnover 50%..."
-*Result:* Feels like a spreadsheet. No emotional connection.
-
-**Too much pathos (emotional):**
-"Employees are exhausted from commutes. Imagine the joy of working from home! Think of the work-life balance!"
-*Result:* Sounds idealistic. Where's the business case?
+**Too emotional (all pathos):**
+- Feels manipulative without evidence
+- "This will transform everything! Trust me!"
+- Generates skepticism: "Where's the proof?"
 
 **Balanced approach:**
-- **Ethos:** "I've researched 15 companies who implemented this, including Vingroup..."
-- **Logos:** "Stanford study shows 13% productivity gain, $10K/employee savings..."
-- **Pathos:** "Our employee survey shows 78% would stay longer if we offered flexibility. Meet Tuan, who spends 3 hours daily commuting..."
-- **Result:** Credible, logical, AND emotionally resonant
+- Lead with ethos (establish credibility)
+- Support with logos (data and logic)
+- Connect with pathos (why it matters to them)
+- Close with logos + pathos (specific next step)
 
-#### Speaker Notes
+<speaker-notes>
+This is where Nancy Duarte's 2024 MIT Sloan article provides practical guidance: "If you don't take time to understand your audience, you risk creating an imbalance that hurts your credibility."
 
-**Opening:**
-- "This is from Nancy Duarte's 2024 article—real scenario showing imbalance dangers"
-- "Imbalance hurts credibility and reduces persuasive impact"
+Exercise for students to try mentally: Think of the worst presentation you've ever seen. Was it too many bullet points with no story (all logos)? Or all inspirational quotes with no substance (all pathos)? Most bad presentations are unbalanced.
 
-**Key Points:**
-- Too much logos: Common mistake in Vietnamese business culture (very data-driven)—but data doesn't inspire
-- Too much pathos: Seen as emotional, unprofessional, lacking rigor
-- Balance: Start with ethos (why trust you), support with logos (the data), humanize with pathos (the story)
-- Duarte's advice: Do a "slide inventory"—count logos slides vs. pathos slides, aim for balance
+Practical application for proposals: Your opening paragraph should establish ethos ("I've researched this thoroughly"), your body should be mostly logos ("Here's the evidence"), but your conclusion needs pathos ("Here's what this means for our team's future").
 
-**Example:**
-- For your Persuasive Proposal: Include data tables (logos), customer testimonials (pathos), and cite research (ethos)
-- Sequence matters: Hook with pathos → establish ethos → build case with logos → close with pathos call to action
-- Vietnamese management often wants logos first—adapt sequence for your audience
+Vietnamese cultural note: Vietnamese business culture tends toward formal, data-heavy presentations (logos-heavy). Adding appropriate pathos - stories about people, impact on teams - can differentiate your communication.
+</speaker-notes>
 
-**Check Understanding:**
-- "Look at your current proposal draft. Quick self-assessment: Is it logos-heavy, pathos-heavy, or balanced?"
-- "No judgment—just awareness. You can adjust in tutorial today."
+</slide>
 
-**Transition:**
-- "Aristotle gave us the foundation. Now let's add modern psychology..."
+<slide number="9" title="Ethos-Pathos-Logos in Action">
 
----
+## Example: Budget Proposal Opening
 
-## PART 2: THE PSYCHOLOGY OF YES (6 slides)
+**Weak (Logos only):**
+> "I request $15,000 for training. Industry data shows 200% ROI on leadership development."
 
-### Slide 10: Part 2 Introduction
-<!-- LAYOUT: section-break -->
+**Strong (Balanced):**
+> "Last quarter, we lost two high-potential managers to competitors offering leadership development (Pathos - emotional impact). Industry research shows leadership training delivers 200% ROI within 18 months (Logos - evidence). I've researched three proven programs from top business schools (Ethos - credibility) and recommend a $15,000 investment that will pay for itself by Q4 2026."
 
-## PART 2
+**What changed:**
+- Added human impact (why we should care)
+- Established speaker credibility (thorough research)
+- Kept the data but contextualized it
 
-# The Psychology of Yes
+<speaker-notes>
+Walk through the balanced example sentence by sentence, labeling each appeal:
 
-**Cialdini's Seven Principles of Persuasion**
+"Last quarter we lost two managers..." = Pathos (you can feel the loss, it's concrete)
+"Industry research shows 200% ROI..." = Logos (data backs the claim)
+"I've researched three proven programs..." = Ethos (I'm credible; I've done the homework)
+"$15,000 investment that pays for itself..." = Logos + Pathos (logical calculation + positive framing)
 
-*The science behind why people say yes*
+Key teaching point: The weak version has good data but doesn't connect emotionally. The strong version uses the same data but wraps it in human context and demonstrates speaker preparation.
 
-#### Speaker Notes
+Ask students: "Which version would you approve if you were the CFO?" Most will choose the balanced version because it gives them both rational justification (logos) and emotional motivation (pathos) while trusting the speaker (ethos).
 
-**Opening:**
-- "Robert Cialdini spent 35+ years studying persuasion—going undercover in car dealerships, fundraising organizations, sales training programs"
-- "His book 'Influence' has 7+ million copies sold, cited 56,000+ times, assigned at Stanford GSB for 25+ years"
-- "Warren Buffett called it 'one of the best business books of all time'"
+Connection to Persuasive Proposal: Your executive summary should follow this exact pattern - problem with human impact, data supporting solution, your credibility as proposer.
+</speaker-notes>
 
-**Key Points:**
-- These aren't theories—they're proven psychological principles backed by hundreds of studies
-- Each principle activates automatic compliance responses (mental shortcuts)
-- You experience these daily: Shopee flash sales, Grab surge pricing, "limited seats" on flights
-- Today you learn to use them intentionally and ethically
+</slide>
 
-**Example:**
-- Cialdini's restaurant study: Tips increased 3% with one mint, 14% with two, 23% when waiter brought one mint, walked away, then "returned" with a second "just for you"
-- Same product, different persuasion technique = 23% difference
+<slide number="10" layout="section-break" title="Part 2 Introduction">
 
-**Check Understanding:**
-- "Before we begin: persuasion vs. manipulation. What's the difference?" (quick discussion)
-- "Key distinction: Persuasion respects autonomy; manipulation deceives or coerces"
+# Part 2: Psychology of Persuasion
 
-**Transition:**
-- "Let's start with the most powerful principle..."
+**The Science of Influence**
 
----
+<speaker-notes>
+Transition: "Aristotle gave us the foundation 2,300 years ago. Now let's add modern psychological research. Robert Cialdini spent 35 years studying why people say 'yes' - and identified seven automatic triggers that bypass analytical thinking."
 
-### Slide 11: Principle 1 - Reciprocity
-<!-- LAYOUT: framework -->
+These aren't manipulation tricks - they're hardwired psychological patterns. Understanding them helps you persuade ethically AND defend yourself against unethical influence.
+</speaker-notes>
 
-## Reciprocity: The Power of Giving First
+</slide>
 
-**Definition:** People feel obligated to return favors and concessions
+<slide number="11" layout="framework" title="Cialdini's Seven Principles">
 
-**How it works:**
-- Receiving creates psychological debt
-- We're culturally conditioned to reciprocate
-- Even small gifts trigger the obligation
+## Cialdini's Principles of Persuasion
+
+Seven psychological triggers that activate automatic compliance:
+
+1. **Reciprocity** - People feel obligated to return favors
+2. **Commitment/Consistency** - People align behavior with past commitments
+3. **Social Proof** - People follow what similar others do
+4. **Authority** - People defer to credible experts
+5. **Liking** - People say yes to those they like
+6. **Scarcity** - People value what's rare or diminishing
+7. **Unity** - People influenced by shared group identity
+
+**Why they work:** Each principle activates mental shortcuts that bypass analytical thinking in increasingly overloaded lives.
+
+<speaker-notes>
+These seven principles are THE most cited persuasion framework in business. *Influence* has sold 7+ million copies and has 56,000+ academic citations. Assigned at Stanford GSB for 25+ years.
+
+Key Cialdini quote to share: "In the increasingly overloaded lives we lead, more than ever we need shortcuts or rules of thumb to guide our decision-making." These principles ARE those shortcuts - they're automatic responses our brains developed to save cognitive energy.
+
+IMPORTANT: All seven work cross-culturally, but their relative strength varies. Social Proof and Authority are particularly strong in Vietnamese culture (collectivist, high power distance). Scarcity works universally.
+
+Unity is Cialdini's newest addition (2021 edition) - the "us vs. them" trigger. Especially relevant in team communication and organizational change.
+
+Students often ask: "Is this manipulation?" Answer: Not if you're persuading people toward genuine benefits. These principles explain HOW persuasion works - ethics depends on WHAT you're persuading them to do and WHY.
+</speaker-notes>
+
+</slide>
+
+<slide number="12" title="Reciprocity in Practice">
+
+## Principle 1: Reciprocity
+
+**Definition:** People feel obligated to return favors - even small, unsolicited ones.
+
+**Research evidence:**
+- Restaurant study: Tips increased 3% with one mint, 14% with two mints
+- Most powerful: 23% increase with personalized delivery ("These are for you")
+- MBA negotiations: Exchanging personal information first → 90% agreement vs. 55% without rapport
 
 **Business applications:**
-- Free samples, trials, consultations
-- Giving valuable content before asking for sale
-- Making concessions in negotiation to encourage reciprocation
-- Providing help before requesting assistance
+- Free trials, samples, consultations before asking for business
+- Sharing valuable insights before requesting meeting
+- Offering help to colleagues before asking for assistance
 
-**Example:** Software companies offering free trials → users feel obligated to consider purchase
+**Ethical use:** Provide genuine value, not manipulative "gifts"
 
-**Key stat:** Restaurant tips increased 23% when mints were given as "personalized gifts" vs. standard service
+<speaker-notes>
+Reciprocity is Cialdini's most powerful principle - it's universal across all cultures studied. The key is that the favor comes FIRST and feels genuine, not transactional.
 
-#### Speaker Notes
+The mint study is fascinating: One mint = 3% increase (small reciprocity). Two mints = 14% increase (bigger favor, bigger obligation). But the 23% increase came from personalized delivery - the server walked away, came back, said "For you nice people, here's an extra mint." The personalization made it feel like a personal favor, triggering stronger reciprocity.
 
-**Opening:**
-- "Reciprocity is hardwired—across all cultures, receiving creates obligation to give back"
-- "It's why free samples work so well"
+Vietnamese business culture note: Gift-giving is deeply embedded in Vietnamese business relationships. This is reciprocity at work culturally - relationships are built through exchange. However, Western readers might misinterpret this as bribery, so be careful how you frame reciprocity in international contexts.
 
-**Key Points:**
-- The gift must come first, with no strings attached (perceived)
-- Personalization amplifies effect (restaurant mint study)
-- Reciprocity works even when gift is unsolicited
-- Vietnamese culture particularly values reciprocity (social harmony)
+For Persuasive Proposal: You could use reciprocity by demonstrating the research you've already done (giving value upfront) before asking for budget approval. "I've already analyzed three vendors and negotiated preliminary quotes" shows you've invested effort before asking for investment.
 
-**Example:**
-- Vietnamese business: Giving small gift at first meeting (tea, local product) before discussing business
-- Bad reciprocity: "I'm giving you this so you'll buy" (too obvious)
-- Good reciprocity: "Here's a free guide to help with your problem. If you want more support, we also offer..."
-- Proposal application: Give reader valuable research/insights in proposal before asking for approval
-- Shopee/Lazada: Free shipping voucher before asking you to shop
+Warning: Manipulative reciprocity feels icky and backfires. Example: "I sent you this unrequested gift, now buy my product" creates resentment, not obligation. Genuine reciprocity builds relationships; transactional reciprocity damages them.
+</speaker-notes>
 
-**Check Understanding:**
-- "Where have you experienced reciprocity this week? Grab voucher? Free coffee sample at Highlands?"
+</slide>
 
-**Transition:**
-- "Reciprocity gets attention. The next principle locks in commitment..."
+<slide number="13" title="Commitment and Consistency">
 
----
+## Principle 2: Commitment and Consistency
 
-### Slide 12: Principles 2-3 - Commitment and Social Proof
-<!-- LAYOUT: framework -->
+**Definition:** People align future behavior with past commitments, especially public or written ones.
 
-## Commitment & Consistency + Social Proof
+**Research evidence:**
+- Written commitments: Medical appointment no-shows dropped 18% when patients wrote appointment on card themselves vs. receptionist writing it
+- Public commitments: Weight loss groups with public goals lost 3x more weight than private goal groups
+- Small commitments lead to larger ones (foot-in-the-door technique)
 
-**Commitment & Consistency:**
-People align future behavior with past commitments (especially public ones)
+**Business applications:**
+- "Can you commit to trying this for 30 days?"
+- Getting verbal agreement to principles before proposing solution
+- Asking for small initial commitment that leads to larger ones
+- Referencing past decisions: "As we agreed in Q1..."
 
-- Start with small commitments → build to larger
-- Written commitments more powerful than verbal
-- Public commitments harder to break
+**Ethical use:** Commitments must be voluntary and aligned with genuine interests
 
-**Example:** Health clinic reduced no-shows 18% by having patients write their own appointment cards
+<speaker-notes>
+Consistency is deeply psychological - we want to see ourselves as consistent because inconsistency feels uncomfortable (cognitive dissonance). Once we commit to something, especially publicly or in writing, we feel internal pressure to follow through.
 
-**Social Proof:**
-People look to others' actions to guide their own, especially under uncertainty
+The medical appointment study demonstrates this brilliantly: When the receptionist filled out the appointment card, patients felt no ownership. When patients wrote their own appointment time, they'd made a micro-commitment in writing - no-shows dropped 18%. Same information, different commitment level.
 
-- Testimonials and case studies
-- "X customers already using this"
-- "Most popular choice" labels
+Vietnamese cultural context: "Saving face" (thể diện) makes public commitments particularly powerful in Vietnamese culture. Once someone has publicly committed, breaking that commitment creates stronger social shame than in individualistic cultures.
 
-**Example:** Hotel towel reuse increased 33% with "Most guests in this room reuse towels" messaging
+Business application: In negotiations, get agreement on principles first ("We both want a solution that's fair to both parties, correct?"). Once they've committed to fairness, they'll feel pressure to be consistent with that commitment when you propose specific terms.
 
-#### Speaker Notes
+For Persuasive Proposal: Reference past organizational commitments. "Our 2025 strategic plan committed to developing internal talent. This training program aligns with that commitment." You're holding the organization accountable to its own stated values.
 
-**Opening:**
-- "Two principles that work powerfully together"
+Warning: Exploiting consistency through bait-and-switch (getting small commitment then demanding larger one) is manipulation. Example: "Just sign here to get information" → "Now you've signed, you owe us X." Ethical use requires genuine alignment between initial and subsequent commitments.
+</speaker-notes>
 
-**Key Points - Commitment:**
-- Small commitments lead to big ones: "Would you consider?" → "Can we schedule 15 min?" → "Here's the contract"
-- Written is powerful: Sign petition → more likely to donate later
-- Public is binding: Announce goal to team → more likely to achieve it
-- Proposal application: Get stakeholder to agree to small step ("Can I present to your team?") before asking for full approval
+</slide>
 
-**Key Points - Social Proof:**
-- We follow the herd, especially when uncertain
-- "Similar others" most persuasive (hotel example: "guests in THIS room")
-- Vietnamese culture: Group harmony valued, social proof particularly effective
-- Numbers matter: "Join 10,000 users" beats "Join our growing community"
+<slide number="14" title="Social Proof in Practice">
 
-**Example:**
-- Commitment: "Before I ask you to approve this proposal, can you review this 2-page summary?" (small commitment first)
-- Social proof: "Three other departments have piloted this successfully" (similar others)
-- Shopee: "X people bought in last hour" (social proof) + "Only 3 left" (scarcity, next principle)
+## Principle 3: Social Proof
 
-**Check Understanding:**
-- "Why is social proof more effective when it's 'similar others'?" (pair discussion)
-- Answer: We look to people like us for guidance
+**Definition:** People follow what similar others do, especially under uncertainty.
 
-**Transition:**
-- "Social proof shows what others do. The next two show who to listen to..."
+**Research evidence:**
+- Hotel towel reuse: Standard sign = 35% compliance
+- "75% of guests in this room reused towels" = 49% compliance (+33% increase)
+- Most powerful when the "proof" comes from similar others
 
----
+**Business applications:**
+- "Join 50,000+ companies using our platform"
+- Customer testimonials from similar industries
+- "Your competitors are already implementing this"
+- Case studies from peer organizations
 
-### Slide 13: Principles 4-5 - Authority and Liking
-<!-- LAYOUT: framework -->
+**Ethical boundary:** Truthful social proof only - fabricated testimonials are manipulation
 
-## Authority + Liking
+<speaker-notes>
+Social Proof is especially powerful in Vietnamese culture (collectivist society, high on Hofstede's Collectivism dimension). "What are others doing?" is a natural decision-making question in group-oriented cultures.
 
-**Authority:**
-People defer to credible experts and legitimate authorities
+The hotel towel study is brilliant experimental design: Same hotel, same rooms, only changed the wording on the card. Standard environmental message ("Help save the planet") = 35% reuse. Specific social proof ("75% of guests in THIS room reused") = 49% reuse. The specificity matters - "this room" makes the comparison group more similar to you.
 
-- Credentials, titles, uniforms
-- Expert testimony and endorsements
-- Demonstrating expertise through content
+Why it works psychologically: Under uncertainty, we assume others know something we don't. If everyone else is doing it, it must be safe/correct. This is efficient decision-making most of the time, but can lead us astray (example: financial bubbles, where "everyone's buying" drives irrational behavior).
 
-**Example:** "9 out of 10 dentists recommend..." (expert authority)
+For Persuasive Proposal: Include evidence that similar companies/departments have successfully implemented your idea. "Three departments at [competitor company] implemented this system with 25% productivity gains" is more persuasive than abstract benefits.
 
-**Liking:**
-People say yes to those they like, trust, and feel similar to
+Vietnamese e-commerce example: Shopee and Lazada heavily use social proof - "X people bought this today," "Y% positive reviews," countdown timers showing demand. These platforms understand that Vietnamese consumers are strongly influenced by what others are buying.
 
-- Finding commonalities
-- Genuine compliments
-- Collaboration and rapport-building
-- Physical attractiveness (yes, it matters)
+Caution: Fake reviews, fabricated testimonials, inflated numbers = manipulation and illegal in many jurisdictions. Social proof must be truthful to be ethical.
+</speaker-notes>
 
-**Example:** MBA negotiations study - Exchanging personal information first led to 90% agreement vs. 55% without rapport
+</slide>
 
-#### Speaker Notes
+<slide number="15" title="Authority in Practice">
 
-**Opening:**
-- "Authority = Ethos from Aristotle. Cialdini added the psychology of how it works."
+## Principle 4: Authority
 
-**Key Points - Authority:**
-- Credentials matter: PhD, CEO title, university affiliation
-- Content marketing = demonstrating authority (giving expertise before asking for sale)
-- Vietnamese culture: High respect for authority (hierarchical society)
-- Proposal application: Cite experts—"According to Harvard Business Review..." or "Dr. Nguyen from VNU recommends..."
-- Warning: False authority backfires catastrophically
+**Definition:** People defer to credible experts and legitimate authority figures.
 
-**Key Points - Liking:**
-- Similarity: "I'm also from Hanoi," "I also studied at NEU"
-- Compliments: Must be genuine, specific ("I really admire your team's customer service approach")
-- Collaboration: Working together creates liking (Tupperware party model)
-- Vietnamese business: Building personal relationships before business discussions (coffee, meals)
+**Research evidence:**
+- Milgram experiments: 65% followed researcher instructions (ethically problematic study)
+- Hospital study: Nurses followed doctor's orders even when medically inappropriate
+- Modern research: Citing sources increases persuasiveness by 40%
 
-**Example:**
-- Authority: Proposal cites research from Stanford, MIT, local universities
-- Liking: Reference shared experience—"As fellow BBA graduates, we understand the pressure to demonstrate ROI..."
-- Combined: "Professor Tran from NEU, who you mentioned admiring, recommends this approach..." (authority + liking through connection)
+**Business applications:**
+- "Harvard research shows..."
+- Expert credentials and certifications
+- Third-party endorsements
+- Data from authoritative sources
 
-**Check Understanding:**
-- "Think about someone who persuaded you recently. Did you like them? Did they seem like an authority? Usually both, right?"
+**Authority = Aristotle's Ethos:** This is where psychology validates classical rhetoric
 
-**Transition:**
-- "Two more principles—these create urgency..."
+<speaker-notes>
+Authority is essentially modern psychological validation of Aristotle's ethos (credibility appeal). Cialdini's research shows we're hardwired to defer to experts - it's usually adaptive (doctors know medicine better than we do), but can be exploited.
 
----
+The Milgram experiments (1961) are one of the most famous and controversial psychology studies ever conducted. Participants were told by a researcher in a white coat to administer electric shocks to another person. 65% continued to maximum voltage despite hearing screams of pain - because an authority figure told them to. (Note: The shocks were fake, but participants believed they were real. This study would never pass modern ethics review.) The lesson: We're shockingly obedient to perceived authority.
 
-### Slide 14: Principles 6-7 - Scarcity and Unity
-<!-- LAYOUT: framework -->
+Vietnamese cultural dimension: Vietnam scores high on Hofstede's Power Distance Index (score of 70), meaning Vietnamese culture has strong respect for hierarchy and authority. Quoting senior leaders, established experts, or prestigious institutions (Harvard, MIT, WHO) carries extra weight in Vietnamese business contexts compared to low-power-distance cultures like Denmark (18).
 
-## Scarcity + Unity
+For Persuasive Proposal: Cite authoritative sources throughout. "According to McKinsey research..." or "MIT Sloan Management Review found..." adds weight to your arguments. Your credibility increases when you demonstrate you've consulted credible experts.
 
-**Scarcity:**
-People value what's rare or diminishing; fear of missing out drives action
+Modern research on source citation: Petty & Cacioppo's Elaboration Likelihood Model research found that citing sources increases message persuasiveness by approximately 40% - people assume cited claims are more truthful even when they don't verify the sources.
 
-- Limited time ("Sale ends Friday")
-- Limited quantity ("Only 3 seats left")
-- Exclusive access ("Members only")
-- Loss framing ("Don't miss out" vs. "Gain benefits")
+Ethical use: Cite real experts accurately. Misrepresenting credentials ("As a Harvard study shows..." when it's actually a blog post) or fake experts (Dr. Oz selling miracle supplements) is manipulation. Authority should be legitimate and relevant to the claim.
+</speaker-notes>
 
-**Example:** British Airways Concorde sales surged after discontinuation announcement
+</slide>
 
-**Unity (Added 2021):**
-People influenced by shared group identity and belonging
+<slide number="16" title="Liking in Practice">
 
-- "We" language vs. "you" language
-- Shared experiences and identities
-- Common goals and values
+## Principle 5: Liking
 
-**Example:** "Don't Mess with Texas" campaign reduced litter 72% by appealing to Texan identity
+**Definition:** People say yes to those they like - based on similarity, compliments, cooperation, and attractiveness.
 
-#### Speaker Notes
+**Research evidence:**
+- Sales negotiations: Finding common ground before negotiating increased agreement rates by 90%
+- MBA study: Participants who spent 5 minutes finding similarities before negotiating reached 90% agreement vs. 55% for those who negotiated immediately
+- Compliments increase compliance even when obviously self-serving
 
-**Opening:**
-- "Scarcity is everywhere in Vietnamese e-commerce—you can't escape it!"
-- "Unity is Cialdini's newest addition (2021 expanded edition)"
+**Business applications:**
+- Finding common ground before making requests
+- Building rapport through genuine compliments
+- Cooperative framing: "Let's solve this together"
+- Physical attractiveness in customer-facing roles (ethical concerns)
 
-**Key Points - Scarcity:**
-- Loss aversion is powerful: We fear losing more than we desire gaining
-- Countdown timers, "only X left," "limited time"
-- Must be genuine—fake scarcity destroys trust
-- Proposal application: "Competitor is launching similar initiative next quarter" or "Budget window closes in 3 weeks"
-- Vietnamese e-commerce masters: Shopee/Lazada flash sales, Grab surge pricing
+**Four pathways to liking:**
+1. **Similarity:** "We're both from the same industry"
+2. **Compliments:** "Your presentation last week was insightful"
+3. **Cooperation:** "Let's work together on this"
+4. **Association:** Linking yourself to positive things
 
-**Key Points - Unity:**
-- "We" creates belonging: "We, as a team..." vs. "You should..."
-- Shared identity: Company values, department goals, national pride
-- Vietnamese culture: Strong in-group orientation (family, company, nation)
-- More powerful than liking—it's about shared essence, not just affinity
+**Ethical use:** Genuine connection, not fake flattery
 
-**Example:**
-- Scarcity: "This budget allocation is available only this fiscal year—next year's priorities will shift"
-- Unity: "As a company committed to innovation [shared value], this proposal aligns with our mission..."
-- Combined: "We [unity] have a brief window [scarcity] to establish market leadership"
+<speaker-notes>
+Liking seems obvious - of course we say yes to people we like - but the research shows how powerful and automatic this principle is. Even obvious flattery works if it's not insultingly transparent.
 
-**Check Understanding:**
-- "Grab shows 'High demand - prices higher than usual.' Which principles? Social proof + scarcity!"
+The MBA negotiation study is remarkable: Same negotiation scenario, same stakes, same information. Only difference - one group spent 5 minutes chatting informally to find commonalities ("Where are you from?" "What did you study?" "What are your hobbies?") before negotiating. That 5-minute investment in rapport building nearly doubled the agreement rate from 55% to 90%.
 
-**Transition:**
-- "Seven principles. Now let's learn how to structure persuasive messages..."
+The four pathways work differently across cultures:
+- **Similarity:** Universal - we trust people like us
+- **Compliments:** Very powerful in Vietnamese culture (showing respect, but must be genuine to avoid losing face)
+- **Cooperation:** Especially effective in collectivist cultures
+- **Association:** Works everywhere (celebrity endorsements, prestige brands)
 
----
+Vietnamese business context: Relationship-building (quan hệ) is essential in Vietnamese business culture. Western executives often make the mistake of "getting down to business" immediately. Vietnamese culture expects relationship-building first - meals together, learning about families, finding connections. This is the Liking principle embedded culturally.
 
-### Slide 15: Applying Cialdini's Principles Ethically
-<!-- LAYOUT: quote -->
+For Persuasive Proposal: Acknowledge contributions of stakeholders genuinely. "The finance team's cost analysis last quarter highlighted this opportunity" shows you've paid attention and creates goodwill. Find common ground with decision-makers.
 
-> "In the increasingly overloaded lives we lead, more than ever we need shortcuts or rules of thumb to guide our decision-making."
-> — Robert Cialdini
+Warning: Fake rapport destroys trust. Insincere compliments, manufactured similarity, surface-level schmoozing - people detect these quickly and become more resistant. Liking must be authentic to work ethically and sustainably.
 
-**The ethical standard:**
-- ✅ Highlight genuine benefits (persuasion)
-- ❌ Fabricate scarcity or social proof (manipulation)
+Quick teaching moment: "How many of you have bought something from a salesperson you liked, even though a competitor had a better product or price?" Most hands go up. That's Liking at work.
+</speaker-notes>
 
-**Use principles to:**
-- Make good decisions easier
-- Reduce friction for mutually beneficial outcomes
-- Help audiences see value they might miss
+</slide>
 
-**Don't use to:**
-- Deceive or coerce
-- Create false urgency
-- Exploit vulnerabilities
+<slide number="17" title="Scarcity in Practice">
 
-#### Speaker Notes
+## Principle 6: Scarcity
 
-**Opening:**
-- "Cialdini's quote reminds us: These principles exist because humans use mental shortcuts"
-- "Persuasion helps people make good decisions faster. Manipulation exploits shortcuts for selfish gain."
+**Definition:** People value what's rare or diminishing - loss aversion drives urgency.
 
-**Key Points:**
-- Ethical persuasion: Your proposal genuinely benefits the organization → Use principles to overcome natural resistance to change
-- Manipulation: Your proposal mainly benefits you → Use principles to trick decision-makers
-- Truth test: Would you be comfortable if audience knew your persuasion techniques?
-- Vietnamese business ethics: Trust and long-term relationships valued—manipulation damages both
+**Research evidence:**
+- British Airways Concorde: Sales surged AFTER discontinuation announced
+- Job applicants: 3-day response deadline doubled acceptance rates vs. open deadline
+- Based on Kahneman's loss aversion: Fear of losing > Desire for gaining
 
-**Example:**
-- Ethical scarcity: "Budget really does close Friday" ✅
-- Unethical scarcity: "I'm telling everyone it closes Friday but it doesn't" ❌
-- Ethical social proof: "Other teams using this successfully" (true) ✅
-- Unethical social proof: "Everyone is doing this" (false) ❌
+**Business applications:**
+- Limited-time offers with specific deadlines
+- "Only 3 spots remaining in the program"
+- Exclusive access for early adopters
+- Discontinuation announcements drive demand
 
-**Check Understanding:**
-- "If you're using scarcity in your proposal, ask: Is this genuinely time-sensitive, or am I creating fake urgency?"
-- "Honest reflection now saves your credibility later"
+**Ethical use:** Real scarcity only - artificial urgency is manipulation
 
-**Transition:**
-- "We have the psychology. Now we need structure to make messages memorable..."
+<speaker-notes>
+Scarcity taps into loss aversion, one of the most powerful psychological biases documented by Nobel laureate Daniel Kahneman. Psychologically, losing $100 feels roughly twice as bad as gaining $100 feels good. This asymmetry makes "last chance" framing incredibly powerful.
 
-**[5-MINUTE BREAK]**
+The British Airways Concorde case is the classic example: When BA announced Concorde would be discontinued, sales went from weak to sold out overnight. People who had no interest in flying Concorde suddenly desperately wanted it because it was going away. This is pure scarcity psychology - we want what we can't have.
 
----
+Vietnamese e-commerce aggressively uses scarcity: Countdown timers on Shopee flash sales, "only 5 left in stock" warnings on Lazada, limited-edition product releases. These platforms understand that scarcity drives immediate action in ways that static "good price" messaging cannot.
 
-## PART 3: MAKING IDEAS STICK (5 slides)
+For Persuasive Proposal: Frame your request with genuine scarcity - "If we don't act by Q2, we'll miss the annual vendor discount window" or "Our top competitor just announced they're implementing this system - we have a 6-month window to catch up." Real deadlines create urgency; fake ones create resentment.
 
-### Slide 16: Part 3 Introduction
-<!-- LAYOUT: section-break -->
+Ethical boundary: Real scarcity is persuasive. Artificial scarcity is manipulation. Example: "Sale ends tonight!" (but the same sale runs every week) trains customers to distrust you. Example: "Limited edition" products that get re-released constantly. These tactics work short-term but destroy credibility long-term.
 
-## PART 3
+Quick engagement question: "Show of hands - who's bought something because of a countdown timer or 'limited stock' warning?" Most students will raise hands, validating how powerful scarcity is in real-world purchasing decisions.
+</speaker-notes>
 
-# Making Ideas Stick
+</slide>
 
-**Heath & Heath's SUCCESs Framework**
+<slide number="18" title="Unity in Practice">
 
-*Why some ideas survive and others die*
+## Principle 7: Unity
 
-#### Speaker Notes
+**Definition:** People are influenced by shared identity - "us" vs. "them" thinking drives cooperation and loyalty.
 
-**Opening:**
-- "Welcome back! We've covered why people say yes (Cialdini). Now we learn how to make your message memorable."
-- "Chip Heath is Stanford GSB professor. His book 'Made to Stick' has sold 2+ million copies, translated into 33 languages"
-- "Required reading at Wharton, Harvard, Cornell"
+**Research evidence:**
+- Team identity manipulation: Participants 50% more likely to help someone wearing same-colored wristband
+- Charity donations: Appeals emphasizing "we're all human" vs. specific identity ("we're all parents") - specific identity increased donations by 35%
+- Unity > Similarity: Shared identity ("we ARE the same") stronger than similarity ("we're LIKE each other")
 
-**Key Points:**
-- Problem: You spend hours crafting proposal/presentation → Audience forgets it in 24 hours
-- Solution: SUCCESs principles make ideas "sticky"—memorable and actionable
-- Each letter represents one principle that addresses a barrier to communication
-- These work together, but even using 2-3 makes dramatic difference
+**Business applications:**
+- "As members of this department..."
+- "We're all invested in this company's success"
+- Team identity language: "Our team," "We believe," "Together we"
+- Emphasizing shared goals, values, or challenges
 
-**Example:**
-- "Don't Mess with Texas" campaign: 73% recall months later, 72% litter reduction in 5 years
-- Used multiple SUCCESs principles—we'll analyze which ones
+**Two types of unity:**
+1. **Acting together:** Shared experiences (same team, same company, same project)
+2. **Being together:** Shared identity (same profession, same nationality, same values)
 
-**Check Understanding:**
-- "Think of a presentation you heard last month. Can you remember the main point?" (usually no)
-- "Now think of a great story someone told. Can you remember it?" (usually yes)
-- "That's the power of sticky ideas"
+**Ethical use:** Build genuine communities, not manipulate tribal instincts
 
-**Transition:**
-- "Let's decode the formula..."
+<speaker-notes>
+Unity is Cialdini's newest principle, added in the 2021 7th edition of *Influence*. It goes beyond Liking - Liking is "I like you because we're similar," Unity is "You are one of us."
 
----
+The distinction matters: Similarity = "We both play tennis" (we have things in common). Unity = "We're both tennis players" (we share an identity). The identity framing creates stronger bonds and compliance.
 
-### Slide 17: SUCCESs Framework Overview
-<!-- LAYOUT: framework -->
+The wristband study demonstrates how trivial shared markers can create powerful in-group loyalty. Researchers randomly assigned colored wristbands (red or blue) and told participants they were on the "red team" or "blue team." When later asked to help another participant, they were 50% more likely to help someone with the same colored wristband. The groups were completely random and meaningless, yet "us vs. them" thinking activated immediately.
 
-## The SUCCESs Model
+Vietnamese cultural context: Collectivist cultures like Vietnam have strong in-group/out-group distinctions. Family (gia đình), hometown (quê hương), school connections (cựu học sinh) create powerful unity bonds. Establishing shared identity opens doors in Vietnamese business contexts.
 
-**S - Simple:** Strip to core; find single most important element
-"Simplicity isn't dumbing down, it's prioritizing"
+For Persuasive Proposal: Use inclusive language throughout. Not "I propose we implement..." but "As a department committed to innovation, we have an opportunity to..." Frame your proposal as an extension of shared identity and values.
 
-**U - Unexpected:** Violate expectations; create curiosity gaps
-"The most basic way to get attention is to break a pattern"
+Business application examples:
+- Apple's "Think Different" campaign - created identity-based community, not just product features
+- Harley-Davidson - sells identity ("I'm a Harley rider"), not just motorcycles
+- Patagonia - environmental identity drives extreme customer loyalty
 
-**C - Concrete:** Use vivid, tangible details vs. abstractions
-"Abstraction makes it harder to understand and remember"
+Warning: Unity can be manipulated for harmful purposes - nationalism, tribalism, cult behavior. Ethical use builds genuine communities around shared positive values. Unethical use exploits tribal instincts to create division and conformity.
 
-**C - Credible:** Build trust through sources, details, or testable claims
-"Statistics are rarely meaningful in and of themselves"
+The "we're all in this together" language during COVID-19 was Unity messaging - effective for compliance with public health measures when used honestly, manipulative when used to excuse poor policies.
+</speaker-notes>
 
-**E - Emotional:** Connect to personal identity and self-interest
-"We are wired to feel things for people, not abstractions"
+</slide>
 
-**S - Stories:** Narratives as vicarious experience that drive action
-"Stories are like flight simulators for the brain"
+<slide number="19" layout="section-break" title="Part 3 Introduction">
 
-#### Speaker Notes
+# Part 3: Sticky Storytelling
 
-**Opening:**
-- "Six principles, each addressing a different barrier: attention, memory, action"
+**Making Ideas Memorable and Actionable**
 
-**Key Points - Quick Overview:**
-- **Simple:** If you say three things, you say nothing. Find the core.
-- **Unexpected:** Humans pay attention to surprises, not the expected
-- **Concrete:** "Avoid office jargon" is abstract. "Cut PowerPoint slides in half" is concrete.
-- **Credible:** Not just expert sources—vivid details and testable claims work too
-- **Emotional:** "30% cost reduction" is boring. "You'll work 2 fewer weekends monthly" is emotional.
-- **Stories:** We remember stories 22x more than facts alone (Stanford study)
+<speaker-notes>
+Transition: "We've covered what makes messages credible and persuasive. Now the final piece: How do you make your message stick? You can have perfect ethos-pathos-logos balance and all seven Cialdini principles, but if your audience forgets your message by tomorrow, you've failed."
 
-**Example:**
-- JFK Moon Speech (1962): "We choose to go to the moon in this decade" = Simple + Concrete + Emotional
-- Subway's Jared: Lost 245 pounds eating Subway = Concrete + Credible (verifiable) + Stories
-- Your proposal: Which principles could you apply?
+Enter Chip and Dan Heath's SUCCESs framework - why some ideas survive and others die. Chip Heath is a Stanford GSB professor, and this framework is assigned at Harvard, Wharton, and Cornell business schools.
+</speaker-notes>
 
-**Check Understanding:**
-- "Look at your proposal opening paragraph. Which SUCCESs principles does it use?"
-- "Most drafts use 1-2 at most. Goal: Use 3-4."
+</slide>
 
-**Transition:**
-- "Let's go deeper into the most powerful ones for business..."
+<slide number="20" layout="framework" title="SUCCESs Framework">
 
----
+## Made to Stick: The SUCCESs Model
 
-### Slide 18: Simple + Unexpected - Getting Attention
-<!-- LAYOUT: case-study -->
+Six principles that make ideas "sticky" - memorable and actionable:
 
-## S + U: Simple + Unexpected
+- **S - Simple:** Strip to core; find single most important element
+- **U - Unexpected:** Violate expectations; create "curiosity gaps"
+- **C - Concrete:** Use vivid, tangible details vs. abstractions
+- **C - Credible:** Build trust through sources, details, or testable claims
+- **E - Emotional:** Connect to personal identity and self-interest
+- **S - Stories:** Narratives as vicarious experience that drive action
 
-**Simple: Find the Core**
+**Why it works:** Each principle addresses a barrier to communication - attention, memory, or action.
+
+<speaker-notes>
+The SUCCESs acronym is itself an example of the Simple principle - easy to remember. This framework explains why some messages go viral while others are forgotten immediately.
+
+Each principle solves a specific problem:
+- Simple = fights information overload ("What's the ONE thing?")
+- Unexpected = grabs attention (our brains notice violations of patterns)
+- Concrete = aids memory (abstract concepts fade; vivid details stick)
+- Credible = overcomes skepticism (we need reasons to believe)
+- Emotional = drives action (logic convinces head; emotion moves feet)
+- Stories = provide context (narratives are "flight simulators for the brain")
+
+The Heath brothers spent years studying "sticky" ideas - urban legends, conspiracy theories, advertising slogans, successful change campaigns. What made some ideas spread while others died? These six principles appeared consistently.
+
+Example of all six working together: "Don't Mess with Texas" anti-litter campaign achieved 73% awareness and 72% litter reduction. Simple (3-word slogan), Unexpected (anti-litter campaign using tough language), Concrete (specific behavior - don't litter), Credible (Texas celebrities in ads), Emotional (Texas pride identity), Stories (ads showed real Texans).
+
+For Persuasive Proposal: Your executive summary should be Simple (one clear recommendation), your problem statement should be Concrete (specific examples, not abstract problems), your solution should include Stories (case studies of success elsewhere).
+</speaker-notes>
+
+</slide>
+
+<slide number="21" title="Simple: The Commander's Intent">
+
+## S - Simple: Finding the Core
+
+**Principle:** Strip message to single most important element - the "Commander's Intent"
+
+**Military example:**
+- Bad mission brief: "Execute coordinated multi-phase operation leveraging combined arms doctrine..."
+- Good Commander's Intent: "Take the bridge. Hold it until relieved."
+- Why it works: When plans fail, soldiers still know the ONE thing that matters
+
+**Business applications:**
 - Southwest Airlines: "We are THE low-fare airline"
-- Everything else flows from that one core idea
-- Test: Would you sacrifice this for anything?
+- Your proposal: What's the single sentence version?
 
-**Unexpected: Break the Pattern**
-- Create curiosity gaps: open questions before answers
-- Start with surprising statistics
-- Use mystery: "What if I told you..."
+**Key insight:** "Simplicity isn't about dumbing down, it's about prioritizing" - Heath & Heath
 
-**Case Study: "Don't Mess with Texas"**
-- **Context:** Texas had massive littering problem
-- **Simple:** One phrase, one action (don't litter)
-- **Unexpected:** Used tough, masculine appeal (unexpected for environmental campaign)
-- **Result:** 73% recall, 72% litter reduction in 5 years
-
-#### Speaker Notes
+<speaker-notes>
+Commander's Intent is a U.S. military doctrine specifically designed to combat information overload in combat. Plans never survive contact with the enemy, so commanders learned to communicate the ONE essential objective. Everything else is tactics that can adapt, but the core intent must remain clear.
 
-**Opening:**
-- "First two principles work together: Simplicity makes it memorable, Unexpectedness makes people pay attention"
+The brilliance: When radio communications fail, when the situation changes, soldiers can make autonomous decisions because they know the core objective. "Take the bridge and hold it" is simple enough to remember under extreme stress and clear enough to guide improvisation.
 
-**Key Points - Simple:**
-- "Don't Mess with Texas" = 4 words. Could've been "Please Practice Environmental Stewardship" (boring, forgettable)
-- For your proposal: What's the ONE idea? "Remote work increases productivity"? "This tool saves money"?
-- Commander's Intent (military): If soldiers remember only one thing, what is it?
-- Proverbs are simple: "A bird in the hand is worth two in the bush" (not "Always prioritize certain small gains over uncertain larger ones")
+Business parallel: Southwest Airlines has maintained "We are THE low-fare airline" as their core identity for 50+ years. Every decision - which routes to fly, whether to serve meals, which planes to buy - filters through this simple principle. Herb Kelleher (founder) said: "I can teach you the Southwest strategy in 30 seconds: We are the low-fare airline. Period."
 
-**Key Points - Unexpected:**
-- Curiosity gap: "Our competitor made one change and gained 40% more applicants. What was it?" (now they're curious)
-- Vietnamese proposal context: Start with surprising local statistic
-- Don't just inform—surprise, then explain
-- Your hotel towel statistic from Slide 1 = Unexpected
-
-**Example:**
-- Bad opening: "I propose we implement a new software system"
-- Good opening: "Our customer service team spends 100 hours weekly on a task that should take 15. Here's how we fix it."
-
-**Check Understanding:**
-- "What's the core idea of your proposal? Can you say it in one sentence?"
-
-**Transition:**
-- "Attention grabbed. Now make it real and believable..."
-
----
-
-### Slide 19: Concrete + Credible - Making It Real
-<!-- LAYOUT: case-study -->
-
-## C + C: Concrete + Credible
+For Persuasive Proposal: Before you write 1,000 words, write the one-sentence version. "We should invest $30,000 in leadership training to retain high-potential managers." That's your Commander's Intent - everything else supports that core.
 
-**Concrete: Vivid, Tangible Details**
-- Use sensory language and specific examples
-- "White Ford truck" beats "vehicle"
-- "2 hours daily" beats "significant time"
+Vietnamese business context: Vietnamese business communication often values comprehensive detail and formal documentation. The Simple principle might feel uncomfortably blunt. However, decision-makers universally appreciate knowing the bottom line quickly. Lead with the simple core, THEN provide supporting detail.
 
-**Credible: Build Trust**
-- Anti-authority credibility: "I used this myself"
-- Vivid details that ring true
-- Testable claims: "Try it yourself"
+Common student question: "But my idea is complex - I can't simplify it to one sentence!" Answer: If you can't explain it simply, you don't understand it well enough. Einstein supposedly said: "If you can't explain it to a six-year-old, you don't understand it yourself."
+</speaker-notes>
 
-**Case Study: Movie Popcorn Campaign**
-- **Abstract:** "Movie popcorn is unhealthy"
-- **Concrete:** "A medium popcorn has more fat than a bacon-and-eggs breakfast, Big Mac lunch, and steak dinner combined"
-- **Result:** National media coverage, behavior change
+</slide>
 
-#### Speaker Notes
+<slide number="22" title="Unexpected: Breaking Patterns">
 
-**Opening:**
-- "Concrete and Credible work together to overcome skepticism"
-- "People dismiss abstractions but can't ignore vivid, specific details"
+## U - Unexpected: Creating Curiosity Gaps
 
-**Key Points - Concrete:**
-- Movie popcorn example: Made abstract "unhealthy" into concrete "more than 3 full meals"
-- Asian proverb: "Tap water from the well of truth" beats "Communicate honestly"
-- For proposals: Don't say "improve efficiency"—say "reduce report generation from 4 hours to 20 minutes"
-- Vietnamese context: Use local examples, Vietnamese companies, specific HCMC/Hanoi situations
+**Principle:** Violate expectations to grab attention and create curiosity gaps
 
-**Key Points - Credible:**
-- You don't always need PhDs—vivid details create credibility
-- "Sinatra Test": If you can make it there, you'll make it anywhere (one proof covers all)
-- Testable: "Ask any employee about current wait times"
-- For proposals: Include specific data from your organization, not just external research
+**The curiosity gap formula:**
+1. Identify what audience assumes
+2. Violate that assumption with surprising fact
+3. Answer the question: "Why?" or "How?"
 
-**Example:**
-- Abstract: "This will save money"
-- Concrete: "This eliminates 847 manual reports monthly—each taking 45 minutes"
-- Credible: "I tested this in my department for 2 months. Here's the data."
+**Examples:**
+- **Expected:** "Our industry is growing"
+- **Unexpected:** "Our industry is growing - but our competitors are shrinking. Here's why."
 
-**Check Understanding:**
-- "Find an abstract claim in your proposal. How can you make it concrete with specific numbers or examples?"
+- **Expected:** "This software increases productivity"
+- **Unexpected:** "This software will make you work LESS - and accomplish MORE. Here's how."
 
-**Transition:**
-- "They understand and believe you. Now make them care..."
+**Research evidence:**
+- Headlines with curiosity gaps had 3x higher click-through rates
+- "Mystery" creates knowledge gap that brain craves to fill
 
----
+**Ethical use:** Deliver on the promise - don't create false curiosity
 
-### Slide 20: Emotional + Stories - Driving Action
-<!-- LAYOUT: case-study -->
+<speaker-notes>
+Unexpected is about pattern violation. Our brains are prediction machines - we notice when reality violates our predictions. That violation grabs attention and creates a knowledge gap we feel compelled to fill.
 
-## E + S: Emotional + Stories
+The curiosity gap concept comes from George Loewenstein's Information Gap Theory: When we perceive a gap between what we know and what we want to know, we feel psychological tension. The only way to relieve that tension is to fill the gap - we MUST find out the answer.
 
-**Emotional: Make Them Care**
-- Appeal to identity and self-interest
-- "Mother Teresa Effect": People give to one person, not millions
-- WIIFM: What's In It For Me (or people like me)?
+Classic example: "Doctors hate this one weird trick..." (clickbait headlines). Why does it work? It violates expectations (doctors should like helpful health tips, not hate them) and creates curiosity gap (what's the trick?). The formula is manipulative when it doesn't deliver value, but the psychological mechanism is sound.
 
-**Stories: Action Through Narrative**
-- Challenge plot: Overcoming obstacles (inspiring)
-- Connection plot: Bridging gaps (heartwarming)
-- Creativity plot: New approach succeeding (innovative)
+Better business example: Our opening statistic today - "73% of employees don't trust their manager's communication." This likely violated your expectation - in an age of communication training and awareness, trust should be high, not low. That violation grabbed attention and created the question: "Why?"
 
-**Case Study: Jared from Subway**
-- **Emotional:** Personal transformation, relatable struggle
-- **Stories:** Specific journey (245 lbs → healthy)
-- **Challenge plot:** Overcame obesity through determination + Subway
-- **Result:** Subway sales increased $2.3M in first year of campaign
+For Persuasive Proposal: Don't open with expected statements ("Our industry faces challenges"). Open with pattern violation: "While our competitors are cutting R&D budgets by 20%, we have an opportunity to increase ours by 15% - here's why this is the right move." The unexpected framing creates attention and curiosity.
 
-#### Speaker Notes
+Vietnamese cultural note: Vietnamese communication style tends toward indirect, harmonious messaging. Unexpected can feel too direct or confrontational. However, in written business proposals (not public speaking), pattern violation can differentiate your message from dozens of similar proposals. Use unexpected opening, then provide thorough explanation.
 
-**Opening:**
-- "Logic makes people think. Emotion makes people act."
-- "Heath brothers: 'Stories are flight simulators for the brain'—we experience them vicariously"
+Warning: Unexpected without delivery = manipulation. If you create curiosity gap but don't actually have a satisfying answer, you lose trust permanently. Example: "You won't believe what happened next!" (but what happened next is boring). Don't be clickbait.
+</speaker-notes>
 
-**Key Points - Emotional:**
-- Mother Teresa: "If I look at the mass, I will never act. If I look at the one, I will."
-- Statistics are abstract; individual stories are emotional
-- Identity appeal: "Don't Mess with Texas" worked because it appealed to Texan identity
-- Vietnamese culture: Family, community, national pride are strong emotional triggers
-- WIIFM: Don't say "company benefits"—say "you'll leave work 1 hour earlier daily"
+</slide>
 
-**Key Points - Stories:**
-- Three plots: Challenge (David vs. Goliath), Connection (Good Samaritan), Creativity (Newton's apple)
-- Stories provide context, make messages memorable, inspire action
-- For proposals: Tell story of one affected person, not just statistics
-- Vietnamese business: Customer/employee stories with real names create trust
+<slide number="23" title="Concrete: The Power of Vivid Detail">
 
-**Example:**
-- No emotion: "Proposal will increase employee satisfaction 15%"
-- With emotion: "Meet Trang, who misses her daughter's bedtime 4 nights weekly due to overtime. This proposal gives her those evenings back."
-- Story structure: Trang's current struggle (Challenge) → Solution → Trang's new reality
+## C - Concrete: Making Abstractions Tangible
 
-**Check Understanding:**
-- "Does your proposal include a story about a real person? If not, add one in tutorial."
+**Abstract (forgettable):**
+> "Our proposal will optimize operational efficiency through integrated process improvement."
 
-**Transition:**
-- "SUCCESs makes ideas stick. Now let's apply this to organizational change..."
+**Concrete (memorable):**
+> "Your team currently spends 4 hours every Friday manually compiling reports. Our system automates this, giving you 200 hours back per year - nearly 5 work weeks."
 
----
+**Why concrete works:**
+- Our brains remember sensory details, not abstractions
+- Concrete language creates shared understanding
+- Specific numbers are more credible than vague claims
 
-## PART 4: FROM STORIES TO ACTION (6 slides)
+**CSPI example:** "Movie theater popcorn has more fat than a full day's worth of unhealthy eating" - made abstract nutrition data concrete and memorable
 
-### Slide 21: Part 4 Introduction
-<!-- LAYOUT: section-break -->
+<speaker-notes>
+This slide demonstrates the principle by showing it - the abstract version sounds like corporate jargon, the concrete version creates a mental picture you can see and feel.
 
-## PART 4
+The CSPI (Center for Science in the Public Interest) movie popcorn campaign is one of the best examples of making abstract data concrete. They could have said "Movie popcorn contains 37 grams of saturated fat" - technically accurate but meaningless to most people. Instead: "A medium movie popcorn has more artery-clogging fat than a bacon-and-eggs breakfast, Big Mac and fries for lunch, and steak dinner with all the trimmings COMBINED." Suddenly you can visualize it - and it's disgusting. This is the Concrete principle at work.
 
-# From Stories to Action
+Psychology of concrete language: Our brains evolved to process sensory information (sights, sounds, physical objects), not abstractions (efficiency, optimization, synergy). When you say "4 hours every Friday," I can picture someone sitting at their desk on Friday afternoon. When you say "optimize operational efficiency," my brain has nothing to latch onto.
 
-**Change Narratives + Ethical Boundaries**
+For Persuasive Proposal: Replace every abstraction with a concrete detail:
+- Not "improve communication" → "reduce email response time from 48 hours to 4 hours"
+- Not "enhance productivity" → "complete month-end reports in 2 days instead of 5"
+- Not "significant savings" → "$47,000 annual cost reduction"
 
-*Bringing it all together*
+Vietnamese business communication often uses formal, abstract language to sound professional. Fight this instinct - concrete details increase credibility and memory in every culture. You can be both professional AND concrete.
 
-#### Speaker Notes
+Quick check: Read your proposal aloud. Can you visualize what you're describing? If not, add concrete details.
+</speaker-notes>
 
-**Opening:**
-- "Final section: Applying everything to high-stakes persuasion—driving organizational change"
-- "We'll learn the 4-step change storytelling framework from Harvard Business School faculty"
-- "Then close with ethical boundaries and call-to-action design"
+</slide>
 
-**Key Points:**
-- Why change communication? Because proposals often ask for change (new process, new tool, new policy)
-- Change is hard—people resist even beneficial changes
-- Storytelling helps overcome resistance by making change feel necessary and achievable
-- This synthesizes everything: Aristotle + Cialdini + SUCCESs
+<slide number="24" title="Credible: Building Believability">
 
-**Example:**
-- Your Persuasive Proposal likely requests some kind of change
-- Could be small (new software) or large (policy shift)
-- This framework helps structure your narrative for maximum buy-in
+## C - Credible: Sources of Trust
 
-**Check Understanding:**
-- "How many of you are proposing some kind of change? New process, tool, policy?" (show of hands)
-- "This framework is for you"
+**Five credibility sources (when you lack authority):**
 
-**Transition:**
-- "Let's learn from HBS professors who advised Uber's transformation..."
+1. **Authority credentials:** "According to Stanford research..."
+2. **Anti-authority credentials:** "I used to be a skeptic until..."
+3. **Vivid details:** Specific details signal insider knowledge
+4. **Statistics:** But make them human-scale, not abstract
+5. **Testable claims:** "Try it yourself and see"
 
----
+**The Sinatra Test:** "If I can make it there, I'll make it anywhere"
+- One impressive credential proves all: If you catered the White House, you can cater my wedding
+- Find your "Sinatra credential" - the one thing that proves everything
 
-### Slide 22: Four Steps for Change-Driving Stories
-<!-- LAYOUT: framework -->
+**Human-scale statistics:**
+- **Abstract:** "1 in 1,000,000 people"
+- **Human-scale:** "In a city the size of Hanoi (8M people), that's 8 people"
 
-## Four-Step Change Storytelling Framework
+<speaker-notes>
+Credible addresses the fundamental question: "Why should I believe you?" Even if you're not an expert, these five sources build credibility.
 
-**Source:** Frei & Morriss (2023), Harvard Business Review
+**Anti-authority credentials** are particularly powerful: "I used to think this was nonsense too, until..." This works because it shows you overcame the exact skepticism your audience feels. Ronald Reagan's conversion from Democrat to Republican made his conservative credentials stronger - he'd seen both sides.
 
-1. **Understand deeply, describe simply**
-   Distill complex change into clear, memorable terms
+**Vivid details** signal insider knowledge. When someone says "The restaurant has a blue door on the left side, ring twice, and ask for Mario," those specific details signal they've actually been there. Apply this to proposals: "The system requires 3-4 hours initial setup on a Tuesday afternoon when traffic is lowest, then runs automatically on weekends." Specificity = credibility.
 
-2. **Honor the past**
-   Acknowledge organizational history to build credibility and reduce resistance
+**Human-scale statistics** make big numbers meaningful. Bill Gates used this beautifully: Instead of "40 million people lack access to banking," he said "That's more than the entire population of California." Suddenly the number has meaning.
 
-3. **Articulate a persuasive mandate**
-   Build urgency—explain why change is necessary NOW
+The **Sinatra Test** (named after the song "New York, New York") means one credential that's SO impressive it proves everything else. Examples:
+- "We've designed systems for NASA" (if you can handle NASA requirements, you can handle mine)
+- "We trained executives at Google, Amazon, and Microsoft" (if they trust you, I should too)
 
-4. **Lay out a rigorous and optimistic path forward**
-   Provide clear roadmap that inspires confidence
+For Persuasive Proposal: Find your Sinatra credential. What's the ONE thing you can cite that proves your proposal is credible? A competitor who succeeded with similar approach? A prestigious institution's research? A successful pilot program?
 
-**Key insight:** "A simple, often-repeated story is more effective than complex explanations at aligning organizational energy"
+Vietnamese business context: Authority credentials (prestigious universities, well-known companies) carry significant weight in Vietnamese culture. If you have them, use them upfront. If you don't, use testable claims ("The pilot program is running in Department X - visit and see results yourself").
 
-#### Speaker Notes
+Testable claims are powerful because they shift burden of proof: "Don't take my word for it - try it for 30 days and measure results yourself." You're inviting verification, which builds trust.
+</speaker-notes>
 
-**Opening:**
-- "Written by Frances Frei (HBS, advised Uber) and Anne Morriss in HBR 2023"
-- "Based on real organizational transformations—tested under pressure"
+</slide>
 
-**Key Points - Four Steps:**
-- **Step 1 - Simple:** Connects to SUCCESs Simple principle. Don't say "digital transformation roadmap initiative"—say "We're moving sales online"
-- **Step 2 - Honor past:** Reduces resistance. "Our in-person sales built this company AND customer behavior has changed"
-- **Step 3 - Mandate:** Urgency without panic. "Why now? Competitor launched online, we're losing market share"
-- **Step 4 - Path forward:** Combines optimism (we can do this) with rigor (here's exactly how)
+<slide number="25" title="Emotional: Beyond Self-Interest">
 
-**Example:**
-- For your proposal:
-  - Step 1: "We're eliminating manual reporting"
-  - Step 2: "Manual reporting served us well when we had 20 employees. At 200, it doesn't scale."
-  - Step 3: "Each month we delay costs $5K in wasted hours"
-  - Step 4: "6-month implementation: Month 1-2 pilot, Month 3-4 training, Month 5-6 full rollout"
+## E - Emotional: Making People Care
 
-**Check Understanding:**
-- "Which step do proposals typically skip? Usually step 2 (honoring past)—they jump straight to 'old way is bad, new way is good' and create resistance"
+**Beyond features and benefits - connect to identity and values**
 
-**Transition:**
-- "Let's see this framework in action with a famous case..."
+**Three emotional appeals:**
+1. **Self-interest:** "What's in it for ME?"
+2. **Identity:** "What does this say about who I AM?"
+3. **Collective good:** "What does this mean for US?"
 
----
+**The "semantic stretch" problem:**
+- Telling people "malaria kills millions" doesn't drive action
+- Telling people "this ONE child has malaria" does drive action
+- Psychology: We feel individuals, not statistics
 
-### Slide 23: Case Study - Domino's "We Make Bad Pizza"
-<!-- LAYOUT: case-study -->
+**Mother Teresa:** "If I look at the mass, I will never act. If I look at the one, I will."
 
-## Case Study: Domino's Transformation
+**For business:** Connect your proposal to personal values and team identity, not just ROI
 
-**Context (2009):**
-Domino's delivered pizza in 30 minutes but quality was terrible
+<speaker-notes>
+Emotional is where many business communicators fail - they think emotion has no place in professional communication. Wrong. Emotion drives action; logic justifies it after the fact.
 
-**The Challenge:**
-Create urgency when operational metrics looked good
+The key insight: Move beyond self-interest (WIIFM - What's In It For Me) to identity (What does this say about who I am?) and collective good (What does this mean for us?).
 
-**The Story CEO Patrick Doyle Told:**
+Example:
+- Self-interest appeal: "This training will make you more promotable"
+- Identity appeal: "This training develops you into the leader you want to become"
+- Collective good appeal: "This training strengthens our team's capability to tackle bigger challenges"
 
-1. **Simple:** "Our pizza tastes like cardboard. We're going to make great pizza."
-2. **Honor the past:** "We built this company on speed and value—that was right for the time."
-3. **Mandate:** "But taste matters more now. Customers are choosing competitors."
-4. **Path forward:** "We're reformulating every recipe. We'll be transparent about our mistakes."
+All three are about the same training program, but they connect to different motivations. Identity and collective good are often MORE powerful than self-interest, especially in collectivist cultures like Vietnam.
 
-**The Result:**
-- Stock price: $8 (2009) → $460 (2023)
-- Employee buy-in through honest acknowledgment
-- Created permission to transform
+The "semantic stretch" problem comes from psychologist Paul Slovic's research on charity donations. Statistics about millions suffering don't drive action - they're too abstract. But a story about ONE person with a name, face, and specific situation drives massive action. Why? Our empathy systems evolved to respond to individuals, not masses.
 
-#### Speaker Notes
+Mother Teresa understood this: "If I look at the mass, I will never act. If I look at the one, I will." She built her entire organization around this principle - help one person at a time, tell individual stories, make suffering concrete and personal.
 
-**Opening:**
-- "One of the most famous corporate turnarounds in business history"
-- "Doyle's honesty was radical—most CEOs hide problems"
+For Persuasive Proposal: Don't just cite ROI statistics. Tell the story of ONE employee who struggled with the problem you're solving. "Sarah in accounting spends 6 hours every month manually reconciling reports - time she could spend on analysis." Sarah becomes real; 6 hours becomes meaningful.
 
-**Key Points:**
-- Step 1 - Simple: Didn't say "enhance product quality metrics"—said "our pizza is bad"
-- Step 2 - Honor past: Acknowledged speed/value strategy was historically right (reduced defensiveness from employees who'd worked there for years)
-- Step 3 - Mandate: Customer preferences changed (external pressure, not just internal decision)
-- Step 4 - Path forward: Specific action (reformulate) + transparent process (admit mistakes publicly)
-- Result: Built credibility (Ethos) through vulnerability
+Vietnamese cultural context: Collective good appeals are particularly powerful in Vietnamese culture. "This benefits our department's reputation" or "This strengthens our competitive position" resonates more than pure individual benefit.
 
-**Example:**
-- Vietnamese context: Admitting problems is culturally challenging (face-saving important)
-- But Doyle showed: Honesty → Trust → Permission to change
-- For your proposal: Don't hide current problems. "Our current process works, but customer expectations have evolved..."
-- Authority principle (Cialdini): Admitting weakness paradoxically builds credibility when followed by solution
+The Texas pride example from "Don't Mess with Texas" - they didn't appeal to self-interest ("littering might cause a fine") or logic ("littering harms the environment"). They appealed to identity: "Real Texans don't litter. Don't mess with Texas." Identity drove 72% litter reduction.
+</speaker-notes>
 
-**Check Understanding:**
-- "Why did honoring the past (Step 2) matter? Because long-time employees built that system—dismissing it dismisses them"
+</slide>
 
-**Transition:**
-- "Story structure done. Now let's talk about the ending: call to action..."
+<slide number="26" title="Stories: The Flight Simulator">
 
----
+## S - Stories: Narratives Drive Action
 
-### Slide 24: Designing Effective Calls to Action
-<!-- LAYOUT: framework -->
+**Why stories work:**
+- "Stories are flight simulators for the brain" - let people experience vicariously
+- Narratives activate more brain regions than facts alone
+- Stories provide context for applying knowledge
 
-## The Call to Action
+**Three plot types that inspire action:**
+1. **Challenge:** Overcoming obstacles (David vs. Goliath)
+2. **Connection:** Bridging differences (Good Samaritan)
+3. **Creativity:** Solving problems in novel ways (MacGyver)
 
-**Definition:** The specific behavior you want your audience to perform
+**Business storytelling:** Case studies, customer success stories, transformation narratives
 
-**Characteristics of strong CTAs:**
-- **Specific:** "Approve $15K budget" not "Consider this proposal"
-- **Measurable:** Clear success criteria
-- **Time-bound:** "By Friday EOD" not "soon"
-- **Single action:** One clear next step, not multiple options
-- **Easy to execute:** Remove friction
+**Example:** Subway's Jared story (man loses 245 pounds eating Subway) - made weight loss concrete and believable through personal narrative
 
-**Persuasion principles to use:**
-- **Commitment:** Start with small ask, build to bigger
-- **Scarcity:** Genuine time constraints
-- **Authority:** Include endorsements or precedents
+<speaker-notes>
+"Stories are flight simulators for the brain" is one of the Heath brothers' most powerful metaphors. Pilots use flight simulators to practice emergency scenarios without crashing real planes. Stories do the same for decision-making - they let us experience situations vicariously and learn from them.
 
-**Example CTA:** "Please approve Phase 1 pilot budget ($5,000) by Friday so we can begin testing with Marketing department next week."
+Neuroscience research (Uri Hasson, Princeton) shows that stories activate the listener's brain in the same patterns as the storyteller's brain - "neural coupling." When I tell you about my experience, your brain simulates having that experience yourself. Facts and statistics don't create this coupling - only narratives do.
 
-#### Speaker Notes
+The three plot types work because they're universal human stories:
+- Challenge = "Can we overcome this obstacle?" (inspires courage and persistence)
+- Connection = "Can we bridge this difference?" (inspires empathy and collaboration)
+- Creativity = "Can we solve this in a new way?" (inspires innovation)
 
-**Opening:**
-- "Your entire presentation builds to this moment—don't waste it with vague language"
-- "Specific CTAs are 3x more likely to generate action (Columbia research)"
+Subway's Jared story (1999-2015) is a perfect example of all SUCCESs principles working together:
+- Simple: Lost weight eating Subway
+- Unexpected: Fast food helping weight loss?
+- Concrete: 245 pounds lost, size 60 to size 34 jeans
+- Credible: Real person, documented journey
+- Emotional: Personal transformation anyone can relate to
+- Story: Clear before/after narrative arc
 
-**Key Points:**
-- Specific: "Consider implementing" = no action. "Sign approval form" = action.
-- Measurable: How will you know they said yes?
-- Time-bound: Creates urgency (Scarcity principle). Must be genuine.
-- Single action: Don't give 5 options—decision fatigue kills action
-- Easy: Include approval form, draft email, calendar link—remove all friction
+For Persuasive Proposal: Include a brief case study or customer story. Not just "Company X implemented this with good results" but "Company X was facing [problem similar to ours]. They implemented [solution]. Within 6 months, [specific outcome]. Their COO said: '[quote about impact]'." This narrative structure makes your proposal memorable and provides a mental model for success.
 
-**Example - Bad CTAs:**
-- "I hope you'll think about this proposal" (no action)
-- "Let me know if you have questions" (puts burden on them)
-- "We should implement this at some point" (no timeline)
+Vietnamese business culture note: Storytelling is deeply valued in Vietnamese culture (oral tradition, proverbs, historical narratives). However, business presentations often default to data-heavy slides. You can differentiate yourself by weaving narratives into your business communication while maintaining professional credibility.
 
-**Example - Good CTAs:**
-- "Please review and sign the attached approval form by Friday 5 PM"
-- "Reply 'approved' to this email to initiate Phase 1"
-- "Join our 30-minute demo next Tuesday at 2 PM [calendar link attached]"
+Warning: Stories must be truthful. Fabricated case studies or embellished results destroy credibility permanently. The story of Jared ended badly (legal issues unrelated to weight loss) which damaged Subway's campaign, but the storytelling technique itself remains valid.
+</speaker-notes>
 
-**Vietnamese context:**
-- May need softer language for hierarchy: "I respectfully request approval..." but still be specific
-- Follow-up is culturally appropriate: "I'll follow up Thursday if you need any additional information"
+</slide>
 
-**Check Understanding:**
-- "Look at your proposal's current CTA. Is it specific, measurable, and time-bound? If not, revise now."
+<slide number="27" title="SUCCESs in Action">
 
-**Transition:**
-- "Strong CTAs drive action. But only if you stay ethical..."
+## Case Study: "Don't Mess with Texas"
 
----
+**Challenge:** Reduce highway litter in Texas (70% of litter from young men who didn't respond to environmental appeals)
 
-### Slide 25: Ethical Persuasion - Drawing the Line
-<!-- LAYOUT: comparison -->
+**Campaign strategy applying SUCCESs:**
+- **Simple:** 3-word slogan
+- **Unexpected:** Anti-litter using tough, masculine language (not typical environmental messaging)
+- **Concrete:** Specific behavior - don't throw trash out car window
+- **Credible:** Texas celebrities (Cowboys players, Willie Nelson) in ads
+- **Emotional:** Texas pride identity - "Real Texans don't litter"
+- **Stories:** Ads showed real Texans picking up litter, confronting litterers
 
-## Persuasion vs. Manipulation
+**Results:**
+- 73% awareness within 6 months
+- 72% litter reduction over 5 years
+- Still running 40 years later
 
-| Persuasion (Ethical) | Manipulation (Unethical) |
-|---------------------|--------------------------|
-| Highlights genuine benefits | Fabricates or exaggerates benefits |
-| Discloses relevant information | Withholds critical information |
-| Respects autonomy and choice | Coerces or deceives |
-| Mutually beneficial outcome | One-sided benefit |
-| Transparent techniques | Hidden agenda |
-| Long-term relationship focus | Short-term transaction |
+<speaker-notes>
+"Don't Mess with Texas" is the gold standard for applying the SUCCESs framework to create behavior change. It demonstrates how all six principles work together synergistically.
 
-**Test your communication:**
-- Would you be comfortable if the audience knew your persuasion techniques?
-- Are you helping them make a good decision or tricking them into a bad one?
-- Will this decision benefit them, or only you?
-- Are you disclosing all relevant information?
+The background: Texas spent decades trying to reduce highway litter with typical environmental messaging - "Give a hoot, don't pollute" type campaigns. None worked. Research showed 70% of litter came from young men aged 18-35 who didn't identify with environmental appeals. The Texas Department of Transportation needed a new approach.
 
-**Bottom line:** Persuasion is helping people say yes to what's good for them. Manipulation is making them say yes to what's good for you.
+The insight: Young Texas men DO care about Texas pride and masculinity. So reframe littering as unpatriotic and unmanly. "Don't Mess with Texas" sounds like a threat, not a lecture. It appeals to Texas identity, not environmental consciousness.
 
-#### Speaker Notes
+Breaking down the SUCCESs elements:
+- **Simple:** Can't get simpler than 3 words. Anyone can remember it.
+- **Unexpected:** Anti-litter campaigns usually feature crying Native Americans or cute animals. This one features tough guys saying "Don't mess with us."
+- **Concrete:** Not abstract "help the environment" - specific "don't throw trash out your car window on Texas highways"
+- **Credible:** Real Texas celebrities (Dallas Cowboys, Willie Nelson, Stevie Ray Vaughan) created authenticity
+- **Emotional:** Tapped into powerful Texas pride identity (very strong in-group identity in Texas culture)
+- **Stories:** TV ads showed narratives of Texans protecting their state, not just slogans
 
-**Opening:**
-- "You now have powerful tools. Use them responsibly."
-- "Cialdini: 'With great power comes great responsibility' (yes, he actually quotes Spider-Man)"
+Results speak for themselves: 73% of Texans recognized the slogan within 6 months. Highway litter dropped 72% over 5 years. The campaign is still running 40 years later and has become a Texas cultural icon.
 
-**Key Points:**
-- Persuasion helps audiences overcome irrational resistance to beneficial changes
-- Manipulation exploits psychological vulnerabilities for selfish gain
-- Vietnamese business culture: Trust and relationships are long-term—manipulation destroys both
-- Transparency test: If you had to explain your persuasion techniques, would you be proud or ashamed?
+For Persuasive Proposal: You can apply the same framework. Make your recommendation Simple (one clear ask), make your problem statement Concrete (specific data), include a Story (case study), appeal to Emotion (what this means for team identity), make it Credible (cite authoritative sources), and make it Unexpected (frame in novel way that violates expectations).
 
-**Example - Ethical:**
-- Using Scarcity because budget really does close Friday ✅
-- Using Social Proof because other teams genuinely succeeded ✅
-- Using Authority by citing real research ✅
+The lesson: When environmental appeals failed, identity appeals succeeded. Know your audience and frame your message to connect with what they actually care about.
+</speaker-notes>
 
-**Example - Unethical:**
-- Creating fake scarcity ("I'm telling you budget closes but it doesn't") ❌
-- Fabricating social proof ("Everyone is doing this" when they're not) ❌
-- Cherry-picking data to hide problems ❌
+</slide>
 
-**Check Understanding:**
-- "Think about your proposal. Honest question: Are you highlighting genuine benefits or overselling?"
-- "If overselling, your credibility is at risk. Be honest now, persuasive always."
+<slide number="28" layout="section-break" title="Integration">
 
-**Transition:**
-- "Let's wrap up with your key takeaways..."
+# Bringing It All Together
 
----
+**Ethical Persuasion Framework**
 
-## WRAP-UP SECTION (5 slides)
+<speaker-notes>
+Transition: "We've covered three major frameworks - Aristotle's classical rhetoric, Cialdini's psychological principles, and Heath's sticky storytelling. Now the critical question: How do you use these ethically? And how do they work together?"
 
-### Slide 26: Key Takeaways
-<!-- LAYOUT: framework -->
+This final section addresses the most important question: the difference between persuasion and manipulation.
+</speaker-notes>
+
+</slide>
+
+<slide number="29" layout="framework" title="Ethical Framework">
+
+## The Ethical Persuasion Test
+
+**Ask yourself three questions before using any persuasion technique:**
+
+1. **Truth:** Are my claims factually accurate and fully contextualized?
+   - Ethos requires genuine credibility
+   - Social proof must be real, not fabricated
+   - Stories must be truthful, not embellished
+
+2. **Transparency:** Would this work if the audience knew my techniques?
+   - Ethical persuasion survives disclosure
+   - Manipulation requires hiding intent
+
+3. **Benefit:** Am I persuading them toward genuine value?
+   - Are they better off if they say yes?
+   - Would I make this decision for a family member?
+
+**If you answer "no" to any question, you're manipulating, not persuading.**
+
+<speaker-notes>
+This ethical framework comes from Cialdini's own writing - he's deeply concerned that his principles are used ethically. He distinguishes "influence" (ethical persuasion toward mutual benefit) from "manipulation" (deceptive persuasion toward one-sided benefit).
+
+Question 1 - Truth: This is foundational. Fabricated social proof, fake scarcity, misleading statistics = manipulation, full stop. Example: "9 out of 10 dentists recommend" (but you surveyed only 10 dentists and cherry-picked the question). Example: "Limited edition" product that gets re-released constantly. These tactics work short-term but destroy trust permanently.
+
+Question 2 - Transparency: This is Cialdini's "disclosure test." Would the technique still work if you told them what you're doing? Ethical persuasion: Yes. "I'm going to cite research because evidence persuades people" - still works when disclosed. Manipulation: No. "I'm creating fake urgency to pressure you" - stops working when disclosed.
+
+Real-world example of transparency: Some sales negotiators openly say "I'm going to use the reciprocity principle by offering you something valuable upfront." This disclosure doesn't diminish the technique's effectiveness because the value is real and mutual.
+
+Question 3 - Benefit: This is the "grandmother test." Would you persuade your grandmother to do this? If you're selling a product you know is inferior, or persuading someone to take an action that benefits you but hurts them, you're manipulating. Ethical persuasion aligns interests - both parties are better off.
+
+Vietnamese business context: Some students may have experienced aggressive sales tactics in Vietnamese markets (fake scarcity, pressure tactics, misleading claims). These techniques work short-term but destroy long-term business relationships. Professional business communication requires trust, which requires ethical persuasion.
+
+For Persuasive Proposal: Your proposal should pass all three tests. Are your claims accurate? Would you still be persuasive if you disclosed your persuasion techniques? Is your proposal genuinely beneficial to the organization, or just to you? If you can't answer yes to all three, revise your approach.
+
+Class discussion prompt: "Can you think of a time someone tried to persuade you and it felt manipulative? Which of these three tests did they fail?"
+</speaker-notes>
+
+</slide>
+
+<slide number="30" title="Integration Example">
+
+## Example: Persuasive Proposal Opening (All Frameworks Combined)
+
+> "Last year, we lost three senior engineers to competitors offering leadership development programs (Pathos - emotional impact). According to MIT research, companies with structured leadership pipelines have 40% lower voluntary turnover (Logos - credible authority). I've researched five programs used by our industry peers - Google, Microsoft, and Apple all invest $5,000-$8,000 per high-potential employee annually (Social Proof). Our engineering team includes 12 high-potential employees. Investing $60,000 now (Scarcity - limited window before next budget cycle) will save us an estimated $240,000 in replacement costs over two years (Concrete - specific savings). This is our last chance to include this in the current fiscal year budget (Scarcity - genuine deadline)."
+
+**Frameworks applied:**
+- Ethos/Pathos/Logos: Balanced credibility, emotion, logic
+- Cialdini: Authority (MIT), Social Proof (Google/Microsoft/Apple), Scarcity (budget deadline)
+- SUCCESs: Concrete (specific numbers), Simple (clear ask), Credible (MIT + industry peers)
+
+<speaker-notes>
+This example demonstrates how all three frameworks work together in a single paragraph. Let's break it down technique by technique:
+
+Sentence 1: "Last year we lost three senior engineers..." = Pathos (emotional impact - we can feel the loss) + Concrete (specific number, not vague "we lost some people"). This opens with human impact, not data.
+
+Sentence 2: "According to MIT research..." = Logos (statistical evidence) + Authority principle (credible source) + Credible (SUCCESs - MIT is credible institution). Notice the specific statistic - "40% lower turnover" is concrete.
+
+Sentence 3: "I've researched five programs..." = Ethos (demonstrates speaker preparation and credibility) + Social Proof (Google, Microsoft, Apple - if they're doing it, it must be valuable) + Concrete (specific companies and dollar amounts).
+
+Sentence 4: "Our engineering team includes 12 high-potential employees..." = Logos (the math: 12 employees × $5,000 = $60,000) + Concrete (specific calculation anyone can verify).
+
+Sentence 5: "...will save us $240,000..." = Logos (ROI calculation) + Concrete (specific savings over specific timeframe). Notice this makes the investment feel small compared to the cost of doing nothing.
+
+Sentence 6: "This is our last chance..." = Scarcity (genuine deadline - current fiscal year budget cycle) + Simple (clear consequence of waiting).
+
+Ethical check:
+- Truth? All claims must be verifiable - lost employees, MIT research, competitor programs, replacement cost calculation
+- Transparency? Yes - if you explained "I'm using social proof by showing competitors do this," it would still be persuasive
+- Benefit? Yes - if leadership development genuinely reduces turnover and develops talent, the organization benefits
+
+What makes this persuasive:
+- Opens with emotion (lost engineers) not data
+- Balances ethos-pathos-logos throughout
+- Uses multiple Cialdini principles layered together
+- Extremely concrete (12 employees, $60,000, $240,000, 40%, five programs, three companies)
+- Simple bottom line (invest $60K, save $240K)
+
+For your Persuasive Proposal: You should aim for this level of integration. Don't just list Cialdini principles mechanically ("First I'll use reciprocity, then social proof..."). Weave them naturally into compelling narrative that balances all three rhetorical appeals with concrete details.
+
+Common student mistake: Trying to use ALL seven Cialdini principles in every paragraph. That's overkill and feels forced. Choose 2-3 that naturally fit your argument and apply them authentically.
+</speaker-notes>
+
+</slide>
+
+<slide number="31" title="Key Takeaways">
 
 ## Key Takeaways
 
-**1. Balance Aristotle's Three Appeals**
-Ethos (credibility) + Pathos (emotion) + Logos (logic) = Persuasive foundation
+**Classical Rhetoric:**
+- Balance ethos (credibility), pathos (emotion), logos (logic) - imbalance hurts persuasiveness
+- Too analytical = convinces but doesn't inspire; Too emotional = inspires but lacks credibility
 
-**2. Apply Cialdini's Principles Intentionally**
-Reciprocity, Commitment, Social Proof, Authority, Liking, Scarcity, Unity—use ethically
+**Psychological Persuasion:**
+- Cialdini's 7 principles are hardwired mental shortcuts - use ethically
+- Most powerful: Reciprocity, Social Proof, Scarcity, Unity
+- Authority principle = Ethos in modern form
 
-**3. Make Ideas Stick with SUCCESs**
-Simple, Unexpected, Concrete, Credible, Emotional, Stories—3+ principles per message
+**Sticky Storytelling:**
+- SUCCESs framework makes ideas memorable and actionable
+- Concrete details stick; abstractions fade
+- Stories create vicarious experience that drives action
 
-**4. Structure Change Narratives**
-Understand simply → Honor past → Articulate mandate → Rigorous optimistic path
+**Ethics:**
+- Truth + Transparency + Benefit = Ethical Persuasion
+- If it wouldn't work when disclosed, it's manipulation
 
-**5. Design Specific CTAs**
-Specific, measurable, time-bound, single action, easy to execute
+<speaker-notes>
+Summary of the three major frameworks we've covered today. Emphasize that these aren't separate techniques - they work together synergistically.
 
-**6. Stay Ethical**
-Persuasion helps; manipulation harms. Choose long-term credibility over short-term wins.
+Connection to assessment: "Your Persuasive Proposal due Sunday must demonstrate at least 3 Cialdini principles (explicitly identified in your submission), balance rhetorical appeals, and use concrete language throughout. The rubric specifically assesses 'Effective use of Cialdini principles and rhetorical appeals' at 30% of your grade."
 
-#### Speaker Notes
+Remind students: Tutorial today gives you structured time to apply these frameworks to your proposal opening paragraph with peer feedback. Come prepared to work - bring your proposal scenario and be ready to draft.
 
-**Opening:**
-- "Six takeaways—each one should appear in your Persuasive Proposal"
+Preview next week: Week 8 we move to high-stakes communication and executive presence - how to maintain persuasive communication under pressure, handle difficult questions, and project confidence when the stakes are highest. Today's persuasion frameworks apply there too, but with added challenge of real-time delivery.
 
-**Key Points:**
-- Review each takeaway briefly (don't repeat full content, just reinforce)
-- Emphasize integration: These frameworks work together, not in isolation
-- Proposal checklist: Ethos/pathos/logos balanced? 2+ Cialdini principles? 3+ SUCCESs principles? Clear CTA?
+Final thought: "Persuasion is a skill that improves with practice. The more you consciously apply these frameworks, the more natural they become. In 5 years, you won't think 'Now I'll use the reciprocity principle' - you'll intuitively balance credibility, emotion, and logic because you've practiced it hundreds of times."
+</speaker-notes>
 
-**Example:**
-- Excellent proposals use all 6: Credible author (Ethos), emotional story (Pathos), data-backed (Logos), social proof (Cialdini), simple concrete message (SUCCESs), specific ask (CTA)
-- Weak proposals: Just logos (data dump) with vague ending
+</slide>
 
-**Check Understanding:**
-- "Which takeaway feels newest or most useful to you?"
-- "Which one will you apply first in your proposal revision?"
+<slide number="32" title="Assessment Reminders">
 
-**Transition:**
-- "Speaking of your proposal—let's preview what's due..."
+## This Week's Deliverables
 
----
+**Due Sunday, Week 7 (11:59 PM):**
+- **Persuasive Proposal** (1000-1500 words)
+- Must apply 3+ Cialdini principles (explicitly identified)
+- Balance ethos-pathos-logos throughout
+- Use concrete language and specific examples
+- Full requirements: Assessment Handbook, Section 2
 
-### Slide 27: Assessment Preview - PROPOSAL DUE THIS WEEK
+**Tutorial Today:**
+- Draft opening paragraph (150 words)
+- Apply frameworks from today's lecture
+- Receive peer feedback before final submission
 
-## Persuasive Proposal - Due This Week (15%)
+**Week 7 Quiz:**
+- Opens Monday, due Friday 11:59 PM
+- Covers today's frameworks: Aristotle, Cialdini, SUCCESs
+- 12 questions, 15 minutes
 
-**What's due:** 800-1000 word persuasive business proposal
+<speaker-notes>
+Critical reminders for this week:
 
-**Must include:**
-- Opening hook using SUCCESs principles
-- Balanced ethos/pathos/logos
-- 2+ Cialdini principles (clearly identifiable)
-- Logical structure (SCQA framework from Week 3)
-- At least one story or concrete example
-- Specific, measurable call to action
+Persuasive Proposal is due Sunday - this is one of your highest-weighted portfolio pieces at 15% of final grade. The rubric specifically looks for:
+- "Application of at least 3 Cialdini principles (explicitly identified)" - so you must name which principles you're using and where
+- "Balanced use of rhetorical appeals (ethos, pathos, logos)" - don't be all data or all emotion
+- "Concrete, specific examples with evidence" - no vague claims
 
-**Submission:** Moodle, by [specific date/time]
+Tutorial structure today: You'll have 60 minutes to draft your opening paragraph applying today's frameworks. Then 4-6 students will share their drafts and receive peer feedback. Come prepared with your chosen scenario (from Assessment Handbook options A, B, C, or D).
 
-**Tutorial today:** Draft your opening + CTA, get peer feedback
+Quiz logistics: The Week 7 quiz tests framework knowledge at Remembering and Understanding levels - definitions, components, distinctions. Example questions: "What are Cialdini's 7 principles?" "How do ethos and logos differ?" "What does the 'C' in SUCCESs stand for?" No scenario analysis on quizzes - that's for tutorials and assessments.
 
-**Resources:** Assessment Handbook Section 7, Persuasive Proposal Rubric
+Common student question: "Can I submit my proposal early?" Yes - Moodle accepts early submissions. Many students submit Saturday to avoid Sunday evening technical issues.
 
-#### Speaker Notes
+Office hours: Available by email or by appointment if you want feedback on your proposal draft before submission. However, I cannot review complete drafts - bring specific questions about framework application or organization.
 
-**Opening:**
-- "This is DUE this week—use tutorial today to strengthen your draft"
-- "Every concept from today's lecture should be visible in your proposal"
+Encouragement: "This proposal is where you demonstrate mastery of persuasive communication. Apply today's frameworks deliberately, use the tutorial feedback to strengthen your draft, and submit work you're proud of."
+</speaker-notes>
 
-**Key Points:**
-- 800-1000 words: Enough for depth, not so long they lose attention
-- Opening hook: Use Unexpected or Concrete from SUCCESs
-- Balanced appeals: Don't be all logos—include story (pathos) and citations (ethos)
-- Cialdini principles: Must be identifiable—if grader can't spot them, you didn't use them clearly
-- SCQA structure: Situation → Complication → Question → Answer (from Week 3)
-- Story: Real person affected by problem/solution
-- CTA: Specific action, deadline, easy to execute
+</slide>
 
-**Example:**
-- "Approve implementation of FlexWork policy for Product Development team (30 employees) by November 30, with pilot starting January 2026"
-- NOT: "I hope you'll consider implementing flexible work"
-
-**Check Understanding:**
-- "What questions do you have about the proposal requirements?"
-- "Check Moodle for submission deadline—put it in your calendar now"
-
-**Transition:**
-- "This also builds toward your Group Presentation..."
-
----
-
-### Slide 28: Looking Ahead - Week 8 Preview
+<slide number="33" title="Next Week Preview">
 
 ## Next Week: High-Stakes Communication
 
-**Topic:** Executive presence and handling pressure
+**Week 8: Executive Presence Under Pressure**
 
-**You'll learn:**
-- Projecting confidence and credibility
-- Handling challenging Q&A
-- Managing difficult conversations
+- Projecting confidence and credibility in high-stakes contexts
+- Handling challenging Q&A and difficult conversations
 - Crisis communication fundamentals
+- Executive Presence Model (Hewlett)
 
-**How it builds:**
-- Persuasive Proposal (this week) → Presentation skills (next week) → Group Presentation (Week 12)
-- Next week focuses on delivery under pressure
+**Pre-reading:**
+- Hewlett, S. A. (2014). *Executive Presence: The Missing Link Between Merit and Success* (Ch. 1-4)
+- Argenti, P. A. (2002). Crisis communication: Lessons from 9/11
 
-**Pre-reading:** Hewlett, "Executive Presence" (Ch. 1-4) - on Moodle
+**Connection:** Today's persuasion frameworks + next week's executive presence = complete persuasive communication toolkit
 
-#### Speaker Notes
+<speaker-notes>
+Preview Week 8 to create continuity: "Today you learned how to persuade through careful message construction. Next week we add the performance element - how to deliver persuasive messages with executive presence, even under pressure."
 
-**Opening:**
-- "Next week shifts from message design to high-pressure delivery"
-- "You'll learn how to maintain composure when stakes are high"
+Executive presence is about how you show up, not just what you say. It's the combination of confidence, composure, and credibility that makes people want to follow you. Hewlett's research identifies three pillars: Gravitas (how you act), Communication (how you speak), and Appearance (how you look). We'll focus primarily on Gravitas and Communication.
 
-**Key Points:**
-- Executive presence: How to command room, project confidence
-- Q&A: Handling questions you don't know answer to
-- Difficult conversations: Delivering bad news, managing conflict
-- Crisis communication: Responding to urgent situations
-- Connection to today: You've learned WHAT to say (persuasive content). Next week: HOW to say it under pressure.
+The connection: All of today's frameworks (ethos-pathos-logos, Cialdini, SUCCESs) apply to high-stakes communication. But high-stakes contexts add pressure - Q&A sessions where you don't know the questions, difficult conversations where emotions run high, crisis situations where there's no time to prepare. Week 8 teaches you to maintain persuasive effectiveness when you can't script every word.
 
-**Example:**
-- Your Group Presentation will include 10-minute Q&A—next week prepares you
-- Vietnamese business context: Hierarchical culture makes high-stakes communication particularly important
+Pre-reading note: Both articles are paywalled, but short excerpts are available through the library. The Hewlett book is widely available - it's a bestseller. The Argenti article on 9/11 crisis communication is a classic case study of how organizations communicate under the worst possible circumstances.
 
-**Check Understanding:**
-- "Who feels nervous about Q&A in presentations?" (many hands)
-- "Perfect—next week is for you"
+Encourage students to think about their own experiences: "Have you ever had to give bad news to someone? Defend a decision you made? Answer a question you didn't know the answer to? These are all high-stakes communication moments. Next week we'll learn frameworks for handling them professionally."
 
-**Transition:**
-- "Resources to continue learning..."
+Reassurance for quiet students: "Executive presence doesn't mean becoming someone you're not. Introverts can have powerful executive presence - it's about authenticity and preparation, not extroversion."
+</speaker-notes>
 
----
+</slide>
 
-### Slide 29: Further Resources
-<!-- LAYOUT: framework -->
+<slide number="34" layout="references" title="References">
 
-## Further Resources
+## References
 
-**Books:**
-- Cialdini, R. B. (2021). *Influence: The Psychology of Persuasion* (Expanded ed.)
-- Heath, C., & Heath, D. (2007). *Made to Stick*
-- Duarte, N. (2010). *Resonate: Present Visual Stories that Transform Audiences*
+1. Aristotle. (2007). *On rhetoric: A theory of civic discourse* (G. A. Kennedy, Trans.; 2nd ed.). Oxford University Press. (Original work written ca. 350 BCE)
 
-**Articles (Open Access):**
-- Duarte, N. (2024). Are your presentations too emotional—or too analytical? *MIT Sloan Management Review*. https://sloanreview.mit.edu/article/are-your-presentations-too-emotional-or-too-analytical/
+2. Cialdini, R. B. (2021). *Influence, new and expanded: The psychology of persuasion*. Harper Business. (Original work published 1984)
 
-**Articles (HBR - Paywalled):**
-- Frei, F. X., & Morriss, A. (2023). Storytelling that drives bold change. *Harvard Business Review*, 101(6), 62–71.
+3. Duarte, N. (2024, August 13). Are your presentations too emotional—or too analytical? *MIT Sloan Management Review*. https://sloanreview.mit.edu/article/are-your-presentations-too-emotional-or-too-analytical/
 
-**Tools:**
-- Slide inventory template (count logos vs. pathos slides)
-- Persuasion checklist (Ethos/Pathos/Logos balance check)
+4. Frei, F. X., & Morriss, A. (2023). Storytelling that drives bold change. *Harvard Business Review*, *101*(6), 62–71. https://hbr.org/2023/11/storytelling-that-drives-bold-change
 
-#### Speaker Notes
+5. Heath, C., & Heath, D. (2007). *Made to stick: Why some ideas survive and others die*. Random House.
 
-**Opening:**
-- "These resources deepen what we covered today"
+6. Hewlett, S. A. (2014). *Executive presence: The missing link between merit and success*. HarperBusiness.
 
-**Key Points:**
-- Cialdini's book: The full 7 principles with extensive research—worth reading entire book
-- Heath & Heath: More SUCCESs examples and applications
-- Duarte: Visual presentation design—complements today's content
-- MIT Sloan article (free): Today's ethos/pathos/logos source, very accessible
-- HBR article: Change storytelling framework, requires subscription or $8.95 purchase
+7. Kahneman, D., & Tversky, A. (1979). Prospect theory: An analysis of decision under risk. *Econometrica*, *47*(2), 263-291.
 
-**Example:**
-- For your proposal: MIT Sloan article (free) gives you template for balancing appeals
-- For future learning: Cialdini's book is most-assigned persuasion text at top business schools
-- Vietnamese students: All books available on international Amazon, some on local platforms
+8. Petty, R. E., & Cacioppo, J. T. (1986). *Communication and persuasion: Central and peripheral routes to attitude change*. Springer-Verlag.
 
-**Check Understanding:**
-- "Which resource interests you most?"
-- "MIT Sloan article is free—read it before next class for deeper ethos/pathos/logos understanding"
+<speaker-notes>
+Full APA 7th citations for all sources referenced in today's lecture. Students can use these for their Persuasive Proposal citations and for further reading.
 
-**Transition:**
-- "Final slide—questions and tutorial preview..."
+Note: Some sources are seminal classics (Aristotle, Cialdini, Heath & Heath) that have stood the test of time. Others are recent applications (Duarte 2024, Frei & Morriss 2023) showing these principles in modern contexts.
 
----
+All sources are either openly accessible (Duarte's MIT Sloan article) or widely available through university libraries and bookstores (Cialdini, Heath & Heath, Hewlett).
 
-### Slide 30: Questions + Tutorial Preview
+If students want deeper reading: Cialdini's "Influence" is the definitive persuasion text - 7 million copies sold, assigned at Stanford for 25+ years. Heath & Heath's "Made to Stick" is more accessible and full of fascinating examples.
+</speaker-notes>
 
-## Questions?
-
-**Tutorial Today:**
-- **Activity:** Persuasive pitch storytelling practice with peer feedback
-- **Focus:** Apply SUCCESs + Cialdini principles to your proposal opening
-- **Deliverable:** Revised opening paragraph + call to action
-- **Feedback:** 4-6 students share; class provides suggestions
-
-**Before Next Class:**
-1. Complete Week 7 Quiz on Moodle (due [date])
-2. Pre-reading: Hewlett, "Executive Presence" (Ch. 1-4)
-3. SUBMIT: Persuasive Proposal (due [date/time])
-
-⚠️ **Important:** Proposal due this week—use tutorial to strengthen it!
-
-#### Speaker Notes
-
-**Opening:**
-- "Questions before we transition to tutorial?"
-- Take 2-3 questions, keep brief
-
-**Key Points:**
-- Tutorial focuses on practical application—bring your proposal draft
-- You'll practice opening hooks and CTAs specifically
-- Peer feedback helps you see what lands and what doesn't
-- Week 7 Quiz covers today's content: Aristotle, Cialdini, SUCCESs, change narratives
-- Pre-reading for next week: Executive presence foundations
-- PROPOSAL DUE THIS WEEK—don't wait until last minute
-
-**Example:**
-- "If your proposal opening is currently: 'I propose we implement new software,' today's tutorial helps you turn that into: 'Our customer service team wastes 100 hours weekly on manual tasks. Here's how we give them those hours back.'"
-
-**Check Understanding:**
-- "Who has questions about proposal submission logistics?" (deadline, format, Moodle)
-- "Check Assessment Handbook Section 7 for full rubric"
-
-**Transition:**
-- "Great work today. See you in tutorial—bring your proposal draft!"
-
----
-
-**END OF LECTURE**
-
-**Total Slides:** 30
-**Estimated Duration:** 120 minutes
-**Layout Variety:** 6 section-breaks, 3 quotes, 8 frameworks, 5 case-studies, 1 comparison, 1 big-number
+</slide>

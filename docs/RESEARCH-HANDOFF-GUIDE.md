@@ -1283,4 +1283,77 @@ A: Yes, imported research works with both:
 
 ---
 
+## Video Discovery (Optional 5th Stage)
+
+### Overview
+
+In addition to finding 4 articles per week, Claude Desktop can optionally discover 0-2 high-quality videos (TED talks, expert presentations) during research with only +5-10 minutes of overhead.
+
+### When to Search for Videos
+
+**Search when:**
+- Topic has well-known expert presentations (TED talks, conference keynotes)
+- Seminal author has explained their own theory on video
+- Visual demonstrations would clarify complex concepts
+- Emotional/motivational content benefits from storytelling
+
+**Skip when:**
+- Highly technical topics (frameworks, models best explained in text)
+- No quality videos exist for this specific topic
+- Articles already provide excellent coverage
+- Time-constrained research session
+
+### Video Discovery Process (10 min max)
+
+**Step 1: Quick Search (2 min)**
+```
+"[topic] TED talk"
+"[seminal author name] [framework] video"
+site:youtube.com [topic] "official" OR "verified"
+```
+
+**Step 2: Quality Filter (2 min)**
+- Duration: 3-15 min ideal (<20 min maximum)
+- Source credible: TED, universities, verified channels
+- Accessibility: Works in Vietnam, has subtitles
+- Published recently (2018+) unless historical/seminal
+
+**Step 3: Content Match (3 min)**
+- Watch at 2x speed or skim preview
+- Does it cover ≥1 required concept clearly?
+- Does it provide unique value vs. articles?
+- Decide: Required candidate, Optional candidate, or Skip
+
+**Step 4: Document (2 min)**
+- Fill video metadata template (URL, backup URL, duration, source)
+- Include tier (Primary/Supplementary) and usage (Required/Optional)
+- Write 2-3 sentence content summary (for obsolescence fallback)
+- Add discussion prompts if suggesting as required viewing
+
+### Video Classification
+
+**Tier System:**
+- **Primary:** Authoritative expert (researcher, author, industry leader)
+- **Supplementary:** High teaching quality but not original researcher
+
+**Usage System:**
+- **Required:** Essential for understanding, assessed content
+- **Optional:** Enrichment, not assessed, for interested learners
+
+### Video Validation
+
+Videos have different validation rules than articles:
+- **Concept coverage:** ≥1 concept sufficient (articles require ALL)
+- **Access:** Must be open access (no paywalled exceptions)
+- **Duration:** <20 min enforced (articles have no limit)
+- **Quantity:** 0-2 per week (articles always exactly 4)
+
+### Complete Guide
+
+For full video integration documentation including integration patterns, obsolescence handling, and platform accessibility:
+
+**See:** `docs/VIDEO-INTEGRATION-GUIDE.md`
+
+---
+
 *This manual handoff workflow allows you to leverage the best of both worlds: Claude Desktop's superior research capabilities combined with Claude Code's powerful content generation and file management.*

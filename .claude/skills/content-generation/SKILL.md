@@ -26,10 +26,10 @@ Auto-invoke when:
 
 ## Quick Reference 🔐
 
-**Lecture Structure:** 22-30 slides total
-- Opening: 4-6 slides (hook, objectives, roadmap)
-- Core: 14-20 slides (3-4 segments, ~5 slides each)
-- Wrap-up: 4-6 slides (synthesis, preview, resources)
+**Lecture Structure:** 24+ slides (no upper limit)
+- Opening: 5-7 slides (hook, objectives, roadmap)
+- Core: 14+ slides (3-4 segments, expand as needed)
+- Wrap-up: 5-7 slides (synthesis, preview, resources)
 
 **Content Limits Per Slide:**
 - 150-200 words body text
@@ -42,7 +42,7 @@ Auto-invoke when:
 
 | Component | Level | Notes |
 |-----------|-------|-------|
-| Slide count (22-30) | 🔐 | Range is firm |
+| Slide count (24+ min) | 🔓 | No upper limit |
 | Structure (open/core/wrap) | 🔐 | Pattern consistent |
 | Speaker note format | 🔐 | Structure consistent |
 | Examples & stories | 🔓 | Adapt to topic |

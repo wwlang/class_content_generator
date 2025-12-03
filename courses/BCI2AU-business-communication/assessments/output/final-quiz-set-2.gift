@@ -1,0 +1,196 @@
+// Quiz 2 - Weeks 1-10
+// Quiz ID: final-quiz-set-2
+// Questions: 30
+// Weeks covered: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+// Bloom distribution: 15 Remembering, 15 Understanding
+
+$CATEGORY: Quiz 2 - Weeks 1-10
+
+::Social Proof Principle::Which Cialdini principle was demonstrated by the hotel towel study showing that "Most guests in this room reuse their towels" increased reuse by 33%?{
+~Reciprocity #Reciprocity involves giving first to create obligation. The hotel study showed people following others' behavior (Social Proof).
+~Authority #Authority involves deferring to experts or credentials. The hotel study used peer behavior, not authority.
+=Social Proof #This demonstrates Social Proof—people look to others' actions to guide their own behavior, especially "similar others" (guests in the same room). The message shifted from generic request to showing what peers do.
+~Unity #Unity involves shared group identity. While related, the hotel study specifically demonstrates Social Proof through showing peer behavior.
+}
+
+::S.T.A.R. Moment Definition::In presentation closings, what does S.T.A.R. stand for?{
+~Synthesize, Transform, Act, Recap #While synthesize and act are elements of a strong closing, S.T.A.R. itself stands for a single concept\: Something They'll Always Remember.
+=Something They'll Always Remember #S.T.A.R. stands for "Something They'll Always Remember"—a memorable element like a demo, prop, powerful story, or shocking statistic that makes your closing unforgettable.
+~Strategic Takeaway And Recommendation #This sounds plausible but isn't the correct acronym. S.T.A.R. is about creating a memorable moment, not strategic takeaways.
+~Strong Transition And Resolution #S.T.A.R. isn't about transitions—it's about creating one unforgettable moment that audiences will remember long after the presentation ends.
+}
+
+::SCQA Acronym::What does SCQA stand for?{
+~Structure-Content-Quality-Assessment #SCQA is not about document quality assessment. It's a framework for structuring introductions.
+=Situation-Complication-Question-Answer #SCQA stands for Situation-Complication-Question-Answer. This is Barbara Minto's framework for writing effective document openings.
+~Strategy-Context-Question-Action #While these are business writing concepts, they don't form the SCQA acronym.
+~Summary-Concern-Query-Analysis #These terms don't match the SCQA framework components taught in the lecture.
+}
+
+::Four-Step Q&A Framework::What is the correct sequence of the Four-Step Q&A Framework for handling challenging questions?{
+~Answer → Clarify → Acknowledge → Check #Starting with the answer is too abrupt and doesn't show respect. The correct sequence is Acknowledge → Clarify → Answer → Check.
+~Clarify → Acknowledge → Answer → Check #You need to acknowledge the question first before clarifying. The correct sequence is Acknowledge → Clarify → Answer → Check.
+=Acknowledge → Clarify → Answer → Check #The Four-Step Q&A Framework follows this sequence\: (1) Acknowledge the question ("That's an excellent question"), (2) Clarify if needed ("Are you asking about X or Y?"), (3) Answer directly, and (4) Check understanding ("Does that address your question?").
+~Acknowledge → Answer → Clarify → Check #Clarifying should come before answering to ensure you understand the question correctly. The sequence is Acknowledge → Clarify → Answer → Check.
+}
+
+::Chartjunk Categories::According to Tufte (2001), what does the term "Ducks" refer to in the context of chartjunk?{
+~Moiré vibration patterns creating optical interference #This describes the first category of chartjunk (moiré vibration), not "ducks." Dense patterns that create visual shimmer fall under this different category.
+~Heavy gridlines dominating the chart area #This describes heavy grids, another category of chartjunk. "Ducks" specifically refers to decorative graphic forms, not gridline problems.
+=Self-promoting graphics where decorative forms overtake data #"Ducks" is Tufte's metaphorical term (from architecture) for self-promoting graphics where decorative forms overtake data—like 3D pie charts or bars shaped like money bags. The decoration becomes more prominent than the information.
+~Redundant legends and unnecessary labels #While these are elements to eliminate according to Tufte's principles, they don't fall under the specific "ducks" category of chartjunk.
+}
+
+::Cialdini's Seven Principles - Reciprocity::In Cialdini's principles of persuasion, what does "Reciprocity" refer to?{
+~People prefer to interact with those who are similar to them #This describes "Liking," not Reciprocity. Reciprocity is about obligation to return favors.
+=People feel obligated to return favors and concessions #Reciprocity means people feel obligated to return favors and concessions. The lecture cited the restaurant study where tips increased 23% when mints were given as "personalized gifts."
+~People look to others' actions to guide their own behavior #This describes "Social Proof"—people following others' behavior. Reciprocity is about returning favors.
+~People value what is rare or diminishing #This describes "Scarcity," not Reciprocity. Reciprocity creates obligation through giving first.
+}
+
+::Mayer's Coherence Principle::What is the effect size (d value) for Mayer's coherence principle, which states you should exclude extraneous material from slides?{
+~d \= 0.50 #This underestimates the strength of the coherence effect. Research shows a larger effect size for removing extraneous material.
+~d \= 0.60 #While closer, this still underestimates the effect. The coherence principle has a stronger impact on learning than this value suggests.
+=d \= 0.70 #Mayer's coherence principle has an effect size of d \= 0.70, which is considered a large effect. This means removing extraneous material like decorative clip art significantly improves learning.
+~d \= 0.87 #This is the effect size for the redundancy principle, not the coherence principle. The redundancy principle (don't read on-screen text aloud) has an even stronger effect.
+}
+
+::Learning Style Preferences::Which learning style (according to Kolb) is characterized by being action-oriented and hands-on, excelling at getting things done and adapting to circumstances?{
+~Diverging #Diverging learners are imaginative and feeling-oriented, excelling at viewing situations from multiple perspectives and brainstorming, not action-oriented execution.
+~Assimilating #Assimilating learners are logical and idea-focused, excelling at understanding information and creating models, but may lack practical application.
+~Converging #Converging learners are problem-solving oriented and excel at finding practical uses for theories, but this style is more about applying theory than hands-on action.
+=Accommodating #Accommodating learners favor Concrete Experience and Active Experimentation—they are action-oriented, hands-on, excel at getting things done and adapting quickly. Their weakness may be skipping planning and reflection.
+}
+
+::Kolb's Learning Cycle Stages::According to Kolb's Experiential Learning Cycle, what are the four stages of learning?{
+~Experience, Reflection, Analysis, Application #While these terms are similar to Kolb's model, they are not the exact terminology. Kolb uses specific terms\: Concrete Experience, Reflective Observation, Abstract Conceptualization, and Active Experimentation.
+=Concrete Experience, Reflective Observation, Abstract Conceptualization, Active Experimentation #Kolb's four stages are\: Concrete Experience (doing), Reflective Observation (reviewing), Abstract Conceptualization (concluding), and Active Experimentation (planning/testing).
+~Doing, Thinking, Learning, Practicing #These are simplified descriptions but not Kolb's formal terminology. The model requires specific stages with distinct characteristics.
+~Observation, Hypothesis, Testing, Conclusion #This sounds like the scientific method, not Kolb's experiential learning cycle. Kolb focuses on transforming experience into knowledge through reflection and conceptualization.
+}
+
+::SUCCESs Framework Overview::In the Heath & Heath SUCCESs framework for making ideas stick, what does the acronym SUCCESs stand for?{
+~Simple, Unusual, Clear, Credible, Engaging, Structured #Close, but the actual framework is\: Simple, Unexpected, Concrete, Credible, Emotional, Stories.
+~Strategic, Unexpected, Concrete, Compelling, Emotional, Stories #The first word is Simple (not Strategic) and the fourth is Credible (not Compelling).
+=Simple, Unexpected, Concrete, Credible, Emotional, Stories #SUCCESs stands for\: Simple, Unexpected, Concrete, Credible, Emotional, Stories. Each principle addresses a different barrier to communication and memory.
+~Straightforward, Unique, Consistent, Convincing, Empathetic, Storylines #This uses different words than Heath & Heath's framework. The correct version is Simple, Unexpected, Concrete, Credible, Emotional, Stories.
+}
+
+::Semantic vs. Effectiveness Level::What is the key difference between the SEMANTIC level and the EFFECTIVENESS level in Shannon-Weaver's three levels of communication problems?{
+~Semantic is about transmission; effectiveness is about encoding #Transmission concerns the technical level, not semantic. The distinction between semantic and effectiveness is about meaning vs. action.
+=Semantic is about meaning being conveyed; effectiveness is about meaning producing action #The semantic level asks "Did the audience understand the intended meaning?" while the effectiveness level asks "Did that understanding change their behavior?" Many business communications succeed semantically (people understand) but fail at effectiveness (no action taken).
+~Semantic is about the channel; effectiveness is about the destination #Both levels occur after successful transmission through the channel. The semantic level concerns interpretation; the effectiveness level concerns behavioral response.
+~Semantic is about noise; effectiveness is about the source #Noise can affect any level. The key distinction is that semantic concerns meaning comprehension, while effectiveness concerns behavioral change. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 - Matching\: 1 (Q3) **Estimated completion time\:** 20-25 minutes
+}
+
+::Authentic Communication Definition::According to Alisa Brodsky's research (UT Austin McCombs, 2022), what does authentic communication mean?{
+~Behaving identically across all communication contexts #Brodsky's research challenges the idea that authenticity means identical behavior everywhere. Authentic communication is contextual—you adapt while maintaining genuine intent.
+~Always saying exactly what you think without filtering #Authenticity doesn't mean unfiltered thoughts. You can be authentic while choosing appropriate language and tone for the situation and audience.
+=Genuine intent adapted to situation—what feels authentic varies by channel and audience #Brodsky found that authentic communication is contextual—what feels authentic varies by channel and audience. You can adapt your style (e.g., formal for professors) while maintaining genuine intent. This isn't "fake," it's contextual adaptation.
+~Never adjusting your communication style for cultural norms #Brodsky's research shows you CAN adapt to cultural norms while remaining authentic. For example, showing respect through tone (Vietnamese cultural norm) while delivering authentic content isn't inauthentic. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::Shannon-Weaver Model Components::In the Shannon-Weaver communication model, what is the correct sequence of components through which a message travels?{
+~Source → Channel → Encoder → Noise → Decoder → Destination #The encoder comes BEFORE the channel, not after. The source must encode the message before transmitting it through the channel.
+=Source → Encoder → Channel (with Noise) → Decoder → Destination #The Shannon-Weaver model shows communication flowing from Source (originates message) → Encoder (converts to signals) → Channel (medium of transmission, where Noise can interfere) → Decoder (interprets signals) → Destination (final recipient).
+~Encoder → Source → Destination → Decoder → Channel #This sequence is completely jumbled. The source must come first, and the destination comes last.
+~Channel → Source → Encoder → Destination → Decoder #The channel cannot come first—there must be a source and encoded message to transmit through it.
+}
+
+::Executive Presence Model Elements::According to Hewlett's Executive Presence Model (2024), what are the three elements of executive presence?{
+~Confidence, Communication, Credibility #While confidence is part of gravitas and credibility matters, these aren't the three formal elements. Hewlett's model uses gravitas, communication, and appearance.
+=Gravitas, Communication, Appearance #Hewlett's updated Executive Presence Model (2024) identifies three elements\: Gravitas (67% most important—confidence and decisiveness under pressure), Communication (virtual presence and listening), and Appearance (authenticity over formality).
+~Decisiveness, Virtual Presence, Authenticity #These are components WITHIN the three elements (decisiveness is part of gravitas, virtual presence is part of communication, authenticity is part of appearance), but not the three elements themselves.
+~Leadership, Speaking Skills, Professional Image #While these relate to executive presence, Hewlett's specific model uses gravitas, communication, and appearance as the three core elements.
+}
+
+::MKS Model Definition::What do the letters M, K, and S stand for in Spitzberg and Cupach's MKS model of communication competence?{
+~Message, Knowledge, Source #The M stands for Motivation, not Message. The model focuses on individual competence, not message characteristics.
+~Medium, Key concepts, Strategy #The M stands for Motivation, and the S stands for Skills. "Medium" and "Key concepts" are not part of this framework.
+=Motivation, Knowledge, Skills #MKS stands for Motivation (desire and confidence to communicate), Knowledge (understanding appropriate communication), and Skills (ability to perform communication behaviors). All three dimensions must be present for competence.
+~Method, Knowing, Speaking #None of these are correct. The framework uses the specific terms Motivation, Knowledge, and Skills.
+}
+
+::Attribution Theory in SCCT::In SCCT, Attribution Theory suggests that stakeholders' emotional and behavioral responses to a crisis depend on whether they attribute the crisis to situational (external) or organizational (internal) factors.{T #Correct! Attribution Theory is the core mechanism of SCCT. When stakeholders attribute a crisis to external factors (situational), they assign less responsibility to the organization. When they attribute it to internal factors (organizational choices/actions), they assign more responsibility—and this drives how they react emotionally and behaviorally. #Incorrect. This statement accurately describes how Attribution Theory works within SCCT. Stakeholder assessment of responsibility (external vs. internal attribution) determines the appropriate crisis response intensity. Organizations must match their response to the level of responsibility stakeholders perceive.}
+
+::Three Conversations Model Layers::According to the Three Conversations Model from Harvard Negotiation Project, what is the purpose of the "Identity Conversation" layer?{
+~To establish credibility and professional identity with the other person #The Identity Conversation isn't about establishing credibility externally—it's about your internal dialogue\: "Am I competent? Am I good? Am I lovable?" These self-concept questions get triggered during difficult conversations.
+=To address the internal dialogue about what the conflict means for who we are #The Identity Conversation addresses your internal thoughts about what the conflict means for who you are as a person. The common mistake is all-or-nothing thinking ("One mistake means I'm incompetent"). The key technique is to accept your own complexity—one situation doesn't define you.
+~To confirm each person's role and responsibilities in the situation #Clarifying roles and responsibilities would be part of the "What Happened" conversation (facts and interpretations), not the Identity conversation (self-concept).
+~To define how each person wants to be perceived by others #While reputation matters, the Identity Conversation specifically focuses on your INTERNAL dialogue about self-concept, not external perception management.
+}
+
+::SUCCESs - Concrete Principle::In the movie popcorn campaign example, why was saying "A medium popcorn has more fat than a bacon-and-eggs breakfast, Big Mac lunch, and steak dinner combined" more effective than saying "Movie popcorn is unhealthy"?{
+~It used authority by citing nutritional experts #The example doesn't cite experts—its power comes from concrete comparison. This demonstrates the SUCCESs "Concrete" principle, not Authority.
+~It created scarcity by suggesting limited healthy options #There's no scarcity element here. The effectiveness comes from making "unhealthy" tangible through specific comparison.
+=It made the abstract concept concrete through vivid, specific comparison #This demonstrates the SUCCESs "Concrete" principle. "Unhealthy" is abstract and dismissible, but comparing to three full meals creates a vivid, tangible image that people can't ignore. Concrete details are more memorable and persuasive than abstractions.
+~It appealed to social proof by showing what others avoid #The example doesn't reference what others do. It uses concrete comparison to make abstract health claims tangible and believable.
+}
+
+::Message Adaptation Application::In the wellness program integration example from the lecture, why do employees receive 70% pathos content while senior management receives 80% logos content?{
+~Because employees are less educated and cannot understand data #This is both inaccurate and disrespectful. The difference isn't about intelligence—it's about what each audience needs to make their specific decision. Employees are perfectly capable of understanding data; they simply need different information to decide whether to participate.
+~Because management does not care about employee wellness stories #Management may care about wellness stories, but their PRIMARY decision criterion is financial. Budget approval requires ROI justification. The content mix reflects decision-making needs, not level of care.
+=Because employees need to connect with personal health impact to change behavior, while management needs ROI data to approve budget #This demonstrates strategic message adaptation\: employees are being asked to change personal behavior (participate in wellness activities), so they need emotional connection to health benefits—stories and testimonials persuade behavior change. Management holds budget authority and must justify costs—they need cost-benefit analysis and ROI. Same program, different decision contexts, different calibration.
+~Because emotional content is easier to create than analytical content #The choice of logos/pathos ratio isn't about ease of creation—it's about audience needs and decision-making context. Creating compelling emotional content can be just as difficult as analytical content. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::McKinsey Versatility Framework::In the McKinsey versatility framework, what does "Go Deep (Constant Curiosity)" mean?{
+~Focus exclusively on one communication style and perfect it #"Go Deep" doesn't mean narrow specialization—it means mastering fundamentals thoroughly. McKinsey's framework balances depth (Dimension 2) with diverse experiences (Dimension 1).
+=Master intricacies beyond surface-level understanding while balancing knowledge with execution #"Go Deep" means developing deep expertise in core frameworks—understanding not just what they are but how and why they work. It's balanced with confidence to execute, not just theoretical knowledge. John Plant's quote\: understand "not just what a product does but how and why."
+~Always ask questions during presentations to show engagement #While curiosity involves asking questions, "Go Deep" specifically refers to mastering intricacies of core competencies, not audience engagement behaviors during presentations.
+~Spend more time studying theory than practicing application #The framework emphasizes balancing knowledge acquisition with decisive action—not prioritizing theory over practice. Going deep means thorough mastery applied in practice.
+}
+
+::MIT Sloan Learning Strategies::According to the MIT Sloan research cited in the lecture, which is NOT one of the four strategies for developing learning agility?{
+~Link purpose to learning #This IS one of the four strategies—connecting skill development to career aspirations to increase motivation.
+~Create learning-rich experiences #This IS one of the four strategies—deliberately seeking varied and challenging communication tasks to push beyond comfort zones.
+=Avoid difficult challenges until mastery #The MIT Sloan research advocates SEEKING difficult challenges (Strategy 2\: Create learning-rich experiences), not avoiding them. The four strategies are\: link purpose to learning, create learning-rich experiences, ask meta-learning questions, and nurture a learning team.
+~Nurture a learning team #This IS one of the four strategies—seeking feedback partners and embedding learning discussions into daily work.
+}
+
+::Hofstede's Cultural Dimensions::How many cultural dimensions did Hofstede identify in his framework for analyzing cross-cultural communication?{
+~Three dimensions #Hofstede's framework includes more than three dimensions. The original research identified four, later expanded to six.
+~Four dimensions #While Hofstede's original 1980 work identified four dimensions, the framework was later expanded to include Long-Term Orientation and Indulgence.
+=Six dimensions #Hofstede's framework includes six cultural dimensions\: Power Distance, Individualism, Masculinity, Uncertainty Avoidance, Long-Term Orientation, and Indulgence.
+~Eight dimensions #Hofstede identified six dimensions, not eight. The six are\: PDI, IDV, MAS, UAI, LTO, and IVR.
+}
+
+::Declutter + Focus Model::According to Kellogg research (2021), decluttering slides alone (without adding focusing elements) provides significant cognitive benefits and improves audience comprehension of the main conclusion.{F #This is incorrect. The Kellogg study found that decluttering only improves appearance but provides NO cognitive benefit. Only when decluttering is combined with focusing elements (headlines, strategic color highlighting) does comprehension improve—by approximately 2.5x. #Correct! Kellogg research revealed an unexpected finding\: decluttered graphs looked better but didn't improve comprehension compared to cluttered versions. Active guidance through focusing elements (headlines stating conclusions, color highlighting key data) was required to achieve the \~2.5x improvement in capturing the main conclusion.}
+
+::McKinsey EDGE Framework::In McKinsey's EDGE framework for stakeholder engagement (2024), what does the "D" stand for?{
+~Decisive #"Decisive" isn't part of McKinsey's EDGE acronym. The framework focuses on communication approach, not decision speed.
+~Dynamic #While stakeholder engagement is dynamic, the "D" in EDGE stands for Distinctive—becoming the storyteller-in-chief with a singular, compelling narrative.
+=Distinctive #EDGE \= Expanded (embrace external role as bridge), Distinctive (singular storyteller-in-chief), Growth-oriented (empower team ambassadors), Engaged (consistent communication drumbeat). The "D" emphasizes developing one compelling narrative adapted for each stakeholder.
+~Deliberate #"Deliberate" isn't part of EDGE. The "D" stands for Distinctive—creating a unique, compelling narrative that makes you an effective communicator.
+}
+
+::Hofstede's Cultural Programming::According to Hofstede's definition, culture is innate (biologically inherited) rather than learned from one's social environment.{F #Incorrect. Hofstede defines culture as "collective programming of the mind" that is LEARNED, not innate. Culture is acquired from social environment (family, school, workplace), not inherited genetically. #Correct! Hofstede emphasizes that culture is learned, not innate. It's acquired through social environment and can be understood and navigated. This is why cross-cultural communication skills can be developed.}
+
+::Psychological Safety Definition::According to Amy C. Edmondson (1999), how is psychological safety defined?{
+~Trust in your teammates to complete their assigned tasks #This describes trust, not psychological safety. Trust is about expectations of others' future actions, while safety is about team climate for risk taking.
+=A shared belief that the team is safe for interpersonal risk taking #Edmondson defines psychological safety as "a shared belief held by members of a team that the team is safe for interpersonal risk taking"—asking questions, admitting mistakes, challenging ideas.
+~Group cohesiveness and friendliness among team members #Group cohesiveness can actually reduce psychological safety by creating groupthink. Safety requires comfort with disagreement, not just friendliness.
+~The feeling of being comfortable and relaxed in meetings #Psychological safety is more specific than general comfort. It's about feeling safe to take interpersonal risks like challenging the status quo or admitting errors.
+}
+
+::Gender Egalitarianism and Power Distance::Gender Egalitarianism (high) and Absence of Power Distance (low PDI) are the two most important cultural factors for positive team outcomes because they both enable psychological safety, the number one predictor of team effectiveness.{T #Correct! Both Gender Egalitarianism (equal voice regardless of gender) and low Power Distance (junior members can challenge seniors) create conditions where team members feel safe speaking up. This psychological safety is what Google's Project Aristotle found to be the \#1 factor distinguishing high-performing teams. #Incorrect. This statement is accurate. When everyone's ideas are valued equally (regardless of gender) and hierarchy is flat (junior members can challenge seniors), people feel comfortable asking questions, admitting mistakes, and offering creative ideas—all hallmarks of psychological safety.}
+
+::Freeman's Stakeholder Categories::Which of the following is NOT one of Freeman's 11 stakeholder categories from his original 1984 hub-and-spoke model?{
+~Competitors #Competitors ARE one of Freeman's stakeholder categories—they affect your strategic decisions and competitive positioning.
+~Trade associations #Trade associations ARE one of Freeman's 11 original categories—they represent industry interests and influence regulatory environments.
+=Social media influencers #Social media influencers were not part of Freeman's 1984 framework because social media didn't exist then. The lecture notes that modern organizations might add this category today, but it's not part of Freeman's original 11.
+~Media #Media IS one of Freeman's stakeholder categories—media shapes public perception and can significantly affect organizational reputation.
+}
+
+::Types of Cognitive Load::A presenter uses rotating text animations and decorative clip art on their slides. According to cognitive load theory, what type of cognitive load does this create?{
+~Intrinsic load #Intrinsic load refers to the inherent complexity of the material itself (e.g., calculus is more complex than addition). Decorative elements don't relate to content complexity.
+=Extraneous load #Extraneous load is wasted brain power caused by poor design choices like decorative clip art and unnecessary animations. These elements distract from the actual message without supporting understanding.
+~Germane load #Germane load is productive cognitive effort that helps build understanding and mental models. Decorative animations work against this goal rather than supporting it.
+~Essential load #"Essential load" is not one of the three types of cognitive load identified in the theory. The three types are intrinsic, extraneous, and germane.
+}
+
+::Three Levels of Communication Problems::Match each level of communication problem (from Shannon-Weaver) to its definition\:{
+=Technical level -> How accurately can symbols be transmitted?
+=Semantic level -> How precisely do the transmitted symbols convey the intended meaning?
+=Effectiveness level -> How effectively does the received meaning affect behavior?
+}

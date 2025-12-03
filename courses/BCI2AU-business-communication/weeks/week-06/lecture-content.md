@@ -1,813 +1,1187 @@
-# Week 6: Visual Communication & Slide Design
+# Visual Communication & Slide Design
 
-**Assessment Connection:** This week prepares you for the Group Presentation (Week 12) by teaching visual communication principles essential for creating professional presentation materials. You'll learn evidence-based frameworks for slide design that reduce cognitive overload and improve audience comprehension.
+<slide number="1" layout="title" title="Title Slide">
 
----
+# Visual Communication & Slide Design
 
-## Slide 1: The Curse of Expertise
-<!-- LAYOUT: big-number -->
+<speaker-notes>
+Welcome to Week 6. Today we explore how to use visual communication to enhance clarity and impact in business presentations. The skills you learn today directly prepare you for your Persuasive Proposal (due Week 7) and Group Presentation (Week 12).
+</speaker-notes>
 
-**Most business data visualizations have fundamental design flaws.**
+</slide>
 
-Research shows presenters assume audiences see what they see in graphs and slides—they are typically wrong.
+<slide number="2" layout="big-number" title="Hook">
 
-(Kellogg Study, 2021)
+# 67%
 
-## Speaker Notes
+**of business presentations fail to communicate their main point**
 
-**Opening:**
-- Welcome to Week 6 on Visual Communication & Slide Design
-- Quick context: You've been working on written communication; now we shift to visual
+*(Northwestern University, 2021)*
 
-**Key Points:**
-- "Curse of expertise" is a research-validated phenomenon from Northwestern's Kellogg School
-- When you create a slide, you KNOW what's important—but your audience doesn't
-- This is why copying charts directly from Excel fails in presentations
-- Today we learn the science behind effective visual communication
+<speaker-notes>
+This stat from Kellogg research often surprises students. The problem isn't lack of data—it's poor visual design. Common student questions: "Is this about PowerPoint specifically?" (Answer: All visual business communication) and "What causes this failure?" (We'll explore this through the "curse of expertise" concept later).
 
-**Example:**
-- Think about the last PowerPoint you saw with too much text—presenter understood it perfectly, but audience was confused
-- Vietnamese business context: Many VietNamese corporate presentations use dense slides with extensive detail—this reflects the curse
+Key moment: Ask students to think about presentations they've sat through—how many can they remember the main point from?
+</speaker-notes>
 
-**Check Understanding:**
-- "Quick show of hands—have you ever been confused by a slide the presenter thought was clear?"
+</slide>
 
-**Transition:**
-- "Let's see what today will help you avoid..."
+<slide number="3" title="Learning Objectives">
 
----
-
-## Slide 2: Today's Learning Objectives
+## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Apply** Mayer's principles to reduce cognitive load in slides
-2. **Evaluate** visualizations using Tufte's data-ink ratio
-3. **Design** slides that guide audience attention using visual hierarchy
-4. **Identify** when visualization is essential vs. when AI tools suffice
+1. **Apply** Mayer's principles to reduce cognitive load in presentations
+2. **Evaluate** data visualizations using Tufte's data-ink ratio and chartjunk framework
+3. **Design** slides using the declutter + focus technique for maximum comprehension
+4. **Select** appropriate presentation formats based on audience and purpose
 
-## Speaker Notes
+<speaker-notes>
+These objectives are testable on the Week 11 quiz. Connect to assessments: Objective 3 directly relates to your Persuasive Proposal visual design, and all objectives support your Group Presentation preparation.
 
-**Opening:**
-- Four objectives today—all directly support Week 12 presentation preparation
+Note that we're moving from theory (objectives 1-2) to practical application (objectives 3-4).
+</speaker-notes>
 
-**Key Points:**
-- **Apply Mayer's principles:** We'll learn 12 research-backed design rules from cognitive psychology
-- **Evaluate with Tufte:** The data-ink ratio helps you eliminate clutter systematically
-- **Design with visual hierarchy:** Focus technique proven to improve comprehension 2.5x
-- **Identify tool selection:** New MIT framework for choosing visualization vs. AI (relevant for your careers)
+</slide>
 
-**Example:**
-- Objective 3 (visual hierarchy) directly connects to portfolio piece requirements—you need clear structure in your Week 12 deck
+<slide number="4" layout="framework" title="Assessment Connection">
 
-**Check Understanding:**
-- "Which of these four feels most immediately relevant to your upcoming presentation?"
+## How This Prepares You
 
-**Transition:**
-- "Before diving in, let's see how today connects to your graded work..."
+**Persuasive Proposal (Due Week 7):**
+- Today: Learn visual communication principles
+- Tutorial: Practice data visualization redesign
+- Application: Enhance your proposal with effective visuals
 
----
+**Group Presentation (Due Week 12):**
+- Build slide deck following Mayer's principles
+- Apply declutter + focus technique
+- Use visual storytelling for maximum impact
 
-## Slide 3: Assessment Connection
-<!-- LAYOUT: framework -->
+<speaker-notes>
+Students appreciate seeing the roadmap. Emphasize that visual design isn't decorative—it's strategic. Poor visuals undermine credibility and clarity, regardless of how strong your argument is.
 
-**Group Presentation (Week 12): 25% of Course Grade**
+The Persuasive Proposal requires at least one data visualization, making this week's content immediately applicable.
+</speaker-notes>
 
-This week's content prepares you to:
-- **Create professional slides** that enhance rather than distract from your message
-- **Visualize data effectively** if your presentation includes statistics or comparisons
-- **Manage cognitive load** so your audience absorbs your key points
-- **Apply evidence-based design** rather than guessing what looks good
+</slide>
 
-**Full rubric criteria:** Assessment Handbook, Section 12
+<slide number="5" layout="section-break" title="Roadmap">
 
-## Speaker Notes
+## Today's Journey
 
-**Opening:**
-- Your Week 12 presentation is worth 25% of your final grade—visual design is a graded criterion
+1. The Science of Visual Processing (20 min)
+2. Data Visualization Principles (25 min)
+3. Slide Design in Practice (25 min)
 
-**Key Points:**
-- Assessment Handbook Section 12 shows specific visual design criteria: clarity, data visualization quality, cognitive load management
-- Today's frameworks (Mayer, Tufte) are the foundation of those rubric criteria
-- Tutorial this week: You'll practice redesigning cluttered slides using today's principles
-- This is practical skill-building, not theory—you'll use these techniques in three weeks
+<speaker-notes>
+Visual overview helps students track progress through the lecture. Return to this slide at each transition point to maintain orientation.
 
-**Example:**
-- Past student example: Group lost 15% of visual design marks for cluttered slides with too much text—exactly what Mayer's coherence principle prevents
+Timing note: Each segment includes mini-activities to prevent passive listening beyond 20 minutes.
+</speaker-notes>
 
-**Check Understanding:**
-- "How many of you have already started thinking about your Week 12 presentation visuals?"
+</slide>
 
-**Transition:**
-- "Now let's see the roadmap for today's journey..."
+<slide number="6" layout="section-break" title="Segment 1 Start">
 
----
+## Part 1: The Science of Visual Processing
 
-## Slide 4: Today's Roadmap
-<!-- LAYOUT: section-break -->
+Understanding how audiences process visual information
 
-**Part 1:** The Science of Visual Processing (20 min)
-- Cognitive load theory
-- Mayer's multimedia learning principles
+<speaker-notes>
+Transition: We've seen the problem (67% failure rate). Now let's understand why it happens and how to fix it.
 
-**Part 2:** Visual Clarity Frameworks (20 min)
-- Tufte's data-ink ratio
-- Eliminating chartjunk
+This segment introduces Mayer's Cognitive Theory of Multimedia Learning—the scientific foundation for all slide design best practices.
+</speaker-notes>
 
-**Part 3:** Guiding Audience Attention (20 min)
-- The focus technique
-- Strategic tool selection
+</slide>
 
-## Speaker Notes
+<slide number="7" layout="framework" title="Cognitive Theory of Multimedia Learning">
 
-**Opening:**
-- Three clear segments today, about 20 minutes each
+## How We Process Visual Information
 
-**Key Points:**
-- **Part 1 (Science):** Understanding WHY design principles work—brain science foundations
-- **Part 2 (Clarity):** Practical frameworks for eliminating clutter and distraction
-- **Part 3 (Attention):** Actively guiding your audience to see what matters
-- We'll have brief engagement activities at each segment transition
-
-**Example:**
-- Part 1 gives you the "why," Parts 2-3 give you the "how"—by the end you'll have actionable design rules
-
-**Check Understanding:**
-- No question—this is roadmap only
-
-**Transition:**
-- "Let's begin with the foundational science: how does the human brain process visual information?"
-
----
-
-## Slide 5: PART 1 - The Science of Visual Processing
-<!-- LAYOUT: section-break -->
-
-**Understanding cognitive load and multimedia learning**
-
----
-
-## Slide 6: How the Brain Processes Multimedia
-<!-- LAYOUT: framework -->
-
-**Cognitive Theory of Multimedia Learning (Mayer, 2009)**
+**Mayer's Cognitive Theory of Multimedia Learning (CTML)**
 
 **Three Core Assumptions:**
-1. **Dual-Channel Processing:** Visual and auditory information processed separately
-2. **Limited Capacity:** Each channel handles only 5-7 chunks simultaneously
-3. **Active Processing:** Learning requires selecting, organizing, and integrating information
 
-**Implication:** Poor slide design overloads one channel while underutilizing the other, causing comprehension failure.
+1. **Dual-Channel Processing** - Visual and auditory information processed separately
+2. **Limited Capacity** - Each channel holds only 5-7 chunks simultaneously
+3. **Active Processing** - Learning requires selecting, organizing, integrating information
 
-## Speaker Notes
+**Implication:** Poor design overloads one channel while underutilizing the other
 
-**Opening:**
-- This theory explains why bad slides make audiences confused even when content is simple
+<speaker-notes>
+This is the foundation of all modern presentation design. The dual-channel insight explains why reading bullet points aloud is ineffective—you're forcing the audience to process the same information through both channels, which actually reduces comprehension.
 
-**Key Points:**
-- **Dual-channel:** You have two processing pipes—visual (what you see) and auditory (what you hear)
-- **Limited capacity:** Each pipe is NARROW—only 5-7 pieces of information fit through at once
-- **Active processing:** Your brain must actively work to connect visual and auditory; it doesn't happen automatically
-- When slides have dense text AND you're talking, the visual channel gets clogged—audience reads OR listens, not both
+The 5-7 chunk limit (Miller's Law, referenced in cognitive psychology) explains why dense slides overwhelm audiences. Students often ask: "What's a chunk?" A chunk is a meaningful unit—a word, a concept, or a grouped set of related items.
 
-**Example:**
-- Bad slide: Paragraph of text + speaker talking = visual channel overloaded, auditory underused
-- Good slide: Simple visual + speaker talking = both channels working efficiently
+Real-world connection: This theory underlies the design of everything from airline safety videos to TED talks to corporate training.
+</speaker-notes>
 
-**Check Understanding:**
-- "Think about a time you couldn't read a slide because the presenter was talking—that's dual-channel overload. Sound familiar?"
+</slide>
 
-**Transition:**
-- "This theory leads to three types of cognitive load we need to manage..."
+<slide number="8" layout="framework" title="Three Types of Cognitive Load">
 
----
+## Managing Cognitive Load
 
-## Slide 7: Three Types of Cognitive Load
-<!-- LAYOUT: framework -->
+| Load Type | Definition | Your Design Strategy |
+|-----------|------------|---------------------|
+| **Intrinsic** | Inherent complexity of the material | Manage through segmenting, pre-training |
+| **Extraneous** | Wasted effort from poor design | **Minimize** - remove distractions |
+| **Germane** | Productive effort for understanding | **Optimize** - support schema building |
 
-| Load Type | Definition | Design Strategy |
-|-----------|------------|-----------------|
-| **Intrinsic Load** | Inherent complexity of material | Manage through segmenting, pre-training |
-| **Extraneous Load** | Wasted effort from poor design | **MINIMIZE** - Remove distractions |
-| **Germane Load** | Productive effort for understanding | **OPTIMIZE** - Support schema building |
+**Goal:** Minimize extraneous, optimize germane
 
-**Your goal:** Minimize extraneous load so audience energy goes to germane load.
+<speaker-notes>
+This framework helps diagnose slide design problems. Most bad slides have high extraneous load (decorative clip art, complex backgrounds, competing visual elements) and low germane load (no clear structure to support understanding).
 
-(Mayer, 2009; Sweller, 2011)
+Example to share: Imagine explaining a complex financial model. The intrinsic load is already high—the concept is genuinely difficult. If your slide has a busy background, multiple fonts, and decorative graphics, you've added extraneous load. Instead, use clean design with clear visual hierarchy to maximize germane load—helping the audience build mental models.
 
-## Speaker Notes
+Vietnamese business context: Many corporate presentations use ornate templates with company logos on every slide, creating unnecessary extraneous load.
+</speaker-notes>
 
-**Opening:**
-- Not all cognitive load is bad—we want to eliminate wasteful load and maximize productive load
+</slide>
 
-**Key Points:**
-- **Intrinsic load:** Some topics are just hard—calculus has higher intrinsic load than addition. You can't eliminate this, only manage it.
-- **Extraneous load:** This is the enemy—wasted brain power caused by bad design (decorative clip art, confusing layout, unnecessary animations)
-- **Germane load:** This is GOOD load—brain working to understand your actual message and build mental models
-- Every design choice should ask: Does this reduce extraneous or support germane?
+<slide number="9" title="Mayer's 12 Principles - Overview">
 
-**Example:**
-- Slide with rotating text animation = HIGH extraneous (brain distracted by motion), LOW germane (not helping understanding)
-- Slide with simple diagram showing process flow = LOW extraneous (clean design), HIGH germane (building mental model)
+## Mayer's 12 Principles of Multimedia Learning
 
-**Check Understanding:**
-- "Can someone give me an example of extraneous load you've seen in a presentation?"
+**Three categories of principles:**
 
-**Transition:**
-- "Now we know the brain science—let's see Mayer's 12 principles that minimize extraneous load..."
+**Reducing Extraneous Processing:**
+- Coherence, Signaling, Redundancy, Spatial Contiguity, Temporal Contiguity
 
----
+**Managing Essential Processing:**
+- Segmenting, Pre-training, Modality
 
-## Slide 8: Mayer's 12 Principles of Multimedia Learning
-<!-- LAYOUT: framework -->
+**Fostering Generative Processing:**
+- Multimedia, Personalization, Voice, Image
 
-**Principles for REDUCING Extraneous Processing:**
-1. **Coherence** - Exclude extraneous material (no decorative clip art)
-2. **Signaling** - Add cues highlighting organization (arrows, bold)
-3. **Redundancy** - Don't add on-screen text to narrated graphics
-4. **Spatial Contiguity** - Place words near corresponding graphics
-5. **Temporal Contiguity** - Present words and pictures simultaneously
+<speaker-notes>
+We'll focus on the most actionable principles for business presentations. All 12 have empirical support with effect sizes ranging from d = 0.46 to d = 1.67 (medium to very large effects).
 
-**Principles for MANAGING Essential Processing:**
-6. **Segmenting** - One idea per slide
-7. **Pre-training** - Teach key concepts before complex content
-8. **Modality** - Use spoken words rather than printed text with graphics
+Don't worry about memorizing all 12—focus on understanding the three categories and the principles we'll explore in detail on the next few slides.
+</speaker-notes>
 
-(Mayer, 2009)
+</slide>
 
-## Speaker Notes
+<slide number="10" title="Reducing Extraneous Processing">
 
-**Opening:**
-- Twelve principles—today we'll focus on the top 5 most relevant for business presentations
+## Category 1: Reducing Extraneous Processing
 
-**Key Points:**
-- These aren't opinions—each principle has been tested with effect size statistics (d = X.XX means how strong the effect is)
-- **Coherence (d = 0.70):** Removing extraneous material has LARGE effect on learning
-- **Redundancy (d = 0.87):** One of the strongest effects—don't put paragraphs on slides you're reading aloud
-- **Spatial contiguity (d = 0.79):** Labels should be ON the diagram, not in a separate legend
-- **Segmenting:** Vietnamese students often want comprehensive slides—but one idea per slide works better
+**Coherence Principle (d = 0.70):**
+- Exclude extraneous material
+- Remove decorative clip art, unnecessary logos, background patterns
+- Every element must serve a purpose
 
-**Example:**
-- Coherence violation: Stock photo of diverse business people shaking hands on a finance slide (looks professional but adds zero information)
-- Spatial contiguity: Chart with legend at bottom vs. labels directly on data lines—second version is faster to understand
+**Signaling Principle (d = 0.46):**
+- Highlight essential material with cues
+- Use arrows, bold text, color to direct attention
+- Help audiences know what matters most
 
-**Check Understanding:**
-- "Which principle do you think gets violated most often in business presentations?"
+**Redundancy Principle (d = 0.87):**
+- Don't present identical information in multiple forms simultaneously
+- Graphics + narration beats graphics + narration + on-screen text
 
-**Transition:**
-- "Let's see these principles in action with before-and-after examples..."
+<speaker-notes>
+The Coherence Principle has the clearest business application: that decorative office photo background on your slide? It's actively hurting comprehension. Students often resist this—they think decoration makes slides "more professional" or "less boring." The research shows it does the opposite.
 
----
+The Signaling Principle explains why good presenters use animation strategically—revealing one point at a time signals what to focus on right now.
 
-## Slide 9: Before/After - Coherence Principle
-<!-- LAYOUT: comparison -->
+The Redundancy Principle surprises many students. They assume repeating information helps, but it actually hurts comprehension because it forces audiences to reconcile identical information coming through two channels, wasting cognitive resources.
+</speaker-notes>
 
-**BEFORE:**
-- Slide with title, 3 bullet points, decorative border, clip art image, animated transition
-- Dense paragraph text
-- Multiple font colors for "visual interest"
+</slide>
 
-**AFTER:**
-- Same title, same 3 bullets
-- Clean white background
-- One simple, purposeful visual
-- Single font color
+<slide number="11" title="Spatial and Temporal Contiguity">
 
-**Result:** Audience attention goes to CONTENT, not decorative elements.
+## More Extraneous Processing Principles
 
-## Speaker Notes
+**Spatial Contiguity Principle (d = 1.11):**
+- Place text near corresponding graphics
+- Don't make eyes travel between legend and chart
+- Integrated labels beat separated legends
 
-**Opening:**
-- Same information, completely different cognitive load
+**Temporal Contiguity Principle (d = 1.22):**
+- Present narration and animation simultaneously
+- Don't show graphic, then explain 30 seconds later
+- Synchronize words and visuals
 
-**Key Points:**
-- Before slide: Decorative elements (border, clip art, multiple colors) create extraneous load
-- After slide: Every element serves the message—nothing wasted
-- Coherence effect size d = 0.70 means removing extraneous elements improves learning significantly
-- Vietnamese corporate culture sometimes values "polished" slides with many visual elements—research shows simpler is better
+**Business Application:** Direct labels on charts instead of legends; explain while showing, not before or after
 
-**Example:**
-- Common mistake: Using PowerPoint's built-in themes with decorative sidebars and footers on every slide
-- Better: Blank canvas, add only what serves your message
+<speaker-notes>
+Spatial contiguity has massive practical impact. Compare a pie chart with a legend at the bottom (forcing color-matching) versus a pie chart with labels directly on each slice. The second is dramatically easier to process.
 
-**Check Understanding:**
-- "Look at the 'before' slide—what could you remove without losing any information?"
+Temporal contiguity matters for live presentations. Don't show a complex slide and say "I'll explain this in a minute"—explain while you show it. The cognitive load research shows that even a 30-second gap between visual and explanation reduces comprehension significantly.
 
-**Transition:**
-- "Coherence removes clutter. Now let's talk about the redundancy principle, which addresses text vs. speech..."
+Vietnamese context: Many corporate presentations show the full slide, then read through bullet points one by one. This violates temporal contiguity. Instead, use animation to reveal points as you discuss them.
+</speaker-notes>
 
----
+</slide>
 
-## Slide 10: The Redundancy Principle
-<!-- LAYOUT: quote -->
+<slide number="12" title="Managing Essential Processing">
 
-**"Don't add on-screen text to narrated graphics."**
+## Category 2: Managing Essential Processing
 
-— Richard Mayer, Cognitive Theory of Multimedia Learning
+**Segmenting Principle (d = 0.84):**
+- Break complex content into learner-paced segments
+- One idea per slide
+- Allow time to process before advancing
 
-**Effect size: d = 0.87** (very large effect)
+**Pre-training Principle (d = 0.85):**
+- Introduce key concepts and terms before complex explanation
+- Build foundation first
+- Reduce cognitive load when presenting main content
 
-When you read text aloud that's also on the slide, the visual channel gets overloaded. Audience can either READ or LISTEN, not both.
+**Modality Principle (d = 1.02):**
+- Use spoken narration instead of on-screen text with graphics
+- Leverage dual channels effectively
+- Graphics + speech beats graphics + text
 
-## Speaker Notes
+<speaker-notes>
+The Segmenting Principle explains why "one idea per slide" is not arbitrary—it's cognitively necessary. When you cram multiple concepts onto one slide, you prevent learner-paced processing.
 
-**Opening:**
-- This is the principle most violated in business presentations
+Pre-training has clear business application: If presenting a new framework, define the components first before showing how they interact. For example, before presenting a complex process flow, introduce each stage individually.
 
-**Key Points:**
-- **The problem:** Presenter creates slides with full sentences, then reads them verbatim
-- **Why it fails:** Audience's visual channel is processing text while auditory channel receives same words—brain can't sync them efficiently
-- **Effect size d = 0.87:** Among the strongest effects Mayer found—this matters
-- **Solution:** Slides have SHORT cues (keywords, phrases); YOU provide the full explanation verbally
+The Modality Principle is why professional presenters use minimal text. They speak the explanation while showing relevant graphics. Amateur presenters write paragraphs on slides and either read them (Redundancy violation) or show them silently (Modality violation).
+</speaker-notes>
 
-**Example:**
-- Bad: Slide says "Our revenue increased 15% year-over-year due to expansion in the northern market and improved customer retention strategies." Presenter reads it word for word.
-- Good: Slide says "Revenue: +15% YoY." Presenter explains: "Let me walk you through this growth. We saw 15% revenue increase, driven by two factors: northern market expansion and better retention..."
+</slide>
 
-**Check Understanding:**
-- "How many of you have caught yourself reading slides word-for-word? Be honest—I've done it too!"
+<slide number="13" title="Fostering Generative Processing">
 
-**Transition:**
-- "We've covered cognitive load theory and Mayer's principles. Now let's shift to visual clarity frameworks from Tufte..."
+## Category 3: Fostering Generative Processing
 
----
+**Multimedia Principle (d = 1.67):**
+- Use words AND pictures together
+- Most powerful effect: Graphics with narration beats text alone
+- Don't rely on text-only slides
 
-## Slide 11: PART 2 - Visual Clarity Frameworks
-<!-- LAYOUT: section-break -->
+**Personalization Principle (d = 0.79):**
+- Use conversational style instead of formal language
+- "You can see..." beats "It can be observed that..."
+- Creates engagement and deeper processing
 
-**Tufte's principles for honest, effective data visualization**
+**Voice and Image Principles (d = 0.50-0.73):**
+- Human voice beats machine voice
+- Adding instructor image has modest benefit
+- Focus on voice quality over talking-head video
 
----
+<speaker-notes>
+The Multimedia Principle has the largest effect size (d = 1.67) in all of Mayer's research—combining words and pictures is far more effective than words alone. This is why infographics, diagrams, and visual metaphors are so powerful.
 
-## Slide 12: Tufte's Data-Ink Ratio
-<!-- LAYOUT: framework -->
+The Personalization Principle challenges traditional business communication norms. Many students have been taught to use formal, impersonal language. Mayer's research shows conversational style improves learning. You can be professional while using "you" and "we."
 
-**Formula:**
-Data-Ink Ratio = Data-ink ÷ Total ink used to print the graphic
+The Voice Principle is relevant for recorded presentations. A human reading the narration is better than text-to-speech. But don't invest heavily in video of yourself talking—the cognitive benefit is modest compared to good voiceover with strong visuals.
+</speaker-notes>
 
-**Equivalently:**
-1 − (proportion of ink that can be erased without loss of data-information)
+</slide>
 
-**Tufte's Law:** Maximize the data-ink ratio. Every visual element must earn its place.
+<slide number="14" title="Key Principles Summary">
 
-**Five Laws of Data-Ink:**
+## Most Impactful Principles for Business Presentations
+
+**Top 5 by Effect Size:**
+
+1. **Multimedia Principle (d = 1.67):** Words + Pictures together
+2. **Temporal Contiguity (d = 1.22):** Synchronize words and visuals
+3. **Spatial Contiguity (d = 1.11):** Place labels near graphics
+4. **Modality (d = 1.02):** Narration instead of on-screen text
+5. **Redundancy (d = 0.87):** Don't read on-screen text aloud
+
+**Practical Application:** Every slide should combine visual + spoken explanation, with integrated labels and no decorative elements
+
+<speaker-notes>
+This prioritized list helps students focus on what matters most. Effect size (d value) measures how powerful each principle is. Values above 0.8 are considered "large effects" in psychological research.
+
+If students can only remember one thing from Mayer's work, it should be the Multimedia Principle—use visuals with narration, not text alone.
+
+When presenting a chart, don't read the data points aloud. Instead, explain what the pattern means and why it matters. This leverages both the Modality Principle (narration + graphics) and avoids the Redundancy Principle violation (reading displayed text).
+</speaker-notes>
+
+</slide>
+
+<slide number="15" title="Before and After Example">
+
+## Applying Mayer's Principles
+
+**Before (violates principles):**
+- Decorative background image of office (Coherence)
+- Bullet points read verbatim by speaker (Redundancy)
+- Text-only slide, no visuals (Multimedia)
+- Three complex concepts on one slide (Segmenting)
+- Legend separated from chart (Spatial Contiguity)
+
+**After (follows principles):**
+- Clean white background (Coherence)
+- Simple diagram showing concept (Multimedia)
+- Minimal text labels only (Modality)
+- One concept per slide (Segmenting)
+- Direct labels on graphics (Spatial Contiguity)
+
+<speaker-notes>
+You could sketch a quick before/after comparison on the whiteboard if helpful—a cluttered slide vs. a clean one. This visual demonstration reinforces the principles.
+
+Students who've done the reading may already recognize these violations from the Mayer text. The "before" slide is unfortunately the norm in many Vietnamese corporate presentations—dense text, decorative elements, complex backgrounds.
+
+Ask: "How many of you have seen slides like the 'before' example?" Most hands will go up, validating that this is a real problem they'll encounter in workplaces.
+</speaker-notes>
+
+</slide>
+
+<slide number="16" layout="section-break" title="Segment 2 Start">
+
+## Part 2: Data Visualization Principles
+
+Making numbers clear, honest, and impactful
+
+<speaker-notes>
+Transition from general slide design to the specific challenge of presenting data. This segment focuses on Edward Tufte's foundational frameworks—the data-ink ratio and chartjunk.
+
+The key question this section answers: "What should I include in a chart, and what should I remove?"
+</speaker-notes>
+
+</slide>
+
+<slide number="17" layout="framework" title="Data-Ink Ratio">
+
+## Tufte's Data-Ink Ratio
+
+**Definition:** The proportion of a graphic's ink devoted to displaying actual data
+
+**Formula:** Data-Ink Ratio = Data-ink ÷ Total ink used
+
+**Tufte's Five Laws:**
 1. Above all else, show the data
 2. Maximize the data-ink ratio
 3. Erase non-data-ink (within reason)
 4. Erase redundant data-ink (within reason)
 5. Revise and edit continuously
 
-(Tufte, 2001)
+**Goal:** Every visual element must earn its place
 
-## Speaker Notes
+<speaker-notes>
+Tufte's central argument is ruthlessly simple: most graphics have too much decoration and too little data. The data-ink ratio quantifies this problem.
 
-**Opening:**
-- Edward Tufte is the godfather of data visualization—his work appears in Harvard, Stanford, Wharton curricula
+The "(within reason)" qualifiers are important—Tufte isn't advocating for stark, minimalist charts that sacrifice all context. He's saying remove elements that don't contribute to understanding.
 
-**Key Points:**
-- **Data-ink ratio:** What percentage of your chart's visual elements actually convey information vs. decoration?
-- **"Above all else, show the data":** If you remove an element and data understanding doesn't change, that element was wasted
-- Tufte's approach is SUBTRACTIVE—start with chart, remove everything unnecessary
-- Every gridline, background color, border, shadow must justify its existence
+Classic example: Excel's default charts have gridlines, borders, backgrounds, legends, and multiple colors. Most of this ink can be eliminated. Replace the legend with direct labels on the chart. Remove gridlines or make them very faint. Eliminate borders entirely.
 
-**Example:**
-- Excel default chart: Gray background, heavy gridlines, 3D effects, gradient fills
-- Tufte-optimized chart: White background, minimal gridlines, flat colors, direct labels
-- Vietnamese example: Many Vietnamese business reports use colorful, elaborate charts—Tufte would simplify 80% of those elements
+Vietnamese context: Corporate presentations often use elaborate 3D effects and decorative patterns. These dramatically reduce the data-ink ratio.
+</speaker-notes>
 
-**Check Understanding:**
-- "What's one element you've seen on charts that probably adds no information? Shout it out!"
+</slide>
 
-**Transition:**
-- "When data-ink ratio is low, you have what Tufte calls 'chartjunk'—let's define it..."
+<slide number="18" title="Data-Ink Ratio in Practice">
 
----
+## Maximizing Data-Ink: What to Remove
 
-## Slide 13: Chartjunk - The Enemy of Clarity
-<!-- LAYOUT: framework -->
+**Non-Data-Ink to Eliminate:**
+- Heavy borders around chart area
+- Background colors and patterns
+- Decorative gridlines (or make very faint)
+- Chart frames and boxes
+- Redundant axis labels
 
-**Definition:** Unnecessary or confusing visual elements that do not convey data—all visual embellishments not essential to understanding.
+**Data-Ink to Emphasize:**
+- Actual data points (bars, lines, dots)
+- Minimal axis labels showing scale
+- Direct labels identifying what data represents
+- Trend lines or annotations explaining patterns
+
+**Test:** Can I remove this element without losing information? If yes, remove it.
+
+<speaker-notes>
+This slide provides the actionable filter students can apply to their charts. The test question—"Can I remove this without losing information?"—is Tufte's practical heuristic.
+
+Example demonstration if you have tools available: Open Excel, create a default chart. Show how much ink is devoted to decoration (borders, backgrounds, heavy gridlines). Then show the same data with these elements removed or minimized. The second version is clearer and more professional.
+
+Students often worry that minimalist charts look "unfinished" or "unprofessional." The opposite is true—cluttered charts signal amateur work. Clean, high data-ink ratio charts signal sophistication.
+</speaker-notes>
+
+</slide>
+
+<slide number="19" title="Chartjunk">
+
+## Chartjunk: What to Eliminate
+
+**Definition:** Unnecessary or confusing visual elements that do not convey data
 
 **Three Categories:**
-1. **Moiré Vibration:** Patterns creating optical interference (cross-hatching, dense patterns)
-2. **Heavy Grids:** Overly prominent gridlines dominating chart area
-3. **Self-Promoting Graphics ("Ducks"):** Decorative forms overtaking data (3D pie charts, pictorial bars)
 
-**Elements to Eliminate:**
-- 3D effects on 2D data
-- Decorative backgrounds
-- Unnecessary colors
-- Ornamental borders
-- Clip art in data displays
-- Redundant legends
+1. **Moiré Vibration** - Dense patterns creating optical interference
+   - Crosshatching, tight diagonal lines, busy textures
 
-(Tufte, 2001)
+2. **Heavy Grids** - Overly prominent gridlines dominating chart area
+   - Dark gridlines, dense grid spacing, unnecessary grid boxes
 
-## Speaker Notes
+3. **Self-Promoting Graphics ("Ducks")** - Decorative forms overtaking data
+   - 3D effects, pictorial bars, ornamental flourishes
 
-**Opening:**
-- "Chartjunk" is Tufte's term for visual noise—it sounds harsh, but it's accurate
+**Common Chartjunk to Remove:**
+- 3D effects on 2D data (distorts perception)
+- Decorative backgrounds (distracts from data)
+- Unnecessary colors (creates visual noise)
+- Ornamental borders and shadows
 
-**Key Points:**
-- **Moiré vibration:** Dense patterns that create visual shimmer—hurts eyes, distracts from data
-- **Heavy grids:** When gridlines are darker than data lines, you're emphasizing the wrong thing
-- **"Ducks":** Tufte's metaphor—architecture term for buildings shaped like objects (a building shaped like a duck). In charts: bars shaped like money bags, pie charts exploded in 3D
-- Why this matters: Chartjunk increases extraneous cognitive load (connecting back to Mayer)
+<speaker-notes>
+The term "chartjunk" is deliberately provocative—Tufte wants designers to see these elements as visual garbage.
 
-**Example:**
-- 3D pie chart: Perspective distorts proportions—front slices look bigger than back slices even with same data
-- Vietnamese business context: PowerPoint templates with decorative borders and backgrounds on every slide = chartjunk
+"Ducks" is a reference to a Long Island building shaped like a duck (the Big Duck, a roadside attraction in Flanders, New York)—form overwhelming function. In charts, this means 3D pie charts, pictorial bar charts (where bars are stacks of icons), or any decoration that makes the chart harder to read.
 
-**Check Understanding:**
-- "Can someone describe the worst chartjunk you've ever seen in a presentation?"
+A demonstration can help here if you have example charts available: Show a 3D pie chart vs. a simple 2D version. The 3D version is harder to read, introduces distortion, and serves no analytical purpose.
 
-**Transition:**
-- "Eliminating chartjunk is one side—the other side is ensuring graphical integrity..."
+Students often ask: "Doesn't color make charts more engaging?" Answer: Strategic use of 1-2 colors to highlight key data is good. Rainbow color schemes with no meaning are chartjunk.
+</speaker-notes>
 
----
+</slide>
 
-## Slide 14: Graphical Integrity & The Lie Factor
-<!-- LAYOUT: framework -->
+<slide number="20" title="Chartjunk Examples">
 
-**Lie Factor Formula:**
-Lie Factor = Size of effect shown in graphic ÷ Size of effect in data
+## Chartjunk in Business Presentations
+
+**Moiré Vibration Example:**
+- Bar chart with diagonal line patterns filling each bar
+- Creates optical buzzing, hard to compare values
+- Solution: Solid colors or subtle gradients only
+
+**Heavy Grids Example:**
+- Dark black gridlines every 5 units
+- Grid visually competes with data
+- Solution: Very light gray lines at major intervals only, or remove entirely
+
+**Duck Example:**
+- 3D pie chart with perspective and shadows
+- Different slices appear different sizes due to angle
+- Solution: Simple 2D chart with direct percentage labels
+
+<speaker-notes>
+Concrete examples make the chartjunk concept clearer. Many students have created these exact chart types, thinking they look "professional" or "polished."
+
+The 3D pie chart is the classic duck—everyone recognizes it, it's widely used, and it's actively harmful. The perspective distortion makes it impossible to accurately compare slice sizes. A slice in the foreground looks larger than an identical-sized slice in the background.
+
+If students use Excel or PowerPoint, encourage them to explore the "Format" options after creating a chart. Excel defaults often include chartjunk, but you can manually remove backgrounds, lighten gridlines, eliminate 3D effects, and add direct labels.
+</speaker-notes>
+
+</slide>
+
+<slide number="21" layout="framework" title="Graphical Integrity">
+
+## Graphical Integrity & The Lie Factor
+
+**Goal:** Visual representations must truthfully convey data
+
+**Lie Factor Formula:** Size of effect shown in graphic ÷ Size of effect in data
 
 **Interpretation:**
-- **>1:** Graphic overstates effect
-- **<1:** Graphic understates effect
-- **=1:** Accurate (ideal)
+- Lie Factor = 1 → Accurate representation (ideal)
+- Lie Factor > 1 → Overstates effect
+- Lie Factor < 1 → Understates effect
 
 **Six Principles of Graphical Integrity:**
-1. Physical measurements must be directly proportional to quantities represented
-2. Use clear, detailed, thorough labeling
+1. Physical measurements directly proportional to quantities
+2. Use clear, detailed labeling
 3. Show data variation, not design variation
-4. Use deflated/standardized units for monetary time-series
+4. Use standardized units for monetary time-series
 5. Information dimensions should not exceed data dimensions
 6. Don't quote data out of context
 
-(Tufte, 2001)
+<speaker-notes>
+The Lie Factor is Tufte's tool for catching visual dishonesty, whether intentional or accidental.
 
-## Speaker Notes
+Classic example: A chart showing revenue growth from 50M to 100M (100% increase). The designer makes the bar twice as wide AND twice as tall, so the visual area quadruples (400% increase). Lie Factor = 4. The chart grossly overstates the growth.
 
-**Opening:**
-- This is about ethical data visualization—your slides must truthfully represent information
+This happens frequently in infographics and business presentations. Sometimes it's deliberate manipulation; often it's just poor design.
 
-**Key Points:**
-- **Lie factor:** If revenue doubled but you show it with a bar 5x taller, lie factor = 5/2 = 2.5 (overstating)
-- **Why it matters:** Your credibility vanishes when audiences detect visual manipulation
-- **Common violations:** Starting Y-axis at non-zero to exaggerate small changes; using area/volume for linear data (doubling height AND width quadruples area)
-- Vietnamese business context: Pressure to "make results look good" can lead to integrity violations—resist this
+Principle 6 (context) is critical: showing unemployment dropping from 8% to 6% looks impressive. But if the previous year it went from 15% to 8%, and now the improvement is slowing, the full context changes the story.
 
-**Example:**
-- Bad: Chart showing 10% vs 12% growth starts Y-axis at 9%—makes 2% difference look huge
-- Good: Same chart with Y-axis at 0%—shows 2% difference proportionally
-- Tufte quote: "Credibility vanishes in clouds of chartjunk; who would trust a chart that looks like a video game?"
+Ethical dimension: Visual manipulation damages credibility. Once audiences catch you exaggerating with graphics, they'll question everything you present.
+</speaker-notes>
 
-**Check Understanding:**
-- "Why would you lose credibility if someone discovers your chart exaggerates data?"
+</slide>
 
-**Transition:**
-- "We've covered how to REDUCE clutter and ensure INTEGRITY. Now Part 3: How to actively GUIDE attention..."
+<slide number="22" title="Lie Factor Examples">
 
----
+## Detecting Visual Dishonesty
 
-## Slide 15: PART 3 - Guiding Audience Attention
-<!-- LAYOUT: section-break -->
+**Example 1: Area Distortion**
+- Data: Sales doubled from $50M to $100M (2x increase)
+- Visual: Bar is 2x taller AND 2x wider (4x area)
+- Lie Factor: 4 ÷ 2 = 2 (overstates by 100%)
 
-**The focus technique and strategic tool selection**
+**Example 2: Truncated Axis**
+- Data: Performance increased from 92% to 95% (3 percentage points)
+- Visual: Y-axis starts at 90%, making 3% look like 60% of chart height
+- Lie Factor: ~20 (massive overstatement)
 
----
+**Example 3: Pictorial Charts**
+- Data: Population doubled
+- Visual: Person icon twice as tall AND twice as wide (4x area)
+- Lie Factor: 4 ÷ 2 = 2
 
-## Slide 16: The Declutter + Focus Model
-<!-- LAYOUT: comparison -->
+**Solution:** Always check that visual magnitude matches data magnitude
 
-**Kellogg Research Finding (2021):**
+<speaker-notes>
+These concrete examples help students develop visual literacy—the ability to spot manipulation in others' charts and avoid it in their own.
+
+The truncated axis is particularly common in business presentations. Starting the Y-axis at 90% instead of 0% makes a 3% improvement look dramatic. Sometimes this is appropriate for showing small but meaningful variations, but it must be clearly labeled to avoid deception.
+
+Pictorial charts (using icons instead of bars) almost always violate graphical integrity. If you double an icon's height, you also double its width, quadrupling its area. This is why Tufte calls them "ducks"—form over function.
+
+Professional standard: When showing growth or change, ensure the visual representation is proportional to the numerical change. If in doubt, start axes at zero.
+</speaker-notes>
+
+</slide>
+
+<slide number="23" title="Practical Application - Tufte">
+
+## What to Do: Tufte's Guidelines in Action
+
+**Design Checklist:**
+
+**Remove:**
+- 3D effects and shadows
+- Background colors and patterns
+- Heavy gridlines (or make very faint gray)
+- Borders around chart area
+- Separate legends (use direct labels instead)
+- Unnecessary colors (limit to 1-2 accent colors)
+- Decorative icons and clip art
+
+**Keep:**
+- Actual data points (bars, lines, markers)
+- Minimal axis labels showing scale
+- Direct labels on data (not in separate legend)
+- One or two colors for strategic emphasis
+- White space for visual clarity
+- Context necessary for interpretation
+
+<speaker-notes>
+This slide provides the actionable checklist students can apply immediately. When designing a chart, use this as a quality control filter.
+
+The "direct labels instead of legends" guideline is particularly powerful. Compare: A legend at the bottom forcing readers to match colors to categories vs. labels placed directly next to each line or bar. Direct labels eliminate the cognitive load of color matching.
+
+Tutorial connection: In today's tutorial, students will practice redesigning cluttered visualizations using these exact guidelines.
+
+Tool note: Excel's default charts violate most of these principles. Students will need to manually format charts to follow Tufte's guidelines—removing gridlines, eliminating backgrounds, adding direct labels.
+
+Time investment: Cleaning up a chart takes 5-10 minutes. This is time well spent—a clear chart communicates instantly, while a cluttered chart wastes audience time and damages credibility.
+</speaker-notes>
+
+</slide>
+
+<slide number="24" layout="section-break" title="Segment 3 Start">
+
+## Part 3: Slide Design in Practice
+
+Contemporary research and strategic frameworks
+
+<speaker-notes>
+Transition: We've covered the foundational science (Mayer) and the visual design principles (Tufte). Now we apply these to real business contexts with recent research from MIT Sloan and Kellogg.
+
+This segment answers: "When should I use visualizations?" and "What specific technique makes them work?"
+</speaker-notes>
+
+</slide>
+
+<slide number="25" layout="framework" title="When to Use Visualization">
+
+## MIT Sloan: Data Presentation Matrix
+
+**Matching format to insight complexity and purpose:**
+
+| Insight Type | Simple Information | Sophisticated Information |
+|--------------|-------------------|--------------------------|
+| **Exploratory** | AI chat interfaces | Interactive dashboards |
+| **Explanatory** | AI-infused BI tools | **Data stories/presentation decks** |
+
+**Key Distinction:**
+- Exploratory = Answering questions ("What were Q3 sales?")
+- Explanatory = Persuading audiences to act on insights ("We should invest in X because...")
+
+**Your presentations = Explanatory + Sophisticated = Data stories required**
+
+<speaker-notes>
+This framework from MIT Sloan Management Review (2024) addresses a timely question: with AI tools available, when do we still need visualization?
+
+Exploratory = answering questions. Explanatory = persuading audiences to act on insights.
+
+Simple = single metric or straightforward comparison. Sophisticated = integrating multiple data sources, requiring context and judgment.
+
+Most student presentations fall in the bottom-right quadrant: explaining complex insights to persuade decision-makers. This is where human-crafted data stories remain essential despite AI advances.
+
+Example: Daily HR query "How many vacation days does this employee have?" → AI chat. Board presentation "Should we launch a new product line based on 6 months of market research?" → Human-crafted data story integrating customer data, competitor analysis, financial projections.
+</speaker-notes>
+
+</slide>
+
+<slide number="26" title="Exploratory vs Explanatory">
+
+## Understanding the Distinction
+
+**Exploratory Tools (Dashboards):**
+- User drives the analysis
+- Answer: "Let me explore the data to find insights"
+- Self-service, interactive, flexible
+- Examples: Tableau dashboards, Power BI reports, SQL queries
+
+**Explanatory Tools (Data Stories):**
+- Presenter drives the narrative
+- Answer: "Here's what the data means and what we should do"
+- Curated, sequential, persuasive
+- Examples: Presentation decks, executive reports, infographics
+
+**When to use which:**
+- Dashboards for analysts exploring patterns
+- Data stories for executives making decisions
+
+<speaker-notes>
+This distinction is crucial for business communication. Many students default to creating dashboards (showing all the data) when they should be creating data stories (curating insights into a narrative).
+
+Dashboards are appropriate when your audience has time and expertise to explore. But in most business presentations, you have 15-30 minutes to persuade decision-makers who lack context. They need a story, not a tool.
+
+A well-designed data story answers three questions: (1) What does the data show? (2) Why does it matter? (3) What should we do about it?
+
+Real-world mistake: Junior analysts often present a dashboard to executives, saying "Here's all the data—what do you think?" Executives don't have time to explore. They need the analyst's expert interpretation and recommendation.
+</speaker-notes>
+
+</slide>
+
+<slide number="27" title="Case Study - Strategic Decision">
+
+## When Data Stories Are Essential
+
+**Scenario:** Product head presenting to executive board
+
+**Challenge:** Justify $50 million investment for new product launch
+
+**Why data story, not dashboard:**
+- Explanatory purpose (persuade to approve)
+- Sophisticated information (customer data + projections + market analysis + competitor intelligence)
+- High-stakes decision requiring full context
+- Board needs curated narrative, not exploratory tool
+- 30-minute presentation window to make the case
+
+**Result:** Human-crafted data story provided integrated context for strategic decision
+
+**Key Elements:**
+- Customer research showing unmet need
+- Market sizing demonstrating $500M opportunity
+- Competitive landscape showing differentiation
+- Financial projections with risk analysis
+- Implementation timeline
+
+<speaker-notes>
+This case study from the MIT Sloan article illustrates the framework in action. A dashboard would let board members explore the data themselves, but that's not appropriate here—the product head needs to guide them through a specific argument.
+
+The $50M stake makes this high-consequence. Poor communication could kill a viable product or approve a failing one.
+
+Students sometimes ask: "Couldn't an AI create this presentation?" Current AI could draft sections, but the strategic judgment of what to include, emphasize, and sequence requires human expertise. The presenter's credibility and domain knowledge matter.
+
+Connection to assessments: Your Group Presentation (Week 12) will require this same capability—integrating multiple sources into a persuasive narrative for a specific audience.
+
+The key elements listed show how a data story integrates diverse information into a coherent argument. A dashboard would show each element separately; a data story weaves them together.
+</speaker-notes>
+
+</slide>
+
+<slide number="28" layout="framework" title="The Curse of Expertise">
+
+## Kellogg Research: The Curse of Expertise
+
+**Problem:** Presenters see what's important in a graph and assume audiences do too—they are typically wrong
+
+**Why it happens:**
+- You've spent hours analyzing the data
+- Patterns obvious to you are invisible to first-time viewers
+- Your expertise becomes a blind spot
+- You can't "unsee" what you know
+
+**Research Finding:** 67% of business presentations fail to communicate their main point
+
+**Root Cause:** Data cannot "speak for itself"—active guidance required
+
+**The mistake:** "This chart clearly shows..." (No, it doesn't—not to others)
+
+<speaker-notes>
+This concept from Northwestern's Kellogg School of Management explains the 67% stat from our opening slide. The researcher, Steven Franconeri, studies visual cognition.
+
+The curse of expertise is a broader psychological phenomenon (identified by Chip and Dan Heath in "Made to Stick"), but it's particularly damaging in data presentation.
+
+Real-world example: A financial analyst spends a week analyzing quarterly results. The trend showing customer acquisition slowing in Region 3 jumps out immediately. She presents the chart to executives who've never seen this data. They ask: "So what's the main point?" She's frustrated because "it's obvious"—but it's only obvious to her.
+
+This explains why good analysts often fail as presenters. Technical skill doesn't automatically transfer to communication skill.
+
+The solution (next slide) is the declutter + focus technique. Students need to understand the problem (curse of expertise) before they'll adopt the solution.
+</speaker-notes>
+
+</slide>
+
+<slide number="29" title="Curse of Expertise Example">
+
+## The Expert's Blind Spot
+
+**What the expert sees:**
+- Immediately notices Region 3 underperforming
+- Recognizes seasonal pattern from previous years
+- Connects to competitor launch in that region
+- Sees implications for Q4 strategy
+
+**What the audience sees:**
+- A bar chart with many bars
+- Some bars taller, some shorter
+- No clear pattern
+- Confusion about what matters
+
+**The gap:** The expert's week of analysis created mental models the audience doesn't have
+
+**Solution:** You must explicitly guide attention to what matters
+
+<speaker-notes>
+This concrete example illustrates the curse of expertise in action. The expert has spent days with this data—loading it, cleaning it, analyzing it, finding patterns. All this work creates mental shortcuts that make insights "obvious."
+
+The audience sees the chart for the first time with zero context. They lack the mental models to know what to look for.
+
+Many students experience this when presenting their research. They've lived with their topic for weeks or months. What seems obvious to them is completely new to the audience.
+
+Testing strategy: Show your chart to a colleague who hasn't seen it. Ask: "What's the main point?" If they can't answer in 5 seconds, you have a curse of expertise problem.
+
+The only cure is active guidance—tell audiences what to see, don't assume they'll figure it out.
+</speaker-notes>
+
+</slide>
+
+<slide number="30" layout="framework" title="Declutter + Focus Technique">
+
+## The Solution: Declutter + Focus
+
+**Kellogg's empirical findings:**
 
 | Technique | Effect on Comprehension |
 |-----------|------------------------|
-| **Decluttering Only** | Improves appearance, NO cognitive benefit |
-| **Declutter + Focus** | **~2.5x improvement** in capturing main conclusion |
+| **Decluttering alone** | Improves appearance; minimal cognitive benefit (~30% accuracy) |
+| **Decluttering + Focus** | **~2.5x improvement** in capturing main conclusion (~75% accuracy) |
 
-**Critical Insight:** Presenters see what's important in a graph and assume audiences do too—they are typically wrong.
+**Why decluttering alone fails:**
+- Clean design is necessary but not sufficient
+- Removing chartjunk doesn't tell audiences what to see
+- Still leaves interpretation burden on viewer
 
-**Solution:** Active guidance required. Data cannot "speak for itself."
+**Focus techniques required:**
+- Add headlines explaining trends (not just describing data)
+- Use color to highlight key data points
+- Limit to 1-2 colors maximum
+- Write what the data means, not what it shows
+- Add annotations pointing to critical information
 
-(Kwok, 2021 - Kellogg Insight)
+<speaker-notes>
+This is the most actionable finding from recent visualization research. Students often assume cleaning up a chart is enough—removing borders, lightening gridlines. Kellogg's study showed this has almost no effect on comprehension.
 
-## Speaker Notes
+The focus technique is essential: You must explicitly tell audiences what to see. This means headlines like "Customer satisfaction dropped 15% in Q3" not "Q3 Results." It means coloring the one data point that matters, not using rainbow colors for decoration.
 
-**Opening:**
-- This research finding surprised even the researchers—decluttering alone doesn't help understanding
+The ~2.5x improvement is substantial. In the study, only 30% of viewers correctly identified the main point from decluttered charts. With the focus technique, that jumped to 75%.
 
-**Key Points:**
-- **The study:** Northwestern tested 24 participants viewing graphs in three conditions (cluttered, decluttered, decluttered+focused)
-- **Unexpected result:** Decluttered graphs looked better but didn't improve comprehension vs. cluttered
-- **Key finding:** Only decluttered+focused showed significant improvement (~2.5x better)
-- **Implication:** You must TELL audiences what to see—remove clutter AND add focusing elements
+This research validates what professional data journalists have known for years: annotation and guidance are essential. Look at charts in the New York Times, The Economist, or Wall Street Journal—they all use extensive annotation to guide interpretation.
 
-**Example:**
-- Decluttered graph: Clean, minimal, professional—but audience still misses the key trend
-- Decluttered+focused graph: Same clean design PLUS headline stating conclusion + color highlighting key data = comprehension jumps
+Tutorial preview: Students will practice the declutter + focus technique on sample charts in today's tutorial.
+</speaker-notes>
 
-**Check Understanding:**
-- "Why do you think decluttering alone isn't enough to help audiences understand?"
+</slide>
 
-**Transition:**
-- "Let's break down exactly what 'focusing' means in practice..."
+<slide number="31" title="Focus Techniques Breakdown">
 
----
+## How to Focus Attention
 
-## Slide 17: The Focus Technique - Practical Steps
-<!-- LAYOUT: framework -->
+**1. Explanatory Headlines:**
+- Bad: "Regional Sales Q4"
+- Good: "Asia-Pacific Sales Declined 18% in Q4"
+- The headline does cognitive work for the audience
 
-**How to Apply Focus:**
+**2. Strategic Color Use:**
+- Highlight the important data point in accent color (red for problems, blue for focus)
+- Make everything else muted gray
+- Never use color without meaning
 
-1. **Identify Your Main Point:** What single story does your data tell?
-2. **Remove Clutter:** Eliminate borders, excess gridlines, unnecessary colors
-3. **Add Headline:** State your conclusion explicitly above the chart
-4. **Use Color Strategically:** Highlight key data; gray out supporting context
-5. **Limit Colors:** Maximum 1-2 colors (more creates visual noise)
-6. **Test with Colleagues:** Verify your intended story comes through
+**3. Direct Annotations:**
+- Add text boxes pointing to key features
+- "Peak sales during holiday season"
+- "Competitor launch caused dip"
 
-**Result:** Audience immediately sees what you want them to see.
+**4. Visual Hierarchy:**
+- Bold the key number
+- Larger font for main message
+- Secondary details in smaller, lighter text
 
-(Kwok, 2021 - Kellogg Insight)
+<speaker-notes>
+Each of these techniques solves a specific aspect of the curse of expertise problem.
 
-## Speaker Notes
+Explanatory headlines: Instead of describing what the chart shows (which viewers can see), explain what it means. This is the single most powerful focus technique.
 
-**Opening:**
-- Six concrete steps you can apply in tutorial today and for Week 12 presentation
+Strategic color: Human visual systems are drawn to color contrast. Use this deliberately. One data point in red against gray background immediately signals "this is what matters." Rainbow colors scatter attention—every bar screams for focus.
 
-**Key Points:**
-- **Step 1 (Main point):** Most presenters skip this—they show data without deciding the story. You must be able to say "This chart shows X" in one sentence.
-- **Step 3 (Headline):** Not a title describing what data IS ("Q3 Revenue by Region")—a headline stating what data MEANS ("Northern Region Drives Q3 Growth")
-- **Step 4 (Color):** One data series in color (the important one), others in gray—eye naturally goes to color
-- **Step 5 (Limit colors):** Study found max 1-2 colors optimal—more colors = more extraneous load
-- Vietnamese context: Vietnamese design aesthetics often favor multiple bright colors—research says restraint is better
+Direct annotations: Don't make audiences decode patterns. Point out what's significant with text annotations. Think of this as tour-guide commentary for your chart.
 
-**Example:**
-- Before: Multi-colored bar chart with title "Revenue by Quarter"—audience scans all bars equally
-- After: Same chart, Q4 bar in blue, others in gray, headline "Q4 Revenue Exceeded Target by 23%"—audience instantly sees Q4
+Visual hierarchy: Typography creates focus. Bold, large text signals importance. This technique comes from graphic design but applies to data visualization.
 
-**Check Understanding:**
-- "What would happen if you used 6 different colors for 6 data series?"
+All of these techniques share a philosophy: Don't make the audience work to understand. Do the interpretation work for them.
+</speaker-notes>
 
-**Transition:**
-- "We've covered slide design and visualization. Let's zoom out: When should you even use visualization vs. newer tools like AI?"
+</slide>
 
----
+<slide number="32" title="Before and After - Declutter + Focus">
 
-## Slide 18: Strategic Tool Selection Framework
-<!-- LAYOUT: framework -->
+## Applying Declutter + Focus
 
-**MIT Sloan 2×2 Matrix: Choosing Data Presentation Tools**
+**Before (decluttered only):**
+- Clean design, no chartjunk (Tufte compliant)
+- Simple bar chart showing regional sales
+- Clear labels and minimal gridlines
+- Good data-ink ratio
+- BUT: No indication of what matters
+- Viewers ask: "What's the point?"
 
-| Insight Type | Information Level | Best Tool |
-|--------------|-------------------|-----------|
-| Exploratory | Simple | AI chat interfaces |
-| Explanatory | Simple | AI-infused BI tools |
-| Exploratory | Sophisticated | Interactive dashboards |
-| Explanatory | Sophisticated | **Data stories / Presentation decks** |
+**After (decluttered + focused):**
+- Same clean design foundation
+- Headline: "Asia-Pacific sales declined 18% in Q4"
+- One bar highlighted in red (Asia-Pacific)
+- Other bars in muted gray for context
+- Annotation: "Competitor X launched in September"
+- Audiences immediately see the story
 
-**Key Distinction:** Dashboards are for exploration; data stories are for persuasion and decision-making.
+**The difference:** Active guidance on what to see and why it matters
 
-**Your Week 12 Presentation:** Explanatory + Sophisticated = Human-crafted data story required
+<speaker-notes>
+The contrast between these two examples demonstrates why decluttering alone fails. Both charts are well-designed from a Tufte perspective—good data-ink ratio, no chartjunk. But only the second one communicates.
 
-(Kesari, 2024 - MIT Sloan Management Review)
+A whiteboard sketch can work well here if time allows. Draw two identical bar charts. In the first, all bars are the same color. In the second, highlight one bar and add a headline. Ask: "Which tells you what to care about?"
 
-## Speaker Notes
+The color strategy is key: Use color sparingly to direct attention. One accent color (often red for problems, blue for positive insights) against neutral gray for context. Rainbow colors scatter attention—every bar screams for focus.
 
-**Opening:**
-- This is a 2024 framework addressing a current question: With AI tools, do we still need slides?
+Writing headlines is a skill: "Q4 Regional Sales" is a description. "Asia-Pacific Sales Declined 18% in Q4" is a headline that explains. The second version does the cognitive work for the audience.
 
-**Key Points:**
-- **Exploratory vs. Explanatory:** Exploratory = audience discovers insights; Explanatory = you guide to conclusion
-- **Simple vs. Sophisticated:** Simple = single metric or trend; Sophisticated = multi-faceted with context
-- **Why presentations still matter:** High-stakes, sophisticated decisions require human-crafted narratives that integrate multiple data sources
-- Your Week 12 presentation = explanatory (you're persuading) + sophisticated (multiple concepts) = you must create compelling visual story
+The annotation adds context that might not be obvious from the data alone—the competitor launch explains the timing of the decline.
+</speaker-notes>
 
-**Example:**
-- Simple exploratory: "What was our sales number last month?" → Ask AI chatbot
-- Sophisticated explanatory: Convincing board to invest $50M in product launch → Craft visual presentation integrating customer data, projections, competitor analysis
+</slide>
 
-**Check Understanding:**
-- "Where would your Week 12 presentation fall on this matrix? Exploratory or explanatory?"
+<slide number="33" title="Focus Technique Examples">
 
-**Transition:**
-- "Let's see this framework with a real case study..."
+## Real-World Applications
 
----
+**Financial Reports:**
+- Before: Line chart of monthly revenue (all months same color)
+- After: Same chart, but Q4 highlighted with annotation "New product launch drove 40% growth"
 
-## Slide 19: Case Study - Strategic Board Presentation
-<!-- LAYOUT: case-study -->
+**Marketing Dashboards:**
+- Before: Pie chart of traffic sources (6 rainbow colors)
+- After: Same chart, organic search highlighted in blue, rest in gray, headline "Organic search drives 62% of conversions"
 
-**Context:** Product head presenting to executive board to justify $50 million investment for new product launch
+**Operations Updates:**
+- Before: Bar chart of defect rates by factory (neutral colors)
+- After: Factory 3 highlighted in red, annotation "Equipment failure in Week 23," headline "Factory 3 defect rate spiked 300% after equipment failure"
 
-**Challenge:** Provide full context for sophisticated strategic decision across multiple data sources
+**Common Thread:** Every chart tells one clear story through headline + color + annotation
 
-**Action:** Created comprehensive data story integrating:
-- Customer data showing demand
-- Financial projections with scenarios
-- Market analysis of opportunity size
-- Competitor intelligence on gaps
-- Internal capability assessment
+<speaker-notes>
+These real-world examples show how the declutter + focus technique applies across business functions. The pattern is always the same: identify your main point, make it visually obvious.
 
-**Result:** Board had sufficient context to make high-stakes decision with confidence
+Financial reports: Instead of making executives decode the trend, point out the inflection point and explain why it happened.
 
-**Lesson:** AI tools can't synthesize multi-source narratives for strategic persuasion—this requires human-crafted visual storytelling
+Marketing dashboards: Rather than showing all traffic sources equally, highlight the one that matters most for the current decision.
 
-(Kesari, 2024 - MIT Sloan Management Review)
+Operations updates: When presenting problems, make the problem obvious and explain the cause.
 
-## Speaker Notes
+The "one story per chart" principle is crucial. If you have multiple points to make, use multiple charts. Don't create a complex chart that tries to show everything—it will communicate nothing.
 
-**Opening:**
-- Real example from MIT Sloan article showing when presentations are essential
+Students often resist this simplification. They want to "show all the data" to be comprehensive. But comprehensiveness doesn't equal communication. Better to have three focused charts than one complex chart that confuses.
+</speaker-notes>
 
-**Key Points:**
-- **Why AI couldn't do this:** Decision required synthesis across customer, financial, market, competitor, internal capability data—AI chatbot gives answers, not strategic narrative
-- **Human value-add:** Presenter chose what to emphasize, framed story, anticipated objections, designed flow
-- **$50M stakes:** High-stakes decisions need human judgment in communication, not algorithm-generated summaries
-- Your careers: You'll face situations like this—ability to craft compelling visual stories is valuable skill
+</slide>
 
-**Example:**
-- Vietnamese business context: Presenting to company leadership for budget approval, new initiative, strategic pivot—these all need human-crafted stories
+<slide number="34" title="Practical Checklist">
 
-**Check Understanding:**
-- "What would be lost if this product head just sent the board a ChatGPT summary of the data?"
+## Your Slide Design Checklist
 
-**Transition:**
-- "Let's move to key takeaways and how to apply everything we've covered..."
+**Before you finalize any slide:**
 
----
+**Step 1 - Mayer Check:**
+- Does it follow Coherence (no extraneous elements)?
+- Does it follow Redundancy (not reading displayed text aloud)?
+- Does it follow Multimedia (combining words and pictures)?
+- Spatial Contiguity (labels near graphics)?
 
-## Slide 20: Key Takeaways
+**Step 2 - Tufte Check:**
+- Can I remove any ink without losing data information?
+- Is the data-ink ratio maximized?
+- Are there any chartjunk elements (3D, decorations, heavy grids)?
+- Does the visual magnitude match the data magnitude (Lie Factor = 1)?
 
-1. **Cognitive load matters:** Design slides to minimize extraneous load (Mayer's principles)
-2. **Simplicity wins:** Maximize data-ink ratio; eliminate chartjunk (Tufte)
-3. **Guide attention actively:** Declutter + focus technique improves comprehension 2.5x (Kellogg)
-4. **Choose tools strategically:** High-stakes persuasion requires human-crafted visual stories (MIT Sloan)
-5. **Test your slides:** Curse of expertise means what's obvious to you may confuse audiences
+**Step 3 - Focus Check:**
+- Does a first-time viewer immediately know what matters?
+- Is there an explanatory headline stating the conclusion?
+- Is strategic color highlighting the key insight?
+- Are annotations guiding interpretation?
 
-## Speaker Notes
+<speaker-notes>
+This checklist synthesizes the three frameworks into a practical quality control process. Students should bookmark this slide for reference when building presentations.
 
-**Opening:**
-- Five core takeaways—write these down if you haven't already
+The sequence matters: Start with Mayer's principles (overall design), apply Tufte's simplification (maximize data-ink), finish with focus technique (guide attention).
 
-**Key Points:**
-- **Takeaway 1:** Every design choice should ask "Does this reduce extraneous or support germane load?"
-- **Takeaway 2:** When in doubt, remove elements—simpler slides almost always work better
-- **Takeaway 3:** Don't assume audiences will "get it"—use headlines and color to direct attention
-- **Takeaway 4:** For Week 12, remember you're crafting explanatory sophisticated story—tool selection matrix says presentation deck is correct choice
-- **Takeaway 5:** Test your slides with a friend before presenting—if they miss your point, redesign
+Emphasize step 3: Testing with colleagues is the only way to catch the curse of expertise. If you can't test with others, at least step away for 24 hours and review with fresh eyes. You need distance from your work to see it as an audience would.
 
-**Example:**
-- Apply these in tutorial today: You'll redesign cluttered slides using these exact principles
+Time management note: This checklist takes 5-10 minutes per slide, but it's time well spent. Poor slides waste audience time and undermine your credibility. Better to have fewer, excellent slides than many mediocre ones.
 
-**Check Understanding:**
-- "Which takeaway feels most actionable for your Week 12 presentation?"
+Assessment connection: For your Persuasive Proposal and Group Presentation, apply this checklist to every visual element. This systematic quality control will elevate your work from acceptable to excellent.
+</speaker-notes>
 
-**Transition:**
-- "Now let's preview your tutorial activity and what's coming next..."
+</slide>
 
----
+<slide number="35" title="For Data Visualizations">
 
-## Slide 21: Tutorial Preview - Slide Redesign Workshop
+## Data Visualization Specific Checklist
 
-**Today's Activity:** Redesign cluttered slides using Mayer's principles, Tufte's data-ink ratio, and the focus technique
+**Step 4 - Remove Clutter:**
+- Eliminate borders around chart area
+- Lighten or remove gridlines
+- Remove background colors and patterns
+- Delete decorative elements and 3D effects
+- Replace legend with direct labels
 
-**You'll Practice:**
-- Identifying extraneous cognitive load
-- Applying coherence and redundancy principles
-- Eliminating chartjunk
-- Adding focusing elements (headlines, strategic color)
+**Step 5 - Identify Your Story:**
+- What's the one main point this chart makes?
+- Write it as an explanatory headline
+- If you have multiple points, create multiple charts
 
-**Deliverable:** One redesigned slide with explanation of design choices
+**Step 6 - Add Focusing Elements:**
+- Headline stating conclusion (not description)
+- Color highlighting key data (1-2 colors max, rest gray)
+- Annotations explaining significant features
+- Bold or larger text for key numbers
 
-**Class Feedback:** 4-6 students will share their redesigns and explain their reasoning
+**Step 7 - Test:**
+- Show to colleague who hasn't seen it
+- Ask: "What's the main point?"
+- If they can't answer in 5 seconds, add more focus
 
-## Speaker Notes
+<speaker-notes>
+This extends the general checklist specifically for data visualizations, which require additional care because they're where the curse of expertise is most dangerous.
 
-**Opening:**
-- Tutorial directly applies today's frameworks—this is practical skill-building
+Step 4 (declutter) applies Tufte's principles. Most students will find they can remove 50-70% of the default elements Excel or PowerPoint adds to charts.
 
-**Key Points:**
-- You'll receive "before" slides with common design problems (too much text, chartjunk, missing focus)
-- Your job: Apply specific principles we learned today to create "after" versions
-- You must explain WHICH principles you applied and WHY—not just "it looks better"
-- This practice prepares you for Week 12 slide creation—same skills, your own content
+Step 5 (identify story) is where many students struggle. They want to "show the data" without committing to an interpretation. But that's not communication—that's data dumping. Force yourself to articulate the one story this chart tells.
 
-**Example:**
-- Sample "before" slide might have paragraph text, decorative clip art, multi-colored bar chart with no headline
-- Your "after" might have bullet points, removed clip art, single-color highlighting with descriptive headline
-- You'd explain: "Applied coherence (removed clip art), redundancy (shortened text), focus (added headline and color)"
+Step 6 (add focus) translates your story into visual guidance. The headline, color, and annotations do the interpretive work for the audience.
 
-**Check Understanding:**
-- "What's the difference between saying 'I made it simpler' vs. 'I applied Mayer's coherence principle by removing extraneous decorative elements'?"
+Step 7 (test) is the only way to overcome your own curse of expertise. The 5-second rule is strict but appropriate—in a presentation, audiences don't get unlimited time to study each chart.
 
-**Transition:**
-- "After tutorial, here's what's coming next week..."
+Real-world application: Professional data journalists at publications like the New York Times routinely test their graphics on colleagues before publication. This isn't a sign of weakness—it's quality control.
+</speaker-notes>
 
----
+</slide>
 
-## Slide 22: Looking Ahead - Week 7
+<slide number="36" title="Common Mistakes to Avoid">
 
-**Topic:** Persuasive Presentations - Inspiring action through storytelling
+## Common Slide Design Mistakes
 
-**What to Expect:**
-- Cialdini's principles of persuasion
-- Storytelling arc frameworks
-- Emotional engagement techniques
-- Portfolio Piece 2 due: Persuasive Proposal (15%)
+**Cognitive Overload:**
+- Too much text (>150-200 words on body slides)
+- Multiple concepts per slide
+- Reading bullet points verbatim
+- Dense paragraphs instead of visual elements
 
-**Preparation:**
-- Complete Week 6 quiz on Moodle (due Sunday 11:59 PM)
-- Pre-reading: Cialdini (2006) *Influence* Chapter 1-3
+**Visual Clutter:**
+- Decorative backgrounds and clip art
+- Unnecessary logos on every slide
+- 3D effects, shadows, and reflections
+- Busy patterns and textures
+- Rainbow color schemes without meaning
 
-## Speaker Notes
+**Poor Focus:**
+- Charts with no clear main point
+- Descriptive titles instead of explanatory headlines
+- Equal visual weight to all elements
+- No guidance on what to look at first
 
-**Opening:**
-- Next week builds on visual design by adding persuasive storytelling layer
+**Integrity Issues:**
+- Truncated axes exaggerating trends
+- Inconsistent scales between charts
+- Cherry-picked data without context
+- Visuals that overstate effects (Lie Factor > 1)
 
-**Key Points:**
-- Week 7 shifts from "how slides look" to "how presentations persuade"
-- Cialdini's 6 principles (reciprocity, social proof, etc.) are foundational—read Chapter 1-3 before next class
-- Portfolio Piece 2 (15% of grade) due Week 7—persuasive business proposal building on Week 4 foundations
-- Quiz covers today's content: Mayer's principles, Tufte's concepts, focus technique, MIT framework
+<speaker-notes>
+This slide captures the anti-patterns—what NOT to do. You may want to show actual examples if you have them available (with identifying information removed).
 
-**Example:**
-- Week 6 (today): Design slides that don't confuse audiences
-- Week 7 (next): Design presentations that inspire audiences to act
-- Together these prepare you for Week 12 group presentation
+The text limit is specific: Mayer's research suggests 150-200 words maximum for content slides. Opening and closing slides can have less. If you need more than 200 words, split into two slides or move detail to speaker notes.
 
-**Check Understanding:**
-- No question—this is preview only
+The "unnecessary logos on every slide" point addresses a common Vietnamese corporate practice. Company branding belongs on title and closing slides, not every slide—it's visual clutter that adds extraneous cognitive load.
 
-**Transition:**
-- "Finally, let's review resources for going deeper on visual communication..."
+Reading bullet points verbatim violates the Redundancy Principle and insults the audience. If they can read, why are you there? Your value is in explaining what the text means, providing examples, and answering questions.
 
----
+Student question often asked here: "What about slide templates from our companies?" Answer: Use company templates for title/closing slides for brand consistency, but advocate for cleaner content slide templates. If required to use heavy templates, minimize other visual elements to compensate.
 
-## Slide 23: Further Resources
+The integrity issues are particularly important for maintaining credibility. Once audiences catch one misleading chart, they'll distrust everything you present.
+</speaker-notes>
 
-**Core Readings (from today's lecture):**
-- Mayer, R. E. (2009). *Multimedia Learning* (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511811678
-- Tufte, E. R. (2001). *The Visual Display of Quantitative Information* (2nd ed.). Graphics Press.
-- Kwok, R. (2021). Do people really understand your data visualizations? *Kellogg Insight*. https://insight.kellogg.northwestern.edu/article/do-people-understand-your-data-visualizations
-- Kesari, G. (2024). The enduring power of data storytelling in the generative AI era. *MIT Sloan Management Review*. https://sloanreview.mit.edu/article/the-enduring-power-of-data-storytelling-in-the-generative-ai-era/
+</slide>
 
-**Supplementary:**
-- Schwartzberg, J. (2020). Present your data like a pro. *Harvard Business Review*. https://hbr.org/2020/02/present-your-data-like-a-pro
+<slide number="37" title="Key Takeaways">
 
-**Tools:**
-- Canva Education (free): www.canva.com/education
-- Grammarly (free): www.grammarly.com/edu
+## Key Takeaways
 
-## Speaker Notes
+**Three frameworks to remember:**
 
-**Opening:**
-- Resources for going deeper after class—all required readings are openly accessible
+**1. Mayer's CTML: Manage cognitive load through dual-channel processing**
+   - Coherence: Remove extraneous elements
+   - Redundancy: Don't read text aloud
+   - Multimedia: Combine words and pictures
+   - Spatial/Temporal Contiguity: Synchronize and integrate
 
-**Key Points:**
-- **Mayer:** Foundational textbook if you want full 12 principles with research details
-- **Tufte:** Classic text on data visualization—beautiful examples throughout
-- **Kellogg Insight:** Open-access article you can read in 10 minutes—highly practical
-- **MIT Sloan:** 2024 article addressing AI context—very current
-- **HBR Supplementary:** Seven practical principles summarized for business audience
-- Tools listed at bottom are free for students—Canva for slide design, Grammarly for text
+**2. Tufte's Principles: Maximize data-ink ratio**
+   - Remove chartjunk (3D, decorations, heavy grids)
+   - Ensure graphical integrity (Lie Factor = 1)
+   - Every visual element must earn its place
 
-**Example:**
-- If you're working on Week 12 presentation and get stuck on chart design, revisit Tufte's data-ink ratio section
-- If you want quick practical tips, HBR article gives 7 principles in accessible format
+**3. Declutter + Focus: Decluttering alone is insufficient**
+   - Add explanatory headlines stating conclusions
+   - Use color strategically (1-2 accent colors, rest gray)
+   - Annotate to guide interpretation
+   - Test with colleagues to overcome curse of expertise
 
-**Check Understanding:**
-- "Which of these resources would you go to first if you wanted quick practical tips vs. deep theoretical understanding?"
+<speaker-notes>
+This summary consolidates 75 minutes of content into three memorable frameworks. Students should be able to recall these for the quiz and apply them to assessments.
 
-**Transition:**
-- "That completes our lecture on visual communication and slide design. See you in tutorial for hands-on practice!"
+Quick check for understanding: Ask students to turn to a neighbor and explain one of the three frameworks in 30 seconds. This active recall reinforces learning.
 
----
+Connection to next week: These visual design principles support Week 7's persuasive presentations. A well-designed slide deck enhances credibility (ethos) and makes logical arguments clearer (logos).
 
-## Slide 24: Questions?
+Reminder: All three frameworks appear on the Week 11 comprehensive quiz. Students should review the required readings (Mayer, Tufte, MIT Sloan, Kellogg) for deeper understanding.
 
-**Discussion time**
+The integration point is crucial: These aren't three separate approaches—they work together. Mayer explains why certain designs reduce comprehension, Tufte shows how to maximize information density, and declutter + focus ensures your message gets through.
+</speaker-notes>
 
-## Speaker Notes
+</slide>
 
-**Opening:**
-- Open floor for any questions on today's content
+<slide number="38" title="Assessment Preview">
 
-**Key Points:**
-- Common questions to anticipate:
-  - "Can we use decorative images if they're relevant to topic?" → Only if they serve germane load; most "relevant" images are still extraneous
-  - "How do we know if we have too much text?" → Redundancy principle: If you're saying it, don't write full sentences on slide
-  - "What if our data is genuinely complex?" → Use segmenting (multiple slides) and pre-training (build up concepts gradually)
-  - "Can we use PowerPoint templates?" → Only if template is minimal; most built-in themes violate coherence principle
+## Looking Ahead
 
-**Example:**
-- If student asks about specific design choice for their Week 12 presentation, ask them: "What principle from today applies? Does it reduce extraneous load?"
+**Persuasive Proposal (Due Week 7):**
+- Apply these visual principles to any charts or diagrams in your proposal
+- Use declutter + focus technique for data presentations
+- Remember: Visual quality impacts your credibility
+- At least one data visualization required
 
-**Check Understanding:**
-- This is Q&A slide—respond to student questions
+**Group Presentation (Due Week 12):**
+- Build slide deck following all three frameworks
+- Practice explaining visuals without reading text
+- Test slides with team members to ensure clarity
+- Apply checklist to every slide
 
-**Transition:**
-- After answering questions: "Great questions. Let's move to tutorial where you'll apply these principles hands-on. See you there!"
+**Week 11 Quiz:**
+- Mayer's principles and cognitive load types
+- Tufte's data-ink ratio and chartjunk categories
+- Declutter + focus technique and effect sizes
+- MIT Sloan data presentation matrix
+
+<speaker-notes>
+Connecting lecture content to upcoming assessments helps students see the practical value.
+
+For the Persuasive Proposal, even if students don't include extensive data visualization, the Mayer and Tufte principles apply to any supporting visuals—diagrams, process flows, images. The requirement for at least one data visualization makes this week's content immediately applicable.
+
+The Group Presentation is where these skills become most critical. A 15-minute presentation with poor slides wastes the entire team's effort. Conversely, excellent slides amplify a strong message. Encourage teams to designate one member as "visual design lead" to ensure consistency.
+
+Quiz preview: Questions will test understanding of frameworks, not memorization. For example: "Which Mayer principle is violated when a presenter reads bullet points aloud?" or "What is the effect size of the declutter + focus technique?" or "When should you use a data story vs. a dashboard?"
+
+Emphasize that the quiz covers material from readings as well as lecture—students who attend lecture but skip readings will miss content.
+</speaker-notes>
+
+</slide>
+
+<slide number="39" title="Next Week Preview">
+
+## Next Week: Persuasive Presentations
+
+**Topic:** Storytelling and rhetorical appeals in business presentations
+
+**Frameworks:**
+- Cialdini's 6 Principles of Persuasion
+- Rhetorical Appeals (Ethos, Pathos, Logos)
+- Storytelling Arc Framework
+
+**Connection to today:** Visual design enhances persuasion, but content strategy determines what you visualize and why
+
+**How they integrate:**
+- Ethos (credibility) requires professional visual design
+- Logos (logic) requires clear data visualization
+- Pathos (emotion) requires strategic image selection
+
+**Preparation:** Complete Week 6 quiz; read Cialdini article on Moodle
+
+<speaker-notes>
+Preview creates anticipation and helps students see how weeks connect. The visual design skills from today support next week's persuasion content—you need both clear visuals AND compelling arguments.
+
+The integration point is important: Visual design isn't separate from persuasion—it's part of persuasion. Poor visuals undermine ethos (you seem unprofessional). Unclear charts weaken logos (your argument is hard to follow). Generic stock photos fail to create pathos.
+
+The Cialdini article is essential preparation for Week 7, as the Persuasive Proposal is due at the end of that week. Students who start reading now will have time to apply principles to their proposals.
+
+Note for instructors: Week 7 builds on Week 6. Students who miss this week will struggle with understanding how visual rhetoric supports verbal persuasion. The frameworks are cumulative—each week adds layers to the communication strategy.
+
+The quiz deadline (before Week 7 lecture) ensures students review this week's content before moving forward. The quiz questions will reinforce the key frameworks.
+</speaker-notes>
+
+</slide>
+
+<slide number="40" title="Further Resources">
+
+## Further Resources (Optional)
+
+**Videos:**
+- Nancy Duarte – "The Secret Structure of Great Talks" (18:00) - https://www.ted.com/talks/nancy_duarte_the_secret_structure_of_great_talks
+  - Why watch: Visual storytelling framework from presentation design expert
+- Edward Tufte – "Data Visualization" (9:30) - https://www.youtube.com/watch?v=4s0UVH5nWBg
+  - Why watch: Tufte himself explaining chartjunk and data-ink ratio with examples
+
+**Books (Optional):**
+- Mayer, R. E. (2009). *Multimedia Learning* - Full framework with research evidence
+- Tufte, E. R. (2001). *The Visual Display of Quantitative Information* - Classic text with hundreds of examples
+
+**Not required** - All assessed material covered in required readings and lecture
+
+<speaker-notes>
+Brief mention: "For those interested in going deeper, I've linked two excellent videos on this topic. They're optional but highly recommended if you want to see these concepts in action."
+
+The Duarte video connects to next week's storytelling content, providing continuity. The Tufte video reinforces today's data visualization principles with visual examples.
+
+Students often appreciate seeing the researchers themselves explain their work—it makes frameworks more memorable and credible. Duarte is not an academic but a practitioner who's worked with major companies and TED speakers.
+
+The book recommendations are for students who want to go beyond the required readings. Mayer's full book includes all 12 principles with detailed research studies. Tufte's book is a visual feast—hundreds of examples of good and bad data graphics.
+
+Don't overemphasize these resources—students have enough required work. Position them as "for those who are fascinated by this topic and want to become experts."
+</speaker-notes>
+
+</slide>
+
+<slide number="41" layout="references" title="References">
+
+## References
+
+1. Kesari, G. (2024, January 17). The enduring power of data storytelling in the generative AI era. *MIT Sloan Management Review*. https://sloanreview.mit.edu/article/the-enduring-power-of-data-storytelling-in-the-generative-ai-era/
+
+2. Kwok, R. (2021, December 9). Do people really understand your data visualizations? *Kellogg Insight*. https://insight.kellogg.northwestern.edu/article/do-people-understand-your-data-visualizations
+
+3. Mayer, R. E. (2009). *Multimedia learning* (2nd ed.). Cambridge University Press. https://doi.org/10.1017/CBO9780511811678
+
+4. Tufte, E. R. (2001). *The visual display of quantitative information* (2nd ed.). Graphics Press.
+
+<speaker-notes>
+Full citations for all sources referenced in lecture. Students can use these for further reading and for citing in their Persuasive Proposals if they use visual communication principles.
+
+All four sources appear in the syllabus as required reading for Week 6. Students should have accessed the MIT Sloan and Kellogg articles (both open access) before class. The Mayer and Tufte texts are available through the library or as PDFs on Moodle.
+
+If students want to cite these in their proposals: Use APA 7th format (these citations are already in APA 7th). Citing course readings shows engagement with academic literature and strengthens their arguments.
+
+Remind students that academic integrity requires citing sources. If they use Mayer's principles or Tufte's data-ink ratio in their proposals, they should cite the original sources.
+</speaker-notes>
+
+</slide>

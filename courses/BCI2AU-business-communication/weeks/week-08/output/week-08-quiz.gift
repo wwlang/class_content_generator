@@ -1,61 +1,103 @@
-// Week 8: High-Stakes Communication - Quiz Questions
-// Course: BCI2AU Business Communication
-// Format: Moodle GIFT
+// Week 8: High-Stakes Communication
+// Quiz ID: week-08
+// Questions: 12
+// Weeks covered: 8
+// Bloom distribution: 4 Remembering, 8 Understanding
 
-// Question 1: Executive Presence Elements
-::Week 8 Q1 - Executive Presence Elements::According to Hewlett's (2024) updated Executive Presence Model, which element is considered MOST important by senior executives?{
-=Gravitas - confidence, decisiveness, and inclusiveness#Correct! 67% of senior executives identify gravitas as the most important element of executive presence. Gravitas includes confidence, decisiveness, and—in the updated model—inclusiveness and respect for diverse perspectives.
-~Appearance - authenticity and professional image#Appearance is actually the LEAST important of the three elements, though authenticity within appearance has become more valued.
-~Communication - virtual presence and listening skills#Communication is the second most important element, including virtual presence and "listen to learn" orientation, but gravitas is ranked #1 by senior executives.
-~Charisma - natural leadership ability#Charisma is not one of the three elements. Executive presence is learnable—you don't need innate charisma. The three elements are gravitas, communication, and appearance.
-}
+$CATEGORY: Week 8: High-Stakes Communication
 
-// Question 2: SCCT Crisis Clusters
-::Week 8 Q2 - SCCT Crisis Clusters::Your company experiences a technical malfunction that causes a service interruption. No one intended for this to happen, but the equipment should have been maintained better. According to Situational Crisis Communication Theory (SCCT), which crisis cluster does this represent?{
-~Victim cluster - organization is victim of external forces#Victim cluster is for situations where the organization has minimal control, like natural disasters or external product tampering. This scenario involves internal maintenance issues.
-=Accidental cluster - organization had some control but didn't intend harm#Correct! This is an accidental cluster crisis. The organization had some control (maintenance responsibility) but didn't intend the harm. Technical-error accidents fall into this moderate-responsibility category.
-~Intentional/Preventable cluster - organization made choices that caused crisis#Intentional/Preventable cluster involves deliberate choices or human misconduct. While maintenance was inadequate, this wasn't a deliberate decision to cause harm.
-~Misinformation cluster - crisis based on false information#"Misinformation cluster" is not one of SCCT's three crisis clusters. The Deny posture is used for misinformation situations specifically, but it's not a cluster category.
-}
+::Executive Presence Framework::What distinguishes gravitas from appearance and communication in the Executive Presence Framework?
+{
+=Confidence and decisiveness under pressure, inclusiveness and respect for diverse perspectives, and demonstrated competence
+~Physical appearance, commanding voice, and formal presentation skills
+~Educational credentials, professional dress, and social status
+~Popularity with colleagues, charisma, and public speaking ability
+####Gravitas in the Executive Presence Framework comprises three core elements\: (1) <b>confidence</b> (self-assurance and composure), (2) <b>decisiveness</b> (making clear decisions under pressure), (3) <b>inclusiveness</b> (respecting diverse perspectives), and (4) <b>demonstrated competence</b> (proven capability through actions rather than credentials). The post-pandemic shift moved from <b>pedigree</b> (educational background and status) to demonstrated competence. See Week 8 slides 5-7.}
 
-// Question 3: Crisis Response Matching
-::Week 8 Q3 - Crisis Response Matching::According to SCCT, if your organization is the victim of a false rumor (misinformation), the appropriate response strategy is the Deny posture (denial, attack the accuser).{
-TRUE#Correct! The Deny posture is ONLY appropriate for misinformation situations where false rumors are being spread. In these cases, denying the false information and possibly attacking the source of misinformation is the correct strategy. However, using Deny posture for any other crisis type creates severe credibility damage—it's critical to match response to crisis type correctly.
-FALSE#Actually, this is true. Deny posture is the correct response for misinformation. The key warning from SCCT is to NEVER use Deny outside misinformation situations, but when rumors are genuinely false, denial is appropriate and necessary.
-}
+::Executive Presence Framework::What are the three elements of the Executive Presence Framework?
+{
+=Gravitas, Communication, and Appearance
+~Confidence, Credibility, and Charisma
+~Strategic thinking, relationship building, and emotional intelligence
+~Technical expertise, soft skills, and interpersonal awareness
+####The Executive Presence Framework comprises three elements\: (1) <b>Gravitas</b>—confidence and decisiveness under pressure, (2) <b>Communication</b>—superior speaking and <b>active listening</b> (genuinely understanding others), and (3) <b>Appearance</b>—<b>authenticity</b> (being genuine) and <b>digital presence</b> (professional image online). Post-pandemic research shows gravitas is most important (67% of executives), communication second, and appearance least important but requiring authenticity. See Week 8 slides 5-9.}
 
-// Question 4: Three Conversations Model
-::Week 8 Q4 - Three Conversations Model::The Three Conversations Model from Harvard Negotiation Project identifies three layers in every difficult conversation. Which of the following is NOT one of those three conversations?{
-~The "What Happened?" Conversation - disagreements about facts and interpretations#The "What Happened?" Conversation is the first of the three layers, focusing on disputes about facts, interpretations, and blame.
-~The Feelings Conversation - emotions underlying the exchange#The Feelings Conversation is the second layer, addressing the emotions (acknowledged or not) that underlie the exchange.
-~The Identity Conversation - what this means for who we are#The Identity Conversation is the third layer, focusing on internal dialogue about what the situation means for our self-concept.
-=The Resolution Conversation - agreeing on next steps#Correct! "Resolution Conversation" is not one of the three layers. The model identifies\: What Happened (facts/interpretations), Feelings (emotions), and Identity (self-concept). Resolution is a potential outcome, not a separate conversation layer.
-}
+::Executive Presence Framework::How does "listen to learn" differ from "listen to respond" in the communication element of the Executive Presence Framework?
+{
+='Listen to learn' involves genuine curiosity and understanding; 'listen to respond' means waiting for your turn to speak while formulating your reply
+~'Listen to learn' means staying silent; 'listen to respond' means asking questions
+~'Listen to learn' is for one-on-one conversations; 'listen to respond' is for presentations
+~'Listen to learn' requires note-taking; 'listen to respond' does not
+####"Listen to learn" reflects <b>genuine curiosity</b> (sincere interest in understanding others' viewpoints) and <b>active engagement</b> (focused attention on understanding). "Listen to respond" means <b>passively</b> waiting for your turn while mentally preparing counter-arguments. Leaders practicing "listen to learn" build <b>psychological safety</b> (an environment where people feel safe contributing) and are perceived as more effective. This shift represents a move from <b>transactional</b> (exchange-focused) to <b>relational</b> (relationship-focused) communication. See Week 8 slide 8.}
 
-// Question 5: Q&A Framework Application
-::Week 8 Q5 - Q&A Framework Application::During your presentation Q&A, an audience member asks\: "Your market analysis seems incomplete. Why didn't you include competitor pricing data?" Which response demonstrates the Four-Step Q&A Framework most effectively?{
-~"We did include it—it's on slide 12. Were you not paying attention?"#This is defensive and disrespectful. It violates the Acknowledge step (makes questioner feel dismissed) and doesn't actually address whether competitor pricing should have been included.
-="That's a great question. Just to clarify, are you asking why we didn't show competitor pricing specifically, or why our pricing analysis overall seems incomplete? Our approach focused on value proposition rather than price competition, and here's why... Does that address your question?"#Correct! This response follows all four steps\: (1) Acknowledge - "great question," (2) Clarify - "are you asking about X or Y?", (3) Answer - explains the approach and reasoning, (4) Check - "Does that address your question?" It shows respect, prevents misunderstanding, provides substance, and confirms understanding.
-~"I don't know. We probably should have included that."#While honest, this response lacks confidence and doesn't defend the analytical choices made. It also doesn't acknowledge the question positively or check understanding.
-~"Competitor pricing wasn't relevant to our analysis."#Too abrupt and dismissive. It doesn't acknowledge the question respectfully, doesn't explain reasoning, and doesn't check if the answer satisfies the questioner.
-}
+::Situational Crisis Communication Theory (SCCT)::What are the three crisis clusters in Situational Crisis Communication Theory, and how do they differ in responsibility attribution?
+{
+=Victim (low responsibility), Accidental (moderate responsibility), Intentional/Preventable (high responsibility)
+~Internal (high), Mixed (moderate), External (low)
+~Minor (low), Moderate (medium), Major (high)
+~Preventable, Unpredictable, and Predictable
+####SCCT's three crisis clusters based on <b>stakeholder attribution</b> (how people assign responsibility)\: (1) <b>Victim</b> cluster—external attribution, low responsibility (natural disaster, product tampering); (2) <b>Accidental</b> cluster—mixed attribution, moderate responsibility (equipment malfunction, technical error); (3) <b>Intentional/Preventable</b> cluster—internal attribution, high responsibility (safety shortcuts, misconduct). <b>Attribution Theory</b> posits that stakeholders assign blame based on perceived causes. Matching response intensity to attribution level is critical. See Week 8 slide 13.}
 
-// Question 6: Executive Communication Shift
-::Week 8 Q6 - Executive Communication Shift::According to Hewlett's (2024) research comparing 2012 to 2022 data, "comfort on Zoom" and virtual presence skills have become essential components of the Communication element in executive presence.{
-TRUE#Correct! The updated Executive Presence Model identifies "comfort on Zoom" as a new essential skill within the Communication element. Post-pandemic, virtual presence is now mandatory for leaders, not optional. This represents one of the most significant shifts in executive presence expectations over the past decade.
-FALSE#Actually, this is true. Virtual presence is now a core component. Research shows that executives must master virtual communication (lighting, camera presence, engagement techniques) as thoroughly as in-person communication skills. The pandemic permanently changed what constitutes effective executive communication.
-}
+::Situational Crisis Communication Theory (SCCT)::In SCCT, how do intensifying factors change the response strategy required for a crisis?
+{
+~Intensifying factors allow organizations to use less accommodative responses
+=Intensifying factors escalate the required response level, requiring more accommodative and apologetic responses
+~Intensifying factors determine which crisis cluster the crisis belongs to
+~Intensifying factors only affect victim cluster crises
+####<b>Intensifying factors</b>—prior <b>crisis history</b> (previous similar incidents) and <b>reputation</b> (stakeholder perception of organizational character)—escalate required response intensity across all crisis clusters. If an organization has experienced similar crises or has poor reputation, stakeholders attribute more responsibility, requiring more <b>accommodative</b> (apologetic, compensatory, and relationship-focused) responses. An organization with spotless reputation can use <b>diminishing</b> (excuse, justification) posture; one with crisis history must use <b>rebuilding</b> (compensation, apology) posture. See Week 8 slide 14.}
 
-// Question 7: Difficult Conversations Technique
-::Week 8 Q7 - Difficult Conversations Technique::Your teammate forgot to complete their section of the group presentation, and you're frustrated. According to the Three Conversations Model, which approach best demonstrates "The And Stance" from the "What Happened?" conversation?{
-~"You forgot your section AND now we're all going to get a bad grade."#This uses the word "and" but isn't the And Stance—it's just listing consequences. It doesn't acknowledge both perspectives as potentially valid.
-="From your perspective, something prevented you from finishing AND from my perspective, we had a clear deadline we all agreed to. Let's figure out what happened."#Correct! The "And Stance" means both perspectives can be valid simultaneously. This response acknowledges their reality ("something prevented you") AND your reality ("we had a deadline"), without making either person wrong. It opens dialogue rather than assigning blame.
-~"You're irresponsible AND I'm the one who always has to fix things."#This is judgment and blame, not the And Stance. It makes the other person wrong ("irresponsible") and yourself a victim ("I always have to fix things").
-~"I understand you were busy AND I'm not mad about it."#While this seems conciliatory, it doesn't actually explore both perspectives. It dismisses your own valid frustration rather than acknowledging that both realities can exist.
-}
+::Situational Crisis Communication Theory (SCCT)::What are the two components of the ethical base response in SCCT, and how do they work together?
+{
+=Instructing information (safety guidance) and adjusting information (expressing concern) address both practical and emotional stakeholder needs across all crisis types
+~Instructing and adjusting information are only necessary for victim cluster crises
+~Instructing information alone is sufficient; adjusting information is optional
+~Adjusting information means taking full responsibility; instructing information means providing directions
+####The ethical base response in SCCT combines two complementary components\: (1) <b>Instructing information</b>—practical, actionable guidance addressing stakeholder safety and welfare; (2) <b>Adjusting information</b>—<b>empathetic</b> (understanding and caring about feelings) communication expressing organizational concern. <b>Instructing</b> answers\: "What should I do?" <b>Adjusting</b> answers\: "Does the organization care about me?" Together they address both <b>cognitive</b> (thinking, practical) and <b>affective</b> (emotional, feeling) stakeholder needs. This foundation applies <b>universally</b> to all crisis types. See Week 8 slide 15.}
 
-// Question 8: SCCT Ethical Base Response
-::Week 8 Q8 - SCCT Ethical Base Response::According to Situational Crisis Communication Theory (SCCT), ALL crisis responses—regardless of crisis type—must include two elements\: instructing information (safety guidance) and adjusting information (expressing concern).{
-TRUE#Correct! SCCT identifies these as the "ethical base response" required for all crises, regardless of which crisis cluster or response posture is appropriate. Instructing information tells stakeholders what to do to protect themselves. Adjusting information expresses the organization's concern for stakeholders. These form the foundation; response postures (Deny, Diminish, Rebuild, Bolstering) are then added based on the crisis type.
-FALSE#Actually, this is true. Even when using different response postures, instructing and adjusting information are always required. For example, even if you're using a Deny posture for misinformation, you still need to tell people what to do (instructing) and show concern for their wellbeing (adjusting). These are non-negotiable ethical requirements.
-}
+::Stone's Three Conversations Model::What are the three layers of conversation that occur simultaneously in every difficult conversation according to Stone's Three Conversations Model?
+{
+='What Happened?' conversation (facts and blame), Feelings conversation (emotions), and Identity conversation (self-concept concerns)
+~Opening conversation, middle conversation, and closing conversation
+~Verbal conversation, non-verbal conversation, and written communication
+~My perspective, your perspective, and the objective truth
+####Stone's Three Conversations Model identifies three <b>simultaneous</b> (happening at the same time) conversation layers in every difficult interaction\: (1) <b>'What Happened?' conversation</b>—<b>interpretations</b> (meanings assigned to events) and <b>attributions</b> (assigning blame); (2) <b>Feelings conversation</b>—<b>emotions</b> (affective responses) underlying the exchange; (3) <b>Identity conversation</b>—internal dialogue about <b>self-concept</b> (who we think we are) and <b>competence</b> (capability and adequacy). Most people focus only on facts; missing the feelings and identity layers creates escalation. See Week 8 slides 17-18.}
+
+::Stone's Three Conversations Model::In the Three Conversations Model, what does the "And Stance" do in the "What Happened?" layer of difficult conversations?
+{
+=It recognizes both perspectives can be valid simultaneously, transforming dialogue from debate to mutual understanding
+~It means accepting all blame without discussing the other person's perspective
+~It merges two conflicting viewpoints into a compromise position
+~It concludes discussions by stating both people are equally right
+####The "And Stance" transforms the "What Happened?" conversation layer from <b>adversarial</b> (competing for who's right) to <b>collaborative</b> (seeking mutual understanding). It states\: "You see it this way AND I see it that way"—recognizing that both perspectives can be <b>valid</b> (reasonable and defensible) given different information or <b>interpretations</b> (ways of understanding events). This creates <b>psychological safety</b> (feeling safe to express viewpoints without fear of punishment) and shifts from <b>debate</b> (proving one position correct) to <b>learning</b> (understanding different perspectives). See Week 8 slide 19.}
+
+::Stone's Three Conversations Model::Why does the Three Conversations Model recommend starting difficult conversations with "the Third Story" rather than with your version or their version?
+{
+=It provides a neutral, objective starting point that avoids blame and creates psychological safety for dialogue
+~It proves that your perspective is the most accurate
+~It forces both people to compromise on the actual facts
+~It allows you to control the conversation narrative
+####The "Third Story" technique starts difficult conversations from a <b>neutral, objective</b> description—how a mediator would describe the situation without bias. This shifts from <b>blame-oriented</b> (identifying who is wrong) to <b>learning-oriented</b> (understanding differences) conversations. It creates <b>psychological safety</b> by positioning both parties as collaborative rather than adversarial. Starting with "your version" triggers defensiveness in the other person; starting with "their version" feels dismissive to you. The Third Story avoids both <b>egocentric</b> (self-centered) perspectives, opening genuine dialogue. See Week 8 slide 20.}
+
+::Q&A Framework::Why does the Q&A Framework place Acknowledge before Answer in its sequence?
+{
+=It shows respect for the questioner and provides 2-3 seconds of thinking time to compose a thoughtful response
+~It allows you to dismiss the question before actually addressing it
+~It requires you to agree with the questioner's underlying assumptions
+~It means jumping immediately to your answer without thinking
+####The Q&A Framework places Acknowledge first because it serves dual functions\: (1) <b>Relational</b>—demonstrates respect for the questioner, building <b>rapport</b> (positive relationship); (2) <b>Cognitive</b>—provides thinking time that enables <b>composed</b> (calm, thoughtful) responses rather than <b>reactive</b> (defensive, emotional) ones. Phrases like "That's an excellent question" accomplish both simultaneously. This front-loads the framework with relationship and composure. See Week 8 slide 22.}
+
+::Q&A Framework::In the Q&A Framework, what are the two functions of the Acknowledge step?
+{
+=It shows respect for the questioner and buys 2-3 seconds of thinking time
+~It dismisses the question as unimportant
+~It means you are agreeing with the questioner's underlying assumptions
+~It means providing your complete answer without pausing
+####The Acknowledge step serves two critical functions\: (1) <b>Relational</b>—shows respect for the questioner and their input, building <b>rapport</b> (positive relationship) and <b>credibility</b> (trustworthiness); (2) <b>Cognitive</b>—provides 2-3 seconds of thinking time, enabling <b>composed</b> (calm, thoughtful) responses rather than <b>reactive</b> (defensive, emotional) ones. Phrases like "That's an excellent question" or "I appreciate you raising that" accomplish both. This step demonstrates <b>executive presence</b> and prevents the defensive reactions that damage credibility. See Week 8 slide 23.}
+
+::Q&A Framework::In the Four-Step Q&A Framework, which step comes after Acknowledge?
+{
+=Clarify (step 2)
+~Answer (step 3)
+~Check (step 4)
+~Respond (not in framework)
+####The Four-Step Q&A Framework sequence is\: (1) <b>Acknowledge</b>—show respect and gain composure; (2) <b>Clarify</b>—ensure you understand what's being asked; (3) <b>Answer</b>—address the question substance directly; (4) <b>Check</b>—confirm the questioner's concern was addressed. The <b>sequential</b> (in order) arrangement is critical because acknowledging first establishes respect, and clarifying before answering prevents the common mistake of addressing the wrong question. See Week 8 slide 22.}

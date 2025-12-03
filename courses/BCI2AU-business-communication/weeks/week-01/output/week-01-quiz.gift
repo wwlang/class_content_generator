@@ -1,73 +1,88 @@
 // Week 1: Communication Strategy Foundations
-// BCI2AU Business Communication
-// Prepares for: Comprehensive Quiz (Week 11)
+// Questions: 12
 
-// Q1: Shannon-Weaver Model Components (Remembering)
-::Shannon-Weaver Sequence:: In the Shannon-Weaver communication model, what is the correct sequence of components through which a message travels? {
-=Source → Encoder → Channel (with Noise) → Decoder → Destination#Correct! The Shannon-Weaver model shows communication flowing from Source (originates message) → Encoder (converts to signals) → Channel (medium of transmission, where Noise can interfere) → Decoder (interprets signals) → Destination (final recipient).
-~Source → Channel → Encoder → Noise → Decoder → Destination#Incorrect. The encoder comes BEFORE the channel, not after. The source must encode the message before transmitting it through the channel.
-~Encoder → Source → Destination → Decoder → Channel#Incorrect. This sequence is completely jumbled. The source must come first, and the destination comes last.
-~Channel → Source → Encoder → Destination → Decoder#Incorrect. The channel cannot come first—there must be a source and encoded message to transmit through it.
-}
+$CATEGORY: BCI2AU - Week 1
 
-// Q2: MKS Model Definition (Remembering)
-::MKS Model Letters:: What do the letters M, K, and S stand for in Spitzberg and Cupach's MKS model of communication competence? {
-=Motivation, Knowledge, Skills#Correct! MKS stands for Motivation (desire and confidence to communicate), Knowledge (understanding appropriate communication), and Skills (ability to perform communication behaviors). All three dimensions must be present for competence.
-~Message, Knowledge, Source#Incorrect. The M stands for Motivation, not Message. The model focuses on individual competence, not message characteristics.
-~Medium, Key concepts, Strategy#Incorrect. The M stands for Motivation, and the S stands for Skills. "Medium" and "Key concepts" are not part of this framework.
-~Method, Knowing, Speaking#Incorrect. None of these are correct. The framework uses the specific terms Motivation, Knowledge, and Skills.
-}
+::Shannon-Weaver Communication Model::What are the six components of the Shannon-Weaver Communication Model?{
+=Source, Encoder, Channel, Decoder, Destination, Noise #Correct! These six elements form the complete Shannon-Weaver framework that explains how messages travel from one point to another.
+~Sender, Message, Medium, Receiver, Feedback, Context #Incorrect. While these are communication elements, they don't match Shannon-Weaver's specific terminology and structure.
+~Source, Signal, Transmission, Reception, Destination, Distortion #Incorrect. Shannon-Weaver uses 'Encoder' and 'Decoder' rather than 'Signal' and 'Reception,' and 'Noise' rather than 'Distortion.'
+~Input, Processing, Output, Response, Feedback, Evaluation #Incorrect. These terms describe a general feedback system, not Shannon-Weaver specifically.
+####The Shannon-Weaver model has six components\: <b>Source</b> (originates the message), <b>Encoder</b> (converts thoughts to signals like words or slides), <b>Channel</b> (medium of transmission\: email, meeting, phone), <b>Decoder</b> (interprets the signals), <b>Destination</b> (the final recipient), and <b>Noise</b> (interference affecting clarity, including <b>physical</b> (background sounds), <b>semantic</b> (unclear language), and <b>psychological</b> (anxiety, distractions) factors). This foundational model helps diagnose where communication breaks down. See Week 1 slides 8.}
 
-// Q3: Three Levels of Communication Problems (Remembering - Matching as MC series)
-::Three Levels - Technical:: In Shannon-Weaver's three levels of communication problems, what does the TECHNICAL level concern? {
-=How accurately can symbols be transmitted?#Correct! The technical level concerns accurate transmission of symbols (did the email send? did the audio work?).
-~How precisely do the transmitted symbols convey intended meaning?#Incorrect. This describes the semantic level, not the technical level.
-~How effectively does the received meaning affect behavior?#Incorrect. This describes the effectiveness level, not the technical level.
-~How well does the sender understand the audience?#Incorrect. This is not one of Shannon-Weaver's three levels.
-}
+::Shannon-Weaver Communication Model::How does Noise relate to the Channel in the Shannon-Weaver model?{
+=Noise affects the Channel by introducing interference; understanding this relationship helps you choose the best transmission medium #Correct! Noise exists within and impacts the channel, so channel selection directly affects whether noise will corrupt the message.
+~Noise is separate from the Channel and doesn't affect message transmission #Incorrect. Shannon-Weaver shows noise specifically interferes within the channel.
+~The Channel creates Noise; changing the message eliminates it #Incorrect. While channels differ in noise levels, noise also depends on content clarity and receiver factors.
+~Noise only affects the Encoder, not the Channel #Incorrect. Shannon-Weaver explicitly shows noise affecting the channel during transmission.
+####In Shannon-Weaver, <b>Noise</b> occurs within the <b>Channel</b> and corrupts the message during transmission. This includes <b>physical noise</b> (background sounds, poor connection), <b>semantic noise</b> (unclear language, jargon), and <b>psychological noise</b> (anxiety, distractions, competing priorities). Understanding that noise exists at the channel level helps <b>systematically</b> (methodically, with organized steps) choose channels and design messages to overcome interference. For example, choosing a phone call instead of email reduces semantic noise in complex messages. See Week 1 slides 8, 10.}
 
-// Q4: Four Leadership Communication Strategies (Remembering)
-::Gallo Four Strategies:: According to Carmine Gallo's research, which of the following is NOT one of the four strategies for leadership communication? {
-=Use technical jargon to establish expertise#Correct! Using technical jargon is the OPPOSITE of effective leadership communication. Gallo emphasizes that complex language creates cognitive strain and reduces perceived credibility. The actual strategy is to simplify language.
-~Use short words to talk about hard things#Incorrect. This IS one of Gallo's four strategies. Simple language reduces cognitive strain and increases credibility.
-~Choose sticky metaphors to reinforce key concepts#Incorrect. This IS one of Gallo's four strategies. Metaphors make abstract ideas concrete and memorable.
-~Make mission your mantra to align teams#Incorrect. This IS one of Gallo's four strategies. Repetition creates organizational alignment.
-}
+::Shannon-Weaver Communication Model::How do the Source and Encoder differ in the Shannon-Weaver model?{
+=Source originates the message; Encoder converts thoughts into transmissible signals (words, slides) #Correct! They are distinct stages—what you think is not automatically what you say.
+~Source is the speaker; Encoder is the audience #Incorrect. The audience is the Destination and Decoder, not the Encoder.
+~Source and Encoder are the same—both represent the message originator #Incorrect. Shannon's model explicitly distinguishes these stages because thoughts ≠ words.
+~Source sends information; Encoder receives feedback #Incorrect. The feedback loop is not part of the basic Shannon-Weaver model.
+####The Source is you—you originate the message mentally. The Encoder is the process of converting those thoughts into signals (spoken words, written text, slides). They are separate because your internal thoughts are not identical to what you express. This distinction is crucial for <b>systematically</b> (methodically, in organized steps) diagnosing communication failures. The gap between what you intend and what you encode is where the first failure point occurs. See Week 1 slide 8.}
 
-// Q5: Noise in Communication (Understanding)
-::Shannon-Weaver Noise:: In the Shannon-Weaver model, "noise" refers only to physical sounds that disrupt communication, such as loud machinery or background chatter. {FALSE#Correct! Noise includes any interference with the communication signal—semantic noise (jargon, unclear wording), psychological noise (biases, emotions, distractions), and physical noise (sounds, technical glitches). Understanding all types of noise helps communicators diagnose and fix problems.#Incorrect. Noise in Shannon-Weaver is much broader than physical sound. It includes semantic noise (unclear language, jargon), psychological noise (preconceptions, emotional state), and physical noise (distractions, technical issues).}
+::Three Levels of Communication Problems::What are the three levels where communication can fail according to communication theory?{
+=Technical, Semantic, Effectiveness #Correct! These three levels represent different points where communication can break down\: accurate transmission, accurate meaning, and successful action.
+~Physical, Logical, Practical #Incorrect. The three levels are Technical, Semantic, and Effectiveness, not these categories.
+~Encoding, Transmission, Decoding #Incorrect. While these are Shannon-Weaver components, they are not the three levels of communication problems.
+~Sender, Message, Receiver #Incorrect. These are communication roles, not the three levels of problems.
+####Communication fails at three distinct levels\: <b>Technical</b> (were symbols transmitted accurately? Example\: email didn't send), <b>Semantic</b> (did symbols convey intended meaning? Example\: jargon confused the audience), and <b>Effectiveness</b> (did meaning produce desired action? Example\: they understood but didn't act). Most business communication failures occur at the <b>Effectiveness level</b>, not the Technical level. <b>Systematically</b> (methodically, step-by-step) diagnosing which level failed helps you choose the right solution. See Week 1 slides 9.}
 
-// Q6: MKS Dimension Definitions (Understanding)
-::MKS Motivation Definition:: In the MKS model, the "Motivation" dimension includes which of the following? {
-=The desire to communicate AND the confidence that you can do it well#Correct! Motivation includes both the desire (wanting to engage in communication) AND confidence (believing you can succeed). Low motivation often manifests as avoiding communication situations, even when you have the knowledge and skills.
-~Understanding what communication behaviors are appropriate in a context#Incorrect. This describes the Knowledge dimension—understanding what's appropriate in different contexts.
-~The ability to listen actively and articulate ideas clearly#Incorrect. This describes the Skills dimension—the behavioral ability to perform communication effectively.
-~Knowledge of communication theories and frameworks#Incorrect. This also falls under the Knowledge dimension. Motivation is about wanting to communicate, not knowing how.
-}
+::Three Levels of Communication Problems::How does the Effectiveness level differ from the Technical and Semantic levels?{
+=Effectiveness focuses on whether understanding produces desired action, not just message transmission or clarity #Correct! Technical and Semantic address delivery and understanding; Effectiveness addresses behavioral outcome.
+~Effectiveness only applies to written communication #Incorrect. Effectiveness applies to all communication types—written, verbal, and visual.
+~Effectiveness problems are easier to solve than Technical problems #Incorrect. Effectiveness problems (motivating action) are typically harder and most common in business.
+~Effectiveness is the responsibility of the encoder, not the decoder #Incorrect. Effectiveness requires both sender clarity and receiver motivation.
+####Technical and Semantic levels address delivery and understanding. <b>Effectiveness</b> addresses whether understanding leads to action. Example\: A strategy email sends successfully (technical ✓), is understood (semantic ✓), but nobody changes behavior (effectiveness ✗). This distinction helps <b>systematically</b> (through organized diagnostic steps) diagnose why "they understood but didn't act." Effectiveness problems are <b>persuasion problems</b> (motivation, relevance, credibility), not clarity problems. See Week 1 slide 9.}
 
-// Q7: Communication Competence (Understanding)
-::MKS All Three Required:: According to Spitzberg and Cupach, a person with high knowledge of communication techniques will always be an effective communicator. {FALSE#Correct! Communication competence requires all three MKS dimensions. Someone can have extensive knowledge but lack motivation (avoiding communication) or skills (poor execution). This is why many training programs fail—they focus only on knowledge, not motivation or skill practice.#Incorrect. The MKS model explicitly states that ALL THREE dimensions must be present. High knowledge alone is insufficient—a person who knows how to give feedback but lacks motivation or skills will not communicate effectively.}
+::Three Levels of Communication Problems::How do Semantic and Effectiveness problems differ in their focus?{
+=Semantic focuses on whether words convey intended meaning; Effectiveness focuses on whether understanding produces desired action #Correct! Semantic is a language/clarity problem. Effectiveness is a persuasion/motivation problem. Both can be correct, but the failure point is different.
+~Semantic problems are more serious than Effectiveness problems #Incorrect. Both are equally important, but Effectiveness problems are more common in business.
+~Semantic is technical; Effectiveness is about channels #Incorrect. Technical is about transmission. Semantic is about meaning. Effectiveness is about action.
+~They are the same problem expressed differently #Incorrect. They represent distinct failure points and require different solutions.
+####<b>Semantic problems</b> ask\: "Did the audience understand the intended meaning?" This is a language/clarity issue (jargon, ambiguity, cultural misunderstanding). <b>Effectiveness problems</b> ask\: "Did understanding lead to action?" This is a <b>motivational</b> (related to desire and drive) or relevance issue. Example\: Employee understands you want them to increase sales (semantic ✓) but doesn't believe it's possible or relevant to them (effectiveness ✗). Semantic problems need clearer language; Effectiveness problems need persuasion. See Week 1 slides 9.}
 
-// Q8: Humanizing Data Strategy (Understanding)
-::Humanizing Data Purpose:: What is the primary purpose of "humanizing data" in leadership communication? {
-=To connect numbers to human impact so audiences care about them#Correct! Humanizing data transforms abstract numbers into narratives people care about. "10 million users" becomes "10 million families trusted us"—connecting statistics to human stakes makes them memorable and motivating.
-~To make statistics sound more impressive#Incorrect. The goal isn't to exaggerate or impress—it's to create meaning. Numbers alone don't motivate action.
-~To hide negative data behind positive stories#Incorrect. Humanizing data is about creating connection, not manipulation or hiding information. Ethical communication requires honesty.
-~To simplify complex data for less educated audiences#Incorrect. This is condescending and misses the point. Humanizing data benefits all audiences by adding emotional resonance and context.
-}
+::MKS (Motivation-Knowledge-Skills) Model::What do the letters M, K, and S stand for in the MKS Model of communication competence?{
+=Motivation, Knowledge, Skills #Correct! The MKS model, developed by Spitzberg and Cupach, identifies these three dimensions as essential for communication competence.
+~Message, Knowledge, Situation #Incorrect. The second and third components do not match the MKS model.
+~Motivation, Kinetics, Strategy #Incorrect. K stands for Knowledge, not Kinetics, and S stands for Skills, not Strategy.
+~Mindset, Knowledge, Speaking #Incorrect. M stands for Motivation, not Mindset, and S stands for Skills, not Speaking.
+####The <b>MKS Model</b> (Spitzberg & Cupach, 1984) identifies three dimensions of communication competence\: <b>Motivation</b> (desire and confidence to communicate), <b>Knowledge</b> (understanding what to do in a given context), and <b>Skills</b> (ability to execute the behavior). All three must be present for true competence—high knowledge with low motivation produces no change, and high motivation without skills produces poor results. This <b>foundational</b> (underlying, serving as the basis) model appears throughout the course and guides self-assessment activities. See Week 1 slides 12.}
 
-// Q9: Four Skill Clusters (Remembering)
-::MKS Skill Clusters:: According to Spitzberg and Cupach's MKS model, which of the following is one of the four core skill clusters in communication competence? {
-=Composure#Correct! The four skill clusters are Attentiveness (active listening), Composure (emotional regulation and poise), Coordination (managing interaction flow), and Expressiveness (clear articulation). Composure is particularly important for high-stakes communication.
-~Persuasion#Incorrect. Persuasion is a communication outcome or technique, not one of the four skill clusters in the MKS model.
-~Creativity#Incorrect. Creativity is not identified as one of the four skill clusters. The model focuses on interpersonal communication behaviors.
-~Negotiation#Incorrect. Negotiation is a communication context or activity, not one of the four fundamental skill clusters.
-}
+::MKS (Motivation-Knowledge-Skills) Model::How does the Knowledge dimension of MKS differ from the other two dimensions?{
+=Knowledge is about understanding appropriate behavior in context, while Motivation is affective and Skills are behavioral #Correct! Knowledge is the cognitive (mental) dimension—understanding what to do. Motivation is emotional (wanting to do it), and Skills are behavioral (being able to do it).
+~Knowledge is the most important dimension; the other two are secondary #Incorrect. The MKS model shows all three dimensions are equally essential.
+~Knowledge only applies to technical communication, not interpersonal communication #Incorrect. Knowledge applies to all communication contexts.
+~Knowledge is the same as Skills; they are interchangeable terms #Incorrect. Knowledge is understanding appropriate behavior; Skills is ability to perform that behavior.
+####<b>Knowledge</b> is the <b>cognitive</b> (mental, relating to thinking) dimension of MKS—understanding procedural (how-to), conditional (when-to), and contextual (cultural norms) communication appropriateness. <b>Motivation</b> is the <b>affective</b> (emotional) dimension—desire and confidence. <b>Skills</b> is the behavioral dimension—ability to execute. A manager may have high Knowledge of feedback techniques but low Motivation (anxiety) or low Skills (practice), resulting in poor communication. All three must be present simultaneously. See Week 1 slides 12-14.}
 
-// Q10: Semantic vs. Effectiveness Level (Understanding)
-::Semantic vs Effectiveness:: What is the key difference between the SEMANTIC level and the EFFECTIVENESS level in Shannon-Weaver's three levels of communication problems? {
-=Semantic is about meaning being conveyed; effectiveness is about meaning producing action#Correct! The semantic level asks "Did the audience understand the intended meaning?" while the effectiveness level asks "Did that understanding change their behavior?" Many business communications succeed semantically but fail at effectiveness.
-~Semantic is about transmission; effectiveness is about encoding#Incorrect. Transmission concerns the technical level, not semantic. The distinction between semantic and effectiveness is about meaning vs. action.
-~Semantic is about the channel; effectiveness is about the destination#Incorrect. Both levels occur after successful transmission through the channel. The semantic level concerns interpretation; the effectiveness level concerns behavioral response.
-~Semantic is about noise; effectiveness is about the source#Incorrect. Noise can affect any level. The key distinction is that semantic concerns meaning comprehension, while effectiveness concerns behavioral change.
-}
+::MKS (Motivation-Knowledge-Skills) Model::What does the MKS model reveal about the relationship between high Knowledge and low Motivation?{
+=High Knowledge with low Motivation produces no change; all three dimensions are required #Correct! The model shows that missing any single dimension makes competence impossible.
+~Knowledge alone is sufficient; Motivation and Skills are secondary #Incorrect. The model explicitly states all three dimensions are necessary.
+~Low Motivation can be compensated by exceptional knowledge #Incorrect. The model shows dimensions are interdependent, not compensatory.
+~Knowledge is unrelated to Motivation in communication competence #Incorrect. The MKS model connects all three as essential components.
+####The MKS model demonstrates that all three dimensions must be present together. A manager who knows how to give feedback (K) but avoids difficult conversations (low M) will still fail at communication. Conversely, high motivation without skills or knowledge also produces poor outcomes. This <b>integrated</b> (combined as one whole) model explains why technique alone doesn't improve communication. Competence requires simultaneous presence of all three dimensions, not just one or two. See Week 1 slide 12.}
+
+::Four Leadership Communication Strategies::Why does the "short words" strategy improve leadership communication?{
+=Short words reduce cognitive strain and signal credibility more than complex language #Correct! Kahneman's research shows complex language actually decreases perceived intelligence.
+~Short words are easier to remember, but long words convey more expertise #Incorrect. The strategy shows both clarity and credibility improve with simple language.
+~Short words work for casual communication but not for professional contexts #Incorrect. Kahneman and Gallo emphasize this applies to all professional communication.
+~Short words accommodate non-native English speakers only #Incorrect. This strategy benefits all audiences, not just English learners.
+####Daniel Kahneman (Nobel Prize winner) demonstrated that complex language creates <b>cognitive strain</b> (burden on mental processing) and signals LESS credibility, not more. Short words (15-20 word average sentences) are faster to process and easier to remember. <b>Academic</b> (relating to scholarly or university contexts) writing differs from business writing in this regard. Tools like Hemingway Editor can assess readability. See Week 1 slide 20.}
+
+::Four Leadership Communication Strategies::How does the "humanize data" strategy differ from presenting data alone?{
+=Humanized data pairs statistics with human stories and relatable comparisons, while data alone lacks context and motivation #Correct! Human brains remember narratives better than numbers; both credibility and motivation are needed.
+~Humanized data uses smaller numbers; raw data uses larger numbers #Incorrect. The difference is narrative framing, not the size of numbers.
+~Humanized data is emotional manipulation; raw data is objective #Incorrect. Humanized data combines credibility (data) with motivation (narrative) ethically.
+~Humanized data only works for sad or negative statistics #Incorrect. This strategy applies to all statistics—positive, negative, or neutral.
+####Data alone ("Our app has 10 million users") lacks <b>persuasive</b> (convincing, moving to action) power. Humanized data adds context and human stakes ("10 million people trusted us—more than the population of Ho Chi Minh City"). This combines statistical credibility with narrative <b>memorability</b> (quality of being easily remembered). The rule\: Pair every important statistic with a human story. Human brains are wired for narrative, not numbers. See Week 1 slides 22.}
+
+::Four Leadership Communication Strategies::What is the primary purpose of using metaphors in leadership communication?{
+=To translate abstract or unfamiliar concepts into concrete, vivid mental images #Correct! Metaphors create pictures in people's minds, which are remembered better than abstract ideas or statistics.
+~To make the message longer and more impressive #Incorrect. Metaphors serve to clarify and simplify, not to impress or extend length.
+~To entertain the audience during the presentation #Incorrect. While metaphors may be engaging, their primary purpose is communication clarity, not entertainment.
+~To provide statistical evidence for claims #Incorrect. Metaphors create mental pictures; providing evidence is the role of data and examples.
+####<b>Metaphors</b> translate unfamiliar concepts into familiar ones. Example\: "Data is the new oil" (valuable, needs refining), "Culture eats strategy for breakfast" (culture is more powerful). Good metaphors are <b>vivid</b> (bright, clear, detailed), simple, and <b>memorable</b> (easily remembered). Metaphors create mental pictures, and pictures are remembered far better than abstract concepts or numbers. This strategy transforms how people think about problems. Bad metaphors are clichés ("low-hanging fruit"). Developing "signature metaphors" that you repeat is a hallmark of great communicators. See Week 1 slides 21.}

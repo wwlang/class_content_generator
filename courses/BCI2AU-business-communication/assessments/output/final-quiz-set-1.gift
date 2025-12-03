@@ -1,0 +1,182 @@
+// Quiz 1 - Weeks 1-10
+// Quiz ID: final-quiz-set-1
+// Questions: 30
+// Weeks covered: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+// Bloom distribution: 15 Remembering, 15 Understanding
+
+$CATEGORY: Quiz 1 - Weeks 1-10
+
+::Strunk & White Author::Who wrote *The Elements of Style*, the foundational text for clarity and concision rules?{
+~Barbara Minto and McKinsey #Barbara Minto wrote *The Pyramid Principle*, not *The Elements of Style*.
+=William Strunk Jr. and E.B. White #William Strunk Jr. wrote the original *Elements of Style* in 1918 at Cornell, and E.B. White updated it in 1959. It's the \#1 most-assigned text in US higher education.
+~Matt Abrahams and Stanford GSB #Matt Abrahams wrote about the "What/So What/Now What" framework, not *The Elements of Style*.
+~Elizabeth Danziger and Harvard Business Review #Elizabeth Danziger wrote about the Purpose-Person-Point framework in HBR, not *The Elements of Style*.
+}
+
+::Four-Step Q&A Framework::What is the correct sequence of the Four-Step Q&A Framework for handling challenging questions?{
+~Answer → Clarify → Acknowledge → Check #Starting with the answer is too abrupt and doesn't show respect. The correct sequence is Acknowledge → Clarify → Answer → Check.
+~Clarify → Acknowledge → Answer → Check #You need to acknowledge the question first before clarifying. The correct sequence is Acknowledge → Clarify → Answer → Check.
+=Acknowledge → Clarify → Answer → Check #The Four-Step Q&A Framework follows this sequence\: (1) Acknowledge the question ("That's an excellent question"), (2) Clarify if needed ("Are you asking about X or Y?"), (3) Answer directly, and (4) Check understanding ("Does that address your question?").
+~Acknowledge → Answer → Clarify → Check #Clarifying should come before answering to ensure you understand the question correctly. The sequence is Acknowledge → Clarify → Answer → Check.
+}
+
+::Semantic vs. Effectiveness Level::What is the key difference between the SEMANTIC level and the EFFECTIVENESS level in Shannon-Weaver's three levels of communication problems?{
+~Semantic is about transmission; effectiveness is about encoding #Transmission concerns the technical level, not semantic. The distinction between semantic and effectiveness is about meaning vs. action.
+=Semantic is about meaning being conveyed; effectiveness is about meaning producing action #The semantic level asks "Did the audience understand the intended meaning?" while the effectiveness level asks "Did that understanding change their behavior?" Many business communications succeed semantically (people understand) but fail at effectiveness (no action taken).
+~Semantic is about the channel; effectiveness is about the destination #Both levels occur after successful transmission through the channel. The semantic level concerns interpretation; the effectiveness level concerns behavioral response.
+~Semantic is about noise; effectiveness is about the source #Noise can affect any level. The key distinction is that semantic concerns meaning comprehension, while effectiveness concerns behavioral change. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 - Matching\: 1 (Q3) **Estimated completion time\:** 20-25 minutes
+}
+
+::Gravitas Priority::According to Hewlett (2024), what percentage of senior executives identify gravitas as the most important element of executive presence?{
+~50% #50% is too low. Hewlett's research found that 67% of senior executives prioritize gravitas above communication and appearance.
+=67% #67% of senior executives say gravitas—confidence and decisiveness under pressure combined with inclusiveness—is what really matters in executive presence.
+~70% #70% is the statistic from the hook (percentage of leaders who consider decisiveness a component of executive presence), not the percentage who prioritize gravitas overall.
+~85% #While gravitas is clearly the top priority, the specific percentage from Hewlett's research is 67%, not 85%.
+}
+
+::Shannon-Weaver Model Components::In the Shannon-Weaver communication model, what is the correct sequence of components through which a message travels?{
+~Source → Channel → Encoder → Noise → Decoder → Destination #The encoder comes BEFORE the channel, not after. The source must encode the message before transmitting it through the channel.
+=Source → Encoder → Channel (with Noise) → Decoder → Destination #The Shannon-Weaver model shows communication flowing from Source (originates message) → Encoder (converts to signals) → Channel (medium of transmission, where Noise can interfere) → Decoder (interprets signals) → Destination (final recipient).
+~Encoder → Source → Destination → Decoder → Channel #This sequence is completely jumbled. The source must come first, and the destination comes last.
+~Channel → Source → Encoder → Destination → Decoder #The channel cannot come first—there must be a source and encoded message to transmit through it.
+}
+
+::Authentic Communication Definition::According to Alisa Brodsky's research (UT Austin McCombs, 2022), what does authentic communication mean?{
+~Behaving identically across all communication contexts #Brodsky's research challenges the idea that authenticity means identical behavior everywhere. Authentic communication is contextual—you adapt while maintaining genuine intent.
+~Always saying exactly what you think without filtering #Authenticity doesn't mean unfiltered thoughts. You can be authentic while choosing appropriate language and tone for the situation and audience.
+=Genuine intent adapted to situation—what feels authentic varies by channel and audience #Brodsky found that authentic communication is contextual—what feels authentic varies by channel and audience. You can adapt your style (e.g., formal for professors) while maintaining genuine intent. This isn't "fake," it's contextual adaptation.
+~Never adjusting your communication style for cultural norms #Brodsky's research shows you CAN adapt to cultural norms while remaining authentic. For example, showing respect through tone (Vietnamese cultural norm) while delivering authentic content isn't inauthentic. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::S.T.A.R. Moment Definition::In presentation closings, what does S.T.A.R. stand for?{
+~Synthesize, Transform, Act, Recap #While synthesize and act are elements of a strong closing, S.T.A.R. itself stands for a single concept\: Something They'll Always Remember.
+=Something They'll Always Remember #S.T.A.R. stands for "Something They'll Always Remember"—a memorable element like a demo, prop, powerful story, or shocking statistic that makes your closing unforgettable.
+~Strategic Takeaway And Recommendation #This sounds plausible but isn't the correct acronym. S.T.A.R. is about creating a memorable moment, not strategic takeaways.
+~Strong Transition And Resolution #S.T.A.R. isn't about transitions—it's about creating one unforgettable moment that audiences will remember long after the presentation ends.
+}
+
+::Meyer's Three A's of Feedback::Which of the following is NOT one of Erin Meyer's "Three A's" for effective cross-cultural feedback?{
+~Aim to Assist #"Aim to Assist" IS one of the Three A's—give feedback only with genuine intention to help, never to vent frustration.
+~Actionable #"Actionable" IS one of the Three A's—feedback must include clear actions the recipient can take.
+~Ask First #"Ask First" IS one of the Three A's—request feedback on your own work before giving feedback to others.
+=Acknowledge Emotions #The three A's are Aim to Assist, Actionable, and Ask First. "Acknowledge Emotions" is not part of Meyer's framework, though emotional awareness matters in cross-cultural communication.
+}
+
+::Aristotle's Three Rhetorical Appeals::What are Aristotle's three rhetorical appeals for persuasion?{
+~Logic, Emotion, Authority #While these are English translations related to the appeals, Aristotle's original framework uses Greek terms\: Ethos (credibility), Pathos (emotion), and Logos (logic).
+=Ethos, Pathos, Logos #Aristotle identified three rhetorical appeals in 350 BCE\: Ethos (credibility and character), Pathos (emotional connection), and Logos (logic and evidence). These remain the foundation of persuasive communication.
+~Credibility, Connection, Evidence #These are modern paraphrases but not Aristotle's original terminology. The framework uses Ethos, Pathos, and Logos.
+~Trust, Feeling, Reasoning #While these capture aspects of the appeals, Aristotle's framework specifically uses Ethos, Pathos, and Logos.
+}
+
+::Pyramid Principle Three Rules::According to the lecture, which of the following is one of the three rules of the Pyramid Principle?{
+=Ideas above must summarize those below #This is Rule 1 of the Pyramid Principle — ideas at any level must summarize the ideas grouped below them. This allows readers to stop at any level.
+~All arguments must use the same data source #The Pyramid Principle doesn't require using the same data source. Rule 2 states grouped ideas must be logically the same kind, not from the same source.
+~Documents should be at least 3 pages long #The Pyramid Principle has no length requirement. It's about structure, not document length.
+~Supporting points must be arranged alphabetically #Rule 3 states ideas must follow logical order (chronological, structural, comparative, or deductive) — not alphabetical order.
+}
+
+::SCQA Acronym::What does SCQA stand for?{
+~Structure-Content-Quality-Assessment #SCQA is not about document quality assessment. It's a framework for structuring introductions.
+=Situation-Complication-Question-Answer #SCQA stands for Situation-Complication-Question-Answer. This is Barbara Minto's framework for writing effective document openings.
+~Strategy-Context-Question-Action #While these are business writing concepts, they don't form the SCQA acronym.
+~Summary-Concern-Query-Analysis #These terms don't match the SCQA framework components taught in the lecture.
+}
+
+::Effective Call to Action Characteristics::Which of the following is an example of a strong call to action (CTA) based on the lecture's guidelines?{
+~"I hope you'll think about this proposal" #This CTA is vague ("think about") with no specific action or timeline. Strong CTAs are specific, measurable, and time-bound.
+~"Let me know if you have questions" #This puts the burden on the audience and requests no specific decision. Strong CTAs ask for one clear action.
+="Please approve Phase 1 pilot budget ($5,000) by Friday so we can begin testing with Marketing department next week" #This CTA is specific (approve Phase 1 budget), measurable ($5,000), time-bound (by Friday), single action (one approval), and includes rationale (begin testing next week). It demonstrates all characteristics of effective CTAs.
+~"We should implement this at some point" #This CTA lacks specificity (what exactly to implement) and has no timeline ("at some point"). Strong CTAs are concrete and time-bound. --- \#\# Quiz Statistics | Category | Count | |----------|-------| | Remembering | 5 | | Understanding | 5 | | **Total** | **10** | **Question Types\:** - Multiple Choice\: 8 - True/False\: 2 **Estimated completion time\:** 20-25 minutes
+}
+
+::"The And Stance" Technique::In the Three Conversations Model, what is the purpose of "The And Stance" technique in the "What Happened?" conversation?{
+~To agree with the other person's version of events to avoid conflict #The And Stance doesn't mean agreeing with their version or abandoning your own—it means holding space for both perspectives as potentially valid simultaneously. You're not conceding; you're recognizing complexity.
+=To acknowledge that both perspectives can be simultaneously valid rather than fighting about who's right #"The And Stance" means recognizing that both perspectives can be valid at the same time\: "You see it this way AND I see it this way." This moves you from debate (who's right?) to learning (what can we both understand?). The common mistake in the "What Happened" conversation is assuming certainty about facts.
+~To add more evidence and facts to prove your interpretation is correct #The And Stance isn't about gathering more evidence to win the argument—it's about accepting that facts are often disputed and both interpretations might have merit.
+~To delay making a decision until more information is available #The And Stance isn't a delay tactic—it's a reframing technique that allows you to proceed with the conversation while acknowledging multiple valid perspectives.
+}
+
+::Learning Style Preferences::Which learning style (according to Kolb) is characterized by being action-oriented and hands-on, excelling at getting things done and adapting to circumstances?{
+~Diverging #Diverging learners are imaginative and feeling-oriented, excelling at viewing situations from multiple perspectives and brainstorming, not action-oriented execution.
+~Assimilating #Assimilating learners are logical and idea-focused, excelling at understanding information and creating models, but may lack practical application.
+~Converging #Converging learners are problem-solving oriented and excel at finding practical uses for theories, but this style is more about applying theory than hands-on action.
+=Accommodating #Accommodating learners favor Concrete Experience and Active Experimentation—they are action-oriented, hands-on, excel at getting things done and adapting quickly. Their weakness may be skipping planning and reflection.
+}
+
+::Executive Presence Model Elements::According to Hewlett's Executive Presence Model (2024), what are the three elements of executive presence?{
+~Confidence, Communication, Credibility #While confidence is part of gravitas and credibility matters, these aren't the three formal elements. Hewlett's model uses gravitas, communication, and appearance.
+=Gravitas, Communication, Appearance #Hewlett's updated Executive Presence Model (2024) identifies three elements\: Gravitas (67% most important—confidence and decisiveness under pressure), Communication (virtual presence and listening), and Appearance (authenticity over formality).
+~Decisiveness, Virtual Presence, Authenticity #These are components WITHIN the three elements (decisiveness is part of gravitas, virtual presence is part of communication, authenticity is part of appearance), but not the three elements themselves.
+~Leadership, Speaking Skills, Professional Image #While these relate to executive presence, Hewlett's specific model uses gravitas, communication, and appearance as the three core elements.
+}
+
+::Attribution Theory in SCCT::In SCCT, Attribution Theory suggests that stakeholders' emotional and behavioral responses to a crisis depend on whether they attribute the crisis to situational (external) or organizational (internal) factors.{T #Correct! Attribution Theory is the core mechanism of SCCT. When stakeholders attribute a crisis to external factors (situational), they assign less responsibility to the organization. When they attribute it to internal factors (organizational choices/actions), they assign more responsibility—and this drives how they react emotionally and behaviorally. #Incorrect. This statement accurately describes how Attribution Theory works within SCCT. Stakeholder assessment of responsibility (external vs. internal attribution) determines the appropriate crisis response intensity. Organizations must match their response to the level of responsibility stakeholders perceive.}
+
+::Upgraders vs. Downgraders::In Meyer's Culture Map framework, what is the purpose of "downgraders" (words like "kind of," "maybe," "sort of") in indirect feedback cultures like Vietnam and Thailand?{
+~To show uncertainty about the correctness of the feedback #Downgraders aren't about uncertainty—they're about delivery style. The speaker knows the message; downgraders soften the emotional impact to preserve relationships.
+=To preserve harmony and save face while still communicating criticism #In indirect feedback cultures, downgraders soften criticism to preserve harmony and save face. Saying "maybe this approach is not quite ideal" communicates the same content as "this is wrong" but protects relationships.
+~To make the speaker sound less educated and professional #Downgraders are a professional norm in indirect cultures, not a sign of poor education. They demonstrate cultural competence and emotional intelligence.
+~To confuse the listener so they work harder to understand #The purpose isn't confusion—it's face-saving. Members of indirect cultures understand the criticism clearly; downgraders simply reduce the emotional threat.
+}
+
+::Dynamic Stakeholder Salience::According to Mitchell's model, stakeholder salience is static—once you classify a stakeholder type, it remains constant over time.{F #Incorrect. Mitchell explicitly states that stakeholder salience is dynamic and perception-based. Stakeholders can gain or lose attributes over time based on context changes. #Correct! Stakeholder salience changes dynamically. Examples from the lecture\: employees who unionize move from "dependent" to "definitive" by gaining power; former customers who become activists on social media move from "dormant" to "dangerous" by adding urgency. COVID-19 suddenly made employees definitive stakeholders due to health urgency and labor shortage.}
+
+::Mitchell's Three Attributes::What are the three attributes in Mitchell's Stakeholder Salience Model (1997) that determine stakeholder prioritization?{
+~Importance, Influence, and Interest #While these sound plausible, Mitchell's model specifically uses Power, Legitimacy, and Urgency as the three measurable attributes.
+=Power, Legitimacy, and Urgency #Mitchell's framework uses Power (extent stakeholder can impose their will), Legitimacy (socially accepted and expected claim), and Urgency (time sensitivity and criticality). Stakeholder salience is determined by how many of these three attributes are present.
+~Authority, Credibility, and Timeliness #These are not Mitchell's terms. The model specifically identifies Power, Legitimacy, and Urgency as the defining attributes of stakeholder salience.
+~Impact, Rights, and Criticality #While these terms relate to stakeholder characteristics, Mitchell's model specifically uses Power, Legitimacy, and Urgency as the three key attributes.
+}
+
+::SCCT Crisis Clusters::According to SCCT, what are the three crisis clusters based on responsibility attribution?{
+~Minor, Moderate, Major #SCCT doesn't categorize crises by severity levels. The three clusters are victim (low responsibility), accidental (moderate), and intentional/preventable (high).
+~Internal, External, Mixed #While SCCT considers internal vs. external attribution, these aren't the cluster names. The three clusters are victim, accidental, and intentional/preventable.
+=Victim, Accidental, Intentional/Preventable #SCCT categorizes all crises into three clusters based on stakeholder attribution of responsibility\: Victim (low—external attribution like natural disasters), Accidental (moderate—mixed attribution like technical errors), and Intentional/Preventable (high—internal attribution like human-error accidents or misconduct).
+~Technical, Human, Natural #SCCT doesn't use these categories. The three clusters focus on responsibility level\: victim, accidental, and intentional/preventable.
+}
+
+::Redundancy Principle::According to Mayer's redundancy principle, when you read text aloud that also appears on the slide, the audience can efficiently process both the visual and auditory information simultaneously.{F #This is incorrect. The redundancy principle (d \= 0.87) shows that reading on-screen text aloud actually overloads the visual channel. The audience must choose to either READ or LISTEN, not both. When the same words appear visually and aurally, the brain cannot sync them efficiently, reducing comprehension. #Correct! When text is both displayed and read aloud, the visual channel becomes overloaded. Research shows audiences can either read OR listen, not both effectively. Slides should contain short cues (keywords/phrases) while the presenter provides full verbal explanations.}
+
+::Gravitas Post-Pandemic Shift::According to Hewlett's updated Executive Presence Model (2024), gravitas now emphasizes demonstrated competence and inclusiveness over pedigree (which school you attended).{T #Correct! A key shift in Hewlett's updated model (comparing 2012 to 2022 data) is that pedigree is now less important than demonstrated competence. Modern gravitas emphasizes confidence under pressure combined with inclusiveness and respect for diverse perspectives—not educational credentials or which school you attended. This is a significant post-pandemic change. #Incorrect. This statement accurately describes a major shift in the Executive Presence Model. The old model (pre-2012) emphasized pedigree and educational background. The updated model (2024) shows that gravitas now prioritizes demonstrated competence, decisiveness under pressure, and inclusiveness over educational credentials.}
+
+::Vietnam's Power Distance Score::According to Hofstede's cultural dimensions, what is Vietnam's Power Distance Index (PDI) score and how is it classified?{
+~40 (Low) #Vietnam has significantly higher power distance than 40. A score of 40 is similar to the USA, which has low power distance.
+~57 (Moderate) #57 is Vietnam's Long-Term Orientation score, not Power Distance. Vietnam's PDI is higher.
+=70 (High) #Vietnam scores 70 on Power Distance, which is classified as High. This means Vietnamese culture accepts hierarchical society where managers expect obedience and junior staff respect seniority.
+~92 (Very High) #While 70 is high, it's not as extreme as 92. Countries like Ukraine score in the 90s for power distance.
+}
+
+::Three Conversations Model Layers::According to the Three Conversations Model from Harvard Negotiation Project, what is the purpose of the "Identity Conversation" layer?{
+~To establish credibility and professional identity with the other person #The Identity Conversation isn't about establishing credibility externally—it's about your internal dialogue\: "Am I competent? Am I good? Am I lovable?" These self-concept questions get triggered during difficult conversations.
+=To address the internal dialogue about what the conflict means for who we are #The Identity Conversation addresses your internal thoughts about what the conflict means for who you are as a person. The common mistake is all-or-nothing thinking ("One mistake means I'm incompetent"). The key technique is to accept your own complexity—one situation doesn't define you.
+~To confirm each person's role and responsibilities in the situation #Clarifying roles and responsibilities would be part of the "What Happened" conversation (facts and interpretations), not the Identity conversation (self-concept).
+~To define how each person wants to be perceived by others #While reputation matters, the Identity Conversation specifically focuses on your INTERNAL dialogue about self-concept, not external perception management.
+}
+
+::Hofstede's Cultural Programming::According to Hofstede's definition, culture is innate (biologically inherited) rather than learned from one's social environment.{F #Incorrect. Hofstede defines culture as "collective programming of the mind" that is LEARNED, not innate. Culture is acquired from social environment (family, school, workplace), not inherited genetically. #Correct! Hofstede emphasizes that culture is learned, not innate. It's acquired through social environment and can be understood and navigated. This is why cross-cultural communication skills can be developed.}
+
+::Purpose of Stakeholder Salience::Why is Mitchell's concept of stakeholder salience important for managers?{
+~It helps managers avoid dealing with difficult stakeholders #The purpose is not to avoid stakeholders but to prioritize them strategically. Even low-salience stakeholders should be monitored because their status can change.
+=It provides a systematic way to allocate limited attention and resources among competing stakeholder claims #Managers face limited time, money, and attention with multiple competing stakeholder claims. Mitchell's salience model provides a systematic algorithm for prioritization based on power, legitimacy, and urgency—making Freeman's stakeholder management actionable rather than aspirational.
+~It eliminates the need to consider all stakeholders equally #While the model does help prioritize (rather than treating all equally), this misses the key purpose\: strategic resource allocation when you cannot address everyone at once.
+~It ensures that only powerful stakeholders receive attention #This is both inaccurate and unethical. Definitive stakeholders have all three attributes (including legitimacy and urgency), not just power. Mitchell's model ensures legitimate claims receive attention even when stakeholders lack power.
+}
+
+::The Four Zones Framework::In Edmondson's Four Zones framework, which zone represents the optimal combination of high psychological safety and high accountability?{
+~Comfort Zone #The Comfort Zone has high safety but LOW accountability—teams are safe but complacent with no pressure to perform.
+=Learning Zone #The Learning Zone combines high psychological safety (everyone can speak up) with high accountability (everyone delivers on commitments). This is the optimal zone for innovation and execution.
+~Anxiety Zone #The Anxiety Zone has high accountability but LOW safety—fear-driven work that leads to burnout and politics.
+~Performance Zone #"Performance Zone" is not one of Edmondson's four zones. The four are\: Comfort, Learning, Anxiety, and Apathy.
+}
+
+::McCroskey's CA Definition::According to McCroskey (1977), how is Communication Apprehension (CA) defined?{
+~The inability to speak clearly in public settings #CA is about emotional response (fear/anxiety), not physical ability to speak. Someone can have perfect articulation but still experience high CA.
+=An individual's level of fear or anxiety associated with either real or anticipated communication #McCroskey's definition focuses on the fear or anxiety about communication, whether the communication is happening now (real) or will happen later (anticipated).
+~A personality disorder requiring clinical treatment #McCroskey defined CA as a normal individual difference, not a disorder. 10-20% of people experience significant CA—it's common, not pathological.
+~The physical symptoms of nervousness during presentations #While CA can cause physical symptoms (sweating, rapid heartbeat), McCroskey's definition focuses on the emotional state (fear/anxiety), not the symptoms themselves.
+}
+
+::Noise in Communication::In the Shannon-Weaver model, "noise" refers only to physical sounds that disrupt communication, such as loud machinery or background chatter.{F #Incorrect. Noise in Shannon-Weaver is much broader than physical sound. It includes semantic noise (unclear language, jargon), psychological noise (preconceptions, emotional state), and physical noise (distractions, technical issues). Any interference that affects message clarity is "noise." #Correct! Noise includes any interference with the communication signal—semantic noise (jargon, unclear wording), psychological noise (biases, emotions, distractions), and physical noise (sounds, technical glitches). Understanding all types of noise helps communicators diagnose and fix problems.}
+
+::Communication Competence::According to Spitzberg and Cupach, a person with high knowledge of communication techniques will always be an effective communicator.{F #Incorrect. The MKS model explicitly states that ALL THREE dimensions must be present. High knowledge alone is insufficient—a person who knows how to give feedback but lacks motivation (avoids difficult conversations) or skills (freezes under pressure) will not communicate effectively. #Correct! Communication competence requires all three MKS dimensions. Someone can have extensive knowledge but lack motivation (avoiding communication) or skills (poor execution). This is why many training programs fail—they focus only on knowledge, not motivation or skill practice.}

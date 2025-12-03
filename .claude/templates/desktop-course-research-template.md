@@ -283,6 +283,67 @@ For each week, research and save to: `[FULL-PATH-TO-RESEARCH-FOLDER]/week-NN-res
 
 ---
 
+## Recommended Videos (Optional - 0-2 per week, +5-10 min)
+
+### Video 1: [Title] (PRIMARY/SUPPLEMENTARY | REQUIRED/OPTIONAL CANDIDATE)
+
+**Video Metadata:**
+- **Creator/Speaker:** [Name, credentials if relevant]
+- **URL:** [Direct link to video]
+- **Backup URL:** [Mirror/alternative if available]
+- **Duration:** [MM:SS format]
+- **Source:** [TED / YouTube official / University / Platform]
+- **Publication Date:** [YYYY-MM-DD or year]
+
+**Classification:**
+- **Tier:** Primary (authoritative expert) / Supplementary (teaching quality)
+- **Suggested Usage:** Required candidate / Optional candidate
+- **Timing:** In-class viewing / Pre-work / Post-lecture enrichment
+
+**Content Coverage:**
+✓ **[Concept 1]:** [How video addresses - specific moment/example]
+✓ **[Concept 2]:** [Coverage details]
+✗ **[Concept 3]:** Not covered (articles handle this)
+
+**Teaching Value:**
+- **Why selected:** [1-2 sentences - pedagogical rationale]
+- **Unique contribution:** [What video provides that text cannot]
+- **Complements article:** [Which article #, how they work together]
+
+**Key Content Summary:** [2-3 sentences describing main narrative/argument]
+- Notable moment at [MM:SS]: [What happens]
+- Quotable line: "[Memorable quote]"
+
+**Discussion Prompt (if required):**
+- Before: "[Pre-viewing question]"
+- After: "[Main reflection question]"
+
+---
+
+### Video 2: [Title] (PRIMARY/SUPPLEMENTARY | REQUIRED/OPTIONAL CANDIDATE)
+[Same format as Video 1]
+
+---
+
+## Video Discovery Quick Guide (5 min max)
+
+**Search Strategy:**
+1. "[topic] TED talk"
+2. "[seminal author] [theory name] video"
+3. site:youtube.com [topic] "official" OR "verified"
+
+**Quality Checklist:**
+- ✓ Duration: 3-15 min ideal (<20 min maximum for in-class)
+- ✓ Source credibility: TED, universities, verified channels, official orgs
+- ✓ Recency: 2018+ (unless historical/seminal)
+- ✓ Accessibility: Works in Vietnam, has subtitles
+- ✓ Concept coverage: Addresses ≥1 required concept clearly
+
+**Acceptable to find 0 videos** - Not all topics have quality video resources.
+**Maximum 2 videos per week** - Avoid cognitive overload.
+
+---
+
 ## Coverage Validation
 
 ✓ **Concept 1:** Article [#]
@@ -291,6 +352,7 @@ For each week, research and save to: `[FULL-PATH-TO-RESEARCH-FOLDER]/week-NN-res
 ✓ **Concept 4:** Article [#]
 
 ✓ **2 seminal + 2 recent balance achieved**
+✓ **0-2 videos found (optional)**
 
 **Set Complete:** YES/NO
 ```

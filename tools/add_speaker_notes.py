@@ -19,6 +19,7 @@ import glob
 from pathlib import Path
 from dataclasses import dataclass
 from typing import Optional
+from lecture_parser import create_parser
 
 try:
     from pptx import Presentation
@@ -56,81 +57,28 @@ class InsertionReport:
 
 def parse_speaker_notes(lecture_content_path: str) -> list[SlideNotes]:
     """
-    Parse speaker notes from lecture-content.md.
+    Parse speaker notes from lecture-content.md (XML format only).
 
-    Supported formats:
-    1. ## Slide N: Title ... ### Speaker Notes (current format)
-    2. **SLIDE N: Title** ... ## Speaker Notes (legacy format)
+    Uses the lecture_parser framework to extract <speaker-notes> content.
     """
     with open(lecture_content_path, 'r', encoding='utf-8') as f:
         content = f.read()
 
     notes_list = []
 
-    # Try current format first: ## Slide N: Title
-    current_pattern = r'##\s+Slide\s+(\d+):\s*([^\n]+)'
-    slides = re.split(r'(?=##\s+Slide\s+\d+:)', content)
+    # Use the XML parser framework
+    parser = create_parser(content)
+    lecture_data = parser.parse(content)
 
-    for slide_block in slides:
-        if not slide_block.strip():
-            continue
-
-        # Extract slide number and title
-        slide_match = re.search(current_pattern, slide_block)
-        if not slide_match:
-            continue
-
-        slide_num = int(slide_match.group(1))
-        slide_title = slide_match.group(2).strip()
-
-        # Extract speaker notes section (### Speaker Notes for current format)
-        notes_match = re.search(
-            r'###\s*Speaker\s*Notes\s*\n(.*?)(?=\n---|\n##\s+Slide|\Z)',
-            slide_block,
-            re.DOTALL | re.IGNORECASE
-        )
-
-        if notes_match:
-            notes_content = notes_match.group(1).strip()
-            notes_content = clean_notes_content(notes_content)
-
+    # Convert to SlideNotes format
+    for slide in lecture_data.slides:
+        if slide.speaker_notes:  # Only include slides with notes
+            notes_content = clean_notes_content(slide.speaker_notes)
             notes_list.append(SlideNotes(
-                slide_number=slide_num,
-                slide_title=slide_title,
+                slide_number=slide.number,
+                slide_title=slide.title,
                 notes_content=notes_content
             ))
-
-    # If no notes found with current format, try legacy format
-    if not notes_list:
-        legacy_pattern = r'\*\*SLIDE\s+(\d+):\s*([^*]+)\*\*'
-        slides = re.split(r'(?=\*\*SLIDE\s+\d+:)', content)
-
-        for slide_block in slides:
-            if not slide_block.strip():
-                continue
-
-            slide_match = re.search(legacy_pattern, slide_block)
-            if not slide_match:
-                continue
-
-            slide_num = int(slide_match.group(1))
-            slide_title = slide_match.group(2).strip()
-
-            notes_match = re.search(
-                r'##\s*Speaker\s*Notes\s*\n(.*?)(?=\n---|\n\*\*SLIDE|\Z)',
-                slide_block,
-                re.DOTALL | re.IGNORECASE
-            )
-
-            if notes_match:
-                notes_content = notes_match.group(1).strip()
-                notes_content = clean_notes_content(notes_content)
-
-                notes_list.append(SlideNotes(
-                    slide_number=slide_num,
-                    slide_title=slide_title,
-                    notes_content=notes_content
-                ))
 
     return notes_list
 
@@ -158,11 +106,11 @@ def clean_notes_content(notes: str) -> str:
 
 def find_pptx_file(week_folder: str) -> Optional[str]:
     """
-    Find the PPTX file in the week folder or output/ subfolder.
+    Find the PPTX file in the week folder.
 
     Searches: week root first, then output/ subfolder
-    Excludes: slides.pptx (our output), any file with "batch" in name
-    Prefers: Files with course code or "Lecture" in name
+    Excludes: any file with "batch" in name, slides.pptx in output/ folder
+    Prefers: Files with "Lecture" in name, then slides.pptx in week root
     """
     # Search both week root and output/ folder
     search_paths = [
@@ -176,14 +124,23 @@ def find_pptx_file(week_folder: str) -> Optional[str]:
 
     # Filter out unwanted files
     candidates = []
+    slides_pptx_in_root = None
+
     for f in all_pptx:
         basename = os.path.basename(f).lower()
-        # Exclude batch files and our output file slides.pptx
+        # Exclude batch files
         if 'batch' in basename:
             continue
+        # Track slides.pptx in week root (not output/) as fallback
         if basename == 'slides.pptx':
+            if '/output/' not in f and '\\output\\' not in f:
+                slides_pptx_in_root = f
             continue
         candidates.append(f)
+
+    # If no other candidates, use slides.pptx from week root
+    if not candidates and slides_pptx_in_root:
+        return slides_pptx_in_root
 
     if not candidates:
         return None
@@ -273,7 +230,11 @@ def add_speaker_notes(course_code: str, week_number: int, base_path: str = None)
 
     course_path = course_matches[0]
     week_folder = os.path.join(course_path, "weeks", f"week-{week_number:02d}")
-    lecture_content_path = os.path.join(week_folder, "lecture-content.md")
+
+    # Prefer XML format if available, otherwise use markdown
+    xml_path = os.path.join(week_folder, "lecture-content-xml.md")
+    md_path = os.path.join(week_folder, "lecture-content.md")
+    lecture_content_path = xml_path if os.path.exists(xml_path) else md_path
 
     errors = []
 
