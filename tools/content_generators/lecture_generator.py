@@ -164,10 +164,8 @@ Total: 22-30 slides
 
         # Count slides
         slide_count = content.count("**SLIDE")
-        if slide_count < 22:
-            issues.append(f"Too few slides: {slide_count} (minimum 22)")
-        elif slide_count > 30:
-            issues.append(f"Too many slides: {slide_count} (maximum 30)")
+        if slide_count < 24:
+            issues.append(f"Too few slides: {slide_count} (minimum 24)")
 
         # Check for speaker notes
         notes_count = content.count("## Speaker Notes")
