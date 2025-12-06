@@ -1,739 +1,452 @@
 <role>
-You are an expert presentation designer specializing in academic course materials. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
+You are an expert presentation designer. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
 </role>
-
-<context>
-Course: PPDK66B - Personal & Professional Development |
-Week: 03
-Topic: Reflection &amp; Reflective Learning
-Institution: National Economics University |
-Instructor: William Winterton Lang, Le Huong Lan (PhD) |
-Total Slides: 28
-</context>
-
 <instructions>
 1. Create a presentation slide deck with exactly 28 slides
-2. Start with a title slide containing: topic title, course code and name, university/institution, and instructor name
+2. The first slide in the lecture content IS the title slide - add course name (Personal & Professional Development), university (National Economics University), and campus (IBD Campus) to it
 3. Reproduce the exact wording from the lecture content for each slide, preserving all text as written
 4. Generate creative visuals for each slide: pictures, infographics, icons, and diagrams that reinforce the slide's message
-5. Use minimum 18pt font for body text to ensure readability from a distance
-6. Add a footer to every content slide (not the title slide) with: course code, university, topic, and slide number
+5. Use a minimum 18pt font for all text. Reference text and footer text is allowed to be smaller
+6. Add a footer to every content slide (not the title slide) with: course name, university, topic, and slide number
 7. Place academic citations (e.g., Minto, 1987) in the slide footer when referenced in content
 8. Leave speaker notes sections empty
+9. The final slide is a References slide - format it cleanly with the full APA citations provided
 </instructions>
-
-<constraints>
-- Create exactly 28 slides, matching the lecture content one-to-one. The lecture content defines each slide explicitly, so count them to verify.
-- Preserve exact wording because students receive these slides as study materials and need consistency with what they hear in lecture recordings.
-- Keep speaker notes empty because detailed instructor notes will be added in a separate step.
-- Maintain consistent Modern Bright Pastel Corporate styling throughout for professional brand identity.
-</constraints>
-
-<examples>
-<example>
-<input>
-## Slide 3: The Pyramid Principle
-
-**Key Concept:** Start with the answer, then provide supporting evidence
-
-The Pyramid Principle (Minto, 1987):
-- Lead with your main message
-- Group supporting arguments logically
-- Present evidence in descending order of importance
-
-**Why it works:** Busy executives read conclusions first
-</input>
-<output>
-Slide with pyramid/triangle infographic illustrating the hierarchy concept. All text preserved exactly as written. "Minto, 1987" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 7: Case Study - Vinamilk Crisis Response
-
-In 2013, Vinamilk faced a product recall crisis...
-
-**What went right:**
-- Immediate public acknowledgment
-- Clear action plan communicated
-- Regular updates to stakeholders
-
-**Result:** Brand trust recovered within 6 months
-</input>
-<output>
-Case study slide with timeline or process visual showing the crisis response steps. Company imagery or relevant icons. All text preserved exactly.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 12: Hofstede's Cultural Dimensions
-
-**Vietnam vs. United States comparison:**
-| Dimension | Vietnam | USA |
-|-----------|---------|-----|
-| Power Distance | 70 | 40 |
-| Individualism | 20 | 91 |
-| Uncertainty Avoidance | 30 | 46 |
-</input>
-<output>
-Data visualization slide with bar chart or comparison graphic showing Vietnam and USA scores across the three dimensions. Clear axis labels. "Hofstede" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 9: Carol Dweck on Growth Mindset
-
-**[VIDEO: Carol Dweck - "The Power of Believing That You Can Improve"]**
-**Video link:** https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
-**Duration:** 10 minutes
-
-**Before watching:** "Think of a time you felt 'stuck' at something."
-</input>
-<output>
-Video placeholder slide with speaker image, prominent clickable video link, duration displayed, and pre-viewing reflection question. Clean layout focusing attention on the video link.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 15: Section Break - Emotional Intelligence
-
-# SECTION 3
-
-## Emotional Intelligence
-### Understanding and Managing Emotions
-
-*(20 minutes)*
-</input>
-<output>
-Section break slide with bold typography, contrasting background color to signal transition, section number prominent, topic and subtitle clearly visible. Timing indicator optional.
-</output>
-</example>
-</examples>
-
 <lecture_content>
-<?xml version="1.0" encoding="UTF-8"?>
-<lecture>
-<metadata>
-<course>PPDK66B Personal & Professional Development</course>
-<week>3</week>
-<topic>Reflection &amp; Reflective Learning</topic>
-<duration>90 minutes</duration>
-<slides>28</slides>
-</metadata>
+Course: Personal & Professional Development
+Week: 3
+Topic: Reflection & Reflective Learning
+Institution: National Economics University
 
-<slide number="1" layout="big-number" title="Hook: High Performers Practice Reflection">
-# 73%
+### Slide 1 (Layout: title)
 
-**of high performers practice regular reflection**
+# Reflection & Reflective Learning
 
-Only 12% of average performers do
+## Learning to Learn from Experience
 
-*(Gibbons, Harvard Business Review, 2020)*
+### Slide 2 (Layout: big-number)
 
-<speaker-notes>
-**Opening:**
-Research shows top performers in every field—medicine, business, sports—share one habit: systematic reflection. Not just thinking about experiences, but extracting lessons to apply next time. Before we begin, quick question: How many of you kept a diary when you were younger? [Wait for show of hands] Reflection is like that, but strategic—not just "what happened today" but "what can I learn from what happened?"
+# 70%
 
-**Key Example:**
-Sports analogy: Athletes watch game film not just to see highlights, but to identify patterns, mistakes, and opportunities. Professional equivalent: Reflection is your "career game film." Same experience, different learning outcomes—reflection makes the difference.
+**of professional development comes from on-the-job experiences**
 
-**Check Understanding:**
-What's the difference between just thinking about something and actually reflecting on it? Turn to your neighbor—30 seconds. [Pause] Good. Let's make this concrete with some learning objectives.
-</speaker-notes>
-</slide>
+**...but only if you reflect on them**
 
-<slide number="2" layout="content" title="Learning Objectives">
+*(Center for Creative Leadership, 70-20-10 Model)*
+
+### Slide 3 (Layout: content)
+
 ## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Apply** Gibbs' 6-stage Reflective Cycle to analyze a personal experience
-2. **Distinguish** between Gibbs, Kolb, and Driscoll frameworks
-3. **Evaluate** reflection quality using depth criteria
-4. **Design** a structured reflection for your Week 6 field trip
+1. **Apply** Gibbs' Reflective Cycle to analyze personal experiences systematically
+2. **Apply** Kolb's Experiential Learning Cycle to accelerate learning from concrete experiences
+3. **Compare** three reflective frameworks (Gibbs, Kolb, Driscoll) and select appropriate models for different contexts
+4. **Evaluate** the quality of reflective writing using evidence-based criteria
 
-<speaker-notes>
-Notice these aren't passive verbs—you're going to DO reflection today, not just learn about it. LO1: Gibbs is the most structured—6 stages—ideal for complex experiences. LO2: Different frameworks for different purposes (we'll compare side-by-side). LO3: Quality matters—superficial reflection won't help you grow. LO4: Practical application—field trip is coming, you need these tools ready.
+### Slide 4 (Layout: framework)
 
-Think of frameworks like different camera lenses: wide-angle (Gibbs captures everything), zoom (Kolb focuses on learning cycle), macro (Driscoll gets to the point). Before we dive into frameworks, let's connect this to your assessments.
-</speaker-notes>
-</slide>
-
-<slide number="3" layout="content" title="Assessment Connection">
 ## How This Prepares You
 
-**Reflective Essay (10%)** - Due after Week 10
-- Uses Gibbs, Kolb, OR Driscoll to analyze field trip + guest speaker
-- Today: Learn the frameworks → Tutorial: Practice → Week 6: Capture material
+| Assessment | Due | Today's Relevance |
+|------------|-----|-------------------|
+| **Mentorship Program** | Ongoing (Weeks 2-11) | Post-meeting reflections require structured reflection on mentor advice |
+| **Reflective Essay** | After Week 10 | Must use Gibbs, Kolb, OR Driscoll to analyze field trip and guest speaker |
+| **Personal Development Plan** | Week 11 | Reflection quality determines depth of self-awareness and goal-setting |
 
-**Mentorship Program (20%)** - Weeks 2-11
-- Post-meeting reflections require structured analysis
-- Use "What? So What? Now What?" for quick debriefs
+**Your choice of reflective framework (Gibbs, Kolb, or Driscoll) structures your entire essay**
 
-**Personal Development Plan (40%)** - Due Week 11
-- Section 6 requires explaining HOW course learning changed your thinking
-- Reflection = bridge between experiences and goals
+### Slide 5 (Layout: section-break)
 
-<speaker-notes>
-This isn't just theoretical—you'll use these frameworks in all three major assessments. Reflective Essay is specifically designed to practice deep reflection (10% of grade). You get to CHOOSE which framework—Gibbs, Kolb, or Driscoll—so today is your audition process. Your PDP will be stronger if you can articulate what you learned, not just what you did.
-
-Compare: Weak PDP: "I had 4 mentor meetings and learned a lot." Strong PDP: "In Meeting 2, my mentor challenged my assumption about needing a master's degree immediately. Using Gibbs' cycle, I realized I was following social proof rather than evaluating my actual career needs. Action: I'll gain 2 years work experience first." Okay, enough setup. Let's look at the roadmap for today.
-</speaker-notes>
-</slide>
-
-<slide number="4" layout="section-break" title="Roadmap">
 # Today's Journey
 
-**Segment 1: Why Reflection Matters** (15 min)
-- The science behind reflective learning
+**1. Why Reflection Matters**
+*The reflective practitioner concept*
 
-**Segment 2: Three Frameworks** (40 min)
-- Gibbs, Kolb, Driscoll
+**2. Gibbs' Reflective Cycle**
+*Six stages for deep reflection*
 
-**Segment 3: Reflection Quality** (25 min)
-- Moving from description to transformation
+**3. Kolb's Experiential Learning Cycle**
+*Four-stage learning spiral*
 
-**Segment 4: Wrap-up** (10 min)
-- Key takeaways + tutorial preview
+**4. Alternative Models & Application**
+*Driscoll's "What? So What? Now What?"*
 
-<speaker-notes>
-90 minutes—we'll pause every 15-20 minutes to check understanding. Segment 1 is WHY (motivation), Segment 2 is WHAT (the tools), Segment 3 is HOW (application), Segment 4 is synthesis. Let's start with the science—why does reflection actually work?
-</speaker-notes>
-</slide>
+### Slide 6 (Layout: section-break)
 
-<slide number="5" layout="section-break" title="Section 1: Why Reflection Matters">
-# SECTION 1
+# Part 1: Why Reflection Matters
 
-## Why Reflection Matters
-### The Science Behind Reflective Learning
+## The Reflective Practitioner Concept
 
-*(15 minutes)*
+### Slide 7 (Layout: quote)
 
-<speaker-notes>
-You don't learn from experience. You learn from REFLECTING on experience. This section establishes the foundation—why reflection isn't optional for professionals, it's essential. We'll look at neuroscience, research, and Donald Schön's seminal work on reflective practice.
-</speaker-notes>
-</slide>
+> "The capacity to reflect on action so as to engage in a process of continuous learning is one of the defining characteristics of professional practice."
 
-<slide number="6" layout="content" title="Experience ≠ Learning">
-## You Don't Learn From Experience
+**— Donald Schön, 1983**
+*The Reflective Practitioner: How Professionals Think in Action*
 
-## You Learn From **Reflecting** On Experience
+### Slide 8 (Layout: framework)
 
-**Example:** Two students attend same field trip to MISA Company
-- **Student A:** "It was interesting. They have a nice office."
-- **Student B:** Uses Gibbs' cycle, identifies 3 leadership principles, connects to Goleman's EI framework, creates action plan
+## Experience ≠ Automatic Learning
 
-**Same experience. Different learning outcomes. Reflection made the difference.**
+### Two Professionals, Same Experience, Different Outcomes
 
-<speaker-notes>
-This might surprise you—just having an experience doesn't automatically teach you anything. Experience alone equals data. Reflection equals turning data into insights. This is why some people have "10 years of experience" while others have "1 year of experience repeated 10 times."
+**Professional A (Non-Reflective):**
+- Presentation goes poorly
+- "That was terrible. I'm bad at presenting."
+- Avoids presentations when possible
+- No improvement over time
 
-Check understanding: Think of something you've done many times but never improved at. Why? Probably because you never reflected on HOW to do it better. [Brief pause] So what happens in the brain during reflection?
-</speaker-notes>
-</slide>
+**Professional B (Reflective):**
+- Presentation goes poorly
+- Uses Gibbs' Cycle: *What happened? Why? What can I change?*
+- Identifies specific issue: "I didn't practice out loud; I assumed reading slides would work"
+- Next presentation: practices 5 times, improves significantly
 
-<slide number="7" layout="framework" title="The Neuroscience of Reflection">
-## What Happens When You Reflect
+### Slide 9 (Layout: framework)
 
-**1. Consolidation**
-Memory moves from short-term to long-term storage
+## Argyris & Schön: Two Types of Learning
 
-**2. Pattern Recognition**
-Brain identifies connections between new and existing knowledge
+### Single-Loop Learning
+**Detect and correct errors within existing assumptions**
 
-**3. Schema Building**
-Experiences integrate into mental models for future decisions
+Example: "My presentation failed → I'll speak louder next time"
+- Surface-level adjustment
+- Doesn't question underlying approach
+- Limited improvement
 
-**4. Neuroplasticity**
-Neural pathways strengthen through conscious processing
+### Double-Loop Learning
+**Question the assumptions behind actions**
 
-**Bottom Line:** Reflection literally rewires your brain for better decision-making.
+Example: "My presentation failed → Why did I think reading slides would engage the audience? What IS effective presenting?"
+- Challenges mental models
+- Leads to fundamental change
+- Accelerates growth
 
-<speaker-notes>
-You don't need to memorize this—just understand that reflection has real, measurable effects on brain structure. Consolidation: Like saving a file versus just viewing it. Pattern recognition: "This situation is like that time when..." (connecting dots). Schema building: Mental frameworks that help navigate future situations faster. Neuroplasticity: Your brain physically changes when you reflect (Week 9 will go deeper on growth mindset and neuroplasticity).
+### Slide 10 (Layout: section-break)
 
-Okay, neuroscience is cool, but how do professionals actually use reflection? Let me introduce you to Donald Schön.
-</speaker-notes>
-</slide>
+# Part 2: Gibbs' Reflective Cycle
 
-<slide number="8" layout="quote" title="The Reflective Practitioner">
-> "The practitioner allows himself to experience surprise, puzzlement, or confusion in a situation which he finds uncertain or unique. He reflects on the phenomenon before him, and on the prior understandings which have been implicit in his behavior."
+## A Six-Stage Framework for Deep Reflection
 
-**— Donald Schön, *The Reflective Practitioner* (1983)**
+### Slide 11 (Layout: framework)
 
-90,000+ citations | Most influential work in professional development
+## Gibbs' Reflective Cycle (1988)
 
-<speaker-notes>
-This quote is dense—let me unpack it in plain English. "Experience surprise" means notice when reality doesn't match expectations (don't ignore it!). "Reflects on prior understandings" means question your assumptions. "Carries out an experiment" means test new approaches based on insights. "New understanding + change" equals learning that leads to action.
+```
+    1. DESCRIPTION
+         ↓
+    2. FEELINGS  ←──┐
+         ↓          │
+    3. EVALUATION   │
+         ↓          │
+    4. ANALYSIS     │ Cyclical:
+         ↓          │ Leads to
+    5. CONCLUSION   │ next
+         ↓          │ experience
+    6. ACTION PLAN ─┘
+```
 
-Example: You prepare a presentation assuming formal, data-heavy slides work best. Surprise: Audience seems disengaged despite solid data. Reflection: "My assumption was 'more data equals more credibility.' But maybe this audience values storytelling." Experiment: Next presentation, lead with a story, then data. Result: Better engagement. Schema updated. So reflection equals professional superpower. But HOW do you do it systematically?
-</speaker-notes>
-</slide>
+**Key Feature:** Explicitly includes emotional processing (Feelings stage)
 
-<slide number="9" layout="section-break" title="Section 2: Three Frameworks">
-# SECTION 2
+### Slide 12 (Layout: content)
 
-## Three Reflective Frameworks
-### Your Tools for Structured Reflection
+## Stage 1: Description
 
-*(40 minutes)*
+### What happened?
 
-<speaker-notes>
-We're going to learn all three frameworks because different situations call for different tools. This is the meat of today's lecture—you'll leave with three practical methods you can apply immediately.
-</speaker-notes>
-</slide>
+**Guiding Questions:**
+- What was the situation or experience?
+- Who was involved?
+- What did you do?
+- What was the outcome?
 
-<slide number="10" layout="content" title="Framework Overview">
-## Three Ways to Reflect
+**Purpose:** Establish objective facts before interpreting
 
-| Framework | Creator | Stages | Best For |
-|-----------|---------|--------|----------|
-| **Gibbs' Reflective Cycle** | Graham Gibbs (1988) | 6 | Complex experiences, emotional processing |
-| **Kolb's Experiential Learning** | David Kolb (1984) | 4 | Continuous learning, skill development |
-| **Driscoll's Model** | Driscoll & Bolton (2000) | 3 | Quick debriefs, simple situations |
+**Example (Mentorship Context):**
+*"In my second mentorship meeting, I asked my mentor about switching careers mid-life. She shared a 15-minute story about leaving corporate banking to start a social enterprise. I took notes on her decision-making process and the challenges she faced."*
 
-**All three work.** Your choice depends on context and preference.
+### Slide 13 (Layout: content)
 
-<speaker-notes>
-We're going to learn all three today because different situations call for different tools. Gibbs equals most detailed, includes emotions explicitly (great for challenging experiences). Kolb emphasizes learning cycle (doing, reflecting, conceptualizing, experimenting). Driscoll is fastest, question-based (perfect for mentor meeting reflections).
+## Stage 2: Feelings
 
-Examples: Field trip reflection: Gibbs (complex, emotional). Mentor meeting debrief: Driscoll (quick, focused). Skill development like public speaking: Kolb (continuous cycle). Let's start with the most comprehensive—Gibbs.
-</speaker-notes>
-</slide>
+### What were you thinking and feeling?
 
-<slide number="11" layout="framework" title="Gibbs' Reflective Cycle Overview">
-## Gibbs' Reflective Cycle
+**Guiding Questions:**
+- What were your initial reactions?
+- How did you feel at different stages?
+- What were you thinking about during the experience?
+- How do you feel about it now?
 
-6 stages that guide you through deep reflection:
+**Purpose:** Acknowledge emotional dimension of learning
 
-1. **Description** – What happened?
-2. **Feelings** – What were you thinking/feeling?
-3. **Evaluation** – What was good/bad about the experience?
-4. **Analysis** – What sense can you make of it?
-5. **Conclusion** – What else could you have done?
-6. **Action Plan** – What will you do next time?
+**Example:**
+*"I felt inspired hearing about her courage to change careers, but also anxious—'Can I really do that?' I was simultaneously excited (new possibilities) and scared (financial risk). Now, reflecting on it, I feel motivated to explore options rather than accepting the first job I'm offered."*
 
-**Strength:** Acknowledges emotions are part of professional learning
+### Slide 14 (Layout: content)
 
-*(Gibbs, 1988)*
+## Stage 3: Evaluation
 
-<speaker-notes>
-This is your template for the Reflective Essay if you choose Gibbs—memorize these 6 stages. Notice it's a CYCLE—after action plan, you'll have a new experience, and the cycle repeats. Stage 2 (Feelings) is unique to Gibbs—Kolb and Driscoll don't explicitly include emotions. This matters because emotions often signal important learning opportunities.
+### What was good and bad about the experience?
 
-Example with Week 6 field trip to MISA: You observe the CEO leading a meeting. Description: "CEO asked everyone's opinion before deciding." Feelings: "I was surprised—I expected authoritarian leadership." Evaluation: "Good: team engaged. Bad: meeting took longer." Analysis: "This connects to participative leadership—trading efficiency for buy-in." Conclusion: "I could apply this in group projects." Action Plan: "In next group meeting, I'll ask 'What does everyone think?' before suggesting my idea." Let's walk through each stage with guiding questions.
-</speaker-notes>
-</slide>
+**Guiding Questions:**
+- What went well?
+- What didn't go well?
+- What was positive about the experience?
+- What was negative or challenging?
 
-<slide number="12" layout="content" title="Gibbs Stage-by-Stage Questions">
-## Gibbs' Guiding Questions
+**Purpose:** Make initial value judgments before deeper analysis
 
-**1. Description:** What happened? Who was involved? What was the outcome?
+**Example:**
+*"Good: My mentor gave specific examples, not generic advice. I learned that career changes are possible with planning. Bad: I realized I haven't researched career options thoroughly—I asked surface-level questions. I could have prepared better by researching her career path beforehand."*
 
-**2. Feelings:** What were you thinking/feeling? What do you think others felt?
+### Slide 15 (Layout: content)
 
-**3. Evaluation:** What was good? What was challenging? What was your contribution?
+## Stage 4: Analysis
 
-**4. Analysis:** Why did things happen this way? What theory helps explain this?
+### What sense can you make of the situation?
 
-**5. Conclusion:** What could you have done differently? What patterns do you notice?
+**Guiding Questions:**
+- Why did things go well?
+- Why didn't things go well?
+- What was really going on?
+- What theories or models help explain what happened?
 
-**6. Action Plan:** What will you do next time? What skills do you need to develop?
+**Purpose:** Deep thinking—connecting experience to broader patterns and concepts
 
-<speaker-notes>
-Save a screenshot of this slide—these questions are your reflection toolkit. Stage 1: Just facts, no interpretation yet. Stage 2: Emotions are data—defensiveness might mean threatened ego. Stage 3: Balance—acknowledge good AND bad. Stage 4: This is where you apply course concepts (Goleman, Dweck, Covey, etc.). Stage 5: Honesty required—"I could have prepared better" not "They should have explained better." Stage 6: Specific actions, not vague intentions.
+**Example:**
+*"The meeting worked well because I asked open-ended questions ('How did you decide?' vs. 'Was it hard?'). This connects to Week 7 concepts—emotional intelligence requires curiosity. The meeting could have been better if I'd used Kolb's cycle: I had a concrete experience (Week 1 class) but didn't reflect before meeting my mentor, so I missed opportunities to discuss specific confusions. My lack of preparation reflects a fixed mindset (Week 9)—I assumed reflection happens naturally rather than requiring deliberate effort."*
 
-Check understanding: Which stage do you think students usually skip? [Wait for responses] Analysis—they stop at "it was good or bad" without asking WHY. That's the difference between Level 1 and Level 3 reflection. Gibbs is comprehensive but takes time. What if you need something faster?
-</speaker-notes>
-</slide>
+### Slide 16 (Layout: content)
 
-<slide number="13" layout="framework" title="Driscoll's Model">
-## Driscoll's "What? So What? Now What?"
+## Stage 5: Conclusion
 
-Three simple questions that cut to the chase:
+### What else could you have done?
 
-**WHAT?** (Description)
-- What happened? What did I do? What was I trying to achieve?
+**Guiding Questions:**
+- What did you learn from this experience?
+- What could you have done differently?
+- What skills or knowledge do you need to develop?
+- What patterns are you noticing in your behavior?
 
-**SO WHAT?** (Analysis)
-- Why does this matter? What did I learn? How does this connect to theory?
+**Purpose:** Synthesize learning and identify development needs
 
-**NOW WHAT?** (Action)
-- What will I do differently? What's my next step? What support do I need?
+**Example:**
+*"I learned that career changes require financial planning and skill-building over 1-2 years—not impulsive decisions. I could have prepared questions in advance and shared my self-assessment results for personalized advice. I need to develop: (1) research skills—investigating career paths before discussions, (2) strategic thinking—connecting short-term actions to long-term goals, (3) follow-through—implementing advice rather than just collecting it."*
 
-**Strength:** Fast, question-driven, perfect for quick debriefs
+### Slide 17 (Layout: content)
 
-*(Driscoll & Bolton, 2000)*
+## Stage 6: Action Plan
 
-<speaker-notes>
-If Gibbs is a full meal, Driscoll is a power snack—quick, efficient, still nutritious. Only 3 questions but they map to Description, Analysis, Action (same as Gibbs, just condensed). "So What?" is the critical question—forces you beyond description. Perfect for mentor meeting reflections (48-hour deadline).
+### If the situation arose again, what would you do?
 
-Example post-Mentor Meeting using Driscoll: WHAT? "Mentor said I should focus on one deep skill rather than being a generalist." SO WHAT? "This challenges my assumption that 'more skills equals more employable.' Connects to CliftonStrengths—play to signature strengths." NOW WHAT? "I'll pick data analytics as my deep skill. Action: Enroll in SQL course next semester." One more framework—Kolb.
-</speaker-notes>
-</slide>
+**Guiding Questions:**
+- What will you do differently next time?
+- What steps will you take to develop needed skills?
+- How will you apply this learning?
+- What specific actions will you take, by when?
 
-<slide number="14" layout="framework" title="Kolb's Experiential Learning Cycle">
-## Kolb's Experiential Learning Cycle
+**Purpose:** Convert insights into concrete behavior change
 
-Four stages that form a continuous learning loop:
+**Example:**
+*"Before my next mentorship meeting (October 10): (1) Review mentor's LinkedIn and prepare 5 specific questions based on her career path, (2) Complete VIA Character Strengths assessment and bring results to discuss alignment with careers, (3) Research 3 career paths in my Holland Code categories and ask mentor's perspective. Within 1 week after meeting: implement one piece of advice she gives and report back on results."*
 
-**1. Concrete Experience (CE)**
-→ DO something / have an experience
+### Slide 18 (Layout: section-break)
 
-**2. Reflective Observation (RO)**
-→ REFLECT on the experience from multiple perspectives
+# Part 3: Kolb's Experiential Learning Cycle
 
-**3. Abstract Conceptualization (AC)**
-→ THINK / form theories about what you learned
+## Learning as a Continuous Spiral
 
-**4. Active Experimentation (AE)**
-→ TRY / test new ideas in new situations
+### Slide 19 (Layout: framework)
 
-Then the cycle repeats with a new Concrete Experience.
+## Kolb's Experiential Learning Cycle (1966/2017)
 
-**Strength:** Emphasizes learning as a continuous cycle, not one-time event
+```
+  CONCRETE EXPERIENCE
+  (Doing/Having an experience)
+           ↓
+  REFLECTIVE OBSERVATION ←──┐
+  (Reviewing/Reflecting)     │
+           ↓                 │ Learning
+  ABSTRACT CONCEPTUALIZATION │ Spiral
+  (Concluding/Learning)      │
+           ↓                 │
+  ACTIVE EXPERIMENTATION ────┘
+  (Planning/Trying new approaches)
+```
 
-*(Kolb & Kolb, 2017)*
+**Key Feature:** Emphasizes testing ideas through experimentation (not just planning)
 
-<speaker-notes>
-Kolb isn't just about reflection—it's about how adults learn from experience in general. This is a CYCLE—you keep going round and round, improving each time. Different from Gibbs (one deep dive) or Driscoll (one quick analysis). Kolb: Experience, Reflect, Theorize, Experiment, New Experience.
+### Slide 20 (Layout: content)
 
-Example learning public speaking via Kolb: CE: Give 5-minute presentation (Week 1). RO: Notice hands shaking, audience confused during data section. AC: Theory: "I need to explain context before showing numbers." AE: Next presentation, add 2-sentence setup before each chart. New CE: Give another presentation—hands still shake but engagement better. Cycle continues. Let's see Kolb in action with a real scenario.
-</speaker-notes>
-</slide>
+## Stage 1: Concrete Experience
 
-<slide number="15" layout="content" title="Kolb Applied: Failed Group Presentation">
-## Kolb in Action: The Failed Group Presentation
+### Doing/Having an experience
 
-**Concrete Experience:**
-Group presentation got a C. No coordination, awkward transitions, went over time.
+**What it means:**
+- An event or activity you participate in directly
+- "Being there" and engaging with a situation
+- The raw material for learning
 
-**Reflective Observation:**
-- You felt frustrated—your work quality didn't matter because group failed
-- No one took leadership, no rehearsal, everyone worked in silos
+**Examples in this course:**
+- Field trip to MISA Company (Week 6)
+- Guest speaker session with Ms. Ha Linh (Week 10)
+- Mentorship meetings (Weeks 2-11)
+- Tutorial activities (every week)
+- Using self-assessment tools (Week 5)
 
-**Abstract Conceptualization:**
-- Theory: Group success requires explicit coordination, not just individual effort
-- Connects to: Tuckman's stages (forming → storming → norming → performing)
-- Insight: We never got past "forming"
+### Slide 21 (Layout: content)
 
-**Active Experimentation:**
-- Next project: Volunteer as coordinator
-- Implement: Shared doc, mandatory rehearsal, assign transitions
-- Test: Better coordination = better outcome
+## Stage 2: Reflective Observation
 
-<speaker-notes>
-Real scenario from last semester—student used Kolb to turn a bad experience into learning. CE: The raw experience (bad grade). RO: Multiple perspectives—your feelings, group dynamics, professor feedback. AC: This is where you make sense of it using theory (Tuckman's model). AE: Specific experiments to test your theory.
+### Reviewing/Reflecting on the experience
 
-Key insight: Notice the student doesn't just blame the group. They extract a transferable insight: coordination mechanisms matter. This learning transfers beyond this class to any team environment. Okay, three frameworks down. How do you choose?
-</speaker-notes>
-</slide>
+**Guiding Questions:**
+- What did I notice during this experience?
+- What patterns or themes emerge when I look back?
+- What perspectives did others have?
+- What was significant about what happened?
 
-<slide number="16" layout="content" title="Framework Comparison">
-## When to Use Which Framework
+**Key Practice:** Step back from doing to observe and consider
 
-| Situation | Best Framework | Why |
-|-----------|---------------|-----|
-| Complex experience with strong emotions | **Gibbs** | 6 stages include emotional processing |
-| Quick mentor meeting debrief | **Driscoll** | 3 questions, fast, structured |
-| Ongoing skill development | **Kolb** | Emphasizes continuous improvement |
-| Field trip + guest speaker essay | **Your choice** | All work—pick what feels natural |
-| Critical incident analysis | **Gibbs** | Deep dive into what went wrong/right |
-| Weekly learning log | **Driscoll** | Sustainable over time |
+**Example:**
+*"During the MISA field trip, I noticed that managers spent 60% of time in meetings, not solo work. Employees described 'collaborative culture' multiple times. The office layout—open spaces with meeting rooms—physically supports this. Comparing to my internship experience (cubicles, minimal collaboration), I see different organizational values shape different communication patterns."*
 
-<speaker-notes>
-There's no "best" framework—just better fits for different contexts. Gibbs equals depth (use when experience was significant or emotionally charged). Driscoll equals speed (use for regular, frequent reflections). Kolb equals cycle (use when you'll repeat the experience and want to improve). For Reflective Essay: You choose. Some students love Gibbs' structure, others find it too long.
+### Slide 22 (Layout: content)
 
-Check understanding: If you had to pick one framework for EVERYTHING, which would it be? Why? [Brief pause for thought] Good answers. Frameworks are tools. But quality matters—let's talk about depth.
-</speaker-notes>
-</slide>
+## Stage 3: Abstract Conceptualization
 
-<slide number="17" layout="section-break" title="Section 3: Reflection Quality">
-# SECTION 3
+### Concluding/Learning from the experience
 
-## Reflection Quality
-### Moving from Description to Transformation
+**Guiding Questions:**
+- What does this experience mean?
+- What theories or concepts help explain what I observed?
+- What general principles can I derive from this specific situation?
+- How does this connect to my existing knowledge?
 
-*(25 minutes)*
+**Purpose:** Move from specific experience to generalizable knowledge
 
-<speaker-notes>
-Using a framework doesn't guarantee quality. Let's talk about depth levels. This is crucial for your Reflective Essay grade—you can use Gibbs perfectly but still get a low mark if you stay at Level 1 description.
-</speaker-notes>
-</slide>
+**Example:**
+*"MISA's collaborative culture demonstrates Goleman's EI in action—social awareness and relationship management aren't just individual skills but organizational capabilities. The open office layout reflects espoused values (collaboration) matching actual practices (frequent meetings). General principle: organizational culture is visible in physical space, communication patterns, and employee language. I can assess company fit by observing these indicators during interviews."*
 
-<slide number="18" layout="framework" title="Three Levels of Reflection Depth">
-## Three Levels of Reflection Quality
+### Slide 23 (Layout: content)
 
-**Level 1: Description**
-"I attended the field trip. We toured the office. It was interesting."
-❌ No analysis, no learning, no action
+## Stage 4: Active Experimentation
 
-**Level 2: Analysis**
-"The CEO's participative style surprised me because I expected hierarchy. This connects to Goleman's social awareness."
-✅ Better—connects to theory, acknowledges surprise
+### Planning/Trying out new approaches
 
-**Level 3: Transformation**
-"Observing participative leadership made me realize I default to directive style because it feels 'efficient.' But this misses team buy-in. Action: In next group project, I'll ask 'What does everyone think?' before proposing my solution."
-✅✅ BEST—deep self-awareness, theory, specific action
+**Guiding Questions:**
+- Based on what I learned, what will I try?
+- How can I test this new understanding?
+- What would happen if I...?
+- What's one small experiment I can run?
 
-<speaker-notes>
-This is from Alt et al. (2022)—research on 1,312 student reflections identified these levels. Level 1 equals reporting. You're just a journalist. No value. Level 2 equals analyzing. Connecting dots, using theory. Good. Level 3 equals transforming. Changing behavior based on insights. Excellent. Your Reflective Essay will be graded on this depth scale.
+**Critical Feature:** DOING something new, not just planning
 
-Key insight: "I learned a lot" equals Level 1. "I learned X, which challenges my belief Y, so I will do Z differently" equals Level 3. Let's see what this looks like in actual student writing.
-</speaker-notes>
-</slide>
+**Example:**
+*"Test: I'll deliberately initiate one collaboration per week—invite classmates to study together, propose group approaches to individual assignments (where allowed), ask mentor about collaborative projects in her work. Experiment: In next mentorship meeting, instead of asking for advice (my usual pattern), I'll share a problem I'm facing and ask 'How would you approach this?' to practice co-creating solutions rather than passively receiving answers. I'll document what happens and reflect on whether collaboration improves learning quality."*
 
-<slide number="19" layout="content" title="Good vs Poor Reflection Examples">
-## Reflection Quality Examples
+### Slide 24 (Layout: framework)
 
-**❌ Poor Reflection (Level 1)**
-"I attended the MISA field trip. We saw the office and heard from the CEO. The office was modern. I learned that MISA is successful. This was valuable."
+## Gibbs vs. Kolb: When to Use Each
 
-**Problems:** Only description, no theory, no specific learning, vague conclusion, no action
+| Aspect | Gibbs' Reflective Cycle | Kolb's Experiential Learning Cycle |
+|--------|-------------------------|-----------------------------------|
+| **Stages** | 6 stages | 4 stages |
+| **Depth** | More detailed, explicit emotional processing | More concise, emphasizes action |
+| **Best For** | Comprehensive reflection (essays, major experiences) | Quick cycle for continuous learning |
+| **Feelings** | Explicit stage (Stage 2) | Implicit in Concrete Experience |
+| **Outcome** | Action Plan (intent to change) | Active Experimentation (actual testing) |
+| **Structure** | Linear progression through stages | Cyclical spiral emphasizing iteration |
 
----
+**For your Reflective Essay:** Either works—choose based on your thinking style
 
-**✅ Strong Reflection (Level 3)**
-"The CEO's emphasis on 'learning culture' initially seemed like jargon. But applying Gibbs' cycle, my skepticism revealed an assumption: 'Companies prioritize profit over people.' Observing Friday learning sessions contradicted this. Analysis using Senge's *Fifth Discipline*: learning organizations outperform. This challenges my job criterion of 'highest salary.' Revised: company learning culture equally important. Action: Research L&D budget in job applications."
+### Slide 25 (Layout: section-break)
 
-**Strengths:** Honest skepticism, uses framework, connects theory, specific action
+# Part 4: Alternative Models & Application
 
-<speaker-notes>
-Same field trip. Two different reflections. Which demonstrates learning? Poor example: Could have been written without attending (generic). Strong example: Shows genuine thinking—skepticism, observation, theory, insight, action. Notice the strong example admits initial skepticism (vulnerability equals authenticity).
+## Simplicity for Everyday Reflection
 
-Grading impact: Poor reflection: 40-54% (Developing). Strong reflection: 85-100% (Excellent). Difference isn't writing skill—it's depth of thinking. So how do you write Level 3 reflections? Use prompting questions.
-</speaker-notes>
-</slide>
+### Slide 26 (Layout: framework)
 
-<slide number="20" layout="content" title="Prompting Questions for Deep Reflection">
-## Questions That Deepen Reflection
+## Driscoll & Bolton's Reflective Model (2000)
 
-*(Alt et al., 2022 - 31-Item Validated Framework)*
+### Three Elegant Questions
 
-**Cognitive Dimension** (Thinking)
-- What assumptions did I hold before this experience?
-- What evidence challenged or confirmed those assumptions?
-- How does this connect to theories I've learned?
+**1. WHAT?**
+- What happened?
+- What did I see/hear/think/feel?
+- What was I trying to achieve?
 
-**Behavioral Dimension** (Doing)
-- What specific actions will I take based on this insight?
-- How will I measure if my new approach works?
+**2. SO WHAT?**
+- So what does this mean?
+- So what were the consequences?
+- So what more do I need to know?
 
-**Affective Dimension** (Feeling)
-- What emotions did I experience? Why?
-- What do my reactions tell me about my values?
+**3. NOW WHAT?**
+- Now what do I do?
+- Now what might happen?
+- Now what support do I need?
 
-**Professional Dimension** (Growth)
-- How does this inform my career goals?
-- What skills did I discover I need to develop?
+**Best For:** Quick reflections, field notes, immediate debriefs
 
-<speaker-notes>
-Save this slide—these questions are your cheat code for deep reflection. These are validated through research on 171 students, 1,312 reflections. Cognitive equals head, Behavioral equals hands, Affective equals heart, Professional equals future. Your Reflective Essay should touch all four dimensions.
+### Slide 27 (Layout: content)
 
-Example: Cognitive: "I assumed all tech companies were startups. MISA's 25-year history challenges this." Affective: "I felt intimidated by the CEO's expertise—reveals my imposter syndrome." Behavioral: "I'll prepare 3 questions before next guest speaker instead of staying silent." Professional: "This confirms my interest in tech but shifts focus to established firms." Let's apply this to your Week 6 field trip.
-</speaker-notes>
-</slide>
+## Selecting the Right Reflective Framework
 
-<slide number="21" layout="content" title="Preparing for Field Trip Reflection">
-## Field Trip to MISA (September 18)
+### Framework Selection Guide
 
-**Before the trip:**
-- Choose your framework (Gibbs / Kolb / Driscoll)
-- Prepare 5 questions to ask
-- Set learning objectives: What do you want to understand?
+**Use Gibbs when:**
+- Writing comprehensive reflections (essays, major experiences)
+- You need emotional processing (Feelings stage)
+- You want detailed structure with explicit prompts
 
-**During the trip:**
-- Take notes: surprises, emotions, specific observations (names, quotes)
-- Notice: What challenges your assumptions?
-- Observe: Leadership style, team dynamics, communication patterns
+**Use Kolb when:**
+- Emphasizing the learning cycle and continuous improvement
+- You plan to test new approaches (Active Experimentation)
+- You want theoretical connection (Abstract Conceptualization)
 
-**After (within 24 hours):**
-- Write raw notes while memory is fresh
-- Capture feelings honestly
-- Identify 2-3 "critical moments" that stood out
+**Use Driscoll when:**
+- You need quick, immediate reflection
+- You're short on time or space
+- You want simplicity you can remember without notes
 
-<speaker-notes>
-Field trip is September 18—only two weeks away. Start preparing now. Don't go in passively—reflection starts with active observation. Questions you ask equal data for analysis later. "Critical moments" equal times you felt surprise, confusion, excitement (gold for reflection).
+**All three share:** Description → Analysis → Action
 
-Example: Student last year: Didn't take notes, relied on memory 3 weeks later, reflection was generic. Another student: Took notes immediately after CEO talk, captured exact quote, used in essay. Got 94%. Let's synthesize everything.
-</speaker-notes>
-</slide>
+### Slide 28 (Layout: section-break)
 
-<slide number="22" layout="section-break" title="Section 4: Wrap-Up">
-# SECTION 4
+# Reflection as a Professional Skill
 
-## Wrap-Up & Application
-### Key Takeaways
-
-*(10 minutes)*
-
-<speaker-notes>
-We've covered a lot. Let me summarize the key points you need to remember from today's lecture.
-</speaker-notes>
-</slide>
-
-<slide number="23" layout="content" title="Key Takeaways">
 ## Key Takeaways
 
-**1. Reflection ≠ Thinking**
-Reflection is structured, intentional, and leads to action.
+1. **Experience alone doesn't guarantee learning**—structured reflection converts experience into knowledge
+2. **Three robust frameworks**: Gibbs (detailed), Kolb (cyclical), Driscoll (simple)
+3. **Choose frameworks strategically** based on depth needed and time available
+4. **Practice immediately**: Reflect on today's lecture using one framework before you leave campus
 
-**2. Use Frameworks**
-- Gibbs: 6 stages, includes emotions, best for complex experiences
-- Kolb: 4-stage cycle, best for continuous skill development
-- Driscoll: 3 questions, best for quick debriefs
+### Next Steps
 
-**3. Depth Matters**
-- Level 1: Description → Level 2: Analysis → Level 3: Transformation
-- Aim for Level 3 in all assessments
+**This week:** Use Gibbs or Kolb to reflect on your Week 2 mentorship meeting
+**Tutorial:** Practice applying all three frameworks to shared experiences
+**Week 6:** Apply these frameworks during MISA field trip observations
 
-**4. Prompting Questions Unlock Depth**
-Use cognitive, behavioral, affective, and professional questions.
+### References
 
-**5. Practice = Improvement**
-Your first reflections will feel awkward. By Reflection 10, it becomes natural.
+Argyris, C., & Schön, D. A. (1978). *Organizational learning: A theory of action perspective*. Addison-Wesley.
 
-<speaker-notes>
-These five points summarize 90 minutes—make sure you've got them. Analogy: Learning reflection is like learning to drive. First time: "Mirror, signal, maneuver"—consciously follow steps. After practice: Automatic. Gibbs, Kolb, Driscoll are your "mirror, signal, maneuver" until reflection becomes natural. Let's look at tutorial.
-</speaker-notes>
-</slide>
+Center for Creative Leadership. (2021). *The 70-20-10 model for learning and development*. https://www.ccl.org/articles/leading-effectively-articles/70-20-10-rule/
 
-<slide number="24" layout="content" title="Tutorial Preview">
-## Tutorial Today: Reflection Practice
+Driscoll, J., & Bolton, G. (2000). *Reflective practice: A concise guide for students*. Sage Publications.
 
-**Activity:** Guided Reflection Workshop
-- Choose one experience from Weeks 1-2 (mentor meeting, lecture, self-assessment)
-- Apply Gibbs, Kolb, OR Driscoll
-- Write 200-word reflection
-- Share with peer partner for feedback
+Gibbs, G. (1988). *Learning by doing: A guide to teaching and learning methods*. Further Education Unit, Oxford Polytechnic.
 
-**Success Criteria:**
-- Framework correctly applied (all stages addressed)
-- Level 3 depth (not just description—shows transformation)
-- At least one course concept referenced
-- Specific action plan with measurable outcome
+Goleman, D. (1995). *Emotional intelligence: Why it can matter more than IQ*. Bantam Books.
 
-**Deliverable:** 200-word reflection you can reference for your Reflective Essay
+Kolb, D. A. (1984). *Experiential learning: Experience as the source of learning and development*. Prentice Hall.
 
-<speaker-notes>
-Tutorial isn't lecture part 2—you'll actually DO reflection with guidance. You choose the experience and framework. 200 words forces concision (can't ramble—must be strategic). Peer feedback helps you see blind spots. Before tutorial, let's preview next week.
-</speaker-notes>
-</slide>
+Kolb, D. A., & Kolb, A. Y. (2017). The experiential educator: Principles and practices of experiential learning. EBLS Press.
 
-<slide number="25" layout="content" title="Next Week Preview">
-## Week 4: Self-Managed Learning
-
-**Topic:** Metacognition & Strategic Learning
-
-**Key Concepts:**
-- Self-regulated learning (Zimmerman)
-- Metacognitive monitoring
-- Study strategies that work vs. strategies that feel good
-
-**Connection to reflection:**
-- Reflection = looking backward at what you learned
-- Metacognition = monitoring WHILE you're learning
-- Together = complete learning system
-
-**Prepare:** Bring examples of study strategies you currently use
-
-<speaker-notes>
-Next week builds on this week—reflection is one part of learning; self-regulation is the other. Reflection equals retrospective ("What did I learn?"). Metacognition equals real-time monitoring ("Am I understanding this right now?"). Week 4 teaches you how to learn more efficiently. Resources and readings.
-</speaker-notes>
-</slide>
-
-<slide number="26" layout="content" title="Resources">
-## Resources on Moodle
-
-**Required Readings:**
-1. Gibbs, G. (1988). *Learning by doing* - Focus on Reflective Cycle (pp. 9-14)
-2. Kolb & Kolb (2017). Experiential learning theory - pp. 7-20, 30-35
-3. Alt et al. (2022). Reflective journal writing - Focus on Tables 1-3
-
-**Templates:**
-- Gibbs, Kolb, Driscoll templates (Word docs)
-- Sample Reflective Essay (scored 92%) with rubric annotations
-- Alt et al. 31-Item Prompting Questions Checklist
-
-**Optional:**
-- Schön, D. (1983). *The Reflective Practitioner* (90,000+ citations)
-- Argyris, C. (1991). Teaching smart people how to learn. *HBR*
-
-<speaker-notes>
-All readings are open access—links on Moodle, no paywalls. Gibbs: Short read, very practical (14 pages total). Kolb: Longer but skip to sections we covered. Alt: Focus on tables (the prompting questions you need). Final thought.
-</speaker-notes>
-</slide>
-
-<slide number="27" layout="quote" title="Final Thought">
-> "We do not learn from experience... we learn from reflecting on experience."
-
-**— John Dewey**
-
----
-
-**Your challenge:** Write one 200-word reflection this week using Gibbs, Kolb, or Driscoll.
-
-Choose any experience. Practice Level 3 depth.
-
-<speaker-notes>
-John Dewey said this in 1933—almost 100 years ago—and it's still true. Reflection is THE skill that amplifies all other learning. You'll use this in every class, every job, every major life decision. It feels awkward at first, but it becomes second nature.
-
-Closing: Who's willing to commit to writing one reflection this week? [Wait for hands] Excellent. Thank you. Questions before tutorial?
-</speaker-notes>
-</slide>
-
-<slide number="28" layout="section-break" title="See You in Tutorial">
-## See You in Tutorial
-
-**Bring:**
-- One experience from Weeks 1-2 to reflect on
-- Laptop or paper for 200-word reflection
-- Openness to peer feedback
-
-**Goal:** Complete one Level 3 reflection using Gibbs, Kolb, or Driscoll
-
-<speaker-notes>
-Dismiss to tutorial. Remind about quiz due Sunday 11:59 PM. Good luck with your reflections!
-</speaker-notes>
-</slide>
-
-</lecture>
-
-<!-- REQUIRED READINGS -->
-
-<!--
-1. Gibbs, G. (1988). Learning by doing: A guide to teaching and learning methods. Oxford Polytechnic.
-
-2. Kolb, A. Y., & Kolb, D. A. (2017). Experiential learning theory as a guide for experiential educators. ELTHE: A Journal for Engaged Educators, 1(1), 7-44.
-
-3. Alt, D., Raichel, N., & Naamati-Schneider, L. (2022). Higher education students' reflective journal writing and lifelong learning skills. Frontiers in Psychology, 13, 1-15.
-
-SUPPLEMENTARY READINGS (Optional):
-
-4. Schön, D. A. (1983). The reflective practitioner: How professionals think in action. Basic Books.
-
-5. Argyris, C. (1991). Teaching smart people how to learn. Harvard Business Review, 69(3), 99-109.
-
-6. Driscoll, J., & Bolton, G. (2000). Developing reflection: A guide to learning from experience. Oxford University Press.
--->
+Schön, D. A. (1983). *The reflective practitioner: How professionals think in action*. Basic Books.
 
 </lecture_content>
-
-<task>
-Generate all 28 slides as a complete presentation slide deck. Reproduce all content exactly as provided. Enhance each slide with appropriate visuals, infographics, or imagery. Maintain consistent professional styling throughout.
-</task>
-
-<output_format>
-A presentation slide deck containing:
-- 28 slides total, matching the lecture content structure
-- Modern Bright Pastel Corporate visual design consistently applied
-- All lecture content text preserved exactly as written
-- Relevant images, infographics, icons, and diagrams on each slide
-- Minimum 18pt body text
-- Footers on content slides with course info and slide numbers
-- Academic citations in footers where referenced
-- Empty speaker notes sections
-</output_format>

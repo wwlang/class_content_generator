@@ -2,339 +2,355 @@
 metadata:
   week: 11
   topic: "Designing Your Development Plan"
-  prepares_for: "Personal Development Plan (Week 11)"
+  prepares_for: "Personal Development Plan (40%)"
   source: "lecture-content.md"
 
 questions:
-  - id: "W11-Q1-goal-theory-mechanisms"
+  - id: "w11-q01"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Goal-Setting Theory"
+    topic: "Goal-Setting Theory (Locke & Latham)"
 
     question: |
-      What are the four mechanisms through which goals improve performance according to Locke & Latham's goal-setting theory?
+      According to Locke and Latham's (2002) goal-setting theory, which type of goals consistently produces higher performance than "do your best" goals?
 
     options:
       - key: "A"
-        text: "Direction, Effort, Persistence, Strategy Development"
-        feedback: "Correct! These four mechanisms explain how specific, difficult goals activate psychological processes that improve performance."
-        correct: true
+        text: "General, flexible goals"
+        feedback: "Incorrect. General goals lack the direction and challenge needed to drive high performance. Locke and Latham found specific, difficult goals are more effective."
 
       - key: "B"
-        text: "Planning, Execution, Monitoring, Evaluation"
-        feedback: "Incorrect. These are general project management phases, not the four mechanisms identified by Locke & Latham."
+        text: "Specific, difficult goals"
+        feedback: "Correct! Locke and Latham found that specific, difficult goals consistently outperform 'do your best' goals with effect sizes of 0.42 to 0.80 across meta-analyses."
+        correct: true
 
       - key: "C"
-        text: "Awareness, Commitment, Action, Reflection"
-        feedback: "Incorrect. While these are important for goal achievement, they are not Locke & Latham's four mechanisms."
+        text: "Easy, achievable goals"
+        feedback: "Incorrect. Easy goals don't energize effort or drive high performance. Goals must be challenging (difficult) to maximize motivation."
 
       - key: "D"
-        text: "Vision, Mission, Values, Strategy"
-        feedback: "Incorrect. These are strategic planning components, not the psychological mechanisms of goal-setting theory."
+        text: "Long-term, aspirational goals"
+        feedback: "Incorrect. While long-term goals matter, the key finding is about specificity and difficulty, not just time horizon."
 
     general_feedback: |
-      Locke & Latham's goal-setting theory identifies four mechanisms: (1) <b>Direction</b> (focusing attention on goal-relevant activities), (2) <b>Effort</b> (higher goals mobilize greater effort), (3) <b>Persistence</b> (goals increase sustained effort over time), and (4) <b>Strategy Development</b> (challenging goals prompt task-specific planning). When all four mechanisms activate <b>simultaneously</b> (at the same time), goal achievement probability increases dramatically. See Week 11 slides 6-7.
+      This finding has direct implications for your PDP. Vague goals like "improve my skills" are less effective than specific, challenging targets like "Complete Google Data Analytics Certificate by June 2026." See Week 11 slides 4-6.
 
-  - id: "W11-Q2-goal-moderators"
+  - id: "w11-q02"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Goal-Setting Theory"
+    topic: "Goal-Setting Theory (Locke & Latham)"
 
     question: |
-      How do the four moderators (feedback, commitment, task complexity, ability) affect goal achievement?
+      A student sets a goal to "improve my public speaking skills this semester." According to goal-setting theory, why would this goal be less effective than "deliver 8 prepared speeches in Toastmasters and achieve an average evaluation score of 4/5 by May 2026"?
 
     options:
       - key: "A"
-        text: "Goals are most effective when all four moderators are present; missing moderators reduce goal effectiveness"
-        feedback: "Correct! The moderators are conditions that must be met for goals to work optimally. Each moderator strengthens the goal-performance relationship."
-        correct: true
+        text: "The first goal is too ambitious and will reduce commitment"
+        feedback: "Incorrect. The first goal isn't too ambitious—it's actually too vague. The problem is lack of specificity, not ambition level."
 
       - key: "B"
-        text: "Moderators replace the four mechanisms; you need either mechanisms or moderators"
-        feedback: "Incorrect. Moderators don't replace mechanisms. Mechanisms explain HOW goals work; moderators are CONDITIONS needed for goals to work effectively."
+        text: "The first goal lacks specificity and measurability, reducing its ability to direct attention and effort"
+        feedback: "Correct! The first goal is vague—'improve' could mean anything—so it doesn't activate goal-setting theory's four mechanisms. The second goal is specific, measurable, and time-bound."
+        correct: true
 
       - key: "C"
-        text: "Only commitment matters; the other three moderators have minimal impact"
-        feedback: "Incorrect. All four moderators are important. For example, without feedback, you can't adjust strategies; without adequate ability, goals become impossible and undermine commitment."
+        text: "The second goal requires too much feedback to be practical"
+        feedback: "Incorrect. Feedback through evaluations actually supports goal achievement. More feedback is generally better, not problematic."
 
       - key: "D"
-        text: "Moderators only apply to organizational goals, not personal development goals"
-        feedback: "Incorrect. Moderators apply to all goal contexts. Your PDP goals need feedback systems, personal commitment, manageable complexity, and alignment with your abilities."
+        text: "The first goal allows for more creativity and flexibility in approach"
+        feedback: "Incorrect. While flexibility can be valuable, vague goals don't provide the direction needed to energize effort and persistence."
 
     general_feedback: |
-      Moderators are <b>contextual factors</b> (conditions in the environment or person) that determine WHEN goal-setting works best. Think of mechanisms as the engine (how goals work) and moderators as the fuel/conditions (what makes the engine run optimally). Goals with high feedback, high commitment, appropriate complexity, and adequate ability show the strongest performance effects. Missing moderators weaken goal effectiveness. See Week 11 slide 7.
+      Test your PDP goals: Does this goal clearly direct my attention? Does it energize my effort with a challenging target? Does it increase my persistence through a deadline? If any answer is "no," add more specificity. See Week 11 slides 7-8.
 
-  - id: "W11-Q3-goal-theory-comparison"
+  - id: "w11-q03"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Goal-Setting Theory"
+    topic: "Goal-Setting Theory (Locke & Latham)"
 
     question: |
-      How do specific, difficult goals differ from "do your best" goals according to goal-setting theory?
+      According to Locke and Latham (2002), goals work through four mechanisms. A student sets a goal to "complete Google Data Analytics Certificate by June 2026." Which mechanism is demonstrated when the student decides to study for 2 hours every Monday, Wednesday, and Friday instead of randomly when they feel like it?
 
     options:
       - key: "A"
-        text: "Specific, difficult goals activate all four mechanisms (direction, effort, persistence, strategy); 'do your best' goals activate none effectively"
-        feedback: "Correct! Specific, difficult goals have effect sizes of d = 0.42-0.82, while 'do your best' serves as baseline performance."
+        text: "Directing attention toward goal-relevant activities"
+        feedback: "Correct! By scheduling specific study times, the student is directing their attention toward goal-relevant activities and away from distractions."
         correct: true
 
       - key: "B"
-        text: "'Do your best' goals are more motivating because they're flexible and reduce performance anxiety"
-        feedback: "Incorrect. Research shows the opposite. 'Do your best' lacks the specificity to direct attention or the challenge to mobilize effort."
+        text: "Energizing effort through higher goals"
+        feedback: "Incorrect. Energizing effort relates to the difficulty/challenge level of the goal itself, not the scheduling of activities."
 
       - key: "C"
-        text: "Both goal types are equally effective; the difference is only in how goals are communicated"
-        feedback: "Incorrect. Over 400 studies show specific, difficult goals consistently outperform 'do your best' goals with medium to large effect sizes."
+        text: "Increasing persistence over time"
+        feedback: "Incorrect. Persistence relates to continuing effort over time despite obstacles. Scheduling is about directing attention."
 
       - key: "D"
-        text: "Specific goals work for simple tasks; 'do your best' works better for complex tasks"
-        feedback: "Incorrect. While complex tasks may need breaking into sub-goals, specific difficult goals still outperform vague 'do your best' goals regardless of task complexity."
+        text: "Prompting development of task-relevant strategies"
+        feedback: "Incorrect. Strategy development involves figuring out HOW to accomplish tasks. Scheduling when to work is about attention direction."
 
     general_feedback: |
-      The <b>core finding</b> (fundamental discovery) of goal-setting theory is that specific, difficult goals <b>consistently</b> (reliably, across 400+ studies) lead to higher performance than 'do your best' goals. Example: 'Achieve TOEIC 900 by June 2026' (specific + difficult) activates direction (focus on TOEIC preparation), effort (study 10+ hours/week), persistence (continue through setbacks), and strategy (identify weak areas, use practice tests). 'Do my best in English' activates none of these effectively. See Week 11 slides 5-6.
+      This mechanism is why your PDP needs action steps for each goal. Stating the goal is not enough—you need to specify how you'll direct your attention and time toward that goal. See Week 11 slides 9-10.
 
-  - id: "W11-Q4-smart-definition"
+  - id: "w11-q04"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "SMART Goals Framework"
+    topic: "SMART Goals"
 
     question: |
-      What does the acronym SMART stand for in the SMART goals framework?
+      In the SMART goals framework, what does the "A" stand for?
 
     options:
       - key: "A"
-        text: "Specific, Measurable, Achievable, Relevant, Time-bound"
-        feedback: "Correct! These five criteria ensure goals are well-formed and activate goal-setting theory mechanisms."
-        correct: true
+        text: "Ambitious"
+        feedback: "Incorrect. While goals should be challenging, 'A' stands for Achievable, not Ambitious. Goals must be realistic to maintain motivation."
 
       - key: "B"
-        text: "Strategic, Motivating, Actionable, Realistic, Trackable"
-        feedback: "Incorrect. While these are desirable goal qualities, this is not the standard SMART acronym used in goal-setting research."
+        text: "Achievable"
+        feedback: "Correct! The 'A' in SMART stands for Achievable, meaning the goal should be realistic given your resources, time, and constraints."
+        correct: true
 
       - key: "C"
-        text: "Simple, Meaningful, Ambitious, Rewarding, Timely"
-        feedback: "Incorrect. This is not the SMART framework. The correct version includes Specific, Measurable, Achievable, Relevant, Time-bound."
+        text: "Actionable"
+        feedback: "Incorrect. While goals should lead to action, the 'A' in SMART stands for Achievable, focusing on realistic possibility."
 
       - key: "D"
-        text: "Structured, Manageable, Aspirational, Relevant, Transparent"
-        feedback: "Incorrect. While some of these qualities are beneficial, this is not the SMART acronym. S = Specific, not Structured."
+        text: "Accountable"
+        feedback: "Incorrect. Accountability is important but not represented by the 'A' in SMART. It stands for Achievable."
 
     general_feedback: |
-      The SMART framework was introduced by George Doran in 1981 and has been validated by 60+ empirical studies. Each component addresses a common goal-setting mistake: <b>Specific</b> (fixes vague goals), <b>Measurable</b> (enables progress tracking), <b>Achievable</b> (maintains commitment), <b>Relevant</b> (ensures values alignment), <b>Time-bound</b> (creates urgency). All five criteria must be present for a goal to be truly SMART. See Week 11 slides 9 and 12.
+      SMART stands for Specific, Measurable, Achievable, Relevant, and Time-bound. When evaluating if your goals are achievable, consider: Do you have the time, resources, and foundational skills? See Week 11 slide 11.
 
-  - id: "W11-Q5-smart-specific"
+  - id: "w11-q05"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "SMART Goals Framework"
+    topic: "SMART Goals"
 
     question: |
-      Why is the "Specific" component essential in SMART goals?
+      A student writes: "I will complete 3 online courses in digital marketing from Coursera, earn certificates for each, and build a portfolio of 5 course projects by December 31, 2026." Which SMART criteria does this goal clearly demonstrate?
 
     options:
       - key: "A"
-        text: "Specificity activates the Direction mechanism by focusing attention on particular goal-relevant activities"
-        feedback: "Correct! Specific goals answer 'What exactly?' and focus effort, directly linking to Locke & Latham's Direction mechanism."
-        correct: true
+        text: "Specific and Time-bound only"
+        feedback: "Incorrect. The goal also demonstrates measurability (3 courses, 5 projects, certificates). It's more than just specific and time-bound."
 
       - key: "B"
-        text: "Specificity makes goals easier to achieve by reducing the scope of work required"
-        feedback: "Incorrect. Specificity doesn't make goals easier—it makes them clearer. Goals should still be difficult (challenging) to maximize performance."
+        text: "Specific, Measurable, and Time-bound"
+        feedback: "Correct! The goal is Specific (3 Coursera courses in digital marketing), Measurable (3 certificates + 5 portfolio projects), and Time-bound (by December 31, 2026). We cannot determine Achievable or Relevant without more context."
+        correct: true
 
       - key: "C"
-        text: "Specificity is only important for short-term goals; long-term goals can remain vague"
-        feedback: "Incorrect. While 3-5 year goals may use OKR format (Objective + Key Results), the Key Results must still be specific and measurable."
+        text: "All five SMART criteria are clearly demonstrated"
+        feedback: "Incorrect. We cannot determine if it's Achievable (do they have time and skills?) or Relevant (does this align with their career vision?) without more context."
 
       - key: "D"
-        text: "Specificity reduces flexibility, which is why 'do your best' goals often work better"
-        feedback: "Incorrect. Research shows specific goals consistently outperform vague goals. While specificity does reduce flexibility, this focus is what drives performance."
+        text: "Measurable and Relevant only"
+        feedback: "Incorrect. While it's measurable, we can't determine relevance without knowing the student's career vision. The goal is also clearly specific and time-bound."
 
     general_feedback: |
-      The Specific component answers: What exactly? Which aspect? What outcome? This <b>clarity</b> (clearness, lack of ambiguity) activates the Direction mechanism from goal-setting theory—your attention and effort focus on particular activities. Example: 'Improve public speaking' (vague) vs. 'Deliver 8 presentations with 4.0/5.0 average feedback score by December 2026' (specific). The second version directs you toward presentation opportunities, feedback collection, and skill practice. See Week 11 slides 12-13.
+      Context matters when evaluating SMART goals. The same goal might be achievable for one student but unrealistic for another. In your PDP, explicitly address achievability and relevance. See Week 11 slides 12-13.
 
-  - id: "W11-Q6-smart-measurable"
+  - id: "w11-q06"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "SMART Goals Framework"
+    topic: "SMART Goals (SRL Integration)"
 
     question: |
-      How does the Measurable component of SMART goals support the Feedback moderator from goal-setting theory?
+      Martins van Jaarsveld et al. (2025) found that SMART goals fit within Zimmerman's Self-Regulated Learning (SRL) cycle. If a student sets a SMART goal to "Present at 2 NEU student conferences by June 2026," in which SRL phase would they be operating when they check their progress in March 2026 and realize they've only secured 1 presentation slot, so they need to apply to 3 more conferences?
 
     options:
       - key: "A"
-        text: "Measurement provides quantifiable progress indicators, enabling tracking and adjustment—which is the Feedback moderator"
-        feedback: "Correct! Measurable goals enable progress monitoring ('I've completed 3 of 8 presentations'), which provides feedback for strategy adjustment."
-        correct: true
+        text: "Forethought phase - goal-setting and planning"
+        feedback: "Incorrect. The forethought phase was when they initially set the goal. Checking progress and adjusting strategy occurs later."
 
       - key: "B"
-        text: "Measurable goals guarantee success because numbers are always accurate"
-        feedback: "Incorrect. Measurement enables tracking but doesn't guarantee success. You still need commitment, adequate ability, and effective strategies."
+        text: "Performance phase - self-monitoring and strategy adjustment"
+        feedback: "Correct! The student is self-monitoring their progress (1 of 2 secured) and adjusting strategy (apply to 3 more conferences). This is the performance phase."
+        correct: true
 
       - key: "C"
-        text: "The Measurable component replaces the need for feedback; once goals are measurable, external feedback is unnecessary"
-        feedback: "Incorrect. Measurable goals enable self-monitoring, but external feedback (from mentors, peers, supervisors) remains valuable for identifying blind spots."
+        text: "Reflection phase - self-evaluation and learning"
+        feedback: "Incorrect. The reflection phase will be after June when they evaluate overall success. Mid-course progress checks are performance phase activities."
 
       - key: "D"
-        text: "All goals must use numerical metrics; qualitative outcomes cannot be measured"
-        feedback: "Incorrect. While quantitative metrics are common, some goals have clear pass/fail criteria (e.g., 'Successfully defend thesis proposal') that are measurable without numbers."
+        text: "This activity is not part of the SRL cycle"
+        feedback: "Incorrect. Self-monitoring and strategy adjustment are core activities of the SRL performance phase."
 
     general_feedback: |
-      Measurable goals answer: How much? How many? How will I know when it's accomplished? This enables the Feedback moderator—you can track progress and adjust strategies. Without measurement, you can't tell if you're on track. Example: 'Network more' (unmeasurable) vs. 'Conduct 12 <b>informational interviews</b> (conversations with professionals to learn about their careers) by June 2026, tracking in spreadsheet' (measurable). The second version lets you monitor 'I've done 5/12 interviews' and accelerate if behind. See Week 11 slides 12 and 14.
+      This illustrates why your PDP needs accountability mechanisms. Self-monitoring and strategy adjustment are critical during the performance phase. In your PDP, specify how often you'll check progress and what you'll do if you're behind. See Week 11 slides 14-15.
 
-  - id: "W11-Q7-smart-pitfall"
-    type: "true_false"
-    bloom_level: "understanding"
-    topic: "SMART Goals Framework"
-
-    question: |
-      True or False: A goal that states "Complete 3 online courses in data analytics" is a fully SMART goal because it is specific about the number of courses (3) and the topic (data analytics).
-
-    options:
-      - key: "A"
-        text: "False"
-        feedback: "Correct! This goal measures ACTIVITY (completing courses) rather than ACHIEVEMENT (what you can do with the knowledge). It also lacks a deadline (Time-bound) and doesn't specify measurable outcomes beyond course completion."
-        correct: true
-
-      - key: "B"
-        text: "True"
-        feedback: "Incorrect. While the goal has some specificity (3 courses, data analytics topic), it falls into the 'Activity ≠ Achievement' pitfall. A better version: 'Complete 3 data analytics courses AND build a portfolio project analyzing Vietnam's e-commerce trends using Python by December 2026, published on GitHub.' This version specifies both learning AND application with a deadline."
-
-    general_feedback: |
-      Common pitfall: Measuring activity (inputs) rather than achievement (outputs). Completing courses is an activity; being able to APPLY data analytics skills is the achievement. A truly SMART goal specifies what you'll be able to DO differently, not just what you'll complete. Other missing components: no deadline (Time-bound), unclear how you'll demonstrate <b>competency</b> (ability to perform a skill). See Week 11 slide 19.
-
-  - id: "W11-Q8-okr-definition"
+  - id: "w11-q07"
     type: "multiple_choice"
     bloom_level: "remembering"
     topic: "OKR Framework"
 
     question: |
-      What are the two components of the OKR (Objectives and Key Results) framework?
+      In the OKR (Objectives and Key Results) framework, what is the relationship between Objectives and Key Results?
 
     options:
       - key: "A"
-        text: "Objective (qualitative aspiration) and Key Results (quantitative metrics proving achievement)"
-        feedback: "Correct! Objectives answer 'WHAT do I want to achieve?' (aspirational); Key Results answer 'HOW will I know I achieved it?' (measurable proof)."
+        text: "Objectives are qualitative aspirations; Key Results are quantitative measures of success"
+        feedback: "Correct! Objectives state WHAT you want to achieve (qualitative, aspirational), while Key Results define HOW you'll measure success (quantitative, specific metrics)."
         correct: true
 
       - key: "B"
-        text: "Overall goal and Key Resources needed to achieve it"
-        feedback: "Incorrect. OKR stands for Objectives and Key RESULTS (measurable outcomes), not Key Resources. Results are outcomes; resources are inputs."
+        text: "Objectives are short-term goals; Key Results are long-term goals"
+        feedback: "Incorrect. The distinction is not about time horizon but about qualitative (Objectives) vs. quantitative (Key Results)."
 
       - key: "C"
-        text: "Objective statement and Key Requirements for success"
-        feedback: "Incorrect. The R in OKR stands for Results (measurable outcomes), not Requirements. Key Results are how you measure achievement."
+        text: "Objectives are measurable targets; Key Results are action steps"
+        feedback: "Incorrect. This reverses the relationship. Objectives are aspirational; Key Results are the measurable targets that prove achievement."
 
       - key: "D"
-        text: "Outcome goals and Key Responsibilities assigned to team members"
-        feedback: "Incorrect. OKR is Objectives (aspirations) and Key Results (metrics), not responsibilities. OKRs can be individual or organizational."
+        text: "Objectives and Key Results are interchangeable terms for the same concept"
+        feedback: "Incorrect. They serve distinct functions: Objectives define aspiration; Key Results define evidence of achievement."
 
     general_feedback: |
-      OKR framework separates <b>aspiration</b> (the inspiring direction you're heading) from <b>measurement</b> (how you'll know you got there). Objective: Qualitative, inspiring (e.g., 'Become recognized expert in sustainable business strategy'). Key Results: Quantitative, measurable proof (e.g., 'Publish 3 articles, speak at 2 conferences, advise 5 companies'). Typically 2-5 Key Results per Objective. OKRs work well for 3-5 year goals where exact specificity is difficult. See Week 11 slides 12 and 21.
+      Example - Objective: "Become a confident public speaker." Key Results: "Complete 10 Toastmasters speeches," "Achieve 4/5 average evaluation score," "Present at 2 conferences." See Week 11 slide 16.
 
-  - id: "W11-Q9-okr-vs-smart"
+  - id: "w11-q08"
     type: "multiple_choice"
     bloom_level: "understanding"
     topic: "OKR Framework"
 
     question: |
-      How do OKRs differ from SMART goals in structure and purpose?
+      A student creates this OKR: Objective: "Become a confident public speaker" with Key Results: (1) Complete Toastmasters program (10 speeches), (2) Receive average evaluation score of 4/5 or higher, (3) Present at 2 NEU conferences. According to Al-Saadi et al.'s (2023) research on OKR implementation, what is the primary value of structuring goals this way rather than just listing action items?
 
     options:
       - key: "A"
-        text: "SMART goals are flat (individual independent goals); OKRs are hierarchical (one Objective with multiple Key Results that ladder up to it)"
-        feedback: "Correct! SMART goals stand alone; OKRs show how multiple measurable outcomes (Key Results) connect to a larger aspiration (Objective)."
-        correct: true
+        text: "It makes the goal easier to achieve by breaking it into smaller parts"
+        feedback: "Incorrect. OKRs don't necessarily make goals easier—they create alignment between aspiration and measurable evidence of achievement."
 
       - key: "B"
-        text: "SMART goals are for short-term planning; OKRs are completely different and cannot be used together"
-        feedback: "Incorrect. SMART and OKR frameworks are complementary. Best practice: Use SMART for 1-year goals, OKR for 3-5 year goals, and Key Results are essentially SMART goals."
+        text: "It creates alignment between aspirational vision and concrete evidence of achievement"
+        feedback: "Correct! The OKR framework aligns what you aspire to achieve (confident speaker) with how you'll prove you've achieved it (10 speeches, 4/5 scores, 2 conferences)."
+        correct: true
 
       - key: "C"
-        text: "OKRs are superior to SMART goals and should always be used instead"
-        feedback: "Incorrect. The frameworks serve different purposes. OKRs provide architecture (connecting multiple goals to broader objectives); SMART ensures individual goals are well-formed."
+        text: "It allows for more flexibility in changing your goals over time"
+        feedback: "Incorrect. OKRs provide structure and commitment, not primarily flexibility. The value is in clear success metrics."
 
       - key: "D"
-        text: "SMART goals require measurement; OKRs do not because Objectives are qualitative"
-        feedback: "Incorrect. While Objectives are qualitative, Key Results MUST be quantitative and measurable. OKRs actually require rigorous measurement through Key Results."
+        text: "It reduces the need for feedback and progress monitoring"
+        feedback: "Incorrect. OKRs actually increase the need for monitoring because Key Results require tracking."
 
     general_feedback: |
-      SMART goals are <b>flat</b> (having no hierarchy or layers) — each goal is independent. OKRs are <b>hierarchical</b> (organized in levels or layers) — multiple Key Results connect to one Objective. Best practice for PDPs: Use BOTH. 1-year: 3 SMART goals. 3-year: 1 Objective + 2-3 Key Results (which are SMART goals). 5-year: 1 Objective + 1-2 Key Results. The OKR structure shows PROGRESSION across time horizons. See Week 11 slide 22.
+      This alignment addresses the "how will I know I've succeeded?" question that vague aspirations leave unanswered. When you can't think of measurable Key Results, your Objective may be too vague. See Week 11 slides 17-18.
 
-  - id: "W11-Q10-okr-achievement"
-    type: "true_false"
+  - id: "w11-q09"
+    type: "multiple_choice"
     bloom_level: "understanding"
     topic: "OKR Framework"
 
     question: |
-      True or False: In the OKR framework, achieving 100% of your Key Results indicates your Objective was optimally ambitious.
+      Al-Saadi et al. (2023) identified that OKR implementation requires training for both goal-setters and evaluators. For personal development plans, you are both the goal-setter and evaluator. A common challenge is setting Key Results that are too easy (100% confidence you'll achieve them). According to OKR philosophy discussed in the lecture, what confidence level suggests appropriately ambitious Key Results?
 
     options:
       - key: "A"
-        text: "False"
-        feedback: "Correct! Google's OKR philosophy: If you achieve 100% of Key Results, your Objective wasn't ambitious enough. Target 60-70% achievement to encourage stretch thinking."
-        correct: true
+        text: "30-40% confidence (very ambitious, high risk)"
+        feedback: "Incorrect. 30-40% confidence is too risky and may lead to demotivation when goals aren't achieved."
 
       - key: "B"
-        text: "True"
-        feedback: "Incorrect. OKRs are designed to be ambitious—60-70% achievement is considered success. Achieving 100% suggests the Key Results weren't sufficiently challenging. The purpose is to stretch capabilities, not guarantee 100% completion."
+        text: "50-60% confidence (moderate stretch)"
+        feedback: "Incorrect. While a stretch, OKR philosophy specifically targets 70% confidence as the optimal level."
+
+      - key: "C"
+        text: "70% confidence (challenging but achievable)"
+        feedback: "Correct! OKR philosophy suggests 70% confidence is the sweet spot—you're stretching beyond what's easy, but you genuinely believe the Key Results are achievable with focused effort."
+        correct: true
+
+      - key: "D"
+        text: "90-100% confidence (highly achievable)"
+        feedback: "Incorrect. If you're 100% certain, you're not being ambitious enough to drive growth. Goals should stretch you."
 
     general_feedback: |
-      OKRs embrace <b>ambitious</b> (challenging, requiring significant effort) goal-setting. Achieving 60-70% of Key Results means the Objective pushed you beyond your comfort zone—which drives growth. This differs from academic grading where 60-70% is poor performance. In OKR context, 100% achievement suggests you played it safe. For your PDP: It's okay if your 5-year Objective feels audacious—that's intentional. See Week 11 slides 12 and 21.
+      Apply the 70% confidence test to your PDP goals. If the answer is 90-100%, increase the challenge. If the answer is 30-40%, scale back or extend the timeline. See Week 11 slide 19.
 
-  - id: "W11-Q11-swot-quadrants"
+  - id: "w11-q10"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Personal SWOT Analysis"
+    topic: "Career Roadmapping"
 
     question: |
-      What are the four quadrants of a personal SWOT analysis?
+      According to the lecture, what is the recommended level of specificity for 1-year, 3-year, and 5-year career goals in a Personal Development Plan?
 
     options:
       - key: "A"
-        text: "Strengths (internal positive), Weaknesses (internal negative), Opportunities (external positive), Threats (external negative)"
-        feedback: "Correct! SWOT divides factors into internal (you control) vs. external (environmental), and positive (advantages) vs. negative (challenges)."
-        correct: true
+        text: "All three horizons should have equal detail with month-by-month planning"
+        feedback: "Incorrect. Uncertainty increases over time, so long-term goals should be less specific to accommodate unpredictable circumstances."
 
       - key: "B"
-        text: "Skills, Work Experience, Opportunities, Training Needs"
-        feedback: "Incorrect. This describes career development components, not SWOT quadrants. SWOT is: Strengths, Weaknesses, Opportunities, Threats."
+        text: "1-year: high specificity; 3-year: medium specificity; 5-year: lower specificity"
+        feedback: "Correct! Specificity decreases as the timeline extends because uncertainty increases—you can't predict circumstances five years out with precision."
+        correct: true
 
       - key: "C"
-        text: "Self-Assessment, Work Values, Objectives, Timeline"
-        feedback: "Incorrect. These are PDP components, not SWOT quadrants. SWOT analyzes: Strengths, Weaknesses, Opportunities, Threats."
+        text: "5-year goals should be most specific since they're most important"
+        feedback: "Incorrect. 5-year goals should be aspirational/directional because you cannot predict exact circumstances that far in advance."
 
       - key: "D"
-        text: "Strengths, Weaknesses, Objectives, Resources"
-        feedback: "Incorrect. The S and W are correct, but O = Opportunities (not Objectives) and T = Threats (not Resources)."
+        text: "Only 1-year goals need specific planning; 3- and 5-year goals are optional"
+        feedback: "Incorrect. All three horizons are important—they just require different levels of specificity appropriate to their timeframe."
 
     general_feedback: |
-      SWOT divides factors into two dimensions: <b>Internal vs. External</b> (within your control or in the environment) and <b>Positive vs. Negative</b> (advantages or challenges). Strengths/Weaknesses are internal (your skills, traits). Opportunities/Threats are external (market trends, competition). For PDPs: Strengths come from self-assessments (VIA, CliftonStrengths, MBTI); Opportunities come from labor market research (Vietnam digital economy growth, AI-era skills demand). See Week 11 slides 15 and 21.
+      1-year goals should be highly detailed (month-by-month), 3-year goals should be directional (quarterly milestones), and 5-year goals should be aspirational (annual goals). See Week 11 slides 20-21.
 
-  - id: "W11-Q12-swot-application"
+  - id: "w11-q11"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Personal SWOT Analysis"
+    topic: "Career Roadmapping"
 
     question: |
-      How should personal SWOT analysis inform goal-setting in a Personal Development Plan?
+      A student's 1-year roadmap is appropriate, but their 5-year goal states: "In May 2030, be employed as Senior Marketing Analyst at Google Vietnam office in Ho Chi Minh City, managing a team of 3-4 junior analysts, with salary of 45 million VND per month." According to the lecture's guidance on career roadmapping, what is the problem with this 5-year goal?
 
     options:
       - key: "A"
-        text: "Goals should leverage Strengths, address Weaknesses, capture Opportunities, and mitigate Threats"
-        feedback: "Correct! SWOT grounds goals in reality—using advantages you have, developing gaps, seizing market opportunities, and preparing for challenges."
-        correct: true
+        text: "It's too ambitious and unrealistic for someone just starting their career"
+        feedback: "Incorrect. The problem isn't ambition level—it's the false precision about circumstances you cannot predict or control."
 
       - key: "B"
-        text: "SWOT is only for self-reflection; it should not influence goals because goals should focus on aspirations regardless of current strengths"
-        feedback: "Incorrect. While goals should be ambitious, they must be grounded in reality. Ignoring SWOT leads to unrealistic goals that violate the Achievable criterion of SMART."
+        text: "It's overly specific about circumstances you cannot control or predict five years out"
+        feedback: "Correct! You cannot predict which exact company will hire you, exact team size, or exact salary five years in advance. A better approach: specify level, field, environment, and responsibilities without false precision."
+        correct: true
 
       - key: "C"
-        text: "Goals should only focus on Weaknesses because Strengths are already developed and don't need attention"
-        feedback: "Incorrect. Effective development leverages Strengths (what you naturally do well) while also addressing critical Weaknesses. Research shows playing to strengths increases engagement and success."
+        text: "It doesn't connect logically to the 1-year goals"
+        feedback: "Incorrect. The question states the 1-year roadmap is appropriate. The issue is with the 5-year goal's specificity level."
 
       - key: "D"
-        text: "Opportunities and Threats should be ignored in personal planning because they are external and unpredictable"
-        feedback: "Incorrect. External factors shape career viability. Goals must align with market realities (Opportunities) and prepare for challenges (Threats). Example: Ignoring AI disruption (Threat) leads to obsolete career plans."
+        text: "It should include more detail about specific projects and responsibilities"
+        feedback: "Incorrect. The goal already has too much detail. Adding more would compound the problem of false precision."
 
     general_feedback: |
-      SWOT creates a <b>strategic foundation</b> (reality-based starting point) for goal-setting. Example: Strength = 'Strong analytical thinking (VIA Judgment + CliftonStrengths Analytical)'; Opportunity = 'Data analytics demand in Vietnam growing 25% annually'; Goal = 'Complete Google Data Analytics certification and apply skills in 2 business intelligence projects by December 2026' (leverages strength + captures opportunity). Goals disconnected from SWOT are <b>wishful thinking</b> (hoping without basis in reality). See Week 11 slides 15 and 21.
+      A better 5-year goal: "Senior Marketing Analyst position at international tech company, leading projects and mentoring junior team members." Specify level, field, environment, and responsibilities—but don't pretend you can predict exactly where. See Week 11 slides 22-23.
+
+  - id: "w11-q12"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Career Roadmapping"
+
+    question: |
+      According to goal-setting theory and the lecture's framework for career roadmapping, why might it be strategic to set "learning goals" for 3-year horizons and "performance goals" for 1-year horizons?
+
+    options:
+      - key: "A"
+        text: "Learning goals are always more important than performance goals"
+        feedback: "Incorrect. Both types are important—the question is about when each type is most appropriate, not which is more important."
+
+      - key: "B"
+        text: "Performance goals are too simple for 3-year planning"
+        feedback: "Incorrect. Performance goals aren't 'too simple'—they're just more appropriate for demonstrating current capabilities in shorter timeframes."
+
+      - key: "C"
+        text: "Learning goals support skill acquisition for complex future roles; performance goals focus on demonstrating current capabilities"
+        feedback: "Correct! Learning goals focus on skill acquisition for 3-year horizons where you're developing expertise for future roles. Performance goals focus on demonstrating competence in current capabilities for 1-year execution."
+        correct: true
+
+      - key: "D"
+        text: "Three-year goals should avoid any focus on skills development"
+        feedback: "Incorrect. Skills development is exactly what 3-year learning goals should focus on—building capabilities for future roles."
+
+    general_feedback: |
+      This progression—perform with current skills (Year 1) → develop new capabilities (Years 2-3) → leverage advanced expertise (Years 4-5)—creates a logical development arc in your PDP. See Week 11 slide 24.
 ---

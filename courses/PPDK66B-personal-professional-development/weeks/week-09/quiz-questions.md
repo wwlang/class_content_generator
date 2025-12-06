@@ -2,355 +2,355 @@
 metadata:
   week: 9
   topic: "Growth Mindset & Adaptability"
-  prepares_for: "Personal Development Plan (Week 11), Final Oral Exam"
+  prepares_for: "Personal Development Plan (40%), Mentorship Program (20%)"
   source: "lecture-content.md"
 
 questions:
-  - id: "W9-Q1-mindset-definition"
+  - id: "w9-q01"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Growth vs. Fixed Mindset"
+    topic: "Fixed vs. Growth Mindset (Dweck & Yeager, 2019)"
 
     question: |
-      According to Carol Dweck's research, what is the fundamental difference between fixed and growth mindsets?
+      According to Dweck and Yeager (2019), what is a mindset?
 
     options:
       - key: "A"
-        text: "Fixed mindset believes abilities are static and unchangeable; growth mindset believes abilities can be developed through effort and learning"
-        feedback: "Correct! This is the core distinction in Dweck's mindset theory—whether you view abilities as fixed traits or developable capacities."
+        text: "A 'meaning system' - a set of beliefs that creates coherent patterns of goals, beliefs about effort, attributions, and behaviors"
+        feedback: "Correct! Dweck and Yeager (2019) define mindset as a 'meaning system' - not an isolated belief, but a coherent set of beliefs that shapes goals (performance vs. learning), beliefs about effort (sign of weakness vs. path to mastery), attributions (fixed ability vs. improvable strategy), and behaviors (avoid challenges vs. seek challenges). Mindsets are belief systems, not personality traits or emotional states, and importantly, they can be changed."
         correct: true
 
       - key: "B"
-        text: "Fixed mindset focuses on short-term goals; growth mindset focuses on long-term goals"
-        feedback: "Incorrect. While growth mindset may support long-term development, the distinction is about whether abilities are changeable, not goal timelines."
+        text: "A personality trait that determines whether someone is optimistic or pessimistic"
+        feedback: "Incorrect. Mindsets are not personality traits but belief systems. A mindset is a coherent set of beliefs about whether abilities are fixed or developable, and it shapes goals, effort beliefs, attributions, and behaviors."
 
       - key: "C"
-        text: "Fixed mindset means you never fail; growth mindset means you embrace failure"
-        feedback: "Incorrect. Fixed mindset doesn't prevent failure—it changes how you interpret failure (as permanent verdict vs. temporary feedback)."
+        text: "An innate characteristic that cannot be changed throughout a person's lifetime"
+        feedback: "Incorrect. This description contradicts the core finding of mindset research - mindsets CAN be changed. They are beliefs, not innate fixed characteristics."
 
       - key: "D"
-        text: "Fixed mindset is pessimistic thinking; growth mindset is positive thinking"
-        feedback: "Incorrect. Growth mindset isn't just positive thinking—it's the belief that strategic effort develops abilities. It requires action, not just optimism."
+        text: "A temporary emotional state influenced by recent successes or failures"
+        feedback: "Incorrect. Mindsets are not temporary emotional states but relatively stable belief systems about whether abilities can be developed. However, they can be changed through intervention."
 
     general_feedback: |
-      Dweck defines **fixed mindset** as the belief that abilities are innate and unchangeable—you're either good at something or you're not. **Growth mindset** is the belief that abilities are developable through effort, effective strategies, and help-seeking. This distinction shapes how you approach challenges, interpret failure, and respond to feedback. Growth mindset doesn't mean "everyone can do anything"—it means abilities can develop with strategic work. See Week 9 slides 5-7.
+      Understanding mindset as a belief system rather than a fixed trait is crucial for your Personal Development Plan. This means you can actively work to shift your mindset in domains where you currently hold fixed beliefs. As you design your PDP goals, consider: Are you setting goals that reflect belief in your ability to develop new capabilities, or are you limiting yourself to areas where you already feel confident?
 
-  - id: "W9-Q2-mindset-meaning-system"
+  - id: "w9-q02"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Growth vs. Fixed Mindset"
+    topic: "Fixed vs. Growth Mindset (Dweck & Yeager, 2019)"
 
     question: |
-      How does mindset create a "meaning system" that affects behavior?
+      Maria receives a 55% on her first business case analysis. She thinks: "I studied hard but still failed. I must not have the analytical ability for business. Maybe I should avoid advanced strategy courses." What mindset pattern is Maria demonstrating?
 
     options:
       - key: "A"
-        text: "Mindset shapes your goals (performance vs. learning), effort beliefs (threat vs. path to growth), and responses to setbacks (give up vs. adjust strategy)"
-        feedback: "Correct! Mindset isn't just a belief—it creates coherent patterns of goals, effort interpretation, and behavioral responses to challenges."
+        text: "Fixed mindset: She attributes failure to lack of innate ability, feels helpless, and plans to avoid future challenges"
+        feedback: "Correct! Maria demonstrates classic fixed mindset pattern: (1) Attributes failure to fixed trait ('I don't have the analytical ability'), (2) Views effort as evidence of inadequacy ('I studied hard but still failed' implies effort should have been enough if she had ability), (3) Experiences helpless response to setback, (4) Plans to avoid similar challenges. In growth mindset, she would interpret the 55% as feedback that her current strategies aren't working and seek to improve her approach rather than avoid the domain."
         correct: true
 
       - key: "B"
-        text: "Mindset determines your personality type and cannot be changed"
-        feedback: "Incorrect. Mindset is distinct from personality and CAN be changed through awareness and practice. You're not 'a fixed mindset person.'"
+        text: "Growth mindset: She is being realistic about her current abilities and making strategic course choices"
+        feedback: "Incorrect. This is not growth mindset - it's fixed mindset rationalized as 'being realistic.' Growth mindset would reframe this as 'My current strategies aren't effective; I need to try different approaches' rather than avoiding the domain entirely."
 
       - key: "C"
-        text: "Mindset only affects your thoughts, not your actual behavior"
-        feedback: "Incorrect. Research shows mindset directly affects behavior—whether you seek challenges, persist after failure, and seek feedback."
+        text: "Mixed mindset: She acknowledges effort but needs to try harder next time"
+        feedback: "Incorrect. Maria isn't acknowledging that effort could lead to improvement - she's concluding that effort proved she lacks ability. This is fixed mindset, not mixed."
 
       - key: "D"
-        text: "Mindset creates meaning only in academic contexts, not professional ones"
-        feedback: "Incorrect. Mindset research spans 74 nations and affects career outcomes including challenge-seeking, persistence, and career advancement."
+        text: "Performance mindset: She is appropriately focused on achieving good grades"
+        feedback: "Incorrect. The problem isn't grade focus - it's that she attributes the grade to fixed ability rather than improvable strategy, and plans to avoid challenges. This is fixed mindset."
 
     general_feedback: |
-      Dweck & Yeager (2019) describe mindset as a **meaning system** that creates coherent patterns. Fixed mindset leads to **performance goals** (look smart), viewing **effort as evidence of inadequacy**, and **giving up after setbacks**. Growth mindset leads to **learning goals** (become smarter), viewing **effort as path to mastery**, and **persisting with new strategies** after setbacks. Your mindset shapes whether you avoid or embrace challenges throughout your career. See Week 9 slide 6.
+      This scenario likely resonates with challenges you've faced in your own studies. When you encounter disappointing results despite effort, your mindset determines your next steps. Fixed mindset leads to avoidance; growth mindset leads to strategy adjustment. In your mentorship meetings, discuss with your mentor how they've responded to setbacks in their career - you'll likely find that successful professionals view failure as feedback, not verdict.
 
-  - id: "W9-Q3-nslm-evidence"
+  - id: "w9-q03"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Growth Mindset Research Evidence"
+    topic: "Fixed vs. Growth Mindset (Dweck, 2019)"
 
     question: |
-      What did the National Study of Learning Mindsets (NSLM) demonstrate about growth mindset interventions?
+      Which of the following represents an effective growth mindset reframing, according to Dweck's research?
 
     options:
       - key: "A"
-        text: "A short intervention (<1 hour) teaching that intelligence is developable improved grades and increased advanced course enrollment, especially for lower-achieving students"
-        feedback: "Correct! The NSLM is the largest mindset study (12,000+ students) and showed that brief interventions can change behavior by changing beliefs."
+        text: "I haven't yet developed strong public speaking skills, but I can improve through Toastmasters practice, recording myself for feedback, and learning from experienced speakers"
+        feedback: "Correct! Effective growth mindset reframing includes: (1) Acknowledges current reality ('haven't yet developed'), (2) Implies future possibility ('but I can improve'), (3) Specifies concrete actions combining effort + strategy + help-seeking (Toastmasters, self-recording, learning from others). This is realistic optimism with actionable strategies, not naive positivity."
         correct: true
 
       - key: "B"
-        text: "Only students who already had high intelligence benefited from growth mindset teaching"
-        feedback: "Incorrect. The opposite is true—effects were strongest for lower-achieving students who needed to develop skills most."
+        text: "I'm naturally talented at public speaking - I just need to believe in myself more"
+        feedback: "Incorrect. This represents 'false growth mindset' - it denies current reality and focuses on positive thinking rather than concrete strategies. True growth mindset acknowledges where you are and specifies how to develop."
 
       - key: "C"
-        text: "Growth mindset interventions require years of therapy to be effective"
-        feedback: "Incorrect. The NSLM intervention was less than 1 hour and produced lasting behavioral changes. It's about changing beliefs, not extensive therapy."
+        text: "If I just try harder at public speaking, everything will work out fine"
+        feedback: "Incorrect. This focuses only on effort without strategy or help-seeking. Dweck emphasizes that effort + effective strategies + help-seeking are all necessary, not just trying harder."
 
       - key: "D"
-        text: "Growth mindset only works for children, not adults"
-        feedback: "Incorrect. While the NSLM studied ninth graders, neuroplasticity research shows adults can develop new skills throughout their lifespan."
+        text: "Anyone can become a world-class public speaker if they work hard enough"
+        feedback: "Incorrect. This makes unrealistic claims that ignore real constraints. True growth mindset is about developing capabilities within realistic constraints, not claiming anyone can achieve anything."
 
     general_feedback: |
-      The **National Study of Learning Mindsets** (Dweck & Yeager, 2019) tested a 45-minute online intervention with over 12,000 ninth graders across 65 U.S. schools. Students learned that intelligence is developable through effort, strategies, and help-seeking. Results showed **improved grades** (equivalent to moving from B- to B+), **increased enrollment in advanced courses**, and **effects that persisted over time**. Critically, effects were strongest for lower-achieving students. This demonstrates that changing core beliefs about ability can change behavior and outcomes. See Week 9 slide 8.
+      As you work on your Personal Development Plan, ensure your goal statements follow this pattern: acknowledge where you are now, express belief in development potential, and specify concrete strategies (effort + approaches + help-seeking). Vague statements like 'I will improve my leadership' are less effective than 'I will develop leadership capabilities through leading 2 group projects, reading Leaders Eat Last, and seeking monthly feedback from my mentor.'
 
-  - id: "W9-Q4-neuroplasticity"
+  - id: "w9-q04"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Neuroplasticity"
+
+    question: |
+      What is neuroplasticity?
+
+    options:
+      - key: "A"
+        text: "The brain's ability to reorganize itself by forming new neural connections throughout life"
+        feedback: "Correct! Neuroplasticity is the brain's ability to reorganize and form new neural connections throughout the entire lifespan, not just in childhood. This is the scientific foundation for growth mindset - abilities genuinely can be developed because the brain physically changes through practice."
+        correct: true
+
+      - key: "B"
+        text: "The fixed neural structure that determines intelligence at birth"
+        feedback: "Incorrect. This describes the opposite of neuroplasticity - the 20th century belief that the brain was essentially fixed. Neuroplasticity shows the brain is changeable throughout life."
+
+      - key: "C"
+        text: "The process by which the brain stops developing after age 25"
+        feedback: "Incorrect. Neuroplasticity demonstrates that the brain continues forming new connections throughout life, not just until age 25."
+
+      - key: "D"
+        text: "A temporary change in brain chemistry caused by learning new information"
+        feedback: "Incorrect. Neuroplasticity involves structural changes (new synaptic connections, myelin thickening) not just temporary chemical changes."
+
+    general_feedback: |
+      Neuroplasticity provides the biological basis for believing that you can develop new capabilities. When you practice a skill - whether it's Excel analysis, networking, or strategic thinking - you're not just 'getting better' in an abstract sense. You're physically changing your brain's structure. This scientific reality should give you confidence as you pursue stretch goals in your Personal Development Plan. The skills that feel foreign today can become strengths through sustained, deliberate practice.
+
+  - id: "w9-q05"
     type: "multiple_choice"
     bloom_level: "understanding"
     topic: "Neuroplasticity"
 
     question: |
-      What does neuroplasticity research tell us about learning and skill development?
+      A student practices creating Excel pivot tables repeatedly over several weeks. Initially, it takes intense concentration and 30 minutes. Eventually, it becomes semi-automatic and takes 5 minutes. What neuroplastic changes best explain this improvement?
 
     options:
       - key: "A"
-        text: "The brain forms new neural connections when learning; repeated practice strengthens these pathways, meaning abilities develop through use across your lifespan"
-        feedback: "Correct! Neuroplasticity is the scientific foundation supporting growth mindset—your brain literally changes structure when you learn."
+        text: "Synaptic connections strengthen through long-term potentiation, myelin sheaths thicken around frequently-used pathways, and neural networks optimize for efficiency"
+        feedback: "Correct! This scenario illustrates neuroplasticity in action: (1) Repeated practice causes neurons that fire together to wire together (long-term potentiation strengthens synaptic connections), (2) Myelin sheaths (fatty insulation) thicken around frequently used neural pathways, speeding signal transmission, (3) Neural networks become more efficient and optimized through use. The skill becomes 'automatic' because the brain has physically restructured."
         correct: true
 
       - key: "B"
-        text: "Brain development stops after age 25, so you can only use existing abilities"
-        feedback: "Incorrect. While some aspects of brain development complete around age 25, neuroplasticity continues throughout life. Adults can learn new skills."
+        text: "The student's innate Excel ability finally revealed itself after initial practice removed performance anxiety"
+        feedback: "Incorrect. This is fixed mindset thinking - attributing skill development to innate ability rather than neuroplastic changes from practice."
 
       - key: "C"
-        text: "Only people with high IQ can benefit from neuroplasticity"
-        feedback: "Incorrect. Neuroplasticity is a universal brain feature. Everyone's brain forms new connections when learning, regardless of IQ."
+        text: "Muscle memory in the hands and fingers developed, making the physical movements automatic"
+        feedback: "Incorrect. While motor skills play a role, the primary changes are neural (brain restructuring), not just muscular."
 
       - key: "D"
-        text: "Neuroplasticity means learning should always be easy and effortless"
-        feedback: "Incorrect. The opposite is true—struggle and challenge drive neural growth. Difficulty is the mechanism of development, not evidence of inability."
+        text: "The student memorized the exact steps, requiring no actual brain changes, just better recall"
+        feedback: "Incorrect. Mere memorization doesn't explain the efficiency gains. The brain physically restructures through neuroplastic changes, not just improved recall."
 
     general_feedback: |
-      **Neuroplasticity** is the brain's ability to reorganize and strengthen neural connections through experience. When you practice a skill, neurons fire and form pathways. **Repeated practice strengthens these connections** through myelination (making signals travel faster). This means abilities are not fixed at birth—they develop through use. The struggle you feel when learning something difficult is your brain forming new connections. This is why **"your brain is like a muscle"** is scientifically accurate. Neuroplasticity supports reskilling and career transitions at any age. See Week 9 slides 11-14.
+      This principle applies to ANY skill you want to develop for your career. The initial phase of learning always feels effortful and slow - that's your brain forming new neural connections. With sustained practice, those connections strengthen and the skill becomes more automatic. When you're struggling to learn something new (maybe data analytics, presentation skills, or a foreign language), remember: the struggle IS the learning. Your brain is restructuring. Persist through the difficult phase, and neuroplasticity will do its work.
 
-  - id: "W9-Q5-failure-interpretation"
-    type: "multiple_choice"
-    bloom_level: "applying"
-    topic: "Learning from Failure"
-
-    question: |
-      You receive a D grade on an important exam. Which response demonstrates growth mindset?
-
-    options:
-      - key: "A"
-        text: "\"This study strategy didn't work. I need to use active recall instead of passive reading, form a study group, and attend office hours before the next exam.\""
-        feedback: "Correct! This reframes failure as feedback about strategy (controllable) rather than ability (perceived as fixed). It leads to specific adjustments."
-        correct: true
-
-      - key: "B"
-        text: "\"I'm just not smart enough for this subject. I should change my major.\""
-        feedback: "Incorrect. This is fixed mindset—interpreting the grade as permanent verdict on ability rather than feedback on strategy."
-
-      - key: "C"
-        text: "\"The professor is unfair and grades too harshly. There's nothing I can do.\""
-        feedback: "Incorrect. While external factors can exist, attributing everything externally prevents learning and improvement. Focus on controllable factors."
-
-      - key: "D"
-        text: "\"I worked really hard, so the D is okay because effort is all that matters.\""
-        feedback: "Incorrect. This is 'false growth mindset'—effort without effective strategy doesn't produce results. You need to adjust your approach, not just try harder."
-
-    general_feedback: |
-      Growth mindset interprets failure as **feedback about strategy**, not **verdict about ability**. The Failure Analysis Framework separates **controllable factors** (study methods, time management, preparation) from **uncontrollable factors** (professor difficulty, test format). Fixed mindset says "I failed → I'm inadequate." Growth mindset says "This approach didn't work → I need different strategies." The Vietnamese proverb "Thất bại là mẹ thành công" (Failure is the mother of success) reflects this growth-oriented interpretation. See Week 9 slides 16-19.
-
-  - id: "W9-Q6-false-growth-mindset"
-    type: "multiple_choice"
-    bloom_level: "evaluating"
-    topic: "False Growth Mindset"
-
-    question: |
-      Which statement represents "false growth mindset" rather than authentic growth mindset?
-
-    options:
-      - key: "A"
-        text: "\"You worked so hard on this project! Great effort!\" (said to someone whose ineffective strategy produced poor results)"
-        feedback: "Correct! This is false growth mindset—praising effort regardless of strategy or outcomes. Real growth mindset praises effective processes, not just effort."
-        correct: true
-
-      - key: "B"
-        text: "\"I see you tried a new strategy—breaking the material into chunks and using practice tests. That approach paid off with better results.\""
-        feedback: "Incorrect. This is AUTHENTIC growth mindset—praising process (effort + effective strategy) and linking it to outcomes."
-
-      - key: "C"
-        text: "\"You can develop this skill through strategic effort, though external factors also affect outcomes.\""
-        feedback: "Incorrect. This is authentic growth mindset—acknowledging that abilities are developable while recognizing real constraints."
-
-      - key: "D"
-        text: "\"You struggled with this because your current strategy wasn't effective. Let's try active learning techniques instead of passive reading.\""
-        feedback: "Incorrect. This is authentic growth mindset—attributing difficulty to strategy (changeable) and suggesting specific adjustments."
-
-    general_feedback: |
-      Dweck warns against **false growth mindset**: (1) **Just praising effort** regardless of strategy or outcomes—effort without effective approaches doesn't produce growth; (2) **"Everyone can do anything"** oversimplification—ignoring real constraints and resources; (3) **Positive thinking without action**—saying "I believe I can improve" without actually changing strategies or seeking help. **Authentic growth mindset** = believing abilities develop through **effort + effective strategies + help-seeking**, not effort alone. See Week 9 slide 27.
-
-  - id: "W9-Q7-dweck-controversy-response"
-    type: "multiple_choice"
-    bloom_level: "analyzing"
-    topic: "Learning from Failure - Dweck Example"
-
-    question: |
-      When researchers questioned whether growth mindset interventions work (2016-2018), how did Carol Dweck respond, and what does this demonstrate?
-
-    options:
-      - key: "A"
-        text: "She asked \"What can we learn from this controversy?\" and conducted larger, pre-registered replications—demonstrating growth mindset by learning from criticism"
-        feedback: "Correct! Dweck practiced what she preaches—treating criticism as feedback for improvement rather than threat to defend against."
-        correct: true
-
-      - key: "B"
-        text: "She defended her original theory and dismissed critics as wrong"
-        feedback: "Incorrect. This would be fixed mindset (protecting ego). Instead, she acknowledged limitations and improved interventions based on feedback."
-
-      - key: "C"
-        text: "She abandoned mindset research entirely because of the criticism"
-        feedback: "Incorrect. She persisted but adjusted her approach—growth mindset means persistence with strategic adjustment, not giving up."
-
-      - key: "D"
-        text: "She ignored the controversy and continued with the same interventions"
-        feedback: "Incorrect. She actively engaged with criticism, identified 'false growth mindset' problems, and improved interventions. Growth mindset requires strategic adjustment."
-
-    general_feedback: |
-      When mindset research faced criticism, Dweck demonstrated **growth mindset in action**. Instead of defensive fixed mindset ("My theory is being attacked"), she asked **"What can we learn?"** She acknowledged **limitations in some implementations**, identified **"false growth mindset"** as a problem, conducted **larger pre-registered replications** to address concerns, and **improved interventions** based on feedback (Yeager & Dweck, 2020). This is the essence of growth mindset: treating challenges and criticism as opportunities to learn and improve. See Week 9 slide 17.
-
-  - id: "W9-Q8-reskilling-definition"
+  - id: "w9-q06"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Reskilling and Career Adaptability"
+    topic: "Neuroplasticity"
 
     question: |
-      What is the difference between upskilling and reskilling, and why do both require growth mindset?
+      According to research on neuroplasticity, which practice approach is most likely to drive meaningful neural changes?
 
     options:
       - key: "A"
-        text: "Upskilling develops new skills within your current field; reskilling learns skills for a different role. Both require believing you CAN learn what you don't currently know"
-        feedback: "Correct! Both require growth mindset—the belief that abilities are developable through strategic effort, whether deepening existing expertise or pivoting to new domains."
+        text: "Focused, effortful, challenging practice with specific skills, requiring sustained attention and pushing current capabilities"
+        feedback: "Correct! Neuroplasticity research shows that meaningful neural changes require: (1) Focused attention (not distracted or passive), (2) Effortful practice (pushing current capabilities creates neural demand), (3) Specificity (practicing the exact skill you want to develop), (4) Challenge (too-easy practice doesn't drive neural adaptation). This connects to growth mindset's emphasis on embracing challenges."
         correct: true
 
       - key: "B"
-        text: "Upskilling is for young professionals; reskilling is for people over 40"
-        feedback: "Incorrect. Age doesn't determine which type you need. Upskilling and reskilling are defined by whether you're developing within your field or pivoting to a new one."
+        text: "Easy, relaxed practice of skills already mastered, repeated frequently for reinforcement"
+        feedback: "Incorrect. Simply repeating mastered skills doesn't create sufficient neural demand to drive significant neuroplastic change. Challenge is necessary."
 
       - key: "C"
-        text: "Upskilling is easy and quick; reskilling is impossible for most people"
-        feedback: "Incorrect. Both can be challenging, and neuroplasticity research shows reskilling is neurologically possible at any age with strategic effort."
+        text: "General brain training games that supposedly improve overall cognitive function"
+        feedback: "Incorrect. Research shows general brain training doesn't transfer to specific skills. Neuroplasticity requires practicing the specific skill you want to develop."
 
       - key: "D"
-        text: "Upskilling requires growth mindset; reskilling requires fixed mindset"
-        feedback: "Incorrect. Both require growth mindset! Reskilling especially requires believing you can develop abilities outside your current expertise."
+        text: "Passive exposure to information through reading or watching, without active practice"
+        feedback: "Incorrect. Passive exposure doesn't create the neural demand needed for neuroplastic change. Focused, effortful, active practice is required."
 
     general_feedback: |
-      **Upskilling** = developing new skills within your current field (e.g., accountant learns data analytics, marketer learns AI tools). **Reskilling** = learning skills for a different role or career (e.g., teacher transitions to corporate training, engineer moves to product management). The **World Economic Forum (2025)** reports 23% of jobs will change in the next 5 years, with average skill half-life of ~5 years. Both upskilling and reskilling require **growth mindset**—believing you can learn what you don't currently know, even outside your comfort zone. See Week 9 slides 21-23.
+      This has important implications for how you approach skill development in your Personal Development Plan. 'Practicing' by doing things you already find easy won't create much growth. You need to consistently work at the edge of your current capabilities - that's where neuroplastic change happens. When setting practice goals (e.g., 'improve public speaking'), specify challenges that push you: 'Present to progressively larger audiences, starting with 5 people and building to 50+ people by end of semester.'
 
-  - id: "W9-Q9-reskilling-strategies"
+  - id: "w9-q07"
     type: "multiple_choice"
-    bloom_level: "applying"
-    topic: "Reskilling Strategies"
+    bloom_level: "remembering"
+    topic: "Growth Mindset Strategies"
 
     question: |
-      You want to transition from finance to sustainability consulting but have no environmental background. Which approach demonstrates growth mindset and effective reskilling strategy?
+      According to Yeager and Dweck (2020), effective growth mindset interventions teach three specific actions that develop abilities. What are they?
 
     options:
       - key: "A"
-        text: "\"I'll build environmental knowledge through online courses, join Vietnam Green Building Council as volunteer, and apply my finance skills to green finance projects to transition over 2 years.\""
-        feedback: "Correct! This demonstrates growth mindset (knowledge is developable) and strategic reskilling (using multiple learning methods, building credibility, leveraging existing skills)."
+        text: "Effort (trying hard), strategy change (trying different approaches), and help-seeking (learning from others)"
+        feedback: "Correct! Research-based growth mindset interventions specifically teach three concrete actions: (1) Effort - applying sustained work, (2) Strategy change - trying different approaches when current ones don't work, and (3) Help-seeking - learning from mentors, peers, and resources. This is NOT just 'try harder' (effort alone) or positive thinking (which can be passive). The combination gives students controllable actions they can take to develop abilities."
         correct: true
 
       - key: "B"
-        text: "\"I don't have an environmental degree, so I can't make this transition. I'll stay in traditional finance.\""
-        feedback: "Incorrect. This is fixed mindset—viewing lack of formal credentials as permanent disqualifier rather than knowledge gap you can fill through learning."
+        text: "Positive thinking, self-affirmation, and visualization of success"
+        feedback: "Incorrect. These are components of positive psychology but not the core of research-based growth mindset interventions. Growth mindset requires concrete actions: effort, strategy change, and help-seeking."
 
       - key: "C"
-        text: "\"I'll just believe I can do it and apply to sustainability jobs without building any environmental knowledge.\""
-        feedback: "Incorrect. This is false growth mindset—positive thinking without strategic action. Growth mindset requires actually developing the needed skills, not just believing."
+        text: "Natural talent identification, strength leveraging, and passion pursuit"
+        feedback: "Incorrect. This describes a strengths-based approach, not growth mindset interventions. Growth mindset focuses on developing abilities through effort, strategy, and help-seeking."
 
       - key: "D"
-        text: "\"I'll quit my finance job immediately and hope to learn sustainability on the job.\""
-        feedback: "Incorrect. While growth mindset supports career transitions, strategic reskilling involves building skills BEFORE or DURING transition, not hoping to learn after."
+        text: "Goal-setting, time management, and performance tracking"
+        feedback: "Incorrect. While these are valuable skills, they're not the core of growth mindset interventions. The three key actions are effort, strategy change, and help-seeking."
 
     general_feedback: |
-      This example from Week 9 lectures demonstrates **growth mindset applied to career transitions**. Fixed mindset says "I don't have the background → I can't do it." Growth mindset says "I need to build this knowledge" and creates a **strategic reskilling plan**: (1) **Learn** through structured courses; (2) **Practice** through volunteer work; (3) **Bridge** by applying existing skills (finance) to new domain (green finance); (4) **Transition** gradually over realistic timeframe. Neuroplasticity supports career transitions at any stage. See Week 9 slide 23.
+      When you face challenges in pursuing your Personal Development Plan goals, remember these three actions. If effort alone isn't working, what strategies could you try? Who could you learn from? Your mentorship program is specifically designed to support the help-seeking component - use your mentor as a resource when you encounter obstacles. In tutorial today, you'll practice applying all three actions to a current challenge you're facing.
 
-  - id: "W9-Q10-growth-mindset-strategies"
+  - id: "w9-q08"
     type: "multiple_choice"
-    bloom_level: "applying"
-    topic: "Cultivating Growth Mindset"
+    bloom_level: "understanding"
+    topic: "Growth Mindset Strategies"
 
     question: |
-      You're working on a skill you've always struggled with (public speaking) and feel yourself thinking \"I'm just not good at this.\" Which strategy best demonstrates applying growth mindset?
+      Tuan wants to develop his networking abilities for his marketing career. He currently believes "I'm too introverted to be good at networking." Which approach best demonstrates growth mindset strategy application?
 
     options:
       - key: "A"
-        text: "Replace \"I'm not good at this\" with \"I haven't developed this skill yet. I'll practice by presenting in small settings, joining Toastmasters, and seeking specific feedback.\""
-        feedback: "Correct! This combines self-talk reframing (\"yet\"), seeking deliberate practice opportunities, and using feedback—all core growth mindset strategies."
+        text: "Tuan reframes: 'I haven't yet developed networking confidence, but I can build it through one-on-one coffee meetings, preparing conversation topics in advance, and asking his mentor for networking strategies tailored to introverts'"
+        feedback: "Correct! Tuan's effective approach demonstrates: (1) Reframing fixed belief ('too introverted') to growth belief ('haven't yet developed'), (2) Effort (committing to practice), (3) Strategy (one-on-one meetings suited to his personality, preparing topics), (4) Help-seeking (asking mentor for tailored strategies). True growth mindset works WITH your current state while developing new capabilities through strategic practice."
         correct: true
 
       - key: "B"
-        text: "Just think positively—\"I'm great at public speaking!\"—without practicing or seeking feedback"
-        feedback: "Incorrect. This is false growth mindset—positive affirmations without strategic action. Growth mindset requires actually developing skills, not just positive self-talk."
+        text: "Tuan accepts: 'I'm introverted, so I should focus on digital marketing roles that don't require much networking and play to my natural strengths'"
+        feedback: "Incorrect. This is fixed mindset avoidance - limiting career options based on belief that networking ability is fixed. Growth mindset would work to develop the capability."
 
       - key: "C"
-        text: "Avoid all public speaking situations so you never have to face this weakness"
-        feedback: "Incorrect. This is fixed mindset avoidance. Growth mindset seeks challenges that develop capabilities, even when uncomfortable."
+        text: "Tuan decides: 'I need to force myself to attend large networking events weekly until I overcome my introversion through exposure'"
+        feedback: "Incorrect. This is effort without strategy, which may lead to burnout. Growth mindset requires effort + effective strategies + help-seeking, not just forcing yourself into uncomfortable situations."
 
       - key: "D"
-        text: "Work harder at public speaking by repeating the same ineffective approach multiple times"
-        feedback: "Incorrect. Growth mindset isn't just effort—it's effort + effective strategies. You need to change your approach, not just try harder at ineffective methods."
+        text: "Tuan thinks: 'I just need to be more confident and believe in myself - successful networkers are confident, so I should fake it until I make it'"
+        feedback: "Incorrect. This is false growth mindset (positive thinking without concrete strategies). True growth mindset specifies actionable strategies, not just self-belief."
 
     general_feedback: |
-      Developing growth mindset requires **multiple strategies**: (1) **Change self-talk**—add "yet" to "I can't" statements; (2) **Focus on process**—celebrate improvement, not just outcomes; (3) **Seek challenges intentionally**—volunteer for stretch opportunities; (4) **Learn from others' success**—ask about strategies, not just admire talent; (5) **Reflect on growth**—document what you couldn't do 6 months ago that you can do now. Growth mindset is a **practice**, not a one-time belief. See Week 9 slide 28.
+      This scenario likely resonates with domains where you hold fixed beliefs. Perhaps you think 'I'm not technical,' 'I'm not creative,' or 'I'm not a leader.' The growth mindset approach isn't denying your starting point - it's believing you can develop capabilities through strategic action. In today's tutorial, you'll identify one domain where you hold a fixed belief and create a concrete development plan using effort + strategy + help-seeking. Your mentor can be especially valuable for the help-seeking component.
 
-  - id: "W9-Q11-pdp-application"
+  - id: "w9-q09"
     type: "multiple_choice"
-    bloom_level: "creating"
-    topic: "Applying Growth Mindset to PDP"
+    bloom_level: "understanding"
+    topic: "Growth Mindset Strategies"
 
     question: |
-      When writing your Personal Development Plan, which goal statement best demonstrates growth mindset?
+      Which statement best exemplifies "process praise" that reinforces growth mindset, rather than "trait praise" that reinforces fixed mindset?
 
     options:
       - key: "A"
-        text: "\"By July 2026, I will develop data analysis skills (currently limited) by completing Google Data Analytics certificate, practicing on 5 real datasets, and using these skills in my internship to expand my career options beyond non-technical roles.\""
-        feedback: "Correct! This is SMART, growth-oriented (develops weak area), specific about strategy, and expands capabilities rather than limiting to existing strengths."
+        text: "You tried multiple approaches before finding one that worked - that persistence and strategy adjustment is what led to your success"
+        feedback: "Correct! Process praise attributes success to controllable factors: persistence, strategy adjustment, effort. This builds confidence that success can be replicated through similar approaches in future challenges. Process praise focuses on what the person DID (controllable); trait praise focuses on what the person IS (perceived as unchangeable)."
         correct: true
 
       - key: "B"
-        text: "\"I will only apply to jobs that fit my natural strengths so I don't have to work on my weaknesses.\""
-        feedback: "Incorrect. This is fixed mindset—avoiding development of weak areas and limiting yourself to current capabilities."
+        text: "You're so naturally talented at this - you're just a smart person"
+        feedback: "Incorrect. This is trait praise that reinforces fixed mindset. It attributes success to innate characteristics, which creates fear of challenges that might disprove the trait."
 
       - key: "C"
-        text: "\"I hope to improve my skills if I work hard enough.\""
-        feedback: "Incorrect. This lacks specificity (which skills?), measurability (how will you know?), and strategy (what actions?). It's vague hoping, not strategic planning."
+        text: "Great job! You're really gifted and this comes easily to you"
+        feedback: "Incorrect. This is trait praise emphasizing innate gifts. While well-intentioned, it reinforces fixed mindset by suggesting success comes from fixed traits rather than controllable actions."
 
       - key: "D"
-        text: "\"I won't set ambitious goals because I might fail and that would prove I'm not capable.\""
-        feedback: "Incorrect. This is fixed mindset—avoiding challenge to protect self-image. Growth mindset sees failure as feedback, not verdict, so embraces challenging goals."
+        text: "I knew you could do it - you've always been good at things like this"
+        feedback: "Incorrect. This is trait praise suggesting success comes from stable, unchanging characteristics ('you've always been good'). Process praise would focus on specific strategies used."
 
     general_feedback: |
-      Your **Personal Development Plan** should reflect growth mindset throughout. When setting goals, ask: "What skills do I need to **develop**?" not "What am I already good at?" Frame weaknesses as **developable gaps**, not permanent limitations. Set **challenging but achievable** goals that require learning. Include **specific strategies** (courses, practice, mentors), not just effort. Remember: Your PDP assumes you can develop into someone you're not yet—that's the essence of growth mindset. Week 9 slide 29.
+      Apply this to your own self-talk. When you succeed at something, do you think 'I'm smart' or 'I used effective strategies'? The first creates pressure to always appear smart (fixed mindset). The second builds confidence in your ability to succeed through strategic effort (growth mindset). As you work with your mentorship program partner or study groups, practice giving process praise to peers: 'I noticed you tried several different approaches to that problem - that persistence paid off' rather than 'You're so smart!'
 
-  - id: "W9-Q12-vietnamese-context"
+  - id: "w9-q10"
     type: "multiple_choice"
-    bloom_level: "evaluating"
-    topic: "Growth Mindset in Vietnamese Cultural Context"
+    bloom_level: "remembering"
+    topic: "Career Resilience & Reskilling"
 
     question: |
-      How does Vietnamese cultural emphasis on education and hard work relate to growth mindset, and what potential tension exists?
+      According to Yeager and Dweck (2020), mindsets can be domain-specific. What does this mean?
 
     options:
       - key: "A"
-        text: "Vietnamese culture's emphasis on effort and persistence supports growth mindset; potential tension exists around 'saving face' culture making public failure difficult to embrace as learning opportunity"
-        feedback: "Correct! Vietnamese cultural strengths align with growth mindset, but face-saving norms may require reframing failure as private feedback rather than public shame."
+        text: "You can have growth mindset about some areas (e.g., academic skills) and fixed mindset about other areas (e.g., interpersonal skills)"
+        feedback: "Correct! Domain-specificity means mindsets vary across different areas of life. You might have strong growth mindset about technical skills ('I can learn Python') but fixed mindset about creative abilities ('I'm not creative'). This is important because: (1) Don't assume your mindset is uniform, (2) Identify specific domains where fixed beliefs are limiting you, (3) Target growth mindset cultivation to domains most important for your goals."
         correct: true
 
       - key: "B"
-        text: "Vietnamese culture is entirely fixed mindset and cannot support growth mindset principles"
-        feedback: "Incorrect. Vietnamese proverbs like 'Có công mài sắt có ngày nên kim' (effort turns iron to needle) strongly support growth mindset."
+        text: "Your mindset is determined by your specific career domain or industry"
+        feedback: "Incorrect. Domain-specific means you can have different mindsets in different areas of YOUR life, not that mindset is determined by career domain."
 
       - key: "C"
-        text: "Vietnamese culture focuses only on natural talent, ignoring the role of effort"
-        feedback: "Incorrect. Vietnamese educational culture heavily emphasizes hard work and persistence—core growth mindset values."
+        text: "Mindsets only apply to specific academic subjects, not to broader life domains"
+        feedback: "Incorrect. Mindsets apply to all domains of life (academic, professional, interpersonal, creative, athletic, etc.), and can vary across these domains."
 
       - key: "D"
-        text: "There is no cultural context to consider—growth mindset is universal and identical across cultures"
-        feedback: "Incorrect. While growth mindset principles are universal, cultural context shapes how you approach failure, challenge, and public vs. private learning."
+        text: "Once you develop growth mindset in one area, it automatically transfers to all other areas"
+        feedback: "Incorrect. This is the opposite of domain-specificity. Mindsets don't automatically transfer - you can have growth mindset in one area but fixed mindset in another."
 
     general_feedback: |
-      Vietnamese culture offers **strong foundations** for growth mindset: emphasis on hard work, persistence ("Có công mài sắt có ngày nên kim"), and continuous improvement. The proverb "Thất bại là mẹ thành công" (Failure is the mother of success) reflects growth-oriented thinking. **Potential tension** exists around **face-saving culture**—public failure may feel more threatening in collectivist contexts. **Balancing both**: honor cultural emphasis on effort and persistence while creating **safe spaces for learning from mistakes** and reframing failure as **private feedback** rather than public shame. See Week 9 slide 30.
+      In today's tutorial, you'll complete a domain-specific mindset assessment. You'll likely discover you have growth mindset in some areas but fixed mindset in others. The key is identifying which domains with fixed mindsets are actually important for your career goals. If you want to be a marketing manager but have fixed mindset about interpersonal skills ('I'm not a people person'), that belief will limit your career. Your Personal Development Plan should target developing capabilities in domains where fixed beliefs are currently holding you back.
+
+  - id: "w9-q11"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Career Resilience & Reskilling"
+
+    question: |
+      Linh graduated with a traditional marketing degree but now, three years into her career, finds that data analytics skills are increasingly required for marketing roles. She thinks "I'm a creative person, not a data person - this isn't for me." Which statement best describes the career risk of this fixed mindset?
+
+    options:
+      - key: "A"
+        text: "Linh limits her career opportunities by avoiding developing data skills, causing her marketing expertise to stagnate as the field evolves, reducing her career resilience in the AI era"
+        feedback: "Correct! Linh's fixed mindset ('I'm creative, not analytical') creates career vulnerability: (1) She avoids learning valuable skills the field requires, (2) Her expertise becomes less relevant as marketing becomes data-driven, (3) She reduces career options and resilience when AI and technology reshape work (Week 1 connection). Growth mindset alternative: 'I'm currently stronger in creative than analytical skills, but I can develop data capabilities through coursework, practice, and mentorship.'"
+        correct: true
+
+      - key: "B"
+        text: "Linh is being realistic and should focus on pure creative marketing roles that don't require analytics, playing to her natural strengths"
+        feedback: "Incorrect. This is fixed mindset rationalized as 'being realistic.' In the AI era, playing to strengths alone without developing new capabilities is risky as fields evolve. Most marketing roles now require both creative and analytical skills."
+
+      - key: "C"
+        text: "Linh should immediately switch careers entirely to a field that doesn't require technical skills"
+        feedback: "Incorrect. This is extreme avoidance based on fixed mindset. Rather than switching careers, Linh should develop data skills to remain competitive in her chosen field."
+
+      - key: "D"
+        text: "Linh's fixed mindset doesn't matter because creative skills are more valuable than analytical skills in marketing"
+        feedback: "Incorrect. Modern marketing requires both creative AND analytical skills. The highest-value roles combine these capabilities. Linh's fixed mindset limiting her analytical development is a career risk."
+
+    general_feedback: |
+      This scenario reflects the central challenge of Week 1's 'Future of Work' content meeting Week 9's 'Growth Mindset' content. As AI and technology reshape industries, professionals must continuously reskill. Your Personal Development Plan should include goals for developing capabilities your field increasingly requires, even if they feel foreign now. In mentorship meetings, ask your mentor: 'What new skills have you had to develop as your industry evolved? How did you approach learning something that initially felt outside your comfort zone?'
+
+  - id: "w9-q12"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Career Resilience & Lifelong Learning"
+
+    question: |
+      How does growth mindset specifically enable self-regulated learning across the lifespan, according to the research covered in Week 9?
+
+    options:
+      - key: "A"
+        text: "Growth mindset provides the motivational foundation to persist through challenges because you believe effort and strategy changes will lead to improvement, making goal-setting, monitoring, and adjustment worthwhile"
+        feedback: "Correct! Growth mindset enables self-regulated learning (Week 4 connection) by providing motivational foundation: IF you believe abilities can be developed through effort and strategy, THEN it's worth setting learning goals, monitoring progress, adjusting strategies when needed, and persisting through difficulty. Fixed mindset undermines self-regulation: 'If I can't improve, why persist when it's hard?' Growth mindset doesn't make learning easy - it changes your RESPONSE to difficulty."
+        correct: true
+
+      - key: "B"
+        text: "Growth mindset makes learning feel easy and effortless, eliminating the need for self-regulation strategies"
+        feedback: "Incorrect. Growth mindset doesn't make learning effortless - it changes how you respond to difficulty and effort. Self-regulation strategies are still necessary; growth mindset just motivates you to apply them."
+
+      - key: "C"
+        text: "Growth mindset automatically improves memory and cognitive processing speed, enhancing learning efficiency"
+        feedback: "Incorrect. Growth mindset doesn't directly improve cognitive functions. It's a belief system that motivates persistent, strategic learning, which then leads to capability development through neuroplasticity."
+
+      - key: "D"
+        text: "Growth mindset replaces the need for specific learning strategies because positive thinking is sufficient"
+        feedback: "Incorrect. This represents false growth mindset. True growth mindset doesn't replace learning strategies - it motivates you to seek and apply effective strategies persistently."
+
+    general_feedback: |
+      This connection between Week 4 (Self-Managed Learning) and Week 9 (Growth Mindset) is crucial for your Personal Development Plan. Self-regulated learning strategies (goal-setting, monitoring, adjustment) only work if you believe they'll lead to improvement. As you pursue your 1-year, 3-year, and 5-year PDP goals, you'll encounter obstacles and setbacks. Growth mindset is what enables you to persist, adjust strategies, and continue developing rather than giving up when progress feels slow. Your mindset is the foundation for all other development strategies.
 ---

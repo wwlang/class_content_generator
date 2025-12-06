@@ -161,15 +161,10 @@ def validate_content_completeness(content: str) -> List[ValidationIssue]:
         return issues
 
     # Check slide count
-    if lecture.slide_count < 22:
+    if lecture.slide_count < 24:
         issues.append(ValidationIssue(
             "WARNING",
-            f"Low slide count: {lecture.slide_count} (minimum 22 recommended)"
-        ))
-    elif lecture.slide_count > 30:
-        issues.append(ValidationIssue(
-            "WARNING",
-            f"High slide count: {lecture.slide_count} (maximum 30 recommended)"
+            f"Low slide count: {lecture.slide_count} (minimum 24 recommended)"
         ))
 
     # Check each slide

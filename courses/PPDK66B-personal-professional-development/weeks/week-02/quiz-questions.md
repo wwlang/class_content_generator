@@ -2,319 +2,356 @@
 metadata:
   week: 2
   topic: "Career Skills in the AI Era"
-  prepares_for: "Personal Development Plan (Week 11)"
+  prepares_for: "Personal Future Skills Plan (40%)"
   source: "lecture-content.md"
 
 questions:
-  - id: "W2-Q1-context-eng"
+  - id: "w2-q01"
     type: "multiple_choice"
     bloom_level: "remembering"
     topic: "Context Engineering"
 
     question: |
-      According to Andrej Karpathy, what is the fundamental difference between prompt engineering and context engineering?
+      According to Andrej Karpathy (June 2025), what term should replace 'prompt engineering' to better describe the skill of working effectively with AI?
 
     options:
       - key: "A"
-        text: "Prompt engineering focuses on clever phrasing while context engineering focuses on curating what AI sees in its context window"
-        feedback: "Correct. Karpathy defines context engineering as the art of filling the context window with the right information, not just clever task descriptions."
-        correct: true
+        text: "Response engineering"
+        feedback: "Incorrect. While responses are important, the key innovation is about engineering the context AI receives, not the responses it produces."
+
       - key: "B"
-        text: "Prompt engineering is for technical tasks while context engineering is for creative tasks"
-        feedback: "Incorrect. The distinction is about how you provide information to AI, not the type of task being performed."
+        text: "Context engineering"
+        feedback: "Correct! Karpathy argued that <b>context engineering</b> better captures the 'delicate art and science of filling the context window with just the right information.'"
+        correct: true
+
       - key: "C"
-        text: "Context engineering requires longer prompts than prompt engineering"
-        feedback: "Incorrect. The difference is about strategic information curation, not prompt length. Context engineering actually emphasizes the minimum effective dose principle."
+        text: "Query engineering"
+        feedback: "Incorrect. Query engineering suggests focusing on how you ask questions, whereas context engineering emphasizes curating what information AI sees."
+
       - key: "D"
-        text: "Prompt engineering is outdated while context engineering is the same technique with a new name"
-        feedback: "Incorrect. These represent fundamentally different approaches. Context engineering focuses on what information AI has access to, not just how you phrase requests."
+        text: "System engineering"
+        feedback: "Incorrect. System engineering is a different discipline focused on complex systems design, not AI collaboration techniques."
 
     general_feedback: |
-      <b>Context engineering</b> (the delicate art and science of filling the context window with just the right information) has replaced prompt engineering as the premium skill for working with AI. Rather than focusing on clever phrasing, context engineering emphasizes strategic curation of information. Reference: Slide 5 on the shift from prompts to context.
+      Context engineering is the foundational skill for effective AI collaboration. Rather than focusing on crafting clever prompts, you should focus on curating what information AI "sees" before it responds. This shift in thinking—from prompt-level to context-level—will make you significantly more effective with any AI tool. Apply this principle in your <b>Assessment 1 Personal Future Skills Plan</b> when describing how you'll use AI for skill development.
 
-  - id: "W2-Q2-context-eng"
+  - id: "w2-q02"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Context Engineering"
+    topic: "Context Engineering - Minimum Effective Dose"
 
     question: |
-      A student wants AI to help write a cover letter for a marketing internship at VinGroup. Which approach best demonstrates the Goldilocks Principle?
+      You're preparing to use AI to help draft a cover letter for a specific marketing role. Which approach best demonstrates the <b>Minimum Effective Dose</b> principle from context engineering?
 
     options:
       - key: "A"
-        text: "Instructing AI to start with 'Dear Hiring Manager' and use the word 'synergy' in the second paragraph"
-        feedback: "Incorrect. This is too rigid—over-controlling specific word choices leads to robotic, obviously AI-generated output."
+        text: "Paste your entire CV, the complete job description, all your academic transcripts, and every project you've worked on to ensure AI has comprehensive information"
+        feedback: "Incorrect. This violates the Minimum Effective Dose principle—providing excessive information dilutes AI's attention and reduces output quality."
+
       - key: "B"
-        text: "Asking AI to 'write a professional cover letter'"
-        feedback: "Incorrect. This is too vague—AI lacks strategic direction and will produce generic, off-target content."
-      - key: "C"
-        text: "Providing the job description, relevant experiences, and requesting a confident but humble tone emphasizing collaboration"
-        feedback: "Correct. This is 'just right'—gives AI strategic constraints and relevant information while allowing creative freedom to write naturally."
+        text: "Identify the 3 key job requirements and your 2 most relevant experiences, then provide AI with only this curated information to establish clear connections"
+        feedback: "Correct! The <b>Minimum Effective Dose</b> principle means finding the smallest set of high-signal information that maximizes desired outcomes."
         correct: true
+
+      - key: "C"
+        text: "Give AI just the company name and job title without additional context, trusting it to research the rest"
+        feedback: "Incorrect. This provides too little context. AI needs strategic context about your experiences and the role's requirements to produce valuable output."
+
       - key: "D"
-        text: "Giving AI complete freedom to decide tone, structure, and content without any guidance"
-        feedback: "Incorrect. This is too vague. Without strategic direction, AI cannot tailor the letter to the specific opportunity and your unique fit."
+        text: "Provide only your contact information and academic major, allowing AI to generate generic content"
+        feedback: "Incorrect. This approach will produce workslop—generic content lacking strategic insight or authentic voice."
 
     general_feedback: |
-      The <b>Goldilocks Principle</b> (finding the optimal altitude between overly specific and overly general instructions) helps you avoid two extremes: over-controlling AI (brittle, robotic output) and under-guiding AI (unpredictable, generic output). The sweet spot gives AI strategic constraints with room for natural expression. Reference: Slide 6 on the Goldilocks Zone.
+      This principle requires you to exercise critical thinking: What information is genuinely relevant? What's just noise? The discipline of identifying what matters most (3 key requirements, 2 most relevant experiences) forces you to do strategic thinking that AI cannot do for you. This is the pilot mindset in action—you curate strategically, AI executes tactically. You'll practice this extensively in tutorial when developing your own career materials.
 
-  - id: "W2-Q3-context-eng"
+  - id: "w2-q03"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Context Engineering"
+    topic: "Context Engineering - Goldilocks Zone"
 
     question: |
-      According to the Minimum Effective Dose principle, why should a student applying for a data analytics position NOT provide AI with their entire academic transcript, all course descriptions, and every extracurricular activity?
+      A student gives AI this instruction: 'Write a professional summary for my CV using exactly 4 sentences of 15 words each, starting each sentence with an action verb from this list: [provides list], and mentioning these specific achievements in this exact order: [provides order].' This instruction violates which context engineering principle?
 
     options:
       - key: "A"
-        text: "Because AI models charge based on the amount of text processed"
-        feedback: "Incorrect. While some AI tools have usage limits, the principle is about effectiveness, not cost."
+        text: "Minimum Effective Dose—the instruction is too detailed"
+        feedback: "Incorrect. The problem isn't the amount of information but the rigidity of the constraints specified."
+
       - key: "B"
-        text: "Because dumping everything dilutes what's important and AI struggles to identify what matters most"
-        feedback: "Correct. The principle states that strategic selection is better than comprehensive dumping—more information does not equal better results."
-        correct: true
+        text: "Attention Budget—the instruction wastes AI's processing capacity"
+        feedback: "Incorrect. While the instruction is problematic, it doesn't relate to how attention is distributed across information."
+
       - key: "C"
-        text: "Because AI models cannot process large amounts of text at once"
-        feedback: "Incorrect. Modern AI models can handle large contexts, but the Attention Budget principle shows that performance degrades with larger contexts."
+        text: "Goldilocks Zone—the instruction is too rigid and will create brittle outputs"
+        feedback: "Correct! The <b>Goldilocks Zone</b> principle warns against overly rigid instructions that remove AI's ability to adapt. Instructions should guide intent while allowing flexibility."
+        correct: true
+
       - key: "D"
-        text: "Because it violates academic integrity policies to share all course information with AI"
-        feedback: "Incorrect. This is not related to academic integrity. The principle is about strategic curation for better AI outputs."
+        text: "Verification Principle—the instruction doesn't include fact-checking steps"
+        feedback: "Incorrect. While verification is important, this instruction's main problem is excessive rigidity, not lack of verification steps."
 
     general_feedback: |
-      The <b>Minimum Effective Dose</b> (finding the smallest possible set of high-signal information that maximizes desired outcomes) emphasizes that more information does not equal better results. Strategic curation—selecting the 3-5 most relevant experiences—maintains your strategic control and prevents AI from being overwhelmed with diluted information. Reference: Slide 7 on Minimum Effective Dose from Anthropic's engineering team.
+      Finding the "Goldilocks Zone" between too rigid and too vague is an art developed through practice. Overly rigid instructions might work perfectly once but fail completely when conditions change slightly. The goal is to provide strategic direction ("emphasize data storytelling skills") while allowing AI tactical flexibility in how it presents information. You'll experiment with this balance in tutorial—some attempts will be too vague, some too specific, and you'll learn to calibrate through reflection.
 
-  - id: "W2-Q4-workslop"
+  - id: "w2-q04"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Workslop Problem"
+    topic: "Pilot vs. Passenger Mindset"
 
     question: |
-      According to the HBR research by Niederhoffer et al., what percentage of workers view the sender of workslop as less capable?
+      In the Stanford and BetterUp Labs research (HBR, September 2025), what are the two mindsets identified for working with AI?
+
+    options:
+      - key: "A"
+        text: "Expert and novice mindsets"
+        feedback: "Incorrect. The research didn't focus on expertise levels but rather on approaches to AI collaboration."
+
+      - key: "B"
+        text: "Active and passive mindsets"
+        feedback: "Incorrect. While these capture some of the distinction, the research used more specific terminology."
+
+      - key: "C"
+        text: "Pilot and passenger mindsets"
+        feedback: "Correct! The <b>pilot mindset</b> involves actively steering AI with judgment, while the <b>passenger mindset</b> involves passively accepting AI outputs."
+        correct: true
+
+      - key: "D"
+        text: "Strategic and tactical mindsets"
+        feedback: "Incorrect. The research distinguished approaches based on active steering (pilot) versus passive acceptance (passenger), not strategic versus tactical thinking."
+
+    general_feedback: |
+      This distinction is central to your career success in AI-augmented environments. Research shows that workers with pilot mindsets are getting promoted and gaining influence, while those with passenger mindsets are being marginalized or replaced. Every time you work with AI, you're choosing which mindset to adopt. The good news: it's a learnable skill. Tutorial will give you extensive practice adopting pilot mindset for career preparation tasks.
+
+  - id: "w2-q05"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Pilot vs. Passenger Mindset Application"
+
+    question: |
+      Three students are using AI to prepare for job interviews:<br><br><b>Student A:</b> 'Generate 20 common interview questions and model answers. I'll memorize these.'<br><b>Student B:</b> 'Here's the role [details] and company [research]. Generate 10 role-specific questions. After I answer each, critique my response and suggest improvements.'<br><b>Student C:</b> 'Tell me what answers employers want to hear for behavioral questions.'<br><br>Which student demonstrates the <b>pilot mindset</b>?
+
+    options:
+      - key: "A"
+        text: "Student A—they're being comprehensive by preparing 20 questions"
+        feedback: "Incorrect. Student A is being a passenger—seeking ready-made answers to memorize rather than developing authentic responses."
+
+      - key: "B"
+        text: "Student B—they're using AI for iterative practice with feedback while maintaining strategic direction"
+        feedback: "Correct! Student B demonstrates the pilot mindset by providing context, using AI as a practice partner, and planning to develop their own authentic answers through iteration."
+        correct: true
+
+      - key: "C"
+        text: "Student C—they're being efficient by asking directly what employers want"
+        feedback: "Incorrect. Student C is being a passenger—looking for ready-made answers rather than developing genuine understanding and authentic responses."
+
+      - key: "D"
+        text: "All three demonstrate pilot mindset because they're all using AI for interview preparation"
+        feedback: "Incorrect. Simply using AI doesn't indicate pilot mindset—HOW you use AI determines whether you're piloting or being a passenger."
+
+    general_feedback: |
+      This scenario illustrates a common trap: using AI to avoid the hard work of thinking rather than using AI to support your thinking. Student A will memorize generic answers that sound rehearsed. Student C will parrot what AI thinks employers want to hear. Student B will develop genuinely thoughtful answers through iterative practice. Which student would you want to hire? The interview itself is a judgment test—employers are evaluating whether you can think strategically about problems. AI can help you practice demonstrating that capability, but it cannot develop the capability for you.
+
+  - id: "w2-q06"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Human in the Loop vs. Human at the Helm"
+
+    question: |
+      According to the lecture, which statement best describes the difference between 'human in the loop' and 'human at the helm'?
+
+    options:
+      - key: "A"
+        text: "'Human in the loop' means reviewing AI outputs for errors; 'human at the helm' means setting strategic direction before AI involvement and evaluating alignment with strategic intent"
+        feedback: "Correct! <b>'Human in the loop'</b> is reactive oversight, while <b>'human at the helm'</b> is proactive strategic direction with judgment throughout the process."
+        correct: true
+
+      - key: "B"
+        text: "'Human in the loop' means working alongside AI; 'human at the helm' means working without AI assistance"
+        feedback: "Incorrect. Both approaches involve working with AI—the difference is the level of strategic control and judgment exercised."
+
+      - key: "C"
+        text: "'Human in the loop' applies to technical work; 'human at the helm' applies to creative work"
+        feedback: "Incorrect. The distinction isn't about work type but about the level of human judgment and strategic direction involved."
+
+      - key: "D"
+        text: "They are synonyms describing the same approach to AI collaboration"
+        feedback: "Incorrect. These represent fundamentally different approaches—reactive oversight versus proactive strategic direction."
+
+    general_feedback: |
+      The shift from "in the loop" to "at the helm" reflects employers' evolving expectations. As AI becomes more capable, simply checking its outputs is no longer enough—you must be able to set strategic direction, evaluate whether AI's execution matches your intent, and make adjustments. This is why the executives at the Fortune Summit emphasized judgment as the critical skill. Your <b>Assessment 1</b> should demonstrate that you understand how to maintain strategic control while using AI as a tactical tool.
+
+  - id: "w2-q07"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Workslop Statistics"
+
+    question: |
+      According to the 2025 Stanford and BetterUp Labs research, what percentage of workers reported encountering 'workslop' from colleagues?
 
     options:
       - key: "A"
         text: "22%"
-        feedback: "Incorrect. 22% is the percentage who felt offended by receiving workslop, not who view the sender as less capable."
+        feedback: "Incorrect. 22% felt offended by workslop, but the percentage who encountered it is higher."
+
       - key: "B"
         text: "41%"
-        feedback: "Incorrect. 41% is the percentage of workers who have encountered workslop, not who judge senders negatively."
-      - key: "C"
-        text: "50%"
-        feedback: "Correct. Half of recipients view workslop senders as less capable—this reputation damage is the serious career impact of poor AI use."
+        feedback: "Correct! The research found that <b>41% of workers</b> had encountered workslop from colleagues."
         correct: true
-      - key: "D"
+
+      - key: "C"
         text: "53%"
-        feedback: "Incorrect. 53% is the percentage who felt annoyed by workslop, not who judge the sender's capability."
+        feedback: "Incorrect. 53% felt annoyed when receiving workslop, but this is the reaction percentage, not the encounter percentage."
+
+      - key: "D"
+        text: "95%"
+        feedback: "Incorrect. 95% is the percentage of AI projects that fail to show positive ROI, not the percentage who encountered workslop."
 
     general_feedback: |
-      <b>Workslop</b> (AI-generated content that appears polished but lacks substance, insight, or authentic human thinking) has serious consequences. When 50% of recipients view senders as less capable, using AI poorly directly damages your professional reputation. The research shows workslop destroys careers because it signals inability to exercise judgment. Reference: Slide 11 on the hidden costs of workslop.
+      These statistics reveal that workslop is already widespread—nearly half of workers have experienced it—and that reactions are overwhelmingly negative. This matters for your professional reputation: if you develop a pattern of producing workslop, colleagues will notice, and your career advancement will suffer. The good news: workslop is completely avoidable by adopting the pilot mindset and applying the 30-Second Test before submitting any AI-assisted work.
 
-  - id: "W2-Q5-workslop"
+  - id: "w2-q08"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Workslop Problem"
+    topic: "Identifying Workslop"
 
     question: |
-      Which of the following emails would most likely be identified as workslop?
+      A colleague sends you a report that uses phrases like 'In today's fast-paced business environment' and 'It's important to note that,' makes broad claims without specific evidence, and lists several points without connecting them to a strategic recommendation. When you finish reading, you're unclear about the main conclusion. This report most likely:
 
     options:
       - key: "A"
-        text: "'Hi Team, Our client meeting moved to 3pm Thursday. Please bring updated sales figures for Q4. Thanks, Sarah'"
-        feedback: "Incorrect. This email is specific, actionable, and contains concrete information—it demonstrates human judgment and clear thinking."
+        text: "Demonstrates excellent professional communication standards"
+        feedback: "Incorrect. These are classic workslop indicators—generic phrasing, lack of specifics, unclear conclusions."
+
       - key: "B"
-        text: "'Dear Team, I hope this email finds you well. I wanted to reach out regarding the deliverables we discussed. It is important that we align on expectations and ensure all stakeholders are informed. Please advise on your availability. Best regards'"
-        feedback: "Correct. This is classic workslop—superficially professional but no specific information, no clear ask, no evidence of actual thinking. Just AI-generated filler."
+        text: "Represents workslop—AI-generated content that looks polished but lacks substantive insight"
+        feedback: "Correct! This exhibits classic <b>workslop</b> characteristics: generic phrasing, lack of specifics, no clear strategic argument, leaving readers confused."
         correct: true
+
       - key: "C"
-        text: "'Quick question: Did we decide on the blue or green logo for the presentation? I'm finalizing slides now. - Mike'"
-        feedback: "Incorrect. This email is direct, specific, and shows active engagement with work—clear human thinking and judgment."
+        text: "Shows appropriate use of business writing conventions"
+        feedback: "Incorrect. While the phrasing might sound professional, the lack of substance and clarity indicates workslop, not quality business writing."
+
       - key: "D"
-        text: "'Reminder: Budget proposals due Friday 5pm. Use the template in shared drive. Let me know if you have questions. - Finance Team'"
-        feedback: "Incorrect. This email provides specific deadline, clear action, and helpful resource—demonstrates thoughtful communication planning."
+        text: "Indicates the author is an experienced executive who writes efficiently"
+        feedback: "Incorrect. Experienced executives write with specificity, clear conclusions, and strategic recommendations—the opposite of what's described here."
 
     general_feedback: |
-      <b>Workslop characteristics</b> (superficially professional formatting, generic templated language, no specific insights or original thinking, obvious lack of human judgment) make content immediately recognizable to recipients. The experience creates confusion followed by frustration, signaling the sender didn't care enough to think critically. Reference: Slide 10 on what workslop is and how recipients experience it.
+      You've likely encountered workslop before without having a name for it—that frustrating experience of reading something that looks professional but leaves you confused about what action to take. Now that you can identify workslop, you can avoid creating it. Before submitting any AI-assisted work, apply the 30-Second Test: Would a colleague immediately recognize thoughtful human work, or would they suspect AI-generated filler? This standard should inform all your coursework and professional communications.
 
-  - id: "W2-Q6-workslop"
+  - id: "w2-q09"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Workslop/Pilot-Passenger"
+    topic: "The 30-Second Test"
 
     question: |
-      A student uses ChatGPT to write a cover letter by saying 'Write me a cover letter for this marketing job,' then copies the entire output and submits it without editing. According to the pilot vs. passenger framework, what behavior is this student demonstrating?
+      You've drafted a cover letter with AI assistance and are applying the <b>30-Second Test</b> before submitting it. Which observation would be a RED FLAG indicating potential workslop?
 
     options:
       - key: "A"
-        text: "Pilot behavior—using AI efficiently to save time"
-        feedback: "Incorrect. Pilots actively steer AI with judgment and edit outputs critically. This student is abdicating thinking to AI."
+        text: "The letter mentions a specific project where you increased social media engagement by 45% and explains why this experience is relevant to the target role"
+        feedback: "Incorrect. This is a GREEN FLAG—specific, quantified achievement with clear relevance demonstrates thoughtful work."
+
       - key: "B"
-        text: "Passenger behavior—leaning on AI to avoid hard work and treating AI as a shortcut"
-        feedback: "Correct. This demonstrates classic passenger behavior: copy-paste without editing, no strategic framing, treating AI as a replacement for thinking rather than a tool."
+        text: "The opening paragraph could be sent to any company in the industry without changing the content"
+        feedback: "Correct! This is a <b>RED FLAG</b> for workslop—generic content indicates lack of research and absence of strategic thinking."
         correct: true
+
       - key: "C"
-        text: "Context engineering—providing AI with necessary information"
-        feedback: "Incorrect. The student didn't provide strategic context (job description, relevant experiences, company mission). They gave a vague prompt and accepted the output uncritically."
+        text: "You can clearly articulate why you chose to emphasize certain experiences over others based on the job requirements"
+        feedback: "Incorrect. This is a GREEN FLAG—demonstrating strategic thinking and judgment indicates pilot mindset, not workslop."
+
       - key: "D"
-        text: "Appropriate AI use for academic work"
-        feedback: "Incorrect. This is inappropriate AI use that produces workslop. It demonstrates no judgment, no refinement, and no authentic thinking."
+        text: "The letter acknowledges a tradeoff in your background and explains how you'll address it"
+        feedback: "Incorrect. This is a GREEN FLAG—honest self-assessment with a plan shows authentic human judgment."
 
     general_feedback: |
-      The <b>pilot vs. passenger framework</b> (pilots actively steer AI with judgment and use it as a springboard for insight; passengers lean on AI to avoid hard work and copy-paste without editing) distinguishes effective from ineffective AI users. Passengers produce workslop that damages reputation; pilots produce enhanced work showcasing both AI capability and human judgment. Reference: Slide 12 on the two mindsets and their outcomes.
+      This test is your quality control mechanism. Generic opening paragraphs are the most common workslop indicator in application materials—they signal to recruiters that you haven't done research or invested thought in this specific opportunity. The other options are GREEN FLAGS because they demonstrate: (1) specific, quantified achievements, (2) strategic thinking about what to emphasize, and (3) honest self-assessment with a plan to address gaps. These are signs of pilot mindset and authentic human judgment.
 
-  - id: "W2-Q7-judgment"
+  - id: "w2-q10"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Human Judgment at the Helm"
+    topic: "Explore-Build-Connect-Refine Framework"
 
     question: |
-      According to Aashna Kircher from Workday, what is the critical step civilization must take in the next three to five years?
+      In the Explore-Build-Connect-Refine framework for AI-assisted career development, which stage focuses on verification and fact-checking?
 
     options:
       - key: "A"
-        text: "Develop more powerful AI models"
-        feedback: "Incorrect. Kircher's focus is on human skill development, not AI technological advancement."
+        text: "Explore stage"
+        feedback: "Incorrect. The Explore stage focuses on discovery—mapping possibilities, identifying gaps, and understanding options."
+
       - key: "B"
-        text: "Thoughtfully educate people about how to be good at judgment"
-        feedback: "Correct. Kircher emphasizes that judgment education is a civilization-level priority for the AI era—we haven't thoughtfully enough educated people on this critical skill."
-        correct: true
+        text: "Build stage"
+        feedback: "Incorrect. The Build stage focuses on skill development through iterative practice, not verification."
+
       - key: "C"
-        text: "Regulate AI use in workplace settings"
-        feedback: "Incorrect. While regulation may be discussed, Kircher's quote specifically addresses judgment education, not policy."
+        text: "Connect stage"
+        feedback: "Incorrect. The Connect stage focuses on communication, networking, and relationship-building preparation."
+
       - key: "D"
-        text: "Replace human workers with AI systems"
-        feedback: "Incorrect. This contradicts the entire concept of 'human at the helm'—humans make strategic decisions AI cannot."
+        text: "Refine stage"
+        feedback: "Correct! The <b>Refine stage</b> focuses on quality control, including testing, identifying weaknesses, and critically, verifying all factual claims."
+        correct: true
 
     general_feedback: |
-      <b>Judgment</b> (the ability to make sound decisions when there's no clear right answer, weighing tradeoffs and considering context) cannot be automated and represents the core human differentiator in the AI era. Kircher's statement that judgment education is a civilization-level priority reflects how fundamental this skill has become. Reference: Slide 14 on the shift from 'human in the loop' to 'human at the helm.'
+      The Refine stage is non-negotiable and cannot be skipped. AI hallucinates—it will occasionally cite programs that don't exist, misstate deadlines, or confuse companies. YOU must verify every factual claim against primary sources (company websites, official announcements, program documentation). This is especially important for scholarship applications, job applications, and any professional communications where accuracy reflects on your credibility. Make verification a habit: AI assists, but you verify.
 
-  - id: "W2-Q8-judgment"
+  - id: "w2-q11"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Human Judgment at the Helm"
+    topic: "Explore-Build-Connect-Refine Application"
 
     question: |
-      Katy George from Microsoft (former McKinsey partner) identifies four key competencies employees must demonstrate to thrive. Which competency is listed first, indicating its priority?
+      You're using the Explore-Build-Connect-Refine framework to prepare for a career fair. You've researched target companies (Explore) and drafted a 60-second elevator pitch (Build). Now you ask AI to 'roleplay as a marketing manager from [target company] who might attend the career fair. I'll deliver my elevator pitch, and you ask follow-up questions a recruiter might ask. After I answer, provide feedback.' Which stage are you in, and what is the primary purpose of this activity?
 
     options:
       - key: "A"
-        text: "Design-thinking mindset"
-        feedback: "Incorrect. While design-thinking is the fourth competency, sound judgment is listed first, indicating its priority."
+        text: "Build stage—you're still constructing your elevator pitch"
+        feedback: "Incorrect. The pitch is already drafted (Build complete). You're now rehearsing communication for real interactions."
+
       - key: "B"
-        text: "Effective delegation to AI agents"
-        feedback: "Incorrect. This is the second competency. Sound judgment comes first."
-      - key: "C"
-        text: "Sound judgment"
-        feedback: "Correct. Sound judgment is listed first—the ability to make good decisions when AI gives multiple options, identify when AI is confidently wrong, and weigh business tradeoffs."
+        text: "Connect stage—you're rehearsing authentic communication and preparing for real human interaction"
+        feedback: "Correct! The <b>Connect stage</b> focuses on communication and networking preparation. AI roleplay helps you rehearse so you can communicate authentically in real interactions."
         correct: true
+
+      - key: "C"
+        text: "Refine stage—you're verifying facts in your pitch"
+        feedback: "Incorrect. While Refine includes verification, this activity is about practicing communication delivery and handling follow-up questions, which is Connect stage work."
+
       - key: "D"
-        text: "Quality control over AI outputs"
-        feedback: "Incorrect. This is the third competency—the workslop detector skill. Sound judgment is the foundation that enables quality control."
+        text: "Explore stage—you're discovering what recruiters might ask"
+        feedback: "Incorrect. You've moved beyond discovery (Explore) and skill-building (Build) to communication practice (Connect)."
 
     general_feedback: |
-      According to <b>Microsoft's hiring criteria</b> (sound judgment, effective delegation to AI agents, quality control over AI outputs, design-thinking mindset), sound judgment is the foundational competency that enables all others. As a former McKinsey partner now leading people strategy at Microsoft, George represents what top employers are actually hiring for in 2025. Reference: Slide 15 on what executives want from employees.
+      The Connect stage addresses a key principle: AI can help you PRACTICE communication, but it cannot REPLACE authentic human connection. Using AI to roleplay an informational interview or practice your elevator pitch is excellent preparation—you can iterate, receive feedback, and build confidence without stakes. But when the actual career fair happens, you must bring genuine human connection, read social cues, and adapt in the moment. AI builds your capability; human interaction is where you deploy it.
 
-  - id: "W2-Q9-judgment"
+  - id: "w2-q12"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Human Judgment at the Helm"
+    topic: "Verification Principle in Refine Stage"
 
     question: |
-      Why does the lecture emphasize developing an 'experimental mindset' where you treat yourself as a 'Chief Experimentation Officer'?
+      During the Refine stage, you ask AI to critique your application materials 'as if you're a hiring manager looking for reasons to reject it.' AI identifies that you claimed the target company 'recently launched a sustainability initiative,' but this program was actually launched by a competitor. This scenario illustrates which critical principle?
 
     options:
       - key: "A"
-        text: "Because AI tools are unreliable and produce random results"
-        feedback: "Incorrect. The emphasis is not about AI unreliability, but about continuous learning and adaptation."
+        text: "AI is always unreliable and should never be used for career preparation"
+        feedback: "Incorrect. AI is useful for many career preparation tasks when used with the pilot mindset. The lesson is about verification, not avoiding AI entirely."
+
       - key: "B"
-        text: "Because AI tools evolve monthly and continuous experimentation is the only sustainable strategy for building judgment"
-        feedback: "Correct. With no 'right way' to use AI, testing different approaches and reflecting on what produces quality vs. workslop builds judgment through repeated practice."
-        correct: true
+        text: "The 30-Second Test only applies to writing style, not factual accuracy"
+        feedback: "Incorrect. The 30-Second Test includes assessing whether claims are specific and substantiated—factual accuracy is part of quality control."
+
       - key: "C"
-        text: "Because employers want to hire people with science backgrounds"
-        feedback: "Incorrect. The experimental mindset is about learning and adaptation, not scientific training."
+        text: "You must verify all factual claims against primary sources because AI can hallucinate or have outdated information"
+        feedback: "Correct! This illustrates the critical <b>verification principle</b> in the Refine stage. AI can help critique, but YOU must verify every factual claim."
+        correct: true
+
       - key: "D"
-        text: "Because students should use as many different AI tools as possible"
-        feedback: "Incorrect. The focus is on learning what works through testing and iteration, not on tool quantity."
+        text: "The Refine stage is optional if you trust AI's research capabilities"
+        feedback: "Incorrect. The Refine stage is absolutely non-negotiable—AI hallucinates and makes errors that can destroy professional credibility."
 
     general_feedback: |
-      The <b>experimental mindset</b> (testing different approaches with AI, reflecting on what produces quality vs. workslop, and iterating based on feedback) is essential because AI capabilities evolve constantly. No one has the perfect approach. Judgment develops through the learning cycle: form hypothesis, test with AI assistance, evaluate quality, reflect on differences, apply learning to next iteration. Reference: Slide 16 on cultivating experimental mindset and the Mentorship Program as a safe space to experiment.
+      This scenario demonstrates why the Refine stage is critical: even when AI is helping you improve your materials, it might introduce errors or have outdated information. Imagine submitting that application and confidently discussing the company's "sustainability initiative" in an interview, only to be corrected by the interviewer—your credibility would be destroyed instantly. The lesson: AI is a powerful assistant for drafting and critique, but YOU must verify facts. Check company websites, recent news, official announcements. Accuracy is your responsibility.
 
-  - id: "W2-Q10-ebcr"
-    type: "multiple_choice"
-    bloom_level: "remembering"
-    topic: "EBCR Framework"
-
-    question: |
-      What are the four stages of the Explore-Build-Connect-Refine framework for AI-assisted career development?
-
-    options:
-      - key: "A"
-        text: "Explore possibilities, Build skills, Connect with mentors, Refine outputs"
-        feedback: "Correct. The four stages are: EXPLORE (map possibilities and surface gaps), BUILD (learn through iterative practice), CONNECT (communicate and network with purpose), REFINE (test, adapt, and verify)."
-        correct: true
-      - key: "B"
-        text: "Evaluate options, Build resume, Contact employers, Review applications"
-        feedback: "Incorrect. While these activities may occur within the framework, these are not the official stage names from the Chremos & Repetto framework."
-      - key: "C"
-        text: "Engage AI, Build content, Collaborate online, Reflect on results"
-        feedback: "Incorrect. These are not the stages of the EBCR framework. The framework emphasizes exploration, skill building, purposeful connection, and quality control."
-      - key: "D"
-        text: "Experiment with AI, Brainstorm ideas, Create materials, Revise drafts"
-        feedback: "Incorrect. While experimentation and revision are part of the process, these are not the four official stages of the framework."
-
-    general_feedback: |
-      The <b>EBCR Framework</b> (Explore-Build-Connect-Refine) provides a structured approach to AI-assisted career development where AI serves as a thought partner, not an answer generator. Developed by university career services directors, this framework ensures career materials reflect the authentic you, enhanced by AI capability. Reference: Slide 18 introducing the career preparation framework from Inside Higher Ed.
-
-  - id: "W2-Q11-ebcr"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "EBCR Framework"
-
-    question: |
-      A student asks AI: 'I've completed courses in microeconomics, data analytics, and business communication. I led a team project analyzing consumer behavior. What competencies could I claim based on these experiences?' Which stage of the EBCR framework is this student applying?
-
-    options:
-      - key: "A"
-        text: "EXPLORE—using AI to infer competencies and expand awareness of skills developed through academic experiences"
-        feedback: "Correct. The EXPLORE stage helps surface skills students often underestimate by having AI identify patterns in their experiences and translate academic work into professional competencies."
-        correct: true
-      - key: "B"
-        text: "BUILD—practicing professional tasks to develop competence"
-        feedback: "Incorrect. BUILD focuses on iterative practice and skill development, not on identifying existing competencies."
-      - key: "C"
-        text: "CONNECT—preparing for professional interactions"
-        feedback: "Incorrect. CONNECT involves networking preparation and relationship building, not competency identification."
-      - key: "D"
-        text: "REFINE—testing and verifying quality of outputs"
-        feedback: "Incorrect. REFINE applies critical quality control to completed materials, not initial competency discovery."
-
-    general_feedback: |
-      The <b>EXPLORE stage</b> (using AI to expand awareness of career options and identify skill gaps) helps students see patterns in their experiences. Activity 1 in EXPLORE involves asking AI to infer competencies—translating academic projects into professional language. For example, group presentations translate to project management, stakeholder communication, and deadline management skills. Reference: Slide 19 on EXPLORE activities and the pilot behavior of curating which experiences to highlight.
-
-  - id: "W2-Q12-ebcr"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "EBCR Framework"
-
-    question: |
-      Before submitting your Personal Development Plan, you ask AI to 'Review this plan as my professor would. What weaknesses or unclear arguments would you identify?' Which stage of the EBCR framework are you applying, and why is this stage critical?
-
-    options:
-      - key: "A"
-        text: "BUILD—because you are developing your writing skills through practice"
-        feedback: "Incorrect. While this does involve skill development, the activity of simulating critical review specifically belongs to the REFINE stage."
-      - key: "B"
-        text: "REFINE—because you are applying critical quality control to catch issues before they damage your grade, demonstrating pilot behavior"
-        feedback: "Correct. REFINE involves simulating reviewer critiques, A/B testing approaches, and verifying quality. This is where workslop gets caught—pilots spend 50% of their time refining; passengers skip this stage."
-        correct: true
-      - key: "C"
-        text: "EXPLORE—because you are discovering gaps in your plan"
-        feedback: "Incorrect. While you may discover gaps, this activity is about quality control on completed work, which is the REFINE stage, not initial exploration."
-      - key: "D"
-        text: "CONNECT—because you are simulating interaction with your professor"
-        feedback: "Incorrect. CONNECT focuses on networking and relationship building. Simulating critical review for quality control is a REFINE activity."
-
-    general_feedback: |
-      The <b>REFINE stage</b> (testing, adapting, and verifying quality before work represents you) is where pilots separate from passengers. Activities include simulating reviewer critiques, A/B testing narratives, identifying jargon, and verifying facts. The 30-second test asks: Would a colleague recognize this as thoughtful human work? Refinement is where your value shows—passengers skip it and submit first drafts; pilots spend half their time here. Reference: Slide 22 on REFINE activities and the critical importance of quality control before submission.
 ---

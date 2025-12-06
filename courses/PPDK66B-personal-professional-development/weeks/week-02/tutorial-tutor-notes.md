@@ -1,749 +1,461 @@
-# Week 2 Tutorial: Tutor Facilitation Guide
+# Week 2 Tutorial: Tutor Notes
 
-**Course:** PPDK66B Personal & Professional Development
-**Tutorial Topic:** AI-Powered Career Skills Workshop
+**Tutorial Topic:** AI-Assisted Career Preparation Workshop
 **Duration:** 90 minutes
-**Difficulty Level:** Moderate (students will need technical troubleshooting support)
+**Key Challenge:** Ensuring students adopt PILOT mindset (not PASSENGER mode)
 
 ---
 
-## Tutorial Overview
+## Learning Objectives
 
-**Learning Objectives:**
-By the end of this tutorial, students will be able to:
-1. Apply context engineering principles to create professional materials
-2. Distinguish workslop from high-quality AI-assisted content
-3. Use the Explore-Build-Connect-Refine framework for career development
-4. Demonstrate pilot mindset when working with AI tools
-5. Evaluate their own outputs using the 30-Second Test
-
-**Key Challenge:**
-This is students' first hands-on practice with AI tools in an academic setting. Many will have used ChatGPT casually but not strategically. Your role is to:
-- Normalize AI use as a professional tool (not cheating)
-- Build judgment about WHEN and HOW to use AI effectively
-- Prevent workslop production while encouraging experimentation
-
-**Success Indicators:**
-- Students can articulate the difference between pilot and passenger mindsets
-- Students produce at least one AI-assisted artifact that passes the 30-Second Test
-- Students identify which Explore-Build-Connect-Refine stage is their personal gap
-- Class discussion shows critical thinking about AI limitations, not blind acceptance
+By the end of this tutorial, students should be able to:
+1. Apply context engineering principles (Goldilocks Zone, Minimum Effective Dose, Attention Budget) to career preparation tasks
+2. Distinguish between pilot mindset (strategic AI use) and passenger mindset (passive AI dependence)
+3. Create career materials that pass the 30-Second Test (avoiding workslop)
+4. Use the Explore-Build-Connect-Refine framework systematically
+5. Exercise judgment about when and how to use AI assistance
 
 ---
 
-## Pre-Tutorial Preparation
+## Timing Table
 
-**Technical Setup (30 minutes before class):**
-- [ ] Test classroom WiFi and ensure it can handle 30+ students accessing AI tools simultaneously
-- [ ] Project sample AI interactions on screen for demonstration
-- [ ] Prepare backup: printed copies of workslop detection excerpts (Activity 2) in case of tech failure
-- [ ] Have sample job posting ready to share with students who forgot to bring one
-- [ ] Test at least two AI tools yourself (ChatGPT, Claude, or Gemini) to troubleshoot student issues
-
-**Materials Needed:**
-- [ ] Whiteboard/projector for documenting class insights
-- [ ] Timer for keeping activities on schedule
-- [ ] Sample student CV or experiences to demonstrate Activity 1 (anonymized or fictional)
-- [ ] Printed handout with Activity 2 cover letter excerpts (recommended even if projecting)
-
-**Pedagogical Preparation:**
-- Review the Week 2 required readings (especially the HBR workslop article and Chremos framework)
-- Think through your own AI use: What do YOU do as a pilot vs. passenger? Students will ask.
-- Prepare real examples from Vietnamese business context (VinGroup, Masan, etc.) to make exercises relevant
-
-**Common Student Questions to Anticipate:**
-1. "Is it cheating to use AI for assignments?" (Answer: Not if used as thought partner, not replacement for thinking)
-2. "Will my mentor know I used AI?" (Answer: Yes, if you produce workslop. They WANT you to use AI well.)
-3. "Which AI tool is best?" (Answer: For career materials, all major tools work—choice matters less than your context engineering)
-4. "What if I can't afford premium AI tools?" (Answer: Free tiers are sufficient for this course)
+| Time | Activity | Tutor Role |
+|------|----------|------------|
+| 0-5 min | Quick Review | Facilitate brief recap of six frameworks; answer clarification questions |
+| 5-20 min | Stage 1: Explore (Skill Gap Analysis) | Circulate; check prompt quality; ensure students provide adequate context |
+| 20-50 min | Stage 2: Build (CV & Cover Letter) | **Critical intervention period**—watch for passenger mode; coach prompt engineering |
+| 50-70 min | Stage 3: Connect (Elevator Pitch Roleplay) | Encourage students to actually practice aloud; spot-check authenticity |
+| 70-80 min | Stage 4: Refine (Quality Control) | Help students apply 30-Second Test rigorously; push for revisions |
+| 80-90 min | Wrap-up & Before Next Class | Collect deliverables (or confirm submission); preview Week 3 |
 
 ---
 
-## Detailed Activity Facilitation
+## Preparation Before Tutorial
 
-### Opening (5 minutes)
+### Materials You Need
+1. Access to GenAI tool (Claude, ChatGPT, Gemini—verify which tool(s) students have access to)
+2. Example job postings from Vietnamese job market (2-3 backup examples in case students don't bring their own)
+3. Sample prompts demonstrating pilot vs. passenger approaches (see below)
+4. Checklist for 30-Second Test evaluation
 
-**Welcome & Framing:**
-- "Today's tutorial is different—you'll be USING AI, not just learning about it"
-- "Everything we practice today applies to your Mentorship Program starting this week"
-- "The goal isn't perfection—it's developing judgment through experimentation"
+### Technical Setup
+- Confirm students have AI tool access BEFORE tutorial starts
+- Have backup plan if university network blocks certain AI tools
+- Know how to help students with basic prompt engineering if they're new to GenAI tools
 
-**Technical Logistics:**
-- Quick poll: "Who has an AI account ready?" (If <50%, have students pair up)
-- "If you encounter technical issues, signal me—don't let tech problems derail your learning"
-- Share WiFi password if needed
-
-**Set Expectations:**
-- "AI will sometimes give weird outputs—that's normal, we'll discuss why"
-- "Partners will give each other feedback—be constructive"
-- "Everything you create today is practice, not graded—experiment freely"
-
-**Quick Review:**
-- "Before we dive in, what's ONE concept from today's lecture that stuck with you?" (Take 2-3 responses)
-- "Keep that concept in mind as we practice"
+### Cultural Context
+- Many Vietnamese students will be unfamiliar with elevator pitches (not common in local business culture)
+- Some may feel uncomfortable with "self-promotion" in cover letters
+- Group discussion about authenticity vs. modesty may be needed
 
 ---
 
-### Activity 1: Context Engineering Practice (25 minutes)
+## Stage-by-Stage Guidance
 
-**Introduction (2 min):**
-- "We'll write the SAME CV bullet point three times with different approaches"
-- "This demonstrates why context matters more than clever prompting"
-- "By the end, you'll see dramatically different outputs from the same experience"
+### Stage 1: Explore (5-20 min)
 
-#### Round 1: Passenger Approach (5 min)
+**What Students Should Be Doing:**
+- Finding a real job posting relevant to their career interests
+- Extracting 3-5 key requirements from job description
+- Listing their own background (courses, experiences, skills)
+- Using AI to analyze skill gaps and identify strengths
 
-**Demonstration (2 min):**
-Project on screen and do this live with a sample experience:
+**Common Problems You'll See:**
 
-```
-Your prompt: "Write a CV bullet point about my group project."
+**Problem 1: Too vague**
+Student prompt: "What skills do I need for marketing jobs?"
+→ **Intervention:** "Let's make this more specific. What's the actual company and role you're targeting? What does the job posting emphasize?"
 
-AI output: "Successfully collaborated with team members to complete a comprehensive group project, demonstrating strong teamwork and communication skills."
-```
+**Problem 2: No context provided**
+Student prompt: "Analyze this job description" [pastes only job description, no personal background]
+→ **Intervention:** "AI needs to know YOUR background to identify gaps. What coursework and experiences do you have? Add that context."
 
-- Ask class: "What's wrong with this?" (Generic, no specifics, templated, could apply to any project)
-- "This is what passengers produce—and employers spot it immediately"
+**Problem 3: Asking AI to decide**
+Student prompt: "Should I apply for this job?"
+→ **Intervention:** "That's a judgment call only you can make. Instead, ask AI to help you analyze whether your background aligns with requirements. YOU decide if it's a good fit."
 
-**Student Work Time (3 min):**
-- "Now you try with one of YOUR experiences"
-- "Keep your prompt intentionally vague—we're demonstrating what NOT to do"
-- Circulate and observe:
-  - Are students actually being vague, or over-explaining? Coach them to be minimal.
-  - Note interesting examples to share during debrief
-
-**Common Student Struggles:**
-- Students uncomfortable "doing it wrong" intentionally
-  - Coach: "This is experimentation—we WANT to see what fails"
-- Students don't have experiences to draw from
-  - Coach: "Use any group project, even from first semester. Or volunteer work, clubs, anything."
-
-#### Round 2: Goldilocks Approach (10 min)
-
-**Demonstration (3 min):**
-Show side-by-side comparison:
-
-```
-Round 1 (Passenger): "Write a CV bullet point about my group project."
-
-Round 2 (Goldilocks):
-"I need a CV bullet point for a business administration application.
-
-Context:
-- Experience: Led a team of 4 students analyzing Vietnamese coffee shop consumer preferences
-- Key achievement: Our recommendations helped a local shop increase customer retention by identifying underserved demographic (students seeking quiet study space)
-- Skills demonstrated: Data analysis (surveys, Excel), teamwork, business application of research
-
-Tone: Professional but approachable; emphasize both analytical skills and real-world impact
-Format: Start with strong action verb, quantify where possible, keep under 25 words"
-
-AI output: "Led 4-student team to analyze coffee shop consumer preferences, identifying underserved student demographic and recommending retention strategies that increased repeat visits by 30%."
-```
-
-- Ask class: "What made this output stronger?" (Specific, quantified, demonstrates impact, uses student's actual achievement)
-- Point out: "Notice I gave AI strategic direction (tone, format) but let it choose exact words—that's the Goldilocks zone"
-
-**Student Work Time (7 min):**
-- "Rewrite your Round 1 prompt with strategic context"
-- "Include: what the experience was, what you achieved, what skills you demonstrated"
-- "Give tone/format guidance but don't dictate exact words"
-
-**Tutor Circulation Tips:**
-- Look for students giving TOO much direction ("Use exactly these words...") → Coach toward Goldilocks
-- Look for students still being too vague → "What was the actual outcome of your project?"
-- Celebrate good examples: "Can I share this with the class as a strong example?"
-
-**Common Student Struggles:**
-- Overthinking the prompt
-  - Coach: "You're not writing a legal contract—give AI the key facts and strategic direction"
-- Underselling their achievements
-  - Coach: "What tangible result did your work produce? Even if small, quantify it."
-
-#### Round 3: Minimum Effective Dose (5 min)
-
-**Demonstration (1 min):**
-- "The minimum effective dose principle asks: What's the SMALLEST amount of context that still produces excellent results?"
-- Show streamlined version of Round 2 prompt
-- "Experiment: Can you cut 30-40% of context and still get quality output?"
-
-**Student Work Time (4 min):**
-- "Streamline your Round 2 prompt"
-- "Test if shorter context produces similar quality"
-- "This builds your judgment about what information is actually necessary"
-
-**Tutor Note:**
-- This round is about calibration—there's no single "right" answer
-- Some students will find they can cut a lot; others will find minimum dose = Goldilocks approach
-- Goal: Students learn through experimentation what works for their specific task
-
-#### Pair Evaluation (5 min)
-
-**Instructions:**
-- "Exchange all three outputs with your partner"
-- "Apply the 30-Second Test to each: Does this sound like thoughtful human work or AI template?"
-- "Which approach produced the best result?"
-
-**Tutor Facilitation:**
-- Circulate and listen to pair discussions
-- Identify interesting insights to share with class
-- Look for students who discovered counterintuitive results (e.g., minimal context worked well)
-
-**Class Debrief (3 min):**
-- "By show of hands: For how many of you did Goldilocks produce the best result?" (Expect majority)
-- "Did anyone find Minimum Dose worked just as well?" (If yes: "What made that possible?")
-- "What's the key lesson here?" (Desired answer: Strategic context matters more than prompt length)
-
-**Key Teaching Point:**
-"Context engineering isn't about writing longer prompts—it's about exercising JUDGMENT about what information matters. That judgment develops through practice, which is why we're experimenting today."
+**What Good Work Looks Like:**
+Student provides: job posting + their background + specific analytical questions ("What competencies align? Where are gaps? What should I emphasize?")
+Student receives: Specific analysis they can use to inform their strategy
+Student decides: Which experiences to highlight based on analysis
 
 ---
 
-### Activity 2: Workslop Detection Challenge (20 minutes)
+### Stage 2: Build (20-50 min)
 
-**Introduction (2 min):**
-- "Now we're switching from creation to evaluation"
-- "You'll read four cover letter excerpts—two are workslop, two are piloted"
-- "Your job: detect which is which and explain the evidence"
-- "This skill protects you from accidentally PRODUCING workslop"
+**This is the CRITICAL intervention period.** Most students will default to passenger mode. Your job is to catch this and redirect.
 
-**Distribute/Project Excerpts (1 min):**
-- Either project all four excerpts on screen OR
-- Distribute printed handouts (recommended—easier for students to compare)
-- Ensure students can see all four simultaneously
+**What Students Should Be Doing:**
+- Crafting strategic prompts with rich context
+- Using AI to brainstorm approaches and suggest structures
+- WRITING their own content informed by AI insights
+- Applying judgment about which suggestions to accept/reject
 
-#### Individual Analysis (5 min)
+**Common Problems You'll See:**
 
-**Instructions:**
-- "Read all four silently"
-- "Identify the two workslop excerpts"
-- "For each, note specific evidence: What makes it AI-generated? What's missing?"
+**Problem 1: The "Write it for me" request**
+Student prompt: "Write a cover letter for this job" [pastes job description]
+→ **Intervention Script:**
+"Pause. That's passenger mode—you're asking AI to do the thinking. Let's shift to pilot mode. What do YOU think are the 2-3 most important things this employer needs to know about you? Start there, then ask AI to help you articulate those points clearly."
 
-**Tutor Observation:**
-- Circulate silently—don't give hints yet
-- Note which excerpts students struggle to identify (this reveals where they need coaching)
-- Some students will finish quickly—coach them: "Now identify what makes the GOOD ones strong"
+**Problem 2: Accepting AI output without judgment**
+Student generates a CV section with AI, considers it done.
+→ **Intervention Script:**
+"Read this aloud to me. Does it sound like you? Would your friends recognize your voice here? What would YOU change to make it more authentic?"
 
-**Common Student Struggles:**
-- Students drawn to polished-sounding language (which is often workslop)
-  - This is the learning opportunity—they'll discover in debrief that polish ≠ quality
-- Students assume longer = better
-  - Again, debrief will reveal that workslop often uses more words to say less
+**Problem 3: Generic, workslop-quality output**
+Student's cover letter starts with: "I am writing to express my strong interest in the position..."
+→ **Intervention Script:**
+"Let's apply the 30-Second Test. If a hiring manager reads this opening, what do they learn about you specifically? What makes you different from 500 other applicants? How can we make this opening immediately distinctive?"
 
-#### Pair Discussion (5 min)
+**Problem 4: No metrics or specifics**
+Student's CV says: "Led successful marketing campaign"
+→ **Intervention Script:**
+"This needs specifics to be credible. What was the campaign? What metrics show success? If you increased engagement, by what percentage? If you can't quantify, describe the impact in concrete terms."
 
-**Instructions:**
-- "Compare identifications with your partner"
-- "If you disagreed, debate the evidence"
-- "For the piloted excerpts, identify what makes them stronger"
+**Problem 5: Poor context engineering**
+Student gives AI minimal context, gets generic output, concludes "AI isn't helpful"
+→ **Intervention Script:**
+"Let's try again with better context engineering. Tell AI: the company values [X based on your research], you're emphasizing [Y experience], and you want to demonstrate [Z quality]. Now what does AI suggest?"
 
-**Tutor Facilitation:**
-- Listen for productive disagreements (these make great class discussion points)
-- Note: If a pair is stuck because both identified wrong excerpts, gently ask: "What specific details in Excerpt B make it feel personal vs. templated?"
+**What Good Work Looks Like:**
+- Student provides rich context (company research, specific experiences, genuine motivations)
+- Student asks AI to brainstorm approaches or suggest improvements
+- Student WRITES content themselves, incorporating AI insights
+- Student can explain: "AI suggested X, but I chose Y because..."
+- Output passes 30-Second Test (specific, authentic, strategic)
 
-#### Class Debrief (10 min)
+**Facilitation Strategies:**
 
-**Reveal Answers:**
-- "Excerpts A and C are workslop. B and D are piloted."
-- "Let's break down the evidence..."
+**Strategy 1: Side-by-Side Comparison**
+Show two approaches on projector:
+- Passenger: "Write a cover letter for [job]"
+- Pilot: "I want to emphasize [experience] to demonstrate [quality] for [company]. Help me brainstorm 3 opening approaches."
 
-**Excerpt A Analysis (Workslop):**
-Project excerpt and annotate on screen while discussing:
-- Circle "express my strong interest" → "This phrase appears in thousands of cover letters"
-- Underline "innovative approach" → "Generic praise, no specifics"
-- Highlight "ideal candidate" → "Cliché, everyone says this"
+Ask: "What's the difference? Which shows judgment?"
 
-Ask class: "Could you copy-paste this to a different company and it would still work?" (Yes = workslop)
+**Strategy 2: Read-Aloud Test**
+When you suspect workslop, ask student to read their draft aloud. Often they'll self-identify: "Actually, this doesn't sound like me..."
 
-**Excerpt C Analysis (Workslop):**
-- "What SPECIFIC information does this tell the employer about the student?" (Almost nothing)
-- "What makes this different from any other business student's cover letter?" (Nothing)
-- "If you received 100 applications and 50 sounded like this, how would you feel?" (Frustrated, dismissive)
-
-**Excerpt B Analysis (Piloted):**
-- "What specific detail makes this memorable?" (VinFast showroom visit on weekend)
-- "What does this tell you about the student beyond their CV?" (Takes initiative, thinks strategically, observes business practices)
-- "Could this student have written this without doing actual research?" (No—requires real knowledge)
-
-**Excerpt D Analysis (Piloted):**
-- "What makes this feel authentic vs. AI-generated?" (Personal anecdote about professor, specific project numbers, cultural insight)
-- "What does the comparison of email vs. face-to-face surveys demonstrate?" (Critical thinking, adaptability, research skills)
-
-**Critical Discussion Questions:**
-1. "What surprises you about what counts as workslop vs. quality?"
-2. "Have you ever submitted something that, looking back, might have been workslop?" (Expect honest yes from many—this is growth)
-3. "How can you ensure YOUR cover letters don't sound like Excerpts A and C?"
-
-**Key Teaching Points:**
-- Workslop looks polished but lacks substance—it's surface-level professionalism
-- Piloted content has SPECIFICITY: real details, personal voice, evidence of thinking
-- The 30-Second Test catches workslop: Would you bet your reputation on this?
-
-**Vietnamese Cultural Context Note:**
-- In Vietnamese professional culture, demonstrating thorough preparation and genuine interest is highly valued
-- Workslop signals lack of effort—culturally disrespectful
-- Piloted content shows you've invested time understanding the opportunity—culturally appropriate
-
-**Bridge to Activity 3:**
-"Now that you can detect workslop, let's ensure you don't produce it. Activity 3 gives you a framework for AI-assisted work that ALWAYS passes the 30-Second Test."
+**Strategy 3: Peer Review Pairs**
+Have students swap materials and apply 30-Second Test to each other's work. Peer feedback is often more powerful than tutor feedback.
 
 ---
 
-### Activity 3: Explore-Build-Connect-Refine Application (35 minutes)
+### Stage 3: Connect (50-70 min)
 
-**Introduction (2 min):**
-- "This is the most practical activity—you're creating a real artifact you'll use THIS WEEK"
-- "We're building a 60-second elevator pitch using the four-stage framework"
-- "Each stage has a specific purpose; you'll see how they build on each other"
+**What Students Should Be Doing:**
+- Drafting elevator pitch that's concise, clear, memorable
+- Using AI roleplay to practice delivery and handling follow-up questions
+- Revising based on feedback from AI interaction
 
-#### Stage 1: EXPLORE (8 min)
+**Common Problems You'll See:**
 
-**Framing (1 min):**
-- "EXPLORE is about expanding your awareness before you create anything"
-- "Passengers skip this stage and jump straight to 'AI, write my pitch'—that produces workslop"
-- "Pilots EXPLORE first: What do I need to know before crafting my message?"
+**Problem 1: Overly formal or scripted pitch**
+Student's pitch sounds like they're reading from a corporate brochure
+→ **Intervention Script:**
+"Imagine you're at a coffee shop and someone asks what you're studying and what you want to do. How would you actually answer? Start there—conversational, not corporate."
 
-**Demonstration (2 min):**
-Show a live AI interaction:
+**Problem 2: Not actually practicing aloud**
+Student types pitch, types responses to AI, never speaks
+→ **Intervention Script:**
+"Stand up. Deliver this pitch to me as if I'm a recruiter. Time yourself—60 seconds. Go."
+[This is culturally challenging for some Vietnamese students, but essential]
 
-```
-Your prompt: "I'm a second-year business student interested in sustainability and corporate social responsibility. What are 5 different career pathways that combine business strategy with social impact in Vietnam?"
+**Problem 3: Pitch lacks specific hook**
+Student says: "I'm a BBA student interested in marketing"
+→ **Intervention Script:**
+"That describes 1000 students. What makes YOU distinctive? What specific project or achievement could you mention in 10 seconds that shows your capability?"
 
-AI response: [Generates list of pathways like: impact investing, CSR consulting, social enterprise management, sustainable supply chain, ESG reporting/compliance]
+**Cultural Sensitivity Note:**
+Vietnamese business culture emphasizes modesty. Students may struggle with "selling themselves." Frame it as: "You're not bragging—you're helping the recruiter understand how you can contribute. That's respect for their time."
 
-Your follow-up: "For corporate CSR roles at Vietnamese companies like VinGroup or Vinamilk, what skills do job descriptions typically emphasize?"
-
-AI response: [Generates skills list]
-```
-
-- "Notice: I'm not asking AI to create anything yet—I'm using AI to RESEARCH and expand my thinking"
-- "This is piloting: I set the research agenda, AI provides information, I synthesize insights"
-
-**Student Work Time (5 min):**
-- "Choose 1-2 EXPLORE prompts from your tutorial handout (or create your own)"
-- "Goal: Identify 2-3 insights that surprised you + one skill gap you need to address"
-- "Document these—they'll inform your pitch in BUILD stage"
-
-**Tutor Circulation:**
-- Look for students asking AI to make decisions FOR them ("What career should I pursue?")
-  - Coach: "That's a passenger question. Pilot question: 'Given my interests in X and Y, what industries are hiring?'"
-- Celebrate good EXPLORE questions that demonstrate curiosity and strategic thinking
-- For students stuck: "What industry are you curious about? Let's craft an EXPLORE prompt together."
-
-**Quick Insight Sharing (1 min):**
-- "Who learned something surprising during EXPLORE?" (Take 1-2 quick shares)
-- Purpose: Validate that EXPLORE adds value; model the experimentation mindset
-
-#### Stage 2: BUILD (10 min)
-
-**Framing (1 min):**
-- "Now we BUILD your actual elevator pitch"
-- "You'll do this in three steps: brain dump, AI draft, refine for voice"
-- "Each step serves a purpose—don't skip straight to AI draft"
-
-**Step 1: Brain Dump (2 min):**
-- "Take rough notes answering: Who am I? What interests me? What experience/skills do I have? What am I seeking?"
-- "Don't worry about polish—bullet points are fine"
-- Tutor: Circulate and ensure students are actually writing (some will skip this—redirect them)
-
-**Step 2: AI First Draft (3 min):**
-
-**Demonstration:**
-Project a sample prompt:
-
-```
-I need a 60-second elevator pitch for an informational interview with a marketing manager.
-
-About me:
-- Second-year BBA student at NEU
-- Interested in digital marketing and consumer behavior
-- Led social media project for student club, increased engagement 40%
-- Want to learn about career pathways in marketing analytics
-
-Tone: Professional but approachable, enthusiastic about learning
-Audience: Senior marketing professional at consumer goods company
-
-Draft a pitch that sounds conversational, includes one specific detail that makes me memorable, and ends with a clear ask for a 20-minute informational interview.
-```
-
-- "Notice: I provided my brain dump + strategic direction (tone, audience, goals)"
-- "I'm piloting: AI helps structure, but the CONTENT comes from my actual experiences"
-
-**Student Work Time:**
-- "Use your brain dump to create your AI prompt"
-- "Generate first draft"
-- Tutor: Watch for students copy-pasting AI output without reading it—remind them of Step 3
-
-**Step 3: Refine for Voice (4 min):**
-- "Read AI's draft out loud"
-- "Circle phrases that don't sound like YOU"
-- "Rewrite to make it conversational—like you're actually talking to someone"
-
-**Tutor Coaching:**
-- Students often struggle to identify what sounds "off"—help them:
-  - "Would you actually say 'leverage my skills' in conversation? Or would you say 'use my skills'?"
-  - "Is that sentence too long to say in one breath? Break it up."
-- Common issue: Students make pitch too formal
-  - "This is a conversation, not a speech. Relax the language."
-
-**Checkpoint:**
-- "Who has a draft they feel decent about?" (Expect ~60% hands)
-- "Who's still working?" (That's fine—finish during CONNECT stage)
-
-#### Stage 3: CONNECT (7 min)
-
-**Framing (1 min):**
-- "CONNECT tests your pitch with simulated audiences"
-- "AI will roleplay a professional and ask you follow-up questions"
-- "This reveals gaps in your preparation"
-
-**Demonstration (2 min):**
-Show live AI roleplay:
-
-```
-Your prompt: "Roleplay: You are a senior marketing manager at Masan Group. I'm going to deliver my elevator pitch. After, ask 2-3 realistic follow-up questions and provide feedback."
-
-[You deliver pitch]
-
-AI response: "Thanks for the introduction. A few questions: (1) You mentioned increasing social media engagement by 40%—what metrics did you use to measure that? (2) What specific aspect of marketing analytics interests you most—customer segmentation, campaign optimization, or something else? (3) Have you looked into any certifications like Google Analytics?"
-
-Feedback: "Your pitch was clear and I appreciated the specific 40% metric. However, you could strengthen it by..."
-```
-
-- "Notice: AI asked reasonable questions a real professional would ask"
-- "This helps me prepare—I should have answers ready for similar questions"
-
-**Student Work Time (4 min):**
-- "Run your pitch through AI roleplay with at least one professional persona"
-- "Note questions they ask—are you prepared to answer in a real conversation?"
-
-**Pair Practice:**
-- "Deliver your pitch to your partner out loud, as if they're the professional"
-- "Partner feedback: Does it sound natural? What's memorable? Is the ask clear?"
-- Switch roles
-
-**Tutor Facilitation:**
-- Listen to pairs practicing—this is where you hear authenticity (or lack thereof)
-- Coach students reading their pitch like a script: "You're having a conversation. Make eye contact. Sound human."
-- Celebrate students whose pitches sound genuinely conversational
-
-#### Stage 4: REFINE (10 min)
-
-**Framing (1 min):**
-- "REFINE is where you apply the 30-Second Test"
-- "Would a busy professional hear this and think you're thoughtful—or generic?"
-
-**Refinement Checklist Walk-Through (3 min):**
-Project the checklist (from tutorial handout) and explain each item:
-
-- **Specificity Test:** "Is there at least one detail that makes you memorable?"
-  - Example: Not "I'm interested in marketing" but "I increased social media engagement 40% using A/B testing"
-
-- **Voice Test:** "Would someone who knows you recognize this as YOUR voice?"
-  - Read pitch out loud—does it sound like you talking?
-
-- **Jargon Test:** "Eliminate business jargon you wouldn't naturally use"
-  - "Leverage," "synergy," "strategic alignment"—do you actually talk like this?
-
-- **Clarity Test:** "Is your ask crystal clear?"
-  - Not "I'd love to learn more" but "Could I schedule a 20-minute informational interview?"
-
-- **Length Test:** "Is it 50-70 seconds when spoken at conversational pace?"
-  - Time yourself—too long = you'll rush; too short = missed opportunity
-
-- **Authenticity Test:** "Does this reflect genuine interest or generic aspirations?"
-  - "I'm passionate about business" (generic) vs. "I'm fascinated by how VinGroup balances global business practices with Vietnamese market realities" (genuine)
-
-**AI-Assisted Pressure Test (2 min):**
-- "Ask AI to critique your pitch as a skeptical hiring manager would"
-- "AI will identify weaknesses you might have missed"
-
-**Student Work Time (4 min):**
-- "Run through the refinement checklist"
-- "Get AI critique"
-- "Make final adjustments"
-- "Practice delivering one more time"
-
-**Tutor Circulation:**
-- This is final quality check—listen to students practicing
-- If you hear workslop (generic, templated, lacking specifics), provide direct feedback:
-  - "That phrase 'passionate about learning' appears in every pitch. What SPECIFICALLY interests you about this field?"
-- If you hear strong pitches, affirm: "That's exactly right—specific, authentic, clear ask."
-
-**Quality Checkpoint:**
-- Ask 2-3 volunteers to deliver their pitch to the class (only if time permits and students willing)
-- Class provides constructive feedback using 30-Second Test
-- Tutor models: "What I liked: [specific detail]. What could be stronger: [constructive suggestion]."
+**What Good Work Looks Like:**
+- Pitch is conversational, not scripted
+- Includes specific hook (achievement, project, unique angle)
+- Student can deliver it naturally in ~60 seconds
+- Student has practiced with AI roleplay and revised based on feedback
+- Pitch invites conversation (ends with question or clear next step)
 
 ---
 
-### Reflection & Action Planning (10 minutes)
+### Stage 4: Refine (70-80 min)
 
-**Transition:**
-- "We've practiced context engineering, detected workslop, and applied the four-stage framework"
-- "Now: metacognition. What did you LEARN about your own AI use?"
+**What Students Should Be Doing:**
+- Using AI to critique their own work harshly
+- Applying 30-Second Test rigorously
+- Verifying factual claims
+- Making revisions based on critique
 
-**Individual Reflection (5 min):**
+**Common Problems You'll See:**
 
-**Instructions:**
-- "Answer the four reflection questions in your notes" (from tutorial handout)
-- "Be honest—this reflection helps with your Mentorship Program reflections"
-- Silence while students write
+**Problem 1: Defensive about AI critique**
+Student gets AI feedback identifying weaknesses, dismisses it
+→ **Intervention Script:**
+"AI is giving you the harsh feedback a hiring manager would think but not tell you. This is your chance to fix problems before real stakes. What's one thing you'll change based on this feedback?"
 
-**Tutor Notes:**
-- Resist urge to fill silence—give students time to think
-- Circulate and read over shoulders (respectfully) to gauge understanding
-- If students struggling with Question 3 (identifying their Explore-Build-Connect-Refine gap), provide coaching:
-  - EXPLORE gap: "You don't research enough before creating"
-  - BUILD gap: "You struggle with execution/drafting"
-  - CONNECT gap: "Networking/communication intimidates you"
-  - REFINE gap: "You submit first drafts without quality control"
+**Problem 2: Not actually revising**
+Student runs critique, reads feedback, considers task done
+→ **Intervention Script:**
+"Show me what you're changing. I want to see before and after. What specific words or phrases are you revising?"
 
-**Brief Pair Share (2 min):**
-- "Share with your partner: Which framework stage is YOUR gap?"
-- "What's one specific action you'll take to address it?"
-- Purpose: Peer accountability; students more likely to follow through when they've verbalized commitment
+**Problem 3: Skipping verification**
+Student makes claims about company or industry without checking
+→ **Intervention Script:**
+"How do you know that's accurate? Show me where you verified this. AI hallucinates—you must check facts against primary sources."
 
-**Action Planning (3 min):**
-
-**Instructions:**
-- "Look at the Action Planning checklist" (tutorial handout)
-- "Check off what you'll commit to doing before your first mentor meeting"
-- "These aren't theoretical—you have a mentor meeting THIS WEEK or next"
-
-**Tutor Emphasis:**
-- "Everything we practiced today applies immediately to Mentorship Program"
-- "Your mentor will notice if you've prepared using these frameworks vs. showing up with generic questions"
-- "Use EXPLORE-BUILD-CONNECT-REFINE for EVERY mentor meeting prep"
+**What Good Work Looks Like:**
+- Student can point to specific revisions made after AI critique
+- Materials pass 30-Second Test when read cold by tutor or peer
+- All factual claims verified
+- Student can explain: "I changed X because it was generic/unsupported/inauthentic"
 
 ---
 
-### Closing (5 minutes)
+## Evaluation Criteria for Student Work
 
-**Key Takeaways Review:**
-- "What's the #1 thing you'll remember from today?" (Popcorn style—quick responses from multiple students)
-- Listen for: context engineering, workslop awareness, pilot vs. passenger, 30-Second Test
-- If key concepts missing, prompt: "What about the difference between pilots and passengers?"
+**Excellent (Pilot Mindset Demonstrated):**
+- Materials show clear strategic thinking aligned with job requirements
+- Specific examples with metrics/details demonstrating real experiences
+- Authentic voice (sounds like a real person, not AI)
+- Evidence of judgment: student can explain choices and tradeoffs
+- Passes 30-Second Test easily
 
-**Normalize the Learning Curve:**
-- "You won't master AI use today—that's okay"
-- "Judgment develops through practice and experimentation"
-- "Every time you use AI this semester, ask yourself: Am I piloting or passengering?"
+**Satisfactory (Mixed Pilot/Passenger):**
+- Materials show some strategic thinking but occasional generic phrasing
+- Mix of specific and vague claims
+- Mostly authentic but some AI-ish passages
+- Student can explain some choices but not all
+- Passes 30-Second Test with minor concerns
 
-**Connect to Next Week:**
-- "Week 3 is about Reflection and Reflective Learning—Gibbs' Cycle, Kolb's Cycle"
-- "Those frameworks help you extract insights from experiences like TODAY'S tutorial"
-- "The reflection skills you'll learn apply directly to Mentorship Program reflections"
+**Unsatisfactory (Passenger Mindset):**
+- Generic materials that could apply to any job/company
+- Vague claims without supporting details
+- AI-generated voice throughout (formal, stilted, buzzword-heavy)
+- Student cannot explain choices ("AI said to write it this way")
+- Fails 30-Second Test (obvious workslop)
 
-**Final Encouragement:**
-- "The fact that you're learning these skills in second year puts you ahead of 95% of professionals"
-- "Your competition isn't AI—it's other humans who don't know how to work with AI strategically"
-- "You now have the frameworks. Go practice."
-
-**Logistics:**
-- Remind about Week 2 readings if not completed
-- Office hours available for questions
-- "See you next week!"
-
----
-
-## Timing Guide
-
-| Activity | Planned Time | Actual Time | Notes |
-|----------|--------------|-------------|-------|
-| Opening | 5 min | | |
-| Activity 1: Context Engineering | 25 min | | Most likely to run over—watch clock |
-| Activity 2: Workslop Detection | 20 min | | Debrief is critical, don't rush |
-| Activity 3: EBCR Framework | 35 min | | Can compress CONNECT if needed |
-| Reflection & Action Planning | 10 min | | Don't skip—metacognition matters |
-| Closing | 5 min | | Buffer for overruns |
-| **Total** | **90 min** | | |
-
-**Timing Tips:**
-- Activities 1 and 3 will likely run over—that's okay, they're most valuable
-- If running short on time, compress CONNECT stage (pair practice is most essential part)
-- Never skip REFINE—it's where workslop gets caught
-- Build in 2-3 min buffer for technical troubleshooting
+**Intervention for Unsatisfactory Work:**
+Don't let students leave tutorial with passenger-mode work. Require one round of revision before moving on.
 
 ---
 
-## Troubleshooting Guide
+## Valid Approaches to the Task
 
-### Technical Issues
+Students can succeed with different strategies. Here are 3-5 legitimate approaches:
 
-**Problem: WiFi can't handle 30+ students on AI tools simultaneously**
-- Solution 1: Have students work in pairs sharing one device
-- Solution 2: Use printed workslop excerpts for Activity 2 (no AI needed)
-- Solution 3: Demonstrate on your device while students follow along without generating (less ideal)
+### Approach 1: Industry-Focused Strategy
+- Student selects job in specific industry (e.g., fintech)
+- Uses AI to research industry norms and expectations
+- Tailors all materials to demonstrate industry awareness
+- **Strengths:** Shows depth of research; demonstrates genuine interest
+- **When this works:** Student has clear industry target and can articulate why
 
-**Problem: Student's AI account isn't working**
-- Quick fix: Pair them with working student
-- Alternative: Create class demo account students can use
-- Last resort: Student observes and practices at home later
+### Approach 2: Skills-Emphasis Strategy
+- Student identifies 2-3 core competencies they've developed
+- Uses AI to help articulate these skills with evidence
+- Structures materials around demonstrating these capabilities
+- **Strengths:** Works well for students with diverse experiences; shows self-awareness
+- **When this works:** Student has concrete projects/experiences demonstrating skills
 
-**Problem: AI tool giving bizarre/inappropriate responses**
-- Normalize: "AI sometimes does weird things—this is why we need judgment"
-- Teaching opportunity: "This is exactly why you can't blindly trust AI outputs"
-- Redirect: "Let's try rephrasing your prompt"
+### Approach 3: Story-Driven Strategy
+- Student identifies compelling personal/professional narrative
+- Uses AI to help structure and refine storytelling
+- Materials connect experiences into coherent career arc
+- **Strengths:** Memorable; builds emotional connection; shows reflection
+- **When this works:** Student has interesting experiences to draw on and can articulate learning
 
-### Pedagogical Issues
+### Approach 4: Problem-Solution Strategy
+- Student identifies specific problem the target company/role addresses
+- Uses AI to research problem and solution landscape
+- Materials position student as someone who understands and can help solve problem
+- **Strengths:** Demonstrates business thinking; shows initiative
+- **When this works:** Student has researched company/industry enough to identify real challenges
 
-**Problem: Students producing workslop and don't realize it**
-- Intervention: Apply 30-Second Test verbally
-- Ask: "If I read this for 30 seconds, would I think a human thought carefully about this?"
-- Provide specific feedback: "This phrase is templated. What would YOU actually say?"
+### Approach 5: Comparison-Contrast Strategy
+- Student identifies what makes them different from typical candidates
+- Uses AI to help articulate distinctive angle
+- Materials emphasize unique background, perspective, or capability
+- **Strengths:** Differentiates from competition; memorable
+- **When this works:** Student genuinely has distinctive background (e.g., unusual combination of experiences)
 
-**Problem: Students too intimidated to experiment**
-- Normalize failure: "I want you to produce some bad outputs today—that's how you learn"
-- Share your own AI failures: "I once asked AI to... and it completely misunderstood"
-- Emphasize: "Nothing today is graded. This is a safe space to mess up."
+**All five approaches can work IF:**
+- Student applies pilot mindset (strategic direction, judgment)
+- Student practices good context engineering (specific, curated information)
+- Student avoids workslop (applies 30-Second Test)
 
-**Problem: Students treating AI as magic answer generator**
-- Redirect to pilot mindset: "What do YOU think should go in this pitch before asking AI?"
-- Remove AI temporarily: "Draft your pitch without AI first, THEN use AI to refine"
-- Emphasize: "AI amplifies your thinking—but YOU have to think first"
-
-**Problem: Advanced students finishing early and disengaging**
-- Extension activities:
-  - "Experiment with different AI tools and compare outputs"
-  - "Help a classmate refine their pitch"
-  - "Draft a cover letter using same framework"
-- Ask them to identify which REFINE checklist item is hardest for most students (metacognitive task)
-
-**Problem: Struggling students falling behind**
-- Triage: Identify if it's technical issue or conceptual confusion
-- Technical: Pair with working student
-- Conceptual: Provide one-on-one coaching during work time
-- If many students struggling: Stop class, re-explain concept, restart activity
-
-### Cultural Considerations
-
-**Vietnamese Student Context:**
-- Students may be reluctant to self-promote in elevator pitch (cultural humility)
-  - Frame: "Professional communication in international business requires confidence. Practice here."
-- Students may hesitate to criticize peers' work in pair evaluation
-  - Model: "Constructive feedback is a gift. Be specific and kind."
-- Students may default to formal, respectful language even when inappropriate for task
-  - Coach: "Elevator pitch is conversational. You can be respectful AND casual."
-
-**Gender Dynamics:**
-- If female students consistently understate achievements: "What you call 'helping' was actually LEADING. Own it."
-- If male students dominating pair discussions: Circulate to ensure balanced participation
+**Your job:** Identify which approach each student is attempting and help them execute it well. Don't force everyone into the same template.
 
 ---
 
-## Assessment Connections for Tutor
+## Facilitation Tips
 
-**How This Tutorial Supports Graded Work:**
+### Managing the Room
 
-**Mentorship Program (20%):**
-- EXPLORE stage → preparing discussion topics for mentor meetings
-- BUILD stage → drafting professional materials for mentor review
-- CONNECT stage → practicing before actual mentor interactions
-- REFINE stage → ensuring preparation/reflection forms are substantive, not workslop
+**Early Tutorial (0-20 min):**
+- Students will work at different paces—that's fine
+- Quick verbal check: "Who has selected their target job? Who needs help finding one?"
+- Have 2-3 backup job postings ready for students who struggle to find one
 
-**Personal Development Plan (40%):**
-- EXPLORE → researching career pathways, identifying skill gaps (SWOT analysis)
-- BUILD → drafting vision statements, SMART goals, action plans
-- REFINE → ensuring final plan reflects authentic student thinking
-- Context engineering → making AI-assisted research strategic, not generic
+**Mid Tutorial (20-50 min):**
+- This is when passenger mode emerges—circulate actively
+- Listen for: "Can you write..." → Red flag
+- Watch for: Students copy-pasting large AI outputs directly → Intervene
+- Encourage: Students discussing their prompts and AI responses with neighbors
 
-**Reflective Essay (10%):**
-- Avoiding workslop in reflective writing
-- Using AI to structure thoughts while maintaining authentic voice
-- 30-Second Test applies: Does reflection show genuine insight or AI-generated filler?
+**Late Tutorial (50-80 min):**
+- Energy may flag—do a quick energizer if needed
+- Encourage peer review: "Swap your elevator pitch with a neighbor—does it sound authentic?"
+- Some students will finish early—have extension activity: "Apply these same frameworks to your LinkedIn profile summary"
 
-**Final Oral Exam (30%):**
-- Elevator pitch practice directly prepares for PDP presentation
-- CONNECT stage models how to rehearse Q&A
-- Pilot mindset ensures presentation showcases student's thinking, not AI's
+### Common Questions & Answers
 
-**Tutor Role:**
-Throughout tutorial, make these connections explicit. Students should see immediate relevance to their graded work.
+**Q: "Is it okay to use AI for this? Isn't that cheating?"**
+A: "Using AI as a thought partner is not cheating—it's the professional skill we're developing. What would be problematic is having AI generate materials without your judgment or passing off AI's ideas as your own without understanding them. We're being transparent: you're using AI assistance, but YOU are making strategic decisions and ensuring quality."
+
+**Q: "My AI output is really generic. Does that mean I'm bad at this?"**
+A: "It means you're experiencing workslop firsthand! This is good learning. Now let's diagnose: Did you give AI enough specific context? Did you ask it to brainstorm approaches rather than write final content? Let's try again with better context engineering."
+
+**Q: "Can I use AI in Assessment 1?"**
+A: "Yes, using AI strategically and transparently is allowed and encouraged. The rubric evaluates whether you demonstrate judgment and strategic thinking—exactly what we're practicing today. Just make sure you're piloting the AI, not being a passenger."
+
+**Q: "This is taking longer than I expected. Do I have to finish everything?"**
+A: "Focus on quality over completion. It's better to do Stages 1-2 well than rush through all four stages producing workslop. The frameworks are more important than finishing every deliverable. You can apply Stage 3-4 to your materials outside class."
+
+**Q: "The AI gave different suggestions than what I was thinking. Which should I follow?"**
+A: "Perfect question! This is where judgment comes in. What are the tradeoffs? Why did AI suggest that approach? Why were you thinking differently? Often the best answer is synthesizing both—AI's suggestion plus your insight. You're the decision-maker, not AI."
 
 ---
 
-## Post-Tutorial Reflection (For Tutor)
+## Cultural Considerations for Vietnamese Students
+
+### Expected Challenges
+
+**Challenge 1: Modesty vs. Self-Promotion**
+Vietnamese culture values modesty; American-style cover letters and elevator pitches require explicit self-promotion. Students may feel uncomfortable.
+→ **Frame it as:** "You're not bragging—you're providing evidence so the employer can make an informed decision. That's respectful and professional."
+
+**Challenge 2: Unfamiliarity with Elevator Pitches**
+Elevator pitches are not common in Vietnamese business culture.
+→ **Provide cultural context:** "In Western business culture, you often have 60 seconds to introduce yourself at networking events. This is a practiced skill, not natural conversation. We're building this skill deliberately."
+
+**Challenge 3: Reluctance to "Bother" Professionals**
+Vietnamese students may feel it's presumptuous to reach out to professionals for informational interviews.
+→ **Reframe:** "In international business culture, reaching out with genuine interest and specific questions is seen as respectful initiative, not presumption. Professionals often welcome these conversations."
+
+**Challenge 4: Face-Saving Around Mistakes**
+Students may be reluctant to share AI outputs that didn't work well.
+→ **Normalize failure:** "Everyone in this room will get unhelpful AI outputs today—that's part of learning. The Chief Experimentation Officer mindset means we expect some experiments to fail. That's valuable data."
+
+**Challenge 5: Group Work Preferences**
+Vietnamese students often prefer collaborative learning.
+→ **Build in pair work:** "Turn to a neighbor and compare your prompts. What context did they include that you didn't? What approach might you try based on their example?"
+
+### Adapting Examples
+
+When providing examples, use Vietnamese context where possible:
+- Vietnamese companies (Viettel, VinGroup, Masan, etc.)
+- Regional roles (SEA market analyst, Vietnam business development)
+- Local cultural references students will recognize
+
+But also prepare students for international applications:
+- Acknowledge differences in CV formats (US vs. Vietnamese expectations)
+- Note that elevator pitches are primarily for Western business contexts
+- Explain that cover letter conventions vary by culture
+
+---
+
+## Troubleshooting Common Tutorial Issues
+
+### Issue: Students don't have AI tool access
+**Cause:** University network blocks tools, students don't have accounts
+**Solution:** Prepare before tutorial by confirming access; have backup demo where you project your screen and students guide your prompts
+
+### Issue: Students finish very quickly
+**Cause:** They've accepted first AI output without applying judgment (passenger mode)
+**Solution:** Spot check quality. Ask: "Read this aloud to me. Does it sound like you? Apply the 30-Second Test—does it have specific examples?" Require revision if workslop detected.
+
+### Issue: Students are stuck and frustrated
+**Cause:** AI giving unhelpful outputs, or students uncertain what "good" looks like
+**Solution:** Do live demo with volunteer student. Project screen, craft prompt together, show thought process. Model pilot mindset out loud: "I'm choosing to emphasize X because... Let me ask AI about Y angle..."
+
+### Issue: Time management failure
+**Cause:** Students spending too long on Stage 1-2, rushing Stage 3-4
+**Solution:** Give time warnings. At 35 minutes, announce: "You should be finishing Build stage and moving to Connect. If you're still on Explore, make a decision and move forward—you can iterate later."
+
+### Issue: Students treating this as just another task
+**Cause:** Not seeing connection to Assessment 1 or career outcomes
+**Solution:** Make stakes explicit: "The materials you create today are REAL career documents you'll use. The skills you practice today directly support Assessment 1. This isn't hypothetical—this matters for your actual job search."
+
+---
+
+## Connection to Assessment 1
+
+**Assessment 1: Personal Future Skills Plan (Due Week 4)**
+
+Today's tutorial directly scaffolds Assessment 1:
+
+**Context Engineering → Skill Development Planning**
+Students must demonstrate HOW they'll develop skills. Context engineering principles apply: be specific (Minimum Effective Dose), provide clear direction (Goldilocks Zone), allocate limited time strategically (Attention Budget).
+
+**Pilot vs. Passenger → Strategic Synthesis**
+Assessment rubric evaluates "strategic synthesis." This requires pilot mindset—demonstrating judgment about which skills matter and why, not just listing AI-generated skill lists.
+
+**30-Second Test → Authenticity**
+Assessment must reflect student's authentic thinking. Materials that read like AI-generated templates will score poorly. The 30-Second Test applies directly.
+
+**Explore-Build-Connect-Refine → Plan Structure**
+This framework can organize the Assessment: Explore (current skills and gaps), Build (development strategies), Connect (networking/mentoring plans), Refine (evaluation criteria).
+
+**Prompt students:** "The frameworks you're practicing today—context engineering, pilot mindset, 30-Second Test—apply directly to your Assessment 1. Use them when developing your Future Skills Plan."
+
+---
+
+## Post-Tutorial Follow-Up
 
 After tutorial, consider:
 
-**What Went Well:**
-- Which activity generated the most insight?
-- Which students demonstrated strong pilot mindset?
-- What examples can you share with next cohort?
+**For students who struggled:**
+- Offer office hours for one-on-one coaching on context engineering
+- Share example prompts that demonstrate pilot mindset
+- Provide feedback on draft materials if students submit them
 
-**What Needs Adjustment:**
-- Did timing work? What ran over/under?
-- Were instructions clear? Where did students get confused?
-- Did technical setup support learning or hinder it?
+**For students who excelled:**
+- Acknowledge their work: "Your materials demonstrated excellent pilot mindset"
+- Encourage them to help peers: "You've grasped this quickly—could you mentor others?"
+- Suggest extension: "Apply these frameworks to your LinkedIn profile"
 
-**Student Needs Identified:**
-- Which students may need additional support for Mentorship Program?
-- Are there common misconceptions to address in next lecture?
-- Should you hold targeted office hours for struggling students?
-
-**For Next Week:**
-- Week 3 tutorial focuses on applying Gibbs/Kolb frameworks to reflect on TODAY's tutorial experience
-- Students should bring notes from today to apply reflection frameworks
-- Consider: Can you use student-generated elevator pitches as reflection case studies?
+**For all students:**
+- Remind about Assessment 1 connection
+- Encourage continued experimentation (Chief Experimentation Officer mindset)
+- Note that Week 3 will build on today's individual AI use to explore team dynamics
 
 ---
 
-## Additional Resources for Tutor
+## Key Success Indicators
 
-**If Students Want to Go Deeper:**
+**You'll know the tutorial succeeded if:**
+1. Students can articulate difference between pilot and passenger mindset
+2. Students demonstrate discomfort with obvious workslop (their standards have risen)
+3. Students apply 30-Second Test reflexively, not just when prompted
+4. Students can explain strategic choices ("I emphasized X because...")
+5. Students see AI as thought partner, not answer generator
 
-Recommended AI tools for career development:
-- ChatGPT (free tier sufficient): General purpose, good for brainstorming
-- Claude (free tier): Strong at maintaining conversational context, good for iterative refinement
-- Gemini (free): Integrates with Google Workspace, useful if students use Google Docs
-- Microsoft Copilot (free with account): Integrates with LinkedIn, can analyze job postings
-
-**Advanced Context Engineering:**
-- Students interested in technical depth: Direct them to full Anthropic blog post
-- Key concept to explore: "Attention is all you need" (transformer architecture basics)
-
-**Workslop Research:**
-- Full HBR article has detailed statistics and case studies
-- Students can explore: What industries see highest workslop rates? (Tech, consulting)
-
-**Mentorship Program Integration:**
-- Share sample preparation form filled out using EXPLORE-BUILD-REFINE framework
-- Provide example: Strong vs. weak mentor meeting reflection (workslop vs. piloted)
+**You'll know the tutorial needs adjustment if:**
+- Most students accept first AI output without iteration
+- Students can't explain why they made certain choices
+- Materials are generic and interchangeable
+- Students express "AI isn't helpful" (suggests context engineering problem)
 
 ---
 
-## Emergency Backup Plan
+## Tutor Reflection Questions (Post-Tutorial)
 
-**If Technology Completely Fails:**
+After tutorial, reflect:
+1. What percentage of students demonstrated pilot vs. passenger mindset?
+2. What intervention strategies were most effective?
+3. Did cultural factors (modesty, face-saving, etc.) affect student engagement?
+4. What would you change in timing or structure for next time?
+5. Are students prepared to apply these frameworks to Assessment 1?
 
-**Activity 1 Alternative (No AI):**
-- Students write three versions of CV bullet manually
-- Pair feedback on which sounds most professional
-- Class discussion on what makes good CV bullets
-- Less impactful but still teaches critical evaluation
-
-**Activity 2 Alternative (No AI):**
-- Workslop detection works WITHOUT AI (just need printed excerpts)
-- Proceed as planned with pair analysis and class debrief
-- This activity is tech-independent
-
-**Activity 3 Alternative (No AI):**
-- Students draft elevator pitch manually using framework
-- Pair practice and feedback (no AI roleplay)
-- Focus on REFINE checklist and 30-Second Test
-- Less practice but core skill still developed
-
-**Key Principle:**
-The pedagogy (pilot vs. passenger mindset, 30-Second Test, strategic thinking) can be taught even without functional AI tools. Technology enhances but doesn't replace the core learning objectives.
-
----
-
-**Tutorial Preparation Complete**
-
-You're ready to facilitate an engaging, practical tutorial that builds essential AI literacy for career development. Remember:
-- Normalize experimentation and failure
-- Emphasize judgment over technical skill
-- Connect every activity to students' immediate needs (Mentorship Program starting this week)
-- Model the pilot mindset in your own teaching
-
-Good luck!
+Share insights with other tutors to continuously improve facilitation.

@@ -2,347 +2,355 @@
 metadata:
   week: 5
   topic: "Self-Discovery Through Assessment"
-  prepares_for: "Personal Development Plan (Week 11)"
+  prepares_for: "Personal Development Plan Framework (35%)"
   source: "lecture-content.md"
 
 questions:
-  - id: "W5-Q1-johari-window"
+  - id: "W5-Q1-self-awareness-dimensions"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Johari Window"
+    topic: "Self-Awareness Dimensions"
 
     question: |
-      What are the four quadrants of the Johari Window framework?
+      According to London, Sessa, and Shelley (2023), what are the two dimensions of self-awareness?
 
     options:
       - key: "A"
-        text: "Open Area, Blind Spot, Hidden Area, Unknown"
-        feedback: "Correct! The Johari Window identifies these four quadrants representing different aspects of self-knowledge and how others perceive us."
+        text: "Internal self-awareness (knowing your values, strengths, goals) and external self-awareness (understanding how others perceive you)"
+        feedback: "Correct! London et al. (2023) establish that self-awareness has two independent dimensions: internal self-awareness involves clarity about your own values, passions, goals, strengths, and thought patterns, while external self-awareness involves understanding how others perceive you and your impact on social interactions."
         correct: true
 
       - key: "B"
-        text: "Internal, External, Social, Personal"
-        feedback: "Incorrect. These are not the Johari Window quadrants. The framework uses Open Area, Blind Spot, Hidden Area, and Unknown."
+        text: "Cognitive self-awareness (thinking patterns) and emotional self-awareness (feeling patterns)"
+        feedback: "Incorrect. While thinking and feeling are important aspects of self-knowledge, London et al.'s framework specifically distinguishes internal (self-knowledge) from external (others' perceptions) dimensions, not cognitive vs. emotional."
 
       - key: "C"
-        text: "Strengths, Weaknesses, Opportunities, Threats"
-        feedback: "Incorrect. This describes SWOT analysis, not the Johari Window framework."
+        text: "Personal self-awareness (private identity) and professional self-awareness (work identity)"
+        feedback: "Incorrect. The two dimensions are internal and external self-awareness, not personal vs. professional. Both internal and external awareness apply across personal and professional contexts."
 
       - key: "D"
-        text: "Personality, Values, Interests, Skills"
-        feedback: "Incorrect. These are categories of self-knowledge, not the Johari Window quadrants."
+        text: "Self-knowledge (what you know) and self-regulation (how you control behavior)"
+        feedback: "Incorrect. Self-regulation is distinct from self-awareness. London et al.'s framework focuses on two awareness dimensions (internal and external), not knowledge vs. regulation."
 
     general_feedback: |
-      The Johari Window (Luft & Ingham, 1955) has four quadrants: (1) <b>Open Area</b> (known to self and others—your public self), (2) <b>Blind Spot</b> (unknown to self but known to others—what others see that you don't), (3) <b>Hidden Area</b> (known to self but unknown to others—your private self), (4) <b>Unknown</b> (unknown to both self and others—undiscovered potential). The goal is to expand the Open Area through <b>self-disclosure</b> (revealing yourself to others) and <b>feedback-seeking</b> (learning how others perceive you). See Week 5 slides 7-9.
+      London et al. (2023) establish that self-awareness has two independent dimensions that are only weakly correlated. **Internal self-awareness** is your private self-knowledge—what you care about, what you're good at, how you think. **External self-awareness** is your social self-knowledge—how others see you, your impact on teams, your reputation. Complete self-awareness requires developing both dimensions simultaneously through both self-assessment (internal) and feedback-seeking (external). See Week 5 slides 5-6.
 
-  - id: "W5-Q2-self-awareness-dimensions"
+  - id: "W5-Q2-rumination-vs-reflection"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Self-Awareness Theory"
+    topic: "Self-Awareness Development Processes"
 
     question: |
-      How do internal and external self-awareness differ according to London et al. (2023)?
+      A student repeatedly thinks "Why am I so bad at presentations? Why can't I be like others?" without taking action to improve. According to London et al. (2023), this is an example of which self-awareness process?
 
     options:
       - key: "A"
-        text: "Internal self-awareness is understanding your own values and goals; external self-awareness is understanding how others perceive you"
-        feedback: "Correct! Internal self-awareness focuses on your private self-knowledge (values, interests, emotions). External self-awareness focuses on understanding your social impact and how others view you."
-        correct: true
+        text: "Reflection—structured self-examination for learning"
+        feedback: "Incorrect. Reflection involves structured self-examination with learning intent, asking 'What can I learn?' This example shows repetitive negative thinking without resolution, which is rumination, not reflection."
 
       - key: "B"
-        text: "Internal is more important than external for career success"
-        feedback: "Incorrect. London et al. emphasize that BOTH dimensions are essential. Internal only leads to blind spots; external only leads to losing your authentic core."
-
-      - key: "C"
-        text: "Internal comes from assessments; external comes from experience"
-        feedback: "Incorrect. This confuses sources with dimensions. Internal self-awareness involves understanding your inner world (from introspection, journaling, assessments). External involves understanding your social impact (from feedback, observation)."
-
-      - key: "D"
-        text: "They are the same thing measured differently"
-        feedback: "Incorrect. They are independent dimensions—you can be high on one and low on the other. Internal = self-understanding; External = understanding how others see you."
-
-    general_feedback: |
-      London et al.'s (2023) research identifies two <b>independent</b> (separate, not connected) dimensions of self-awareness. <b>Internal self-awareness</b> means understanding your own values, interests, goals, emotions, and cognitive patterns. Tools include <b>introspection</b> (examining your own thoughts), journaling, and self-assessments. <b>External self-awareness</b> means understanding how others perceive you—your impact, social skills, and reputation. Tools include 360-degree feedback, mentor insights, and peer observations. Both are essential: internal-only = blind spots; external-only = chameleon with no authentic core. See Week 5 slides 8-9.
-
-  - id: "W5-Q3-mbti-reliability"
-    type: "multiple_choice"
-    bloom_level: "remembering"
-    topic: "MBTI Psychometrics"
-
-    question: |
-      According to Erford et al.'s (2025) 25-year review, what did research find about MBTI's reliability and validity?
-
-    options:
-      - key: "A"
-        text: "Acceptable reliability (α = 0.85-0.92) but weak validity (only 2.8% of correlations reached r ≥ 0.50)"
-        feedback: "Correct! MBTI shows acceptable internal consistency (reliability) but weak convergent validity—it doesn't correlate well with similar instruments or predict career outcomes."
+        text: "Rumination—threat-focused repetitive negative thinking"
+        feedback: "Correct! London et al. (2023) distinguish rumination from productive reflection. Rumination involves repetitive, threat-focused negative thinking without resolution or action, which predicts anxiety and depression. The key difference is that rumination asks 'What's wrong with me?' while reflection asks 'What can I learn?'"
         correct: true
 
-      - key: "B"
-        text: "Both excellent reliability and validity"
-        feedback: "Incorrect. While reliability is acceptable (α = 0.85-0.92), validity is weak. Only 2.8% of correlations with similar instruments and 0.5% with career outcomes reached the r ≥ 0.50 threshold."
-
       - key: "C"
-        text: "Poor reliability but strong validity"
-        feedback: "Incorrect. You have this reversed. MBTI has acceptable reliability but weak validity."
+        text: "Metacognition—awareness of thinking patterns"
+        feedback: "Incorrect. Metacognition is thinking about thinking processes—noticing your problem-solving strategies and cognitive patterns. The example shows rumination: repetitive negative thinking focused on deficits without productive resolution."
 
       - key: "D"
-        text: "Both poor reliability and poor validity"
-        feedback: "Incorrect. Reliability (consistency) is actually acceptable at α = 0.85-0.92. It's the validity (accuracy in measuring what it claims) that is weak."
+        text: "Mindfulness—present-moment non-judgmental awareness"
+        feedback: "Incorrect. Mindfulness involves present-moment awareness without judgment. The example describes repetitive negative self-judgment focused on past performance, which is rumination, not mindfulness."
 
     general_feedback: |
-      Erford et al. (2025) synthesized 193 MBTI studies from 1999-2024. <b>Reliability</b> (consistency—do you get the same result when retested?) was acceptable: α = 0.845-0.921 across the four scales. However, <b>validity</b> (accuracy—does it measure what it claims and predict what it promises?) was weak: only 2.8% of <b>correlations</b> (statistical relationships) with similar personality instruments reached r ≥ 0.50, and only 0.5% of correlations with career outcomes reached that threshold. The critical issue is MBTI forces <b>continuous</b> (on a spectrum) traits into <b>binary</b> (either/or) categories—you're not 100% Extraverted or Introverted, but MBTI gives you a single letter. See Week 5 slides 12-13.
+      London et al. (2023) identify four learning processes for self-awareness: (1) **Reflection** (structured self-examination with learning intent—productive), (2) **Rumination** (repetitive, threat-focused negative thinking—harmful), (3) **Metacognition** (awareness of thought patterns), and (4) **Mindfulness** (present-moment awareness without judgment). For career development, prioritize reflection and metacognition while avoiding rumination. When you catch yourself in a negative spiral asking "What's wrong with me?", that's rumination—shift to structured reflection asking "What can I learn?" See Week 5 slide 7.
 
-  - id: "W5-Q4-mbti-usage"
+  - id: "W5-Q3-johari-window-blind-spot"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "MBTI Application"
+    topic: "Johari Window Application"
 
     question: |
-      Why should MBTI be used as a conversation starter rather than a career prescription?
+      In the Johari Window framework, which quadrant would contain a student's unconscious habit of interrupting others during group discussions—something team members notice but the student is unaware of?
 
     options:
       - key: "A"
-        text: "Because MBTI describes preferences (not abilities) and has weak career prediction validity according to Erford et al. (2025)"
-        feedback: "Correct! MBTI measures preferences, not abilities—introverts CAN lead, thinkers CAN empathize. Research shows it has almost no correlation with job performance or satisfaction, so treating it as career prescription ignores the evidence."
-        correct: true
+        text: "Open Area (known to self and others)"
+        feedback: "Incorrect. The Open Area contains what both you and others know. An unconscious habit the student is unaware of would not be in the Open Area."
 
       - key: "B"
-        text: "Because career counselors don't trust personality assessments"
-        feedback: "Incorrect. Career counselors use personality assessments, but they evaluate validity. MBTI is popular but has weak career prediction evidence (Erford et al., 2025)—that's why it should be a starting point, not the final answer."
+        text: "Blind Spot (unknown to self, known to others)"
+        feedback: "Correct! The Blind Spot quadrant contains what others observe about you but you don't recognize in yourself. An unconscious interrupting habit that team members notice but the student is unaware of fits this category. Neubauer et al. (2018) found that young people systematically have blind spots about their own abilities. The Blind Spot shrinks through seeking and receiving feedback from others."
+        correct: true
 
       - key: "C"
-        text: "Because MBTI types change daily so results aren't stable"
-        feedback: "Incorrect. MBTI has acceptable reliability (consistency over time). The issue is validity—it doesn't predict career success well. Also, personality is most fluid ages 18-25, but 'daily change' is an exaggeration."
+        text: "Hidden Area (known to self, unknown to others)"
+        feedback: "Incorrect. The Hidden Area contains what you know but choose not to share with others. An unconscious habit the student is unaware of cannot be in the Hidden Area since it's not known to the student."
 
       - key: "D"
-        text: "Because only Big Five assessments are scientifically valid"
-        feedback: "Incorrect. While Big Five does have stronger validity than MBTI, this oversimplifies. The reason to use MBTI carefully is its weak career prediction (r < 0.50 with outcomes), not because it's the only invalid tool."
+        text: "Unknown Area (unknown to both self and others)"
+        feedback: "Incorrect. The Unknown Area contains what neither you nor others recognize. Since team members have noticed the interrupting habit, it's not in the Unknown Area—it's in the Blind Spot (others know, you don't)."
 
     general_feedback: |
-      MBTI should be a conversation starter because: (1) It describes <b>preferences</b> (what you naturally lean toward), not <b>abilities</b> (what you can do)—introverts CAN successfully lead teams, it just may require more energy. (2) Erford et al.'s (2025) research found weak <b>validity</b> (accuracy)—correlations with career performance and satisfaction were almost all below r = 0.50. (3) Personality is most <b>fluid</b> (changeable) ages 18-25, so your type today may not be your type at 29. Use MBTI to spark self-reflection and discuss with mentors, but cross-check with VIA Character Strengths, Holland Code, and actual experiences before making career decisions. See Week 5 slide 13.
+      The **Johari Window** maps self-knowledge across four quadrants based on what's known to self and others. **Open Area** (both know), **Blind Spot** (others know, you don't), **Hidden Area** (you know, others don't), **Unknown Area** (neither knows). Career development expands the Open Area by shrinking the other three: feedback reduces Blind Spot, self-disclosure reduces Hidden Area, and new experiences reduce Unknown Area. This model explains why we need both self-assessment (for Hidden/Unknown) and peer feedback (for Blind Spot). See Week 5 slide 6.
 
-  - id: "W5-Q5-via-framework"
+  - id: "W5-Q4-mbti-structure"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "VIA Character Strengths"
+    topic: "MBTI Structure"
 
     question: |
-      What are the six virtues in the VIA Character Strengths framework?
+      How many dichotomies does the Myers-Briggs Type Indicator (MBTI) assess, and what is the resulting number of personality types?
 
     options:
       - key: "A"
-        text: "Wisdom, Courage, Humanity, Justice, Temperance, Transcendence"
-        feedback: "Correct! VIA identifies these six universal virtues, each expressed through 3-5 specific character strengths (24 strengths total)."
+        text: "4 dichotomies, resulting in 16 personality types"
+        feedback: "Correct! MBTI assesses four dichotomies: Extraversion-Introversion (energy direction), Sensing-Intuition (information gathering), Thinking-Feeling (decision making), and Judging-Perceiving (lifestyle orientation). All combinations of these four dichotomies (2^4) produce 16 personality types such as INTJ, ESFP, and ENFP."
         correct: true
 
       - key: "B"
-        text: "Creativity, Kindness, Leadership, Perseverance, Judgment, Honesty"
-        feedback: "Incorrect. These are individual character strengths (6 of the 24), not the six overarching virtues. The virtues are Wisdom, Courage, Humanity, Justice, Temperance, Transcendence."
+        text: "5 dichotomies, resulting in 32 personality types"
+        feedback: "Incorrect. MBTI has 4 dichotomies, not 5. The four dichotomies (E-I, S-N, T-F, J-P) combine to produce 16 personality types."
 
       - key: "C"
-        text: "Strategic Thinking, Executing, Influencing, Relationship Building"
-        feedback: "Incorrect. These are CliftonStrengths domains, not VIA virtues. VIA uses Wisdom, Courage, Humanity, Justice, Temperance, Transcendence."
+        text: "3 dichotomies, resulting in 8 personality types"
+        feedback: "Incorrect. MBTI assesses 4 dichotomies (not 3), which combine to produce 16 personality types (not 8)."
 
       - key: "D"
+        text: "6 dichotomies, resulting in 24 personality types"
+        feedback: "Incorrect. MBTI has 4 dichotomies producing 16 types. Note that Big Five personality model has 5 dimensions (not dichotomies), which is a different framework."
+
+    general_feedback: |
+      MBTI assesses personality across **four dichotomies**: (1) **Extraversion-Introversion** (energy direction), (2) **Sensing-Intuition** (information gathering style—details vs. patterns), (3) **Thinking-Feeling** (decision-making approach—logic vs. values), (4) **Judging-Perceiving** (lifestyle orientation—structure vs. flexibility). All combinations produce **16 personality types**. Erford et al. (2025) note that the binary typing approach forces continuous traits into dichotomies with no middle ground, which is a key criticism affecting validity. See Week 5 slide 10.
+
+  - id: "W5-Q5-mbti-validity-findings"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "MBTI Psychometric Validity"
+
+    question: |
+      According to Erford et al.'s (2025) 25-year psychometric synthesis of 193 studies, what was the key finding regarding MBTI's validity for career prediction?
+
+    options:
+      - key: "A"
+        text: "MBTI showed excellent validity with most correlations exceeding 0.70 with career success"
+        feedback: "Incorrect. Erford et al. (2025) found weak validity for career prediction, not excellent validity. Only 0.5% of correlations with career measures reached meaningful levels."
+
+      - key: "B"
+        text: "Only 0.5% of correlations with career measures reached the meaningful threshold (r ≥ 0.50)"
+        feedback: "Correct! Erford et al. (2025) found that while MBTI demonstrates acceptable internal consistency (reliability), its validity for career prediction is weak. Only 0.5% of correlations with career-related measures reached the r ≥ 0.50 threshold considered meaningful. This indicates MBTI poorly predicts career outcomes."
+        correct: true
+
+      - key: "C"
+        text: "MBTI perfectly predicted career satisfaction in 80% of cases studied"
+        feedback: "Incorrect. MBTI did not show perfect or near-perfect career prediction. Only 0.5% of correlations reached meaningful levels, indicating very weak predictive validity."
+
+      - key: "D"
+        text: "MBTI was more valid than the Big Five for predicting job performance"
+        feedback: "Incorrect. Research suggests Big Five has stronger validity than MBTI. Erford et al. found MBTI's convergent validity with Big Five was mixed, and career prediction was very weak."
+
+    general_feedback: |
+      Erford et al.'s (2025) comprehensive synthesis of 193 studies (1999-2024) found **mixed psychometric evidence** for MBTI. **Reliability** is acceptable—internal consistency ranges from 0.845 to 0.921. However, **validity** is problematic: only **2.8% of correlations** with similar personality measures reached meaningful levels, and only **0.5% of correlations with career measures** reached r ≥ 0.50. The fundamental problem is **binary typing**: MBTI forces continuous traits into dichotomies without middle ground, losing information and reducing validity. Use MBTI for starting conversations, not making career predictions. See Week 5 slides 11-12.
+
+  - id: "W5-Q6-mbti-appropriate-use"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "MBTI Appropriate Application"
+
+    question: |
+      Based on the research evidence presented in lecture, which of the following represents an appropriate use of MBTI in career development?
+
+    options:
+      - key: "A"
+        text: "Using MBTI results to make hiring decisions for job candidates"
+        feedback: "Incorrect. Using MBTI for hiring decisions is both discriminatory and invalid given the weak evidence for predicting job performance. This is an inappropriate use."
+
+      - key: "B"
+        text: "Starting self-reflection conversations about work preferences and exploring career fields tentatively"
+        feedback: "Correct! Given MBTI's mixed psychometric evidence, appropriate uses include starting conversations about preferences, building team awareness of diverse approaches, and tentatively exploring career fields aligned with preferences—but as hypotheses to test, not definitive answers. The key principle: use MBTI as one input among many, validated through actual experience."
+        correct: true
+
+      - key: "C"
+        text: "Limiting career exploration based on type (e.g., 'I'm an introvert so I can't do sales')"
+        feedback: "Incorrect. Limiting exploration based on type descriptions is inappropriate. Personality preferences don't determine capability—many successful salespeople are introverts. Assessment results should expand exploration, not limit it."
+
+      - key: "D"
+        text: "Predicting job performance with confidence based solely on personality type"
+        feedback: "Incorrect. Erford et al. (2025) found weak empirical support for MBTI predicting career outcomes. Using it to predict performance with confidence is inappropriate given the evidence."
+
+    general_feedback: |
+      Given mixed evidence, **appropriate MBTI uses**: (1) Starting conversations about work preferences, (2) Building team awareness of diverse approaches, (3) Tentatively exploring career fields (as hypotheses to test). **Inappropriate uses**: (1) Making hiring decisions (discriminatory and invalid), (2) Limiting exploration ("I can't do X because of my type"), (3) Predicting performance (weak empirical support), (4) Assuming type is fixed and unchangeable. **Key principle**: Use MBTI as one input among many; validate with other assessments and actual experiences. Assessment informs decisions; experience validates them. See Week 5 slide 13.
+
+  - id: "W5-Q7-via-framework-structure"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "VIA Character Strengths Framework"
+
+    question: |
+      The VIA Character Strengths framework, developed by Peterson and Seligman (2004), consists of how many character strengths organized under how many universal virtues?
+
+    options:
+      - key: "A"
+        text: "24 character strengths organized under 6 universal virtues"
+        feedback: "Correct! Peterson and Seligman's VIA framework identifies 24 character strengths organized under 6 universal virtues: Wisdom & Knowledge, Courage, Humanity, Justice, Temperance, and Transcendence. The framework was developed over three years by 55 scientists who reviewed philosophical traditions, religious texts, and psychological research to identify character strengths valued across cultures and history."
+        correct: true
+
+      - key: "B"
+        text: "34 character strengths organized under 4 universal virtues"
+        feedback: "Incorrect. You may be thinking of CliftonStrengths, which has 34 talent themes (though not organized under virtues). VIA has 24 character strengths under 6 virtues."
+
+      - key: "C"
+        text: "16 character strengths organized under 5 universal virtues"
+        feedback: "Incorrect. VIA has 24 character strengths (not 16) organized under 6 universal virtues (not 5)."
+
+      - key: "D"
+        text: "20 character strengths organized under 8 universal virtues"
+        feedback: "Incorrect. VIA has 24 character strengths organized under 6 universal virtues (Wisdom, Courage, Humanity, Justice, Temperance, Transcendence)."
+
+    general_feedback: |
+      The **VIA framework** emerged from positive psychology's effort to create a scientific classification of human strengths—"the backbone of positive psychology." The **6 universal virtues** are: (1) **Wisdom & Knowledge** (cognitive strengths like curiosity, judgment), (2) **Courage** (emotional strengths like perseverance, honesty), (3) **Humanity** (interpersonal strengths like kindness, love), (4) **Justice** (civic strengths like teamwork, leadership), (5) **Temperance** (strengths protecting against excess like self-regulation, humility), (6) **Transcendence** (strengths connecting to larger meaning like gratitude, hope). All **24 strengths** are positive—VIA focuses on what's right about people, not what's wrong. See Week 5 slide 15.
+
+  - id: "W5-Q8-sbcc-outcomes"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Strengths-Based Career Counseling Evidence"
+
+    question: |
+      In Littman-Ovadia et al.'s (2014) study comparing Strengths-Based Career Counseling (SBCC) using VIA assessment to traditional career counseling, what was the key outcome difference at 3-month follow-up?
+
+    options:
+      - key: "A"
+        text: "SBCC group achieved 80% employment rate versus 60% for traditional counseling, and only SBCC showed significant self-esteem gains"
+        feedback: "Correct! Littman-Ovadia et al. (2014) demonstrated that SBCC using VIA assessment produced superior outcomes: 80% employment versus 60% for traditional counseling, plus significant self-esteem gains only in the SBCC group. Qualitatively, SBCC participants reported increased self-knowledge, improved career direction, confirmation of abilities, and improved confidence. This provides empirical evidence that strengths-based approaches produce better career outcomes."
+        correct: true
+
+      - key: "B"
+        text: "Both groups achieved identical employment rates and self-esteem changes"
+        feedback: "Incorrect. There were significant differences: SBCC achieved 80% employment vs. 60% traditional, and only SBCC showed self-esteem gains."
+
+      - key: "C"
+        text: "Traditional counseling outperformed SBCC in all measured outcomes"
+        feedback: "Incorrect. The opposite was true—SBCC outperformed traditional counseling in both employment rates (80% vs. 60%) and self-esteem changes."
+
+      - key: "D"
+        text: "SBCC showed higher self-esteem but lower employment rates than traditional counseling"
+        feedback: "Incorrect. SBCC showed BOTH higher self-esteem AND higher employment rates (80% vs. 60%) compared to traditional counseling."
+
+    general_feedback: |
+      Littman-Ovadia et al. (2014) tested **Strengths-Based Career Counseling (SBCC)** using VIA assessment versus traditional counseling. **Results**: (1) **80% employment** in SBCC group vs. **60% traditional** at 3-month follow-up, (2) **Significant self-esteem gains** only in SBCC group, (3) **Qualitative findings**: increased self-knowledge, improved career direction, confirmation of abilities, improved confidence. **Why does focusing on strengths work better?** Traditional counseling often focuses on skill deficits (what to fix). Strengths-based counseling focuses on what you already do well and how to leverage it, building confidence and helping you find roles aligning with natural talents. See Week 5 slide 16.
+
+  - id: "W5-Q9-cliftonstrengths-validity"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "CliftonStrengths Validity Evidence"
+
+    question: |
+      Reid and Short's (2024) study examining CliftonStrengths Assessment psychometric properties in college students found which concerning validity issue?
+
+    options:
+      - key: "A"
+        text: "Less than one-quarter of the 34 themes showed adequate reliability in college student samples"
+        feedback: "Correct! Reid and Short (2024) found serious validity concerns: less than half of the 34 CliftonStrengths themes showed adequate internal consistency in general populations, and less than one-quarter were reliable in college student samples specifically. The authors concluded that 'current evidence for implementing CSA in higher education is insufficient.' This contrasts with VIA Character Strengths, which has stronger psychometric support."
+        correct: true
+
+      - key: "B"
+        text: "All 34 themes demonstrated excellent reliability and validity across all populations"
+        feedback: "Incorrect. Reid and Short (2024) found the opposite—serious reliability concerns, with less than one-quarter of themes showing adequate reliability in college students."
+
+      - key: "C"
+        text: "CliftonStrengths significantly outperformed VIA in predicting academic success"
+        feedback: "Incorrect. Reid and Short's study raised validity concerns about CliftonStrengths in college students. VIA has stronger psychometric evidence for this population."
+
+      - key: "D"
+        text: "CliftonStrengths was more valid for students than for working professionals"
+        feedback: "Incorrect. Reid and Short found CliftonStrengths was LESS valid for college students than general populations, with less than one-quarter of themes showing adequate reliability in student samples."
+
+    general_feedback: |
+      Reid and Short's (2024) critical evaluation found **serious psychometric concerns** for CliftonStrengths in college students: **Less than half** of 34 themes showed adequate internal consistency (reliability) in general populations, and **less than one-quarter** were reliable in college student samples. If you take CliftonStrengths today and again next month, results might change substantially—not because you changed, but because the instrument is unreliable. Authors conclude evidence is **insufficient for higher education**. **Recommendation**: Use **VIA Character Strengths** (free, better validated) as primary assessment. Understand CliftonStrengths conceptually for organizational contexts. **Broader lesson**: Always ask about psychometric evidence—popular doesn't mean valid. See Week 5 slide 18.
+
+  - id: "W5-Q10-riasec-types"
+    type: "multiple_choice"
+    bloom_level: "remembering"
+    topic: "Holland Code/RIASEC Types"
+
+    question: |
+      In Holland's RIASEC model, what does the code "RIASEC" stand for, representing the six vocational interest types?
+
+    options:
+      - key: "A"
         text: "Realistic, Investigative, Artistic, Social, Enterprising, Conventional"
-        feedback: "Incorrect. This is Holland's RIASEC model, not VIA. VIA virtues are Wisdom, Courage, Humanity, Justice, Temperance, Transcendence."
+        feedback: "Correct! RIASEC represents six vocational interest types: Realistic (hands-on work with tools/objects), Investigative (analytical, scientific problem-solving), Artistic (creative expression and innovation), Social (helping and teaching people), Enterprising (persuading, leading, managing), and Conventional (organizing data, maintaining systems). These types are arranged in a hexagon where adjacent types are more similar and opposite types are most different."
+        correct: true
+
+      - key: "B"
+        text: "Rational, Intuitive, Analytical, Strategic, Evaluative, Creative"
+        feedback: "Incorrect. These words don't represent Holland's RIASEC types. The correct types are Realistic, Investigative, Artistic, Social, Enterprising, Conventional."
+
+      - key: "C"
+        text: "Reflective, Independent, Ambitious, Structured, Energetic, Cautious"
+        feedback: "Incorrect. While these adjectives might describe personality traits, they are not Holland's RIASEC vocational interest types."
+
+      - key: "D"
+        text: "Relational, Inventive, Authentic, Systematic, Entrepreneurial, Cooperative"
+        feedback: "Incorrect. These are not Holland's types. RIASEC stands for Realistic, Investigative, Artistic, Social, Enterprising, Conventional."
 
     general_feedback: |
-      The VIA (Values in Action) Character Strengths framework, developed by Peterson & Seligman (2004) with 55 scientists over 3 years, identifies 24 character strengths organized under 6 <b>virtues</b> (broad value categories recognized across cultures): (1) <b>Wisdom</b> (Creativity, Curiosity, Judgment, Love of Learning, Perspective), (2) <b>Courage</b> (Bravery, Perseverance, Honesty, Zest), (3) <b>Humanity</b> (Love, Kindness, Social Intelligence), (4) <b>Justice</b> (Teamwork, Fairness, Leadership), (5) <b>Temperance</b> (Forgiveness, Humility, Prudence, Self-Regulation), (6) <b>Transcendence</b> (Appreciation of Beauty, Gratitude, Hope, Humor, Spirituality). Your "signature strengths" are your top 5-7 strengths that feel most authentic and energizing. See Week 5 slide 15.
+      **RIASEC** represents six vocational interest types in Holland's model: **(R) Realistic** (hands-on, practical work with tools/machines), **(I) Investigative** (analytical, scientific, intellectual work), **(A) Artistic** (creative, innovative, aesthetic expression), **(S) Social** (helping, teaching, supporting people), **(E) Enterprising** (persuading, leading, managing, influencing), **(C) Conventional** (organizing data, maintaining structured systems, detail work). Nauta (2010) explains these are arranged in a **hexagon** where **adjacent types** are more similar (e.g., R-I share analytical precision) and **opposite types** are most different (e.g., R-S: things-focused vs. people-focused). Your Holland Code is typically a 3-letter combination like IAS or ESC. See Week 5 slide 21.
 
-  - id: "W5-Q6-via-career-evidence"
+  - id: "W5-Q11-congruence-hypothesis"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "VIA in Career Development"
+    topic: "Holland Congruence Evidence"
 
     question: |
-      What did Littman-Ovadia et al.'s (2014) research demonstrate about using character strengths in career counseling?
+      According to Nauta's (2010) review of Holland's theory, what was the meta-analytic finding for the congruence-satisfaction relationship, and how should this be interpreted?
 
     options:
       - key: "A"
-        text: "Strengths-based career counseling led to 80% employment rate (vs. 60% traditional) and significant self-esteem gains"
-        feedback: "Correct! The study showed strengths-based approaches produce measurable outcomes: 20% higher employment rate, improved self-esteem, and increased career clarity."
+        text: "Mean correlation r = 0.17 (modest but consistent)—small effects matter over decades-long careers and help narrow 300+ career options"
+        feedback: "Correct! Tsabari et al.'s (2005) meta-analysis, reviewed by Nauta (2010), found a mean correlation of r = 0.17 between congruence and satisfaction (~3% of variance). While this sounds small, Nauta argues it's practically significant: (1) small effects compound over 40-year careers, and (2) even modest effects are useful when narrowing 300+ possible careers to 10-20 worth exploring. Congruence is one factor among many but better than chance for predicting satisfaction."
         correct: true
 
       - key: "B"
-        text: "Character strengths predict career success better than IQ"
-        feedback: "Incorrect. The study didn't compare character strengths to IQ. It compared strengths-based career counseling (80% employment) to traditional career counseling (60% employment) after 3 months."
+        text: "Mean correlation r = 0.85 (very strong)—congruence is the primary determinant of career satisfaction"
+        feedback: "Incorrect. The actual correlation was r = 0.17, which is modest, not very strong. Congruence is one of many factors affecting satisfaction, not the primary determinant."
 
       - key: "C"
-        text: "VIA assessment is more reliable than CliftonStrengths"
-        feedback: "Incorrect. While VIA does have stronger validation than CliftonStrengths (Reid & Short, 2024), the Littman-Ovadia study focused on employment outcomes from strengths-based counseling, not comparing assessment tools."
+        text: "Mean correlation r = 0.02 (negligible)—congruence has no practical value for career guidance"
+        feedback: "Incorrect. While the correlation is modest (r = 0.17), not negligible (r = 0.02), it has practical value for career exploration and hypothesis generation."
 
       - key: "D"
-        text: "People should only pursue careers matching their top strengths"
-        feedback: "Incorrect. The study showed that identifying and applying strengths improves outcomes, but it doesn't suggest limiting career choices only to strength matches. Job crafting allows using strengths even in roles that don't perfectly align."
+        text: "Mean correlation r = -0.30 (negative)—high congruence actually predicts lower satisfaction"
+        feedback: "Incorrect. The correlation is positive (r = 0.17), not negative. Higher congruence predicts higher satisfaction, though the effect is modest."
 
     general_feedback: |
-      Littman-Ovadia et al. (2014) tested a 4-session <b>Strengths-Based Career Counseling (SBCC)</b> intervention where counselors helped job-seekers identify VIA signature strengths and apply them to career planning. Results after 3 months: (1) <b>80% employment rate</b> for SBCC group vs. 60% for traditional counseling (20% higher success), (2) significant gains in self-esteem (job-seeking is emotionally draining, and recognizing strengths rebuilds confidence), (3) qualitative feedback showed increased career clarity and confirmation of abilities. The research demonstrates that strengths-based approaches aren't just feel-good psychology—they produce measurable outcomes. You can apply this through <b>job crafting</b> (reshaping tasks within a role to use your strengths even if the overall job doesn't perfectly match). See Week 5 slide 16.
+      Holland's **congruence hypothesis**: When person's interests match job environment, outcomes improve (satisfaction, performance, stability, well-being). **Meta-analytic evidence** (Tsabari et al., 2005): Mean correlation **r = 0.17** between congruence and satisfaction—explains ~3% of variance. **Interpretation**: This **modest but consistent** effect is practically significant because: (1) Small effects **compound over decades**—being slightly more satisfied each day for 40 years matters, (2) Congruence is **one factor among many** (salary, culture, growth, location), (3) Better than chance for **narrowing 300+ careers** to 10-20 worth exploring. Use Holland Code to **generate hypotheses**, then **test through experience**. See Week 5 slide 22.
 
-  - id: "W5-Q7-clifton-validity"
-    type: "true_false"
-    bloom_level: "remembering"
-    topic: "CliftonStrengths Evidence"
-
-    question: |
-      True or False: Reid & Short (2024) found that less than one-quarter of CliftonStrengths themes showed adequate reliability in college student samples.
-
-    options:
-      - key: "A"
-        text: "True"
-        feedback: "Correct! Reid & Short found only 8 of 34 themes (less than 24%) showed adequate reliability (α > 0.70) in college student populations, leading them to conclude evidence for using CliftonStrengths in higher education is insufficient."
-        correct: true
-
-      - key: "B"
-        text: "False"
-        feedback: "Incorrect. The statement is true. Reid & Short's 2024 study found less than one-quarter (8 of 34 themes) showed adequate internal consistency in college students."
-
-    general_feedback: |
-      Reid & Short (2024) examined CliftonStrengths <b>psychometric</b> (measurement quality) properties in higher education. Findings: less than half (17 of 34) themes showed adequate <b>internal consistency</b> (α > 0.70—items within a theme correlating well) in general population, and less than one-quarter (8 of 34) showed adequate reliability specifically in college students. The 8 validated themes for college populations: Achiever, Analytical, Competition, Consistency, Deliberative, Empathy, Harmony, Restorative. Authors concluded: "The current available evidence for implementing the CSA within higher education is insufficient." This doesn't mean CliftonStrengths is useless—the talent language is rich for career conversations—but VIA Character Strengths has stronger validation, so prioritize VIA when results conflict. See Week 5 slide 18.
-
-  - id: "W5-Q8-holland-code-types"
-    type: "multiple_choice"
-    bloom_level: "remembering"
-    topic: "Holland Code RIASEC"
-
-    question: |
-      What do the letters R-I-A-S-E-C represent in Holland's RIASEC model?
-
-    options:
-      - key: "A"
-        text: "Realistic, Investigative, Artistic, Social, Enterprising, Conventional"
-        feedback: "Correct! These six personality types correspond to work environment preferences: Realistic (hands-on/technical), Investigative (analytical/research), Artistic (creative/expressive), Social (people-helping), Enterprising (leading/persuading), Conventional (organized/systematic)."
-        correct: true
-
-      - key: "B"
-        text: "Reflection, Integration, Analysis, Synthesis, Evaluation, Conceptualization"
-        feedback: "Incorrect. These sound like cognitive processes, not Holland's types. RIASEC = Realistic, Investigative, Artistic, Social, Enterprising, Conventional."
-
-      - key: "C"
-        text: "Reading, Intelligence, Aptitude, Skill, Experience, Competence"
-        feedback: "Incorrect. Holland Code measures vocational interests and personality-environment fit, not aptitudes. RIASEC = Realistic, Investigative, Artistic, Social, Enterprising, Conventional."
-
-      - key: "D"
-        text: "Research, Ideation, Advocacy, Strategy, Execution, Collaboration"
-        feedback: "Incorrect. These describe work activities, not Holland types. RIASEC = Realistic, Investigative, Artistic, Social, Enterprising, Conventional."
-
-    general_feedback: |
-      Holland's RIASEC model (Nauta, 2010) identifies six personality types and corresponding work environments: <b>R - Realistic</b> (practical, hands-on; prefers working with tools/machines; examples: engineering, skilled trades), <b>I - Investigative</b> (analytical, intellectual; prefers research and problem-solving; examples: science, data analysis), <b>A - Artistic</b> (creative, expressive; prefers unstructured creative work; examples: design, marketing, media), <b>S - Social</b> (helpful, empathetic; prefers people-oriented helping work; examples: teaching, HR, counseling), <b>E - Enterprising</b> (persuasive, ambitious; prefers leading and influencing; examples: management, sales, entrepreneurship), <b>C - Conventional</b> (organized, detail-oriented; prefers structured data-focused work; examples: accounting, operations). Your Holland Code is a 3-letter combination (e.g., ASE, RIC) representing your top preferences. See Week 5 slide 20.
-
-  - id: "W5-Q9-holland-hexagon"
+  - id: "W5-Q12-assessment-integration"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Holland Hexagon Model"
+    topic: "Multi-Framework Integration"
 
     question: |
-      In Holland's hexagonal model, what does it mean when two types are adjacent (close together on the hexagon)?
+      A student's assessment results show: VIA top strengths (Creativity, Curiosity, Love of Learning), Holland Code IAS (Investigative-Artistic-Social), and Big Five (High Openness, Moderate Extraversion). What is the best interpretation of these convergent patterns?
 
     options:
       - key: "A"
-        text: "Adjacent types are compatible—they share values and work approaches, making careers combining them feel coherent"
-        feedback: "Correct! Adjacent types (e.g., R-I, A-S, E-C) are similar and work well together. Opposite types (e.g., R-S, A-C) create tension. Example: RIC (engineer) feels coherent; AC (artistic-conventional) creates creative vs. structured conflict."
+        text: "All frameworks point toward intellectual, creative work with learning opportunities—careers like research, strategy consulting, product innovation, or educational design"
+        feedback: "Correct! This example demonstrates convergence across multiple assessment frameworks: Big Five Openness aligns with VIA Creativity and Curiosity; Holland Investigative-Artistic aligns with intellectual and creative work; Love of Learning suggests roles with continuous development. When multiple frameworks converge, this builds confidence in career direction. Importantly, these are hypotheses to test through experience, not definitive mandates. The key principle: triangulation across methods increases confidence in self-knowledge."
         correct: true
 
       - key: "B"
-        text: "Adjacent types are incompatible and should be avoided in career planning"
-        feedback: "Incorrect. You have this backward. Adjacent types ARE compatible (share values). It's OPPOSITE types across the hexagon (R-S, I-E, A-C) that are less compatible."
+        text: "The results are contradictory and cannot be integrated into coherent career direction"
+        feedback: "Incorrect. These results actually show strong convergence, not contradiction. Creativity/Curiosity (VIA) + Investigative-Artistic (Holland) + High Openness (Big Five) all point toward intellectual, creative work."
 
       - key: "C"
-        text: "Adjacent types require the same education and training"
-        feedback: "Incorrect. Adjacency refers to similarity in personality and work preferences, not educational requirements. For example, I (Investigative) and A (Artistic) are adjacent but require different training paths."
+        text: "The results definitively prove the student must become a university professor"
+        feedback: "Incorrect. While the results suggest careers involving intellectual and creative work, they generate hypotheses to test, not definitive mandates. Many careers beyond academia fit this pattern: consulting, innovation, design, etc."
 
       - key: "D"
-        text: "All Holland types are equally compatible regardless of position"
-        feedback: "Incorrect. Holland's hexagon model specifically shows that proximity matters: adjacent types (close on hexagon) are compatible; opposite types (across hexagon) are less compatible."
+        text: "Only the Holland Code matters; VIA and Big Five results should be ignored"
+        feedback: "Incorrect. Integration across multiple frameworks builds stronger confidence than any single assessment. When VIA, Holland, and Big Five all converge, that's a robust signal worth exploring."
 
     general_feedback: |
-      Holland's hexagonal model arranges the six types (R-I-A-S-E-C) in a specific order based on similarity. <b>Adjacent</b> (next to each other) types share values and work approaches: R-I (hands-on + analytical = engineering research), I-A (analytical + creative = design thinking), A-S (creative + people-focused = art therapy), S-E (people + leading = management), E-C (leading + organized = corporate leadership), C-R (organized + technical = quality control). Careers requiring adjacent types feel <b>coherent</b> (internally consistent). <b>Opposite</b> types across the hexagon (R-S, I-E, A-C) create tension: A-C (Artistic-Conventional) means creative freedom vs. structured systems pulling in different directions. If you're opposite types, find hybrid careers (e.g., AC = museum curation: art + systematic cataloging) or separate work from hobbies. See Week 5 slide 21.
-
-  - id: "W5-Q10-holland-evidence"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Holland Code Research Evidence"
-
-    question: |
-      What does Holland Code's modest correlation (r = .17) between person-environment fit and job satisfaction tell us?
-
-    options:
-      - key: "A"
-        text: "Holland Code predicts satisfaction better than performance; it's ONE factor among many, not a career prescription"
-        feedback: "Correct! The r = .17 correlation is statistically significant but modest—fit predicts satisfaction, but salary, boss quality, company culture also matter. Use Holland Code as a filter, not a prescription."
-        correct: true
-
-      - key: "B"
-        text: "Holland Code is invalid and should not be used for career guidance"
-        feedback: "Incorrect. Modest doesn't mean invalid. r = .17 is small-to-medium but robust across hundreds of studies. It has better validity than MBTI. The point is to use it appropriately—as a filter, not a deterministic prescription."
-
-      - key: "C"
-        text: "Holland Code perfectly predicts career success if you match your code exactly"
-        feedback: "Incorrect. r = .17 is modest, not perfect (which would be r = 1.0). It explains some variance in satisfaction but many other factors matter. Also, performance effects are even weaker (r = .10-.15) than satisfaction effects."
-
-      - key: "D"
-        text: "Person-environment fit doesn't matter for career outcomes"
-        feedback: "Incorrect. The r = .17 correlation IS statistically significant and meaningful—fit does matter. But it's ONE factor among many (not the only factor), and the effect is modest (not overwhelming)."
-
-    general_feedback: |
-      Nauta (2010) reviews <b>meta-analytic</b> (combining results from many studies) evidence for Holland's <b>congruence hypothesis</b> (the idea that person-environment fit predicts outcomes). Job satisfaction: r = .17 (Tsabari et al., 2005)—statistically significant but <b>modest</b> (small-to-medium effect). This means: (1) Fit DOES matter—people in congruent careers show higher average satisfaction. (2) But it's <b>probabilistic</b> (based on probabilities), not deterministic (certain)—plenty of individuals defy the trend. (3) Many factors affect satisfaction: salary, boss quality, commute, company culture, work-life balance. (4) Performance effects are weaker (r = .10-.15) than satisfaction effects—Holland measures preferences, not abilities. Use Holland Code to filter career options ("What environments suit me?"), not prescribe careers ("I MUST have an ESC job"). If you're passionate about a career that doesn't match your code, that passion may override fit. See Week 5 slide 22.
-
-  - id: "W5-Q11-integration-convergence"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Cross-Assessment Integration"
-
-    question: |
-      Why is identifying convergence across multiple assessments (MBTI, VIA, CliftonStrengths, Holland Code) more valuable than relying on a single assessment?
-
-    options:
-      - key: "A"
-        text: "Convergent patterns across multiple tools provide stronger evidence of genuine traits than a single assessment result"
-        feedback: "Correct! If all five assessments emphasize 'analytical thinking' (MBTI Thinking, VIA Judgment, CliftonStrengths Analytical, Holland Investigative), that's robust evidence. One tool alone could be inaccurate or measuring something different."
-        correct: true
-
-      - key: "B"
-        text: "Because taking more assessments always guarantees more accurate career predictions"
-        feedback: "Incorrect. More assessments don't guarantee accuracy—quality matters more than quantity. The value of convergence is triangulation: consistent patterns across DIFFERENT tools (each with limitations) provide stronger evidence than one tool alone."
-
-      - key: "C"
-        text: "Multiple assessments eliminate the need for mentor feedback or external perspective"
-        feedback: "Incorrect. The Johari Window teaches that self-assessments alone miss the Blind Spot quadrant. Even with five assessments, you still need mentor/peer feedback for external perspective on how others see you."
-
-      - key: "D"
-        text: "Convergence means all results must perfectly agree or the assessments are invalid"
-        feedback: "Incorrect. Convergence means finding patterns, not perfect agreement. Contradictions can reveal complexity (e.g., MBTI Introvert + Holland Social = prefers deep relationships over large groups). Assessments measure different aspects, so some variation is expected."
-
-    general_feedback: |
-      Identifying <b>convergence</b> (consistent patterns) across multiple assessments is valuable because: (1) <b>Triangulation</b> (using multiple measurement sources)—if MBTI, VIA, CliftonStrengths, and Holland Code ALL emphasize people-orientation, that's stronger evidence than one tool alone. Each tool has limitations (MBTI has weak validity, CliftonStrengths has reliability issues), but convergent patterns across imperfect tools suggest genuine traits. (2) Different assessments measure different aspects: MBTI = preferences, VIA = character strengths, Holland = environment fit. Convergence shows themes appearing across these different lenses. (3) Contradictions are also valuable—they reveal complexity, not errors. Example: INTJ (analytical introvert) + ASE Holland Code (Artistic-Social-Enterprising) isn't contradictory if you find hybrid careers like UX research (analytical creativity + user empathy). For your PDP Part 1, identify 2-3 convergent themes WITH evidence from 3+ assessments, then interpret contradictions thoughtfully. See Week 5 slide 25.
-
-  - id: "W5-Q12-assessment-pitfalls"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Assessment Misuse"
-
-    question: |
-      Which statement represents appropriate use of self-assessment results?
-
-    options:
-      - key: "A"
-        text: "I prefer independent work (MBTI Introvert), but I can collaborate effectively when needed—I'll seek roles with both deep work time and team projects"
-        feedback: "Correct! This shows using assessments as data (not destiny), recognizing preferences ≠ abilities, and seeking roles that honor natural preferences while maintaining flexibility. This avoids over-identification and fixed mindset traps."
-        correct: true
-
-      - key: "B"
-        text: "I'm an INTJ, so I can't work in teams. I'll only apply to solitary research positions."
-        feedback: "Incorrect. This is over-identification and using assessments as excuses. MBTI describes preferences, not abilities. Many successful team leaders are Introverts—it just requires more energy. Limiting yourself based on a 4-letter code ignores your growth potential."
-
-      - key: "C"
-        text: "My CliftonStrengths doesn't include Discipline, so I can't be expected to meet deadlines."
-        feedback: "Incorrect. This uses assessments as excuses for not developing baseline professional competencies. CliftonStrengths philosophy says focus on strengths, but that doesn't mean ignore fundamental skills. Build systems to compensate for non-talents."
-
-      - key: "D"
-        text: "Holland Code says I'm not Conventional, so I'll skip that accounting internship even though I'm curious about it."
-        feedback: "Incorrect. This chooses assessments over experience. Theory is useful, but experience is proof. If you're curious, try it! Passion and deliberate practice can overcome fit limitations. Also, many careers blend multiple Holland types—accounting could have Investigative (analysis) and Enterprising (client advisory) elements."
-
-    general_feedback: |
-      Common assessment pitfalls to avoid: (1) <b>Over-identification</b>—treating your type as your identity ("I'm an INTJ" instead of "I currently prefer..."). You're complex, not a 4-letter code. (2) <b>Using assessments as excuses</b>—"I don't have X talent, so I can't do Y." Professional success requires baseline competencies even outside your strengths. (3) <b>Ignoring development</b>—personality is most <b>fluid</b> (changeable) ages 18-25. Results today ≠ fixed forever. (4) <b>Choosing theory over experience</b>—if you're passionate about a career that doesn't match your profile, try it anyway! Assessments are <b>probabilistic</b> (statistical tendencies), not deterministic (certain outcomes). (5) <b>Forgetting external perspective</b>—self-assessments alone miss your Johari Window Blind Spot. Seek mentor/peer feedback. Appropriate use: recognize patterns, acknowledge limitations, test hypotheses through experience, integrate mentor feedback, maintain growth mindset. See Week 5 slide 26.
+      This example demonstrates **assessment integration**: (1) **Big Five** High Openness = curiosity, creativity, (2) **VIA** Creativity + Curiosity + Love of Learning = cognitive strengths cluster, (3) **Holland** IAS = Investigative (analytical) + Artistic (creative) + Social (some people work). **Convergence**: All frameworks point toward **intellectual, creative work with continuous learning**. **Career implications**: Research, strategy consulting, product innovation, educational design, design thinking roles. **Key principles**: (1) When multiple frameworks **converge**, confidence increases, (2) When frameworks **conflict**, investigate why—that's valuable information, (3) Assessments **generate hypotheses**; experience **tests them**. See Week 5 slides 26-27.
 ---

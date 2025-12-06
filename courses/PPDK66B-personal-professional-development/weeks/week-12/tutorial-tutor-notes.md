@@ -1,379 +1,519 @@
 # Week 12 Tutorial: Tutor Notes
 
-## Session Overview
-
-**Tutorial Focus:** Final Oral Exam Preparation Workshop
+**Course:** Personal & Professional Development (PPDK66B)
+**Week:** 12 of 12
+**Tutorial Focus:** Final Oral Exam Preparation
 **Duration:** 90 minutes
-**Class Size:** ~30-40 students
-**Format:** Mixed (individual reflection, pair practice, small group feedback, whole-class discussion)
 
 ---
 
-## Preparation Checklist
+## Tutorial Objectives
 
-### Materials Needed
-- [ ] Projector/screen for displaying timing guidelines and rubric
-- [ ] Stopwatches/timers for each small group (students can use phones)
-- [ ] Printed feedback forms (optional—can be done on paper)
-- [ ] Rubric handout from Assessment Handbook (refresher)
-- [ ] Example "strong vs. weak" presentation excerpts (prepare 2-3)
+This tutorial prepares students for their Final Oral Exam (30% of course grade) through intensive practice, structured feedback, and Q&A simulation. By the end, students should feel significantly more confident and prepared.
 
-### Pre-Tutorial Preparation
-- [ ] Review all students' PDP submissions to understand their plans (if submitted already)
-- [ ] Prepare 5-6 challenging but fair Q&A questions based on common PDP themes
-- [ ] Identify 1-2 students willing to demo (ask in advance—volunteers who are comfortable)
-- [ ] Set up room to facilitate small group work (clusters of 3-4)
+**Key Success Metrics:**
+- All students complete at least one practice presentation rotation
+- All students receive structured peer feedback
+- Students identify specific improvements to implement before exam
+- Students practice handling challenging Q&A questions
+- Anxiety is reduced through preparation and exposure
 
 ---
 
-## Session Timeline & Facilitation Guide
+## Detailed Timing & Facilitation Guide
 
-### Part 1: Presentation Structure Workshop (30 min)
+### Part 1: Quick Review & Warm-Up (5 minutes)
 
-#### Activity 1.1: The 5-Slide Core Framework (10 min)
+**Timing Breakdown:**
+- 0:00-0:02 → Welcome and session overview
+- 0:02-0:05 → Oral exam expectations recap
 
-**Tutor Script:**
-"Your oral exam needs a clear narrative. Think of it like telling your professional development story. Every story has key elements: where you started, what you discovered, where you're going, and why it matters. Let's break this down."
+**Tutor Talking Points:**
 
-**Instructions:**
-1. Display the 5 components on screen (Who I Was, Who I Am, Where I'm Going, Why It Matters, How I'll Get There)
-2. Give students 5 minutes to identify 1-2 key points from their PDP for each component
-3. Pair students (ideally with someone they haven't worked with much—cross-pollinate ideas)
-4. 5-minute pair-share: "Explain your journey using these 5 components in 2 minutes"
+**Welcome (2 minutes):**
+"Welcome to our final tutorial—Week 12's oral exam preparation workshop. Show of hands: How many of you feel completely confident about your oral exam presentation?" [Expect few hands] "That's normal. Today's goal is to transform anxiety into confidence through practice and feedback. By the end of this 90 minutes, you'll have presented, received feedback multiple times, and practiced handling tough Q&A questions. You'll leave knowing exactly what to improve."
 
-**Tutor Circulates:** Listen for students who are:
-- Over-explaining (too much detail)
-- Under-explaining (too vague)
-- Not connecting components logically
+**Set the tone:** "This is a safe space to make mistakes. I'd rather you discover that your presentation runs too long HERE, where you can fix it, than during your actual exam where you'll be cut off. Feedback today is a gift—welcome it, don't defend against it."
+
+**Oral Exam Recap (3 minutes):**
+
+Quickly review on board or slides:
+- **Format:** 15 min total (10 min presentation + 5 min Q&A)
+- **Weight:** 30% of course grade
+- **Assessment dimensions:**
+  - Integration of course learning (35%) → naming frameworks, showing synthesis
+  - Self-knowledge depth (35%) → insight beyond surface facts
+  - Professional communication (30%) → visual design, delivery, Q&A capability
+
+Highlight **common pitfalls** to avoid:
+1. Running over time (emphasize: we WILL stop you at 10 minutes)
+2. Reading slides verbatim
+3. Listing facts without insight ("My MBTI is X" vs. "Discovering X revealed Y")
+4. Vague goals without SMART criteria
+5. Ignoring course frameworks entirely
+6. Appearing unprepared or uncommitted
+
+**Transition:** "Now let's practice. We're dividing into small groups for intensive feedback rotations."
+
+---
+
+### Part 2: Main Activity - Practice Presentation Rotations (60 minutes total)
+
+**Setup & Group Formation (5 minutes):**
+
+- Divide class into groups of 3-4 students (adjust based on class size)
+- Ideal group size: 3 students (allows 3 rotations of 20 min each = 60 min)
+- If class is 24 students → 8 groups of 3
+- Assign groups to different areas of room to minimize cross-talk
+
+**Hand out printed feedback forms** (one per student per rotation—each student needs 3 forms if 3 rotations)
+
+**Instructions to class:**
+"You'll complete three 20-minute rotations. In each rotation, one person presents for 5 minutes, then receives 3 minutes of peer feedback using these forms, then 2 minutes of my feedback. We'll rotate so everyone presents once per round. I'll circulate among groups to observe and provide targeted coaching."
+
+"Important: You're NOT presenting your full 10-minute exam—just 5-minute excerpts of specific sections. Round 1 focuses on Self-Discovery Journey, Round 2 on Strategic Goals, Round 3 on Full Integration."
+
+**Timer discipline:** Use visible timer (phone app, website timer projected, or verbal time calls). Announce: "Start presenting... 3 minutes remaining... 1 minute remaining... TIME." Be strict—this teaches time management.
+
+---
+
+#### Round 1: Self-Discovery Journey Practice (20 minutes)
+
+**0:05-0:25 total**
+
+**Tutor Role - Circulate and Coach:**
+
+Visit each group during their presentations. Listen for 2-3 minutes, then provide brief targeted feedback. Focus on:
+
+**Content Depth:**
+- Are they sharing INSIGHTS or just FACTS?
+- Example of weak: "My MBTI is INTJ, my VIA strength is Curiosity."
+- Example of strong: "Discovering I'm INTJ surprised me because I thought introverts couldn't lead, but learning about my Te (Extraverted Thinking) preference showed I can make decisive, logical decisions even as an introvert. This changed my confidence about pursuing management roles."
+
+**Coach students to:**
+- Add "what surprised me" or "what this revealed" after each assessment mention
+- Connect assessments: "Both my Holland Code (Investigative) and CliftonStrengths (Analytical) point to research-oriented work"
+- Share emotional reactions: "I initially felt overwhelmed by my results until I saw the patterns"
+
+**Time Management:**
+- If student goes over 5 minutes, stop them: "That's time. How did that feel? What would you cut to fit 5 minutes?" This is valuable learning.
+
+**Visual Use:**
+- If students have slides, check: Are visuals supportive or text-heavy? Coach toward graphics (e.g., radar chart of VIA strengths, not bullet list).
+
+**Common Issues to Watch For:**
+- **Listing without synthesis:** "I did MBTI, then VIA, then CliftonStrengths..." (serial list, no integration)
+  - **Coach:** "What PATTERN emerged across all five? Lead with that synthesis."
+- **Surface-level description:** Just naming types without explaining implications
+  - **Coach:** "Why does being ISTJ matter for your career choice? Connect assessment to career."
+- **Over-explaining assessments:** Spending 2 minutes explaining what MBTI is
+  - **Coach:** "We already know what MBTI is—just share YOUR results and insights."
+
+**Feedback Quality Coaching:**
+
+When you observe peer feedback sessions, coach students to give:
+- **SPECIFIC praise:** Not "good job," but "Your connection between VIA Curiosity and your love of research projects was compelling"
+- **ACTIONABLE improvements:** Not "be more confident," but "Try making more eye contact and slowing your pace by 20%"
+
+---
+
+#### Round 2: Strategic Goals & Roadmap Practice (20 minutes)
+
+**0:25-0:45 total**
+
+**Tutor Role - Circulate and Coach:**
+
+Focus feedback on **SMART goal quality** and **strategic coherence**.
+
+**SMART Goal Coaching:**
+
+Listen for vague vs. specific goals:
+- **Vague (unacceptable):** "I want to improve my skills and get a good job"
+- **SMART (acceptable):** "By June 2026, I will complete Google Data Analytics Professional Certificate with 90%+ scores and secure a summer analytics internship at a Vietnamese tech company (VNG, FPT, or similar)"
+
+**Coach students to add:**
+- **Specific:** Exactly what will you do?
+- **Measurable:** How will you know you succeeded?
+- **Time-bound:** By when?
+
+If goals are vague, stop them: "That goal isn't SMART yet. How would I objectively know in one year whether you achieved it? Add specifics."
+
+**Strategic Coherence Coaching:**
+
+Check whether 1-year → 3-year → 5-year goals logically build:
+- Good coherence: "1-year: Learn Python and SQL → 3-year: Get junior analyst role → 5-year: Senior analyst leading projects" (clear progression)
+- Poor coherence: "1-year: Learn Python → 3-year: Become marketing manager → 5-year: Start a restaurant" (disconnected jumps)
+
+**Coach:** "Walk me through how your 1-year goals set up your 3-year goals. I'm not seeing the connection."
+
+**Visual Coaching:**
+
+Encourage timeline visuals:
+- "Instead of listing goals as bullets, create a visual roadmap showing progression over 5 years with milestones"
+- "Use a Gantt chart, timeline graphic, or stepped pyramid showing building blocks"
 
 **Common Issues:**
-- **"I don't know what to include"**: Prompt: "What's the ONE most important insight from each section?"
-- **"It doesn't flow"**: Suggest: "Try using transition phrases: 'This self-awareness led me to...', 'Because of this, my goals focus on...'"
-
-**Whole-Class Debrief (2 min):**
-Ask 1-2 students: "What did you realize about your presentation structure?"
-
----
-
-#### Activity 1.2: Opening Strong & Closing Strong (10 min)
-
-**Tutor Script:**
-"First impressions and last impressions matter enormously. Your opening should grab attention and establish your theme. Your closing should leave examiners remembering you."
-
-**Demonstration (3 min):**
-- Read the WEAK opening example dramatically (monotone, generic)
-- Then read the STRONG opening with energy and authenticity
-- Ask: "What's the difference?" (Engagement, specificity, personal transformation)
-
-**Key Teaching Point:**
-"Your opening isn't about facts—it's about framing your journey. Your closing isn't just 'thank you'—it's a commitment statement."
-
-**Individual Drafting (5 min):**
-Students write their opening hook and closing commitment.
-
-**Pair Practice (5 min):**
-Partners deliver to each other. Listener assesses:
-- Did it grab my attention?
-- Did it feel authentic or rehearsed?
-- Did the closing make me believe they'll follow through?
-
-**Tutor Intervention:**
-If pairs are struggling, offer sentence starters:
-- Opening: "I used to believe [old assumption], but this course taught me [new insight]. My plan reflects..."
-- Closing: "I'm committed to [specific action] starting [timeframe]. This isn't just a plan—it's my roadmap."
+- **Too many goals:** Listing 15 goals across all time horizons (overwhelming, unfocused)
+  - **Coach:** "Narrow to your top 2-3 per time horizon—what's MOST important?"
+- **Goals without action steps:** Stating goal but no strategy
+  - **Coach:** "How will you achieve that? Mention 1-2 key action steps."
+- **Unrealistic ambition or underambition:**
+  - Over-ambitious: "1-year goal: Become VP of Marketing" (for second-year student with no experience)
+  - Under-ambitious: "5-year goal: Maybe have a job somewhere" (lacks vision)
+  - **Coach:** "Does this feel challenging but achievable? Adjust up or down."
 
 ---
 
-#### Activity 1.3: Timing Discipline (10 min)
+#### Round 3: Full Integration Practice (20 minutes)
 
-**Tutor Script:**
-"The exam is 10 minutes. Not 8. Not 12. Going significantly over or under signals poor time management—which is ironic given we taught time management in Week 8!"
+**0:45-1:05 total**
 
-**Teaching the Time Budget:**
-Display on screen:
-- Introduction + Who I Was: 2 min
-- Who I Am + Vision: 2 min
-- Goals & Roadmap: 3 min
-- Course Integration: 2 min
-- Implementation: 1 min
+**Tutor Role - Holistic Feedback:**
 
-**Practice Task (10 min):**
-Students practice their 5 core messages from Activity 1.1 in 8 minutes (leaving 2-min buffer).
+This round simulates a condensed full presentation (5 min instead of 10 min). Focus on:
 
-**Tutor Role:**
-- Set timer for 8 minutes and call time
-- Circulate and observe: Who's rushing? Who's over-explaining?
-- After 8 min, ask: "Raise your hand if you finished early (<7 min)?" "Who went over (>9 min)?"
+**Narrative Flow:**
+- Do sections connect smoothly? Or does it feel like disjointed parts?
+- Are transitions clear? ("Now that you understand my self-discovery, let me share how that informs my goals...")
 
-**Coaching Guidance:**
-- **Too short**: "Add a specific example or two. Instead of 'I want to improve public speaking,' say 'I want to present at 3 NEU conferences by July 2026 because...'"
-- **Too long**: "Cut redundant points. You don't need to explain every single goal—focus on the most important 3-4."
+**Course Framework Integration:**
+- Did they mention specific concepts? (Gibbs' Cycle, growth mindset, SDT, creative tension, SMART goals, Ikigai, etc.)
+- Did it feel natural or forced? ("I'm now going to mention Carol Dweck because I need to" = forced)
 
----
+**Coach:** "You mentioned growth mindset briefly. Can you give one concrete example of how it changed your behavior this semester? That makes it real."
 
-### Part 2: Q&A Preparation & Strategy (30 min)
+**Opening Hook:**
+- Was it compelling? Did it make you want to hear more?
+- Weak opening: "Hi, my name is X, and today I'll present my development plan"
+- Strong opening: "Hi, I'm X, and by 2030 I'll be leading data-driven transformation at Vietnamese enterprises—let me show you how I'll get there"
 
-#### Activity 2.1: Anticipating Questions (10 min)
+**Closing Commitment:**
+- Did they end confidently? Or did it fizzle out?
+- Weak closing: "So yeah, that's my plan, thank you"
+- Strong closing: "I'm excited about this journey. I know obstacles will arise, but I have the tools, mindset, and strategic plan to navigate them. This isn't just an assignment—it's my roadmap. Thank you."
 
-**Tutor Script:**
-"Q&A isn't random. Examiners ask questions to assess four things: depth, authenticity, strategic thinking, and course integration. The best way to prepare is to anticipate what they'll ask."
+**Authenticity Assessment:**
+- Do you BELIEVE they own this plan? Or does it feel like they're saying what they think you want to hear?
+- This is intuitive—trust your gut. If something feels rehearsed or inauthentic, note it.
 
-**Instructions:**
-1. Display the 5 common question types on screen
-2. Give students 10 minutes to write:
-   - 3 questions they hope examiners WON'T ask (challenging)
-   - 2 questions they hope examiners WILL ask (confident answers)
-
-**Why This Works:**
-Students who identify their own weak spots will prepare better. The "challenging" questions reveal where they need to think deeper.
-
-**Tutor Circulates:**
-Look at students' "challenging questions." Common patterns:
-- "What if this career path doesn't work out?" (needs backup plan thinking)
-- "How do you know this aligns with your strengths?" (needs stronger evidence)
-- "Why this specific goal?" (needs deeper motivation articulation)
-
-**Optional Extension:**
-If time, have students swap "challenging questions" with a partner and practice answering.
+**Coach toward authenticity:**
+- "I'm noticing your energy drops when you talk about [X goal]. Are you genuinely excited about that, or is it something you think you should want?"
+- "Your passion came through when discussing [Y]. Can you bring that energy to other sections?"
 
 ---
 
-#### Activity 2.2: The STAR Response Framework (10 min)
+### Part 3: Q&A Practice & Preparation (15 minutes)
 
-**Tutor Script:**
-"When examiners ask for examples or evidence, use STAR: Situation, Task, Action, Result. This keeps answers structured and convincing."
+**1:05-1:20 total**
 
-**Demonstration (5 min):**
-- Read the WEAK example aloud (vague, no evidence)
-- Then read the STAR example
-- Ask: "Which answer would you find more credible as an examiner?"
+**Hot Seat Format:**
 
-**Teaching Point:**
-"Your PDP claims you have certain strengths and values. STAR helps you PROVE it with real examples from your life."
+This is high-energy and slightly stressful (by design—simulating exam conditions).
 
-**Pair Practice (5 min):**
-- Partner 1 asks Partner 2 one of their "challenging questions"
-- Partner 2 answers using STAR
-- Switch roles
+**Setup (2 minutes):**
+"Now we're practicing Q&A. I need 3-4 brave volunteers for the 'hot seat.' You'll face 3-4 rapid-fire questions about your plan—30-60 seconds to respond to each. This will feel uncomfortable, but it's excellent practice for thinking on your feet."
 
-**Tutor Intervention:**
-If students struggle to think of examples on the spot, prompt:
-- "Think about a time in a group project, internship, or mentorship meeting when you demonstrated this."
-- "It doesn't have to be dramatic—everyday examples work if they're specific."
+Select volunteers (ideally students who seem confident or who need Q&A practice). If no volunteers, gently nominate students you know can handle it.
 
----
+**Hot Seat Process (12 minutes total = 3 min per volunteer):**
 
-#### Activity 2.3: Handling Difficult Questions Gracefully (10 min)
+Student sits at front of room (or stands). Rapid-fire 4 questions:
+1. Ask question
+2. Student responds (30-60 sec)
+3. Brief feedback from you (15-20 sec) on response quality
+4. Next question
 
-**Tutor Script:**
-"You won't have perfect answers to every question. That's normal. What matters is how you handle uncertainty with professionalism."
+**After each volunteer's hot seat (30 sec):**
+- Ask volunteer: "How did that feel? What was hardest?"
+- Ask class: "What made their responses strong or weak?"
 
-**Teach the "Grace Under Pressure" Strategies:**
-1. **Honest uncertainty**: "I haven't fully thought through [aspect], but my initial thinking is..."
-2. **Acknowledge + reframe**: "That's a valid concern. Here's how I'm approaching it..."
-3. **Pause to think**: "Let me think about that for a moment..." (3-second pause is fine)
+**Sample Questions by Type:**
 
-**What to AVOID:**
-- Defensiveness: "Well, I think my plan is good because..." (sounds insecure)
-- Bluffing: Making up answers you're not sure about
-- Deflecting: "I don't know" without attempting a thoughtful response
+Use variety across volunteers:
 
-**Group Practice (10 min):**
-Tutor poses 3-4 challenging questions. Ask for volunteers to answer in front of class.
+**Type 1 - Challenge to Goals:**
+- "Your 5-year goal assumes [X]. What if that changes dramatically? How will you adapt?"
+- "These goals are ambitious for someone without [specific experience]. Why should we believe you'll achieve them?"
 
-**Example Questions to Pose:**
-1. "Your PDP says you want to work in [industry]. What if AI automates most jobs in that field by 2030?"
-2. "You've identified [strength] as core to your career. How do you know that's really a strength and not just something you enjoy?"
-3. "Your mentor gave you feedback on [topic]. Did you agree with it? Why or why not?"
-4. "If you could only achieve ONE of your 1-year goals, which would it be and why?"
+**Type 2 - Self-Knowledge Depth:**
+- "You said your MBTI is [X] and your strength is [Y]. How do those connect? Give me a real example."
+- "Your Holland Code is [ABC] but your career choice is [field D]. Explain that mismatch."
 
-**Debrief After Each Response:**
-"What did [student name] do well in that answer?" (Acknowledge grace, honesty, strategic thinking)
+**Type 3 - Course Integration:**
+- "You mentioned Senge's creative tension. What does that concept mean and how are you applying it?"
+- "Explain growth mindset in your own words and tell me how it changed your behavior this semester."
 
----
+**Type 4 - Addressing Weaknesses:**
+- "You listed [weakness X] in your SWOT. That seems like a major obstacle for your career choice. How will you overcome it?"
+- "Your skills gap analysis shows you lack [technical skill Y]. Why haven't you addressed that yet?"
 
-### Part 3: Peer Practice & Feedback (25 min)
+**Type 5 - Evidence-Based:**
+- "You claim [strength X] is a signature strength. Describe a specific time you demonstrated it."
+- "You said mentorship influenced your plan. Give me one concrete example of advice you implemented."
 
-#### Activity 3.1: 5-Minute Lightning Presentations (15 min)
+**Feedback on Responses - What to Praise:**
+- Acknowledging question validity before answering
+- Providing specific examples, not vague generalities
+- Showing adaptive thinking, not rigid defensiveness
+- Admitting uncertainty when appropriate: "That's a great question I hadn't fully considered. My initial thought is..."
+- Confident, clear delivery without filler words (um, like, you know)
 
-**Tutor Script:**
-"Now you'll practice presenting in small groups. This is low-stakes practice—make mistakes here so you don't make them in the exam."
+**Feedback on Responses - What to Coach:**
+- Defensive reactions: "That's not a problem" → Coach: "Try 'You're right, that's a challenge, and here's how I'm addressing it'"
+- Vague answers: "I'll try to improve" → Coach: "Give concrete strategy: 'I've enrolled in X course, scheduled Y meetings'"
+- Rambling: Going over 60 seconds → Coach: "Aim for 30-45 sec responses—clear, concise, then stop"
+- Frozen uncertainty: "Um... I don't know..." → Coach: "It's OK to think briefly. Try: 'Let me think... My approach would be...' Shows thoughtfulness."
 
-**Setup (2 min):**
-- Divide class into groups of 3-4
-- Each student presents 5-minute condensed version
-- Timekeepers enforce timing (important!)
-- Others complete feedback form
-
-**Group Formation Strategy:**
-Mix high-performers with those who need more support. Avoid letting friendship groups dominate.
-
-**Tutor Circulates (15 min total):**
-Visit each group briefly. Listen for:
-- Content issues (vague goals, weak rationale, no course integration)
-- Delivery issues (reading slides, poor eye contact, monotone voice, excessive "um")
-- Timing issues (rushing, going way over)
-
-**Intervention Examples:**
-- To student reading slides: "Try looking at your group while talking. Slides are just prompts."
-- To student who's too vague: "You said 'develop leadership skills.' Can you give a specific example of how?"
-- To student who went over time: "You have great content but need to prioritize. What are the 3 MOST important points?"
-
-**Feedback Form Reminder:**
-Encourage specific, actionable feedback:
-- NOT: "Good job!"
-- INSTEAD: "Your passion for marketing was clear, but slow down when explaining your 3-year goals—I lost track."
+**Class Debrief (1 minute):**
+"What did we learn from hot seat practice?"
+- Normalize nervousness: "Everyone felt anxious—that's normal. Preparation helps."
+- Anticipate questions: "Review your plan and predict likely questions. Prepare bullet-point responses."
+- Practice helps: "The more you practice Q&A, the less scary it becomes."
 
 ---
 
-#### Activity 3.2: One Improvement Commitment (10 min)
+### Part 4: Before Next Class (10 minutes)
 
-**Tutor Script:**
-"Feedback is useless if you don't act on it. Based on what you just heard, commit to ONE specific improvement."
+**1:20-1:30**
 
-**Individual Task (5 min):**
-Students write their improvement commitment. Walk around and read them—ensure they're specific.
+**Checklist Review (5 minutes):**
 
-**Common Weak Commitments (redirect these):**
-- "Be better" → "Practice maintaining eye contact by presenting to mirror"
-- "Improve slides" → "Reduce text on slides 4-6 by 50% and add one visual"
-- "Sound more confident" → "Record myself 3 times and eliminate 'um' filler words"
+Project or reference the checklist from tutorial content:
+- ☐ Complete presentation (deadline: 3 days before exam)
+- ☐ Practice extensively (minimum 5 full run-throughs)
+- ☐ Prepare for Q&A (anticipate 5-8 likely questions)
+- ☐ Logistics preparation (tech check, backup plan, clothing)
+- ☐ Mental preparation (review course learning, adequate sleep)
 
-**Partner Accountability (5 min):**
-Students exchange contact info with one classmate. They'll check in 2 days before exam: "Did you work on your improvement area?"
+**Emphasize:**
+- "Practice minimum 5 times. NOT optional. Each practice improves delivery, timing, and confidence."
+- "Record yourself once—it's painful to watch but incredibly valuable for identifying verbal tics and pacing issues."
+- "Practice with someone who will ask tough questions—mentor, family member, peer. Friendly audiences don't prepare you for critical Q&A."
 
-**Why This Works:**
-Social accountability increases follow-through. Students who know someone will ask are more likely to practice.
+**Reflection Questions (3 minutes):**
 
----
+"Take 3 minutes to journal right now." Provide prompts:
+1. What did you learn from today's practice?
+2. What's your biggest concern about the exam?
+3. What's your specific strategy for addressing that concern?
+4. What are you most excited to share?
 
-### Part 4: Final Exam Logistics & Mindset (5 min)
+Walk around room while students write—this signals importance and gives thinking time.
 
-**Tutor Script:**
-"Let's talk logistics and mindset. The logistics are straightforward; the mindset is what matters most."
+**Final Encouragement (2 minutes):**
 
-**Review Exam Day Checklist (on screen):**
-Go through each item briefly. Emphasize:
-- **24 hours before**: Submit slides as backup (tech issues happen)
-- **Exam day**: Arrive early, bring USB backup, breathe deeply
-- **During presentation**: Eye contact, speak TO examiners not AT slides
-- **During Q&A**: It's okay to pause and think—shows thoughtfulness
+"You've completed 12 weeks of intensive personal development work. You've done five major assessments. You've learned evidence-based frameworks. You've created strategic development plans. You have substantive content to present—this isn't fluff.
 
-**Mindset Reset (3 min):**
-Read the 5 mindset points aloud with emphasis:
+The oral exam is your opportunity to demonstrate and celebrate that work. Yes, it's assessed, so preparation matters. But it's also a milestone—a chance to articulate your vision and commit publicly to your development journey. That's powerful.
 
-1. "You are the EXPERT on your development plan. No one knows it better."
-2. "We want AUTHENTICITY, not perfection. Be yourself."
-3. "This is a CELEBRATION of your growth. You've accomplished a lot this semester."
-4. "Nervousness is normal. Channel it into enthusiasm."
-5. "You've prepared. Trust your preparation."
+Three reminders: First, authentic confidence—not arrogance, not false modesty—is your goal. 'I know my strengths, acknowledge my developmental areas, have a strategic plan, and I'm committed to growth.' Second, feedback today was a gift allowing improvement before high-stakes exam. Implement it. Third, you've got this. The fact that you engaged in this tutorial demonstrates the intentionality and ownership that predicts success.
 
-**Final Reflection (2 min):**
-Ask: "What are you most proud of from your development journey this semester?"
+I look forward to your presentations. You're becoming remarkable professionals."
 
-Take 2-3 volunteers. This helps students reconnect with their achievements and ends tutorial on a positive, inspiring note.
+**Dismiss.**
 
 ---
 
-## Common Student Questions & How to Answer
+## Facilitation Tips
 
-**Q: "What if I forget what to say during the exam?"**
-A: "That's why you practice 5+ times. Your body will remember even if your brain blanks momentarily. Also, slides are your prompts—glance if you need to reorient."
+### Managing Group Dynamics
 
-**Q: "Can I bring notes?"**
-A: "No. This exam assesses your ability to own and articulate your plan without reading. Notes create a crutch that undermines authenticity."
+**If Groups Finish Early:**
+- Encourage additional rounds of feedback
+- Have students practice specific challenging sections again
+- Invite students to practice Q&A with each other using sample questions from tutorial content
 
-**Q: "What if examiners ask a question I genuinely don't know how to answer?"**
-A: "Be honest: 'I haven't fully considered that, but here's my initial thinking...' Intellectual honesty is valued."
+**If Groups Are Running Behind:**
+- Signal time clearly: "We need to move to next rotation in 2 minutes—finish current feedback"
+- It's OK if not everyone gets exactly equal time—prioritize quality feedback over perfect equity
 
-**Q: "How much detail should I go into about my self-assessments?"**
-A: "Don't recite all results—synthesize. Example: 'My MBTI and VIA assessments both highlighted my preference for structured, analytical work, which is why I'm pursuing finance.'"
+**If Students Are Giving Weak Feedback:**
+- Intervene: "Let me model strong feedback. [Student], one specific strength was [X]—that worked because [Y]. One concrete improvement: instead of [A], try [B] because [reason]."
+- Coach: "Avoid vague praise like 'good job.' What SPECIFICALLY was effective?"
 
-**Q: "Will you ask hard questions to trip us up?"**
-A: "We ask questions to understand your thinking depth, not to trick you. If you've genuinely engaged with your plan, you'll be fine."
+### Handling Student Anxiety
+
+**Nervous Students:**
+- Normalize: "Nervousness is normal—it means you care. Channel that energy into preparation."
+- Provide structure: "You're not winging this. You have a checklist, practice plan, and clear expectations."
+- Celebrate small wins: "You got through that 5-minute practice—that's progress. Keep building."
+
+**Overly Confident Students (Underestimating Preparation Needed):**
+- Reality check: "Confidence is good, but this is 30% of your grade. Have you timed yourself yet?"
+- Challenge: "Practice your Q&A response to this question: [ask tough question]. How did that feel?"
+- Emphasize: "The students who practice least tend to run over time or freeze during Q&A. Don't let that be you."
+
+### Cultural Considerations for Vietnamese Students
+
+**Modesty vs. Self-Promotion:**
+- Vietnamese cultural norms often emphasize humility. Students may struggle with "selling" themselves in presentations.
+- **Coach:** "This isn't bragging—it's professional communication of your capabilities. In global business contexts, you must articulate your strengths clearly. Practice that skill here."
+
+**Collectivism vs. Individual Achievement:**
+- Students may feel uncomfortable focusing entirely on individual goals and achievements.
+- **Coach:** "Notice that your goals likely benefit others—your family, your future team, society. Frame your vision as contribution, not just personal success."
+
+**Respect for Authority:**
+- Students may hesitate to challenge or disagree during Q&A, even when question format invites pushback.
+- **Coach:** "In Q&A, thoughtful disagreement is acceptable: 'That's a fair concern. My perspective is [X] because [Y].' You're demonstrating critical thinking, not disrespect."
+
+**Presentation Style:**
+- Vietnamese students may be more comfortable with formal, scripted presentations than spontaneous delivery.
+- **Coach:** "Practice until content is internalized, then present conversationally. Reading a script appears unprepared in international business contexts."
 
 ---
 
-## Tutor Mindset & Role
+## Valid Approaches (Multiple Paths to Excellence)
 
-**Your role today is COACH, not evaluator.**
+Students can excel with different presentation styles and structures. **Do NOT enforce a single "correct" approach.** Valid variations include:
 
-Students are nervous about the exam. Your job is to:
-1. Build their confidence through structured practice
-2. Provide specific, actionable feedback
-3. Normalize nervousness ("Even I get nervous presenting!")
-4. Remind them of their growth and capability
+### Structure Variations
 
-**Avoid:**
-- Being overly critical (save that for actual exam)
-- Letting students avoid practice ("I'll do it later")
-- Allowing vague feedback in peer practice ("It was good" isn't helpful)
+**Standard Structure (Recommended):**
+Hook → Self-Discovery → Vision/Values → Goals/Roadmap → Course Integration → Closing
 
-**Encourage:**
-- Vulnerability in practice (mistakes now prevent mistakes later)
-- Specificity in feedback (what exactly to improve)
-- Celebration of progress ("Look how much clearer your vision is than Week 1!")
+**Alternative Valid Structure:**
+Vision-First: Start with compelling 5-year vision → Work backward showing how self-discovery informed that vision → Present goals as milestones toward vision → Integrate frameworks throughout
+
+**Narrative Structure:**
+Tell chronological story: "When I started this course, I was uncertain about [X]. Week 5's assessments revealed [Y]. My mentorship taught me [Z]. Now I have clarity: [vision]. Here's my roadmap..."
+
+**All are acceptable if executed well.**
+
+### Presentation Style Variations
+
+**Analytical Style:**
+- Heavy on data and frameworks
+- Emphasizes logical coherence and evidence
+- Less emotional, more systematic
+- **Valid for students with INTJ/ISTJ profiles or analytical strengths**
+
+**Narrative Style:**
+- Story-driven with personal anecdotes
+- Emphasizes emotional journey and transformation
+- More expressive delivery
+- **Valid for students with strong Communication strengths or expressive personalities**
+
+**Balanced Style:**
+- Mix of frameworks and stories
+- Moderate emotional expression
+- **Valid for most students**
+
+**As tutor, adapt feedback to student's natural style.** Don't force analytical students to be emotionally expressive, or narrative students to be data-heavy. Coach them to excellence within their style.
+
+### Visual Design Variations
+
+**Minimalist Design:**
+- Very few words per slide
+- Large images or single graphics
+- Verbal narration carries content
+- **Valid—often most professional**
+
+**Structured Design:**
+- Clear headings and bullet points (concise, not dense)
+- Charts and diagrams
+- Text supports verbal narration
+- **Valid—provides clarity**
+
+**Both acceptable. Avoid only:**
+- Dense paragraph slides (unreadable)
+- Cheesy clip art or decorative elements that don't add meaning
+- Inconsistent fonts, colors, or themes (looks unprofessional)
+
+---
+
+## Assessment Alignment
+
+This tutorial directly prepares students for **Final Oral Exam (Assessment 4 - 30% of course grade).**
+
+**Rubric Criteria Addressed:**
+
+| Rubric Criterion | How Tutorial Prepares |
+|------------------|----------------------|
+| **Integration of Course Learning (35%)** | Round 3 practice emphasizes framework integration; Q&A practice requires explaining concepts; tutor coaching pushes beyond superficial mentions |
+| **Self-Knowledge Depth (35%)** | Round 1 practice focuses on moving from facts to insights; feedback forms assess depth; tutor coaching challenges surface-level descriptions |
+| **Professional Communication (30%)** | All rounds practice delivery; peer feedback assesses visuals, clarity, timing; hot seat builds Q&A capability; checklist emphasizes design and practice |
+
+**Tutorial Success = Exam Success:**
+Students who fully engage in this tutorial (present, receive feedback, implement improvements, practice Q&A) will perform significantly better on actual exam.
+
+**Students Who Skip Tutorial:**
+Will likely struggle with time management, lack practice with challenging questions, and miss feedback identifying blind spots. Encourage attendance strongly.
+
+---
+
+## Contingency Planning
+
+### If Tutorial Runs Short (Finishes Early)
+
+**Additional Activities:**
+- Extended hot seat Q&A with more volunteers
+- Peer practice: Pair students to practice full 10-min presentations to each other
+- Open Q&A: "What questions do you have about the exam or your presentation?"
+- Individual coaching: Work one-on-one with students who need extra help
+
+### If Tutorial Runs Long (Not Enough Time)
+
+**Prioritization:**
+1. **Must complete:** At least Round 1 practice (Self-Discovery)
+2. **High priority:** Hot seat Q&A (builds critical Q&A skills)
+3. **Can abbreviate:** Round 3 if needed
+4. **Can skip if necessary:** Extended discussion/debrief (students have written feedback)
+
+### Technical Issues
+
+**If slides won't display:**
+- Students practice verbally without slides—actually good practice for thinking on feet
+- Focus feedback on content and delivery rather than visuals
+
+**If room is too small/noisy:**
+- Move groups to hallway or adjacent rooms if available
+- Reduce group size (pairs instead of 3-4) to minimize noise
 
 ---
 
 ## Post-Tutorial Follow-Up
 
-**Immediately After:**
-- Note which students seemed underprepared or particularly anxious
-- Consider offering 1-on-1 office hours for students who need extra coaching
-- Send class reminder email about exam logistics and submission deadline for slides
+**After Session:**
 
-**Email Template (send within 24 hours):**
+**Email students within 24 hours:**
+- Reminder about exam date/time/location
+- Link to tutorial content with checklist
+- Encouragement: "Great work in today's practice session. Implement the feedback you received and you'll excel."
+- Office hours availability for students needing extra coaching
 
-Subject: Week 12 Tutorial Recap + Final Oral Exam Reminders
+**For Students Who Struggled:**
+- Reach out individually: "I noticed you're still working on [X]. Would you like to schedule a 15-minute coaching session?"
+- Offer targeted help on specific weaknesses (time management, Q&A, structure, etc.)
 
-Hi everyone,
+**For Students Who Missed Tutorial:**
+- Share tutorial content and feedback forms
+- Strongly encourage practicing with peers
+- Note that missing tutorial disadvantages them (gently, not punitively)
 
-Great work in today's tutorial! I saw significant improvement in clarity and confidence as you practiced presenting your PDPs.
-
-**Reminders before the exam:**
-1. Practice your full presentation 5+ times with a timer
-2. Submit slides 24 hours before your exam time (backup)
-3. Review the rubric in the Assessment Handbook—know what's assessed
-4. Work on your "one improvement commitment" from peer feedback
-5. Get good sleep the night before
-
-**You've got this.** You've completed the hard work of self-discovery and planning. Now just show us who you've become.
-
-Looking forward to seeing your presentations!
-
-[Your name]
+**Track Common Issues:**
+- If many students struggle with same issue (e.g., time management), send class-wide tip
+- Example: "Many of you ran over 5 minutes in practice. Remember: less is more. Cut content if needed to stay within time."
 
 ---
 
-## Success Metrics for This Tutorial
+## Success Indicators
 
-Students leaving tutorial should be able to:
-- [ ] Structure a 10-minute presentation with clear narrative arc
-- [ ] Articulate specific, authentic reasons for their career goals
-- [ ] Respond to Q&A questions using STAR framework
-- [ ] Identify one concrete improvement to make before exam
-- [ ] Feel more confident (not fully confident—some nervousness is good) about oral exam
+By end of tutorial, you should observe:
 
-**If students leave feeling:**
-- **Overwhelmed**: You may have covered too much too fast. Simplify to core messages.
-- **Unprepared**: Remind them this was PRACTICE. The real preparation happens in their 5+ rehearsals at home.
-- **Confident but not cocky**: Perfect. This is the goal.
+✓ Students presenting more confidently than at start of session
+✓ Feedback forms completed thoughtfully (specific, actionable)
+✓ Students actively implementing feedback between rotations ("I noticed you said X, so I tried Y in my next practice")
+✓ Reduced anxiety ("I feel more prepared now")
+✓ Specific improvement plans ("I'm going to practice time management 5 more times before exam")
+✓ Students helping each other (peer coaching, sharing tips)
+
+If these aren't happening, adjust facilitation:
+- Model feedback more explicitly
+- Provide more structure and examples
+- Increase energy and encouragement
+- Address anxiety directly
 
 ---
 
-## Final Thoughts for Tutors
-
-This tutorial is the last structured support before students present. Your encouragement and specific coaching matter enormously.
-
-Some students will nail it immediately. Others will struggle. Both are normal.
-
-What matters is that every student leaves with:
-1. A clear structure for their presentation
-2. Strategies for handling Q&A
-3. Specific feedback on what to improve
-4. Belief that they CAN do this
-
-**You're not just preparing them for an exam—you're preparing them to confidently articulate their professional vision for the rest of their careers.**
-
-That's powerful work. Thank you for facilitating it with care and expertise.
+**This tutorial is their final preparation for a high-stakes assessment. Your coaching can significantly impact their performance. Be supportive, specific, and demanding—push for excellence while reducing anxiety through preparation.**

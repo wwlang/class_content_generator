@@ -1,750 +1,748 @@
 <role>
-You are an expert presentation designer specializing in academic course materials. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
+You are an expert presentation designer. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
 </role>
-
-<context>
-Course: PPDK66B - Personal & Professional Development |
-Week: 05
-Topic: Self-Discovery Through Assessment
-Institution: National Economics University |
-Instructor: William Winterton Lang, Le Huong Lan (PhD) |
-Total Slides: 24
-</context>
-
 <instructions>
-1. Create a presentation slide deck with exactly 24 slides
-2. Start with a title slide containing: topic title, course code and name, university/institution, and instructor name
+1. Create a presentation slide deck with exactly 40 slides
+2. The first slide in the lecture content IS the title slide - add course name (PPDK66B - Personal & Professional Development), university (National Economics University), and campus (IBD Campus) to it
 3. Reproduce the exact wording from the lecture content for each slide, preserving all text as written
 4. Generate creative visuals for each slide: pictures, infographics, icons, and diagrams that reinforce the slide's message
-5. Use minimum 18pt font for body text to ensure readability from a distance
-6. Add a footer to every content slide (not the title slide) with: course code, university, topic, and slide number
+5. Use a minimum 18pt font for all text. Reference text and footer text is allowed to be smaller
+6. Add a footer to every content slide (not the title slide) with: course name, university, topic, and slide number
 7. Place academic citations (e.g., Minto, 1987) in the slide footer when referenced in content
 8. Leave speaker notes sections empty
+9. The final slide is a References slide - format it cleanly with the full APA citations provided
 </instructions>
-
-<constraints>
-- Create exactly 24 slides, matching the lecture content one-to-one. The lecture content defines each slide explicitly, so count them to verify.
-- Preserve exact wording because students receive these slides as study materials and need consistency with what they hear in lecture recordings.
-- Keep speaker notes empty because detailed instructor notes will be added in a separate step.
-- Maintain consistent Modern Bright Pastel Corporate styling throughout for professional brand identity.
-</constraints>
-
-<examples>
-<example>
-<input>
-## Slide 3: The Pyramid Principle
-
-**Key Concept:** Start with the answer, then provide supporting evidence
-
-The Pyramid Principle (Minto, 1987):
-- Lead with your main message
-- Group supporting arguments logically
-- Present evidence in descending order of importance
-
-**Why it works:** Busy executives read conclusions first
-</input>
-<output>
-Slide with pyramid/triangle infographic illustrating the hierarchy concept. All text preserved exactly as written. "Minto, 1987" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 7: Case Study - Vinamilk Crisis Response
-
-In 2013, Vinamilk faced a product recall crisis...
-
-**What went right:**
-- Immediate public acknowledgment
-- Clear action plan communicated
-- Regular updates to stakeholders
-
-**Result:** Brand trust recovered within 6 months
-</input>
-<output>
-Case study slide with timeline or process visual showing the crisis response steps. Company imagery or relevant icons. All text preserved exactly.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 12: Hofstede's Cultural Dimensions
-
-**Vietnam vs. United States comparison:**
-| Dimension | Vietnam | USA |
-|-----------|---------|-----|
-| Power Distance | 70 | 40 |
-| Individualism | 20 | 91 |
-| Uncertainty Avoidance | 30 | 46 |
-</input>
-<output>
-Data visualization slide with bar chart or comparison graphic showing Vietnam and USA scores across the three dimensions. Clear axis labels. "Hofstede" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 9: Carol Dweck on Growth Mindset
-
-**[VIDEO: Carol Dweck - "The Power of Believing That You Can Improve"]**
-**Video link:** https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
-**Duration:** 10 minutes
-
-**Before watching:** "Think of a time you felt 'stuck' at something."
-</input>
-<output>
-Video placeholder slide with speaker image, prominent clickable video link, duration displayed, and pre-viewing reflection question. Clean layout focusing attention on the video link.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 15: Section Break - Emotional Intelligence
-
-# SECTION 3
-
-## Emotional Intelligence
-### Understanding and Managing Emotions
-
-*(20 minutes)*
-</input>
-<output>
-Section break slide with bold typography, contrasting background color to signal transition, section number prominent, topic and subtitle clearly visible. Timing indicator optional.
-</output>
-</example>
-</examples>
-
 <lecture_content>
-<?xml version="1.0" encoding="UTF-8"?>
-<lecture>
-<metadata>
-<course>PPDK66B Personal & Professional Development</course>
-<week>5</week>
-<topic>Self-Discovery Through Assessment</topic>
-<duration>90 minutes</duration>
-<slides>24</slides>
-</metadata>
+Course: PPDK66B - Personal & Professional Development
+Week: 5
+Topic: Self-Discovery Through Assessment
+Institution: National Economics University
 
-<slide number="1" layout="big-number" title="Hook: The Power of Self-Awareness">
-# 80%
+### Slide 1 (Layout: title)
 
-**of career success comes from self-awareness and emotional intelligence — not technical skills**
-
-*(Goleman, 2018; TalentSmart Research)*
-
-<speaker-notes>
-Technical skills like accounting, coding, or design get you hired, but self-awareness determines how far you advance and how satisfied you are in your career. Most people overestimate their self-knowledge, which is precisely what the Johari Window framework will show us today.
-
-Ask students to consider: "How many of you have taken a job or joined a club that seemed perfect, then realized it wasn't right for you? That's what happens without self-awareness." Poll the class: "By show of hands, who has taken a personality test before? What did you learn from it?"
-
-This week, students are completing FIVE assessment tools. But taking tests isn't enough—we need to understand what they measure, what they miss, and how to use them critically for career planning.
-</speaker-notes>
-</slide>
-
-<slide number="2" layout="section-break" title="Course Context">
 # Self-Discovery Through Assessment
-## The Foundation of Your Development Plan
 
-**Week 5 of 12**
+**Understanding yourself to design your career**
 
-<speaker-notes>
-Remind students where we are in the semester and connect to previous weeks on reflection and self-managed learning. This is a DOING week—students should have completed all 5 assessments BEFORE class. Today we interpret results and learn to integrate insights.
+---
 
-Next week they'll use this self-knowledge in their field trip reflection. Everything feeds into the Personal Development Plan (40% of grade, due Week 11). Mentorship Meeting #2 (happening around now) focuses on sharing assessment results with mentors, who help interpret results in career context.
+### Slide 2 (Layout: big-number)
 
-Today's focus is on making sense of assessment data and learning to think critically about popular but scientifically questionable tools.
-</speaker-notes>
-</slide>
+# 95%
 
-<slide number="3" layout="content" title="Learning Objectives">
+**of people think they're self-aware**
+
+**Only 10-15% actually are**
+
+*(Eurich, 2017)*
+
+---
+
+### Slide 3 (Layout: content)
+
 ## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Explain** the Johari Window and why self-awareness matters
-2. **Evaluate** MBTI critically (strengths and limitations)
-3. **Apply** VIA Character Strengths to identify personal assets
-4. **Understand** CliftonStrengths talent development approach
-5. **Use** Holland's RIASEC model for career-personality fit
-6. **Integrate** insights from all five assessments
+1. **Explain** the science of self-awareness and the Johari Window framework
+2. **Interpret** personality assessment results (MBTI/16 Personalities) for career insights
+3. **Apply** character strengths (VIA) and talents (CliftonStrengths) to career planning
+4. **Analyze** career-personality fit using Holland Code (RIASEC)
+5. **Integrate** insights from multiple assessments into coherent self-understanding
 
-<speaker-notes>
-These are the frameworks students will use in tutorial today. They'll need to explain these in their Personal Development Plan. Note that "Evaluate" means think critically, not accept blindly—we're learning to be INFORMED consumers of assessment tools.
+---
 
-The PDP Part 1 requires summarizing ALL five assessments plus a 200-300 word integration statement finding patterns across tools. Some assessments are better validated than others, which is why critical evaluation is a core skill we're building today.
-</speaker-notes>
-</slide>
+### Slide 4 (Layout: content)
 
-<slide number="4" layout="section-break" title="Part 1: Self-Awareness Foundation">
-# Part 1: The Science of Self-Awareness
-## Why Knowing Yourself Matters
+## How This Prepares You
 
-<speaker-notes>
-We're starting with the "why" before the "how." Self-awareness isn't navel-gazing—it's strategic career planning. Research shows self-aware leaders perform better, build stronger relationships, and experience greater career satisfaction.
+**Personal Development Plan (40% - Due Week 11)**
 
-However, most people think they're more self-aware than they actually are. This overconfidence is dangerous because it creates blind spots. The framework we're about to explore—the Johari Window—explains why self-knowledge is inherently incomplete without external input and new experiences.
-</speaker-notes>
-</slide>
+- **Part 1: Self-Knowledge Foundation** requires all 5 assessments:
+  - MBTI/16 Personalities
+  - VIA Character Strengths
+  - CliftonStrengths
+  - Emotional Intelligence (covered Week 7)
+  - Holland Code/RIASEC
+- Today: Learn the frameworks
+- This week: Complete assessments
+- Meeting 2 (Weeks 4-5): Share results with mentor
+- Week 11: Synthesize into comprehensive PDP
 
-<slide number="5" layout="framework" title="Johari Window Framework">
-## The Johari Window Framework
+---
 
-**Open Area:** What you AND others know about you
-- Your obvious strengths, behaviors, values
-- Grows through honest feedback and self-disclosure
+### Slide 5 (Layout: section-break)
 
-**Blind Spot:** What OTHERS see but you don't
-- Your unconscious habits, impact on others
-- Reduced through seeking feedback
+## Today's Journey
 
-**Hidden Area:** What YOU know but others don't
-- Private thoughts, experiences, aspirations
-- Reduced through appropriate self-disclosure
+**Part 1:** The Science of Self-Awareness (15 min)
+- Johari Window framework
+- Why self-assessment matters
 
-**Unknown Area:** What NEITHER you nor others recognize
-- Undiscovered talents, untested abilities
-- Reduced through new experiences and assessment tools
+**Part 2:** Personality & Type (20 min)
+- MBTI/16 Personalities theory and validity
 
-*Based on Luft & Ingham (1955), reviewed in London et al. (2023)*
+**Part 3:** Strengths & Talents (20 min)
+- VIA Character Strengths
+- CliftonStrengths approach
 
-<speaker-notes>
-Draw or display the 2x2 Johari Window. This framework explains why self-assessment is always incomplete. The Open Area is typically smallest for young professionals who lack extensive shared history with colleagues. The Blind Spot is the most dangerous quadrant—you don't know what you don't know about your impact on others.
+**Part 4:** Career-Personality Fit (20 min)
+- Holland Code (RIASEC) theory
+- Integration strategies
 
-The Hidden Area contains your authentic self and requires trust to share. The Unknown Area represents opportunity—potential waiting to be discovered through new experiences.
+---
 
-Give concrete examples: "Maybe you've never tried public speaking, so you don't know you're naturally good at it (Unknown). Or everyone notices you're a great listener, but you don't see it as special (Blind Spot)." Connect to this week's assessments: MBTI, VIA, and CliftonStrengths help reveal the Unknown Area. Mentorship helps reduce the Blind Spot through external feedback. Reflection exercises from Week 3 expand the Open Area.
+### Slide 6 (Layout: section-break)
 
-Ask students: "Which area do you think is largest for you right now?" This prompts metacognitive reflection.
-</speaker-notes>
-</slide>
+# Part 1
 
-<slide number="6" layout="content" title="Two Dimensions of Self-Awareness">
-## Internal vs. External Self-Awareness
+## The Science of Self-Awareness
+
+---
+
+### Slide 7 (Layout: framework)
+
+## Two Dimensions of Self-Awareness
 
 **Internal Self-Awareness**
-- Values: What matters most to you
-- Interests: What energizes you
-- Goals: What you're striving toward
-- Cognitive processes: How you think and learn
+Understanding your own:
+- Values and beliefs
+- Interests and passions
+- Goals and aspirations
+- Cognitive patterns and decision-making styles
+- Emotional responses
 
 **External Self-Awareness**
-- How others perceive you
-- Your impact on relationships
-- Social strengths and weaknesses
-- Reputation and presence
+Understanding how others perceive your:
+- Communication style
+- Interpersonal behaviors
+- Strengths and weaknesses
+- Impact on teams and relationships
 
-*Most people are stronger in one dimension than the other.*
+*(London, Sessa, & Shelley, 2023)*
 
-*London, Sessa & Shelley (2023) — Annual Review of Organizational Psychology*
+---
 
-<speaker-notes>
-Both dimensions matter for career success, but most people develop one more than the other. Internal self-awareness comes from introspection, reflection, and assessments (what we're doing this week). External self-awareness comes from feedback, 360 reviews, and mentorship conversations.
+### Slide 8 (Layout: framework)
 
-Explain the dangers of imbalance: High internal + low external awareness = self-absorbed and tone-deaf to how you affect others. High external + low internal awareness = people-pleasing and inauthentic, shaped entirely by others' expectations.
+## The Johari Window
 
-Example: "You might know your values deeply (internal) but not realize you come across as arrogant in meetings (external). Or you're great at reading others' emotions (external) but haven't clarified your own career vision (internal)."
+| | **Known to Self** | **Unknown to Self** |
+|---|---|---|
+| **Known to Others** | **OPEN AREA**<br>Public knowledge | **BLIND SPOT**<br>Others see it, you don't |
+| **Unknown to Others** | **HIDDEN AREA**<br>Private knowledge | **UNKNOWN AREA**<br>Undiscovered potential |
 
-Connect to course structure: Weeks 1-5 focus on building internal self-awareness through assessments and reflection. Weeks 7-12 focus on building external self-awareness through mentorship feedback and emotional intelligence development.
+**Career development goal:** Expand the Open Area
 
-Share the research insight from London et al. (2023), who reviewed 42 intervention studies showing self-awareness CAN be developed through structured practice. However, there's a dark side: excessive introspection without external validation can lead to rumination and narcissism. This is why we balance internal tools (assessments) with external tools (mentorship feedback).
-</speaker-notes>
-</slide>
+*(Luft & Ingham, 1955)*
 
-<slide number="7" layout="section-break" title="Part 2: Personality Assessment">
-# Part 2: Personality Assessment
-## MBTI and the Science of Type
+---
 
-<speaker-notes>
-Acknowledge that most students have likely completed 16personalities.com before class. Today we evaluate MBTI critically, which means examining both its usefulness and its significant limitations.
+### Slide 9 (Layout: content)
 
-MBTI is the world's most popular personality assessment—and one of the most misunderstood. We need to separate fact from fiction, because students WILL encounter MBTI in workplace contexts throughout their careers. The goal is to become informed, critical consumers of assessment tools.
-</speaker-notes>
-</slide>
+## The Self-Other Knowledge Asymmetry
 
-<slide number="8" layout="framework" title="MBTI Framework Overview">
-## Myers-Briggs Type Indicator (MBTI)
+**Research finding:** Young adults have biased views of their abilities
 
-**Four Dichotomies:**
+**Study of 448 adolescents found:**
+- **Open Area:** Numerical intelligence - self and others agree
+- **Blind Spot:** Verbal intelligence - others rate students higher than they rate themselves
+- **Hidden Area:** Intrapersonal competence - students know this better than observers
+- **Unknown Area:** Spatial ability - neither self nor others accurately predict performance
 
-**E/I — Energy Source**
-- Extraversion: Energized by external interaction
-- Introversion: Energized by internal reflection
+**Implication:** Professional assessment is essential, not optional
 
-**S/N — Information Processing**
-- Sensing: Focus on concrete facts and details
-- Intuition: Focus on patterns and possibilities
+*(Neubauer et al., 2018)*
 
-**T/F — Decision Making**
-- Thinking: Logic and objective criteria
-- Feeling: Values and impact on people
+---
 
-**J/P — Lifestyle Orientation**
-- Judging: Structure, planning, closure
-- Perceiving: Flexibility, spontaneity, openness
+### Slide 10 (Layout: content)
 
-*16 possible type combinations (e.g., INTJ, ESFP)*
+## How to Develop Self-Awareness
 
-<speaker-notes>
-Poll the class: "Any INTJs? ESFPs?" Most students will have already taken 16personalities.com before class. Emphasize that each letter represents a preference, not an absolute. You're not "locked in"—preferences can shift with context and development. Type describes how you're energized and make decisions, not your intelligence or competence.
+| Process | Definition | Career Outcome |
+|---------|------------|----------------|
+| **Reflection** | Continuous self-learning from experience | Adaptive development |
+| **Rumination** | Threat-motivated repetitive thinking | Anxiety, avoidance ❌ |
+| **Metacognition** | Awareness of thought patterns | Strategic thinking |
+| **Mindfulness** | Present-moment awareness without judgment | Emotional regulation |
 
-Provide concrete type examples: INTJ (Strategic, independent, systems-thinking; common in tech and consulting). ESFP (Energetic, spontaneous, people-focused; common in sales and hospitality). ISTJ (Detailed, reliable, process-oriented; common in accounting and operations).
+**Key insight:** Reflection and metacognition improve self-awareness; rumination undermines it
 
-Explain career applications: Certain types gravitate toward certain fields, but this doesn't limit you. Understanding type helps choose work environments (open office vs. quiet space, structured vs. flexible schedules). It also helps explain conflicts—Thinking vs. Feeling decision-making styles can clash if not understood.
+*(London et al., 2023)*
 
-Set up the critical evaluation coming next: "This all sounds useful and intuitive. So why do psychologists criticize MBTI? Let's look at the most comprehensive research review ever conducted..."
-</speaker-notes>
-</slide>
+---
 
-<slide number="9" layout="quote" title="MBTI Critical Evaluation">
-"Only 2.8% of MBTI correlations with similar instruments reached the 0.50 criterion for convergent validity. The evidence suggests caution for career prediction."
+### Slide 11 (Layout: content)
 
-— Erford et al. (2025), 25-Year MBTI Review
-*Journal of Counseling & Development*
+## Warning: The Dark Side of Introspection
 
-<speaker-notes>
-This quote comes from the most comprehensive MBTI research synthesis ever published—193 studies analyzed over 25 years. Let students sit with the discomfort of learning their favorite personality test might not be scientifically sound. This is a teaching moment about critical thinking.
+**Excessive self-focus can lead to:**
+- Narcissistic patterns - overestimating uniqueness and importance
+- Paralysis by analysis - unable to make decisions
+- Self-absorption - reduced empathy for others
+- Rumination loops - dwelling on problems without action
 
-Key research findings: Reliability is acceptable (internal consistency α = 0.85-0.92, which is good). However, validity is weak—MBTI doesn't correlate strongly with other established personality measures. Most importantly, career prediction is poor—only 0.5% of career correlations were strong enough to be practically useful.
+**Balance needed:**
+- Self-awareness ≠ self-obsession
+- Combine internal reflection with external feedback
+- Move from insight to action (don't stop at understanding)
 
-Explain the binary problem: MBTI forces continuous traits into either/or categories. You're either E or I—no middle ground allowed. But most people are near the middle on most dimensions. Small changes in how you answer questions can flip your type entirely, which undermines consistency.
+*(London et al., 2023)*
 
-Address the paradox: "Why is MBTI still so popular if the science is weak?" Reasons include: (1) Easy to understand—16 types vs. complex dimensional models, (2) Positive framing—no "bad" types, everyone feels good about their results, (3) Fun to discuss with others—creates shared language, (4) Professional counselors use it most, despite weak evidence.
+---
 
-This is critical thinking in action. Popular doesn't equal scientifically valid. You can USE MBTI for self-reflection and team awareness while KNOWING its limitations. This informed skepticism is exactly what employers want—people who question claims and seek evidence.
+### Slide 12 (Layout: section-break)
 
-Ask students: "How does it feel learning MBTI isn't as valid as you thought? Does it change how you view your results?" Normalize discomfort as part of learning.
-</speaker-notes>
-</slide>
+# Part 2
 
-<slide number="10" layout="content" title="MBTI vs. Big Five Comparison">
-## MBTI vs. Big Five Personality Models
+## Personality & Type
 
-| Dimension | MBTI | Big Five (OCEAN) |
-|-----------|------|------------------|
-| **Structure** | 4 dichotomies, 16 types | 5 continuous dimensions |
-| **Scoring** | Binary (E or I) | Spectrum (low to high) |
-| **Validity** | Weak convergent validity | Strong empirical support |
-| **Career Prediction** | Poor (r < 0.30 typically) | Moderate (r = 0.30-0.50) |
-| **Popularity** | Very high (counseling, business) | Very high (academic research) |
-| **Usefulness** | Self-reflection, team building | Scientific research, selection |
+**MBTI/16 Personalities Framework**
 
-**Recommendation:** Use MBTI for accessible self-exploration, but don't make major career decisions based solely on type.
+---
 
-<speaker-notes>
-The Big Five (OCEAN: Openness, Conscientiousness, Extraversion, Agreeableness, Neuroticism) is the "gold standard" in personality psychology. It uses spectrums instead of binaries—you can be "moderately extraverted" (score of 60/100) rather than forced into a category. This reflects reality more accurately.
+### Slide 13 (Layout: content)
 
-Big Five has much stronger research support for career outcomes. Example: High conscientiousness predicts job performance across ALL careers (r = .30-.40), which is a robust finding replicated hundreds of times globally.
+## What is Personality Type?
 
-Address the obvious question: "Why do we still use MBTI in this course?" Four reasons: (1) Accessibility—easy to understand and discuss, (2) Team awareness—helps students understand different working styles in group projects, (3) Cultural prevalence—students WILL encounter MBTI in workplace contexts, we're preparing them to engage critically, (4) We're teaching critical evaluation—comparing MBTI to Big Five develops analytical skills.
+**Personality type theory** suggests people have:
+- Innate preferences (not learned behaviors)
+- Consistent patterns across situations
+- Categorical differences (types, not just traits)
 
-Provide integration strategy for students' PDPs: Take MBTI for self-reflection. Notice patterns but don't over-identify with your type. Cross-check insights against VIA Character Strengths and CliftonStrengths. In your PDP, write about "implications for career fit" not "limitations based on type." Frame results as hypotheses to test, not fixed truths.
+**Most popular framework:** Myers-Briggs Type Indicator (MBTI)
+- Based on Carl Jung's psychological types (1921)
+- Developed by Myers & Briggs (1940s-1960s)
+- 16 types based on 4 dichotomies
+- Most widely used personality assessment in professional contexts
 
-Transition: "Now let's turn to a MORE scientifically valid framework—character strengths from positive psychology..."
-</speaker-notes>
-</slide>
+**Free alternative:** 16Personalities.com (MBTI-inspired)
 
-<slide number="11" layout="section-break" title="Part 3: Character Strengths">
-# Part 3: Character Strengths
-## VIA and the Science of Positive Psychology
+---
 
-<speaker-notes>
-This section shifts from personality (how you are) to character (who you are at your best). VIA was created specifically to address problems with tools like MBTI—it's free, scientifically validated, and focused on positive traits rather than neutral preferences.
+### Slide 14 (Layout: framework)
 
-VIA (Values in Action) represents positive psychology's answer to diagnostic tools like the DSM. Instead of cataloging disorders, it catalogs human strengths. This framework has strong cross-cultural validation and direct applications to career development and wellbeing.
-</speaker-notes>
-</slide>
+## The Four MBTI Dichotomies
 
-<slide number="12" layout="framework" title="VIA Character Strengths Framework">
-## 24 Character Strengths Across 6 Virtues
+| Dichotomy | Preference | Description |
+|-----------|------------|-------------|
+| **Energy** | **E**xtraversion vs. **I**ntroversion | Where you direct energy: outer world vs. inner world |
+| **Information** | **S**ensing vs. I**n**tuition | How you take in information: concrete facts vs. patterns/possibilities |
+| **Decisions** | **T**hinking vs. **F**eeling | How you make decisions: logic/analysis vs. values/impact on people |
+| **Lifestyle** | **J**udging vs. **P**erceiving | How you approach life: structure/planning vs. flexibility/spontaneity |
 
-**Wisdom & Knowledge**
-- Creativity, Curiosity, Judgment, Love of Learning, Perspective
+**Combination creates 16 types:** INTJ, ESFP, ENFP, ISTJ, etc.
 
-**Courage**
-- Bravery, Honesty, Perseverance, Zest
+**Example:** INTJ = Introversion + Intuition + Thinking + Judging
 
-**Humanity**
-- Kindness, Love, Social Intelligence
+---
 
-**Justice**
-- Fairness, Leadership, Teamwork
+### Slide 15 (Layout: content)
 
-**Temperance**
-- Forgiveness, Humility, Prudence, Self-Regulation
+## Example: The INTJ Profile
 
-**Transcendence**
-- Appreciation of Beauty, Gratitude, Hope, Humor, Spirituality
+**INTJ = "Architect" or "Mastermind"**
 
-*Developed by 55 scientists over 3 years (Peterson & Seligman, 2004)*
+**Preferences:**
+- **I**ntroversion - Energized by solitary analysis
+- I**n**tuition - Focuses on patterns, theories, future possibilities
+- **T**hinking - Decisions based on logic and objective criteria
+- **J**udging - Prefers structure, planning, and closure
 
-<speaker-notes>
-VIA is the "backbone of positive psychology," developed through an extensive research process examining philosophy, religion, and empirical studies across cultures. Everyone has all 24 strengths to some degree—this isn't about what you have vs. lack. Your "signature strengths" are your top 5-7 strengths that feel most natural and energizing to use.
+**Strengths:** Strategic thinking, independent, innovative, decisive
+**Challenges:** May appear aloof, impatient with inefficiency, perfectionist
+**Career fit:** Strategy consultant, engineer, research scientist, analyst
 
-Provide concrete examples: Curiosity means you constantly ask "why," love learning new things, and get excited by mysteries to solve. Perseverance means you finish what you start even when it's hard, and you get satisfaction from pushing through challenges. Social Intelligence means you read people well, navigate relationships skillfully, and adapt your communication to different audiences.
+**Famous INTJs:** Elon Musk, Mark Zuckerberg, Jane Austen
 
-Explain how VIA differs from MBTI: It focuses on STRENGTHS (what you're good at) not just preferences (how you like to operate). Research shows that using your signature strengths daily increases both wellbeing and job performance. The assessment is free, scientifically validated (strong test-retest reliability and cross-cultural consistency), and applies globally.
+---
 
-Connect to career application: Your ideal career uses your top strengths daily. Example: If "Creativity" and "Love of Learning" are signature strengths, you'll thrive in R&D, innovation roles, or continuous improvement positions—but you'll struggle in highly routine, unchanging operational roles.
+### Slide 16 (Layout: content)
 
-Ask students to reflect: "Which of these 24 strengths do you think are your signature strengths? How do you already use them?" This primes them to recognize patterns when they review their actual VIA results.
+## The Evidence Question: Is MBTI Valid?
 
-Transition: "VIA tells you what strengths you HAVE. But how do you DEVELOP them into workplace competencies? That's where CliftonStrengths comes in..."
-</speaker-notes>
-</slide>
+**2025 Comprehensive Review** analyzed 193 studies (1999-2024):
 
-<slide number="13" layout="section-break" title="Part 4: Talent Identification">
-# Part 4: Talent Identification
-## CliftonStrengths and Development
+**✓ What MBTI does well:**
+- Internal consistency: α = 0.845-0.921 (good reliability)
+- Stable across time (test-retest reliability)
+- Popular - most used assessment in career counseling
 
-<speaker-notes>
-CliftonStrengths (formerly StrengthsFinder) is extremely popular in business—Fortune 500 companies use it extensively for team development. However, recent research reveals significant problems, especially for college student populations.
+**❌ Concerns about validity:**
+- Weak convergent validity: Only 2.8% of correlations with other personality measures reached meaningful levels (r ≥ 0.50)
+- Poor predictive validity for career outcomes: Only 0.5% of career-related correlations reached r ≥ 0.50
+- Binary typing problem: Forces continuous traits into either/or categories
 
-We're including CliftonStrengths because students will encounter it in professional contexts, but we'll address both benefits and limitations. This continues our theme of critical evaluation—learning to question even expensive, widely-used tools.
-</speaker-notes>
-</slide>
+*(Erford et al., 2025)*
 
-<slide number="14" layout="framework" title="CliftonStrengths Overview">
-## 34 Talent Themes in 4 Domains
+---
 
-**Strategic Thinking**
-- Analytical, Context, Futuristic, Ideation, Input, Intellection, Learner, Strategic
+### Slide 17 (Layout: content)
 
-**Relationship Building**
-- Adaptability, Connectedness, Developer, Empathy, Harmony, Includer, Individualization, Positivity, Relator
+## How to Use MBTI Results Wisely
 
-**Influencing**
-- Activator, Command, Communication, Competition, Maximizer, Self-Assurance, Significance, Woo
+**DO:**
+- Explore preferences and patterns in your behavior
+- Use as conversation starter with mentor or peers
+- Consider how type preferences affect teamwork
+- Recognize strengths associated with your type
 
-**Executing**
-- Achiever, Arranger, Belief, Consistency, Deliberative, Discipline, Focus, Responsibility, Restorative
+**DON'T:**
+- Make major career decisions based solely on type
+- Use type as excuse ("I'm an introvert so I can't lead")
+- Stereotype others based on their type
+- Assume type is fixed and unchangeable
 
-*Your top 5 themes = your "strengths profile"*
+**Remember:** MBTI measures *preferences*, not *abilities*
 
-<speaker-notes>
-CliftonStrengths identifies natural talents you can develop into strengths. The key distinction: Talent = recurring pattern of thought, feeling, or behavior. Strength = talent × investment (practice, skills, knowledge). This developmental mindset is valuable—you're not fixed, you can grow.
+You can develop skills outside your natural preferences!
 
-The assessment identifies your top 5 themes from 34 possible themes. The four domains (Strategic Thinking, Relationship Building, Influencing, Executing) help you understand your natural contribution style to teams.
+---
 
-Provide vivid examples: Achiever = constant drive to accomplish, never satisfied with "good enough," always has a mental checklist. Relator = prefers deep, authentic relationships over surface networking—fewer friends but very close bonds. Strategic = pattern recognition ability, sees multiple pathways to goals and can anticipate obstacles. Learner = the PROCESS of learning excites you more than the outcome—you'd rather master something new than exploit existing expertise.
+### Slide 18 (Layout: section-break)
 
-Connect to career application: Build roles around your top themes. Example: High "Relator" + "Empathy" suggests client-facing roles like account management, coaching, or counseling. High "Strategic" + "Analytical" suggests consulting, business analysis, or strategic planning roles.
+# Part 3
 
-Set up the critical evaluation: "This sounds incredibly useful for development. So what's the problem? Let's look at research published just this year..."
-</speaker-notes>
-</slide>
+## Strengths & Talents
 
-<slide number="15" layout="content" title="CliftonStrengths Validity Concerns">
-## Critical Evaluation: Use with Caution
+**VIA Character Strengths & CliftonStrengths**
 
-**Recent Research Findings (Reid & Short, 2024):**
+---
 
-- Less than HALF of 34 themes showed adequate reliability in general population
-- Less than ONE QUARTER showed adequate reliability in college students specifically
-- **Conclusion:** "Current evidence for implementing CSA within higher education is insufficient"
+### Slide 19 (Layout: content)
 
-**Our Approach:**
-- Complete CliftonStrengths to explore talent concepts
-- Focus more heavily on VIA (better validated, free)
-- Use CliftonStrengths language as ONE input, not gospel
-- Cross-check themes against VIA strengths and Holland interests
+## VIA Character Strengths: The Science
 
-<speaker-notes>
-This research was just published in 2024 in *Consulting Psychology Journal*, a highly respected publication. This is uncomfortable but important—we're modeling how to evaluate tools critically even when they're expensive and widely used.
+**VIA = Values in Action**
 
-Explain reliability: It measures consistency (do you get the same results over time?). If reliability is poor, your results might change week to week, which undermines the entire assessment. Reid & Short found that fewer than half of the 34 themes met basic reliability standards, and it's even worse for college students (fewer than 25% of themes were reliable).
+Developed by 55 psychologists over 3 years (2001-2004), reviewed:
+- Philosophy and religious texts across cultures
+- Psychological research on virtues
+- Cross-cultural universals in valued character traits
 
-Compare to VIA, which has MUCH stronger psychometric properties—high test-retest reliability, strong convergent validity, and consistent performance across age groups and cultures.
+**Result:** 24 character strengths organized into 6 virtues
 
-Address the obvious question: "Why do we still use CliftonStrengths if the evidence is weak?" Four reasons: (1) Workplace prevalence—students WILL encounter it in professional contexts, especially at larger companies, (2) Language is useful—terms like "Achiever," "Relator," and "Strategic" are intuitive descriptors that facilitate communication, (3) Talent development mindset is valuable—the idea that you CAN grow strengths through investment is supported by growth mindset research, (4) We're teaching critical evaluation—comparing tools with different evidence bases develops analytical judgment.
+**Why it matters:**
+- Using signature strengths daily → higher life satisfaction
+- Strengths-based interventions improve well-being
+- Free validated assessment: www.viacharacter.org
 
-Ask students: "How do you feel knowing an expensive test ($50-200 for full results) has weak scientific evidence while a free test (VIA) has strong evidence?" This challenges assumptions about price = quality.
+*(Peterson & Seligman, 2004)*
 
-Provide clear recommendation for PDPs: Mention CliftonStrengths insights, but weight VIA Character Strengths more heavily in your integration. Note overlaps (e.g., CliftonStrengths "Learner" = VIA "Love of Learning"). Use CliftonStrengths as confirmatory evidence when it aligns with VIA, but don't base career decisions solely on it.
+---
 
-Transition: "Now let's turn to the BEST validated tool for career exploration—Holland's RIASEC model, which has 50+ years of consistent research support..."
-</speaker-notes>
-</slide>
+### Slide 20 (Layout: framework)
 
-<slide number="16" layout="section-break" title="Part 5: Career-Personality Fit">
-# Part 5: Career-Personality Fit
-## Holland Code and RIASEC Theory
+## The 24 VIA Character Strengths
 
-<speaker-notes>
-Holland Code is the gold standard for career assessment, used by O*NET (the U.S. Department of Labor's occupational database), career counselors worldwide, and university career services globally. Unlike MBTI and CliftonStrengths, Holland Code has exceptionally strong research validation spanning over 50 years.
+| Virtue | Character Strengths |
+|--------|---------------------|
+| **Wisdom** | Creativity • Curiosity • Judgment • Love of Learning • Perspective |
+| **Courage** | Bravery • Perseverance • Honesty • Zest |
+| **Humanity** | Love • Kindness • Social Intelligence |
+| **Justice** | Teamwork • Fairness • Leadership |
+| **Temperance** | Forgiveness • Humility • Prudence • Self-Regulation |
+| **Transcendence** | Appreciation of Beauty • Gratitude • Hope • Humor • Spirituality |
 
-This tool directly answers the question: "What career field matches who I am?" It's the bridge between self-knowledge and career exploration, which is exactly what students need for their Personal Development Plan career vision.
-</speaker-notes>
-</slide>
+**Your "Signature Strengths" = Top 5-7 strengths**
 
-<slide number="17" layout="framework" title="Holland's RIASEC Hexagonal Model">
-## The Six Interest Types
+These are the strengths that:
+- Feel authentic and natural to you
+- Energize you when you use them
+- You actively seek opportunities to express
 
-**Realistic (R):** Mechanical, physical, hands-on work
-- Engineers, technicians, builders, athletes
+---
 
-**Investigative (I):** Analytical, scientific inquiry
-- Researchers, data analysts, physicians
+### Slide 21 (Layout: content)
 
-**Artistic (A):** Creative expression and innovation
-- Designers, writers, musicians, marketers
+## Strengths-Based Career Counseling (SBCC)
 
-**Social (S):** Helping, teaching, supporting others
-- Teachers, counselors, HR professionals
+**Research study:** VIA-based career intervention with job seekers
 
-**Enterprising (E):** Persuading, leading, business ventures
-- Entrepreneurs, managers, sales, lawyers
+**4-Session Model:**
+1. **Strengths Identification** - Complete VIA, identify top 5
+2. **Strengths Exploration** - Discuss how strengths show up in life
+3. **Goal-Setting** - Set career goals aligned with strengths
+4. **Application** - Create action plans using strengths
 
-**Conventional (C):** Organizing, data management, systems
-- Accountants, administrators, analysts
+**Results at 3-month follow-up:**
+- **SBCC group:** 80% employment rate
+- **Control group:** 60% employment rate
+- **Self-esteem:** Significant gains only in SBCC group
 
-*Hexagonal arrangement shows proximity = similarity*
+*(Littman-Ovadia et al., 2014)*
 
-<speaker-notes>
-Draw or display the hexagon with RIASEC arranged around the perimeter. The spatial arrangement is meaningful: Adjacent types are more similar (R-I share analytical focus; E-C share organizational focus), while opposite types are most different (R-S, I-E, A-C).
+---
 
-Explain the assessment outcome: Your Holland Code is typically a 3-letter combination representing your top three types (e.g., ASE, RIC, SEC). Most people have a primary type and 1-2 secondary types that modify career preferences. Career satisfaction is highest when your job environment matches your code—this is called "congruence."
+### Slide 22 (Layout: content)
 
-Provide concrete code examples: ASE (Artistic-Social-Enterprising) = Marketing director, creative agency leader, brand strategist—careers combining creativity, people connection, and business influence. RIC (Realistic-Investigative-Conventional) = Civil engineer, data scientist, quality analyst—careers combining hands-on problem-solving, analytical thinking, and systematic processes. SEC (Social-Enterprising-Conventional) = HR manager, non-profit director, training coordinator—careers combining people development, organizational leadership, and administrative systems.
+## CliftonStrengths: Talent Themes
 
-Share research evidence from Nauta (2010): 50+ years of validation studies consistently show congruence (fit between Holland Code and career environment) predicts job satisfaction (r = .17). This is a modest correlation but remarkably consistent across cultures, time periods, and occupational categories. It's one of the most robust findings in vocational psychology.
+**Different from VIA:** Focuses on talents (natural patterns of thinking, feeling, behaving) rather than moral character
 
-Connect Holland to Big Five personality: Investigative + Artistic types typically score high on Openness to Experience. Social + Enterprising types typically score high on Extraversion. This shows Holland integrates well with broader personality science, unlike MBTI which shows weak convergent validity.
+**34 Talent Themes** across 4 domains:
+- **Executing:** Getting things done (Achiever, Discipline, Focus, Responsibility)
+- **Influencing:** Taking charge and speaking up (Command, Communication, Competition)
+- **Relationship Building:** Connecting with others (Empathy, Harmony, Relator)
+- **Strategic Thinking:** Absorbing and analyzing information (Analytical, Learner, Strategic)
 
-Transition: "Now let's see how to USE your Holland Code for systematic career exploration..."
-</speaker-notes>
-</slide>
+**Philosophy:** Invest in developing your top talents into strengths, rather than fixing weaknesses
 
-<slide number="18" layout="content" title="Using Holland Code for Career Exploration">
-## From Assessment to Action
+*(Gallup/CliftonStrengths)*
 
-**Your Holland Code → Career Families**
+---
 
-**Step 1:** Identify your 3-letter code (from O*NET Interest Profiler)
+### Slide 23 (Layout: content)
 
-**Step 2:** Explore careers matching your code
-- O*NET database has 900+ occupations coded by RIASEC
-- Filter by education level, salary, growth outlook
+## A Note on Psychometric Validity
 
-**Step 3:** Assess "congruence" (fit)
-- **High fit:** All 3 letters match (e.g., ASE person in ASE career)
-- **Moderate fit:** 2 letters match
-- **Low fit:** 0-1 letters match (career mismatch likely)
+**Recent research caution (Reid & Short, 2024):**
 
-**Step 4:** Refine based on other assessments
-- VIA strengths: What talents do you bring?
-- MBTI preferences: What work environment suits you?
-- CliftonStrengths themes: How do you contribute best?
+Study examined CliftonStrengths reliability in college students:
+- Less than half of 34 themes showed adequate internal consistency (α ≥ 0.70)
+- Only 8 of 34 themes showed adequate reliability in college student samples
+- Authors conclude: "Evidence for implementing CSA in higher education is insufficient"
 
-<speaker-notes>
-This is the practical application section—moving from self-knowledge to career strategy. Emphasize that Holland Code is DESCRIPTIVE, not prescriptive. Low congruence doesn't mean you'll fail, but research suggests you might be less satisfied long-term. Use Holland Code to explore options broadly, not to eliminate possibilities prematurely.
+**Our approach:**
+- Use CliftonStrengths conceptually to explore talents
+- Rely more heavily on VIA (better validated, free)
+- Teach students to critically evaluate assessment claims
 
-Walk through concrete examples: "If you're ASE (Artistic-Social-Enterprising), explore: Marketing Manager, Event Planner, Public Relations Director, Creative Director, Brand Strategist, Communications Manager. If you're RIC (Realistic-Investigative-Conventional), explore: Software Engineer, Data Analyst, Mechanical Engineer, Lab Technician, Systems Administrator, Quality Assurance Specialist."
+**Key lesson:** Popular ≠ Valid. Always examine the evidence.
 
-Address Vietnam context: O*NET is US-based, but the RIASEC types are universal—they've been validated in Asia, Europe, and Latin America. Adapt career families to the Vietnam market context. Example: Enterprising types might explore startup ecosystems (Vietnam has vibrant tech startups), family business leadership (common in Vietnamese business culture), or social enterprises.
+---
 
-Connect to PDP requirements: Part 1 (Self-Knowledge Foundation) = Document your Holland Code and top 5-10 career matches. Part 3 (Career Vision & Goals) = Use Holland congruence to inform your 1-year, 3-year, and 5-year career goals. Part 4 (Mentor Integration) = Discuss alignment between Holland Code and your mentor's career path—what similarities and differences do you observe?
+### Slide 24 (Layout: section-break)
 
-Set up the integration challenge: "Now comes the hardest part—you have results from FIVE different assessments. How do you integrate them into ONE coherent picture of yourself without forcing false patterns?"
-</speaker-notes>
-</slide>
+# Part 4
 
-<slide number="19" layout="section-break" title="Part 6: Integration">
-# Part 6: Integration
-## Making Sense of Multiple Assessments
+## Career-Personality Fit
 
-<speaker-notes>
-Students now have five assessment results: MBTI type, VIA Character Strengths (top 5-7), CliftonStrengths themes (top 5), Holland Code (3-letter), plus Emotional Intelligence assessment results from Week 7. The challenge is finding meaningful patterns without forcing false coherence.
+**Holland Code (RIASEC) Theory**
 
-This integration process mirrors what professional career counselors do—synthesizing multiple data sources into actionable insights. It's also the highest-level cognitive work in the course: analysis, synthesis, and evaluation (Bloom's taxonomy).
-</speaker-notes>
-</slide>
+---
 
-<slide number="20" layout="content" title="Integration Framework">
-## Five-Step Integration Process
+### Slide 25 (Layout: content)
 
-**Step 1: List Results**
-- MBTI: Type and key insights
-- VIA: Top 5 character strengths
-- CliftonStrengths: Top 5 talent themes
-- Holland Code: 3-letter code
-- (Later: EI assessment results from Week 7)
+## Holland's Theory of Vocational Personalities
 
-**Step 2: Identify Patterns**
+**Core premise:** Career satisfaction results from alignment between:
+1. **Person:** Your interests, abilities, values
+2. **Environment:** The demands and culture of the work setting
+
+**RIASEC Model:** Six personality types and corresponding work environments
+
+**Career development goal:** Find "congruence" (good fit)
+
+**Most widely used theory in career counseling** - 50+ years of research
+
+*(Holland, 1959-1997; Nauta, 2010)*
+
+---
+
+### Slide 26 (Layout: framework)
+
+## The Six RIASEC Types
+
+| Type | Personality | Preferred Work | Example Careers |
+|------|-------------|----------------|-----------------|
+| **R**ealistic | Practical, hands-on, mechanical | Working with tools, machines, objects | Engineer, mechanic, pilot |
+| **I**nvestigative | Analytical, curious, intellectual | Research, problem-solving, ideas | Scientist, analyst, programmer |
+| **A**rtistic | Creative, expressive, original | Innovation, self-expression, aesthetics | Designer, writer, musician |
+| **S**ocial | Helpful, cooperative, empathetic | Teaching, helping, serving others | Teacher, counselor, nurse |
+| **E**nterprising | Persuasive, ambitious, leader | Influencing, selling, leading | Manager, entrepreneur, lawyer |
+| **C**onventional | Organized, detail-oriented, structured | Data, systems, procedures | Accountant, administrator, analyst |
+
+**Your Holland Code = Top 3 types** (e.g., ASE, IEC, RIC)
+
+---
+
+### Slide 27 (Layout: framework)
+
+## The RIASEC Hexagonal Model
+
+```
+        R
+      /   \
+    C       I
+    |       |
+    E       A
+      \   /
+        S
+```
+
+**Adjacency = Similarity**
+- Adjacent types (e.g., R-I, A-S) are more compatible
+- Opposite types (e.g., R-S, I-E) are most different
+- Your Holland Code predicts career compatibility
+
+**Example:** RIC (Realistic-Investigative-Conventional)
+- Adjacent types = consistent, focused interests
+- Engineering or data science likely good fit
+
+---
+
+### Slide 28 (Layout: content)
+
+## Does Congruence Predict Satisfaction?
+
+**Meta-analytic evidence:**
+
+Person-environment congruence correlates with:
+- Job satisfaction: **r = .17** (Tsabari et al., 2005)
+- Performance: **r = .15** (Tranberg et al., 1993)
+- Stability: **r = .10** (Assouline & Meir, 1987)
+
+**Interpretation:**
+- Modest but consistent effects
+- Not deterministic - other factors matter (salary, manager, life stage)
+- BUT: Persistent misalignment predicts burnout and turnover
+- Better to be "in the ballpark" than completely misaligned
+
+*(Meta-analyses reviewed in Nauta, 2010)*
+
+---
+
+### Slide 29 (Layout: content)
+
+## Using Holland Code for Career Exploration
+
+**Step 1:** Complete O*NET Interest Profiler (free)
+- www.onetonline.org → Interest Profiler
+- 60 questions, ~10 minutes
+- Receive your 3-letter Holland Code
+
+**Step 2:** Explore matching careers
+- O*NET database links codes to ~900 occupations
+- See job descriptions, education requirements, salary outlook
+
+**Step 3:** Discuss with mentor
+- Share code and initial reactions
+- Explore alignment with current career direction
+- Identify careers to research further
+
+**Your PDP must include Holland Code results and career field alignment analysis**
+
+---
+
+### Slide 30 (Layout: section-break)
+
+# Integration
+
+## Synthesizing Multiple Assessments
+
+---
+
+### Slide 31 (Layout: content)
+
+## Why Five Different Assessments?
+
+Each measures a different facet of self-understanding:
+
+| Assessment | What It Measures | Career Application |
+|------------|------------------|-------------------|
+| **MBTI/16P** | Personality preferences | Work style, team role, environment fit |
+| **VIA** | Character strengths | Values alignment, source of meaning |
+| **CliftonStrengths** | Natural talents | Where you excel most naturally |
+| **Holland Code** | Vocational interests | Career field fit, tasks you enjoy |
+| **EI** (Week 7) | Emotional intelligence | Leadership, relationships, self-management |
+
+**Together:** Comprehensive self-portrait for career planning
+
+---
+
+### Slide 32 (Layout: content)
+
+## Integration Strategy: Look for Patterns
+
+**Ask yourself:**
+
+**Confirming patterns:**
 - What themes appear across multiple assessments?
-- Example: VIA "Leadership" + CliftonStrengths "Command" + Holland "E" = leadership capacity
+- Which results feel most accurate and energizing?
+- Where do assessments point to similar career directions?
 
-**Step 3: Note Contradictions**
-- Where do assessments disagree?
-- Example: MBTI "Introvert" but Holland "Social" type
-- Don't force consistency—you're complex!
+**Contradictions:**
+- Where do results seem to conflict?
+- Which conflicts are surface-level vs. fundamental?
+- Do contradictions suggest versatility or internal conflict?
 
-**Step 4: Generate Hypotheses**
-- "I thrive in environments that allow..."
-- "My ideal career leverages my..."
-- "I may struggle in roles that require..."
+**Gaps:**
+- What aspects of yourself are NOT captured by these assessments?
+- What do you know about yourself that tests didn't reveal?
+- What feedback from others contradicts your self-assessments?
 
-**Step 5: Test Through Experience**
-- Mentorship conversations
-- Internships and projects
-- Tutorial activities and group work
+---
 
-<speaker-notes>
-Emphasize that integration is ITERATIVE, not one-time. Students' understanding will deepen throughout the semester as they test hypotheses through experience. This framework provides structure without forcing rigid conclusions.
+### Slide 33 (Layout: framework)
 
-Step 2 (Patterns) is powerful—when multiple scientifically-independent assessments agree, pay attention. Example: If VIA shows "Leadership" as a signature strength, CliftonStrengths shows "Command" in top 5, and Holland Code includes "E" (Enterprising), this convergent evidence strongly suggests leadership capacity. One assessment alone could be noise; three assessments agreeing is signal.
+## Sample Integration: "Sarah's Profile"
 
-Step 3 (Contradictions) is equally important and often more interesting. Contradictions reveal context-dependence and nuance. Example: MBTI shows Introvert but Holland shows Social type. This isn't an error—it reveals that you help others one-on-one (Social) but need alone time to recharge (Introvert). You're not contradictory; you're complex.
+**MBTI:** ENFP (Extraversion, Intuition, Feeling, Perceiving)
+**VIA Top 5:** Creativity, Curiosity, Social Intelligence, Zest, Kindness
+**CliftonStrengths Top 5:** Ideation, Strategic, Learner, Positivity, Woo
+**Holland Code:** AES (Artistic, Enterprising, Social)
 
-Provide another contradiction example: VIA shows "Teamwork" as a signature strength but CliftonStrengths shows "Competition" in top 5. Resolution: You're collaborative (enjoy working toward shared goals) but also driven to excel (want your contribution to be recognized). These aren't opposites—they coexist in high-performing team players.
+**Pattern Analysis:**
+- Strong creative and people orientation across all assessments
+- Values innovation, learning, and helping others
+- Energized by variety and interpersonal interaction
 
-Step 4 (Hypotheses) transforms insights into testable predictions. Model the language: "I thrive in environments that allow creative problem-solving with small teams but give me autonomy over process" (combines Artistic from Holland, VIA Creativity, MBTI Introversion, CliftonStrengths Strategic). "My ideal career leverages analytical thinking applied to human systems" (combines Investigative from Holland, VIA Social Intelligence, MBTI Thinking preference).
+**Career Alignment:**
+✓ Marketing strategist for social impact organizations
+✓ Innovation consultant for nonprofits
+✓ Learning & development leader
+✗ Accounting, routine administration, solo technical work
 
-Step 5 (Testing) grounds self-assessment in reality. Encourage students to share hypotheses in Mentorship Meeting #2 and ask mentors: "Based on your observations of me, do these patterns ring true?" This reduces the Johari Window Blind Spot.
+---
 
-Transition: "Let's look at what excellent integration looks like in a student PDP..."
-</speaker-notes>
-</slide>
+### Slide 34 (Layout: content)
 
-<slide number="21" layout="quote" title="Integration Example">
-**Example Integration Statement (Student PDP):**
+## Your PDP Integration Statement
 
-"Across five assessments, I see consistent themes of **strategic thinking** (INTJ, CliftonStrengths "Strategic," Holland Investigative) and **relationship depth** (VIA "Love," CliftonStrengths "Relator"). I'm energized by solving complex problems in collaborative settings, but I need autonomy over HOW I work.
+**Part 1 of Personal Development Plan requires:**
 
-The contradiction between MBTI Introversion and my Social Holland code makes sense now—I love helping others individually (mentoring, coaching), not performing for crowds. My VIA strength "Prudence" balances my Enterprising Holland type: I'm entrepreneurial but risk-aware, not reckless.
+**200-300 word Integration Statement** addressing:
+1. What consistent themes emerge across all 5 assessments?
+2. How do these assessments collectively inform your career direction?
+3. Where do you see alignments vs. contradictions?
+4. What do these results confirm or challenge about your self-perception?
+5. How does this integrated self-understanding shape your 1-3-5 year goals?
 
-**Career implications:** Strategy consulting or product management roles where I solve complex problems with small teams. **Watch out for:** Highly routine work (will bore my Investigative side) or purely solo work (won't use my Social strengths)."
+**This is worth 20% of your PDP grade** - invest time in thoughtful synthesis
 
-<speaker-notes>
-This example comes from an actual high-performing student PDP (anonymized and used with permission). Point out what makes this integration statement strong:
+---
 
-(1) **Identifies clear patterns with evidence**: "strategic thinking" is supported by three independent assessments (INTJ, CliftonStrengths "Strategic," Holland Investigative). This is convergent validity—multiple measures agreeing increases confidence.
+### Slide 35 (Layout: content)
 
-(2) **Addresses contradictions thoughtfully**: The MBTI Introversion vs. Holland Social type seeming contradiction is resolved through nuanced interpretation (one-on-one helping vs. large group performance). This shows sophisticated thinking, not forcing false consistency.
+## From Self-Knowledge to Career Strategy
 
-(3) **Generates actionable career hypotheses**: Specific roles mentioned (strategy consulting, product management) with clear reasoning. This moves beyond vague statements like "I'm good with people" to targeted career exploration.
+**Self-assessment answers:** "Who am I?"
 
-(4) **Acknowledges both strengths and potential struggles**: "Watch out for" section shows realistic self-assessment. Recognizing what will bore you (routine work) or underutilize your talents (purely solo work) is as important as recognizing strengths.
+**Career planning answers:** "Where am I going?"
 
-(5) **Uses assessment terminology correctly**: References specific constructs (Prudence, Investigative, Enterprising) showing understanding of frameworks, not just surface-level label adoption.
+**Development plan answers:** "How will I get there?"
 
-Contrast with weak integration (what to avoid): Simply listing results without synthesis ("I'm ENFP and my VIA strengths are Curiosity, Zest, and Creativity"). Forcing false coherence by ignoring contradictions. Over-generalizing ("I'm good with people" without specifying how). No career implications or actionable next steps.
+**Your PDP synthesizes all three:**
+- Self-assessment insights (Part 1) →
+- SWOT analysis & skills gaps (Part 2) →
+- Vision & SMART goals (Part 3) →
+- Action timeline & accountability (Part 5)
 
-Connect to tutorial: "You'll practice this integration in small groups today. Peer feedback helps you see patterns you might miss when analyzing your own results. Sometimes others spot contradictions or themes you're too close to notice."
+**Assessments are the foundation, not the destination.**
 
-Transition to conclusion: "Let's wrap up with key principles to guide your self-discovery journey..."
-</speaker-notes>
-</slide>
+---
 
-<slide number="22" layout="content" title="Key Takeaways">
-## Self-Discovery Principles
+### Slide 36 (Layout: content)
 
-1. **Self-awareness is learnable** — London et al. (2023) reviewed 42 interventions that work
+## This Week: Complete Your Assessments
 
-2. **Use multiple assessments** — No single test captures your complexity
+**By end of Week 5, complete ALL assessments:**
 
-3. **Think critically** — Popular ≠ valid (MBTI vs. VIA vs. Holland)
+✓ **MBTI/16 Personalities** - www.16personalities.com (free, 10-15 min)
 
-4. **Seek external perspectives** — Johari Window shows you have blind spots
+✓ **VIA Character Strengths** - www.viacharacter.org (free, 15 min)
 
-5. **Test through action** — Hypotheses need real-world validation
+✓ **CliftonStrengths** - Use access code from course materials (20 min)
 
-6. **Integrate, don't compartmentalize** — Find patterns across tools
+✓ **Holland Code** - O*NET Interest Profiler, www.onetonline.org (10 min)
 
-7. **Career fit matters** — Congruence predicts satisfaction and performance
+✓ **EI Assessment** - Will be assigned Week 7
 
-8. **Development is ongoing** — This is Week 5 of a lifelong process
+**Save your results!** You'll need them for:
+- Mentorship Meeting 2 discussion
+- PDP Part 1: Self-Knowledge Foundation
+- Oral Exam presentation
 
-<speaker-notes>
-These eight principles apply far beyond this course—they're lifelong career development practices. Reinforce that self-awareness isn't narcissistic or self-indulgent; it's strategic. Students now have frameworks (Johari Window, RIASEC, VIA, integration process) used by career counselors worldwide. However, frameworks are TOOLS, not answers—students still need judgment and ongoing reflection.
+---
 
-Connect to mentorship: "Share these insights in Meeting #2. Ask your mentor: 'Based on your experience working with me, do these results seem accurate? What am I missing?' This question directly addresses the Johari Window Blind Spot—what others see that you don't."
+### Slide 37 (Layout: content)
 
-Connect to PDP structure: Part 1 (Self-Knowledge Foundation) = documenting assessment results and integration. Part 2 (SWOT Analysis) = using self-knowledge to systematically assess strengths, weaknesses, opportunities, and threats. Part 3 (Vision & Goals) = aligning career goals with authentic self, informed by Holland congruence. Part 4 (Mentor Integration) = incorporating external perspective on your self-assessment.
+## Key Takeaways
 
-Preview next week: "Next week we have the field trip to MISA Company. You'll observe workplace culture, career paths, and organizational values. Use your self-knowledge to evaluate: 'Would I thrive here? Does this environment match my Holland Code? Would I use my VIA signature strengths daily?' This is applying assessment insights to real career environments."
+**1. Self-awareness is rare but developable** - Most people overestimate their self-knowledge; validated assessments provide objective insights
 
-Final encouragement: "Self-knowledge is your competitive advantage. Most professionals never do this deep work—they stumble through careers reactively. You're building self-awareness systematically and critically. This puts you ahead before you even graduate."
+**2. Multiple lenses provide richer understanding** - MBTI (personality), VIA (character), CliftonStrengths (talents), Holland (interests) each capture different aspects
 
-Transition to tutorial: "In tutorial today, you'll work in small groups to practice integration. Bring your assessment results—this is hands-on application time. You'll give and receive feedback on integration statements, which prepares you for PDP Part 1."
-</speaker-notes>
-</slide>
+**3. Validity matters** - Popular assessments aren't always scientifically sound; evaluate evidence critically
 
-<slide number="23" layout="content" title="References">
+**4. Person-environment fit predicts satisfaction** - Career success requires alignment between who you are and what your work demands
+
+**5. Integration is key** - Look for patterns across assessments; synthesize into coherent self-understanding
+
+**6. Assessment is the beginning, not the end** - Use insights to inform action, not as excuse for inaction
+
+---
+
+### Slide 38 (Layout: content)
+
+## Looking Ahead: PDP Timeline
+
+**Week 5 (This week):** Complete all four self-assessments
+
+**Weeks 4-5 (Meeting 2):** Discuss assessment results with mentor
+
+**Week 7:** Complete Emotional Intelligence assessment, continue PDP drafting
+
+**Weeks 7-8 (Meeting 3):** Share SWOT analysis and preliminary goals with mentor
+
+**Week 10-11 (Meeting 4):** Present draft PDP to mentor for feedback
+
+**Week 11 (Nov 28):** Submit final Personal Development Plan
+
+**Remember:** Evidence of mentor feedback integration is worth 20% of PDP grade
+
+---
+
+### Slide 39 (Layout: content)
+
+## Next Week: Field Trip to MISA Company
+
+**September 18, 2025** - Experiential learning week
+
+**What to expect:**
+- Company tour and workplace observation
+- Panel discussion with MISA professionals
+- Q&A about career paths in tech/business
+- Reflection activity using Kolb's Experiential Learning Cycle
+
+**How to prepare:**
+- Complete self-assessments THIS week so you can observe how different personality types show up in workplace
+- Review Week 3 reflective frameworks (Gibbs, Kolb)
+- Prepare 3-5 thoughtful questions about careers and workplace culture
+- Bring notebook for observations - you'll use these for your Reflective Essay
+
+**This is a MANDATORY event** - attendance required for Individual Assignment
+
+---
+
+### Slide 40 (Layout: references)
+
 ## References
 
-**Core Readings:**
+Deci, E. L., & Ryan, R. M. (2000). The "what" and "why" of goal pursuits: Human needs and the self-determination of behavior. *Psychological Inquiry, 11*(4), 227-268.
 
-Erford, B. T., et al. (2025). A 25-year review and psychometric synthesis of the Myers–Briggs Type Indicator (MBTI)—Form M. *Journal of Counseling & Development, 103*(4), 403–417. https://doi.org/10.1002/jcad.70006
+Erford, B. T., Zhang, X., Sweeting, E. L., Russo, M., Rashid, A., Sherman, M. F., Bradford, E. L., Wang, X., Gao, A., Huang, X., Liu, Z., Haskew, A., MacInerney, E. K., Moore, E., Thompson, D., Barboza, S., Huang, X., Zhou, A., Xu, Y., & Yang, X. (2025). A 25-year review and psychometric synthesis of the Myers–Briggs Type Indicator (MBTI)—Form M. *Journal of Counseling & Development, 103*(4), 403–417. https://doi.org/10.1002/jcad.70006
 
-London, M., Sessa, V. I., & Shelley, L. A. (2023). Developing self-awareness: Learning processes for self- and interpersonal growth. *Annual Review of Organizational Psychology and Organizational Behavior, 10*, 261–288. https://doi.org/10.1146/annurev-orgpsych-120920-044531
+Eurich, T. (2017, January 4). What self-awareness really is (and how to cultivate it). *Harvard Business Review*. https://hbr.org/2018/01/what-self-awareness-really-is-and-how-to-cultivate-it
 
-Nauta, M. M. (2010). The development, evolution, and status of Holland's theory of vocational personalities: Reflections and future directions for counseling psychology. *Journal of Counseling Psychology, 57*(1), 11–22. https://doi.org/10.1037/a0018213
+Holland, J. L. (1997). *Making vocational choices: A theory of vocational personalities and work environments* (3rd ed.). Psychological Assessment Resources.
 
 Littman-Ovadia, H., Lazar-Butbul, V., & Benjamin, B. A. (2014). Strengths-based career counseling: Overview and initial evaluation. *Journal of Career Assessment, 22*(3), 403–419. https://doi.org/10.1177/1069072713498483
 
-**Additional Resources:**
+London, M., Sessa, V. I., & Shelley, L. A. (2023). Developing self-awareness: Learning processes for self- and interpersonal growth. *Annual Review of Organizational Psychology and Organizational Behavior, 10*, 261–288. https://doi.org/10.1146/annurev-orgpsych-120920-044531
 
-Peterson, C., & Seligman, M. E. P. (2004). *Character strengths and virtues: A handbook and classification.* American Psychological Association.
+Luft, J., & Ingham, H. (1955). The Johari window: A graphic model of interpersonal awareness. *Proceedings of the Western Training Laboratory in Group Development*. UCLA Extension Office.
 
-Reid, C. A., & Short, S. D. (2024). Cautionary comments on the CliftonStrengths Assessment in higher education. *Consulting Psychology Journal: Practice and Research.* https://doi.org/10.1037/cpb0000284
+Nauta, M. M. (2010). The development, evolution, and status of Holland's theory of vocational personalities: Reflections and future directions for counseling psychology. *Journal of Counseling Psychology, 57*(1), 11–22. https://doi.org/10.1037/a0018213
 
-<speaker-notes>
-These references represent the cutting-edge research on personality assessment and self-awareness development. Students don't need to read all of these, but they should recognize these are scholarly sources, not pop psychology.
+Neubauer, A. C., Pribil, A., Wallner, A., & Hofer, G. (2018). The self–other knowledge asymmetry in cognitive intelligence, emotional intelligence, and creativity. *Heliyon, 4*(12), e01061. https://doi.org/10.1016/j.heliyon.2018.e01061
 
-Highlight the 2025 Erford et al. MBTI review—this is literally the most current comprehensive research available. The 2024 Reid & Short CliftonStrengths critique is also brand new, showing we're using the latest evidence.
+Peterson, C., & Seligman, M. E. P. (2004). *Character strengths and virtues: A handbook and classification*. American Psychological Association; Oxford University Press.
 
-London et al. (2023) in Annual Review of Organizational Psychology is particularly important—Annual Review journals publish only the highest-quality synthesis articles reviewed by top experts. This establishes that self-awareness development is a serious, evidence-based field.
+Reid, C. A., & Short, S. D. (2024). Cautionary comments on the CliftonStrengths Assessment in higher education. *Consulting Psychology Journal: Practice and Research*. Advance online publication. https://doi.org/10.1037/cpb0000284
 
-These references will support students' PDPs—they can cite these sources when explaining why they weighted certain assessments more heavily than others (e.g., "I focused on VIA and Holland because research shows stronger validity than MBTI (Erford et al., 2025)").
-</speaker-notes>
-</slide>
-
-<slide number="24" layout="content" title="Assessment Reminders">
-## Assessment Reminders
-
-**Before Next Class:**
-- Complete field trip reflection (if not already done)
-- Review Kolb's Experiential Learning Cycle (Week 3)
-
-**Mentorship Meeting #2 (This Week or Next):**
-- Share all five assessment results with mentor
-- Discuss career implications and patterns
-- Seek mentor's perspective on accuracy (reduces Blind Spot)
-- Document insights for PDP Part 4 (Mentor Integration)
-
-**Personal Development Plan (Due Week 11):**
-- Part 1: Self-Assessment Summary (all 5 tools) + 200-300 word integration statement
-- Start drafting now—don't wait until Week 10!
-
-<speaker-notes>
-Emphasize DOING, not just learning. Assessment is worthless without application. The field trip next week is the first major application opportunity—students will use their self-knowledge to evaluate an actual workplace environment.
-
-Mentorship Meeting #2 is crucial for reducing the Johari Window Blind Spot. Students should explicitly ask mentors: "Do these results match what you've observed about me? What am I missing?" This external validation helps test hypotheses generated from self-assessment.
-
-PDP timeline reminder: If students wait until Week 10 to start Part 1, they'll be rushed and produce lower-quality work. Starting now allows iterative reflection—they can draft integration, discuss with mentor, revise based on field trip observations, and polish before submission.
-
-Final encouragement: "Self-knowledge is your competitive advantage. Most professionals never do this deep work—they react to opportunities without understanding what will truly satisfy them. You're being proactive and strategic. This puts you ahead of 90% of graduates before you even enter the workforce."
-
-Close with practical next step: "Bring your assessment results to tutorial. We're doing integration practice in small groups—this is where insights really click into place through discussion and peer feedback."
-</speaker-notes>
-</slide>
-
-</lecture>
+Rounds, J., & Su, R. (2014). The nature and power of interests. *Current Directions in Psychological Science, 23*(2), 98-103. https://doi.org/10.1177/0963721414522812
 
 </lecture_content>
-
-<task>
-Generate all 24 slides as a complete presentation slide deck. Reproduce all content exactly as provided. Enhance each slide with appropriate visuals, infographics, or imagery. Maintain consistent professional styling throughout.
-</task>
-
-<output_format>
-A presentation slide deck containing:
-- 24 slides total, matching the lecture content structure
-- Modern Bright Pastel Corporate visual design consistently applied
-- All lecture content text preserved exactly as written
-- Relevant images, infographics, icons, and diagrams on each slide
-- Minimum 18pt body text
-- Footers on content slides with course info and slide numbers
-- Academic citations in footers where referenced
-- Empty speaker notes sections
-</output_format>

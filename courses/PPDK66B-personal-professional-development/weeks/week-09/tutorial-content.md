@@ -1,819 +1,467 @@
-# Week 9 Tutorial: Growth Mindset & Lifelong Adaptability
+# Week 9 Tutorial: Growth Mindset & Adaptability
 
 ## Tutorial Overview
 
 **Duration:** 90 minutes
-**Format:** Interactive activities, self-assessment, strategic planning
-**Objectives:** By the end of this tutorial, you will be able to:
-- Identify your own fixed mindset triggers and develop specific reframes
-- Apply the Failure Analysis Framework to past setbacks
-- Create a preliminary reskilling plan for your career field
-- Reframe career goals using growth mindset language
-- Develop strategies for embracing challenges and learning from failure
-- Prepare thoughtfully for Mentor Meeting #4 (PDP review)
+**Topic:** Growth Mindset Development & Application
+**Learning Objectives:**
+- Identify personal fixed vs. growth mindset patterns across different domains
+- Practice reframing fixed mindset statements into growth mindset language
+- Create a personal Growth Mindset Development Plan
+- Apply growth mindset strategies to PDP goals and current challenges
 
 ---
 
-## Activity 1: Mindset Self-Diagnosis—Finding Your Fixed Mindset Triggers (20 minutes)
+## Tutorial Structure
 
-### Purpose
-Honest self-assessment of where fixed mindset shows up in your thinking; develop awareness of mindset patterns that may limit career development.
+### Quick Review (5 minutes)
 
-### Instructions
+**Activity: Mindset Moment**
 
-**Individual Reflection (12 minutes):**
+Individually reflect on one question:
+- "When was the last time you avoided a challenge because you feared you might not succeed?"
 
-Complete the following self-assessment:
+Think about:
+- What was the challenge?
+- What thoughts went through your mind?
+- Looking back, was that fixed mindset or growth mindset thinking?
 
-#### Part A: Mindset Patterns Inventory
+Share briefly with person next to you (1 minute each).
 
-**Rate how often you experience each thought/behavior (1=Rarely, 5=Very Often):**
-
-| Fixed Mindset Pattern | Rating (1-5) | Specific Example |
-|----------------------|--------------|------------------|
-| "I'm just not good at [skill/subject]" | | |
-| Avoiding challenges that might make me look incompetent | | |
-| Giving up quickly when something is difficult | | |
-| Feeling threatened when others succeed at something I struggle with | | |
-| Taking criticism personally rather than as helpful feedback | | |
-| Believing talent matters more than effort | | |
-| Hiding mistakes rather than learning from them | | |
-| Comparing myself to others and feeling inadequate | | |
-| Thinking "If I have to work hard at this, I must lack natural ability" | | |
-| Staying in my comfort zone to preserve my self-image | | |
-
-**Add up your total score: _____ / 50**
-
-**Interpretation:**
-- **10-20:** Strong growth mindset orientation (but watch for specific triggers)
-- **21-35:** Mixed mindset (some areas growth-oriented, others fixed)
-- **36-50:** Predominantly fixed mindset (significant development opportunity)
-
-**Important:** Everyone has fixed mindset tendencies in some areas. The goal isn't perfection—it's awareness and strategic intervention.
-
-#### Part B: Domain-Specific Mindset Mapping
-
-**In the table below, list specific skills/subjects and identify your mindset for each:**
-
-| Skill/Subject Area | Current Mindset (Fixed/Growth/Mixed) | Evidence (What do you tell yourself?) | Impact on Development |
-|-------------------|-------------------------------------|--------------------------------------|---------------------|
-| Example: Public speaking | Fixed | "I'm naturally introverted and bad at presentations" | I avoid opportunities to practice; skills don't improve |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-| | | | |
-
-**Focus areas to consider:**
-- Technical skills (data analysis, coding, AI tools)
-- Interpersonal skills (networking, negotiation, leadership)
-- Creative skills (writing, design, strategic thinking)
-- Language skills (English proficiency, business communication)
-- Academic subjects (finance, economics, marketing analytics)
-
-#### Part C: Identifying Your Biggest Fixed Mindset Trigger
-
-**Write 2-3 paragraphs answering:**
-
-1. **Which domain from Part B most limits your career potential?**
-   - Why is this domain important for your career goals?
-   - How has fixed mindset held you back?
-
-2. **What's the origin of this fixed mindset belief?**
-   - Early experience? ("I failed at math in 7th grade")
-   - Comparison to others? ("My roommate is naturally better at this")
-   - External messaging? ("People told me I'm not analytical")
-
-3. **What evidence contradicts this fixed mindset?**
-   - Times you've successfully learned difficult things
-   - Examples of people who developed this skill despite initial struggle
-   - Knowledge that neuroplasticity makes skill development possible
-
-### Small Group Discussion (8 minutes)
-
-**Form groups of 3-4 students.**
-
-**Discussion prompts:**
-
-1. **Share your biggest fixed mindset trigger** (the domain you identified in Part C). You don't have to share your full reflection—just the skill/subject and why it matters for your career. (3 minutes)
-
-2. **Peer coaching:** For each person who shares, the group offers:
-   - Evidence that contradicts their fixed mindset (e.g., "But you're good at X, which also requires analytical thinking")
-   - Encouragement that the skill is developable
-   - Suggestions for first steps toward growth mindset in that domain (3 minutes)
-
-3. **Pattern recognition:** What common fixed mindset triggers did your group identify? (2 minutes)
-
-### Key Takeaway
-
-**Instructor facilitates whole-class debrief (2 minutes):**
-
-"What I want you to take from this activity:
-
-**You're not broken if you have fixed mindset triggers. Everyone does.**
-
-The difference between people who develop and people who stagnate isn't absence of fixed mindset—it's:
-1. **Awareness:** Recognizing when fixed mindset is operating
-2. **Intervention:** Actively reframing and choosing growth-oriented responses
-3. **Practice:** Repeatedly choosing challenge over comfort
-
-**Save this self-assessment. You'll use it to inform your PDP and Mentor Meeting #4.**"
+**Facilitator Recap:** Today we'll move from understanding growth mindset theory to actively applying it. You'll leave with a personalized plan for cultivating growth mindset in areas where you currently hold fixed beliefs.
 
 ---
 
-## Activity 2: Failure Autopsy—Learning from Past Setbacks (25 minutes)
+### Main Activity (75 minutes)
 
-### Purpose
-Apply the Failure Analysis Framework (from lecture) to a real setback; transform failure from identity threat to strategic feedback.
+#### PART 1: Domain-Specific Mindset Mapping (15 minutes)
 
-### Setup
+**Objective:** Identify where you have fixed vs. growth mindsets across different life domains
 
-**Instructor introduces:**
+**Individual Activity (10 minutes):**
 
-"Failure is one of the most powerful learning experiences—but only if you extract the lessons. Most people either:
-- Avoid thinking about failures (too painful)
-- Ruminate without learning (just feel bad repeatedly)
+Complete the Domain Mindset Assessment worksheet:
 
-Today, you'll do a structured **failure autopsy**—examining a setback to extract actionable insights."
+For each domain, rate your agreement (1-5 scale) with the FIXED mindset statement:
 
-### Instructions
+**Academic/Intellectual Domain:**
+- "My intelligence is something I can't change very much" (1 = Strongly Disagree, 5 = Strongly Agree)
 
-**Individual Reflection and Writing (15 minutes):**
+**Professional/Career Domain:**
+- "I have certain career-related abilities, and I really can't do much to change them"
 
-#### Step 1: Select a Setback
+**Interpersonal/Social Domain:**
+- "My ability to connect with others and build relationships is fixed"
 
-**Choose a specific failure or setback from the past year:**
+**Creative Domain:**
+- "Some people are creative, and others aren't - I can't really change how creative I am"
 
-Examples:
-- Failed exam or poor grade in important class
-- Rejected job/internship application
-- Conflict with team member on group project
-- Missed opportunity due to fear or procrastination
-- Business idea that didn't work
-- Personal goal you didn't achieve
+**Physical/Athletic Domain:**
+- "My physical abilities and coordination are set - I'm either athletic or not"
 
-**Describe what happened (2-3 sentences):**
+**Emotional/Psychological Domain:**
+- "My emotional patterns and mental health are pretty much set"
 
-___________________________________________________________
+**Technical/Digital Domain:**
+- "I'm either good with technology or I'm not - it's not something I can really develop"
 
-___________________________________________________________
+**Leadership Domain:**
+- "Leadership ability is something you're born with - you either have it or you don't"
 
-___________________________________________________________
+**Scoring:**
+- 1-2: Growth mindset in this domain
+- 3: Mixed/neutral mindset
+- 4-5: Fixed mindset in this domain
 
-#### Step 2: Identify Your Initial Response
+**Reflection Questions:**
+1. Which 2-3 domains show strongest FIXED mindset (highest scores)?
+2. Are these domains important for your career goals?
+3. How might fixed beliefs in these domains be limiting you?
 
-**How did you respond emotionally and behaviorally right after this failure?**
-
-Check all that apply:
-- [ ] Blamed myself harshly ("I'm such a failure")
-- [ ] Avoided thinking about it
-- [ ] Made excuses or blamed external factors entirely
-- [ ] Gave up on related goals
-- [ ] Felt shame or embarrassment
-- [ ] Compared myself to others who succeeded
-- [ ] Questioned my abilities or career fit
-- [ ] Other: ___________________________
-
-**What mindset (fixed or growth) dominated your initial response?**
-
-___________________________________________________________
-
-#### Step 3: Apply the Failure Analysis Framework
-
-**Answer each question thoroughly:**
-
-**A. Describe objectively: What exactly happened?**
-- Stick to facts, not interpretations
-- Example: "I scored 65% on the finance midterm" NOT "I'm terrible at finance"
-
-___________________________________________________________
-
-___________________________________________________________
-
-**B. Analyze strategically: Why did this happen?**
-
-**Controllable factors (things you could have influenced):**
-- Study approach? Time management? Preparation? Strategy? Skill gaps? Effort?
-
-___________________________________________________________
-
-___________________________________________________________
-
-**Uncontrollable factors (things outside your influence):**
-- Luck? Circumstances? Other people's decisions? Systemic issues?
-
-___________________________________________________________
-
-___________________________________________________________
-
-**C. Extract lessons: What can you learn from this?**
-- About your approach/strategy?
-- About your assumptions?
-- About your preparation?
-- About the domain itself?
-
-**Key insight 1:** ___________________________________________
-
-**Key insight 2:** ___________________________________________
-
-**Key insight 3:** ___________________________________________
-
-**D. Adjust strategy: What will you do differently next time?**
-
-**Specific, actionable changes:**
-
-1. ___________________________________________________________
-
-2. ___________________________________________________________
-
-3. ___________________________________________________________
-
-**E. Persist with new approach: What's your next action?**
-
-**Commitment:**
-I will ______________________________________________________
-
-by [date]: ____________________
-
-**Accountability:** I will share this goal with: ___________________
-
-#### Step 4: Growth Mindset Reframe
-
-**Original fixed mindset interpretation of this failure:**
-
-"This failure means ___________________________________________"
-
-(Example: "This failure means I'm not cut out for finance careers")
-
-**Growth mindset reframe:**
-
-"This failure taught me _______________________________________,
-
-and my next step is ___________________________________________"
-
-(Example: "This failure taught me that I need to change my study strategy from passive reading to active practice problems, and my next step is to form a study group and attend professor office hours weekly")
-
-### Pair-Share Discussion (10 minutes)
-
-**Find a partner (not from your Activity 1 group).**
-
-**Instructions:**
-
-1. **Share your failure and your growth mindset reframe** (not all the details—just the situation and your reframe). (4 minutes—2 min each)
-
-2. **Peer feedback:**
-   - Is the reframe authentically growth-oriented, or does it still contain fixed mindset thinking?
-   - Are the strategy adjustments specific and actionable enough?
-   - What additional insights might this failure offer? (4 minutes)
-
-3. **Mutual accountability:** Exchange commitments from Step 3E. Agree to check in with each other in 1 week about progress. (2 minutes)
-
-### Key Takeaway
-
-**Instructor says:**
-
-"The setback you just analyzed probably felt terrible when it happened. But through structured reflection, you've transformed it into:
-- Strategic insights
-- Specific improvements
-- Actionable next steps
-
-**This is the difference between failure that defeats you and failure that develops you.**
-
-Every successful person you admire has failed—repeatedly. The difference is they treated failure as feedback, not identity.
-
-**For your PDP:** Include examples of how you've learned from failure. Employers value resilience and growth orientation as much as success."
+**Pair Share (5 minutes):**
+- Share your 2-3 highest fixed mindset domains
+- Discuss: "How might these fixed beliefs have influenced your choices or behavior?"
 
 ---
 
-## Activity 3: Reskilling Plan Development—Preparing for Your Field's Future (20 minutes)
+#### PART 2: Reframing Fixed Mindset Statements (20 minutes)
 
-### Purpose
-Create a preliminary reskilling plan aligned with your career field; apply growth mindset to emerging skill needs; integrate with PDP.
+**Objective:** Practice transforming fixed mindset language into growth mindset language
 
-### Instructions
+**Group Activity (12 minutes):**
 
-**Individual Work (15 minutes):**
+Divide into groups of 4-5 students. Each group receives 8 common fixed mindset statements to reframe.
 
-#### Part A: Career Field Analysis
+**Fixed Mindset Statements to Reframe:**
 
-**Your target career field/industry:**
+1. "I'm just not a math person"
+2. "I'm too shy to be good at networking"
+3. "I don't have leadership potential"
+4. "I'm not creative - I'm more analytical"
+5. "I'm terrible at public speaking and always will be"
+6. "I can't learn technical skills like coding at this point"
+7. "I don't have the personality for sales or marketing"
+8. "I'm not good at managing my time"
 
-___________________________________________________________
+**Task:** For each statement:
+1. Identify the fixed mindset assumption
+2. Reframe it as growth mindset statement
+3. Add a specific action that reflects growth mindset
 
-**Based on your knowledge (and Week 1-2 content on future of work), identify:**
+**Example:**
+- Fixed: "I'm just not a math person"
+- Assumption: Mathematical ability is innate and fixed
+- Reframe: "I haven't yet developed strong mathematical skills, but I can improve through practice and better strategies"
+- Action: "I will work through Khan Academy modules for 30 minutes daily and attend tutoring weekly"
 
-**1. Skills currently required in this field:**
+**Class Share (8 minutes):**
+- Each group shares 2-3 of their best reframings
+- Facilitator highlights effective reframings that include:
+  - The word "yet" or similar future-oriented language
+  - Specific, actionable strategies
+  - Process focus (effort + strategy) not just positive thinking
 
-| Skill Category | Specific Skills |
-|----------------|-----------------|
-| **Technical/Hard Skills** | |
-| **Transferable/Soft Skills** | |
-| **Domain-Specific Knowledge** | |
-
-**2. Skills likely to be needed in 3-5 years:**
-
-(Consider: AI impact, automation, market changes, new technologies)
-
-| Emerging Skill | Why It's Becoming Important |
-|----------------|----------------------------|
-| | |
-| | |
-| | |
-
-**3. Skills at risk of obsolescence:**
-
-(What skills currently valued might be automated or less relevant?)
-
-| Skill | Why At Risk |
-|-------|-------------|
-| | |
-| | |
-
-#### Part B: Personal Reskilling Gap Analysis
-
-**Compare your current capabilities to future needs:**
-
-| Skill Needed (3-5 years) | Current Level (1-5) | Target Level (1-5) | Gap Priority (H/M/L) | Fixed Mindset Risk? |
-|-------------------------|--------------------|--------------------|---------------------|-------------------|
-| Example: AI-assisted data analysis | 2 | 4 | High | Yes - "I'm not technical" |
-| | | | | |
-| | | | | |
-| | | | | |
-| | | | | |
-
-**Note:** "Fixed Mindset Risk" = domains where you might tell yourself "I can't learn this"
-
-#### Part C: Strategic Reskilling Plan
-
-**For your top 3 priority skills, create action plans:**
-
-**Skill 1:** _______________________________________________
-
-**Growth mindset challenge:**
-- What fixed mindset self-talk might I encounter? ___________________
-- How will I reframe it? ___________________________________________
-
-**Learning strategy:**
-- Resources I'll use (courses, books, tutorials, mentors): ___________
-- Practice opportunities (projects, volunteer work, job tasks): ______
-- Timeline: Start by __________ , achieve basic competency by __________
-
-**Success metric:** I'll know I've developed this skill when: ___________
-
-___________________________________________________________
-
-**Skill 2:** _______________________________________________
-
-**Growth mindset challenge:**
-- What fixed mindset self-talk might I encounter? ___________________
-- How will I reframe it? ___________________________________________
-
-**Learning strategy:**
-- Resources I'll use: ____________________________________________
-- Practice opportunities: _________________________________________
-- Timeline: Start by __________ , achieve basic competency by __________
-
-**Success metric:** I'll know I've developed this skill when: ___________
-
-___________________________________________________________
-
-**Skill 3:** _______________________________________________
-
-**Growth mindset challenge:**
-- What fixed mindset self-talk might I encounter? ___________________
-- How will I reframe it? ___________________________________________
-
-**Learning strategy:**
-- Resources I'll use: ____________________________________________
-- Practice opportunities: _________________________________________
-- Timeline: Start by __________ , achieve basic competency by __________
-
-**Success metric:** I'll know I've developed this skill when: ___________
-
-___________________________________________________________
-
-#### Part D: Accountability and Support
-
-**To maintain growth mindset during reskilling, I will:**
-
-1. **Track progress:** How? (journal, app, spreadsheet?) _______________
-
-2. **Seek support:** Who will I ask for help? (mentor, peers, tutors, online communities?) _______________________________________________
-
-3. **Celebrate milestones:** How will I acknowledge progress? __________
-
-4. **Handle setbacks:** When I struggle or fail, I will use the Failure Analysis Framework (Activity 2)
-
-### Small Group Sharing (5 minutes)
-
-**Form groups of 3-4.**
-
-**Each person shares:**
-
-1. Your career field and top priority reskilling skill
-2. The fixed mindset challenge you anticipate facing
-3. Your growth mindset reframe
-
-**Group provides:**
-- Encouragement and validation that the skill is developable
-- Suggestions for resources or learning strategies
-- Shared accountability (exchange contact info if helpful)
-
-### Key Takeaway
-
-**Instructor says:**
-
-"What you just created is a draft of the **reskilling component** of your Personal Development Plan.
-
-**This isn't a 'nice to have'—it's essential for career survival.**
-
-By 2030, nearly half of all workers will need significant reskilling. You're ahead of the curve because you're planning for it now.
-
-**Growth mindset makes reskilling possible. Fixed mindset makes it terrifying.**
-
-Approach emerging skills not as threats to your current competence, but as opportunities to expand your capabilities."
+**Key Teaching Points:**
+- Growth mindset reframing isn't just "being positive" - it's realistic acknowledgment that abilities develop
+- Always pair reframed belief with specific action
+- Focus on controllable factors: effort, strategy, feedback-seeking
 
 ---
 
-## Activity 4: SMART Goal Reframing—Growth Mindset in Action (15 minutes)
+#### PART 3: Applying Growth Mindset to Current Challenges (20 minutes)
 
-### Purpose
-Transform vague or fixed-mindset goals into growth-oriented SMART goals; practice goal-setting language for PDP.
+**Objective:** Apply growth mindset strategies to real challenges students are facing
 
-### Instructions
+**Individual Reflection (10 minutes):**
 
-**Individual Work (10 minutes):**
+Choose ONE current challenge you're facing (can be related to PDP, mentorship, coursework, career preparation, or personal development).
 
-**Below are common career goals written with fixed mindset language. Rewrite each using growth mindset principles:**
+Answer these questions in writing:
 
-#### Example Transformation:
+**1. Describe the Challenge:**
+What specifically is difficult or challenging right now?
 
-**❌ Fixed mindset goal:**
-"Find a job that fits my natural strengths so I don't have to work on weaknesses"
+**2. Identify Fixed Mindset Thoughts:**
+What fixed mindset thoughts have you had about this challenge?
+(Examples: "I'm not good enough," "I can't do this," "Others are naturally better at this")
 
-**✅ Growth mindset SMART goal:**
-"By June 2026, develop public speaking confidence (currently a weakness) by presenting in 5 professional settings, joining Toastmasters, and seeking mentor feedback after each presentation, so I can expand my career options beyond roles that avoid public speaking"
+**3. Reframe with Growth Mindset:**
+How would you reframe this challenge through a growth mindset lens?
+(Include: current abilities, potential for development, specific strategies)
 
-**Why this is growth-oriented:**
-- Acknowledges current weakness but frames as developable
-- Specific actions and timeline (SMART)
-- Embraces challenge rather than avoiding it
-- Focuses on expanding capabilities, not limiting to current strengths
+**4. Effort + Strategy + Help-Seeking:**
+- **Effort:** What consistent effort will you apply?
+- **Strategy:** What specific strategies will you try?
+- **Help-Seeking:** Who can you learn from or ask for help?
 
----
+**5. Strategic Failure Plan:**
+If your first approach doesn't work, what's your Plan B?
 
-**Now reframe these goals:**
+**6. Success Metrics - Process and Outcome:**
+- Process metrics: What behaviors/actions will you track?
+- Outcome metrics: What results would indicate progress?
 
-**1. ❌ Fixed mindset goal:**
-"Avoid technical roles because I'm not good with technology"
+**Pair Share (8 minutes):**
+- Share your challenge and growth mindset plan with a partner
+- Partner provides feedback using these prompts:
+  - "I notice you're focusing on controllable factors like..."
+  - "One thing you might also consider is..."
+  - "How will you know if you need to adjust your strategy?"
 
-**✅ Growth mindset SMART goal:**
-
-___________________________________________________________
-
-___________________________________________________________
-
----
-
-**2. ❌ Fixed mindset goal:**
-"Only apply to jobs I'm 100% qualified for so I don't get rejected"
-
-**✅ Growth mindset SMART goal:**
-
-___________________________________________________________
-
-___________________________________________________________
+**Accountability (2 minutes):**
+- Exchange contact information with your partner
+- Commit to checking in with each other in one week
+- Brief text/message: "Did you implement your growth mindset strategy? What happened?"
 
 ---
 
-**3. ❌ Fixed mindset goal:**
-"Stick to marketing roles because I'm creative, not analytical"
+#### PART 4: Personal Growth Mindset Development Plan (20 minutes)
 
-**✅ Growth mindset SMART goal:**
+**Objective:** Create actionable plan for cultivating growth mindset in high-priority domains
 
-___________________________________________________________
+**Individual Work (18 minutes):**
 
-___________________________________________________________
+Using the template provided, create your Personal Growth Mindset Development Plan:
 
----
+**TEMPLATE:**
 
-**4. ❌ Fixed mindset goal:**
-"Hope to be promoted eventually if I work hard enough"
+**Part 1: Target Domain Selection**
 
-**✅ Growth mindset SMART goal:**
+From your Domain Mindset Assessment (Part 1), select THE ONE domain where:
+1. You currently hold a fixed mindset (score of 4-5), AND
+2. This domain is important for your career/personal goals
 
-___________________________________________________________
+**My Target Domain:** _______________________
 
-___________________________________________________________
-
----
-
-**5. Now write YOUR goals:**
-
-**One of your actual 1-year goals for your PDP:**
-
-**First draft (check for fixed mindset language):**
-
-___________________________________________________________
-
-___________________________________________________________
-
-**Growth mindset SMART version:**
-
-___________________________________________________________
-
-___________________________________________________________
-
-**What changed?** ___________________________________________
-
-### Pair-Share Peer Review (5 minutes)
-
-**Partner up.**
-
-**Exchange your goal #5 (your actual PDP goal).**
-
-**Peer review using these questions:**
-
-1. **Is it truly SMART?** (Specific, Measurable, Achievable, Relevant, Time-bound)
-2. **Does it reflect growth mindset?** (Embraces challenge, focuses on development, strategic about learning)
-3. **Does it avoid fixed mindset traps?** (No avoidance language, no "I can't" thinking)
-4. **Is it ambitious enough?** (Challenges you without being unrealistic)
-5. **Suggested improvements:**
-
-**Revise your goal based on feedback.**
-
-### Key Takeaway
-
-**Instructor says:**
-
-"Goal-setting is where mindset becomes visible.
-
-**Fixed mindset goals:**
-- Minimize risk and challenge
-- Protect current self-image
-- Limit you to what you can already do
-
-**Growth mindset goals:**
-- Embrace strategic challenge
-- Focus on who you're becoming
-- Expand your capabilities
-
-**When you write your PDP next week, every goal should reflect growth mindset. Use the language and framing you practiced today.**"
+**Why this matters for my goals:** _______________________
 
 ---
 
-## Activity 5: Mentor Meeting #4 Preparation—PDP Review Focus (10 minutes)
+**Part 2: Current Fixed Belief Statement**
 
-### Purpose
-Prepare strategically for your fourth and final required mentorship meeting; maximize value of mentor feedback on your draft PDP.
+Write your current fixed belief about this domain:
 
-### Instructions
+**My fixed belief:** _______________________
 
-**Individual Planning (7 minutes):**
+**Evidence I've used to support this belief:** _______________________
 
-Your **Mentor Meeting #4** (Weeks 10-11) focuses on reviewing your draft Personal Development Plan.
-
-**To maximize this meeting, prepare:**
-
-#### Part A: Materials to Bring
-
-**Check all that you'll have ready:**
-
-- [ ] Draft PDP (even if incomplete—bring what you have)
-- [ ] Self-assessment results summary (MBTI, VIA, CliftonStrengths, EI, Holland Code)
-- [ ] Skills gap analysis (from today's Activity 3)
-- [ ] Draft SMART goals (from today's Activity 4)
-- [ ] Mindset self-assessment (from today's Activity 1)
-- [ ] Specific questions about your career field (list below)
-
-#### Part B: Strategic Questions for Your Mentor
-
-**Prepare at least 5 thoughtful questions. Use these categories:**
-
-**About Mindset and Resilience:**
-
-1. "Can you share a time you faced significant professional failure? How did you respond and what did you learn?"
-
-2. _________________________________________________________
-
-**About Reskilling and Adaptability:**
-
-3. "What skills have you had to develop mid-career? How did you approach learning something outside your comfort zone?"
-
-4. _________________________________________________________
-
-**About Goal-Setting and Career Planning:**
-
-5. "Looking at my draft PDP, where do you see fixed mindset limiting my ambitions? Where should I be bolder?"
-
-6. _________________________________________________________
-
-**About Your Specific Field/Industry:**
-
-7. "What skills do you predict will be most valuable in [industry] over the next 5 years?"
-
-8. _________________________________________________________
-
-**About Your Draft Plans:**
-
-9. "Do my goals seem realistic but challenging? Am I aiming too low or too high?"
-
-10. ________________________________________________________
-
-#### Part C: Pre-Meeting Preparation Form Preview
-
-**Your Pre-Meeting Preparation Form (due 48 hours before Meeting #4) should include:**
-
-**Meeting Objectives:**
-- "Get feedback on my draft PDP, especially goal feasibility and growth mindset framing"
-- "Discuss mindset challenges I'm likely to face in my career field"
-- "Seek advice on reskilling strategies for [specific skill]"
-
-**Updates Since Last Meeting:**
-- Self-assessments completed
-- Skills gap analysis done
-- Reskilling plan drafted
-- SMART goals written
-
-**Key Topics to Discuss:**
-- PDP feedback (bring draft)
-- Growth mindset application to my goals
-- Failure and resilience in [industry]
-
-#### Part D: Action Commitment
-
-**After Meeting #4, I commit to:**
-
-1. Revise my PDP based on mentor feedback by: __________________
-
-2. Incorporate mentor's insights into: (check all applicable)
-   - [ ] Vision statement
-   - [ ] SMART goals
-   - [ ] Skills gap analysis
-   - [ ] SWOT analysis
-   - [ ] Reskilling plan
-   - [ ] Implementation timeline
-
-3. Send a thank-you message to my mentor by: __________________
-
-4. Reference my mentor's influence in my PDP (Assessment requirement—20% of PDP grade)
-
-### Brief Pair-Share (3 minutes)
-
-**Find a partner.**
-
-**Share:**
-- One question you're planning to ask your mentor
-- One area of your PDP you most want feedback on
-
-**Peer feedback:** Is there an even better question they could ask?
-
-### Key Takeaway
-
-**Instructor says:**
-
-"Mentor Meeting #4 is arguably the most important of the four because it directly informs your PDP—worth 40% of your final grade.
-
-**To get maximum value:**
-- Bring a draft, not nothing ("I haven't started yet" wastes the meeting)
-- Ask specific questions, not "What do you think?"
-- Take detailed notes—you'll incorporate this feedback immediately
-
-**Your mentor has experience navigating career challenges, setbacks, and reskilling. Use their wisdom strategically.**
-
-Meeting #4 is due by Week 11. Many of you should schedule it THIS week or next to allow time to revise your PDP before the November 28 deadline."
+**How this belief has limited me:** _______________________
 
 ---
 
-## Closing Reflection: Committing to Growth (5 minutes)
+**Part 3: Growth Mindset Reframe**
 
-### Individual Reflection (4 minutes)
+**My growth mindset reframe:** _______________________
 
-**Write responses to these prompts:**
-
-**1. What's the most important insight you gained about yourself today?**
-
-(Related to mindset, failure, reskilling, or goal-setting)
-
-___________________________________________________________
-
-___________________________________________________________
-
-**2. What's one specific fixed mindset pattern you commit to changing?**
-
-(From Activity 1—your biggest trigger)
-
-___________________________________________________________
-
-**How will you intervene when you notice this pattern?**
-
-___________________________________________________________
-
-**3. What's one concrete action you'll take this week to apply growth mindset?**
-
-(Examples: Start learning a challenging skill, seek feedback you've been avoiding, reframe a goal, schedule Mentor Meeting #4)
-
-**Action:** ___________________________________________________
-
-**By when:** ___________________
-
-**Accountability:** I'll tell _________________ about this commitment
-
-### Optional Sharing (1 minute)
-
-**Instructor invites 2-3 volunteers to share their commitment** (only if time permits and class culture supports it).
+**Evidence that abilities in this domain CAN be developed:** _______________________
 
 ---
 
-## Homework and Next Steps
+**Part 4: Neuroplasticity Connection**
 
-### Required for Next Week (Week 10: Entrepreneurship & Guest Speaker)
+**How neuroplasticity applies to this domain:**
 
-**1. Attend Guest Speaker Session with Ms. Ha Linh**
-- "Career Journey & Lessons in the Digital Era"
-- This is MANDATORY attendance (required for Reflective Essay worth 10%)
-- Bring notebook for taking notes
-
-**2. Read required readings from Week 10**
-- (Readings will focus on entrepreneurship and innovation)
-- Check course management system for details
-
-**3. Continue working on your PDP**
-- Incorporate insights from today's tutorial
-- Use growth mindset language in all goal-setting
-- Include reskilling plan from Activity 3
-- Bring draft to Mentor Meeting #4
-
-### Required for Week 11 (PDP Due)
-
-**4. Schedule and complete Mentor Meeting #4**
-- **Deadline:** Before Week 11 tutorial (November 28)
-- Bring draft PDP for review
-- Submit Pre-Meeting Form 48 hours before
-- Submit Post-Meeting Reflection 48 hours after
-
-**5. Finalize Personal Development Plan**
-- **Due:** Friday, November 28, 2025 (11:59 PM)
-- Submit via Google Form
-- Worth 40% of final grade
-- Must include evidence of mentor feedback from all 4 meetings
-
-### Recommended (Optional but Valuable)
-
-**6. Watch Carol Dweck's TED Talk**
-- "The Power of Believing That You Can Improve" (10 minutes)
-- Reinforces today's concepts
-- Available: https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
-
-**7. Take the Mindset Quiz**
-- https://www.mindsetkit.org/assess-your-mindset
-- Compare results to your self-assessment from Activity 1
-- Note any surprises or confirmations
-
-**8. Start a "Failure Log"**
-- Document setbacks as they happen this week
-- Practice applying the Failure Analysis Framework in real-time
-- Track growth mindset reframes
+Example: "When I practice [skill], neurons involved in [process] fire together and strengthen connections. With repeated practice, these neural pathways become more efficient..."
 
 ---
 
-## Final Words
+**Part 5: Development Strategies (Effort + Strategy + Help-Seeking)**
 
-**Instructor closes:**
+**Specific actions I will take:**
 
-"Today you've done difficult, honest self-assessment work:
-- Identified fixed mindset triggers
-- Analyzed past failures strategically
-- Planned for reskilling you'll need
-- Reframed goals with growth orientation
+1. **Daily/Weekly Effort:**
+   - What: _______________________
+   - When: _______________________
+   - How long: _______________________
 
-**This is exactly the kind of reflective, strategic thinking that separates professionals who thrive from those who stagnate.**
+2. **Strategy Experiments (trying different approaches):**
+   - Strategy 1: _______________________
+   - Strategy 2: _______________________
+   - How I'll know if strategy is working: _______________________
 
-**Your mindset shapes your career trajectory more than any single decision you make.**
-
-**The good news: Mindset is changeable. You're changing it right now, through awareness and practice.**
-
-**You have 2 weeks until your PDP is due. Make it a growth mindset document—ambitious, strategic, and development-focused.**
-
-**See you at the guest speaker session next week. Come ready to learn from Ms. Ha Linh's career journey and ask insightful questions.**"
-
----
-
-## Materials Checklist for Tutor
-
-**Prepare before tutorial:**
-- [ ] Mindset self-assessment handout (Activity 1) or ensure students have notebooks
-- [ ] Failure Analysis Framework template (Activity 2)
-- [ ] Reskilling plan template (Activity 3)
-- [ ] SMART goal examples (Activity 4)
-- [ ] Mentor Meeting #4 preparation checklist (Activity 5)
-- [ ] Access to course management system for homework posting
-
-**Optional materials:**
-- [ ] Whiteboard/poster for whole-class mindset pattern debrief
-- [ ] Timer for activity transitions
-- [ ] Sample PDP excerpt showing growth mindset language (if available)
+3. **Help-Seeking/Learning from Others:**
+   - Who I will ask for feedback: _______________________
+   - What specific guidance I need: _______________________
+   - Resources I will use (books, courses, videos): _______________________
 
 ---
 
-*Tutorial complete. Students dismissed with growth mindset commitments.*
+**Part 6: Tracking Progress**
+
+**Process metrics (what I'll do consistently):**
+- [ ] _______________________
+- [ ] _______________________
+- [ ] _______________________
+
+**Outcome metrics (how I'll measure improvement):**
+- Week 4 milestone: _______________________
+- Week 8 milestone: _______________________
+- Week 12 milestone: _______________________
+
+---
+
+**Part 7: Strategic Failure Response Plan**
+
+**If my first approach doesn't work, I will:**
+1. Analyze what didn't work: _______________________
+2. Adjust strategy by: _______________________
+3. Seek additional feedback from: _______________________
+
+**Reminder: Failure = Feedback, not verdict**
+
+---
+
+**Part 8: Self-Talk Reminders**
+
+**When I encounter difficulty, I will remind myself:**
+1. _______________________
+2. _______________________
+3. _______________________
+
+**Examples:**
+- "I haven't mastered this YET"
+- "This challenge is building my capabilities"
+- "What strategy should I try next?"
+- "Struggle means learning is happening"
+
+---
+
+**Facilitator Circulates (during individual work):**
+- Check that students are selecting domains important to their goals
+- Ensure strategies are specific and actionable (not vague)
+- Confirm students include both process and outcome metrics
+- Verify failure response plans are concrete
+
+**Final Reflection (2 minutes):**
+
+Answer individually:
+- "What's the most important insight you gained from creating this plan?"
+- "What's the first action you'll take this week?"
+
+---
+
+### Before Next Class (10 minutes)
+
+**Individual Reflection & Integration (5 minutes):**
+
+**Quick Write:**
+
+Answer these three questions:
+
+1. **Mindset Insight:**
+What did you learn about your own mindset patterns today?
+
+2. **PDP Connection:**
+How will you integrate growth mindset into your Personal Development Plan goals?
+(Specifically: Are your PDP goals "stretch goals"? Do they reflect belief you can develop new capabilities?)
+
+3. **Immediate Action:**
+What's ONE growth mindset strategy you'll apply before next week's class?
+
+---
+
+**Facilitator Wrapup (5 minutes):**
+
+**Key Takeaways:**
+
+1. **Mindsets are domain-specific** - You can have growth mindset in some areas and fixed mindset in others. Target the domains that matter most for your goals.
+
+2. **Reframing requires specificity** - Growth mindset isn't just "think positive." It's realistic acknowledgment that abilities develop through effort + strategy + help-seeking.
+
+3. **Process focus gives you control** - When you focus on controllable processes (your strategies, effort, feedback-seeking), you maintain agency even when outcomes are uncertain.
+
+4. **Failure is feedback** - Strategic failures are necessary for learning. The question isn't "Will I fail?" but "How will I respond when I do?"
+
+5. **Growth mindset enables your PDP** - Your ability to achieve your development plan goals depends on believing those goals are achievable through sustained effort and effective strategies.
+
+---
+
+**Assignments & Preparation:**
+
+**For Next Week (Week 10):**
+1. **Implement your Growth Mindset Development Plan** - Take at least ONE action from your plan this week
+2. **Read Week 10 materials** - Prepare for Guest Speaker (Ms. Ha Linh on Entrepreneurship)
+3. **Mentorship Meeting 4** - If scheduled, discuss growth mindset with your mentor and get PDP feedback
+4. **Optional viewing:** Carol Dweck TED Talk "The Power of Believing That You Can Improve" (10 minutes)
+
+**Continuing Work:**
+- **PDP Draft:** Continue working on your Personal Development Plan (due Week 11). Integrate growth mindset framing into your goals - ensure they're "stretch goals" that require developing new capabilities
+- **Mindset Practice:** Notice your fixed mindset voice this week and practice reframing
+
+**Tutorial Reflection Question (to ponder):**
+"If you truly believed that your abilities could be developed through effort and effective strategies, what would you attempt that you're currently avoiding?"
+
+---
+
+## Materials Needed
+
+**Facilitator Provides:**
+- Domain Mindset Assessment worksheet (printed or digital)
+- Fixed Mindset Reframing cards (8 statements per group)
+- Personal Growth Mindset Development Plan template (printed or digital)
+- Timer for activities
+
+**Students Bring:**
+- Notebook/laptop for individual reflection
+- PDP draft materials (if available)
+- Contact information for accountability partner
+
+---
+
+## Facilitator Notes
+
+### Key Teaching Moments
+
+1. **When students say "I'm just not talented at X":**
+Pause and ask: "Is that a fixed mindset statement? How would you reframe it?"
+
+2. **When students set vague goals:**
+Push for specificity: "What SPECIFIC actions will you take? When? How will you measure progress?"
+
+3. **When students confuse growth mindset with positive thinking:**
+Clarify: "Growth mindset isn't denying that something is hard - it's believing you can develop the capabilities to handle hard things through effort, strategy, and help-seeking."
+
+4. **When students fear failure:**
+Reframe: "What if failure was feedback rather than verdict? What would you try then?"
+
+### Common Student Misconceptions
+
+**Misconception 1:** "Growth mindset means I can become world-class at anything"
+- **Correction:** Growth mindset means you can develop your capabilities further than you currently imagine within realistic constraints. Effort matters, but so do opportunity, resources, and context.
+
+**Misconception 2:** "Growth mindset is just trying harder"
+- **Correction:** It's effort + effective strategies + help-seeking. Trying harder with a bad strategy just means more ineffective practice.
+
+**Misconception 3:** "If I have growth mindset, I should never feel discouraged"
+- **Correction:** Growth mindset doesn't eliminate negative emotions. It changes how you interpret and respond to setbacks. Disappointment is natural; helplessness is optional.
+
+### Cultural Sensitivity Notes
+
+**Vietnamese Context:**
+
+- **Face-saving and failure:** Vietnamese culture emphasizes "saving face" and avoiding public failure. When discussing "embracing failure," frame it as:
+  - Private experimentation and learning (not public failure)
+  - The Vietnamese proverb "Thất bại là mẹ thành công" (Failure is the mother of success)
+  - Acknowledging that all successful professionals have learned from setbacks
+
+- **Collective vs. individual:** Emphasize that growth mindset benefits not just the individual but their family, community, and future team. Developing capabilities serves collective goals.
+
+- **Respect for authority:** When encouraging students to "seek feedback" and "ask questions," frame this as respectful learning, not challenging authority. Model appropriate ways to seek guidance.
+
+### Timing Flexibility
+
+**If running short on time:**
+- Combine Parts 2 and 3 (20 minutes total): Do reframing exercise, then immediately apply to students' own challenges
+- Reduce Part 4 from 20 to 15 minutes by providing partially completed template
+
+**If time permits:**
+- Add 5-minute partner practice of "responding to setbacks with growth mindset language"
+- Include brief video clip from Carol Dweck TED Talk (2-3 minutes) before Part 1
+
+---
+
+## Assessment Connection
+
+### How This Tutorial Supports Assessments
+
+**Mentorship Program (20%):**
+- Students practice feedback-seeking strategies (Strategy 4)
+- Growth mindset discussion topic for Meeting 4
+- Helps students receive mentor feedback non-defensively
+
+**Personal Development Plan (40%):**
+- Direct application: PDP goals should reflect growth mindset
+- Stretch goals that require developing new capabilities
+- Process goals alongside outcome goals
+- Obstacle planning that anticipates setbacks as normal
+
+**Final Oral Exam (30%):**
+- Students can articulate how growth mindset shaped their PDP
+- Demonstrate understanding of key course concepts
+- Show authentic ownership of development journey
+
+---
+
+## Extension Activities (Optional)
+
+**For Advanced Students:**
+
+1. **Research Connection:** Read Yeager & Dweck (2020) excerpt on "heterogeneity framework" - when and where does growth mindset have the strongest effects?
+
+2. **Meta-Cognitive Challenge:** Keep a "mindset journal" for one week:
+   - Each day, note 1-2 situations where you noticed fixed vs. growth mindset thinking
+   - Reflect on patterns: When does fixed mindset voice appear most? With what types of challenges?
+
+3. **Teaching Others:** Create a 2-minute explanation of growth mindset you could share with a younger student or peer
+
+**For Students Struggling:**
+
+1. **Simplified Framework:** Focus on one domain only and one reframing strategy ("adding 'yet' to fixed statements")
+
+2. **Template Support:** Provide example completed Growth Mindset Development Plan
+
+3. **Buddy System:** Pair with stronger student who can model reframing process
+
+---
+
+**End of Tutorial**

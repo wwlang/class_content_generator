@@ -1,560 +1,564 @@
 <role>
-You are an expert presentation designer specializing in academic course materials. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
+You are an expert presentation designer. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
 </role>
-
-<context>
-Course: PPDK66B - Personal & Professional Development |
-Week: 07
-Topic: Transferable Skills &amp; Emotional Intelligence
-Institution: National Economics University |
-Instructor: William Winterton Lang, Le Huong Lan (PhD) |
-Total Slides: 23
-</context>
-
 <instructions>
-1. Create a presentation slide deck with exactly 23 slides
-2. Start with a title slide containing: topic title, course code and name, university/institution, and instructor name
+1. Create a presentation slide deck with exactly 38 slides
+2. The first slide in the lecture content IS the title slide - add course name (PPDK66B - Personal & Professional Development), university (National Economics University), and campus (IBD Campus) to it
 3. Reproduce the exact wording from the lecture content for each slide, preserving all text as written
 4. Generate creative visuals for each slide: pictures, infographics, icons, and diagrams that reinforce the slide's message
-5. Use minimum 18pt font for body text to ensure readability from a distance
-6. Add a footer to every content slide (not the title slide) with: course code, university, topic, and slide number
+5. Use a minimum 18pt font for all text. Reference text and footer text is allowed to be smaller
+6. Add a footer to every content slide (not the title slide) with: course name, university, topic, and slide number
 7. Place academic citations (e.g., Minto, 1987) in the slide footer when referenced in content
 8. Leave speaker notes sections empty
+9. The final slide is a References slide - format it cleanly with the full APA citations provided
 </instructions>
-
-<constraints>
-- Create exactly 23 slides, matching the lecture content one-to-one. The lecture content defines each slide explicitly, so count them to verify.
-- Preserve exact wording because students receive these slides as study materials and need consistency with what they hear in lecture recordings.
-- Keep speaker notes empty because detailed instructor notes will be added in a separate step.
-- Maintain consistent Modern Bright Pastel Corporate styling throughout for professional brand identity.
-</constraints>
-
-<examples>
-<example>
-<input>
-## Slide 3: The Pyramid Principle
-
-**Key Concept:** Start with the answer, then provide supporting evidence
-
-The Pyramid Principle (Minto, 1987):
-- Lead with your main message
-- Group supporting arguments logically
-- Present evidence in descending order of importance
-
-**Why it works:** Busy executives read conclusions first
-</input>
-<output>
-Slide with pyramid/triangle infographic illustrating the hierarchy concept. All text preserved exactly as written. "Minto, 1987" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 7: Case Study - Vinamilk Crisis Response
-
-In 2013, Vinamilk faced a product recall crisis...
-
-**What went right:**
-- Immediate public acknowledgment
-- Clear action plan communicated
-- Regular updates to stakeholders
-
-**Result:** Brand trust recovered within 6 months
-</input>
-<output>
-Case study slide with timeline or process visual showing the crisis response steps. Company imagery or relevant icons. All text preserved exactly.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 12: Hofstede's Cultural Dimensions
-
-**Vietnam vs. United States comparison:**
-| Dimension | Vietnam | USA |
-|-----------|---------|-----|
-| Power Distance | 70 | 40 |
-| Individualism | 20 | 91 |
-| Uncertainty Avoidance | 30 | 46 |
-</input>
-<output>
-Data visualization slide with bar chart or comparison graphic showing Vietnam and USA scores across the three dimensions. Clear axis labels. "Hofstede" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 9: Carol Dweck on Growth Mindset
-
-**[VIDEO: Carol Dweck - "The Power of Believing That You Can Improve"]**
-**Video link:** https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
-**Duration:** 10 minutes
-
-**Before watching:** "Think of a time you felt 'stuck' at something."
-</input>
-<output>
-Video placeholder slide with speaker image, prominent clickable video link, duration displayed, and pre-viewing reflection question. Clean layout focusing attention on the video link.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 15: Section Break - Emotional Intelligence
-
-# SECTION 3
-
-## Emotional Intelligence
-### Understanding and Managing Emotions
-
-*(20 minutes)*
-</input>
-<output>
-Section break slide with bold typography, contrasting background color to signal transition, section number prominent, topic and subtitle clearly visible. Timing indicator optional.
-</output>
-</example>
-</examples>
-
 <lecture_content>
-<?xml version="1.0" encoding="UTF-8"?>
-<lecture>
-<metadata>
-<course>PPDK66B Personal & Professional Development</course>
-<week>7</week>
-<topic>Transferable Skills &amp; Emotional Intelligence</topic>
-<duration>90 minutes</duration>
-<slides>23</slides>
-</metadata>
+Course: PPDK66B - Personal & Professional Development
+Week: 7
+Topic: Transferable Skills & Emotional Intelligence
+Institution: National Economics University
 
-<slide number="1" layout="big-number" title="The Skills Shift">
+### Slide 1 (Layout: title)
+# Transferable Skills & Emotional Intelligence
 
+**Building Your Essential Career Capabilities**
+
+### Slide 2 (Layout: big-number)
 # 39%
 
-**of core skills will change by 2030 — meaning the skills you're developing today must be transferable**
+**of core skills will change by 2030**
 
-*(World Economic Forum Future of Jobs Report 2025)*
+*(World Economic Forum, 2025)*
 
-<speaker-notes>
-This statistic surprises students every time. Nearly 4 in 10 skills required in the workplace will be different within 5 years. Technical skills become obsolete quickly—AI accelerating this—but transferable skills remain valuable across jobs, industries, and decades. Emotional intelligence is increasingly valued as AI handles technical tasks. Vietnamese employers already prioritize adaptability and continuous learning. Students often ask: "How can we prepare if we don't know what skills will be needed?" Answer: By developing foundational competencies that transfer across contexts.
-</speaker-notes>
-
-</slide>
-
-<slide number="2" layout="section-break" title="Course Context">
-
-# Transferable Skills & Emotional Intelligence
-## The Universal Competencies for Career Success
-
-**Week 7 of 12**
-
-<speaker-notes>
-We're past the midpoint—time to apply self-knowledge from Week 5. Last week's field trip to MISA showed real workplace dynamics. This week focuses on DEVELOPABLE competencies that appear in every job description regardless of industry. These skills feed directly into the PDP Skills Gap Analysis (Part 2). At MISA, students observed professionals collaborating, communicating, adapting—those aren't job-specific skills, they're transferable competencies. Common student question: "Are these just soft skills?" Answer: No—WEF calls them "core skills" because they're fundamental, not supplementary.
-</speaker-notes>
-
-</slide>
-
-<slide number="3" layout="content" title="Learning Objectives">
-
+### Slide 3 (Layout: content)
 ## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Analyze** WEF and NACE transferable skills frameworks
-2. **Explain** Goleman's four emotional intelligence domains
-3. **Evaluate** personal EI competencies using Boyatzis' model
-4. **Apply** cultural intelligence (CQ) to global careers
-5. **Connect** skills to Vietnam employment expectations
-6. **Create** skills gap analysis for your PDP
+1. **Evaluate** your current transferable skills using global frameworks (WEF, NACE)
+2. **Apply** Goleman's emotional intelligence model to workplace scenarios
+3. **Assess** your emotional intelligence competency gaps using the ESCI framework
+4. **Design** a skills development strategy for your Personal Development Plan
 
-<speaker-notes>
-These objectives prepare students for tutorial activities. By end of class, students begin their PDP Skills Gap Analysis. Tutorial Preview: EI self-assessment using Boyatzis' 12 competencies, transferable skills inventory, skills gap identification, peer feedback on interpersonal effectiveness, begin PDP Part 2 draft. Deliverable: By end of tutorial, first draft of Skills Gap Analysis to share with mentor in Meeting #3.
-</speaker-notes>
+### Slide 4 (Layout: content)
+## How This Prepares You
 
-</slide>
+**Personal Development Plan (Due Week 11) - Part 2: Skills Gap Analysis**
 
-<slide number="4" layout="framework" title="WEF Top 10 Skills">
+Today you'll learn:
+- How to identify your transferable skills using employer-validated frameworks
+- How to assess your emotional intelligence competencies
+- How to create a prioritized development strategy
 
-# Top 10 Core Skills for 2025-2030
+**By next week:** Draft your Skills Gap Analysis table with at least 8 skills across technical, transferable, and AI-era categories.
 
-**Most Essential:**
+### Slide 5 (Layout: section-break)
+## Today's Journey
+
+1. **Transferable Skills Frameworks** (25 min)
+   - WEF Future of Jobs 2025
+   - NACE Career Readiness Competencies
+
+2. **Emotional Intelligence** (30 min)
+   - Goleman's 4-domain model
+   - ESCI 12 competencies
+
+3. **Cultural Intelligence** (15 min)
+   - Global career readiness
+
+4. **Skills Development Strategy** (20 min)
+   - Priority setting, development planning
+
+### Slide 6 (Layout: section-break)
+# Part 1
+
+## Transferable Skills Frameworks
+
+**The skills that travel with you across jobs, industries, and careers**
+
+### Slide 7 (Layout: content)
+## What Are Transferable Skills?
+
+**Transferable Skills** are competencies that:
+- Apply across diverse roles, industries, and career stages
+- Complement technical/hard skills
+- Remain valuable despite technological change
+- Can be developed intentionally through practice
+
+**Examples:**
+- Communication, teamwork, critical thinking
+- Problem-solving, adaptability, leadership
+- Time management, ethical judgment
+
+**Contrast with Technical Skills:**
+- Specific software proficiency (Excel, Python)
+- Industry-specific knowledge (tax law, genetic sequencing)
+
+### Slide 8 (Layout: framework)
+## World Economic Forum: Future of Jobs 2025
+
+**Why This Framework Matters:**
+- Based on 1,000+ global employers across 55 economies
+- Represents 14 million workers' skill needs
+- Updated annually to track labor market trends
+- Authoritative source for understanding employer priorities
+
+**Key Finding:** 70% of employers consider analytical thinking essential - more than any other skill
+
+**Vietnam Context:** ASEAN employers increasingly align with WEF framework priorities
+
+### Slide 9 (Layout: content)
+## WEF Top 10 Core Skills for 2025
+
 1. **Analytical thinking** (70% of employers)
-2. **Resilience, flexibility, agility**
-3. **Leadership & social influence**
+2. **Resilience, flexibility and agility**
+3. **Leadership and social influence**
 4. **Creative thinking**
-5. **Motivation & self-awareness**
-
-**Also Critical:**
+5. **Motivation and self-awareness**
 6. **Technological literacy**
-7. **Empathy & active listening**
-8. **Curiosity & lifelong learning**
+7. **Empathy and active listening**
+8. **Curiosity and lifelong learning**
 9. **Talent management**
-10. **Service orientation**
+10. **Service orientation and customer service**
 
-*(World Economic Forum, 2025)*
+### Slide 10 (Layout: content)
+## Skills Disruption: 2025-2030
 
-<speaker-notes>
-WEF surveyed 1,000+ companies representing 14 million workers in 55 economies. This is THE authoritative global framework. Key moment: Notice what's NOT on the list—no specific technical tools, no job-specific expertise. #1 Analytical thinking (70%) means problem-solving across contexts, not memorizing answers. #2 Resilience/flexibility/agility is what Vietnamese employers especially value (Tran et al., 2022). #5 Motivation & self-awareness is everything students have been working on in this course. #7 Empathy & active listening are core emotional intelligence competencies. Only 40% said AI/big data skills are essential—technical skills are less universal than human skills. This connects to Week 1: The skills that make you irreplaceable are human skills.
-</speaker-notes>
+**Fastest Growing Skills:**
+- AI and big data (59% of employers prioritizing)
+- Creative thinking (58%)
+- Technological literacy (53%)
+- Resilience and adaptability (52%)
 
-</slide>
+**Declining Skills:**
+- Manual dexterity and endurance
+- Routine information processing
+- Memory recall (replaced by AI assistants)
 
-<slide number="5" layout="framework" title="NACE Competencies">
+**Implication:** Skills requiring human judgment, creativity, and interpersonal nuance are growing; repetitive cognitive tasks are declining.
 
-# 8 Employer-Validated Competencies
+### Slide 11 (Layout: framework)
+## NACE Career Readiness Competencies
 
-1. **Critical Thinking** — Logical analysis, sound judgment
-2. **Communication** — Clear exchange across contexts
-3. **Teamwork** — Collaborative relationships, diverse perspectives
-4. **Leadership** — Leveraging strengths for organizational goals
-5. **Professionalism** — Effective work habits, integrity, accountability
-6. **Career & Self-Development** — Continuous learning, career planning
-7. **Technology** — Ethical use enhancing efficiency
-8. **Equity & Inclusion** — Cross-cultural engagement, anti-racist practices
+**National Association of Colleges and Employers (USA)**
 
-*(National Association of Colleges and Employers, 2024)*
+- Developed collaboratively by university career services and HR/recruiting professionals
+- Represents employer-validated competencies for college graduates
+- Revised March 2024 (most current version)
+- Used by 1,500+ US colleges and increasingly adopted globally
 
-<speaker-notes>
-NACE is collaboration between university career services and corporate recruiters, revised March/April 2024 based on employer feedback. Widely adopted globally as competency framework for graduate hiring. These 8 competencies consistently appear in job descriptions across industries. Notice overlap with WEF: Critical thinking, Communication, Professionalism, Self-Development. #8 Equity & Inclusion is unique NACE contribution—recognizes cultural competence is professional skill, not just "nice to have." Vietnamese students entering multinational companies need this. Connection to assessments: MBTI helps understand communication/teamwork style, CliftonStrengths shows natural leadership talents, VIA identifies character strengths supporting professionalism. In tutorial, students self-rate on all 8 competencies (1-5 scale), identify which 3 need most development, create specific development strategies.
-</speaker-notes>
+**Why It Matters:** Translates employer expectations into student-friendly competency language
 
-</slide>
+### Slide 12 (Layout: content)
+## NACE's 8 Career Readiness Competencies
 
-<slide number="6" layout="section-break" title="Part 2 Section">
+1. **Critical Thinking** - Logical analysis, sound judgment
+2. **Communication** - Clear exchange across contexts and audiences
+3. **Teamwork** - Collaboration with diverse viewpoints
+4. **Leadership** - Leveraging strengths to achieve goals
+5. **Professionalism** - Effective work habits, integrity, accountability
+6. **Career & Self-Development** - Continuous learning, reflection
+7. **Technology** - Ethical use to enhance efficiency
+8. **Equity & Inclusion** - Engaging across cultures, anti-racist practices
 
-# Part 2: Emotional Intelligence
-## The Science of Interpersonal Effectiveness
+### Slide 13 (Layout: content)
+## NACE Competency Deep Dive: Critical Thinking
 
-<speaker-notes>
-We're shifting from skills frameworks to emotional intelligence theory. EI is the foundation underneath many transferable skills. Preview: Goleman's 4 domains (the big picture), Boyatzis' 12 behavioral competencies (specific measurement), how to develop EI intentionally. Common question: "Isn't EI just being nice?" Answer: No—it's about using emotional information effectively for better decisions and relationships.
-</speaker-notes>
+**Definition:** "Identify and respond to needs based upon an understanding of situational context and logical analysis of relevant information."
 
-</slide>
+**Sample Behaviors:**
+- Make decisions and solve problems using sound, inclusive reasoning
+- Gather and analyze information from diverse sources
+- Demonstrate innovation and adaptability
+- Communicate, listen, and use interpersonal skills effectively
 
-<slide number="7" layout="quote" title="What is EI?">
+**Self-Assessment Question:**
+*How frequently do I analyze information from multiple perspectives before making decisions?*
+- Always / Often / Sometimes / Rarely / Never
 
-> "Emotional intelligence is the ability to recognize, understand, and manage our own emotions, and to recognize, understand, and influence the emotions of others."
+### Slide 14 (Layout: content)
+## Transferable Skills in Vietnam Context
 
-**— Daniel Goleman, psychologist & author**
+**Research: Tran et al. (2022) - Regional Vietnam Employers**
 
-**Key Insight:** EI predicts career success more reliably than IQ
+**Most Valued Attributes:**
+1. **Continuous self-learning** - Proactive skill updating
+2. **Resilience and adaptability** - Handling ambiguity
+3. **Empathy for local communities** - Cultural sensitivity
+4. **Practical problem-solving** - Theory + application
 
-*(Goleman & Cherniss, 2024)*
+**Cultural Considerations:**
+- Vietnamese employers value humility alongside confidence
+- Emphasis on team harmony (collectivist culture)
+- Respect for hierarchy while demonstrating initiative
 
-<speaker-notes>
-Goleman popularized EI in 1990s. His 2024 research with Cary Cherniss represents most current thinking. EI has TWO dimensions: Self (awareness, management) and Others (awareness, management). Not about being nice or suppressing emotions—about USING emotional information effectively. Research shows 71% of employers value EI more than technical skills (HBS, 2024). EI predicts leadership effectiveness, team performance, career advancement. Unlike IQ (relatively fixed), EI can be developed at any age. Vietnamese culture values emotional restraint ("giữ thể diện" — maintaining face). High EI means balancing cultural norms with authentic connection. Key distinction: High EI ≠ always showing emotions; High EI = knowing WHEN and HOW to express emotions appropriately.
-</speaker-notes>
+### Slide 15 (Layout: section-break)
+# Part 2
 
-</slide>
+## Emotional Intelligence
 
-<slide number="8" layout="framework" title="Goleman's 4 Domains">
+**The ability to understand and manage emotions in yourself and others**
 
-# Goleman's 4 Domains of Emotional Intelligence
+### Slide 16 (Layout: content)
+## Why Emotional Intelligence Matters
 
-**SELF:**
-- **Self-Awareness** — Emotional self-awareness, accurate self-assessment, self-confidence
-- **Self-Management** — Emotional self-control, adaptability, achievement orientation, positive outlook
+**Research Evidence:**
+- **71% of employers** value emotional intelligence more than technical skills (Harvard Business School)
+- EI predicts **58% of job performance** across all roles (Goleman, 1998)
+- Leaders with high EI see **20% higher team productivity** (Consortium for Research on EI)
 
-**OTHERS:**
-- **Social Awareness** — Empathy, organizational awareness, service orientation
-- **Relationship Management** — Influence, coach & mentor, conflict management, teamwork & collaboration, inspirational leadership
+**Career Impact:**
+- More promotions: EI correlates with leadership advancement
+- Better collaboration: Teams with high-EI members perform better
+- Greater resilience: EI helps navigate setbacks and stress
 
-*(Goleman & Cherniss, 2024)*
+**Personal Impact:**
+- Stronger relationships, better conflict resolution, improved well-being
 
-<speaker-notes>
-These 4 domains organize the chaos of "people skills." Notice logical flow: Self → Others, Awareness → Management. Domain 1 (Self-Awareness) is foundation—can't manage what you don't notice. Connects to Week 5 (self-assessment)—Johari Window, knowing your triggers. Example: "I'm frustrated because this task conflicts with my values" (not just "I'm angry"). Domain 2 (Self-Management): Using self-awareness to CHOOSE responses, not react automatically. Emotional self-control ≠ suppression; it's strategic expression. Domain 3 (Social Awareness): Reading others accurately—empathy beyond sympathy. Organizational awareness means understanding power dynamics, politics, culture. Domain 4 (Relationship Management): Applying self-management and social awareness to influence outcomes. Connection Across Domains: If high Self-Awareness but low Self-Management, you KNOW you're angry but yell anyway—that's low EI. If high Self-Management but low Social Awareness, you're calm but miss that colleague is struggling—still ineffective. Interactive question: Which domain is your strongest? Weakest?
-</speaker-notes>
+### Slide 17 (Layout: framework)
+## Daniel Goleman's Emotional Intelligence Model
 
-</slide>
+**Daniel Goleman** - Pioneering EI researcher, author of *Emotional Intelligence* (1995)
 
-<slide number="9" layout="framework" title="Boyatzis' 12 Competencies">
+**The Model: 4 Domains**
 
-# 12 Observable, Developable Competencies
+| Domain | Focus | Key Question |
+|--------|-------|--------------|
+| **Self-Awareness** | Understanding your emotions | "What am I feeling and why?" |
+| **Self-Management** | Regulating your emotions | "How do I respond constructively?" |
+| **Social Awareness** | Understanding others' emotions | "What are they feeling?" |
+| **Relationship Management** | Influencing others' emotions | "How do I build positive connections?" |
 
-**Self-Awareness (1):** Emotional Self-Awareness
+**Foundation:** Self-awareness is prerequisite for all other domains
 
-**Self-Management (4):** Achievement Orientation, Adaptability, Emotional Self-Control, Positive Outlook
+### Slide 18 (Layout: content)
+## Domain 1: Self-Awareness
 
-**Social Awareness (2):** Empathy, Organizational Awareness
+**Definition:** Accurately recognizing your own emotions and their effects
 
-**Relationship Management (5):** Coach & Mentor, Conflict Management, Influence, Inspirational Leadership, Teamwork & Collaboration
+**Core Competency:**
+- **Emotional self-awareness** - Understanding your feelings, triggers, and patterns
 
-**Measured by:** Emotional and Social Competency Inventory (ESCI) — 360° assessment
+**What It Looks Like:**
+- Recognizing when you're stressed, anxious, excited, or frustrated
+- Understanding what situations trigger specific emotions
+- Knowing your emotional strengths and limitations
+- Seeing how your emotions affect your behavior and decisions
 
-*(Boyatzis, 2018)*
+**Example:**
+*"I notice I become defensive when receiving critical feedback. This stems from my need for approval. Recognizing this pattern helps me pause and listen rather than react."*
 
-<speaker-notes>
-Richard Boyatzis co-developed the ESCI with Goleman. Most validated EI measurement tool used globally. Unlike personality (relatively stable), these are SKILLS you can develop. Why this matters: Boyatzis proved EI is behavioral—visible actions, not internal states. Each competency has specific indicators you can observe and practice. Achievement Orientation example: Setting and pursuing challenging goals, seeking ways to improve performance. "I want to increase my public speaking rating from 2 to 4 in one year" (specific, measurable). Adaptability: Handling change smoothly. Critical in VUCA world (Volatile, Uncertain, Complex, Ambiguous). Example: When group project partner drops out, reorganizing without panic. Empathy: Understanding others' perspectives, feelings, concerns. Listening actively, suspending judgment. Example: Realizing teammate is quiet because overwhelmed, not disinterested. Research: Boyatzis (2018) validated ESCI across managers, executives, students globally. Training programs can improve EI competencies by 10-15% in 6 months. Improvements sustained over years with practice. In tutorial: Complete EI self-assessment based on these 12 competencies, rate yourself 1-5, identify top 3 strengths and top 3 development areas, get peer feedback.
-</speaker-notes>
+### Slide 19 (Layout: content)
+## Domain 2: Self-Management
 
-</slide>
+**Definition:** Effectively handling your emotions to behave constructively
 
-<slide number="10" layout="section-break" title="Part 3 Section">
+**Core Competencies (ESCI Model):**
+1. **Emotional self-control** - Keeping disruptive emotions in check
+2. **Adaptability** - Flexibility in handling change
+3. **Achievement orientation** - Drive to meet/exceed standards
+4. **Positive outlook** - Seeing opportunities despite setbacks
 
-# Part 3: Cultural Intelligence
-## Essential for Global Careers
+**What It Looks Like:**
+- Staying calm under pressure rather than exploding in anger
+- Adapting plans when circumstances change instead of rigid insistence
+- Maintaining motivation during challenging projects
+- Reframing failures as learning opportunities
 
-<speaker-notes>
-Students may work for Vietnamese company serving international clients, multinational company with diverse team, or study/work abroad. Cultural intelligence determines effectiveness. Preview: 4 dimensions of CQ (Cultural Intelligence), why it matters for Vietnam professionals, how to develop it. Key moment: This isn't diversity training or sensitivity—it's measured capability validated across 755 professionals globally.
-</speaker-notes>
+### Slide 20 (Layout: content)
+## Domain 3: Social Awareness
 
-</slide>
+**Definition:** Understanding others' emotions, needs, and concerns
 
-<slide number="11" layout="framework" title="What is CQ?">
+**Core Competencies (ESCI Model):**
+1. **Empathy** - Sensing others' feelings and perspectives
+2. **Organizational awareness** - Reading group dynamics and power structures
 
-# Cultural Intelligence (CQ)
+**What It Looks Like:**
+- Noticing when a teammate is struggling even if they don't say so
+- Reading body language and tone beyond literal words
+- Understanding cultural differences in emotional expression
+- Sensing team morale and underlying tensions
+- Recognizing informal influence networks in organizations
 
-**Definition:** The capability to function effectively across various cultural contexts—national, ethnic, organizational, and generational.
+**Example:**
+*"I noticed my colleague seemed withdrawn in meetings this week. I asked privately if everything was okay - they were dealing with a family issue and appreciated the check-in."*
 
-**4 Dimensions:**
-1. **Metacognitive CQ** — Awareness & planning (checking assumptions, researching norms)
-2. **Cognitive CQ** — Knowledge of cultures (understanding systems, customs)
-3. **Motivational CQ** — Interest & confidence (curiosity, persistence)
-4. **Behavioral CQ** — Adaptive actions (code-switching, adjusting communication)
+### Slide 21 (Layout: content)
+## Domain 4: Relationship Management
 
-*(Gozzoli, Gazzaroli, & D'Angelo, 2018)*
+**Definition:** Using emotional awareness to interact effectively and build positive relationships
 
-<speaker-notes>
-Key distinction: EI = understanding emotions across people; CQ = understanding norms, values, behaviors across cultures. Why it matters: ASEAN integration means working with Thai, Indonesian, Malaysian colleagues. Vietnamese companies expanding regionally (Vinamilk, VinFast, FPT). Multinationals expect cross-cultural collaboration. Four dimensions explained: Metacognitive (checking assumptions before/during/after), Cognitive (understanding cultural systems), Motivational (intrinsic interest, not obligation), Behavioral (code-switching appropriately). Vietnam context: Vietnamese students have natural advantage—bicultural experience (Vietnamese + international education). Many navigate Vietnamese family culture + Western academic culture daily—that's CQ in action. Self-assessment: Which CQ dimension is your strongest? Common pattern: High Cognitive (know facts), Low Behavioral (struggle to adapt actions).
-</speaker-notes>
+**Core Competencies (ESCI Model):**
+1. **Influence** - Persuasion and buy-in
+2. **Coach and mentor** - Developing others
+3. **Conflict management** - Resolving disagreements constructively
+4. **Inspirational leadership** - Guiding and motivating groups
+5. **Teamwork** - Collaboration and cooperation
 
-</slide>
+**What It Looks Like:**
+- Persuading stakeholders by appealing to their values and concerns
+- Providing developmental feedback that encourages growth
+- Mediating disputes by acknowledging emotions and finding common ground
+- Motivating teams through challenging periods
 
-<slide number="12" layout="content" title="CQ in Action">
+### Slide 22 (Layout: framework)
+## ESCI: 12 Emotional Intelligence Competencies
 
-# The 4 Dimensions of Cultural Intelligence in Action
+**Emotional and Social Competency Inventory** (Boyatzis & Goleman)
 
-| Dimension | Low CQ Example | High CQ Example |
-|-----------|----------------|-----------------|
-| **Metacognitive CQ** | Assumes everyone works like Vietnamese culture | Reflects: "How might hierarchy expectations differ here?" |
-| **Cognitive CQ** | Doesn't know Thai greeting customs | Researched wai gesture and when to use it |
-| **Motivational CQ** | Avoids interacting with international students | Seeks out cross-cultural friendships actively |
-| **Behavioral CQ** | Uses same direct communication everywhere | Adjusts directness based on cultural context |
+| Domain | Competencies |
+|--------|--------------|
+| **Self-Awareness** | • Emotional self-awareness |
+| **Self-Management** | • Emotional self-control<br>• Adaptability<br>• Achievement orientation<br>• Positive outlook |
+| **Social Awareness** | • Empathy<br>• Organizational awareness |
+| **Relationship Management** | • Influence<br>• Coach and mentor<br>• Conflict management<br>• Inspirational leadership<br>• Teamwork |
 
-<speaker-notes>
-These examples show CQ as BEHAVIOR, not just knowledge or intention. Development strategies: Metacognitive (before meetings: "What assumptions am I making?"; during: "Am I interpreting correctly?"; after: "What surprised me?"), Cognitive (read about cultures, learn Hofstede's cultural dimensions, attend cultural events), Motivational (reframe discomfort as learning opportunity from Week 9 growth mindset, set goals like "3 conversations with international students this month"), Behavioral (practice code-switching: formal/informal, direct/indirect; observe high-CQ people; get feedback). Vietnam advantage: Colonial history created cultural adaptability. Current ASEAN integration requires CQ. NEU students are bilingual (Vietnamese/English)—leverage that code-switching skill. Connection to PDP: Include CQ as transferable skill especially if planning international career, multinational company, or regional role. Development strategy: Join international student groups, practice English, travel if possible.
-</speaker-notes>
+**Assessment Method:** 360° evaluation - self, peers, direct reports, managers
 
-</slide>
+### Slide 23 (Layout: content)
+## How to Develop Emotional Intelligence
 
-<slide number="13" layout="content" title="Vietnam Context">
+**Evidence-Based Strategies:**
 
-# What Vietnamese Employers Want
+**1. Reflective Practice**
+- Keep emotion journal: What did I feel? What triggered it? How did I respond?
+- Use Gibbs' Cycle to analyze emotional reactions
 
-**Research Finding:** Employers in regional Vietnam prioritize:
+**2. Seek Feedback**
+- Ask trusted peers: "How do I come across when stressed?"
+- Request specific examples of your EI strengths and gaps
 
-1. **Continuous self-learning** (lifelong learning mindset)
-2. **Resilience & adaptability** (handling change, setbacks)
-3. **Empathy for local communities** (understanding context)
-4. **Communication in context** (adjusting to audience)
+**3. Mindfulness & Emotional Labeling**
+- Practice naming emotions accurately ("I'm anxious" vs. "I'm stressed")
+- Pause before reacting to build self-management
 
-**Key Insight:** Vietnamese employers value **context-specific application** over generic skills
+**4. Empathy Practice**
+- Actively listen to understand perspectives, not just to respond
+- Ask "What might they be feeling?" in every interaction
 
-*(Tran, Ngo, Nguyen, & Nguyen, 2022)*
+**5. Observe High-EI Role Models**
+- Watch how effective leaders manage emotions and relationships
 
-<speaker-notes>
-This research studied employers in regional Vietnam (not just Hanoi/HCMC). Shows what matters beyond international frameworks. Key findings: Continuous self-learning (not just "I went to university"—ongoing development after graduation; connects to Week 4 Self-Managed Learning; employers notice if you ask questions, seek feedback, read industry news). Resilience & adaptability (Vietnam's rapid growth creates constant change; COVID-19 forced digital transformation in 6 months; appears in WEF #2, NACE, Boyatzis EI). Empathy for local communities (understanding customers, employees, stakeholders in Vietnamese context; not just importing Western practices; example: Marketing campaign succeeding in Hanoi might fail in Mekong Delta; requires CQ + Social Awareness). Communication in context (adjusting formality, directness, language; speaking to CEO ≠ peers ≠ factory workers; High Behavioral CQ skill). Implication: International frameworks give global competitiveness; Vietnamese research ensures local effectiveness. Combine both: "Think globally, act locally." In PDP: Consider Vietnam market as Opportunity or Threat in SWOT; include context-specific skills; balance international skills with local effectiveness.
-</speaker-notes>
+### Slide 24 (Layout: section-break)
+# Part 3
 
-</slide>
+## Cultural Intelligence
 
-<slide number="14" layout="section-break" title="Part 4 Section">
+**Navigating cultural diversity in global careers**
 
-# Part 4: Developing Your Transferable Skills
-## From Assessment to Action
+### Slide 25 (Layout: content)
+## Cultural Intelligence (CQ)
 
-<speaker-notes>
-Theory is valuable but useless without application. This section: Practical strategies for skill development. Preview: Creating skills gap analysis, deliberate practice principles, using mentorship for skill development. Key moment: Students will use these frameworks in tutorial TODAY—everything is immediately actionable.
-</speaker-notes>
+**Definition:** The capability to function effectively across national, ethnic, and organizational cultures
 
-</slide>
+**Why It Matters:**
+- Vietnam is ASEAN's fastest-growing economy with increasing international business
+- 62% of Vietnamese companies plan to expand internationally (Vietnam Chamber of Commerce, 2024)
+- Multinational corporations employ 30% of business graduates in major cities
+- Remote work enables collaboration across cultural contexts
 
-<slide number="15" layout="framework" title="Skills Gap Analysis">
+**CQ vs. EI:**
+- **EI:** Understanding emotions universally
+- **CQ:** Understanding how culture shapes emotional expression, communication, and relationships
 
-# 5-Step Process
+### Slide 26 (Layout: framework)
+## The 4 Capabilities of Cultural Intelligence
 
-1. **Identify Target Skills** — Which 8-10 skills matter most for your career?
-2. **Self-Assess Current Level** — Rate yourself honestly (1-5 scale)
-3. **Define Target Level** — Where do you need to be in 1 year? 3 years?
-4. **Prioritize Gaps** — Which gaps are most urgent/impactful?
-5. **Create Development Strategies** — Specific, actionable plans
+| CQ Capability | Definition | Key Questions |
+|---------------|------------|---------------|
+| **Metacognitive CQ** | Awareness and planning during cross-cultural interactions | "Am I considering cultural factors in this situation?" |
+| **Cognitive CQ** | Knowledge of cultural norms, practices, and values | "What do I know about this culture's conventions?" |
+| **Motivational CQ** | Interest and confidence to adapt to cultural diversity | "Am I motivated to learn and adjust?" |
+| **Behavioral CQ** | Ability to adapt verbal and non-verbal behaviors | "Can I flex my communication style appropriately?" |
 
-**Used in:** Personal Development Plan Part 2 (15% of grade)
+**Development:** All four capabilities can be strengthened through study, travel, reflection, and cross-cultural experiences
 
-<speaker-notes>
-Step 1 (Identify): Use WEF, NACE, Boyatzis EI, CQ frameworks. Choose mix: 3-4 technical, 3-4 transferable, 2-3 AI-era. Make them relevant to YOUR career path. Example for Marketing: Technical (data analytics, SEO, graphic design), Transferable (creative thinking, communication, teamwork), AI-era (context engineering, human judgment, AI tool proficiency). Step 2 (Self-Assess): Be HONEST—overestimating helps no one. Use behavioral evidence: "I've done X, therefore I rate myself Y." Get input from mentor, peers, professors. Rating guide: 1=Beginner, 2=Developing, 3=Competent, 4=Proficient, 5=Expert. Step 3 (Target): 1-year target realistic (+1 or +2 levels), 3-year ambitious (+2 or +3). Not every skill needs to be 5—strategic choices. Step 4 (Prioritize): High Priority = Large gap + High career impact + Achievable in timeframe. Step 5 (Strategies): SPECIFIC actions not vague intentions. "Improve communication" ❌; "Present in 3 classes, join Toastmasters, record and review myself monthly" ✓. In tutorial: Complete this process for 8 skills, share with peer for feedback, refine for PDP submission.
-</speaker-notes>
+### Slide 27 (Layout: content)
+## Strategies to Build Cultural Intelligence
 
-</slide>
+**1. Cognitive CQ: Build Cultural Knowledge**
+- Study cultures relevant to your industry/region (ASEAN, Northeast Asia, Europe)
+- Learn about values (individualism vs. collectivism, power distance, uncertainty avoidance)
+- Research business etiquette differences
 
-<slide number="16" layout="content" title="Deliberate Practice">
+**2. Metacognitive CQ: Strategic Awareness**
+- Before cross-cultural interactions, pause: "What assumptions am I making?"
+- After interactions, reflect: "What surprised me? What did I misunderstand?"
 
-# How to Actually Get Better
+**3. Motivational CQ: Cultivate Openness**
+- Approach cultural differences with curiosity, not judgment
+- Build self-efficacy through small cross-cultural successes
 
-**Deliberate Practice Principles:**
+**4. Behavioral CQ: Practice Adaptation**
+- Adjust communication style (directness, formality, pace)
+- Modify non-verbal behavior (eye contact, personal space, gestures)
 
-1. **Set specific goals** — "Practice active listening in 10 conversations this week" ✓
-2. **Get immediate feedback** — Ask for input, don't practice in isolation
-3. **Focus on weaknesses** — Practice what's uncomfortable
-4. **Repeat with variation** — Same skill, different contexts
-5. **Maintain consistency** — 30 min daily > 3 hours once a week
+### Slide 28 (Layout: section-break)
+# Part 4
 
-*(Adapted from Anders Ericsson's expertise research)*
+## Designing Your Skills Development Strategy
 
-<speaker-notes>
-Most people don't improve because they repeat without reflection. Deliberate practice = intentional, focused, feedback-driven skill building. Principle 1 (Specific): Vague goals don't work. "Be more emotionally intelligent" vs. "In every team meeting this month, I will summarize what others said before responding, to practice empathy and active listening." Principle 2 (Feedback): Can't improve what you can't see. Sources: Mentor, peers, recording yourself, self-reflection journals. After presentation, ask 3 people: "What was clearest? What was confusing?" Principle 3 (Weaknesses): Natural tendency is do what we're good at (feels good). Growth happens in discomfort zone. If conflict management is weak, must practice difficult conversations. Principle 4 (Variation): Practice empathy with family, friends, classmates, mentor, strangers—different contexts reveal different challenges. Principle 5 (Consistency): 15 min daily active listening = 105 min/week. 2-hour workshop monthly = 24 min/week average. Consistency builds neural pathways (neuroplasticity). Application examples given in speaker notes. Connection to Mentorship: Share development strategies in Meeting #3, mentor provides feedback and accountability.
-</speaker-notes>
+**Turning assessment into action**
 
-</slide>
+### Slide 29 (Layout: content)
+## Creating Your Skills Gap Analysis
 
-<slide number="17" layout="content" title="PDP Integration">
+**Step 1: Inventory Current Skills**
+- Review WEF Top 10, NACE 8 Competencies, ESCI 12 Competencies
+- Honestly rate yourself 1-5 on each (1 = significant development needed, 5 = strong competency)
+- Gather evidence: When have you demonstrated this skill?
 
-# How This Week Informs Your Personal Development Plan
+**Step 2: Identify Target Levels**
+- What level do you need for your career goals?
+- Industry research: Which skills are most critical in your target field?
+- Mentor input: Ask "Which skills should I prioritize?"
 
-**Part 2: SWOT & Skills Gap Analysis**
-- Identify 8+ critical skills from frameworks
-- Self-assess current vs. target levels
-- Prioritize development needs
-- Create specific practice strategies
+**Step 3: Prioritize Gaps**
+- **High Priority:** Large gap + critical for career goals
+- **Medium Priority:** Moderate gap + important but not urgent
+- **Low Priority:** Small gap or less relevant to immediate goals
 
-**Part 3: Vision & Goals**
-- Vision statement reflects values + skills
-- SMART goals include skill development targets
-- Action steps use deliberate practice principles
-- Success metrics include behavioral indicators
+### Slide 30 (Layout: content)
+## Development Strategies: How to Build Skills
 
-<speaker-notes>
-Part 2 SWOT Analysis: Strengths (skills rated 4-5—leverage these), Weaknesses (skills rated 1-2—develop these), Opportunities (growing demand for certain skills like AI-era skills, CQ), Threats (skills becoming obsolete, high competition). Skills Gap Analysis Table format: Skill Category | Current Level (1-5) | Target Level (1-5) | Priority | Development Strategy. Example: Analytical Thinking (WEF #1) | 3 | 4 | High | Complete data analytics course, solve 2 case studies weekly, join consulting club. Part 3 Vision Statement Integration: "I envision a career where I leverage analytical thinking and empathy (skills) to help Vietnamese SMEs adopt sustainable practices, building reputation for innovative problem-solving (skill) while maintaining adaptability (skill) in the face of industry change." SMART Goal Example with action steps and success metrics detailed in speaker notes. Level of detail is what makes PDP actionable, not aspirational. Students start drafting this in tutorial.
-</speaker-notes>
+**Formal Learning:**
+- Workshops, courses, certifications
+- Example: "Enroll in LinkedIn Learning 'Emotional Intelligence at Work' course"
 
-</slide>
+**Experiential Learning:**
+- Stretch assignments, volunteer leadership roles, projects
+- Example: "Lead a student organization event to practice conflict management"
 
-<slide number="18" layout="content" title="Assessment Connection">
+**Social Learning:**
+- Mentorship, coaching, peer feedback, observation
+- Example: "Ask mentor to observe my communication style and provide feedback"
 
-# How This Week Connects
+**Self-Directed Learning:**
+- Reading, reflection, deliberate practice
+- Example: "Practice active listening in every conversation for 30 days, reflect weekly on progress"
 
-**Assessment Integration:**
-- **Personal Development Plan Part 2** — Skills Gap Analysis due Week 11
-- **Mentorship Meeting #3** — Share SWOT and skills development strategies
-- **Final Oral Exam** — Present how you'll develop key competencies
+**Measurement:**
+- How will you know you've improved?
+- Example: "Receive feedback that I handled disagreement constructively" or "Successfully mediate a team conflict"
 
-**Mentorship Focus:**
-- Bring draft Skills Gap Analysis to Meeting #3
-- Ask mentor: "Which skills matter most in my field?"
-- Request: "Can you help me practice [skill] in real scenarios?"
+### Slide 31 (Layout: content)
+## Example: Skills Gap Analysis Table
 
-<speaker-notes>
-PDP Part 2 Requirements: SWOT Analysis (5-7 items per quadrant), Skills Gap Analysis (minimum 8 skills: 3-4 technical, 3-4 transferable, 2-3 AI-era), each skill needs Current level, Target level, Priority, Development Strategy. Due Week 11 as part of complete PDP (40% of course grade). Mentorship Meeting #3 (Weeks 7-8) Focus: Discuss transferable skills and goal-setting. Bring draft SWOT, draft Skills Gap, preliminary career goals. Questions to ask mentor: "Which of these skills are most valued in your industry?" "How did you develop [specific skill]?" "Are my self-assessments realistic?" "Can you share story about when [skill] mattered in your career?" "Will you hold me accountable?" Using mentor as practice partner for safe skill practice. Final Oral Exam: You'll present PDP including skill development plans. Panel will ask: "How will you develop [skill you identified]?" Having practiced deliberate practice principles = confident, specific answer.
-</speaker-notes>
+| Skill | Current | Target | Priority | Development Strategy | Success Metrics |
+|-------|---------|--------|----------|----------------------|-----------------|
+| **Transferable:** Critical Thinking | 3 | 4 | High | Weekly case analysis practice; join debate club; apply SWOT to real decisions | Consistently analyze 3+ perspectives before deciding |
+| **Transferable:** Conflict Management | 2 | 4 | High | Read *Crucial Conversations*; practice in team projects; seek mentor feedback | Resolve 2+ conflicts constructively per semester |
+| **EI:** Empathy | 3 | 4 | Medium | Active listening practice; volunteer work; cultural exchange program | Feedback from peers on improved listening |
+| **CQ:** Behavioral CQ | 2 | 3 | Medium | Study business etiquette in 3 target countries; practice with international students | Adapt communication style appropriately in cross-cultural contexts |
 
-</slide>
+### Slide 32 (Layout: content)
+## How Today's Content Fits Your PDP
 
-<slide number="19" layout="content" title="Summary">
+**PDP Part 2: SWOT & Skills Gap Analysis**
 
-# What We Learned Today
+**Use Today's Frameworks to Identify:**
 
-1. **Transferable Skills Frameworks:** WEF (Top 10) and NACE (8 competencies) define globally valued skills
-2. **Emotional Intelligence:** Goleman's 4 domains, Boyatzis' 12 behavioral competencies
-3. **Cultural Intelligence:** 4 CQ dimensions essential for global careers
-4. **Vietnam Context:** Employers value continuous learning, resilience, empathy, context-specific communication
-5. **Skills Development:** Use 5-step gap analysis + deliberate practice principles
+**SWOT Strengths/Weaknesses (Internal):**
+- Which WEF Top 10 skills are your strengths?
+- Which ESCI competencies need development?
 
-<speaker-notes>
-Recap each point: (1) WEF analytical thinking, resilience, leadership, creative thinking, self-awareness, empathy; NACE critical thinking, communication, teamwork, leadership, professionalism, self-development, technology, equity. These frameworks guide Skills Gap Analysis. (2) 4 Domains: Self-Awareness, Self-Management, Social Awareness, Relationship Management; 12 Competencies from Emotional Self-Awareness to Teamwork; EI is developable through intentional practice. (3) Metacognitive/Cognitive/Motivational/Behavioral CQ; essential for ASEAN careers and multinationals. (4) Continuous self-learning mindset, resilience and adaptability, empathy for local communities, communication adjusted to context; balance global competitiveness with local effectiveness. (5) Identify → Self-assess → Define targets → Prioritize → Create strategies; Deliberate practice: Specific goals, immediate feedback, focus on weaknesses, repeat with variation, consistency. Connection to Course: Week 5 revealed WHO you are, Week 7 reveals WHAT you need, Week 11 integrates both into HOW you'll grow. Motivation: "39% of skills changing by 2030 sounds scary—but it's opportunity. The people who thrive will be those who commit to continuous skill development. That's what you're doing in this course: Building the HABIT of intentional growth."
-</speaker-notes>
+**Skills Gap Analysis:**
+- Select 3-4 transferable skills from WEF/NACE frameworks
+- Include 1-2 EI competencies from ESCI model
+- Add CQ if international career is your goal
 
-</slide>
+**PDP Part 3: SMART Goals**
+- Your 1-year goals should target HIGH PRIORITY skills from Skills Gap Analysis
+- Development strategies from Skills Gap become action steps in SMART goals
 
-<slide number="20" layout="content" title="Tutorial Preview">
+### Slide 33 (Layout: section-break)
+# Wrap-Up
 
-# Today's Tutorial Activities
+## Key Takeaways & Next Steps
 
-1. **EI Self-Assessment** — Rate yourself on Boyatzis' 12 competencies (20 min)
-2. **Transferable Skills Inventory** — Identify your top skills from WEF/NACE (15 min)
-3. **Skills Gap Analysis** — Complete for 8 skills using 5-step process (30 min)
-4. **Peer Feedback** — Exchange feedback on one interpersonal skill (15 min)
-5. **Begin PDP Part 2 Draft** — SWOT + Skills Gap for mentor review (10 min)
+### Slide 34 (Layout: content)
+## Today's Key Takeaways
 
-**Deliverable:** Skills Gap Analysis first draft (bring to Mentorship Meeting #3)
+1. **Transferable skills travel with you** across roles and industries - prioritize developing WEF Top 10 and NACE 8 Competencies
 
-<speaker-notes>
-Activity details: (1) Use worksheet with Boyatzis' 12 competencies, rate 1-5 with behavioral evidence, identify top 3 strengths and top 3 development needs, reflect on accuracy (Johari Window). (2) Review WEF Top 10 and NACE 8, mark which you possess (Level 3+) and which need development (Level 1-2), compare with career requirements from job descriptions research. (3) Complete table for 8 skills (mix of EI, transferable, technical, AI-era), include Current level, target level, priority, development strategy for each, use deliberate practice principles, be specific with timelines, resources, metrics. (4) Pair with classmate, each choose 1 interpersonal skill to get feedback on (empathy, communication, teamwork), partner shares observations, practice receiving feedback gracefully (EI skill itself). (5) Start SWOT analysis using today's insights, compile Skills Gap Analysis into PDP format, identify questions for mentor Meeting #3. Preparation for Next Week: Week 8 Time, Energy & Habit Management; share skills development strategies with mentor; reading: Newport (Deep Work), Clear (Atomic Habits), Schwartz (Manage Your Energy). Final reminders: Mentorship Meeting #3 deadline approaching, bring draft SWOT and Skills Gap, this work directly feeds into PDP Part 2 (15% of grade). Closing: "Skills are built through intention and practice, not wishful thinking. Today you begin the most important skill: the skill of self-development."
-</speaker-notes>
+2. **Emotional intelligence is learnable** - use Goleman's 4 domains and ESCI 12 competencies to assess and develop EI systematically
 
-</slide>
+3. **Cultural intelligence is essential** for global careers - develop all 4 CQ capabilities for cross-cultural effectiveness
 
-<slide number="21" layout="content" title="Required Readings">
+4. **Strategic skill development requires prioritization** - identify 3-4 HIGH PRIORITY skills for focused 1-year development
 
-# This Week's Research
+5. **Skills gap analysis drives your PDP** - use frameworks from today to complete Part 2 and inform your SMART goals
 
-**Frameworks:**
-1. World Economic Forum. (2025). *The future of jobs report 2025.*
-2. NACE. (2024). *Career readiness competencies.*
+### Slide 35 (Layout: content)
+## This Week's Tutorial
 
-**Emotional Intelligence:**
-3. Goleman, D., & Cherniss, C. (2024). Optimal leadership and emotional intelligence. *Leader to Leader, 2024*(113), 7–12.
-4. Boyatzis, R. E. (2018). The behavioral level of emotional intelligence and its measurement. *Frontiers in Psychology, 9*, 1438.
+**Activity: Skills Gap Analysis Workshop**
 
-**Global & Vietnam Context:**
-5. Tushar, H., & Sooraksa, N. (2023). Global employability skills in the 21st century workplace. *Heliyon, 9*(11), e21023.
-6. Gozzoli, C., Gazzaroli, D., & D'Angelo, C. (2018). The Cultural Intelligence Scale. *Frontiers in Psychology, 9*, 1183.
-7. Tran, L. T., et al. (2022). Employability in context: Graduate attributes in regional Vietnam. *International Journal for Educational and Vocational Guidance.*
+You will:
+1. Self-assess against WEF Top 10 and ESCI 12 Competencies
+2. Draft your Skills Gap Analysis table (8+ skills)
+3. Prioritize development focus areas
+4. Exchange peer feedback on development strategies
 
-<speaker-notes>
-Reading approach: WEF (Focus on Skills Outlook chapter—note Top 10 skills and growing vs. declining skills, consider how Vietnam fits). NACE (Read behavioral indicators for each competency for self-assessment reference, freely accessible online). Goleman & Cherniss 2024 (Most current EI research, accompanies their book *Optimal*, focus on 4 domains framework, paywalled but ResearchGate version available). Boyatzis 2018 (Technical but readable, focus on Table 1 with ESCI competency descriptions, explains how EI is measured behaviorally, open access via Frontiers). Tushar & Sooraksa 2023 (Systematic review of 30 years of employability research, identifies 87 unique skills, shows evolution of expectations, open access via PMC). Gozzoli et al. 2018 (Explains 4 CQ dimensions clearly, provides Cultural Intelligence Scale with 20 items, validated across professionals, open access via PMC). Tran et al. 2022 (Vietnam-specific research from regional employers, highly relevant for context, emphasizes continuous learning/resilience/empathy, open access via PMC). Reading strategy: Skim all, deep-read most relevant to career path, take notes on skills important for YOUR industry, bring questions to tutorial if concepts unclear.
-</speaker-notes>
+**Bring to Tutorial:**
+- Notes from today's lecture
+- Preliminary self-assessment (1-5 ratings)
+- Thoughts on which skills matter most for your career goals
 
-</slide>
+**Output:** Draft Skills Gap Analysis ready for mentor review in Meeting 3
 
-<slide number="22" layout="content" title="Questions">
+### Slide 36 (Layout: content)
+## Assessment Reminders
 
-# Questions & Next Steps
+**This Week:**
+- **Mentorship Meeting 3** (Week 7-8 recommended window)
+  - Focus: Skills development & goals
+  - Share your SWOT analysis draft and skills gap priorities
+  - Seek mentor feedback on which skills to prioritize
+  - Pre-meeting form due 48 hours before meeting
 
-**Office Hours:** By appointment — email to schedule
+**Coming Up:**
+- **Week 8:** Time & Energy Management
+- **Week 9:** Growth Mindset & Adaptability
+- **Week 10:** Guest Speaker (October 16) - Ms. Ha Linh
+- **Week 11:** Personal Development Plan due (November 28)
 
-**Next Week:** Time, Energy & Habit Management
-- Deep Work principles
-- Atomic Habits framework
-- Energy management strategies
+### Slide 37 (Layout: content)
+## Further Resources (Optional)
 
-**Action Items:**
-1. Complete tutorial Skills Gap Analysis
-2. Schedule/complete Mentorship Meeting #3
-3. Share SWOT and skills draft with mentor
-4. Continue developing identified skills using deliberate practice
+**Books:**
+- Goleman, D. (1995). *Emotional Intelligence*. Bantam Books.
+- Bradberry, T., & Greaves, J. (2009). *Emotional Intelligence 2.0*. TalentSmart.
+- Meyer, E. (2014). *The Culture Map*. PublicAffairs.
 
-<speaker-notes>
-Common anticipated questions: "How do I know if my self-assessment is accurate?" (Compare with feedback from others, look for behavioral evidence, use 360° approach). "What if I have 20 skills gaps, not just 8?" (Prioritize ruthlessly: Impact × Urgency × Achievability; can't develop everything at once; focus on 3-4 high-priority skills per year). "Should I focus on improving weaknesses or leveraging strengths?" (Both, strategically: Develop weaknesses if they're critical gaps, leverage strengths if they're differentiators; CliftonStrengths philosophy: Build strengths to excellence, manage weaknesses to adequacy). "How long does it take to develop a skill?" (Depends on current level, target level, and practice intensity; rule of thumb: 1 level improvement = 3-6 months of deliberate practice). "Is CQ really necessary if I plan to work only in Vietnam?" (Yes: Vietnamese companies hire international talent, ASEAN integration, many have international clients/partners, generational and regional cultural differences within Vietnam require CQ). Next week preview: You have skills gaps identified—now we tackle TIME and ENERGY. How to actually make space for skill development in busy life. Newport's Deep Work + Clear's Atomic Habits + Schwartz's Energy Management. Building systems that support development goals. Action items emphasis: Don't leave tutorial without draft, Meeting #3 is critical, start practicing ONE skill this week, can't develop all simultaneously. Motivational close: "The difference between dreaming about a better career and building one is this: intentional skill development. You now have the frameworks. Tutorial gives you the plan. Daily practice gives you the results. Let's get to work."
-</speaker-notes>
+**Online:**
+- WEF Future of Jobs Report 2025: https://www.weforum.org/publications/the-future-of-jobs-report-2025/
+- NACE Career Readiness Competencies: https://www.naceweb.org/career-readiness/competencies/
+- Harvard Business School: Emotional Intelligence in Leadership - https://online.hbs.edu/blog/post/emotional-intelligence-in-leadership
 
-</slide>
+**Assessment Tool:**
+- Cultural Intelligence Center: Free CQ self-assessment - https://culturalq.com/
 
-<slide number="23" layout="section-break" title="End">
+### Slide 38 (Layout: references)
+## References
 
-**End of Lecture**
+1. Ang, S., Van Dyne, L., Koh, C., Ng, K. Y., Templer, K. J., Tay, C., & Chandrasekar, N. A. (2007). Cultural intelligence: Its measurement and effects on cultural judgment and decision making, cultural adaptation and task performance. *Management and Organization Review*, *3*(3), 335–371.
 
-**Total Slides:** 23
-**Duration:** 90 minutes
-**Next:** Tutorial — Skills Gap Analysis Workshop
+2. Boyatzis, R. E. (2018). The behavioral level of emotional intelligence and its measurement. *Frontiers in Psychology*, *9*, Article 1438. https://doi.org/10.3389/fpsyg.2018.01438
 
-<speaker-notes>
-End of lecture content. Transition to tutorial workshop for hands-on application of all frameworks covered today.
-</speaker-notes>
+3. Goleman, D., & Cherniss, C. (2024). Optimal leadership and emotional intelligence. *Leader to Leader*, *2024*(113), 7–12. https://doi.org/10.1002/ltl.20813
 
-</slide>
+4. Gozzoli, C., Gazzaroli, D., & D'Angelo, C. (2018). The Cultural Intelligence Scale (CQS): A contribution to the Italian validation. *Frontiers in Psychology*, *9*, Article 1183. https://doi.org/10.3389/fpsyg.2018.01183
+
+5. Harvard Business School Online. (n.d.). Emotional intelligence in leadership: Why it's important. *HBS Online Business Insights*. https://online.hbs.edu/blog/post/emotional-intelligence-in-leadership
+
+6. National Association of Colleges and Employers. (2024). *NACE career readiness competencies* (Rev. ed.). https://www.naceweb.org/career-readiness/competencies/
+
+7. Tran, L. T., Ngo, N. H., Nguyen, H. M. T., & Nguyen, T. (2022). "Employability in context": Graduate employability attributes expected by employers in regional Vietnam and implications for career guidance. *International Journal for Educational and Vocational Guidance*. https://doi.org/10.1007/s10775-022-09548-w
+
+8. Tushar, H., & Sooraksa, N. (2023). Global employability skills in the 21st century workplace: A semi-systematic literature review. *Heliyon*, *9*(11), Article e21023. https://doi.org/10.1016/j.heliyon.2023.e21023
+
+9. World Economic Forum. (2025, January). *The future of jobs report 2025*. https://www.weforum.org/publications/the-future-of-jobs-report-2025/
 
 </lecture_content>
-
-<task>
-Generate all 23 slides as a complete presentation slide deck. Reproduce all content exactly as provided. Enhance each slide with appropriate visuals, infographics, or imagery. Maintain consistent professional styling throughout.
-</task>
-
-<output_format>
-A presentation slide deck containing:
-- 23 slides total, matching the lecture content structure
-- Modern Bright Pastel Corporate visual design consistently applied
-- All lecture content text preserved exactly as written
-- Relevant images, infographics, icons, and diagrams on each slide
-- Minimum 18pt body text
-- Footers on content slides with course info and slide numbers
-- Academic citations in footers where referenced
-- Empty speaker notes sections
-</output_format>

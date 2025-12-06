@@ -1,901 +1,547 @@
-# Week 7 Tutorial: Tutor Guide
-## Transferable Skills & Emotional Intelligence Workshop
-
-**Course:** PPDK66B Personal & Professional Development
-**Tutorial Focus:** Skills Gap Analysis Creation
-**Duration:** 90 minutes
-**Critical Deliverable:** Skills Gap Analysis draft for PDP Part 2 (15% of final grade)
-
----
+# Week 7 Tutorial: Tutor Notes
 
 ## Tutorial Overview
 
-### Learning Objectives for Students
-
-By the end of this tutorial, students will:
-1. Self-assess emotional intelligence using Boyatzis' 12-competency ESCI framework
-2. Inventory transferable skills using WEF Future of Jobs and NACE frameworks
-3. Create comprehensive skills gap analysis for 8-10 critical competencies
-4. Practice giving and receiving constructive feedback on interpersonal skills
-5. Draft PDP Part 2 components (SWOT Analysis, Skills Gap Analysis)
-
-### Your Role as Tutor
-
-This tutorial is **strategically critical** for student success:
-- Directly feeds into PDP Part 2 (15% of final course grade)
-- Prepares students for Mentorship Meeting #3 (part of 20% Mentorship grade)
-- Establishes foundation for PDP Part 3 goals (30% of final grade)
-- Develops metacognitive and self-assessment skills used throughout careers
-
-**Your Focus:**
-- Ensure every student leaves with **actionable, specific** Skills Gap Analysis
-- Push for **behavioral evidence**, not vague self-perception
-- Coach **realistic self-assessment** (not over/underestimation)
-- Model **professional feedback** practices (SBI model)
-- Connect today's work to **career outcomes**
+**Topic:** Transferable Skills Self-Assessment
+**Duration:** 90 minutes
+**Format:** Individual assessment with peer discussion
+**Deliverable:** Personal Transferable Skills Development Plan (submitted to Moodle post-tutorial)
 
 ---
 
-## Pre-Tutorial Preparation (30 minutes)
+## Learning Objectives
 
-### Materials to Prepare
-
-**Handouts (Print or Digital):**
-- [ ] Boyatzis' 12 EI Competencies with behavioral indicators (Appendix A)
-- [ ] WEF Future of Jobs Top 10 Skills definitions (Appendix B)
-- [ ] NACE 8 Career Readiness Competencies with behavioral examples (Appendix C)
-- [ ] Cultural Intelligence Scale (CQS) 4-dimension framework (Appendix D)
-- [ ] Skills Gap Analysis template (blank table) (Appendix E)
-- [ ] SBI Feedback Model guide (Appendix F)
-- [ ] PDP Part 2 requirements checklist (Appendix G)
-
-**Visual Aids (Project on Screen):**
-- [ ] Tutorial agenda with time allocations
-- [ ] Exemplar Skills Gap Analysis (2-3 completed rows showing excellent quality)
-- [ ] Rating scale definitions (1-5 for self-assessment)
-- [ ] SBI Feedback Model example
-- [ ] Common mistakes to avoid (visual infographic)
-
-**Technology Setup:**
-- [ ] Course management system open for submission tracking
-- [ ] Timer visible to students (keep activities on schedule)
-- [ ] Breakout groups configured if using (for peer feedback pairs)
-- [ ] Backup: USB drive with all materials in case projector fails
-
-### Review Key Content
-
-**Refresh Your Knowledge (15 min):**
-- Re-read Week 7 lecture content, especially:
-  - Goleman's 4 EI domains
-  - Boyatzis' 12 ESCI competencies
-  - WEF vs. NACE framework differences
-  - Cultural Intelligence 4 dimensions
-  - Deliberate practice principles
-- Review PDP Part 2 requirements from Assessment Handbook
-- Check submission requirements and grading rubric
-
-**Prepare Coaching Responses (10 min):**
-- Script answers to predictable questions (see FAQ section below)
-- Prepare 3-4 exemplar responses for common student challenges
-- Review deliberate practice prompting questions
-
-**Check Student Progress (5 min):**
-- How many students have scheduled Mentorship Meeting #3?
-- Any students falling behind on mentorship requirements?
-- Which students struggled in previous tutorials (may need extra support)?
+Students will:
+1. Evaluate current capabilities across NACE Career Readiness, ESCI Emotional Intelligence, and Cultural Intelligence frameworks
+2. Identify skill gaps and development priorities using behavioral indicators
+3. Design evidence-based development strategies for 2-3 priority competencies
+4. Apply self-assessment insights to Assessment 3 and Assessment 5 planning
 
 ---
 
-## Tutorial Facilitation Guide
+## Timing Table
 
-### Opening (0-5 minutes)
+| Time | Activity | Format | Key Actions |
+|------|----------|--------|-------------|
+| 0:00-0:05 | Quick Review | Facilitator-led | Recap three frameworks; emphasize honest assessment principles |
+| 0:05-0:25 | NACE Assessment | Individual work | Students rate 8 competencies; tutor circulates to answer questions |
+| 0:25-0:50 | ESCI Assessment | Individual work | Students rate 12 competencies across 4 domains; tutor available for clarification |
+| 0:50-1:05 | CQ Assessment | Individual work | Students complete 20-item CQ scale; calculate factor averages |
+| 1:05-1:20 | Development Plan | Individual work | Students identify 2-3 priorities and create action plans |
+| 1:20-1:28 | Peer Discussion | Pairs | Students share priorities and strategies; tutor monitors engagement |
+| 1:28-1:30 | Closing | Facilitator-led | Quick-write reflection; connect to Assessments 3 & 5; submission reminder |
 
-**Objectives:**
-- Set serious, focused tone (this is high-stakes work)
-- Clarify deliverable expectations
-- Connect to assessment value (PDP Part 2 = 15%, feeds into Part 3 = 30%)
-
-**Script:**
-
-> "Welcome to Week 7 tutorial. Today is one of the most important sessions of the semester because you're building the strategic core of your Personal Development Plan — your Skills Gap Analysis.
->
-> By the end of today, you will have identified 8-10 critical skills for your career, honestly assessed your current level, set development targets, and created specific action plans. This work is worth 15% of your final grade as part of PDP Part 2, and it feeds directly into your goals in Part 3, which is another 30%.
->
-> You'll also be sharing this draft with your mentor in Meeting #3. Mentors expect to see thoughtful, specific skills analysis — not vague intentions.
->
-> This tutorial requires focus and honesty. Self-assessment is hard. It requires confronting gaps between where you are and where you need to be. That's uncomfortable but essential for growth.
->
-> Let's get to work."
-
-**Pulse Check:**
-- "Quick show of hands: Who completed the Week 7 readings?"
-- "Who has Meeting #3 with their mentor already scheduled?"
-- "Any questions from the lecture before we dive in?"
-
-**Logistics:**
-- Point out materials (handouts, templates, reference guides)
-- Show timer: "We have 90 minutes. I'll keep us on track."
-- Submission reminder: "You'll upload Skills Gap Analysis before leaving today."
+**Note:** Individual work dominates this tutorial. Students need sustained concentration for thoughtful self-assessment. Your role is primarily supportive—circulating to answer questions, clarify behavioral indicators, and ensure steady progress.
 
 ---
 
-### Activity 1: EI Self-Assessment (5-25 minutes)
+## Preparation Checklist
 
-**Objective:** Students self-rate on Boyatzis' 12 EI competencies with behavioral evidence
+### Before Tutorial
 
-#### Setup (1 minute)
+- [ ] Review Week 7 lecture content to understand frameworks
+- [ ] Familiarize yourself with NACE, ESCI, and CQ competency definitions
+- [ ] Complete the self-assessments yourself (builds empathy for student experience; enables better question responses)
+- [ ] Prepare digital or printed copies of assessment worksheets if not using Moodle interface
+- [ ] Review Assessment 3 (Self-Portrait Video) and Assessment 5 (Professional Portfolio) requirements to make connections
+- [ ] Identify 2-3 development strategy examples you can share if students struggle with action planning
 
-**What to Do:**
-- Distribute Boyatzis ESCI handout
-- Project rating scale on screen (1-5 definitions)
-- Emphasize: "This is FOR you. Honest assessment is more valuable than inflated scores."
+### Tutorial Setup
 
-**What to Say:**
-
-> "You're going to self-assess on 12 emotional intelligence competencies. For each one, you'll rate yourself 1-5 AND provide behavioral evidence — specific examples from your life that justify the rating.
->
-> The behavioral evidence is critical. Don't just guess. Think: What have I actually DONE that demonstrates this competency level?"
-
-#### During Activity (20 minutes)
-
-**Your Role: Circulate & Coach**
-
-**Watch For:**
-
-**Problem #1: Speed Without Reflection**
-- Student racing through ratings without behavioral evidence
-- **Intervention:** "I see you're moving quickly. Tell me the behavioral evidence for your Empathy rating of 4. What specific examples support that?"
-
-**Problem #2: All Ratings = 3 (Avoiding Extremes)**
-- Student rates everything "average" to play it safe
-- **Intervention:** "You've rated 7 competencies as 3. Are you truly average at everything? Which are genuinely stronger? Which need real work? Differentiation helps you prioritize development."
-
-**Problem #3: Overestimation (Especially Emotional Self-Control)**
-- Student rates themselves 4-5 on competency they clearly struggle with
-- **Intervention:** "You rated Emotional Self-Control as 4. Tell me about a recent time when you felt strong emotions. How did you handle it? Would others who were there rate you as 4?"
-- Gently prompt Johari Window: "Sometimes we have blind spots. Consider asking a friend for feedback on this one."
-
-**Problem #4: No Behavioral Evidence (Just Feelings)**
-- Student writes: "I think I'm empathetic" without examples
-- **Intervention:** "What you THINK isn't evidence. Give me a specific situation. When have you demonstrated empathy? What did you do? What was the impact?"
-
-**Problem #5: Comparing to Others (Wrong Baseline)**
-- Student: "I rated Leadership as 5 because I'm better than my roommate"
-- **Intervention:** "Don't compare to peers. Use the scale definition. Rating 5 means 'exceptional, recognized by others, teach/coach regularly.' Does that describe you?"
-
-**Coaching Questions to Ask:**
-
-For students stuck on rating:
-- "Tell me about a recent situation involving this competency."
-- "How did you handle it?"
-- "What would success have looked like? How close were you?"
-- "If I asked 3 people who know you, what would they say?"
-
-For students who finish quickly (under 10 min):
-- Check for depth: "Show me your behavioral evidence for your top strength and biggest weakness."
-- If shallow, send back: "I need specific examples, not generalizations."
-
-**Time Warnings:**
-- 10 min: "You should be halfway through (6 competencies)."
-- 15 min: "Wrapping up last few competencies now."
-- 18 min: "Finish your current competency and identify top 3 strengths/development needs."
-
-#### Transition to Activity 2 (1 minute)
-
-**What to Say:**
-
-> "You've assessed emotional intelligence. Now we expand to other transferable skills frameworks. Some will overlap — that's fine. We'll consolidate in Activity 3."
+- [ ] Post timing table visible to students (helps them pace individual work)
+- [ ] Ensure students have access to all assessment materials (NACE definitions, ESCI indicators, CQ items)
+- [ ] Have submission deadline and format clearly stated (PDF to Moodle)
+- [ ] Prepare transition cues for moving between assessments
 
 ---
 
-### Activity 2: Transferable Skills Inventory (25-40 minutes)
+## Detailed Facilitation Guide
 
-**Objective:** Students rate themselves on WEF and NACE skills
+### Part 1: Quick Review (5 minutes)
 
-#### Setup (1 minute)
+**Your role:** Set context and establish assessment mindset
 
-**What to Do:**
-- Distribute WEF and NACE handouts
-- Project both frameworks side-by-side
-- Point out overlaps: "Empathy appears in both WEF and Boyatzis — use same rating."
+#### Key Messages
 
-**What to Say:**
+1. **Framework purposes:**
+   - NACE: Broad employability competencies employers seek in graduates
+   - ESCI: Detailed emotional intelligence behavioral competencies
+   - CQ: Specific capabilities for cross-cultural effectiveness
 
-> "You'll now rate yourself on WEF's Top 10 skills and NACE's 8 competencies. This will feel repetitive — some skills overlap with EI. That's intentional. We're gathering comprehensive data before you select your focus areas.
->
-> Move faster here than Activity 1. You don't need as much behavioral evidence for each — but still be honest."
+2. **Assessment principles:**
+   - "Rate what you actually DO, not what you wish or think you should do"
+   - "Use recent specific examples as evidence"
+   - "Low scores identify opportunities, not failures—this isn't graded on your ratings"
+   - "Honest self-assessment is developmentally valuable; inflated self-ratings waste your time"
 
-#### During Activity (12 minutes)
+3. **Process expectations:**
+   - "Next 75 minutes are primarily individual work"
+   - "I'll circulate to answer questions—raise hand if you need clarification"
+   - "Work at your own pace, but aim to finish each assessment within suggested times"
+   - "You'll submit complete work to Moodle after tutorial"
 
-**Your Role: Keep Pace, Answer Clarifications**
+#### Anticipated Questions
 
-**Common Questions & Responses:**
+**Q: "Will you see our individual ratings?"**
+A: "Yes, I see your submitted assessments to verify completeness and thoughtfulness. But I'm not evaluating whether your skills are strong—I'm evaluating whether you engaged honestly with the self-assessment process."
 
-**Q: "What's the difference between WEF Analytical Thinking and NACE Critical Thinking?"**
-A: "Very similar. Analytical thinking = breaking down complex info, finding patterns. Critical thinking = evaluating information quality, making sound judgments. Rate yourself similarly on both unless you see a real difference."
+**Q: "What if I don't have examples for some competencies?"**
+A: "That's valuable data. If you can't identify recent examples, that suggests limited practice with that competency—which makes it a development priority. Note in 'development opportunity' section that you lack examples."
 
-**Q: "How do I rate Talent Management as a student? I don't manage anyone."**
-A: "Think of it as developing others. Have you mentored younger students? Taught friends a skill? Helped team members improve? That's talent management."
-
-**Q: "I've never thought about Organizational Awareness. I don't work in an organization."**
-A: "You're in several: university, student clubs, maybe part-time job, even family. Do you understand power dynamics? Who really influences decisions? How to navigate politics? That's organizational awareness."
-
-**Q: "Equity & Inclusion feels political. What does it really mean?"**
-A: "It means working effectively with people from different backgrounds — gender, culture, age, nationality, socioeconomic status. Do you seek diverse perspectives? Challenge biases? Create inclusive environments? Rate that."
-
-**Watch For:**
-
-**Problem: Student Overwhelmed by Number of Skills**
-- Signs: Staring blankly, visibly anxious, not writing
-- **Intervention:** "I know this feels like a lot. You're not developing all these skills — just taking inventory. In Activity 3, you'll choose 8-10 to focus on. For now, just rate honestly and move on."
-
-**Problem: Inconsistent Ratings Across Similar Skills**
-- Example: Student rates Empathy (Boyatzis) = 4, but Empathy & Active Listening (WEF) = 2
-- **Intervention:** "I notice you rated Empathy differently in WEF vs. Boyatzis. Are these really different for you, or should they align?"
-
-**Problem: Rating Everything 4-5 (Overconfidence)**
-- **Intervention:** "You've rated 8 out of 10 WEF skills as 4 or 5. If you're exceptional at 80% of critical skills, why do you need this course? Be more discerning — where are genuine gaps?"
-
-**Time Warnings:**
-- 6 min: "Finish WEF Top 10, move to NACE."
-- 10 min: "Wrapping up NACE now."
-- 12 min: "Cultural Intelligence quick assessment if time, otherwise move to Activity 3."
-
-#### Optional: Cultural Intelligence Quick Assessment (2 minutes)
-
-If students finish early:
-- Have them rate 4 CQ dimensions (1-5)
-- Especially valuable for students targeting international careers or multinational companies
-
-#### Transition to Activity 3 (1 minute)
-
-**What to Say:**
-
-> "You now have comprehensive self-assessment data: 12 EI competencies, 10 WEF skills, 8 NACE competencies, maybe 4 CQ dimensions. That's 30+ data points about yourself.
->
-> Obviously, you can't focus on 30 skills. Activity 3 is where strategy comes in: Choosing the RIGHT 8-10 skills to develop for YOUR career."
+**Q: "Should I rate myself compared to other students or to experts?"**
+A: "Rate yourself against the behavioral indicators provided, not against other people. Ask: 'How frequently do I demonstrate these behaviors?' not 'Am I better or worse than my classmates?'"
 
 ---
 
-### Activity 3: Skills Gap Analysis Creation (40-70 minutes)
+### Part 2: Main Activity (75 minutes)
 
-**Objective:** Students create actionable, specific skills gap analysis for PDP Part 2
+#### Activity 2.1: NACE Assessment (20 minutes)
 
-This is the **CORE DELIVERABLE** of today's tutorial. Invest your time here.
+**Your role:** Circulate, clarify, ensure progress
 
-#### Setup (2 minutes)
+**Common clarification needs:**
 
-**What to Do:**
-- Distribute blank Skills Gap Analysis template
-- Project exemplar completed rows on screen
-- Emphasize specificity: "Vague strategies won't help you. Specific actions will."
+1. **Rating scale interpretation:**
+   - 1 (Developing): You're beginning to practice this; inconsistent demonstration
+   - 2 (Competent): You demonstrate this adequately in familiar contexts
+   - 3 (Proficient): You demonstrate this reliably across various contexts
+   - 4 (Advanced): You demonstrate this consistently and could teach others
 
-**What to Say:**
+2. **"Evidence" versus "Development opportunity":**
+   - Evidence: Specific situation where you successfully demonstrated the competency
+   - Development opportunity: Specific situation where you struggled or wish you'd performed better
+   - Both should be concrete situations, not general statements
 
-> "This is your main deliverable today. You're creating a Skills Gap Analysis table for 8-10 skills that matter most for YOUR career.
->
-> This table will be in your PDP Part 2, worth 15% of your grade. Your mentor will review it in Meeting #3. Most importantly, this is YOUR ROADMAP for development over the next 1-3 years.
->
-> I'm going to be demanding about specificity. 'Practice more' is not a development strategy. 'Join Toastmasters September 2025, present in 3 classes per semester, record and review weekly, attend workshop January 2026' IS a strategy.
->
-> You have 30 minutes. Let's work."
+3. **Students struggling with examples:**
+   - Prompt with context: "Think about group projects, part-time jobs, student organizations, family situations"
+   - For competencies with no examples: "If you can't recall any situations, write 'Limited practice—need to seek opportunities' in development section"
 
-#### Step 1: Skill Selection (5 minutes)
+**Watch for:**
+- Students finishing too quickly (likely not providing specific evidence)
+- Students stuck on single competency (suggest moving forward, returning later)
+- Confusion about behavioral indicators (pause to clarify with whole group if multiple students struggle)
 
-**Circulate and Coach:**
-
-**Watch For:**
-
-**Problem: All Transferable Skills, No Technical Skills**
-- Student selects: Communication, Teamwork, Leadership, Empathy, Critical Thinking, Creativity, Adaptability, Self-Awareness
-- **Intervention:** "These are all soft skills. What TECHNICAL skills do job descriptions in your field require? Data analytics? Design software? Financial modeling? Programming? You need hard skills too."
-
-**Problem: All Technical Skills, No Transferable Skills**
-- Student selects: Excel, PowerPoint, Python, SQL, Photoshop, Accounting, SEO, Google Analytics
-- **Intervention:** "Technical skills are necessary but not sufficient. Employers hire for skills, fire for lack of EI and teamwork. Add 3-4 transferable skills, especially from your weaknesses."
-
-**Problem: No AI-Era Skills**
-- **Intervention:** "By 2030, you'll work alongside AI daily. How will you add value? Context engineering? Judgment? Creative problem-solving? Human empathy? Include 2-3 AI-era skills."
-
-**Problem: Generic Skills, Not Specific**
-- Student lists: "Communication"
-- **Intervention:** "Communication is too broad. Be specific: Public speaking? Written communication? Cross-cultural communication? Active listening? Persuasive writing? Choose one specific type."
-
-**Helpful Prompts:**
-
-For students stuck on selection:
-- "Pull up 3-5 job descriptions for roles you want. What skills appear repeatedly?"
-- "Ask yourself: If I developed these 8 skills excellently, would I be competitive for my target career? If not, what's missing?"
-- "Look at your WEF/NACE/EI assessments. Which LOW ratings are most career-critical?"
-
-#### Step 2: Complete Skills Gap Analysis Table (20 minutes)
-
-**Circulate Intensively — This is Where Quality is Made or Lost**
-
-**Focus Areas:**
-
-**1. Development Strategies (Most Critical Column)**
-
-This is where students struggle most. They write vague intentions, not actionable plans.
-
-**Bad Examples:**
-- "Practice public speaking"
-- "Get better at data analysis"
-- "Work on empathy"
-- "Improve leadership skills"
-
-**Good Examples:**
-- "Join NEU Toastmasters (Sept 2025), present in 3 classes/semester, record presentations and review weekly with mentor feedback, attend 2-day public speaking workshop (Jan 2026), practice 10 min daily using TED talk structures"
-- "Complete Google Analytics certification (Oct 2025), take NEU Data Analytics course (Fall 2025), analyze 3 real business datasets (Nov-Dec 2025), create monthly analytics dashboards for student organization, meet with data analyst mentor quarterly for feedback"
-- "Practice active listening in 3 conversations daily, paraphrase before responding, ask open questions instead of giving immediate advice, read 'Dare to Lead' by Brené Brown (Sept 2025), volunteer 4 hrs/month in customer service role to practice empathy with strangers"
-
-**Coaching Script for Vague Strategies:**
-
-> "You wrote 'practice public speaking.' Let's make this specific using deliberate practice principles:
-> - WHAT specifically will you practice? (e.g., 10-min presentations, Q&A handling, storytelling techniques)
-> - WHEN? (daily? weekly? specific times in calendar?)
-> - WHERE? (Toastmasters? class? recorded practice at home?)
-> - WITH WHOM? (peer feedback? mentor? self-review?)
-> - USING WHAT RESOURCES? (courses? workshops? books? apps?)
-> - HOW OFTEN? (consistency principle)
-> - Rewrite it with those details."
-
-**Use Deliberate Practice Prompting Questions:**
-1. "What's your specific goal for this practice session?"
-2. "How will you get immediate feedback?"
-3. "What weakness are you focusing on?"
-4. "How will you vary the practice?"
-5. "How will you maintain consistency?"
-
-**2. Success Metrics (Second Most Critical)**
-
-Students often write vague metrics or skip this column.
-
-**Bad Examples:**
-- "I'll feel more confident"
-- "I'll be better"
-- "Improved performance"
-
-**Good Examples:**
-- "Behavioral: I speak without reading slides, maintain eye contact 80% of time, handle 5 Q&A questions confidently. Feedback: 3 peers say 'you've improved significantly,' professor rates presentation 85+. Performance: Successfully present PDP in final oral exam with 80+ score. Self-assessment: Rate myself 4 on public speaking."
-
-**Coaching Script:**
-
-> "How will you KNOW you've improved? Give me three types of evidence:
-> 1. Behavioral: What will you DO differently that's observable?
-> 2. Feedback: What will OTHERS say about your improvement?
-> 3. Performance: What measurable outcome will you achieve?
-> Write all three."
-
-**3. Realistic Targets (Common Overestimation)**
-
-**Problem: Current Level 1 → Target Level 5 in 1 year**
-- **Intervention:** "Level 5 is expert — teaching others, recognized widely. Even with intensive practice, 1→3 or 1→4 in one year is more realistic. Save 5 for your 3-year target."
-
-**Problem: Target Level = 5 for Every Skill**
-- **Intervention:** "Not every skill needs expert level. Strategic choices matter. Which 2-3 skills are TRUE differentiators for your career? Make those 5. Others can be 3-4 (competent/proficient)."
-
-**Rule of Thumb:**
-- 1 level improvement = 3-6 months of deliberate practice
-- 2 levels in 1 year = aggressive but achievable with focus
-- 3+ levels in 1 year = unrealistic unless starting from complete beginner
-
-**4. Priority Assessment**
-
-**Problem: Everything is High Priority**
-- **Intervention:** "If everything is high priority, nothing is. You can't focus on 10 skills intensively. Choose 3-4 HIGH priority (work on this year), 3-4 MEDIUM (gradual improvement), 2 LOW (maintain or slow growth)."
-
-**Priority Criteria (Remind Students):**
-- High = Large gap + Essential for career + Achievable in timeframe
-- Medium = Moderate gap OR moderate career importance
-- Low = Small gap OR lower immediate impact
-
-**Time Warnings:**
-- 10 min: "You should have 3-4 skills completely done."
-- 15 min: "You should have 6+ skills done."
-- 20 min: "Finish your last 2-3 skills now. Focus on High priority skills if running short on time."
-
-#### Step 3: Validation (5 minutes)
-
-**What to Say:**
-
-> "Before we move on, validate your work:
-> 1. Do you have 8-10 skills selected? Mix of technical, transferable, AI-era?
-> 2. Are development strategies SPECIFIC? Could someone else follow your plan?
-> 3. Are success metrics OBSERVABLE? Behavioral + Feedback + Performance?
-> 4. Are targets REALISTIC? Max +2 levels in 1 year for most skills?
-> 5. Are priorities DIFFERENTIATED? 3-4 High, 3-4 Medium, 2 Low?
->
-> Turn to the person next to you. Read your top High priority skill aloud. Ask them: 'Is my development strategy specific enough? Can you picture exactly what I'll do?'
->
-> If they say 'I'm not sure,' revise it."
-
-**Circulate During Peer Validation:**
-- Listen to conversations
-- Jump in if both students have weak strategies: "Let me model a strong strategy for you..."
-
-#### Common Challenges & Interventions
-
-**Challenge 1: "I don't know what resources are available"**
-
-**Response:**
-- "Start with what you DO know exists: NEU courses, student clubs, free online courses (Coursera, edX), YouTube tutorials, library books."
-- "In Meeting #3, ask your mentor: 'What resources do you recommend for developing [skill]?'"
-- "Part of self-managed learning is FINDING resources. That's a skill itself."
-
-**Challenge 2: "I don't have time to develop all these skills"**
-
-**Response:**
-- "Exactly why you prioritize. Focus on 3-4 HIGH priority skills this year."
-- "Next week (Week 8) we cover time and energy management. You'll learn to CREATE time through Deep Work and habit stacking."
-- "Small consistent practice (15 min daily) beats infrequent intense practice (3 hours monthly)."
-
-**Challenge 3: "What if I choose wrong skills?"**
-
-**Response:**
-- "Your PDP is a living document. You'll revise it annually throughout your career."
-- "That's why Meeting #3 with your mentor is crucial — they'll tell you if you're off-track."
-- "Better to start with imperfect plan and adjust than to wait for perfect plan that never comes."
-
-**Challenge 4: "Technical skills seem easier to measure than soft skills"**
-
-**Response:**
-- "True, but soft skills can be measured behaviorally. Example: Empathy measured by 'paraphrases before responding in 80% of conversations' or 'peers report feeling heard.'"
-- "Use the Boyatzis behavioral indicators — those are observable actions."
-
-#### Transition to Activity 4 (1 minute)
-
-**What to Say:**
-
-> "You've done the hard analytical work of creating your skills gap analysis. Now let's add external perspective. You'll get peer feedback on one interpersonal skill — and practice giving feedback, which is itself an EI skill."
+**Timing checkpoint at 15 minutes:** "You should be finishing your last 1-2 competencies and starting pattern analysis. If you're still on competency 3-4, move more quickly through remaining items—you can add details later."
 
 ---
 
-### Activity 4: Peer Feedback Exchange (70-85 minutes)
+#### Activity 2.2: ESCI Assessment (25 minutes)
 
-**Objective:** Practice giving/receiving feedback; validate self-assessments
+**Your role:** Support with competency clarification, encourage domain thinking
 
-#### Setup (2 minutes)
+**Common clarification needs:**
 
-**What to Do:**
-- Pair students (ideally with classmates they've worked with before)
-- Project SBI Feedback Model on screen
-- Set serious but supportive tone
+1. **Self-Awareness versus Self-Management:**
+   - Self-awareness: RECOGNIZING your emotions, strengths, limitations
+   - Self-management: REGULATING your emotions, CONTROLLING impulses, ADAPTING behavior
+   - Example: "I notice I'm getting frustrated" = self-awareness; "I take deep breaths to calm down" = self-management
 
-**What to Say:**
+2. **Social Awareness versus Relationship Management:**
+   - Social awareness: UNDERSTANDING others' emotions, organizational dynamics
+   - Relationship management: ACTING to influence, develop, collaborate with others
+   - Example: "I sense my teammate is stressed" = social awareness; "I offer to help with their workload" = relationship management
 
-> "This activity develops TWO emotional intelligence competencies simultaneously:
-> 1. Receiving feedback gracefully (Self-Management)
-> 2. Giving constructive feedback effectively (Relationship Management / Coach & Mentor)
->
-> You'll practice the SBI model: Situation, Behavior, Impact. This is how professionals give feedback in the workplace.
->
-> **Critical rules:**
-> - Receivers: Listen without defending, explaining, or justifying. Just say 'thank you.'
-> - Givers: Be specific and constructive. Focus on behavior, not personality.
-> - Both: This is practice in a safe environment. Be honest but kind."
+3. **Specific competency clarifications:**
 
-**Model SBI Feedback (1 minute):**
+   **Organizational Awareness** (students often struggle):
+   - This is about understanding power, politics, informal networks
+   - University example: Recognizing which professors have influence over curriculum decisions, understanding how student government actually operates, knowing which administrators can approve exceptions
+   - Workplace example: Knowing who makes real decisions (vs. who has formal authority), understanding company culture and unspoken rules
 
-Project example:
+   **Inspirational Leadership** (students may think they lack experience):
+   - You don't need formal leadership roles to demonstrate this
+   - Examples: Taking initiative in group projects to motivate team, articulating compelling vision for student organization event, leading by example in academic integrity
+   - If truly no examples, note this as development area
 
-**Weak Feedback:** "You're not a good listener."
+**Watch for:**
+- Students rating all competencies similarly (suggests surface engagement)
+- Huge gaps between domains (could be real or could reflect misunderstanding—ask about pattern)
+- Confusion about "recent example OR challenge" (both are acceptable—success shows capability, struggle shows awareness of development need)
 
-**Strong SBI Feedback:**
-"**Situation:** In our field trip debrief last week,
-**Behavior:** I noticed you checked your phone twice while others were sharing reflections,
-**Impact:** which made it seem like you weren't engaged with what they were saying.
-**Suggestion:** I'd encourage you to put devices away during group discussions to show active listening."
-
-#### During Activity (10 minutes)
-
-**Your Role: Monitor Quality of Feedback**
-
-**Circulate and Listen:**
-
-**Green Flags (Good Feedback):**
-- Using SBI structure
-- Specific examples with context
-- Balancing strength + growth area
-- Constructive tone
-- Receiver listening without defensiveness
-
-**Red Flags (Intervene Immediately):**
-- **Too harsh/personal:** "You're just not empathetic" → STOP. "Let's rephrase behaviorally: 'In X situation, I noticed you did Y, which had Z impact...'"
-- **Too vague:** "You should improve communication" → PROMPT. "What specific communication behavior? Give an example."
-- **Only positive (avoiding growth area):** → PROMPT. "Now share one area for growth. Remember, growth feedback is a gift, not an insult."
-- **Receiver becoming defensive:** → INTERVENE. "Pause. Your job right now is to listen, not agree or disagree. Take notes, say thank you, reflect later."
-
-**Coaching Interventions:**
-
-If giver is struggling:
-- "Think of a specific situation you observed."
-- "What exactly did they DO? (behavior)"
-- "What effect did that have? (impact)"
-- "What would you encourage them to try instead?"
-
-If receiver is defensive:
-- "I see you're explaining yourself. That's natural but defeats the purpose. Can you just listen and say 'thank you for that feedback'?"
-
-#### Reflection (3 minutes)
-
-**What to Say:**
-
-> "Take 2 minutes to write individually:
-> - What did you learn about yourself from this feedback?
-> - Did it align with your self-assessment? If not, why the gap?
-> - How will you integrate this into your Skills Gap Analysis?
-> - How did it FEEL to give/receive feedback? (EI self-awareness question)"
-
-**Debrief (2 minutes):**
-
-> "Raise your hand if the feedback you received was different from your self-assessment."
->
-> [Multiple hands should go up]
->
-> "This is the Johari Window from Week 5. Others see things we don't see about ourselves. This is valuable data. Will anyone adjust their Skills Gap Analysis based on this feedback?"
-
-**Connection to Career:**
-
-> "In professional settings, you'll receive feedback constantly — from managers, peers, clients. Your ability to receive it gracefully and use it for growth is HIGH emotional intelligence. You just practiced that."
-
-#### Transition to Activity 5 (1 minute)
-
-**What to Say:**
-
-> "Final step: Compile everything into PDP Part 2 format and prepare for your mentor meeting."
+**Timing checkpoint at 20 minutes:** "You should be completing your last 2-3 competencies and starting domain analysis. Calculate average ratings for each domain and answer reflection questions."
 
 ---
 
-### Activity 5: PDP Part 2 Draft & Closing (85-90 minutes)
+#### Activity 2.3: CQ Assessment (15 minutes)
 
-**Objective:** Finalize deliverable and prepare for Mentorship Meeting #3
+**Your role:** Facilitate completion, help with interpretation
 
-#### SWOT Quick Draft (2 minutes)
+**Common clarification needs:**
 
-**What to Do:**
-- Guide students through fast SWOT creation using today's data
-- This should be quick — they have all the inputs already
+1. **CQ-Knowledge items (often lowest scores):**
+   - Don't expect expert knowledge
+   - Rate honestly—many students have moderate to low cultural knowledge
+   - This is developable through study and experience
 
-**Prompt:**
+2. **CQ-Strategy items (often misunderstood):**
+   - These ask about conscious planning and monitoring during cross-cultural interactions
+   - Item 15 ("I plan how I am going to relate..."): Do you think ahead about cultural factors before international meetings, conversations with international students, etc.?
+   - If you operate on autopilot, rate low; if you consciously strategize, rate high
 
-> "Using your self-assessments from today:
-> - **Strengths:** Skills you rated 4-5
-> - **Weaknesses:** Skills you rated 1-2
-> - **Opportunities:** Growing skill demands, available resources, mentor expertise
-> - **Threats:** Obsolescence, competition, barriers
->
-> Write 5-7 items per quadrant. Go."
+3. **CQ-Action items (require behavioral flexibility):**
+   - These ask if you actually adjust communication style
+   - Different from CQ-Drive (wanting to adapt) or CQ-Knowledge (knowing you should adapt)
+   - Rate based on whether you DO modify verbal/nonverbal behavior, not whether you think you should
 
-**Circulate Quickly:**
-- Check that students are using self-assessment data, not inventing new info
-- Ensure SWOT has external factors (Opportunities/Threats), not just internal
+**Interpretation support:**
 
-#### Compile PDP Part 2 Components (1 minute)
+When students reach profile analysis:
+- "Compare your four factor scores. Which is highest? Lowest?"
+- "Common patterns: High drive + low knowledge = enthusiasm without cultural understanding; high knowledge + low action = understanding without behavioral flexibility"
+- "For IBD students pursuing international careers, ideally develop all four factors. But if prioritizing, start with CQ-Drive and CQ-Strategy—motivation and metacognitive awareness enable learning the other factors"
 
-**Checklist on Screen:**
-
-- [ ] SWOT Analysis (5-7 items per quadrant)
-- [ ] Skills Gap Analysis table (8-10 skills)
-- [ ] Reflection on EI assessment results
-- [ ] Peer feedback notes
-
-**What to Say:**
-
-> "Before you submit, verify you have all components. Your PDP Part 2 includes both SWOT and Skills Gap Analysis."
-
-#### Prepare for Mentorship Meeting #3 (1 minute)
-
-**Project Questions to Ask Mentor:**
-
-> "Bring these questions to Meeting #3:
-> 1. 'I've identified [X, Y, Z] as top priorities. Do these align with what's valued in [industry]?'
-> 2. 'How did you develop [specific skill]? What worked?'
-> 3. 'Are my self-assessments realistic, or am I over/underestimating?'
-> 4. 'Can you help me practice [skill] in our meetings?'
-> 5. 'What resources or opportunities do you recommend?'"
-
-#### Submission & Final Reminders (1 minute)
-
-**What to Do:**
-- Monitor real-time submissions
-- Check file naming conventions
-- Confirm students who haven't submitted yet
-
-**What to Say:**
-
-> "Upload your Skills Gap Analysis to the course system now. File name: StudentNumber_Name_SkillsGapAnalysis_Week7.
->
-> **Reminder:** This is a DRAFT. You'll revise based on mentor feedback in Meeting #3. But I need to see your work today to confirm you're on track.
->
-> **Mentorship Meeting #3 deadline:** Weeks 7-8. If you haven't scheduled yet, do it TODAY.
->
-> **Next week:** Time, Energy & Habit Management. You've identified WHAT to develop. Next week: HOW to make time for development in busy life."
-
-#### Closing Motivation (1 minute)
-
-**What to Say:**
-
-> "You've done serious strategic work today. This isn't busy work — this is the roadmap for your next 1-3 years of professional development.
->
-> The difference between people who have careers and people who build careers is this: intentional skill development. You now have your plan. Your job is to execute it with deliberate practice.
->
-> Questions before we close?"
-
-**Final Q&A:**
-
-Be prepared for:
-- "What if I want to change skills after talking to my mentor?"
-  - "Revise it. Your PDP evolves. Just document the change and reasoning."
-- "Do I need mentor approval?"
-  - "Not approval — input. They'll tell you if you're off-track."
-- "Can I add more than 10 skills?"
-  - "You CAN, but shouldn't intensively develop more than 3-4 at once. Additional skills can be 'maintaining' or 'monitoring.'"
+**Timing checkpoint at 12 minutes:** "You should be finishing the 20 items and calculating factor averages. Complete your profile analysis and reflection questions."
 
 ---
 
-## Post-Tutorial Actions
+#### Activity 2.4: Development Plan Creation (15 minutes)
 
-### Immediate (Within 1 Hour)
+**Your role:** Guide prioritization, ensure specificity
 
-**Review Submissions:**
-- [ ] Check all submissions received
-- [ ] Scan for quality red flags:
-  - Fewer than 8 skills
-  - No behavioral evidence in strategies
-  - All ratings = 3 (no differentiation)
-  - Vague development strategies
-- [ ] Note students needing individual follow-up
+**Prioritization guidance:**
 
-**Follow-Up Emails:**
+Help students select 2-3 competencies strategically:
 
-**To Students Who Didn't Submit:**
-> Subject: Week 7 Skills Gap Analysis — Missing Submission
->
-> [Name],
->
-> I don't see your Skills Gap Analysis submission from today's tutorial. This is required for PDP Part 2 (15% of final grade) and for Mentorship Meeting #3.
->
-> Please submit by [48 hours from now]. If you had technical issues, email me immediately.
->
-> Office hours available if you need help.
+1. **Gap criterion:** Choose competencies with largest gap between current and needed capability
+2. **Importance criterion:** Choose competencies critical for specific career goals
+3. **Foundation criterion:** Self-awareness enables other EI competencies; CQ-Drive enables other CQ factors
+4. **Opportunity criterion:** Choose competencies you can practice THIS SEMESTER in available contexts
 
-**To Students with Low-Quality Submissions:**
-> Subject: Week 7 Skills Gap Analysis — Revision Needed
->
-> [Name],
->
-> I reviewed your Skills Gap Analysis. I have concerns about [specific issue: vague strategies / unrealistic targets / insufficient skills].
->
-> Please revise and resubmit by [48 hours from now]. Specifically:
-> - [Actionable feedback item 1]
-> - [Actionable feedback item 2]
->
-> This work feeds into your PDP Part 2 (15%). I want you to succeed — let's get this right.
->
-> Office hours: [times]
+**Common prioritization questions:**
 
-### Within 24 Hours
+**Q: "Should I focus on weaknesses or build on strengths?"**
+A: "Depends on context. For competencies below threshold (can't function without them), focus on weaknesses to reach adequacy. For competencies that differentiate performance, consider building strengths to excellence. Generally, one weakness + one strength development is balanced."
 
-**Analyze Patterns:**
-- What % of students submitted on time?
-- What % need revision?
-- What were most common challenges?
-- Which students are falling behind overall?
+**Q: "I have many low-rated competencies. How do I choose?"**
+A: "Start with foundational competencies. Self-awareness enables self-management and social awareness. CQ-Drive enables other CQ factors. Critical thinking enables many other NACE competencies. Or choose competencies you can practice immediately—if you're in group project now, teamwork and conflict management have natural practice contexts."
 
-**Create Support Resources:**
-- FAQ document addressing common questions from today
-- Exemplar Skills Gap Analyses (anonymized, with permission)
-- Supplementary guide: "How to Write Specific Development Strategies"
+**Q: "Can I work on more than 3 competencies?"**
+A: "You CAN, but research shows focused effort on 2-3 competencies produces better results than diffused effort across many. If you genuinely have capacity for more, ensure you have SPECIFIC practice plans for each, not vague intentions."
 
-**Coordinate with Course Team:**
-- Email mentorship coordinators: Which students haven't scheduled Meeting #3?
-- Share common student challenges with lead instructor
-- Request intervention for students significantly struggling
+**Development strategy specificity:**
 
-### Before Next Tutorial
+Push for concrete, actionable strategies, not vague aspirations.
 
-**Prepare Week 8 Materials:**
-- Week 8 focuses on Time, Energy & Habit Management
-- Students will learn HOW to implement their development strategies
-- Prepare to reference Week 7 skills in Week 8 time-blocking activity
+**Vague:** "Practice empathy more"
+**Specific:** "In team meetings, paraphrase others' points before responding; ask one clarifying question to understand their perspective; observe nonverbal cues consciously"
 
-**Update Tutorial Materials:**
-- Refine exemplars based on this week's best submissions
-- Add FAQ entries
-- Adjust time allocations if activities ran long/short
+**Vague:** "Improve communication"
+**Specific:** "Draft important emails, wait 2 hours, revise before sending; practice presentations aloud 3 times before delivering; request specific feedback on clarity after presentations"
+
+**Vague:** "Develop cultural intelligence"
+**Specific:** "Before conversations with international students, review their home country's communication norms; after cross-cultural interactions, write 2-3 sentences reflecting on what worked/didn't work; join International Student Association events monthly"
+
+**Practice opportunity specificity:**
+
+Ensure students identify actual contexts available THIS SEMESTER.
+
+Valid practice contexts at NEU:
+- Current group projects (teamwork, conflict management, influence)
+- Part-time jobs or internships (professionalism, communication, adaptability)
+- Student organizations (leadership, organizational awareness)
+- Interactions with international students/faculty (cultural intelligence)
+- Tutorial discussions and presentations (communication, empathy)
+- Academic challenges (emotional self-control, achievement orientation, adaptability)
+
+**Timing checkpoint at 12 minutes:** "You should be finishing your action plans for 2-3 competencies. Complete the implementation commitment section—when will you review progress? Who can provide feedback?"
 
 ---
 
-## Troubleshooting Guide
+### Part 3: Before Next Class (10 minutes)
 
-### Common Student Challenges & Solutions
+#### Peer Discussion (8 minutes)
 
-#### "I'm overwhelmed by too many skill gaps"
+**Your role:** Organize pairs, monitor engagement, manage time
 
-**Root Cause:** Perfectionism, lack of prioritization
+**Instructions to give:**
 
-**Response:**
-"That's normal — most people have more gaps than they can address at once. That's why we prioritize. Focus on 3-4 HIGH priority skills this year. Others can wait or develop slowly. You'll revisit this plan annually throughout your career."
+"Find a partner—ideally someone you don't normally work with. You'll each share for 4 minutes (8 minutes total). Share:
+- Which 2-3 competencies you're prioritizing
+- What development strategies you'll try
+- What practice opportunities you're planning
+- What challenges you anticipate
 
-**Follow-Up:**
-"Which 3 skills would make the BIGGEST difference in your career if you developed them excellently this year? Start there."
+Listen actively—you might get ideas for your own development."
 
-#### "I don't know how to rate myself accurately"
+**While students discuss:**
+- Circulate to ensure both partners are sharing (not one dominating)
+- Listen for interesting insights or challenges you might address in closing
+- Give time warnings: "4 minutes—switch speakers" and "7 minutes—wrap up your conversations"
 
-**Root Cause:** Lack of calibration, fear of being wrong
-
-**Response:**
-"Use behavioral evidence, not gut feeling. Look at the rating scale definitions. What have you actually DONE that demonstrates each level?
-
-Also, ask others. Your mentor, peers, professors — they see things you don't (Johari Window). This week's peer feedback started that process."
-
-**Follow-Up:**
-"In Meeting #3, ask your mentor: 'I rated myself [X] on [skill]. Does that seem accurate based on what you know about me?'"
-
-#### "My development strategies feel vague"
-
-**Root Cause:** Lack of specificity training, unfamiliarity with resources
-
-**Response:**
-"Use the deliberate practice questions:
-1. WHAT specifically will you practice?
-2. WHEN? (frequency, timing)
-3. WHERE? (context)
-4. WITH WHOM? (feedback source)
-5. USING WHAT RESOURCES?
-
-Rewrite your strategy answering all 5."
-
-**Follow-Up:**
-Show exemplar strategy, then have student rewrite theirs side-by-side.
-
-#### "I don't have time to develop skills while being a full-time student"
-
-**Root Cause:** All-or-nothing thinking, time management issues
-
-**Response:**
-"Next week we cover time and energy management. You'll learn to make time through Deep Work principles and habit stacking.
-
-Also, remember: 15 minutes daily = 105 minutes weekly. Consistency beats intensity. You're not adding extra activities — you're being intentional about activities you already do."
-
-**Examples:**
-- Practice active listening in conversations you're already having
-- Apply analytical thinking to assignments you're already completing
-- Develop professionalism in clubs you're already attending
-
-#### "What if I pick the wrong skills to develop?"
-
-**Root Cause:** Fear of mistakes, perfectionism
-
-**Response:**
-"Your PDP isn't carved in stone. It's a living document you'll revise.
-
-More importantly, developing ANY skill using deliberate practice makes you better at learning itself (metacognition). Even if you later switch focus, you've built the HABIT of intentional development — that's the most valuable skill.
-
-Talk to your mentor in Meeting #3. They'll tell you if you're way off-track."
-
-#### "Technical skills are easier for me than soft skills"
-
-**Root Cause:** True for many students; different development approaches needed
-
-**Response:**
-"Technical skills have clear tutorials, courses, measurable outputs — easier to practice deliberately.
-
-Soft skills require different approach: real-world practice with feedback. Example: Can't develop empathy from a textbook — need to practice in conversations, get feedback from others, reflect on impact.
-
-Use your mentorship for soft skills practice. Ask mentor: 'Can we role-play a difficult conversation so I can practice conflict management?'"
+**Purpose:** Articulating plans strengthens commitment (psychological research on public commitment). Hearing peers' approaches may generate additional ideas.
 
 ---
 
-## Assessment Rubric Quick Reference
+#### Closing Reflection & Next Steps (2 minutes)
 
-Use this to evaluate submission quality and provide feedback.
+**Your role:** Quick individual reflection, then connect to assessments and next week
 
-### Excellent Skills Gap Analysis (85-100%)
+**Instructions:**
 
-- [ ] 8-10 skills strategically selected for career relevance
-- [ ] Balanced mix: technical, transferable, AI-era skills
-- [ ] All ratings supported by specific behavioral evidence
-- [ ] Development strategies are highly specific (names, dates, resources, frequency)
-- [ ] Success metrics include behavioral + feedback + performance indicators
-- [ ] Realistic timelines and target levels
-- [ ] Clear prioritization (3-4 High, 3-4 Medium, 2 Low)
-- [ ] Evidence of deliberate practice principles in strategies
+"Take 1 minute for quick individual reflection. Complete these sentences in your notes:
+1. The most surprising insight from today's assessment was...
+2. The competency I'm most committed to developing is...
+3. One concrete action I'll take this week is..."
 
-### Good Skills Gap Analysis (70-84%)
+(60 seconds silence)
 
-- [ ] 8 skills selected, mostly career-relevant
-- [ ] Adequate mix of categories
-- [ ] Most ratings include behavioral evidence
-- [ ] Development strategies are specific but could be more detailed
-- [ ] Success metrics present but could be more comprehensive
-- [ ] Generally realistic targets
-- [ ] Some prioritization evident
+**Key closing messages:**
 
-### Needs Improvement (55-69%)
+"Three connections to remember:
 
-- [ ] Fewer than 8 skills or poor career fit
-- [ ] Imbalanced categories (all soft or all technical)
-- [ ] Limited behavioral evidence
-- [ ] Development strategies are vague
-- [ ] Success metrics missing or vague
-- [ ] Some unrealistic targets
-- [ ] Unclear prioritization
+**First, Assessment 3 (Self-Portrait Video):** Many of you will highlight a transferable skill or EI competency. Today's assessment provides evidence for your choices. If showcasing a strength, use specific examples from your NACE/ESCI ratings. If explaining development, use insights from your gap analysis.
 
-### Unsatisfactory (<55%)
+**Second, Assessment 5 (Professional Portfolio):** Employers want evidence of competencies. Practice translating self-awareness into professional language. Your development plan is essentially a 'professional development' portfolio section.
 
-- [ ] Incomplete (fewer than 6 skills)
-- [ ] Random selection with no career logic
-- [ ] No behavioral evidence
-- [ ] Development strategies extremely vague or missing
-- [ ] No success metrics
-- [ ] Unrealistic throughout
-- [ ] No prioritization
+**Third, Week 8 on professional presence and communication:** Next week we explore how presence enables effectiveness. Many competencies you assessed today (professionalism, communication, influence, empathy) manifest through presence. Bring your development plan—we'll reference it.
+
+**Submission reminder:** Complete self-assessment and development plan due [date] to Moodle. PDF format. I'm evaluating completeness and thoughtfulness, not rating your skills. Questions about submission?"
 
 ---
 
-## Appendices
+## Valid Approaches & Variations
 
-### Appendix A: Boyatzis' 12 EI Competencies — Behavioral Indicators
+### If Students Finish at Very Different Rates
 
-[Include detailed handout with behavioral indicators for each competency — see tutorial content appendix]
+**Challenge:** Some students complete assessments quickly; others need full time.
 
-### Appendix B: WEF Future of Jobs Top 10 Skills
+**Valid approaches:**
 
-[Include definitions and examples]
+1. **Early finishers enhance specificity:**
+   - "Review your evidence and development opportunity examples. Add more specific details—what exactly happened? What did you do or say? What was the result?"
+   - "Expand your development strategies. For each strategy, add one sentence explaining HOW you'll implement it"
 
-### Appendix C: NACE 8 Career Readiness Competencies
+2. **Early finishers begin implementation:**
+   - "Choose one development strategy you can start this week. Draft specific action steps—what exactly will you do, when, where?"
+   - "Identify who could give you feedback on your priority competency. Draft a request for feedback explaining what you're working on and what observations would help"
 
-[Include behavioral examples for each]
+3. **Early finishers support peers (carefully):**
+   - "If you're finished and a nearby classmate looks stuck, quietly offer to discuss their question"
+   - NOTE: Monitor this—ensure it's genuine help, not one student dominating or sharing answers
 
-### Appendix D: Cultural Intelligence Scale (4 Dimensions)
+### If Class Is Struggling with Specific Assessment
 
-[Include CQ framework and sample items]
+**Challenge:** Many students confused about particular framework or competency.
 
-### Appendix E: Skills Gap Analysis Template
+**Valid approaches:**
 
-[Include blank table template]
+1. **Pause for group clarification:**
+   - "I'm seeing questions about [competency]. Let's pause for 2 minutes to clarify together"
+   - Provide clear example, answer questions, then resume individual work
+   - Adjust timing to accommodate brief group pause
 
-### Appendix F: SBI Feedback Model Guide
+2. **Offer optional worked example:**
+   - "If you're struggling to identify evidence, here's my example for [competency]..." (share your own experience)
+   - This models the level of specificity expected
 
-[Include model explanation and examples]
+3. **Simplify temporarily, elaborate later:**
+   - "If you're stuck, provide brief answers now and add details after tutorial before submission"
+   - Keeps students progressing rather than stuck on one item
 
-### Appendix G: PDP Part 2 Requirements Checklist
+### If Students Resist Honest Self-Assessment
 
-[Include full requirements from Assessment Handbook]
+**Challenge:** Students rating themselves unrealistically high (impression management) or low (self-deprecation).
+
+**Valid approaches:**
+
+1. **Reinforce developmental purpose:**
+   - "Remember, I'm grading your thoughtfulness, not your ratings. Accurate self-assessment—whether high or low—is what produces learning"
+   - "If you rate everything 3-4 without genuine evidence, you waste this opportunity to identify development priorities"
+
+2. **Prompt for evidence:**
+   - "For any rating of 3 or 4, ensure you have specific recent example. If you can't identify concrete situation, reconsider your rating"
+   - "For ratings of 1-2, explicitly note the development opportunity—what would stronger capability look like?"
+
+3. **Acknowledge difficulty:**
+   - "Self-assessment is hard. We all have blind spots. That's why 360-degree feedback (others rating you) is more accurate. Since we can't do that today, be as honest as possible and consider seeking external feedback on your priority competencies"
 
 ---
 
-## Tutor Self-Reflection
+## Cultural Sensitivity Notes
 
-After tutorial, reflect:
+### Cross-Cultural Assessment Considerations
 
-**What Worked Well:**
-- Which activities achieved learning objectives effectively?
-- Which coaching interventions helped students most?
-- Which students made exceptional progress?
+1. **Behavioral norms vary by culture:**
+   - Some ESCI and CQ items reflect Western cultural norms (e.g., direct communication, individual initiative)
+   - Vietnamese students may rate "influence" or "inspirational leadership" low not due to lack of capability but different cultural scripts for leadership (more collective, less individually assertive)
+   - ACKNOWLEDGE this: "These frameworks were developed primarily in Western contexts. Some behaviors described may feel culturally unfamiliar. Rate your capability in contexts where you operate—university, work, social groups"
 
-**What Needs Improvement:**
-- Which activities ran over/under time?
-- Which explanations confused students?
-- Which students are falling behind?
+2. **CQ-Knowledge items:**
+   - Vietnamese students may have strong ASEAN cultural knowledge but lower Western cultural knowledge
+   - International students may have opposite pattern
+   - ACKNOWLEDGE: "CQ-Knowledge asks about 'other cultures' generally. You might have strong knowledge of some cultures (ASEAN neighbors, Western countries) but limited knowledge of others (African, Latin American). Rate based on breadth—how many different cultural systems do you understand?"
 
-**Adjustments for Next Time:**
-- Time allocation changes needed?
-- Additional exemplars or resources needed?
-- Different coaching approach for common struggles?
+3. **Self-promotion versus modesty:**
+   - Some cultures (including Vietnamese) emphasize modesty, making self-assessment of strengths uncomfortable
+   - ACKNOWLEDGE: "Some cultural backgrounds emphasize humility over self-promotion. For this assessment, set aside modesty norms temporarily. Accurate recognition of strengths is not arrogance—it's self-awareness, which is itself an EI competency"
 
-**Student Success Indicators:**
-- % who submitted complete Skills Gap Analysis
-- % whose submissions meet "Good" or "Excellent" standards
-- % who have scheduled Mentorship Meeting #3
-- Quality of peer feedback exchanges observed
+4. **Emotional expression:**
+   - ESCI items about "expressing emotions" or "emotional self-control" reflect assumptions about appropriate emotionality
+   - Vietnamese cultural norms often value emotional restraint; Western norms increasingly value emotional expression
+   - ACKNOWLEDGE: "Rate emotional self-control based on whether you can regulate emotions productively in YOUR cultural contexts, not whether you match Western emotional expression norms"
+
+### International Student Considerations
+
+**For international students in this class:**
+
+1. **CQ assessment may seem redundant:**
+   - International students living/studying in Vietnam inherently practice cultural intelligence daily
+   - ACKNOWLEDGE: "If you're an international student, you're developing CQ through immersion. Your CQ-Drive and CQ-Action may be high because you practice daily. This assessment makes explicit what you're learning implicitly"
+
+2. **NACE competencies reflect US employer expectations:**
+   - May not perfectly match home country norms
+   - ACKNOWLEDGE: "NACE is US-based framework. Use it to understand US/international employer expectations, but also research competencies valued in your home country if pursuing career there"
+
+3. **Language considerations:**
+   - Behavioral indicators are in English; ESL students may need clarification
+   - OFFER: "If any behavioral indicator or competency definition is unclear due to language, please ask—I can explain in simpler English or provide examples"
 
 ---
 
-**Remember:** Your role is to coach intentional development, not to be directive. Students must own their plans. Guide them to specificity, realism, and strategic thinking — but let them choose their focus areas.
+## Anticipated Challenges & Solutions
 
-This tutorial builds the foundation for students' lifelong professional development. Take it seriously. Invest your time. Be demanding about quality. Their careers depend on these skills.
+### Challenge 1: Students Treat This as High-Stakes Assessment
 
-**End of Tutor Guide**
+**Symptoms:**
+- Anxiety about "right answers"
+- Competitive comparison with classmates
+- Grade-focused questions ("How many competencies do I need to rate as 3+ to get good grade?")
+
+**Solutions:**
+- Reiterate grading criteria explicitly: "You're graded on completeness and thoughtfulness, NOT on your ratings. Someone who honestly rates mostly 1-2 and provides specific development plans gets the same grade as someone rating mostly 3-4 with equally thoughtful plans"
+- Discourage comparison: "Don't share your numeric ratings with classmates. Your profile is personal—comparing creates unhelpful competition"
+- Redirect to developmental purpose: "The value of this tutorial is identifying YOUR development priorities for YOUR career goals. Gaming the assessment only cheats yourself of development opportunity"
+
+### Challenge 2: Students Can't Identify Specific Examples
+
+**Symptoms:**
+- Generic statements: "I demonstrated teamwork in group projects"
+- Blank "evidence" sections
+- Requests for "acceptable examples"
+
+**Solutions:**
+- Provide prompting structure: "Describe one specific team project. What did you specifically do that showed teamwork? What was the result?"
+- Offer example frameworks:
+  - "For communication: Think of a time you explained something complex. To whom? What was the challenge? How did you adapt your message? How did they respond?"
+  - "For adaptability: Think of a time plans changed suddenly. What was your initial plan? What disrupted it? How did you adjust? What was the outcome?"
+- If genuinely no examples: "If you can't recall any situations for a competency, that's valuable information. It means you've had limited practice, making it a clear development priority. Note 'Limited practice—need to seek opportunities' in your assessment"
+
+### Challenge 3: Students Want to Develop ALL Competencies
+
+**Symptoms:**
+- Listing 5+ priority competencies
+- Vague strategies applied to many areas
+- Anxiety about "neglecting" low-rated competencies
+
+**Solutions:**
+- Explain research on focused practice: "Research on skill development shows focused effort on 2-3 capabilities produces better results than diffused effort across many. You can't meaningfully develop 8 competencies simultaneously"
+- Frame as prioritization skill: "Part of professionalism (a NACE competency!) is prioritizing effectively. Choosing 2-3 priorities demonstrates strategic thinking"
+- Suggest sequential development: "After developing your priority competencies this semester, you can select new priorities next semester. This is ongoing career-long process, not one-time fix"
+- Acknowledge foundations: "If truly everything needs work, start with foundational competencies: self-awareness (enables other EI domains), critical thinking (enables many NACE competencies), CQ-Drive (enables other CQ factors). Building foundations makes later development easier"
+
+### Challenge 4: Development Strategies Too Vague
+
+**Symptoms:**
+- Strategies like "practice more," "try harder," "be more confident"
+- No specific practice opportunities identified
+- Generic goals without behavioral targets
+
+**Solutions:**
+- Require behavioral specificity: "Translate 'practice empathy' into specific behaviors: 'Paraphrase others' points before responding; ask clarifying questions; observe nonverbal cues; provide support when noticed.' That's a development strategy"
+- Connect to behavioral indicators: "Look back at the behavioral indicators for your priority competency. Which specific indicator will you target first? That becomes your development strategy"
+- Ensure practice context: "For each strategy, identify WHERE and WHEN you'll practice this semester. 'Group project meetings Tuesdays' is concrete. 'Whenever opportunity arises' is too vague"
+- Provide examples if needed:
+  - Emotional self-control: "When feeling frustrated in meetings, take 3 deep breaths before responding; journal about emotional triggers after stressful days; practice 10-minute daily meditation"
+  - Influence: "Before making requests, prepare 2-3 reasons aligned with others' interests; observe successful influencers' tactics; practice framing proposals to appeal to audience priorities"
+  - CQ-Action: "Record yourself in presentation; review to identify verbal/nonverbal habits; practice 3 different formality levels for same message; request feedback from international students on cultural appropriateness"
+
+---
+
+## Connection to Course Assessments
+
+### Assessment 3: Self-Portrait Video
+
+**How today's tutorial supports Assessment 3:**
+
+Students create 2-minute video showcasing strength OR explaining development challenge. Today's self-assessment provides:
+
+1. **Evidence for strength showcase:**
+   - High-rated NACE/ESCI competencies with strong examples = potential strengths to highlight
+   - Specific behavioral indicators = language for articulating the strength
+   - Recent examples from assessment = stories for video
+
+2. **Framework for development explanation:**
+   - Low-rated competencies with development plans = potential challenges to explain
+   - Gap analysis = understanding of why this competency matters
+   - Development strategies = demonstration of growth mindset and proactive development
+
+**Guidance to provide:**
+"Many students will reference transferable skills or EI competencies in Assessment 3. Today's work gives you the analysis to do this effectively. If showcasing a strength: use your high-rated competencies and specific examples. If explaining development: use your low-rated competencies and thoughtful development plans. Either approach works—the key is self-awareness and evidence."
+
+### Assessment 5: Professional Portfolio
+
+**How today's tutorial supports Assessment 5:**
+
+Professional portfolios require articulating competencies clearly. Today's assessment develops:
+
+1. **Competency language:**
+   - NACE framework provides employer-recognized competency categories
+   - ESCI provides specific behavioral language
+   - Practice translating self-awareness into professional communication
+
+2. **Evidence collection:**
+   - Examples identified today = starting point for portfolio evidence
+   - Development plans = professional development section content
+
+3. **Continuous documentation:**
+   - "Start documenting evidence NOW. When you demonstrate a competency, record it immediately. By semester end, you'll have rich portfolio content rather than scrambling to remember examples"
+
+**Guidance to provide:**
+"Professional portfolios require competency demonstration. Today you identified your competencies and evidence. Continue documenting as you progress. When you successfully demonstrate a competency—give presentation, resolve conflict, adapt to change—record it briefly. This ongoing documentation makes portfolio development much easier."
+
+---
+
+## Tutor Self-Reflection Questions
+
+**After tutorial, consider:**
+
+1. **Pacing:** Did students have adequate time for thoughtful assessment? Did some finish much earlier or later than expected?
+
+2. **Engagement:** Did students engage seriously with self-assessment or treat it superficially? What caused differences?
+
+3. **Clarification needs:** Which competencies or frameworks required most explanation? How can lecture or materials be improved?
+
+4. **Cultural sensitivity:** Did you notice cultural factors affecting students' self-assessment? How did you address these?
+
+5. **Specificity:** Did students' development plans include specific strategies and practice opportunities, or remain vague? What prompting was most effective?
+
+6. **Assessment connections:** Did students understand how this tutorial supports Assessments 3 and 5?
+
+---
+
+## Additional Resources for Tutors
+
+**Background reading:**
+
+1. **NACE Career Readiness:** https://www.naceweb.org/career-readiness/competencies/
+   - Review full framework and sample behaviors
+
+2. **Boyatzis (2018):** The behavioral level of emotional intelligence and its measurement
+   - Understand ESCI development and validation
+
+3. **Gozzoli et al. (2018):** The Cultural Intelligence Scale validation study
+   - Understand CQ factors and interpretation
+
+**Development strategy resources:**
+
+1. **WEF Future of Jobs Report 2025:** Skills chapter for trends and emerging competencies
+
+2. **HBS Online:** Emotional Intelligence in Leadership article for practical EI development
+
+3. **Cultural Intelligence Center:** Resources on CQ development strategies
+
+**If students request additional assessment:**
+
+- Suggest authentic 360-degree feedback using free tools like SurveyMonkey (students create survey with ESCI items, send to 5-7 people who know them in different contexts)
+- Recommend CliftonStrengths assessment for complementary strengths-based perspective
+- Suggest informational interviews with professionals in target careers asking "Which competencies matter most in your field?"

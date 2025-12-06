@@ -1,934 +1,955 @@
-<role>
-You are an expert presentation designer specializing in academic course materials. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
-</role>
+# Week 2 Lecture: Google Gemini Slide Generation Prompt
 
-<context>
-Course: PPDK66B - Personal & Professional Development |
-Week: 02
-Topic: Career Skills in the AI Era
-Institution: National Economics University |
-Instructor: William Winterton Lang, Le Huong Lan (PhD) |
-Total Slides: 28
-</context>
+**Instructions:** Copy the entire prompt below (from "You are Google Gemini..." through the end) and paste it into Google Gemini to generate the PowerPoint presentation for Week 2.
 
-<instructions>
-1. Create a presentation slide deck with exactly 28 slides
-2. Start with a title slide containing: topic title, course code and name, university/institution, and instructor name
-3. Reproduce the exact wording from the lecture content for each slide, preserving all text as written
-4. Generate creative visuals for each slide: pictures, infographics, icons, and diagrams that reinforce the slide's message
-5. Use minimum 18pt font for body text to ensure readability from a distance
-6. Add a footer to every content slide (not the title slide) with: course code, university, topic, and slide number
-7. Place academic citations (e.g., Minto, 1987) in the slide footer when referenced in content
-8. Leave speaker notes sections empty
-</instructions>
+---
 
-<constraints>
-- Create exactly 28 slides, matching the lecture content one-to-one. The lecture content defines each slide explicitly, so count them to verify.
-- Preserve exact wording because students receive these slides as study materials and need consistency with what they hear in lecture recordings.
-- Keep speaker notes empty because detailed instructor notes will be added in a separate step.
-- Maintain consistent Modern Bright Pastel Corporate styling throughout for professional brand identity.
-</constraints>
+You are Google Gemini with advanced multimodal capabilities and PowerPoint generation expertise. Create a complete, professionally designed PowerPoint presentation for Week 2 of PPDK66B Personal & Professional Development.
 
-<examples>
-<example>
-<input>
-## Slide 3: The Pyramid Principle
+## Presentation Metadata
 
-**Key Concept:** Start with the answer, then provide supporting evidence
+**Course:** Personal & Professional Development (PPDK66B)
+**Institution:** National Economics University, IBD Campus
+**Program:** Bachelor of Business Administration in English (BBAE)
+**Week:** 2
+**Topic:** Career Skills in the AI Era
+**Duration:** 90 minutes
+**Instructors:** William Winterton Lang, Le Huong Lan (PhD)
 
-The Pyramid Principle (Minto, 1987):
-- Lead with your main message
-- Group supporting arguments logically
-- Present evidence in descending order of importance
+**Target Audience:** Vietnamese undergraduate business students (Year 2-3), English-medium instruction, preparing for careers in AI-augmented business environments
 
-**Why it works:** Busy executives read conclusions first
-</input>
-<output>
-Slide with pyramid/triangle infographic illustrating the hierarchy concept. All text preserved exactly as written. "Minto, 1987" citation in footer.
-</output>
-</example>
+## Slide Content to Generate
 
-<example>
-<input>
-## Slide 7: Case Study - Vinamilk Crisis Response
+Create exactly 41 slides based on the content below. Follow the layout specifications precisely for each slide.
 
-In 2013, Vinamilk faced a product recall crisis...
+---
 
-**What went right:**
-- Immediate public acknowledgment
-- Clear action plan communicated
-- Regular updates to stakeholders
+### Slide 1 (Layout: Title Slide)
+**Title:** Career Skills in the AI Era
+**Subtitle:** Week 2: Career Skills in the AI Era
+**Footer:** Personal & Professional Development | National Economics University, IBD Campus
 
-**Result:** Brand trust recovered within 6 months
-</input>
-<output>
-Case study slide with timeline or process visual showing the crisis response steps. Company imagery or relevant icons. All text preserved exactly.
-</output>
-</example>
+**Design Notes:**
+- Modern, professional aesthetic suitable for business education
+- Use clean typography with strong hierarchy
+- Incorporate subtle visual elements suggesting AI/technology theme
+- Color palette: Professional blues/grays with accent colors for emphasis
 
-<example>
-<input>
-## Slide 12: Hofstede's Cultural Dimensions
+---
 
-**Vietnam vs. United States comparison:**
-| Dimension | Vietnam | USA |
-|-----------|---------|-----|
-| Power Distance | 70 | 40 |
-| Individualism | 20 | 91 |
-| Uncertainty Avoidance | 30 | 46 |
-</input>
-<output>
-Data visualization slide with bar chart or comparison graphic showing Vietnam and USA scores across the three dimensions. Clear axis labels. "Hofstede" citation in footer.
-</output>
-</example>
+### Slide 2 (Layout: Content with Visual)
+**Title:** The Moment Everything Changed
 
-<example>
-<input>
-## Slide 9: Carol Dweck on Growth Mindset
+**Content:**
+- Section heading: "October 2025: Fortune Most Powerful Women Summit"
+- Quote callout: "Human in the loop is not enough anymore."
+- Body text: A panel of executives from Microsoft, Workday, and Guild shared a surprising admission:
 
-**[VIDEO: Carol Dweck - "The Power of Believing That You Can Improve"]**
-**Video link:** https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
-**Duration:** 10 minutes
+**The New Reality:**
+- Having a human check AI output is insufficient
+- Workers must develop JUDGMENT—not just oversight
+- AI changes what employers value in candidates
 
-**Before watching:** "Think of a time you felt 'stuck' at something."
-</input>
-<output>
-Video placeholder slide with speaker image, prominent clickable video link, duration displayed, and pre-viewing reflection question. Clean layout focusing attention on the video link.
-</output>
-</example>
+**Discussion Question:** If AI can do the routine work, what makes YOU valuable?
 
-<example>
-<input>
-## Slide 15: Section Break - Emotional Intelligence
+**Visual:** Image representing executive leadership/business summit setting
 
-# SECTION 3
+---
 
-## Emotional Intelligence
-### Understanding and Managing Emotions
+### Slide 3 (Layout: Content - Bullet Points)
+**Title:** Today's Learning Objectives
 
-*(20 minutes)*
-</input>
-<output>
-Section break slide with bold typography, contrasting background color to signal transition, section number prominent, topic and subtitle clearly visible. Timing indicator optional.
-</output>
-</example>
-</examples>
-
-<lecture_content>
-<?xml version="1.0" encoding="UTF-8"?>
-<lecture>
-<metadata>
-<course>PPDK66B Personal & Professional Development</course>
-<week>2</week>
-<topic>Career Skills in the AI Era</topic>
-<duration>90 minutes</duration>
-<slides>28</slides>
-</metadata>
-
-<slide number="1" layout="big-number" title="Hook">
-    <content>
-# 1 in 10
-
-**job seekers denied positions when AI use discovered in application materials**
-
-*(HBR Research, Niederhoffer et al. 2025)*
-    </content>
-    <speaker-notes>
-AI can help you—or it can destroy your chances before you even get to the interview. This isn't about whether to use AI—it's about HOW you use it. Employers aren't banning AI use; they're rejecting LAZY AI use. The gap between effective and ineffective AI users determines career outcomes.
-
-Example: Two candidates apply for the same internship. Both use ChatGPT. One gets the interview, the other gets rejected immediately. What's the difference?
-
-Show of hands: How many have used ChatGPT for schoolwork? How many feel confident you used it WELL? Today we're learning what separates AI pilots from AI passengers—and which one employers want to hire.
-    </speaker-notes>
-  </slide>
-
-  <slide number="2" layout="section-break" title="Week Overview">
-    <content>
-# Career Skills in the AI Era
-## Becoming a Pilot, Not a Passenger
-
-**Week 2 Focus Areas:**
-- Context engineering as the premium 2025 skill
-- The "workslop" problem destroying productivity
-- Judgment as the irreplaceable human skill
-- Practical framework for AI-assisted career prep
-    </content>
-    <speaker-notes>
-Last week we talked about the future of work and the skills employers value. Today we get specific: how do you actually BUILD those skills in an AI-saturated world? This week is intensely practical—you'll use real AI tools in tutorial. Everything we cover today applies to your Mentorship Program and Personal Development Plan. The skills you learn this week have immediate ROI: better CV, better cover letters, better interview prep.
-
-Week 1 covered critical thinking, creativity, emotional intelligence as premium skills. Week 2 shows how to DEVELOP those skills while working alongside AI.
-    </speaker-notes>
-  </slide>
-
-  <slide number="3" layout="content" title="Learning Objectives">
-    <content>
-## Today's Learning Objectives
-
+**Content:**
 By the end of this lecture, you will be able to:
 
-1. **Distinguish** context engineering from prompt engineering
-2. **Identify** the "workslop" problem and its professional impact
-3. **Explain** why judgment is the critical AI-era skill
-4. **Apply** the pilot vs. passenger mindset
-5. **Use** the Explore-Build-Connect-Refine framework
-    </content>
-    <speaker-notes>
-These objectives are actionable—you'll practice all five in tutorial. Notice we're moving from knowledge (explain, identify) to application (apply, use). Objectives 1-3 are diagnostic: What's happening in the workplace? Objectives 4-5 are strategic: How do you position yourself for success?
+1. **Apply** context engineering principles to direct AI effectively in professional tasks
+2. **Distinguish** between effective AI collaboration (pilot mindset) and passive AI dependence (passenger mindset)
+3. **Identify** AI-generated "workslop" and articulate its professional reputation risks
+4. **Evaluate** when human judgment should override AI recommendations
+5. **Use** the Explore-Build-Connect-Refine framework for AI-assisted career preparation
 
-By the end of tutorial, you'll have drafted a CV bullet using context engineering principles—not just theory. Your Mentorship Program requires reflective writing about career development. Your Personal Development Plan requires AI-assisted research on career pathways. These objectives ensure you use AI effectively in BOTH assessments.
-    </speaker-notes>
-  </slide>
+**Design Notes:** Use action verb formatting (bold) to emphasize learning outcomes
 
-  <slide number="4" layout="section-break" title="Part 1: Context Engineering">
-    <content>
-# Part 1: Context Engineering
-## The Premium Skill of 2025
-    </content>
-    <speaker-notes>
-In 2023, everyone talked about "prompt engineering." By 2025, that term is outdated. We're about to explore why this shift matters for your career development and how mastering context engineering gives you a competitive advantage in the job market.
-    </speaker-notes>
-  </slide>
+---
 
-  <slide number="5" layout="content" title="From Prompts to Context">
-    <content>
-## The Shift: Prompts → Context
+### Slide 4 (Layout: Content with Icon)
+**Title:** Connection to Your Assessment
 
-**2023: "Prompt Engineering"**
-- Short task descriptions to models
-- "Write me a cover letter for this job"
-- Focus on clever phrasing and tricks
+**Content:**
+**Assessment 1 (Week 4): Personal Future Skills Plan**
 
-**2025: "Context Engineering"**
-- Curating what AI sees in its context window
-- Providing strategic information for AI to work with
-- Focus on judgment about what matters
+Today's frameworks directly support your first assessment:
+- **Context engineering** → How you'll use AI tools for career research and skill development
+- **Pilot vs. Passenger mindset** → Demonstrating strategic thinking in your plan
+- **Judgment skills** → Evaluating which skills are genuinely needed vs. trendy
+- **Workslop awareness** → Ensuring your submission reflects authentic thinking
 
-> "People associate prompts with short task descriptions... When in every industrial-strength LLM app, context engineering is the delicate art and science of filling the context window with just the right information."
-> — **Andrej Karpathy** (Former Tesla AI Director, June 2025)
-    </content>
-    <speaker-notes>
-Who here has heard "prompt engineering"? Who has heard "context engineering"? This shift is CRUCIAL to understand. AI models in 2025 are sophisticated enough that simple prompts aren't the bottleneck. The bottleneck is: What information does the AI have ACCESS to? Think of AI like a brilliant consultant hired for one hour—what do you brief them on?
+**Tutorial This Week:** Hands-on practice using GenAI for personal branding—you'll apply every framework from today's lecture to create application materials that demonstrate judgment, not just AI competence.
 
-BAD prompt engineering: "Write me a business cover letter." GOOD context engineering: Provide the AI with (1) the job description, (2) your actual experiences relevant to that role, (3) the company's mission statement, (4) specific projects you've worked on that match their needs. Result: AI generates a targeted first draft vs. generic template.
+**Visual:** Icon representing assessment/planning document
 
-Analogy: Asking a friend to recommend a restaurant. Prompt approach: "Where should I eat?" Context approach: "I'm taking my parents out for their anniversary, they love Vietnamese fusion, they have a shellfish allergy, our budget is 500,000 VND per person, and we prefer quiet ambiance for conversation." Which gets a better recommendation?
-    </speaker-notes>
-  </slide>
+---
 
-  <slide number="6" layout="framework" title="The Goldilocks Principle">
-    <content>
-## Principle 1: The Goldilocks Zone
+### Slide 5 (Layout: Agenda/Roadmap)
+**Title:** Lecture Roadmap
 
-**Too Rigid:**
-- "Use exactly these words: 'I am writing to express my interest...'"
-- AI becomes brittle and robotic
-- Output sounds obviously AI-generated
+**Content:**
+**Part 1: The New Skill—Context Engineering (20 min)**
+- From prompt engineering to context engineering
+- Three foundational principles
+- Immediate career applications
 
-**Too Vague:**
-- "Make it sound professional"
-- AI makes unpredictable choices
-- Output misses the mark
+**Part 2: The Human Advantage—Judgment (20 min)**
+- Why "human in the loop" isn't enough
+- The pilot vs. passenger mindset
+- What executives actually want
 
-**Just Right:**
-- "Adopt a confident but humble tone; emphasize collaboration"
-- AI has creative freedom within strategic boundaries
-- Output sounds authentically human-crafted
+**Part 3: The Hidden Risk—Workslop (20 min)**
+- AI's productivity paradox
+- Professional reputation damage
+- The 30-second test
 
-**Key Insight:** Find the optimal "altitude" between overly specific and overly general
-    </content>
-    <speaker-notes>
-You know the Goldilocks story—not too hot, not too cold, just right. Same principle applies to AI instructions. Students often make two mistakes: over-controlling AI (trying to dictate every word) resulting in robotic output, or under-guiding AI (no strategic direction) resulting in generic, off-target content. The sweet spot: Give AI strategic constraints but room to write naturally.
+**Part 4: The Practical Framework—Career Preparation (20 min)**
+- Explore-Build-Connect-Refine
+- AI-assisted CVs, cover letters, interviews
+- Verification and authenticity
 
-Real example: Too rigid: "Start with 'Dear Hiring Manager' and use the word 'synergy' in the second paragraph." Too vague: "Write a good cover letter." Just right: "Write a cover letter that demonstrates both technical competence and cultural fit. The company values innovation and collaboration—show how my internship project exemplifies both."
+**Design Notes:** Visual timeline or pathway showing the four parts
 
-Students often think more detailed instructions equal better output. Actually, over-specification leads to stilted, obviously AI-written content. Judgment is required to find the Goldilocks zone.
-    </speaker-notes>
-  </slide>
+---
 
-  <slide number="7" layout="content" title="Minimum Effective Dose">
-    <content>
-## Principle 2: Minimum Effective Dose
+### Slide 6 (Layout: Section Divider)
+**Content:**
+Part 1
+
+**Main Text:** Context Engineering: The Premium Skill Replacing Prompt Engineering
+
+**Design Notes:** Full-bleed section break with strong typography and subtle tech-themed visual
+
+---
+
+### Slide 7 (Layout: Comparison - Two Column)
+**Title:** What Is Context Engineering?
+
+**Left Column - Old Paradigm: Prompt Engineering (2023-2024)**
+- Writing clever instructions for AI
+- Focus: "How do I phrase this request?"
+- Skill: Crafting the perfect command
+
+**Right Column - New Paradigm: Context Engineering (2025+)**
+- Curating what AI "sees" before it responds
+- Focus: "What information does AI need?"
+- Skill: Strategic information selection
+
+**Bottom Section:**
+**Why the Shift?**
+Modern AI models (like Claude 3.7, GPT-4.5, Gemini 2.0) can follow instructions brilliantly—but they need the RIGHT CONTEXT to produce valuable work.
+
+**Quote:** "Context engineering is the delicate art and science of filling the context window with just the right information." — Andrej Karpathy, Former Director of AI, Tesla (June 2025)
+
+---
+
+### Slide 8 (Layout: Framework/Diagram)
+**Title:** Framework 1: The Goldilocks Zone
+
+**Content:**
+Finding the Optimal "Altitude" for Your Instructions
+
+**Visual Diagram showing three levels:**
+
+**TOO RIGID (Brittle)**
+"Use exactly 3 bullet points, 12 words each, starting with action verbs..."
+↓
+❌ Breaks when situation requires flexibility
+
+**GOLDILOCKS ZONE (Just Right)**
+"Summarize key points clearly, using bullet points where appropriate..."
+↓
+✓ AI adapts to context while following intent
+
+**TOO VAGUE (Unpredictable)**
+"Make it good..."
+↓
+❌ AI must guess what you want
+
+**Bottom:** The Principle: Instructions should guide behavior without over-specifying format.
+
+**Design Notes:** Use color coding (red for bad, green for good) and arrows showing flow
+
+---
+
+### Slide 9 (Layout: Framework with Visual)
+**Title:** Framework 2: Minimum Effective Dose
+
+**Content:**
+**Less Information, Better Results**
 
 **The Principle:**
-> "Find the smallest possible set of high-signal tokens that maximize the likelihood of some desired outcome"
-> — **Anthropic Engineering Team** (2025)
+"Find the smallest possible set of high-signal tokens that maximize the likelihood of some desired outcome."
+
+**Why This Matters:**
+- More information ≠ Better outputs
+- Strategic selection beats comprehensive data dumps
+- Forces YOU to think critically about what matters
+
+**Career Application Example:**
+❌ **Bad:** Paste entire job description + your full CV → "Write cover letter"
+✓ **Good:** Identify 3 key job requirements + your 2 most relevant experiences → "Connect these qualifications to these requirements"
+
+**Discussion:** Why would MORE information sometimes produce WORSE results?
+
+**Visual:** Icon or graphic representing signal vs. noise, or essential vs. excessive information
+
+---
+
+### Slide 10 (Layout: Framework with Metaphor)
+**Title:** Framework 3: The Attention Budget
+
+**Content:**
+**Context as a Finite, Precious Resource**
+
+**The Metaphor:**
+AI's attention is like a spotlight—it illuminates everything in its beam, but the larger the area, the dimmer the light on any single object.
+
+**Technical Reality:**
+- Large Language Models have context windows (e.g., 200,000 tokens)
+- But attention "stretches thin" across large contexts
+- Important details can get lost in information overload
+
+**Strategic Implication:**
+Treat AI's context window like your bank account—spend carefully on high-value information.
+
+**Mini-Activity:** Look at your phone's most recent message to someone. If you had to cut 50% of the words while keeping the meaning, which words would you keep? That's attention budget thinking.
+
+**Visual:** Spotlight or budget/resource allocation imagery
+
+---
+
+### Slide 11 (Layout: Side-by-Side Comparison)
+**Title:** Context Engineering in Action: CV Writing
+
+**Scenario:** You're applying for a marketing analyst role. The job emphasizes "data-driven storytelling."
+
+**Left Column - Passenger Approach (Weak Context Engineering):**
+```
+"Here's my CV. Improve it."
+[Pastes entire CV with 8 years of unrelated experience]
+```
+**Result:** Generic improvements, no strategic focus
+
+**Right Column - Pilot Approach (Strong Context Engineering):**
+```
+Context: "This role requires data-driven storytelling. Here are 3 projects where I translated data insights into compelling narratives: [specific examples]. The job description emphasizes Tableau skills and A/B testing experience."
+
+Request: "Help me reorganize my CV to lead with data storytelling skills, emphasizing these 3 projects. Suggest metrics to quantify impact."
+```
+**Result:** Strategically tailored CV highlighting relevant strengths
+
+**Design Notes:** Use contrasting visual treatment to emphasize difference
+
+---
+
+### Slide 12 (Layout: Quote Slide)
+**Content:**
+"People associate prompts with short task descriptions... When in every industrial-strength LLM app, context engineering is the delicate art and science of filling the context window with just the right information."
+
+**Attribution:** — Andrej Karpathy, Former Director of AI, Tesla (June 2025)
+
+**Design Notes:** Large, impactful quote treatment with attribution clearly visible
+
+---
+
+### Slide 13 (Layout: Key Takeaways)
+**Title:** Key Takeaway: Context Engineering
+
+**Content:**
+**What You Should Remember:**
+
+1. Context engineering is about **curating** what AI sees, not just what you tell it to do
+2. Three core principles:
+   - **Goldilocks Zone**: Not too rigid, not too vague
+   - **Minimum Effective Dose**: Strategic selection over information dumps
+   - **Attention Budget**: Context is finite and precious
+3. This skill separates **pilots** (strategic users) from **passengers** (passive users)
+4. Immediate application: Every time you use AI, ask yourself: "What context would help AI give me the best possible response?"
+
+**In tutorial:** You'll practice context engineering on your own career materials.
+
+**Visual:** Summary icon or checklist visual
+
+---
+
+### Slide 14 (Layout: Section Divider)
+**Content:**
+Part 2
+
+**Main Text:** Human Judgment: Why "Human in the Loop" Is No Longer Enough
+
+**Design Notes:** Full-bleed section break with different color treatment from Part 1
+
+---
+
+### Slide 15 (Layout: Content with Executive Images)
+**Title:** The Judgment Crisis: What Executives Are Saying
+
+**Content:**
+**Fortune Most Powerful Women Summit, October 2025**
+
+**Aashna Kircher (Workday, Chief Innovation Officer):**
+"I don't think we are thoughtfully enough educating people about how to be good at judgment. That's a step we will have to take as a civilization, honestly, in the next three to five years."
+
+**Katy George (Microsoft, Chief People Officer):**
+Employees who thrive will demonstrate:
+- Sound judgment in ambiguous situations
+- Ability to delegate effectively to AI agents
+- Quality control over AI outputs
+- Design-thinking mindset for complex problems
+
+**The Urgent Question:** If AI can analyze data and generate recommendations instantly, what does HUMAN judgment actually mean?
+
+**Visual:** Professional headshots or representative executive imagery
+
+---
+
+### Slide 16 (Layout: Progression/Levels)
+**Title:** Beyond Human in the Loop: The Three Levels
+
+**Content:**
+
+**Level 1: Human in the Loop (2023-2024 Standard)**
+- AI generates outputs
+- Human reviews and approves
+- Good enough for routine tasks
+
+**Level 2: Human at the Helm (Current Expectation)**
+- Human sets strategic direction BEFORE AI involvement
+- AI executes tactical work
+- Human evaluates alignment with strategic intent
+
+**Level 3: Judgment Integration (Premium Skill)**
+- Human brings domain expertise, contextual awareness, ethical reasoning
+- AI brings data processing, pattern recognition, speed
+- Synthesis creates insights neither could achieve alone
+
+**Discussion:** Think of a recent decision you made. How would AI have approached it differently? What human factors did you consider that AI couldn't?
+
+**Design Notes:** Show as ascending levels or progression pathway
+
+---
+
+### Slide 17 (Layout: Framework - Two Column Comparison)
+**Title:** Framework 4: The Pilot vs. Passenger Mindset
+
+**Content:**
+**Two Ways to Work with AI**
+
+**Left Column - PASSENGER MINDSET:**
+- Leans on AI to avoid hard thinking
+- Treats AI as answer generator
+- Produces outputs that "look polished but ring hollow"
+- Abdicates responsibility for quality
+- **Result:** Work lacks authenticity and strategic insight
+
+**Right Column - PILOT MINDSET:**
+- Uses AI as thought partner, not answer machine
+- Actively steers AI with judgment and framing
+- Treats AI outputs as starting points for refinement
+- Takes responsibility for final deliverable quality
+- **Result:** Work demonstrates human judgment augmented by AI capability
+
+**Critical Question:** When you last used AI for an assignment, were you a pilot or a passenger?
+
+**Design Notes:** Use contrasting visuals (airplane pilot vs. passenger imagery)
+
+---
+
+### Slide 18 (Layout: Case Study)
+**Title:** Judgment in Action: The Case Method
+
+**Content:**
+**Scenario:** Your company is considering whether to expand into a new market. AI provides:
+- Market size projections
+- Competitor analysis
+- Risk assessment scores
+- Financial modeling
+
+**Questions Only Human Judgment Can Answer:**
+1. Does this align with our company's **values** and long-term **vision**?
+2. What **relationships** and **cultural dynamics** might affect success?
+3. Is the **timing** right given current organizational capacity?
+4. What **unintended consequences** might emerge that data doesn't reveal?
+5. Would I feel proud explaining this decision to our stakeholders in 5 years?
+
+**Key Insight:** AI can process infinite data. Humans must decide what matters and why.
+
+**Visual:** Business scenario illustration or decision-making imagery
+
+---
+
+### Slide 19 (Layout: Content with Icon)
+**Title:** Developing Judgment: The Chief Experimentation Officer Mindset
+
+**Content:**
+**Katy George (Microsoft):** Every manager must become a "Chief Experimentation Officer"
 
 **What This Means:**
-- More information ≠ better results
-- Strategic selection > comprehensive dumping
-- AI has limited "attention"—use it wisely
-
-**Application to Career Documents:**
-- DON'T: Copy your entire academic transcript + every course description + all club activities into AI
-- DO: Curate the 3-5 most relevant experiences that match the job requirements
-
-**Why This Matters:**
-- Dumping everything dilutes what's important
-- AI struggles to identify what matters most
-- You maintain strategic control
-    </content>
-    <speaker-notes>
-This principle goes against student instincts. You think: "If I give AI MORE information, the output will be better." That's often wrong. The phrase "minimum effective dose" comes from medicine. A doctor doesn't prescribe maximum medication—they prescribe the MINIMUM dose that achieves the therapeutic effect. Same with AI: minimum information that achieves your communication goal.
-
-Example: Student applying for marketing internship at VinGroup. Has experiences in: business club, volunteer teaching, data analytics course, social media project, part-time retail job. Minimum effective dose: social media project (directly relevant) + data analytics (demonstrates analytical thinking valued in marketing). DON'T include: volunteer teaching (unless the role involves education), retail job (generic), business club (unless specific relevant project).
-
-Students have been trained to be comprehensive in academic work. Business communication requires CURATION, not comprehensiveness. Context engineering equals exercising judgment about what matters.
-    </speaker-notes>
-  </slide>
-
-  <slide number="8" layout="content" title="The Attention Budget">
-    <content>
-## Principle 3: The Attention Budget
-
-**The Concept:**
-- LLMs have finite attention that "gets stretched thin" with larger contexts
-- Like human working memory—you can only focus on so much at once
-- Context is a precious, finite resource with diminishing returns
-
-**Practical Implications:**
-
-| Context Size | AI Performance | Your Strategy |
-|--------------|---------------|---------------|
-| 200 words | Highly focused | Ideal for specific tasks |
-| 1,000 words | Balanced | Good for complex documents |
-| 5,000 words | Attention dilution begins | Only if truly necessary |
-| 20,000 words | Significant degradation | Avoid—break into chunks |
-
-**Key Takeaway:** Be selective, not comprehensive
-    </content>
-    <speaker-notes>
-Think of AI's context window like your own working memory during an exam. If I gave you 5 essay questions, you'd perform better than if I gave you 50—even if you only have to answer 5. Why? Cognitive load. AI has the same limitation.
-
-Anthropic's research shows attention degradation with longer contexts. This isn't a technological limitation to be fixed—it's inherent to how these models work. Students who understand this have a competitive advantage.
-
-Practical demonstration: You need AI to help tailor your CV for a specific job. Option A: Paste the 10-page job description, your full CV, company annual report, LinkedIn profile. Option B: Extract the 5 key requirements from job description, select the 3 most relevant CV experiences, identify company's stated mission. Option B will produce better results despite less information.
-
-This is WHY executives value concision—it's not just about saving time. Focused information enables better decision-making (whether human or AI is deciding). You're developing executive communication habits.
-    </speaker-notes>
-  </slide>
-
-  <slide number="9" layout="section-break" title="Part 2: The Workslop Problem">
-    <content>
-# Part 2: The Workslop Problem
-## Why Bad AI Use Destroys Careers
-    </content>
-    <speaker-notes>
-We've covered the positive—how to use AI well. Now we need to talk about the serious risks of using it poorly. This section might make you uncomfortable. That's intentional. The stakes are high. Understanding what NOT to do is just as important as knowing best practices.
-    </speaker-notes>
-  </slide>
-
-  <slide number="10" layout="content" title="What Is Workslop">
-    <content>
-## Introducing "Workslop"
-
-**Definition:**
-AI-generated content that appears polished but lacks real substance, insight, or authentic human thinking
-
-**The Experience:**
-> "You might recall the feeling of confusion after opening such a document, followed by frustration"
-> — **Niederhoffer et al., HBR (2025)**
-
-**Characteristics:**
-- Superficially professional formatting
-- Generic, templated language
-- No specific insights or original thinking
-- Obvious lack of human judgment
-- Recipient knows immediately something is "off"
-    </content>
-    <speaker-notes>
-Has anyone received an email that looked professional but when you read it, you realized the person hadn't actually thought about what they were saying? That's workslop. And in 2025, it's an epidemic.
-
-The term is a portmanteau of "work" plus "slop"—coined by researchers studying AI's productivity impact. It captures the low-quality, mass-produced feel of lazy AI outputs.
-
-Example email: "Dear Team, I hope this email finds you well. I wanted to reach out regarding the deliverables we discussed in our last meeting. It is important that we align on expectations and ensure all stakeholders are informed of the strategic priorities moving forward. Please advise on your availability for a follow-up discussion. Best regards."
-
-What's wrong with this email? No specific information, no clear ask, no evidence of actual thinking—just AI-generated filler. When you submit a workslop cover letter, employers NOTICE. When you send workslop emails during internship, colleagues NOTICE. Your professional reputation is at stake from day one.
-    </speaker-notes>
-  </slide>
-
-  <slide number="11" layout="content" title="The Workslop Statistics">
-    <content>
-## The Hidden Cost of Workslop
-
-**Impact on Recipients:**
-- 41% of workers have encountered workslop
-- ~2 hours of rework per workslop incident
-- 53% felt annoyed by workslop
-- 22% felt offended by receiving it
-- 50% view the sender as less capable
+- **Continuous experimentation:** Test AI tools, iterate, adapt
+- **Comfort with ambiguity:** No fixed playbook for AI integration
+- **Learning from failure:** Not every AI experiment succeeds
+- **Systematic reflection:** What worked? What didn't? Why?
 
-**Organizational Costs:**
-- $186/month invisible productivity tax per worker
-- 95% of AI projects fail to show ROI (MIT Media Lab)
+**How to Start NOW:**
+1. **Try → Reflect → Adjust:** Use AI for a task, evaluate the result, change your approach
+2. **Compare:** Do the same task with and without AI. What differences do you notice?
+3. **Track:** Keep a log of AI successes and failures. Patterns will emerge.
+4. **Discuss:** Talk with peers about their AI experiences. Learn from diverse approaches.
 
-**Career Impact:**
-- 1 in 10 job seekers denied positions when AI use discovered
-- Workslop damages professional relationships long-term
+**Visual:** Experimentation/laboratory theme or continuous improvement cycle
 
-**Source:** Niederhoffer et al. (2025), HBR
-    </content>
-    <speaker-notes>
-These aren't hypothetical risks. This is data from 2025 workplace studies. Let's walk through each statistic:
+---
 
-41% encounter rate: Almost half of professionals are dealing with workslop regularly. Your future colleagues are already frustrated by this. Standing out by NOT producing workslop is a competitive advantage.
+### Slide 20 (Layout: Key Takeaways)
+**Title:** Key Takeaway: Human Judgment
 
-2 hours of rework: When you send workslop to a manager or colleague, THEY have to spend time clarifying what you actually meant. You're not saving time—you're transferring work to others. This damages your reputation fast.
+**Content:**
+**What You Should Remember:**
 
-53% annoyed, 22% offended: People feel disrespected when they receive obvious AI slop. It signals "I didn't care enough to think about this." Especially damaging in Vietnamese context where respect and effort are highly valued.
+1. **"Human in the loop" is insufficient**—you must be "human at the helm" demonstrating judgment
+2. **Pilot vs. Passenger mindset** determines career outcomes:
+   - Pilots use AI as thought partner
+   - Passengers use AI as answer generator
+3. **Judgment addresses questions AI cannot:**
+   - Strategic alignment, ethical implications, cultural context, relationship dynamics
+4. **Develop the "Chief Experimentation Officer" mindset:**
+   - Continuous testing, systematic reflection, learning from failure
 
-50% view sender as less capable: This is the career killer. Using AI poorly makes people think you CAN'T think critically. Employers ask: "If they can't judge when AI output is good, can they make ANY business judgment?"
+**Immediate Action:** Next time you use AI, pause before accepting its output. Ask: "Does this reflect MY judgment and strategic thinking, or am I just accepting what AI produced?"
 
-1 in 10 job seekers rejected: Recruiting teams are now trained to spot AI-generated applications. Not because they oppose AI use—because they oppose LAZY use. Your competition isn't students who don't use AI; it's students who use it WELL.
+**Visual:** Summary checklist or key points visual
 
-Imagine spending hours on an application, only to be auto-rejected because AI detector flagged your cover letter. Or worse: getting the interview, then being asked about something in your cover letter you didn't actually write.
-    </speaker-notes>
-  </slide>
+---
 
-  <slide number="12" layout="framework" title="Pilot vs. Passenger">
-    <content>
-## Two Mindsets, Two Outcomes
+### Slide 21 (Layout: Section Divider)
+**Content:**
+Part 3
 
-**PASSENGERS:**
-- Lean on AI to avoid hard work
-- Copy-paste AI output without editing
-- Produce content that "looks polished but rings hollow"
-- Treat AI as a shortcut, not a tool
-- **Result:** Workslop that damages reputation
+**Main Text:** The Hidden Risk: AI-Generated "Workslop" and Professional Reputation
 
-**PILOTS:**
-- Actively steer AI with judgment
-- Use AI as springboard for insight, not replacement for thinking
-- Frame problems strategically before asking AI
-- Edit and refine outputs critically
-- **Result:** Enhanced work that showcases both AI capability and human judgment
+**Design Notes:** Full-bleed section break with warning/alert aesthetic
 
-**The Question:**
-Are you in control, or are you along for the ride?
-    </content>
-    <speaker-notes>
-This metaphor from the HBR research is perfect. When you're in a plane, who do you want flying it? Same question for your career: Are you the pilot or the passenger?
+---
 
-Passenger behaviors (what NOT to do): Open ChatGPT, say "Write me a cover letter for this job," copy entire output, submit. No strategic thinking about what makes YOU a good fit. No judgment about whether AI's framing is appropriate. No editing to ensure the voice sounds authentically yours. Essentially: outsourcing thinking to AI.
+### Slide 22 (Layout: Content with Statistics)
+**Title:** What Is Workslop?
 
-Pilot behaviors (what TO do): BEFORE asking AI: "What are the 3 most important things this employer needs to know about me?" Frame the task: "I need help articulating how my data analytics project demonstrates problem-solving skills." Review AI output critically: "This paragraph is too generic—I need a specific example." Edit extensively: AI provides raw material, YOU craft the final product. Essentially: Using AI to enhance your thinking, not replace it.
+**Content:**
+**Definition (Stanford + BetterUp Labs, September 2025):**
+AI-generated content that appears polished but lacks substantive insights, strategic thinking, or authentic human judgment.
 
-Critical distinction: Passengers treat AI as autopilot. Pilots treat AI as co-pilot—AI provides options, YOU make decisions.
+**You've Experienced Workslop If:**
+- You opened a document that looked professional but left you confused about the main point
+- You read an email that used many words to say very little
+- You received a report with impressive formatting but no actionable recommendations
 
-Self-reflection: Think about the last time you used AI for schoolwork. Be honest: Were you a pilot or passenger? If you were a passenger, what would piloting have looked like?
+**The Hidden Epidemic:**
+- **41% of workers** have encountered workslop from colleagues
+- **53% felt annoyed** when they received workslop
+- **22% felt offended** that someone wasted their time
+- **50% view workslop senders as less capable professionals**
 
-In Vietnamese professional culture, thorough preparation and attention to detail are respected. Submitting workslop is like showing up to a meeting unprepared—it signals disrespect. Being a "pilot" aligns with cultural values of diligence and care.
-    </speaker-notes>
-  </slide>
+**Visual:** Statistics displayed as infographic elements
 
-  <slide number="13" layout="section-break" title="Part 3: Judgment as the Premium Skill">
-    <content>
-# Part 3: Judgment as the Premium Skill
-## What AI Can't Replace
-    </content>
-    <speaker-notes>
-We've talked about HOW to use AI. Now let's talk about what makes YOU irreplaceable. This is where understanding the human role in AI collaboration becomes critical for your long-term career success.
-    </speaker-notes>
-  </slide>
+---
 
-  <slide number="14" layout="content" title="Beyond Human in the Loop">
-    <content>
-## The Judgment Imperative
+### Slide 23 (Layout: Content with Diagram)
+**Title:** The Productivity Paradox: Why AI Often Increases Workload
 
-**2024: "Human in the Loop"**
-- Humans monitor AI outputs
-- Humans provide oversight
-- Passive role: approval or rejection
+**Content:**
+**The Promise vs. The Reality**
 
-**2025: "Human at the Helm"**
-- Humans make strategic decisions AI can't
-- Humans exercise judgment in ambiguous situations
-- Active role: direction and discernment
+**The Promise:** AI will save time and boost productivity
 
-> "I don't think that we are thoughtfully enough educating people about how to be good at judgment. That's a step that we will have to take as a civilization, honestly, in the next three to five years."
-> — **Aashna Kircher**, VP of People Analytics, Workday (October 2025)
-    </content>
-    <speaker-notes>
-In 2024, executives talked about keeping "humans in the loop"—meaning someone checks AI's work. By 2025, executives realized that's not enough. The limitation of "human in the loop" is that it implies humans are just quality checkers—reactive, not proactive. It doesn't capture where humans add UNIQUE value.
+**The Reality (2025 Data):**
+- **95% of AI projects** fail to show positive ROI (MIT Media Lab)
+- **~2 hours of rework** per workslop incident
+- **$186/month** invisible productivity tax per worker who regularly receives workslop
+- Workers spend time deciphering, questioning, and correcting AI-generated content
 
-The evolution to "human at the helm" recognizes humans make decisions AI cannot. It's about proactive strategic thinking. Judgment as the core differentiator.
+**Why This Happens:**
+When people use AI as a shortcut rather than a thought partner, they create work that looks complete but requires extensive rework by others.
 
-What IS judgment? The ability to make sound decisions when there's no clear "right" answer. Weighing tradeoffs, considering context, evaluating risks. Synthesizing data WITH values, ethics, stakeholder needs. This cannot be automated—it's inherently human.
+**The Asana Paradox (2025):** 90% of highly productive workers report AI creates MORE coordination work initially.
 
-Workday executive quote analysis: Major HR tech company executive saying this publicly signals importance. "Not thoughtfully enough educating people" equals gap in education systems. "A step we will have to take as a civilization" equals fundamental shift needed. You're ahead of the curve by developing this skill NOW.
-    </speaker-notes>
-  </slide>
+**Visual:** Paradox or cycle diagram showing increased workload
 
-  <slide number="15" layout="content" title="What Executives Want">
-    <content>
-## The Skills Hiring Managers Seek (2025)
+---
 
-**Microsoft's Katy George (Former McKinsey Partner):**
+### Slide 24 (Layout: Framework Checklist)
+**Title:** Framework 5: The 30-Second Test
 
-Employees who thrive demonstrate:
-1. **Sound judgment**
-2. **Effective delegation to AI agents**
-3. **Quality control over AI outputs**
-4. **Design-thinking mindset**
+**Content:**
+**Before Submitting ANY AI-Assisted Work, Ask:**
 
-**NACE Employer Survey (2025):**
+"Would a colleague reviewing this for 30 seconds recognize it as thoughtful human work or AI-generated filler?"
 
-Top competencies employers seek:
-1. Communication
-2. Critical thinking
-3. ...both developed by using AI as thought partner, not answer generator
+**Red Flags That Indicate Workslop:**
+1. **Generic phrasing**: "It's important to note that...", "In today's fast-paced business environment..."
+2. **Lack of specifics**: Broad statements without concrete examples or data
+3. **No clear argument**: Points are listed but not connected to a strategic conclusion
+4. **Missing context**: Assumes reader has background knowledge they may not have
+5. **Surface-level analysis**: Identifies obvious points without deeper insight
 
-**The Pattern:** Human skills are now premium skills
-    </content>
-    <speaker-notes>
-This is data from October 2025—what employers are ACTUALLY hiring for right now. Katy George is a former McKinsey partner, now at Microsoft leading people strategy. These aren't soft preferences; these are hiring criteria. Notice: "Sound judgment" is number one, before any technical skills.
+**Green Flags That Indicate Thoughtful Work:**
+1. **Specific examples** tied to YOUR context
+2. **Clear strategic recommendation** with reasoning
+3. **Acknowledgment of tradeoffs** and alternative perspectives
+4. **Evidence of domain knowledge** that AI couldn't have without your input
 
-Breaking down the four skills:
+**Design Notes:** Use red/green color coding for flags
 
-Sound judgment: Can you make good decisions when AI gives you three options? Can you identify when AI is confidently wrong? Can you weigh business tradeoffs AI doesn't understand?
+---
 
-Effective delegation to AI: Knowing WHAT to ask AI to do vs. what YOU should do. This is exactly what context engineering enables. Pilots delegate well; passengers don't delegate—they abdicate.
+### Slide 25 (Layout: Content with Warning)
+**Title:** Workslop in Job Applications: The Career Risk
 
-Quality control over AI outputs: The workslop detector skill. Can you tell when AI output is good enough vs. needs refinement? Your 30-second test: Would you bet your professional reputation on this output?
+**Content:**
+**Sobering Statistics from 2025 Research:**
 
-Design-thinking mindset: Iterative problem-solving. Not expecting perfect first drafts from AI. Comfortable with experimentation and refinement.
+- **1 in 10 job seekers** were denied positions when employers discovered AI use in application materials
+- Recruiters can increasingly detect AI-generated cover letters
+- Employers are developing "authenticity screening" processes
 
-NACE Survey: National Association of Colleges and Employers—the authoritative source on what employers want. Communication and critical thinking have been top skills for years. What changed in 2025: How you DEVELOP these skills (using AI as thought partner).
+**What Went Wrong:**
+- Generic cover letters that could apply to any company
+- CVs restructured by AI without strategic personalization
+- Interview answers that sound rehearsed and lack genuine reflection
 
-Key insight for students: The more AI can do routine work, the MORE valuable human skills become. You're not competing with AI; you're competing with other humans who use AI well. Developing judgment NOW gives you 3-5 year career advantage.
-    </speaker-notes>
-  </slide>
+**The Paradox:**
+- AI can help you prepare application materials
+- But AI-generated materials that lack YOUR authentic voice and judgment will get rejected
 
-  <slide number="16" layout="content" title="The Chief Experimentation Officer">
-    <content>
-## Cultivating Experimental Mindset
+**Solution:** Use AI as thought partner (pilot) not answer generator (passenger)
 
-**The Shift:**
-From "What's the right way to use AI?"
-To "How can I experiment and learn what works?"
+**Visual:** Warning or alert icon with job search imagery
 
-**Why This Matters:**
-- AI tools evolve every month
-- No one has "figured out" the perfect approach
-- Continuous experimentation is the only sustainable strategy
+---
 
-**Your Role:**
-- Test different approaches with AI
-- Reflect on what produces quality vs. workslop
-- Iterate based on feedback
-- Build judgment through repeated practice
+### Slide 26 (Layout: Quote Slide)
+**Content:**
+"You might recall the feeling of confusion after opening such a document, followed by frustration. You might have had to spend hours on something that should have taken just one, or found yourself in meetings that could have been avoided."
 
-**Application to Career Development:**
-- Experiment with AI for resume optimization
-- Test different approaches to cover letter framing
-- Learn from what resonates vs. what falls flat
-    </content>
-    <speaker-notes>
-Microsoft executive quoted in the Fortune article said: "Every manager must be a Chief Experimentation Officer." That applies to you as you develop your career skills.
+**Attribution:** — Stanford + BetterUp Labs Research, Harvard Business Review (September 2025)
 
-The experimentation mindset: You won't get AI use right on first try—that's okay. The goal is continuous improvement through testing and learning. This is exactly what your Mentorship Program enables (safe space to experiment with professional feedback).
+**Design Notes:** Emotive quote treatment emphasizing frustration/confusion
 
-Practical examples:
+---
 
-Experiment 1—CV bullet points: Try 3 approaches with AI. Approach A: "Make this bullet point more professional." Approach B: "Reframe this experience to highlight analytical skills." Approach C: "This bullet is about a data project. The job values 'data-driven decision making.' Help me connect these." Which produces the best result? You're building judgment.
+### Slide 27 (Layout: Key Takeaways)
+**Title:** Key Takeaway: Avoiding Workslop
 
-Experiment 2—Cover letter tone: Draft 1: Formal, traditional Vietnamese business style. Draft 2: Western confident, achievement-focused style. Draft 3: Hybrid—respectful but demonstrating initiative. Get feedback from mentor on which resonates for target company culture.
+**Content:**
+**What You Should Remember:**
 
-The learning cycle: Form hypothesis about what will work, test with AI assistance, evaluate quality of output, reflect on what made the difference, apply learning to next iteration.
+1. **Workslop is AI-generated content that looks polished but lacks substance**—and it destroys professional credibility
+2. **The statistics are damning:**
+   - 41% of workers have encountered workslop
+   - 50% view workslop creators as less capable
+   - 1 in 10 job seekers rejected when AI use detected
+3. **Use the 30-Second Test** before submitting any AI-assisted work
+4. **AI amplifies your thinking—or reveals its absence**:
+   - Pilot mindset → AI helps you articulate strategic insights
+   - Passenger mindset → AI generates hollow filler
 
-Connection to assessment: Your Mentorship Program reflections should document these experiments. Your Personal Development Plan should show evidence of iterative improvement. You're not graded on getting it perfect first time—you're graded on demonstrating learning.
+**Immediate Action:** Review something you created with AI assistance. Does it pass the 30-Second Test? If not, what would you add to demonstrate YOUR judgment?
 
-Avoiding perfectionism: Students often freeze waiting for the "right" answer. Experimentation mindset equals permission to try, fail, learn. Every "failed" experiment builds judgment.
-    </speaker-notes>
-  </slide>
+**Visual:** Quality control or verification imagery
 
-  <slide number="17" layout="section-break" title="Part 4: Practical Framework">
-    <content>
-# Part 4: Practical Framework
-## AI-Assisted Career Development
-    </content>
-    <speaker-notes>
-Everything we've covered—context engineering, avoiding workslop, exercising judgment—comes together in this framework. Developed by career services professionals specifically for students like you. This is where theory meets practice.
-    </speaker-notes>
-  </slide>
+---
 
-  <slide number="18" layout="framework" title="Explore-Build-Connect-Refine">
-    <content>
-## The Career Preparation Framework
+### Slide 28 (Layout: Section Divider)
+**Content:**
+Part 4
 
-**EXPLORE:** Map possibilities and surface gaps
-**BUILD:** Learn through iterative practice
-**CONNECT:** Communicate and network with purpose
-**REFINE:** Test, adapt, and verify
+**Main Text:** The Practical Framework: AI-Assisted Career Preparation Done Right
 
-**Source:** Chremos & Repetto (2025), Inside Higher Ed
+**Design Notes:** Full-bleed section break with practical/actionable aesthetic
 
-**Key Principle:** AI as thought partner, not answer generator
+---
 
-**Result:** Career materials that reflect authentic YOU, enhanced by AI capability
-    </content>
-    <speaker-notes>
-This framework comes from university career services directors—people who place hundreds of students in jobs every year. They've seen what works and what doesn't in 2025.
+### Slide 29 (Layout: Four-Stage Process)
+**Title:** Framework 6: Explore-Build-Connect-Refine
 
-Overview: Four sequential stages, each with specific AI use cases. Not linear—you'll loop back as you develop. Aligns perfectly with your Mentorship Program and Personal Development Plan.
+**Content:**
+**A Four-Stage Approach to AI-Assisted Career Development**
 
-Why four stages? EXPLORE equals self-awareness (what possibilities exist?). BUILD equals skill development (how do I prepare?). CONNECT equals relationship building (who can help?). REFINE equals quality control (is this good enough?).
+**Stage 1: EXPLORE—Map possibilities and surface gaps**
+- Use AI to infer competencies from coursework
+- Compare your skills against job postings
+- Identify scholarship/fellowship opportunities
+- Understand communication norms in target industries
 
-Framework philosophy: AI helps you think through each stage. YOU make the strategic decisions. Combines AI efficiency with human judgment.
+**Stage 2: BUILD—Learn through iterative practice**
+- Experiment with CV architectures (chronological vs. skills-based)
+- Create mock interview questions
+- Generate individual development plans
+- Overcome "blank-page intimidation" in writing
 
-Preview: Next four slides break down each stage with specific activities. Pay attention to which stage you're currently weakest in. Tutorial will have you practice activities from YOUR gap area.
-    </speaker-notes>
-  </slide>
+**Stage 3: CONNECT—Communicate and network with purpose**
+- Rehearse elevator pitches with AI roleplaying different audiences
+- Simulate informational interviews
+- Draft outreach messages for personalization
+- Explore networking strategies
 
-  <slide number="19" layout="content" title="Stage 1: EXPLORE">
-    <content>
-## EXPLORE: Map Possibilities & Surface Gaps
+**Stage 4: REFINE—Test, adapt, and verify**
+- Simulate reviewer critiques
+- A/B test narrative approaches
+- Identify jargon and unclear transitions
+- **CRITICAL:** Verify all references, deadlines, and claims against primary sources
 
-**Objective:** Use AI to expand your awareness of career options and identify skill gaps
+**Design Notes:** Show as four-stage pathway or cycle
 
-**AI-Assisted Activities:**
-1. Infer competencies from your coursework and projects
-2. Compare your skills against current job postings in target industries
-3. Generate scholarship/fellowship opportunity matrices
-4. Describe communication norms in different workplace settings
+---
 
-**Example Prompts:**
-- "I've completed courses in microeconomics, data analytics, and business communication. I led a team project analyzing consumer behavior. What competencies could I claim based on these experiences?"
-- "I'm interested in management consulting in Vietnam. What skills do top firms like McKinsey, BCG, and Bain prioritize in job postings?"
+### Slide 30 (Layout: Content with Examples)
+**Title:** Stage 1: EXPLORE—Practical Applications
 
-**Pilot Behavior:** You curate which experiences to highlight; AI helps you see patterns
-    </content>
-    <speaker-notes>
-The EXPLORE stage is about expanding your mental map. Most students underestimate their own competencies—AI can help surface what you've actually developed.
+**Content:**
+**How to Use AI for Career Exploration**
 
-Activity 1—Infer competencies: Problem students face: "I don't have any real experience." Reality: You have academic projects, volunteer work, club leadership. AI can help translate academic experiences into professional competencies. Example: Group presentation translates to project management, stakeholder communication, deadline management.
+**Skill Mapping Exercise:**
+"I'm majoring in Business Administration with coursework in [list courses]. Based on these, what professional competencies have I likely developed? Where might I have gaps compared to typical marketing analyst positions?"
 
-Activity 2—Compare against job postings: Collect 5-10 job descriptions for roles you want in 3 years. Ask AI to identify common requirements. AI reveals patterns: "8 out of 10 postings require 'stakeholder management.'" Now you know what to develop.
+**Industry Research:**
+"What are the communication norms in Vietnam's fintech industry? How do professionals typically network and build relationships? What are unwritten expectations I should know?"
 
-Activity 3—Scholarship opportunities: Vietnam students have access to ASEAN scholarships, corporate programs, government initiatives. AI can help organize research into structured comparison. You make the final decision on which to pursue.
+**Opportunity Identification:**
+"Based on my interest in [field] and my background in [skills], what graduate programs, fellowships, or professional development opportunities might be good fits? What criteria should I prioritize?"
 
-Activity 4—Workplace communication norms: Vietnamese vs. multinational company cultures. Consulting vs. corporate vs. startup communication styles. AI provides research synthesis; you adapt based on your fit.
+**Key Principle:** You're using AI to surface options and insights you might miss, not to make decisions for you.
 
-Common mistake: Students ask AI "What career should I pursue?" That's a PASSENGER question (asking AI to decide for you). PILOT question: "Given my interest in sustainability and my data analysis skills, what industries are actively hiring for roles that combine both?"
+**Visual:** Exploration or discovery imagery
 
-Connection to assessment: Mentorship Meeting 1 prep—use EXPLORE activities to identify discussion topics. Personal Development Plan—EXPLORE findings inform your SWOT analysis.
-    </speaker-notes>
-  </slide>
+---
 
-  <slide number="20" layout="content" title="Stage 2: BUILD">
-    <content>
-## BUILD: Learn Through Iterative Practice
+### Slide 31 (Layout: Content with Examples)
+**Title:** Stage 2: BUILD—Practical Applications
 
-**Objective:** Use AI to practice professional tasks and build competence through experimentation
+**Content:**
+**How to Use AI for Skill Development**
 
-**AI-Assisted Activities:**
-1. Experiment with different CV architectures (chronological vs. skills-based)
-2. Generate individual development plans
-3. Create mock interview questions specific to target companies
-4. Overcome "blank-page intimidation" in application writing
+**CV Architecture Testing:**
+"Here are my experiences [list]. Help me experiment with two versions: (1) chronological format emphasizing career progression, (2) skills-based format emphasizing data analysis capabilities. What are the tradeoffs of each?"
 
-**Example Prompts:**
-- "I'm applying to VinGroup's management trainee program. Generate 10 behavioral interview questions they might ask, focusing on leadership, innovation, and cultural fit."
-- "Here's a bullet point from my CV: 'Led team project on consumer behavior analysis.' Reframe this three different ways emphasizing: (1) leadership, (2) analytical skills, (3) business impact."
+**Mock Interview Practice:**
+"I'm interviewing for [role] at [company]. Generate 10 behavioral interview questions specific to this role. After I answer each, provide feedback on structure and content."
 
-**Pilot Behavior:** You set learning goals; AI provides practice environments
-    </content>
-    <speaker-notes>
-BUILD is where most students should spend time this semester. You're building a toolkit of career materials and practiced responses.
+**Overcoming Writer's Block:**
+"I need to write a cover letter explaining why I'm interested in [company]. Here's what I know: [context]. Help me brainstorm 5 different opening angles I could take."
 
-Activity 1—CV architecture: Traditional chronological CV vs. skills-based CV vs. hybrid. AI can generate each version from the same raw experiences. YOU decide which format best positions you for target roles. Experimentation helps you understand tradeoffs.
+**Key Principle:** You're using AI for iterative practice and feedback, not for generating final deliverables.
 
-Activity 2—Individual development plans: Based on EXPLORE findings, you identified skill gaps. AI can help structure: "To develop stakeholder management skills, what activities could a second-year business student pursue?" AI suggests options; you evaluate feasibility and alignment with interests.
+**Visual:** Building or construction imagery
 
-Activity 3—Mock interview questions: Research shows practiced candidates perform 40% better in interviews. AI can generate realistic questions based on company and role. Practice answering out loud, refine responses, practice again. This is perfect use of AI—unlimited practice without imposing on busy professionals.
+---
 
-Activity 4—Blank-page intimidation: Starting a cover letter is hard—where do you begin? AI can generate a mediocre first draft to react against. Often easier to edit than create from scratch. Critical: You must HEAVILY edit AI's draft to sound like you.
+### Slide 32 (Layout: Content with Examples)
+**Title:** Stage 3: CONNECT—Practical Applications
 
-The iteration principle: Don't expect AI's first output to be final. Generate, evaluate, refine, repeat. Each iteration builds your judgment about what "good" looks like.
+**Content:**
+**How to Use AI for Networking and Communication**
 
-Time management: BUILD activities can consume unlimited time. Set boundaries: "I'll test 3 CV formats, not 20." Minimum effective dose applies here too.
+**Elevator Pitch Practice:**
+"I need a 60-second elevator pitch for [context: career fair, networking event, informational interview]. Here's my background: [details]. Help me craft a pitch, then roleplay as [target audience] and ask follow-up questions."
 
-Connection to assessment: Mentorship Meeting 2—bring draft CV for mentor review (AI-assisted but human-refined). Personal Development Plan—include evidence of skill-building activities.
-    </speaker-notes>
-  </slide>
+**Informational Interview Simulation:**
+"Simulate an informational interview where I'm asking [professional] about their career path in [industry]. Ask me to introduce myself and share my career interests, then respond as they might."
 
-  <slide number="21" layout="content" title="Stage 3: CONNECT">
-    <content>
-## CONNECT: Communicate & Network with Purpose
+**Outreach Message Drafting:**
+"I want to connect with [person] at [company] to learn about [topic]. Here's why I'm interested: [authentic reason]. Help me draft an initial message that I can personalize before sending."
 
-**Objective:** Use AI to prepare for high-quality professional interactions
+**Key Principle:** AI helps you rehearse and refine, but the actual connections must be authentic and human.
 
-**AI-Assisted Activities:**
-1. Rehearse tailored 60-second elevator pitches with AI roleplaying different audiences
-2. Simulate informational interviews with AI asking follow-up questions
-3. Draft initial outreach messages to potential mentors for personalization
-4. Explore networking strategies appropriate to professional contexts
+**Visual:** Networking or connection imagery
 
-**Example Prompts:**
-- "Roleplay an informational interview. You are a senior manager at Masan Group. I'm a second-year student interested in FMCG marketing. Ask me questions about my background and career interests, then provide feedback on my responses."
-- "I want to reach out to an NEU alumna working at Deloitte for an informational interview. Draft an outreach email I can personalize."
+---
 
-**Pilot Behavior:** You build genuine relationships; AI helps you prepare and practice
-    </content>
-    <speaker-notes>
-Networking makes many students uncomfortable—especially if you're more introverted. AI can help you practice in a low-stakes environment.
+### Slide 33 (Layout: Content with Examples)
+**Title:** Stage 4: REFINE—Practical Applications
 
-Activity 1—Elevator pitch practice: 60-second introduction is essential skill. But your pitch should ADAPT to audience. Pitch to recruiter at career fair is not equal to pitch to professor for research opportunity. AI can roleplay different audiences. Practice until you're comfortable with core message and adaptations.
+**Content:**
+**How to Use AI for Quality Control**
 
-Activity 2—Informational interview simulation: Before your real Mentorship Program meetings, practice with AI. AI asks questions, you respond, AI provides feedback. Builds confidence so you're not stumbling through actual mentor meetings. Helps you refine what questions to ask.
+**Critique Simulation:**
+"Review this cover letter as if you're a hiring manager looking for reasons to reject it. Be harsh. What weaknesses do you see?"
 
-Activity 3—Outreach message drafting: Cold outreach is intimidating. AI can draft template: "Hi [Name], I'm a second-year BBAE student interested in [field]. I came across your profile and was impressed by [specific detail]. Would you be open to a brief informational interview?" Critical: You MUST personalize—research the person, mention specific details. Workslop outreach gets ignored; personalized outreach gets responses.
+**A/B Testing Narratives:**
+"Here are two ways I could explain my career transition from [X] to [Y]. Which is more compelling, and why? What would make the weaker version stronger?"
 
-Activity 4—Networking strategy research: Different industries have different networking norms. Banking: Formal, hierarchical, careful language. Tech startups: Informal, direct, demo your skills. AI can help you research expectations so you don't make cultural mistakes.
+**Jargon Detection:**
+"Read this draft and identify any business jargon, unclear transitions, or places where I assume knowledge the reader might not have."
 
-Vietnamese context: Relationship-building in Vietnam often requires patience and multiple touchpoints. Respect for hierarchy and proper introductions matter. AI can help you understand norms, but YOU must demonstrate genuine respect and interest.
+**CRITICAL VERIFICATION STEP:**
+"I'm about to submit this application. Help me verify: Are there any claims I haven't substantiated? Any dates or facts I should double-check? Any company-specific details I should confirm?"
 
-Connection to assessment: Your entire Mentorship Program IS the CONNECT stage. Preparation forms before meetings equal using AI to prepare thoughtful questions. Reflection forms after meetings equal documenting what you learned.
+**Key Principle:** AI assists quality control, but YOU are responsible for accuracy and authenticity.
 
-Warning: NEVER send AI-generated messages without heavy personalization. Recipients can tell when outreach is templated. Workslop networking destroys opportunities.
-    </speaker-notes>
-  </slide>
+**Visual:** Quality control or verification imagery
 
-  <slide number="22" layout="content" title="Stage 4: REFINE">
-    <content>
-## REFINE: Test, Adapt, and Verify
+---
 
-**Objective:** Apply critical quality control to AI-assisted work before it represents you
+### Slide 34 (Layout: Data Display)
+**Title:** What Employers Actually Want: NACE 2025 Data
 
-**AI-Assisted Activities:**
-1. Simulate reviewer critiques of application materials
-2. A/B test AI-generated narrative approaches with trusted advisors
-3. Identify jargon and unclear transitions before interviews
-4. **CRITICAL:** Verify all references, deadlines, and claims against primary sources
+**Content:**
+**National Association of Colleges and Employers (NACE) 2025 Survey**
 
-**Example Prompts:**
-- "Review this cover letter as a hiring manager would. What weaknesses or red flags would you identify?"
-- "This CV bullet claims I 'increased efficiency by 30%.' What evidence would a skeptical interviewer ask for? How should I prepare?"
+**Top 5 Competencies Employers Seek:**
+1. **Communication** (91% of employers rate this as essential)
+2. **Critical Thinking** (86%)
+3. **Teamwork** (82%)
+4. **Professionalism** (81%)
+5. **Adaptability** (78%)
 
-**The 30-Second Test:**
-Before submitting any AI-assisted work: Would a colleague recognize this as thoughtful human work or AI-generated filler?
+**Key Insight:**
+These are exactly the skills developed when you use AI as a THOUGHT PARTNER rather than an ANSWER GENERATOR.
 
-**Pilot Behavior:** You maintain quality standards; AI helps you pressure-test work
-    </content>
-    <speaker-notes>
-REFINE is where workslop gets caught—or not. This stage separates pilots from passengers.
+**The Connection:**
+- Context engineering → Critical Thinking
+- Pilot mindset → Professionalism
+- Judgment integration → Communication & Teamwork
+- Chief Experimentation Officer → Adaptability
+- Workslop awareness → Professionalism
 
-Activity 1—Simulate reviewer critique: Ask AI to tear apart your cover letter. AI identifies: generic phrases, unsupported claims, weak transitions. Better to catch issues yourself than have employer catch them. This develops your own critical eye over time.
+**Visual:** Bar chart or infographic showing employer priorities
 
-Activity 2—A/B testing narratives: You've drafted a Personal Development Plan vision statement. Create two versions with AI assistance. Share both with mentor, asking which resonates more professionally. Humans make final call; AI generates options.
+---
 
-Activity 3—Jargon detection: Students often use business jargon without understanding it. "Synergy," "leverage," "strategic alignment"—do you know what these MEAN? AI can identify jargon in your writing. Then YOU decide: Is this term necessary? Can I say it more simply?
+### Slide 35 (Layout: Key Takeaways)
+**Title:** Key Takeaway: Practical Career Framework
 
-Activity 4—VERIFICATION (Critical): This is where AI fails and you MUST catch it. AI might hallucinate scholarship deadlines, company details, statistics. ALWAYS verify facts against original sources. Example: If AI says "McKinsey's top value is 'client first,'" check McKinsey's actual website. One false claim in application equals instant rejection.
+**Content:**
+**What You Should Remember:**
 
-The 30-second test explained: Imagine senior colleague spending 30 seconds on your document. Would they think: "This person thought carefully about this"? Or would they think: "This is AI-generated filler"? Workslop fails the 30-second test.
+1. **Use the Explore-Build-Connect-Refine framework** for systematic AI-assisted career development
+2. **Each stage has a different purpose:**
+   - Explore: Discovery and self-assessment
+   - Build: Skill development through practice
+   - Connect: Relationship-building and communication
+   - Refine: Quality control and verification
+3. **AI is your thought partner, not your answer generator**
+4. **Always verify factual claims** against primary sources—AI hallucinates
+5. **Employers want human skills** (communication, critical thinking, teamwork)—develop these BY using AI effectively
 
-Real-world example: Student submits cover letter: "I am excited to join [Company Name] because of your commitment to innovation and excellence." 30-second test: Generic, could apply to any company, obvious AI template. Refined version: "I am excited to join Masan Group because your recent launch of the Phuc Long coffee brand demonstrates exactly the kind of consumer-insight-driven innovation I want to learn." 30-second test: Specific, researched, demonstrates genuine interest.
+**In Tutorial:** You'll apply this entire framework to create your own career preparation materials using AI assistance.
 
-Connection to assessment: Before submitting ANY Mentorship Program document—30-second test. Before final Personal Development Plan submission—REFINE stage activities. Your reflection on how you refined work demonstrates metacognition (LO4).
+**Visual:** Summary framework diagram
 
-Final warning: Passengers skip REFINE—they submit AI's first draft. Pilots spend 50% of their time in REFINE. The refinement IS where your value shows.
-    </speaker-notes>
-  </slide>
+---
 
-  <slide number="23" layout="section-break" title="Putting It Into Practice">
-    <content>
-# Putting It Into Practice
-## Your Action Plan
-    </content>
-    <speaker-notes>
-We've covered a lot of concepts. Now: what do you DO with this? Let's make this concrete with specific action steps you can take immediately.
-    </speaker-notes>
-  </slide>
+### Slide 36 (Layout: Connection Diagram)
+**Title:** Synthesis: How Week 1 and Week 2 Connect
 
-  <slide number="24" layout="content" title="This Week's Actions">
-    <content>
-## Immediate Action Steps
+**Content:**
+**Week 1: The Five Future Skills Foundation**
+- Critical Thinking
+- Creativity
+- Emotional Intelligence
+- Adaptability
+- Communication
 
-**Before Tutorial:**
-1. Create free accounts: ChatGPT, Claude, or Gemini (at least one)
-2. Review your current CV (if you have one)
-3. Find one job posting for a role you want in 3 years
+**Week 2: Operationalizing Those Skills in the AI Era**
+- Critical Thinking → Context Engineering (deciding what information matters)
+- Creativity → Pilot Mindset (using AI to amplify, not replace, creative thinking)
+- Emotional Intelligence → Judgment Integration (considering factors AI can't quantify)
+- Adaptability → Chief Experimentation Officer (continuous learning and iteration)
+- Communication → Workslop Awareness (ensuring messages are clear and substantive)
 
-**During Tutorial:**
-1. Practice context engineering with real career materials
-2. Complete workslop detection exercise
-3. Draft AI-assisted elevator pitch using Explore-Build-Connect-Refine
-4. Test your outputs with the 30-second test
+**The Progression:**
+Week 1 established WHAT skills matter.
+Week 2 established HOW to develop and apply those skills when AI is your collaborator.
 
-**This Week:**
-1. Experiment with AI for Mentorship Program prep
-2. Document what works vs. produces workslop
-3. Bring questions to next lecture
-    </content>
-    <speaker-notes>
-Before tutorial: Give students specific prep tasks so they arrive ready. Free accounts: All major AI tools offer free tiers sufficient for this course. Having a job posting grounds the practice in reality.
+**Design Notes:** Show connections visually between Week 1 skills and Week 2 applications
 
-During tutorial: Tutorial is hands-on—they'll actually USE these tools. Tutor notes provide detailed facilitation guidance. Students work in pairs to give each other 30-second test feedback.
+---
 
-This week: The experimentation mindset starts now. Mentorship Program begins this week—perfect timing. Students should arrive at first mentor meeting having practiced with AI.
+### Slide 37 (Layout: Preview)
+**Title:** Looking Ahead: Week 3 Preview
 
-Setting expectations: You won't master context engineering this week—that's okay. The goal is to START experimenting and building judgment. Every time you use AI for career prep, ask yourself: Am I being a pilot or passenger?
+**Content:**
+**Next Week: Collaboration & Teamwork**
 
-Encouraging questions: AI use raises lots of questions—that's normal. Office hours available if you want to discuss specific scenarios. Your mentor can also provide feedback on AI-assisted materials.
-    </speaker-notes>
-  </slide>
+**Building on Today:**
+- You've learned to collaborate effectively with AI (pilot mindset)
+- Next week: Collaborating effectively with HUMANS in AI-augmented teams
+- Key questions we'll explore:
+  - How does AI change team dynamics?
+  - What coordination challenges arise when team members use AI differently?
+  - How do you build trust when some team members are "pilots" and others are "passengers"?
 
-  <slide number="25" layout="content" title="Connection to Assessments">
-    <content>
-## How This Week Supports Your Success
+**Connection to Assessment:**
+Your Week 4 Personal Future Skills Plan should address BOTH:
+- How you'll use AI to develop skills (today's frameworks)
+- How you'll collaborate with others in AI-augmented environments (next week's focus)
 
-**Mentorship Program (20%):**
-- Use EXPLORE activities to prepare thoughtful discussion topics
-- Use BUILD activities to draft professional materials for mentor review
-- Use CONNECT activities to practice before meetings
-- Use REFINE activities to ensure your reflections are substantive, not workslop
+**Visual:** Forward-looking or pathway imagery
 
-**Personal Development Plan (40%):**
-- EXPLORE: Identify career pathways and skill gaps (SWOT analysis)
-- BUILD: Develop concrete action plans
-- CONNECT: Evidence of mentor integration
-- REFINE: Ensure final plan reflects YOUR authentic thinking
+---
 
-**Reflective Essay (10%):**
-- Context engineering helps you articulate insights clearly
-- Pilot mindset ensures your reflection shows genuine analysis, not AI-generated filler
+### Slide 38 (Layout: Summary Grid)
+**Title:** Key Takeaways: Week 2 Summary
 
-**Final Oral Exam (30%):**
-- BUILD stage: Practice your presentation with AI feedback
-- CONNECT stage: Rehearse Q&A scenarios
-- REFINE stage: Pressure-test your key messages
-    </content>
-    <speaker-notes>
-Everything we covered today directly supports your graded work.
+**Content:**
+**Six Frameworks from Today:**
 
-Mentorship Program: Starting this week (Week 2). Preparation forms due 48 hours before meetings. AI can help you prepare questions—but YOU must ask them thoughtfully. Reflection forms due 48 hours after meetings. AI can help structure reflections—but insights must be genuinely YOURS.
+1. **Context Engineering**: Goldilocks Zone + Minimum Effective Dose + Attention Budget
+2. **Judgment Integration**: Moving from "human in the loop" to "human at the helm"
+3. **Pilot vs. Passenger**: Using AI as thought partner vs. answer generator
+4. **The 30-Second Test**: Quality control for avoiding workslop
+5. **Explore-Build-Connect-Refine**: Systematic framework for AI-assisted career preparation
+6. **Chief Experimentation Officer**: Continuous learning through systematic experimentation
 
-Personal Development Plan: Due Week 11, but start building it NOW. Each week adds components. AI helps organize research; YOU make strategic choices about goals. Mentor feedback integrated throughout.
+**Your Competitive Advantage:**
+Most people will use AI carelessly, producing workslop and damaging their professional reputation.
+YOU now have frameworks to use AI strategically, demonstrating judgment and building career capital.
 
-Reflective Essay: Due after Week 10 guest speaker. Reflective frameworks from Week 3 provide structure. AI can help with clarity; YOUR experiences and insights are the content.
+**Design Notes:** Display as grid or framework summary
 
-Final Oral Exam: Exam period. Presenting your PDP. AI can help you rehearse; YOUR authentic communication matters.
+---
 
-The pattern: AI enhances every assessment. YOUR judgment, authenticity, and critical thinking determine your grade. Workslop earns you low marks; piloted work earns distinction.
-    </speaker-notes>
-  </slide>
+### Slide 39 (Layout: Action Items)
+**Title:** Action Steps Before Next Class
 
-  <slide number="26" layout="content" title="Key Takeaways">
-    <content>
-## What You Must Remember
+**Content:**
+**1. Complete the Required Readings (listed on final slide)**
+- Focus on understanding frameworks, not memorizing details
+- Annotate examples that resonate with your career goals
 
-1. **Context engineering** > prompt engineering
-   - Curate what AI sees, not just what you tell it
+**2. Prepare for Tutorial**
+- Bring a job description for a role you might pursue after graduation
+- Bring your current CV (or draft if you don't have one yet)
+- Be ready to practice AI-assisted career preparation
 
-2. **Workslop destroys careers**
-   - 1 in 10 job seekers rejected when AI use discovered poorly
+**3. Self-Assessment Reflection**
+- Think about your recent AI use: Have you been more pilot or passenger?
+- Identify one area where you could improve context engineering
+- Consider: What judgment calls have you made recently that AI couldn't make for you?
 
-3. **Judgment is irreplaceable**
-   - "Human at the helm," not just "human in the loop"
+**4. Begin Thinking About Assessment 1**
+- Your Personal Future Skills Plan (due Week 4)
+- Today's frameworks will be essential for demonstrating strategic thinking
 
-4. **Pilot, don't passenger**
-   - Actively steer AI; don't abdicate thinking
+**Visual:** Checklist or action item imagery
 
-5. **Explore-Build-Connect-Refine**
-   - Your framework for AI-assisted career development
+---
 
-6. **The 30-Second Test**
-   - Before submitting: Does this reflect thoughtful human work?
-    </content>
-    <speaker-notes>
-If you remember only six things from today, remember these.
+### Slide 40 (Layout: Discussion Questions)
+**Title:** Questions for Reflection
 
-Context engineering: The skill that didn't exist in 2023 but is essential in 2025. Goldilocks zone, minimum effective dose, attention budget. Practice this weekly.
+**Content:**
+**Discuss with a classmate or reflect individually:**
 
-Workslop destroys careers: Statistics were shocking—41% encounter it, 50% judge senders as less capable. You cannot afford to be in that 50%.
+1. **Context Engineering**: Think of a recent time you used AI. What context did you provide? What context did you omit? How might better context engineering have improved the result?
 
-Judgment is irreplaceable: Executives explicitly saying this is what they hire for. AI can process data; YOU make decisions.
+2. **Judgment**: Describe a decision you made recently that AI couldn't make for you. What human factors did you consider?
 
-Pilot vs. passenger: The mental model for every AI interaction. Ask yourself constantly: Am I in control?
+3. **Workslop**: Have you encountered work (from others or yourself) that looked polished but lacked substance? What made it hollow?
 
-Four-stage framework: Practical tool you can use TODAY. Aligns with mentorship and PDP. Not theoretical—actionable.
+4. **Career Preparation**: Which stage of Explore-Build-Connect-Refine feels most challenging to you, and why?
 
-The 30-second test: Your quality control mechanism. Catches workslop before it damages your reputation.
+5. **Mindset**: When do you find yourself slipping into "passenger" mode, and what triggers could help you shift to "pilot" mode?
 
-Final encouragement: The fact that you're learning these skills in second year puts you years ahead of most professionals. Your competition isn't AI—it's other humans who don't understand how to work with AI effectively. You now have the frameworks. Tutorial is where you build the skills.
-    </speaker-notes>
-  </slide>
+**Visual:** Question mark or discussion imagery
 
-  <slide number="27" layout="content" title="Questions & Discussion">
-    <content>
-## Open Discussion
+---
 
-**Discussion Prompts:**
-1. What concerns you most about using AI for career preparation?
-2. Can you think of a time you received "workslop" from someone?
-3. Where do you think your biggest gap is: Explore, Build, Connect, or Refine?
+### Slide 41 (Layout: References)
+**Title:** References
 
-**Office Hours:** By appointment – email wil.hoang@gmail.com
+**Content:**
+**Required Readings:**
 
-**Next Week:** Reflection & Reflective Learning
-- Gibbs' Cycle, Kolb's Cycle, reflective writing for your essay
-    </content>
-    <speaker-notes>
-Give students 2 minutes to discuss prompts with neighbor, then open to whole class.
+Chremos, I. V., & Repetto, W. A. (2025, October 20). Framework for GenAI in graduate career development. *Inside Higher Ed*. https://www.insidehighered.com/opinion/career-advice/carpe-careers/2025/10/20/framework-genai-graduate-career-development-opinion
 
-Likely student concerns:
+Fortune Staff. (2025, October 14). As AI fears continue, executives say a human in the loop is not enough—workers need to prioritize one skill. *Fortune*. https://fortune.com/2025/10/14/artifical-intelligence-fears-human-in-the-loop-not-enough-need-proper-judgement-business-success-microsoft-workday-guild-executives/
 
-"How do I know if I'm using too much AI?" Answer: The 30-second test. If output doesn't sound authentically like you, you've used it poorly.
+Niederhoffer, K., Rosen Kellerman, G., Lee, A., Liebscher, A., Rapuano, K., & Hancock, J. T. (2025, September 22). AI-generated "workslop" is destroying productivity. *Harvard Business Review*. https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity
 
-"What if my mentor can tell I used AI?" Answer: Your mentor EXPECTS you to use AI. Question is whether you used it well (pilot) or poorly (passenger).
+Rajasekaran, P., Dixon, E., Ryan, C., & Hadfield, J. (2025, September 29). Effective context engineering for AI agents. *Anthropic Engineering Blog*. https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
 
-"I'm worried about academic integrity violations." Answer: This course explicitly teaches appropriate AI use. Key: AI assists YOUR thinking; it doesn't replace it. Always cite if using AI-generated ideas verbatim.
+**Design Notes:** Clean reference formatting, APA style
 
-Some students won't ask publicly. Mention office hours. Encourage questions in tutorial when practicing.
+---
 
-Preview Week 3: Reflection is how you learn from experiences. Gibbs, Kolb, Driscoll frameworks structure deep thinking. These frameworks ALSO benefit from AI assistance (sensing a theme?).
+## Design Specifications
 
-Ending: See you in tutorial—bring your laptop and readiness to experiment. Remember: Every expert was once a beginner who kept practicing.
-    </speaker-notes>
-  </slide>
+### Overall Visual Style
+- **Aesthetic:** Modern, professional, suitable for business education
+- **Color Palette:**
+  - Primary: Professional blues (#2C5F8D, #4A90C7)
+  - Secondary: Warm grays (#6B7280, #9CA3AF)
+  - Accent: Energizing teal (#14B8A6) for key points
+  - Warning/Alert: Muted orange (#F59E0B) for workslop content
+  - Success: Fresh green (#10B981) for positive examples
+- **Typography:**
+  - Headers: Clean sans-serif (e.g., Montserrat, Inter, or PowerPoint's default Calibri)
+  - Body: Readable sans-serif with good hierarchy
+  - Emphasis: Bold for key terms, italics for quotes
+- **Layout Principles:**
+  - Generous white space—avoid cluttered slides
+  - Clear visual hierarchy (titles, subtitles, body, supporting elements)
+  - Consistent alignment and spacing throughout
+  - Use of icons/imagery to support (not distract from) content
 
-  <slide number="28" layout="content" title="Required Readings">
-    <content>
-## Week 2 Required Readings
+### Content Treatment
+- **Frameworks:** Use diagrams, flowcharts, or visual models—not just bullet points
+- **Statistics:** Display as infographics or visual data representations
+- **Comparisons:** Use side-by-side layouts or contrasting visual treatments
+- **Quotes:** Give prominent, attractive treatment with clear attribution
+- **Examples:** Use callout boxes or distinct visual containers
 
-1. **Rajasekaran, P., Dixon, E., Ryan, C., & Hadfield, J.** (2025, September 29). Effective context engineering for AI agents. *Anthropic Engineering Blog.* https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
+### Images and Graphics
+- Use relevant, professional stock photography where specified
+- Prefer abstract/conceptual imagery over literal representations
+- Include icons to support key concepts
+- Ensure all images are high resolution and culturally appropriate for Vietnamese audience
+- Avoid clichéd business stock photos (handshakes, people in suits pointing at screens)
 
-2. **Fortune Staff.** (2025, October 14). As AI fears continue, executives say a human in the loop is not enough. *Fortune.* https://fortune.com/2025/10/14/artifical-intelligence-fears-human-in-the-loop-not-enough-need-proper-judgement-business-success-microsoft-workday-guild-executives/
+### Consistency
+- Maintain consistent header/footer treatment across all slides
+- Use the same color coding system throughout (red for warnings, green for best practices)
+- Apply consistent spacing and alignment
+- Ensure slide numbers are visible
 
-3. **Niederhoffer, K., Rosen Kellerman, G., Lee, A., Liebscher, A., Rapuano, K., & Hancock, J. T.** (2025, September 22). AI-generated "workslop" is destroying productivity. *Harvard Business Review.* https://hbr.org/2025/09/ai-generated-workslop-is-destroying-productivity
+## Special Instructions
 
-4. **Chremos, I. V., & Repetto, W. A.** (2025, October 20). Framework for GenAI in graduate career development. *Inside Higher Ed.* https://www.insidehighered.com/opinion/career-advice/carpe-careers/2025/10/20/framework-genai-graduate-career-development-opinion
+1. **Slide Transitions:** Use subtle, professional transitions (e.g., Fade, Push)—nothing distracting
 
-**Reading Time:** ~50 minutes total
-**Prepare to discuss:** Which framework (context engineering, pilot/passenger, or Explore-Build-Connect-Refine) do you find most useful for your career preparation?
-    </content>
-    <speaker-notes>
-All four readings are open access—no paywalls. Readings directly support tutorial activities. Students who read will get much more from hands-on practice.
+2. **Animations:** Minimal animations; if used, should reveal content progressively on complex slides to avoid cognitive overload
 
-Reading strategy: Don't just skim—take notes on specific techniques you want to try. Anthropic article is most technical but has practical frameworks. HBR article has the statistics and workslop concept. Fortune article has executive quotes showing what employers want. Inside Higher Ed has the most directly actionable career advice.
+3. **Accessibility:**
+   - Ensure sufficient color contrast for text readability
+   - Don't rely solely on color to convey meaning
+   - Use alt text for images
+   - Font size minimum 18pt for body text, 28pt+ for headers
 
-Discussion preparation: Next lecture will reference these readings. Tutorial assumes familiarity. If tight on time: prioritize HBR (workslop) and Inside Higher Ed (framework).
+4. **Vietnamese Context:**
+   - Examples should reference Vietnamese companies where possible (Viettel, VinGroup, Masan, FPT)
+   - Cultural sensitivity in imagery and examples
+   - Acknowledge both local and international business norms
 
-Final note: Yes, you can use AI to help you understand these readings. But apply the pilot mindset: AI can summarize, but YOU need to identify which techniques apply to YOUR career situation.
-    </speaker-notes>
-  </slide>
+5. **Pedagogical Design:**
+   - Discussion questions should be visually distinct
+   - Mini-activities should be clearly marked
+   - Framework slides should use visual models, not just text
+   - Key takeaway slides should use visual summaries
 
-</lecture>
+## Final Deliverable
 
-</lecture_content>
+Generate a complete PowerPoint file with all 41 slides following the specifications above. The presentation should be:
+- Professionally designed and visually cohesive
+- Ready for delivery in a 90-minute lecture
+- Suitable for Vietnamese undergraduate business students
+- Aligned with course learning objectives and assessment requirements
+- Printable as handouts if needed (good contrast, readable at smaller sizes)
 
-<task>
-Generate all 28 slides as a complete presentation slide deck. Reproduce all content exactly as provided. Enhance each slide with appropriate visuals, infographics, or imagery. Maintain consistent professional styling throughout.
-</task>
-
-<output_format>
-A presentation slide deck containing:
-- 28 slides total, matching the lecture content structure
-- Modern Bright Pastel Corporate visual design consistently applied
-- All lecture content text preserved exactly as written
-- Relevant images, infographics, icons, and diagrams on each slide
-- Minimum 18pt body text
-- Footers on content slides with course info and slide numbers
-- Academic citations in footers where referenced
-- Empty speaker notes sections
-</output_format>
+The presentation should support active learning with clear discussion prompts, reflection questions, and connections to practical applications. Balance visual appeal with content clarity—prioritize student comprehension over decorative elements.

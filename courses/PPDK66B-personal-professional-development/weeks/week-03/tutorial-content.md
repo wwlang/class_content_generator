@@ -1,246 +1,278 @@
-# Week 3 Tutorial: Reflection Practice Workshop
+# Week 3 Tutorial: Reflection & Reflective Learning
 
-**Course:** PPDK66B - Personal & Professional Development
+## Tutorial Overview
+
 **Duration:** 90 minutes
+**Topic:** Practicing Reflective Frameworks
+**Learning Objectives:**
+- Apply Gibbs', Kolb's, and Driscoll's frameworks to analyze personal experiences
+- Compare reflection quality across different frameworks
+- Practice structured reflection for mentorship program
 
 ---
 
-## Quick Review
+## Part 1: Quick Review (5 minutes)
 
-**Key concepts from today's lecture:**
+### Tutor-Led Recap
 
-- **Reflection ≠ Thinking:** Structured reflection using frameworks (Gibbs/Kolb/Driscoll) transforms experiences into learning; passive thinking doesn't
-- **Gibbs' Reflective Cycle (6 stages):** Description → Feelings → Evaluation → Analysis → Conclusion → Action Plan (best for complex, emotional experiences)
-- **Kolb's Experiential Learning Cycle (4 stages):** Concrete Experience → Reflective Observation → Abstract Conceptualization → Active Experimentation (best for continuous skill development)
-- **Driscoll's Model (3 questions):** What? So What? Now What? (best for quick debriefs like mentor meetings)
-- **Reflection Depth Levels:** Level 1 (Description only) vs. Level 2 (Analysis with theory) vs. Level 3 (Transformation with specific action) — aim for Level 3
+**Three Frameworks Covered Today:**
 
-**What good work looks like:**
-- Framework correctly applied (all stages/questions addressed, not just mentioned once)
-- Level 3 depth achieved (moves beyond description to show behavior change)
-- At least one course concept explicitly referenced (e.g., Goleman's EI, growth mindset, Covey's habits)
-- Specific, measurable action plan (not vague intentions like "try harder")
-- Honest vulnerability (admitting surprises, mistakes, or challenged assumptions)
+1. **Gibbs' Reflective Cycle** (6 stages)
+   - Description → Feelings → Evaluation → Analysis → Conclusion → Action Plan
 
-**Full rubric:** See Assessment Handbook, Reflective Essay section (pp. 47-52)
+2. **Kolb's Experiential Learning Cycle** (4 stages)
+   - Concrete Experience → Reflective Observation → Abstract Conceptualization → Active Experimentation
 
----
+3. **Driscoll & Bolton Model** (3 questions)
+   - What? → So What? → Now What?
 
-## Main Activity: Guided Reflection Workshop
+**Key Principle:** Experience + Structured Reflection = Learning
 
-**Assessment Connection:** Reflective Essay (10%, Due after Week 10) - This activity provides hands-on practice applying Gibbs, Kolb, or Driscoll frameworks to prepare you for the 1,500-word field trip + guest speaker reflection.
-
-### The Task
-
-Write a 200-word structured reflection on ONE experience from the past two weeks of this course. This is scaled practice for your Reflective Essay—same frameworks, same depth expectations, shorter length.
-
-### Choose Your Experience (Pick ONE)
-
-Select a meaningful moment from Weeks 1-2:
-
-**Option A: First Mentor Meeting**
-- What happened during the meeting?
-- What surprised you about your mentor's advice or career journey?
-- How did it challenge your assumptions about career paths?
-
-**Option B: Self-Assessment Results**
-- MBTI, VIA Character Strengths, Learning Styles, or Holland Code
-- What surprised you about your results?
-- Did results confirm or contradict your self-perception?
-
-**Option C: Week 1 or Week 2 Lecture Insight**
-- A concept that challenged your thinking (AI impact on careers, context engineering, future skills)
-- A moment when you disagreed with or questioned course content
-- A connection you made between lecture and your own experience
-
-**Option D: Course Registration / Career Decision**
-- Why you chose this program or course
-- A recent career decision you made (or struggled with)
-- Uncertainty about your professional path
-
-**Why these experiences?** They're recent (memory is fresh), meaningful (involve your development), and complex enough to practice deep reflection.
-
-### Choose Your Framework (Pick ONE)
-
-You'll use ONE of the three frameworks from today's lecture:
-
-**Gibbs' Reflective Cycle (6 stages):**
-1. Description - What happened?
-2. Feelings - What were you thinking/feeling?
-3. Evaluation - What was good/bad?
-4. Analysis - Why did it happen this way?
-5. Conclusion - What else could you have done?
-6. Action Plan - What will you do next?
-
-**Kolb's Experiential Learning Cycle (4 stages):**
-1. Concrete Experience - The event
-2. Reflective Observation - Multiple perspectives
-3. Abstract Conceptualization - Theory/insights
-4. Active Experimentation - What you'll test
-
-**Driscoll's Model (3 questions):**
-1. WHAT? - What happened?
-2. SO WHAT? - Why does it matter?
-3. NOW WHAT? - What will you do?
-
-**Framework Selection Tips:**
-- **Gibbs** if your experience involved strong emotions or was complex
-- **Kolb** if you're developing a skill you'll practice repeatedly
-- **Driscoll** if you want to practice quick, efficient reflection (mentor meeting format)
-
-### Deliverable
-
-**200-word reflection** (±20 words acceptable) that:
-- Clearly identifies which framework you're using
-- Addresses all stages/questions of your chosen framework
-- Reaches Level 3 depth (transformation, not just description)
-- References at least ONE course concept from Weeks 1-3
-- Includes a specific action plan with measurable outcome
-
-**Format:**
-- Start with: "Framework: [Gibbs/Kolb/Driscoll]"
-- Use stage/question labels as subheadings (e.g., "Description:", "SO WHAT?")
-- End with clear action statement
-
-### Success Criteria (from Reflective Essay Rubric)
-
-- **Framework Application (25%):** All stages/questions addressed with clear connections between sections (not just listed separately)
-- **Critical Analysis & Insight (35%):** Demonstrates self-awareness, connects to course theory, shows assumption challenging
-- **Action Planning (20%):** Specific, concrete actions with timelines; strong connection to Personal Development Plan goals
-- **Writing Quality (15%):** Clear organization, professional academic tone, no unnecessary words
-- **Citation (5%):** Course concept referenced in APA format if applicable
-
-### Resources Provided
-
-**Templates on Moodle:**
-- Gibbs Reflective Cycle Template (Word doc)
-- Kolb Experiential Learning Template (Word doc)
-- Driscoll "What? So What? Now What?" Template (Word doc)
-
-**Prompting Questions Checklist:**
-Use Alt et al.'s (2022) prompting questions if you get stuck:
-- **Cognitive:** What assumptions did I hold? What challenged them?
-- **Behavioral:** What specific actions will I take?
-- **Affective:** What emotions did I feel? Why?
-- **Professional:** How does this inform my career goals?
-
-**Example Reflection (Driscoll format, 198 words):**
-
-> **Framework: Driscoll's "What? So What? Now What?"**
->
-> **WHAT?** My VIA Character Strengths assessment revealed "Love of Learning" as my #1 strength, but I often procrastinate on schoolwork and only engage deeply with topics I find personally interesting.
->
-> **SO WHAT?** This apparent contradiction reflects Deci & Ryan's Self-Determination Theory (Week 2 reading): I thrive on intrinsic motivation but resist extrinsic requirements. My "love of learning" activates only when I have autonomy over what I learn. This challenges my assumption that procrastination means I'm lazy—instead, it signals a mismatch between task structure and my motivational drivers. Connecting to Dweck's growth mindset (Week 9 preview), I've been operating with a fixed view: "Either I'm interested or I'm not." But I can CULTIVATE interest through reframing.
->
-> **NOW WHAT?** For each assignment this semester, I'll spend 5 minutes before starting to write: "What will I know after completing this that I don't know now?" This reframes tasks from extrinsic requirements to intrinsic learning opportunities. Success metric: I'll track procrastination duration—goal is 50% reduction by mid-semester. I'll also discuss this insight in my next mentor meeting (Meeting 2, Week 5) to explore career implications: Do I need high-autonomy work environments?
-
-**Why this works:**
-- ✅ All three Driscoll questions addressed thoroughly
-- ✅ Level 3 depth: Shows transformation ("I can cultivate interest")
-- ✅ Course concepts: Deci & Ryan's SDT, Dweck's growth mindset
-- ✅ Specific action: 5-minute reframing ritual, 50% procrastination reduction
-- ✅ Connects to assessments: Mentor Meeting 2, PDP career implications
-
-### Workshop Process
-
-**Part 1: Individual Reflection Writing (60 minutes)**
-
-1. **Choose your experience and framework (5 min):**
-   - Review the four experience options
-   - Select the framework that feels most natural
-   - Download template from Moodle if helpful
-
-2. **Brainstorm raw material (10 min):**
-   - Write everything you remember about the experience (don't filter yet)
-   - Note your feelings, assumptions, surprises
-   - Jot down any course concepts that might connect
-
-3. **Apply framework stages (30 min):**
-   - Work through each stage/question systematically
-   - Use prompting questions checklist if stuck
-   - Aim for Level 3 depth (ask yourself: "So what? Why does this matter? What will I DO differently?")
-   - Count words as you go—stay around 200
-
-4. **Refine and polish (15 min):**
-   - Ensure all framework stages are addressed
-   - Check: Is there a course concept reference?
-   - Verify: Is the action plan specific and measurable?
-   - Proofread for clarity and concision
-
-**Tutor support available throughout:** Raise your hand if you're stuck on a particular stage or can't identify a course concept to connect.
-
-**Part 2: Peer Feedback Exchange (20 minutes)**
-
-5. **Partner up (2 min):**
-   - Find a partner (preferably someone who used a different framework)
-   - Exchange reflections—read each other's work silently
-
-6. **Feedback questions (8 min per person, 16 min total):**
-   - **Framework check:** "Are all stages/questions addressed? Any gaps?"
-   - **Depth check:** "Is this Level 1, 2, or 3? Where could it go deeper?"
-   - **Action check:** "Is the action plan specific enough? Can you measure it?"
-   - **Surprise check:** "What surprised you about this reflection?"
-
-7. **Revise based on feedback (4 min):**
-   - Incorporate one piece of partner feedback
-   - Strengthen weakest section
-
-**Part 3: Class Share (10 min)**
-
-8. **Volunteer sharing (2 minutes each, 4-6 students):**
-   - Read your "Action Plan" section aloud (not the full reflection)
-   - State which framework you used and why you chose it
-   - Answer: "What was hardest about this exercise?"
-
-9. **Class discussion (remaining time):**
-   - Which framework felt most natural? Why?
-   - What strategies helped move from Level 1 to Level 3?
-   - How will you apply this to field trip reflection?
-
-### What to Do If You're Stuck
-
-**"I can't think of an experience to write about."**
-→ Use your first mentor meeting—everyone has had one. Reflect on a specific piece of advice your mentor gave.
-
-**"I'm stuck at description—can't get to analysis."**
-→ Ask yourself: "What assumption did I hold before this experience? What challenged that assumption?" This forces deeper thinking.
-
-**"I don't know which course concept to reference."**
-→ Review lecture slides from Weeks 1-2. Look for: AI impact on careers, context engineering, human judgment, growth mindset preview, Covey's principles, future skills frameworks.
-
-**"My action plan feels vague."**
-→ Apply this test: Could someone observe and verify your action? "Improve communication" = vague. "Ask 3 clarifying questions in every mentor meeting" = specific.
-
-**"I'm over 200 words."**
-→ Cut redundancy. Remove throat-clearing phrases ("I think that," "It is important to note"). Use active voice. Every sentence should advance your reflection.
-
-### Participation Expectation
-
-⚠️ **You must produce a 200-word reflection to share with a partner.** Incomplete work affects participation marks. This is practice for your 10% Reflective Essay—treat it seriously.
-
-**Save your work:** This reflection serves three purposes:
-1. Tutorial participation credit (today)
-2. Portfolio reference for Reflective Essay (you'll see how much easier 1,500 words is after practicing 200)
-3. Evidence for PDP Section 6 ("How course learning changed your thinking")
+**Tutorial Goal:** Practice all three frameworks so you can choose confidently for your reflective essay and mentorship reflections.
 
 ---
 
-## Before Next Class
+## Part 2: Main Activity – Three-Framework Practice (75 minutes)
 
-1. **Complete Online Quiz** - Week 3 Quiz on Moodle (due Sunday 11:59 PM)
-   - Covers: Gibbs' stages, Kolb's cycle, Driscoll's questions, reflection depth levels (1/2/3)
-   - 10 questions, 15 minutes, multiple choice + short answer
+### Stage 1: Shared Experience Baseline (10 minutes)
 
-2. **Pre-reading for Week 4** - Self-Managed Learning readings on Moodle:
-   - Zimmerman, B. J. (2002). Becoming a self-regulated learner (pp. 64-70)
-   - Focus on: Forethought, performance, and self-reflection phases
+**Activity: Reflect on Weeks 1-2 Content**
 
-3. **Save Your Work** - Keep today's 200-word reflection in a "Reflections" folder
-   - You'll reference it when writing your 1,500-word Reflective Essay
-   - Consider this your first portfolio piece
+**Tutor Instructions:**
+"We're going to practice reflection using content from our first two weeks. Think back to Week 1 (Introduction & Future of Work) or Week 2 (Career Skills in the AI Era). Choose ONE specific moment that stuck with you—maybe a statistic that surprised you, a discussion that challenged your thinking, or a concept you're still processing."
 
-**Optional:** Start a reflection journal—write one 100-word reflection per week using Driscoll's model (quickest format). By Week 11, you'll have rich material for your PDP.
+**Individual Reflection (5 minutes):**
+- Write down the specific moment/experience you're selecting
+- Note your initial thoughts: Why did this moment stand out?
+
+**Pair Share (5 minutes):**
+- Partner with the person next to you
+- Each person shares their selected moment (2 minutes each)
+- No analysis yet—just describe what happened
+
+**Purpose:** Establish a concrete experience everyone can work with for framework practice
 
 ---
 
-**End of Tutorial**
+### Stage 2: Framework Rotation (60 minutes)
+
+**Overview:**
+Students will apply all three reflective frameworks to their chosen Week 1-2 experience, rotating through stations.
+
+#### Station 1: Gibbs' Reflective Cycle (20 minutes)
+
+**Setup:**
+Provide handout with Gibbs' six stages and guiding questions for each stage.
+
+**Individual Work (15 minutes):**
+
+Work through all six stages for your chosen Week 1-2 experience:
+
+**1. Description**
+- What was the specific moment/concept?
+- What were you doing? (listening, discussing, thinking)
+- What was said or presented?
+
+**2. Feelings**
+- What were your immediate reactions?
+- How did you feel? (surprised, confused, excited, skeptical?)
+- What were you thinking during the moment?
+
+**3. Evaluation**
+- What was positive about this moment?
+- What was challenging or uncomfortable?
+- What went well in how you engaged with it?
+
+**4. Analysis**
+- Why did this moment stand out to you?
+- What does your reaction tell you about your values or assumptions?
+- How does this connect to other course concepts or your prior experiences?
+- Which theories or frameworks from Weeks 1-2 help explain your reaction?
+
+**5. Conclusion**
+- What did you learn from this moment?
+- What would you do differently if you encountered similar content again?
+- What skills or knowledge do you need to develop?
+
+**6. Action Plan**
+- What specific actions will you take based on this insight?
+- When will you take these actions?
+- How will you know if you've successfully applied this learning?
+
+**Small Group Discussion (5 minutes):**
+- Groups of 3-4 students
+- Each person shares: Which stage was hardest? Which generated the most insight?
+- Discuss: Did the Feelings stage reveal anything unexpected?
+
+---
+
+#### Station 2: Kolb's Experiential Learning Cycle (20 minutes)
+
+**Setup:**
+Provide handout with Kolb's four stages and guiding questions.
+
+**Individual Work (15 minutes):**
+
+Apply Kolb's cycle to the SAME Week 1-2 experience:
+
+**1. Concrete Experience**
+- Describe the experience objectively
+- What were you doing?
+- What happened?
+
+**2. Reflective Observation**
+- What did you notice during this experience?
+- What patterns or themes emerged?
+- What perspectives did others have? (if discussed)
+- What was significant?
+
+**3. Abstract Conceptualization**
+- What does this experience mean?
+- What general principles can you derive from this specific moment?
+- How does this connect to theories from Weeks 1-2? (e.g., AI impact on careers, skills evolution, context engineering, human judgment)
+- What new understanding do you have?
+
+**4. Active Experimentation**
+- What will you try differently based on this learning?
+- How can you test this new understanding?
+- What's one small experiment you can run this week?
+- What new experience will this create?
+
+**Pair Discussion (5 minutes):**
+- Compare Gibbs vs. Kolb: Which felt more natural to you?
+- Did Kolb's emphasis on experimentation (not just action planning) change how you thought about next steps?
+- Which framework generated deeper analysis for you?
+
+---
+
+#### Station 3: Driscoll & Bolton Model (20 minutes)
+
+**Setup:**
+Provide handout with Driscoll's three questions.
+
+**Individual Work (10 minutes):**
+
+Apply Driscoll's model to the SAME Week 1-2 experience:
+
+**1. WHAT?**
+- What happened during this moment?
+- What did you see/hear/think/feel?
+- What were you trying to achieve or understand?
+
+**2. SO WHAT?**
+- So what does this mean for your learning?
+- So what were the consequences of this moment?
+- So what more do you need to know?
+- So what assumptions did this challenge?
+
+**3. NOW WHAT?**
+- Now what will you do differently?
+- Now what might happen if you apply this learning?
+- Now what support or resources do you need?
+- Now what's your next step?
+
+**Small Group Discussion (10 minutes):**
+
+Groups of 3-4 students discuss:
+
+1. **Comparison Across Frameworks:**
+   - Which framework gave you the deepest insights?
+   - Which was fastest to apply?
+   - Which will you use for your mentorship reflections? Why?
+
+2. **Reflection Quality:**
+   - Did using three different frameworks reveal different insights from the SAME experience?
+   - Which framework pushed you past description into real analysis?
+   - Did the structure help or feel restrictive?
+
+3. **Application Planning:**
+   - For your Individual Assignment reflective essay (field trip + guest speaker), which framework will you choose?
+   - For weekly mentorship reflections, will you stick with one framework or rotate?
+   - What surprised you about the reflection process today?
+
+---
+
+## Part 3: Before Next Class (10 minutes)
+
+### Assignment & Preparation
+
+**1. Apply Learning to Mentorship (Week 3 Homework)**
+
+Before your next mentorship meeting:
+- Choose one framework (Gibbs, Kolb, or Driscoll)
+- Use it to reflect on your most recent mentorship meeting
+- Submit your reflection as part of your Week 3 post-meeting reflection form
+
+**Tip:** Try the framework you found MOST challenging today—practice strengthens the skill.
+
+**2. Framework Selection for Reflective Essay**
+
+Start thinking now (even though the essay isn't due until after Week 10):
+- Which framework matches your thinking style?
+- Gibbs' detail? Kolb's cycle? Driscoll's simplicity?
+- There's no wrong choice—pick the one that helps you analyze deeply
+
+**3. Reading for Week 4: Self-Managed Learning**
+
+Next week we explore metacognition and strategic learning. Preview the readings:
+- Zimmerman, B. J. (2002). Becoming a self-regulated learner: An overview.
+- Stanton, J. D., et al. (2021). Fostering metacognition to support student learning.
+
+**Connection to Today:** Self-managed learning requires reflecting on HOW you learn (metacognition), which builds directly on today's reflection frameworks.
+
+---
+
+## Tutor Closing Notes
+
+### Key Messages to Emphasize
+
+1. **Reflection is a skill** that improves with practice—today was practice, not mastery
+2. **All three frameworks work**—choose based on context and personal preference
+3. **Structure enables depth**—frameworks prevent shallow "I learned a lot" statements
+4. **Start using immediately**—apply to mentorship reflections this week
+
+### Common Student Questions
+
+**Q: "Do I have to use the same framework every time?"**
+A: No! You can switch frameworks based on context. Quick reflections = Driscoll. Comprehensive essays = Gibbs or Kolb. Experiment to find what works.
+
+**Q: "What if my reflection doesn't fit neatly into the stages?"**
+A: That's normal. Reflection is messy. The frameworks provide structure, not straightjackets. If a stage doesn't apply, explain why and move to the next.
+
+**Q: "Which framework will score highest on the reflective essay?"**
+A: All three score equally IF applied well. Grading focuses on depth of reflection, not framework choice. Use the one that helps YOU reflect deeply.
+
+**Q: "How long should each stage be in the essay?"**
+A: Varies by framework, but generally: Description (20%), Analysis (40-50%), Action Planning (20-30%), Other stages (balance). Analysis should be longest—that's where critical thinking shows.
+
+---
+
+## Materials Needed
+
+**Handouts:**
+1. Gibbs' Reflective Cycle handout (6 stages with guiding questions)
+2. Kolb's Experiential Learning Cycle handout (4 stages with guiding questions)
+3. Driscoll & Bolton Model handout (3 questions with prompts)
+4. Framework Comparison Chart (summary table for student reference)
+
+**Supplies:**
+- Paper/notebooks for individual reflection work
+- Timers for station rotations
+- Whiteboard/markers for group discussions
+
+---
+
+## Tutorial Success Indicators
+
+**Students are successful if they:**
+- Complete reflections using all three frameworks
+- Identify which framework(s) work best for their thinking style
+- Recognize that structured frameworks generate deeper insights than unstructured "journaling"
+- Begin applying frameworks to mentorship reflections immediately
+- Can explain when to use each framework (depth vs. speed tradeoffs)
+
+**Tutor is successful if:**
+- All students complete at least one full reflection cycle using each framework
+- Students engage in meaningful comparison discussions (not just "I liked X best")
+- Students connect reflection frameworks to upcoming assessments (mentorship, essay, PDP)
+- Students leave with concrete plans for which framework to use in next mentorship reflection

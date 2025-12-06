@@ -1,945 +1,460 @@
 <role>
-You are an expert presentation designer specializing in academic course materials. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
+You are an expert presentation designer. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
 </role>
-
-<context>
-Course: PPDK66B - Personal & Professional Development |
-Week: 04
-Topic: Self-Managed Learning
-Institution: National Economics University |
-Instructor: William Winterton Lang, Le Huong Lan (PhD) |
-Total Slides: 30
-</context>
-
 <instructions>
 1. Create a presentation slide deck with exactly 30 slides
-2. Start with a title slide containing: topic title, course code and name, university/institution, and instructor name
+2. The first slide in the lecture content IS the title slide - add course name (Personal & Professional Development), university (National Economics University), and campus (IBD Campus) to it
 3. Reproduce the exact wording from the lecture content for each slide, preserving all text as written
 4. Generate creative visuals for each slide: pictures, infographics, icons, and diagrams that reinforce the slide's message
-5. Use minimum 18pt font for body text to ensure readability from a distance
-6. Add a footer to every content slide (not the title slide) with: course code, university, topic, and slide number
-7. Place academic citations (e.g., Minto, 1987) in the slide footer when referenced in content
+5. Use a minimum 18pt font for all text. Reference text and footer text is allowed to be smaller
+6. Add a footer to every content slide (not the title slide) with: course name, university, topic, and slide number
+7. Place academic citations (e.g., Zimmerman, 2002) in the slide footer when referenced in content
 8. Leave speaker notes sections empty
+9. The final slide is a References slide - format it cleanly with the full APA citations provided
 </instructions>
-
-<constraints>
-- Create exactly 30 slides, matching the lecture content one-to-one. The lecture content defines each slide explicitly, so count them to verify.
-- Preserve exact wording because students receive these slides as study materials and need consistency with what they hear in lecture recordings.
-- Keep speaker notes empty because detailed instructor notes will be added in a separate step.
-- Maintain consistent Modern Bright Pastel Corporate styling throughout for professional brand identity.
-</constraints>
-
-<examples>
-<example>
-<input>
-## Slide 3: The Pyramid Principle
-
-**Key Concept:** Start with the answer, then provide supporting evidence
-
-The Pyramid Principle (Minto, 1987):
-- Lead with your main message
-- Group supporting arguments logically
-- Present evidence in descending order of importance
-
-**Why it works:** Busy executives read conclusions first
-</input>
-<output>
-Slide with pyramid/triangle infographic illustrating the hierarchy concept. All text preserved exactly as written. "Minto, 1987" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 7: Case Study - Vinamilk Crisis Response
-
-In 2013, Vinamilk faced a product recall crisis...
-
-**What went right:**
-- Immediate public acknowledgment
-- Clear action plan communicated
-- Regular updates to stakeholders
-
-**Result:** Brand trust recovered within 6 months
-</input>
-<output>
-Case study slide with timeline or process visual showing the crisis response steps. Company imagery or relevant icons. All text preserved exactly.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 12: Hofstede's Cultural Dimensions
-
-**Vietnam vs. United States comparison:**
-| Dimension | Vietnam | USA |
-|-----------|---------|-----|
-| Power Distance | 70 | 40 |
-| Individualism | 20 | 91 |
-| Uncertainty Avoidance | 30 | 46 |
-</input>
-<output>
-Data visualization slide with bar chart or comparison graphic showing Vietnam and USA scores across the three dimensions. Clear axis labels. "Hofstede" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 9: Carol Dweck on Growth Mindset
-
-**[VIDEO: Carol Dweck - "The Power of Believing That You Can Improve"]**
-**Video link:** https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
-**Duration:** 10 minutes
-
-**Before watching:** "Think of a time you felt 'stuck' at something."
-</input>
-<output>
-Video placeholder slide with speaker image, prominent clickable video link, duration displayed, and pre-viewing reflection question. Clean layout focusing attention on the video link.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 15: Section Break - Emotional Intelligence
-
-# SECTION 3
-
-## Emotional Intelligence
-### Understanding and Managing Emotions
-
-*(20 minutes)*
-</input>
-<output>
-Section break slide with bold typography, contrasting background color to signal transition, section number prominent, topic and subtitle clearly visible. Timing indicator optional.
-</output>
-</example>
-</examples>
-
 <lecture_content>
-<?xml version="1.0" encoding="UTF-8"?>
-<lecture>
-<metadata>
-<course>PPDK66B Personal & Professional Development</course>
-<week>4</week>
-<topic>Self-Managed Learning</topic>
-<duration>90 minutes</duration>
-<slides>30</slides>
-</metadata>
+Course: Personal & Professional Development
+Week: 4
+Topic: Self-Managed Learning
+Institution: National Economics University
 
-<slide number="1" layout="big-number" title="Hook: The Learning Styles Myth">
-<content>
-# 89%
-
-**of teachers worldwide believe "learning styles" (VARK, Kolb) improve learning outcomes**
-
-**Scientific studies supporting this: 0**
-
-*(Newton &amp; Salvi, 2020; Pashler et al., 2008)*
-</content>
-<speaker-notes>
-**Opening:** Let the statistic sit for 3 seconds. This is one of education's most persistent myths.
-
-**Key Points:** Nearly 9 out of 10 educators believe something science has thoroughly debunked. This isn't about teachers being wrong—it's about how persistent intuitive-but-false ideas can be. Today we'll learn what ACTUALLY works for learning.
-
-**Example:** Have you ever been told you're a "visual learner" or "hands-on learner"? That feels true, doesn't it? But matching instruction to your "style" doesn't improve learning.
-
-**Check Understanding:** "How many of you have taken a learning styles quiz?" [show of hands]. "How many BELIEVED the results?" [most hands stay up].
-
-**Transition:** "This is a perfect example of why we need METACOGNITION—thinking about thinking, and evaluating claims critically..."
-</speaker-notes>
-</slide>
-
-<slide number="2" layout="section-break" title="Course Introduction">
-<content>
+### Slide 1 (Layout: title)
 # Self-Managed Learning
-## Taking Control of Your Own Development
 
-**Week 4: Personal &amp; Professional Development**
-</content>
-<speaker-notes>
-**Opening:** Learning how to learn is perhaps the most valuable meta-skill for your career. In the AI era, continuous learning isn't optional—it's survival.
+**Week 4: Taking Control of Your Learning**
 
-**Key Points:** This week connects everything: self-awareness (Week 5), reflection (Week 3), and your PDP (Week 11). You'll learn frameworks used at Stanford, Wharton, and other top business schools. More importantly, you'll learn what neuroscience and educational psychology have proven WORKS.
+### Slide 2 (Layout: big-number)
+# 3x
 
-**Example:** Top performers don't just work harder—they work smarter by understanding HOW they learn. McKinsey consultants are taught self-regulated learning in their first month.
+**Students who use evidence-based learning strategies outperform peers by up to 300%**
 
-**Transition:** "Let's see what you'll be able to do by the end of today..."
-</speaker-notes>
-</slide>
+Yet most students use ineffective techniques like rereading and highlighting.
 
-<slide number="3" layout="content" title="Learning Objectives">
-<content>
+*(Dunlosky et al., 2013)*
+
+### Slide 3 (Layout: content)
 ## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Apply** Zimmerman's Cyclical Phase Model to your own learning
-2. **Use** the Waterloo four-step SDL framework to create a learning contract
-3. **Evaluate** the evidence for learning styles using the meshing hypothesis
-4. **Implement** evidence-based learning strategies in your study habits
-</content>
-<speaker-notes>
-**Opening:** These aren't just academic concepts—you'll use them THIS WEEK.
+1. **Apply** Zimmerman's three-phase model of self-regulated learning to plan, monitor, and evaluate your academic work
+2. **Implement** the University of Waterloo's four-step self-directed learning process for structured goal achievement
+3. **Distinguish** between learning preferences and learning effectiveness using metacognitive principles
+4. **Select** evidence-based learning strategies (retrieval practice, spaced practice, elaboration) over ineffective popular techniques
 
-**Key Points:** LO1: You'll identify which phase (forethought/performance/self-reflection) you're weakest in. LO2: You'll create an actual learning contract for your PDP goal. LO3: You'll understand why learning styles feel right but don't work. LO4: You'll replace ineffective study habits with proven strategies.
+### Slide 4 (Layout: framework)
+## How This Supports Your Assessments
 
-**Example:** By Friday, you'll prepare for Mentor Meeting #2 using the four-step SDL process. By next week, you'll be using retrieval practice instead of just rereading.
+**Mentorship Program (20%) + Personal Development Plan (40%) = 60% of final grade**
 
-**Check Understanding:** "These objectives will appear on this week's quiz—write them down."
+| Assessment Component | Today's Skills |
+|---------------------|----------------|
+| Mentorship preparation | Four-step SDL process structures meeting prep and follow-up |
+| PDP goal-setting | Zimmerman's forethought phase guides SMART goal development |
+| Progress monitoring | Self-regulated learning cycle tracks development systematically |
+| Reflective practice | Metacognitive monitoring deepens reflection quality |
 
-**Transition:** "Let's see how this connects to your assessments..."
-</speaker-notes>
-</slide>
+**Your mentorship success depends on structured self-directed learning between meetings.**
 
-<slide number="4" layout="framework" title="Assessment Connection">
-<content>
-## How This Prepares You
+### Slide 5 (Layout: section-break)
+## Today's Journey
 
-| Assessment | Weight | Today's Relevance |
-|------------|--------|-------------------|
-| Mentor Meeting #2 | Part of 20% | Use SDL framework to set learning goals |
-| Personal Development Plan | 40% | Learning strategies section + goal monitoring |
-| Reflective Essay | 10% | Metacognitive analysis of field trip/speaker |
-| Final Oral Exam | 30% | Demonstrate self-awareness of learning process |
+**Segment 1: Self-Regulated Learning Theory (20 min)**
+- Zimmerman's three-phase cyclical model
+- Forethought, performance, self-reflection phases
 
-**Self-regulated learning is a PDP rubric criterion**
-</content>
-<speaker-notes>
-**Opening:** "Your next mentor meeting happens in the next 2 weeks—today's content directly prepares you."
+**Segment 2: Self-Directed Learning in Practice (20 min)**
+- University of Waterloo's four-step process
+- Learning contracts and goal-setting
 
-**Key Points:** Mentor Meeting #2 focus: Discuss your self-directed learning goals using the four-step framework. PDP Section 4: Learning strategies and monitoring approaches (Zimmerman's model provides structure). Reflective Essay: Metacognitive awareness deepens your analysis of experiences.
+**Segment 3: Metacognition & Evidence-Based Strategies (25 min)**
+- What metacognition really means
+- Why learning styles don't work
+- What actually works: retrieval, spacing, elaboration
 
-**Example:** When you write "I will improve my presentation skills" in your PDP, the SDL framework helps you turn that into an actionable learning contract with assessment milestones.
+**Segment 4: Integration & Application (15 min)**
+- Applying frameworks to your PDP and mentorship
 
-**Transition:** "Here's our roadmap for today..."
-</speaker-notes>
-</slide>
+### Slide 6 (Layout: section-break)
+# SEGMENT 1
 
-<slide number="5" layout="section-break" title="Today's Roadmap">
-<content>
-# Today's Journey
+## Self-Regulated Learning Theory
 
-1. **Zimmerman's Self-Regulated Learning Model** (25 min)
-   *The three-phase cycle that governs effective learning*
+*The science of taking control of your learning*
 
-2. **Waterloo's Self-Directed Learning Framework** (15 min)
-   *Four practical steps for taking ownership*
+### Slide 7 (Layout: framework)
+## Self-Regulated Learning Definition
 
-3. **The Learning Styles Myth** (15 min)
-   *Why the meshing hypothesis fails—and what works instead*
+**"The degree to which students are metacognitively, motivationally, and behaviorally active participants in their own learning process."**
+*(Zimmerman, 2002)*
 
-4. **Evidence-Based Learning Strategies** (20 min)
-   *Retrieval practice, spaced learning, elaboration, interleaving*
+**Three key elements:**
 
-5. **Preparing for Mentor Meeting #2** (10 min)
-   *Applying SDL to your development goals*
-</content>
-<speaker-notes>
-**Opening:** We're covering A LOT today, but it all connects into a coherent system.
+1. **Metacognitive:** Awareness and control of thinking processes
+2. **Motivational:** Self-efficacy beliefs and goal orientation
+3. **Behavioral:** Selecting and using strategies; seeking help when needed
 
-**Key Points:** Parts 1-2: Theoretical frameworks that organize HOW learning happens. Part 3: Critical thinking applied to popular beliefs. Part 4: Practical techniques you can use immediately. Part 5: Direct application to your mentorship.
+**SRL is cyclical, not linear—continuous adjustment based on feedback.**
 
-**Transition:** "Let's start with the most influential model in educational psychology..."
-</speaker-notes>
-</slide>
+### Slide 8 (Layout: framework)
+## The Cyclical Phase Model
 
-<slide number="6" layout="section-break" title="Part 1: Zimmerman's Model">
-<content>
-# Part 1
-## Zimmerman's Self-Regulated Learning Model
-
-**The cyclical process of effective learning**
-</content>
-<speaker-notes>
-**Opening:** Barry Zimmerman's 2002 model has over 3,000+ citations. It's THE foundational framework for understanding self-regulated learning.
-
-**Key Points:** Self-regulated learning (SRL) = consciously planning, monitoring, and evaluating your learning. This isn't something you "have" or "don't have"—it's teachable. The model has three interconnected phases that cycle continuously.
-
-**Example:** Think about learning to drive: you plan your practice (forethought), monitor your steering (performance), then reflect on what went wrong (self-reflection)—then the cycle repeats.
-
-**Transition:** "Let's see the three phases..."
-</speaker-notes>
-</slide>
-
-<slide number="7" layout="framework" title="The Three-Phase Cyclical Model">
-<content>
-## Zimmerman's Cyclical Phase Model
-
+```
 ┌─────────────────┐
-│   FORETHOUGHT   │ ← Goal setting, planning, self-efficacy
-└────────┬────────┘
-         │
-         ↓
-┌─────────────────┐
-│   PERFORMANCE   │ ← Self-control, self-observation
-└────────┬────────┘
-         │
-         ↓
-┌─────────────────┐
-│ SELF-REFLECTION │ ← Self-judgment, self-reaction
-└────────┬────────┘
-         │
-         └──────────→ [cycle repeats]
-
-**Learning is not linear—it's a continuous improvement loop**
-</content>
-<speaker-notes>
-**Opening:** This cycle happens whether you're aware of it or not. Effective learners CONSCIOUSLY manage all three phases.
-
-**Key Points:** **Forethought:** What you do BEFORE learning (planning, motivation). **Performance:** What you do DURING learning (focus, monitoring). **Self-Reflection:** What you do AFTER learning (evaluation, response).
-
-**Example:** Bad student: Shows up to class with no preparation, passively listens, never reviews. Good student: Reviews last week's notes (forethought), actively tests themselves during study (performance), identifies what they still don't understand (self-reflection).
-
-**Check Understanding:** "Which phase do YOU think you're weakest in?" [think-pair-share].
-
-**Transition:** "Let's break down each phase in detail, starting with forethought..."
-</speaker-notes>
-</slide>
-
-<slide number="8" layout="framework" title="Phase 1: Forethought">
-<content>
-## Forethought Phase
-**What happens BEFORE learning**
-
-### Task Analysis
-- **Goal Setting:** "I will master Excel pivot tables by Friday"
-- **Strategic Planning:** "I'll watch tutorials, practice with sample data, then apply to my project"
-
-### Self-Motivation Beliefs
-- **Self-Efficacy:** "I CAN learn this—I've learned harder things before"
-- **Outcome Expectations:** "This skill will help me in my internship"
-- **Intrinsic Interest:** "Data analysis is actually pretty cool"
-- **Learning Goal Orientation:** "I want to understand WHY, not just memorize steps"
-</content>
-<speaker-notes>
-**Opening:** Forethought is where most students fail—they skip planning and jump straight to "studying."
+│   FORETHOUGHT   │──┐
+│  Goal Setting   │  │
+│   Planning      │  │
+└─────────────────┘  │
+         ↓           │
+┌─────────────────┐  │
+│  PERFORMANCE    │  │
+│  Self-Control   │  │
+│ Self-Observation│  │
+└─────────────────┘  │
+         ↓           │
+┌─────────────────┐  │
+│ SELF-REFLECTION │  │
+│ Self-Judgment   │  │
+│  Self-Reaction  │  │
+└─────────────────┘  │
+         │           │
+         └───────────┘
+```
+
+**The cycle repeats continuously—learning from each iteration.**
+
+### Slide 9 (Layout: content)
+## Forethought Phase: Before You Start
+
+**Task Analysis:**
+- **Goal setting:** Specific, proximal goals (not vague, distant ones)
+- **Strategic planning:** Selecting appropriate learning methods
 
-**Key Points:** **Task Analysis:** Breaking down WHAT you need to learn and HOW you'll learn it. **Goal Setting:** Specific, measurable, realistic (we'll cover SMART goals in Week 11). **Strategic Planning:** Choosing methods BEFORE you start (not just opening the textbook and hoping). **Self-Motivation:** Your beliefs about your ability affect your performance (growth mindset from Week 9).
+**Self-Motivation Beliefs:**
+- **Self-efficacy:** Confidence in your capability to learn this material
+- **Outcome expectations:** Belief that effort will lead to desired results
+- **Task interest/value:** Why this matters for your goals
+- **Goal orientation:** Learning goals vs. performance goals
 
-**Example:** Weak forethought: "I'll study for the test" (vague, no plan). Strong forethought: "I'll review lecture slides Monday, practice problems Tuesday-Wednesday, take practice test Thursday, review mistakes Friday" (specific, strategic).
+**Example:** "I'll master Zimmerman's three phases [goal] by creating a concept map and teaching it to a peer [strategy] because it's essential for my PDP [value]."
 
-**Check Understanding:** "What's your current forethought process for a big assignment?" [turn to partner and discuss].
+### Slide 10 (Layout: content)
+## Performance Phase: While You're Learning
 
-**Transition:** "Once you've planned, you move into the performance phase..."
-</speaker-notes>
-</slide>
-
-<slide number="9" layout="framework" title="Phase 2: Performance">
-<content>
-## Performance Phase
-**What happens DURING learning**
+**Self-Control Strategies:**
+- **Imagery:** Creating mental pictures to understand concepts
+- **Self-instruction:** Talking yourself through processes
+- **Attention focusing:** Eliminating distractions; deep work blocks
+- **Task strategies:** Using proven techniques (we'll cover these in Segment 3)
 
-### Self-Control Strategies
-- **Imagery:** Visualizing the process or outcome
-- **Self-Instruction:** Talking yourself through steps
-- **Attention Focusing:** Eliminating distractions (Week 8: Deep work)
-- **Task Strategies:** Using proven techniques (more on this later)
+**Self-Observation:**
+- **Self-recording:** Tracking time, strategies used, progress
+- **Self-experimentation:** Testing which approaches work best for you
 
-### Self-Observation
-- **Self-Recording:** "I've completed 15 out of 30 practice problems"
-- **Self-Experimentation:** "Does studying in the morning work better for me than at night?"
-</content>
-<speaker-notes>
-**Opening:** Performance phase is where effort meets strategy.
+**Example:** During study session, eliminate phone [attention focusing], use Pomodoro technique [task strategy], track which concepts require more review [self-recording].
 
-**Key Points:** **Self-Control:** Managing your focus, environment, and internal state during learning. **Attention Focusing:** Your phone is the enemy of this phase (Newport's Deep Work). **Task Strategies:** WHICH techniques you use matter—we'll cover this in Part 4. **Self-Observation:** Metacognitive monitoring = being aware of your understanding WHILE you learn.
+### Slide 11 (Layout: content)
+## Self-Reflection Phase: After Learning
 
-**Example:** Low self-control: Studying with Netflix on, phone notifications pinging, stopping every 10 minutes for snacks. High self-control: Phone in another room, 25-minute Pomodoro timer, deliberate practice on hardest concepts first.
+**Self-Judgment:**
+- **Self-evaluation:** Did I achieve my goal? To what extent?
+- **Causal attribution:** Why did I succeed or struggle?
+  - Adaptive: "I succeeded because I used active strategies"
+  - Maladaptive: "I succeeded because it was easy" or "I failed because I'm not smart"
 
-**Real-World Application:** Elite athletes use imagery and self-instruction constantly—"head down, follow through, watch the ball." You can do the same: "Read the question carefully, identify the framework, structure before writing."
+**Self-Reaction:**
+- **Self-satisfaction/affect:** Emotional response to performance
+- **Adaptive responses:** Adjusting strategies for next time
+- **Defensive responses:** Avoiding challenges to protect self-image
 
-**Check Understanding:** "What's ONE self-control strategy you could implement this week?"
+**Example:** "I mastered two phases but struggled with self-reflection details [evaluation]. I need more elaboration and examples [attribution]. Next time I'll create more self-test questions [adaptive response]."
 
-**Transition:** "After the performance comes the most neglected phase..."
-</speaker-notes>
-</slide>
+### Slide 12 (Layout: framework)
+## Using SRL in Your Mentorship Program
 
-<slide number="10" layout="framework" title="Phase 3: Self-Reflection">
-<content>
-## Self-Reflection Phase
-**What happens AFTER learning**
+| Phase | Before Meeting | During Meeting | After Meeting |
+|-------|----------------|----------------|---------------|
+| **Forethought** | Set meeting goals; prepare questions; review previous reflections | | |
+| **Performance** | | Focus attention; take notes; ask clarifying questions; self-monitor understanding | |
+| **Self-Reflection** | | | Evaluate: Did I achieve goals? Why/why not? What will I do differently next meeting? |
 
-### Self-Judgment
-- **Self-Evaluation:** "How well did I understand the material?"
-- **Causal Attribution:** "I did poorly BECAUSE I didn't practice enough" (not "because I'm bad at math")
+**Your mentorship preparation forms align with this cycle—use them strategically.**
 
-### Self-Reaction
-- **Self-Satisfaction/Affect:** Feeling proud of progress or frustrated with gaps
-- **Adaptive vs. Defensive Responses:**
-  - **Adaptive:** "I'll try a different strategy next time"
-  - **Defensive:** "This material is stupid anyway" or "The teacher can't explain things"
-</content>
-<speaker-notes>
-**Opening:** This is the MOST skipped phase—and the most valuable.
+### Slide 13 (Layout: content)
+## 🤝 Pair-Share: SRL Self-Assessment
 
-**Key Points:** **Self-Evaluation:** Accurately judging your understanding (calibration—more on this in Part 4). **Causal Attribution:** Fixed mindset blames ability ("I'm not a math person"), growth mindset identifies controllable factors ("I need better practice strategies"). **Adaptive Responses:** Effective learners adjust their approach based on results. **Defensive Responses:** Ineffective learners protect their ego instead of learning.
+**With a partner (3 minutes):**
 
-**Example:** After a bad quiz grade: Defensive: "The questions were unfair" / "I'm just bad at tests." Adaptive: "I need to practice retrieval instead of just rereading" / "I'll start studying earlier next time."
+1. Which phase of the SRL cycle is your **strongest**? Give an example.
+2. Which phase is your **weakest**? Why?
+3. What **one** specific change could strengthen your weakest phase?
 
-**Connection to Course:** Week 3 (Reflection): Gibbs' Cycle and Kolb's Cycle are STRUCTURED self-reflection processes. Week 9 (Growth Mindset): Attribution theory—do you attribute failure to fixed traits or adjustable strategies?
+**Be ready to share insights with the class.**
 
-**Check Understanding:** "Think of your last bad grade—was your response adaptive or defensive?"
+### Slide 14 (Layout: section-break)
+# SEGMENT 2
 
-**Transition:** "The cycle then repeats—your self-reflection informs your NEXT forethought phase..."
-</speaker-notes>
-</slide>
+## Self-Directed Learning in Practice
 
-<slide number="11" layout="content" title="The Cyclical Nature">
-<content>
-## Why It's a CYCLE, Not a Checklist
+*From theory to actionable steps*
 
-**Example: Learning to Give Presentations**
+### Slide 15 (Layout: framework)
+## University of Waterloo's Four-Step Process
 
-1. **Forethought:** "I'll practice 5 times, film myself, get feedback from 2 friends"
-2. **Performance:** Deliver presentation, focus on eye contact and pacing
-3. **Self-Reflection:** "I rushed the ending, lost eye contact when nervous"
-4. **Forethought (Round 2):** "Next presentation, I'll practice the ending more, mark eye contact cues on slides"
-5. **Performance (Round 2):** Apply lessons learned...
-6. [Cycle continues]
+```
+STEP 1: Assess Readiness to Learn
+    ↓
+STEP 2: Set Learning Goals
+    ↓
+STEP 3: Engage in the Learning Process
+    ↓
+STEP 4: Evaluate Learning
+    ↓
+(Cycle repeats)
+```
 
-**Each cycle makes you better**
-</content>
-<speaker-notes>
-**Opening:** This is how mastery happens—through repeated cycles of improvement.
+**Each step includes specific actions and tools.**
 
-**Key Points:** Your self-reflection from one cycle INFORMS your forethought for the next. This is how top performers in ANY field improve: athletes, musicians, professionals. The cycle can happen in minutes (during a study session) or months (across a semester).
+**SDL isn't "figure it out alone"—it's structured autonomy with support.**
 
-**Example:** Your PDP is essentially a long-term SRL cycle: Forethought: Setting 1-3-5 year goals. Performance: Executing learning strategies throughout your career. Self-Reflection: Annual reviews, mentor check-ins, adjusting goals.
+### Slide 16 (Layout: content)
+## Step 1: Assess Readiness to Learn
 
-**Connection to Assessments:** Reflective Essay: You're analyzing TWO cycles—field trip experience and guest speaker experience. Mentorship: Each meeting is a self-reflection phase that informs your next forethought.
+**Three dimensions to assess:**
 
-**Check Understanding:** "Where are you in the cycle right now for this course?" [quick poll].
+**1. Attitudes:** Are you curious? Motivated? Open to learning?
+**2. Abilities:** Do you have foundational skills? Time management? Learning strategies?
+**3. Characteristics:** Are you self-disciplined? Persistent? Comfortable with ambiguity?
 
-**Transition:** "Zimmerman gives us the WHY and WHAT—now let's get a practical HOW from the University of Waterloo..."
-</speaker-notes>
-</slide>
+**Honest self-assessment identifies gaps so you can seek support.**
 
-<slide number="12" layout="section-break" title="Part 2: Waterloo's SDL Framework">
-<content>
-# Part 2
-## Waterloo's Self-Directed Learning Framework
+**Key insight:** SDL readiness can be developed—low readiness now doesn't mean you can't do SDL with appropriate scaffolding.
 
-**Four practical steps for taking ownership**
-</content>
-<speaker-notes>
-**Opening:** While Zimmerman gives us theory, Waterloo gives us a step-by-step process.
+### Slide 17 (Layout: content)
+## Step 2: Set Learning Goals (Learning Contracts)
 
-**Key Points:** Self-Directed Learning (SDL) emphasizes AUTONOMY—you choose what, when, how. This framework is used at top universities worldwide for independent study. You'll use this TODAY to prepare for Mentor Meeting #2.
+**Learning Contract Components:**
 
-**Transition:** "Here are the four steps..."
-</speaker-notes>
-</slide>
+| Element | Question | Example |
+|---------|----------|---------|
+| **Learning goals** | What will I learn? | "I will understand digital marketing career pathways and required competencies" |
+| **Strategies/Resources** | How will I learn it? | "Mentorship meetings, LinkedIn research, informational interviews" |
+| **Evidence of accomplishment** | How will I know I learned it? | "I can describe 3 career paths with pros/cons and required skills" |
+| **Timeline** | By when? | "By Week 8 mentorship meeting" |
 
-<slide number="13" layout="framework" title="The Four-Step SDL Process">
-<content>
-## University of Waterloo's 4-Step Framework
+**Learning contracts create accountability and clarity.**
 
-### Step 1: Assess Readiness to Learn
-Evaluate your current skills, attitudes, and motivation
+### Slide 18 (Layout: content)
+## Step 3: Engage in the Learning Process
 
-### Step 2: Set Learning Goals
-Create specific, measurable objectives (learning contracts)
+**Active engagement strategies:**
 
-### Step 3: Engage in the Learning Process
-Identify resources, select strategies, actively participate
+**Identify diverse resources:**
+- Human resources: mentors, peers, professionals, instructors
+- Information resources: articles, books, online courses, podcasts
+- Experiential resources: field trips, guest speakers, practice opportunities
 
-### Step 4: Evaluate Learning
-Reflect on progress, seek feedback, adjust approach
+**Select appropriate strategies:**
+- Match strategies to learning goals (we'll cover evidence-based strategies in Segment 3)
+- Use active approaches (testing, elaborating, discussing) over passive ones (rereading, highlighting)
 
-*(University of Waterloo Centre for Teaching Excellence, n.d.)*
-</content>
-<speaker-notes>
-**Opening:** Notice how this maps to Zimmerman's model—Step 1-2 = Forethought, Step 3 = Performance, Step 4 = Self-Reflection.
+**Monitor progress continuously:**
+- Are you moving toward your goal? How do you know?
+- What's working? What's not? What adjustments are needed?
 
-**Key Points:** This framework is especially useful when YOU get to choose what to learn (electives, skill development, PDP goals). Learning contracts (Step 2) make vague goals concrete. Step 4 closes the loop—you don't just learn, you EVALUATE what you learned.
+### Slide 19 (Layout: content)
+## Step 4: Evaluate Learning
 
-**Example:** PDP Goal: "Improve my data analysis skills." Step 1: Assess—"I know basic Excel, weak on statistics, no experience with R or Python." Step 2: Goal—"Complete DataCamp Excel course by October, analyze 3 real datasets." Step 3: Engage—"30 min/day practice, apply to class projects, join data club." Step 4: Evaluate—"Did I finish the course? Can I clean and visualize data independently?"
+**Self-reflection (internal evaluation):**
+- Did I achieve my learning goals? To what extent?
+- What strategies were most/least effective?
+- What surprised me? What challenged me?
+- How does this learning connect to my broader development goals?
 
-**Transition:** "Let's go deeper on learning contracts..."
-</speaker-notes>
-</slide>
+**External feedback (seeking validation):**
+- Share learning with mentor/peers and ask for feedback
+- Test yourself formally (practice questions, teach someone else)
+- Apply knowledge in real situations and assess results
 
-<slide number="14" layout="content" title="Learning Contracts">
-<content>
-## What Is a Learning Contract?
+**Action planning:**
+- What will I do differently next time?
+- What new learning needs emerged?
+- How will I apply what I learned?
 
-A **learning contract** is a written agreement (with yourself or a mentor) specifying:
+### Slide 20 (Layout: framework)
+## Four-Step Process Applied to Your PDP
 
-1. **What** you will learn (specific competencies)
-2. **How** you will learn it (strategies and resources)
-3. **When** you will complete it (timeline with milestones)
-4. **How** you will demonstrate learning (evidence/assessment)
+**Your Personal Development Plan follows this structure:**
 
-**Used in medical schools, MBA programs, and professional development**
-</content>
-<speaker-notes>
-**Opening:** Learning contracts turn fuzzy intentions into concrete commitments.
+| Step | PDP Component |
+|------|---------------|
+| **1. Assess Readiness** | SWOT analysis; self-assessment results (MBTI, VIA, EI) |
+| **2. Set Goals** | SMART goals with 1-year, 3-year, 5-year milestones |
+| **3. Engage** | Action plans; mentor meetings; skill development activities |
+| **4. Evaluate** | Quarterly reviews; mentor feedback; progress tracking |
 
-**Key Points:** They create ACCOUNTABILITY—especially when shared with a mentor. They force you to think strategically about HOW you'll learn (not just WHAT). They provide built-in evaluation criteria—you know if you succeeded or failed.
+**Your PDP IS a learning contract with yourself about who you're becoming.**
 
-**Example:** LEARNING CONTRACT: Public Speaking Skills. WHAT: Deliver a confident 10-minute presentation without reading slides. HOW: Join Toastmasters, attend 4 meetings; Practice 1 presentation/week with roommate feedback; Film myself, analyze body language and vocal variety. WHEN: 8 weeks (October 1 - November 26). EVIDENCE: Deliver group presentation without notes; Self-rating 4/5 on confidence; Peer feedback confirms engagement.
+### Slide 21 (Layout: content)
+## 🤝 Pair-Share: Learning Contract Practice
 
-**Connection to Assessments:** Your PDP should include learning contracts for 1-year goals. Mentor Meeting #2: Share a learning contract and get mentor input.
+**With your partner (3 minutes):**
 
-**Transition:** "Now let's tackle one of education's biggest myths..."
-</speaker-notes>
-</slide>
+Create a mini learning contract for **one** goal from your eventual PDP:
 
-<slide number="15" layout="section-break" title="Part 3: Learning Styles Myth">
-<content>
-# Part 3
-## The Learning Styles Myth
+1. **Learning goal:** What specifically will you develop?
+2. **Strategies/Resources:** How? (Must include at least 2 sources/approaches)
+3. **Evidence:** How will you know you've achieved it?
+4. **Timeline:** By when? (Be realistic)
 
-**Why VARK doesn't work—and what does**
-</content>
-<speaker-notes>
-**Opening:** This will challenge something you've probably believed for years. That's uncomfortable—but it's important.
+**Share with your partner and give each other feedback on specificity.**
 
-**Key Points:** Learning styles (VARK, Kolb) are one of education's most persistent "neuromyths." The idea FEELS right—but feelings aren't evidence. Understanding why this myth persists teaches you critical evaluation skills.
+### Slide 22 (Layout: section-break)
+# SEGMENT 3
 
-**Transition:** "Let's look at the claim..."
-</speaker-notes>
-</slide>
+## Metacognition & Evidence-Based Learning Strategies
 
-<slide number="16" layout="content" title="The Learning Styles Claim">
-<content>
-## The "Meshing Hypothesis"
+*What actually works (and what doesn't)*
 
-**Claim:** Students learn better when instruction matches their preferred learning style
+### Slide 23 (Layout: framework)
+## Metacognition: Thinking About Thinking
 
-**Examples:**
-- **Visual learners** should receive diagrams and videos
-- **Auditory learners** should receive lectures and discussions
-- **Kinesthetic learners** should receive hands-on activities
+**"Thinking about one's own thinking"** *(Flavell, 1979)*
 
-**Predicted Result:** Matching instruction to style → Better learning outcomes
-</content>
-<speaker-notes>
-**Opening:** This is called the "meshing hypothesis"—mesh instruction to style. It seems intuitively obvious, right?
+**Three components (Stanton et al., 2021):**
 
-**Key Points:** Most of us have taken a VARK quiz or heard "I'm a visual learner." The claim requires EVIDENCE: Does matching improve learning MORE than just using multiple modalities? The prediction is testable—and has been tested extensively.
+1. **Metacognitive knowledge:** What you know about how you learn
+   - Self-knowledge: "I learn concepts better through examples than definitions"
+   - Task knowledge: "Understanding theories requires elaboration and application"
+   - Strategy knowledge: "Self-testing reveals gaps better than rereading"
 
-**Example:** If you're a "visual learner" and I teach you with diagrams, will you learn MORE than if I teach you with text? More importantly, will you learn MORE than a "verbal learner" getting the same diagrams?
+2. **Metacognitive monitoring:** Assessing your current understanding
+   - "Do I really understand this, or does it just feel familiar?"
+   - Calibration: Accuracy of self-assessment
 
-**Check Understanding:** "How many of you have been told you have a learning style?" [most hands raise]. "How many have seen evidence that matching instruction to it helps?" [hands drop].
+3. **Metacognitive control:** Adjusting strategies based on monitoring
+   - "This isn't working—I'll try a different approach"
 
-**Transition:** "So what does the research actually show?"
-</speaker-notes>
-</slide>
+### Slide 24 (Layout: content)
+## Critical Evaluation: The Learning Styles Myth
 
-<slide number="17" layout="content" title="What the Research Shows">
-<content>
-## The Scientific Consensus
+**The claim:** Matching instruction to students' learning styles (visual, auditory, kinesthetic) improves learning.
 
-### Pashler et al. (2008) - Comprehensive Review
-*Psychological Science in the Public Interest*
+**The evidence:** After decades of research, **no empirical support exists** for this "meshing hypothesis."
 
-**Finding:** "We found virtually no evidence for the interaction pattern" required to validate the meshing hypothesis
+**Why it persists despite being debunked:**
+- Feels intuitively right
+- Confirms people's preferences
+- Widely promoted in popular education literature
 
-**Translation:** Matching instruction to learning style does NOT improve outcomes
+**What's true instead:**
+- You have learning **preferences** (comfort), not learning **styles** (effectiveness)
+- Multiple modalities benefit everyone, regardless of preference
+- Evidence-based strategies work for all learners
 
-### Newton &amp; Salvi (2020) - Teacher Beliefs Study
-89-90% of teachers worldwide believe in learning styles **despite lack of evidence**
+**Bottom line:** Stop choosing strategies based on "your learning style." Use evidence-based strategies instead.
 
-### Coffield et al. (2004) - Systematic Review
-Identified **71 different learning styles models** with major validity and reliability problems
-</content>
-<speaker-notes>
-**Opening:** This isn't one study—it's decades of research across multiple fields.
+*(Pashler et al., 2008; Newton & Salvi, 2020; Stanton et al., 2021)*
 
-**Key Points:** Pashler's review is considered THE definitive analysis—it's devastating to the meshing hypothesis. The problem isn't that people don't HAVE preferences—it's that matching instruction to preferences doesn't HELP. 71 models! If learning styles were real, there'd be consensus on what they are.
+### Slide 25 (Layout: framework)
+## What Actually Works: Evidence-Based Strategies
 
-**Why It Persists:** It feels true (confirmation bias). It's been taught for 50+ years (cultural inertia). Testing companies profit from it. It sounds student-centered and progressive.
+**HIGH EFFECTIVENESS (Dunlosky et al., 2013):**
 
-**Example:** Imagine if medical schools taught 71 different models of the circulatory system—you'd know something was wrong. That's what happened with learning styles.
+1. **Retrieval Practice (Self-Testing)**
+   - Quiz yourself without notes; use flashcards; teach someone else
+   - Why it works: Retrieving strengthens memory more than restudying
 
-**Transition:** "So why doesn't it work? And what DOES work?"
-</speaker-notes>
-</slide>
+2. **Spaced Practice (Distributed Practice)**
+   - Study across multiple sessions over time instead of cramming
+   - Why it works: Spacing forces memory consolidation and reconsolidation
 
-<slide number="18" layout="content" title="Why Matching Doesn't Work">
-<content>
-## The Problem With "Styles"
+**MODERATE EFFECTIVENESS:**
 
-### 1. Content Matters More Than Style
-- You can't learn to identify birds without SEEING birds (visual)
-- You can't learn pronunciation without HEARING sounds (auditory)
-- **The content determines the optimal modality, not the learner**
+3. **Elaboration**
+   - Ask "why" and "how" questions; connect to what you know; use examples
+   - Why it works: Creates meaningful connections and deeper processing
 
-### 2. Preferences ≠ Effectiveness
-- You might PREFER reading, but TESTING yourself is more effective
-- "I'm a hands-on learner" often means "I get bored with lectures" (motivation, not cognitive style)
+4. **Interleaving**
+   - Mix different topics/problems during study instead of blocking by topic
+   - Why it works: Forces discrimination between concepts and builds flexible understanding
 
-### 3. Effective Learning Uses MULTIPLE Modalities
-- Best teaching: Visual + Verbal + Practice (for ALL students)
-</content>
-<speaker-notes>
-**Opening:** The fundamental error is thinking learner characteristics override content characteristics.
+### Slide 26 (Layout: content)
+## Applying to Your Learning This Week
 
-**Key Points:** **Content-Driven:** Some things MUST be visual (anatomy diagrams), some MUST be verbal (poetry analysis). **Preference ≠ Performance:** Students often prefer methods that feel easy but produce shallow learning (rereading) over methods that feel hard but produce deep learning (self-testing). **Multimodal Teaching:** Good teaching uses diagrams AND explanations AND practice—for everyone.
+**To learn Week 4 content effectively:**
 
-**Example:** You can't learn to play guitar by reading about it (must be kinesthetic). You can't learn Excel by watching videos—you must practice. But EVERYONE learns guitar the same way: observe, practice, get feedback, repeat.
+**✅ DO (Evidence-Based):**
+- **Retrieval practice:** Close this lecture, write everything you remember about Zimmerman's model, then check accuracy
+- **Spaced practice:** Review today's content tomorrow for 15 minutes, then again Friday
+- **Elaboration:** Connect SRL concepts to your mentorship experiences—give specific examples
+- **Self-testing:** Create 5 practice questions about today's content and answer them without notes
 
-**Real Research Finding:** When students study with their "preferred" style, they FEEL like they learned more—but perform the same or WORSE on tests (metacognitive illusion).
+**❌ DON'T (Low Effectiveness):**
+- Reread slides multiple times hoping content will "sink in"
+- Highlight every seemingly important point in readings
+- Copy notes verbatim without processing meaning
+- Cram all Week 4 review into one Sunday night session
 
-**Transition:** "Okay, if not learning styles, then WHAT actually works?"
-</speaker-notes>
-</slide>
+### Slide 27 (Layout: section-break)
+# SEGMENT 4
 
-<slide number="19" layout="section-break" title="Part 4: Evidence-Based Strategies">
-<content>
-# Part 4
-## Evidence-Based Learning Strategies
+## Integration & Application
 
-**What cognitive science has proven ACTUALLY works**
-</content>
-<speaker-notes>
-**Opening:** Good news: We know exactly what works—it's just not what you've been doing.
+*Bringing it all together for your success*
 
-**Key Points:** These strategies have HUNDREDS of studies supporting them. They work for all subjects, all ages, all people. They feel harder than passive review—but that's WHY they work (desirable difficulty).
+### Slide 28 (Layout: framework)
+## How the Frameworks Work Together
 
-**Transition:** "Let's look at the big four..."
-</speaker-notes>
-</slide>
+```
+WATERLOO FOUR-STEP PROCESS (Structure)
+    │
+    ├──> Step 1: Assess Readiness ──> ZIMMERMAN: Forethought Phase + METACOGNITION: Self-Knowledge
+    │
+    ├──> Step 2: Set Goals ──> ZIMMERMAN: Goal Setting + Strategic Planning
+    │
+    ├──> Step 3: Engage ──> ZIMMERMAN: Performance Phase + EVIDENCE-BASED STRATEGIES: Retrieval, Spacing, Elaboration
+    │
+    └──> Step 4: Evaluate ──> ZIMMERMAN: Self-Reflection Phase + METACOGNITION: Monitoring & Control
+```
 
-<slide number="20" layout="content" title="Strategy 1: Retrieval Practice">
-<content>
-## Retrieval Practice (Self-Testing)
+**Waterloo provides the process. Zimmerman explains the psychology. Evidence-based strategies are the tactics. Metacognition makes it all conscious.**
 
-**What It Is:**
-- Actively recalling information from memory (without looking at notes)
-- Examples: Flashcards, practice tests, self-quizzing, explaining to a friend
+### Slide 29 (Layout: content)
+## Immediate Application: Preparing for Next Mentorship Meeting
 
-**Why It Works:**
-- The act of RETRIEVING strengthens memory more than passive review
-- Identifies what you DON'T know (metacognitive benefit)
+**Before Meeting (Forethought + SDL Step 1-2):**
+- Reflect on current development needs (metacognitive self-knowledge)
+- Set 2-3 specific meeting goals using learning contract format
+- Prepare questions using elaboration (connect to your experiences/interests)
+- Review previous meeting reflections (self-regulated learning cycle)
 
-**How to Use:**
-- After reading a chapter, close the book and write down everything you remember
-- Use flashcards (Anki, Quizlet) for definitions and concepts
-- Explain the lecture to a study partner without notes
+**During Meeting (Performance + SDL Step 3):**
+- Focus attention completely (self-control)
+- Take notes, ask clarifying questions (active engagement)
+- Monitor understanding in real-time (metacognitive monitoring)
 
-**Research:** Dunlosky et al. (2013) rated practice testing as **HIGH utility**
-</content>
-<speaker-notes>
-**Opening:** This is THE most powerful learning strategy—and most students don't do it.
+**After Meeting (Self-Reflection + SDL Step 4):**
+- Test yourself: Can you explain mentor's advice without notes? (retrieval practice)
+- Evaluate goal achievement and strategy effectiveness (self-judgment)
+- Identify action items and integrate into PDP (adaptive responses)
+- Schedule follow-up actions using spaced practice
 
-**Key Points:** **Retrieval Strengthens Memory:** Every time you force yourself to recall, you reinforce the neural pathway. **Identifies Gaps:** You discover what you DON'T know—passive rereading creates illusion of knowledge. **Testing Effect:** Has been replicated in hundreds of studies across ages and subjects.
+### Slide 30 (Layout: content)
+## Before Next Class: Your Action Items
 
-**Example:** Weak study session: Read chapter 3 times, highlight key points. Strong study session: Read once, close book, write summary from memory, check what you missed, quiz yourself on missed points.
+**By Friday (Week 4 Quiz):**
+- [ ] Complete all three required readings (Zimmerman, Waterloo, Stanton)
+- [ ] Use retrieval practice: summarize each reading from memory, then check accuracy
+- [ ] Complete Week 4 quiz (tests understanding of self-regulated learning frameworks)
 
-**Common Mistake:** Students feel they need to "study more" before testing themselves—WRONG. Test yourself EARLY and OFTEN, even when you don't feel ready.
+**By Monday Tutorial:**
+- [ ] Create one learning contract for a PDP goal (practice for tutorial activity)
+- [ ] Reflect: Which SRL phase is your weakest? What one change will you make?
+- [ ] If you have mentorship meeting this week, apply today's frameworks to preparation
 
-**Connection to Assessments:** This week's quiz: Use practice retrieval BEFORE taking it. PDP: Include retrieval practice in your learning strategy section.
-
-**Transition:** "Retrieval practice is powerful, but WHEN you practice matters..."
-</speaker-notes>
-</slide>
-
-<slide number="21" layout="content" title="Strategy 2: Spaced Practice">
-<content>
-## Spaced Practice (Distributed Practice)
-
-**What It Is:**
-- Spreading study sessions over time (days/weeks) instead of cramming
-
-**Why It Works:**
-- Memory consolidation happens during sleep and between sessions
-- Forcing yourself to re-retrieve after forgetting strengthens long-term retention
-
-**How to Use:**
-- Study Topic A on Monday, review on Wednesday, review on Sunday, review next week
-- Start preparing for exams 2+ weeks early with daily 30-min sessions (not 6 hours the night before)
-- Use a spaced repetition app (Anki) that automatically schedules reviews
-
-**Research:** Dunlosky et al. (2013) rated distributed practice as **HIGH utility**
-</content>
-<speaker-notes>
-**Opening:** This directly contradicts what most students do—cramming.
-
-**Key Points:** **Cramming Works Short-Term:** You can pass a test the next day—but forget everything in a week. **Spacing Works Long-Term:** Initial performance seems slower, but retention is far superior. **Desirable Difficulty:** Re-learning after forgetting feels hard—that struggle is what strengthens memory.
-
-**Example:** Cram: Study 8 hours Saturday night for Monday test → Pass test, forget by next month. Space: Study 1 hour/day for 8 days → Same test performance, retain for months/years.
-
-**Visual Analogy:** Cramming = running a sprint—fast but unsustainable. Spacing = training for a marathon—builds lasting capacity.
-
-**Connection to Assessments:** Your PDP goals span 1-5 years—spaced practice, not cramming. Reflective Essay: Start thinking about field trip insights NOW, revisit weekly, write when it's due.
-
-**Transition:** "The WHAT you study and WHEN you study it matter—but HOW you process it matters too..."
-</speaker-notes>
-</slide>
-
-<slide number="22" layout="content" title="Strategy 3: Elaboration">
-<content>
-## Elaboration (Deep Processing)
-
-**What It Is:**
-- Asking "why" and "how" questions to connect new information to existing knowledge
-
-**Why It Works:**
-- Creates richer, more interconnected memory networks
-- Transforms surface-level memorization into deep understanding
-
-**How to Use:**
-- **Elaborative Interrogation:** "WHY does this make sense? HOW does this connect to X?"
-- **Self-Explanation:** Talk through problems step-by-step, explaining your reasoning
-- **Connecting to Experience:** "How have I seen this in real life?"
-
-**Research:** Dunlosky et al. (2013) rated elaboration as **MODERATE utility**
-</content>
-<speaker-notes>
-**Opening:** This is about UNDERSTANDING, not just memorizing.
-
-**Key Points:** **Surface Learning:** "Metacognition = thinking about thinking" [memorizes definition]. **Deep Learning:** "Metacognition is like being aware of my own thought process—it's how I caught myself making assumptions in the field trip reflection." **Transfer:** Elaboration helps you APPLY knowledge in new contexts (not just recognize it on multiple-choice tests).
-
-**Example:** Reading Zimmerman's model: Don't just memorize the three phases. ASK: "When have I used forethought in my own learning? What happens when I skip the self-reflection phase? How does this connect to Gibbs' Reflective Cycle from Week 3?"
-
-**Connection to Course:** Tutorial today: You'll elaborate on your learning strategies. Reflective Essay: Elaboration = connecting field trip to course concepts (Week 1, 5, 7, 9).
-
-**Check Understanding:** "Right now, elaborate: How does spaced practice connect to Zimmerman's self-reflection phase?" [think-pair-share].
-
-**Transition:** "Final strategy..."
-</speaker-notes>
-</slide>
-
-<slide number="23" layout="content" title="Strategy 4: Interleaving">
-<content>
-## Interleaving (Mixed Practice)
-
-**What It Is:**
-- Mixing different types of problems or topics during study (instead of blocking by type)
-
-**Why It Works:**
-- Forces you to actively choose the right strategy for each problem (metacognitive practice)
-- Improves discrimination between problem types
-
-**How to Use:**
-- Instead of: 10 algebra problems, then 10 geometry problems
-- Try: Algebra, geometry, algebra, calculus, geometry, algebra...
-- Mix subjects during study sessions (30 min accounting, 30 min marketing, 30 min statistics)
-
-**Research:** Dunlosky et al. (2013) rated interleaving as **MODERATE utility**
-</content>
-<speaker-notes>
-**Opening:** This feels HARDER and less efficient—but that's the point.
-
-**Key Points:** **Blocked Practice:** Feels easy, creates illusion of mastery (you're pattern-matching, not thinking). **Interleaved Practice:** Feels difficult, forces you to THINK about which approach to use. **Transfer Benefit:** Interleaving helps you recognize problem types on exams where they're mixed.
-
-**Example:** Blocked: All Week 1 quiz questions, all Week 2 quiz questions, all Week 3... Interleaved: Mix Week 1, 3, 5, 2, 7, 4 questions—forces you to IDENTIFY which framework to use.
-
-**When to Use:** Later stages of learning (not when totally new to a concept). Practicing for exams that mix topics. Maintaining multiple skills over time.
-
-**Connection to Course:** Your Reflective Essay mixes concepts from Weeks 1-10—interleaved application. PDP integrates self-assessment, goal-setting, skills development—interleaved competencies.
-
-**Transition:** "Let's summarize what works and what doesn't..."
-</speaker-notes>
-</slide>
-
-<slide number="24" layout="framework" title="What Works vs. What Doesn't">
-<content>
-## Evidence-Based Summary
-
-### ✅ HIGH EVIDENCE (Use These)
-- **Retrieval Practice** - Self-testing, flashcards, explaining without notes
-- **Spaced Practice** - Distribute study over time
-- **Elaboration** - Ask why/how, connect to existing knowledge
-- **Interleaving** - Mix problem types during practice
-
-### ⚠️ LOW EVIDENCE (Use Sparingly)
-- **Highlighting/Underlining** - Passive, doesn't engage memory
-- **Rereading** - Creates false sense of familiarity
-- **Summarizing** - Only helps if you're trained in the technique
-
-### ❌ NO EVIDENCE (Stop Doing)
-- **Matching instruction to learning styles** - Myth
-
-*(Dunlosky et al., 2013; Stanton et al., 2021)*
-</content>
-<speaker-notes>
-**Opening:** Notice what's missing from the "works" list—most of what students actually DO.
-
-**Key Points:** Students overwhelmingly use LOW-EVIDENCE strategies (highlighting, rereading) because they feel easy. HIGH-EVIDENCE strategies feel harder—that's desirable difficulty. Your study time is limited—invest it in strategies that actually work.
-
-**Example:** 3 hours of highlighting and rereading &lt; 1 hour of retrieval practice and spaced review.
-
-**Connection to Self-Regulated Learning:** **Forethought:** Choose evidence-based strategies BEFORE you start studying. **Performance:** Implement retrieval/spacing/elaboration/interleaving. **Self-Reflection:** Did these strategies improve your test performance? Adjust if needed.
-
-**Check Understanding:** "Which low-evidence strategy do YOU use most often?" [self-reflection]. "Which high-evidence strategy will you try THIS WEEK?" [commitment].
-
-**Transition:** "Let's bring this all together for Mentor Meeting #2..."
-</speaker-notes>
-</slide>
-
-<slide number="25" layout="section-break" title="Part 5: Mentor Meeting #2">
-<content>
-# Part 5
-## Preparing for Mentor Meeting #2
-
-**Applying SDL to your development goals**
-</content>
-<speaker-notes>
-**Opening:** Everything today points to this: Your next mentor meeting focuses on self-directed learning.
-
-**Key Points:** Meeting #2 recommended focus: "Learning goals and progress monitoring." You'll create a learning contract for ONE PDP goal. Your mentor will help you refine your strategies and hold you accountable.
-
-**Transition:** "Here's how to prepare..."
-</speaker-notes>
-</slide>
-
-<slide number="26" layout="content" title="Meeting Preparation Checklist">
-<content>
-## Preparing for Mentor Meeting #2
-
-### Before the Meeting (Pre-Meeting Form - Due 48 Hours Before)
-
-**1. Assess Your Learning Readiness** (Waterloo Step 1)
-- What's one skill/competency you WANT to develop for your career?
-- What's your current level? (1-10 scale + specific evidence)
-- What motivates you to improve this? (Connect to PDP goals)
-
-**2. Draft a Learning Contract** (Waterloo Step 2)
-- WHAT: Specific competency/skill
-- HOW: Strategies you'll use (include evidence-based techniques)
-- WHEN: Timeline with milestones
-- EVIDENCE: How you'll know you've improved
-
-**3. Prepare Discussion Questions**
-- "Does this learning goal align with my career path?"
-- "What resources or strategies have you used for similar skills?"
-- "How will I know if I'm making progress?"
-</content>
-<speaker-notes>
-**Opening:** The better your preparation, the more value you get from mentor time.
-
-**Key Points:** Your mentor is NOT a teacher—they're a guide. Come with a DRAFT, not a blank page—mentors refine ideas, they don't create them for you. The Pre-Meeting Form is assessed—take it seriously.
-
-**Example Learning Contract:** WHAT: Improve data storytelling for business presentations. HOW: Take DataCamp "Data Visualization" course (6 hours, complete by Oct 15); Practice: Create 3 visualizations for group project, get peer feedback; Apply: Use in Group Presentation (Week 12). WHEN: 6 weeks (Oct 1 - Nov 15). EVIDENCE: Complete course with 80%+ on quizzes; Group presentation includes 3 clear, impactful visuals; Self-rating improvement from 4/10 to 7/10.
-
-**Connection to Assessments:** This learning contract becomes Section 4 of your PDP (due Week 11). Meeting #2 Post-Reflection Form: Document mentor advice and how you'll apply it.
-
-**Transition:** "Let's recap today's journey..."
-</speaker-notes>
-</slide>
-
-<slide number="27" layout="section-break" title="Summary">
-<content>
-# What We Covered Today
-
-1. **Zimmerman's SRL Model:** Forethought → Performance → Self-Reflection (cycle repeats)
-
-2. **Waterloo's SDL Framework:** Assess readiness → Set goals → Engage → Evaluate
-
-3. **Learning Styles Myth:** Meshing hypothesis has no evidence; content drives modality, not learner "style"
-
-4. **Evidence-Based Strategies:** Retrieval practice, spaced practice, elaboration, interleaving
-
-5. **Mentor Meeting #2 Prep:** Create a learning contract using today's frameworks
-</content>
-<speaker-notes>
-**Opening:** This is A LOT—don't try to memorize it, try to APPLY it.
-
-**Key Points:** The frameworks connect: SDL operationalizes SRL. The myth-busting matters: Critical evaluation of educational claims. The strategies work: Replace ineffective habits with proven techniques.
-
-**Example:** Starting today, test yourself instead of rereading. Starting this week, space your study instead of cramming. Starting this month, create a learning contract for your PDP.
-
-**Check Understanding:** "Which concept will be hardest to apply? Why?" [reflect].
-
-**Transition:** "Let's check if you met today's learning objectives..."
-</speaker-notes>
-</slide>
-
-<slide number="28" layout="content" title="Return to Learning Objectives">
-<content>
-## Did You Achieve Today's Objectives?
-
-**Self-Check:**
-
-1. ✅ Can you explain Zimmerman's three phases and identify your weakest one?
-2. ✅ Can you use the Waterloo framework to create a learning contract?
-3. ✅ Can you explain why the meshing hypothesis is unsupported?
-4. ✅ Can you name four evidence-based strategies and commit to using one?
-
-**If YES to all four:** You're ready for the tutorial and quiz
-
-**If NO to any:** Review the slides, attend office hours, discuss with peers
-</content>
-<speaker-notes>
-**Opening:** Honest self-assessment (metacognition in action!).
-
-**Key Points:** These objectives are on this week's quiz. Tutorial will give you hands-on practice with learning contracts and strategy audits. This content directly supports your PDP and Reflective Essay.
-
-**Encouragement:** This is hard material—it challenges how you've studied your whole life. That discomfort means you're learning.
-
-**Transition:** "See you in the tutorial, where you'll apply all of this..."
-</speaker-notes>
-</slide>
-
-<slide number="29" layout="content" title="Before Next Class">
-<content>
-## Your Action Items
-
-### 📝 This Week
-1. **Tutorial:** Complete learning strategy audit and draft learning contract
-2. **Quiz:** Week 4 Quiz on Moodle (Zimmerman, Waterloo, learning styles, evidence-based strategies) - Due Sunday 11:59 PM
-3. **Mentor Meeting #2:** Schedule within next 2 weeks, submit Pre-Meeting Form 48 hours before
-
-### 📚 Next Week Preview
-- **Week 5: Self-Discovery Through Assessment**
-- Readings: MBTI, VIA Character Strengths, Holland Code, Johari Window
-- You'll complete 4 self-assessment tools and integrate insights
-
-### 💡 Apply Immediately
-- Try ONE evidence-based strategy this week (retrieval practice recommended)
-- Reflect: Did it feel harder? Did it work better?
-</content>
-<speaker-notes>
-**Opening:** Learning doesn't stop when class ends—it's just beginning.
-
-**Key Points:** Tutorial is hands-on practice—bring your PDP ideas. Quiz reinforces today's concepts—use retrieval practice to study for it! Mentor Meeting #2 is where theory becomes action.
-
-**Motivation:** Week 5's self-assessments (MBTI, VIA, Holland Code) build on your self-awareness. Your PDP is taking shape—you're 1/3 through the course.
-
-**Final Thought:** "The best learners aren't the smartest—they're the most strategic. You now have the strategies. Use them."
-</speaker-notes>
-</slide>
-
-<slide number="30" layout="content" title="Questions">
-<content>
-# Questions?
-
-**Office Hours:** By appointment - wil.hoang@gmail.com
-
-**Resources:**
-- Lecture slides on Moodle
-- Readings in course folder
-- Tutorial materials distributed today
-
-**Remember:** Self-regulated learning is a SKILL, not a trait. You can improve it with practice.
-</content>
-<speaker-notes>
-**Closing:** Take 5-10 minutes for questions. Encourage students to try ONE strategy this week and report back.
-
-**Common Questions:** "Do learning styles not matter AT ALL?" → Preferences exist, but matching doesn't improve learning; good teaching uses multiple modalities for everyone. "What if cramming has worked for me?" → Define "worked"—did you retain the knowledge? Could you apply it weeks later? "How do I convince myself to use harder strategies?" → Start small (one flashcard session), experience the results, build the habit.
-
-**Final Words:** "See you in tutorial. Come ready to design your learning contract!"
-</speaker-notes>
-</slide>
-
-</lecture>
+**Ongoing:**
+- [ ] Experiment with evidence-based strategies: try retrieval practice and spaced review for ALL courses
+- [ ] Monitor your metacognitive accuracy: Do you really understand, or just feel familiar?
 
 </lecture_content>
-
-<task>
-Generate all 30 slides as a complete presentation slide deck. Reproduce all content exactly as provided. Enhance each slide with appropriate visuals, infographics, or imagery. Maintain consistent professional styling throughout.
-</task>
-
-<output_format>
-A presentation slide deck containing:
-- 30 slides total, matching the lecture content structure
-- Modern Bright Pastel Corporate visual design consistently applied
-- All lecture content text preserved exactly as written
-- Relevant images, infographics, icons, and diagrams on each slide
-- Minimum 18pt body text
-- Footers on content slides with course info and slide numbers
-- Academic citations in footers where referenced
-- Empty speaker notes sections
-</output_format>

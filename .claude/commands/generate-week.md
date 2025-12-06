@@ -91,8 +91,33 @@ RESEARCH SOURCES:
 SKILL INSTRUCTIONS:
 [Paste content from .claude/skills/content-generation/lecture-structure.md]
 
+CRITICAL - EXACT XML FORMAT REQUIRED 🔐:
+Every slide MUST use this exact attribute format:
+
+```xml
+<slide number="1" layout="title" title="Slide Title Here">
+
+# Slide Content
+
+<speaker-notes>
+Speaker notes here.
+</speaker-notes>
+
+</slide>
+```
+
+Required attributes (in this order):
+- `number="N"` - Integer starting at 1 (NOT `id="1.1"`)
+- `layout="type"` - One of: title, big-number, quote, framework, section-break, references, content
+- `title="..."` - Descriptive slide title
+
+Do NOT use:
+- `id="5.1"` format (use `number="5"`)
+- `type="title"` (use `layout="title"`)
+- `category="opening"` (use `layout="content"`)
+
 OUTPUT REQUIREMENTS:
-- 24-32 slides in XML format
+- 24+ slides in XML format (exact format above)
 - Opening (5-7 slides): title, hook, objectives, assessment connection, roadmap
 - Core (14-20 slides): 3-4 segments with examples
 - Wrap-up (5-7 slides): takeaways, preview, resources, references
@@ -172,9 +197,56 @@ SKILL INSTRUCTIONS:
 OUTPUT REQUIREMENTS:
 - 12 questions total (4 frameworks × 3 questions each)
 - Distribution: 4 Remembering + 8 Understanding
-- YAML format per skill template
 - NO scenario/application questions (those belong in tutorials)
 - ONE clearly correct answer per question
+
+CRITICAL - EXACT YAML FORMAT REQUIRED 🔐:
+The GIFT exporter requires this EXACT structure. Do not deviate:
+
+```yaml
+---
+metadata:
+  week: [N]
+  topic: "[Topic]"
+  prepares_for: "[Assessment name]"
+  source: "lecture-content.md"
+
+questions:
+  - id: "w[N]-q01"
+    type: "multiple_choice"
+    bloom_level: "remembering"  # or "understanding"
+    topic: "[Framework Name]"
+
+    question: |
+      [Question text ending with ?]
+
+    options:
+      - key: "A"
+        text: "[Option text]"
+        feedback: "[Why correct/incorrect]"
+        correct: true  # ONLY on correct answer
+
+      - key: "B"
+        text: "[Option text]"
+        feedback: "[Why incorrect]"
+
+      - key: "C"
+        text: "[Option text]"
+        feedback: "[Why incorrect]"
+
+      - key: "D"
+        text: "[Option text]"
+        feedback: "[Why incorrect]"
+
+    general_feedback: |
+      [2-3 sentences explaining the concept]
+---
+```
+
+Each option MUST have: key, text, feedback
+Correct option MUST have: correct: true
+Do NOT use markdown format (A. B. C. D.)
+Do NOT use correct_answer: "text" format
 
 Write the complete quiz-questions.md file.
 ---
@@ -276,7 +348,7 @@ courses/[CODE]/weeks/week-[N]/
 After all phases complete, verify:
 
 **Lecture:**
-- [ ] 24-32 slides with layout variety
+- [ ] 24+ slides with layout variety
 - [ ] Title slide as slide 1 (topic only, no course code)
 - [ ] References slide as final slide
 - [ ] Speaker notes for every slide

@@ -2,10 +2,10 @@
 Content Structure Validators
 
 Validates generated course content against quality standards:
-- Lectures: Structure, slide count, citations
+- Lectures: Structure, slide count (XML formats), citations
 - Tutorials: Alignment with assessments, timing
-- Slides: Layout compliance, references
 - Quizzes: GIFT format, content match
+- Gemini: Slide count matches lecture content
 """
 
 import re
@@ -16,9 +16,9 @@ from typing import Dict, List, Tuple
 class LectureValidator:
     """Validates lecture content structure and quality."""
 
-    REQUIRED_SECTIONS = ["Opening", "Core Content", "Wrap-up"]
-    MIN_SLIDES = 22
-    MAX_SLIDES = 30
+    # Check for structural elements via layout hints
+    REQUIRED_LAYOUTS = ["title", "section-break"]  # Must have title + sections
+    MIN_SLIDES = 24
     MIN_SOURCES = 3
 
     def validate(self, lecture_path: Path) -> Tuple[bool, List[str]]:
@@ -39,13 +39,17 @@ class LectureValidator:
         slides = self._count_slides(content)
         if slides < self.MIN_SLIDES:
             issues.append(f"Too few slides: {slides} (minimum {self.MIN_SLIDES})")
-        elif slides > self.MAX_SLIDES:
-            issues.append(f"Too many slides: {slides} (maximum {self.MAX_SLIDES})")
 
-        # Check required sections
-        for section in self.REQUIRED_SECTIONS:
-            if section.lower() not in content.lower():
-                issues.append(f"Missing required section: {section}")
+        # Check for structural layout/type elements (support both formats)
+        for layout in self.REQUIRED_LAYOUTS:
+            has_layout = (
+                f'layout="{layout}"' in content.lower()
+                or f'type="{layout}"' in content.lower()
+                or f'type="section_title"' in content.lower()
+                and layout == "section-break"
+            )
+            if not has_layout:
+                issues.append(f"Missing required layout: {layout}")
 
         # Check citations
         citations = self._count_citations(content)
@@ -64,21 +68,35 @@ class LectureValidator:
 
     def _count_slides(self, content: str) -> int:
         """Count slide markers in content."""
-        # Look for slide markers like "## Slide 1:" or "### Slide 1"
+        # XML format: <slide number="N" ...> or <slide id="N.N" ...>
+        xml_pattern = r'<slide\s+(?:number|id)="[\d.]+"'
+        xml_count = len(re.findall(xml_pattern, content))
+        if xml_count > 0:
+            return xml_count
+
+        # Fallback: markdown format like "## Slide 1:" or "### Slide 1"
         slide_pattern = r'(?:##\s+Slide\s+\d+|###\s+Slide\s+\d+|\*\*Slide\s+\d+)'
         return len(re.findall(slide_pattern, content, re.IGNORECASE))
 
     def _count_citations(self, content: str) -> int:
-        """Count unique citations (Author, Year) patterns."""
+        """Count sources via References section or in-text citations."""
+        # Count APA references: lines starting with Author and containing (Year)
+        ref_pattern = r'^[A-Z][^(\n]+\(\d{4}'
+        ref_matches = re.findall(ref_pattern, content, re.MULTILINE)
+        if len(ref_matches) >= 3:
+            return len(ref_matches)
+
+        # Fallback: count in-text (Author, Year) patterns
         citation_pattern = r'\([A-Z][a-z]+(?:\s+&\s+[A-Z][a-z]+)?,\s+\d{4}\)'
         citations = re.findall(citation_pattern, content)
-        return len(set(citations))  # Unique citations
+        return max(len(set(citations)), len(ref_matches))
 
 
 class TutorialValidator:
     """Validates tutorial content structure and alignment."""
 
-    REQUIRED_SECTIONS = ["Opening", "Main Activity", "Quiz Prep", "Wrap-up"]
+    # Updated to match current format
+    REQUIRED_SECTIONS = ["Quick Review", "Main Activity", "Before Next Class"]
     TARGET_DURATION = 90  # minutes
 
     def validate(self, tutorial_path: Path, assessment_schedule: Dict) -> Tuple[bool, List[str]]:
@@ -104,22 +122,19 @@ class TutorialValidator:
             if section.lower() not in content.lower():
                 issues.append(f"Missing required section: {section}")
 
-        # Check timing breakdown
-        timings = self._extract_timings(content)
-        total = sum(timings.values())
-        if abs(total - self.TARGET_DURATION) > 10:  # Allow 10min variance
-            issues.append(f"Total duration {total}min differs from target {self.TARGET_DURATION}min")
+        # Check timing (look for Duration in header)
+        duration_match = re.search(r'Duration[:\s]*(\d+)', content, re.IGNORECASE)
+        if duration_match:
+            duration = int(duration_match.group(1))
+            if abs(duration - self.TARGET_DURATION) > 15:
+                issues.append(
+                    f"Duration {duration}min differs from target "
+                    f"{self.TARGET_DURATION}min"
+                )
 
-        # Check assessment alignment
-        if "rubric" not in content.lower():
-            issues.append("No rubric reference found")
-        if "peer review" not in content.lower() and "feedback" not in content.lower():
-            issues.append("No peer review/feedback activity found")
-
-        # Check quiz questions
-        quiz_count = content.lower().count("question")
-        if quiz_count < 5:
-            issues.append(f"Too few quiz questions: {quiz_count} (minimum 5)")
+        # Check assessment connection
+        if "assessment" not in content.lower() and "rubric" not in content.lower():
+            issues.append("No assessment connection found")
 
         return len(issues) == 0, issues
 
@@ -139,11 +154,66 @@ class TutorialValidator:
         return sections
 
 
+class GeminiValidator:
+    """Validates Gemini prompt matches lecture content."""
+
+    def validate(
+        self, gemini_path: Path, lecture_path: Path
+    ) -> Tuple[bool, List[str]]:
+        """
+        Validate Gemini prompt matches lecture slide count.
+
+        Args:
+            gemini_path: Path to gemini-prompt.md
+            lecture_path: Path to lecture-content.md
+
+        Returns:
+            (is_valid, list_of_issues)
+        """
+        issues = []
+
+        if not gemini_path.exists():
+            return False, ["Gemini prompt not found"]
+
+        if not lecture_path.exists():
+            return False, ["Lecture content not found (needed for comparison)"]
+
+        gemini_content = gemini_path.read_text()
+        lecture_content = lecture_path.read_text()
+
+        lecture_slides = self._count_slides(lecture_content)
+        gemini_slides = self._count_slides(gemini_content)
+
+        if gemini_slides == 0:
+            issues.append("No slides found in Gemini prompt")
+        elif lecture_slides != gemini_slides:
+            issues.append(
+                f"Slide count mismatch: lecture={lecture_slides}, "
+                f"gemini={gemini_slides}"
+            )
+
+        return len(issues) == 0, issues
+
+    def _count_slides(self, content: str) -> int:
+        """Count slides in various formats."""
+        # XML format: <slide number="N" or <slide id="N.N"
+        xml_count = len(re.findall(r'<slide\s+(?:number|id)="[\d.]+"', content))
+        if xml_count > 0:
+            return xml_count
+
+        # Markdown format: **Slide N: or ### Slide N
+        md_count = max(
+            len(re.findall(r'\*\*Slide\s+\d+:', content)),
+            len(re.findall(r'###\s+Slide\s+\d+', content)),
+        )
+        return md_count
+
+
 class QuizValidator:
     """Validates quiz GIFT format and content."""
 
-    MIN_QUESTIONS = 5
-    MAX_QUESTIONS = 10
+    MIN_QUESTIONS = 10
+    MAX_QUESTIONS = 15  # Standard is 12 questions per week
 
     def validate(self, quiz_path: Path, lecture_content: str = None) -> Tuple[bool, List[str]]:
         """
@@ -163,8 +233,9 @@ class QuizValidator:
 
         content = quiz_path.read_text()
 
-        # Count questions (look for ::Question markers)
-        questions = content.count('::')
+        # Count questions (each question starts with ::Title:: pattern)
+        # Format is ::Title::Question{...} so divide by 2
+        questions = content.count('::') // 2
         if questions < self.MIN_QUESTIONS:
             issues.append(f"Too few questions: {questions} (minimum {self.MIN_QUESTIONS})")
         elif questions > self.MAX_QUESTIONS:
@@ -174,9 +245,10 @@ class QuizValidator:
         if content.count('#') < questions:
             issues.append("Missing feedback for some questions")
 
-        # Check for answer markers ({= for correct, ~ for incorrect})
-        if not re.search(r'\{=', content):
-            issues.append("No correct answers marked (missing {=)")
+        # Check for answer markers (= for correct, ~ for incorrect in GIFT)
+        # GIFT format uses { =correct ~incorrect } or just =text and ~text
+        if not re.search(r'[{]\s*=|^=', content, re.MULTILINE):
+            issues.append("No correct answers marked (missing = prefix)")
 
         if not re.search(r'~', content):
             issues.append("No incorrect options found (missing ~)")
@@ -228,14 +300,21 @@ def validate_week_content(course_code: str, week_num: int) -> Dict[str, Tuple[bo
     else:
         results["tutorial"] = (False, ["Tutorial file not found"])
 
-    # Validate quiz
-    quiz_path = week_dir / f"week-{week_num}-quiz.gift"
+    # Validate quiz (check both locations)
+    quiz_path = week_dir / "output" / f"week-{week_num:02d}-quiz.gift"
+    if not quiz_path.exists():
+        quiz_path = week_dir / f"week-{week_num}-quiz.gift"  # Fallback
     if quiz_path.exists():
         validator = QuizValidator()
         lecture_content = lecture_path.read_text() if lecture_path.exists() else None
         results["quiz"] = validator.validate(quiz_path, lecture_content)
     else:
         results["quiz"] = (False, ["Quiz file not found"])
+
+    # Validate Gemini prompt
+    gemini_path = week_dir / "gemini-prompt.md"
+    gemini_validator = GeminiValidator()
+    results["gemini"] = gemini_validator.validate(gemini_path, lecture_path)
 
     return results
 

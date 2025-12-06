@@ -2,7 +2,7 @@
 metadata:
   week: 3
   topic: "Reflection & Reflective Learning"
-  prepares_for: "Reflective Essay (Week TBD) & Mentorship Program (20%)"
+  prepares_for: "Mentorship Program (20%), Reflective Essay (10%), Personal Development Plan (40%)"
   source: "lecture-content.md"
 
 questions:
@@ -12,337 +12,346 @@ questions:
     topic: "Gibbs' Reflective Cycle"
 
     question: |
-      What are the six stages of Gibbs' Reflective Cycle in the correct order?
+      How many stages are in Gibbs' Reflective Cycle?
 
     options:
       - key: "A"
-        text: "Description, Feelings, Evaluation, Analysis, Conclusion, Action Plan"
-        feedback: "Correct! Gibbs' cycle moves from describing what happened, through feelings and evaluation, to analysis, conclusions, and future actions."
-        correct: true
+        text: "Three stages"
+        feedback: "This is the number of stages in Driscoll & Bolton's model, not Gibbs'."
+        correct: false
 
       - key: "B"
-        text: "Description, Evaluation, Feelings, Analysis, Action Plan, Conclusion"
-        feedback: "Incorrect. Feelings comes before Evaluation in Gibbs' model, and Conclusion comes before Action Plan."
+        text: "Four stages"
+        feedback: "This is the number of stages in Kolb's Experiential Learning Cycle, not Gibbs'."
+        correct: false
 
       - key: "C"
-        text: "Experience, Observation, Conceptualization, Experimentation, Evaluation, Action"
-        feedback: "Incorrect. This mixes elements from Kolb's model with Gibbs. Gibbs has six distinct stages starting with Description."
-
-      - key: "D"
-        text: "What, So What, Now What, Feelings, Analysis, Action Plan"
-        feedback: "Incorrect. This combines Driscoll's three-question model with Gibbs' stages. They are separate frameworks."
-
-    general_feedback: |
-      Gibbs' Reflective Cycle (1988) consists of six stages that guide <b>systematic</b> (organized, structured) reflection: Description (what happened?), Feelings (what were you thinking/feeling?), Evaluation (what was good/bad?), Analysis (what sense can you make?), Conclusion (what else could you have done?), Action Plan (what will you do next time?). The cycle then repeats with new experiences. See Week 3 slides 12-16.
-
-  - id: "W3-Q2-gibbs-feelings-stage"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Gibbs' Reflective Cycle"
-
-    question: |
-      Why does Gibbs' Reflective Cycle include a separate "Feelings" stage before "Evaluation" and "Analysis"?
-
-    options:
-      - key: "A"
-        text: "To acknowledge that emotions influence professional learning and should be processed explicitly rather than contaminating objective analysis"
-        feedback: "Correct! Gibbs separates feelings from evaluation/analysis so emotions are acknowledged without distorting objective assessment. This prevents unprocessed emotions from biasing your analysis."
+        text: "Six stages"
+        feedback: "Correct! Gibbs' Reflective Cycle has six stages: Description, Feelings, Evaluation, Analysis, Conclusion, and Action Plan."
         correct: true
 
-      - key: "B"
-        text: "Because Gibbs believed feelings are more important than rational analysis in professional development"
-        feedback: "Incorrect. Gibbs doesn't prioritize feelings OVER analysis; he separates them so both can be examined properly without conflation."
-
-      - key: "C"
-        text: "To make the framework longer and more comprehensive than simpler models like Driscoll"
-        feedback: "Incorrect. The Feelings stage serves a specific purpose (emotional processing), not just to add length."
-
       - key: "D"
-        text: "To help students practice creative writing skills alongside analytical thinking"
-        feedback: "Incorrect. The purpose is emotional processing for better learning, not creative writing practice."
+        text: "Eight stages"
+        feedback: "No reflective framework covered in Week 3 has eight stages. Gibbs has six stages."
+        correct: false
 
-    general_feedback: |
-      Gibbs' Feelings stage (Stage 2) <b>explicitly</b> (clearly, directly) acknowledges emotions before moving to <b>objective</b> (unbiased, factual) Evaluation and Analysis. This prevents emotions from unconsciously distorting your assessment. For example, feeling defensive about criticism (Stage 2: Feelings) doesn't mean the criticism is invalid (Stage 4: Analysis). Separating them creates clearer thinking. See Week 3 slides 13-14.
-
-  - id: "W3-Q3-gibbs-vs-driscoll"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Gibbs vs. Driscoll Comparison"
-
-    question: |
-      How do Gibbs' Reflective Cycle and Driscoll's "What? So What? Now What?" model differ in their appropriate use cases?
-
-    options:
-      - key: "A"
-        text: "Gibbs (6 stages) is best for complex experiences requiring emotional processing; Driscoll (3 questions) is best for quick debriefs and time-constrained reflections"
-        feedback: "Correct! Gibbs provides comprehensive analysis including explicit emotional processing, while Driscoll offers speed and simplicity for regular, frequent reflections."
-        correct: true
-
-      - key: "B"
-        text: "Gibbs should only be used for negative experiences; Driscoll should only be used for positive experiences"
-        feedback: "Incorrect. Both frameworks work for positive and negative experiences. The difference is depth and time required, not emotional valence."
-
-      - key: "C"
-        text: "Gibbs is for academic assignments; Driscoll is for professional workplace reflection"
-        feedback: "Incorrect. Both can be used in academic and professional contexts. Choice depends on depth needed and time available, not setting."
-
-      - key: "D"
-        text: "Gibbs requires theory integration; Driscoll forbids connecting to theoretical frameworks"
-        feedback: "Incorrect. Both frameworks benefit from theory integration. Driscoll's 'So What?' question explicitly encourages connecting to theory."
-
-    general_feedback: |
-      Gibbs' 6-stage cycle provides <b>comprehensive</b> (thorough, complete) analysis ideal for significant experiences like mentorship meetings or field trips. Driscoll's 3-question model offers speed for daily quick debriefs. Gibbs might take 30-60 minutes; Driscoll can be done in 5-10 minutes. Both are valuable—choose based on time available and depth needed. See Week 3 slides 23-24.
-
-  - id: "W3-Q4-kolb-stages"
+  - id: "W3-Q2-kolb-experimentation"
     type: "multiple_choice"
     bloom_level: "remembering"
     topic: "Kolb's Experiential Learning Cycle"
 
     question: |
-      What are the four stages of Kolb's Experiential Learning Cycle?
+      Which stage of Kolb's Experiential Learning Cycle involves testing new approaches based on what you learned?
 
     options:
       - key: "A"
-        text: "Concrete Experience, Reflective Observation, Abstract Conceptualization, Active Experimentation"
-        feedback: "Correct! Kolb's cycle moves from having an experience, to reflecting on it, to forming theories, to testing those theories in new situations."
-        correct: true
+        text: "Concrete Experience"
+        feedback: "Concrete Experience is the first stage—having or doing an experience, not testing new approaches."
+        correct: false
 
       - key: "B"
-        text: "Description, Feelings, Analysis, Action Plan"
-        feedback: "Incorrect. These are stages from Gibbs' cycle, not Kolb's four-stage model."
+        text: "Reflective Observation"
+        feedback: "Reflective Observation involves reviewing and reflecting on the experience, not testing new behaviors."
+        correct: false
 
       - key: "C"
-        text: "Plan, Do, Study, Act"
-        feedback: "Incorrect. This is the PDSA cycle (Deming), not Kolb's Experiential Learning Cycle."
+        text: "Abstract Conceptualization"
+        feedback: "Abstract Conceptualization involves concluding and learning from the experience, not testing new approaches."
+        correct: false
 
       - key: "D"
-        text: "Experience, Evaluate, Conclude, Experiment"
-        feedback: "Incorrect. While these verbs are related, they aren't Kolb's exact four stages."
-
-    general_feedback: |
-      Kolb's Experiential Learning Cycle (1984) consists of four stages: Concrete Experience (DO—have an experience), Reflective Observation (OBSERVE—reflect from multiple perspectives), Abstract Conceptualization (THINK—form theories about what you learned), Active Experimentation (APPLY—test theories in new situations). The cycle then repeats, creating continuous improvement. See Week 3 slides 18-21.
-
-  - id: "W3-Q5-kolb-purpose"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Kolb's Experiential Learning Cycle"
-
-    question: |
-      What is the purpose of the "Abstract Conceptualization" stage in Kolb's cycle, and how does it differ from "Reflective Observation"?
-
-    options:
-      - key: "A"
-        text: "Reflective Observation describes what you noticed; Abstract Conceptualization extracts general principles that apply beyond the specific experience"
-        feedback: "Correct! Observation is about noticing details in one experience. Conceptualization creates transferable theories you can apply across multiple situations."
+        text: "Active Experimentation"
+        feedback: "Correct! Active Experimentation is the fourth stage where you plan and try out new approaches based on your learning. This creates new Concrete Experiences, continuing the learning spiral."
         correct: true
 
-      - key: "B"
-        text: "Reflective Observation is for emotional responses; Abstract Conceptualization is for logical thinking"
-        feedback: "Incorrect. Both stages involve thinking. The difference is between noticing (Observation) and theorizing (Conceptualization), not emotion vs. logic."
-
-      - key: "C"
-        text: "Reflective Observation happens during the experience; Abstract Conceptualization happens after"
-        feedback: "Incorrect. Both happen after the Concrete Experience. The difference is descriptive observation vs. theory formation."
-
-      - key: "D"
-        text: "There is no meaningful difference—Kolb uses different names for the same type of thinking"
-        feedback: "Incorrect. These are distinct stages: Observation focuses on what you saw/noticed; Conceptualization focuses on extracting generalizable lessons."
-
-    general_feedback: |
-      Reflective Observation (Stage 2) is noticing what happened: "My mentor engaged more when I asked about their experiences vs. industry trends." Abstract Conceptualization (Stage 3) extracts a general theory: "Personal narrative questions build rapport better than abstract topic questions." Conceptualization makes learning <b>transferable</b> (applicable in different contexts) beyond the single experience. See Week 3 slides 19-20.
-
-  - id: "W3-Q6-kolb-continuous-cycle"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Kolb's Experiential Learning Cycle"
-
-    question: |
-      Why does Kolb emphasize that his model is a continuous "cycle" rather than a linear process?
-
-    options:
-      - key: "A"
-        text: "Because Active Experimentation creates new Concrete Experiences, allowing you to refine theories through repeated cycles of testing and learning"
-        feedback: "Correct! Each experiment becomes a new experience, generating new observations and refined theories. This creates a learning spiral where understanding deepens with each cycle."
-        correct: true
-
-      - key: "B"
-        text: "Because you must complete all four stages exactly six times before learning is complete"
-        feedback: "Incorrect. There's no fixed number of cycles. The cycle continues indefinitely as you encounter new experiences and refine understanding."
-
-      - key: "C"
-        text: "Because Kolb discovered that circular diagrams help students memorize the model better"
-        feedback: "Incorrect. The cycle structure represents how learning actually works (continuous improvement), not a memorization aid."
-
-      - key: "D"
-        text: "Because adults naturally think in circular patterns rather than linear sequences"
-        feedback: "Incorrect. The cycle represents the iterative nature of experiential learning, not how brains process information."
-
-    general_feedback: |
-      Kolb's cycle is continuous because your experiments (Stage 4: Active Experimentation) create new experiences (back to Stage 1: Concrete Experience). Example: You theorize "personal questions build rapport" → You experiment by asking personal questions in next meeting → This creates a new experience to reflect on → You refine your theory based on results. Each cycle <b>iteratively</b> (through repetition and improvement) deepens expertise. See Week 3 slides 18, 20-21.
-
-  - id: "W3-Q7-driscoll-questions"
+  - id: "W3-Q3-driscoll-questions"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Driscoll's Model"
+    topic: "Driscoll & Bolton Model"
 
     question: |
-      What are the three questions in Driscoll & Bolton's reflective model?
+      Driscoll & Bolton's reflective model is organized around which three questions?
 
     options:
       - key: "A"
+        text: "Who? Where? When?"
+        feedback: "These are journalistic questions for gathering facts, not Driscoll's reflective framework."
+        correct: false
+
+      - key: "B"
         text: "What? So What? Now What?"
-        feedback: "Correct! Driscoll's three questions cut to the essence: What happened? (description), So What? (analysis/significance), Now What? (action planning)."
+        feedback: "Correct! Driscoll & Bolton's model uses three elegant questions: What? (description), So What? (analysis), and Now What? (action planning)."
         correct: true
 
-      - key: "B"
-        text: "Who? When? Where?"
-        feedback: "Incorrect. These are journalistic questions for basic information gathering, not Driscoll's reflective framework."
-
       - key: "C"
-        text: "Why? How? What if?"
-        feedback: "Incorrect. While these are good analytical questions, they aren't Driscoll's specific three-question framework."
+        text: "Why? How? Who?"
+        feedback: "These are not the three questions in Driscoll & Bolton's model."
+        correct: false
 
       - key: "D"
-        text: "Describe, Evaluate, Act"
-        feedback: "Incorrect. These are process words but not Driscoll's specific three-question format."
+        text: "Before? During? After?"
+        feedback: "These represent time periods, not Driscoll's three reflective questions."
+        correct: false
 
-    general_feedback: |
-      Driscoll & Bolton's (2000) model uses three simple questions: <b>What?</b> (description—what happened, what did I do, what was the outcome?), <b>So What?</b> (analysis—why does it matter, what did I learn, how does this connect to my goals?), <b>Now What?</b> (action—what will I do differently, what's my next step?). The model's strength is simplicity and speed. See Week 3 slides 23-24.
-
-  - id: "W3-Q8-driscoll-so-what"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Driscoll's Model"
-
-    question: |
-      In Driscoll's model, what is the purpose of the "So What?" question, and why is it critical for moving beyond description?
-
-    options:
-      - key: "A"
-        text: "So What? forces analysis of significance and meaning, preventing purely descriptive reflection that doesn't generate learning"
-        feedback: "Correct! 'So What?' pushes you to explain WHY the experience matters, what you learned, and how it connects to bigger goals—transforming description into insight."
-        correct: true
-
-      - key: "B"
-        text: "So What? checks if the experience was important enough to bother reflecting on"
-        feedback: "Incorrect. The question assumes the experience is worth reflecting on and asks you to extract the learning, not judge if it's important enough."
-
-      - key: "C"
-        text: "So What? is used to challenge assumptions and argue against your initial observations"
-        feedback: "Incorrect. While 'So What?' involves analysis, its purpose is extracting significance, not arguing against yourself."
-
-      - key: "D"
-        text: "So What? determines how many times you must repeat the What-So What-Now What cycle"
-        feedback: "Incorrect. 'So What?' doesn't determine repetition; it's the analysis stage that creates meaning from description."
-
-    general_feedback: |
-      "So What?" is the <b>critical</b> (essential, decisive) question that separates Level 1 description ("I had a mentor meeting") from Level 3 transformation ("The meeting challenged my assumption that X, so now I will do Y"). Without "So What?", reflection stays superficial. This question forces you to articulate significance, connect to theory, and identify implications. See Week 3 slides 23-24.
-
-  - id: "W3-Q9-double-loop-learning"
+  - id: "W3-Q4-double-loop-learning"
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Double-Loop Learning"
+    topic: "Single-loop vs. Double-loop Learning"
 
     question: |
-      What is the difference between single-loop and double-loop learning according to Chris Argyris?
+      According to Argyris & Schön, what is the key difference between single-loop and double-loop learning?
 
     options:
       - key: "A"
-        text: "Single-loop adjusts tactics while keeping assumptions constant; double-loop questions the underlying assumptions themselves"
-        feedback: "Correct! Single-loop: 'The strategy didn't work → try different tactics.' Double-loop: 'The strategy didn't work → why did I choose this approach? Are my assumptions valid?'"
-        correct: true
+        text: "Single-loop learning is faster than double-loop learning"
+        feedback: "The distinction isn't about speed but about depth—whether you question underlying assumptions."
+        correct: false
 
       - key: "B"
-        text: "Single-loop learning happens once; double-loop learning requires repeating the reflection twice"
-        feedback: "Incorrect. The terms don't refer to number of repetitions. They refer to depth: adjusting actions (single) vs. questioning assumptions (double)."
+        text: "Single-loop learning corrects errors within existing assumptions; double-loop learning questions the assumptions themselves"
+        feedback: "Correct! Single-loop learning makes surface-level adjustments (like a thermostat maintaining temperature). Double-loop learning questions the underlying approach (is a thermostat the right system?)."
+        correct: true
 
       - key: "C"
-        text: "Single-loop is for simple problems; double-loop is for complex problems"
-        feedback: "Incorrect. Both types can be applied to any problem. The difference is whether you examine underlying beliefs (double) or just change tactics (single)."
+        text: "Single-loop learning is for individuals; double-loop learning is for organizations"
+        feedback: "Both types of learning apply to individuals AND organizations. The difference is depth of reflection, not who is learning."
+        correct: false
 
       - key: "D"
-        text: "Single-loop learning uses one reflective framework; double-loop uses two frameworks simultaneously"
-        feedback: "Incorrect. The 'loop' terminology isn't about number of frameworks used. It's about depth of questioning: surface (single) vs. assumptions (double)."
+        text: "Single-loop learning requires reflection; double-loop learning does not"
+        feedback: "Actually, it's the opposite—double-loop learning requires deeper reflection to question assumptions, while single-loop can happen without much reflection."
+        correct: false
 
-    general_feedback: |
-      Single-loop learning adjusts actions without questioning <b>assumptions</b> (beliefs that underlie your approach): "Exam failed → study more hours." Double-loop questions the assumption: "Why do I assume more hours equals better results? Maybe my study method is ineffective." Double-loop creates deeper change by examining beliefs, not just behaviors. Reflection enables double-loop learning. See Week 3 slide 10.
-
-  - id: "W3-Q10-reflection-depth-levels"
+  - id: "W3-Q5-gibbs-feelings-application"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Reflection Quality Levels"
+    topic: "Gibbs' Reflective Cycle Application"
 
     question: |
-      According to Alt et al. (2022) research, what distinguishes Level 3 (Transformation) reflection from Level 1 (Description) reflection?
+      You're reflecting on your first mentorship meeting using Gibbs' Reflective Cycle. During the 'Feelings' stage, you realize you felt anxious and intimidated. What should you do with this insight in the subsequent stages?
 
     options:
       - key: "A"
-        text: "Level 3 includes deep self-awareness, theory integration, and specific behavior change plans; Level 1 only reports what happened without analysis or action"
-        feedback: "Correct! Level 3 demonstrates insight ('I realized my assumption was X'), connects to course theories, and commits to concrete actions. Level 1 stays at surface description."
-        correct: true
+        text: "Ignore it; feelings aren't relevant to professional reflection"
+        feedback: "Gibbs explicitly includes feelings because emotions reveal values and create learning opportunities. Ignoring them misses important insights."
+        correct: false
 
       - key: "B"
-        text: "Level 3 uses more sophisticated vocabulary; Level 1 uses simple language"
-        feedback: "Incorrect. Depth isn't about vocabulary complexity. It's about analytical insight and self-awareness, which can be expressed in clear, simple language."
+        text: "Only mention it in the Feelings stage and don't refer to it again"
+        feedback: "Feelings should inform your analysis. Asking 'Why did I feel anxious?' can reveal assumptions worth examining."
+        correct: false
 
       - key: "C"
-        text: "Level 3 reflections are longer (500+ words); Level 1 reflections are shorter (under 200 words)"
-        feedback: "Incorrect. Length doesn't determine depth. A concise 200-word reflection with genuine insight beats a 600-word description."
-
-      - key: "D"
-        text: "Level 3 discusses only positive experiences; Level 1 discusses negative experiences"
-        feedback: "Incorrect. Depth isn't about positivity vs. negativity. Both positive and negative experiences can be reflected on at any level."
-
-    general_feedback: |
-      Level 1 (Description): "I attended field trip. It was interesting. I learned a lot." Level 3 (Transformation): "The CEO's participative leadership challenged my assumption that hierarchy is necessary for efficiency. Connecting to Goleman's EI research, I realize buy-in matters more than speed. Action: In next group project, I'll ask 'What does everyone think?' before proposing my solution." Level 3 shows changed thinking and specific behavior plans. See Week 3 slides 27-28.
-
-  - id: "W3-Q11-reflective-practitioner"
-    type: "true_false"
-    bloom_level: "understanding"
-    topic: "Reflective Practitioner Concept"
-
-    question: |
-      True or False: Donald Schön's concept of "the reflective practitioner" suggests that professional expertise develops primarily through reflection-on-action (structured post-experience analysis) rather than reflection-in-action (real-time adjustment during experiences).
-
-    options:
-      - key: "A"
-        text: "False"
-        feedback: "Correct! Schön argues that expert professionals use BOTH reflection-in-action (thinking on your feet during experiences) AND reflection-on-action (systematic post-experience review). Both types are essential for expertise."
+        text: "Analyze why you felt that way and consider how it affected your behavior, then plan how to manage similar feelings in future meetings"
+        feedback: "Correct! Feelings are data. In Analysis, explore WHY you felt anxious (lack of preparation? impostor syndrome?). In Action Plan, address it (e.g., 'I'll prepare 5 questions in advance to feel more confident')."
         correct: true
 
-      - key: "B"
-        text: "True"
-        feedback: "Incorrect. Schön's concept includes both types of reflection. Reflection-on-action (post-experience) is important, but reflection-in-action (during experience) is equally vital for professional expertise."
+      - key: "D"
+        text: "Ask your mentor to change their communication style to reduce your anxiety"
+        feedback: "While you could discuss communication preferences, the deeper learning comes from understanding YOUR emotional response and developing strategies to manage it."
+        correct: false
 
-    general_feedback: |
-      Schön (1983) distinguished two types: <b>Reflection-in-action</b> (real-time adjustment—noticing audience confusion during presentation and immediately adding an example) and <b>Reflection-on-action</b> (structured post-experience analysis—analyzing after the presentation why the explanation confused people). Expert professionals do both. Today's frameworks (Gibbs, Kolb, Driscoll) focus on reflection-on-action, but both are essential. See Week 3 slide 9.
-
-  - id: "W3-Q12-framework-selection"
+  - id: "W3-Q6-kolb-conceptualization"
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Choosing Frameworks"
+    topic: "Kolb's Experiential Learning Cycle Application"
 
     question: |
-      A student needs to write post-meeting reflections for four mentorship meetings over 10 weeks, with each reflection due 48 hours after the meeting. Which framework would be most appropriate and why?
+      During the MISA field trip (Week 6), you notice that employees spend significant time in collaborative meetings. Using Kolb's Experiential Learning Cycle, what would be the most appropriate next step after this 'Concrete Experience' and your 'Reflective Observation'?
 
     options:
       - key: "A"
-        text: "Gibbs' Reflective Cycle, because the comprehensive 6-stage structure ensures depth for the graded reflections worth 30% of Mentorship Program grade"
-        feedback: "Correct! The reflections are graded on depth (30% of Mentorship grade), making Gibbs' comprehensive structure valuable despite requiring more time. The 48-hour deadline allows time for thorough analysis."
+        text: "Immediately plan to spend more time in meetings yourself"
+        feedback: "This skips the critical Abstract Conceptualization stage. Before changing behavior, you need to analyze what this observation means."
+        correct: false
+
+      - key: "B"
+        text: "Develop a general principle about collaboration's role in organizational culture and connect it to course concepts like emotional intelligence"
+        feedback: "Correct! Abstract Conceptualization involves moving from specific observation (MISA's meetings) to general principle (collaboration as cultural value) and connecting to theories (EI, organizational culture). THEN you plan experiments."
+        correct: true
+
+      - key: "C"
+        text: "Describe the meeting rooms and office layout in detail"
+        feedback: "Description is part of Concrete Experience and Reflective Observation. You've already done that. Next comes conceptualization—what does it MEAN?"
+        correct: false
+
+      - key: "D"
+        text: "Ask MISA employees how they feel about meetings"
+        feedback: "While gathering more data could be valuable, Kolb's next stage after Reflective Observation is Abstract Conceptualization—making sense of what you already observed."
+        correct: false
+
+  - id: "W3-Q7-framework-selection"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Framework Selection"
+
+    question: |
+      You have 10 minutes immediately after a guest speaker session to capture your reflections before you forget important details. Which reflective framework would be most appropriate for this situation?
+
+    options:
+      - key: "A"
+        text: "Gibbs' Reflective Cycle, because it provides the most comprehensive structure"
+        feedback: "While Gibbs is comprehensive, its six stages require more time than you have. In 10 minutes, you'd need to rush through stages, sacrificing depth."
+        correct: false
+
+      - key: "B"
+        text: "Kolb's Experiential Learning Cycle, because it emphasizes continuous learning"
+        feedback: "Kolb's four stages are better than Gibbs for time constraints, but there's an even faster option for capturing immediate insights."
+        correct: false
+
+      - key: "C"
+        text: "Driscoll & Bolton's model, because its three questions enable quick but structured reflection"
+        feedback: "Correct! Driscoll's 'What? So What? Now What?' can be completed quickly while capturing essential elements: description, analysis, and action. You can elaborate later using Gibbs or Kolb."
+        correct: true
+
+      - key: "D"
+        text: "None—structured reflection requires at least 30 minutes"
+        feedback: "While deeper reflection takes time, Driscoll's framework is specifically designed for quick reflections. Capturing something structured is better than relying on memory later."
+        correct: false
+
+  - id: "W3-Q8-single-loop-example"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Single-loop vs. Double-loop Learning"
+
+    question: |
+      After receiving feedback that your mentorship reflections are too surface-level, you decide to 'write longer reflections.' Based on Argyris & Schön's concepts, what type of learning does this represent?
+
+    options:
+      - key: "A"
+        text: "Double-loop learning, because you're making a change based on feedback"
+        feedback: "Making a change isn't enough for double-loop learning. You're adjusting surface behavior (length) without questioning WHY your reflections lack depth."
+        correct: false
+
+      - key: "B"
+        text: "Single-loop learning, because you're correcting the symptom (length) without examining why your reflections lack depth"
+        feedback: "Correct! Single-loop learning adjusts behaviors within existing assumptions. You're assuming 'surface-level = too short' when the real issue might be: Am I analyzing? Connecting to theory? Questioning assumptions? Double-loop would question WHAT makes reflection deep."
+        correct: true
+
+      - key: "C"
+        text: "Neither type of learning, because you're just following instructions"
+        feedback: "You are learning—just at a surface level. Single-loop learning involves making adjustments based on feedback, even if those adjustments don't address root causes."
+        correct: false
+
+      - key: "D"
+        text: "Double-loop learning, because you're reflecting on your reflection practice"
+        feedback: "Reflecting on reflection could be double-loop, but only if you question underlying assumptions. Here, you're changing surface behavior (length) without examining what 'depth' actually requires."
+        correct: false
+
+  - id: "W3-Q9-reflective-practitioner"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "The Reflective Practitioner"
+
+    question: |
+      The lecture stated that 70% of professional development comes from on-the-job experiences, but only if you reflect on them. Which concept from Week 3 best explains why two professionals can have the same experience but learn completely different lessons?
+
+    options:
+      - key: "A"
+        text: "The reflective practitioner concept: one professional uses structured reflection while the other does not"
+        feedback: "Correct! Schön's reflective practitioner research shows that professionals who deliberately examine their experiences through reflection-on-action and reflection-in-action extract more learning. Experience alone doesn't guarantee growth."
         correct: true
 
       - key: "B"
-        text: "Driscoll's model, because three questions are fastest and you need to submit within 48 hours"
-        feedback: "Incorrect. While Driscoll is faster, 48 hours is sufficient for Gibbs. Since these reflections are graded heavily on depth (30% of grade), sacrificing depth for speed would hurt the grade."
+        text: "Single-loop vs. double-loop learning: one uses single-loop, the other uses double-loop"
+        feedback: "While this explains depth of learning, it doesn't fully capture why the same experience yields different lessons. The broader concept is the reflective practitioner—whether someone reflects at all."
+        correct: false
 
       - key: "C"
-        text: "Kolb's cycle, because mentorship involves continuous skill development across multiple meetings"
-        feedback: "Incorrect. While Kolb suits continuous learning, the assessment requires post-meeting reflections (discrete events), not tracking skill development across meetings. Gibbs fits the assessment structure better."
+        text: "Learning styles: different people prefer different stages of Kolb's cycle"
+        feedback: "Learning styles explain preferences for how we learn, but the key issue is whether someone actively reflects at all, not which stage they prefer."
+        correct: false
 
       - key: "D"
-        text: "A different framework for each meeting to demonstrate knowledge of all three models"
-        feedback: "Incorrect. Consistency helps show development over time. Switching frameworks makes it harder to compare growth across meetings. Choose one framework and use it throughout."
+        text: "Framework selection: one uses Gibbs, the other uses Driscoll"
+        feedback: "Both frameworks enable learning. The critical difference isn't WHICH framework but WHETHER someone uses structured reflection versus passive experience accumulation."
+        correct: false
 
-    general_feedback: |
-      Framework selection depends on: (1) Time available, (2) Depth required, (3) Nature of experience. For graded mentorship reflections worth 30% of the grade with 48-hour deadlines, Gibbs' 6-stage structure provides the depth needed for high marks. Driscoll would work for quick, ungraded debriefs. Kolb suits tracking continuous skill development. See Week 3 slide 26.
+  - id: "W3-Q10-gibbs-evaluation-vs-analysis"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Gibbs' Reflective Cycle Stages"
+
+    question: |
+      In Gibbs' Reflective Cycle, what is the primary difference between the 'Evaluation' stage and the 'Analysis' stage?
+
+    options:
+      - key: "A"
+        text: "Evaluation identifies what went well/badly; Analysis explains WHY things went well/badly"
+        feedback: "Correct! Evaluation is descriptive judgment ('This went well, that went badly'). Analysis is explanatory ('This went well BECAUSE X; that went badly BECAUSE Y'). Evaluation = value judgment; Analysis = causal explanation."
+        correct: true
+
+      - key: "B"
+        text: "Evaluation focuses on emotions; Analysis focuses on facts"
+        feedback: "Emotions are addressed in the Feelings stage (Stage 2), not Evaluation. Evaluation judges outcomes; Analysis explains causes."
+        correct: false
+
+      - key: "C"
+        text: "Evaluation comes after reflection; Analysis comes before"
+        feedback: "Both Evaluation and Analysis are part of reflection. Evaluation (Stage 3) actually comes BEFORE Analysis (Stage 4) in Gibbs' sequence."
+        correct: false
+
+      - key: "D"
+        text: "There is no meaningful difference; they are interchangeable terms"
+        feedback: "They serve distinct purposes: Evaluation makes initial judgments (good/bad); Analysis digs deeper into causes and connections to theory."
+        correct: false
+
+  - id: "W3-Q11-kolb-vs-gibbs-action"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Comparing Frameworks"
+
+    question: |
+      A student says: 'I prefer Kolb's model because Active Experimentation feels more action-oriented than Gibbs' Action Plan.' What does this student understand about the difference between these two frameworks?
+
+    options:
+      - key: "A"
+        text: "The student is mistaken; both stages emphasize the same type of planning"
+        feedback: "The student correctly identifies a real difference. Kolb's Active Experimentation emphasizes testing and doing, not just planning intentions."
+        correct: false
+
+      - key: "B"
+        text: "The student recognizes that Kolb emphasizes experimenting with new behaviors, not just planning to change"
+        feedback: "Correct! The student understands a key distinction: Gibbs' Action Plan = 'What will I do differently?' (intention). Kolb's Active Experimentation = 'Testing new approaches' (actual behavior change). Kolb emphasizes the doing that creates new Concrete Experiences."
+        correct: true
+
+      - key: "C"
+        text: "The student prefers Kolb's model because it has fewer stages"
+        feedback: "The student's reasoning is about the nature of the action stage (experimentation vs. planning), not the number of stages (though Kolb does have fewer)."
+        correct: false
+
+      - key: "D"
+        text: "The student misunderstands; Active Experimentation is about abstract thinking, not action"
+        feedback: "Active Experimentation is indeed about action—it's Stage 4 in Kolb's cycle where you test new approaches based on your conceptualization."
+        correct: false
+
+  - id: "W3-Q12-driscoll-essay-challenge"
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Framework Selection for Assessments"
+
+    question: |
+      For your Individual Assignment reflective essay (1,500 words analyzing the field trip and guest speaker), you choose Driscoll's model (What? So What? Now What?). What challenge might you face with this choice?
+
+    options:
+      - key: "A"
+        text: "Driscoll's model isn't evidence-based, so you'll lose points"
+        feedback: "Driscoll & Bolton (2000) is evidence-based and accepted for the essay. All three frameworks (Gibbs, Kolb, Driscoll) are valid choices."
+        correct: false
+
+      - key: "B"
+        text: "The three-question structure might feel too simple for developing 1,500 words of deep analysis"
+        feedback: "Correct! While Driscoll is perfectly valid, its simplicity is designed for quick reflections. For a comprehensive 1,500-word essay, you might find Gibbs' six stages or Kolb's four stages provide more scaffolding for organizing and deepening your analysis. You CAN use Driscoll if you develop depth within each question."
+        correct: true
+
+      - key: "C"
+        text: "Driscoll can only be used for positive experiences, not critical reflection"
+        feedback: "Driscoll works for any type of reflection—positive, negative, or mixed. The 'So What?' question prompts critical analysis regardless of experience type."
+        correct: false
+
+      - key: "D"
+        text: "You cannot use Driscoll for academic essays; it's only for professional journals"
+        feedback: "Driscoll is acceptable for academic essays. The assignment allows you to choose any of the three frameworks covered (Gibbs, Kolb, or Driscoll)."
+        correct: false
+
 ---

@@ -2,355 +2,367 @@
 metadata:
   week: 7
   topic: "Transferable Skills & Emotional Intelligence"
-  prepares_for: "Personal Development Plan Part 2 (Skills Gap Analysis), Mentorship Meeting #3, Final Oral Exam"
-  source: "lecture-content.md"
+  total_questions: 12
+  bloom_distribution: "4 Remembering, 8 Understanding"
 
 questions:
-  - id: "W7-Q1-wef-skills-shift"
+  - id: w7q01
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "WEF Future of Jobs Report"
+    topic: "WEF Skills Disruption"
+    framework: "WEF Future of Jobs 2025"
 
     question: |
-      According to the World Economic Forum's Future of Jobs Report 2025, what percentage of core skills will change by 2030?
+      According to the World Economic Forum's Future of Jobs Report 2025, what percentage of core skills do employers expect to change by 2030?
 
     options:
       - key: "A"
-        text: "39%"
-        feedback: "Correct! Nearly 4 in 10 skills required in the workplace will be different within 5 years, emphasizing the importance of developing transferable skills that remain valuable across contexts."
-        correct: true
+        text: "25%"
+        feedback: "Incorrect. The percentage is higher than 25%, reflecting more significant skills disruption anticipated over the next five years."
 
       - key: "B"
-        text: "25%"
-        feedback: "Incorrect. The actual figure is higher—39% of core skills will change by 2030."
+        text: "39%"
+        feedback: "Correct! The WEF 2025 report found that employers expect 39% of core skills to change by 2030, reflecting the rapid pace of skills disruption in the modern workplace."
+        correct: true
 
       - key: "C"
         text: "50%"
-        feedback: "Incorrect. While significant change is expected, the WEF reports 39%, not half of all skills."
+        feedback: "Incorrect. While skill disruption is significant, the WEF finding is 39%, not half of all core skills."
 
       - key: "D"
-        text: "70%"
-        feedback: "Incorrect. 70% refers to the percentage of employers who consider analytical thinking essential, not the percentage of skills that will change."
+        text: "62%"
+        feedback: "Incorrect. The WEF projects 39% skills disruption by 2030, which is substantial but not as high as 62%."
 
     general_feedback: |
-      The WEF Future of Jobs Report 2025 found that **39% of core skills will change by 2030**. This rapid skills disruption means that technical skills become obsolete quickly—accelerated by AI—while transferable skills remain valuable across jobs, industries, and decades. Vietnamese employers already prioritize adaptability and continuous learning to navigate this change. The key takeaway: By developing foundational competencies that transfer across contexts, you prepare for an unpredictable future. See Week 7 slide 1.
+      The WEF finding that 39% of core skills will change by 2030 emphasizes the importance of developing transferable capabilities and learning agility rather than relying solely on current technical skills. This level of disruption means focusing on meta-skills that enable continuous skill acquisition.
 
-  - id: "W7-Q2-wef-top-skill"
+  - id: w7q02
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "WEF Top 10 Core Skills"
+    topic: "WEF Top Skills"
+    framework: "WEF Future of Jobs 2025"
 
     question: |
-      What is the #1 most essential core skill for 2025-2030 according to the World Economic Forum, valued by 70% of employers?
+      Which skill does the World Economic Forum's 2025 report identify as the top priority, with 70% of employers considering it essential?
 
     options:
       - key: "A"
-        text: "Analytical thinking"
-        feedback: "Correct! Analytical thinking tops the list at 70% of employers, representing problem-solving across contexts rather than memorizing answers."
-        correct: true
+        text: "Creative thinking"
+        feedback: "Incorrect. Creative thinking ranks 4th in the WEF framework, but analytical thinking is the top priority at 70%."
 
       - key: "B"
-        text: "Creative thinking"
-        feedback: "Incorrect. Creative thinking is #4 on the WEF list, not #1. Analytical thinking is the most essential skill."
+        text: "Resilience and flexibility"
+        feedback: "Incorrect. Resilience, flexibility, and agility rank 2nd, following analytical thinking as the top priority."
 
       - key: "C"
-        text: "Technological literacy"
-        feedback: "Incorrect. Technological literacy is #6. Analytical thinking is the top-ranked skill valued by 70% of employers."
+        text: "Analytical thinking"
+        feedback: "Correct! The WEF 2025 report identifies analytical thinking as the top skill, with 70% of employers considering it essential."
+        correct: true
 
       - key: "D"
         text: "Leadership and social influence"
-        feedback: "Incorrect. Leadership and social influence is #3. The most essential skill is analytical thinking."
+        feedback: "Incorrect. Leadership and social influence rank 3rd in the WEF framework, following analytical thinking at #1."
 
     general_feedback: |
-      The WEF surveyed 1,000+ companies representing 14 million workers in 55 economies and found **analytical thinking** is the #1 core skill, valued by 70% of employers. This skill means problem-solving across contexts, not memorizing answers. Notice what's NOT on the list—no specific technical tools or job-specific expertise. The top skills are transferable human capabilities. Only 40% said AI/big data skills are essential—human skills are more universal than technical skills. This connects to Week 1: The skills that make you irreplaceable are human skills. See Week 7 slide 4.
+      Analytical thinking's position at #1 reflects the growing importance of data-driven decision-making, problem-solving, and critical analysis across industries. Following analytical thinking, the top priorities are resilience/flexibility/agility (#2) and leadership/social influence (#3).
 
-  - id: "W7-Q3-nace-competencies"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "NACE Career Readiness Competencies"
-
-    question: |
-      How does the NACE framework differ from the WEF framework in identifying essential career competencies?
-
-    options:
-      - key: "A"
-        text: "NACE focuses on employer-validated competencies developed collaboratively by career services and corporate recruiters, while WEF focuses on global employer surveys"
-        feedback: "Correct! NACE represents a collaboration between university career services and HR/recruiting leaders (revised 2024), while WEF surveys global employers. Both are valuable but have different validation approaches."
-        correct: true
-
-      - key: "B"
-        text: "NACE is only relevant to the United States, while WEF is globally applicable"
-        feedback: "Incorrect. While NACE originated in the US, it is globally recognized and widely adopted. Both frameworks have international relevance."
-
-      - key: "C"
-        text: "NACE focuses only on technical skills, while WEF focuses on soft skills"
-        feedback: "Incorrect. Both NACE and WEF emphasize transferable skills. NACE's 8 competencies include critical thinking, communication, teamwork, and other soft skills."
-
-      - key: "D"
-        text: "NACE is for graduate students only, while WEF is for all workers"
-        feedback: "Incorrect. While NACE was developed for college career readiness, the competencies apply broadly. Both frameworks are relevant across career stages."
-
-    general_feedback: |
-      **NACE (National Association of Colleges and Employers)** developed 8 competencies collaboratively between career services professionals and corporate recruiters, revised in March/April 2024. **WEF (World Economic Forum)** identifies Top 10 skills through surveys of 1,000+ employers globally. Both frameworks overlap significantly (critical thinking, communication, professionalism, self-development) but NACE uniquely emphasizes **Equity & Inclusion** (#8), recognizing cultural competence as a professional skill. Vietnamese students entering multinational companies need both global (WEF) and employer-validated (NACE) frameworks for comprehensive skill development. See Week 7 slide 5.
-
-  - id: "W7-Q4-goleman-domains"
+  - id: w7q03
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Goleman's Emotional Intelligence Framework"
+    topic: "NACE Framework"
+    framework: "NACE Career Readiness Competencies"
 
     question: |
-      What are Goleman's four domains of emotional intelligence?
+      How many career readiness competencies does the National Association of Colleges and Employers (NACE) framework identify?
 
     options:
       - key: "A"
-        text: "Self-Awareness, Self-Management, Social Awareness, Relationship Management"
-        feedback: "Correct! These four domains organize EI into SELF (awareness, management) and OTHERS (awareness, management), providing a logical framework for developing interpersonal effectiveness."
-        correct: true
+        text: "5 competencies"
+        feedback: "Incorrect. The NACE framework is more comprehensive, identifying 8 career readiness competencies."
 
       - key: "B"
-        text: "Emotional Control, Empathy, Communication, Leadership"
-        feedback: "Incorrect. While these relate to EI, Goleman's specific framework uses Self-Awareness, Self-Management, Social Awareness, and Relationship Management."
-
-      - key: "C"
-        text: "Intrapersonal Skills, Interpersonal Skills, Adaptability, Stress Management"
-        feedback: "Incorrect. This describes the Bar-On EQ-i model, not Goleman's framework."
-
-      - key: "D"
-        text: "Perceiving Emotions, Using Emotions, Understanding Emotions, Managing Emotions"
-        feedback: "Incorrect. This describes the MSCEIT (Mayer-Salovey-Caruso) model, not Goleman's framework."
-
-    general_feedback: |
-      Goleman's 4 domains of emotional intelligence organize the complexity of "people skills" into a logical framework: **SELF**: (1) Self-Awareness (knowing your emotions, strengths, weaknesses), (2) Self-Management (controlling impulses, adapting, staying positive). **OTHERS**: (3) Social Awareness (empathy, reading organizational dynamics), (4) Relationship Management (influence, coaching, collaboration, leadership). Notice the flow: Self → Others, Awareness → Management. You can't manage what you don't notice (Domain 1 is foundational). Research shows 71% of employers value EI more than technical skills. Unlike IQ, EI can be developed at any age through intentional practice. See Week 7 slides 7-8.
-
-  - id: "W7-Q5-ei-domains-relationship"
-    type: "multiple_choice"
-    bloom_level: "understanding"
-    topic: "Emotional Intelligence Application"
-
-    question: |
-      A professional is very aware of when they feel frustrated (high Self-Awareness) but frequently yells at colleagues during stressful situations (low Self-Management). What does this demonstrate about emotional intelligence?
-
-    options:
-      - key: "A"
-        text: "High EI requires both awareness AND management; awareness alone is insufficient for effectiveness"
-        feedback: "Correct! This person knows they're angry but can't control their response. Emotional self-control means strategic expression, not suppression. All four EI domains must work together."
+        text: "8 competencies"
+        feedback: "Correct! The NACE Career Readiness framework (revised March/April 2024) identifies 8 employer-validated competencies."
         correct: true
 
-      - key: "B"
-        text: "This person has high overall EI because they are self-aware"
-        feedback: "Incorrect. Self-awareness is only one of four EI domains. Without self-management, awareness doesn't lead to effective behavior."
-
       - key: "C"
-        text: "Yelling at colleagues is acceptable as long as you're aware of your emotions"
-        feedback: "Incorrect. High EI includes managing emotions appropriately, not just recognizing them. Awareness without management is low EI."
+        text: "10 competencies"
+        feedback: "Incorrect. NACE identifies 8 competencies, not 10. You may be confusing this with the WEF Top 10 skills list."
 
       - key: "D"
-        text: "This demonstrates high Social Awareness"
-        feedback: "Incorrect. This scenario illustrates the gap between Self-Awareness and Self-Management, not Social Awareness (which relates to understanding others)."
+        text: "12 competencies"
+        feedback: "Incorrect. NACE identifies 8 competencies. The number 12 refers to the ESCI emotional intelligence framework, not NACE."
 
     general_feedback: |
-      This scenario illustrates the critical relationship between Goleman's EI domains: **If you have high Self-Awareness but low Self-Management, you KNOW you're angry but yell anyway—that's low overall EI.** Conversely, high Self-Management without Social Awareness means you're calm but miss that a colleague is struggling—still ineffective. All four domains must work together: Self-Awareness (foundation) → Self-Management (using awareness to choose responses) → Social Awareness (reading others accurately) → Relationship Management (applying everything to influence outcomes effectively). Emotional self-control ≠ suppression; it's strategic expression. See Week 7 slide 8.
+      The 8 NACE competencies are: Critical Thinking, Communication, Teamwork, Leadership, Professionalism, Career & Self-Development, Technology, and Equity & Inclusion. These were developed collaboratively by career services professionals and HR/recruiting leaders.
 
-  - id: "W7-Q6-boyatzis-esci"
+  - id: w7q04
     type: "multiple_choice"
     bloom_level: "remembering"
-    topic: "Boyatzis' EI Competencies"
+    topic: "Goleman EI Model Structure"
+    framework: "Goleman's EI Model"
 
     question: |
-      How many observable, developable competencies are measured in Boyatzis' Emotional and Social Competency Inventory (ESCI)?
+      How many domains does Daniel Goleman's emotional intelligence model contain?
 
     options:
       - key: "A"
-        text: "12 competencies across 4 domains"
-        feedback: "Correct! Boyatzis identified 12 behavioral competencies: 1 for Self-Awareness, 4 for Self-Management, 2 for Social Awareness, and 5 for Relationship Management. These are skills you can develop, not fixed personality traits."
-        correct: true
+        text: "2 domains"
+        feedback: "Incorrect. While Goleman's model has 2 dimensions (Self-Other and Awareness-Management), it contains 4 domains at the intersection of these dimensions."
 
       - key: "B"
-        text: "8 competencies across 2 domains"
-        feedback: "Incorrect. The ESCI measures 12 competencies across Goleman's 4 domains, not 8 competencies."
-
-      - key: "C"
-        text: "16 competencies across 4 domains"
-        feedback: "Incorrect. While there are 4 domains, Boyatzis identified 12 specific competencies, not 16."
-
-      - key: "D"
-        text: "5 competencies for each domain (20 total)"
-        feedback: "Incorrect. The ESCI has 12 total competencies distributed unevenly: Self-Awareness (1), Self-Management (4), Social Awareness (2), Relationship Management (5)."
-
-    general_feedback: |
-      Boyatzis' **ESCI (Emotional and Social Competency Inventory)** measures **12 observable, developable competencies**: **Self-Awareness** (1): Emotional Self-Awareness. **Self-Management** (4): Achievement Orientation, Adaptability, Emotional Self-Control, Positive Outlook. **Social Awareness** (2): Empathy, Organizational Awareness. **Relationship Management** (5): Coach & Mentor, Conflict Management, Influence, Inspirational Leadership, Teamwork & Collaboration. Unlike personality (relatively stable), these are SKILLS you can develop. Boyatzis proved EI is behavioral—visible actions, not just internal states. The ESCI is the most validated EI measurement tool globally. Research shows training can improve EI competencies by 10-15% in 6 months with sustained practice. See Week 7 slide 9.
-
-  - id: "W7-Q7-cultural-intelligence-dimensions"
-    type: "multiple_choice"
-    bloom_level: "remembering"
-    topic: "Cultural Intelligence (CQ)"
-
-    question: |
-      What are the four dimensions of Cultural Intelligence (CQ)?
-
-    options:
-      - key: "A"
-        text: "Metacognitive CQ, Cognitive CQ, Motivational CQ, Behavioral CQ"
-        feedback: "Correct! These four dimensions represent awareness/planning, knowledge, interest/confidence, and adaptive actions respectively—all essential for cross-cultural effectiveness."
+        text: "4 domains"
+        feedback: "Correct! Goleman's emotional intelligence model contains 4 domains: Self-Awareness, Self-Management, Social Awareness, and Relationship Management."
         correct: true
 
-      - key: "B"
-        text: "Awareness, Knowledge, Skills, Attitudes"
-        feedback: "Incorrect. While these are general learning categories, the CQ framework specifically uses Metacognitive, Cognitive, Motivational, and Behavioral dimensions."
-
       - key: "C"
-        text: "Understanding, Empathy, Adaptation, Communication"
-        feedback: "Incorrect. These relate to cultural competence but are not the four CQ dimensions validated by research."
+        text: "8 domains"
+        feedback: "Incorrect. Goleman's model has 4 domains, not 8. You may be thinking of the 8 NACE competencies."
 
       - key: "D"
-        text: "National Culture, Ethnic Culture, Organizational Culture, Generational Culture"
-        feedback: "Incorrect. These are types of cultural contexts CQ applies to, not the four dimensions of CQ capability."
+        text: "12 domains"
+        feedback: "Incorrect. Goleman's model has 4 domains. The number 12 refers to how Boyatzis operationalized these 4 domains into 12 specific competencies in the ESCI."
 
     general_feedback: |
-      Cultural Intelligence has **four validated dimensions**: (1) **Metacognitive CQ** — Awareness and planning (checking assumptions before/during/after interactions, researching cultural norms). (2) **Cognitive CQ** — Knowledge of cultures (understanding systems, customs, values, Hofstede's dimensions). (3) **Motivational CQ** — Interest and confidence (intrinsic curiosity, persistence in cross-cultural situations). (4) **Behavioral CQ** — Adaptive actions (code-switching, adjusting communication style appropriately). Key distinction: **EI = understanding emotions across people; CQ = understanding norms, values, behaviors across cultures.** Both are essential for global careers and ASEAN integration. See Week 7 slides 11-12.
+      Goleman's 4 EI domains are organized across two dimensions: Self-Awareness and Self-Management (focused on self), and Social Awareness and Relationship Management (focused on others). Richard Boyatzis later operationalized these 4 domains into 12 specific competencies in the ESCI (Emotional and Social Competency Inventory).
 
-  - id: "W7-Q8-cq-vs-ei"
+  - id: w7q05
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Cultural Intelligence vs. Emotional Intelligence"
+    topic: "Skills Evolution"
+    framework: "Transferable Skills (Tushar & Sooraksa 2023)"
 
     question: |
-      How does Cultural Intelligence (CQ) differ from Emotional Intelligence (EI)?
+      Tushar and Sooraksa's (2023) 30-year systematic review of employability research revealed a fundamental shift in employer priorities. Which statement best describes this shift?
 
     options:
       - key: "A"
-        text: "EI focuses on understanding emotions across people; CQ focuses on understanding norms, values, and behaviors across cultures"
-        feedback: "Correct! Both are essential but address different challenges. EI helps you read and manage emotions; CQ helps you navigate different cultural expectations effectively."
-        correct: true
+        text: "From soft skills to technical skills as technology became more important"
+        feedback: "Incorrect. The shift is actually in the opposite direction—from specific technical skills toward broader capabilities. Technology's rise made adaptability more important, not technical proficiency."
 
       - key: "B"
-        text: "EI is for personal development; CQ is only for international business"
-        feedback: "Incorrect. Both EI and CQ apply broadly. CQ is relevant for generational differences, organizational cultures, and regional variations—not just international contexts."
+        text: "From specific technical competencies to 'meta-skills' that enable continuous learning"
+        feedback: "Correct! Tushar and Sooraksa identified a shift from valuing specific technical skills to prioritizing meta-skills that enable skill acquisition."
+        correct: true
 
       - key: "C"
-        text: "EI and CQ are the same concept with different names"
-        feedback: "Incorrect. They are distinct capabilities. EI addresses emotional awareness and management; CQ addresses cross-cultural effectiveness."
+        text: "From individual capabilities to team-based competencies exclusively"
+        feedback: "Incorrect. While teamwork increased in importance, the fundamental shift was from specific technical skills to meta-skills (learning agility, adaptability). Both individual and team competencies remain valued."
 
       - key: "D"
-        text: "EI can be developed through practice; CQ is a fixed personality trait"
-        feedback: "Incorrect. Both EI and CQ are developable capabilities, not fixed traits. Both can improve through intentional practice and experience."
+        text: "From cognitive abilities to emotional intelligence as the sole priority"
+        feedback: "Incorrect. The shift was from specific technical skills to meta-skills. Both cognitive abilities and emotional intelligence are important, but neither is the sole priority."
 
     general_feedback: |
-      **EI (Emotional Intelligence) = understanding emotions across people.** It helps you recognize, understand, and manage emotions—yours and others'—regardless of cultural background. **CQ (Cultural Intelligence) = understanding norms, values, behaviors across cultures.** It helps you navigate different cultural contexts—national, ethnic, organizational, generational. **Example**: High EI helps you notice a colleague is upset; High CQ helps you understand that in their culture, direct confrontation is inappropriate, so you address the issue indirectly. Vietnamese students have a natural advantage: navigating Vietnamese family culture + Western academic culture daily—that's CQ in action. Both capabilities are essential for effectiveness in multicultural workplaces. See Week 7 slide 11.
+      Tushar and Sooraksa's systematic review (analyzing 25 studies and 87 unique skills from 1990-2019) shows employers now value learning agility, adaptability, and curiosity more highly than proficiency in particular tools or methods. These meta-skills enable workers to acquire whatever specific skills future roles require.
 
-  - id: "W7-Q9-vietnam-employer-priorities"
+  - id: w7q06
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Vietnam Employment Context"
+    topic: "Framework Application"
+    framework: "WEF vs. NACE"
 
     question: |
-      According to Tran et al. (2022) research on regional Vietnamese employers, what key insight distinguishes their priorities from generic global frameworks?
+      A student is planning their professional development priorities for the next year. How should they best use the WEF and NACE frameworks together?
 
     options:
       - key: "A"
-        text: "Vietnamese employers value context-specific application over generic skills"
-        feedback: "Correct! Employers prioritize continuous self-learning, resilience, empathy for local communities, and communication adjusted to context—emphasizing 'think globally, act locally.'"
-        correct: true
+        text: "Use only WEF because it's more recent and globally recognized"
+        feedback: "Incorrect. Using only one framework limits your perspective. WEF and NACE serve complementary purposes and should be used together."
 
       - key: "B"
-        text: "Vietnamese employers only value technical skills, not soft skills"
-        feedback: "Incorrect. Vietnamese employers actually prioritize transferable skills like continuous learning, resilience, empathy, and contextual communication."
+        text: "Use only NACE because it provides more specific behavioral indicators"
+        feedback: "Incorrect. While NACE provides useful behavioral detail, using only NACE misses WEF's global trends and future-focused insights."
 
       - key: "C"
-        text: "Vietnamese employers have identical priorities to Western employers"
-        feedback: "Incorrect. While there's overlap with global frameworks, Vietnamese employers distinctly emphasize context-specific application and empathy for local communities."
-
-      - key: "D"
-        text: "Vietnamese employers don't value emotional intelligence"
-        feedback: "Incorrect. Vietnamese employers value empathy and contextual communication—both core EI competencies—as essential skills."
-
-    general_feedback: |
-      Tran et al. (2022) studied employers in regional Vietnam (not just Hanoi/HCMC) and found four key priorities: (1) **Continuous self-learning** (ongoing development after graduation, not just degrees). (2) **Resilience & adaptability** (handling Vietnam's rapid growth and change—appears in WEF #2 and NACE). (3) **Empathy for local communities** (understanding customers/employees/stakeholders in Vietnamese context—not just importing Western practices). (4) **Communication in context** (adjusting formality, directness, language appropriately—high Behavioral CQ). The key insight: **Vietnamese employers value context-specific application over generic skills.** Implication: Combine international frameworks (global competitiveness) with Vietnam-specific effectiveness. Think globally, act locally. See Week 7 slide 13.
-
-  - id: "W7-Q10-skills-gap-process"
-    type: "multiple_choice"
-    bloom_level: "remembering"
-    topic: "Skills Gap Analysis"
-
-    question: |
-      What is the correct sequence of steps in conducting a Skills Gap Analysis for your Personal Development Plan?
-
-    options:
-      - key: "A"
-        text: "Identify Target Skills → Self-Assess Current Level → Define Target Level → Prioritize Gaps → Create Development Strategies"
-        feedback: "Correct! This logical 5-step process moves from identifying what matters, to understanding where you are, to planning how to develop systematically."
+        text: "Use WEF to identify emerging skill demands and NACE for current self-assessment with behavioral indicators"
+        feedback: "Correct! WEF provides future trends while NACE provides actionable competency definitions—use both complementarily."
         correct: true
 
-      - key: "B"
-        text: "Define Target Level → Identify Target Skills → Self-Assess Current Level → Create Development Strategies → Prioritize Gaps"
-        feedback: "Incorrect. You must identify which skills matter before defining target levels. Prioritizing gaps comes before creating detailed strategies."
-
-      - key: "C"
-        text: "Self-Assess Current Level → Identify Target Skills → Prioritize Gaps → Define Target Level → Create Development Strategies"
-        feedback: "Incorrect. You can't self-assess before identifying which skills to assess. The sequence should start with identifying target skills."
-
       - key: "D"
-        text: "Prioritize Gaps → Identify Target Skills → Self-Assess Current Level → Define Target Level → Create Development Strategies"
-        feedback: "Incorrect. You can't prioritize gaps before you know what the gaps are. Start by identifying skills, then assessing current levels."
+        text: "Use them interchangeably since both frameworks identify identical competencies"
+        feedback: "Incorrect. The frameworks are not identical—they serve different purposes. WEF focuses on future trends; NACE provides current graduate readiness criteria."
 
     general_feedback: |
-      The **5-Step Skills Gap Analysis Process**: **(1) Identify Target Skills** — Which 8-10 skills matter most for your career? Use WEF, NACE, Boyatzis EI, CQ frameworks. Choose a mix: 3-4 technical, 3-4 transferable, 2-3 AI-era skills relevant to YOUR path. **(2) Self-Assess Current Level** — Rate yourself honestly (1-5 scale) using behavioral evidence. **(3) Define Target Level** — Where do you need to be in 1 year? 3 years? (1-year target: +1 or +2 levels; 3-year: +2 or +3). **(4) Prioritize Gaps** — High Priority = Large gap + High career impact + Achievable in timeframe. **(5) Create Development Strategies** — Specific, actionable plans using deliberate practice principles (not vague intentions like "improve communication"). See Week 7 slide 15.
+      WEF provides global perspective on skills disruption and future trends (what will matter by 2030), while NACE provides concrete competency definitions with behavioral indicators for current preparation. Use NACE for immediate self-assessment to identify gaps, then review WEF trends to prioritize capabilities that are both current gaps AND growing in importance.
 
-  - id: "W7-Q11-deliberate-practice"
+  - id: w7q07
     type: "multiple_choice"
     bloom_level: "understanding"
-    topic: "Deliberate Practice Principles"
+    topic: "EI Domain Development Sequence"
+    framework: "Goleman's EI Model"
 
     question: |
-      Which example best demonstrates the principle of deliberate practice for developing emotional intelligence?
+      A manager notices they often feel frustrated during team meetings but doesn't recognize this emotion until after the meeting ends, at which point they regret their impatient responses. According to Goleman's EI model, which domain should they develop FIRST to address this pattern?
 
     options:
       - key: "A"
-        text: "In every team meeting this month, I will summarize what others said before responding, to practice empathy and active listening"
-        feedback: "Correct! This is specific (team meetings, this month), focused on a weakness (empathy/listening), includes immediate feedback opportunity (others' reactions), and can be repeated with variation."
-        correct: true
+        text: "Relationship Management, because the issue involves team interactions"
+        feedback: "Incorrect. While the issue manifests in team interactions, the root problem is lack of real-time emotional recognition, not relationship management skill."
 
       - key: "B"
-        text: "I will try to be more emotionally intelligent in general"
-        feedback: "Incorrect. This is too vague. Deliberate practice requires specific goals, not general intentions."
+        text: "Self-Management, because they need better emotional control"
+        feedback: "Incorrect. You cannot manage emotions you don't recognize. Self-awareness must precede self-management."
 
       - key: "C"
-        text: "I will read three books about emotional intelligence"
-        feedback: "Incorrect. While reading builds knowledge, deliberate practice requires DOING—practicing the skill with feedback, not just learning about it."
+        text: "Self-Awareness, because they aren't recognizing emotions as they occur"
+        feedback: "Correct! The manager's primary issue is lack of real-time emotional recognition—a Self-Awareness deficit that must be addressed first."
+        correct: true
 
       - key: "D"
-        text: "I will avoid situations that make me uncomfortable emotionally"
-        feedback: "Incorrect. Deliberate practice principle #3 is 'Focus on weaknesses'—growth happens in the discomfort zone, not by avoiding challenges."
+        text: "Social Awareness, because they need to understand team dynamics better"
+        feedback: "Incorrect. The issue is recognizing their own emotions (self-awareness), not understanding others' emotions (social awareness)."
 
     general_feedback: |
-      **Deliberate Practice Principles** (adapted from Anders Ericsson's expertise research): (1) **Set specific goals** — "Practice active listening in 10 conversations this week" ✓ not "Be more emotionally intelligent" ✗. (2) **Get immediate feedback** — Ask for input, don't practice in isolation. (3) **Focus on weaknesses** — Practice what's uncomfortable (growth happens in discomfort zone). (4) **Repeat with variation** — Same skill, different contexts (practice empathy with family, classmates, mentor, strangers). (5) **Maintain consistency** — 30 min daily > 3 hours once/week (builds neural pathways through neuroplasticity). Most people don't improve because they repeat without reflection. **Vague goals don't work**—specificity, feedback, and consistency drive skill development. See Week 7 slide 16.
+      Goleman's model establishes Self-Awareness as foundational: you cannot manage emotions you don't recognize. The development sequence typically proceeds from awareness to management and from self to other. This manager needs to develop capacity to recognize frustration AS IT OCCURS, which would then enable Self-Management (regulating the frustration) and improved Relationship Management.
 
-  - id: "W7-Q12-pdp-integration"
+  - id: w7q08
     type: "multiple_choice"
-    bloom_level: "applying"
-    topic: "Personal Development Plan Connection"
+    bloom_level: "understanding"
+    topic: "EI Measurement Methods"
+    framework: "ESCI (Boyatzis 2018)"
 
     question: |
-      How should this week's learning on transferable skills and emotional intelligence inform your Personal Development Plan (PDP)?
+      The ESCI (Emotional and Social Competency Inventory) measures emotional intelligence differently than self-report personality measures like the EQ-i or TEIQue. What is the key methodological difference and why does it matter?
 
     options:
       - key: "A"
-        text: "Use WEF/NACE/Boyatzis frameworks to identify 8+ skills for Part 2 Skills Gap Analysis; create SMART goals with deliberate practice strategies; discuss development plans in Mentorship Meeting #3"
-        feedback: "Correct! This week directly feeds into PDP Part 2 (15% of grade) and provides framework for vision statement, SMART goals, and mentor discussions in Meeting #3."
+        text: "ESCI uses 360-degree behavioral ratings; this reduces blind spots compared to self-report and predicts leadership performance more accurately"
+        feedback: "Correct! The ESCI uses ratings from self and others (supervisor, peers, direct reports), reducing blind spots and predicting performance better."
         correct: true
 
       - key: "B"
-        text: "Simply list transferable skills in your PDP without specific development strategies"
-        feedback: "Incorrect. The PDP requires specific development strategies using deliberate practice principles, not just listing skills."
+        text: "ESCI is shorter and faster to complete; this makes it more practical for workplace use"
+        feedback: "Incorrect. The key difference is the 360-degree behavioral approach, not completion time. Self-report measures can also be brief."
 
       - key: "C"
-        text: "Focus only on technical skills in your PDP since transferable skills can't be measured"
-        feedback: "Incorrect. Boyatzis proved EI competencies are behavioral and measurable. Transferable skills should be central to your PDP with specific metrics."
+        text: "ESCI measures only self-awareness; this provides more focused assessment than comprehensive measures"
+        feedback: "Incorrect. ESCI measures all 4 EI domains through 12 competencies, not just self-awareness. The key difference is the 360-degree method."
 
       - key: "D"
-        text: "Wait until Week 11 to think about skills development"
-        feedback: "Incorrect. The PDP should evolve throughout the semester. You should begin drafting Part 2 (SWOT and Skills Gap) in tutorial this week and share with mentor in Meeting #3 (Weeks 7-8)."
+        text: "ESCI uses ability testing like an IQ test; this provides objective measurement unlike subjective ratings"
+        feedback: "Incorrect. ESCI uses behavioral ratings, not ability testing. You're thinking of MSCEIT, which uses ability-test methodology."
 
     general_feedback: |
-      **PDP Integration from Week 7**: **Part 2 (SWOT & Skills Gap Analysis — 15% of grade)** — Identify 8+ critical skills from WEF, NACE, Boyatzis EI, CQ frameworks. Self-assess current vs. target levels (1-5 scale). Prioritize development needs. Create specific practice strategies using deliberate practice principles. **Part 3 (Vision & Goals)** — Vision statement reflects values + skills you're developing. SMART goals include skill development targets with action steps, success metrics, and timelines. **Mentorship Meeting #3 (Weeks 7-8)** — Bring draft SWOT and Skills Gap Analysis. Ask mentor: "Which skills matter most in my field?" Request skill development guidance and accountability. The tutorial deliverable is a first draft to share with your mentor, not a final submission. See Week 7 slides 17-18.
+      Boyatzis (2018) explains that ESCI uses 360-degree assessment: you rate yourself AND others rate you on observable behaviors. This reduces blind spots inherent in self-report (people low in empathy often rate themselves as empathetic). Research shows ESCI behavioral competencies predict leadership effectiveness and team performance more strongly than self-report trait measures.
+
+  - id: w7q09
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "ESCI Competency Application"
+    framework: "ESCI Competencies"
+
+    question: |
+      A team member notices their colleague seems withdrawn and stressed during a project. They approach the colleague privately, ask open-ended questions about what's wrong, listen attentively without judgment, and offer to help redistribute work if needed. Which ESCI competency is PRIMARILY demonstrated?
+
+    options:
+      - key: "A"
+        text: "Emotional Self-Awareness (recognizing own emotions)"
+        feedback: "Incorrect. Emotional Self-Awareness involves recognizing your own emotions, not understanding others' emotions."
+
+      - key: "B"
+        text: "Empathy (understanding others' emotions and providing support)"
+        feedback: "Correct! This scenario demonstrates Empathy: sensing others' feelings, understanding their perspective, listening attentively, and providing support."
+        correct: true
+
+      - key: "C"
+        text: "Influence (persuading others effectively)"
+        feedback: "Incorrect. Influence involves persuading others toward goals. This scenario shows understanding and supporting someone, not influencing them."
+
+      - key: "D"
+        text: "Teamwork (building collaborative relationships)"
+        feedback: "Incorrect. While teamwork is relevant, the primary competency demonstrated is Empathy—understanding and responding to another person's emotional state."
+
+    general_feedback: |
+      This scenario primarily demonstrates Empathy, a Social Awareness competency. The behavioral indicators include: sensing others' feelings through nonverbal cues (noticing withdrawal), understanding their perspective (asking open-ended questions), listening attentively (without judgment), and providing practical support (offering help). While Teamwork is also relevant, Empathy is the PRIMARY competency because the focus is on emotional understanding and response.
+
+  - id: w7q10
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "EI and Peak Performance"
+    framework: "Goleman & Cherniss (2024)"
+
+    question: |
+      According to Goleman and Cherniss's (2024) research on optimal leadership, how does emotional intelligence enable "optimal states" or flow in teams?
+
+    options:
+      - key: "A"
+        text: "EI allows leaders to identify and eliminate team members who aren't performing optimally"
+        feedback: "Incorrect. Goleman and Cherniss focus on creating conditions for success, not eliminating people. EI enables supportive environments, not punitive approaches."
+
+      - key: "B"
+        text: "EI enables leaders to create conditions for peak performance: clear goals, immediate feedback, psychological safety, and reading team energy"
+        feedback: "Correct! Goleman and Cherniss show that EI-strong leaders create conditions that enable team flow through goals, feedback, safety, and awareness."
+        correct: true
+
+      - key: "C"
+        text: "EI helps leaders maintain constant high intensity and pressure that drives optimal performance"
+        feedback: "Incorrect. Constant pressure undermines flow states. EI enables reading team energy and knowing when to push, support, or step back—not constant intensity."
+
+      - key: "D"
+        text: "EI allows leaders to delegate all relationship management to HR professionals"
+        feedback: "Incorrect. EI involves personal relationship management by the leader, not delegation to HR. Leaders with high EI directly create supportive conditions."
+
+    general_feedback: |
+      Goleman and Cherniss (2024) connect emotional intelligence to optimal states by showing that EI-strong leaders CREATE CONDITIONS enabling team flow: setting clear goals (Self-Awareness), providing immediate feedback (Social Awareness), building psychological safety (Relationship Management), and reading team energy (Social Awareness). Their research shows organizations with EI-strong leaders demonstrate higher innovation and retention.
+
+  - id: w7q11
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "CQ vs Cultural Knowledge"
+    framework: "Cultural Intelligence (Gozzoli et al. 2018)"
+
+    question: |
+      Which scenario best illustrates HIGH cultural intelligence (CQ) as distinct from simply having cultural knowledge?
+
+    options:
+      - key: "A"
+        text: "A student has memorized business etiquette rules for Japan, Thailand, and Germany from a textbook"
+        feedback: "Incorrect. This shows CQ-Knowledge of specific cultures but doesn't demonstrate the capability to learn and adapt across ANY culture."
+
+      - key: "B"
+        text: "A manager moving to a new country consciously observes communication patterns, adjusts their approach based on what works, and reflects afterward on cultural factors"
+        feedback: "Correct! This demonstrates all four CQ factors: Drive (willingness), Knowledge (learning patterns), Strategy (conscious adjustment), and Action (behavioral flexibility)."
+        correct: true
+
+      - key: "C"
+        text: "An employee speaks three languages fluently and has studied anthropology"
+        feedback: "Incorrect. Language skill and academic study show knowledge but not necessarily the capability to adapt effectively across cultures."
+
+      - key: "D"
+        text: "A business professional has lived in the same country their entire life and understands its culture deeply"
+        feedback: "Incorrect. Deep knowledge of one culture shows culture-specific expertise, not the generalizable cross-cultural capability that defines CQ."
+
+    general_feedback: |
+      This scenario demonstrates HIGH cultural intelligence because it shows the CAPABILITY to learn and adapt across cultures, not just knowledge of specific cultures. The manager exhibits all four CQ factors: CQ-Drive (willingness to engage), CQ-Knowledge (learning patterns through observation), CQ-Strategy (conscious monitoring and adjustment), and CQ-Action (behavioral flexibility). CQ is the ability to learn and adapt to ANY culture, not expertise in particular cultures.
+
+  - id: w7q12
+    type: "multiple_choice"
+    bloom_level: "understanding"
+    topic: "Vietnam Employer Context"
+    framework: "Vietnam Context (Tran et al. 2022)"
+
+    question: |
+      Tran et al.'s (2022) research on Vietnamese employer expectations found that they value globally-recognized competencies (like adaptability and continuous learning) but emphasize culturally-specific applications. Which statement best explains this finding?
+
+    options:
+      - key: "A"
+        text: "Vietnamese employers reject international competency frameworks as culturally inappropriate"
+        feedback: "Incorrect. Vietnamese employers value globally-recognized competencies; they don't reject international frameworks but emphasize local applications."
+
+      - key: "B"
+        text: "Vietnamese employers value the same competencies as global frameworks but emphasize practical application, self-directed learning, and community empathy reflecting local contexts"
+        feedback: "Correct! Vietnamese employers value global competencies but emphasize culturally-specific applications reflecting local business realities and cultural values."
+        correct: true
+
+      - key: "C"
+        text: "Vietnamese employers only value technical skills, not transferable competencies"
+        feedback: "Incorrect. Tran et al. found that Vietnamese employers strongly value transferable competencies, particularly continuous learning, resilience, and adaptability."
+
+      - key: "D"
+        text: "Vietnamese employers' expectations are completely different from international standards"
+        feedback: "Incorrect. The competencies align globally; the difference is in HOW they're applied and WHY they matter in Vietnamese contexts."
+
+    general_feedback: |
+      Tran et al. (2022) found that Vietnamese employers DO value globally-recognized competencies from frameworks like WEF and NACE. However, they emphasize CULTURALLY-SPECIFIC APPLICATIONS: self-directed learning (because formal training infrastructure differs from Western contexts), practical problem-solving (addressing gaps between academic knowledge and implementation), and empathy for local communities (reflecting collectivist cultural values). This isn't rejection of international frameworks—it's contextual adaptation.
 ---

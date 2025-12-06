@@ -1,592 +1,656 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<lecture>
-<metadata>
-<course>PPDK66B Personal & Professional Development</course>
-<week>11</week>
-<topic>Designing Your Development Plan</topic>
-<duration>90 minutes</duration>
-<slides>26</slides>
-</metadata>
+# Week 11: Designing Your Personal Development Plan
 
-<slide number="1" layout="big-number" title="The Power of Goal-Setting">
+<slide number="1" layout="title" title="Designing Your Personal Development Plan">
+
+# Designing Your Personal Development Plan
+
+<speaker-notes>
+Welcome to Week 11. This week is the culmination of our entire semester—students will use everything they've learned to create their comprehensive Personal and Professional Development Plan, due Friday, November 28. This lecture provides the goal-setting frameworks and planning tools they need to design a strategic 1-3-5 year career roadmap.
+</speaker-notes>
+
+</slide>
+
+<slide number="2" layout="big-number" title="Hook">
 
 # 90%
 
-**of people who set New Year's resolutions fail by February**
+**of people who set specific goals fail to achieve them**
 
-**But structured goal-setting increases achievement probability by 42%**
+Because they skip the critical steps we'll learn today
 
-*(Locke & Latham, 2002; Dominican University Study)*
+*(Locke & Latham, 2002)*
 
 <speaker-notes>
-The problem isn't goal-setting itself—it's HOW we set goals. Vague intentions like "I'll work harder" fail, while specific, difficult goals with accountability succeed. Your PDP isn't a New Year's resolution—it's a strategic career plan based on 35 years of psychological research. Today you'll learn the science behind effective goals, then apply it in tutorial to finalize your plan before Friday's submission deadline.
+Key moment - this statistic typically surprises students who think goal-setting is simple. The good news: research shows exactly why 90% fail and how the 10% succeed. This lecture teaches the evidence-based frameworks that separate effective goal-setters from wishful thinkers. Today's content directly enables students to complete their 40% Personal Development Plan assignment due this Friday.
 </speaker-notes>
 
 </slide>
 
-<slide number="2" layout="section-break" title="Course Context">
-
-# Designing Your Personal Development Plan
-## From Self-Knowledge to Strategic Action
-
-**Week 11 of 12**
-
-<speaker-notes>
-This is the CULMINATION of 11 weeks of work. Weeks 1-2 covered the AI-era landscape, Weeks 3-4 built your learning capacity, Week 5 provided self-knowledge through assessments, Weeks 6-10 developed skills and provided experiences, and today we give you the final frameworks for strategic planning. Your PDP is 40% of your course grade—the largest single assessment. Tutorial today is your FINAL workshop before Friday's submission.
-</speaker-notes>
-
-</slide>
-
-<slide number="3" layout="content" title="Learning Objectives">
+<slide number="3" title="Learning Objectives">
 
 ## Today's Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Apply** Locke & Latham's goal-setting theory mechanisms
-2. **Create** SMART goals (not just label goals as SMART)
-3. **Use** OKR framework for 1-3-5 year roadmaps
-4. **Conduct** personal SWOT analysis
-5. **Design** accountability mechanisms
-6. **Integrate** all course learning into coherent PDP
+1. **Apply** SMART goal criteria to create specific, measurable career goals
+2. **Explain** Locke & Latham's goal-setting theory and its four performance mechanisms
+3. **Design** OKRs (Objectives and Key Results) for personal development
+4. **Construct** a SWOT analysis identifying strengths, weaknesses, opportunities, and threats
+5. **Create** a 1-year, 3-year, and 5-year career development roadmap
 
 <speaker-notes>
-These are the final tools you need to complete PDP Part 3 (Vision & Goals) worth 30% of your PDP grade, and Part 2 (SWOT & Skills Gap) worth 15%. Combined, that's 45% of your largest assessment. This isn't theoretical—you'll USE these frameworks in tutorial within 90 minutes to finalize your submission.
+These objectives are assessed in the Personal Development Plan (40% of final grade) due Friday. Emphasize that students should be working on their PDPs as the lecture proceeds—this is practical, applied content. Tutorial today provides dedicated PDP work time with instructor support.
 </speaker-notes>
 
 </slide>
 
-<slide number="4" layout="section-break" title="Part 1: The Science">
+<slide number="4" layout="framework" title="Assessment Connection">
+
+## How This Prepares You
+
+**Personal Development Plan (40%) - Due Friday, November 28, 11:59 PM**
+
+Today's lecture teaches:
+- Part 3: Vision & Goals (SMART goals, OKRs, 1-3-5 year roadmaps)
+- Part 2: SWOT Analysis & Skills Gap Analysis
+- Part 5: Implementation & Accountability
+
+**Final Oral Exam (30%) - Exam Period**
+- You'll present your PDP using frameworks learned today
+
+<speaker-notes>
+The stakes are high—this is the most heavily weighted assessment in the course. Students should have draft PDPs started; today's lecture provides the final tools they need. Tutorial time is explicitly dedicated to PDP completion with instructor and peer feedback. Remind students that mentor validation statements (Meeting 4) should be completed this week as well.
+</speaker-notes>
+
+</slide>
+
+<slide number="5" layout="section-break" title="Roadmap">
+
+## Today's Journey
+
+**Part 1:** The Science of Goal-Setting (20 min)
+- Goal-setting theory foundations
+- Why goals work (the 4 mechanisms)
+
+**Part 2:** Goal-Setting Frameworks (30 min)
+- SMART goals methodology
+- OKR framework
+- 1-3-5 year career roadmapping
+
+**Part 3:** Self-Assessment & Planning (25 min)
+- SWOT analysis for personal development
+- Accountability mechanisms
+- Implementation strategies
+
+<speaker-notes>
+Three major segments with clear transitions. Return to this slide at each section break to help students track progress. The lecture is deliberately practical—minimal theory, maximum application. Students should leave with concrete tools to finalize their PDPs.
+</speaker-notes>
+
+</slide>
+
+<slide number="6" layout="section-break" title="Part 1 Opening">
 
 # Part 1: The Science of Goal-Setting
-## Locke and Latham's Theory
+
+**What makes goals work—and why most people fail**
 
 <speaker-notes>
-Edwin Locke and Gary Latham spent 35 years studying goal-setting. Their 2002 American Psychologist article has 7,243+ citations—one of psychology's most influential papers. You need to understand WHY goals work to set them effectively. Random goal-setting produces low success rates, while theory-informed goal-setting increases achievement by 42%.
+Transition to Part 1. We begin with foundational theory from Locke & Latham (2002)—the most influential research in goal-setting psychology. This 35-year empirical research program explains why specific, difficult goals outperform "do your best" intentions. Students need to understand the "why" before learning the "how" frameworks.
 </speaker-notes>
 
 </slide>
 
-<slide number="5" layout="framework" title="Core Finding">
+<slide number="7" title="Goal-Setting Theory: The Foundation">
 
-## The Goal-Performance Relationship
+## Goal-Setting Theory (Locke & Latham, 2002)
 
-**Key Finding:** Specific, difficult goals consistently lead to higher performance than "do your best" goals.
+**Core Principle:** Specific, difficult goals lead to higher performance than vague or easy goals
 
-**Effect Sizes Across 400+ Studies:**
-- Goal specificity effect: d = 0.42 to 0.82 (medium to large)
-- Goal difficulty effect: d = 0.52 to 0.82 (medium to large)
-- Combined effect: Goals improve performance by 12-15% on average
+**Research Base:**
+- 35 years of empirical studies
+- 7,243+ citations
+- Effect sizes: 0.42 to 0.80 (large)
 
-**What This Means:**
-- "Do your best" = baseline performance
-- "Achieve 85% on final exam" = significantly higher effort and performance
-- "Reach IELTS 7.5 by June 2026" > "Improve my English"
-
-**Why It Works:** Specific, difficult goals trigger four psychological mechanisms.
-
-*Locke & Latham (2002) — American Psychologist*
+**Key Finding:** "Do your best" goals are consistently outperformed by specific targets
 
 <speaker-notes>
-This is THE foundational finding. Goals must be specific AND difficult. Vague goals like "try hard" don't work. Effect sizes of d = 0.5+ mean HALF a standard deviation improvement—substantial impact. Example: "Deliver 5 presentations to 20+ people by December 2026, receiving average feedback score of 4.0/5.0 on clarity and engagement" is specific and difficult, triggering the four mechanisms we'll cover next.
+Locke and Latham's research is the gold standard in goal-setting psychology. The effect sizes (0.42-0.80) are unusually large for social science—meaning goal-setting has a powerful, reliable impact on performance. Students should understand that "I'll do my best" is scientifically proven to be less effective than "I will achieve X by Y date." This validates the structured PDP approach.
 </speaker-notes>
 
 </slide>
 
-<slide number="6" layout="content" title="Four Goal Mechanisms">
+<slide number="8" layout="framework" title="Four Mechanisms of Goal Performance">
 
 ## How Goals Improve Performance
 
-**Mechanism 1: Direction**
-- Goals direct attention and effort toward goal-relevant activities
-- Example: "IELTS 7.5" goal → focus on vocabulary, writing practice (not random English exposure)
+Locke & Latham identify **4 mechanisms** through which goals enhance achievement:
 
-**Mechanism 2: Effort**
-- Higher goals mobilize greater effort
-- Example: GPA 3.8 goal → study 25 hrs/week vs. GPA 3.0 goal → study 15 hrs/week
+1. **Direction** → Goals direct attention toward goal-relevant activities (and away from distractions)
 
-**Mechanism 3: Persistence**
-- Goals increase persistence over time
-- Example: "Run 5K by April" → continue training despite setbacks
+2. **Effort** → Higher goals mobilize greater effort
 
-**Mechanism 4: Strategy Development**
-- Challenging goals prompt task-specific strategies and planning
-- Example: "Publish research paper" → learn methodology, find advisor, develop writing routine
+3. **Persistence** → Goals increase persistence over time
 
-*When all four mechanisms activate simultaneously, goal attainment probability increases dramatically.*
+4. **Strategies** → Goals prompt development of task-relevant strategies and action plans
 
 <speaker-notes>
-Understanding these mechanisms helps you leverage goals better. Direction filters what you focus on; Effort mobilizes energy proportional to difficulty; Persistence sustains you through plateaus; Strategy forces systematic planning for complex goals. When you write SMART goals in your PDP, ask: Does this goal activate all four mechanisms? If not, revise to make it more specific or challenging. Tutorial Activity 1 today reviews your goals through this lens.
+Key pedagogical moment. These four mechanisms explain WHY goal-setting works at a cognitive and motivational level. Example for students: "If your goal is 'become a good marketer' (vague), you might scroll LinkedIn, attend random events, or read articles without strategy. If your goal is 'Complete Google Analytics certification by March 2026' (specific, difficult), you direct attention to certification materials, mobilize effort to study weekly, persist through difficult modules, and develop a study strategy."
 </speaker-notes>
 
 </slide>
 
-<slide number="7" layout="content" title="Goal Moderators">
+<slide number="9" title="When Goals Work Best: Moderators">
 
-## When Goals Work Best — Four Critical Moderators
+## When Do Goals Work Best?
 
-**1. Feedback**
-- Progress feedback is essential for goal adjustment
-- Without feedback, you don't know if strategies are working
-- Example: Weekly GPA tracking, monthly skills self-assessment
+Goals are most effective when these **moderators** are present:
 
-**2. Goal Commitment**
-- You must be committed to the goal (not externally imposed)
-- Commitment highest when: (a) goal is self-set, (b) goal is public, (c) you understand goal importance
-- PDP goals must be YOUR goals, not what you think instructors want
+**Adequate Feedback**
+- You can measure progress toward goals
+- You receive information about how you're performing
 
-**3. Task Complexity**
-- Simple tasks: Specific goals work immediately
-- Complex tasks: Need learning period + strategy development first
-- Example: "Master financial modeling" requires breaking into sub-goals
+**High Goal Commitment**
+- You're personally invested in the goal
+- The goal aligns with your values
 
-**4. Adequate Ability**
-- Goals must match your current ability level + reasonable stretch
-- Impossible goals → anxiety and disengagement
-- Example: "Become CEO in 1 year" (impossible) vs. "Reach team leader role in 3 years" (stretch)
+**Sufficient Ability**
+- You have (or can develop) the skills needed
+- Resources are available
 
-*Goals are most effective when ALL four moderators are present.*
+**Appropriate Task Complexity**
+- Task isn't so complex it overwhelms
+- Or: complex tasks are broken into sub-goals
 
 <speaker-notes>
-Goals don't work in a vacuum—context matters. Feedback must be timely and specific (not annual review only). Commitment is critical—low commitment means goals are just words on paper. For complex goals, break into sub-goals with learning milestones. Goals must be in the Goldilocks zone—not too easy, not impossible. Your PDP should address: Part 5 Implementation covers feedback/accountability mechanisms; Part 3 ensures goals are self-set and meaningful; Part 3 Action Steps break complex goals into sub-goals.
+Critical for PDP design. Students should evaluate their goals against these moderators. "Do I have feedback mechanisms?" (Yes—mentor check-ins, quarterly reviews). "Am I committed?" (Goals should align with values from Week 5 assessments). "Do I have ability?" (Or a plan to develop it—that's the skills gap analysis). "Is complexity managed?" (Break 5-year goals into 1-year and 3-year sub-goals).
 </speaker-notes>
 
 </slide>
 
-<slide number="8" layout="section-break" title="Part 2: SMART Framework">
+<slide number="10" title="Goal-Setting Theory Applied">
 
-# Part 2: SMART Goals Framework
-## Making Goals Actionable
+## Applying Goal-Setting Theory to Your PDP
+
+| Principle | Application to PDP |
+|-----------|-------------------|
+| **Specific goals** | Not "improve communication"—"Present at 3 NEU conferences by July 2026" |
+| **Difficult goals** | Stretch beyond comfort zone—but remain achievable |
+| **Feedback** | Build in progress checks: mentor meetings, quarterly reviews, tracking systems |
+| **Commitment** | Align goals with VIA strengths, MBTI preferences, Holland Code interests |
+| **Ability** | Include skill development in action steps—don't assume you're ready now |
+| **Complexity** | Break 5-year goals into 3-year, then 1-year sub-goals |
 
 <speaker-notes>
-SMART goals operationalize Locke & Latham's theory. It's the most popular framework in business, education, and coaching. But reality check: Most people LABEL goals as SMART without actually making them SMART. Today you'll learn to create genuinely SMART goals that will pass the rigorous evaluation in your PDP rubric.
+Bridge from theory to practice. Students should be taking notes on how to strengthen their draft PDPs. Common question: "What if I don't know if my goal is achievable?" Answer: That's what mentors are for—use Meeting 4 to validate goal feasibility. Another common concern: "My 5-year goals feel too ambitious." Response: That's appropriate—5-year goals should be difficult. Break them into smaller 1-year and 3-year milestones.
 </speaker-notes>
 
 </slide>
 
-<slide number="9" layout="framework" title="SMART Criteria">
+<slide number="11" layout="section-break" title="Part 2 Opening">
 
-## SMART Criteria
+# Part 2: Goal-Setting Frameworks
 
-**S — Specific**
-- Clearly defined, unambiguous target
-- Answers: What? Why? Who? Where? Which?
-
-**M — Measurable**
-- Quantifiable progress indicators
-- Answers: How much? How many? How will I know when it's accomplished?
-
-**A — Achievable**
-- Realistic given resources, time, ability
-- Stretch goal but not impossible
-
-**R — Relevant**
-- Aligns with broader objectives, values, career vision
-- Matters to YOU and your development
-
-**T — Time-bound**
-- Clear deadline or timeframe
-- Creates urgency and allows planning
-
-*All five criteria must be present for a goal to be truly SMART.*
+**Practical tools: SMART goals, OKRs, and career roadmaps**
 
 <speaker-notes>
-Each letter addresses a common goal-setting mistake. S fixes vague goals ("be better"), M fixes unmeasurable goals ("improve communication"), A fixes impossible goals ("become CEO in 1 year"), R fixes misaligned goals (pursuing parent's dream, not yours), T fixes open-ended goals ("someday I'll..."). Research from Martins van Jaarsveld et al. (2025) shows SMART goal interventions are effective when embedded in course activities over multiple sessions. Your PDP requires minimum 6 SMART goals (3 short-term, 2 medium-term, 1 long-term), and each will be evaluated against all five criteria.
+Transition to Part 2. Now that students understand WHY goals work (theory), we move to HOW to design effective goals (frameworks). This section is intensely practical—students should be able to immediately apply these frameworks to their PDPs. We'll cover two complementary systems: SMART goals (for clarity and structure) and OKRs (for ambitious objectives with measurable results).
 </speaker-notes>
 
 </slide>
 
-<slide number="10" layout="content" title="SMART Examples">
+<slide number="12" layout="framework" title="SMART Goals Framework">
 
-## Transforming Vague Goals into SMART Goals
+## SMART Goals Framework
 
-| Vague Goal (NOT SMART) | SMART Goal (All 5 Criteria) |
-|-------------------------|------------------------------|
-| "Improve my leadership skills" | "Lead 3 student organization projects with teams of 5+ members by May 2026, achieving average team satisfaction score of 4.0/5.0 on post-project surveys" |
-| "Learn data analytics" | "Complete Google Data Analytics Certificate (6 courses, 180 hours) and apply skills in 2 real-world projects by December 2026, achieving certificate with 90%+ average" |
-| "Network more" | "Attend 8 industry networking events and conduct 12 informational interviews with professionals in consulting field by June 2026, documenting insights in LinkedIn posts" |
-| "Be healthier" | "Exercise 4x per week (minimum 30 min cardio or strength training) for 6 consecutive months by August 2026, tracked via fitness app with 90%+ adherence rate" |
-| "Get a good job" | "Secure summer internship at Big 4 consulting firm or equivalent by March 2026 through targeted applications (minimum 15 firms) and 20+ networking conversations" |
+A proven framework for creating well-formed goals:
+
+**S - Specific:** Clearly defined, not vague or ambiguous
+- Bad: "Improve my marketing skills"
+- Good: "Complete Google Digital Marketing certification"
+
+**M - Measurable:** Can track progress and know when achieved
+- Bad: "Get better at public speaking"
+- Good: "Present at 3 NEU student conferences"
+
+**A - Achievable:** Challenging but realistic given resources
+- Bad: "Become CMO of Fortune 500 company by 2027" (from student position)
+- Good: "Secure marketing coordinator role at established firm by 2027"
+
+**R - Relevant:** Aligns with values, career vision, strengths
+- Bad: "Learn coding" (if you're passionate about HR and hate tech)
+- Good: "Earn SHRM-CP certification" (if pursuing HR career)
+
+**T - Time-bound:** Has a specific deadline or timeframe
+- Bad: "Eventually get my MBA"
+- Good: "Apply to MBA programs by October 2028"
 
 <speaker-notes>
-Notice SMART goals are LONG—that's okay, better detailed than vague. Work through each example identifying which SMART criteria were missing in the vague version. For "Improve leadership": not specific (what aspect?), not measurable (how would you know?), no timeline. The SMART version specifies: 3 projects, 5+ team members, 4.0/5.0 satisfaction, by May 2026. Common mistake: Writing "Achieve IELTS 7.5" and calling it SMART. Missing: When? How? Better: "Achieve IELTS 7.5 by June 2026 through weekly tutoring (40 sessions) and daily 30-min practice (180 days tracked), with monthly practice tests to monitor progress." Tutorial Activity 2: Transform your vague PDP goals into truly SMART goals using this table as template.
+Walk through each criterion with good/bad examples. Students often write vague goals ("improve skills") that don't meet SMART criteria. Emphasize that SMART goals are required in PDP Part 3—minimum 3 short-term (1-year), 2 medium-term (3-year), and 1 long-term (5-year) goal, all in SMART format. Common student question: "How do I make a big goal measurable?" Answer: Define specific milestones (e.g., "Become an expert in data analytics" → "Complete 3 advanced Excel courses and analyze 10 real datasets by December 2026").
 </speaker-notes>
 
 </slide>
 
-<slide number="11" layout="section-break" title="Part 3: OKRs">
+<slide number="13" title="SMART Goals in Higher Education">
 
-# Part 3: OKR Framework
-## Structuring Multi-Year Roadmaps
+## Research: SMART Goals in Higher Education
+
+**Martins van Jaarsveld et al. (2025)** - Systematic review of 60 studies (2010-2024)
+
+**Key Findings:**
+- SMART goal interventions are increasingly common (50%+ published in past 5 years)
+- Most effective when **embedded in course activities** (not one-time exercises)
+- **Extended prompts** (multiple sessions) outperform single-session activities
+- Digital delivery effective for tracking and accountability
+
+**Implication for Your PDP:** Setting goals once isn't enough—you need ongoing monitoring and adjustment (that's why accountability mechanisms are required in Part 5)
 
 <speaker-notes>
-OKR = Objectives and Key Results, popularized by Google, Intel, LinkedIn through John Doerr's book "Measure What Matters." Originally for organizations, we're adapting it for personal development. SMART goals work best for short-term (1 year), but OKRs structure longer-term vision (3-5 years) while maintaining measurability.
+This research validates the PDP approach. NEU's PPDK66B embeds goal-setting across 12 weeks (not a one-shot activity): Week 5 self-assessments inform goals, Week 11 designs PDP, Final Oral Exam ensures accountability. Students should understand that research shows their PDP will be more effective than typical New Year's resolutions because of this structured, extended approach. The digital submission (Google Form) + mentor check-ins + oral exam presentation are the accountability mechanisms research recommends.
 </speaker-notes>
 
 </slide>
 
-<slide number="12" layout="framework" title="OKR Structure">
+<slide number="14" layout="framework" title="OKR Framework Introduction">
 
-## Objectives and Key Results
+## OKRs: Objectives and Key Results
 
-**Objective (O):**
-- Qualitative, aspirational goal
-- Describes WHAT you want to achieve
-- Inspiring and directional
-- Example: "Become a recognized expert in sustainable business strategy"
+Originally developed at Intel, now used by Google, LinkedIn, and leading organizations
 
-**Key Results (KRs):**
-- Quantitative, measurable outcomes
-- Describe HOW you'll know you achieved the objective
-- Typically 2-5 key results per objective
-- Example KRs for above objective:
-  1. Publish 3 articles on sustainability in business journals
-  2. Speak at 2 industry conferences on sustainable strategy
-  3. Advise 5 companies on sustainability initiatives
+**Structure:**
+- **Objective:** Qualitative, inspirational goal (the "what" and "why")
+- **Key Results:** 2-4 quantitative measures of success (the "how you'll know")
 
-**OKR Characteristics:**
-- Ambitious (60-70% achievement is success, not failure)
-- Time-bound (quarterly or yearly cycles)
-- Transparent (shared publicly for accountability)
-
-*Al-Saadi et al. (2023) — Omani higher education OKR implementation study*
-
-<speaker-notes>
-OKR separates "aspiration" (Objective) from "measurement" (Key Results), allowing ambitious vision plus concrete progress tracking. The Objective is qualitative—"recognized expert"—while Key Results are quantifiable: count publications, talks, clients. Google's philosophy: If you achieve 100% of Key Results, your objective wasn't ambitious enough. Target 60-70% achievement to encourage stretch thinking. For personal development: 1-Year OKRs are tactical (build skills, complete projects), 3-Year OKRs are strategic (establish expertise, career progression), 5-Year OKRs are visionary (industry recognition, major achievements).
-</speaker-notes>
-
-</slide>
-
-<slide number="13" layout="content" title="OKR Examples">
-
-## Personal Development OKR Examples
-
-**1-Year Horizon (2026):**
-- **Objective:** Establish strong foundation in business analytics and consulting skills
+**Example Organizational OKR:**
+- **Objective:** Become the top choice for new graduates in Vietnam
 - **Key Results:**
-  - Complete 2 data analytics certifications (Google Analytics, Tableau)
-  - Lead 3 case competition teams with 1 top-3 finish
-  - Secure summer 2026 internship at consulting firm or analytics team
-
-**3-Year Horizon (2028):**
-- **Objective:** Build expertise in strategy consulting with data-driven approach
-- **Key Results:**
-  - Promoted to senior analyst or consultant role
-  - Deliver 10+ client projects with measurable business impact (documented)
-  - Develop specialized expertise in 1-2 industries (e.g., fintech, retail)
-
-**5-Year Horizon (2030):**
-- **Objective:** Recognized as strategic advisor combining analytics and business acumen
-- **Key Results:**
-  - Manage team of 3-5 junior consultants
-  - Publish 2 thought leadership pieces (industry blog, journal, conference)
-  - Lead $500K+ consulting engagements independently
+  1. Increase job applications from top universities by 40%
+  2. Achieve 90% offer acceptance rate
+  3. Reach 4.5+ rating on Glassdoor
 
 <speaker-notes>
-Notice progressive ambition across time horizons. 1-year is tactical (foundation: skills, credentials), 3-year is application (expertise, specialization, promotion), 5-year is recognition (leadership, thought leadership, impact). Your PDP Part 3 requires goals for all three time horizons: use SMART format for 1-year goals (very specific), use OKR format for 3-year and 5-year goals (objective + 2-3 key results). Common mistakes: Too vague at 5 years ("Be successful in business"—no key results), too tactical at 5 years ("Complete Excel course"—that's 1-year level), no progression (all three periods look the same). Your Holland Code informs career field, VIA strengths inform how you'll contribute, CliftonStrengths inform development path.
+Introduce OKR as a complement to SMART goals. SMART goals are concrete and tactical; OKRs are ambitious and strategic. Students may ask: "Why learn OKRs if we have SMART goals?" Answer: OKRs help with BIG objectives (like your 5-year vision) that require multiple measures of success. SMART goals work well for specific actions ("Complete certification by June"); OKRs work well for broad objectives ("Build expertise in sustainable business") with multiple pathways.
 </speaker-notes>
 
 </slide>
 
-<slide number="14" layout="section-break" title="Part 4: SWOT Analysis">
+<slide number="15" title="Personal OKRs for Development Plans">
 
-# Part 4: SWOT Analysis
-## Understanding Your Strategic Position
+## Adapting OKRs for Personal Development
+
+**Personal OKR Example (1-Year):**
+
+**Objective:** Establish myself as a capable marketing professional ready for post-graduation roles
+
+**Key Results:**
+1. Complete 3 industry-recognized certifications (Google Analytics, HubSpot, Meta Blueprint)
+2. Lead marketing campaigns for 2 student organizations with measurable results
+3. Build portfolio with 5 case studies demonstrating campaign strategy and analysis
+4. Secure 2 informational interviews per month with marketing professionals
 
 <speaker-notes>
-SWOT is a strategic planning tool from business that we adapt for personal development. It helps you understand context BEFORE setting goals. Goals without context equal wishful thinking. SWOT grounds goals in reality (strengths, weaknesses) and opportunity (external factors).
+This is how students adapt organizational OKRs to personal development. The Objective is aspirational and directional; Key Results are specific, measurable outcomes that collectively achieve the objective. Students might ask: "How is this different from 4 separate SMART goals?" Answer: OKRs create coherence—the 4 key results are strategically linked to one overarching objective. In your PDP, you might use OKR structure for each time horizon (1-year OKR, 3-year OKR, 5-year OKR) with key results that are themselves SMART goals.
 </speaker-notes>
 
 </slide>
 
-<slide number="15" layout="framework" title="Personal SWOT Framework">
+<slide number="16" title="OKR Research and Best Practices">
 
-## Four Quadrants for Personal Development
+## OKR Implementation: Research Insights
 
-**Strengths (Internal, Positive)**
-- Natural talents, developed skills, character strengths
-- Based on self-assessments: VIA strengths, CliftonStrengths themes, MBTI preferences, technical skills
-- Example: "Strong analytical thinking (VIA Judgment + CliftonStrengths Analytical), fluent English, financial modeling skills"
+**Al-Saadi et al. (2023)** - Study of OKR-based performance system in higher education
 
-**Weaknesses (Internal, Negative)**
-- Skill gaps, limiting beliefs, underdeveloped competencies
-- Based on skills gap analysis, EI assessment, mentor feedback
-- Example: "Weak public speaking confidence, limited networking experience, fixed mindset tendencies"
+**Affordances (Benefits):**
+- Clear objective-setting with measurable key results
+- Alignment between personal goals and broader context
+- Enhanced focus and prioritization
+- Regular progress tracking
 
-**Opportunities (External, Positive)**
-- Market trends, industry growth, available resources, networks
-- Based on Vietnam labor market, AI-era trends (Week 1-2), emerging industries
-- Example: "Vietnam digital economy growing 25% annually, demand for data analysts, NEU alumni network in consulting"
+**Challenges:**
+- Requires bi-directional understanding (you need to understand your OKRs AND how to evaluate progress)
+- Organizational context matters (your career field shapes what's realistic)
+- Needs clear alignment between individual objectives and career goals
 
-**Threats (External, Negative)**
-- Market challenges, competition, technological disruption, barriers
-- Based on labor market analysis, AI displacement risks
-- Example: "High competition for consulting roles, AI automating basic analytics, English proficiency gaps vs. international candidates"
+**Application:** Use OKRs for your 3-year and 5-year goals where you need multiple measures of success
 
 <speaker-notes>
-Internal (S/W) = things YOU control; External (O/T) = environmental factors you respond to. Don't be modest on Strengths—list everything from 5 assessments plus mentor feedback. Be honest on Weaknesses—these become development priorities. Opportunities must be research-based (what's actually growing in Vietnam/ASEAN?), not wishful thinking. Threats should be realistic about competition and disruption. Use SWOT for goals: Leverage Strengths (goals that use your natural abilities), Address Weaknesses (goals that develop gaps), Capture Opportunities (goals aligned with growth areas), Mitigate Threats (goals that differentiate you). PDP Part 2 requires SWOT with 5-7 items per quadrant, integrating self-assessment insights with market realities.
+Al-Saadi's research is one of the few peer-reviewed studies on OKRs in academic contexts. The "challenges" section helps students avoid common pitfalls. Key insight: OKRs work best when you understand both how to set them AND how to track them—that's why PDP Part 5 (Implementation & Accountability) is critical. Students should use OKRs for complex, multi-faceted objectives (e.g., "Become a leader in sustainable business") and SMART goals for specific milestones (e.g., "Complete LEED Green Associate certification by August 2026").
 </speaker-notes>
 
 </slide>
 
-<slide number="16" layout="section-break" title="Part 5: Accountability">
+<slide number="17" layout="framework" title="Building Your Career Roadmap">
 
-# Part 5: Accountability Mechanisms
-## Ensuring Goal Achievement
+## 1-Year, 3-Year, 5-Year Career Roadmap
+
+**Structure Your Goals Across Time Horizons:**
+
+**1-Year Goals (Short-Term):** Foundation building
+- Skills: Certifications, courses, technical capabilities
+- Experience: Internships, projects, leadership roles
+- Network: Mentors, informational interviews, professional communities
+
+**3-Year Goals (Medium-Term):** Career establishment
+- Position: First professional role, early promotions
+- Expertise: Recognized competence in 1-2 specialty areas
+- Reputation: Known in your field, expanding network
+
+**5-Year Goals (Long-Term):** Career advancement
+- Leadership: Management role or senior specialist position
+- Impact: Measurable contributions to organization/field
+- Direction: Clear career trajectory, strategic choices
 
 <speaker-notes>
-Research shows publicly committing to goals increases achievement by 65%. Adding an accountability partner increases it by another 25%. The problem with private goals: easy to abandon when motivation fades, no consequences for not following through. Solution: Build accountability into goal design from the start.
+This is the core structure for PDP Part 3. Students must include minimum 3 short-term (1-year), 2 medium-term (3-year), and 1 long-term (5-year) SMART goals. The roadmap should show logical progression—1-year goals build foundation for 3-year goals, which enable 5-year goals. Example progression: Year 1 "Complete financial modeling certification" → Year 3 "Financial analyst role at Big 4 firm" → Year 5 "Senior analyst managing client portfolio." Common student concern: "5 years feels so far away, I don't know what I'll want then." Response: That's expected—5-year goals can evolve. The exercise forces strategic thinking about long-term direction.
 </speaker-notes>
 
 </slide>
 
-<slide number="17" layout="content" title="Five Accountability Strategies">
+<slide number="18" title="Career Roadmap Example">
 
-## How to Maintain Progress
+## Sample Career Roadmap: Marketing Professional
 
-**1. Progress Tracking Systems**
-- Weekly/monthly reviews of goal progress
-- Tools: Notion, spreadsheet, journal, habit tracker app
-- Example: Monthly PDP review meeting with yourself (calendar block)
+**1-Year Goals (Graduate Ready):**
+1. Complete Google Analytics, HubSpot, Meta Blueprint certifications
+2. Lead 2 student org marketing campaigns with documented results
+3. Build portfolio with 5 professional case studies
+4. Secure 10+ informational interviews with industry professionals
 
-**2. Public Commitment**
-- Share goals with mentor, friends, family
-- Social pressure to follow through
-- Example: Post 3-year vision on LinkedIn
+**3-Year Goals (Established Professional):**
+1. Digital marketing specialist at reputable agency or in-house team
+2. Managed 3+ successful campaigns with measurable ROI
+3. Known in NEU alumni network as go-to marketing professional
+4. Begin developing expertise in one specialty (SEO, paid ads, content, analytics)
 
-**3. Accountability Partners**
-- Regular check-ins with peer or mentor
-- Mutual goal-sharing and progress updates
-- Example: Monthly coffee with classmate to review PDP progress
-
-**4. Scheduled Milestones**
-- Break goals into monthly/quarterly checkpoints
-- Celebrate small wins
-- Example: If goal is "Complete Google Analytics cert by Dec 2026," milestones = complete 1 course every 6 weeks
-
-**5. Consequence Design**
-- Positive: Reward yourself for achieving milestones
-- Negative: Public commitment means embarrassment if you quit
-- Example: "If I complete 4 informational interviews this month, I buy myself favorite book"
-
-*Accountability transforms intentions into action.*
+**5-Year Goals (Senior Professional):**
+1. Marketing manager role leading a team or senior specialist in chosen niche
+2. Track record of 10+ successful campaigns with business impact
+3. Regular speaker/contributor in Vietnamese marketing community
+4. Mentoring junior marketers
 
 <speaker-notes>
-Accountability is what separates achievers from dreamers. Your PDP Part 5 requires documenting accountability mechanisms. Progress Tracking must be regular (weekly minimum for short-term goals). Public Commitment: vulnerability increases commitment. Accountability Partners: choose someone who will challenge you, not just cheer. Milestones: creates dopamine hits throughout long journey. Consequences: loss aversion is powerful motivator. Example complete system: Goal "Secure consulting internship by March 2026" with weekly application tracker, public LinkedIn share, weekly check-in with recruiting classmate, monthly milestones (Oct: 5 conversations, Nov: 10 applications, Dec: 2 interviews), consequence (if miss Oct milestone, attend 2 extra networking events in Nov). Common mistakes: No tracking system (goals forgotten), only private goals (easy to abandon), no milestones (overwhelming, procrastinate), no consequences (low stakes, low effort).
+Walk through how this roadmap demonstrates logical progression and increasing scope. Year 1 builds skills and portfolio; Year 3 applies skills in professional role and develops specialty; Year 5 takes on leadership and industry recognition. Students should notice: goals become broader and more ambitious over time, key results shift from learning to doing to leading, specificity decreases appropriately for longer time horizons. Encourage students to create similar roadmaps for their own career fields during tutorial time.
 </speaker-notes>
 
 </slide>
 
-<slide number="18" layout="section-break" title="Part 6: Integration">
+<slide number="19" layout="section-break" title="Part 3 Opening">
 
-# Part 6: Integrating Your PDP
-## Bringing It All Together
+# Part 3: Self-Assessment & Planning
+
+**SWOT analysis, accountability, and implementation**
 
 <speaker-notes>
-You have all the pieces—now we assemble them. Your PDP is MORE than the sum of parts—it's a coherent narrative. Let me show you how a complete PDP flows, with each part strengthening the others. Assessors look for connections between parts.
+Transition to Part 3. Students now have goal-setting frameworks (SMART goals and OKRs) and understand career roadmap structure. Part 3 provides the final critical pieces: SWOT analysis for self-awareness, and accountability mechanisms for implementation. This completes the toolkit needed to finalize their PDPs before Friday's deadline.
 </speaker-notes>
 
 </slide>
 
-<slide number="19" layout="framework" title="PDP Integration">
+<slide number="20" layout="framework" title="SWOT Analysis for Personal Development">
 
-## How the Six Parts Connect
+## SWOT Analysis for Personal Development
 
-**Part 1: Self-Knowledge Foundation (20%)**
-- Self-assessments (MBTI, VIA, CliftonStrengths, Holland, EI) + Integration Statement
-- **Feeds into:** Parts 2, 3, 4
+A strategic self-assessment framework with four quadrants:
 
-**Part 2: SWOT & Skills Gap (15%)**
-- Strengths based on assessments + Weaknesses = development priorities
-- **Feeds into:** Part 3 (goals address weaknesses, leverage strengths)
+**STRENGTHS (Internal, Positive)**
+What advantages do you have?
+- VIA Character Strengths, CliftonStrengths, MBTI preferences
+- Skills, knowledge, experience, network
+- Resources (financial, educational, family support)
 
-**Part 3: Vision & Goals (30%)**
-- Vision statement aligned with values/strengths + SMART/OKR goals
-- **Informed by:** Parts 1 & 2; **Feeds into:** Parts 4 & 5
+**WEAKNESSES (Internal, Negative)**
+What areas need development?
+- Skill gaps identified in self-assessments
+- Limiting beliefs or fixed mindsets
+- Resource constraints, knowledge gaps
 
-**Part 4: Mentor Integration (20%)**
-- Evidence from 4 meetings + Mentor validation
-- **Influences:** Parts 2 & 3 (mentor advice shaped SWOT and goals)
+**OPPORTUNITIES (External, Positive)**
+What favorable conditions exist?
+- Growing industries in Vietnam (tech, green economy, digital transformation)
+- NEU resources (career services, alumni network)
+- Mentor connections, emerging trends
 
-**Part 5: Implementation & Accountability (10%)**
-- Timeline + Accountability mechanisms
-- **Executes:** Part 3 (turns goals into actions)
-
-**Part 6: Personal Reflection (5%)**
-- Learning, growth, excitement
-- **Synthesizes:** Entire course journey
-
-*Each part strengthens the others—coherence is key.*
+**THREATS (External, Negative)**
+What obstacles or challenges exist?
+- AI disruption in your field
+- Economic uncertainty, competitive job market
+- Industry changes, geographic constraints
 
 <speaker-notes>
-Strong PDP: Clear golden thread from self-assessment to SWOT to goals to mentor feedback to implementation. Weak PDP: Parts feel disconnected, goals don't match strengths, mentor feedback not integrated. Example of integration: Part 1 shows VIA Judgment + CliftonStrengths Analytical + Holland I (Investigative); Part 2 SWOT Strength = "Strong analytical thinking", Opportunity = "Data analytics demand in Vietnam"; Part 3 Goal = "Complete Google Data Analytics cert + apply in 2 projects by Dec 2026" (leverages strength, captures opportunity); Part 4 Mentor advised "Specialize in business intelligence" (confirms direction); Part 5 Accountability = Monthly mentor progress review, public LinkedIn posts. Red flags: Goal unrelated to strengths/values, SWOT doesn't reference assessments, mentor feedback not visible in goals, implementation doesn't match goal difficulty.
+SWOT is required in PDP Part 2 (15% of PDP grade). Students must list 5-7 items per quadrant. Key teaching point: Strengths and Weaknesses are INTERNAL (things you control); Opportunities and Threats are EXTERNAL (things in your environment). Common student error: listing "lack of job opportunities" as a Weakness—that's actually a Threat. Another error: listing generic items ("hard-working," "competitive market")—push for specificity. Good Strength: "Top 5 VIA strength in Creativity, proven through 3 award-winning campaigns." Good Threat: "Rise of AI marketing tools may reduce demand for entry-level content writers by 2027 (McKinsey, 2024)."
 </speaker-notes>
 
 </slide>
 
-<slide number="20" layout="content" title="PDP Quality Criteria">
+<slide number="21" title="SWOT Analysis in Action">
 
-## What Excellent PDPs Demonstrate
+## Using SWOT to Inform Your Goals
 
-**1. Authenticity**
-- Goals reflect YOUR values, not what you think we want to hear
-- Vision statement sounds like you, not a corporate mission statement
+**Strategic Alignment:**
 
-**2. Specificity**
-- Goals are truly SMART (not just labeled SMART)
-- Action steps detailed enough to execute tomorrow
+**Strengths + Opportunities = Growth Strategies**
+- Leverage your strengths to capitalize on opportunities
+- Example: "My CliftonStrength 'Learner' + growing AI field = pursue AI certifications"
 
-**3. Integration**
-- Self-assessments inform SWOT, SWOT informs goals, goals reflect mentor advice
-- Clear connections across all six parts
+**Strengths + Threats = Defensive Strategies**
+- Use strengths to mitigate threats
+- Example: "My EI competence + AI disruption = position myself in human-AI collaboration roles"
 
-**4. Evidence-Based**
-- Goals grounded in market realities (opportunities/threats)
-- Development strategies cite course frameworks (SMART, OKR, Locke & Latham mechanisms)
+**Weaknesses + Opportunities = Development Strategies**
+- Overcome weaknesses to seize opportunities
+- Example: "My weak networking + NEU alumni network = attend 2 alumni events per month"
 
-**5. Ambitious but Achievable**
-- Goals stretch you (not comfortable)
-- But realistic given your context (not fantasy)
-
-**6. Actionable**
-- Implementation plan so clear you could start Monday
-- Accountability mechanisms specific (who, when, how)
+**Weaknesses + Threats = Contingency Strategies**
+- Address weaknesses to reduce vulnerability to threats
+- Example: "My limited tech skills + AI disruption = complete data analytics bootcamp"
 
 <speaker-notes>
-These distinguish A-grade PDPs from C-grade PDPs. The rubric assesses all six criteria. Authenticity: we can tell when goals are generic or copied. Specificity: "Improve leadership" fails, "Lead 3 projects with 4.0/5.0 satisfaction" succeeds. Integration: strongest indicator of deep thinking. Evidence-Based: cites Week 1 labor market research, Week 2 AI impact, mentor expertise. Ambitious but Achievable: Goldilocks zone. Actionable: test is "Could you execute tomorrow?" Example authenticity check: Inauthentic = "I want to become CEO of Fortune 500 company because leadership is important"; Authentic = "I want to build social enterprise addressing Vietnam rural education gaps because my VIA strength is Social Justice and my family struggled with education access." Final quality check: Print your PDP and read it as if you're your mentor. Ask: "Would I fund this person's development? Would I hire them based on this plan?" If no, revise.
+This is advanced SWOT application—teaching students to use SWOT strategically, not just as a list-making exercise. The four combinations (S+O, S+T, W+O, W+T) should inform goal selection. Students might ask: "How does this relate to my goal-setting?" Answer: Your SMART goals should address these strategic priorities. If your biggest threat is AI disruption and your biggest weakness is tech skills, then one of your 1-year goals should address that gap. SWOT provides the "why" behind your goal choices—it's the situational analysis that justifies your strategic direction.
 </speaker-notes>
 
 </slide>
 
-<slide number="21" layout="content" title="Key Takeaways">
+<slide number="22" title="Accountability Mechanisms">
 
-## Personal Development Planning Principles
+## Building Accountability into Your Plan
 
-1. **Goals must be specific and difficult** — Locke & Latham's 35 years of research proves vague goals fail
+Research shows goals fail without accountability systems (Locke & Latham, 2002). Your PDP requires:
 
-2. **SMART framework operationalizes goal-setting theory** — But most people label goals SMART without making them truly SMART
+**Tracking Systems:**
+- Progress journals (weekly reflections)
+- Digital tools (Notion, Trello, Google Sheets)
+- Visual trackers (roadmap posters, milestone charts)
 
-3. **OKRs structure long-term vision** — Separate aspiration (Objective) from measurement (Key Results) for 3-5 year goals
+**Social Accountability:**
+- Share goals with mentor, family, trusted friends
+- Join accountability groups (study buddies, professional networks)
+- Scheduled check-ins (monthly mentor coffee, quarterly self-reviews)
 
-4. **SWOT grounds goals in reality** — Leverage strengths, address weaknesses, capture opportunities, mitigate threats
+**Milestone Celebrations:**
+- Recognize progress at key points
+- Reward completion of difficult sub-goals
+- Build positive reinforcement loops
 
-5. **Accountability determines achievement** — Public commitment + accountability partner + tracking = 65%+ higher success rate
-
-6. **Integration creates coherence** — Your PDP tells ONE story: who you are → where you're going → how you'll get there
-
-7. **Goals serve your vision** — Vision statement (50 words max) is North Star; goals are stepping stones
-
-8. **Your PDP is a living document** — Review quarterly, revise annually, use throughout career
+**Review & Adjustment:**
+- Quarterly reviews: Am I on track? What needs to change?
+- Annual major review: Update 3-year and 5-year goals
+- Bi-annual mentor check-ins for external perspective
 
 <speaker-notes>
-These principles apply beyond this course—use them for life. Principles 1-2 are science of goal-setting (Locke & Latham to SMART), 3-4 are strategic frameworks (OKR, SWOT), 5 is implementation (accountability), 6-8 are meta-principles (coherence, vision-alignment, iteration). Most professionals NEVER do this depth of career planning. You're investing 12 weeks in your development—that's a competitive advantage. Research shows written goals are 42% more likely to be achieved. Your PDP is the map; next 5 years are the journey. Tutorial today is PDP assembly workshop—bring all components, we're building the final product, peer review will catch gaps before Friday submission.
+PDP Part 5 (Implementation & Accountability) is 10% of PDP grade. Students must specify HOW they will maintain accountability. Common student mistake: writing vague statements ("I will stay motivated" or "I will check my progress regularly"). Push for specificity: "I will review my goals every Sunday evening for 15 minutes and update my progress spreadsheet" or "I will schedule quarterly coffee meetings with my mentor to review milestones." Key insight: Accountability is as important as goal-setting itself—the 90% who fail often have good goals but poor accountability.
 </speaker-notes>
 
 </slide>
 
-<slide number="22" layout="content" title="References">
+<slide number="23" title="Implementation Timeline">
 
-**Core Readings:**
+## Creating Your Implementation Timeline
+
+**PDP Part 5 requires detailed timelines:**
+
+**Year 1 (Detailed):**
+- Month-by-month action plan
+- Specific deadlines for each milestone
+- Resource acquisition dates (certifications, courses, materials)
+
+**Years 2-3 (Moderate Detail):**
+- Quarter-by-quarter milestones
+- Major accomplishments per quarter
+- Skill development phases
+
+**Years 4-5 (High-Level):**
+- Annual milestones
+- Major career transitions
+- Long-term positioning goals
+
+**Example Year 1 Month-by-Month:**
+- January 2026: Enroll in Google Analytics course
+- February 2026: Complete 50% of course + apply for summer internships
+- March 2026: Finish certification, interview prep
+- April-May 2026: Secure internship
+- June-August 2026: Complete internship, collect case study data
+
+<speaker-notes>
+Students should leave this lecture ready to create their timeline. The level of detail decreases appropriately over longer time horizons—you can plan January 2026 in detail, but August 2029 will necessarily be less specific. Common student question: "What if my plans change?" Answer: That's expected and healthy. The timeline creates intentionality and structure; you'll adjust as you go. Annual reviews should include timeline updates. The exercise forces strategic thinking about sequencing—what must happen in Year 1 to enable Year 3 goals?
+</speaker-notes>
+
+</slide>
+
+<slide number="24" layout="section-break" title="Wrap-Up">
+
+## Key Takeaways
+
+<speaker-notes>
+Transition to wrap-up. We've covered substantial material—goal-setting theory, SMART goals, OKRs, career roadmaps, SWOT analysis, and accountability mechanisms. Now summarize the most critical points students need to apply to their PDPs.
+</speaker-notes>
+
+</slide>
+
+<slide number="25" title="Key Takeaways">
+
+## Today's Key Takeaways
+
+1. **Goals work because of 4 mechanisms:** Direction, Effort, Persistence, Strategies (Locke & Latham)
+
+2. **SMART goals require all 5 criteria:** Specific, Measurable, Achievable, Relevant, Time-bound
+
+3. **OKRs combine qualitative objectives with quantitative key results** for complex, multi-faceted goals
+
+4. **Career roadmaps progress logically:** 1-year builds foundation → 3-year establishes career → 5-year advances to leadership
+
+5. **SWOT analysis informs goal selection:** Use strengths to seize opportunities, address weaknesses that create vulnerability
+
+6. **Accountability mechanisms are non-negotiable:** Tracking systems, social accountability, reviews, and adjustments
+
+<speaker-notes>
+These are the six essential principles students must apply in their PDPs. Emphasize that tutorial today provides dedicated time to work on PDPs with instructor support. Students should come to tutorial with draft goals ready for peer and instructor feedback. Remind them: PDP is due Friday, November 28, 11:59 PM—only 3 days after this lecture. Time to finalize is limited.
+</speaker-notes>
+
+</slide>
+
+<slide number="26" title="Assessment Reminders">
+
+## Assessment Reminders
+
+**Personal Development Plan (40%) - Due Friday, November 28, 11:59 PM**
+- Submit via Google Form (link on course management system)
+- All 6 parts required: Self-Assessment Integration, SWOT, Vision & Goals, Mentor Integration, Implementation, Reflection
+- Include mentor validation statement from Meeting 4
+- Minimum 3 short-term + 2 medium-term + 1 long-term SMART goals
+
+**Final Oral Exam (30%) - Exam Period**
+- 15-minute presentation: 10-min presentation + 5-min Q&A
+- Present your PDP using frameworks from today
+- Professional slides (10-12 slides maximum)
+- Submit slides 24 hours before your scheduled time
+
+<speaker-notes>
+Logistical reminders. Students should note the tight deadline—PDP due Friday. Emphasize that late submissions are penalized 10% per day, with no submissions accepted after December 2. For students who haven't completed Mentorship Meeting 4 yet, they must do so this week to get mentor validation statements. Oral exam scheduling will be announced next week—students should start preparing their presentations now (even before PDP submission) since exam period arrives quickly after semester ends.
+</speaker-notes>
+
+</slide>
+
+<slide number="27" title="Tutorial Today">
+
+## Tutorial: PDP Work Session
+
+**Today's Tutorial (90 minutes):**
+
+**Structure:**
+1. Opening Q&A on lecture content (15 min)
+2. Individual PDP work time with instructor support (60 min)
+3. Optional peer feedback exchange (15 min)
+
+**What to Bring:**
+- Draft PDP (any sections completed so far)
+- Self-assessment results (MBTI, VIA, CliftonStrengths, EI, Holland Code)
+- Mentor feedback notes from all 4 meetings
+- Laptop for working on PDP
+
+**Goal:** Leave tutorial with 80%+ complete PDP ready for final polishing
+
+<speaker-notes>
+Tutorial is structured as a working session, not a lecture. Students should come prepared to work. Instructor circulates to provide individual feedback and answer questions. Common tutorial questions to anticipate: "Is this goal specific enough?", "How do I know if my 5-year goal is realistic?", "Should I use SMART or OKR format?", "How many items in my SWOT is enough?" Be prepared to give rapid, concrete feedback to help students finalize their plans. Encourage peer feedback exchange—students can help each other identify vague goals or provide accountability partner suggestions.
+</speaker-notes>
+
+</slide>
+
+<slide number="28" title="Next Week Preview">
+
+## Next Week: Integration & Continuous Growth
+
+**Week 12 - Final Class:**
+- Synthesis of the entire semester's learning
+- Values-career alignment frameworks
+- Systems thinking and personal mastery
+- Continuous improvement strategies
+- Course reflections and looking forward
+
+**No new major assignments** - focus is on integration and preparing for Final Oral Exams
+
+<speaker-notes>
+Week 12 is the final class before exam period. It's designed as a capstone integration week—connecting all course concepts (self-awareness from Week 5, reflection from Week 3, growth mindset from Week 9, goal-setting from today) into a coherent personal development philosophy. The lecture introduces systems thinking and continuous improvement mindsets that students will use throughout their careers. It's a celebratory, reflective session—students should come ready to share their journeys and insights from the semester.
+</speaker-notes>
+
+</slide>
+
+<slide number="29" title="Further Resources">
+
+## Further Resources
+
+**Academic Articles (All assigned readings):**
+- Locke & Latham (2002) - Full goal-setting theory framework
+- Martins van Jaarsveld et al. (2025) - SMART goals systematic review
+- Al-Saadi et al. (2023) - OKR framework research
+
+**Practical Tools:**
+- Google Sheets PDP Template (on course management system)
+- SWOT Analysis Worksheet (downloadable)
+- 1-3-5 Year Roadmap Template (downloadable)
+
+**Optional Viewing:**
+- Simon Sinek - "Start With Why" (18 min) - Aligning goals with purpose
+- [Available on YouTube - link in course materials]
+
+<speaker-notes>
+All assigned readings are available through course management system. The practical tools (templates) are specifically designed for this course—students should use them to structure their PDPs. Simon Sinek's video is optional but highly recommended for students struggling to articulate their vision statements (PDP Part 3). It helps with the "why" behind career goals. Not required viewing—all assessed material is covered in lecture and required readings.
+</speaker-notes>
+
+</slide>
+
+<slide number="30" layout="references" title="References">
+
+## References
+
+Al-Saadi, Z., Al-Maawali, W., Ali, H. I. H., & Al Rushaidi, I. (2023). The perceived affordances and challenges in the newly introduced OKR-based performance appraisal system in an Omani HEI. *SAGE Open, 13*(2). https://doi.org/10.1177/21582440231179632
 
 Locke, E. A., & Latham, G. P. (2002). Building a practically useful theory of goal setting and task motivation: A 35-year odyssey. *American Psychologist, 57*(9), 705–717. https://doi.org/10.1037/0003-066X.57.9.705
 
 Martins van Jaarsveld, G., Wong, J., Baars, M., Specht, M., & Paas, F. (2025). Goal setting in higher education: How, why, and when are students prompted to set goals? A systematic review. *Frontiers in Education, 9*, Article 1511605. https://doi.org/10.3389/feduc.2024.1511605
 
-Al-Saadi, Z., Al-Maawali, W., Ali, H. I. H., & Al Rushaidi, I. (2023). The perceived affordances and challenges in the newly introduced OKR-based performance appraisal system in an Omani HEI. *SAGE Open, 13*(2). https://doi.org/10.1177/21582440231179632
-
-**Supplementary (Optional):**
-
 Pluchevskaya, E., Varlacheva, N., & Andrienko, O. (2017). SWOT-analysis as a tool to achieve a state of personal well-being. *European Proceedings of Social and Behavioural Sciences, 19*, 547–553. https://doi.org/10.15405/epsbs.2017.01.74
 
 <speaker-notes>
-These readings provide the theoretical foundation for your PDP frameworks. Locke & Latham (2002) is essential—the 35-year odyssey that validates specific, difficult goals. Martins van Jaarsveld et al. (2025) is a recent systematic review confirming SMART goals work in higher education when embedded in courses like this one. Al-Saadi et al. (2023) covers OKR implementation. All are accessible through library databases.
-</speaker-notes>
-
-</slide>
-
-<slide number="23" layout="content" title="Assessment Reminders">
-
-## Assessment Reminders
-
-**URGENT — Personal Development Plan Due This Week:**
-- **Deadline:** Friday, November 28, 2025, 11:59 PM (check your section)
-- **Submission:** Via Google Form (link in course materials)
-- **Weight:** 40% of course grade
-- **Late penalty:** 10% per day; no submissions accepted after December 2
-
-**Tutorial Today (Critical):**
-- PDP Assembly Workshop (90 minutes)
-- Bring all components: self-assessments, SWOT draft, goals draft, mentor feedback notes
-- Peer review before final submission
-- This is your LAST workshop before deadline
-
-**Mentor Validation Required:**
-- Mentor must review your PDP and provide 50-100 word validation statement
-- Confirms: They reviewed it, it reflects your meetings, they support your direction
-- Missing validation = automatic deduction
-
-**Final Oral Exam (Week 12, Exam Period):**
-- 15-minute presentation of your PDP (10 min presentation + 5 min Q&A)
-- Worth 30% of course grade
-- Strong PDP makes presentation easier
-
-<speaker-notes>
-This is THE week—PDP due Friday for most sections. Tutorial is final quality check before submission. If you're not 80% done by end of tutorial today, you're at risk. Don't wait until Thursday night to assemble. Common last-minute issues: Mentor validation missing (reach out NOW if you haven't asked mentor), goals not truly SMART (use tutorial peer review to fix), no integration between parts (tutorial Activity 3 addresses this), word count wrong (Part 6 reflection must be EXACTLY 200 words). You've done the hard work—self-assessments, mentorship, SWOT, drafting. Today you ASSEMBLE and POLISH. This is the culmination of 11 weeks—make it count. Proofread before submission (spelling/grammar errors undermine professionalism). Use Assessment Handbook rubric as final checklist. Submit early (don't risk tech issues at 11:58 PM).
-</speaker-notes>
-
-</slide>
-
-<slide number="24" layout="section-break" title="Tutorial Preparation">
-
-# Tutorial: PDP Assembly Workshop
-## Final Quality Check Before Submission
-
-<speaker-notes>
-Tutorial structure: Activity 1 (30 min) = Review goals through Locke & Latham's four mechanisms lens, strengthen goals that don't activate all four. Activity 2 (30 min) = Transform vague goals into truly SMART goals using Slide 10 table as template, peer review for SMART criteria. Activity 3 (30 min) = Integration check—trace golden thread from self-assessments to SWOT to goals to mentor feedback to implementation, identify and fix disconnections. Bring your PDP draft, be ready to give and receive constructive feedback, this is your last opportunity to strengthen before Friday submission.
-</speaker-notes>
-
-</slide>
-
-<slide number="25" layout="quote" title="Closing Quote">
-
-# "Setting goals is the first step in turning the invisible into the visible."
-
-— Tony Robbins
-
-<speaker-notes>
-Your self-knowledge from Week 5, experiences from Weeks 6-10, and mentor guidance have been largely internal and invisible. Today you make them visible through your written PDP. Tomorrow in tutorial you make them actionable through peer review and refinement. Friday you submit a comprehensive strategic plan that will guide your career for years. This is the culmination of 11 weeks of intensive self-discovery and development. You're ready.
-</speaker-notes>
-
-</slide>
-
-<slide number="26" layout="content" title="Next Steps">
-
-## Next Steps
-
-**Today After Lecture:**
-- Review your PDP draft against today's frameworks
-- Identify gaps in SMART criteria, OKR structure, SWOT completeness, accountability mechanisms
-- Prepare questions for tutorial
-
-**Tutorial (90 minutes):**
-- Bring PDP draft and all supporting materials
-- Participate fully in peer review activities
-- Use rubric to self-assess and improve
-
-**Before Friday 11:59 PM:**
-- Incorporate tutorial feedback
-- Obtain mentor validation statement
-- Proofread thoroughly
-- Submit via Google Form
-- Keep a copy for your Final Oral Exam preparation
-
-**Week 12:**
-- Integrate & Continuous Growth lecture
-- Final Oral Exam preparation workshop
-- Celebrate completion of your PDP journey
-
-<speaker-notes>
-Clear action steps from now until Friday. Don't procrastinate—use tutorial time fully, incorporate feedback immediately, submit early. Your PDP represents 11 weeks of work and 40% of your grade. It also represents the foundation for your Final Oral Exam (30% of grade). Strong submission now makes next week's exam preparation much easier. You've built the capability—now execute. See you in tutorial.
+Full APA 7th Edition citations for all sources referenced in lecture. Students should consult these articles while completing their PDPs—particularly Locke & Latham for understanding goal mechanisms and Martins van Jaarsveld et al. for SMART goal best practices. All articles are open access or available through NEU library.
 </speaker-notes>
 
 </slide>

@@ -1,465 +1,514 @@
-# Week 4 Tutorial: Tutor Notes
-**Course:** PPDK66B Personal & Professional Development
-**Session:** Creating Your Learning Contract
+# Week 4 Tutorial: Tutor Facilitation Notes
+
+**Topic:** Self-Managed Learning in Action - Learning Contract Design Workshop
 **Duration:** 90 minutes
+**Assessment Links:** Mentorship Program (20%), Personal Development Plan (40%)
 
 ---
 
-## Session Overview
+## Learning Objectives for Tutorial
 
-**Objective:** Students create one complete learning contract for a skill/goal from their Personal Development Plan, applying the University of Waterloo SDL framework and evidence-based learning strategies.
-
-**Deliverable:** Learning contract document (2-3 pages) including:
-- Goal selection and readiness assessment
-- Complete learning contract (8 fields)
-- Learning approach plan with evidence-based strategies
-- Implementation using Zimmerman's SRL cycle
-- Brief reflection on connection to PDP
-
-**Assessment Connection:**
-- **Mentorship Program (20%):** Learning contract discussed in Meeting #2 or #3
-- **Personal Development Plan (40%):** Included in Part 2 (Skills Gap Analysis) and Part 5 (Implementation)
+By the end of this tutorial, students will be able to:
+1. Create SMART learning contracts with specific goals, diverse strategies, measurable evidence, and realistic timelines
+2. Apply Zimmerman's three-phase SRL cycle to structure their development planning
+3. Integrate evidence-based learning strategies (retrieval practice, spaced practice, elaboration) into development plans
+4. Give and receive constructive feedback on learning contract quality using structured criteria
 
 ---
 
-## Session Timing
+## Pre-Tutorial Preparation
 
-| Phase | Duration | Activity |
-|-------|----------|----------|
-| **Introduction** | 5 min | Session overview, assessment connections, why this matters |
-| **Part 1: Goal Selection** | 15 min | Individual: Review PDP goals, choose ONE skill, quick self-assessment |
-| **Part 2: Readiness Assessment** | 15 min | Individual: Complete SDL Step 1 (knowledge, motivation, resources) |
-| **Part 3: Learning Contract** | 25 min | Individual: Complete 8-field learning contract template |
-| **Part 4: Learning Approach** | 20 min | Individual: Design evidence-based approach, plan SRL application, identify obstacles |
-| **Part 5: Peer Review** | 15 min | Pairs: Exchange contracts, provide feedback using checklist |
-| **Part 6: Reflection & Next Steps** | 10 min | Individual: Reflection questions, identify first action, submission |
+**Materials Needed:**
+- [ ] Learning Contract Templates (printed, 3 per student + extras)
+- [ ] Peer Feedback Forms (printed, 3 per student)
+- [ ] Example learning contracts (2-3 strong examples, 1-2 weak examples for comparison)
+- [ ] SRL three-phase model diagram (posted visibly or on screen)
+- [ ] Evidence-based strategies quick reference (printed handout or projected)
+- [ ] Markers/pens for students
+- [ ] Timer (for peer review rounds)
 
-**If running short on time:**
-- Reduce peer review to 10 minutes
-- Reflection can be completed as homework
-- Key priority: Students complete Parts 1-4 (the actual contract)
+**Room Setup:**
+- Arrange seating to facilitate groups of 3 (will form during peer review phase)
+- Ensure whiteboard/screen available for displaying key concepts
+- Consider round tables if available (better for collaborative work)
 
----
+**Technical Needs:**
+- None required, but projector helpful for displaying examples and timers
 
-## Why This Activity Matters (Opening Message)
-
-**Opening statement (1-2 minutes):**
-
-"Today's tutorial is one of the most practical sessions of this course. You're creating a tool that professionals use throughout their careers: a learning contract.
-
-Learning contracts are used in:
-- Medical education (Johns Hopkins, Mayo Clinic residency programs)
-- MBA programs (Wharton, Harvard Business School executive education)
-- Corporate leadership development (McKinsey, Deloitte)
-- Professional coaching worldwide
-
-This isn't just an academic exercise. The learning contract you create today:
-1. Structures your Mentor Meeting #2 or #3 discussion
-2. Becomes part of your Personal Development Plan (Part 2: Skills Gap Analysis)
-3. Gives you a template you'll use for the rest of your career when you need to teach yourself anything
-
-By the end of today, you'll have a concrete, actionable plan for developing ONE skill over the next 4-12 weeks. Not vague intentions—a plan with specific strategies, timelines, and success metrics."
+**Familiarize Yourself With:**
+- Assessment Handbook Section 2 (Mentorship Program rubric) and Section 3 (PDP rubric)
+- Zimmerman (2002) article - students will reference three-phase model
+- Waterloo's four-step SDL process
+- Common learning contract pitfalls (see "Valid vs Invalid Approaches" below)
 
 ---
 
-## Part 1: Selecting Your Learning Goal (15 minutes)
+## Timing Table with Tutor Actions
 
-### Facilitation Guidance
-
-**Instructions to students:**
-1. "Review the skills you've been thinking about for your PDP—look at your notes from Week 1 (Future of Work AI skills), Week 2 (Career Skills), Week 3 (reflection on what you need to improve)."
-
-2. "Choose ONE skill using these criteria: (1) Relevant to 1-3 year career goals, (2) Feasible in 4-12 weeks, (3) Measurable—you can define 'before' and 'after' levels, (4) Resources available."
-
-3. "Rate your current level honestly on a 1-5 scale."
-
-**Walk around and observe:**
-- Are students choosing appropriately scoped goals?
-- Are they being honest about current levels (not inflating)?
-
-### Common Student Questions & Responses
-
-**Q: "Can I choose a soft skill like leadership or communication?"**
-A: "Yes, but make it specific. Not 'improve leadership' but 'develop meeting facilitation skills: run effective team meetings with clear agendas and outcomes.' The contract works best when you can observe concrete behavioral changes."
-
-**Q: "My skill will take years to master. Does that mean I can't use it?"**
-A: "No—define an intermediate milestone. If the ultimate goal is 'become fluent in Japanese,' your 12-week contract might be 'complete JLPT N5 level: basic conversation and 800 kanji.' You're not finishing the skill, you're defining meaningful progress."
-
-**Q: "What if I have three equally important skills?"**
-A: "Choose ONE for today. You can create additional learning contracts later—in fact, your PDP will likely have 3-5 learning contracts total. Today is about learning the process with one example."
-
-### What Good Work Looks Like (Examples)
-
-**Strong goal choices:**
-- "Develop data visualization skills using Python (Matplotlib/Seaborn)"
-- "Build Excel proficiency: pivot tables, VLOOKUP, conditional formatting, basic macros"
-- "Improve public speaking: deliver 10-minute presentations without notes with natural eye contact"
-- "Learn financial statement analysis: read and interpret income statements, balance sheets, cash flow"
-
-**Weak goal choices (redirect these):**
-- "Get better at studying" → Too vague. "What specific study skill? Time management? Note-taking? Retrieval practice?"
-- "Become a great leader" → Too broad. "What specific leadership behavior in what context?"
-- "Learn everything about marketing" → Too large. "Which aspect of marketing? Social media? Analytics? Strategy?"
+| Time | Phase | Student Activity | Tutor Role | Key Actions |
+|------|-------|------------------|------------|-------------|
+| 0-5 min | Quick Review | Listening, asking clarifying questions | Facilitator | **DO:** Rapidly review SRL cycle, SDL steps, evidence-based strategies. Ask: "What's ONE key insight from lecture?" **DON'T:** Re-teach entire lecture—assume they attended. |
+| 5-25 min | Phase 1: Individual Draft | Creating 3 learning contracts independently | Coach (circulating) | **DO:** Circulate, read over shoulders, ask probing questions ("How will you measure that?" "What's missing?"). **DON'T:** Give answers—use Socratic questioning. Help students who are stuck get unstuck. |
+| 25-55 min | Phase 2: Peer Review | Groups of 3, rotating presenter/reviewer roles (10 min each) | Monitor & Intervene | **DO:** Form groups strategically (mix stronger/weaker students). Circulate, listen to feedback quality. Model good feedback if needed. Keep time strictly. **DON'T:** Let groups go off-task or give only superficial positive feedback ("looks good!"). |
+| 55-80 min | Phase 3: Revision | Revising contracts based on feedback; writing 300-word reflection | Support | **DO:** Answer individual questions, validate revisions, ensure reflection addresses all prompts. **DON'T:** Pressure perfection—this is practice for PDP, not final submission. |
+| 80-90 min | Closing Discussion | Whole class discussion responding to 4 prompts | Discussion Leader | **DO:** Facilitate rich discussion, draw out insights, connect to assessments. Cold-call quiet students. **DON'T:** Let 2-3 students dominate; ensure multiple voices heard. |
 
 ---
 
-## Part 2: SDL Step 1 - Assess Readiness (15 minutes)
+## Valid vs Invalid Approaches
 
-### Facilitation Guidance
+### ✅ VALID: What Good Learning Contracts Look Like
 
-**Key message:** "Before investing time in learning something, assess whether you're READY. This prevents wasted effort."
+**Goal Example (Professional Skill - Data Analytics):**
+> "Develop intermediate Excel data analysis capabilities including pivot tables, VLOOKUP, conditional formatting, and basic dashboard creation to support business decision-making roles."
 
-**Instructions:**
-1. "Answer the four readiness questions in Part 2 of your handout."
-2. "Be brutally honest—especially about motivation and resources."
-3. "If you discover you're NOT ready (missing prerequisites, no resources), choose a different skill OR plan a 'pre-learning phase' to address gaps."
+**Why valid:**
+- Specific skills listed (not vague "improve Excel")
+- Scope defined (intermediate, not beginner or expert)
+- Purpose clear (business decision-making context)
 
-### Walk Around & Check For
+**Strategies (for above goal):**
+> 1. Complete LinkedIn Learning "Excel Essential Training: Data Analysis" course (6 hours, self-paced)
+> 2. Practice with real datasets from mentor's company (if available) or Kaggle public datasets—complete 8 analysis exercises with increasing complexity
+> 3. Attend Excel workshop offered by Career Services (if scheduled) or watch tutorials (Excel Campus, Chandoo.org)
+> 4. Create monthly personal budget tracker and expense dashboard for 3 months applying learned techniques
 
-**Knowledge Assessment Quality:**
-- Are students SPECIFIC about what they know? (Good: "I can create basic bar charts in Excel." Bad: "I know some Excel.")
-- Are they identifying actual prerequisites? (Good: "I need to understand what 'statistical significance' means before learning data analysis." Bad: "I don't know what I need to know.")
+**Why valid:**
+- Diverse resource types (structured course, hands-on practice, expert guidance, real application)
+- Specific and actionable (course names, number of exercises, concrete applications)
+- Includes mentor integration (practice with mentor's datasets)
+- Multiple practice opportunities with increasing difficulty
 
-**Motivation Assessment Quality:**
-- Do they articulate WHY this skill matters for career goals?
-- Is the motivation intrinsic (skill supports their values/interests) or purely extrinsic (job postings require it)? Both are valid, but extrinsic-only motivation tends to fade.
+**Evidence (for above goal):**
+> Successfully complete LinkedIn Learning course certification + Create 3 data analysis projects (financial data analysis, sales trends visualization, personal expense dashboard) demonstrating pivot tables, VLOOKUP, and dashboard creation + Mentor confirms analyses are professionally usable quality
 
-**Resource Assessment Quality:**
-- Are they identifying SPECIFIC resources? (Good: "LinkedIn Learning subscription through university, 'Storytelling with Data' book from library, mentor has data viz expertise." Bad: "The internet.")
-- Have they thought about costs? Time requirements?
-
-### Common Student Issues & Interventions
-
-**Issue:** Student discovers they're missing critical prerequisites
-**Intervention:** "That's great self-awareness! You have two options: (1) Choose a more foundational skill for this contract (e.g., if Python is too advanced, start with Excel), OR (2) Make your contract a two-phase plan—Phase 1: Build prerequisites (Weeks 1-4), Phase 2: Main skill development (Weeks 5-12)."
-
-**Issue:** Student has weak motivation ("I should learn this but don't really care")
-**Intervention:** "Be honest with yourself. If the motivation isn't there, this contract will fail. Either: (1) Find the connection to something you DO care about (How does this skill support your actual career vision?), OR (2) Choose a different skill you're genuinely motivated to learn."
-
-**Issue:** Student identifies zero resources
-**Intervention:** "Spend 5 minutes Googling. Find one specific online course, one YouTube channel, one textbook, one person who could mentor you. If you truly can't find ANY resources, this might not be a feasible skill right now."
+**Why valid:**
+- Multiple evidence types (certification, products, third-party validation)
+- Concrete products that can be evaluated objectively
+- Quality standard defined (professionally usable)
+- Demonstrates skill application, not just course completion
 
 ---
 
-## Part 3: Learning Contract Creation (25 minutes)
+### ❌ INVALID: Common Weaknesses to Watch For
 
-### Facilitation Guidance
+**Weak Goal Example:**
+> "Get better at communication skills"
 
-**Key message:** "The learning contract is your blueprint. Someone else should be able to pick this up and know EXACTLY what you're doing, how, when, and how success is measured."
+**Why invalid:**
+- Too vague (what type of communication? written? oral? interpersonal?)
+- Not measurable (what does "better" mean? how much improvement?)
+- No scope (all communication? specific contexts?)
+- Not time-bound
 
-**Instructions:**
-1. "Complete all 8 fields of the learning contract template in Part 3."
-2. "Focus on specificity—numbers, dates, measurable outcomes."
-3. "Your timeline should apply spacing principles—spread learning over weeks, not cram into weekends."
-
-### Walk Around & Provide Formative Feedback
-
-**Check each field for quality:**
-
-**1. Learning Goal (single sentence)**
-- Good: "Develop intermediate data visualization skills using Python's Matplotlib and Seaborn libraries"
-- Weak: "Learn Python" (too broad—Python for what? Web dev? Data science? Automation?)
-- Weak: "Improve my technical skills" (not specific enough)
-
-**2. Why This Matters**
-- Good: "Data storytelling is essential for business analyst roles; visualizations will strengthen my internship applications and help me stand out"
-- Weak: "It seems useful" (lacks connection to career goals)
-- Weak: "Job postings require it" (purely extrinsic—okay but probe for intrinsic motivation too)
-
-**3. Current Level**
-- Good: "Beginner—I can create basic charts in Excel but have never used Python for visualization or written any Python code"
-- Weak: "I'm not very good" (not specific enough to measure progress)
-- Good honesty indicator: Students who rate themselves 1-2/5 are often being realistic; students who rate themselves 4/5 but have no evidence may be overconfident
-
-**4. Target Level**
-- Good: "Intermediate—create professional multi-chart dashboards with customized colors/labels/layouts, present data insights clearly, choose appropriate chart types for different data"
-- Weak: "Become really good at it" (not measurable)
-- Check: Is the gap between current and target reasonable for the timeline? (Beginner to Expert in 4 weeks = unrealistic)
-
-**5. Learning Strategies (minimum 3)**
-- Good diversity: "Complete DataCamp course (structured learning) + work through 10 Kaggle datasets (practice) + recreate 5 charts from The Economist (imitation of excellence)"
-- Weak: Single strategy only ("Watch YouTube videos")
-- Check: Do strategies include ACTIVE learning (practice, creation, teaching) or only PASSIVE consumption (watching, reading)?
-
-**6. Resources Needed**
-- Good: "DataCamp subscription ($25/month), Python installed (free), 'Storytelling with Data' book (library), mentor feedback"
-- Weak: "Online tutorials" (not specific enough)
-- Check: Do they have realistic access to these resources? Have they addressed costs?
-
-**7. Timeline with Phases**
-- Good: "6 weeks total: Weeks 1-2 (Matplotlib basics—bar charts, line plots, scatter plots), Weeks 3-4 (Seaborn intermediate—heatmaps, multi-chart layouts), Weeks 5-6 (3 portfolio projects)"
-- Weak: "I'll work on it when I have time" (no structure)
-- Check: Does the timeline apply SPACING (distributed over time) or CRAMMING (everything in 1-2 intensive periods)?
-
-**8. Success Evidence (minimum 3 pieces)**
-- Good: "Portfolio of 5 publication-quality visualizations + positive mentor feedback on design choices + successfully use Python viz in Marketing Analytics group project"
-- Weak: "Finish the DataCamp course" (completion ≠ mastery)
-- Weak: "Feel more confident" (not observable/measurable)
-- Check: Does evidence demonstrate PERFORMANCE (can you DO it?) or just EXPOSURE (did you watch/read about it)?
-
-### Common Student Questions & Responses
-
-**Q: "How do I know if my timeline is realistic?"**
-A: "Ask yourself: How many hours per week can I dedicate? Multiply by number of weeks. Is that enough practice time? Also, check online—how long do courses/certifications in this skill typically take? If unclear, discuss with your mentor."
-
-**Q: "What if I don't have a mentor who knows this skill?"**
-A: "Resources beyond your assigned mentor: (1) Instructors in relevant courses, (2) Alumni working in that field (NEU career services can connect you), (3) Online communities (Reddit, Stack Overflow, industry forums), (4) Peers who already have the skill."
-
-**Q: "Can my success evidence just be 'complete the course'?"**
-A: "That can be PART of your evidence, but not ALL of it. Completion shows you consumed content, not that you can apply it. Add: 'Create 3 projects using the skill' or 'Teach the concept to a peer' or 'Use it in a real-world context (internship, group project, freelance work).'"
+**Tutor response:** Ask Socratic questions:
+- "What specific type of communication do you want to develop?"
+- "How would you know you've improved—what would be different?"
+- "In what situations do you need stronger communication? Professional presentations? Writing? Everyday conversations?"
+- "Can you narrow this to ONE specific communication skill you'll develop?"
 
 ---
 
-## Part 4: Learning Approach Design (20 minutes)
+**Weak Strategies Example:**
+> 1. Read books about communication
+> 2. Watch videos online
+> 3. Practice talking to people
 
-### Facilitation Guidance
+**Why invalid:**
+- Too vague (which books? which videos? what "practice" means?)
+- All passive/observation-based (no structured practice or feedback)
+- No evidence-based learning principles incorporated
+- No mentor integration
+- No measurable actions (how many books? which topics?)
 
-**Key message:** "Now that you have WHAT you'll learn, design HOW you'll learn it using evidence-based strategies from today's lecture."
-
-**Instructions:**
-1. "Identify which evidence-based strategies you'll use: retrieval practice, spacing, elaboration, self-explanation, interleaving, teaching others."
-2. "Plan how you'll apply Zimmerman's SRL cycle—what does forethought, performance, self-reflection look like for this learning goal?"
-3. "Identify obstacles and mitigation strategies—what might go wrong, and how will you prevent/overcome it?"
-
-### Walk Around & Provide Formative Feedback
-
-**1. Evidence-Based Strategies Application**
-
-Look for SPECIFIC plans, not vague intentions:
-
-- Retrieval Practice: "After each DataCamp module, close the platform and try to write code from memory. Check after 10 minutes."
-- Spacing: "Study 1 hour Monday, 1 hour Wednesday, 1 hour Friday for 6 weeks—not 18 hours crammed into one weekend."
-- Teaching Others: "Every Friday, explain this week's concept to my roommate using only a whiteboard—no notes."
-- Elaboration: "After learning each chart type, ask: Why would I use this instead of alternatives? When would this mislead viewers?"
-
-**Common weakness:** Students list the strategies but don't explain HOW they'll use them.
-**Intervention:** "You checked 'retrieval practice'—great. Now tell me: When specifically will you test yourself? What will you do—practice problems, flashcards, teaching aloud?"
-
-**2. SRL Cycle Application**
-
-Check that students plan all three phases:
-
-- **Forethought:** "Before each study session: Set specific goal for that session, choose which strategy (DataCamp vs. Kaggle practice vs. portfolio project), prime self-efficacy ('I struggled yesterday but I can figure this out')"
-- **Performance:** "During session: Pomodoro timer (25-min blocks), track which concepts I struggle with, if stuck >15 min consult Stack Overflow or mentor"
-- **Self-Reflection:** "After session: Can I explain today's concept without notes? What worked (visual flowcharts)? What didn't (passive video watching)? Adjust next session accordingly."
-
-**Common weakness:** Students skip self-reflection or make it vague ("think about what I learned").
-**Intervention:** "Self-reflection needs structure. What specific questions will you ask yourself? How will you test if you learned it? What will you adjust based on the evaluation?"
-
-**3. Obstacles & Mitigation**
-
-Strong students anticipate realistic obstacles:
-
-- "Lose motivation after Week 2" → "Schedule accountability check-ins with study partner every Friday; track progress visually on chart"
-- "Procrastinate on practice projects" → "Schedule project time in calendar like appointments; work in library (environmental commitment)"
-- "Get stuck and give up" → "Join Stack Overflow, Reddit data viz community; schedule 'office hours' with mentor/instructor for help"
-
-**Common weakness:** Students list obstacles but no mitigation, or they list only external obstacles ("professor assigns too much work").
-**Intervention:** "You identified a real obstacle. Now: What's ONE thing you can do to prevent or overcome it? Make it an action YOU control, not something you hope others will do."
+**Tutor response:**
+- "How will you move from reading ABOUT communication to actually PRACTICING it?"
+- "Which specific books or courses? How will you know they're high quality?"
+- "Where will you get feedback to know if your practice is improving your skills?"
+- "How can your mentor support this development? Can you practice with them or get feedback from them?"
 
 ---
 
-## Part 5: Peer Review & Refinement (15 minutes)
+**Weak Evidence Example:**
+> "I will feel more confident and people will say I'm better at presenting"
 
-### Facilitation Guidance
+**Why invalid:**
+- Subjective (feelings aren't measurable)
+- Vague third-party validation ("people will say" - which people? measured how?)
+- No objective performance criteria
+- Can't definitively assess achievement
 
-**Structure:**
-1. Pair students up (or groups of 3 if odd number)
-2. Students exchange learning contracts
-3. Each student reviews their partner's contract using the checklist in handout
-4. Provide 2-3 specific suggestions
-
-**Instructions:**
-"You're quality-checking each other's contracts. Use the peer review checklist. Look for:
-- Specificity vs. vagueness
-- Realistic timeline
-- Success evidence that demonstrates mastery
-- Use of evidence-based strategies
-
-Provide at least 2-3 specific, actionable suggestions. NOT 'this is good'—that's not helpful. Find ways to make it stronger."
-
-### Walk Around & Listen
-
-**What to listen for (these indicate effective peer review):**
-
-- "Your target level is clear, but your success evidence is just 'finish the course.' Can you add a project that demonstrates you can actually DO it?"
-- "Your timeline seems aggressive—beginner to advanced in 4 weeks for a complex skill. Consider making target 'intermediate' or extending to 8 weeks."
-- "You said you'll use retrieval practice, but I don't see where you'll actually test yourself. Can you add weekly self-quizzes?"
-- "Your resources section just says 'online courses'—which specific one? Can you research and add the actual course name?"
-
-**What to redirect (these are weak peer feedback):**
-
-- "This looks good!" → "What specifically is strong? And what's one thing that could be improved?"
-- "I don't understand your goal" → "Can you help them make it more specific? What questions would you ask to clarify?"
-- Students just agreeing with everything → "Your job is to find at least 2-3 ways to strengthen the contract. Push each other to be more specific."
-
-### Common Peer Review Patterns
-
-**Pattern 1: Students are too nice ("everything is perfect!")**
-**Intervention:** "Remember, you're helping your partner create something they'll use for months. Be a critical friend. Find 2 things that could be clearer, more specific, or more realistic."
-
-**Pattern 2: Students focus only on grammar/formatting**
-**Intervention:** "Formatting is fine. Focus on CONTENT: Are the goals specific enough? Is the timeline realistic? Will the success evidence actually prove mastery?"
-
-**Pattern 3: One student dominates feedback time**
-**Intervention:** "Make sure you're balancing time—each person should get equal feedback. Set a timer if needed."
+**Tutor response:**
+- "How could you measure confidence objectively? What would you be able to DO that you can't do now?"
+- "If I were assessing whether you achieved this goal, what specific evidence would convince me?"
+- "Can you identify 3-5 specific evaluators (mentor, instructor, peers) who will assess your presentations using a rubric?"
+- "What would 'better at presenting' look like in observable behaviors?"
 
 ---
 
-## Part 6: Reflection & Next Steps (10 minutes)
+**Weak Timeline Example:**
+> "Start: September 2025, End: Sometime in 2026"
 
-### Facilitation Guidance
+**Why invalid:**
+- No specific end date (vague "sometime")
+- No milestone checkpoints
+- No accountability built in
+- Doesn't align with PDP submission deadline or assessment periods
 
-**Instructions:**
-"Take the final 10 minutes to reflect and plan your next steps."
-
-**Four reflection questions (in handout):**
-1. How does this learning contract connect to your Personal Development Plan?
-2. What's the FIRST action you'll take this week?
-3. How will you share this with your mentor?
-4. What did you learn about self-managed learning today?
-
-**Check that students:**
-- Identify specific PDP sections this supports (Part 2: Skills Gap Analysis, Part 3: SMART Goals if applicable, Part 5: Implementation)
-- Name a CONCRETE first action with a timeline ("Tuesday 3-4pm: Install Python and complete first DataCamp module")
-- Plan to discuss in specific mentor meeting ("I'll share in Meeting #2 and ask for resource recommendations and timeline feedback")
+**Tutor response:**
+- "Your PDP is due November 28, 2025, so you need checkpoint dates before then to show progress."
+- "What would 25% completion look like? When will you reach that? 50%? 75%?"
+- "How will milestone dates help you stay accountable? Could mentor meetings align with these checkpoints?"
+- "Work backwards from your end date—what needs to happen monthly? Weekly?"
 
 ---
 
-## Assessment & Submission
+## Cultural Context & Adaptations for Vietnamese Students
 
-**What students submit:**
-1. Completed Learning Contract (8 fields from Part 3)
-2. Learning Approach Plan (Part 4—strategies, obstacles, SRL application)
-3. Brief Reflection (Part 6—100-150 words)
+### Potential Challenges
 
-**Submission:** Course management system, within 24 hours
+**1. Self-Direction vs Teacher-Direction Cultural Tension**
 
-**Grading (if graded separately):**
-- Completion and specificity of contract fields (50%)
-- Application of evidence-based strategies and SRL cycle (30%)
-- Quality of reflection and connection to PDP (20%)
+**Challenge:** Vietnamese educational culture emphasizes teacher authority and structured guidance. SDL/SRL frameworks require student initiative and autonomy, which may feel uncomfortable or disrespectful to authority.
 
-**Formative Feedback Points:**
-- Provide 1-2 specific comments per contract highlighting strengths and suggesting refinements
-- Look for common weaknesses across class (vague goals, weak success evidence, no spacing) and address in next lecture
+**Adaptation Strategies:**
+- **Frame self-direction as respecting mentor's time:** "Your mentor is busy—self-directed preparation shows you value their expertise by coming prepared with specific questions and goals."
+- **Emphasize structured autonomy:** "SDL isn't figuring everything out alone—it's using frameworks and seeking guidance strategically."
+- **Normalize seeking help:** "Self-regulated learners ACTIVELY SEEK feedback and support—that's different from passive dependence. It's taking initiative to use available resources."
 
----
-
-## Common Student Challenges & Interventions
-
-### Challenge 1: "I don't know what skill to choose"
-
-**Symptoms:** Student is still on Part 1 after 20 minutes; hasn't selected a goal
-
-**Intervention:**
-"Let's narrow it down. What's your ideal job 3 years from now?" [Student answers]
-
-"Okay, search LinkedIn for 3 job postings in that role. What skills appear in all 3 postings?" [Student identifies common skills]
-
-"Pick ONE of those skills that you don't currently have. That's your learning goal."
-
-**Alternative:** "What did you struggle with in your last group project or assignment that frustrated you? Often our frustrations reveal skill gaps worth addressing."
-
-### Challenge 2: "My timeline is unrealistic but I don't realize it"
-
-**Symptoms:** Contract shows "Learn advanced Python in 2 weeks" or "Become fluent in Spanish in 4 weeks"
-
-**Intervention:**
-"Let's reality-check this. How many hours per week can you dedicate to this skill?" [Student answers: "Maybe 3 hours"]
-
-"So 3 hours/week × 2 weeks = 6 total hours. Can you go from zero to advanced in 6 hours?" [Student realizes: "Probably not"]
-
-"What's a realistic milestone for 6-8 weeks given your time? Maybe 'beginner to intermediate' or 'complete foundations module'?"
-
-### Challenge 3: "My success evidence is all about completion, not mastery"
-
-**Symptoms:** Evidence fields say "Finish course," "Get certificate," "Read book"
-
-**Intervention:**
-"Those show you consumed content. But can you DO the skill afterward? Let's add performance evidence.
-
-What could you CREATE that demonstrates mastery? A project? Portfolio piece? Presentation? Teaching it to someone?
-
-What FEEDBACK could you collect? From your mentor? Peer review? Instructor evaluation?
-
-Where could you APPLY it? Group project? Internship task? Personal project?"
-
-**Prompt student to add:** "Create 3 sample projects" or "Receive 4/5 average rating from mentor on skill demonstration" or "Successfully apply skill in Marketing Analytics group assignment."
-
-### Challenge 4: "I'm choosing a skill just because it's easy, not because I need it"
-
-**Symptoms:** Student picks something they're already good at or something unrelated to career goals
-
-**Intervention:**
-"You rated yourself 4/5 current level for Excel—you're already strong there. What skill would stretch you more? What gap, if filled, would have the biggest impact on your career goals or PDP?"
-
-**Alternative intervention:** "This skill (photography hobby) seems fun, but how does it connect to your career vision (becoming an accountant)? Is there a more strategic skill that supports your 3-year goals?"
-
-**Clarify:** "You CAN choose a personal interest skill, but your PDP is career-focused. For today's contract, prioritize a skill that supports your professional development."
-
-### Challenge 5: "I'm trying to learn too many things in one contract"
-
-**Symptoms:** Contract lists 5-7 different skills or a single massive skill ("become a full-stack developer")
-
-**Intervention:**
-"Learning contracts work best when focused on ONE specific, achievable skill. You've listed: Python, Excel, R, PowerBI, and SQL. Pick the MOST important one for this contract.
-
-Once you master that, create another contract for the next skill. Don't try to learn everything simultaneously—you'll spread yourself too thin and master nothing."
+**Language to use:**
+- ✅ "Taking initiative to maximize your mentor's expertise"
+- ✅ "Preparing strategically to show respect for mentor's time"
+- ✅ "Using frameworks to structure your development with guidance"
+- ❌ Avoid: "Do it yourself," "Figure it out alone," "Don't rely on teachers"
 
 ---
 
-## Extension Activities (For Students Who Finish Early)
+**2. Face-Saving and Reluctance to Admit Struggles**
 
-**Option 1: Create a Visual Learning Timeline**
-"Use any tool (hand-drawn, Excel, Canva, timeline software) to visualize your 6-12 week learning journey: phases, milestones, checkpoints, self-testing moments, portfolio projects. This can become part of your PDP."
+**Challenge:** Students may be reluctant to identify weaknesses, admit gaps in understanding, or share learning struggles due to face-saving cultural norms.
 
-**Option 2: Research Resources & Create Annotated Bibliography**
-"Find 5 high-quality resources for your skill (courses, books, YouTube channels, forums, mentors). For each, write 2-3 sentences: What it covers, why it's valuable, when you'll use it."
+**Adaptation Strategies:**
+- **Normalize struggle:** "Even successful professionals struggle with new skills—that's why they're called DEVELOPMENT goals, not things you already do perfectly."
+- **Frame weakness as opportunity:** "The goals where you're starting from zero often have the most growth potential. That's exciting, not embarrassing."
+- **Use private reflection:** For self-assessment of SRL phase weaknesses, allow written private reflection before optional sharing.
+- **Model vulnerability:** Share your own development goals and struggles: "When I was developing [skill], I found [phase] hardest because..."
 
-**Option 3: Draft Mentor Meeting #2 Questions**
-"Based on your learning contract, write 5 questions you'll ask your mentor in Meeting #2:
-- Resource recommendations?
-- Timeline feedback?
-- How did they develop this skill?
-- Common mistakes to avoid?
-- Who else can help?"
+**During peer review:**
+- If students only give positive feedback ("Everything looks great!"), intervene: "Your role as peer reviewer is to help strengthen their plan by asking questions—that's supportive, not critical. What questions do you have about their strategies?"
 
 ---
 
-## Closing (Final 5 minutes)
+**3. Preference for Concrete Examples Over Abstract Frameworks**
 
-**Invite 2-3 volunteers to share their learning contract (30 seconds each):**
+**Challenge:** Vietnamese students often excel with concrete examples and step-by-step procedures but may struggle initially with abstract frameworks like SRL cycles.
 
-"Who wants to share their learning goal and one specific strategy you'll use?"
+**Adaptation Strategies:**
+- **Start every explanation with concrete example FIRST, then framework:** "Imagine you want to improve Excel skills [concrete]. Here's what SDL Step 1 looks like for that goal: You'd assess 'Do I know basic Excel? Yes. Pivot tables? No...' [concrete application]. THEN connect to abstract: 'This is Assess Readiness phase.'"
+- **Use worked examples extensively:** Provide 2-3 complete learning contracts as models before students create their own.
+- **Anchor to assessments constantly:** "This learning contract format is EXACTLY what your PDP SMART goals require—you're practicing the actual format you'll submit."
 
-**Listen for variety:** Try to get mix of technical skills, soft skills, and different evidence-based strategies
-
-**After each share, affirm:** "Great—I love how specific your success evidence is" or "That's a smart obstacle mitigation plan" or "Your timeline applies spacing well."
-
-**Final message:**
-"You now have a professional-grade learning contract. This isn't homework you'll forget about—this is a tool you'll use:
-- THIS WEEK when you meet with your mentor
-- NEXT MONTH in your PDP submission
-- FOR YEARS whenever you need to teach yourself something new
-
-The ability to strategically teach yourself anything is the ultimate career superpower in the AI era. You just practiced that superpower."
-
-**Remind about submission:**
-"Submit your completed contract to [course management system] within 24 hours. Bring a copy to your next mentor meeting."
+**Worked example to share:**
+> **GOAL:** Develop confident public speaking skills for professional presentations
+> **STRATEGIES:** (1) Join NEU English Speaking Club, present twice monthly, (2) Record 6 practice presentations, self-evaluate using rubric, (3) Present to mentor once for feedback, (4) Volunteer to present in 2 courses this semester
+> **EVIDENCE:** Deliver 10 presentations total, receive feedback averaging 4+/5 on confidence and clarity from 3+ evaluators
+> **TIMELINE:** Sep 2025 (join club), Oct (2 club presentations), Nov (2 more + mentor presentation), Dec (course presentations), Jan-Feb (continue practice) = 10 total by Feb 2026
 
 ---
 
-## Notes for Future Sessions
+**4. Group Dynamics - Hierarchy and Passive Participation**
 
-**What worked well:**
-- [Tutor adds observations after session]
+**Challenge:** If peer groups form with perceived "stronger" students, Vietnamese cultural hierarchy may lead to passive acceptance of that student's feedback without critical engagement.
 
-**What to adjust:**
-- [Tutor adds ideas for improvement]
+**Adaptation Strategies:**
+- **Assign roles explicitly:** "Everyone will present one contract and receive feedback—no exceptions. Everyone will give feedback—you're all experts on effective learning contracts after today's lecture."
+- **Structure feedback tightly:** Use the provided feedback framework (Goal Clarity, Strategy Diversity, Evidence Quality, SRL Integration) so students have specific prompts rather than vague "give feedback."
+- **Rotate intentionally:** If you notice dominance, intervene: "Let's hear from [quieter student] first this round."
+- **Validate all contributions:** "That's an excellent question about measurability—asking questions is high-quality feedback."
 
-**Common student misconceptions/struggles:**
-- [Tutor notes patterns to address in future]
+---
 
-**Outstanding questions to address in next lecture:**
-- [Tutor notes unresolved questions]
+## Facilitation Tips
+
+### During Individual Draft Phase (Minutes 5-25)
+
+**As you circulate, look for:**
+
+**Common Struggle #1: Too many goals, insufficient focus**
+- Student lists 10 different skills they want to develop
+- **Intervention:** "Choose your THREE most important goals—one professional, one academic, one personal. We can't develop everything simultaneously. Strategic focus beats scattered effort."
+
+**Common Struggle #2: Goals too big or too small**
+- Too big: "Master all business analytics"
+- Too small: "Learn one Excel formula"
+- **Intervention for too big:** "That's a 3-year goal. What's the FIRST 6-month stepping stone toward that larger vision?"
+- **Intervention for too small:** "That's too narrow. What's the broader capability this contributes to? Can you expand scope?"
+
+**Common Struggle #3: Strategies that are all passive (reading, watching)**
+- **Intervention:** "These are all input strategies—consuming information. Where's the OUTPUT? Where do you practice, apply, create, teach? Add 2 active strategies: What will you PRODUCE? Who will you TEACH? Where will you PRACTICE?"
+
+**Common Struggle #4: No connection to mentorship**
+- **Intervention:** "How does your mentor support this goal? Can they provide: industry insights, practice opportunities, feedback, connections to professionals, real-world examples? Add mentor integration to at least two goals."
+
+**Common Struggle #5: Evidence is vague feelings or self-assessment only**
+- **Intervention:** "Imagine I'm your employer evaluating whether you achieved this. What concrete evidence would convince me? Certifications? Projects? Third-party assessments? Add objective evidence."
+
+**Questions that prompt deeper thinking:**
+- "How will you know you've succeeded?" (evidence)
+- "Who can validate that you've developed this capability?" (third-party verification)
+- "What will you do WEEKLY toward this goal?" (action granularity)
+- "Which evidence-based learning strategy fits this goal best? Why?" (SRL integration)
+- "If your first strategy doesn't work, what's your backup approach?" (adaptive planning)
+
+---
+
+### During Peer Review Phase (Minutes 25-55)
+
+**Setting up groups:**
+- Groups of 3 work best (each person presents one contract in 10 minutes)
+- Mix perceived abilities if possible—stronger students should give developmental feedback, not just validation
+- If class doesn't divide evenly by 3, create one group of 4 (shorter time per person) rather than groups of 2 (insufficient diverse feedback)
+
+**Keeping time:**
+- Use visible timer or call out time: "5 minutes left for this round," "2 minutes—wrap up feedback"
+- Be STRICT with transitions: "Time's up—switch presenters now even if you're mid-sentence. You can finish thoughts later."
+- Circulate continuously rather than staying in one place
+
+**Monitoring feedback quality:**
+
+**Red flag - Superficial positive feedback:**
+- "Everything looks great!" "This is perfect!" "No suggestions!"
+- **Intervention:** Join group, model better feedback: "Let me show you how to give developmental feedback. [To presenter] Your goal is specific, which is excellent. I'm curious—how will you handle setbacks? If your first strategy doesn't work, what's Plan B? [To reviewers] Notice how questions help strengthen plans—that's supportive feedback."
+
+**Red flag - Critical without constructive suggestions:**
+- "This isn't specific enough." "These strategies won't work." "Evidence is weak."
+- **Intervention:** "Good diagnostic feedback—you've identified a weakness. Now the constructive part: what SPECIFICALLY would make it stronger? Give a suggestion or ask a question that helps them improve."
+
+**Red flag - Dominance or passive dynamics:**
+- One person doing all talking; others nodding silently
+- **Intervention:** "[To dominant student] Great insights—thank you. Now let's hear from [quiet student]. What's your feedback on strategy diversity?"
+
+**Green flag - High-quality feedback examples:**
+- "Your evidence is measurable, which is great. One question: Who are the 'three evaluators'? If you name them specifically now, you can line them up."
+- "I like that you included mentor meetings. Could you make it even more specific? Maybe: 'Discuss progress on this goal in Week 6, 8, and 10 mentor meetings'?"
+- "Your strategies are diverse. I'm wondering—do any of these use retrieval practice or spaced practice from the lecture? Could you add how evidence-based strategies apply?"
+
+**If groups finish early:**
+- "If you've finished all three rounds, now's the time for the presenter to ask follow-up questions. Reviewers—what's ONE thing from your own learning contracts that this presenter's contracts made you think about?"
+
+---
+
+### During Revision & Reflection Phase (Minutes 55-80)
+
+**This is quieter independent work—your role shifts to individual support:**
+
+**Circulate and offer targeted help:**
+- Look for students staring blankly at paper → They're stuck on reflection writing
+  - **Approach:** "Which reflection prompt is hardest for you? Let's unpack that one."
+
+- Look for students frantically rewriting everything → They're overwhelmed by feedback
+  - **Approach:** "You don't have to address all feedback today—this is practice. Pick the TWO most important pieces of feedback to incorporate now."
+
+- Look for students finishing very quickly → Surface-level revision
+  - **Approach:** "Tell me the most important change you made based on feedback. Why was that the priority?"
+
+**Supporting reflection writing:**
+
+Students often struggle with:
+
+**Prompt 1 (SRL application):** "How do your learning contracts incorporate Zimmerman's three-phase cycle?"
+- **If stuck:** "Look at your learning contract. Where do you see forethought phase? [Goal setting, strategic planning] Where's performance phase? [Self-monitoring approach] Where's self-reflection? [Review frequency]"
+
+**Prompt 2 (Evidence-based strategies):** "Which strategies will you use most? Why?"
+- **If stuck:** "Look at your goal. For Excel skills, retrieval practice might be testing yourself on formulas without looking at reference. For presentations, spaced practice might be weekly practice sessions instead of cramming. Pick ONE concrete example."
+
+**Prompt 3 (Metacognitive awareness):** "What did you learn about your learning?"
+- **If stuck:** "Was creating learning contracts harder than you expected? What does that tell you about your SDL readiness? Which part was hardest—setting goals? Defining evidence? That reveals where you need to develop."
+
+**Validate incomplete work:**
+- "If you don't finish all three contracts perfectly today, that's fine—this is practice. But DO complete the reflection about what you learned from the process."
+
+---
+
+### During Closing Discussion (Minutes 80-90)
+
+**Discussion Prompts (from tutorial content):**
+
+1. **Connection to Mentorship:** How will learning contracts structure your mentorship preparation and follow-up?
+
+2. **PDP Integration:** Your PDP requires SMART goals with action plans. How do today's learning contracts translate directly to your PDP requirements?
+
+3. **Evidence-Based Learning:** What's ONE evidence-based strategy you'll implement in ALL your courses starting this week?
+
+4. **Metacognitive Insight:** What surprised you about designing learning contracts? What does that tell you about your SDL capabilities?
+
+**Facilitation Strategy:**
+
+**Start with lower-stakes prompt (#3) to warm up discussion:**
+- "Quick show of hands: Who will try retrieval practice this week? Spaced practice? Elaboration?"
+- Then: "Let's hear from someone using retrieval practice—how specifically will you use it?"
+
+**Use think-pair-share for prompt #4 (more reflective):**
+- "Take 30 seconds to think about what surprised you..."
+- "Turn to person next to you—share your surprise..."
+- "Now let's hear some insights—what surprised you?"
+
+**Cold-call strategically for prompts #1 and #2 (assessment-focused):**
+- These are critical connections—don't let quiet students disengage
+- "[Student name], how will you use learning contracts for mentorship preparation?"
+- If student struggles: "That's okay—what's ONE way learning contracts could help you prepare for meetings? Anyone want to add to that?"
+
+**Synthesize key insights:**
+- Listen for recurring themes, name them: "I'm hearing several of you say evidence criteria were hardest to define—that's metacognitive awareness! Recognizing what's challenging is the first step to improving it."
+- Connect back to assessments: "Three people mentioned using learning contracts for mentor meeting prep—that's exactly what your Mentorship Program preparation forms ask for. You now have a framework."
+
+**End with clear next steps:**
+- "By Friday: Complete Week 4 quiz using retrieval practice—don't just reread slides."
+- "Before next mentorship meeting: Turn your meeting agenda into a learning contract—specific goals, evidence, reflection plan."
+- "By next tutorial: Refine these three learning contracts incorporating ALL feedback—you'll use them for your PDP."
+
+---
+
+## Common Questions & How to Respond
+
+**Q: "Do our learning contracts from today get graded?"**
+A: "Not directly—this is practice. BUT these contracts form the foundation for your PDP SMART goals, which are 40% of your grade. The better you do this now, the less work later. Plus, practicing learning contracts helps you structure mentorship meetings, which are 20% of your grade. So while this specific document isn't graded, the skill absolutely impacts your assessments."
+
+**Q: "Can I change my goals later? What if I realize I chose the wrong development areas?"**
+A: "Absolutely—that's why PDPs are 'living documents.' The point of SDL is continuous adjustment based on self-reflection. If you discover through mentorship that a goal isn't relevant, you SHOULD change it. That's metacognitive awareness and adaptive planning—both are signs of strong self-regulation. Just document WHY you changed it in your reflection."
+
+**Q: "My mentor can't meet often enough to support all three goals. What should I do?"**
+A: "Good problem-solving question. Options: (1) Prioritize which goal your mentor can best support and integrate them there, (2) Use diverse resources—mentors are one resource, but you also have instructors, peers, professionals at field trips, online courses, etc. Mentor doesn't have to support all three goals directly. (3) Ask your mentor to connect you with other professionals for specific areas outside their expertise."
+
+**Q: "Evidence-based strategies seem to take more time than my current study methods. Is it worth it?"**
+A: "Excellent critical thinking question. Short answer: Yes. Longer answer: Effective strategies may feel more effortful initially, but they reduce TOTAL time because you learn deeply the first time rather than relearning later. Cramming feels faster but requires relearning for each exam. Spaced practice with retrieval feels slower but builds long-term retention. Research shows students using evidence-based strategies study FEWER total hours for BETTER results. It's efficiency, not just effectiveness."
+
+**Q: "How specific should evidence criteria be? Can I write a whole paragraph?"**
+A: "Specific enough that someone else could objectively assess achievement. Test: If I read your evidence without knowing you, could I definitively say 'Yes, achieved' or 'No, not yet'? Usually that requires 2-3 specific criteria, not a paragraph. Example: 'Complete 10 presentations (countable), receive average feedback score 4+/5 from mentor and instructor (measurable), demonstrate zero use of filler words um/uh in final presentation (observable).'"
+
+**Q: "What if my learning style is [visual/auditory/kinesthetic]? Should I choose strategies matching my style?"**
+A: "Excellent question showing you engaged with the lecture's learning styles section. Research shows matching instruction to supposed learning style doesn't improve learning—that's the 'meshing hypothesis' that's been debunked. Instead, choose strategies based on EVIDENCE. Retrieval practice, spaced practice, and elaboration work for everyone regardless of preferences. You might PREFER certain approaches, but effectiveness should drive your choices. Use what works, not what's comfortable."
+
+---
+
+## Assessment Connections Clarified
+
+**Students sometimes don't see how today's activity connects to graded assessments. If asked, clarify explicitly:**
+
+### Connection to Mentorship Program (20%)
+
+**How learning contracts support this assessment:**
+- **Pre-meeting preparation forms require:** Goals for meeting, questions prepared, desired outcomes → This IS a learning contract
+- **Post-meeting reflections require:** Evaluate goal achievement, assess strategy effectiveness, plan next steps → This IS SDL Step 4 evaluation
+- **Rubric criteria explicitly assess:** Evidence of structured preparation, progression across meetings, integration of feedback → Learning contracts provide this structure
+
+**Show them:** Pull up the Mentorship Program rubric (Assessment Handbook Section 2) and point to specific criteria: "See 'evidence of structured preparation'? That's learning contracts. See 'demonstrates progression'? That's SRL cycles across multiple meetings."
+
+### Connection to Personal Development Plan (40%)
+
+**How learning contracts become PDP content:**
+- **PDP requires SMART goals → Learning contracts ARE SMART goals in structured format**
+- **PDP requires action plans → Learning contract strategies ARE action plans**
+- **PDP requires progress monitoring → Learning contract SRL integration IS monitoring approach**
+- **PDP requires mentor integration → Learning contracts include mentor in strategies/evidence**
+
+**Show them:** "Your PDP template has sections for: (1) Development Goals, (2) Action Steps, (3) Resources/Support, (4) Success Indicators, (5) Timeline. Look at your learning contract—you already filled these out. You're literally practicing the PDP format right now."
+
+---
+
+## Differentiation for Student Levels
+
+### For Struggling Students (Low SDL Readiness)
+
+**Indicators:** Stares at blank page, writes one-sentence goals, can't generate strategies, doesn't understand frameworks
+
+**Interventions:**
+- **Provide more scaffolding:** Give a partially completed learning contract template with Goal and 1-2 strategies filled in—they complete the rest
+- **Use think-aloud modeling:** "Watch me create a learning contract for improving my Spanish. First, specific goal: 'Hold 10-minute professional conversation in Spanish...' Now, strategies: I need multiple types, so..."
+- **Simplify language:** Instead of "evidence-based strategies," say "learning techniques that research proves work"
+- **Pair with stronger peer:** During revision phase, encourage them to ask a neighbor for help
+
+### For Advanced Students (High SDL Readiness)
+
+**Indicators:** Finishes quickly with high-quality contracts, helps peers unprompted, asks sophisticated questions about assessment integration
+
+**Extensions:**
+- **Challenge specificity:** "Your contracts are strong. Now make them EVEN MORE specific—add weekly action items, specific resource URLs, named evaluators."
+- **Add complexity:** "Create a fourth contract for a stretch goal—something you're not sure you can achieve but want to try. How would you structure that differently?"
+- **Peer teaching role:** "Your contracts are excellent. I'd like you to help [struggling student] strengthen theirs. Ask them questions that help them think through issues rather than giving answers."
+- **Assessment integration task:** "Map your three learning contracts to specific PDP rubric criteria. Which learning contract addresses which rubric element? Where are gaps you'll need to address in your final PDP?"
+
+---
+
+## If Things Go Wrong: Contingency Plans
+
+### Contingency #1: Students didn't attend lecture or do readings
+
+**Indicator:** Blank stares when you reference SRL three-phase model, confusion about evidence-based strategies
+
+**Response:**
+- **DON'T re-teach entire lecture (not enough time)**
+- **DO provide quick reference handout** with: (1) SRL three phases diagram, (2) SDL four steps list, (3) Evidence-based strategies quick summary
+- **Adjust expectations:** "If you didn't attend lecture, you're working at a disadvantage. Use the handout as reference, focus on creating ONE excellent learning contract rather than three adequate ones, and review lecture content before completing the other two."
+- **Follow-up:** Email students emphasizing attendance matters: "Today's tutorial assumed lecture attendance. Future tutorials will continue to build on lecture content—attendance is essential for success."
+
+### Contingency #2: Activity taking much longer than expected
+
+**Indicators:** Still in Phase 1 (individual drafting) at 30-minute mark, students not close to finishing
+
+**Response:**
+- **Adjust activity scope:** "Change of plans—we'll complete ONE excellent learning contract today rather than three. Choose your most important development goal. You'll create the other two on your own before next tutorial."
+- **Reduce peer review rounds:** Instead of 10 minutes per person × 3 people, do 7 minutes per person, or skip round 3 and do only 2 rounds
+- **Shorten closing discussion:** Hit only prompts #1 and #2 (assessment connections), assign #3 and #4 as reflection homework
+
+### Contingency #3: Peer feedback quality is very poor across all groups
+
+**Indicator:** As you circulate, you hear only "Looks good!" "Nice job!" without substantive developmental feedback
+
+**Response:**
+- **Pause activity:** "Everyone stop for 2 minutes. I'm noticing feedback is very surface-level. Let me show you what developmental feedback looks like."
+- **Model explicitly:** Take one student's contract (with permission), display it, give live feedback: "Your goal mentions 'improve communication'—that's too vague. What TYPE of communication? Written? Oral? In what context? Let me show you a question that helps: 'Can you narrow this to one specific communication skill you'll develop in one specific context?' See how that question helps strengthen the goal? THAT'S developmental feedback."
+- **Restart with new expectations:** "Now continue peer review. I should hear: questions that push thinking, specific suggestions, identification of what's strong AND what needs strengthening. I'll be listening."
+
+### Contingency #4: Technical problem (printer broken, handouts not available)
+
+**Response:**
+- **Have digital backup:** Email learning contract template to students if printing fails—they can fill out on laptops/phones or write on blank paper using template structure
+- **Use whiteboard:** Write learning contract template on board so students can copy structure
+- **Simplify formats:** Instead of printed peer feedback forms, students give verbal feedback and presenter takes notes
+
+---
+
+## Post-Tutorial Reflection for Tutors
+
+**After tutorial, consider:**
+
+1. **What common struggles emerged?** (Note for future tutorials—may need additional scaffolding)
+
+2. **Which students need follow-up support?** (Consider individual office hour invitations)
+
+3. **What worked well in facilitation?** (Replicate in future weeks)
+
+4. **What would you change?** (Adjust timing, scaffolding, examples)
+
+5. **How ready are students for PDP assessment?** (May need additional support sessions if significant struggles)
+
+**Share insights with lead instructor and other tutors** so consistent support can be provided across tutorial sections.
+
+---
+
+## Resources for Further Support
+
+**If students need additional help beyond tutorial:**
+
+- **Office hours:** Book one-on-one time to review learning contracts before PDP submission
+- **Learning contracts template with worked examples:** Provide additional models
+- **PDP writing workshop (if offered):** Direct students to institutional writing support
+- **Mentorship coordinators:** Can help students identify development areas aligned with career goals
+- **Sample PDPs from previous years (if available):** Seeing complete examples helps students understand scope
+
+**Remind students:** "Learning contracts are hard to create well the first time—that's why we're practicing now. Don't hesitate to get feedback before your final PDP submission. That's exactly what self-directed learners do—they seek support strategically."
+
+---
+
+**Remember:** The goal isn't perfect learning contracts by end of tutorial—it's understanding the PROCESS of creating them so students can refine independently for their PDP. Focus on process mastery, not product perfection today.

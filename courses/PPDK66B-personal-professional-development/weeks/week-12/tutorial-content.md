@@ -1,291 +1,473 @@
-# Week 12 Tutorial: Final Oral Exam Preparation Workshop
+# Week 12 Tutorial: Final Oral Exam Preparation
 
-## Tutorial Overview
-
+**Course:** Personal & Professional Development (PPDK66B)
+**Week:** 12 of 12
 **Duration:** 90 minutes
-**Focus:** Practical preparation for Final Oral Exam
-**Format:** Peer practice sessions, Q&A simulation, presentation coaching
-
-## Learning Objectives
-
-By the end of this tutorial, you will be able to:
-1. Structure a compelling 10-minute presentation of your Personal Development Plan
-2. Articulate the "why" behind your career goals with clarity and confidence
-3. Respond effectively to Q&A questions about your development plan
-4. Identify and improve presentation delivery weaknesses through peer feedback
+**Format:** Interactive practice session
 
 ---
 
-## Part 1: Presentation Structure Workshop (30 minutes)
+## Tutorial Objectives
 
-### Activity 1.1: The 5-Slide Core Framework (10 min)
+By the end of this tutorial, you will:
 
-Your oral exam presentation needs a clear narrative arc. Every strong presentation has these 5 essential components:
-
-**1. Who I Was (Self-Discovery)**
-- What did you learn about yourself through assessments?
-- What surprised you? What confirmed existing self-knowledge?
-
-**2. Who I Am (Integration)**
-- How do your personality, strengths, values, and interests create a coherent profile?
-- What is your 50-word vision statement?
-
-**3. Where I'm Going (Goals)**
-- What are your 1-year, 3-year, and 5-year strategic goals?
-- How do they build on each other logically?
-
-**4. Why It Matters (Motivation)**
-- Why these goals? Why this career path?
-- How does this align with your authentic values and strengths?
-
-**5. How I'll Get There (Implementation)**
-- What are your key strategies and first actions?
-- How will you maintain accountability?
-
-**Individual Task (5 min):** Open your PDP. Identify 1-2 key points from each of these 5 components. Write them down.
-
-**Pair-Share (5 min):** Share your 5 core messages with a partner. Can they understand your journey in 2 minutes? If not, clarify.
+1. **Practice** presenting your Personal Development Plan in a timed, professional format
+2. **Receive** constructive peer and tutor feedback on content, structure, and delivery
+3. **Identify** areas of strength and opportunities for improvement before your actual oral exam
+4. **Develop** strategies for handling Q&A sessions confidently and authentically
+5. **Build** confidence in articulating your development journey professionally
 
 ---
 
-### Activity 1.2: Opening Strong & Closing Strong (10 min)
+## Session Overview
 
-**The First 30 Seconds:**
-Your opening should hook attention and establish your theme.
+This tutorial is structured as an intensive practice session where you'll deliver portions of your oral exam presentation, receive feedback, and refine your approach. The goal is to simulate exam conditions in a supportive environment so you can identify and address weaknesses before the high-stakes actual exam.
 
-**Weak Opening:**
-"Hello, my name is Nguyen Van Anh. Today I will present my Personal Development Plan."
-
-**Strong Opening:**
-"I used to think success meant getting the highest-paying job. Then this course taught me that authentic success means aligning my strengths with work I find personally meaningful. My plan reflects that transformation."
-
-**The Last 30 Seconds:**
-Your closing should leave a memorable impression and demonstrate commitment.
-
-**Weak Closing:**
-"That's my plan. Thank you for listening. Do you have any questions?"
-
-**Strong Closing:**
-"My journey from this course has taught me that I'm CEO of my career. I'm excited to implement this plan, starting with [specific action] this week. I'm ready for your questions."
-
-**Individual Task (5 min):** Draft your opening hook and closing commitment statement.
-
-**Pair-Share (5 min):** Practice delivering your opening and closing. Partner provides feedback: Was it confident? Memorable? Authentic?
+**Key principle:** Feedback now prevents failure later. Welcome constructive criticism—it's your opportunity to improve.
 
 ---
 
-### Activity 1.3: Timing Discipline (10 min)
+## Part 1: Quick Review & Warm-Up (5 minutes)
 
-The exam is EXACTLY 10 minutes for presentation. Going significantly over or under suggests poor preparation.
+### Tutor Introduction
 
-**Time Allocation Strategy:**
-- Slides 1-2 (Introduction + Who I Was): 2 minutes
-- Slides 3-4 (Who I Am + Vision): 2 minutes
-- Slides 5-7 (Goals & Roadmap): 3 minutes
-- Slides 8-9 (Course Integration): 2 minutes
-- Slide 10 (Implementation & Commitment): 1 minute
+Welcome to our final tutorial session—Week 12's oral exam preparation workshop. Today is entirely practical: you'll present portions of your development plan, receive feedback, practice Q&A scenarios, and leave with concrete strategies for excellence in your actual oral exam.
 
-**Practice Task (10 min):**
-Using a timer, practice presenting your 5 core messages (from Activity 1.1) in exactly 8 minutes. This leaves buffer time.
+The structure: We'll start with a brief review of oral exam expectations, then move into intensive practice rotations where you present to small peer groups, receive structured feedback, and refine your approach. Finally, we'll practice Q&A techniques with challenging sample questions.
 
-If you finish in <7 minutes: You're summarizing too much. Add specific examples and details.
+Remember: this tutorial is a safe space to make mistakes. Better to discover that your presentation runs 13 minutes instead of 10 here, where you can adjust, than during your actual exam where you'll be cut off mid-sentence. Feedback today is a gift—welcome it.
 
-If you finish in >9 minutes: You're over-explaining. Cut redundant points and tighten language.
+### Oral Exam Expectations Recap (5 minutes)
 
-**Partner Feedback:** Did pacing feel natural or rushed? Where did they lose focus?
+Let me quickly recap the oral exam structure and assessment criteria.
 
----
+**Format:**
+- **Duration:** 15 minutes total (10-min presentation + 5-min Q&A)
+- **Weight:** 30% of your course grade
+- **Setting:** Individual presentation to instructor panel
+- **Materials:** Visual slides (10-12 slides recommended, no more than 15)
 
-## Part 2: Q&A Preparation & Strategy (30 minutes)
+**Assessment Criteria (3 dimensions):**
 
-### Activity 2.1: Anticipating Questions (10 min)
+1. **Integration of Course Learning (35%)**
+   - Do you demonstrate genuine understanding of frameworks from Weeks 1-12?
+   - Can you name specific concepts (Gibbs' Cycle, growth mindset, SDT, creative tension, SMART goals, Ikigai) and explain how they shaped your thinking?
+   - Does your plan reflect synthesis rather than just completing an assignment?
 
-Examiners will ask questions to assess:
-- **Depth of understanding:** Do you truly know your plan or just memorize it?
-- **Authenticity:** Are these YOUR goals or generic aspirations?
-- **Strategic thinking:** Have you thought through obstacles and alternatives?
-- **Course integration:** Did frameworks genuinely shape your thinking?
+2. **Self-Knowledge Depth (35%)**
+   - Have you moved beyond surface-level assessment results to genuine insight?
+   - Can you articulate why your career choice aligns with your personality, values, strengths, and interests?
+   - Do you demonstrate authentic self-awareness about strengths AND developmental areas?
 
-**Common Question Types:**
+3. **Professional Communication (30%)**
+   - Visual design: Are slides professional, clear, and supportive (not text-heavy)?
+   - Verbal delivery: Do you speak clearly, maintain appropriate pacing, project confidence?
+   - Q&A capability: Can you think on your feet, answer thoughtfully, and demonstrate ownership of your plan?
 
-1. **Clarification:** "You mentioned wanting to work in [field]. What specifically appeals to you about that industry?"
+**Common pitfalls we want to help you avoid today:**
+- Running over time (10 minutes means 10 minutes—we will stop you)
+- Memorizing a script that sounds robotic and can't adapt to questions
+- Reading slides verbatim instead of using them as visual support
+- Listing facts without insight ("My MBTI is INTJ" vs. "Discovering my INTJ preferences validated my attraction to analytical, independent work")
+- Vague goals without specificity or metrics
+- Ignoring course frameworks entirely
+- Appearing unprepared or uncommitted to your plan
 
-2. **Challenge:** "What if [obstacle] prevents you from achieving this goal? What's your backup plan?"
-
-3. **Integration:** "How did [course concept/framework] influence this goal?"
-
-4. **Evidence:** "Can you give an example of when you demonstrated [strength/value] you mentioned?"
-
-5. **Reflection:** "What's the biggest way your thinking changed through this course?"
-
-**Individual Task (10 min):** 
-Based on YOUR PDP, write down:
-- 3 questions you hope they WON'T ask (because they're challenging)
-- 2 questions you hope they WILL ask (because you have great answers)
-
----
-
-### Activity 2.2: The STAR Response Framework (10 min)
-
-When answering behavioral or evidence-based questions, use STAR:
-- **Situation:** Set context briefly
-- **Task:** What needed to be done?
-- **Action:** What YOU did specifically
-- **Result:** What happened? What did you learn?
-
-**Example Question:** "You say emotional intelligence is important to you. Describe a time you demonstrated this."
-
-**Weak Answer:**
-"I'm good at understanding people's feelings. I use this skill a lot."
-
-**STAR Answer:**
-"During a group project (Situation), our team was struggling with conflict about work distribution (Task). I noticed one member was stressed about family issues, so I privately asked how they were doing and suggested we redistribute tasks temporarily (Action). The team member felt supported, completed their part well, and we finished the project successfully. I learned that empathy requires both noticing emotions AND taking appropriate action (Result)."
-
-**Pair Practice (10 min):**
-Partner asks you one of your "challenging" questions from Activity 2.1. Answer using STAR framework. Then switch roles.
+Today we'll practice overcoming all of these pitfalls. Let's begin.
 
 ---
 
-### Activity 2.3: Handling Difficult Questions Gracefully (10 min)
+## Part 2: Main Activity - Practice Presentation Rotations (75 minutes)
 
-**Strategies for tough questions:**
+### Activity Structure
 
-**If you don't know the answer:**
-"That's a thoughtful question. I haven't fully considered [aspect], but my initial thinking is [brief response]. This is something I should explore further with my mentor."
+You'll work in small groups of 3-4 students for intensive practice rotations. Each rotation follows this structure:
 
-**If the question challenges your goal:**
-"You raise a valid concern. I chose this goal because [rationale]. I'm aware of [obstacle] and my mitigation strategy is [approach]. I'm open to adjusting as I learn more."
+**Rotation Format (20 minutes per rotation):**
+- **5 minutes:** One student presents a 5-minute excerpt from their oral exam (choose either "Self-Discovery Journey" OR "Strategic Goals & Roadmap" section)
+- **3 minutes:** Peer feedback using structured feedback form
+- **2 minutes:** Tutor feedback highlighting 1 strength + 1 concrete improvement
+- **Repeat** for each group member
 
-**If you need a moment to think:**
-"That's an interesting question. Let me think about that for a moment..." [3-second pause is fine]
+You'll complete **3 full rotations** (60 minutes total), meaning each student presents once and receives feedback multiple times from different peers.
 
-**What NOT to do:**
-- Get defensive or argumentative
-- Say "I don't know" without attempting an answer
-- Make up information you're unsure about
-- Ramble while trying to figure out your answer
+**Important:** You're NOT presenting your entire 10-minute exam today—that would take too long. Instead, you're practicing the 2-3 most challenging sections where feedback is most valuable.
 
-**Group Discussion (10 min):** 
-Tutor poses challenging questions. Volunteers practice responding with grace and honesty.
+### Round 1: Self-Discovery Journey Practice (20 minutes)
 
----
+**Instructions:**
 
-## Part 3: Peer Practice & Feedback (25 minutes)
+**For Presenters:**
+Present your "Self-Discovery Journey" section (Slides 2-3 from your planned oral exam) in **5 minutes maximum**. This section should cover:
+- Key insights from your 5 assessments (MBTI, VIA, CliftonStrengths, Holland Code, EI)
+- What surprised you or shifted your self-understanding
+- How your self-knowledge evolved through the course
+- Visual presentation of assessment results (if you have slides ready)
 
-### Activity 3.1: 5-Minute Lightning Presentations (15 min)
+**Focus areas to practice:**
+- Moving from facts ("My MBTI is X") to insights ("Discovering X taught me Y about my work preferences")
+- Integrating across assessments (finding patterns)
+- Using visuals effectively rather than reading text
+- Staying within 5-minute time limit
 
-**Format:** Groups of 3-4 students
+**For Feedback Providers (Peers):**
+Use the structured feedback form (provided below). Focus on:
+1. **Content depth:** Did the presenter share genuine insights, or just list facts?
+2. **Time management:** Did they stay within 5 minutes?
+3. **Clarity:** Could you follow their self-discovery narrative?
+4. **Visuals:** If slides were shown, did they enhance or distract?
+5. **One specific strength** (be sincere and specific)
+6. **One concrete improvement** (actionable, not vague)
 
-Each student presents a condensed 5-minute version of their oral exam:
-- 1 minute: Who I was → Who I am
-- 2 minutes: Goals and why they matter
-- 1 minute: Course integration
-- 1 minute: Q&A (group asks 1-2 questions)
+**Tutor Role:**
+Circulate among groups, observe presentations, provide brief targeted feedback emphasizing:
+- Specificity ("Instead of 'I learned about my strengths,' say 'Discovering that my top VIA strength is Curiosity explained why I'm energized by research projects'")
+- Insight depth ("What surprised you about your results? That's what we want to hear")
+- Time management coaching
 
-**Feedback Focus:**
-- Content: Was the narrative coherent and authentic?
-- Delivery: Eye contact, vocal confidence, pacing
-- Engagement: Did you want to hear more about their journey?
+### Round 2: Strategic Goals & Roadmap Practice (20 minutes)
 
-**Feedback Form (each group member completes for presenter):**
+**Instructions:**
 
-| Aspect | Strength (What worked well) | Opportunity (What to improve) |
-|--------|---------------------------|------------------------------|
-| Content & Clarity | | |
-| Delivery & Presence | | |
-| Authenticity | | |
-| Q&A Response | | |
+**For Presenters:**
+Present your "Strategic Goals & Roadmap" section (Slides 6-8 from your planned oral exam) in **5 minutes maximum**. This section should cover:
+- Your 1-year goals (highlight 2-3 most important)
+- Your 3-year goals (medium-term direction)
+- Your 5-year goals (ultimate vision)
+- Visual timeline or roadmap showing progression
+- Briefly mention key action steps for 1-year goals
 
----
+**Focus areas to practice:**
+- SMART goal specificity (avoid vague goals like "be successful")
+- Logical progression showing how 1-year goals build toward 5-year vision
+- Balancing detail (enough to be concrete) with brevity (not drowning in minutiae)
+- Using timeline visuals effectively
+- Demonstrating ambition tempered with realism
 
-### Activity 3.2: One Improvement Commitment (10 min)
+**For Feedback Providers (Peers):**
+Use the structured feedback form. Focus on:
+1. **Goal quality:** Are goals SMART (Specific, Measurable, Achievable, Relevant, Time-bound)?
+2. **Strategic coherence:** Do the goals logically build on each other toward the vision?
+3. **Clarity:** Could you understand the career progression?
+4. **Visuals:** Does the timeline/roadmap enhance understanding?
+5. **One specific strength**
+6. **One concrete improvement**
 
-Based on peer feedback, identify ONE specific improvement to make before the exam.
+**Tutor Role:**
+Focus feedback on:
+- SMART goal specificity ("'Improve my skills' is vague; 'Complete Google Data Analytics Certificate by June 2026 with 90%+ scores' is SMART")
+- Strategic coherence ("How does your 1-year goal of learning Python connect to your 3-year goal of becoming a data analyst? Make that connection explicit")
+- Realistic ambition ("Your goals should feel challenging but achievable—if they feel easy, raise ambitions; if they feel impossible, scale back")
 
-**Examples:**
-- "Slow down when presenting goals—I rushed through them"
-- "Make more eye contact—I looked at slides too much"
-- "Add specific example when discussing EI strength"
-- "Practice smoother transition between sections"
-- "Reduce filler words ('um', 'like', 'you know')"
+### Round 3: Full Integration Practice (20 minutes)
 
-**Individual Task (5 min):** Write your one improvement commitment on paper.
+**Instructions:**
 
-**Partner Accountability (5 min):** Share your commitment with a classmate. Exchange contact information. Check in with each other 2 days before the exam: "Did you practice your improvement area?"
+**For Presenters:**
+Present a **5-minute synthesized excerpt** that combines:
+- Brief hook introduction (your vision in one sentence)
+- Abbreviated self-discovery (1 minute—key pattern across assessments)
+- Abbreviated goals (2 minutes—just highlight one goal per time horizon)
+- Course learning integration (1 minute—name 2-3 specific frameworks that shaped your plan)
+- Closing statement (30 seconds—commitment and confidence)
 
----
+This is essentially a condensed version of your full 10-minute presentation, forcing you to prioritize the most important content and practice smooth transitions.
 
-## Part 4: Final Exam Logistics & Mindset (5 minutes)
+**Focus areas to practice:**
+- Compelling opening hook
+- Smooth transitions between sections
+- Integrating course frameworks naturally (not awkwardly shoehorned in)
+- Strong closing that demonstrates authentic commitment
+- Overall narrative flow and pacing
 
-### Exam Day Checklist
+**For Feedback Providers (Peers):**
+Use the structured feedback form. Focus on:
+1. **Narrative coherence:** Does the presentation flow logically? Are transitions smooth?
+2. **Framework integration:** Did they mention specific course concepts authentically?
+3. **Opening and closing:** Was the hook compelling? Was the closing confident?
+4. **Overall impression:** Would you be convinced this person owns their development plan?
+5. **One specific strength**
+6. **One concrete improvement**
 
-**24 Hours Before:**
-- [ ] Submit slides to course management system (backup in case of tech issues)
-- [ ] Practice full presentation 1 final time with timer
-- [ ] Prepare outfit (business or business casual)
-- [ ] Get good sleep (better than last-minute cramming)
-
-**Exam Day:**
-- [ ] Arrive 10 minutes early
-- [ ] Bring USB backup of slides
-- [ ] Bring water (dry mouth is common when nervous)
-- [ ] Take 3 deep breaths before entering
-
-**During Presentation:**
-- [ ] Make eye contact with all panel members
-- [ ] Speak to examiners, not to slides
-- [ ] If you make a mistake, recover gracefully and continue
-- [ ] Stay within 10 minutes (±30 seconds acceptable)
-
-**During Q&A:**
-- [ ] Listen fully to each question before answering
-- [ ] It's okay to pause briefly to think
-- [ ] Answer concisely—don't ramble
-- [ ] Thank examiners for questions
-
----
-
-### Mindset Reset
-
-**Remember:**
-1. **You are the expert on YOUR development plan.** No one knows it better than you.
-
-2. **Authenticity > Perfection.** Examiners want to see the real you, not a rehearsed performance.
-
-3. **This is a CELEBRATION, not an interrogation.** You've accomplished significant growth this semester. The exam is your chance to showcase it.
-
-4. **Nervousness is normal.** Even experienced presenters get nervous. Channel that energy into enthusiasm.
-
-5. **You've prepared.** You've completed assessments, engaged with your mentor, created a comprehensive PDP, practiced presenting. Trust your preparation.
-
-**Final Reflection Question:**
-What are you most proud of from your development journey this semester?
-
-(Allow 2-3 students to share with the class.)
-
----
-
-## Homework Before Exam
-
-1. **Practice 5 times** with a timer
-2. **Record yourself** once (video or audio) and watch/listen—you'll notice things you miss in the moment
-3. **Prepare answers** to your "challenging questions" from Activity 2.1
-4. **Get a good night's sleep** before the exam
-5. **Review rubric** in Assessment Handbook—know exactly what's being assessed
-
-**Optional but Recommended:**
-- Practice in front of family or friends
-- Visit the exam room beforehand if possible (reduces anxiety)
-- Prepare 1-2 backup stories/examples in case Q&A goes deeper than expected
+**Tutor Role:**
+Provide holistic feedback:
+- Narrative flow and transitions
+- Authenticity ("Do you believe they're genuinely committed, or just going through the motions?")
+- Balance between confidence and humility
+- Energy and engagement level
 
 ---
 
-## Closing Thoughts
+### Structured Feedback Form
 
-This oral exam is your opportunity to demonstrate the integration of 12 weeks of learning. It's not about memorizing your PDP—it's about articulating your authentic development journey with confidence and clarity.
+**Presenter Name:** ___________________________
+**Feedback Provider Name:** ___________________________
+**Section Practiced:** ☐ Self-Discovery Journey  ☐ Strategic Goals  ☐ Full Integration
 
-You've done the hard work of self-discovery, goal-setting, and planning. Now show us who you've become.
+**Content Quality (Rate 1-5, where 5 = excellent):**
 
-**We believe in you. You've got this.**
+| Criterion | Rating | Comments |
+|-----------|--------|----------|
+| Depth of insight (not just surface facts) | ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5 | |
+| Specificity & clarity | ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5 | |
+| Integration of course frameworks | ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5 | |
+| Visual design effectiveness | ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5 | |
 
-Good luck!
+**Delivery Quality (Rate 1-5):**
+
+| Criterion | Rating | Comments |
+|-----------|--------|----------|
+| Time management (stayed within 5 min) | ☐ Yes  ☐ No | Actual time: ____ min |
+| Verbal clarity & pacing | ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5 | |
+| Eye contact & confidence | ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5 | |
+| Natural delivery (not robotic/memorized) | ☐ 1  ☐ 2  ☐ 3  ☐ 4  ☐ 5 | |
+
+**Narrative Feedback:**
+
+**One specific strength (be sincere and detailed):**
+
+___________________________________________________________________
+
+___________________________________________________________________
+
+**One concrete improvement (actionable, not vague):**
+
+___________________________________________________________________
+
+___________________________________________________________________
+
+**Additional observations or suggestions:**
+
+___________________________________________________________________
+
+___________________________________________________________________
+
+---
+
+## Part 3: Q&A Practice & Preparation (15 minutes)
+
+### Sample Q&A Scenarios
+
+The final 5 minutes of your oral exam will be Q&A with the instructor panel. This is where we assess depth of understanding, authentic ownership, and critical thinking. Let's practice handling challenging questions.
+
+### Common Question Types & Response Strategies
+
+**Question Type 1: Challenge to Your Goals**
+
+*Example:* "You said you want to be a senior data analyst in 5 years, but the field is rapidly changing with AI automation. What if that role doesn't exist in 5 years? How will your plan adapt?"
+
+**What we're assessing:**
+- Can you think adaptively?
+- Do you understand your goals are directional, not rigid contracts?
+- Have you thought critically about obstacles?
+
+**Strong response strategy:**
+- **Acknowledge the validity:** "You're right that AI is transforming analytics roles rapidly."
+- **Show adaptive thinking:** "That's why my development focuses on skills AI can't replace—strategic thinking, domain expertise, and translating insights for stakeholders—rather than just technical execution."
+- **Demonstrate flexibility:** "If senior analyst roles evolve differently than I expect, my T-shaped expertise in analytics plus broad business knowledge will allow me to pivot into related fields like business intelligence, product analytics, or data strategy."
+
+**Weak response (avoid):**
+- Defensive: "I don't think AI will eliminate analytics jobs."
+- Rigid: "I'll definitely be a senior analyst—that's my plan."
+- Unprepared: "Um, I hadn't thought about that..."
+
+**Question Type 2: Depth of Self-Knowledge**
+
+*Example:* "You mentioned your CliftonStrengths include 'Woo' and 'Communication,' but you also said you're an introverted MBTI type. How do you reconcile that apparent contradiction?"
+
+**What we're assessing:**
+- Do you actually understand your assessment results?
+- Can you integrate conflicting information into coherent self-knowledge?
+- Have you moved beyond superficial interpretation?
+
+**Strong response strategy:**
+- **Demonstrate understanding:** "That's a great question—I was initially surprised by that too."
+- **Explain the nuance:** "I've learned that introversion doesn't mean poor social skills; it means I recharge through solitude. I can be highly effective in social interactions using Woo and Communication strengths, but I need alone time afterward to recover energy."
+- **Provide evidence:** "For example, I excel at one-on-one mentorship conversations (using Communication) but feel drained after large networking events. Understanding this helps me structure my workday—schedule important meetings in the morning when I'm fresh, protect afternoon time for independent work."
+
+**Weak response (avoid):**
+- Contradiction denial: "I don't think there's a contradiction."
+- Surface explanation: "Well, sometimes I'm introverted and sometimes I'm extroverted."
+- Lack of application: Just describing the concepts without showing how you use this knowledge
+
+**Question Type 3: Course Learning Integration**
+
+*Example:* "You mentioned Carol Dweck's growth mindset. How specifically has that concept changed your behavior this semester?"
+
+**What we're assessing:**
+- Did you genuinely learn and apply course concepts, or just mention them superficially?
+- Can you provide concrete examples of application?
+- Has the learning actually influenced your actions?
+
+**Strong response strategy:**
+- **Provide specific example:** "Before learning about growth mindset, I avoided challenging courses because failure felt like evidence of inadequacy. This semester, I deliberately enrolled in Advanced Statistics—a subject I found intimidating."
+- **Show behavior change:** "When I struggled with the first assignment and scored poorly, my old reaction would've been 'I'm not a math person; I should drop this.' Instead, I asked 'What specific concepts am I missing? How can I improve?' I sought office hours, formed a study group, and practiced extra problems."
+- **Demonstrate outcome:** "My scores improved significantly, and more importantly, I learned that struggle is part of learning, not evidence of failure. I now actively seek challenges rather than avoiding them."
+
+**Weak response (avoid):**
+- Vague: "It changed my mindset to be more positive."
+- No example: "I think about challenges differently now."
+- Aspirational (not actual): "I plan to apply growth mindset in the future."
+
+**Question Type 4: Addressing Weaknesses**
+
+*Example:* "In your SWOT analysis, you listed 'public speaking anxiety' as a weakness. Yet your career goals require presenting to executives. How will you address this gap?"
+
+**What we're assessing:**
+- Do you honestly acknowledge developmental areas?
+- Do you have concrete plans to address weaknesses?
+- Are you taking ownership, or making excuses?
+
+**Strong response strategy:**
+- **Acknowledge directly:** "You're absolutely right—public speaking anxiety is a significant gap given my career goals."
+- **Show concrete plan:** "I've already taken three actions: First, I joined Toastmasters International's NEU chapter to practice in a supportive environment. Second, I volunteered to present in three classes this semester to gain experience. Third, I'm working with my mentor who's an experienced public speaker to learn preparation techniques."
+- **Demonstrate progress:** "I'm not claiming I've solved this—I still get nervous. But my last presentation in Marketing class, I received positive feedback on clarity and pacing. The gap is narrowing through deliberate practice."
+
+**Weak response (avoid):**
+- Excuse-making: "I'm just naturally introverted, so public speaking will always be hard."
+- No plan: "I hope to get better at it eventually."
+- Dismissive: "It's not that important for my role."
+
+### Practice Activity: Hot Seat Q&A (15 minutes)
+
+**Format:**
+
+The tutor will select 3-4 volunteers to sit in the "hot seat" for rapid-fire Q&A practice. Each volunteer faces 3-4 challenging questions in 3 minutes, practicing thinking on their feet and responding confidently.
+
+**Instructions:**
+
+1. **For Hot Seat Volunteers:**
+   - You'll be asked 3-4 challenging questions about your development plan
+   - You have 30-60 seconds to respond to each question
+   - Focus on: acknowledging the question, providing specific examples, demonstrating thoughtful planning
+   - Don't panic if you don't have a perfect answer—show your thinking process
+
+2. **For Observers:**
+   - Note what makes responses strong or weak
+   - Consider how you would answer if asked the same question
+   - Think about potential questions based on your own plan's vulnerabilities
+
+3. **After Each Hot Seat:**
+   - Tutor provides brief feedback on response quality
+   - Class discusses what made responses effective
+   - Volunteers share how the experience felt (to normalize nervousness)
+
+**Sample Questions for Hot Seat:**
+
+- "Why did you choose [specific career field]? How do you know it's right for you?"
+- "Your 1-year goals are very ambitious. What if you don't achieve them all? Does that mean your plan failed?"
+- "You mentioned [course framework]. How would you explain that concept to someone who hasn't taken this course?"
+- "What's the biggest obstacle you anticipate in achieving your 5-year goals? How will you overcome it?"
+- "You identified [specific strength]. Can you tell me about a time when you actually demonstrated that strength in action?"
+- "Looking at your SWOT analysis, your threats include [X]. Why should we believe you can overcome that threat?"
+- "Your mentor is in [industry X], but your career goal is [industry Y]. How is that mentorship relevant?"
+- "What will you do if you graduate and can't find a job in your chosen field?"
+
+---
+
+## Part 4: Before Next Class (10 minutes)
+
+### Final Preparation Checklist
+
+**Your Task Before the Oral Exam:**
+
+**☐ 1. Complete Your Presentation (Deadline: 3 days before exam)**
+- Finalize 10-12 slides with professional design
+- Ensure clear structure: Hook → Self-Discovery → Vision → Goals → Integration → Closing
+- Use visuals (timelines, charts, graphics) rather than text-heavy slides
+- Include your 50-word vision statement prominently
+
+**☐ 2. Practice Extensively (Minimum: 5 full run-throughs)**
+- Practice 1: Solo, focusing on content and timing
+- Practice 2: Record yourself, watch critically, note improvements
+- Practice 3: Present to a peer, get feedback
+- Practice 4: Present to mentor or family member, practice Q&A
+- Practice 5: Final run-through under simulated exam conditions (10 min presentation + 5 min self-Q&A)
+
+**☐ 3. Prepare for Q&A (Anticipate 5-8 likely questions)**
+- Review your development plan and identify potential question areas:
+  - Any apparent contradictions in assessments
+  - Ambitious or unusual goals that might be questioned
+  - Weaknesses you acknowledged in SWOT
+  - Career field choices that might need justification
+  - Course concepts you mentioned that you should be able to explain
+- Write out bullet-point answers to anticipated questions (don't memorize word-for-word, just key points)
+
+**☐ 4. Logistics Preparation**
+- Know your exam date/time/location
+- Test technology if presenting remotely (camera, microphone, screen sharing)
+- Prepare backup plan (USB drive with slides, email to self, etc.)
+- Plan what you'll wear (professional, comfortable, confidence-building)
+- Arrive/log in 10 minutes early
+
+**☐ 5. Mental Preparation**
+- Review the course learning from Weeks 1-12 to refresh your memory
+- Read your development plan one final time to ensure deep familiarity
+- Remind yourself: "I've done the work. I have substantive content to share. This is my opportunity to showcase 12 weeks of learning."
+- Use Week 9's growth mindset: This exam is a learning experience, not a threat to your worth
+- Get adequate sleep the night before—cognitive performance depends on rest
+
+### Reflection Questions
+
+Take 5 minutes now to journal responses to these questions:
+
+**1. What did you learn from today's practice presentations?**
+   - What was harder than you expected?
+   - What felt more natural than you feared?
+   - What specific feedback will you implement?
+
+**2. What is your biggest concern about the oral exam?**
+   - Time management?
+   - Q&A questions?
+   - Nerves and anxiety?
+   - Technical issues?
+
+**3. What's your strategy for addressing that concern before the exam?**
+   - Be specific: What will you DO (not just "try to be less nervous")?
+
+**4. What are you most excited or proud to share in your presentation?**
+   - This is your confidence anchor—remember it when nerves arise
+
+### Final Encouragement
+
+You've spent 12 weeks engaged in deep personal and professional development work. You've completed five major self-assessments. You've reflected using evidence-based frameworks. You've learned from mentors. You've created comprehensive development plans with strategic goals. You've explored frameworks for lifelong learning. You have substantive content to present—this isn't fluff, it's genuine self-knowledge and strategic planning.
+
+The oral exam is simply your opportunity to demonstrate and celebrate that work. Yes, it's assessed (30% of your grade), so preparation matters. But it's also a milestone moment—a chance to articulate your vision, share your insights, and commit publicly to your development journey. That's powerful.
+
+Three final reminders:
+
+**1. Authentic confidence is your goal.** Not arrogance ("I'm the best"), not false modesty ("I'm not good at anything"), but authentic confidence: "I know my strengths, I acknowledge my developmental areas, I have a strategic plan, and I'm committed to continuous growth." That's compelling.
+
+**2. Feedback today was a gift.** If you received critical feedback in this tutorial, that's valuable information allowing you to improve before the high-stakes exam. Welcome it, implement it, and be grateful for peers and tutors who invested in your success.
+
+**3. You've got this.** The fact that you showed up to this tutorial, engaged in practice, sought feedback, and are now reviewing this preparation checklist demonstrates the kind of intentionality and ownership that predicts success. Keep that momentum through your final preparations.
+
+Good luck with your Final Oral Exam. We look forward to seeing the remarkable professionals you're becoming.
+
+---
+
+## Additional Resources
+
+**Presentation Design Resources:**
+- Canva Education (free templates): www.canva.com/education
+- Google Slides Templates: docs.google.com/presentation
+- Slide design principles: "Presentation Zen" by Garr Reynolds (available in library)
+
+**Public Speaking Resources:**
+- Toastmasters NEU Chapter: [contact information]
+- TED Talk principles: www.ted.com/playlists/574/how_to_make_a_great_presentation
+- Anxiety management: Deep breathing, power posing (Amy Cuddy research)
+
+**Practice Partners:**
+- Form peer accountability groups to practice presentations
+- Schedule practice sessions with your mentor
+- Record yourself using Zoom or phone camera for self-review
+
+**Emergency Contacts:**
+- Tutor email: [insert]
+- Course instructor: [insert]
+- Technical support: [insert]
+
+---
+
+**You've completed 12 weeks of transformative learning. Now show us what you've built.**

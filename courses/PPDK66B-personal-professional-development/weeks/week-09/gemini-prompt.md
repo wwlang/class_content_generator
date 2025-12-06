@@ -1,789 +1,619 @@
 <role>
-You are an expert presentation designer specializing in academic course materials. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
+You are an expert presentation designer. You create visually engaging, professional slides that balance aesthetic appeal with educational clarity. Your designs prioritize readability, visual hierarchy, and appropriate use of imagery to support learning. You use a Modern Bright Pastel Corporate style across all presentations.
 </role>
-
-<context>
-Course: PPDK66B - Personal & Professional Development |
-Week: 09
-Topic: Growth Mindset &amp; Adaptability
-Institution: National Economics University |
-Instructor: William Winterton Lang, Le Huong Lan (PhD) |
-Total Slides: 32
-</context>
-
 <instructions>
-1. Create a presentation slide deck with exactly 32 slides
-2. Start with a title slide containing: topic title, course code and name, university/institution, and instructor name
+1. Create a presentation slide deck with exactly 35 slides
+2. The first slide in the lecture content IS the title slide - add course name (PPDK66B - Personal & Professional Development), university (National Economics University), and campus (IBD Campus) to it
 3. Reproduce the exact wording from the lecture content for each slide, preserving all text as written
 4. Generate creative visuals for each slide: pictures, infographics, icons, and diagrams that reinforce the slide's message
-5. Use minimum 18pt font for body text to ensure readability from a distance
-6. Add a footer to every content slide (not the title slide) with: course code, university, topic, and slide number
+5. Use a minimum 18pt font for all text. Reference text and footer text is allowed to be smaller
+6. Add a footer to every content slide (not the title slide) with: course name, university, topic, and slide number
 7. Place academic citations (e.g., Minto, 1987) in the slide footer when referenced in content
 8. Leave speaker notes sections empty
+9. The final slide is a References slide - format it cleanly with the full APA citations provided
 </instructions>
-
-<constraints>
-- Create exactly 32 slides, matching the lecture content one-to-one. The lecture content defines each slide explicitly, so count them to verify.
-- Preserve exact wording because students receive these slides as study materials and need consistency with what they hear in lecture recordings.
-- Keep speaker notes empty because detailed instructor notes will be added in a separate step.
-- Maintain consistent Modern Bright Pastel Corporate styling throughout for professional brand identity.
-</constraints>
-
-<examples>
-<example>
-<input>
-## Slide 3: The Pyramid Principle
-
-**Key Concept:** Start with the answer, then provide supporting evidence
-
-The Pyramid Principle (Minto, 1987):
-- Lead with your main message
-- Group supporting arguments logically
-- Present evidence in descending order of importance
-
-**Why it works:** Busy executives read conclusions first
-</input>
-<output>
-Slide with pyramid/triangle infographic illustrating the hierarchy concept. All text preserved exactly as written. "Minto, 1987" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 7: Case Study - Vinamilk Crisis Response
-
-In 2013, Vinamilk faced a product recall crisis...
-
-**What went right:**
-- Immediate public acknowledgment
-- Clear action plan communicated
-- Regular updates to stakeholders
-
-**Result:** Brand trust recovered within 6 months
-</input>
-<output>
-Case study slide with timeline or process visual showing the crisis response steps. Company imagery or relevant icons. All text preserved exactly.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 12: Hofstede's Cultural Dimensions
-
-**Vietnam vs. United States comparison:**
-| Dimension | Vietnam | USA |
-|-----------|---------|-----|
-| Power Distance | 70 | 40 |
-| Individualism | 20 | 91 |
-| Uncertainty Avoidance | 30 | 46 |
-</input>
-<output>
-Data visualization slide with bar chart or comparison graphic showing Vietnam and USA scores across the three dimensions. Clear axis labels. "Hofstede" citation in footer.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 9: Carol Dweck on Growth Mindset
-
-**[VIDEO: Carol Dweck - "The Power of Believing That You Can Improve"]**
-**Video link:** https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
-**Duration:** 10 minutes
-
-**Before watching:** "Think of a time you felt 'stuck' at something."
-</input>
-<output>
-Video placeholder slide with speaker image, prominent clickable video link, duration displayed, and pre-viewing reflection question. Clean layout focusing attention on the video link.
-</output>
-</example>
-
-<example>
-<input>
-## Slide 15: Section Break - Emotional Intelligence
-
-# SECTION 3
-
-## Emotional Intelligence
-### Understanding and Managing Emotions
-
-*(20 minutes)*
-</input>
-<output>
-Section break slide with bold typography, contrasting background color to signal transition, section number prominent, topic and subtitle clearly visible. Timing indicator optional.
-</output>
-</example>
-</examples>
-
 <lecture_content>
-<?xml version="1.0" encoding="UTF-8"?>
-<lecture>
-<metadata>
-<course>PPDK66B Personal & Professional Development</course>
-<week>9</week>
-<topic>Growth Mindset &amp; Adaptability</topic>
-<duration>90 minutes</duration>
-<slides>32</slides>
-</metadata>
+Course: PPDK66B - Personal & Professional Development
+Week: 9
+Topic: Growth Mindset & Adaptability
+Institution: National Economics University
 
-<slide number="1" layout="big-number" title="Hook - The Power of Yet">
-# Yet
+### Slide 1 (Layout: title)
 
-**The single word that separates those who grow from those who stagnate**
+# Growth Mindset & Adaptability
 
-"I can't do this" → Fixed Mindset
-"I can't do this *yet*" → Growth Mindset
+**Developing the Capacity for Lifelong Learning**
 
-<speaker-notes>
-Imagine two students receive the same grade—a C+. Not failing, but not what they hoped for. Student A thinks: "I'm not good at this subject. Maybe I'm just not cut out for this career." Student B thinks: "I haven't mastered this yet. I need to change my strategy." Which student is more likely to succeed in the long term? The difference isn't intelligence or talent—it's mindset. This distinction shapes how you respond to challenges, seek feedback, and handle setbacks. Today we're going deep into mindset research—the real science, not the oversimplified version.
-</speaker-notes>
-</slide>
+### Slide 2 (Layout: content)
 
-<slide number="2" layout="section-break" title="Week Overview">
-# Growth Mindset & Lifelong Adaptability
+## Mindset Self-Assessment
 
-## Developing the Capacity to Continuously Grow
+Rate your agreement (1-5 scale) with these statements:
 
-**Today's Focus:**
-- What growth mindset actually means (and doesn't)
-- The neuroscience that supports it
-- False growth mindset and authentic interventions
-- Learning from failure strategically
-- Reskilling for career adaptability
+1. "You have a certain amount of intelligence, and you really can't do much to change it"
+2. "You can learn new things, but you can't really change your basic intelligence"
+3. "Your talent for business is something you can't change very much"
+4. "No matter how much intelligence you have, you can always change it quite a bit"
 
-<speaker-notes>
-This connects directly to your Personal Development Plan, due in 2 weeks. Your mindset shapes every goal you set and every obstacle you encounter. Your PDP requires you to set challenging goals—your mindset determines how ambitious you'll be. Mentor feedback requires openness—growth mindset enables learning from criticism. Career resilience requires adaptability—growth mindset is the foundation.
-</speaker-notes>
-</slide>
+**Scoring:**
+- Statements 1-3: Reverse score (5=1, 4=2, 3=3, 2=4, 1=5)
+- Statement 4: Score as-is
+- Higher total = More growth mindset oriented
 
-<slide number="3" layout="content" title="Learning Objectives">
-## Today's Learning Objectives
+### Slide 3 (Layout: content)
+
+## Learning Objectives
 
 By the end of this lecture, you will be able to:
 
-1. **Distinguish** between fixed and growth mindsets
-2. **Explain** neuroplasticity and its implications for skill acquisition
-3. **Recognize** false growth mindset and apply authentic interventions
-4. **Develop** strategies for learning from failure
-5. **Create** a personal reskilling plan for career adaptability
+1. **Distinguish** between fixed and growth mindset frameworks (Dweck, 2019)
+2. **Explain** the neuroscience behind learning (neuroplasticity)
+3. **Analyze** how mindsets affect responses to challenges and failure
+4. **Apply** growth mindset to reskilling and career adaptability
+5. **Implement** strategies to cultivate growth mindset in yourself
 
-<speaker-notes>
-These aren't just academic concepts—they're practical tools for your career. Each objective builds toward your PDP. By the end of today, you'll have a framework for approaching challenges and setbacks. You'll understand why some people thrive during change while others struggle.
-</speaker-notes>
-</slide>
+**Connection to Your PDP:**
+Your mindset shapes every aspect of your development plan - how you set goals, respond to obstacles, and view your own potential.
 
-<slide number="4" layout="video" title="Carol Dweck TED Talk">
-**[VIDEO: Carol Dweck - "The Power of Believing That You Can Improve"]**
+### Slide 4 (Layout: content)
 
-**Video link:** https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
+## How This Week Prepares You
 
-**Duration:** 10 minutes
+**Personal Development Plan (Due Week 11):**
+- Today: Learn how mindset shapes goal-setting and obstacle response
+- Tutorial: Practice reframing fixed mindset statements
+- Application: Frame PDP goals with growth mindset language
 
-**Before watching:** "Think of a time you felt 'stuck' at something. What did you tell yourself?"
+**Final Oral Exam:**
+- Demonstrate growth mindset in your career vision
+- Show how you'll respond to setbacks and challenges
+- Articulate lifelong learning commitment
 
-<speaker-notes>
-We're about to hear from Carol Dweck, the Stanford psychologist who pioneered this research over four decades. Pre-viewing question: "Think of a time you felt 'stuck' at something." Watch for the difference between how fixed vs. growth mindset students respond to challenge. After the video, we'll debrief: "What stood out to you?" and "Can you think of a time when you demonstrated fixed vs. growth mindset?"
-</speaker-notes>
-</slide>
+### Slide 5 (Layout: section-break)
 
-<slide number="5" layout="section-break" title="Section 1: Growth vs. Fixed Mindset">
-# SECTION 1
+## Today's Journey
 
-## Growth vs. Fixed Mindset
-### The Research Foundation
+**Part 1:** Fixed vs. Growth Mindset Framework (20 min)
 
-*(25 minutes)*
+**Part 2:** Neuroplasticity - The Science Behind Growth Mindset (15 min)
 
-<speaker-notes>
-Let's unpack what Dweck's four decades of research actually tells us about how mindsets shape behavior, goals, and career trajectories.
-</speaker-notes>
-</slide>
+**Part 3:** Embracing Challenges & Learning from Failure (15 min)
 
-<slide number="6" layout="content" title="Defining Mindsets">
+**Part 4:** Growth Mindset for Career Resilience (15 min)
+
+**Part 5:** Strategies to Develop Growth Mindset (15 min)
+
+**Wrap-Up:** Integration and Application (10 min)
+
+### Slide 6 (Layout: section-break)
+
+# Part 1
+
+## Fixed vs. Growth Mindset Framework
+
+### Slide 7 (Layout: content)
+
 ## What Are Mindsets?
 
-**A mindset is your self-theory about human abilities:**
+**Definition (Dweck & Yeager, 2019):**
 
-**Fixed Mindset:**
-- Abilities are innate and unchangeable
-- You're born with a certain amount of talent
-- Intelligence is a fixed quantity
+**Mindset** = A "meaning system" - a set of beliefs that creates coherent patterns of:
+- Goals we pursue
+- Beliefs about effort
+- Attributions we make
+- Behaviors in response to challenges
 
-**Growth Mindset:**
-- Abilities are developable through effort and learning
-- You can cultivate skills through practice
-- Intelligence is expandable through strategic effort
+**Two Core Mindsets:**
 
-**Critical clarification:** You're not "a fixed mindset person" — everyone has a mixture.
+**Fixed Mindset:** Intelligence and abilities are static traits
+- "You either have it or you don't"
+- Talent is innate and unchangeable
 
-<speaker-notes>
-Carol Dweck defines mindset as a self-theory about the nature of human abilities. Fixed mindset = abilities are static traits you're born with. Growth mindset = abilities are muscles you can develop. Important nuance: Mindsets aren't personality types—everyone has a mixture. You might have growth mindset about public speaking but fixed mindset about math. The key question: Which mindset dominates in areas critical to your career?
-</speaker-notes>
-</slide>
+**Growth Mindset:** Intelligence and abilities can be developed
+- "You can cultivate your abilities through effort and strategies"
+- Potential is nurtured over time
 
-<slide number="7" layout="content" title="The Meaning System">
-## How Mindsets Shape Behavior
+### Slide 8 (Layout: framework)
 
-| **Fixed Mindset** | **Growth Mindset** |
-|-------------------|-------------------|
-| "My abilities are fixed" | "My abilities can develop" |
-| Performance goals: *Look smart* | Learning goals: *Master skills* |
-| "Effort = I'm not talented" | "Effort = path to mastery" |
-| Avoid challenges | Embrace challenges |
-| Give up after failure | Persist with new strategies |
-| Avoid feedback | Seek feedback |
-| Threatened by others' success | Inspired by others' success |
+## The Mindset Cascade: How Beliefs Shape Behavior
 
-<speaker-notes>
-Mindsets don't just affect what you believe—they create entire behavioral patterns. Goals: Performance vs. learning orientation. Effort: Threat to self-image vs. path to growth. Challenges: Avoid vs. embrace. Failure: Give up vs. adjust strategy. Feedback: Defensive vs. curious. Others' success: Threatened vs. inspired. Turn and talk for 3 minutes: "Think of a specific skill where you've had a fixed mindset. How did it affect your behavior when you encountered difficulty?"
-</speaker-notes>
-</slide>
+**Fixed Mindset Pattern:**
+1. Belief: "Intelligence is fixed"
+2. Goal: Prove I'm smart → Performance goals
+3. Effort: Means I lack ability → Avoid effort
+4. Failure: Proves I'm not smart → Helpless response
+5. Behavior: Avoid challenges, give up easily
 
-<slide number="8" layout="content" title="The Evidence - National Study">
-## The National Study of Learning Mindsets
+**Growth Mindset Pattern:**
+1. Belief: "Intelligence can be developed"
+2. Goal: Learn and improve → Learning goals
+3. Effort: Path to mastery → Embrace effort
+4. Failure: Information for improvement → Resilient response
+5. Behavior: Seek challenges, persist through difficulty
 
-*(Dweck & Yeager, 2019)*
+**Result:** Same objective challenge, completely different response
 
-**The largest-ever growth mindset study:**
-- **Sample:** 12,000+ 9th graders across 65 U.S. high schools
-- **Intervention:** Single 45-minute online session
-- **Teaching:** "Intelligence is developable"
+### Slide 9 (Layout: content)
 
-**Results:**
-- Lower-achieving students improved grades (equivalent: B- to B+)
-- Increased enrollment in advanced courses
-- Effects persisted over time
-- Independently verified by third-party evaluators
+## Dweck's Research Journey: From Lab to World
 
-**Key insight:** A short intervention changed behavior because it changed beliefs.
+**Carol Dweck's 40+ Year Research Arc:**
 
-<speaker-notes>
-Let's look at the evidence. This is the most rigorous study of growth mindset interventions. Just 45 minutes of teaching that abilities are developable changed student behavior. Effects were especially strong for lower-achieving students. This wasn't years of therapy—it was changing a core belief. Why this matters for your career: If a 45-minute intervention can shift grades, imagine what intentional mindset work can do for your career over years.
-</speaker-notes>
-</slide>
+**Era 1 (1970s-2000s): Basic Research**
+- How do children respond to failure?
+- What explains resilience vs. helplessness?
+- Discovery: Beliefs about intelligence predict responses
 
-<slide number="9" layout="content" title="Career-Relevant Findings">
-## What Mindset Predicts Across 74 Nations
+**Era 2 (2000s-2020s): Applied Interventions**
+- Can mindsets be taught?
+- National Study of Learning Mindsets (NSLM): 12,000+ students
+- Short (<1 hour) online intervention improved grades and course-taking
 
-**Research shows growth mindset predicts:**
+**Key Insight (Dweck, 2019):**
 
-1. **Challenge-seeking** — Pursuing stretch assignments over comfort zones
+> "I realized I had a choice to make: use what I learn for the benefit of individuals and society, or just keep it in academic journals."
 
-2. **Persistence after setbacks** — Resilience when facing rejection or failure
+### Slide 10 (Layout: content)
 
-3. **Learning orientation** — Seeking feedback and continuous skill development
+## False Growth Mindset: What It's NOT
 
-4. **Career advancement** — Faster promotion rates among professionals
+**Common Misconceptions (Dweck, 2019):**
 
-**Connection to Week 1:**
-- 40% of job skills will change by 2030
-- **Growth mindset isn't optional—it's essential for career survival**
+❌ "Just praise effort" → Leads to empty effort without strategy
 
-<speaker-notes>
-Mindset research spans 74 nations. Here's what it consistently predicts. Challenge-seeking: Growth mindset professionals volunteer for difficult projects. Persistence: They recover faster from job rejections and failed projects. Learning orientation: They actively seek feedback, not just validation. Career advancement: These behaviors compound into faster career growth. Connection to Week 1: Remember the WEF report? 40% of skills will change. If you believe skills are fixed, what happens when your industry changes? You're stuck. If you believe you can learn and adapt, technological change becomes opportunity, not threat.
-</speaker-notes>
-</slide>
+❌ "Just be positive" → Ignores importance of effective strategies
 
-<slide number="10" layout="content" title="The Neuroscience Foundation">
-## Neuroplasticity: The Brain as a Muscle
+❌ "Everyone can achieve anything" → Unrealistic and dismissive of real constraints
 
-**Why growth mindset interventions work: neuroscience supports them**
+❌ "Mindset is all that matters" → Ignores systemic barriers and resources
 
-**Neuroplasticity** = the brain's ability to reorganize and strengthen neural connections through experience
+**True Growth Mindset:**
 
-**Key findings:**
-- Learning physically changes brain structure
-- Myelin increases with practice (signals travel faster)
-- Challenge and struggle drive neural growth
-- Mistakes signal the brain where to focus resources
+✓ Effort + Effective strategies + Learning from feedback
 
-**Age doesn't eliminate plasticity:**
-- Adult brains remain capable of significant change
-- Reskilling mid-career is neurologically possible
+✓ Positive but realistic about obstacles
 
-<speaker-notes>
-Growth mindset isn't just positive thinking—it's supported by neuroscience. When you practice a skill, neural pathways literally strengthen. The "brain as muscle" metaphor is scientifically accurate. Struggle and difficulty drive growth—easy learning produces weak connections. When you struggle with a difficult concept, your brain is literally forming new connections. The struggle isn't failure—it's the mechanism of growth. This is why 'easy A' classes don't develop you as much as challenging courses where you have to work hard.
-</speaker-notes>
-</slide>
+✓ Focus on developing potential within realistic constraints
 
-<slide number="11" layout="section-break" title="Section 2: False Growth Mindset">
-# SECTION 2
+✓ Acknowledge that mindset works alongside opportunity and support
 
-## False Growth Mindset
-### What It Actually Requires
+### Slide 11 (Layout: section-break)
 
-*(20 minutes)*
+# Part 2
 
-<speaker-notes>
-Now here's where it gets nuanced. Growth mindset has been widely misapplied. Carol Dweck herself warns against what she calls 'false growth mindset.'
-</speaker-notes>
-</slide>
+## Neuroplasticity - The Science Behind Growth Mindset
 
-<slide number="12" layout="content" title="The Just Praise Effort Fallacy">
-## False Growth Mindset #1
+### Slide 12 (Layout: content)
 
-**"Just praise effort" fallacy:**
+## Neuroplasticity: Your Brain is Not Fixed
 
-❌ **False approach:**
-"Great effort!" (regardless of outcome or strategy)
+**Neuroplasticity Definition:**
+The brain's ability to reorganize itself by forming new neural connections throughout life
 
-**Problems:**
-- Effort alone doesn't guarantee improvement
-- Doesn't teach strategic learning
-- Students learn to value trying over achieving
+**Key Principles:**
+1. **Use it or lose it:** Neural pathways that aren't used weaken
+2. **Use it and improve it:** Repeated practice strengthens connections
+3. **Specificity matters:** Practice what you want to improve
+4. **Intensity matters:** Focused, effortful practice drives change
 
-✅ **Authentic approach:**
-Praise *process*—effort combined with effective strategies
+**The Brain-as-Muscle Metaphor:**
 
-**Example:**
-- ❌ "You worked so hard! Great job!" (ineffective work)
-- ✅ "I see you tried a new strategy—breaking material into chunks. That paid off."
+> "The brain is like a muscle - it gets stronger (and smarter) when you exercise it"
+>
+> *Dweck & Yeager (2019)*
 
-<speaker-notes>
-The first way growth mindset gets misapplied: 'Just praise effort.' Effort without effective strategy doesn't produce results. We should praise process—effort plus strategy plus seeking help. Praising effort regardless of outcome teaches learned helplessness. Example: A student studies for 10 hours using ineffective methods. "Great effort!" doesn't help them—they need strategy feedback.
-</speaker-notes>
-</slide>
+### Slide 13 (Layout: content)
 
-<slide number="13" layout="content" title="The Everyone Can Do Anything Fallacy">
-## False Growth Mindset #2
+## How Learning Changes Your Brain
 
-**"Everyone can do anything" oversimplification:**
+**When you learn something new:**
 
-❌ **False approach:**
-"You can be anything you want if you just believe in yourself!"
+1. **Neurons fire together** in response to new information
+2. **Synaptic connections form** between neurons
+3. **Repeated practice strengthens** these connections (long-term potentiation)
+4. **Myelin sheaths thicken** around frequently used pathways (speeds signal transmission)
+5. **Neural networks optimize** - more efficient processing over time
 
-**Problems:**
-- Ignores real constraints (resources, opportunities, barriers)
-- Sets up unrealistic expectations
-- Sounds like empty motivational speak
+**Result:**
+What was once difficult and effortful becomes easier and more automatic
 
-✅ **Authentic approach:**
-"You can develop skills through strategic effort, though external factors also affect outcomes."
+**Career Implication:**
+Skills that feel impossible today can become strengths tomorrow through deliberate practice
 
-**Example:**
-- ❌ "You can become a concert pianist if you believe!" (to someone who's never played)
-- ✅ "If you're interested in music, you can develop skills through practice. Progress depends on time, instruction quality, and deliberate practice."
+### Slide 14 (Layout: content)
 
-<speaker-notes>
-The second fallacy: 'You can be anything you want!' Growth mindset doesn't mean unlimited potential regardless of context. It means abilities can develop through strategic effort. Real constraints exist—resources, opportunities, starting points. False growth mindset sounds hollow and sets people up for disappointment. Authentic growth mindset acknowledges constraints while focusing on what can be developed.
-</speaker-notes>
-</slide>
+## Growth Mindset Intervention: Core Content
 
-<slide number="14" layout="content" title="Growth Mindset Not Equal to Positive Thinking">
-## False Growth Mindset #3
+**What the Research-Based Intervention Teaches (Yeager & Dweck, 2020):**
 
-**"Just think positively" confusion:**
+**Message 1:** Abilities can be developed through action
+- Not fixed traits you're born with
 
-❌ **False approach:**
-Telling yourself "I can do this!" without changing strategy
+**Message 2:** The brain is like a muscle
+- Neuroplasticity is real and happens throughout life
 
-**Problems:**
-- Positive self-talk without action doesn't create growth
-- Confuses mindset with wishful thinking
-- Doesn't address actual skill gaps
+**Message 3:** Specific actions that develop abilities
+- **Effort** (trying hard)
+- **Strategy change** (trying different approaches)
+- **Help-seeking** (learning from others)
 
-✅ **Authentic approach:**
-Growth mindset + deliberate practice + strategic adjustment
+**Delivery:** Autonomy-supportive, not didactic
+- Students discover concepts through reading and reflection
+- Not lecturing people to "just have a growth mindset"
 
-**Example:**
-- ❌ "I got a D, but I have a growth mindset, so I'll do better!" (no change)
-- ✅ "I got a D because my strategy wasn't effective. I need to: start earlier, use active recall, form a study group, attend office hours."
+### Slide 15 (Layout: section-break)
 
-<speaker-notes>
-The third fallacy: treating growth mindset as positive thinking. Growth mindset without action is useless. Real growth mindset equals belief plus effective strategy plus help-seeking plus persistence. The complete formula: You can develop abilities through (1) effort, (2) effective strategies, (3) seeking help, (4) persisting through setbacks. This is action-oriented, not just belief-oriented.
-</speaker-notes>
-</slide>
+# Part 3
 
-<slide number="15" layout="content" title="Growth Mindset Self-Assessment">
-## Rate Yourself Honestly (1-5)
+## Embracing Challenges & Learning from Failure
 
-| Statement | Rating |
-|-----------|--------|
-| When I fail, I analyze what went wrong and try a different approach | |
-| I actively seek feedback on my work, even when uncomfortable | |
-| When someone excels where I struggle, I try to learn from them | |
-| I invest time developing weak skills, not just strong ones | |
-| When challenged, I ask "What strategy could help?" not "Am I capable?" | |
-| I view mistakes as learning opportunities, not evidence of inadequacy | |
+### Slide 16 (Layout: content)
 
-**Mostly 4-5:** Demonstrating growth mindset behaviors
-**Mostly 1-3:** May hold beliefs but not translating to action
+## How Mindsets Affect Challenge-Seeking
 
-<speaker-notes>
-Let's do a quick self-assessment. Be honest—this is for you, not for me. Give students 2 minutes to rate themselves. Debrief: If you scored mostly 4-5, you're demonstrating growth mindset behaviors. If you scored mostly 1-3, you may hold the beliefs but aren't yet translating them into action. That's the development work for this course and your PDP.
-</speaker-notes>
-</slide>
+**Fixed Mindset Approach to Challenges:**
+- Avoid challenges that might reveal limitations
+- Prefer tasks you already know you can do well
+- Challenge = Risk of looking incompetent
+- "If I'm smart, it should be easy"
 
-<slide number="16" layout="content" title="Recognizing Your Fixed Mindset Triggers">
-## Everyone Has Fixed Mindset Triggers
+**Growth Mindset Approach to Challenges:**
+- Seek challenges that will stretch current abilities
+- Embrace tasks slightly beyond current comfort zone
+- Challenge = Opportunity to develop new capabilities
+- "If it's easy, I'm not learning anything"
 
-**Common triggers:**
+**Dweck's Classic Study:**
+Children could choose next puzzle: easier than last one or harder
+- Fixed mindset children: 2/3 chose easier
+- Growth mindset children: 90%+ chose harder
 
-1. **Skills you struggled with early**
-   - "I was bad at math in high school, so I'm not a numbers person"
+### Slide 17 (Layout: content)
 
-2. **Areas where you compare unfavorably**
-   - "My roommate is so much better at public speaking—I'll never be that confident"
+## Learning from Failure: The Growth Mindset Advantage
 
-3. **High-stakes situations**
-   - "This interview is too important—I can't afford to mess up"
+**When you experience failure or setback:**
 
-4. **Unfamiliar domains**
-   - "I'm not technical, so I can't learn AI tools"
+**Fixed Mindset Response:**
+- **Attribution:** "I failed because I lack ability"
+- **Emotion:** Shame, helplessness
+- **Behavior:** Give up, avoid similar tasks, make excuses
+- **Learning:** Minimal - focused on self-protection
 
-**Reflection:** What's YOUR fixed mindset trigger?
+**Growth Mindset Response:**
+- **Attribution:** "I failed because my strategy was ineffective"
+- **Emotion:** Disappointment but determination
+- **Behavior:** Analyze what went wrong, try different approach
+- **Learning:** Maximal - failure becomes feedback
 
-<speaker-notes>
-Everyone has fixed mindset triggers—domains or situations where you default to 'I can't.' Early struggles become permanent identity ("I'm not a math person"). Social comparison triggers fixed beliefs ("They're naturally better"). Pressure activates self-protection ("Can't afford to fail"). Unfamiliarity becomes permanent limitation ("Not a tech person"). Individual reflection for 3 minutes: Identify one domain where you have a fixed mindset. Write down the self-talk you use.
-</speaker-notes>
-</slide>
+**Vietnamese Proverb:**
+*"Thất bại là mẹ thành công"* (Failure is the mother of success)
+- Growth mindset embodies this wisdom
 
-<slide number="17" layout="section-break" title="Section 3: Learning from Failure">
-# SECTION 3
+### Slide 18 (Layout: content)
 
-## Learning from Failure
-### Building Career Resilience
+## Dweck's Own Example: Learning from Controversy
 
-*(20 minutes)*
+**The Growth Mindset Controversies (2018-2020):**
 
-<speaker-notes>
-Now let's talk about something everyone experiences but few handle well: failure.
-</speaker-notes>
-</slide>
+**The Challenge:**
+- Meta-analysis criticized mindset research (Sisk et al., 2018)
+- Claims: "Effects are small or non-existent"
+- Media amplified criticism: "Growth mindset debunked!"
 
-<slide number="18" layout="content" title="Redefining Failure">
-## From Threat to Information
+**Dweck's Growth Mindset Response (2019, 2020):**
+1. Acknowledged legitimate critiques
+2. Conducted new large-scale pre-registered studies
+3. Clarified what growth mindset is and isn't
+4. Developed heterogeneity framework (when/where it works)
 
-**Fixed mindset view:**
-- Failure = proof of inadequacy
-- "I failed, therefore I'm a failure"
-- Failure is identity-defining
-- Must avoid failure at all costs
+**Quote:**
 
-**Growth mindset view:**
-- Failure = feedback about what needs adjustment
-- "This approach didn't work; what can I learn?"
-- Failure is performance-specific, not identity-defining
-- Failure is necessary for learning
+> "Challenges and controversies became opportunities that improved the science"
+>
+> *Dweck (2019)*
 
-**Sara Blakely (Spanx founder):**
-"My dad asked us what we failed at each week. If we didn't have something, he'd be disappointed."
+### Slide 19 (Layout: section-break)
 
-<speaker-notes>
-How you view failure determines whether you grow from it or are destroyed by it. Fixed mindset: Failure threatens your identity, so you avoid situations where you might fail. Growth mindset: Failure provides information about what to adjust next time. Sara Blakely's dad reframed failure as learning, not shame. She faced hundreds of rejections launching Spanx. Each "no" was information, not proof she should quit. Vietnamese culture emphasizes academic achievement and success. Failure can feel like losing face. But entrepreneurial success often requires multiple failures. Can you separate 'failing at something' from 'being a failure'?
-</speaker-notes>
-</slide>
+# Part 4
 
-<slide number="19" layout="framework" title="The Failure Analysis Framework">
-## Strategic Learning from Setbacks
+## Growth Mindset for Career Resilience
 
-**Step 1: Describe objectively**
-- "I didn't get the internship" (NOT "I'm terrible at interviews")
+### Slide 20 (Layout: content)
 
-**Step 2: Analyze strategically**
-- Controllable factors: "I didn't research the company thoroughly"
-- Uncontrollable factors: "They may have had an internal candidate"
+## Reskilling and Upskilling in the AI Era
 
-**Step 3: Extract lessons**
-- "I need to practice behavioral questions"
-- "I need deeper company research"
+**Why Growth Mindset Matters for Career Resilience:**
 
-**Step 4: Adjust strategy**
-- Specific actions for next time
+**Fixed Mindset Career Trap:**
+- "I'm a marketing person, not a data person" → Limits opportunities
+- Avoids learning new technologies: "I'm too old to learn Python"
+- Resists industry changes: "This is how we've always done it"
+- Career stagnates as field evolves
 
-**Step 5: Persist with new approach**
-- Apply improved strategy; track what works
+**Growth Mindset Career Advantage:**
+- "I can develop data skills if marketing roles require them"
+- Embraces learning new tools: "Python will be challenging but valuable"
+- Adapts to industry evolution: "What new capabilities do I need?"
+- Career evolves alongside field
 
-<speaker-notes>
-Here's a practical framework for turning failure into growth. Step 1: Objective description—not catastrophizing, not minimizing. Step 2: Separate what you could control from what you couldn't. Step 3: Extract specific, actionable lessons. Step 4: Create concrete plan for next time. Step 5: Keep trying with improved approach. This is not 'just stay positive'—this is strategic learning from setbacks.
-</speaker-notes>
-</slide>
+**Week 1 Connection:**
+AI is reshaping every industry - your ability to reskill determines your career resilience
 
-<slide number="20" layout="video" title="Angela Duckworth on Grit">
-**[VIDEO: Angela Duckworth - "Grit: The Power of Passion and Perseverance"]**
+### Slide 21 (Layout: content)
 
-**Video link:** https://www.ted.com/talks/angela_duckworth_grit_the_power_of_passion_and_perseverance
+## Self-Regulated Learning Across the Lifespan
 
-**Duration:** 6 minutes
+**Growth Mindset Enables Lifelong Learning:**
 
-**Before watching:** "What's the difference between grit and growth mindset?"
+**The Learning Cycle (connecting to Week 4):**
+1. **Set learning goals** (not just performance goals)
+2. **Monitor progress** metacognitively
+3. **Adjust strategies** when current approach isn't working
+4. **Persist through challenges** with effort + strategy changes
+5. **Reflect on learning** to extract insights
 
-<speaker-notes>
-Let's hear from Angela Duckworth, who researches grit—a related but distinct concept. Pre-viewing question: "How do you think grit relates to growth mindset?" After the video, discuss: "How does grit relate to growth mindset? Can you be gritty without a growth mindset?"
-</speaker-notes>
-</slide>
+**Growth Mindset at Different Career Stages:**
 
-<slide number="21" layout="content" title="Grit vs. Resilience">
-## Related but Distinct Concepts
+**Early Career (20s-30s):** Building foundational skills
+**Mid-Career (30s-40s):** Developing expertise, taking on leadership
+**Late Career (50s-60s+):** Adapting to industry shifts, mentoring others
 
-**Grit (Angela Duckworth):**
-- Passion and perseverance for long-term goals
-- Sticking with the SAME goal over years
-- "Marathon" mindset
+*At every stage: belief that you can continue developing new capabilities*
 
-**Resilience:**
-- Bouncing back from setbacks
-- Adapting to changing circumstances
-- Strategic flexibility (knowing when to persist vs. pivot)
+### Slide 22 (Layout: content)
 
-**Both require growth mindset, but:**
-- Grit = sustained focus on one goal
-- Resilience = capacity to recover and adapt
+## Context-Specific Growth Mindsets
 
-**In today's career environment:** You need adaptive resilience—persist when goal is right, pivot when circumstances change fundamentally.
+**Important Research Finding (Yeager & Dweck, 2020):**
 
-<speaker-notes>
-Grit and resilience are related but distinct. Grit equals long-term perseverance toward a specific goal. Resilience equals ability to recover, adapt, and keep moving forward. In stable environments (rare today), grit was enough—pick a path, stick 40 years. In dynamic environments (today's reality), you need adaptive resilience. Persist through challenges when the goal is still right. Pivot when circumstances change fundamentally. Reskill when your field evolves. Growth mindset enables both grit and resilience.
-</speaker-notes>
-</slide>
+You can have **different mindsets in different domains**
 
-<slide number="22" layout="content" title="The Role of Self-Compassion">
-## Why Self-Criticism Undermines Growth
+**Examples:**
+- Growth mindset about business skills, fixed mindset about artistic ability
+- Growth mindset about technical skills, fixed mindset about interpersonal skills
+- Growth mindset about academic learning, fixed mindset about athletic ability
 
-**Surprising finding:**
-Harsh self-criticism after failure *undermines* growth mindset.
+**Why This Matters:**
+1. Don't assume your mindset is the same across all areas
+2. Identify domains where you have fixed mindset beliefs
+3. Those are precisely the areas where growth mindset could help most
+4. Challenge domain-specific fixed beliefs: "I'm not a people person" → "I can develop interpersonal skills"
 
-**Why?**
-- Emotional resources go to self-protection, not learning
-- You avoid similar situations in the future
-- Anxiety interferes with strategic analysis
+### Slide 23 (Layout: section-break)
 
-**Self-compassion (Kristin Neff):**
-1. **Self-kindness** — Treat yourself as you'd treat a friend who made a mistake
-2. **Common humanity** — Everyone struggles and fails
-3. **Mindfulness** — Acknowledge feelings without over-identifying
+# Part 5
 
-**This isn't self-indulgence—it's strategic.**
+## Strategies to Develop Growth Mindset
 
-<speaker-notes>
-Here's a surprising finding: beating yourself up after failure actually prevents growth. Energy goes to defending yourself, not analyzing what happened. You avoid the domain to protect your ego. Anxiety blocks clear strategic thinking. Self-compassion is strategic: Treat yourself as you'd treat a friend who made a mistake. Recognize that everyone fails—you're not uniquely inadequate. Acknowledge the feelings, then move to strategic analysis. Example contrast: False approach: "I'm terrible at presentations. Everyone saw how nervous I was. I'll never volunteer again." True approach: "That presentation didn't go well, and I feel embarrassed. But everyone has bad presentations. What specifically can I improve? I'll practice more, slow down, prepare better transitions."
-</speaker-notes>
-</slide>
+### Slide 24 (Layout: content)
 
-<slide number="23" layout="section-break" title="Section 4: Reskilling">
-# SECTION 4
+## Strategy 1: Reframe Your Inner Voice
 
-## Reskilling & Career Adaptability
-### Thriving in the AI Era
+**The Fixed Mindset Voice vs. Growth Mindset Response:**
 
-*(15 minutes)*
+**Situation: Struggling with new skill**
 
-<speaker-notes>
-Now let's connect growth mindset to something very practical: reskilling for the AI era.
-</speaker-notes>
-</slide>
+❌ Fixed: "I'm not good at this" or "This is too hard for me"
+✓ Growth: "I'm not good at this **YET**" or "This is challenging right now"
 
-<slide number="24" layout="content" title="Why Reskilling Matters">
-## The Career Model Has Changed
+**Situation: Receiving criticism**
 
-**Traditional career model (pre-2000s):**
-- Learn skills once (university)
-- Apply them for 40 years
-- Retire
+❌ Fixed: "They think I'm incompetent" or "I should already know this"
+✓ Growth: "This feedback will help me improve" or "What can I learn from this?"
 
-**Current career model:**
-- Learn foundational skills (university)
-- Continuously reskill every 3-5 years
-- Adapt to technological shifts
-- Possibly change careers 2-3 times
-- Never fully "retire" from learning
+**Situation: Watching someone excel**
 
-**WEF data (Week 1 callback):**
-- 40% of core job skills will change by 2030
-- 50% of employees will need reskilling by 2025
+❌ Fixed: "They're naturally talented; I can't compete"
+✓ Growth: "What strategies are they using that I could learn?"
 
-<speaker-notes>
-Let's connect growth mindset to career reality. Old model: Learn once, apply forever. New model: Continuous reskilling cycle. The mindset connection: Fixed mindset: "I'm too old to learn new technology" leads to career stagnation. Growth mindset: "I can learn these skills through strategic effort" leads to career adaptability.
-</speaker-notes>
-</slide>
+**The Power of "Yet":**
+Adding "yet" transforms fixed statements into growth statements
 
-<slide number="25" layout="content" title="Growth Mindset Reskilling Strategies">
-## How to Approach Learning New Skills
+### Slide 25 (Layout: content)
 
-1. **Embrace "beginner's mind"**
-   - Let go of ego: "I don't know this yet, and that's okay"
+## Strategy 2: Focus on Process, Not Just Outcomes
 
-2. **Use scaffolded learning**
-   - Start with foundations before advanced topics
-   - Celebrate micro-progress
+**Shift Your Self-Talk and Goal-Setting:**
 
-3. **Seek diverse learning methods**
-   - Online courses, mentorship, peer learning, hands-on projects
+**Outcome Focus (Fixed Mindset Tendency):**
+- "Did I succeed or fail?"
+- "Do I look smart?"
+- "What's my grade/score/rank?"
 
-4. **Apply immediately**
-   - Don't just consume—use new skills in real contexts
+**Process Focus (Growth Mindset Approach):**
+- "What did I learn?"
+- "What strategies worked or didn't work?"
+- "How can I improve my approach?"
+- "What effort did I apply?"
 
-5. **Join learning communities**
-   - Find others learning the same skills
-   - Accountability and mutual support
+**Application to Your PDP Goals:**
 
-<speaker-notes>
-Reskilling isn't just about what you learn—it's about how you approach learning. Beginner's mind: Let go of needing to look competent; ask basic questions. Scaffolded: Build foundational skills first; don't skip to advanced. Diverse methods: Find what works for your learning style (Week 4 callback). Apply immediately: Learning by doing (Kolb's cycle—Week 3 callback). Community: Learning with others provides support and accountability.
-</speaker-notes>
-</slide>
+❌ Outcome-only: "Achieve 80% in all courses"
 
-<slide number="26" layout="content" title="Overcoming I'm Not Technical">
-## The Most Common Fixed Mindset Belief
+✓ Process-included: "Achieve 80% by using spaced repetition study, weekly mentor check-ins, and practice problem sets"
 
-**Common self-limiting belief:**
-"I'm not a tech person, so I can't learn AI/data analysis/programming."
+*Process goals give you control even when outcomes are uncertain*
 
-**Why this is fixed mindset:**
-- Assumes technical ability is innate, not developable
-- Creates identity boundary ("I'm creative, not technical")
-- Leads to avoiding learning opportunities
+### Slide 26 (Layout: content)
 
-**Reality check:**
-- "Technical" skills are learned, not genetic
-- Many successful tech professionals started with zero background
-- Business + technical = highly valuable combination
+## Strategy 3: Embrace "Strategic Failures"
 
-**Reframe:**
-"I haven't developed technical skills *yet*. I can develop enough AI literacy to use tools effectively, collaborate with technical teams, and make informed decisions."
+**Redefine Failure as Feedback:**
 
-<speaker-notes>
-Let me address the most common fixed mindset belief I hear from business students. Technical skills are learned through practice, not inherited at birth. You don't need to become a software engineer. You need AI literacy and collaborative capacity. What you actually need: Use AI tools effectively. Collaborate with technical teams. Understand data insights. Make informed technology decisions. That's achievable for any business student willing to learn.
-</speaker-notes>
-</slide>
+**Before (Fixed Mindset Interpretation):**
+Failure = Evidence I lack ability → Avoid challenges
 
-<slide number="27" layout="content" title="Reskilling Planning for Your PDP">
-## Add a Reskilling Plan to Your PDP
+**After (Growth Mindset Interpretation):**
+Failure = Information about what doesn't work → Try different strategy
 
-**Near-term (1 year):**
-- What emerging skill will be valuable in your field?
-- How will you develop basic competency?
-- What resources will you use?
+**Strategic Failure Framework:**
+1. **Try** a challenging approach (even if success isn't guaranteed)
+2. **Observe** what happens (data collection)
+3. **Analyze** why approach didn't work (diagnosis)
+4. **Adjust** strategy based on analysis (iteration)
+5. **Try again** with refined approach (persistence)
 
-**Medium-term (3 years):**
-- What skills will your industry likely require?
-- What credentials or certifications might help?
+*This is the scientific method applied to your development*
 
-**Long-term (5 years):**
-- What technological shifts might reshape your field?
-- How will you position yourself for these changes?
+**Quote to Remember:**
+*"Thất bại là mẹ thành công"* (Failure is the mother of success)
 
-**Growth mindset application:**
-Include specific reframes for the fixed mindset triggers you'll face.
+### Slide 27 (Layout: content)
 
-<speaker-notes>
-Your PDP should include a reskilling plan. Here's the structure. Near-term: Specific skill you'll develop in the next year. Medium-term: Skills your industry will require. Long-term: Positioning for future technological shifts. Turn and talk for 3 minutes: Based on your career interests, what's one skill you'll likely need to develop in the next 3 years? What growth mindset challenges might you face in learning it? How will you address them?
-</speaker-notes>
-</slide>
+## Strategy 4: Seek and Use Feedback Actively
 
-<slide number="28" layout="section-break" title="Section 5: PDP Integration">
-# SECTION 5
+**Growth Mindset Approach to Feedback:**
 
-## Integrating Growth Mindset
-### Into Your Personal Development Plan
+**1. Actively Seek Feedback**
+- Don't wait for formal reviews
+- Ask specific questions: "What's one thing I could improve?"
+- Request feedback from mentors, professors, peers
 
-*(10 minutes)*
+**2. Receive Feedback Non-Defensively**
+- Listen fully before responding
+- Resist urge to explain or justify
+- Thank the person for their input
 
-<speaker-notes>
-Let's close by connecting today's content directly to your PDP, due in 2 weeks.
-</speaker-notes>
-</slide>
+**3. Extract Actionable Insights**
+- "What specifically can I do differently?"
+- "What resources or strategies would help?"
 
-<slide number="29" layout="content" title="Mindset in Your PDP">
-## Growth Mindset Should Underpin Every Component
+**4. Implement and Follow Up**
+- Act on feedback to demonstrate growth mindset
+- Report back: "I tried your suggestion; here's what happened"
 
-**In your vision statement:**
-- ❌ "I want to be a manager because I'm naturally good with people"
-- ✅ "I will develop into a leader by building strategic thinking, data literacy, and team leadership skills"
+**Mentorship Connection:** Use your mentor meetings to practice this
 
-**In your SMART goals:**
-- ❌ "Avoid roles requiring public speaking"
-- ✅ "Develop public speaking confidence by presenting in 3 class settings and joining Toastmasters"
+### Slide 28 (Layout: content)
 
-**In your SWOT analysis:**
-- ❌ List weaknesses as permanent traits ("Bad at math")
-- ✅ List weaknesses as developable gaps ("Need to improve quantitative analysis through practice")
+## Strategy 5: Celebrate Effort and Strategy, Not Just Talent
 
-<speaker-notes>
-Your PDP components should reflect growth mindset throughout. Vision: Focus on developing capabilities, not inherent traits. SMART goals: Include skill development, not just avoidance. SWOT: Frame weaknesses as development opportunities, not permanent limitations. Skills gap: Plan for developing weak areas, not just leveraging strengths.
-</speaker-notes>
-</slide>
+**What to Praise in Yourself and Others:**
 
-<slide number="30" layout="content" title="Mentor Meeting 4 Preparation">
-## Questions to Ask Your Mentor
+❌ **Trait Praise:** "I'm smart" / "You're talented"
+- Reinforces fixed mindset
+- Creates fear of challenges that might disprove trait
 
-**About mindset and resilience:**
+✓ **Process Praise:** "I used effective strategies" / "You tried multiple approaches"
+- Reinforces growth mindset
+- Builds confidence in controllable factors
 
-1. "Can you tell me about a significant professional failure? How did you respond and what did you learn?"
+**Self-Reflection Questions:**
+- What strategies did I use today?
+- What effort did I apply?
+- What did I learn from this challenge?
+- How did I persist when things got difficult?
 
-2. "What skills have you had to develop mid-career? How did you approach learning something completely new?"
+**Celebrate learning, not just performance**
 
-3. "When you see someone excel where you're not strong, how do you respond?"
+### Slide 29 (Layout: section-break)
 
-4. "Looking at my draft PDP, where do you see fixed mindset limiting my goals?"
+# Integration and Application
 
-5. "How do you maintain a learning orientation in your current role?"
+### Slide 30 (Layout: content)
 
-**Bring to Meeting #4:**
-- Draft PDP (goals and skills gap)
-- Mindset self-assessment from today
-- Questions about navigating setbacks
+## Applying Growth Mindset to Your PDP
 
-<speaker-notes>
-Your 4th mentorship meeting focuses on PDP review. Here are questions to ask about mindset. These questions tap into your mentor's experience with failure and resilience. Get feedback on where fixed mindset may be limiting your PDP. Learn how successful professionals maintain growth orientation. What to bring: Draft PDP for feedback. Today's self-assessment results. Specific questions about your field.
-</speaker-notes>
-</slide>
+**Your PDP Through a Growth Mindset Lens:**
 
-<slide number="31" layout="content" title="Key Takeaways">
-## Today's Core Messages
+**Goal-Setting:**
+✓ Set "stretch goals" that require developing new capabilities
+✓ Include process goals alongside outcome goals
+✓ Frame goals as learning objectives, not just performance targets
 
-1. **Mindset is a meaning system** — It shapes goals, effort beliefs, and responses to challenges
+**Obstacle Planning:**
+✓ Anticipate setbacks as normal part of development
+✓ Plan multiple strategies for each goal
+✓ Build in accountability and feedback mechanisms
 
-2. **Growth mindset is developable** — You're not stuck with your current beliefs
+**Self-Assessment Integration:**
+✓ View current abilities as starting point, not destiny
+✓ Focus on developing areas of weakness, not just leveraging strengths
 
-3. **False growth mindset is common** — Authentic growth = belief + effective strategy + help-seeking + persistence
+**Timeline:**
+✓ Recognize that meaningful development takes time
+✓ Measure progress, not perfection
 
-4. **Failure is information** — Use the Failure Analysis Framework to learn strategically
+### Slide 31 (Layout: content)
 
-5. **Reskilling requires growth mindset** — Career adaptability depends on believing you can learn
+## Key Takeaways: Research-Backed Insights
 
-6. **Self-compassion enables growth** — Harsh self-criticism undermines learning
+**What the Science Tells Us:**
 
-<speaker-notes>
-Let me summarize the key takeaways from today. Mindset creates a whole system of beliefs and behaviors. You can develop growth mindset through practice. Real growth mindset requires action, not just positive thinking. Learn from failure strategically, not emotionally. Career survival in AI era requires belief you can learn new skills. Be kind to yourself after setbacks—it's strategic, not soft.
-</speaker-notes>
-</slide>
+1. **Mindsets are belief systems that shape motivation and behavior** (Dweck & Yeager, 2019)
 
-<slide number="32" layout="quote" title="Closing Reflection">
-## The View You Adopt Profoundly Affects Your Life
+2. **The brain is plastic throughout life - abilities can be developed** (neuroplasticity research)
 
-**Carol Dweck:**
-> "The view you adopt for yourself profoundly affects the way you lead your life."
+3. **Growth mindset affects challenge-seeking and resilience** (Dweck's 40+ years of research)
 
-**This is evidence, not motivation:**
-- Students with growth mindsets persist longer and achieve more
-- Professionals with growth mindsets adapt better to change
-- Organizations with growth mindset cultures innovate more
+4. **Effective growth mindset = effort + strategy + help-seeking** (not just praise for trying)
 
-**The most important insight:**
-**Mindset is itself developable.**
+5. **Mindsets can be changed** (intervention research shows meaningful effects)
 
-You can notice fixed mindset, challenge it, reframe it, and practice growth mindset behaviors. The capacity starts with the decision to develop it.
+6. **Growth mindset is especially valuable in contexts of challenge and uncertainty** (Yeager & Dweck, 2020)
 
-<speaker-notes>
-Let me close with Dweck's most important insight. This isn't motivational fluff—it's research evidence. Mindset predicts outcomes across studies, nations, and contexts. The meta-insight: Mindset itself can be developed. You're not stuck with whatever beliefs you currently hold. The decision to develop growth mindset is the first step. Your career in 2030 will require continuous adaptation. What won't change: your capacity to learn, adapt, and grow. That capacity starts with mindset.
-</speaker-notes>
-</slide>
+**Your career in the AI era will require continuous reskilling - growth mindset is your foundation**
 
-</lecture>
+### Slide 32 (Layout: content)
+
+## Reflection: Revisiting Your Mindset Assessment
+
+**Return to Your Opening Self-Assessment:**
+
+Look back at your responses to the four mindset items:
+
+1. Are you satisfied with your current mindset beliefs?
+2. In which domains (academic, professional, interpersonal, creative) do you hold fixed beliefs?
+3. How might fixed mindset beliefs be limiting your development?
+4. What's one specific fixed belief you want to challenge this week?
+
+**Action Commitment:**
+Choose ONE area where you'll deliberately apply growth mindset strategies this week and share with a partner
+
+**Mentorship Connection:**
+Discuss growth vs. fixed mindset with your mentor - where do they see each in their career?
+
+### Slide 33 (Layout: content)
+
+## Next Steps and Before Next Class
+
+**Today's Tutorial (Week 9):**
+- Growth Mindset Development Plan activity
+- Practice reframing fixed mindset statements
+- Analyze your own mindset patterns
+
+**Before Next Class (Week 10):**
+1. Read Week 10 materials on Entrepreneurship (Guest Speaker preparation)
+2. Complete pre-meeting form if you have Mentorship Meeting 4 scheduled
+3. Continue working on your PDP - integrate growth mindset framing into your goals
+4. **Optional:** Watch Carol Dweck's TED Talk "The Power of Believing That You Can Improve" (10 min)
+
+**Week 11 Preview:**
+Designing Your Development Plan - bringing together all course concepts into your comprehensive PDP
+
+### Slide 34 (Layout: references)
+
+## References
+
+1. Dweck, C. S. (2019). The choice to make a difference. *Perspectives on Psychological Science, 14*(1), 21-25. https://doi.org/10.1177/1745691618804180
+
+2. Dweck, C. S., & Yeager, D. S. (2019). Mindsets: A view from two eras. *Perspectives on Psychological Science, 14*(3), 481-496. https://doi.org/10.1177/1745691618804166
+
+3. Yeager, D. S., & Dweck, C. S. (2020). What can be learned from growth mindset controversies? *American Psychologist, 75*(9), 1269-1284. https://doi.org/10.1037/amp0000794
+
+**Additional Resources:**
+
+- Dweck, C. S. (2015). Carol Dweck: The power of believing that you can improve [Video]. TED Conferences. https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve
+
+- Mindset Kit. (n.d.). Assess your mindset. https://www.mindsetkit.org/assess-your-mindset
+
+### Slide 35 (Layout: title)
+
+# Remember
+
+## You Are Not Yet Who You Will Become
+
+*Your current abilities are your starting point, not your destination*
 
 </lecture_content>
-
-<task>
-Generate all 32 slides as a complete presentation slide deck. Reproduce all content exactly as provided. Enhance each slide with appropriate visuals, infographics, or imagery. Maintain consistent professional styling throughout.
-</task>
-
-<output_format>
-A presentation slide deck containing:
-- 32 slides total, matching the lecture content structure
-- Modern Bright Pastel Corporate visual design consistently applied
-- All lecture content text preserved exactly as written
-- Relevant images, infographics, icons, and diagrams on each slide
-- Minimum 18pt body text
-- Footers on content slides with course info and slide numbers
-- Academic citations in footers where referenced
-- Empty speaker notes sections
-</output_format>
